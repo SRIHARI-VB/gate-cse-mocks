@@ -7,36 +7,128 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2**, 2026-11-01 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
+- **Engineering Mathematics · Unit 2 — Linear Algebra: Eigenvalues & Vectors, Set 1 of 2 (second pass)**, 2026-11-01 →
+  [`engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html`](engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: hash functions (7) · open addressing: linear, quadratic & double (7) · collision resolution by
-  chaining (5) · load factor & rehashing (6)
-- Rotation: MODE A. An unseeded `secrets.choice` draw over the seven subjects that do not already carry a paper
-  dated 2026-11-01 (Algorithms, Computer Networks, Operating Systems and Theory of Computation do) returned
-  **Programming and Data Structures** (index 4 of the seven). Its most recent run was
-  `{2026-10-31, run 12, unit 6, heaps-priority-queues, Set 2 of 2}`. Unit 6 held **50** questions, equal to
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
-  `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7, Hashing & Hash Tables**, which held
-  **0** questions. This is Set 1 of 2 of its first pass, and step B5 does not apply because the subject is not
-  at the cap everywhere. No override, no partial set.
-- Unit 7 had no earlier paper, so nothing was archived and the unit folder holds exactly one current paper; the
-  repository root still holds only `index.html`.
-- Previous test: **Theory of Computation · Unit 4 — Turing Machines & Decidability, Set 1 of 2 (third pass)**,
-  2026-11-01 →
-  [`theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html`](theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html)
+- Subtopics: characteristic equations (8) · eigenvalue properties (7) · Cayley–Hamilton theorem (4) ·
+  diagonalization (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(6)` draw over the six subjects that do not already carry a paper
+  dated 2026-11-01 (Algorithms, Computer Networks, Operating Systems, Programming and Data Structures and Theory of
+  Computation do) returned index 1 of 6 — **Engineering Mathematics**. Its most recent run was
+  `{2026-10-31, run 11, unit 1, linear-algebra-matrices, Set 1 of 2 (second pass)}`. Unit 1 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
+  `(index_of(linear-algebra-matrices) = 0 + 1) mod 5 = 1` → **Unit 2, Linear Algebra: Eigenvalues & Vectors**.
+  Unit 2 already held **50** questions, exactly the cap, so this is Set 1 of 2 of its **second pass**. No override,
+  no partial set.
+- The unit folder held the 2026-10-27 paper, which was moved to
+  `archive/gate_em_mock_2_2026-10-27_run2.html` with its content frozen; the folder now holds exactly one current
+  paper and the repository root still holds only `index.html`.
+- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2**, 2026-11-01 →
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 145 (23 Discrete Mathematics, 11 Algorithms, 8 Databases, 13 Compiler Design, 18 Operating Systems, 11 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
-| Current papers / archived sets | 62 current · 83 archived |
+| Papers published (current + archived) | 146 (23 Discrete Mathematics, 11 Algorithms, 8 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
+| Current papers / archived sets | 62 current · 84 archived |
 | Test cards on the portal | 80 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 4 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
-| Questions in the subject banks | 3625 (575 Discrete Mathematics, 275 Algorithms, 200 Databases, 325 Compiler Design, 450 Operating Systems, 275 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
+| Questions in the subject banks | 3650 (575 Discrete Mathematics, 275 Algorithms, 200 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 83 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 6 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 5 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 84 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 5 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Engineering Mathematics Unit 2, Set 1 of 2 (second pass)
+
+- New paper at `engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html`. The unit folder held
+  the 2026-10-27 paper, which was moved to `archive/gate_em_mock_2_2026-10-27_run2.html` with its content frozen (same
+  questions, options, answers, solutions and duration); the folder now holds exactly one current paper and the
+  repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Five subjects already carried a paper dated 2026-11-01 (Algorithms, Computer
+  Networks, Operating Systems, Programming and Data Structures, Theory of Computation), so the draw ran over the
+  remaining six in syllabus order (Discrete Mathematics, Engineering Mathematics, Digital Logic, Computer
+  Architecture, Compiler Design, Databases) with an unseeded `secrets.randbelow(6)` and returned **Engineering
+  Mathematics** (index 1 of 6). `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-10-31, run 11, unit 1, linear-algebra-matrices, Set 1 of 2 (second pass)}`. Unit 1 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(linear-algebra-matrices) = 0 + 1) mod 5 = 1` → **Unit 2, Linear Algebra: Eigenvalues & Vectors**.
+  Unit 2 held **50** questions, exactly the cap, so this paper opens its **second pass** as Set 1 of 2 and the unit now
+  holds **75**. No override was used and no unit received a partial set.
+- Coverage: all four Unit 2 subtopics — characteristic equations (8); eigenvalue properties (7); Cayley–Hamilton
+  theorem (4); diagonalization (6). Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; marks
+  15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ all-or-nothing. Practice scheme, not the official
+  GATE scheme, and the About tab says so.
+- All 25 ids are new (`EM-U2-Q51` … `EM-U2-Q75`) and none collides with the 275 items already banked for Engineering
+  Mathematics or with the 50 Unit 2 items of the first pass. The subject bank now holds **300** questions and the
+  paper's Question Bank tab shows the **275** previously banked items with the active 25 excluded.
+- Every question carries `data-subject="engineering-mathematics"`, `data-unit="eigenvalues-eigenvectors"`,
+  `data-unit-number="2"`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source`; the 25 test cards and the
+  275 bank cards all carry the full set. Difficulty is lowercase in the attributes, in the bank and in the portal data,
+  and the UI capitalises it with CSS.
+- What the set asks. Characteristic equations: the `λ² − (tr)λ + det` form and its coefficient signs; the constant
+  term as `(−1)ⁿ det A` (**−6** from `λ³ − 4λ² + λ + 6`); a negative discriminant giving the conjugate pair
+  `−2 ± 3i`; a triangular matrix whose off-diagonal 2 changes nothing; the expansion of `(λ − 1)(λ − 3)(λ − 5)`; a
+  polynomial in `A` whose determinant is the product of `q(λᵢ)` (**100** for `det(A² + I)`); the trace-and-determinant
+  match for `A = [[2, 3], [3, 2]]`; and Newton's identities recovering `e₃` from `tr(A)`, `tr(A²)` and `tr(A³)`
+  (**−5**). Eigenvalue properties: trace and determinant of a conjugate pair; `det(A² + 2A)` = **−24**; `tr(A²)` =
+  **29**; `tr(A) + det(A)` = **−4** for `−1, 2, 5`; spectral mapping that collapses both eigenvalues of
+  `A² − 2A + 5I` and gives `tr` = **60**; an idempotent matrix; the spectrum of a matrix with eigenvalues `1, 1, 4`;
+  and `e₂` = **14** from `tr(A)`, `tr(A²)` and `det(A)`. Cayley–Hamilton: `A² = 6A − 5I`; `A³ = 13A − 12I` from
+  `tr = 4`, `det = 3`; `A⁻¹ = 3I − A` from `λ² − 3λ + 1`; and the three true statements about `[[2, 1], [1, 2]]`.
+  Diagonalization: distinct eigenvalues imply diagonalizability; a triangular matrix whose eigenspace for `λ = 1` is
+  one-dimensional; `A² = A`; four statements about real versus complex diagonalizability, with `[[0, 1], [0, 0]]` as
+  the counterexample to "`A²` diagonalizable implies `A` diagonalizable"; `rank(A) = 3` for a diagonalizable matrix
+  with spectrum `2, 2, 5`; and `A² = −4I`, whose minimal polynomial `t² + 4` has distinct roots `±2i`.
+- Every numeric answer was recomputed by script, not by hand, with SymPy: `−6` from the companion matrix of
+  `λ³ − 4λ² + λ + 6`; `A² = 6A − 5I`, `A³ = 13A − 12I`, `A⁻¹ = 3I − A`, `A² = 4A − 3I`, `A⁻¹ = (4I − A)/3` and
+  `A³ = 13A − 12I` verified as exact matrix identities; `−24`, `29`, `−4`, `60`, `100` and `14` from diagonal or
+  companion matrices with the stated invariants; `rank(A − I) = 2` and `nullity = 1` for the upper-triangular
+  example; `rank = 3` for `diag(2, 2, 5)`; the `(λ − 1)(λ − 3)(λ − 5)` expansion and the `λ³ − 5λ² + 5λ + 5`
+  companion matrix, whose traces of `A`, `A²`, `A³` come out as 5, 15 and 35 with `det = −5`; the roots of
+  `λ² + 4λ + 13` and `λ² − 4λ − 5`; and `A² = −4I` for a real `4 × 4` block-diagonal matrix of two `[[0, −2], [2, 0]]`
+  blocks, whose only eigenvalues are `±2i`.
+- The correct option is spread 4 A / 4 B / 4 C / 3 D across the 15 MCQ; the five MSQ answer sets are (A, C), (A, B, C),
+  (B, C, D), (A, B, C) and (A, B, C); the five NAT answers are −6, 29, 3, 100 and 14.
+- Source tags: 16 `STANDARD_TEXTBOOK`, 9 `ORIGINAL_SYNTHESIS`, 0 `GATE_PYQ_VARIATION`. `verified_pyqs` stays empty for
+  Engineering Mathematics: no eigenvalues, Cayley–Hamilton or diagonalization previous-year question has been verified
+  against an official paper and answer key for this unit, so nothing on this paper is called an official GATE question
+  and the bank tab says so in one sentence.
+- Shell parity: the paper was produced by splicing the new payload, question cards, Question Bank tab and About text
+  into the shipped shell of the Engineering Mathematics Unit 1 paper (2026-10-31). The `<style>` block, the exam
+  `<script>`, the `:root` block, the palette, the legend and the footer are **byte-identical** to it; only the metadata
+  strings (title, header sub-line, candidate id, Question Bank count, set label) and the content regions differ.
+- Verification by text and structure checks: 25 question cards numbered `data-n` 1–25, 25 palette buttons, 15 ×
+  "Marks: 1" and 10 × "Marks: 2", 5 NAT inputs, 60 radio and 20 checkbox inputs, 275 bank cards, one About tab, a
+  balanced `<div>` tree (1352 open / 1352 close), the Answer Key tab disabled, every active `.sol` empty and hidden, no
+  `ansline` text and no `correct`/`wrongpick` class inside `#qhost` before submit, and a payload that decodes to 25
+  answers and 25 solutions whose display strings agree with the stored answer sets.
+- A jsdom harness was run against the paper: the timer at `60:00`, exactly one card visible on load, no answer text or
+  option mark before submit, the key tab disabled and its list empty, all 25 `.sol` blocks empty and hidden, 15 MCQ +
+  5 MSQ + 5 NAT inputs answering cleanly, all 25 palette buttons green, the marked-for-review (`amr`), unmark and
+  clear-response states working, Save & Next, Previous and palette navigation moving the current question, **35 / 35**
+  on a perfect attempt with 25 correct, a single wrong pick scoring **0 / 35** with 24 unattempted, the key tab
+  unlocked, all 25 solutions revealed, 29 correct-option marks rendered, and the Answer Key, Question Bank, About and
+  Mock Test tabs all opening after submit.
+- Portal: the Engineering Mathematics Unit 2 card now points at this paper, is labelled `Set 1 of 2 (second pass)` and
+  lists `Set 2 (2026-10-27)` and `Set 1 (2026-10-26)` as earlier sets; `data/questions-engineering-mathematics.js`
+  grew from 275 to 300 records. The portal counters were recomputed from the files: **3650** solved questions and
+  **3650** bank records, **80** test cards over **69** units, **62 of 69** units covered across **267** subtopics.
+- **Two repairs made in this run.** (1) `data/questions-theory-of-computation.js` shipped with a stray extra bracket,
+  `…}]];` instead of `…}];`, which is a JavaScript syntax error: the file failed to parse, so `window.GATE_BANK` never
+  received the 400 Theory of Computation records and the portal's Topic & Subtopic Question Archive silently omitted
+  that subject. The bracket was removed; all 400 records are byte-identical otherwise. (2) The portal's
+  `questionCard()` renderer emitted no `data-*` attributes on archive cards; it now sets `data-subject`, `data-unit`,
+  `data-unit-number`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source` on every one, as Section 3
+  requires. Neither change touches a paper.
+- Known deviations, unchanged from every earlier run: the `:root` token block is byte-identical in `index.html`,
+  `design-tokens.css` and every paper, but the shipped shell still carries raw hex values in inline styles outside
+  `:root` (for example `color:#5b6b7a` on the marks label), and it still has no `:focus-visible` ring on buttons,
+  palette buttons, tabs, options or accordions. Both belong to the template rather than to this run's payload and were
+  left alone so that the shell stays byte-identical across all 146 papers.
+- Hygiene: the paper is filed at exactly one path, `engineering-mathematics/eigenvalues-eigenvectors/`, and nowhere
+  else; `find . -name "*.html"` returns `index.html` plus one file per paper (62 current and 84 archived, 146 in all);
+  every `href` in the portal and in each paper's archive list resolves; no temporary or loose file was left at the
+  repository root.
 
 ### 2026-11-01 — Programming and Data Structures Unit 7, Set 1 of 2
 
