@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-10-31",
+  "last_updated": "2026-11-01",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such. total_questions was stale at 25 after the second run (50 records were present); it is recomputed from len(questions) on every append as of 2026-10-26.",
-  "total_questions": 275,
+  "total_questions": 300,
   "units_with_questions": [
    1,
    2,
@@ -705,6 +705,74 @@
    "mode": "MODE_A",
    "selection": "Random draw over the two subjects that carried no 2026-10-31 paper (Discrete Mathematics, Engineering Mathematics); the draw returned Engineering Mathematics. Most recent run: run 10, 2026-10-30, Unit 5, Set 2 of 2.",
    "note": "Unit 5 held 50 questions, at UNIT_QUESTION_CAP, so step B3 failed on the cap and step B4 advanced (index_of(unit 5) = 4 + 1) mod 5 = 0 -> Unit 1, Linear Algebra: Matrices & Systems. Every unit of the subject is at the cap (50, 50, 50, 50, 50), so step B5 applies: the modulo has wrapped and a second pass has started at Unit 1. Unit 1 receives the first set of that pass, its third set overall, and goes from 50 to 75 questions. No override, no partial set."
+  },
+  {
+   "run": 12,
+   "date": "2026-11-01",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html",
+   "archived_previous": "engineering-mathematics/eigenvalues-eigenvectors/archive/gate_em_mock_2_2026-10-27_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "characteristic-equations",
+    "eigenvalue-properties",
+    "cayley-hamilton-theorem",
+    "diagonalization"
+   ],
+   "subtopic_counts": {
+    "characteristic-equations": 8,
+    "eigenvalue-properties": 7,
+    "diagonalization": 6,
+    "cayley-hamilton-theorem": 4
+   },
+   "question_ids": [
+    "EM-U2-Q51",
+    "EM-U2-Q52",
+    "EM-U2-Q53",
+    "EM-U2-Q54",
+    "EM-U2-Q55",
+    "EM-U2-Q56",
+    "EM-U2-Q57",
+    "EM-U2-Q58",
+    "EM-U2-Q59",
+    "EM-U2-Q60",
+    "EM-U2-Q61",
+    "EM-U2-Q62",
+    "EM-U2-Q63",
+    "EM-U2-Q64",
+    "EM-U2-Q65",
+    "EM-U2-Q66",
+    "EM-U2-Q67",
+    "EM-U2-Q68",
+    "EM-U2-Q69",
+    "EM-U2-Q70",
+    "EM-U2-Q71",
+    "EM-U2-Q72",
+    "EM-U2-Q73",
+    "EM-U2-Q74",
+    "EM-U2-Q75"
+   ],
+   "mode": "MODE_A",
+   "selection": "Random draw over the six GATE CSE subjects that carried no 2026-11-01 paper (discrete-mathematics, engineering-mathematics, digital-logic, computer-architecture, compiler-design, databases) with secrets.randbelow(6) returned index 1, Engineering Mathematics. runs[] sorted by (date, run) gave the most recent paper as {2026-10-31, run 11, unit 1, linear-algebra-matrices, Set 1 of 2 (second pass)}. Unit 1 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(linear-algebra-matrices) = 0 + 1) mod 5 = 1 -> Unit 2, eigenvalues-eigenvectors. Unit 2 already held 50 questions, exactly the cap, so this is Set 1 of 2 of its second pass. No override was used and no partial set was generated.",
+   "note": "Second pass over Unit 2. The 2026-10-27 paper of the unit was moved to archive/ as gate_em_mock_2_2026-10-27_run2.html with its content frozen."
   }
  ],
  "verified_pyqs": [],
@@ -11369,6 +11437,1072 @@
     "trap": "Forgetting the sign of the interchange and answering `2`, or applying the scaling factors in the wrong direction and answering `−72`."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each operation has a fixed effect on the determinant: an interchange multiplies it by <span class=\"mm\">−1</span>, scaling a row by <span class=\"mm\">c</span> multiplies it by <span class=\"mm\">c</span>, and a row replacement leaves it unchanged.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Collect the factors introduced on the way from <span class=\"mm\">A</span> to <span class=\"mm\">U</span>: <span class=\"mm\">(−1)</span> for the interchange, <span class=\"mm\">2</span> and <span class=\"mm\">3</span> for the two scalings.</li><li>Their product is <span class=\"mm\">(−1) × 2 × 3 = −6</span>, so <span class=\"mm\">det(U) = −6 · det(A)</span>.</li><li>Therefore <span class=\"mm\">det(A) = det(U) / (−6) = 12 / (−6) = −2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: −2.</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting the sign of the interchange and answering <span class=\"mm\">2</span>, or applying the scaling factors in the wrong direction and answering <span class=\"mm\">−72</span>.</p><p class=\"row\"><b>Takeaway.</b> Track the determinant multiplier of every operation as you perform it: <span class=\"mm\">−1</span> per swap, <span class=\"mm\">c</span> per scaling, <span class=\"mm\">1</span> per replacement.</p>"
+  },
+  {
+   "id": "EM-U2-Q51",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The matrix <span class=\"mm\">A = [[5, 2], [3, 4]]</span> has trace 9 and determinant 14. Its characteristic equation is",
+   "text": "The matrix <span class=\"mm\">A = [[5, 2], [3, 4]]</span> has trace 9 and determinant 14. Its characteristic equation is",
+   "options": [
+    "<span class=\"mm\">λ² − 9λ + 14 = 0</span>",
+    "<span class=\"mm\">λ² − 9λ + 20 = 0</span>",
+    "<span class=\"mm\">λ² + 9λ + 14 = 0</span>",
+    "<span class=\"mm\">λ² − 14λ + 9 = 0</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "For a <span class=\"mm\">2 × 2</span> matrix the characteristic polynomial is <span class=\"mm\">p(λ) = λ² − (tr A)λ + det A</span>, so the equation is fixed by the trace and the determinant alone &mdash; no expansion of <span class=\"mm\">det(λI − A)</span> is needed.",
+    "steps": [
+     "Trace: <span class=\"mm\">tr A = 5 + 4 = 9</span>, which is the sum of the eigenvalues.",
+     "Determinant: <span class=\"mm\">det A = 5·4 − 2·3 = 20 − 6 = 14</span>, which is their product.",
+     "Substituting into <span class=\"mm\">λ² − (tr A)λ + det A = 0</span> gives <span class=\"mm\">λ² − 9λ + 14 = 0</span>, whose roots are <span class=\"mm\">λ = 7</span> and <span class=\"mm\">λ = 2</span>.",
+     "Check with <span class=\"mm\">λ = 7</span>: <span class=\"mm\">49 − 63 + 14 = 0</span>."
+    ],
+    "final": "Option (A), <span class=\"mm\">λ² − 9λ + 14 = 0</span>.",
+    "trap": "Reading the determinant as <span class=\"mm\">ad = 20</span> and stopping there (option B), or as <span class=\"mm\">ad + bc = 26</span>. The off-diagonal product is subtracted, not added.",
+    "takeaway": "For any <span class=\"mm\">2 × 2</span> matrix: characteristic equation <span class=\"mm\">λ² − (tr A)λ + det A = 0</span>. Compute the trace and determinant first and the polynomial writes itself."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a <span class=\"mm\">2 × 2</span> matrix the characteristic polynomial is <span class=\"mm\">p(λ) = λ² − (tr A)λ + det A</span>, so the equation is fixed by the trace and the determinant alone &mdash; no expansion of <span class=\"mm\">det(λI − A)</span> is needed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Trace: <span class=\"mm\">tr A = 5 + 4 = 9</span>, which is the sum of the eigenvalues.</li><li>Determinant: <span class=\"mm\">det A = 5·4 − 2·3 = 20 − 6 = 14</span>, which is their product.</li><li>Substituting into <span class=\"mm\">λ² − (tr A)λ + det A = 0</span> gives <span class=\"mm\">λ² − 9λ + 14 = 0</span>, whose roots are <span class=\"mm\">λ = 7</span> and <span class=\"mm\">λ = 2</span>.</li><li>Check with <span class=\"mm\">λ = 7</span>: <span class=\"mm\">49 − 63 + 14 = 0</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A), <span class=\"mm\">λ² − 9λ + 14 = 0</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the determinant as <span class=\"mm\">ad = 20</span> and stopping there (option B), or as <span class=\"mm\">ad + bc = 26</span>. The off-diagonal product is subtracted, not added.</p><p class=\"row\"><b>Takeaway.</b> For any <span class=\"mm\">2 × 2</span> matrix: characteristic equation <span class=\"mm\">λ² − (tr A)λ + det A = 0</span>. Compute the trace and determinant first and the polynomial writes itself.</p>"
+  },
+  {
+   "id": "EM-U2-Q52",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> has eigenvalues <span class=\"mm\">2 + i</span> and <span class=\"mm\">2 − i</span>. Then",
+   "text": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> has eigenvalues <span class=\"mm\">2 + i</span> and <span class=\"mm\">2 − i</span>. Then",
+   "options": [
+    "tr(A) = 4 and det(A) = 3",
+    "tr(A) = 2 and det(A) = 5",
+    "tr(A) = 4 and det(A) = 5",
+    "tr(A) = 5 and det(A) = 4"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The trace is the sum of the eigenvalues and the determinant is their product, and both are real numbers. A real matrix with a non-real eigenvalue always has the conjugate as the other eigenvalue, so the pair <span class=\"mm\">a ± bi</span> produces real trace <span class=\"mm\">2a</span> and real determinant <span class=\"mm\">a² + b²</span>.",
+    "steps": [
+     "Sum: <span class=\"mm\">(2 + i) + (2 − i) = 4</span>, so <span class=\"mm\">tr A = 4</span>.",
+     "Product: <span class=\"mm\">(2 + i)(2 − i) = 4 − i² = 4 + 1 = 5</span>, so <span class=\"mm\">det A = 5</span>.",
+     "Both values are real, as they must be for a real matrix, and they fix the characteristic polynomial <span class=\"mm\">λ² − 4λ + 5</span>."
+    ],
+    "final": "Option (C): <span class=\"mm\">tr(A) = 4</span> and <span class=\"mm\">det(A) = 5</span>.",
+    "trap": "Multiplying the conjugates as <span class=\"mm\">4 − 1 = 3</span> by forgetting that <span class=\"mm\">i² = −1</span>, which produces option A. The determinant of a real matrix is real even when the eigenvalues are not.",
+    "takeaway": "For a conjugate pair <span class=\"mm\">a ± bi</span>: trace <span class=\"mm\">2a</span>, determinant <span class=\"mm\">a² + b²</span>. Both are real, and <span class=\"mm\">a² + b² > 0</span>, so such a matrix is always invertible."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The trace is the sum of the eigenvalues and the determinant is their product, and both are real numbers. A real matrix with a non-real eigenvalue always has the conjugate as the other eigenvalue, so the pair <span class=\"mm\">a ± bi</span> produces real trace <span class=\"mm\">2a</span> and real determinant <span class=\"mm\">a² + b²</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sum: <span class=\"mm\">(2 + i) + (2 − i) = 4</span>, so <span class=\"mm\">tr A = 4</span>.</li><li>Product: <span class=\"mm\">(2 + i)(2 − i) = 4 − i² = 4 + 1 = 5</span>, so <span class=\"mm\">det A = 5</span>.</li><li>Both values are real, as they must be for a real matrix, and they fix the characteristic polynomial <span class=\"mm\">λ² − 4λ + 5</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C): <span class=\"mm\">tr(A) = 4</span> and <span class=\"mm\">det(A) = 5</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying the conjugates as <span class=\"mm\">4 − 1 = 3</span> by forgetting that <span class=\"mm\">i² = −1</span>, which produces option A. The determinant of a real matrix is real even when the eigenvalues are not.</p><p class=\"row\"><b>Takeaway.</b> For a conjugate pair <span class=\"mm\">a ± bi</span>: trace <span class=\"mm\">2a</span>, determinant <span class=\"mm\">a² + b²</span>. Both are real, and <span class=\"mm\">a² + b² > 0</span>, so such a matrix is always invertible.</p>"
+  },
+  {
+   "id": "EM-U2-Q53",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">3 × 3</span> matrix <span class=\"mm\">A</span> has three distinct eigenvalues 1, 2 and 5. Which statement is certainly TRUE?",
+   "text": "A real <span class=\"mm\">3 × 3</span> matrix <span class=\"mm\">A</span> has three distinct eigenvalues 1, 2 and 5. Which statement is certainly TRUE?",
+   "options": [
+    "A is symmetric.",
+    "A is diagonalizable over <span class=\"mm\">ℝ</span>: some invertible real <span class=\"mm\">P</span> gives <span class=\"mm\">P⁻¹AP = diag(1, 2, 5)</span>.",
+    "A is singular.",
+    "A has only two linearly independent eigenvectors."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Eigenvectors belonging to distinct eigenvalues are linearly independent. With <span class=\"mm\">n</span> distinct eigenvalues a real <span class=\"mm\">n × n</span> matrix therefore owns <span class=\"mm\">n</span> independent eigenvectors, which is exactly the condition for diagonalizability.",
+    "steps": [
+     "Distinct eigenvalues give linearly independent eigenvectors: <span class=\"mm\">x₁, x₂, x₃</span> for <span class=\"mm\">λ = 1, 2, 5</span> are independent.",
+     "Three independent eigenvectors in <span class=\"mm\">ℝ³</span> form a basis, so <span class=\"mm\">P = [x₁ x₂ x₃]</span> is invertible and <span class=\"mm\">P⁻¹AP = diag(1, 2, 5)</span>.",
+     "The other options are not forced: <span class=\"mm\">A</span> need not be symmetric (only real matrices with an orthonormal eigenbasis are), and <span class=\"mm\">det A = 1·2·5 = 10 ≠ 0</span>, so <span class=\"mm\">A</span> is certainly not singular."
+    ],
+    "final": "Option (B): distinct real eigenvalues make <span class=\"mm\">A</span> diagonalizable over <span class=\"mm\">ℝ</span>.",
+    "trap": "Believing that real eigenvalues are enough. A repeated eigenvalue with a short eigenspace destroys diagonalizability; distinctness is the hypothesis that rules that out.",
+    "takeaway": "Distinct eigenvalues ⇒ diagonalizable. The converse fails, so a repeated eigenvalue only means the eigenspace dimensions must be checked."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Eigenvectors belonging to distinct eigenvalues are linearly independent. With <span class=\"mm\">n</span> distinct eigenvalues a real <span class=\"mm\">n × n</span> matrix therefore owns <span class=\"mm\">n</span> independent eigenvectors, which is exactly the condition for diagonalizability.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Distinct eigenvalues give linearly independent eigenvectors: <span class=\"mm\">x₁, x₂, x₃</span> for <span class=\"mm\">λ = 1, 2, 5</span> are independent.</li><li>Three independent eigenvectors in <span class=\"mm\">ℝ³</span> form a basis, so <span class=\"mm\">P = [x₁ x₂ x₃]</span> is invertible and <span class=\"mm\">P⁻¹AP = diag(1, 2, 5)</span>.</li><li>The other options are not forced: <span class=\"mm\">A</span> need not be symmetric (only real matrices with an orthonormal eigenbasis are), and <span class=\"mm\">det A = 1·2·5 = 10 ≠ 0</span>, so <span class=\"mm\">A</span> is certainly not singular.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B): distinct real eigenvalues make <span class=\"mm\">A</span> diagonalizable over <span class=\"mm\">ℝ</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Believing that real eigenvalues are enough. A repeated eigenvalue with a short eigenspace destroys diagonalizability; distinctness is the hypothesis that rules that out.</p><p class=\"row\"><b>Takeaway.</b> Distinct eigenvalues ⇒ diagonalizable. The converse fails, so a repeated eigenvalue only means the eigenspace dimensions must be checked.</p>"
+  },
+  {
+   "id": "EM-U2-Q54",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The characteristic polynomial of a <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> is <span class=\"mm\">p(λ) = λ³ − 4λ² + λ + 6</span>. The product of the three eigenvalues of <span class=\"mm\">A</span>, counted with algebraic multiplicity, is ____.",
+   "text": "The characteristic polynomial of a <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> is <span class=\"mm\">p(λ) = λ³ − 4λ² + λ + 6</span>. The product of the three eigenvalues of <span class=\"mm\">A</span>, counted with algebraic multiplicity, is ____.",
+   "options": [],
+   "answer": -6,
+   "answer_display": "-6",
+   "solution": {
+    "concept": "For an <span class=\"mm\">n × n</span> matrix <span class=\"mm\">p(λ) = λⁿ − (tr A)λⁿ⁻¹ + … + (−1)ⁿ det A</span>, so the constant term carries the determinant, and the determinant is the product of the eigenvalues.",
+    "steps": [
+     "The constant term of <span class=\"mm\">p</span> is 6, and for <span class=\"mm\">n = 3</span> it equals <span class=\"mm\">−det A</span>, so <span class=\"mm\">det A = −6</span>.",
+     "Independent check by factoring: <span class=\"mm\">p(3) = 27 − 36 + 3 + 6 = 0</span>, so <span class=\"mm\">λ − 3</span> is a factor, and <span class=\"mm\">λ³ − 4λ² + λ + 6 = (λ − 3)(λ − 2)(λ + 1)</span>.",
+     "The product of the roots is <span class=\"mm\">3 · 2 · (−1) = −6</span>, matching <span class=\"mm\">det A</span>."
+    ],
+    "final": "−6",
+    "trap": "Answering 6 by taking the constant term as the determinant. The sign alternates with the size of the matrix: for <span class=\"mm\">n = 3</span> the constant term is <span class=\"mm\">−det A</span>.",
+    "takeaway": "The constant term of <span class=\"mm\">p(λ) = det(λI − A)</span> is <span class=\"mm\">(−1)ⁿ det A</span>. Check the sign by testing one root when you have it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For an <span class=\"mm\">n × n</span> matrix <span class=\"mm\">p(λ) = λⁿ − (tr A)λⁿ⁻¹ + … + (−1)ⁿ det A</span>, so the constant term carries the determinant, and the determinant is the product of the eigenvalues.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The constant term of <span class=\"mm\">p</span> is 6, and for <span class=\"mm\">n = 3</span> it equals <span class=\"mm\">−det A</span>, so <span class=\"mm\">det A = −6</span>.</li><li>Independent check by factoring: <span class=\"mm\">p(3) = 27 − 36 + 3 + 6 = 0</span>, so <span class=\"mm\">λ − 3</span> is a factor, and <span class=\"mm\">λ³ − 4λ² + λ + 6 = (λ − 3)(λ − 2)(λ + 1)</span>.</li><li>The product of the roots is <span class=\"mm\">3 · 2 · (−1) = −6</span>, matching <span class=\"mm\">det A</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: −6</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6 by taking the constant term as the determinant. The sign alternates with the size of the matrix: for <span class=\"mm\">n = 3</span> the constant term is <span class=\"mm\">−det A</span>.</p><p class=\"row\"><b>Takeaway.</b> The constant term of <span class=\"mm\">p(λ) = det(λI − A)</span> is <span class=\"mm\">(−1)ⁿ det A</span>. Check the sign by testing one root when you have it.</p>"
+  },
+  {
+   "id": "EM-U2-Q55",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "cayley-hamilton-theorem",
+   "subtopic": "cayley-hamilton-theorem",
+   "subtopic_label": "Cayley–Hamilton theorem",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">A = [[4, 3], [1, 2]]</span>, the Cayley–Hamilton theorem gives",
+   "text": "For <span class=\"mm\">A = [[4, 3], [1, 2]]</span>, the Cayley–Hamilton theorem gives",
+   "options": [
+    "<span class=\"mm\">A² = 6A + 5I</span>",
+    "<span class=\"mm\">A² = 5A − 6I</span>",
+    "<span class=\"mm\">A² = 6I − 5A</span>",
+    "<span class=\"mm\">A² = 6A − 5I</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Cayley–Hamilton: a matrix satisfies its own characteristic equation. For a <span class=\"mm\">2 × 2</span> matrix that equation is <span class=\"mm\">A² − (tr A)A + (det A)I = 0</span>, which rearranges into a formula for <span class=\"mm\">A²</span>.",
+    "steps": [
+     "Trace: <span class=\"mm\">tr A = 4 + 2 = 6</span>; determinant: <span class=\"mm\">det A = 8 − 3 = 5</span>.",
+     "Characteristic equation: <span class=\"mm\">λ² − 6λ + 5 = 0</span>, so <span class=\"mm\">A² − 6A + 5I = 0</span>.",
+     "Therefore <span class=\"mm\">A² = 6A − 5I</span>. Check: <span class=\"mm\">A² = [[19, 18], [6, 7]]</span> and <span class=\"mm\">6A − 5I = [[24 − 5, 18], [6, 12 − 5]] = [[19, 18], [6, 7]]</span>."
+    ],
+    "final": "Option (D): <span class=\"mm\">A² = 6A − 5I</span>.",
+    "trap": "Swapping the signs of the two terms, which gives <span class=\"mm\">A² = 6A + 5I</span>, or moving the constant to the wrong side and getting <span class=\"mm\">A² = 6I − 5A</span>.",
+    "takeaway": "Memorise the rearrangement <span class=\"mm\">A² = (tr A)A − (det A)I</span> for <span class=\"mm\">2 × 2</span> matrices; it saves computing <span class=\"mm\">A²</span> by hand."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cayley–Hamilton: a matrix satisfies its own characteristic equation. For a <span class=\"mm\">2 × 2</span> matrix that equation is <span class=\"mm\">A² − (tr A)A + (det A)I = 0</span>, which rearranges into a formula for <span class=\"mm\">A²</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Trace: <span class=\"mm\">tr A = 4 + 2 = 6</span>; determinant: <span class=\"mm\">det A = 8 − 3 = 5</span>.</li><li>Characteristic equation: <span class=\"mm\">λ² − 6λ + 5 = 0</span>, so <span class=\"mm\">A² − 6A + 5I = 0</span>.</li><li>Therefore <span class=\"mm\">A² = 6A − 5I</span>. Check: <span class=\"mm\">A² = [[19, 18], [6, 7]]</span> and <span class=\"mm\">6A − 5I = [[24 − 5, 18], [6, 12 − 5]] = [[19, 18], [6, 7]]</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D): <span class=\"mm\">A² = 6A − 5I</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Swapping the signs of the two terms, which gives <span class=\"mm\">A² = 6A + 5I</span>, or moving the constant to the wrong side and getting <span class=\"mm\">A² = 6I − 5A</span>.</p><p class=\"row\"><b>Takeaway.</b> Memorise the rearrangement <span class=\"mm\">A² = (tr A)A − (det A)I</span> for <span class=\"mm\">2 × 2</span> matrices; it saves computing <span class=\"mm\">A²</span> by hand.</p>"
+  },
+  {
+   "id": "EM-U2-Q56",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 1, −1 and 2. Then <span class=\"mm\">det(A² + 2A)</span> equals",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 1, −1 and 2. Then <span class=\"mm\">det(A² + 2A)</span> equals",
+   "options": [
+    "−24",
+    "24",
+    "0",
+    "−8"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Spectral mapping: if <span class=\"mm\">λ</span> is an eigenvalue of <span class=\"mm\">A</span> then <span class=\"mm\">p(λ)</span> is an eigenvalue of <span class=\"mm\">p(A)</span> for every polynomial <span class=\"mm\">p</span>. A polynomial in a matrix therefore has its determinant read off from the transformed eigenvalues.",
+    "steps": [
+     "Apply <span class=\"mm\">p(t) = t² + 2t</span> to each eigenvalue: <span class=\"mm\">p(1) = 3</span>, <span class=\"mm\">p(−1) = −1</span>, <span class=\"mm\">p(2) = 8</span>.",
+     "The eigenvalues of <span class=\"mm\">A² + 2A</span> are 3, −1 and 8.",
+     "Its determinant is their product: <span class=\"mm\">3 · (−1) · 8 = −24</span>."
+    ],
+    "final": "Option (A): <span class=\"mm\">−24</span>.",
+    "trap": "Computing <span class=\"mm\">det(A² + 2A)</span> as <span class=\"mm\">(det A)² + 2 det A</span> by treating the determinant as linear, or adding the transformed eigenvalues instead of multiplying them.",
+    "takeaway": "Polynomials move through to the eigenvalues; the determinant then multiplies them. Only linear operations on <span class=\"mm\">A</span> itself, not on its determinant, behave additively."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Spectral mapping: if <span class=\"mm\">λ</span> is an eigenvalue of <span class=\"mm\">A</span> then <span class=\"mm\">p(λ)</span> is an eigenvalue of <span class=\"mm\">p(A)</span> for every polynomial <span class=\"mm\">p</span>. A polynomial in a matrix therefore has its determinant read off from the transformed eigenvalues.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Apply <span class=\"mm\">p(t) = t² + 2t</span> to each eigenvalue: <span class=\"mm\">p(1) = 3</span>, <span class=\"mm\">p(−1) = −1</span>, <span class=\"mm\">p(2) = 8</span>.</li><li>The eigenvalues of <span class=\"mm\">A² + 2A</span> are 3, −1 and 8.</li><li>Its determinant is their product: <span class=\"mm\">3 · (−1) · 8 = −24</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A): <span class=\"mm\">−24</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Computing <span class=\"mm\">det(A² + 2A)</span> as <span class=\"mm\">(det A)² + 2 det A</span> by treating the determinant as linear, or adding the transformed eigenvalues instead of multiplying them.</p><p class=\"row\"><b>Takeaway.</b> Polynomials move through to the eigenvalues; the determinant then multiplies them. Only linear operations on <span class=\"mm\">A</span> itself, not on its determinant, behave additively.</p>"
+  },
+  {
+   "id": "EM-U2-Q57",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">A = [[1, 2, 0], [0, 1, 0], [0, 0, 3]]</span>. Which of the following statements are TRUE?",
+   "text": "Let <span class=\"mm\">A = [[1, 2, 0], [0, 1, 0], [0, 0, 3]]</span>. Which of the following statements are TRUE?",
+   "options": [
+    "The eigenvalues of <span class=\"mm\">A</span> are 1, 1 and 3.",
+    "The dimension of the eigenspace of <span class=\"mm\">A</span> for <span class=\"mm\">λ = 1</span> is 2.",
+    "<span class=\"mm\">A</span> is not diagonalizable over <span class=\"mm\">ℝ</span>.",
+    "<span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span> because it is upper triangular."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "A triangular matrix displays its eigenvalues on the diagonal, but triangular form says nothing about diagonalizability. That needs the geometric multiplicity of every repeated eigenvalue to equal its algebraic multiplicity, i.e. <span class=\"mm\">nullity(A − λI) = algebraic multiplicity</span>.",
+    "steps": [
+     "Upper triangular, so the eigenvalues are the diagonal entries 1, 1, 3 &mdash; statement A is TRUE.",
+     "For <span class=\"mm\">λ = 1</span>: <span class=\"mm\">A − I = [[0, 2, 0], [0, 0, 0], [0, 0, 2]]</span>, which has two non-zero rows, so <span class=\"mm\">rank(A − I) = 2</span> and <span class=\"mm\">nullity = 3 − 2 = 1</span>.",
+     "The algebraic multiplicity of <span class=\"mm\">λ = 1</span> is 2 but its geometric multiplicity is 1, so the eigenspaces cannot supply three independent eigenvectors &mdash; statement B is FALSE and statement C is TRUE.",
+     "Upper triangularity only reveals the eigenvalues; the <span class=\"mm\">(1, 2)</span> entry 2 blocks the eigenspace &mdash; statement D is FALSE."
+    ],
+    "final": "Statements (A) and (C).",
+    "trap": "Treating a triangular matrix as automatically diagonalizable. Diagonal matrices are triangular, but the converse fails as soon as a repeated diagonal entry has an off-diagonal coupling.",
+    "takeaway": "For a repeated eigenvalue compute <span class=\"mm\">nullity(A − λI)</span> every time. Triangular form answers the eigenvalue question and nothing else."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A triangular matrix displays its eigenvalues on the diagonal, but triangular form says nothing about diagonalizability. That needs the geometric multiplicity of every repeated eigenvalue to equal its algebraic multiplicity, i.e. <span class=\"mm\">nullity(A − λI) = algebraic multiplicity</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Upper triangular, so the eigenvalues are the diagonal entries 1, 1, 3 &mdash; statement A is TRUE.</li><li>For <span class=\"mm\">λ = 1</span>: <span class=\"mm\">A − I = [[0, 2, 0], [0, 0, 0], [0, 0, 2]]</span>, which has two non-zero rows, so <span class=\"mm\">rank(A − I) = 2</span> and <span class=\"mm\">nullity = 3 − 2 = 1</span>.</li><li>The algebraic multiplicity of <span class=\"mm\">λ = 1</span> is 2 but its geometric multiplicity is 1, so the eigenspaces cannot supply three independent eigenvectors &mdash; statement B is FALSE and statement C is TRUE.</li><li>Upper triangularity only reveals the eigenvalues; the <span class=\"mm\">(1, 2)</span> entry 2 blocks the eigenspace &mdash; statement D is FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Statements (A) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Treating a triangular matrix as automatically diagonalizable. Diagonal matrices are triangular, but the converse fails as soon as a repeated diagonal entry has an off-diagonal coupling.</p><p class=\"row\"><b>Takeaway.</b> For a repeated eigenvalue compute <span class=\"mm\">nullity(A − λI)</span> every time. Triangular form answers the eigenvalue question and nothing else.</p>"
+  },
+  {
+   "id": "EM-U2-Q58",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ² + 4λ + 13</span>. Which statement is TRUE?",
+   "text": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ² + 4λ + 13</span>. Which statement is TRUE?",
+   "options": [
+    "The eigenvalues are <span class=\"mm\">−2 + 3i</span> and <span class=\"mm\">−2 − 3i</span>, so <span class=\"mm\">A</span> is not diagonalizable over <span class=\"mm\">ℝ</span>.",
+    "The eigenvalues are <span class=\"mm\">2 + 3i</span> and <span class=\"mm\">2 − 3i</span>.",
+    "The eigenvalues are <span class=\"mm\">−2</span> and <span class=\"mm\">−2</span>.",
+    "<span class=\"mm\">A</span> has no eigenvalues at all, even over <span class=\"mm\">ℂ</span>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Every real square matrix has <span class=\"mm\">n</span> eigenvalues over <span class=\"mm\">ℂ</span>, counted with multiplicity, and a real characteristic polynomial has non-real roots in conjugate pairs. A real matrix with a non-real pair has no real eigenvector, so it cannot be diagonalized over <span class=\"mm\">ℝ</span>.",
+    "steps": [
+     "Discriminant: <span class=\"mm\">16 − 4·13 = −36 = (6i)²</span>.",
+     "Roots: <span class=\"mm\">λ = (−4 ± 6i)/2 = −2 ± 3i</span>, a conjugate pair.",
+     "Since no eigenvalue is real, <span class=\"mm\">A</span> has no real eigenvector and no real diagonal form; over <span class=\"mm\">ℂ</span> the two distinct eigenvalues do diagonalize it.",
+     "Consistency check: <span class=\"mm\">tr A = −4</span> and <span class=\"mm\">det A = (−2)² + 3² = 13</span>, which reproduce <span class=\"mm\">λ² + 4λ + 13</span>."
+    ],
+    "final": "Option (A): <span class=\"mm\">−2 ± 3i</span>, not diagonalizable over <span class=\"mm\">ℝ</span>.",
+    "trap": "Dividing only the discriminant's square root by 2 and leaving <span class=\"mm\">−4/2</span> as <span class=\"mm\">+2</span>, which produces the wrong real part <span class=\"mm\">2 ± 3i</span>.",
+    "takeaway": "A negative discriminant means a conjugate pair, and the real part is always <span class=\"mm\">−b/2a</span>. A real matrix with such a pair is diagonalizable over <span class=\"mm\">ℂ</span> but never over <span class=\"mm\">ℝ</span>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every real square matrix has <span class=\"mm\">n</span> eigenvalues over <span class=\"mm\">ℂ</span>, counted with multiplicity, and a real characteristic polynomial has non-real roots in conjugate pairs. A real matrix with a non-real pair has no real eigenvector, so it cannot be diagonalized over <span class=\"mm\">ℝ</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Discriminant: <span class=\"mm\">16 − 4·13 = −36 = (6i)²</span>.</li><li>Roots: <span class=\"mm\">λ = (−4 ± 6i)/2 = −2 ± 3i</span>, a conjugate pair.</li><li>Since no eigenvalue is real, <span class=\"mm\">A</span> has no real eigenvector and no real diagonal form; over <span class=\"mm\">ℂ</span> the two distinct eigenvalues do diagonalize it.</li><li>Consistency check: <span class=\"mm\">tr A = −4</span> and <span class=\"mm\">det A = (−2)² + 3² = 13</span>, which reproduce <span class=\"mm\">λ² + 4λ + 13</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A): <span class=\"mm\">−2 ± 3i</span>, not diagonalizable over <span class=\"mm\">ℝ</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Dividing only the discriminant's square root by 2 and leaving <span class=\"mm\">−4/2</span> as <span class=\"mm\">+2</span>, which produces the wrong real part <span class=\"mm\">2 ± 3i</span>.</p><p class=\"row\"><b>Takeaway.</b> A negative discriminant means a conjugate pair, and the real part is always <span class=\"mm\">−b/2a</span>. A real matrix with such a pair is diagonalizable over <span class=\"mm\">ℂ</span> but never over <span class=\"mm\">ℝ</span>.</p>"
+  },
+  {
+   "id": "EM-U2-Q59",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "cayley-hamilton-theorem",
+   "subtopic": "cayley-hamilton-theorem",
+   "subtopic_label": "Cayley–Hamilton theorem",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">2 × 2</span> real matrix <span class=\"mm\">A</span> has <span class=\"mm\">tr(A) = 4</span> and <span class=\"mm\">det(A) = 3</span>. Using the Cayley–Hamilton theorem, <span class=\"mm\">A³</span> equals",
+   "text": "A <span class=\"mm\">2 × 2</span> real matrix <span class=\"mm\">A</span> has <span class=\"mm\">tr(A) = 4</span> and <span class=\"mm\">det(A) = 3</span>. Using the Cayley–Hamilton theorem, <span class=\"mm\">A³</span> equals",
+   "options": [
+    "<span class=\"mm\">13A + 12I</span>",
+    "<span class=\"mm\">12A − 13I</span>",
+    "<span class=\"mm\">13A − 12I</span>",
+    "<span class=\"mm\">16A − 12I</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Cayley–Hamilton reduces every power of <span class=\"mm\">A</span> to a linear combination of <span class=\"mm\">A</span> and <span class=\"mm\">I</span>. Reducing <span class=\"mm\">A²</span> first and then multiplying by <span class=\"mm\">A</span> gives the next power without any matrix multiplication of numbers.",
+    "steps": [
+     "Characteristic equation: <span class=\"mm\">A² − 4A + 3I = 0</span>, so <span class=\"mm\">A² = 4A − 3I</span>.",
+     "Multiply by <span class=\"mm\">A</span>: <span class=\"mm\">A³ = 4A² − 3A</span>.",
+     "Substitute <span class=\"mm\">A²</span>: <span class=\"mm\">A³ = 4(4A − 3I) − 3A = 16A − 12I − 3A = 13A − 12I</span>.",
+     "Sanity check with a matrix having these invariants, <span class=\"mm\">A = [[3, 0], [0, 1]]</span>: <span class=\"mm\">A³ = [[27, 0], [0, 1]]</span> and <span class=\"mm\">13A − 12I = [[39 − 12, 0], [0, 13 − 12]] = [[27, 0], [0, 1]]</span>."
+    ],
+    "final": "Option (C): <span class=\"mm\">A³ = 13A − 12I</span>.",
+    "trap": "Writing <span class=\"mm\">A³ = 4A² + 3A</span> by dropping the sign of the constant term, or stopping at <span class=\"mm\">16A − 12I</span> after forgetting to subtract <span class=\"mm\">3A</span>.",
+    "takeaway": "For powers beyond the characteristic degree, reduce and multiply: <span class=\"mm\">A² = (tr A)A − (det A)I</span>, then <span class=\"mm\">A³ = A·A²</span> with <span class=\"mm\">A²</span> already replaced."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cayley–Hamilton reduces every power of <span class=\"mm\">A</span> to a linear combination of <span class=\"mm\">A</span> and <span class=\"mm\">I</span>. Reducing <span class=\"mm\">A²</span> first and then multiplying by <span class=\"mm\">A</span> gives the next power without any matrix multiplication of numbers.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Characteristic equation: <span class=\"mm\">A² − 4A + 3I = 0</span>, so <span class=\"mm\">A² = 4A − 3I</span>.</li><li>Multiply by <span class=\"mm\">A</span>: <span class=\"mm\">A³ = 4A² − 3A</span>.</li><li>Substitute <span class=\"mm\">A²</span>: <span class=\"mm\">A³ = 4(4A − 3I) − 3A = 16A − 12I − 3A = 13A − 12I</span>.</li><li>Sanity check with a matrix having these invariants, <span class=\"mm\">A = [[3, 0], [0, 1]]</span>: <span class=\"mm\">A³ = [[27, 0], [0, 1]]</span> and <span class=\"mm\">13A − 12I = [[39 − 12, 0], [0, 13 − 12]] = [[27, 0], [0, 1]]</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C): <span class=\"mm\">A³ = 13A − 12I</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Writing <span class=\"mm\">A³ = 4A² + 3A</span> by dropping the sign of the constant term, or stopping at <span class=\"mm\">16A − 12I</span> after forgetting to subtract <span class=\"mm\">3A</span>.</p><p class=\"row\"><b>Takeaway.</b> For powers beyond the characteristic degree, reduce and multiply: <span class=\"mm\">A² = (tr A)A − (det A)I</span>, then <span class=\"mm\">A³ = A·A²</span> with <span class=\"mm\">A²</span> already replaced.</p>"
+  },
+  {
+   "id": "EM-U2-Q60",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 2, −3 and 4. The value of <span class=\"mm\">tr(A²)</span> is ____.",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 2, −3 and 4. The value of <span class=\"mm\">tr(A²)</span> is ____.",
+   "options": [],
+   "answer": 29,
+   "answer_display": "29",
+   "solution": {
+    "concept": "Spectral mapping turns powers of <span class=\"mm\">A</span> into powers of its eigenvalues, and the trace of a matrix is the sum of its eigenvalues, so <span class=\"mm\">tr(Aᵏ) = Σ λᵢᵏ</span>.",
+    "steps": [
+     "The eigenvalues of <span class=\"mm\">A²</span> are <span class=\"mm\">2² = 4</span>, <span class=\"mm\">(−3)² = 9</span> and <span class=\"mm\">4² = 16</span>.",
+     "The trace of <span class=\"mm\">A²</span> is their sum: <span class=\"mm\">4 + 9 + 16 = 29</span>.",
+     "Cross-check through the invariants: <span class=\"mm\">tr(A²) = (tr A)² − 2e₂</span> with <span class=\"mm\">tr A = 3</span> and <span class=\"mm\">e₂ = 2·(−3) + 2·4 + (−3)·4 = −10</span>, giving <span class=\"mm\">9 + 20 = 29</span>."
+    ],
+    "final": "29",
+    "trap": "Squaring the trace, <span class=\"mm\">3² = 9</span>, instead of squaring each eigenvalue and then summing. The trace is additive, not multiplicative.",
+    "takeaway": "For any polynomial <span class=\"mm\">p</span>, <span class=\"mm\">tr(p(A)) = Σ p(λᵢ)</span>. Squares lose the sign of an eigenvalue, which is why <span class=\"mm\">−3</span> contributes 9 here."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Spectral mapping turns powers of <span class=\"mm\">A</span> into powers of its eigenvalues, and the trace of a matrix is the sum of its eigenvalues, so <span class=\"mm\">tr(Aᵏ) = Σ λᵢᵏ</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The eigenvalues of <span class=\"mm\">A²</span> are <span class=\"mm\">2² = 4</span>, <span class=\"mm\">(−3)² = 9</span> and <span class=\"mm\">4² = 16</span>.</li><li>The trace of <span class=\"mm\">A²</span> is their sum: <span class=\"mm\">4 + 9 + 16 = 29</span>.</li><li>Cross-check through the invariants: <span class=\"mm\">tr(A²) = (tr A)² − 2e₂</span> with <span class=\"mm\">tr A = 3</span> and <span class=\"mm\">e₂ = 2·(−3) + 2·4 + (−3)·4 = −10</span>, giving <span class=\"mm\">9 + 20 = 29</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 29</span></p><p class=\"row\"><b>Common misconception.</b> Squaring the trace, <span class=\"mm\">3² = 9</span>, instead of squaring each eigenvalue and then summing. The trace is additive, not multiplicative.</p><p class=\"row\"><b>Takeaway.</b> For any polynomial <span class=\"mm\">p</span>, <span class=\"mm\">tr(p(A)) = Σ p(λᵢ)</span>. Squares lose the sign of an eigenvalue, which is why <span class=\"mm\">−3</span> contributes 9 here.</p>"
+  },
+  {
+   "id": "EM-U2-Q61",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">A² = A</span>. Which statement is TRUE?",
+   "text": "A real <span class=\"mm\">2 × 2</span> matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">A² = A</span>. Which statement is TRUE?",
+   "options": [
+    "<span class=\"mm\">A</span> must be the identity matrix or the zero matrix.",
+    "<span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span> and its eigenvalues are only 0 and 1.",
+    "<span class=\"mm\">A</span> has 2 as an eigenvalue.",
+    "<span class=\"mm\">A</span> is not diagonalizable unless <span class=\"mm\">A = I</span>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "If a polynomial <span class=\"mm\">p</span> annihilates <span class=\"mm\">A</span> then the minimal polynomial of <span class=\"mm\">A</span> divides <span class=\"mm\">p</span>. Here <span class=\"mm\">A² − A = 0</span>, i.e. <span class=\"mm\">A(A − I) = 0</span>, so the minimal polynomial divides <span class=\"mm\">λ(λ − 1)</span>, whose roots are distinct &mdash; and distinct roots of the minimal polynomial are exactly what diagonalizability means.",
+    "steps": [
+     "Every eigenvalue of <span class=\"mm\">A</span> satisfies <span class=\"mm\">λ² = λ</span>, so <span class=\"mm\">λ ∈ {0, 1}</span>.",
+     "The minimal polynomial divides <span class=\"mm\">λ(λ − 1)</span> and has no repeated factor, so <span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span> with 0 and 1 as its only possible eigenvalues.",
+     "<span class=\"mm\">A</span> need not be <span class=\"mm\">I</span> or <span class=\"mm\">0</span>: <span class=\"mm\">A = [[1, 0], [0, 0]]</span> satisfies <span class=\"mm\">A² = A</span> and is neither.",
+     "No eigenvalue can be 2, since <span class=\"mm\">2² ≠ 2</span>."
+    ],
+    "final": "Option (B).",
+    "trap": "Concluding <span class=\"mm\">A = I</span> or <span class=\"mm\">0</span> from <span class=\"mm\">A² = A</span>, which confuses the scalar equation <span class=\"mm\">x² = x</span> with the matrix equation: a projection onto a line is a counterexample.",
+    "takeaway": "An annihilating polynomial with distinct roots proves diagonalizability outright. Check the roots of the minimal polynomial before hunting for eigenvectors."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> If a polynomial <span class=\"mm\">p</span> annihilates <span class=\"mm\">A</span> then the minimal polynomial of <span class=\"mm\">A</span> divides <span class=\"mm\">p</span>. Here <span class=\"mm\">A² − A = 0</span>, i.e. <span class=\"mm\">A(A − I) = 0</span>, so the minimal polynomial divides <span class=\"mm\">λ(λ − 1)</span>, whose roots are distinct &mdash; and distinct roots of the minimal polynomial are exactly what diagonalizability means.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every eigenvalue of <span class=\"mm\">A</span> satisfies <span class=\"mm\">λ² = λ</span>, so <span class=\"mm\">λ ∈ {0, 1}</span>.</li><li>The minimal polynomial divides <span class=\"mm\">λ(λ − 1)</span> and has no repeated factor, so <span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span> with 0 and 1 as its only possible eigenvalues.</li><li><span class=\"mm\">A</span> need not be <span class=\"mm\">I</span> or <span class=\"mm\">0</span>: <span class=\"mm\">A = [[1, 0], [0, 0]]</span> satisfies <span class=\"mm\">A² = A</span> and is neither.</li><li>No eigenvalue can be 2, since <span class=\"mm\">2² ≠ 2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Concluding <span class=\"mm\">A = I</span> or <span class=\"mm\">0</span> from <span class=\"mm\">A² = A</span>, which confuses the scalar equation <span class=\"mm\">x² = x</span> with the matrix equation: a projection onto a line is a counterexample.</p><p class=\"row\"><b>Takeaway.</b> An annihilating polynomial with distinct roots proves diagonalizability outright. Check the roots of the minimal polynomial before hunting for eigenvectors.</p>"
+  },
+  {
+   "id": "EM-U2-Q62",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues −1, 2 and 5. The value of <span class=\"mm\">tr(A) + det(A)</span> is",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues −1, 2 and 5. The value of <span class=\"mm\">tr(A) + det(A)</span> is",
+   "options": [
+    "4",
+    "16",
+    "10",
+    "−4"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Two invariants read the eigenvalues off in one step: the trace is their sum and the determinant is their product.",
+    "steps": [
+     "Sum: <span class=\"mm\">(−1) + 2 + 5 = 6</span>, so <span class=\"mm\">tr A = 6</span>.",
+     "Product: <span class=\"mm\">(−1)·2·5 = −10</span>, so <span class=\"mm\">det A = −10</span>.",
+     "<span class=\"mm\">tr A + det A = 6 + (−10) = −4</span>."
+    ],
+    "final": "Option (D): <span class=\"mm\">−4</span>.",
+    "trap": "Adding the absolute value of the determinant, <span class=\"mm\">6 + 10 = 16</span>, or forgetting that a single negative eigenvalue makes the product negative.",
+    "takeaway": "With an odd number of negative eigenvalues the determinant is negative; the trace keeps the sign of each term, so it can be small even when the determinant is large."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two invariants read the eigenvalues off in one step: the trace is their sum and the determinant is their product.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sum: <span class=\"mm\">(−1) + 2 + 5 = 6</span>, so <span class=\"mm\">tr A = 6</span>.</li><li>Product: <span class=\"mm\">(−1)·2·5 = −10</span>, so <span class=\"mm\">det A = −10</span>.</li><li><span class=\"mm\">tr A + det A = 6 + (−10) = −4</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D): <span class=\"mm\">−4</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Adding the absolute value of the determinant, <span class=\"mm\">6 + 10 = 16</span>, or forgetting that a single negative eigenvalue makes the product negative.</p><p class=\"row\"><b>Takeaway.</b> With an odd number of negative eigenvalues the determinant is negative; the trace keeps the sign of each term, so it can be small even when the determinant is large.</p>"
+  },
+  {
+   "id": "EM-U2-Q63",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">tr(A) = 5</span>, <span class=\"mm\">tr(A²) = 15</span> and <span class=\"mm\">tr(A³) = 35</span>. Then <span class=\"mm\">det(A)</span> equals",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">tr(A) = 5</span>, <span class=\"mm\">tr(A²) = 15</span> and <span class=\"mm\">tr(A³) = 35</span>. Then <span class=\"mm\">det(A)</span> equals",
+   "options": [
+    "5",
+    "−5",
+    "15",
+    "3"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Newton's identities convert traces of powers into the elementary symmetric functions of the eigenvalues. With <span class=\"mm\">p₁, p₂, p₃</span> the traces of <span class=\"mm\">A, A², A³</span> and <span class=\"mm\">e₁, e₂, e₃</span> the coefficients of the characteristic polynomial: <span class=\"mm\">p₂ = e₁p₁ − 2e₂</span> and <span class=\"mm\">p₃ = e₁p₂ − e₂p₁ + 3e₃</span>, while <span class=\"mm\">det A = e₃</span>.",
+    "steps": [
+     "Here <span class=\"mm\">e₁ = p₁ = 5</span>.",
+     "<span class=\"mm\">p₂ = e₁p₁ − 2e₂</span> gives <span class=\"mm\">15 = 25 − 2e₂</span>, so <span class=\"mm\">e₂ = 5</span>.",
+     "<span class=\"mm\">p₃ = e₁p₂ − e₂p₁ + 3e₃</span> gives <span class=\"mm\">35 = 75 − 25 + 3e₃</span>, so <span class=\"mm\">3e₃ = −15</span> and <span class=\"mm\">e₃ = −5</span>.",
+     "Therefore <span class=\"mm\">det A = e₃ = −5</span>, with characteristic polynomial <span class=\"mm\">λ³ − 5λ² + 5λ + 5</span>."
+    ],
+    "final": "Option (B): <span class=\"mm\">−5</span>.",
+    "trap": "Reading the determinant from <span class=\"mm\">p₃</span> or from <span class=\"mm\">e₂</span>. For <span class=\"mm\">n = 3</span> the constant term is <span class=\"mm\">−e₃</span>, and <span class=\"mm\">e₂</span> is the coefficient of <span class=\"mm\">λ</span>, not the constant.",
+    "takeaway": "Traces of powers determine the characteristic polynomial completely. Learn the three identities for <span class=\"mm\">n = 3</span> and check the sign of <span class=\"mm\">e₃</span> at the end."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Newton's identities convert traces of powers into the elementary symmetric functions of the eigenvalues. With <span class=\"mm\">p₁, p₂, p₃</span> the traces of <span class=\"mm\">A, A², A³</span> and <span class=\"mm\">e₁, e₂, e₃</span> the coefficients of the characteristic polynomial: <span class=\"mm\">p₂ = e₁p₁ − 2e₂</span> and <span class=\"mm\">p₃ = e₁p₂ − e₂p₁ + 3e₃</span>, while <span class=\"mm\">det A = e₃</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Here <span class=\"mm\">e₁ = p₁ = 5</span>.</li><li><span class=\"mm\">p₂ = e₁p₁ − 2e₂</span> gives <span class=\"mm\">15 = 25 − 2e₂</span>, so <span class=\"mm\">e₂ = 5</span>.</li><li><span class=\"mm\">p₃ = e₁p₂ − e₂p₁ + 3e₃</span> gives <span class=\"mm\">35 = 75 − 25 + 3e₃</span>, so <span class=\"mm\">3e₃ = −15</span> and <span class=\"mm\">e₃ = −5</span>.</li><li>Therefore <span class=\"mm\">det A = e₃ = −5</span>, with characteristic polynomial <span class=\"mm\">λ³ − 5λ² + 5λ + 5</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B): <span class=\"mm\">−5</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the determinant from <span class=\"mm\">p₃</span> or from <span class=\"mm\">e₂</span>. For <span class=\"mm\">n = 3</span> the constant term is <span class=\"mm\">−e₃</span>, and <span class=\"mm\">e₂</span> is the coefficient of <span class=\"mm\">λ</span>, not the constant.</p><p class=\"row\"><b>Takeaway.</b> Traces of powers determine the characteristic polynomial completely. Learn the three identities for <span class=\"mm\">n = 3</span> and check the sign of <span class=\"mm\">e₃</span> at the end.</p>"
+  },
+  {
+   "id": "EM-U2-Q64",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">A</span> be a real <span class=\"mm\">n × n</span> matrix. Which of the following statements are TRUE?",
+   "text": "Let <span class=\"mm\">A</span> be a real <span class=\"mm\">n × n</span> matrix. Which of the following statements are TRUE?",
+   "options": [
+    "If <span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span>, then every eigenvalue of <span class=\"mm\">A</span> is real.",
+    "A real symmetric matrix is diagonalizable over <span class=\"mm\">ℝ</span> by an orthogonal matrix.",
+    "If <span class=\"mm\">A</span> has <span class=\"mm\">n</span> linearly independent eigenvectors, then <span class=\"mm\">A</span> is diagonalizable.",
+    "If <span class=\"mm\">A²</span> is diagonalizable, then <span class=\"mm\">A</span> is diagonalizable."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Diagonalizability over <span class=\"mm\">ℝ</span> means <span class=\"mm\">P⁻¹AP = D</span> with <span class=\"mm\">P</span> and <span class=\"mm\">D</span> real. The eigenvalues of <span class=\"mm\">A</span> are then the diagonal entries of <span class=\"mm\">D</span>, so they are real; conversely <span class=\"mm\">n</span> independent eigenvectors are exactly the columns of such a <span class=\"mm\">P</span>.",
+    "steps": [
+     "Statement A is TRUE: the diagonal entries of the real diagonal form <span class=\"mm\">D</span> are the eigenvalues, so all of them are real. A matrix with a non-real pair cannot have a real diagonal form.",
+     "Statement B is TRUE: the spectral theorem for real symmetric matrices gives an orthonormal eigenbasis, so <span class=\"mm\">QᵀAQ = D</span> with <span class=\"mm\">Q</span> orthogonal.",
+     "Statement C is TRUE: those <span class=\"mm\">n</span> eigenvectors are a basis, so <span class=\"mm\">P⁻¹AP</span> is diagonal.",
+     "Statement D is FALSE: <span class=\"mm\">A = [[0, 1], [0, 0]]</span> has <span class=\"mm\">A² = 0</span>, which is diagonal, yet <span class=\"mm\">A</span> itself has only a one-dimensional eigenspace."
+    ],
+    "final": "Statements (A), (B) and (C).",
+    "trap": "Accepting D because squaring seems to preserve structure. Squaring destroys information: a non-zero nilpotent matrix squares to zero, which is as diagonal as a matrix gets.",
+    "takeaway": "Two independent tests of diagonalizability: the minimal polynomial has distinct roots, or there are n independent eigenvectors. Both are one-way; no implication survives a polynomial in A."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Diagonalizability over <span class=\"mm\">ℝ</span> means <span class=\"mm\">P⁻¹AP = D</span> with <span class=\"mm\">P</span> and <span class=\"mm\">D</span> real. The eigenvalues of <span class=\"mm\">A</span> are then the diagonal entries of <span class=\"mm\">D</span>, so they are real; conversely <span class=\"mm\">n</span> independent eigenvectors are exactly the columns of such a <span class=\"mm\">P</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Statement A is TRUE: the diagonal entries of the real diagonal form <span class=\"mm\">D</span> are the eigenvalues, so all of them are real. A matrix with a non-real pair cannot have a real diagonal form.</li><li>Statement B is TRUE: the spectral theorem for real symmetric matrices gives an orthonormal eigenbasis, so <span class=\"mm\">QᵀAQ = D</span> with <span class=\"mm\">Q</span> orthogonal.</li><li>Statement C is TRUE: those <span class=\"mm\">n</span> eigenvectors are a basis, so <span class=\"mm\">P⁻¹AP</span> is diagonal.</li><li>Statement D is FALSE: <span class=\"mm\">A = [[0, 1], [0, 0]]</span> has <span class=\"mm\">A² = 0</span>, which is diagonal, yet <span class=\"mm\">A</span> itself has only a one-dimensional eigenspace.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Statements (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Accepting D because squaring seems to preserve structure. Squaring destroys information: a non-zero nilpotent matrix squares to zero, which is as diagonal as a matrix gets.</p><p class=\"row\"><b>Takeaway.</b> Two independent tests of diagonalizability: the minimal polynomial has distinct roots, or there are n independent eigenvectors. Both are one-way; no implication survives a polynomial in A.</p>"
+  },
+  {
+   "id": "EM-U2-Q65",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">A = [[3, 4], [4, −3]]</span> and <span class=\"mm\">B = A² − 2A + 5I</span>. Then <span class=\"mm\">tr(B)</span> equals",
+   "text": "Let <span class=\"mm\">A = [[3, 4], [4, −3]]</span> and <span class=\"mm\">B = A² − 2A + 5I</span>. Then <span class=\"mm\">tr(B)</span> equals",
+   "options": [
+    "60",
+    "30",
+    "50",
+    "20"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Two routes give the trace of a polynomial in <span class=\"mm\">A</span>: transform the eigenvalues and add them, or use the invariants <span class=\"mm\">tr(A²)</span>, <span class=\"mm\">tr A</span> and <span class=\"mm\">tr I</span>. Both must agree, which is a free check.",
+    "steps": [
+     "Eigenvalues of <span class=\"mm\">A</span>: <span class=\"mm\">tr A = 0</span> and <span class=\"mm\">det A = −9 − 16 = −25</span>, so <span class=\"mm\">λ² − 25 = 0</span> gives <span class=\"mm\">λ = ±5</span>.",
+     "Apply <span class=\"mm\">p(t) = t² − 2t + 5</span>: <span class=\"mm\">p(5) = 25 − 10 + 5 = 20</span> and <span class=\"mm\">p(−5) = 25 + 10 + 5 = 40</span>.",
+     "<span class=\"mm\">tr(B) = 20 + 40 = 60</span>.",
+     "Check without eigenvalues: <span class=\"mm\">A² = [[9 + 16, 12 − 12], [12 − 12, 16 + 9]] = 25I</span>, so <span class=\"mm\">B = 25I − 2A + 5I = 30I − 2A</span> and <span class=\"mm\">tr B = 60 − 0 = 60</span>."
+    ],
+    "final": "Option (A): <span class=\"mm\">60</span>.",
+    "trap": "Evaluating <span class=\"mm\">p</span> once at <span class=\"mm\">tr A = 0</span>, which gives <span class=\"mm\">p(0) = 5</span>, or forgetting that the two eigenvalues give two different values that must both be summed.",
+    "takeaway": "Compute <span class=\"mm\">tr(p(A)) = Σ p(λᵢ)</span> and cross-check with the invariants of <span class=\"mm\">A</span>. When the eigenvalues are a symmetric pair, both terms are needed."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two routes give the trace of a polynomial in <span class=\"mm\">A</span>: transform the eigenvalues and add them, or use the invariants <span class=\"mm\">tr(A²)</span>, <span class=\"mm\">tr A</span> and <span class=\"mm\">tr I</span>. Both must agree, which is a free check.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Eigenvalues of <span class=\"mm\">A</span>: <span class=\"mm\">tr A = 0</span> and <span class=\"mm\">det A = −9 − 16 = −25</span>, so <span class=\"mm\">λ² − 25 = 0</span> gives <span class=\"mm\">λ = ±5</span>.</li><li>Apply <span class=\"mm\">p(t) = t² − 2t + 5</span>: <span class=\"mm\">p(5) = 25 − 10 + 5 = 20</span> and <span class=\"mm\">p(−5) = 25 + 10 + 5 = 40</span>.</li><li><span class=\"mm\">tr(B) = 20 + 40 = 60</span>.</li><li>Check without eigenvalues: <span class=\"mm\">A² = [[9 + 16, 12 − 12], [12 − 12, 16 + 9]] = 25I</span>, so <span class=\"mm\">B = 25I − 2A + 5I = 30I − 2A</span> and <span class=\"mm\">tr B = 60 − 0 = 60</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A): <span class=\"mm\">60</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Evaluating <span class=\"mm\">p</span> once at <span class=\"mm\">tr A = 0</span>, which gives <span class=\"mm\">p(0) = 5</span>, or forgetting that the two eigenvalues give two different values that must both be summed.</p><p class=\"row\"><b>Takeaway.</b> Compute <span class=\"mm\">tr(p(A)) = Σ p(λᵢ)</span> and cross-check with the invariants of <span class=\"mm\">A</span>. When the eigenvalues are a symmetric pair, both terms are needed.</p>"
+  },
+  {
+   "id": "EM-U2-Q66",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The characteristic polynomial of <span class=\"mm\">A = [[1, 2, 0], [0, 3, 0], [0, 0, 5]]</span> is",
+   "text": "The characteristic polynomial of <span class=\"mm\">A = [[1, 2, 0], [0, 3, 0], [0, 0, 5]]</span> is",
+   "options": [
+    "<span class=\"mm\">λ³ − 9λ² + 15λ − 23</span>",
+    "<span class=\"mm\">λ³ + 9λ² + 23λ + 15</span>",
+    "<span class=\"mm\">λ³ − 9λ² + 23λ − 15</span>",
+    "<span class=\"mm\">λ³ − 15λ² + 23λ − 9</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The eigenvalues of a triangular matrix are its diagonal entries, so the characteristic polynomial is the product of <span class=\"mm\">(λ − dᵢ)</span>. Expanding gives the coefficients <span class=\"mm\">e₁</span>, <span class=\"mm\">e₂</span> and <span class=\"mm\">e₃</span> from the diagonal entries.",
+    "steps": [
+     "Upper triangular, so the eigenvalues are 1, 3 and 5 and <span class=\"mm\">p(λ) = (λ − 1)(λ − 3)(λ − 5)</span>.",
+     "Coefficient of <span class=\"mm\">λ²</span>: <span class=\"mm\">−(1 + 3 + 5) = −9</span>.",
+     "Coefficient of <span class=\"mm\">λ</span>: <span class=\"mm\">1·3 + 1·5 + 3·5 = 23</span>.",
+     "Constant: <span class=\"mm\">−(1·3·5) = −15</span>, so <span class=\"mm\">p(λ) = λ³ − 9λ² + 23λ − 15</span>.",
+     "The off-diagonal entry 2 does not appear: the spectrum of a triangular matrix ignores it."
+    ],
+    "final": "Option (C): <span class=\"mm\">λ³ − 9λ² + 23λ − 15</span>.",
+    "trap": "Reading the <span class=\"mm\">(1, 2)</span> entry as an eigenvalue or letting it change the determinant, or mis-ordering the middle coefficients (options A and D).",
+    "takeaway": "For a triangular matrix, multiply <span class=\"mm\">(λ − dᵢ)</span> and expand, or use <span class=\"mm\">−e₁, e₂, −e₃</span>. Verify by substituting one diagonal entry as a root."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The eigenvalues of a triangular matrix are its diagonal entries, so the characteristic polynomial is the product of <span class=\"mm\">(λ − dᵢ)</span>. Expanding gives the coefficients <span class=\"mm\">e₁</span>, <span class=\"mm\">e₂</span> and <span class=\"mm\">e₃</span> from the diagonal entries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Upper triangular, so the eigenvalues are 1, 3 and 5 and <span class=\"mm\">p(λ) = (λ − 1)(λ − 3)(λ − 5)</span>.</li><li>Coefficient of <span class=\"mm\">λ²</span>: <span class=\"mm\">−(1 + 3 + 5) = −9</span>.</li><li>Coefficient of <span class=\"mm\">λ</span>: <span class=\"mm\">1·3 + 1·5 + 3·5 = 23</span>.</li><li>Constant: <span class=\"mm\">−(1·3·5) = −15</span>, so <span class=\"mm\">p(λ) = λ³ − 9λ² + 23λ − 15</span>.</li><li>The off-diagonal entry 2 does not appear: the spectrum of a triangular matrix ignores it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C): <span class=\"mm\">λ³ − 9λ² + 23λ − 15</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the <span class=\"mm\">(1, 2)</span> entry as an eigenvalue or letting it change the determinant, or mis-ordering the middle coefficients (options A and D).</p><p class=\"row\"><b>Takeaway.</b> For a triangular matrix, multiply <span class=\"mm\">(λ − dᵢ)</span> and expand, or use <span class=\"mm\">−e₁, e₂, −e₃</span>. Verify by substituting one diagonal entry as a root.</p>"
+  },
+  {
+   "id": "EM-U2-Q67",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 1, 1 and 4. Which of the following statements are TRUE?",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has eigenvalues 1, 1 and 4. Which of the following statements are TRUE?",
+   "options": [
+    "<span class=\"mm\">A</span> must be symmetric.",
+    "<span class=\"mm\">tr(A) = 6.</span>",
+    "<span class=\"mm\">det(A) = 4.</span>",
+    "<span class=\"mm\">A</span> is invertible."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "The trace and the determinant are the two invariants available from the spectrum alone: the trace adds the eigenvalues, the determinant multiplies them. Neither says anything about symmetry, which is a property of the matrix entries, not of the spectrum.",
+    "steps": [
+     "Trace: <span class=\"mm\">1 + 1 + 4 = 6</span> &mdash; statement B is TRUE.",
+     "Determinant: <span class=\"mm\">1·1·4 = 4</span> &mdash; statement C is TRUE.",
+     "No eigenvalue is 0, so <span class=\"mm\">det A = 4 ≠ 0</span> and <span class=\"mm\">A</span> is invertible &mdash; statement D is TRUE.",
+     "Symmetry is not determined by the spectrum: <span class=\"mm\">[[1, 5, 0], [0, 1, 0], [0, 0, 4]]</span> has the same eigenvalues and is not symmetric &mdash; statement A is FALSE."
+    ],
+    "final": "Statements (B), (C) and (D).",
+    "trap": "Assuming a repeated eigenvalue forces symmetry, or assuming the matrix is singular because the eigenvalue 1 repeats. Repetition is not degeneracy.",
+    "takeaway": "Spectrum fixes trace, determinant, characteristic polynomial and invertibility &mdash; nothing about symmetry, norm or conditioning."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The trace and the determinant are the two invariants available from the spectrum alone: the trace adds the eigenvalues, the determinant multiplies them. Neither says anything about symmetry, which is a property of the matrix entries, not of the spectrum.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Trace: <span class=\"mm\">1 + 1 + 4 = 6</span> &mdash; statement B is TRUE.</li><li>Determinant: <span class=\"mm\">1·1·4 = 4</span> &mdash; statement C is TRUE.</li><li>No eigenvalue is 0, so <span class=\"mm\">det A = 4 ≠ 0</span> and <span class=\"mm\">A</span> is invertible &mdash; statement D is TRUE.</li><li>Symmetry is not determined by the spectrum: <span class=\"mm\">[[1, 5, 0], [0, 1, 0], [0, 0, 4]]</span> has the same eigenvalues and is not symmetric &mdash; statement A is FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Statements (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming a repeated eigenvalue forces symmetry, or assuming the matrix is singular because the eigenvalue 1 repeats. Repetition is not degeneracy.</p><p class=\"row\"><b>Takeaway.</b> Spectrum fixes trace, determinant, characteristic polynomial and invertibility &mdash; nothing about symmetry, norm or conditioning.</p>"
+  },
+  {
+   "id": "EM-U2-Q68",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">3 × 3</span> matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">(λ − 2)²(λ − 5)</span> and is diagonalizable over <span class=\"mm\">ℝ</span>. The rank of <span class=\"mm\">A</span> is ____.",
+   "text": "A real <span class=\"mm\">3 × 3</span> matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">(λ − 2)²(λ − 5)</span> and is diagonalizable over <span class=\"mm\">ℝ</span>. The rank of <span class=\"mm\">A</span> is ____.",
+   "options": [],
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "A diagonalizable matrix is similar to a diagonal matrix holding its eigenvalues, and rank is preserved under similarity, so <span class=\"mm\">rank(A)</span> equals the number of non-zero eigenvalues counted with geometric multiplicity.",
+    "steps": [
+     "The eigenvalues are 2, 2 and 5, none of them zero, so <span class=\"mm\">det A = 2·2·5 = 20 ≠ 0</span>.",
+     "A matrix with non-zero determinant has full rank, so <span class=\"mm\">rank(A) = 3</span>.",
+     "Equivalently: <span class=\"mm\">A = PDP⁻¹</span> with <span class=\"mm\">D = diag(2, 2, 5)</span> invertible, and rank is a similarity invariant, so <span class=\"mm\">rank A = rank D = 3</span>."
+    ],
+    "final": "3",
+    "trap": "Answering 2 by counting the distinct eigenvalues, or 1 by subtracting the repeated eigenvalue. Rank counts non-zero eigenvalues with multiplicity, not distinct values.",
+    "takeaway": "Zero is the only eigenvalue that lowers the rank. Read invertibility straight off the spectrum before doing any elimination."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A diagonalizable matrix is similar to a diagonal matrix holding its eigenvalues, and rank is preserved under similarity, so <span class=\"mm\">rank(A)</span> equals the number of non-zero eigenvalues counted with geometric multiplicity.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The eigenvalues are 2, 2 and 5, none of them zero, so <span class=\"mm\">det A = 2·2·5 = 20 ≠ 0</span>.</li><li>A matrix with non-zero determinant has full rank, so <span class=\"mm\">rank(A) = 3</span>.</li><li>Equivalently: <span class=\"mm\">A = PDP⁻¹</span> with <span class=\"mm\">D = diag(2, 2, 5)</span> invertible, and rank is a similarity invariant, so <span class=\"mm\">rank A = rank D = 3</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2 by counting the distinct eigenvalues, or 1 by subtracting the repeated eigenvalue. Rank counts non-zero eigenvalues with multiplicity, not distinct values.</p><p class=\"row\"><b>Takeaway.</b> Zero is the only eigenvalue that lowers the rank. Read invertibility straight off the spectrum before doing any elimination.</p>"
+  },
+  {
+   "id": "EM-U2-Q69",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The eigenvalues of <span class=\"mm\">A = [[2, 3], [0, 5]]</span> are",
+   "text": "The eigenvalues of <span class=\"mm\">A = [[2, 3], [0, 5]]</span> are",
+   "options": [
+    "2 and 3",
+    "2 and 5",
+    "−2 and −5",
+    "1 and 10"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The eigenvalues of a triangular matrix are exactly its diagonal entries, because <span class=\"mm\">det(λI − A)</span> is then the product of the diagonal entries of <span class=\"mm\">λI − A</span>.",
+    "steps": [
+     "Here <span class=\"mm\">λI − A = [[λ − 2, −3], [0, λ − 5]]</span>, still upper triangular.",
+     "Its determinant is <span class=\"mm\">(λ − 2)(λ − 5)</span>, so the eigenvalues are 2 and 5.",
+     "Consistency: <span class=\"mm\">tr A = 7 = 2 + 5</span> and <span class=\"mm\">det A = 10 = 2·5</span>."
+    ],
+    "final": "Option (B): 2 and 5.",
+    "trap": "Taking the off-diagonal 3 as an eigenvalue, which gives option A. The entry 3 shifts nothing: it is not on the diagonal.",
+    "takeaway": "For any triangular matrix read the diagonal. Only non-triangular matrices need the determinant expanded."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The eigenvalues of a triangular matrix are exactly its diagonal entries, because <span class=\"mm\">det(λI − A)</span> is then the product of the diagonal entries of <span class=\"mm\">λI − A</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Here <span class=\"mm\">λI − A = [[λ − 2, −3], [0, λ − 5]]</span>, still upper triangular.</li><li>Its determinant is <span class=\"mm\">(λ − 2)(λ − 5)</span>, so the eigenvalues are 2 and 5.</li><li>Consistency: <span class=\"mm\">tr A = 7 = 2 + 5</span> and <span class=\"mm\">det A = 10 = 2·5</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B): 2 and 5.</span></p><p class=\"row\"><b>Common misconception.</b> Taking the off-diagonal 3 as an eigenvalue, which gives option A. The entry 3 shifts nothing: it is not on the diagonal.</p><p class=\"row\"><b>Takeaway.</b> For any triangular matrix read the diagonal. Only non-triangular matrices need the determinant expanded.</p>"
+  },
+  {
+   "id": "EM-U2-Q70",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "cayley-hamilton-theorem",
+   "subtopic": "cayley-hamilton-theorem",
+   "subtopic_label": "Cayley–Hamilton theorem",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">2 × 2</span> real matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ² − 3λ + 1</span>. Using the Cayley–Hamilton theorem, <span class=\"mm\">A⁻¹</span> equals",
+   "text": "A <span class=\"mm\">2 × 2</span> real matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ² − 3λ + 1</span>. Using the Cayley–Hamilton theorem, <span class=\"mm\">A⁻¹</span> equals",
+   "options": [
+    "<span class=\"mm\">A − 3I</span>",
+    "<span class=\"mm\">3A − I</span>",
+    "<span class=\"mm\">I − 3A</span>",
+    "<span class=\"mm\">3I − A</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Cayley–Hamilton gives <span class=\"mm\">A² − 3A + I = 0</span>. Multiplying by <span class=\"mm\">A⁻¹</span> (legal because the constant term 1 is non-zero, so <span class=\"mm\">det A = 1 ≠ 0</span>) turns the relation into one that isolates <span class=\"mm\">A⁻¹</span>.",
+    "steps": [
+     "Cayley–Hamilton: <span class=\"mm\">A² − 3A + I = 0</span>.",
+     "Multiply by <span class=\"mm\">A⁻¹</span>: <span class=\"mm\">A − 3I + A⁻¹ = 0</span>.",
+     "Therefore <span class=\"mm\">A⁻¹ = 3I − A</span>.",
+     "Check with <span class=\"mm\">A = [[1, 0], [0, 1]]</span>-type reasoning: any matrix with <span class=\"mm\">p(λ) = λ² − 3λ + 1</span> has <span class=\"mm\">det A = 1</span>, and <span class=\"mm\">A(3I − A) = 3A − A² = 3A − (3A − I) = I</span>."
+    ],
+    "final": "Option (D): <span class=\"mm\">A⁻¹ = 3I − A</span>.",
+    "trap": "Solving for <span class=\"mm\">A</span> instead of <span class=\"mm\">A⁻¹</span>, or dropping the sign of the middle term and writing <span class=\"mm\">A⁻¹ = A − 3I</span>.",
+    "takeaway": "The identity <span class=\"mm\">A⁻¹ = −(A + c₁I)/c₀</span> for <span class=\"mm\">p(λ) = λ² + c₁λ + c₀</span> inverts a <span class=\"mm\">2 × 2</span> matrix with no adjugate."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cayley–Hamilton gives <span class=\"mm\">A² − 3A + I = 0</span>. Multiplying by <span class=\"mm\">A⁻¹</span> (legal because the constant term 1 is non-zero, so <span class=\"mm\">det A = 1 ≠ 0</span>) turns the relation into one that isolates <span class=\"mm\">A⁻¹</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Cayley–Hamilton: <span class=\"mm\">A² − 3A + I = 0</span>.</li><li>Multiply by <span class=\"mm\">A⁻¹</span>: <span class=\"mm\">A − 3I + A⁻¹ = 0</span>.</li><li>Therefore <span class=\"mm\">A⁻¹ = 3I − A</span>.</li><li>Check with <span class=\"mm\">A = [[1, 0], [0, 1]]</span>-type reasoning: any matrix with <span class=\"mm\">p(λ) = λ² − 3λ + 1</span> has <span class=\"mm\">det A = 1</span>, and <span class=\"mm\">A(3I − A) = 3A − A² = 3A − (3A − I) = I</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D): <span class=\"mm\">A⁻¹ = 3I − A</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Solving for <span class=\"mm\">A</span> instead of <span class=\"mm\">A⁻¹</span>, or dropping the sign of the middle term and writing <span class=\"mm\">A⁻¹ = A − 3I</span>.</p><p class=\"row\"><b>Takeaway.</b> The identity <span class=\"mm\">A⁻¹ = −(A + c₁I)/c₀</span> for <span class=\"mm\">p(λ) = λ² + c₁λ + c₀</span> inverts a <span class=\"mm\">2 × 2</span> matrix with no adjugate.</p>"
+  },
+  {
+   "id": "EM-U2-Q71",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ³ − 6λ² + 11λ − 6</span>. The value of <span class=\"mm\">det(A² + I)</span> is ____.",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> has characteristic polynomial <span class=\"mm\">p(λ) = λ³ − 6λ² + 11λ − 6</span>. The value of <span class=\"mm\">det(A² + I)</span> is ____.",
+   "options": [],
+   "answer": 100,
+   "answer_display": "100",
+   "solution": {
+    "concept": "The roots of the characteristic polynomial are the eigenvalues, and a polynomial <span class=\"mm\">q</span> applied to <span class=\"mm\">A</span> has eigenvalues <span class=\"mm\">q(λᵢ)</span>. Its determinant is the product of those transformed eigenvalues.",
+    "steps": [
+     "Factor: <span class=\"mm\">λ³ − 6λ² + 11λ − 6 = (λ − 1)(λ − 2)(λ − 3)</span>, so the eigenvalues are 1, 2 and 3.",
+     "Apply <span class=\"mm\">q(t) = t² + 1</span>: <span class=\"mm\">q(1) = 2</span>, <span class=\"mm\">q(2) = 5</span>, <span class=\"mm\">q(3) = 10</span>.",
+     "The eigenvalues of <span class=\"mm\">A² + I</span> are 2, 5 and 10, so <span class=\"mm\">det(A² + I) = 2·5·10 = 100</span>."
+    ],
+    "final": "100",
+    "trap": "Computing <span class=\"mm\">(det A)² + 1 = 36 + 1 = 37</span> by treating the determinant as if it were an eigenvalue, or forgetting to add the 1 to each eigenvalue before multiplying.",
+    "takeaway": "Factor the characteristic polynomial first, then push each root through the polynomial in <span class=\"mm\">A</span>. Never apply a polynomial to the determinant."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The roots of the characteristic polynomial are the eigenvalues, and a polynomial <span class=\"mm\">q</span> applied to <span class=\"mm\">A</span> has eigenvalues <span class=\"mm\">q(λᵢ)</span>. Its determinant is the product of those transformed eigenvalues.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Factor: <span class=\"mm\">λ³ − 6λ² + 11λ − 6 = (λ − 1)(λ − 2)(λ − 3)</span>, so the eigenvalues are 1, 2 and 3.</li><li>Apply <span class=\"mm\">q(t) = t² + 1</span>: <span class=\"mm\">q(1) = 2</span>, <span class=\"mm\">q(2) = 5</span>, <span class=\"mm\">q(3) = 10</span>.</li><li>The eigenvalues of <span class=\"mm\">A² + I</span> are 2, 5 and 10, so <span class=\"mm\">det(A² + I) = 2·5·10 = 100</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 100</span></p><p class=\"row\"><b>Common misconception.</b> Computing <span class=\"mm\">(det A)² + 1 = 36 + 1 = 37</span> by treating the determinant as if it were an eigenvalue, or forgetting to add the 1 to each eigenvalue before multiplying.</p><p class=\"row\"><b>Takeaway.</b> Factor the characteristic polynomial first, then push each root through the polynomial in <span class=\"mm\">A</span>. Never apply a polynomial to the determinant.</p>"
+  },
+  {
+   "id": "EM-U2-Q72",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "cayley-hamilton-theorem",
+   "subtopic": "cayley-hamilton-theorem",
+   "subtopic_label": "Cayley–Hamilton theorem",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">A = [[2, 1], [1, 2]]</span>. Which of the following statements are TRUE?",
+   "text": "Let <span class=\"mm\">A = [[2, 1], [1, 2]]</span>. Which of the following statements are TRUE?",
+   "options": [
+    "<span class=\"mm\">A² = 4A − 3I.</span>",
+    "<span class=\"mm\">A⁻¹ = (4I − A)/3.</span>",
+    "<span class=\"mm\">A³ = 13A − 12I.</span>",
+    "<span class=\"mm\">A² + 4A + 3I = 0.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Cayley–Hamilton for <span class=\"mm\">A</span> gives <span class=\"mm\">A² − 4A + 3I = 0</span>, and every other statement is a consequence: rearrange it for <span class=\"mm\">A²</span>, multiply by <span class=\"mm\">A⁻¹</span> for the inverse, multiply by <span class=\"mm\">A</span> for <span class=\"mm\">A³</span>.",
+    "steps": [
+     "Trace <span class=\"mm\">4</span> and determinant <span class=\"mm\">3</span> give <span class=\"mm\">A² − 4A + 3I = 0</span>, i.e. <span class=\"mm\">A² = 4A − 3I</span> &mdash; statement A is TRUE.",
+     "Multiply by <span class=\"mm\">A⁻¹</span>: <span class=\"mm\">A − 4I + 3A⁻¹ = 0</span>, so <span class=\"mm\">A⁻¹ = (4I − A)/3</span> &mdash; statement B is TRUE.",
+     "<span class=\"mm\">A³ = A·A² = A(4A − 3I) = 4A² − 3A = 4(4A − 3I) − 3A = 13A − 12I</span> &mdash; statement C is TRUE.",
+     "Statement D has the wrong signs: the relation is <span class=\"mm\">A² − 4A + 3I = 0</span>, not <span class=\"mm\">A² + 4A + 3I = 0</span> &mdash; FALSE. Check with <span class=\"mm\">A = I</span>: <span class=\"mm\">1 − 4 + 3 = 0</span> but <span class=\"mm\">1 + 4 + 3 = 8 ≠ 0</span>."
+    ],
+    "final": "Statements (A), (B) and (C).",
+    "trap": "Sign slips on the middle coefficient. The characteristic equation is <span class=\"mm\">λ² − (tr)λ + det = 0</span>, so the trace enters negatively and the determinant positively.",
+    "takeaway": "One Cayley–Hamilton relation answers every power and inverse question for a <span class=\"mm\">2 × 2</span> matrix. Verify any claimed relation by substituting a simple matrix with the same invariants."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cayley–Hamilton for <span class=\"mm\">A</span> gives <span class=\"mm\">A² − 4A + 3I = 0</span>, and every other statement is a consequence: rearrange it for <span class=\"mm\">A²</span>, multiply by <span class=\"mm\">A⁻¹</span> for the inverse, multiply by <span class=\"mm\">A</span> for <span class=\"mm\">A³</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Trace <span class=\"mm\">4</span> and determinant <span class=\"mm\">3</span> give <span class=\"mm\">A² − 4A + 3I = 0</span>, i.e. <span class=\"mm\">A² = 4A − 3I</span> &mdash; statement A is TRUE.</li><li>Multiply by <span class=\"mm\">A⁻¹</span>: <span class=\"mm\">A − 4I + 3A⁻¹ = 0</span>, so <span class=\"mm\">A⁻¹ = (4I − A)/3</span> &mdash; statement B is TRUE.</li><li><span class=\"mm\">A³ = A·A² = A(4A − 3I) = 4A² − 3A = 4(4A − 3I) − 3A = 13A − 12I</span> &mdash; statement C is TRUE.</li><li>Statement D has the wrong signs: the relation is <span class=\"mm\">A² − 4A + 3I = 0</span>, not <span class=\"mm\">A² + 4A + 3I = 0</span> &mdash; FALSE. Check with <span class=\"mm\">A = I</span>: <span class=\"mm\">1 − 4 + 3 = 0</span> but <span class=\"mm\">1 + 4 + 3 = 8 ≠ 0</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Statements (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Sign slips on the middle coefficient. The characteristic equation is <span class=\"mm\">λ² − (tr)λ + det = 0</span>, so the trace enters negatively and the determinant positively.</p><p class=\"row\"><b>Takeaway.</b> One Cayley–Hamilton relation answers every power and inverse question for a <span class=\"mm\">2 × 2</span> matrix. Verify any claimed relation by substituting a simple matrix with the same invariants.</p>"
+  },
+  {
+   "id": "EM-U2-Q73",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "diagonalization",
+   "subtopic": "diagonalization",
+   "subtopic_label": "Diagonalization",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A real <span class=\"mm\">4 × 4</span> matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">A² = −4I</span>. Which statement is TRUE?",
+   "text": "A real <span class=\"mm\">4 × 4</span> matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">A² = −4I</span>. Which statement is TRUE?",
+   "options": [
+    "<span class=\"mm\">A</span> has eigenvalues 2, 2, −2 and −2.",
+    "<span class=\"mm\">A</span> is nilpotent.",
+    "<span class=\"mm\">A</span> has no real eigenvalue; it is diagonalizable over <span class=\"mm\">ℂ</span> but not over <span class=\"mm\">ℝ</span>.",
+    "<span class=\"mm\">A = 2I</span>."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The polynomial <span class=\"mm\">t² + 4</span> annihilates <span class=\"mm\">A</span>, so the minimal polynomial divides <span class=\"mm\">(t − 2i)(t + 2i)</span>. Distinct roots over <span class=\"mm\">ℂ</span> give diagonalizability there; the absence of real roots forbids a real diagonal form.",
+    "steps": [
+     "Any eigenvalue satisfies <span class=\"mm\">λ² = −4</span>, so <span class=\"mm\">λ = ±2i</span> and no eigenvalue is real.",
+     "A matrix diagonalizable over <span class=\"mm\">ℝ</span> would have real eigenvalues (they are the diagonal entries), so <span class=\"mm\">A</span> is not diagonalizable over <span class=\"mm\">ℝ</span>.",
+     "The minimal polynomial divides <span class=\"mm\">t² + 4</span>, whose two roots <span class=\"mm\">±2i</span> are distinct, so <span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℂ</span>.",
+     "The other options fail: <span class=\"mm\">A = 2I</span> gives <span class=\"mm\">A² = 4I</span>, not <span class=\"mm\">−4I</span>; a nilpotent matrix has all eigenvalues 0, contradicting <span class=\"mm\">λ² = −4</span>."
+    ],
+    "final": "Option (C).",
+    "trap": "Concluding that a matrix with no real eigenvalues is not diagonalizable at all. Over <span class=\"mm\">ℂ</span> the two distinct eigenvalues do the job; it is only the real form that is impossible.",
+    "takeaway": "An annihilating polynomial with distinct roots settles diagonalizability over the field containing those roots. Read the field off the roots before answering."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The polynomial <span class=\"mm\">t² + 4</span> annihilates <span class=\"mm\">A</span>, so the minimal polynomial divides <span class=\"mm\">(t − 2i)(t + 2i)</span>. Distinct roots over <span class=\"mm\">ℂ</span> give diagonalizability there; the absence of real roots forbids a real diagonal form.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Any eigenvalue satisfies <span class=\"mm\">λ² = −4</span>, so <span class=\"mm\">λ = ±2i</span> and no eigenvalue is real.</li><li>A matrix diagonalizable over <span class=\"mm\">ℝ</span> would have real eigenvalues (they are the diagonal entries), so <span class=\"mm\">A</span> is not diagonalizable over <span class=\"mm\">ℝ</span>.</li><li>The minimal polynomial divides <span class=\"mm\">t² + 4</span>, whose two roots <span class=\"mm\">±2i</span> are distinct, so <span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℂ</span>.</li><li>The other options fail: <span class=\"mm\">A = 2I</span> gives <span class=\"mm\">A² = 4I</span>, not <span class=\"mm\">−4I</span>; a nilpotent matrix has all eigenvalues 0, contradicting <span class=\"mm\">λ² = −4</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Concluding that a matrix with no real eigenvalues is not diagonalizable at all. Over <span class=\"mm\">ℂ</span> the two distinct eigenvalues do the job; it is only the real form that is impossible.</p><p class=\"row\"><b>Takeaway.</b> An annihilating polynomial with distinct roots settles diagonalizability over the field containing those roots. Read the field off the roots before answering.</p>"
+  },
+  {
+   "id": "EM-U2-Q74",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "characteristic-equations",
+   "subtopic": "characteristic-equations",
+   "subtopic_label": "Characteristic equations",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The characteristic polynomial of <span class=\"mm\">A = [[2, 3], [3, 2]]</span> is <span class=\"mm\">p(λ) = λ² − 4λ − 5</span>. Which of the following statements are TRUE?",
+   "text": "The characteristic polynomial of <span class=\"mm\">A = [[2, 3], [3, 2]]</span> is <span class=\"mm\">p(λ) = λ² − 4λ − 5</span>. Which of the following statements are TRUE?",
+   "options": [
+    "The eigenvalues of <span class=\"mm\">A</span> are 5 and −1.",
+    "<span class=\"mm\">A</span> is diagonalizable over <span class=\"mm\">ℝ</span>.",
+    "<span class=\"mm\">det(A) = −5.</span>",
+    "<span class=\"mm\">tr(A) = 5.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Roots of the characteristic polynomial are the eigenvalues; for a symmetric matrix they are real and the matrix is orthogonally diagonalizable. The trace and determinant are read from the coefficients.",
+    "steps": [
+     "Factor: <span class=\"mm\">λ² − 4λ − 5 = (λ − 5)(λ + 1)</span>, so the eigenvalues are 5 and −1 &mdash; A is TRUE.",
+     "<span class=\"mm\">A</span> is real symmetric, so it is diagonalizable over <span class=\"mm\">ℝ</span> &mdash; B is TRUE.",
+     "Constant term <span class=\"mm\">−5</span> equals <span class=\"mm\">det A</span> for <span class=\"mm\">n = 2</span> &mdash; C is TRUE.",
+     "The coefficient of <span class=\"mm\">λ</span> is <span class=\"mm\">−4 = −tr A</span>, so <span class=\"mm\">tr A = 4</span>, not 5 &mdash; D is FALSE.",
+     "Direct check: <span class=\"mm\">tr A = 2 + 2 = 4</span> and <span class=\"mm\">det A = 4 − 9 = −5</span>."
+    ],
+    "final": "Statements (A), (B) and (C).",
+    "trap": "Reading the trace from the constant term or the determinant from the linear coefficient. For <span class=\"mm\">2 × 2</span>: <span class=\"mm\">p(λ) = λ² − (tr A)λ + det A</span>.",
+    "takeaway": "Match the coefficients to the invariants before answering: <span class=\"mm\">λ²</span> coefficient <span class=\"mm\">−tr</span>, constant <span class=\"mm\">det</span> for <span class=\"mm\">2 × 2</span>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Roots of the characteristic polynomial are the eigenvalues; for a symmetric matrix they are real and the matrix is orthogonally diagonalizable. The trace and determinant are read from the coefficients.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Factor: <span class=\"mm\">λ² − 4λ − 5 = (λ − 5)(λ + 1)</span>, so the eigenvalues are 5 and −1 &mdash; A is TRUE.</li><li><span class=\"mm\">A</span> is real symmetric, so it is diagonalizable over <span class=\"mm\">ℝ</span> &mdash; B is TRUE.</li><li>Constant term <span class=\"mm\">−5</span> equals <span class=\"mm\">det A</span> for <span class=\"mm\">n = 2</span> &mdash; C is TRUE.</li><li>The coefficient of <span class=\"mm\">λ</span> is <span class=\"mm\">−4 = −tr A</span>, so <span class=\"mm\">tr A = 4</span>, not 5 &mdash; D is FALSE.</li><li>Direct check: <span class=\"mm\">tr A = 2 + 2 = 4</span> and <span class=\"mm\">det A = 4 − 9 = −5</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Statements (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the trace from the constant term or the determinant from the linear coefficient. For <span class=\"mm\">2 × 2</span>: <span class=\"mm\">p(λ) = λ² − (tr A)λ + det A</span>.</p><p class=\"row\"><b>Takeaway.</b> Match the coefficients to the invariants before answering: <span class=\"mm\">λ²</span> coefficient <span class=\"mm\">−tr</span>, constant <span class=\"mm\">det</span> for <span class=\"mm\">2 × 2</span>.</p>"
+  },
+  {
+   "id": "EM-U2-Q75",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "eigenvalues-eigenvectors",
+   "unit_name": "Linear Algebra: Eigenvalues & Vectors",
+   "topic": "Linear Algebra: Eigenvalues & Vectors",
+   "sub": "eigenvalue-properties",
+   "subtopic": "eigenvalue-properties",
+   "subtopic_label": "Eigenvalue properties",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">tr(A) = 7</span>, <span class=\"mm\">tr(A²) = 21</span> and <span class=\"mm\">det(A) = 8</span>. The value of <span class=\"mm\">λ₁λ₂ + λ₂λ₃ + λ₃λ₁</span>, where <span class=\"mm\">λ₁, λ₂, λ₃</span> are the eigenvalues of <span class=\"mm\">A</span>, is ____.",
+   "text": "A <span class=\"mm\">3 × 3</span> real matrix <span class=\"mm\">A</span> satisfies <span class=\"mm\">tr(A) = 7</span>, <span class=\"mm\">tr(A²) = 21</span> and <span class=\"mm\">det(A) = 8</span>. The value of <span class=\"mm\">λ₁λ₂ + λ₂λ₃ + λ₃λ₁</span>, where <span class=\"mm\">λ₁, λ₂, λ₃</span> are the eigenvalues of <span class=\"mm\">A</span>, is ____.",
+   "options": [],
+   "answer": 14,
+   "answer_display": "14",
+   "solution": {
+    "concept": "The requested sum is the second elementary symmetric function <span class=\"mm\">e₂</span>, which is the coefficient of <span class=\"mm\">λ</span> in the characteristic polynomial. It follows from <span class=\"mm\">e₁ = tr A</span> and <span class=\"mm\">tr(A²) = e₁² − 2e₂</span>.",
+    "steps": [
+     "<span class=\"mm\">e₁ = λ₁ + λ₂ + λ₃ = tr A = 7</span>.",
+     "<span class=\"mm\">tr(A²) = λ₁² + λ₂² + λ₃² = e₁² − 2e₂</span>, so <span class=\"mm\">21 = 49 − 2e₂</span>.",
+     "Hence <span class=\"mm\">e₂ = (49 − 21)/2 = 14</span>.",
+     "Consistency: <span class=\"mm\">e₁ = 7</span>, <span class=\"mm\">e₂ = 14</span>, <span class=\"mm\">e₃ = det A = 8</span> give <span class=\"mm\">p(λ) = λ³ − 7λ² + 14λ − 8 = (λ − 1)(λ − 2)(λ − 4)</span>, and <span class=\"mm\">1·2 + 2·4 + 1·4 = 14</span>."
+    ],
+    "final": "14",
+    "trap": "Answering 21 by reporting <span class=\"mm\">tr(A²)</span>, or 10.5 by forgetting to divide by 2. The identity is <span class=\"mm\">e₂ = (e₁² − tr(A²))/2</span>, and the halving is not optional.",
+    "takeaway": "The three invariants <span class=\"mm\">e₁, e₂, e₃</span> are exactly the trace, the sum of principal <span class=\"mm\">2 × 2</span> minors and the determinant; <span class=\"mm\">tr(A²)</span> is the cheapest way to reach <span class=\"mm\">e₂</span>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The requested sum is the second elementary symmetric function <span class=\"mm\">e₂</span>, which is the coefficient of <span class=\"mm\">λ</span> in the characteristic polynomial. It follows from <span class=\"mm\">e₁ = tr A</span> and <span class=\"mm\">tr(A²) = e₁² − 2e₂</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">e₁ = λ₁ + λ₂ + λ₃ = tr A = 7</span>.</li><li><span class=\"mm\">tr(A²) = λ₁² + λ₂² + λ₃² = e₁² − 2e₂</span>, so <span class=\"mm\">21 = 49 − 2e₂</span>.</li><li>Hence <span class=\"mm\">e₂ = (49 − 21)/2 = 14</span>.</li><li>Consistency: <span class=\"mm\">e₁ = 7</span>, <span class=\"mm\">e₂ = 14</span>, <span class=\"mm\">e₃ = det A = 8</span> give <span class=\"mm\">p(λ) = λ³ − 7λ² + 14λ − 8 = (λ − 1)(λ − 2)(λ − 4)</span>, and <span class=\"mm\">1·2 + 2·4 + 1·4 = 14</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 14</span></p><p class=\"row\"><b>Common misconception.</b> Answering 21 by reporting <span class=\"mm\">tr(A²)</span>, or 10.5 by forgetting to divide by 2. The identity is <span class=\"mm\">e₂ = (e₁² − tr(A²))/2</span>, and the halving is not optional.</p><p class=\"row\"><b>Takeaway.</b> The three invariants <span class=\"mm\">e₁, e₂, e₃</span> are exactly the trace, the sum of principal <span class=\"mm\">2 × 2</span> minors and the determinant; <span class=\"mm\">tr(A²)</span> is the cheapest way to reach <span class=\"mm\">e₂</span>.</p>"
   }
  ]
 }
