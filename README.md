@@ -7,38 +7,72 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Theory of Computation · Unit 4 — Turing Machines & Decidability, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html`](theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html)
+- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2**, 2026-11-01 →
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: standard TM models (5) · recursive vs recursively enumerable (5) · halting problem (6) ·
-  Rice's theorem & reductions (5) · Chomsky hierarchy (4)
-- Rotation: MODE A. An unseeded `secrets.choice` draw over the eight subjects that do not already carry a paper
-  dated 2026-11-01 (Algorithms, Computer Networks and Operating Systems do) returned **Theory of Computation**
-  (index 7 of the eight). Its most recent run was `{2026-10-31, run 15, unit 3, pushdown-automata, Set 1 of 2
-  (third pass)}`. Unit 3 held **100** questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and
-  step B4 advanced one unit: `(index_of(pushdown-automata) = 2 + 1) mod 4 = 3` → **Unit 4, Turing Machines &
-  Decidability**. Unit 4 held **75** questions, so every unit of the subject is at or above the cap and step B5
-  applies: the modulo has wrapped, the third pass continues, and Unit 4 receives its first set of that pass. No
-  override, no partial set.
-- The 2026-10-29 paper was the unit's current paper and moved to
-  `theory-of-computation/turing-machines-decidability/archive/gate_toc_mock_4_2026-10-29_run3.html` with its
-  content frozen, so the unit folder holds exactly one current paper and the repository root still holds only
-  `index.html`.
-- Previous test: **Operating Systems · Unit 6 — File Systems & Disk Scheduling, Set 1 of 2 (second pass)**,
+- Subtopics: hash functions (7) · open addressing: linear, quadratic & double (7) · collision resolution by
+  chaining (5) · load factor & rehashing (6)
+- Rotation: MODE A. An unseeded `secrets.choice` draw over the seven subjects that do not already carry a paper
+  dated 2026-11-01 (Algorithms, Computer Networks, Operating Systems and Theory of Computation do) returned
+  **Programming and Data Structures** (index 4 of the seven). Its most recent run was
+  `{2026-10-31, run 12, unit 6, heaps-priority-queues, Set 2 of 2}`. Unit 6 held **50** questions, equal to
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
+  `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7, Hashing & Hash Tables**, which held
+  **0** questions. This is Set 1 of 2 of its first pass, and step B5 does not apply because the subject is not
+  at the cap everywhere. No override, no partial set.
+- Unit 7 had no earlier paper, so nothing was archived and the unit folder holds exactly one current paper; the
+  repository root still holds only `index.html`.
+- Previous test: **Theory of Computation · Unit 4 — Turing Machines & Decidability, Set 1 of 2 (third pass)**,
   2026-11-01 →
-  [`operating-systems/storage-file-systems/gate_os_mock_6_2026-11-01.html`](operating-systems/storage-file-systems/gate_os_mock_6_2026-11-01.html)
+  [`theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html`](theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 144 (23 Discrete Mathematics, 11 Algorithms, 8 Databases, 13 Compiler Design, 18 Operating Systems, 11 Engineering Mathematics, 12 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
-| Current papers / archived sets | 61 current · 83 archived |
-| Test cards on the portal | 79 (one card per current paper; superseded sets are links on that card) |
-| Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 4 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 6 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
-| Questions in the subject banks | 3600 (575 Discrete Mathematics, 275 Algorithms, 200 Databases, 325 Compiler Design, 450 Operating Systems, 275 Engineering Mathematics, 300 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
+| Papers published (current + archived) | 145 (23 Discrete Mathematics, 11 Algorithms, 8 Databases, 13 Compiler Design, 18 Operating Systems, 11 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
+| Current papers / archived sets | 62 current · 83 archived |
+| Test cards on the portal | 80 (one card per current paper; superseded sets are links on that card) |
+| Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 4 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
+| Questions in the subject banks | 3625 (575 Discrete Mathematics, 275 Algorithms, 200 Databases, 325 Compiler Design, 450 Operating Systems, 275 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 83 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 6 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 5 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Programming and Data Structures Unit 7, Set 1 of 2
+
+- New paper at `programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`. Unit 7 had no earlier paper,
+  so nothing was archived, the unit folder holds exactly one current paper, and the repository root still holds
+  only `index.html`.
+- **Rotation (Section 1, MODE A).** Four subjects already carried a paper dated 2026-11-01 (Algorithms, Computer
+  Networks, Operating Systems, Theory of Computation), so the draw ran over the remaining seven in syllabus order
+  (Discrete Mathematics, Engineering Mathematics, Digital Logic, Computer Architecture, Programming and Data
+  Structures, Compiler Design, Databases) with an unseeded `secrets.choice` and returned **Programming and Data
+  Structures** (index 4 of 7). `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-10-31, run 12, unit 6, heaps-priority-queues, Set 2 of 2}`. Unit 6 held **50** questions, equal to
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7, Hashing & Hash Tables**. Unit 7 held **0**
+  questions, so this is Set 1 of 2 of its first pass; step B5 does not apply, since the subject is not at the cap
+  everywhere. No override was used and no partial set was generated.
+- Coverage: all four Unit 7 subtopics — hash functions (7); open addressing: linear, quadratic & double (7);
+  collision resolution by chaining (5); load factor & rehashing (6). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, and
+  an MSQ scores only on the exact set of correct options. This is a practice scheme, not the official GATE scheme,
+  and the paper's About tab says so.
+- All 25 items are new (`DS-U7-Q01` … `DS-U7-Q25`); no id and no normalised stem collides with the 300 items
+  already banked for Programming and Data Structures. Every numeric answer was recomputed by script: the linear
+  probing trace on 11 slots puts 26 in slot 5; the quadratic-probing trace with offsets `i² mod 10` puts 42 in
+  slot 1; the double-hashing trace puts 37 in slot 9; the five keys 5, 12, 19, 26, 33 all hash to slot 5 modulo 7;
+  the multiplication method gives `h(30) = ⌊10 × 0.54⌋ = 5`; the universal family over `p = 17` holds
+  `17 × 16 = 272` functions; five keys hashing to one slot in a 13-slot linear-probing table take
+  `1 + 2 + 3 + 4 + 5 = 15` slot examinations; `i² mod 12` takes only the four values 0, 1, 4, 9; the chained
+  successful-search expectation at `α = 4.5` is `3.25`; and `1/(1 − 8/11) = 11/3 = 3.67`.
+- Question Bank tab inside the paper shows the **300** previously banked Programming and Data Structures
+  questions (the active 25 are not repeated there), and its data attributes carry `data-subject` on every card.
+  `verified_pyqs` is empty for this subject, so no item is tagged `GATE_PYQ_VARIATION` and nothing on this paper is
+  claimed as an official GATE question.
+- Portal and bank updated together: `index.html` gained one test card (80 total, 3625 solved questions,
+  62 of 69 units covered, 267 subtopics) and `data/questions-programming-data-structures.js` grew from 300 to 325
+  records, so the Topic & Subtopic Question Archive lists Unit 7 with a "Practise Set 1" launch button.
 
 ### 2026-11-01 — Theory of Computation Unit 4, Set 1 of 2 (third pass)
 
