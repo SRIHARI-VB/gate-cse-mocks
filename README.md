@@ -7,36 +7,83 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Engineering Mathematics · Unit 2 — Linear Algebra: Eigenvalues & Vectors, Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html`](engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html)
+- **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 1 of 2**, 2026-11-01 →
+  [`databases/indexing-storage/gate_db_mock_5_2026-11-01.html`](databases/indexing-storage/gate_db_mock_5_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: characteristic equations (8) · eigenvalue properties (7) · Cayley–Hamilton theorem (4) ·
-  diagonalization (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(6)` draw over the six subjects that do not already carry a paper
-  dated 2026-11-01 (Algorithms, Computer Networks, Operating Systems, Programming and Data Structures and Theory of
-  Computation do) returned index 1 of 6 — **Engineering Mathematics**. Its most recent run was
-  `{2026-10-31, run 11, unit 1, linear-algebra-matrices, Set 1 of 2 (second pass)}`. Unit 1 held **75** questions,
-  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
-  `(index_of(linear-algebra-matrices) = 0 + 1) mod 5 = 1` → **Unit 2, Linear Algebra: Eigenvalues & Vectors**.
-  Unit 2 already held **50** questions, exactly the cap, so this is Set 1 of 2 of its **second pass**. No override,
+- Subtopics: primary, secondary and clustering indexes (6) · dense vs sparse indexing (6) ·
+  B-trees and B+ trees, order and capacity (8) · static and dynamic hashing (5)
+- Rotation: MODE A. An unseeded `secrets.randbelow(5)` draw over the five subjects that do not already carry a paper
+  dated 2026-11-01 (Algorithms, Computer Networks, Engineering Mathematics, Operating Systems, Programming and Data
+  Structures and Theory of Computation do) returned index 4 of 5 — **Databases**. Its most recent run was
+  `{2026-10-31, run 7, unit 4, transactions-concurrency, Set 2 of 2}`. Unit 4 held **50** questions, exactly
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
+  `(index_of(transactions-concurrency) = 3 + 1) mod 5 = 4` → **Unit 5, Indexing, B-Trees & Storage**. No override,
   no partial set.
-- The unit folder held the 2026-10-27 paper, which was moved to
-  `archive/gate_em_mock_2_2026-10-27_run2.html` with its content frozen; the folder now holds exactly one current
-  paper and the repository root still holds only `index.html`.
-- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2**, 2026-11-01 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
+- Unit 5 had no earlier paper, so nothing was archived; the folder now holds exactly one current paper and the
+  repository root still holds only `index.html`.
+- Previous test: **Engineering Mathematics · Unit 2 — Linear Algebra: Eigenvalues & Vectors, Set 1 of 2 (second
+  pass)**, 2026-11-01 →
+  [`engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html`](engineering-mathematics/eigenvalues-eigenvectors/gate_em_mock_2_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 146 (23 Discrete Mathematics, 11 Algorithms, 8 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
-| Current papers / archived sets | 62 current · 84 archived |
-| Test cards on the portal | 80 (one card per current paper; superseded sets are links on that card) |
-| Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 4 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
-| Questions in the subject banks | 3650 (575 Discrete Mathematics, 275 Algorithms, 200 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
+| Papers published (current + archived) | 147 (23 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 9 Digital Logic, 8 Computer Architecture) |
+| Current papers / archived sets | 63 current · 84 archived |
+| Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
+| Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
+| Questions in the subject banks | 3675 (575 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 225 Digital Logic, 200 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 84 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 5 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Databases Unit 5, Set 1 of 2
+
+- New paper at `databases/indexing-storage/gate_db_mock_5_2026-11-01.html`. Unit 5 carried no earlier paper, so
+  nothing was archived; the unit folder now holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- **Rotation (Section 1, MODE A).** Six subjects already carried a paper dated 2026-11-01 (Algorithms, Computer
+  Networks, Engineering Mathematics, Operating Systems, Programming and Data Structures, Theory of Computation), so
+  the draw ran over the remaining five in syllabus order (Discrete Mathematics, Digital Logic, Computer Architecture,
+  Compiler Design, Databases) with an unseeded `secrets.randbelow(5)` and returned **Databases** (index 4 of 5).
+  `runs[]` sorted by `(date, run)` gave the most recent paper as `{2026-10-31, run 7, unit 4,
+  transactions-concurrency, Set 2 of 2}`. Unit 4 held **50** questions, exactly `UNIT_QUESTION_CAP = 50`, so step B3
+  failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(transactions-concurrency) = 3 + 1) mod 5 = 4` → **Unit 5, Indexing, B-Trees & Storage**. No override was
+  used and no unit received a partial set.
+- Coverage: all four Unit 5 subtopics — primary, secondary and clustering indexes (6); dense vs sparse indexing (6);
+  B-trees and B+ trees, order and capacity (8); static and dynamic hashing (5). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ
+  all-or-nothing. Practice scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`DB-U5-Q01` … `DB-U5-Q25`) and none collides with the 200 items already banked for Databases.
+  The subject bank now holds **225** questions and the paper's Question Bank tab shows the **200** previously banked
+  items with the active 25 excluded.
+- Every question carries `data-subject="databases"`, `data-unit="indexing-storage"`, `data-unit-number="5"`,
+  `data-subtopic`, `data-type`, `data-difficulty` and `data-source`; the 25 test cards and the 200 bank cards all carry
+  the full set. Difficulty is lowercase in the attributes, in the bank and in the portal data, and the UI capitalises
+  it with CSS.
+- What the set asks. Primary, secondary and clustering indexes: the entry count of each kind (per block, per distinct
+  value, per record) on the same 30,000-record file; a two-step index sizing (**79** blocks); which index can keep
+  equal values contiguous; four classification statements; and a three-level multilevel index over 5,000 data blocks
+  (**82** index blocks). Dense vs sparse: which index answers an existence query from the index alone; a sparse entry
+  count over 20,000 records (**2,500**); the size-versus-scan trade; four statements on when sparsity is legal; a
+  multilevel sparse index over 10,000 blocks (**121**); and a dense index over 40,000 records (**548** blocks).
+  B-trees and B+ trees: where record pointers live; the internal fan-out from a byte budget (**p = 64**); the leaf
+  capacity with its extra sibling pointer (**63** keys); the capacity of a three-level tree (**258,048** records);
+  the p against p − 1 key bound; four structural statements; occupancy bounds for p = 5; and the height of a tree
+  over a million records (**4 block accesses**). Static and dynamic hashing: overflow chaining; an overflow count over
+  keys 1–40 in ten buckets (**10** records); the one condition that doubles an extendible directory; three statements
+  comparing static, linear and extendible hashing; and global depth against local depth on a split (**3 and 8**).
+- Verified independently: every NAT value was recomputed in code (`ceil` arithmetic for the index sizings, the level
+  recursion for the multilevel indexes, a bucket simulation for the overflow count) and matches the key; every MCQ
+  key was checked against the option it points at.
+- No GATE_PYQ_VARIATION item: no indexing, B-tree or hashing previous-year question has been verified against an
+  official paper and answer key, so none is claimed and the Question Bank tab says so.
+- Section 6.8 checklist run after generation: shell parity (every byte outside the per-paper regions is identical to
+  the 2026-10-31 paper), one copy of the paper and nothing loose at the root, every `href`/`src` in `index.html`
+  resolves, the `:root` block is byte-identical to `design-tokens.css` and to `index.html`, 25 test cards and a
+  25-button palette, the 200 bank cards, no active question repeated in the bank tab, all seven data attributes on
+  every card, and the portal counts read back from `master_bank.json`. All checks pass.
 
 ### 2026-11-01 — Engineering Mathematics Unit 2, Set 1 of 2 (second pass)
 
