@@ -7,38 +7,74 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 2 of 2**, 2026-11-01 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
+- **Algorithms · Unit 6 — Graph Algorithms: Shortest Paths, Set 2 of 2**, 2026-11-01 →
+  [`algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html`](algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: hash functions (6) · collision resolution by chaining (6) · open addressing (7) ·
-  load factor & rehashing (6)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the five
+- Subtopics: Dijkstra's algorithm (7) · Bellman–Ford algorithm (6) · DAG shortest paths (6) ·
+  transitive closure & Floyd–Warshall (6)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the four
   subjects whose current unit was still below `UNIT_QUESTION_CAP = 50` — Discrete Mathematics (Unit 11, 25),
-  Computer Architecture (Unit 6, 25), Programming and Data Structures (Unit 7, 25), Algorithms (Unit 6, 25) and
-  Databases (Unit 5, 25) — in syllabus order, and an unseeded `secrets.randbelow` draw returned index 2, giving
-  **Programming and Data Structures**. `runs[]` gave the most recent paper as
-  `{2026-11-01, run 13, unit 7, hashing, Set 1 of 2}`. Unit 7 held **25** questions, below the cap, and had been
-  current for 0 days, so step B3 held and step B4 was not reached: the unit was generated again as **Set 2 of 2**.
-  25 + 25 = 50 closes Unit 7 at the cap, so the next Programming and Data Structures run advances
-  `(index_of(hashing) = 6 + 1) mod 7 = 0` → Unit 1, opening a second pass. No override was used.
+  Computer Architecture (Unit 6, 25), Algorithms (Unit 6, 25) and Databases (Unit 5, 25) — in syllabus order,
+  and an unseeded `secrets.randbelow(4)` draw returned index 2, giving **Algorithms**. `runs[]` gave the most
+  recent paper as `{2026-11-01, run 11, unit 6, shortest-paths, Set 1 of 2}`. Unit 6 held **25** questions,
+  below the cap, and had been current for 0 days, so step B3 held and step B4 was not reached: the unit was
+  generated again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 6 at the cap, so the next Algorithms run advances
+  `(index_of(shortest-paths) = 5 + 1) mod 7 = 6` → Unit 7, Complexity Theory & NP-Completeness, opening a
+  second pass. No override was used.
 - Superseded paper: the Set 1 paper of this date moved to
-  `programming-data-structures/hashing/archive/gate_ds_mock_7_2026-11-01_run1.html` with its content frozen,
+  `algorithms/shortest-paths/archive/gate_algo_mock_6_2026-11-01_run1.html` with its content frozen,
   so the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html)
+- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 2 of 2**, 2026-11-01 →
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 155 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 90 archived |
+| Papers published (current + archived) | 156 (24 Discrete Mathematics, 12 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 91 archived |
 | Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3875 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3900 (600 Discrete Mathematics, 300 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 90 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 91 (12 Discrete Mathematics, 6 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Algorithms Unit 6, Set 2 of 2
+
+- New paper at `algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html`. The unit folder held the Set 1
+  paper of the same date, which was moved to
+  `algorithms/shortest-paths/archive/gate_algo_mock_6_2026-11-01_run1.html` with its content frozen (same
+  questions, options, answers, solutions and duration); the folder now holds exactly one current paper and the
+  repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw
+  ran over the four whose current unit was still below `UNIT_QUESTION_CAP = 50`, in syllabus order:
+  discrete-mathematics (Unit 11, 25 questions), computer-architecture (Unit 6, 25), algorithms (Unit 6, 25) and
+  databases (Unit 5, 25). An unseeded `secrets.randbelow(4)` draw returned index 2 → **Algorithms**.
+  `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 11, unit 6, shortest-paths, Set 1 of 2}`. Unit 6 held **25** questions, below the cap, and
+  had been current for 0 days, below `DAYS_PER_UNIT_MAX = 7`, so step B3 held and step B4 was not reached: the
+  current unit was generated again as **Set 2 of 2**. The unit now holds exactly **50** questions, closing it
+  at `UNIT_QUESTION_CAP`, so the next Algorithms run advances `(index_of(shortest-paths) = 5 + 1) mod 7 = 6`
+  → **Unit 7, Complexity Theory & NP-Completeness**, which opens a second pass. No override was used.
+- **Coverage.** All four unit subtopics appear: Dijkstra's algorithm (7), Bellman–Ford algorithm (6), DAG
+  shortest paths (6), transitive closure & Floyd–Warshall (6). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking, and an MSQ scores only
+  for the exact set of correct options.
+- **Answers recomputed, not asserted.** The Dijkstra settlement count is 2 and the extraction count is 9;
+  Bellman–Ford gives distance 2 to `d` on the negative-edge trace; the DAG shortest path `A → D` has 3
+  edges; the transitive closure of the three-edge chain has 6 true entries out of 16.
+- **Provenance.** `verified_pyqs` is empty for Algorithms, so no item carries `GATE_PYQ_VARIATION` and nothing
+  on this paper is claimed as an official GATE question. Sources used are `STANDARD_TEXTBOOK` (13) and
+  `ORIGINAL_SYNTHESIS` (12).
+- **Verification (Section 6.8).** Shell parity: the CSS block, the engine script and the remaining markup are
+  byte-identical to the previous paper once the question payload, the bank tab, the About tab and the metadata
+  are stripped. One copy: `find . -name '*.html'` shows `index.html` at the root plus exactly one file per
+  paper. Links: every `href` in the portal card and in the paper's archive list resolves. Tokens: the `:root`
+  block matches `design-tokens.css` byte for byte and no hex colour appears outside it. Counts: 25 test cards,
+  a 25-button palette and 275 banked questions rendered, matching `master_bank.json`. No duplicate content:
+  the active 25 ids do not appear in the Question Bank tab. Rotation: computed from `master_bank.json`, and no
+  unit exceeds 50 questions.
 
 ### 2026-11-01 — Programming and Data Structures Unit 7, Set 2 of 2
 
