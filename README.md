@@ -7,36 +7,60 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html`](computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html)
+- **Engineering Mathematics · Unit 3 — Calculus: Limits, Continuity & Differentiability, Set 1 of 2 (second pass)**, 2026-11-01 →
+  [`engineering-mathematics/calculus-limits-derivatives/gate_em_mock_3_2026-11-01.html`](engineering-mathematics/calculus-limits-derivatives/gate_em_mock_3_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: UDP datagram simplicity (6) · TCP header & connection management (7) ·
-  Flow control & sliding window (6) · Congestion control: slow start & AIMD (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 10 — **Computer Networks**. `runs[]` gave the most recent paper as `{2026-11-01, run 16, unit 4,
-  routing-protocols, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions, above `UNIT_QUESTION_CAP = 50`, so
-  step B3 failed on the cap and step B4 advanced exactly one unit: `(index_of(routing-protocols) = 3 + 1) mod 6 = 4`
-  → **Unit 5, Transport Layer: TCP, UDP & Congestion**. Unit 5 already held 50 questions from 2026-10-30, so every
-  unit of the subject is at or above the cap and step B5 applies: the third pass continues and Unit 5 takes the
-  first set of that pass. No override was used and no partial set was generated.
-- Superseded paper: the 2026-10-30 Set 2 paper moved to
-  `computer-networks/transport-layer/archive/gate_cn_mock_5_2026-10-30_run2.html` with its content frozen, so the
-  unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 1 of 2 (third pass)**,
-  2026-11-01 → [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html)
+- Subtopics: Indeterminate forms & L'Hôpital's rule (7) · Continuity analysis (6) ·
+  Mean value theorems (6) · Partial derivatives (6)
+- Rotation: MODE A. `random.Random(20261101).choice` over the eleven subjects in syllabus order returned
+  index 1 — **Engineering Mathematics**. The narrower "no paper for today" filter used on earlier runs was
+  empty (all eleven subjects already carried a 2026-11-01 paper), so the draw was taken over the full list.
+  `runs[]` gave the most recent paper as `{2026-11-01, run 12, unit 2, eigenvalues-eigenvectors, Set 1 of 2
+  (second pass)}`. Unit 2 held **75** questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap
+  and step B4 advanced exactly one unit: `(index_of(eigenvalues-eigenvectors) = 1 + 1) mod 5 = 2` →
+  **Unit 3, Calculus: Limits, Continuity & Differentiability**. Unit 3 already held 50 questions, so this is
+  Set 1 of 2 of its second pass. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-27 Set 2 paper moved to
+  `engineering-mathematics/calculus-limits-derivatives/archive/gate_em_mock_3_2026-10-27_run2.html` with its
+  content frozen, so the unit folder holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- Previous test: **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 1 of 2 (third
+  pass)**, 2026-11-01 → [`computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html`](computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 159 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 94 archived |
+| Papers published (current + archived) | 160 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 14 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 95 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3975 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 4000 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 350 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 94 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 95 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 7 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Engineering Mathematics Unit 3, Set 1 of 2 (second pass)
+
+- New paper at `engineering-mathematics/calculus-limits-derivatives/gate_em_mock_3_2026-11-01.html`. The
+  2026-10-27 Set 2 paper moved to `archive/gate_em_mock_3_2026-10-27_run2.html` with its content frozen (same
+  questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper.
+- Selection: MODE A, `random.Random(20261101).choice` over the eleven subjects in syllabus order returned
+  Engineering Mathematics; `runs[]` gave unit 2 (75 questions, at cap) so step B4 advanced one unit to Unit 3.
+  Unit 3 stood at 50 questions, so this opens its second pass.
+- Composition: 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme.
+- Subtopics: indeterminate forms & L'Hôpital's rule 7 · continuity analysis 6 · mean value theorems 6 ·
+  partial derivatives 6. Difficulty 10 easy / 10 medium / 5 hard.
+- Bank: 25 records appended with ids `EM-U3C-Q01`–`EM-U3C-Q25`; Engineering Mathematics now holds 325
+  questions across 5 units.
+- Question Bank tab: 300 solved questions, the active 25 excluded, so no question appears twice on the page.
+- Shell parity: the paper's stripped shell is byte-identical to the previous paper's; only the payload, the
+  question cards, the palette, the bank view and the about text differ.
+- Shell repair: twelve papers (including five current ones) had lost the `<aside class="side">` opening tag while
+  keeping its closing tag, which dropped the palette out of the sticky sidebar and left a stray `</aside>`. The
+  opening tag was restored in all twelve; their question content, options, answers, solutions and duration are
+  unchanged.
 
 ### 2026-11-01 — Computer Networks Unit 5, Set 1 of 2 (third pass)
 
