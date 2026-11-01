@@ -7,39 +7,107 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 2 of 2**, 2026-11-01 →
-  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
+- **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 2 of 2**, 2026-11-01 →
+  [`databases/indexing-storage/gate_db_mock_5_2026-11-01.html`](databases/indexing-storage/gate_db_mock_5_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Boolean identities & duality (7) · SOP & POS forms (6) · Minterms & maxterms (6) ·
-  K-map simplification (6)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the eight
-  subjects whose current unit was still below `UNIT_QUESTION_CAP = 50` in its current pass — Discrete Mathematics
-  (Unit 11, 25), Engineering Mathematics (Unit 2, 25), Digital Logic (Unit 2, 25), Computer Architecture (Unit 6, 25),
-  Theory of Computation (Unit 4, 25), Operating Systems (Unit 6, 25), Databases (Unit 5, 25) and Computer Networks
-  (Unit 4, 25) — in syllabus order, and an unseeded `secrets.randbelow(8)` draw returned index 0, giving
-  **Discrete Mathematics**. `runs[]` gave the most recent paper as `{2026-11-01, run 14, unit 11, boolean-algebra,
-  Set 1 of 2}`. Unit 11 held **25** questions and had been current for 0 days, so step B3 held and step B4 was not
-  reached: the unit was generated again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 11 at the cap, so the next
-  Discrete Mathematics run advances `(index_of(boolean-algebra) = 10 + 1) mod 16 = 11` → Unit 12, Algebraic
-  Structures. No override was used.
+- Subtopics: Primary, secondary & clustering indexes (6) · Dense vs sparse indexing (6) ·
+  B-trees & B+ trees, order & capacity (7) · Static & dynamic hashing (6)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven
+  in syllabus order with an unseeded `secrets.randbelow(11)` and returned index 9 — **Databases**. `runs[]` gave
+  the most recent paper as `{2026-11-01, run 8, unit 5, indexing-storage, Set 1 of 2}`. Unit 5 held **25**
+  questions and had been current for 0 days, so step B3 held and step B4 was not reached: the unit was generated
+  again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 5 at the cap, so the next Databases run advances
+  `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` → Unit 1, ER Models & Relational Algebra, opening a second
+  pass. No override was used.
 - Superseded paper: the Set 1 paper of this date moved to
-  `discrete-mathematics/boolean-algebra/archive/gate_dm_mock_11_2026-11-01_run1.html` with its content frozen,
-  so the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Algorithms · Unit 6 — Graph Algorithms: Shortest Paths, Set 2 of 2**, 2026-11-01 →
-  [`algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html`](algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html)
+  `databases/indexing-storage/archive/gate_db_mock_5_2026-11-01_run1.html` with its content frozen, so the unit
+  folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 2 of 2**, 2026-11-01 →
+  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 157 (25 Discrete Mathematics, 12 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 92 archived |
+| Papers published (current + archived) | 158 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 93 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3925 (625 Discrete Mathematics, 300 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3950 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 92 (13 Discrete Mathematics, 6 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 93 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Databases Unit 5, Set 2 of 2
+
+- New paper at `databases/indexing-storage/gate_db_mock_5_2026-11-01.html`. The unit folder held the Set 1 paper
+  of the same date, which was moved to
+  `databases/indexing-storage/archive/gate_db_mock_5_2026-11-01_run1.html` with its content frozen (same
+  questions, options, answers, solutions and duration); the folder now holds exactly one current paper and the
+  repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw ran
+  over all eleven in syllabus order with an unseeded `secrets.randbelow(11)` and returned index 9 of 11 →
+  **Databases**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 8, unit 5, indexing-storage, Set 1 of 2}`. Unit 5 held **25** questions, below the cap, and
+  had been current for 0 days, below `DAYS_PER_UNIT_MAX = 7`, so step B3 held and step B4 was not reached: the
+  current unit was generated again as **Set 2 of 2**. The unit now holds exactly **50** questions, closing it at
+  `UNIT_QUESTION_CAP`, so the next Databases run advances `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` →
+  **Unit 1, ER Models & Relational Algebra**, which opens a second pass over the subject (Section 1 step B5). No
+  override was used and no partial set was generated: the paper is exactly 25 questions.
+- **Coverage.** All four unit subtopics appear: primary, secondary & clustering indexes (6), dense vs sparse
+  indexing (6), B-trees & B+ trees order and capacity (7), static & dynamic hashing (6). Composition 15 MCQ /
+  5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking, and an MSQ
+  scores only for the exact set of correct options. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **What the set asks, and why it is not Set 1 again.** Set 1 asked what each index type stores and how many
+  entries it holds; this set asks how the numbers are derived and where the definitions break. Indexes: naming
+  the index on an ordered non-key field; the entry count of a clustering index (**120**); the distinct-value plus
+  pointer-block organisation for a secondary index on a repeating field; and a multilevel primary index whose
+  total is **51** blocks. Density: why sparsity needs the file order; sparse entries for 45,000 records at 9 per
+  block (**5,000**); why a sparse point search costs the same single block read as a dense one; the dense index
+  for 60,000 records at 16 bytes an entry (**938** blocks, against 63 for the sparse index on the same file).
+  B+ trees: order from the block inequality (**57** for a 10-byte key and an 8-byte pointer); the key floor from
+  the pointer floor (**3**); B-tree against B+ tree; the minimum-record count of a three-level tree (**12**); and
+  a B-tree order of **171** for 4096-byte blocks. Hashing: directory size `2^d`; entries per bucket
+  `2^(global − local)` (**2** and **4** across the two items); static-hashing properties; linear hashing after 40
+  insertions (**18** buckets); and the split that doubles the directory (global 2 → 3, 4 → 8 entries).
+- **Answers recomputed, not asserted.** Every numeric answer was produced by script rather than by hand:
+  ⌈5,000 ÷ 102⌉ = 50 plus one top block = 51; ⌈10,000 ÷ 56⌉ = 179; 45,000 ÷ 9 = 5,000; ⌈60,000 ÷ 64⌉ = 938 with
+  ⌈4,000 ÷ 64⌉ = 63 for the sparse alternative; 8p + 10(p − 1) ≤ 1024 → p = 57 (1016 bytes used, 1034 for
+  p = 58); ⌈7/2⌉ − 1 = 3 keys; 2 × 3 × 2 = 12 records; 8p + 16(p − 1) ≤ 4096 → p = 171 (4088 used, 4112 for
+  p = 172); ⌈2,500 ÷ 85⌉ = 30; 2^(3 − 2) = 2; 2^(3 − 1) = 4; 8 + 40 ÷ 4 = 18.
+- **Provenance.** `verified_pyqs` records no indexing, B-tree or hashing question, so no item carries
+  `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE question. Sources used are
+  `STANDARD_TEXTBOOK` (15) and `ORIGINAL_SYNTHESIS` (10). Every question carries
+  `data-subject="databases"` alongside unit, unit number, subtopic, type, difficulty and source.
+- **Ids.** All 25 ids are new (`DB-U5-Q26` … `DB-U5-Q50`) and collide with nothing already in the Databases bank,
+  which held `DB-U5-Q01` … `DB-U5-Q25`. The subject bank now holds **250** questions and the paper's Question Bank
+  tab shows the **225** previously banked items, so the active set is not repeated there.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block and the engine `<script>` are byte-identical
+  to the Set 1 paper this one replaces (checked by hashing), and only the payload, the 25 question cards, the
+  Question Bank tab, the About tab and five metadata strings (title, header sub-line, set chip, Question Bank
+  count, set label) differ. One copy: `find . -name '*.html'` shows `index.html` at the root plus exactly one file
+  per paper — 159 files in all — and nothing else at the root. Links: every `href` and every card path in
+  `index.html` resolves, all 158 papers are referenced, and no archive list names its own paper. Tokens: the
+  `:root` block is byte-identical to `design-tokens.css` and to `index.html`, and the literal-hex-outside-`:root`
+  count is unchanged at 309. Counts: 25 test cards, a 25-button palette, 225 banked cards, and all seven data
+  attributes present on all 250 of them. No duplicate content: the active 25 ids and texts do not appear in the
+  Question Bank tab. Rotation: computed from `master_bank.json`, and no unit exceeds 50 questions.
+- **Interface run.** A jsdom run of the shipped file confirms one visible card on load, no solution or option mark
+  rendered in the test view before submit, the locked answer-key tab, the timer at 60:00, **35 / 35** on a perfect
+  attempt (25 correct, 0 incorrect, 0 unattempted), the key tab unlocking with 25 entries, all 25 palette buttons
+  turning `ok`, and a second attempt in which every MCQ is wrong, every MSQ is a strict subset of its correct set
+  and every NAT is right scoring **10 / 35** — confirming that an MSQ earns nothing on a partial set and that
+  there is no negative marking.
+- **Bookkeeping.** `master_bank.json` grew from 225 to 250 records with run 16 appended;
+  `data/questions-databases.js` grew from 225 to 250 records; `index.html` kept its 65 cards (the Unit 5 card now
+  points at the Set 2 paper with the Set 1 paper as its earlier-set link, and moved to the head of `tests`), and
+  its header counter was recomputed to 3950 records. Databases now covers 5 of 5 units with 10 published papers
+  and 5 archived sets.
+- **Pre-existing bank defect, left alone.** `algorithms/question-bank/master_bank.json` stores unit 6 both as the
+  integer `6` and as the string `"6"`, so a naive distinct-unit count over the banks reports 66 units where the
+  true figure is 65. The bank is append-only and the defect does not touch this paper, so it was recorded rather
+  than silently repaired.
 
 ### 2026-11-01 — Discrete Mathematics Unit 11, Set 2 of 2
 

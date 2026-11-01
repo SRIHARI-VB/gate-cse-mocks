@@ -6,7 +6,7 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-01",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 225,
+  "total_questions": 250,
   "units_with_questions": [
    1,
    2,
@@ -500,6 +500,66 @@
    ],
    "selection": "MODE A. Six subjects already carried a paper dated 2026-11-01 (Algorithms, Computer Networks, Engineering Mathematics, Operating Systems, Programming and Data Structures, Theory of Computation), so the unseeded draw ran over the remaining five in syllabus order (Discrete Mathematics, Digital Logic, Computer Architecture, Compiler Design, Databases) with secrets.randbelow(5) and returned index 4 of 5 - Databases. runs[] sorted by (date, run) gave the most recent paper as {2026-10-31, run 7, unit 4, transactions-concurrency, Set 2 of 2}. Unit 4 held 50 questions, exactly UNIT_QUESTION_CAP, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(transactions-concurrency) = 3 + 1) mod 5 = 4 -> Unit 5, Indexing, B-Trees & Storage. No override was used.",
    "note": "Set 1 of 2 for Unit 5, the first paper for this unit, so nothing was archived and the unit folder now holds exactly one current paper. 25 new questions, all four subtopics represented (6 / 6 / 8 / 5). No GATE_PYQ_VARIATION item: no indexing, B-tree or hashing previous-year question has been verified against an official paper and answer key, so none is claimed."
+  },
+  {
+   "run": 16,
+   "date": "2026-11-01",
+   "subject": "databases",
+   "subject_name": "Databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "set": "Set 2 of 2",
+   "count": 25,
+   "file": "databases/indexing-storage/gate_db_mock_5_2026-11-01.html",
+   "archived_previous": "databases/indexing-storage/archive/gate_db_mock_5_2026-11-01_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "question_ids": [
+    "DB-U5-Q26",
+    "DB-U5-Q27",
+    "DB-U5-Q28",
+    "DB-U5-Q29",
+    "DB-U5-Q30",
+    "DB-U5-Q31",
+    "DB-U5-Q32",
+    "DB-U5-Q33",
+    "DB-U5-Q34",
+    "DB-U5-Q35",
+    "DB-U5-Q36",
+    "DB-U5-Q37",
+    "DB-U5-Q38",
+    "DB-U5-Q39",
+    "DB-U5-Q40",
+    "DB-U5-Q41",
+    "DB-U5-Q42",
+    "DB-U5-Q43",
+    "DB-U5-Q44",
+    "DB-U5-Q45",
+    "DB-U5-Q46",
+    "DB-U5-Q47",
+    "DB-U5-Q48",
+    "DB-U5-Q49",
+    "DB-U5-Q50"
+   ],
+   "subtopics": [
+    "primary-secondary-clustering-indexes",
+    "dense-vs-sparse-indexing",
+    "b-trees-and-b-plus-trees-order-capacity",
+    "static-and-dynamic-hashing"
+   ],
+   "selection": "MODE A (random subject, bank-driven unit rotation). All eleven GATE CSE subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven in syllabus order with an unseeded secrets.randbelow(11) and returned index 9 of 11 - Databases. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 8, unit 5, indexing-storage, Set 1 of 2}. Unit 5 held 25 questions, below UNIT_QUESTION_CAP = 50, and had been current for 0 days, below DAYS_PER_UNIT_MAX = 7, so step B3 held and step B4 was not reached: the current unit ran again as Set 2 of 2. Unit 5 now holds exactly 50 questions and closes at the cap; the next Databases run advances (index_of(indexing-storage) = 4 + 1) mod 5 = 0 -> Unit 1, ER Models & Relational Algebra, opening a second pass. No override was used and no partial set was generated: the paper is exactly 25 questions."
   }
  ],
  "verified_pyqs": [
@@ -9734,6 +9794,940 @@
     "trap": "Splitting the bucket and leaving the directory alone. That is only legal when the local depth is strictly below the global depth."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The global depth d fixes the directory size at 2<sup>d</sup>. A bucket can be split without touching the directory only if its local depth is less than d; equality forces a doubling.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Bucket A has local depth 2 and the global depth is 2, so A already uses every directory bit.</li><li>There is no spare bit with which to distinguish two halves of A, so the global depth must increase to 3.</li><li>The directory size becomes 2<sup>3</sup> = <b>8</b> entries, and A's two halves get local depth 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — global depth 3 and 8 directory entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) The directory cannot stay at 4, because A has no bit left to split on.</li><li>(C) Global depth 3 forces 2<sup>3</sup> = 8 entries; a directory of 4 would contradict the new depth.</li><li>(D) One split raises the depth by exactly one, not by two.</li></ul><p class=\"row\"><b>Common misconception.</b> Splitting the bucket and leaving the directory alone. That is only legal when the local depth is strictly below the global depth.</p><p class=\"row\"><b>Takeaway.</b> One split raises the global depth by at most one. Check local against global first: equal means double the directory, smaller means split in place.</p>"
+  },
+  {
+   "id": "DB-U5-Q26",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A file of employee records is physically ordered on the non-key field <code class=\"mm\">dept</code>. An index is built on <code class=\"mm\">dept</code> so that all records of one department are reachable through one index entry. This index is a",
+   "options": [
+    "clustering index",
+    "primary index",
+    "dense secondary index",
+    "hash index"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The three single-level index types are named by <i>what the file is ordered on</i> and by whether the indexed field is a key. A <b>primary index</b> is built on the field that orders the file when that field is the key; a <b>clustering index</b> is built on the field that orders the file when that field is <i>not</i> a key; a <b>secondary index</b> is built on a field that does not order the file at all.",
+    "steps": [
+     "<code class=\"mm\">dept</code> orders the file, so the index is not secondary.",
+     "<code class=\"mm\">dept</code> is not a key — many records share a value — so the index is not primary.",
+     "An index on the ordering non-key field is a clustering index, with one entry per distinct value."
+    ],
+    "final": "Option (A) — clustering index",
+    "trap": "Calling any index on the ordering field a primary index. The word \"primary\" refers to the ordering <i>key</i>; once the ordering field is not a key the correct name is clustering."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three single-level index types are named by <i>what the file is ordered on</i> and by whether the indexed field is a key. A <b>primary index</b> is built on the field that orders the file when that field is the key; a <b>clustering index</b> is built on the field that orders the file when that field is <i>not</i> a key; a <b>secondary index</b> is built on a field that does not order the file at all.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">dept</code> orders the file, so the index is not secondary.</li><li><code class=\"mm\">dept</code> is not a key — many records share a value — so the index is not primary.</li><li>An index on the ordering non-key field is a clustering index, with one entry per distinct value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — clustering index</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) A primary index is on the ordering field only when that field is the key; here the field has duplicates, so it is a clustering index.</li><li>(C) A dense secondary index is used when the file is <i>not</i> ordered on the indexed field.</li><li>(D) A hash index places records by a computed bucket address and destroys any physical ordering.</li></ul><p class=\"row\"><b>Common misconception.</b> Calling any index on the ordering field a primary index. The word \"primary\" refers to the ordering <i>key</i>; once the ordering field is not a key the correct name is clustering.</p><p class=\"row\"><b>Takeaway.</b> Ordering + key → primary; ordering + non-key → clustering; not ordering → secondary (and then it must be dense).</p>"
+  },
+  {
+   "id": "DB-U5-Q27",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A file of 12,000 records occupies 800 blocks and is ordered on the non-key field <code class=\"mm\">city</code>, which has 120 distinct values. A clustering index on <code class=\"mm\">city</code> holds how many entries?",
+   "options": [
+    "800",
+    "120",
+    "12,000",
+    "12"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A clustering index has <b>one entry per distinct value</b> of the indexed field. Each entry carries that value together with a pointer to the first block of the run of blocks that hold the records of that value.",
+    "steps": [
+     "The index is on a non-key ordering field, so it is a clustering index.",
+     "A clustering index does not need one entry per block: all blocks of one value are contiguous, so one pointer reaches the whole run.",
+     "The number of entries is therefore the number of distinct values, 120."
+    ],
+    "final": "Option (B) — 120 entries",
+    "trap": "Applying the primary-index rule \"one entry per block\" to every index on an ordering field."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A clustering index has <b>one entry per distinct value</b> of the indexed field. Each entry carries that value together with a pointer to the first block of the run of blocks that hold the records of that value.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The index is on a non-key ordering field, so it is a clustering index.</li><li>A clustering index does not need one entry per block: all blocks of one value are contiguous, so one pointer reaches the whole run.</li><li>The number of entries is therefore the number of distinct values, 120.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 120 entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 800 entries is the rule for a <i>primary</i> index, one entry per block; a clustering index needs only one entry per value.</li><li>(C) 12,000 entries is a <i>dense</i> index, one entry per record — never possible here, since the field is not a key.</li><li>(D) 12 is the number of blocks per distinct value on average, not the entry count.</li></ul><p class=\"row\"><b>Common misconception.</b> Applying the primary-index rule \"one entry per block\" to every index on an ordering field.</p><p class=\"row\"><b>Takeaway.</b> Entry count: primary index = blocks; clustering index = distinct values; dense secondary index = records (or distinct values with a bucket of pointers).</p>"
+  },
+  {
+   "id": "DB-U5-Q28",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A secondary index is built on a field that neither orders the file nor is a key, so many records share each value. The standard organisation for such an index is",
+   "options": [
+    "one entry per record, each entry storing the whole record",
+    "one entry per data block, holding the first key of that block",
+    "one entry per distinct value, whose pointer leads to a block of record pointers",
+    "no index at all, because a non-key field cannot be indexed"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "On a field that does not order the file, an index cannot skip records, so every record must be reachable from it. When the field is also not a key, storing one entry per record would repeat the same value many times, so the standard secondary index keeps <b>one entry per distinct value</b> and makes that entry point to a <b>block of record pointers</b>.",
+    "steps": [
+     "The field is not the ordering field, so a sparse index is impossible — the file order cannot cover unindexed values.",
+     "The field is not a key, so a value repeats. Repeating the value in one entry per record wastes index space.",
+     "The usual fix is an extra level: one index entry per distinct value, pointing at a block that holds the pointers of all records with that value."
+    ],
+    "final": "Option (C) — one entry per distinct value pointing to a block of record pointers",
+    "trap": "Assuming a secondary index always has one entry per record. That is true for a secondary index on a key; with heavy duplication the distinct-value organisation with pointer blocks is the standard one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> On a field that does not order the file, an index cannot skip records, so every record must be reachable from it. When the field is also not a key, storing one entry per record would repeat the same value many times, so the standard secondary index keeps <b>one entry per distinct value</b> and makes that entry point to a <b>block of record pointers</b>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The field is not the ordering field, so a sparse index is impossible — the file order cannot cover unindexed values.</li><li>The field is not a key, so a value repeats. Repeating the value in one entry per record wastes index space.</li><li>The usual fix is an extra level: one index entry per distinct value, pointing at a block that holds the pointers of all records with that value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — one entry per distinct value pointing to a block of record pointers</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) An entry never stores the whole record; an index entry stores a search value and a pointer.</li><li>(B) One entry per block with the block's first key is the rule for a <i>primary</i> index, which requires the file to be ordered on the indexed field.</li><li>(D) Non-key fields are indexed routinely; that is exactly what a secondary index is for.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming a secondary index always has one entry per record. That is true for a secondary index on a key; with heavy duplication the distinct-value organisation with pointer blocks is the standard one.</p><p class=\"row\"><b>Takeaway.</b> Dense is forced by the absence of ordering; distinct-value entries plus pointer blocks are how the index stays compact when values repeat.</p>"
+  },
+  {
+   "id": "DB-U5-Q29",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "A file has 100,000 records with 20 records per block and is ordered on its key. A primary index has one entry per data block; each entry is 20 bytes and an index block holds 2048 bytes. The index is made multilevel, repeatedly indexing the previous level, until the top level fits in a single block. How many blocks does the whole multilevel index contain?",
+   "options": [
+    "50",
+    "52",
+    "5,001",
+    "51"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A multilevel index treats each level as an ordered file and indexes it, so the entry count of one level is the <i>block</i> count of the level below. The total is the sum of the levels, including the single top block.",
+    "steps": [
+     "Data blocks = 100,000 ÷ 20 = <b>5,000</b>, so the first level has 5,000 entries.",
+     "Entries per index block = ⌊2048 ÷ 20⌋ = <b>102</b>.",
+     "First level = ⌈5,000 ÷ 102⌉ = ⌈49.02⌉ = <b>50</b> blocks.",
+     "Second level = ⌈50 ÷ 102⌉ = <b>1</b> block, so the structure stops here.",
+     "Total = 50 + 1 = <b>51</b> blocks."
+    ],
+    "final": "Option (D) — 51 blocks",
+    "trap": "Summing the levels but forgetting the top block, or adding a level that is not needed because the previous level already fits in one block."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A multilevel index treats each level as an ordered file and indexes it, so the entry count of one level is the <i>block</i> count of the level below. The total is the sum of the levels, including the single top block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Data blocks = 100,000 ÷ 20 = <b>5,000</b>, so the first level has 5,000 entries.</li><li>Entries per index block = ⌊2048 ÷ 20⌋ = <b>102</b>.</li><li>First level = ⌈5,000 ÷ 102⌉ = ⌈49.02⌉ = <b>50</b> blocks.</li><li>Second level = ⌈50 ÷ 102⌉ = <b>1</b> block, so the structure stops here.</li><li>Total = 50 + 1 = <b>51</b> blocks.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) — 51 blocks</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 50 counts only the first level and forgets the top block that indexes it.</li><li>(B) 52 invents a level: 50 already fits in one block, so there is no third level.</li><li>(C) 5,001 adds one to the number of data blocks; the index is far smaller than the file.</li></ul><p class=\"row\"><b>Common misconception.</b> Summing the levels but forgetting the top block, or adding a level that is not needed because the previous level already fits in one block.</p><p class=\"row\"><b>Takeaway.</b> Total multilevel blocks = ⌈N/b⌉ + ⌈⌈N/b⌉/b⌉ + … , stopping as soon as a level equals 1.</p>"
+  },
+  {
+   "id": "DB-U5-Q30",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "Which of the following statements about single-level indexes on a file of records are TRUE? (Select all that apply.)",
+   "options": [
+    "A clustering index is built on a non-key field that orders the file.",
+    "A file may have more than one primary index at a time.",
+    "A secondary index on a field that does not order the file must reach every record, so it cannot be sparse.",
+    "A primary index entry stores the key of the first record in a block together with a pointer to that block."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "The index types are defined by the field they are built on and by that field's relation to the file order. \"Primary\" is tied to the single ordering <i>key</i>; sparsity is possible only where the physical order covers the records between two index entries.",
+    "steps": [
+     "(A) TRUE — a clustering index is precisely the index on the field that orders the file when that field is not a key.",
+     "(B) FALSE — a file has exactly one ordering key, so it has at most one primary index.",
+     "(C) TRUE — without ordering, an index entry cannot cover the records between entries, so every record must be reachable, i.e. the index is dense (possibly with pointer blocks).",
+     "(D) TRUE — that is the definition of a sparse primary-index entry."
+    ],
+    "final": "Options (A), (C) and (D)",
+    "trap": "Believing a file can carry several primary indexes, or that a secondary index may be sparse."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The index types are defined by the field they are built on and by that field's relation to the file order. \"Primary\" is tied to the single ordering <i>key</i>; sparsity is possible only where the physical order covers the records between two index entries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — a clustering index is precisely the index on the field that orders the file when that field is not a key.</li><li>(B) FALSE — a file has exactly one ordering key, so it has at most one primary index.</li><li>(C) TRUE — without ordering, an index entry cannot cover the records between entries, so every record must be reachable, i.e. the index is dense (possibly with pointer blocks).</li><li>(D) TRUE — that is the definition of a sparse primary-index entry.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Two primary indexes would need two different physical orderings of the same file.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing a file can carry several primary indexes, or that a secondary index may be sparse.</p><p class=\"row\"><b>Takeaway.</b> One ordering key → at most one primary index. No ordering → no sparsity.</p>"
+  },
+  {
+   "id": "DB-U5-Q31",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "primary-secondary-clustering-indexes",
+   "subtopic": "primary-secondary-clustering-indexes",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A dense secondary index is built on the search key of a file of 10,000 records. Each index entry holds a 12-byte key and a 6-byte block pointer, and index blocks are 1024 bytes. How many blocks does the index occupy?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 179,
+   "answer_display": "179",
+   "solution": {
+    "concept": "A dense index on a key has one entry per record. The number of blocks follows from how many whole entries fit in one block, and the last partly filled block is still allocated.",
+    "steps": [
+     "A dense index on the key has <b>10,000</b> entries.",
+     "One entry = 12 + 6 = <b>18 bytes</b>, so one block holds ⌊1024 ÷ 18⌋ = <b>56</b> entries.",
+     "Blocks = ⌈10,000 ÷ 56⌉ = ⌈178.57⌉ = <b>179</b>."
+    ],
+    "final": "179 (an integer number of blocks; the final block is partly empty but is still allocated)",
+    "trap": "Rounding down to 178 and dropping the partial final block, or forgetting that the pointer also occupies space in the entry."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A dense index on a key has one entry per record. The number of blocks follows from how many whole entries fit in one block, and the last partly filled block is still allocated.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A dense index on the key has <b>10,000</b> entries.</li><li>One entry = 12 + 6 = <b>18 bytes</b>, so one block holds ⌊1024 ÷ 18⌋ = <b>56</b> entries.</li><li>Blocks = ⌈10,000 ÷ 56⌉ = ⌈178.57⌉ = <b>179</b>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 179 (an integer number of blocks; the final block is partly empty but is still allocated)</span></p><p class=\"row\"><b>Common misconception.</b> Rounding down to 178 and dropping the partial final block, or forgetting that the pointer also occupies space in the entry.</p><p class=\"row\"><b>Takeaway.</b> Always ceil the block count: ⌈entries ÷ entries-per-block⌉.</p>"
+  },
+  {
+   "id": "DB-U5-Q32",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A sparse index on the search key of a file can be built only when",
+   "options": [
+    "the file is physically ordered on that key",
+    "the key values are unique",
+    "the file occupies at most one block",
+    "the index is made multilevel"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Sparsity means that some search-key values have no index entry. That is safe only if the file order guarantees that a missing value lies between the values of two neighbouring entries, which requires the file to be ordered on the indexed field.",
+    "steps": [
+     "A sparse entry is a \"starting point\": it locates the block from which a scan begins.",
+     "The scan only finds the record if all values between two entries lie in the blocks that follow the first entry — that is exactly what physical ordering guarantees.",
+     "Without ordering, an unindexed value could sit anywhere in the file, so a sparse index would miss it."
+    ],
+    "final": "Option (A) — the file must be physically ordered on that key",
+    "trap": "Thinking sparsity depends on the key being unique. It depends on the <i>file order</i>, which is why a clustering index on an ordered non-key field is also sparse."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Sparsity means that some search-key values have no index entry. That is safe only if the file order guarantees that a missing value lies between the values of two neighbouring entries, which requires the file to be ordered on the indexed field.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A sparse entry is a \"starting point\": it locates the block from which a scan begins.</li><li>The scan only finds the record if all values between two entries lie in the blocks that follow the first entry — that is exactly what physical ordering guarantees.</li><li>Without ordering, an unindexed value could sit anywhere in the file, so a sparse index would miss it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — the file must be physically ordered on that key</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Uniqueness is not needed: a sparse index on an ordered non-key field is a clustering index.</li><li>(C) A one-block file needs no index at all; the condition is about ordering, not size.</li><li>(D) Multilevel indexes are built on top of an existing first-level index and do not create the ability to be sparse.</li></ul><p class=\"row\"><b>Common misconception.</b> Thinking sparsity depends on the key being unique. It depends on the <i>file order</i>, which is why a clustering index on an ordered non-key field is also sparse.</p><p class=\"row\"><b>Takeaway.</b> Sparsity ⇔ the indexed field orders the file.</p>"
+  },
+  {
+   "id": "DB-U5-Q33",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A file of 45,000 records is stored with 9 records per block and is ordered on its search key. A sparse index stores one entry per block. How many entries does the index have?",
+   "options": [
+    "45,000",
+    "5,000",
+    "9",
+    "4,500"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A sparse index on the ordering key keeps one entry per <b>data block</b>, because the block's first key identifies every record in that block.",
+    "steps": [
+     "Blocks = 45,000 ÷ 9 = <b>5,000</b>.",
+     "One entry per block gives 5,000 entries."
+    ],
+    "final": "Option (B) — 5,000 entries",
+    "trap": "Dividing by a round number instead of by the stated records-per-block."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A sparse index on the ordering key keeps one entry per <b>data block</b>, because the block's first key identifies every record in that block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Blocks = 45,000 ÷ 9 = <b>5,000</b>.</li><li>One entry per block gives 5,000 entries.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 5,000 entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 45,000 is the record count, which would be a dense index.</li><li>(C) 9 is the number of records per block, not a count of entries.</li><li>(D) 4,500 divides by 10 rather than by the 9 records per block.</li></ul><p class=\"row\"><b>Common misconception.</b> Dividing by a round number instead of by the stated records-per-block.</p><p class=\"row\"><b>Takeaway.</b> Sparse entries on an ordering key = number of data blocks = ⌈records ÷ records-per-block⌉.</p>"
+  },
+  {
+   "id": "DB-U5-Q34",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "For a successful point search on the ordering key, a sparse index and a dense index on the same key both cost one index search plus one data-block read. The sparse index needs no extra block read because",
+   "options": [
+    "a sparse index never needs to read the data file",
+    "the sparse index stores the full record in each entry",
+    "the extra scan happens inside the data block that was already read",
+    "the dense index needs two data-block reads"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A sparse entry points at the block whose key range contains the search value. That block has to be read anyway, and the remaining scan takes place inside it, so no additional I/O is added.",
+    "steps": [
+     "The index search ends at the largest entry whose key is ≤ the target.",
+     "That entry supplies the address of the data block where the target must lie.",
+     "Reading that block is the one data-block access the search needs; scanning it costs CPU time, not another block access.",
+     "A dense index reaches the same block through an exact entry, so its cost is identical."
+    ],
+    "final": "Option (C) — the scan is absorbed by the data block that is read anyway",
+    "trap": "Adding an extra block access for the in-block scan. The scan is a CPU cost inside a block that the search reads regardless."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A sparse entry points at the block whose key range contains the search value. That block has to be read anyway, and the remaining scan takes place inside it, so no additional I/O is added.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The index search ends at the largest entry whose key is ≤ the target.</li><li>That entry supplies the address of the data block where the target must lie.</li><li>Reading that block is the one data-block access the search needs; scanning it costs CPU time, not another block access.</li><li>A dense index reaches the same block through an exact entry, so its cost is identical.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — the scan is absorbed by the data block that is read anyway</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Every index search ends with a data-block read; no index avoids it.</li><li>(B) An index entry stores a search value and a pointer, never the full record.</li><li>(D) A dense index needs exactly one data-block read, not two.</li></ul><p class=\"row\"><b>Common misconception.</b> Adding an extra block access for the in-block scan. The scan is a CPU cost inside a block that the search reads regardless.</p><p class=\"row\"><b>Takeaway.</b> Sparse and dense indexes have the same I/O for a point search; sparsity buys <i>index size</i>, not search time.</p>"
+  },
+  {
+   "id": "DB-U5-Q35",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "A file of 60,000 records is stored with 15 records per block and is ordered on its key. A dense index on the key uses 10-byte keys and 6-byte pointers in 1024-byte blocks. How many blocks does the dense index occupy?",
+   "options": [
+    "937",
+    "63",
+    "4,000",
+    "938"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A dense index on a key holds one entry per record, so its block count is ⌈records ÷ entries-per-block⌉. Compare that with the sparse index on the same file, which holds one entry per block.",
+    "steps": [
+     "A dense index has one entry per record = <b>60,000</b> entries.",
+     "One entry = 10 + 6 = <b>16 bytes</b>, so one index block holds ⌊1024 ÷ 16⌋ = <b>64</b> entries.",
+     "Dense blocks = ⌈60,000 ÷ 64⌉ = ⌈937.5⌉ = <b>938</b>.",
+     "For contrast the sparse index would need 60,000 ÷ 15 = 4,000 entries, i.e. ⌈4,000 ÷ 64⌉ = 63 blocks."
+    ],
+    "final": "Option (D) — 938 blocks",
+    "trap": "Confusing entry counts with block counts, or truncating instead of taking the ceiling."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A dense index on a key holds one entry per record, so its block count is ⌈records ÷ entries-per-block⌉. Compare that with the sparse index on the same file, which holds one entry per block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A dense index has one entry per record = <b>60,000</b> entries.</li><li>One entry = 10 + 6 = <b>16 bytes</b>, so one index block holds ⌊1024 ÷ 16⌋ = <b>64</b> entries.</li><li>Dense blocks = ⌈60,000 ÷ 64⌉ = ⌈937.5⌉ = <b>938</b>.</li><li>For contrast the sparse index would need 60,000 ÷ 15 = 4,000 entries, i.e. ⌈4,000 ÷ 64⌉ = 63 blocks.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) — 938 blocks</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 937 truncates 937.5 and loses the partly filled final block.</li><li>(B) 63 is the size of the <i>sparse</i> index on the same file, one entry per block.</li><li>(C) 4,000 is the sparse index's entry count, not the dense index's block count.</li></ul><p class=\"row\"><b>Common misconception.</b> Confusing entry counts with block counts, or truncating instead of taking the ceiling.</p><p class=\"row\"><b>Takeaway.</b> Dense index entries = records; sparse index entries = blocks. Divide each by entries-per-block and ceil.</p>"
+  },
+  {
+   "id": "DB-U5-Q36",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "Which of the following are TRUE of dense and sparse indexes? (Select all that apply.)",
+   "options": [
+    "A sparse index holds fewer entries than a dense index on the same ordered file.",
+    "A dense index can be built on a file stored in any order.",
+    "A sparse index always answers an existence query without reading the data file.",
+    "A sparse index on a non-ordering field is impossible."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "Density is about whether every search value has an entry; sparsity is about whether the file order lets the index skip records. Ordering is the resource that sparsity spends.",
+    "steps": [
+     "(A) TRUE — a sparse index drops entries that the file order makes redundant, so it has fewer of them (and therefore fewer blocks).",
+     "(B) TRUE — a dense index does not rely on the file order at all; that is why it is the only option on an unordered file.",
+     "(C) FALSE — an existence query on a sparse index must still read the candidate block to see whether the value is actually present.",
+     "(D) TRUE — with no ordering, an unindexed value could be anywhere in the file."
+    ],
+    "final": "Options (A), (B) and (D)",
+    "trap": "Treating a sparse index as a complete membership test. It is not: it narrows the search to one block, nothing more."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Density is about whether every search value has an entry; sparsity is about whether the file order lets the index skip records. Ordering is the resource that sparsity spends.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — a sparse index drops entries that the file order makes redundant, so it has fewer of them (and therefore fewer blocks).</li><li>(B) TRUE — a dense index does not rely on the file order at all; that is why it is the only option on an unordered file.</li><li>(C) FALSE — an existence query on a sparse index must still read the candidate block to see whether the value is actually present.</li><li>(D) TRUE — with no ordering, an unindexed value could be anywhere in the file.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(C) Sparsity means some values have no entry, so absence from the index is not absence from the file; the block must be read.</li></ul><p class=\"row\"><b>Common misconception.</b> Treating a sparse index as a complete membership test. It is not: it narrows the search to one block, nothing more.</p><p class=\"row\"><b>Takeaway.</b> Dense → membership decidable from the index. Sparse → always one confirming block read.</p>"
+  },
+  {
+   "id": "DB-U5-Q37",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "dense-vs-sparse-indexing",
+   "subtopic": "dense-vs-sparse-indexing",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A file of 30,000 records is stored with 12 records per block and is ordered on its search key. A sparse index has one entry per block; each entry is 12 bytes and index blocks are 1024 bytes. How many blocks does the index occupy?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 30,
+   "answer_display": "30",
+   "solution": {
+    "concept": "A sparse index on the ordering key has one entry per data block. Its own block count then follows from the entry size and the block size.",
+    "steps": [
+     "Data blocks = 30,000 ÷ 12 = <b>2,500</b>, so the index has 2,500 entries.",
+     "One block holds ⌊1024 ÷ 12⌋ = <b>85</b> entries.",
+     "Blocks = ⌈2,500 ÷ 85⌉ = ⌈29.41⌉ = <b>30</b>."
+    ],
+    "final": "30 (the last block is partly empty but is still allocated)",
+    "trap": "Taking ⌊2,500 ÷ 85⌋ = 29 and dropping the partial final block."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A sparse index on the ordering key has one entry per data block. Its own block count then follows from the entry size and the block size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Data blocks = 30,000 ÷ 12 = <b>2,500</b>, so the index has 2,500 entries.</li><li>One block holds ⌊1024 ÷ 12⌋ = <b>85</b> entries.</li><li>Blocks = ⌈2,500 ÷ 85⌉ = ⌈29.41⌉ = <b>30</b>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 30 (the last block is partly empty but is still allocated)</span></p><p class=\"row\"><b>Common misconception.</b> Taking ⌊2,500 ÷ 85⌋ = 29 and dropping the partial final block.</p><p class=\"row\"><b>Takeaway.</b> Two ceilings are hidden here: one for data blocks and one for index blocks.</p>"
+  },
+  {
+   "id": "DB-U5-Q38",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A B+ tree internal node holds <code class=\"mm\">p</code> tree pointers and <code class=\"mm\">p − 1</code> search keys. The block size is 1024 bytes, a key is 10 bytes and a pointer is 8 bytes. The largest <code class=\"mm\">p</code> that fits in one internal node is",
+   "options": [
+    "57",
+    "58",
+    "64",
+    "68"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The order of a B+ tree is fixed by the block size: one node holds <code class=\"mm\">p</code> pointers and <code class=\"mm\">p − 1</code> keys, and the total must fit inside one block.",
+    "steps": [
+     "Space = 8p + 10(p − 1) = 18p − 10 bytes.",
+     "Require 18p − 10 ≤ 1024, so 18p ≤ 1034 and p ≤ 57.44.",
+     "The largest integer is <b>57</b>; check: 8(57) + 10(56) = 456 + 560 = 1016 ≤ 1024, while p = 58 needs 464 + 570 = 1034 > 1024."
+    ],
+    "final": "Option (A) — p = 57",
+    "trap": "Forgetting that a node with p pointers has p − 1 keys, or dividing the block size by the pointer size alone."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The order of a B+ tree is fixed by the block size: one node holds <code class=\"mm\">p</code> pointers and <code class=\"mm\">p − 1</code> keys, and the total must fit inside one block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Space = 8p + 10(p − 1) = 18p − 10 bytes.</li><li>Require 18p − 10 ≤ 1024, so 18p ≤ 1034 and p ≤ 57.44.</li><li>The largest integer is <b>57</b>; check: 8(57) + 10(56) = 456 + 560 = 1016 ≤ 1024, while p = 58 needs 464 + 570 = 1034 > 1024.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — p = 57</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) p = 58 needs 1034 bytes, ten bytes more than the block holds.</li><li>(C) 64 is the answer for a 10-byte key with a 6-byte pointer, not an 8-byte pointer.</li><li>(D) 68 ignores the key bytes entirely.</li></ul><p class=\"row\"><b>Common misconception.</b> Forgetting that a node with p pointers has p − 1 keys, or dividing the block size by the pointer size alone.</p><p class=\"row\"><b>Takeaway.</b> Solve the inequality p·ptr + (p − 1)·key ≤ block, then floor.</p>"
+  },
+  {
+   "id": "DB-U5-Q39",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "A B+ tree has order <code class=\"mm\">p = 7</code>, so every node holds at most 7 tree pointers. A non-root internal node must hold at least ⌈p/2⌉ = 4 pointers. The minimum number of keys in such a node is",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In every B+ tree node the number of keys is one less than the number of tree pointers. Occupancy bounds therefore shift by exactly one when translated from pointers to keys.",
+    "steps": [
+     "Minimum pointers = ⌈7/2⌉ = 4.",
+     "Keys = pointers − 1 = <b>3</b>.",
+     "For symmetry the maximum is p − 1 = 6 keys, from 7 pointers."
+    ],
+    "final": "Option (B) — 3 keys",
+    "trap": "Quoting the pointer bound as the key bound; a node with k keys has k + 1 pointers."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In every B+ tree node the number of keys is one less than the number of tree pointers. Occupancy bounds therefore shift by exactly one when translated from pointers to keys.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Minimum pointers = ⌈7/2⌉ = 4.</li><li>Keys = pointers − 1 = <b>3</b>.</li><li>For symmetry the maximum is p − 1 = 6 keys, from 7 pointers.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 3 keys</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 2 keys corresponds to 3 pointers, below the ⌈p/2⌉ = 4 floor.</li><li>(C) 4 is the pointer floor, not the key floor.</li><li>(D) 6 is the maximum number of keys, not the minimum.</li></ul><p class=\"row\"><b>Common misconception.</b> Quoting the pointer bound as the key bound; a node with k keys has k + 1 pointers.</p><p class=\"row\"><b>Takeaway.</b> keys = pointers − 1, always, in every internal node of a B-tree or B+ tree.</p>"
+  },
+  {
+   "id": "DB-U5-Q40",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "Which one of the following is a difference between a B-tree and a B+ tree of the same order?",
+   "options": [
+    "A B-tree links its leaves in sequence, while a B+ tree does not.",
+    "A B+ tree allows its nodes to be under-full, while a B-tree does not.",
+    "A B+ tree stores records only in its leaves, while a B-tree may store records in internal nodes.",
+    "A B-tree can index only primary keys, while a B+ tree can index only secondary keys."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "In a B-tree every node carries keys <i>and</i> data (or data pointers), so a search may end at an internal node. In a B+ tree internal nodes carry only keys and pointers; all data pointers sit in the leaves, which are chained together.",
+    "steps": [
+     "A B-tree node = keys + data pointers; a search stops as soon as the key is found in any node.",
+     "A B+ tree node = keys + tree pointers only; every search runs down to a leaf, and the leaves hold all record pointers.",
+     "Because the leaves form a linked list, range queries walk the leaf level sequentially — a B-tree must re-traverse the tree instead."
+    ],
+    "final": "Option (C) — data lives only in the leaves of a B+ tree",
+    "trap": "Reversing the leaf-link property. The chained leaves belong to the B+ tree, and that chain is what makes range scans cheap."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a B-tree every node carries keys <i>and</i> data (or data pointers), so a search may end at an internal node. In a B+ tree internal nodes carry only keys and pointers; all data pointers sit in the leaves, which are chained together.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A B-tree node = keys + data pointers; a search stops as soon as the key is found in any node.</li><li>A B+ tree node = keys + tree pointers only; every search runs down to a leaf, and the leaves hold all record pointers.</li><li>Because the leaves form a linked list, range queries walk the leaf level sequentially — a B-tree must re-traverse the tree instead.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — data lives only in the leaves of a B+ tree</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) It is the B+ tree, not the B-tree, that links its leaves.</li><li>(B) Both structures enforce minimum occupancy; under-full nodes are merged in either.</li><li>(D) Either structure can serve as a primary, clustering or secondary index.</li></ul><p class=\"row\"><b>Common misconception.</b> Reversing the leaf-link property. The chained leaves belong to the B+ tree, and that chain is what makes range scans cheap.</p><p class=\"row\"><b>Takeaway.</b> B+ tree: all data at the leaf level, leaves linked, every search costs the full height. B-tree: data anywhere, search may stop early.</p>"
+  },
+  {
+   "id": "DB-U5-Q41",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "Which of the following are TRUE of a B+ tree of order <code class=\"mm\">p</code>? (Select all that apply.)",
+   "options": [
+    "An internal node holds at most p − 1 keys.",
+    "A leaf node holds at most p keys.",
+    "A non-root internal node holds at least ⌈p/2⌉ tree pointers.",
+    "All leaves are at the same level, so the tree is balanced."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Order p fixes the maximum number of tree pointers in a node at p. Keys are one fewer, and the minimum occupancy of a non-root node is half the maximum, rounded up.",
+    "steps": [
+     "(A) TRUE — p pointers admit at most p − 1 keys.",
+     "(B) FALSE — a leaf holds at most p − 1 keys (or p − 1 record values); p would require p + 1 pointers, one of which is the sibling link.",
+     "(C) TRUE — that is the occupancy floor that keeps the tree at least half full.",
+     "(D) TRUE — every leaf is at the same depth, which is what makes every search cost the same number of block accesses."
+    ],
+    "final": "Options (A), (C) and (D)",
+    "trap": "Applying the internal-node capacity p − 1 keys to the leaves without accounting for the extra next-leaf pointer, or the reverse."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Order p fixes the maximum number of tree pointers in a node at p. Keys are one fewer, and the minimum occupancy of a non-root node is half the maximum, rounded up.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — p pointers admit at most p − 1 keys.</li><li>(B) FALSE — a leaf holds at most p − 1 keys (or p − 1 record values); p would require p + 1 pointers, one of which is the sibling link.</li><li>(C) TRUE — that is the occupancy floor that keeps the tree at least half full.</li><li>(D) TRUE — every leaf is at the same depth, which is what makes every search cost the same number of block accesses.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Including the next-leaf pointer, a full leaf holds p − 1 keys, p record pointers and one sibling pointer.</li></ul><p class=\"row\"><b>Common misconception.</b> Applying the internal-node capacity p − 1 keys to the leaves without accounting for the extra next-leaf pointer, or the reverse.</p><p class=\"row\"><b>Takeaway.</b> Internal node: p pointers, p − 1 keys. Leaf: p − 1 keys and p record pointers, plus one sibling pointer.</p>"
+  },
+  {
+   "id": "DB-U5-Q42",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "Consider a B+ tree used as an index on a file of 1,000,000 records. Which of the following are TRUE? (Select all that apply.)",
+   "options": [
+    "Increasing the order p reduces the height of the tree.",
+    "A range query is answered by locating the first leaf and then following the leaf sibling pointers.",
+    "With no node buffered, a point search costs one block access per level of the tree.",
+    "Deleting a record can never reduce the number of levels in the tree."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "The height of a B+ tree is what a search pays for, and the height falls as the fan-out rises. The linked leaf level is what makes a range query cost one descent plus a sequential walk.",
+    "steps": [
+     "(A) TRUE — with a larger p each node covers more keys, so fewer levels are needed for the same record count.",
+     "(B) TRUE — the sibling chain visits every leaf in key order, so the range is read sequentially.",
+     "(C) TRUE — the root, each internal level and the leaf are each one block, so the cost equals the height.",
+     "(D) FALSE — an under-full node is merged, and if the root loses its last key the root is removed and the height drops by one."
+    ],
+    "final": "Options (A), (B) and (C)",
+    "trap": "Treating the height of a B+ tree as fixed. It grows on splits and shrinks on merges."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The height of a B+ tree is what a search pays for, and the height falls as the fan-out rises. The linked leaf level is what makes a range query cost one descent plus a sequential walk.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — with a larger p each node covers more keys, so fewer levels are needed for the same record count.</li><li>(B) TRUE — the sibling chain visits every leaf in key order, so the range is read sequentially.</li><li>(C) TRUE — the root, each internal level and the leaf are each one block, so the cost equals the height.</li><li>(D) FALSE — an under-full node is merged, and if the root loses its last key the root is removed and the height drops by one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(D) Merging on deletion can empty the root; the tree then shrinks by a level.</li></ul><p class=\"row\"><b>Common misconception.</b> Treating the height of a B+ tree as fixed. It grows on splits and shrinks on merges.</p><p class=\"row\"><b>Takeaway.</b> Height drives search cost; leaf links drive range cost; both change with insertions and deletions.</p>"
+  },
+  {
+   "id": "DB-U5-Q43",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "A B+ tree has order <code class=\"mm\">p = 5</code> and three levels: a root, one level of internal nodes, and leaves. A non-root internal node holds at least ⌈p/2⌉ = 3 pointers, a non-root leaf holds at least ⌈(p − 1)/2⌉ = 2 records, and the root holds at least 2 pointers. What is the <b>smallest</b> number of records such a tree can index?",
+   "options": [
+    "6",
+    "18",
+    "24",
+    "12"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A minimum-capacity count multiplies the smallest fan-out at every level. The root is special: it needs only two children, not ⌈p/2⌉.",
+    "steps": [
+     "Root: at least 2 pointers → <b>2</b> children at the internal level.",
+     "Each of those 2 internal nodes: at least 3 pointers → 2 × 3 = <b>6</b> leaves.",
+     "Each of those 6 leaves: at least 2 records → 6 × 2 = <b>12</b> records."
+    ],
+    "final": "Option (D) — 12 records",
+    "trap": "Applying the ⌈p/2⌉ occupancy floor to the root. The root is exempt: with a single key it has two children."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A minimum-capacity count multiplies the smallest fan-out at every level. The root is special: it needs only two children, not ⌈p/2⌉.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root: at least 2 pointers → <b>2</b> children at the internal level.</li><li>Each of those 2 internal nodes: at least 3 pointers → 2 × 3 = <b>6</b> leaves.</li><li>Each of those 6 leaves: at least 2 records → 6 × 2 = <b>12</b> records.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) — 12 records</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 6 counts the leaves, not the records they hold.</li><li>(B) 18 applies ⌈p/2⌉ = 3 to the root as well; the root may have as few as 2 children.</li><li>(C) 24 uses the maximum fan-out at some level instead of the minimum.</li></ul><p class=\"row\"><b>Common misconception.</b> Applying the ⌈p/2⌉ occupancy floor to the root. The root is exempt: with a single key it has two children.</p><p class=\"row\"><b>Takeaway.</b> Minimum records = (root fan-out) × ⌈p/2⌉^(h−2) × ⌈(p−1)/2⌉, with the root counted as 2.</p>"
+  },
+  {
+   "id": "DB-U5-Q44",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "b-trees-and-b-plus-trees-order-capacity",
+   "subtopic": "b-trees-and-b-plus-trees-order-capacity",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "A B-tree of order <code class=\"mm\">p</code> stores at most <code class=\"mm\">p</code> tree pointers and <code class=\"mm\">p − 1</code> keys in every node. The block size is 4096 bytes, a key is 16 bytes and a pointer is 8 bytes. What is the largest order <code class=\"mm\">p</code> that fits in one node?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 171,
+   "answer_display": "171",
+   "solution": {
+    "concept": "Node capacity is the largest p satisfying p·pointer + (p − 1)·key ≤ block size. It is an inequality, so the answer is a floor, never a rounding.",
+    "steps": [
+     "Space per node = 8p + 16(p − 1) = 24p − 16 bytes.",
+     "Require 24p − 16 ≤ 4096, so 24p ≤ 4112 and p ≤ 171.33.",
+     "Largest integer p = <b>171</b>; check: 8(171) + 16(170) = 1368 + 2720 = 4088 ≤ 4096, while p = 172 needs 1376 + 2736 = 4112 > 4096."
+    ],
+    "final": "171 (the order, an integer; 4088 of the 4096 bytes are used)",
+    "trap": "Using p keys instead of p − 1, or rounding 171.33 up to 172 — which overflows the block by 16 bytes."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Node capacity is the largest p satisfying p·pointer + (p − 1)·key ≤ block size. It is an inequality, so the answer is a floor, never a rounding.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Space per node = 8p + 16(p − 1) = 24p − 16 bytes.</li><li>Require 24p − 16 ≤ 4096, so 24p ≤ 4112 and p ≤ 171.33.</li><li>Largest integer p = <b>171</b>; check: 8(171) + 16(170) = 1368 + 2720 = 4088 ≤ 4096, while p = 172 needs 1376 + 2736 = 4112 > 4096.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 171 (the order, an integer; 4088 of the 4096 bytes are used)</span></p><p class=\"row\"><b>Common misconception.</b> Using p keys instead of p − 1, or rounding 171.33 up to 172 — which overflows the block by 16 bytes.</p><p class=\"row\"><b>Takeaway.</b> Write the inequality first, solve for p, floor it, then check both p and p + 1.</p>"
+  },
+  {
+   "id": "DB-U5-Q45",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "In extendible hashing with global depth <code class=\"mm\">d</code>, the number of directory entries is",
+   "options": [
+    "<code class=\"mm\">2<sup>d</sup></code>",
+    "<code class=\"mm\">d</code>",
+    "the number of buckets",
+    "twice the number of buckets"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The directory is indexed by the first <code class=\"mm\">d</code> bits of the hash value, where <code class=\"mm\">d</code> is the global depth, so it has one entry per bit pattern — <code class=\"mm\">2<sup>d</sup></code> of them.",
+    "steps": [
+     "Global depth d means the directory is addressed by d hash bits.",
+     "The number of distinct d-bit patterns is 2^d.",
+     "Several directory entries may point at the same bucket when that bucket's local depth is less than d."
+    ],
+    "final": "Option (A) — 2^d entries",
+    "trap": "Equating directory size with bucket count. A bucket of local depth less than the global depth is shared by 2^(d − local depth) directory entries."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The directory is indexed by the first <code class=\"mm\">d</code> bits of the hash value, where <code class=\"mm\">d</code> is the global depth, so it has one entry per bit pattern — <code class=\"mm\">2<sup>d</sup></code> of them.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Global depth d means the directory is addressed by d hash bits.</li><li>The number of distinct d-bit patterns is 2^d.</li><li>Several directory entries may point at the same bucket when that bucket's local depth is less than d.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — 2^d entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) d is the number of bits used, not the number of entries.</li><li>(C) The directory is usually larger than the bucket count; that is the whole point of local depths.</li><li>(D) There is no fixed ratio of 2 between directory entries and buckets.</li></ul><p class=\"row\"><b>Common misconception.</b> Equating directory size with bucket count. A bucket of local depth less than the global depth is shared by 2^(d − local depth) directory entries.</p><p class=\"row\"><b>Takeaway.</b> directory entries = 2^global depth; entries per bucket = 2^(global − local).</p>"
+  },
+  {
+   "id": "DB-U5-Q46",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "An extendible hash table has global depth 3 and a bucket <code class=\"mm\">B</code> with local depth 2. The number of directory entries that point to <code class=\"mm\">B</code> is",
+   "options": [
+    "1",
+    "2",
+    "4",
+    "8"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A bucket of local depth ℓ is addressed by ℓ bits, while the directory is addressed by d ≥ ℓ bits. The 2^(d − ℓ) directory entries that share the same ℓ low-order bits all point at that bucket.",
+    "steps": [
+     "Global depth d = 3, local depth ℓ = 2.",
+     "Entries sharing bucket B = 2^(d − ℓ) = 2^(3 − 2) = <b>2</b>.",
+     "Those two directory entries differ only in the most significant bit used by the directory."
+    ],
+    "final": "Option (B) — 2 directory entries",
+    "trap": "Reading the local depth as a count of directory entries instead of as a number of hash bits."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A bucket of local depth ℓ is addressed by ℓ bits, while the directory is addressed by d ≥ ℓ bits. The 2^(d − ℓ) directory entries that share the same ℓ low-order bits all point at that bucket.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Global depth d = 3, local depth ℓ = 2.</li><li>Entries sharing bucket B = 2^(d − ℓ) = 2^(3 − 2) = <b>2</b>.</li><li>Those two directory entries differ only in the most significant bit used by the directory.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 2 directory entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 1 entry per bucket happens only when the local depth equals the global depth.</li><li>(C) 4 = 2^(3 − 1) would be the count for a bucket of local depth 1.</li><li>(D) 8 is the whole directory.</li></ul><p class=\"row\"><b>Common misconception.</b> Reading the local depth as a count of directory entries instead of as a number of hash bits.</p><p class=\"row\"><b>Takeaway.</b> Pointers to a bucket = 2^(global depth − local depth).</p>"
+  },
+  {
+   "id": "DB-U5-Q47",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "Which of the following are TRUE of <b>static</b> hashing? (Select all that apply.)",
+   "options": [
+    "A bucket overflow in a static hash file is resolved by doubling the number of buckets.",
+    "The number of buckets is fixed when the file is created.",
+    "Records that do not fit in their home bucket are kept in overflow buckets.",
+    "As the file grows, the average overflow chain grows and the search cost rises."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "Static hashing allocates a fixed bucket array up front. Overflow is absorbed by chaining, so the file can grow without limit but the chains grow with it, and the constant expected search cost of hashing is lost.",
+    "steps": [
+     "(A) FALSE — doubling the bucket array and rehashing everything is precisely what static hashing does <i>not</i> do; that is the dynamic-hashing remedy.",
+     "(B) TRUE — the bucket count is chosen at file creation from the expected file size.",
+     "(C) TRUE — overflow buckets chained to the home bucket hold the excess records.",
+     "(D) TRUE — as the number of records per bucket exceeds the bucket capacity, the chains lengthen and the average number of block accesses per search rises."
+    ],
+    "final": "Options (B), (C) and (D)",
+    "trap": "Mixing static hashing with dynamic hashing. Static = fixed buckets + overflow chains; dynamic = grow the file, no long chains."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Static hashing allocates a fixed bucket array up front. Overflow is absorbed by chaining, so the file can grow without limit but the chains grow with it, and the constant expected search cost of hashing is lost.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE — doubling the bucket array and rehashing everything is precisely what static hashing does <i>not</i> do; that is the dynamic-hashing remedy.</li><li>(B) TRUE — the bucket count is chosen at file creation from the expected file size.</li><li>(C) TRUE — overflow buckets chained to the home bucket hold the excess records.</li><li>(D) TRUE — as the number of records per bucket exceeds the bucket capacity, the chains lengthen and the average number of block accesses per search rises.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Rehashing the whole file is what linear and extendible hashing add; static hashing cannot do it cheaply.</li></ul><p class=\"row\"><b>Common misconception.</b> Mixing static hashing with dynamic hashing. Static = fixed buckets + overflow chains; dynamic = grow the file, no long chains.</p><p class=\"row\"><b>Takeaway.</b> Static hashing trades unbounded chain growth for a fixed, predictable bucket array.</p>"
+  },
+  {
+   "id": "DB-U5-Q48",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "question": "An extendible hash table has global depth 3, so its directory has 8 entries. Bucket <code class=\"mm\">C</code> has local depth 1. How many directory entries point to bucket <code class=\"mm\">C</code>?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "The number of directory entries sharing one bucket is 2 raised to the difference between the global depth and that bucket's local depth.",
+    "steps": [
+     "Global depth d = 3, local depth ℓ = 1.",
+     "Pointers = 2^(d − ℓ) = 2^(3 − 1) = 2² = <b>4</b>.",
+     "Bucket C is addressed by one hash bit, so four of the eight directory entries — the ones agreeing in that bit — point at it."
+    ],
+    "final": "4 directory entries",
+    "trap": "Answering 2 (using 2^ℓ) or 8 (the whole directory). The exponent is the <i>difference</i> of the two depths."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The number of directory entries sharing one bucket is 2 raised to the difference between the global depth and that bucket's local depth.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Global depth d = 3, local depth ℓ = 1.</li><li>Pointers = 2^(d − ℓ) = 2^(3 − 1) = 2² = <b>4</b>.</li><li>Bucket C is addressed by one hash bit, so four of the eight directory entries — the ones agreeing in that bit — point at it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 directory entries</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2 (using 2^ℓ) or 8 (the whole directory). The exponent is the <i>difference</i> of the two depths.</p><p class=\"row\"><b>Takeaway.</b> Pointers to a bucket = 2^(global depth − local depth); the exponents subtract.</p>"
+  },
+  {
+   "id": "DB-U5-Q49",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "A linear hash file starts with 8 buckets. A split is performed after every 4 insertions: one new bucket is appended to the file and the split pointer advances to the next bucket. After 40 insertions, how many buckets does the file have?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 18,
+   "answer_display": "18",
+   "solution": {
+    "concept": "Linear hashing grows the file one bucket at a time, driven by a load threshold rather than by a directory. The number of buckets is the initial count plus the number of splits performed.",
+    "steps": [
+     "Splits = 40 ÷ 4 = <b>10</b>.",
+     "Buckets = 8 + 10 = <b>18</b>.",
+     "Because splits are triggered one at a time in round-robin order, no bucket ever needs a chain as long as it would in a static file."
+    ],
+    "final": "18 buckets",
+    "trap": "Multiplying the insertions by the split rate instead of dividing, or forgetting to add the initial 8 buckets."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Linear hashing grows the file one bucket at a time, driven by a load threshold rather than by a directory. The number of buckets is the initial count plus the number of splits performed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Splits = 40 ÷ 4 = <b>10</b>.</li><li>Buckets = 8 + 10 = <b>18</b>.</li><li>Because splits are triggered one at a time in round-robin order, no bucket ever needs a chain as long as it would in a static file.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 18 buckets</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying the insertions by the split rate instead of dividing, or forgetting to add the initial 8 buckets.</p><p class=\"row\"><b>Takeaway.</b> Linear hashing: buckets = initial buckets + number of splits; growth is one bucket at a time and needs no directory.</p>"
+  },
+  {
+   "id": "DB-U5-Q50",
+   "subject": "databases",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "indexing-storage",
+   "unit_name": "Indexing, B-Trees & Storage",
+   "topic": "Indexing, B-Trees & Storage",
+   "sub": "static-and-dynamic-hashing",
+   "subtopic": "static-and-dynamic-hashing",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "question": "An extendible hash table has global depth 2, so its directory has 4 entries, and every bucket currently has local depth 2. A record is inserted into one bucket and that bucket overflows. After the split of that bucket, the global depth and the number of directory entries are",
+   "options": [
+    "2 and 4",
+    "2 and 5",
+    "3 and 8",
+    "3 and 4"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A bucket can be split without touching the directory only if its local depth is below the global depth. When the two are equal there is no spare directory entry, so the directory must double first.",
+    "steps": [
+     "The overflowing bucket has local depth 2, equal to the global depth 2.",
+     "A split would need two directory entries per hash prefix, but only one currently points at this bucket.",
+     "So the directory doubles: global depth 2 → <b>3</b>, entries 4 → <b>8</b>.",
+     "Each old bucket is now referenced by two entries, and the overflowing bucket is split into two, each with local depth 3."
+    ],
+    "final": "Option (C) — global depth 3 and 8 directory entries",
+    "trap": "Splitting the bucket without doubling the directory when local depth already equals global depth. That is exactly the condition that triggers the doubling."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A bucket can be split without touching the directory only if its local depth is below the global depth. When the two are equal there is no spare directory entry, so the directory must double first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The overflowing bucket has local depth 2, equal to the global depth 2.</li><li>A split would need two directory entries per hash prefix, but only one currently points at this bucket.</li><li>So the directory doubles: global depth 2 → <b>3</b>, entries 4 → <b>8</b>.</li><li>Each old bucket is now referenced by two entries, and the overflowing bucket is split into two, each with local depth 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — global depth 3 and 8 directory entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) A split is impossible while local depth equals global depth; the directory must grow first.</li><li>(B) A directory is a power-of-two array indexed by hash bits; it cannot grow by one entry.</li><li>(D) Global depth 3 forces 2³ = 8 entries, not 4.</li></ul><p class=\"row\"><b>Common misconception.</b> Splitting the bucket without doubling the directory when local depth already equals global depth. That is exactly the condition that triggers the doubling.</p><p class=\"row\"><b>Takeaway.</b> Directory doubles ⇔ the overflowing bucket's local depth equals the global depth; otherwise only that bucket's local depth increases.</p>"
   }
  ]
 }
