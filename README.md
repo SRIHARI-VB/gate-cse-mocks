@@ -7,36 +7,72 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 1 of 2**, 2026-11-01 →
-  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
+- **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 1 of 2**, 2026-11-01 →
+  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Boolean identities and duality (6) · SOP and POS forms (6) · minterms and maxterms (6) ·
-  K-map simplification (7)
-- Rotation: MODE A. Three subjects had no paper dated 2026-11-01 (Computer Architecture, Compiler Design,
-  Discrete Mathematics), so the draw ran over those three in syllabus order with an unseeded
-  `secrets.randbelow(3)` and returned index 2 — **Discrete Mathematics**. Its most recent run was
-  `{2026-10-31, run 13, unit 10, graph-theory-advanced, Set 2 of 2}`. Unit 10 held **50** questions, at
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(graph-theory-advanced) = 9 + 1) mod 16 = 10` → **Unit 11, Boolean Algebra & Switching Logic**.
+- Subtopics: Programmed I/O & interrupts (6) · DMA controller (6) · Secondary storage disks (7) · RAID levels (6)
+- Rotation: MODE A. Nine subjects already carried a paper dated 2026-11-01 (Algorithms, Computer Networks,
+  Databases, Digital Logic, Discrete Mathematics, Engineering Mathematics, Operating Systems, Programming and
+  Data Structures, Theory of Computation), leaving Computer Architecture and Compiler Design. The cap check then
+  left exactly one: Computer Architecture's most recent run `{2026-10-31, run 8, unit 5, pipelining, Set 2 of 2}`
+  sits on a unit holding 50 questions, so it advances to unit 6, which is empty, while Compiler Design's most
+  recent run (unit 3, 75 questions) would advance onto unit 4 `sdt-intermediate-code`, already at 50, so it
+  cannot take another set. `secrets.choice` over the one eligible subject returned **Computer Architecture**.
+  Unit 5 held **50** questions, exactly `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4
+  advanced exactly one unit: `(index_of(pipelining) = 4 + 1) mod 6 = 5` → **Unit 6, I/O Interface & Storage**.
   No override, no partial set.
-- Unit 11 had no banked questions, so this is the first set of its first pass; it holds 25 of the 50-question
-  cap and the next Discrete Mathematics run will publish Set 2 against the same unit.
-- No superseded paper was created: Unit 11 had no earlier paper, so nothing moved into `archive/` and the
-  unit folder holds exactly one current paper. The repository root still holds only `index.html`.
-- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html)
+- Unit 6 had no banked questions, so this is the first set of its first pass; it holds 25 of the 50-question cap
+  and the next Computer Architecture run will publish Set 2 against the same unit.
+- No superseded paper was created: Unit 6 had no earlier paper, so nothing moved into `archive/` and the unit
+  folder holds exactly one current paper. The repository root still holds only `index.html`.
+- Previous test: **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 1 of 2**, 2026-11-01 →
+  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 149 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 8 Computer Architecture) |
-| Current papers / archived sets | 64 current · 85 archived |
-| Test cards on the portal | 82 (one card per current paper; superseded sets are links on that card) |
-| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
-| Questions in the subject banks | 3725 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 200 Computer Architecture) |
+| Papers published (current + archived) | 150 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 85 archived |
+| Test cards on the portal | 83 (one card per current paper; superseded sets are links on that card) |
+| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
+| Questions in the subject banks | 3750 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 85 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 6 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Computer Architecture Unit 6, Set 1 of 2
+
+- New paper at `computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html`. Unit 6 had no earlier paper, so nothing was superseded and nothing moved
+  into `archive/`; the unit folder holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- **Rotation (Section 1, MODE A).** At draw time nine subjects already carried a paper dated 2026-11-01
+  (Algorithms, Computer Networks, Databases, Digital Logic, Discrete Mathematics, Engineering Mathematics,
+  Operating Systems, Programming and Data Structures, Theory of Computation). Of the two that did not,
+  Computer Architecture and Compiler Design, only one could take a set without breaking the cap: Computer
+  Architecture's most recent run `{2026-10-31, run 8, unit 5, pipelining, Set 2 of 2}` sits on a unit holding
+  **50** questions and advances to an empty unit 6, whereas Compiler Design's most recent run (unit 3, 75
+  questions) would advance onto unit 4 `sdt-intermediate-code`, which already holds 50. `secrets.choice` over
+  the single eligible subject returned **Computer Architecture**. Step B3 then failed on the cap and step B4
+  advanced exactly one unit: `(4 + 1) mod 6 = 5` → **Unit 6, I/O Interface & Storage**. No override was used and
+  no partial set was generated.
+- Coverage: all four Unit 6 subtopics — Programmed I/O & interrupts (6); DMA controller (6); Secondary storage
+  disks (7); RAID levels (6). Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard;
+  marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ all-or-nothing. Practice scheme, not the
+  official GATE scheme, and the About tab says so.
+- All 25 ids are new (`CO-U6-Q01` … `CO-U6-Q25`) and collide with nothing already in the Computer Architecture
+  bank. The subject bank now holds **225** questions and the paper's Question Bank tab shows the **200**
+  previously banked items, so the active set is not repeated there.
+- **Portal defect fixed in this run.** `index.html`'s `units[]` index carried only Computer Architecture units
+  2–5, so View B could never have shown unit 1 or unit 6 even once they were banked. Units 1
+  (`instructions-addressing`) and 6 (`io-interfaces`) were added with their syllabus subtopics; unit 6 now renders
+  as a card with 25 solved questions, and unit 1 collapses into the "no banked questions yet" line.
+- Shell: the paper is generated from the Computer Architecture Unit 5 paper of 2026-10-31. Its `<style>` block and
+  its exam `<script>` are byte-identical to that shell, its `:root` block is byte-identical to
+  `design-tokens.css`, and its literal-hex-outside-`:root` count is unchanged at 89, so the recorded deviation
+  below is neither widened nor narrowed.
+- No verified PYQ exists for this unit: no I/O-interface, DMA, disk-geometry or RAID previous-year question has
+  been checked against an official paper and answer key, so the paper claims none and its Question Bank tab says
+  so.
 
 ### 2026-11-01 — Discrete Mathematics Unit 11, Set 1 of 2
 
@@ -3066,6 +3102,17 @@ touches files this run did not create:
 
 ## Rotation log
 
+- **2026-11-01, Computer Architecture → Unit 6 (I/O Interface & Storage), Set 1 of 2.**
+  MODE A: nine subjects already carried a paper dated 2026-11-01 (Algorithms, Computer Networks, Databases,
+  Digital Logic, Discrete Mathematics, Engineering Mathematics, Operating Systems, Programming and Data
+  Structures, Theory of Computation), leaving Computer Architecture and Compiler Design. The cap check left one:
+  Computer Architecture's most recent run `{2026-10-31, run 8, unit 5, pipelining, Set 2 of 2}` sits on a unit
+  holding **50** questions and advances to an empty unit 6, while Compiler Design's most recent run (unit 3, 75
+  questions) would advance onto unit 4 `sdt-intermediate-code`, already at 50. `secrets.choice` over the single
+  eligible subject returned **Computer Architecture**. Step B3 failed on the cap and step B4 advanced
+  `(4 + 1) mod 6 = 5` → Unit 6, which held no questions: the first set of its first pass, 0 → 25. The 200 solved
+  items shown in the Question Bank tab are everything banked except this paper's own 25. No override, no partial
+  set.
 - **2026-11-01, Digital Logic → Unit 2 (Combinational Circuit Design), Set 1 of 2 (second pass).**
   MODE A: an unseeded `secrets.randbelow(4)` draw over the four subjects without a paper dated 2026-11-01
   (Computer Architecture, Compiler Design, Digital Logic, Discrete Mathematics) returned index 2, giving
@@ -7321,10 +7368,10 @@ Algorithms:
 | --- | --- | --- | --- | --- |
 | 1 | Machine Instructions & Addressing Modes | `instructions-addressing` | 0 | — |
 | 2 | CPU Control Design & Data Path | `datapath-control-unit` | 50 | yes |
-| 3 | Memory Hierarchy & Cache Memory | `cache-memory` | 0 | — |
-| 4 | Main Memory & Virtual Memory Interface | `memory-management-unit` | 0 | — |
-| 5 | Instruction Pipelining | `pipelining` | 0 | — |
-| 6 | I/O Interface & Storage | `io-interfaces` | 0 | — |
+| 3 | Memory Hierarchy & Cache Memory | `cache-memory` | 50 | yes |
+| 4 | Main Memory & Virtual Memory Interface | `memory-management-unit` | 50 | yes |
+| 5 | Instruction Pipelining | `pipelining` | 50 | yes |
+| 6 | I/O Interface & Storage | `io-interfaces` | 25 | yes |
 
 - **Raw hex in the Unit 2 paper (checked 2026-10-27).** The new paper carries 133 literal hex occurrences outside
   `:root`, exactly the count in the reference shell it was generated from, so no new value was introduced; every new
