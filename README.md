@@ -83,7 +83,8 @@ and no answer, option mark or hint visible until the test is submitted.
 - **Ids and bank.** 25 records appended as `OS-U3C-Q01`–`OS-U3C-Q25`; Operating Systems now holds **525** questions
   across 6 units, and `data/questions-operating-systems.js` grew from 500 to 525 records.
 - **Question Bank tab.** 500 solved questions — the 525 in the bank less the 25 on this paper — so the active set
-  is not repeated there. Unit 3's accordion now shows 100 solved questions (75 + the 25 just banked).
+  is not repeated there. Unit 3's accordion therefore shows the 75 questions banked before this paper; the 25
+  added here appear on the paper itself and are excluded from the tab.
 - **Provenance.** `verified_pyqs` holds one item for Operating Systems, `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1,
   Q25, official answer 12), which belongs to Unit 1 and is used only there as a re-worded variation. No
   deadlock previous-year question has been verified against an official paper and answer key, so no item on this
