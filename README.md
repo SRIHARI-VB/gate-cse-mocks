@@ -7,40 +7,118 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 2 of 2**,
+- **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 1 of 2**,
+  2026-11-02 →
+  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Classes P and NP (7) · Polynomial-time reductions (6) · NP-complete problems (6) · NP-hard identification (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 12, unit 6, shortest-paths, Set 2 of 2}`. Unit 6 held **50** questions, exactly
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(shortest-paths) = 5 + 1) mod 7 = 6` → **Unit 7, Complexity Theory & NP-Completeness**, which held no
+  questions. This is therefore **Set 1 of 2**, the first paper of the unit's first pass. No override was used and
+  no partial set was generated: the paper is exactly 25 questions.
+- No superseded paper: Unit 7 had no banked questions, so nothing was archived and the new unit folder holds
+  exactly one current paper. The repository root still holds only `index.html`.
+- Previous test: **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 2 of 2**,
   2026-11-02 →
   [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Programmed I/O & interrupts (6) · DMA controller (6) · Secondary storage disks (7) · RAID levels (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 3 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 9, unit 6, io-interfaces, Set 1 of 2}`. Unit 6 held **25** questions, below
-  `UNIT_QUESTION_CAP = 50`, and had been current since 2026-11-01, that is 1 day, below `DAYS_PER_UNIT_MAX = 7`,
-  so step B3 held and step B4 was not reached: the current unit was generated again as **Set 2 of 2**. Unit 6 now
-  holds exactly 50 questions, closing it at the cap, so the next Computer Architecture run advances
-  `(index_of(io-interfaces) = 5 + 1) mod 6 = 0` → **Unit 1, Machine Instructions & Addressing Modes**, which opens
-  a second pass over the subject (Section 1 step B5). No override was used and no partial set was generated: the
-  paper is exactly 25 questions.
-- Superseded paper: the 2026-11-01 paper moved to
-  `computer-architecture/io-interfaces/archive/gate_co_mock_6_2026-11-01_run1.html` with its content frozen, so
-  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Operating Systems · Unit 2 — Inter-Process Communication & Synchronization, Set 2 of 2 (second pass)**,
-  2026-11-02 →
-  [`operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html`](operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 166 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 65 current · 101 archived |
-| Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4150 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
+| Papers published (current + archived) | 167 (25 Discrete Mathematics, 13 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 66 current · 101 archived |
+| Test cards on the portal | 66 (one card per current paper; every superseded set is a link on its unit’s card) |
+| Units covered | 12 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 4175 (625 Discrete Mathematics, 325 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 101 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Algorithms Unit 7, Set 1 of 2
+
+- New paper at `algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`, the first paper of Unit 7.
+  Nothing was archived because the unit had no banked questions, so the folder holds exactly one current paper.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 12, unit 6, shortest-paths, Set 2 of 2}`. Unit 6 held **50** questions, exactly
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(shortest-paths) = 5 + 1) mod 7 = 6` → **Unit 7, Complexity Theory & NP-Completeness**. Unit 7 held
+  **0** questions, so this is **Set 1 of 2** and no step-B5 second pass is involved. No override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: classes P and NP 7 · polynomial-time reductions 6 · NP-complete problems 6 ·
+  NP-hard identification 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Classes P and NP: the strongest known inclusion, the verifier/certificate definition, the
+  one class whose complement closure is open, closure under union and intersection as statements, problems that
+  look hard but lie in P (2-SAT, bipartiteness, primality), the degree of a verifier with a bounded certificate
+  (**k = 3**), and what follows when an NP-complete language sits in co-NP (**NP = co-NP**). Reductions: the exact
+  many-one definition, which direction proves hardness, transitivity and the two transfer properties, composing a
+  reduction with a solver (**k = 8**), and why `B ≤p A` holds while `A ≤p B` is not a theorem when A is
+  NP-complete and B is in P. NP-complete problems: Cook–Levin, Euler versus Hamilton, the consequences of
+  completeness, the CLIQUE→VERTEX-COVER size shift (`10 − 4 = 6`), the edge count of the graph the 3-SAT→CLIQUE
+  reduction builds (**42**), and the mutual reducibility of all NP-complete problems. NP-hard identification:
+  hardness outside NP, the halting problem and TSP optimisation as NP-hard, counting NP-complete members of a list
+  (**2**), counting NP-hard members of a mixed list (**4**), and hardness travelling forward along a reduction.
+- **Answers recomputed, not asserted.** Every numeric answer came from a script: the verifier cost
+  `2n³ + 7n² = Θ(n³)` so k = 3; the composed cost `n³ + (n²)⁴ = O(n⁸)` so k = 8; for
+  `φ = (x₁∨x₂∨¬x₃) ∧ (¬x₁∨x₂∨x₃) ∧ (x₁∨¬x₂∨x₃) ∧ (¬x₁∨¬x₂∨¬x₃)` the reduction gives 12 vertices,
+  `C(12,2) − 4·C(3,2) = 54` cross-clause pairs and 12 complementary pairs, hence **42** edges — confirmed by
+  enumerating all pairs, and the same program confirmed the formula is satisfiable with maximum clique 4; and the
+  two counting answers 2 and 4 were checked item by item.
+- **Ids and bank.** 25 records appended as `ALG-U7-Q01`–`ALG-U7-Q25`; Algorithms now holds **325** questions
+  across 7 units, and `data/questions-algorithms.js` grew from 300 to 325 records.
+- **Question Bank tab.** 300 solved questions — the 325 in the bank less the 25 on this paper — so the active set
+  is not repeated there.
+- **Provenance.** `verified_pyqs` is empty for Algorithms: no complexity-theory previous-year question has been
+  verified against an official paper and answer key, so no item carries `GATE_PYQ_VARIATION` and nothing on this
+  paper is claimed as an official GATE question. Sources are `STANDARD_TEXTBOOK` (16) and `ORIGINAL_SYNTHESIS` (9).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (B), (D); (A), (C), (D); (B), (C), (D); (A), (B), (C); and (B), (D) — the last one a two-element set, so
+  the five are not five copies of a three-element pattern. Every letter named inside a solution is the letter the
+  candidate sees.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block, the engine `<script>`, the palette block and
+  the tail from `</footer>` to the payload are byte-identical to the Algorithms Unit 6 paper this one follows
+  (compared byte for byte, not by eye). One copy: `find . -name '*.html'` shows `index.html` at the root plus
+  exactly one current file per paper and one file per archived set, and the new paper exists at exactly one path.
+  Tokens: the `:root` block is byte-identical to `design-tokens.css` and to `index.html`; no CDN and no `<link>`.
+  Counts: 25 test cards, a 25-button palette, 300 bank cards, 5 NAT inputs, four options on every MCQ and MSQ, and
+  all seven `data-*` attributes on all 25 test cards and all 300 bank cards. No duplicate content: the active 25
+  ids do not appear in the Question Bank tab.
+- **Interface run (jsdom).** 30 structural and behavioural checks pass on the shipped file: exactly one card
+  visible on load, the timer at 60:00, the answer-key tab disabled and its list empty, no solution text or option
+  mark anywhere in the test view before submit, palette states moving grey → red → green → violet →
+  violet-with-dot, a mark-for-review toggle, palette navigation, Clear Response restoring the visited-only state, a
+  perfect attempt scoring **35 / 35** with all 25 palette buttons turning `ok`, a second attempt in which every MCQ
+  is wrong, every MSQ a strict subset and every NAT right, scoring **10 / 35** (5 correct, 20 incorrect), and an
+  MSQ with one extra option selected scoring **0** — confirming that an MSQ earns nothing on a partial or enlarged
+  set and that there is no negative marking.
+- **Portal.** A new card for Unit 7 was inserted at the head of `tests` (66 cards, up from 65) with no archive
+  list, and the static counters were recomputed: 66 units, 4175 banked, 4150 in the review archive, 4175 records
+  in the subject banks. The Unit 7 entry already existed in the portal's `units` table, so no unit was added.
+- **Bank-rendering normalisation.** The paper's Question Bank tab is generated from `master_bank.json` by one
+  renderer. Rendering the 275 cards of the previous Algorithms paper with it reproduces every card byte for byte
+  except ten (`ALG-U4-Q06`, `Q13`, `Q17`, `Q22`, `Q25`, `Q31`, `Q36`, `Q37`, `Q43`, `Q46`), whose stored MSQ answer
+  line reads `Options (A, B and C)` where the current convention — the one this paper's own payload uses — reads
+  `Options (A), (B) and (C)`. Those ten lines now follow the current convention; the bank records themselves are
+  untouched, because the bank is append-only.
+- **Pre-existing defects found and NOT fixed (outside this run's scope).** Three data defects hide 75 of the 4175
+  banked records from the portal's tab-2 archive, which renders 4100: (i) `data/questions-engineering-mathematics.js`
+  holds 300 records against a 325-question bank, so `EM-U3C-Q01`–`Q25` never reach the portal; (ii) the 25
+  `ALG-U6B-*` records and the 25 `EM-U3C-*` records store `unit_number` as a string, and the portal matches
+  `q.unit === u.n` strictly, so they are skipped; (iii) 25 Digital Logic Unit 2 records carry a subtopic slug that
+  is absent from the portal's `units` table, so `u.subtopics.forEach` never renders them. Repairing them means
+  editing append-only bank records or a feed file, so they were left alone and recorded here instead. For the same
+  reason the two archive chips now report the true bank totals rather than the 4125 that tab 2 renders.
+- **Shell defect inherited, unchanged.** The shipped shell carries a stray `</footer>` with no `<footer class="foot">`
+  opening tag, and no provenance paragraph. It is identical in every Algorithms paper and was left as it is, so the
+  shell stays byte-identical across papers; the provenance promise is carried by the Question Bank tab sentence and
+  the About tab's source-categories section.
 
 ### 2026-11-02 — Computer Architecture Unit 6, Set 2 of 2
 

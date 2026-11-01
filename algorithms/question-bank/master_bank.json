@@ -4,18 +4,19 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 300,
+  "total_questions": 325,
   "units_with_questions": [
    1,
    2,
    3,
    4,
    5,
-   6
+   6,
+   7
   ],
-  "total_runs": 12
+  "total_runs": 13
  },
  "runs": [
   {
@@ -692,6 +693,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the four subjects whose current unit was still below UNIT_QUESTION_CAP = 50, in syllabus order: discrete-mathematics (Unit 11, 25 questions), computer-architecture (Unit 6, 25), algorithms (Unit 6, 25) and databases (Unit 5, 25). An unseeded secrets.randbelow(4) draw returned index 2 -> Algorithms. algorithms/question-bank/master_bank.json read back runs[] sorted by (date, run) as {date 2026-11-01, run 11, unit 6, shortest-paths, Set 1 of 2}. Unit 6 held 25 questions, below UNIT_QUESTION_CAP = 50, and had been current for 0 days, below DAYS_PER_UNIT_MAX = 7, so step B3 held and step B4 was not reached: the unit was generated again as Set 2 of 2. 25 + 25 = 50 closes Unit 6 at the cap, so the next Algorithms run advances (index_of(shortest-paths) = 5 + 1) mod 7 = 6 -> Unit 7, Complexity Theory & NP-Completeness, opening a second pass. No override was used and no unit is above the cap.",
    "note": "Set 2 of 2 for Algorithms Unit 6. The Set 1 paper of the same date moved to archive as _run1 with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U6B-Q01..Q25); no id and no normalised stem collides with the 25 items already banked for this unit. Coverage: 7 Dijkstra, 6 Bellman-Ford, 6 DAG shortest paths, 6 transitive closure and Floyd-Warshall - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script from the stated graph: the Dijkstra settlement count is 2 and the extraction count is 9; Bellman-Ford gives distance 2 to d; the DAG shortest path A->D has 3 edges; the transitive closure of the three-edge chain has 6 true entries. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 13,
+   "date": "2026-11-02",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "set": "Set 1 of 2",
+   "count": 25,
+   "file": "algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html",
+   "archived_previous": null,
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "classes-p-and-np": 7,
+    "polynomial-time-reductions": 6,
+    "np-complete-problems-3sat-clique-vertex-cover": 6,
+    "np-hard-identification": 6
+   },
+   "question_ids": [
+    "ALG-U7-Q01",
+    "ALG-U7-Q02",
+    "ALG-U7-Q03",
+    "ALG-U7-Q04",
+    "ALG-U7-Q05",
+    "ALG-U7-Q06",
+    "ALG-U7-Q07",
+    "ALG-U7-Q08",
+    "ALG-U7-Q09",
+    "ALG-U7-Q10",
+    "ALG-U7-Q11",
+    "ALG-U7-Q12",
+    "ALG-U7-Q13",
+    "ALG-U7-Q14",
+    "ALG-U7-Q15",
+    "ALG-U7-Q16",
+    "ALG-U7-Q17",
+    "ALG-U7-Q18",
+    "ALG-U7-Q19",
+    "ALG-U7-Q20",
+    "ALG-U7-Q21",
+    "ALG-U7-Q22",
+    "ALG-U7-Q23",
+    "ALG-U7-Q24",
+    "ALG-U7-Q25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 5 - Algorithms. algorithms/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 12, unit 6, shortest-paths, Set 2 of 2}. Unit 6 held 50 questions, exactly UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(shortest-paths) = 5 + 1) mod 7 = 6 -> Unit 7, Complexity Theory & NP-Completeness. Unit 7 held no questions, so this is Set 1 of 2, the first paper of its first pass. No override was used and no partial set was generated.",
+   "note": "Set 1 of 2 for Algorithms Unit 7, the first paper for this unit, so nothing was archived and the unit folder holds exactly one current paper. All 25 items are new (ALG-U7-Q01..Q25); no id and no normalised stem collides with the 300 items already banked for Algorithms. Coverage: classes P and NP 7, polynomial-time reductions 6, NP-complete problems 6, NP-hard identification 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the verifier bound 2n^3 + 7n^2 gives k = 3; the composed reduction cost n^3 + (n^2)^4 gives k = 8; the 3-SAT to CLIQUE graph on the four-clause formula has 12 vertices, 54 cross-clause pairs and 12 complementary pairs, so 42 edges; 2 of the four listed problems are NP-complete; 4 of the six listed problems are NP-hard. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [],
@@ -11595,6 +11658,1020 @@
     "trap": "Setting the diagonal to 1 by reflexivity. The question defines the non-reflexive closure; the reflexive version would add four more entries and give 10."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The transitive closure records reachability by a non-empty path, so every ordered pair joined by a chain of one or more edges contributes one entry.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Paths of one edge: <span class=\"mm\">1&rarr;2, 2&rarr;3, 3&rarr;4</span>, giving three entries.</li><li>Paths of two edges: <span class=\"mm\">1&rarr;3, 2&rarr;4</span>, giving two more.</li><li>Paths of three edges: <span class=\"mm\">1&rarr;4</span>, giving one more.</li><li>The diagonal stays 0 because the graph is acyclic, and 4 is unreachable from anything, so the total is <span class=\"mm\">3 + 2 + 1 = 6</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6</span></p><p class=\"row\"><b>Common misconception.</b> Setting the diagonal to 1 by reflexivity. The question defines the non-reflexive closure; the reflexive version would add four more entries and give 10.</p>"
+  },
+  {
+   "id": "ALG-U7-Q01",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following is the strongest statement about the classes P and NP that is <i>known</i> to be true?",
+   "options": [
+    "<span class=\"mm\">P ⊂ NP</span>, that is P is a proper subset of NP.",
+    "<span class=\"mm\">P ⊆ NP</span>.",
+    "<span class=\"mm\">NP ⊆ P</span>.",
+    "P and NP are incomparable."
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Every deterministic polynomial-time algorithm is a nondeterministic polynomial-time algorithm that never uses its choice, so P ⊆ NP. Nothing stronger has been proved.",
+    "steps": [
+     "A deterministic machine running in polynomial time is also a nondeterministic machine running in polynomial time: simply ignore the branching.",
+     "Hence every language of P lies in NP, which gives <span class=\"mm\">P ⊆ NP</span>.",
+     "Proper containment would mean some language lies in NP outside P, and exhibiting one would settle P ≠ NP; that is still open.",
+     "Incomparability is open as well, since no language is known to lie in NP outside P.",
+     "So the only inclusion that is a theorem is the weak one."
+    ],
+    "final": "<span class=\"mm\">P ⊆ NP</span> — option B.",
+    "trap": "Choosing <span class=\"mm\">P ⊂ NP</span> because it is 'obviously' true. Proper containment is the famous open problem; only the weak inclusion has been proved."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every deterministic polynomial-time algorithm is a nondeterministic polynomial-time algorithm that never uses its choice, so P ⊆ NP. Nothing stronger has been proved.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A deterministic machine running in polynomial time is also a nondeterministic machine running in polynomial time: simply ignore the branching.</li><li>Hence every language of P lies in NP, which gives <span class=\"mm\">P ⊆ NP</span>.</li><li>Proper containment would mean some language lies in NP outside P, and exhibiting one would settle P ≠ NP; that is still open.</li><li>Incomparability is open as well, since no language is known to lie in NP outside P.</li><li>So the only inclusion that is a theorem is the weak one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">P ⊆ NP</span> — option B.</span></p><p class=\"row\"><b>Common misconception.</b> Choosing <span class=\"mm\">P ⊂ NP</span> because it is 'obviously' true. Proper containment is the famous open problem; only the weak inclusion has been proved.</p>"
+  },
+  {
+   "id": "ALG-U7-Q02",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "A language L belongs to NP exactly when:",
+   "options": [
+    "L is decidable and some algorithm decides it in polynomial time.",
+    "every string of L has a certificate whose length is at most <span class=\"mm\">log n</span>, where n is the length of the string.",
+    "there is a deterministic verifier V running in polynomial time and a polynomial p such that <span class=\"mm\">x ∈ L ⇔ ∃c</span> with <span class=\"mm\">|c| ≤ p(|x|)</span> and <span class=\"mm\">V(x, c)</span> accepts.",
+    "L is decidable."
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "NP is the class of languages with short certificates and a fast verifier; equivalently, the languages decided by a nondeterministic polynomial-time machine.",
+    "steps": [
+     "If a nondeterministic machine accepts x in polynomial time, record the sequence of choices it made on an accepting path; that sequence is a certificate of polynomial length.",
+     "A deterministic verifier can replay those choices in polynomial time, which gives the implication from NP to the verifier definition.",
+     "Conversely, a nondeterministic machine can guess the certificate c of length at most p(|x|) and then run V, so the verifier definition gives NP.",
+     "Option D is too weak: every decidable language has a decider, but the decider may take exponential time.",
+     "Option B is too strong: certificates of logarithmic length would make the class far smaller than NP."
+    ],
+    "final": "The polynomial-time verifier characterisation — option C.",
+    "trap": "Reading NP as 'not polynomial' and choosing D, or assuming certificates must be short in a logarithmic sense. NP asks for polynomial-length certificates, verified in polynomial time."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP is the class of languages with short certificates and a fast verifier; equivalently, the languages decided by a nondeterministic polynomial-time machine.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If a nondeterministic machine accepts x in polynomial time, record the sequence of choices it made on an accepting path; that sequence is a certificate of polynomial length.</li><li>A deterministic verifier can replay those choices in polynomial time, which gives the implication from NP to the verifier definition.</li><li>Conversely, a nondeterministic machine can guess the certificate c of length at most p(|x|) and then run V, so the verifier definition gives NP.</li><li>Option D is too weak: every decidable language has a decider, but the decider may take exponential time.</li><li>Option B is too strong: certificates of logarithmic length would make the class far smaller than NP.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: The polynomial-time verifier characterisation — option C.</span></p><p class=\"row\"><b>Common misconception.</b> Reading NP as 'not polynomial' and choosing D, or assuming certificates must be short in a logarithmic sense. NP asks for polynomial-length certificates, verified in polynomial time.</p>"
+  },
+  {
+   "id": "ALG-U7-Q03",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "For which of the following classes is closure under complement still an open question?",
+   "options": [
+    "P",
+    "PSPACE",
+    "the regular languages",
+    "NP"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A class is closed under complement when the complement of every language in it also lies in it. For NP this is exactly the question NP = co-NP.",
+    "steps": [
+     "P is closed under complement: run the polynomial-time decider and reverse its answer.",
+     "PSPACE is closed under complement by Savitch's theorem, which gives a deterministic polynomial-space machine that can flip its answer.",
+     "The regular languages are closed under complement because a DFA becomes a DFA for the complement when its accepting and non-accepting states are swapped.",
+     "For NP the answer is unknown: co-NP is defined as the class of complements of NP languages, and whether NP = co-NP is open.",
+     "So the open case is NP."
+    ],
+    "final": "NP — option D.",
+    "trap": "Assuming that complementing an NP machine is as easy as complementing a DFA. A nondeterministic machine has many computation paths and 'no accepting path exists' cannot be certified by a single short witness."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A class is closed under complement when the complement of every language in it also lies in it. For NP this is exactly the question NP = co-NP.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>P is closed under complement: run the polynomial-time decider and reverse its answer.</li><li>PSPACE is closed under complement by Savitch's theorem, which gives a deterministic polynomial-space machine that can flip its answer.</li><li>The regular languages are closed under complement because a DFA becomes a DFA for the complement when its accepting and non-accepting states are swapped.</li><li>For NP the answer is unknown: co-NP is defined as the class of complements of NP languages, and whether NP = co-NP is open.</li><li>So the open case is NP.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: NP — option D.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that complementing an NP machine is as easy as complementing a DFA. A nondeterministic machine has many computation paths and 'no accepting path exists' cannot be certified by a single short witness.</p>"
+  },
+  {
+   "id": "ALG-U7-Q04",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A language in NP is decided by some nondeterministic Turing machine in polynomial time.",
+    "NP is closed under union and under intersection.",
+    "NP is closed under complement.",
+    "If <span class=\"mm\">L ∈ NP</span> then every string of L has a certificate whose length is bounded by a polynomial in the length of the string."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "The three equivalent faces of NP — nondeterministic polynomial time, polynomial-length certificates, polynomial-time verification — plus the closure properties that follow from them.",
+    "steps": [
+     "A: this is one of the standard definitions of NP, so it is TRUE.",
+     "B: for the union, run the two nondeterministic machines in parallel and accept if either accepts; for the intersection, run them one after the other and accept only if both accept. Both constructions stay polynomial, so TRUE.",
+     "C: this would give NP = co-NP, which is open, so it is not a theorem; FALSE.",
+     "D: a certificate is the sequence of nondeterministic choices on an accepting path of a polynomial-time machine, so its length is polynomial in the input length; TRUE."
+    ],
+    "final": "Options (A), (B) and (D) are TRUE; (C) is FALSE.",
+    "trap": "Treating complement as just another closure property, like union. Union and intersection are constructive and cheap; complement would collapse the NP versus co-NP question."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three equivalent faces of NP — nondeterministic polynomial time, polynomial-length certificates, polynomial-time verification — plus the closure properties that follow from them.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: this is one of the standard definitions of NP, so it is TRUE.</li><li>B: for the union, run the two nondeterministic machines in parallel and accept if either accepts; for the intersection, run them one after the other and accept only if both accept. Both constructions stay polynomial, so TRUE.</li><li>C: this would give NP = co-NP, which is open, so it is not a theorem; FALSE.</li><li>D: a certificate is the sequence of nondeterministic choices on an accepting path of a polynomial-time machine, so its length is polynomial in the input length; TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D) are TRUE; (C) is FALSE.</span></p><p class=\"row\"><b>Common misconception.</b> Treating complement as just another closure property, like union. Union and intersection are constructive and cheap; complement would collapse the NP versus co-NP question.</p>"
+  },
+  {
+   "id": "ALG-U7-Q05",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following decision problems are known to be in P? (Select all that apply.)",
+   "options": [
+    "2-SAT",
+    "3-SAT",
+    "deciding whether a given undirected graph is bipartite",
+    "deciding whether a given integer is prime"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Several problems that look like their NP-complete relatives are in P, and GATE tests exactly those boundaries.",
+    "steps": [
+     "A: 2-SAT is decided in linear time by building the implication graph <span class=\"mm\">(a ∨ b) ≡ (¬a ⇒ b) ∧ (¬b ⇒ a)</span> and testing for a variable and its negation in one strongly connected component. TRUE.",
+     "B: 3-SAT is NP-complete, and no polynomial algorithm is known. FALSE.",
+     "C: a graph is bipartite exactly when a BFS 2-colouring meets no edge with equal colours, which is linear time. TRUE.",
+     "D: primality testing is in P — the AKS algorithm settled this in 2002, and randomised tests such as Miller–Rabin are polynomial in practice. TRUE."
+    ],
+    "final": "Options (A), (C) and (D) are in P; (B) is not known to be.",
+    "trap": "Assuming that a problem phrased with 'satisfiability' or 'primes' must be hard. Restricting clauses to two literals, or asking only whether a number is prime rather than factoring it, drops the problem into P."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Several problems that look like their NP-complete relatives are in P, and GATE tests exactly those boundaries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: 2-SAT is decided in linear time by building the implication graph <span class=\"mm\">(a ∨ b) ≡ (¬a ⇒ b) ∧ (¬b ⇒ a)</span> and testing for a variable and its negation in one strongly connected component. TRUE.</li><li>B: 3-SAT is NP-complete, and no polynomial algorithm is known. FALSE.</li><li>C: a graph is bipartite exactly when a BFS 2-colouring meets no edge with equal colours, which is linear time. TRUE.</li><li>D: primality testing is in P — the AKS algorithm settled this in 2002, and randomised tests such as Miller–Rabin are polynomial in practice. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D) are in P; (B) is not known to be.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that a problem phrased with 'satisfiability' or 'primes' must be hard. Restricting clauses to two literals, or asking only whether a number is prime rather than factoring it, drops the problem into P.</p>"
+  },
+  {
+   "id": "ALG-U7-Q06",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "A verifier runs in time <span class=\"mm\">2n³ + 7c</span> on an instance of length n and a certificate of length c, and every certificate for an instance of length n has length at most <span class=\"mm\">n²</span>. Give the smallest integer k for which the verifier's running time on an instance of length n is <span class=\"mm\">O(n^k)</span>.",
+   "options": [],
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "The certificate is itself polynomial in the input length, so substituting its bound into the verifier's cost gives a polynomial in n whose degree is what the question asks for.",
+    "steps": [
+     "A certificate may be as long as <span class=\"mm\">c = n²</span>, so the worst case is <span class=\"mm\">2n³ + 7n²</span>.",
+     "The two terms are of degree 3 and degree 2.",
+     "The faster-growing term <span class=\"mm\">2n³</span> dominates: <span class=\"mm\">7n² / 2n³ = 7/(2n) → 0</span>.",
+     "So the running time is <span class=\"mm\">Θ(n³)</span>, and <span class=\"mm\">O(n³)</span> holds while <span class=\"mm\">O(n²)</span> does not.",
+     "The smallest such integer is 3."
+    ],
+    "final": "k = 3.",
+    "trap": "Multiplying the two polynomials instead of substituting, or answering 5 by adding the degrees. The certificate length is a bound on c, not a factor multiplied into the running time."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The certificate is itself polynomial in the input length, so substituting its bound into the verifier's cost gives a polynomial in n whose degree is what the question asks for.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A certificate may be as long as <span class=\"mm\">c = n²</span>, so the worst case is <span class=\"mm\">2n³ + 7n²</span>.</li><li>The two terms are of degree 3 and degree 2.</li><li>The faster-growing term <span class=\"mm\">2n³</span> dominates: <span class=\"mm\">7n² / 2n³ = 7/(2n) → 0</span>.</li><li>So the running time is <span class=\"mm\">Θ(n³)</span>, and <span class=\"mm\">O(n³)</span> holds while <span class=\"mm\">O(n²)</span> does not.</li><li>The smallest such integer is 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: k = 3.</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying the two polynomials instead of substituting, or answering 5 by adding the degrees. The certificate length is a bound on c, not a factor multiplied into the running time.</p>"
+  },
+  {
+   "id": "ALG-U7-Q07",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "classes-p-and-np",
+   "subtopic": "classes-p-and-np",
+   "subtopic_label": "Classes P and NP",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Suppose a language L is NP-complete and also lies in co-NP. Which of the following is the strongest conclusion that follows?",
+   "options": [
+    "<span class=\"mm\">P = NP</span>",
+    "<span class=\"mm\">NP = co-NP</span>",
+    "<span class=\"mm\">L ∈ P</span>",
+    "every language in NP is NP-complete"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "An NP-complete problem is a universal target for NP: every NP language reduces to it. Putting it inside co-NP therefore drags all of NP into co-NP.",
+    "steps": [
+     "Let <span class=\"mm\">A ∈ NP</span>. Because L is NP-complete, <span class=\"mm\">A ≤p L</span>.",
+     "co-NP is closed under polynomial-time many-one reductions, and <span class=\"mm\">L ∈ co-NP</span>, so <span class=\"mm\">A ∈ co-NP</span>. Hence <span class=\"mm\">NP ⊆ co-NP</span>.",
+     "For the reverse inclusion let <span class=\"mm\">A ∈ co-NP</span>. Then <span class=\"mm\">Ā ∈ NP</span>, so <span class=\"mm\">Ā ≤p L</span>, and since <span class=\"mm\">L ∈ co-NP</span> we get <span class=\"mm\">Ā ∈ co-NP</span>, that is <span class=\"mm\">A ∈ NP</span>. Hence <span class=\"mm\">co-NP ⊆ NP</span>.",
+     "The two inclusions give <span class=\"mm\">NP = co-NP</span>.",
+     "Nothing here forces <span class=\"mm\">P = NP</span>, so option A is stronger than what is proved and is not a consequence."
+    ],
+    "final": "<span class=\"mm\">NP = co-NP</span> — option B.",
+    "trap": "Stopping at 'L is in NP and in co-NP, so it is easy', which would give <span class=\"mm\">L ∈ P</span>. A problem in both classes is not thereby in P; the P versus NP ∩ co-NP question is open."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An NP-complete problem is a universal target for NP: every NP language reduces to it. Putting it inside co-NP therefore drags all of NP into co-NP.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let <span class=\"mm\">A ∈ NP</span>. Because L is NP-complete, <span class=\"mm\">A ≤p L</span>.</li><li>co-NP is closed under polynomial-time many-one reductions, and <span class=\"mm\">L ∈ co-NP</span>, so <span class=\"mm\">A ∈ co-NP</span>. Hence <span class=\"mm\">NP ⊆ co-NP</span>.</li><li>For the reverse inclusion let <span class=\"mm\">A ∈ co-NP</span>. Then <span class=\"mm\">Ā ∈ NP</span>, so <span class=\"mm\">Ā ≤p L</span>, and since <span class=\"mm\">L ∈ co-NP</span> we get <span class=\"mm\">Ā ∈ co-NP</span>, that is <span class=\"mm\">A ∈ NP</span>. Hence <span class=\"mm\">co-NP ⊆ NP</span>.</li><li>The two inclusions give <span class=\"mm\">NP = co-NP</span>.</li><li>Nothing here forces <span class=\"mm\">P = NP</span>, so option A is stronger than what is proved and is not a consequence.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">NP = co-NP</span> — option B.</span></p><p class=\"row\"><b>Common misconception.</b> Stopping at 'L is in NP and in co-NP, so it is easy', which would give <span class=\"mm\">L ∈ P</span>. A problem in both classes is not thereby in P; the P versus NP ∩ co-NP question is open.</p>"
+  },
+  {
+   "id": "ALG-U7-Q08",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "If <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ∈ P</span>, which of the following must hold?",
+   "options": [
+    "<span class=\"mm\">A ∈ P</span>",
+    "A is NP-complete",
+    "<span class=\"mm\">B ≤p A</span>",
+    "A is undecidable"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A reduction moves solvability backwards: an easy target makes the source easy. That is the whole point of using reductions to prove membership in P.",
+    "steps": [
+     "Let f be the polynomial-time reduction, so <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span>.",
+     "On input x, compute <span class=\"mm\">f(x)</span> and then run the polynomial-time decider for B on it.",
+     "Both stages are polynomial, and their composition is polynomial.",
+     "So A is decided in polynomial time, that is <span class=\"mm\">A ∈ P</span>.",
+     "Nothing follows in the other direction: <span class=\"mm\">B ≤p A</span> need not exist."
+    ],
+    "final": "<span class=\"mm\">A ∈ P</span> — option A.",
+    "trap": "Reversing the arrow and concluding something about B. The reduction carries hardness from B to A, never from A to B."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A reduction moves solvability backwards: an easy target makes the source easy. That is the whole point of using reductions to prove membership in P.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let f be the polynomial-time reduction, so <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span>.</li><li>On input x, compute <span class=\"mm\">f(x)</span> and then run the polynomial-time decider for B on it.</li><li>Both stages are polynomial, and their composition is polynomial.</li><li>So A is decided in polynomial time, that is <span class=\"mm\">A ∈ P</span>.</li><li>Nothing follows in the other direction: <span class=\"mm\">B ≤p A</span> need not exist.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">A ∈ P</span> — option A.</span></p><p class=\"row\"><b>Common misconception.</b> Reversing the arrow and concluding something about B. The reduction carries hardness from B to A, never from A to B.</p>"
+  },
+  {
+   "id": "ALG-U7-Q09",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "To prove that a problem B is NP-hard, it is enough to exhibit:",
+   "options": [
+    "a polynomial-time algorithm for B",
+    "a certificate for B that can be verified in polynomial time",
+    "a polynomial-time reduction from a known NP-hard problem A to B",
+    "a polynomial-time reduction from B to a known NP-hard problem A"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "NP-hardness of B means every language in NP reduces to B. A single known NP-hard source that reduces to B, composed with the reductions from NP, establishes exactly that.",
+    "steps": [
+     "Hardness flows along the arrow: if <span class=\"mm\">A ≤p B</span> and A is NP-hard, then for any <span class=\"mm\">X ∈ NP</span> we have <span class=\"mm\">X ≤p A ≤p B</span>, so <span class=\"mm\">X ≤p B</span>.",
+     "Therefore B is NP-hard, which is option C.",
+     "Option D is the wrong direction: <span class=\"mm\">B ≤p A</span> only shows that B is no harder than A, which is a statement about easiness.",
+     "Option B shows <span class=\"mm\">B ∈ NP</span>; on its own it proves nothing about hardness.",
+     "Option A would prove B is easy, the opposite of the goal."
+    ],
+    "final": "A reduction from a known NP-hard problem to B — option C.",
+    "trap": "Reducing B to a known hard problem, which is the single most common error in NP-completeness proofs. To show B is hard, the hard problem must reduce to B."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP-hardness of B means every language in NP reduces to B. A single known NP-hard source that reduces to B, composed with the reductions from NP, establishes exactly that.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Hardness flows along the arrow: if <span class=\"mm\">A ≤p B</span> and A is NP-hard, then for any <span class=\"mm\">X ∈ NP</span> we have <span class=\"mm\">X ≤p A ≤p B</span>, so <span class=\"mm\">X ≤p B</span>.</li><li>Therefore B is NP-hard, which is option C.</li><li>Option D is the wrong direction: <span class=\"mm\">B ≤p A</span> only shows that B is no harder than A, which is a statement about easiness.</li><li>Option B shows <span class=\"mm\">B ∈ NP</span>; on its own it proves nothing about hardness.</li><li>Option A would prove B is easy, the opposite of the goal.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A reduction from a known NP-hard problem to B — option C.</span></p><p class=\"row\"><b>Common misconception.</b> Reducing B to a known hard problem, which is the single most common error in NP-completeness proofs. To show B is hard, the hard problem must reduce to B.</p>"
+  },
+  {
+   "id": "ALG-U7-Q10",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following statements about polynomial-time many-one reductions are TRUE? (Select all that apply.)",
+   "options": [
+    "If <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ≤p A</span> then both A and B lie in P.",
+    "<span class=\"mm\">≤p</span> is transitive.",
+    "If <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ∈ P</span> then <span class=\"mm\">A ∈ P</span>.",
+    "If A is NP-complete, <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ∈ NP</span>, then B is NP-complete."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "The three working properties of <span class=\"mm\">≤p</span>: it composes, it pulls easiness backwards, and it pushes hardness forwards.",
+    "steps": [
+     "A: mutual reducibility means A and B have the same difficulty, which for two NP-complete problems is exactly what happens. It says nothing about P. FALSE.",
+     "B: composing two polynomial-time functions gives a polynomial-time function, so <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ≤p C</span> give <span class=\"mm\">A ≤p C</span>. TRUE.",
+     "C: compute the reduction and then decide B; both stages are polynomial. TRUE.",
+     "D: A is NP-hard, so every language of NP reduces to A and hence, by transitivity, to B. With <span class=\"mm\">B ∈ NP</span> as well, B is NP-complete. TRUE."
+    ],
+    "final": "Options (B), (C) and (D) are TRUE; (A) is FALSE.",
+    "trap": "Reading mutual reducibility as evidence of easiness. 3-SAT and CLIQUE reduce to each other precisely because both are hard; the pair is closed under reduction, not pushed into P."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three working properties of <span class=\"mm\">≤p</span>: it composes, it pulls easiness backwards, and it pushes hardness forwards.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: mutual reducibility means A and B have the same difficulty, which for two NP-complete problems is exactly what happens. It says nothing about P. FALSE.</li><li>B: composing two polynomial-time functions gives a polynomial-time function, so <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ≤p C</span> give <span class=\"mm\">A ≤p C</span>. TRUE.</li><li>C: compute the reduction and then decide B; both stages are polynomial. TRUE.</li><li>D: A is NP-hard, so every language of NP reduces to A and hence, by transitivity, to B. With <span class=\"mm\">B ∈ NP</span> as well, B is NP-complete. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D) are TRUE; (A) is FALSE.</span></p><p class=\"row\"><b>Common misconception.</b> Reading mutual reducibility as evidence of easiness. 3-SAT and CLIQUE reduce to each other precisely because both are hard; the pair is closed under reduction, not pushed into P.</p>"
+  },
+  {
+   "id": "ALG-U7-Q11",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "A polynomial-time many-one reduction from A to B is a function f with which property?",
+   "options": [
+    "f is computable in polynomial time, and <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span> for every string x.",
+    "f is computable in polynomial time, and <span class=\"mm\">x ∈ A ⇒ f(x) ∈ B</span>, with no condition when <span class=\"mm\">x ∉ A</span>.",
+    "f maps every string of A to a string of B and is computable in exponential time.",
+    "f is a polynomial-time algorithm that decides B on input x."
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A many-one reduction must be an exact translation of membership, computable fast enough that it can be composed with a polynomial-time solver.",
+    "steps": [
+     "The biconditional is essential: answers must be preserved in both directions, so that deciding B decides A.",
+     "A one-way implication as in option B would let f map everything into B and carry no information about non-membership.",
+     "Exponential-time computation as in option C cannot be composed with a polynomial solver without destroying the polynomial bound.",
+     "Option D describes a decider for B, not a translation from A to B.",
+     "Hence the definition is polynomial-time computability plus the biconditional."
+    ],
+    "final": "Polynomial time and <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span> — option A.",
+    "trap": "Accepting the one-way implication. Hardness proofs depend on the converse direction, which is what makes a 'no' instance of B a 'no' instance of A."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A many-one reduction must be an exact translation of membership, computable fast enough that it can be composed with a polynomial-time solver.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The biconditional is essential: answers must be preserved in both directions, so that deciding B decides A.</li><li>A one-way implication as in option B would let f map everything into B and carry no information about non-membership.</li><li>Exponential-time computation as in option C cannot be composed with a polynomial solver without destroying the polynomial bound.</li><li>Option D describes a decider for B, not a translation from A to B.</li><li>Hence the definition is polynomial-time computability plus the biconditional.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Polynomial time and <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span> — option A.</span></p><p class=\"row\"><b>Common misconception.</b> Accepting the one-way implication. Hardness proofs depend on the converse direction, which is what makes a 'no' instance of B a 'no' instance of A.</p>"
+  },
+  {
+   "id": "ALG-U7-Q12",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "A reduction from A to B runs in time <span class=\"mm\">O(n³)</span> and maps an instance of A of length n to an instance of B of length <span class=\"mm\">O(n²)</span>. B is solved in time <span class=\"mm\">O(m⁴)</span> on an instance of length m. Solving A by composing the reduction with the solver for B takes time <span class=\"mm\">O(n^k)</span>. Give k.",
+   "options": [],
+   "answer": 8,
+   "answer_display": "8",
+   "solution": {
+    "concept": "Compose the two cost functions: the solver's cost is measured on the length of the instance the reduction produced, so substitute that length into the solver's bound.",
+    "steps": [
+     "Reduction cost: <span class=\"mm\">O(n³)</span>.",
+     "Length of the instance handed to the solver: <span class=\"mm\">m = O(n²)</span>.",
+     "Solver cost: <span class=\"mm\">O(m⁴) = O((n²)⁴) = O(n⁸)</span>.",
+     "Total: <span class=\"mm\">O(n³ + n⁸) = O(n⁸)</span>, because the degree-8 term dominates.",
+     "So k = 8."
+    ],
+    "final": "k = 8.",
+    "trap": "Multiplying the exponents (3 × 4 = 12) or adding the two bounds as <span class=\"mm\">n³ · n⁴</span>. The substitution is of the produced length into the solver's polynomial, which raises the exponent to 2 × 4."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Compose the two cost functions: the solver's cost is measured on the length of the instance the reduction produced, so substitute that length into the solver's bound.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Reduction cost: <span class=\"mm\">O(n³)</span>.</li><li>Length of the instance handed to the solver: <span class=\"mm\">m = O(n²)</span>.</li><li>Solver cost: <span class=\"mm\">O(m⁴) = O((n²)⁴) = O(n⁸)</span>.</li><li>Total: <span class=\"mm\">O(n³ + n⁸) = O(n⁸)</span>, because the degree-8 term dominates.</li><li>So k = 8.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: k = 8.</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying the exponents (3 × 4 = 12) or adding the two bounds as <span class=\"mm\">n³ · n⁴</span>. The substitution is of the produced length into the solver's polynomial, which raises the exponent to 2 × 4.</p>"
+  },
+  {
+   "id": "ALG-U7-Q13",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "polynomial-time-reductions",
+   "subtopic": "polynomial-time-reductions",
+   "subtopic_label": "Polynomial-time reductions",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Let A be NP-complete and let <span class=\"mm\">B ∈ P</span>. Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">A ≤p B</span>",
+    "both <span class=\"mm\">A ≤p B</span> and <span class=\"mm\">B ≤p A</span>",
+    "neither reduction exists",
+    "<span class=\"mm\">B ≤p A</span>"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "An NP-hard target accepts a reduction from every NP language, and <span class=\"mm\">P ⊆ NP</span>, so every problem in P reduces to A. The reverse reduction would collapse P and NP.",
+    "steps": [
+     "Since <span class=\"mm\">B ∈ P</span> and <span class=\"mm\">P ⊆ NP</span>, B is a language in NP.",
+     "A is NP-complete, hence NP-hard, so every language in NP reduces to A; in particular <span class=\"mm\">B ≤p A</span>.",
+     "If <span class=\"mm\">A ≤p B</span> also held, then A would lie in P by the easiness-transfer property, and since A is NP-hard that would give <span class=\"mm\">P = NP</span>.",
+     "<span class=\"mm\">P = NP</span> is not known, so <span class=\"mm\">A ≤p B</span> is not a theorem and option B fails.",
+     "Option C fails because <span class=\"mm\">B ≤p A</span> does exist."
+    ],
+    "final": "<span class=\"mm\">B ≤p A</span> — option D.",
+    "trap": "Assuming reducibility is symmetric because both problems are 'polynomial-time related'. <span class=\"mm\">≤p</span> is a preorder, not an equivalence: the direction carries all the meaning."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An NP-hard target accepts a reduction from every NP language, and <span class=\"mm\">P ⊆ NP</span>, so every problem in P reduces to A. The reverse reduction would collapse P and NP.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Since <span class=\"mm\">B ∈ P</span> and <span class=\"mm\">P ⊆ NP</span>, B is a language in NP.</li><li>A is NP-complete, hence NP-hard, so every language in NP reduces to A; in particular <span class=\"mm\">B ≤p A</span>.</li><li>If <span class=\"mm\">A ≤p B</span> also held, then A would lie in P by the easiness-transfer property, and since A is NP-hard that would give <span class=\"mm\">P = NP</span>.</li><li><span class=\"mm\">P = NP</span> is not known, so <span class=\"mm\">A ≤p B</span> is not a theorem and option B fails.</li><li>Option C fails because <span class=\"mm\">B ≤p A</span> does exist.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">B ≤p A</span> — option D.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming reducibility is symmetric because both problems are 'polynomial-time related'. <span class=\"mm\">≤p</span> is a preorder, not an equivalence: the direction carries all the meaning.</p>"
+  },
+  {
+   "id": "ALG-U7-Q14",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which problem was the first to be proved NP-complete?",
+   "options": [
+    "SAT, in the Cook–Levin theorem",
+    "3-SAT",
+    "CLIQUE",
+    "HAMILTONIAN CYCLE"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Cook and Levin showed in 1971 that Boolean satisfiability is NP-complete, giving the first member of the class and therefore a root for all later reductions.",
+    "steps": [
+     "The proof encodes the entire computation of a nondeterministic polynomial-time machine as a Boolean formula.",
+     "The formula is satisfiable exactly when the machine has an accepting computation, and its size is polynomial in the input length.",
+     "That makes SAT NP-hard, and SAT is in NP because an assignment is a polynomial certificate.",
+     "Every later NP-completeness result reduces from SAT or from one of its descendants.",
+     "3-SAT, CLIQUE and HAMILTONIAN CYCLE came afterwards, each by reduction."
+    ],
+    "final": "SAT — option A.",
+    "trap": "Answering 3-SAT because it is the more convenient starting point for later reductions. 3-SAT is derived from SAT by a reduction that splits long clauses."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cook and Levin showed in 1971 that Boolean satisfiability is NP-complete, giving the first member of the class and therefore a root for all later reductions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The proof encodes the entire computation of a nondeterministic polynomial-time machine as a Boolean formula.</li><li>The formula is satisfiable exactly when the machine has an accepting computation, and its size is polynomial in the input length.</li><li>That makes SAT NP-hard, and SAT is in NP because an assignment is a polynomial certificate.</li><li>Every later NP-completeness result reduces from SAT or from one of its descendants.</li><li>3-SAT, CLIQUE and HAMILTONIAN CYCLE came afterwards, each by reduction.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: SAT — option A.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 3-SAT because it is the more convenient starting point for later reductions. 3-SAT is derived from SAT by a reduction that splits long clauses.</p>"
+  },
+  {
+   "id": "ALG-U7-Q15",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following problems is NP-complete?",
+   "options": [
+    "2-SAT",
+    "deciding whether a graph has an Eulerian circuit",
+    "HAMILTONIAN CYCLE",
+    "single-source shortest paths with non-negative weights"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The Hamiltonian and Eulerian conditions are the standard contrast: visiting every vertex once is hard, traversing every edge once is easy.",
+    "steps": [
+     "A: 2-SAT is decided in linear time through strongly connected components of the implication graph, so it is in P.",
+     "B: a connected graph has an Eulerian circuit exactly when every vertex has even degree, which is checked in linear time.",
+     "C: HAMILTONIAN CYCLE is NP-complete, by reduction from VERTEX COVER; no polynomial algorithm is known.",
+     "D: Dijkstra's algorithm solves it in <span class=\"mm\">O(E + V log V)</span> time with non-negative weights.",
+     "So only option C is NP-complete."
+    ],
+    "final": "HAMILTONIAN CYCLE — option C.",
+    "trap": "Confusing Eulerian with Hamiltonian. 'Every edge exactly once' is a degree condition; 'every vertex exactly once' is the hard one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The Hamiltonian and Eulerian conditions are the standard contrast: visiting every vertex once is hard, traversing every edge once is easy.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: 2-SAT is decided in linear time through strongly connected components of the implication graph, so it is in P.</li><li>B: a connected graph has an Eulerian circuit exactly when every vertex has even degree, which is checked in linear time.</li><li>C: HAMILTONIAN CYCLE is NP-complete, by reduction from VERTEX COVER; no polynomial algorithm is known.</li><li>D: Dijkstra's algorithm solves it in <span class=\"mm\">O(E + V log V)</span> time with non-negative weights.</li><li>So only option C is NP-complete.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: HAMILTONIAN CYCLE — option C.</span></p><p class=\"row\"><b>Common misconception.</b> Confusing Eulerian with Hamiltonian. 'Every edge exactly once' is a degree condition; 'every vertex exactly once' is the hard one.</p>"
+  },
+  {
+   "id": "ALG-U7-Q16",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "If any NP-complete language belongs to P then <span class=\"mm\">P = NP</span>.",
+    "Every language in NP is polynomial-time reducible to every NP-complete language.",
+    "There are infinitely many NP-complete languages.",
+    "The complement of an NP-complete language is NP-complete."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "NP-completeness is defined by being both in NP and NP-hard, and its consequences follow from the transitivity of <span class=\"mm\">≤p</span>.",
+    "steps": [
+     "A: an NP-complete language is NP-hard, so every language of NP reduces to it; if it were in P, every language of NP would be in P. TRUE.",
+     "B: that is precisely the NP-hard half of the definition of NP-complete. TRUE.",
+     "C: from one NP-complete language infinitely many are obtained, for example by padding or by intersecting with trivially different regular sets, all still NP-complete. TRUE.",
+     "D: the complement of an NP-complete language is co-NP-complete; if it were NP-complete then NP = co-NP, which is open. FALSE."
+    ],
+    "final": "Options (A), (B) and (C) are TRUE; (D) is not.",
+    "trap": "Assuming NP-completeness is inherited by the complement. It is inherited by co-NP-completeness, and identifying the two classes is exactly the open NP versus co-NP question."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP-completeness is defined by being both in NP and NP-hard, and its consequences follow from the transitivity of <span class=\"mm\">≤p</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: an NP-complete language is NP-hard, so every language of NP reduces to it; if it were in P, every language of NP would be in P. TRUE.</li><li>B: that is precisely the NP-hard half of the definition of NP-complete. TRUE.</li><li>C: from one NP-complete language infinitely many are obtained, for example by padding or by intersecting with trivially different regular sets, all still NP-complete. TRUE.</li><li>D: the complement of an NP-complete language is co-NP-complete; if it were NP-complete then NP = co-NP, which is open. FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C) are TRUE; (D) is not.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming NP-completeness is inherited by the complement. It is inherited by co-NP-completeness, and identifying the two classes is exactly the open NP versus co-NP question.</p>"
+  },
+  {
+   "id": "ALG-U7-Q17",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "A graph G has <span class=\"mm\">n = 10</span> vertices. The reduction CLIQUE ≤p VERTEX-COVER replaces G by its complement and sets the required cover size to <span class=\"mm\">n − k</span>. G has a clique of size 4 exactly when its complement has a vertex cover of size:",
+   "options": [
+    "4",
+    "6",
+    "10",
+    "14"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A clique in G is an independent set in the complement, and the complement of a maximum independent set is a minimum vertex cover.",
+    "steps": [
+     "A set S is a clique in G exactly when no two of its vertices are non-adjacent in G, that is, exactly when S is an independent set in the complement graph.",
+     "In any graph, S is an independent set exactly when <span class=\"mm\">V − S</span> is a vertex cover: every edge has at least one end outside S.",
+     "So a clique of size k in G corresponds to an independent set of size k in the complement, and hence to a vertex cover of size <span class=\"mm\">n − k</span> there.",
+     "With <span class=\"mm\">n = 10</span> and <span class=\"mm\">k = 4</span>, the cover size is <span class=\"mm\">10 − 4 = 6</span>."
+    ],
+    "final": "6 — option B.",
+    "trap": "Answering 4 by keeping the same size, or 14 by adding instead of subtracting. The correspondence is a complement of the vertex set, so the sizes sum to n."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A clique in G is an independent set in the complement, and the complement of a maximum independent set is a minimum vertex cover.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A set S is a clique in G exactly when no two of its vertices are non-adjacent in G, that is, exactly when S is an independent set in the complement graph.</li><li>In any graph, S is an independent set exactly when <span class=\"mm\">V − S</span> is a vertex cover: every edge has at least one end outside S.</li><li>So a clique of size k in G corresponds to an independent set of size k in the complement, and hence to a vertex cover of size <span class=\"mm\">n − k</span> there.</li><li>With <span class=\"mm\">n = 10</span> and <span class=\"mm\">k = 4</span>, the cover size is <span class=\"mm\">10 − 4 = 6</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6 — option B.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4 by keeping the same size, or 14 by adding instead of subtracting. The correspondence is a complement of the vertex set, so the sizes sum to n.</p>"
+  },
+  {
+   "id": "ALG-U7-Q18",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Apply the standard reduction from 3-SAT to CLIQUE to <span class=\"mm\">φ = (x₁ ∨ x₂ ∨ ¬x₃) ∧ (¬x₁ ∨ x₂ ∨ x₃) ∧ (x₁ ∨ ¬x₂ ∨ x₃) ∧ (¬x₁ ∨ ¬x₂ ∨ ¬x₃)</span>. One vertex is created for each literal occurrence, and an edge joins two vertices that lie in different clauses when their literals are not complementary. How many edges does the constructed graph have?",
+   "options": [],
+   "answer": 42,
+   "answer_display": "42",
+   "solution": {
+    "concept": "The reduction builds a vertex per literal occurrence and joins every cross-clause pair except the contradictory ones, so the edge count is the number of cross-clause pairs minus the number of complementary pairs.",
+    "steps": [
+     "Four clauses of three literals give <span class=\"mm\">4 × 3 = 12</span> vertices.",
+     "Pairs inside one clause are never joined: <span class=\"mm\">4 × C(3,2) = 12</span> of them, leaving <span class=\"mm\">C(12,2) − 12 = 66 − 12 = 54</span> cross-clause pairs.",
+     "Count the complementary pairs, clause pair by clause pair: clauses 1 and 2 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(¬x₃, x₃)</span>; clauses 1 and 3 give <span class=\"mm\">(x₂, ¬x₂)</span> and <span class=\"mm\">(¬x₃, x₃)</span>; clauses 1 and 4 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(x₂, ¬x₂)</span>; clauses 2 and 3 give <span class=\"mm\">(¬x₁, x₁)</span> and <span class=\"mm\">(x₂, ¬x₂)</span>; clauses 2 and 4 give <span class=\"mm\">(x₂, ¬x₂)</span> and <span class=\"mm\">(x₃, ¬x₃)</span>; clauses 3 and 4 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(x₃, ¬x₃)</span>.",
+     "That is 2 + 2 + 2 + 2 + 2 + 2 = 12 complementary pairs, each excluded.",
+     "Edges = <span class=\"mm\">54 − 12 = 42</span>."
+    ],
+    "final": "42 edges.",
+    "trap": "Forgetting to subtract the within-clause pairs (giving 54), or subtracting only one complementary pair per clause pair (giving 48). Every literal has exactly one complement among the twelve, and the count above pairs them all."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The reduction builds a vertex per literal occurrence and joins every cross-clause pair except the contradictory ones, so the edge count is the number of cross-clause pairs minus the number of complementary pairs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Four clauses of three literals give <span class=\"mm\">4 × 3 = 12</span> vertices.</li><li>Pairs inside one clause are never joined: <span class=\"mm\">4 × C(3,2) = 12</span> of them, leaving <span class=\"mm\">C(12,2) − 12 = 66 − 12 = 54</span> cross-clause pairs.</li><li>Count the complementary pairs, clause pair by clause pair: clauses 1 and 2 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(¬x₃, x₃)</span>; clauses 1 and 3 give <span class=\"mm\">(x₂, ¬x₂)</span> and <span class=\"mm\">(¬x₃, x₃)</span>; clauses 1 and 4 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(x₂, ¬x₂)</span>; clauses 2 and 3 give <span class=\"mm\">(¬x₁, x₁)</span> and <span class=\"mm\">(x₂, ¬x₂)</span>; clauses 2 and 4 give <span class=\"mm\">(x₂, ¬x₂)</span> and <span class=\"mm\">(x₃, ¬x₃)</span>; clauses 3 and 4 give <span class=\"mm\">(x₁, ¬x₁)</span> and <span class=\"mm\">(x₃, ¬x₃)</span>.</li><li>That is 2 + 2 + 2 + 2 + 2 + 2 = 12 complementary pairs, each excluded.</li><li>Edges = <span class=\"mm\">54 − 12 = 42</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 42 edges.</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting to subtract the within-clause pairs (giving 54), or subtracting only one complementary pair per clause pair (giving 48). Every literal has exactly one complement among the twelve, and the count above pairs them all.</p>"
+  },
+  {
+   "id": "ALG-U7-Q19",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic": "np-complete-problems-3sat-clique-vertex-cover",
+   "subtopic_label": "NP-complete problems: 3-SAT, clique, vertex cover",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "3-SAT and HAMILTONIAN CYCLE are both NP-complete. Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">3-SAT ≤p HAMILTONIAN CYCLE</span>, but not conversely",
+    "neither problem reduces to the other",
+    "<span class=\"mm\">HAMILTONIAN CYCLE ≤p 3-SAT</span>, but not conversely",
+    "each problem reduces to the other in polynomial time"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "All NP-complete problems are mutually reducible: each is NP-hard, so each reduces to every other member of NP.",
+    "steps": [
+     "3-SAT is NP-complete, hence NP-hard, and HAMILTONIAN CYCLE lies in NP, so <span class=\"mm\">HAMILTONIAN CYCLE ≤p 3-SAT</span>.",
+     "By the same argument with the roles exchanged, <span class=\"mm\">3-SAT ≤p HAMILTONIAN CYCLE</span>.",
+     "Both directions hold simultaneously; there is no asymmetry among NP-complete problems.",
+     "Reducibility is a preorder, so the two problems sit in one equivalence class under mutual reduction."
+    ],
+    "final": "Each reduces to the other — option D.",
+    "trap": "Believing one NP-complete problem is 'more fundamental' than another because SAT came first historically. Historical order affects proofs, not reducibility."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> All NP-complete problems are mutually reducible: each is NP-hard, so each reduces to every other member of NP.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>3-SAT is NP-complete, hence NP-hard, and HAMILTONIAN CYCLE lies in NP, so <span class=\"mm\">HAMILTONIAN CYCLE ≤p 3-SAT</span>.</li><li>By the same argument with the roles exchanged, <span class=\"mm\">3-SAT ≤p HAMILTONIAN CYCLE</span>.</li><li>Both directions hold simultaneously; there is no asymmetry among NP-complete problems.</li><li>Reducibility is a preorder, so the two problems sit in one equivalence class under mutual reduction.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Each reduces to the other — option D.</span></p><p class=\"row\"><b>Common misconception.</b> Believing one NP-complete problem is 'more fundamental' than another because SAT came first historically. Historical order affects proofs, not reducibility.</p>"
+  },
+  {
+   "id": "ALG-U7-Q20",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "How does NP-hard differ from NP-complete?",
+   "options": [
+    "An NP-hard problem must lie in NP, whereas an NP-complete problem need not.",
+    "An NP-hard problem need not lie in NP and may even be undecidable, whereas NP-complete means NP-hard and in NP.",
+    "The two terms are synonyms.",
+    "NP-hard problems are exactly those with no polynomial-time algorithm, whereas NP-complete problems have one."
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "NP-complete = NP-hard ∩ NP. Hardness alone says every NP language reduces to the problem; it says nothing about whether the problem's own solutions can be checked quickly.",
+    "steps": [
+     "NP-hardness is a lower bound: every language in NP reduces to the problem in polynomial time.",
+     "That definition never mentions membership in NP, so a problem outside NP can be NP-hard.",
+     "The halting problem is the standard example: it is NP-hard because SAT reduces to it, yet it is undecidable and therefore not in NP.",
+     "Adding the requirement of membership in NP gives NP-completeness.",
+     "Option D confuses the definition with a consequence: hardness means no polynomial algorithm unless P = NP, but the converse does not define the class."
+    ],
+    "final": "NP-hard need not be in NP — option B.",
+    "trap": "Using the two names interchangeably. Every NP-complete problem is NP-hard, but the halting problem is NP-hard and not NP-complete."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP-complete = NP-hard ∩ NP. Hardness alone says every NP language reduces to the problem; it says nothing about whether the problem's own solutions can be checked quickly.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>NP-hardness is a lower bound: every language in NP reduces to the problem in polynomial time.</li><li>That definition never mentions membership in NP, so a problem outside NP can be NP-hard.</li><li>The halting problem is the standard example: it is NP-hard because SAT reduces to it, yet it is undecidable and therefore not in NP.</li><li>Adding the requirement of membership in NP gives NP-completeness.</li><li>Option D confuses the definition with a consequence: hardness means no polynomial algorithm unless P = NP, but the converse does not define the class.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: NP-hard need not be in NP — option B.</span></p><p class=\"row\"><b>Common misconception.</b> Using the two names interchangeably. Every NP-complete problem is NP-hard, but the halting problem is NP-hard and not NP-complete.</p>"
+  },
+  {
+   "id": "ALG-U7-Q21",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Which of the following problems are NP-hard? (Select all that apply.)",
+   "options": [
+    "2-SAT",
+    "the halting problem",
+    "deciding whether a given DFA accepts every string",
+    "the travelling-salesman optimisation problem, that is, finding a minimum-cost tour"
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "solution": {
+    "concept": "NP-hardness is about being at least as hard as everything in NP; it is not restricted to problems inside NP, nor granted to problems that turn out to be in P.",
+    "steps": [
+     "A: 2-SAT is in P, so it is NP-hard only if <span class=\"mm\">P = NP</span>; it is not known to be NP-hard. Not selected.",
+     "B: SAT reduces to the halting problem, so every language of NP reduces to it; it is NP-hard, and undecidable. Selected.",
+     "C: DFA universality is decided by a product construction in polynomial time, so it is in P and not known to be NP-hard. Not selected.",
+     "D: the optimisation form of TSP is at least as hard as its NP-complete decision form, so it is NP-hard; it is not in NP because it is not a decision problem. Selected."
+    ],
+    "final": "Options (B) and (D).",
+    "trap": "Restricting NP-hard to problems in NP, which would exclude both the halting problem and the TSP optimisation problem. Hardness is a lower bound and applies outside NP."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP-hardness is about being at least as hard as everything in NP; it is not restricted to problems inside NP, nor granted to problems that turn out to be in P.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A: 2-SAT is in P, so it is NP-hard only if <span class=\"mm\">P = NP</span>; it is not known to be NP-hard. Not selected.</li><li>B: SAT reduces to the halting problem, so every language of NP reduces to it; it is NP-hard, and undecidable. Selected.</li><li>C: DFA universality is decided by a product construction in polynomial time, so it is in P and not known to be NP-hard. Not selected.</li><li>D: the optimisation form of TSP is at least as hard as its NP-complete decision form, so it is NP-hard; it is not in NP because it is not a decision problem. Selected.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Restricting NP-hard to problems in NP, which would exclude both the halting problem and the TSP optimisation problem. Hardness is a lower bound and applies outside NP.</p>"
+  },
+  {
+   "id": "ALG-U7-Q22",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "The optimisation version of the travelling-salesman problem, which asks for a minimum-cost tour, is:",
+   "options": [
+    "NP-hard, and not known to belong to NP",
+    "NP-complete",
+    "in P",
+    "undecidable"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "NP contains decision problems only. An optimisation problem can be NP-hard without being a member of NP, because there is no yes/no answer to certify.",
+    "steps": [
+     "The decision form — is there a tour of cost at most k — is NP-complete.",
+     "Any algorithm for the optimisation form yields an algorithm for the decision form by comparing the optimum with k, so the optimisation form is at least as hard, hence NP-hard.",
+     "Membership in NP requires a language, that is a set of strings with a yes/no answer; a minimum-cost tour is a function value, not a decision.",
+     "So the optimisation form is NP-hard but is not a member of NP, and therefore not NP-complete.",
+     "It is decidable, since enumerating all tours terminates, so it is not undecidable either."
+    ],
+    "final": "NP-hard, and not known to be in NP — option A.",
+    "trap": "Calling every NP-hard problem NP-complete. The optimisation form fails the membership half of the definition."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP contains decision problems only. An optimisation problem can be NP-hard without being a member of NP, because there is no yes/no answer to certify.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The decision form — is there a tour of cost at most k — is NP-complete.</li><li>Any algorithm for the optimisation form yields an algorithm for the decision form by comparing the optimum with k, so the optimisation form is at least as hard, hence NP-hard.</li><li>Membership in NP requires a language, that is a set of strings with a yes/no answer; a minimum-cost tour is a function value, not a decision.</li><li>So the optimisation form is NP-hard but is not a member of NP, and therefore not NP-complete.</li><li>It is decidable, since enumerating all tours terminates, so it is not undecidable either.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: NP-hard, and not known to be in NP — option A.</span></p><p class=\"row\"><b>Common misconception.</b> Calling every NP-hard problem NP-complete. The optimisation form fails the membership half of the definition.</p>"
+  },
+  {
+   "id": "ALG-U7-Q23",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Among the four decision problems 3-SAT, 2-SAT, CLIQUE and single-source shortest paths, how many are NP-complete?",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "Separating the NP-complete members of a short list from their polynomial-time look-alikes.",
+    "steps": [
+     "3-SAT is NP-complete: it is in NP, and SAT reduces to it.",
+     "2-SAT is in P, decided in linear time by strongly connected components of the implication graph.",
+     "CLIQUE is NP-complete, by reduction from 3-SAT.",
+     "Single-source shortest paths with non-negative weights is in P by Dijkstra's algorithm.",
+     "The NP-complete members are 3-SAT and CLIQUE, so the count is 2."
+    ],
+    "final": "2.",
+    "trap": "Counting 2-SAT because it shares the word 'SAT'. The two-literal restriction removes the hardness entirely."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Separating the NP-complete members of a short list from their polynomial-time look-alikes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>3-SAT is NP-complete: it is in NP, and SAT reduces to it.</li><li>2-SAT is in P, decided in linear time by strongly connected components of the implication graph.</li><li>CLIQUE is NP-complete, by reduction from 3-SAT.</li><li>Single-source shortest paths with non-negative weights is in P by Dijkstra's algorithm.</li><li>The NP-complete members are 3-SAT and CLIQUE, so the count is 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2.</span></p><p class=\"row\"><b>Common misconception.</b> Counting 2-SAT because it shares the word 'SAT'. The two-literal restriction removes the hardness entirely.</p>"
+  },
+  {
+   "id": "ALG-U7-Q24",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Suppose L is NP-hard and <span class=\"mm\">L ≤p L′</span>. Which of the following follows?",
+   "options": [
+    "<span class=\"mm\">L′</span> must belong to NP.",
+    "<span class=\"mm\">L′</span> must be NP-complete.",
+    "<span class=\"mm\">L′</span> must be NP-hard.",
+    "nothing follows about <span class=\"mm\">L′</span>."
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Hardness travels forward along a reduction: if everything in NP reaches L, and L reaches L′, then everything in NP reaches L′.",
+    "steps": [
+     "Let <span class=\"mm\">A ∈ NP</span>. Since L is NP-hard, <span class=\"mm\">A ≤p L</span>.",
+     "We are given <span class=\"mm\">L ≤p L′</span>, so by transitivity <span class=\"mm\">A ≤p L′</span>.",
+     "This holds for every <span class=\"mm\">A ∈ NP</span>, which is exactly the statement that L′ is NP-hard.",
+     "Nothing is claimed about membership: L′ may lie outside NP, so option A and option B both fail.",
+     "Option D fails because the conclusion in option C does follow."
+    ],
+    "final": "<span class=\"mm\">L′</span> must be NP-hard — option C.",
+    "trap": "Concluding NP-completeness, which needs the extra fact <span class=\"mm\">L′ ∈ NP</span>. Hardness alone is preserved by the reduction; membership is not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Hardness travels forward along a reduction: if everything in NP reaches L, and L reaches L′, then everything in NP reaches L′.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let <span class=\"mm\">A ∈ NP</span>. Since L is NP-hard, <span class=\"mm\">A ≤p L</span>.</li><li>We are given <span class=\"mm\">L ≤p L′</span>, so by transitivity <span class=\"mm\">A ≤p L′</span>.</li><li>This holds for every <span class=\"mm\">A ∈ NP</span>, which is exactly the statement that L′ is NP-hard.</li><li>Nothing is claimed about membership: L′ may lie outside NP, so option A and option B both fail.</li><li>Option D fails because the conclusion in option C does follow.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">L′</span> must be NP-hard — option C.</span></p><p class=\"row\"><b>Common misconception.</b> Concluding NP-completeness, which needs the extra fact <span class=\"mm\">L′ ∈ NP</span>. Hardness alone is preserved by the reduction; membership is not.</p>"
+  },
+  {
+   "id": "ALG-U7-Q25",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 7,
+   "unit_number": 7,
+   "unit_slug": "complexity-np-complete",
+   "unit_name": "Complexity Theory & NP-Completeness",
+   "topic": "Complexity Theory & NP-Completeness",
+   "sub": "np-hard-identification",
+   "subtopic": "np-hard-identification",
+   "subtopic_label": "NP-hard identification",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "question": "Consider six problems: (i) the halting problem, (ii) the decision version of the travelling-salesman problem, (iii) 2-SAT, (iv) SAT, (v) deciding whether a given DFA accepts every string, (vi) VERTEX COVER. How many of the six are NP-hard?",
+   "options": [],
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "NP-hard covers the NP-complete problems plus everything above them, including undecidable problems; only problems known to be in P are excluded.",
+    "steps": [
+     "(i) The halting problem is undecidable, and SAT reduces to it, so it is NP-hard.",
+     "(ii) The decision form of TSP is NP-complete, hence NP-hard.",
+     "(iii) 2-SAT is in P, so it is NP-hard only if <span class=\"mm\">P = NP</span>; it is not counted.",
+     "(iv) SAT is NP-complete, hence NP-hard.",
+     "(v) DFA universality is decided in polynomial time by a product construction, so it is not counted.",
+     "(vi) VERTEX COVER is NP-complete, hence NP-hard.",
+     "The NP-hard problems are (i), (ii), (iv) and (vi), four in all."
+    ],
+    "final": "4.",
+    "trap": "Excluding the halting problem because it is undecidable, or including 2-SAT because it looks like SAT. Hardness is a lower bound and reaches beyond NP, while polynomial-time problems are below it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> NP-hard covers the NP-complete problems plus everything above them, including undecidable problems; only problems known to be in P are excluded.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(i) The halting problem is undecidable, and SAT reduces to it, so it is NP-hard.</li><li>(ii) The decision form of TSP is NP-complete, hence NP-hard.</li><li>(iii) 2-SAT is in P, so it is NP-hard only if <span class=\"mm\">P = NP</span>; it is not counted.</li><li>(iv) SAT is NP-complete, hence NP-hard.</li><li>(v) DFA universality is decided in polynomial time by a product construction, so it is not counted.</li><li>(vi) VERTEX COVER is NP-complete, hence NP-hard.</li><li>The NP-hard problems are (i), (ii), (iv) and (vi), four in all.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4.</span></p><p class=\"row\"><b>Common misconception.</b> Excluding the halting problem because it is undecidable, or including 2-SAT because it looks like SAT. Hardness is a lower bound and reaches beyond NP, while polynomial-time problems are below it.</p>"
   }
  ]
 }
