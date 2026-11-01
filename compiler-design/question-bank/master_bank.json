@@ -6,7 +6,7 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-01",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 400,
+  "total_questions": 425,
   "units_with_questions": [
    1,
    2,
@@ -14,7 +14,7 @@
    4,
    5
   ],
-  "total_runs": 16
+  "total_runs": 17
  },
  "runs": [
   {
@@ -1012,6 +1012,74 @@
    ],
    "mode": "MODE A (bank-driven unit rotation; unit 5 was above the cap, so the rotation advanced one unit)",
    "selection": "MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven and returned Compiler Design. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 15, unit 5, runtime-code-optimization, Set 1 of 2 (third pass)}. Unit 5 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(runtime-code-optimization) = 4 + 1) mod 5 = 0 -> Unit 1, Lexical Analysis. Unit 1 held 75 questions, so every unit of the subject is at or above the cap (75, 75, 75, 75, 75) and Section 1 step B5 applies: the modulo wraps and a further pass over Compiler Design begins with this paper. No override, no partial set.",
+   "verified_pyqs": 0
+  },
+  {
+   "run": 17,
+   "date": "2026-11-01",
+   "subject": "compiler-design",
+   "subject_name": "Compiler Design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "set": "Set 2 of 2 (second pass)",
+   "count": 25,
+   "file": "compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html",
+   "archived_previous": "compiler-design/top-down-parsing/archive/gate_cd_mock_2_2026-10-30_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "first-and-follow-sets",
+    "ll1-parsing-tables",
+    "recursive-descent-parsers",
+    "left-recursion-and-factoring"
+   ],
+   "subtopic_counts": {
+    "first-and-follow-sets": 6,
+    "ll1-parsing-tables": 7,
+    "recursive-descent-parsers": 6,
+    "left-recursion-and-factoring": 6
+   },
+   "question_ids": [
+    "CD-U2-Q76",
+    "CD-U2-Q77",
+    "CD-U2-Q78",
+    "CD-U2-Q79",
+    "CD-U2-Q80",
+    "CD-U2-Q81",
+    "CD-U2-Q82",
+    "CD-U2-Q83",
+    "CD-U2-Q84",
+    "CD-U2-Q85",
+    "CD-U2-Q86",
+    "CD-U2-Q87",
+    "CD-U2-Q88",
+    "CD-U2-Q89",
+    "CD-U2-Q90",
+    "CD-U2-Q91",
+    "CD-U2-Q92",
+    "CD-U2-Q93",
+    "CD-U2-Q94",
+    "CD-U2-Q95",
+    "CD-U2-Q96",
+    "CD-U2-Q97",
+    "CD-U2-Q98",
+    "CD-U2-Q99",
+    "CD-U2-Q100"
+   ],
+   "mode": "MODE A (bank-driven unit rotation; unit 1 was above the cap, so the rotation advanced one unit)",
+   "selection": "MODE A. The draw ran over the eleven subjects in syllabus order with an unseeded secrets.randbelow(11) and returned index 7 of 11 - Compiler Design. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 16, unit 1, lexical-analysis, Set 2 of 2 (second pass)}. Unit 1 held 100 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(lexical-analysis) = 0 + 1) mod 5 = 1 -> Unit 2, Syntax Analysis: Top-Down Parsing. Every unit of Compiler Design is at or above the cap (100, 75, 75, 75, 75), so step B5 applies: the modulo wraps and a further pass over Compiler Design continues with this paper. No override, no partial set.",
    "verified_pyqs": 0
   }
  ],
@@ -14722,6 +14790,891 @@
    "answer_display": "Options (A), (B), (C) and (E)",
    "marks": 2,
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Reaching the end of a buffer is not the same as reaching the end of the input: the scanner calls <code class=\"mm\">yywrap()</code>, and the value it returns decides whether scanning stops or continues with another source. Buffer objects are the mechanism that makes several sources possible.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: <code class=\"mm\">yywrap()</code> is called when an attempt to refill finds no more characters, and a return of 1 ends the scan with a return value of 0.</li><li>(B) is true: a return of 0 tells Flex that the scanner has been set up to continue with another input source, so the same scanner can process several files.</li><li>(C) is true: <code class=\"mm\">yy_switch_to_buffer()</code> changes the current buffer, which is the standard way to scan an included file and then resume.</li><li>(D) is false. Buffers created for strings or for included files are not freed for you; a scanner that creates them repeatedly without deleting them leaks memory.</li><li>(E) is true: <code class=\"mm\">yy_scan_string()</code> returns a buffer that the caller must delete, or must push and pop with the buffer-state stack.</li></ol><p class=\"row\"><b>Final answer.</b> Options (A), (B), (C) and (E).</p><p class=\"row\"><b>Common misconception.</b> Assuming the end of the buffer is the end of the input. The two events are separated by <code class=\"mm\">yywrap()</code>, which is exactly why a scanner can be pointed at a new file without being rebuilt.</p>"
+  },
+  {
+   "id": "CD-U2-Q76",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "For a nonterminal X of a grammar whose start symbol is S, FOLLOW(X) is the set of terminals that can appear immediately to the right of X in some sentential form, together with $ when X can occur at the right end of one. Which one of the following statements about FOLLOW sets is TRUE?",
+   "question_html": "<p class=\"qtext\">For a nonterminal <code class=\"mm\">X</code> of a grammar whose start symbol is <code class=\"mm\">S</code>, <code class=\"mm\">FOLLOW(X)</code> is the set of terminals that can appear immediately to the right of <code class=\"mm\">X</code> in some sentential form, together with <code class=\"mm\">$</code> when <code class=\"mm\">X</code> can occur at the right end of one. Which one of the following statements about FOLLOW sets is TRUE?</p>",
+   "options": [
+    "FOLLOW(X) contains ε whenever X is nullable.",
+    "$ always belongs to FOLLOW(S).",
+    "FOLLOW(X) is non-empty only when X is the start symbol.",
+    "FOLLOW(X) may contain a terminal that never appears to the right of X in any derivation."
+   ],
+   "options_html": [
+    "<code class=\"mm\">FOLLOW(X)</code> contains <code class=\"mm\">ε</code> whenever <code class=\"mm\">X</code> is nullable.",
+    "<code class=\"mm\">$</code> always belongs to <code class=\"mm\">FOLLOW(S)</code>.",
+    "<code class=\"mm\">FOLLOW(X)</code> is non-empty only when <code class=\"mm\">X</code> is the start symbol.",
+    "<code class=\"mm\">FOLLOW(X)</code> may contain a terminal that never appears to the right of <code class=\"mm\">X</code> in any derivation."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A FOLLOW set holds <i>terminals</i> (plus the end marker <code class=\"mm\">$</code>), never the empty string. The start symbol is always followed by the end of input, so <code class=\"mm\">$</code> is in <code class=\"mm\">FOLLOW(S)</code> by definition, not by derivation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">ε</code> is a property of derivability and belongs only to FIRST sets, so option (A) is wrong.</li><li>Every nonterminal that can be the last symbol of a sentential form gets <code class=\"mm\">$</code>, and a grammar can have several such nonterminals, so (C) is wrong.</li><li>By definition every member of <code class=\"mm\">FOLLOW(X)</code> really does occur immediately to the right of <code class=\"mm\">X</code> in some sentential form, so (D) is wrong.</li><li><code class=\"mm\">S</code> is always the leftmost symbol of the initial sentential form, and the input ends after it, so <code class=\"mm\">$ ∈ FOLLOW(S)</code> always holds.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">$ always belongs to FOLLOW(S) — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Candidates copy the nullable rule from FIRST into FOLLOW and expect <code class=\"mm\">ε</code> in a FOLLOW set. FOLLOW answers \"what can come next\", and nothing comes next at the end of the input except <code class=\"mm\">$</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q77",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar S → A B, A → a | ε, B → b | ε. Which one of the following is FIRST(A B)?",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">S → A B</code>, <code class=\"mm\">A → a | ε</code>, <code class=\"mm\">B → b | ε</code>. Which one of the following is <code class=\"mm\">FIRST(A B)</code>?</p>",
+   "options": [
+    "{ a }",
+    "{ a, b }",
+    "{ a, b, ε }",
+    "{ a, ε }"
+   ],
+   "options_html": [
+    "<code class=\"mm\">{ a }</code>",
+    "<code class=\"mm\">{ a, b }</code>",
+    "<code class=\"mm\">{ a, b, ε }</code>",
+    "<code class=\"mm\">{ a, ε }</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a string <code class=\"mm\">X₁X₂…Xₙ</code> the rule is: take <code class=\"mm\">FIRST(X₁)</code>; if <code class=\"mm\">X₁</code> is nullable, add <code class=\"mm\">FIRST(X₂)</code>; continue while the symbols are nullable; add <code class=\"mm\">ε</code> only if every symbol of the string is nullable.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">FIRST(A) = { a, ε }</code>, so add <code class=\"mm\">a</code>; <code class=\"mm\">A</code> is nullable, so continue.</li><li><code class=\"mm\">FIRST(B) = { b, ε }</code>, so add <code class=\"mm\">b</code>; <code class=\"mm\">B</code> is nullable, so continue.</li><li>The string has no more symbols and both were nullable, so <code class=\"mm\">ε ∈ FIRST(A B)</code>.</li><li><code class=\"mm\">FIRST(A B) = { a, b, ε }</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">{ a, b, ε } — option (C)</span></p><p class=\"row\"><b>Common trap.</b> Stopping at <code class=\"mm\">a</code> because <code class=\"mm\">A</code> can start the string. A nullable prefix does not block the symbols after it — that is exactly why the \"if nullable, continue\" clause exists.</p>"
+  },
+  {
+   "id": "CD-U2-Q78",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A production A → α is placed in a cell of the LL(1) parsing table. Which one of the following states exactly when the production belongs in M[A, a]?",
+   "question_html": "<p class=\"qtext\">A production <code class=\"mm\">A → α</code> is placed in a cell of the LL(1) parsing table. Which one of the following states exactly when the production belongs in <code class=\"mm\">M[A, a]</code>?</p>",
+   "options": [
+    "Only when a ∈ FIRST(α).",
+    "When a ∈ FIRST(α), or when α can derive ε and a ∈ FOLLOW(A).",
+    "Whenever a ∈ FOLLOW(A), whether or not α is nullable.",
+    "Only when a ∈ FIRST(A)."
+   ],
+   "options_html": [
+    "Only when <code class=\"mm\">a ∈ FIRST(α)</code>.",
+    "When <code class=\"mm\">a ∈ FIRST(α)</code>, or when <code class=\"mm\">α</code> can derive <code class=\"mm\">ε</code> and <code class=\"mm\">a ∈ FOLLOW(A)</code>.",
+    "Whenever <code class=\"mm\">a ∈ FOLLOW(A)</code>, whether or not <code class=\"mm\">α</code> is nullable.",
+    "Only when <code class=\"mm\">a ∈ FIRST(A)</code>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The table tells the parser which right side to expand when it sees nonterminal <code class=\"mm\">A</code> on top of the stack and terminal <code class=\"mm\">a</code> as lookahead. There are exactly two reasons to choose <code class=\"mm\">A → α</code>: <code class=\"mm\">α</code> can begin with <code class=\"mm\">a</code>, or <code class=\"mm\">α</code> can vanish and <code class=\"mm\">a</code> is what may legally follow <code class=\"mm\">A</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <code class=\"mm\">a ∈ FIRST(α)</code>, expanding <code class=\"mm\">A → α</code> can produce a string starting with <code class=\"mm\">a</code>, so the entry is legal.</li><li>If <code class=\"mm\">α ⇒* ε</code>, then after expansion the lookahead is unchanged and must be able to follow <code class=\"mm\">A</code>; the entry goes in the <code class=\"mm\">FOLLOW(A)</code> columns.</li><li>Any other column stays blank, which is the parser's signal for a syntax error.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">FIRST(α), plus FOLLOW(A) when α is nullable — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Option (C) puts every production of <code class=\"mm\">A</code> into every <code class=\"mm\">FOLLOW(A)</code> column. The FOLLOW columns belong only to the productions that can derive <code class=\"mm\">ε</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q79",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar S → a A | b, A → c | ε. Which one of the following correctly lists every non-blank cell in the row of A of the LL(1) parsing table?",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">S → a A | b</code>, <code class=\"mm\">A → c | ε</code>. Which one of the following correctly lists every non-blank cell in the row of <code class=\"mm\">A</code> of the LL(1) parsing table?</p>",
+   "options": [
+    "M[A, c] = A → c and M[A, $] = A → ε",
+    "M[A, c] = A → c only",
+    "M[A, $] = A → ε only",
+    "M[A, a] = A → c and M[A, b] = A → ε"
+   ],
+   "options_html": [
+    "<code class=\"mm\">M[A, c] = A → c</code> and <code class=\"mm\">M[A, $] = A → ε</code>",
+    "<code class=\"mm\">M[A, c] = A → c</code> only",
+    "<code class=\"mm\">M[A, $] = A → ε</code> only",
+    "<code class=\"mm\">M[A, a] = A → c</code> and <code class=\"mm\">M[A, b] = A → ε</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Row <code class=\"mm\">A</code> has one entry for each terminal in <code class=\"mm\">FIRST</code> of a right side, plus <code class=\"mm\">FOLLOW(A)</code> columns for the productions that can derive <code class=\"mm\">ε</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A</code> occurs only in <code class=\"mm\">S → a A</code>, at the very end, so <code class=\"mm\">FOLLOW(A) = FOLLOW(S) = { $ }</code>.</li><li><code class=\"mm\">FIRST(c) = { c }</code> gives <code class=\"mm\">M[A, c] = A → c</code>.</li><li><code class=\"mm\">A → ε</code> is nullable, so it goes in the <code class=\"mm\">FOLLOW(A)</code> column: <code class=\"mm\">M[A, $] = A → ε</code>.</li><li>The row has exactly two non-blank cells and no conflict, so the grammar is LL(1).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">M[A, c] = A → c and M[A, $] = A → ε — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Putting <code class=\"mm\">A → ε</code> under <code class=\"mm\">a</code> or <code class=\"mm\">b</code>, the terminals that start <code class=\"mm\">S</code>. Those terminals precede <code class=\"mm\">A</code> in the sentence, not follow it.</p>"
+  },
+  {
+   "id": "CD-U2-Q80",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar E → T E′, E′ → + T E′ | ε, T → F T′, T′ → * F T′ | ε, F → ( E ) | id, with E as the start symbol. Which one of the following is FOLLOW(T)?",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">E → T E′</code>, <code class=\"mm\">E′ → + T E′ | ε</code>, <code class=\"mm\">T → F T′</code>, <code class=\"mm\">T′ → * F T′ | ε</code>, <code class=\"mm\">F → ( E ) | id</code>, with <code class=\"mm\">E</code> as the start symbol. Which one of the following is <code class=\"mm\">FOLLOW(T)</code>?</p>",
+   "options": [
+    "{ +, ), $ }",
+    "{ +, * }",
+    "{ ), $ }",
+    "{ +, *, ) }"
+   ],
+   "options_html": [
+    "<code class=\"mm\">{ +, ), $ }</code>",
+    "<code class=\"mm\">{ +, * }</code>",
+    "<code class=\"mm\">{ ), $ }</code>",
+    "<code class=\"mm\">{ +, *, ) }</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> What follows <code class=\"mm\">T</code> in a sentential form is whatever can follow <code class=\"mm\">E′</code> after <code class=\"mm\">T</code> inside <code class=\"mm\">E → T E′</code>. <code class=\"mm\">FIRST(E′)</code> contributes <code class=\"mm\">+</code>; because <code class=\"mm\">E′</code> is nullable, <code class=\"mm\">FOLLOW(E)</code> also flows through.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>From <code class=\"mm\">E → T E′</code>: <code class=\"mm\">FIRST(E′) without ε is { + }</code> ⊆ <code class=\"mm\">FOLLOW(T)</code>.</li><li><code class=\"mm\">E′</code> can derive <code class=\"mm\">ε</code>, so <code class=\"mm\">FOLLOW(E)</code> ⊆ <code class=\"mm\">FOLLOW(T)</code>.</li><li><code class=\"mm\">FOLLOW(E) = { ), $ }</code>: <code class=\"mm\">E</code> is the start symbol (<code class=\"mm\">$</code>) and appears as <code class=\"mm\">F → ( E )</code> (the closing bracket).</li><li>Hence <code class=\"mm\">FOLLOW(T) = { + } ∪ { ), $ } = { +, ), $ }</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">{ +, ), $ } — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Including <code class=\"mm\">*</code> because multiplication also appears in the grammar. <code class=\"mm\">*</code> follows <code class=\"mm\">F</code> (it is in <code class=\"mm\">FIRST(T′)</code>), not <code class=\"mm\">T</code>. Check the position of the symbol in the right side before adding a terminal.</p>"
+  },
+  {
+   "id": "CD-U2-Q81",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar S → A a, A → a | ε. Which one of the following statements about its LL(1) parsing table is TRUE?",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">S → A a</code>, <code class=\"mm\">A → a | ε</code>. Which one of the following statements about its LL(1) parsing table is TRUE?</p>",
+   "options": [
+    "The grammar is LL(1); no cell of the table holds two productions.",
+    "The grammar is not LL(1): cell M[A, a] would hold both A → a and A → ε.",
+    "The grammar is not LL(1): cell M[S, a] would hold two productions.",
+    "The grammar is not LL(1) because it contains left recursion."
+   ],
+   "options_html": [
+    "The grammar is LL(1); no cell of the table holds two productions.",
+    "The grammar is not LL(1): cell <code class=\"mm\">M[A, a]</code> would hold both <code class=\"mm\">A → a</code> and <code class=\"mm\">A → ε</code>.",
+    "The grammar is not LL(1): cell <code class=\"mm\">M[S, a]</code> would hold two productions.",
+    "The grammar is not LL(1) because it contains left recursion."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An LL(1) table has at most one production per cell. A conflict appears when two right sides of the same nonterminal can start with the same terminal, or when a nullable right side overlaps a sibling in the <code class=\"mm\">FOLLOW</code> columns.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">FOLLOW(A) = { a }</code>, because <code class=\"mm\">A</code> is followed by the terminal <code class=\"mm\">a</code> in <code class=\"mm\">S → A a</code>.</li><li><code class=\"mm\">S</code> has one production, so <code class=\"mm\">M[S, a] = S → A a</code>; no conflict there.</li><li><code class=\"mm\">A → a</code> goes in <code class=\"mm\">M[A, a]</code> because <code class=\"mm\">a ∈ FIRST(a)</code>.</li><li><code class=\"mm\">A → ε</code> also goes in <code class=\"mm\">M[A, a]</code> because <code class=\"mm\">a ∈ FOLLOW(A)</code>. The cell holds two productions, so the grammar is not LL(1).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">One conflicting cell, M[A, a] — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Looking only at <code class=\"mm\">FIRST</code> sets, which are disjoint here (<code class=\"mm\">{a}</code> against <code class=\"mm\">{ε}</code>), and declaring the grammar LL(1). The overlap comes from the nullable production meeting <code class=\"mm\">FOLLOW</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q82",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A recursive-descent parser has a procedure for the production A → B c D, where B and D are nonterminals and c is a terminal. In what order does the procedure act?",
+   "question_html": "<p class=\"qtext\">A recursive-descent parser has a procedure for the production <code class=\"mm\">A → B c D</code>, where <code class=\"mm\">B</code> and <code class=\"mm\">D</code> are nonterminals and <code class=\"mm\">c</code> is a terminal. In what order does the procedure act?</p>",
+   "options": [
+    "Call B, match c, then call D.",
+    "Call D, match c, then call B.",
+    "Call B and D in either order, then match c.",
+    "Push A on a stack and repeat until the stack is empty."
+   ],
+   "options_html": [
+    "Call <code class=\"mm\">B</code>, match <code class=\"mm\">c</code>, then call <code class=\"mm\">D</code>.",
+    "Call <code class=\"mm\">D</code>, match <code class=\"mm\">c</code>, then call <code class=\"mm\">B</code>.",
+    "Call <code class=\"mm\">B</code> and <code class=\"mm\">D</code> in either order, then match <code class=\"mm\">c</code>.",
+    "Push <code class=\"mm\">A</code> on a stack and repeat until the stack is empty."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A recursive-descent procedure mirrors its right side symbol by symbol, left to right: a nonterminal becomes a call to its procedure, a terminal becomes a match-and-advance step.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The first symbol is <code class=\"mm\">B</code>, so the procedure calls <code class=\"mm\">B()</code>, which consumes the part of the input derived from <code class=\"mm\">B</code>.</li><li>The second symbol is the terminal <code class=\"mm\">c</code>, so the procedure checks that the lookahead is <code class=\"mm\">c</code> and advances; otherwise it reports an error.</li><li>The third symbol is <code class=\"mm\">D</code>, so it calls <code class=\"mm\">D()</code>.</li><li>The order is fixed by the right side; a different order would not consume the input in the sequence the grammar describes.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">B, then c, then D — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Option (D) describes the table-driven parser, which keeps an explicit stack. The recursive-descent parser uses the call stack of the host language instead, and no explicit stack is written.</p>"
+  },
+  {
+   "id": "CD-U2-Q83",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Why must left recursion be removed from a grammar before a predictive parser is written for it?",
+   "question_html": "<p class=\"qtext\">Why must left recursion be removed from a grammar before a predictive parser is written for it?</p>",
+   "options": [
+    "Because a left-recursive grammar is always ambiguous.",
+    "Because the procedure for A would call itself again with the same lookahead and no input consumed, so the parser recurses forever.",
+    "Because left-recursive grammars generate languages that are not context-free.",
+    "Because removing it changes the language into an equivalent one that is easier to recognise."
+   ],
+   "options_html": [
+    "Because a left-recursive grammar is always ambiguous.",
+    "Because the procedure for <code class=\"mm\">A</code> would call itself again with the same lookahead and no input consumed, so the parser recurses forever.",
+    "Because left-recursive grammars generate languages that are not context-free.",
+    "Because removing it changes the language into an equivalent one that is easier to recognise."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A predictive parser must consume input before it recurses. In <code class=\"mm\">A → A a | b</code> the first alternative expands <code class=\"mm\">A</code> again without matching any terminal, so the recursion never terminates.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The parser sees <code class=\"mm\">A</code> on top of the stack and a lookahead <code class=\"mm\">a</code>.</li><li>Choosing <code class=\"mm\">A → A a</code> replaces <code class=\"mm\">A</code> by <code class=\"mm\">A a</code>, so <code class=\"mm\">A</code> is on top again with the same lookahead and no input consumed.</li><li>The same choice repeats, so a recursive-descent parser loops forever and a table-driven parser loops on the stack.</li><li>Left recursion is not the same as ambiguity, and it does not leave the class of context-free languages — options (A) and (C) are false. Option (D) is a non-reason: removal preserves the language, but that is not why it is required.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Non-terminating self-recursion — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Believing that every left-recursive grammar is ambiguous. <code class=\"mm\">A → A a | b</code> is unambiguous; it is simply unusable for top-down parsing without rewriting.</p>"
+  },
+  {
+   "id": "CD-U2-Q84",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "In a recursive-descent parser without backtracking, the procedure for a nonterminal A must report a syntax error when the lookahead symbol allows no alternative. Which one of the following describes that situation?",
+   "question_html": "<p class=\"qtext\">In a recursive-descent parser without backtracking, the procedure for a nonterminal <code class=\"mm\">A</code> must report a syntax error when the lookahead symbol allows no alternative. Which one of the following describes that situation?</p>",
+   "options": [
+    "The lookahead is $.",
+    "The lookahead is in the FIRST set of no alternative of A, and either A is not nullable or the lookahead is not in FOLLOW(A).",
+    "The lookahead is in FOLLOW(A) and A is nullable.",
+    "A has more than one alternative."
+   ],
+   "options_html": [
+    "The lookahead is <code class=\"mm\">$</code>.",
+    "The lookahead is in the FIRST set of no alternative of <code class=\"mm\">A</code>, and either <code class=\"mm\">A</code> is not nullable or the lookahead is not in <code class=\"mm\">FOLLOW(A)</code>.",
+    "The lookahead is in <code class=\"mm\">FOLLOW(A)</code> and <code class=\"mm\">A</code> is nullable.",
+    "<code class=\"mm\">A</code> has more than one alternative."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The procedure has exactly two legal ways to proceed: choose the alternative whose FIRST set contains the lookahead, or choose an alternative that derives <code class=\"mm\">ε</code> when the lookahead may follow <code class=\"mm\">A</code>. Anything else is an error at that point.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Scan the alternatives: if some <code class=\"mm\">α</code> has <code class=\"mm\">lookahead ∈ FIRST(α)</code>, take it.</li><li>Otherwise, if some alternative is nullable and the lookahead is in <code class=\"mm\">FOLLOW(A)</code>, take the nullable alternative and return without consuming input.</li><li>Otherwise no alternative can lead to a successful parse, and since the parser never backtracks, the error is reported at once.</li><li><code class=\"mm\">$</code> is an error only when it is not in <code class=\"mm\">FOLLOW(A)</code>, so option (A) is too strong.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">No FIRST match and no legal ε-choice — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Reporting an error whenever the lookahead is not in a FIRST set, which would reject every legal use of a nullable nonterminal.</p>"
+  },
+  {
+   "id": "CD-U2-Q85",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar S → a A | a B, A → b, B → c. It is left factored as far as possible. Which one of the following gives the resulting grammar and says correctly whether it is LL(1)?",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">S → a A | a B</code>, <code class=\"mm\">A → b</code>, <code class=\"mm\">B → c</code>. It is left factored as far as possible. Which one of the following gives the resulting grammar and says correctly whether it is LL(1)?</p>",
+   "options": [
+    "S → a S′, S′ → A | B, A → b, B → c — LL(1)",
+    "S → a S′ | ε, S′ → A | B, A → b, B → c — not LL(1)",
+    "The grammar is left unchanged and is not LL(1).",
+    "S → A | B, A → a b, B → a c — LL(1)"
+   ],
+   "options_html": [
+    "<code class=\"mm\">S → a S′</code>, <code class=\"mm\">S′ → A | B</code>, <code class=\"mm\">A → b</code>, <code class=\"mm\">B → c</code> — LL(1)",
+    "<code class=\"mm\">S → a S′ | ε</code>, <code class=\"mm\">S′ → A | B</code>, <code class=\"mm\">A → b</code>, <code class=\"mm\">B → c</code> — not LL(1)",
+    "The grammar is left unchanged and is not LL(1).",
+    "<code class=\"mm\">S → A | B</code>, <code class=\"mm\">A → a b</code>, <code class=\"mm\">B → a c</code> — LL(1)"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Left factoring pulls the common prefix out of two alternatives and leaves a new nonterminal with the two distinct suffixes. The rewritten grammar generates the same language and removes the FIRST conflict.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">a A</code> and <code class=\"mm\">a B</code> share the prefix <code class=\"mm\">a</code>, so <code class=\"mm\">S → a S′</code> with <code class=\"mm\">S′ → A | B</code>.</li><li><code class=\"mm\">FIRST(A) = { b }</code> and <code class=\"mm\">FIRST(B) = { c }</code> are disjoint, so <code class=\"mm\">S′</code> is LL(1).</li><li><code class=\"mm\">FIRST(S) = { a }</code> has one member, and <code class=\"mm\">S</code> has one production, so the whole grammar is LL(1).</li><li>Option (B) adds a spurious <code class=\"mm\">ε</code> alternative, which changes the language; option (D) is not a factoring of the original grammar but a different grammar.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">S → a S′, S′ → A | B, A → b, B → c; LL(1) — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Factoring the grammar and then forgetting to re-check LL(1)-ness, or assuming that factoring always makes a grammar LL(1). It removes FIRST/FIRST conflicts only; a nullable alternative can still collide with <code class=\"mm\">FOLLOW</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q86",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about FIRST and FOLLOW sets are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about FIRST and FOLLOW sets are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "ε ∈ FIRST(X) for a nonterminal X exactly when X can derive ε.",
+    "ε never belongs to FOLLOW(X).",
+    "If B occurs anywhere in the right side of A → α B β, then FOLLOW(A) ⊆ FOLLOW(B).",
+    "If A → α B β and β ⇒* ε, then FIRST(β) without ε is a subset of FOLLOW(B)."
+   ],
+   "options_html": [
+    "<code class=\"mm\">ε ∈ FIRST(X)</code> for a nonterminal <code class=\"mm\">X</code> exactly when <code class=\"mm\">X</code> can derive <code class=\"mm\">ε</code>.",
+    "<code class=\"mm\">ε</code> never belongs to <code class=\"mm\">FOLLOW(X)</code>.",
+    "If <code class=\"mm\">B</code> occurs anywhere in the right side of <code class=\"mm\">A → α B β</code>, then <code class=\"mm\">FOLLOW(A) ⊆ FOLLOW(B)</code>.",
+    "If <code class=\"mm\">A → α B β</code> and <code class=\"mm\">β ⇒* ε</code>, then <code class=\"mm\">FIRST(β) without ε is a subset of FOLLOW(B)</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> FIRST describes what a symbol or string can begin with, and may contain <code class=\"mm\">ε</code>. FOLLOW describes what can come next, and contains only terminals and <code class=\"mm\">$</code>. The transfer of FOLLOW from a left side to a symbol inside its right side happens only when everything after that symbol is nullable.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the definition of nullability, so it is true.</li><li>(B) is true: <code class=\"mm\">ε</code> is not a terminal and cannot follow anything.</li><li>(C) is false in general. In <code class=\"mm\">A → a B b</code> the symbol after <code class=\"mm\">B</code> is <code class=\"mm\">b</code>, so <code class=\"mm\">FOLLOW(A)</code> does not pass to <code class=\"mm\">B</code>; only <code class=\"mm\">b</code> does. The inclusion needs <code class=\"mm\">β ⇒* ε</code>.</li><li>(D) is the correct partial rule: the terminals that can start <code class=\"mm\">β</code> follow <code class=\"mm\">B</code>, and <code class=\"mm\">FOLLOW(A)</code> is added separately when <code class=\"mm\">β</code> is nullable.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (D)</span></p><p class=\"row\"><b>Common trap.</b> Applying (C) because \"B is inside A's right side\". Position matters: only the symbols after <code class=\"mm\">B</code>, and only when they can vanish, carry <code class=\"mm\">FOLLOW(A)</code> to <code class=\"mm\">B</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q87",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about the LL(1) parsing table of a grammar are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the LL(1) parsing table of a grammar are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "The rows are indexed by nonterminals and the columns by terminals plus $.",
+    "A production A → ε is entered in every column of the row of A.",
+    "In an LL(1) grammar no cell ever holds two productions.",
+    "A blank cell means the input cannot be parsed from that state, so the parser reports a syntax error."
+   ],
+   "options_html": [
+    "The rows are indexed by nonterminals and the columns by terminals plus <code class=\"mm\">$</code>.",
+    "A production <code class=\"mm\">A → ε</code> is entered in every column of the row of <code class=\"mm\">A</code>.",
+    "In an LL(1) grammar no cell ever holds two productions.",
+    "A blank cell means the input cannot be parsed from that state, so the parser reports a syntax error."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The table is a two-dimensional decision table for one nonterminal and one lookahead symbol. LL(1) means the decision is unique: at most one production per cell.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the layout: one row per nonterminal, one column per terminal, and a column for the end marker <code class=\"mm\">$</code>.</li><li>(B) is false. <code class=\"mm\">A → ε</code> is entered only in the columns of <code class=\"mm\">FOLLOW(A)</code> — those are the symbols that may legally appear after <code class=\"mm\">A</code> has vanished.</li><li>(C) is the defining property of LL(1).</li><li>(D) is the error convention: with no entry there is no legal move, and a predictive parser cannot backtrack.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common trap.</b> Filling the whole row with the <code class=\"mm\">ε</code>-production. That would let the parser delete <code class=\"mm\">A</code> in front of any terminal, accepting strings that are not in the language.</p>"
+  },
+  {
+   "id": "CD-U2-Q88",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about a table-driven predictive parser are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about a table-driven predictive parser are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "The stack is initialised with the start symbol on top of $.",
+    "When the top of the stack is a terminal equal to the lookahead, that terminal is popped and the input advances.",
+    "When the top of the stack is a nonterminal A, the right side of M[A, a] is pushed so that its leftmost symbol ends up on top.",
+    "When M[A, a] is blank, the parser backtracks and tries another production of A."
+   ],
+   "options_html": [
+    "The stack is initialised with the start symbol on top of <code class=\"mm\">$</code>.",
+    "When the top of the stack is a terminal equal to the lookahead, that terminal is popped and the input advances.",
+    "When the top of the stack is a nonterminal <code class=\"mm\">A</code>, the right side of <code class=\"mm\">M[A, a]</code> is pushed so that its leftmost symbol ends up on top.",
+    "When <code class=\"mm\">M[A, a]</code> is blank, the parser backtracks and tries another production of <code class=\"mm\">A</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The parser is a pushdown automaton whose configuration is (stack, remaining input). Its three moves are expand, match and error; there is no fourth \"try something else\" move.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): the stack starts as <code class=\"mm\">$ S</code> with <code class=\"mm\">S</code> on top, so the first expansion is the start symbol.</li><li>(B): matching a terminal consumes one input symbol and pops one stack symbol.</li><li>(C): the right side is pushed in reverse so that its first symbol is popped first — the parser works left to right, and a stack is last-in-first-out.</li><li>(D) is false: a blank cell is a syntax error. Backtracking belongs to the non-predictive recursive-descent parser, not to the table-driven one.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common trap.</b> Pushing the right side left to right, which reverses the order in which the symbols are matched and rejects every valid string longer than one symbol.</p>"
+  },
+  {
+   "id": "CD-U2-Q89",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements comparing recursive-descent parsing with table-driven predictive parsing are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements comparing recursive-descent parsing with table-driven predictive parsing are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "Without backtracking and with one lookahead symbol, both accept exactly the LL(1) grammars.",
+    "In a recursive-descent parser the depth of the host-language recursion grows with the nesting depth of the parse.",
+    "A backtracking recursive-descent parser can take time exponential in the length of the input.",
+    "A recursive-descent parser can parse any context-free grammar in time linear in the length of the input."
+   ],
+   "options_html": [
+    "Without backtracking and with one lookahead symbol, both accept exactly the LL(1) grammars.",
+    "In a recursive-descent parser the depth of the host-language recursion grows with the nesting depth of the parse.",
+    "A backtracking recursive-descent parser can take time exponential in the length of the input.",
+    "A recursive-descent parser can parse any context-free grammar in time linear in the length of the input."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two parsers are two implementations of the same algorithm. One keeps the stack explicitly in an array, the other uses the call stack of the programming language; both make the same decision from <code class=\"mm\">M[A, a]</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: the decision procedure is identical, so the class of grammars accepted is the same, namely LL(1).</li><li>(B) is true: each nested nonterminal call adds a frame, so the maximum recursion depth is the height of the parse tree.</li><li>(C) is true: without the LL(1) guarantee the parser may try an alternative, fail, undo the work and try the next, which can multiply into exponential work.</li><li>(D) is false. Linear time needs the LL(1) table; a general CFG needs a different algorithm (CYK or Earley) and those are not linear.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common trap.</b> Believing that recursion buys extra power. Recursive descent is a coding style, not a stronger parser: what it accepts is fixed by the grammar and the lookahead, not by the recursion.</p>"
+  },
+  {
+   "id": "CD-U2-Q90",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook treatment",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about the standard algorithm for removing indirect (and then immediate) left recursion are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the standard algorithm for removing indirect (and then immediate) left recursion are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "The nonterminals are ordered A₁, …, Aₙ, and for each Aᵢ the productions Aᵢ → Aⱼ γ with j < i are replaced by substituting the current productions of Aⱼ.",
+    "Immediate left recursion is removed from Aᵢ after that substitution has been made.",
+    "The transformation can change the language generated by the grammar.",
+    "The transformation may introduce new nonterminals."
+   ],
+   "options_html": [
+    "The nonterminals are ordered <code class=\"mm\">A₁, …, Aₙ</code>, and for each <code class=\"mm\">Aᵢ</code> the productions <code class=\"mm\">Aᵢ → Aⱼ γ</code> with <code class=\"mm\">j &lt; i</code> are replaced by substituting the current productions of <code class=\"mm\">Aⱼ</code>.",
+    "Immediate left recursion is removed from <code class=\"mm\">Aᵢ</code> after that substitution has been made.",
+    "The transformation can change the language generated by the grammar.",
+    "The transformation may introduce new nonterminals."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Indirect recursion is a cycle such as <code class=\"mm\">A ⇒ B a ⇒ A b a</code>. Ordering the nonterminals and substituting only from lower-indexed ones breaks the cycle; immediate recursion is then handled by the usual rewrite.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): for <code class=\"mm\">Aᵢ</code>, every production whose first symbol is an earlier nonterminal <code class=\"mm\">Aⱼ</code> is expanded using the productions already fixed for <code class=\"mm\">Aⱼ</code>. Those start with a terminal or with <code class=\"mm\">Aₖ</code>, <code class=\"mm\">k ≥ j</code>, so the recursion moves forward in the order.</li><li>(B): after substitution, <code class=\"mm\">Aᵢ</code> may have become directly left recursive (<code class=\"mm\">Aᵢ → Aᵢ δ</code>), and the immediate rule is applied at that point.</li><li>(C) is false: every step is a substitution of equivalent right sides, so the generated language is exactly the same.</li><li>(D) is true: the immediate rewrite introduces <code class=\"mm\">Aᵢ′</code> for each nonterminal it fixes.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (D)</span></p><p class=\"row\"><b>Common trap.</b> Substituting from higher-indexed nonterminals instead of lower ones, which can reintroduce the recursion that was just removed.</p>"
+  },
+  {
+   "id": "CD-U2-Q91",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Consider the grammar S → a B | b A, A → a | a S | b A A, B → b | b S | a B B. How many symbols does FOLLOW(A) contain? Count $ as a symbol. (Enter an integer.)",
+   "question_html": "<p class=\"qtext\">Consider the grammar <code class=\"mm\">S → a B | b A</code>, <code class=\"mm\">A → a | a S | b A A</code>, <code class=\"mm\">B → b | b S | a B B</code>. How many symbols does <code class=\"mm\">FOLLOW(A)</code> contain? Count <code class=\"mm\">$</code> as a symbol. (Enter an integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Collect <code class=\"mm\">FOLLOW</code> by looking at every place <code class=\"mm\">A</code> occurs on a right side: a symbol that can follow it contributes its FIRST set, and if nothing follows it there, <code class=\"mm\">FOLLOW</code> of the left side flows in.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">S → b A</code>: <code class=\"mm\">A</code> is last, so <code class=\"mm\">FOLLOW(S) ⊆ FOLLOW(A)</code>. The start symbol gives <code class=\"mm\">FOLLOW(S) = { $ }</code>.</li><li><code class=\"mm\">A → b A A</code>: the first <code class=\"mm\">A</code> is followed by another <code class=\"mm\">A</code>, whose FIRST set is <code class=\"mm\">{ a, b }</code>, so both join <code class=\"mm\">FOLLOW(A)</code>. The second <code class=\"mm\">A</code> is last, adding <code class=\"mm\">FOLLOW(A)</code> to itself — no new symbol.</li><li><code class=\"mm\">A → a S</code> and <code class=\"mm\">A → a</code> put nothing new after an <code class=\"mm\">A</code>.</li><li><code class=\"mm\">FOLLOW(A) = { a, b, $ }</code>, which is 3 symbols.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3</span> (the set is <code class=\"mm\">{ a, b, $ }</code>)</p><p class=\"row\"><b>Common trap.</b> Forgetting the <code class=\"mm\">a</code> and <code class=\"mm\">b</code> that come from the FIRST set of a following nonterminal, and answering 1 by counting only <code class=\"mm\">$</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q92",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "For the grammar S → A a, A → a | ε, how many cells of the LL(1) parsing table hold more than one production? (Enter an integer.)",
+   "question_html": "<p class=\"qtext\">For the grammar <code class=\"mm\">S → A a</code>, <code class=\"mm\">A → a | ε</code>, how many cells of the LL(1) parsing table hold more than one production? (Enter an integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    1
+   ],
+   "answer_display": "1",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A cell holds two productions exactly when two right sides of the same nonterminal can apply to the same lookahead. Count those cells; the grammar is LL(1) only when the count is zero.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">FOLLOW(A) = { a }</code>, because <code class=\"mm\">A</code> is followed by the terminal <code class=\"mm\">a</code> in <code class=\"mm\">S → A a</code>.</li><li><code class=\"mm\">S</code> has a single production, so <code class=\"mm\">M[S, a]</code> holds only <code class=\"mm\">S → A a</code>.</li><li><code class=\"mm\">M[A, a]</code> receives <code class=\"mm\">A → a</code> from <code class=\"mm\">FIRST(a)</code> and <code class=\"mm\">A → ε</code> from <code class=\"mm\">a ∈ FOLLOW(A)</code>: one cell with two productions.</li><li>No other cell is filled twice, so the count is 1.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">1</span></p><p class=\"row\"><b>Common trap.</b> Answering 2 by counting the two productions rather than the cell they share. The question asks for cells.</p>"
+  },
+  {
+   "id": "CD-U2-Q93",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A recursive-descent parser is written for the grammar S → a S b | ε, whose procedure for S matches an a, calls S and then matches a b when the lookahead is a, and returns immediately otherwise. For the input a a a b b b, how many times is the procedure for S called in total, counting the first call and counting the call that chooses ε? (Enter an integer.)",
+   "question_html": "<p class=\"qtext\">A recursive-descent parser is written for the grammar <code class=\"mm\">S → a S b | ε</code>, whose procedure for <code class=\"mm\">S</code> matches an <code class=\"mm\">a</code>, calls <code class=\"mm\">S</code> and then matches a <code class=\"mm\">b</code> when the lookahead is <code class=\"mm\">a</code>, and returns immediately otherwise. For the input <code class=\"mm\">a a a b b b</code>, how many times is the procedure for <code class=\"mm\">S</code> called in total, counting the first call and counting the call that chooses <code class=\"mm\">ε</code>? (Enter an integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    4
+   ],
+   "answer_display": "4",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each call of the procedure consumes exactly one <code class=\"mm\">a</code> and one <code class=\"mm\">b</code> around a nested call, so the number of calls is one more than the number of matched pairs: the innermost call is the one that sees a <code class=\"mm\">b</code> and returns by choosing <code class=\"mm\">ε</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Call 1: lookahead <code class=\"mm\">a</code>, match it, call <code class=\"mm\">S</code>.</li><li>Call 2: lookahead <code class=\"mm\">a</code>, match it, call <code class=\"mm\">S</code>.</li><li>Call 3: lookahead <code class=\"mm\">a</code>, match it, call <code class=\"mm\">S</code>.</li><li>Call 4: lookahead <code class=\"mm\">b</code>, so the procedure takes <code class=\"mm\">S → ε</code> and returns without consuming input. The three pending calls then match the three <code class=\"mm\">b</code>s as they unwind.</li><li>Total: 4 calls.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">4</span></p><p class=\"row\"><b>Common trap.</b> Answering 3 by counting only the <code class=\"mm\">a</code>s matched. The call that recognises the empty middle of the string is a real call and must be counted.</p>"
+  },
+  {
+   "id": "CD-U2-Q94",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Immediate left recursion is removed from A → A a | A b | c, giving A → c A′ and the productions of A′. How many symbols does FIRST(A′) contain? Count ε as a symbol. (Enter an integer.)",
+   "question_html": "<p class=\"qtext\">Immediate left recursion is removed from <code class=\"mm\">A → A a | A b | c</code>, giving <code class=\"mm\">A → c A′</code> and the productions of <code class=\"mm\">A′</code>. How many symbols does <code class=\"mm\">FIRST(A′)</code> contain? Count <code class=\"mm\">ε</code> as a symbol. (Enter an integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The rewrite replaces <code class=\"mm\">A → A α₁ | A α₂ | β</code> by <code class=\"mm\">A → β A′</code>, <code class=\"mm\">A′ → α₁ A′ | α₂ A′ | ε</code>. So the FIRST set of the new nonterminal is the set of terminals that began the recursive tails, plus <code class=\"mm\">ε</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The recursive alternatives are <code class=\"mm\">A a</code> and <code class=\"mm\">A b</code>, so the tails are <code class=\"mm\">a</code> and <code class=\"mm\">b</code>.</li><li><code class=\"mm\">A′ → a A′ | b A′ | ε</code>, hence <code class=\"mm\">FIRST(A′) = { a, b, ε }</code>.</li><li>That is 3 symbols.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3</span></p><p class=\"row\"><b>Common trap.</b> Including <code class=\"mm\">c</code> because it starts a production of <code class=\"mm\">A</code>. The terminal of the non-recursive alternative stays with <code class=\"mm\">A</code>; only the tails move to <code class=\"mm\">A′</code>.</p>"
+  },
+  {
+   "id": "CD-U2-Q95",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The grammar A → B a | c, B → A b | d contains indirect left recursion. Applying only the substitution step of the standard algorithm — ordering the nonterminals A then B and replacing the occurrence of A in the productions of B — how many productions does the grammar contain in total? (Enter an integer.)",
+   "question_html": "<p class=\"qtext\">The grammar <code class=\"mm\">A → B a | c</code>, <code class=\"mm\">B → A b | d</code> contains indirect left recursion. Applying only the substitution step of the standard algorithm — ordering the nonterminals <code class=\"mm\">A</code> then <code class=\"mm\">B</code> and replacing the occurrence of <code class=\"mm\">A</code> in the productions of <code class=\"mm\">B</code> — how many productions does the grammar contain in total? (Enter an integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    5
+   ],
+   "answer_display": "5",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Indirect recursion is removed by substituting the productions of the earlier nonterminal into the productions of the later one, which turns the indirect cycle into a direct one. The number of productions of the substituted nonterminal grows to the number of alternatives of the earlier nonterminal.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A</code> keeps its two productions: <code class=\"mm\">A → B a</code> and <code class=\"mm\">A → c</code>.</li><li><code class=\"mm\">B → A b</code> is expanded with the alternatives of <code class=\"mm\">A</code>: <code class=\"mm\">B → B a b</code> and <code class=\"mm\">B → c b</code>.</li><li><code class=\"mm\">B → d</code> is unaffected, so <code class=\"mm\">B</code> now has three productions: <code class=\"mm\">B → B a b | c b | d</code>.</li><li>Total: 2 + 3 = 5 productions. The recursion is now direct (<code class=\"mm\">B → B a b</code>) and would be removed by the immediate rule in the next step.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">5</span></p><p class=\"row\"><b>Common trap.</b> Answering 4 by keeping <code class=\"mm\">B → A b</code> alongside the two substituted productions. Substitution replaces that production, it does not add to it.</p>"
+  },
+  {
+   "id": "CD-U2-Q96",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "first-and-follow-sets",
+   "subtopic": "first-and-follow-sets",
+   "subtopic_label": "FIRST and FOLLOW sets",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "FIRST and FOLLOW sets are computed by starting from empty sets and repeatedly applying the defining rules until no set changes. Which one of the following statements about that process is TRUE?",
+   "question_html": "<p class=\"qtext\">FIRST and FOLLOW sets are computed by starting from empty sets and repeatedly applying the defining rules until no set changes. Which one of the following statements about that process is TRUE?</p>",
+   "options": [
+    "It terminates because the sets only grow and the terminal alphabet is finite, and it yields the smallest sets that satisfy all the rules.",
+    "It can fail to terminate whenever the grammar contains a cycle of nullable nonterminals.",
+    "It produces every assignment of sets that satisfies the rules, so the answer is not unique.",
+    "It must be repeated exactly once per nonterminal, because each rule depends on a single production."
+   ],
+   "options_html": [
+    "It terminates because the sets only grow and the terminal alphabet is finite, and it yields the smallest sets that satisfy all the rules.",
+    "It can fail to terminate whenever the grammar contains a cycle of nullable nonterminals.",
+    "It produces every assignment of sets that satisfies the rules, so the answer is not unique.",
+    "It must be repeated exactly once per nonterminal, because each rule depends on a single production."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The rules are monotone inclusions — each says that some FIRST or FOLLOW set must contain the union of other sets — so the iteration is a least-fixed-point computation on a finite lattice of subsets of the terminals.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every step only adds symbols and never removes one, so the total size of all sets is bounded by <code class=\"mm\">|N| × (|T| + 1)</code>.</li><li>A monotone iteration that adds at least one symbol per change therefore stops after finitely many rounds, whatever the shape of the grammar, so (B) is false.</li><li>Stopping when nothing changes gives a solution of the rules; because the iteration starts from the empty sets and only adds what the rules force, it is the least solution. Larger sets that also satisfy the rules are not produced, so (C) is false.</li><li>A single pass is not enough: a symbol discovered late can enable another rule earlier in the list, so the rules are re-applied until a full pass changes nothing. (D) is false.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Monotone iteration to the least fixed point — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Believing that recursive or cyclic grammars break the computation. Growth is bounded by the finite alphabet, so cycles only cost extra passes.</p>"
+  },
+  {
+   "id": "CD-U2-Q97",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Two distinct productions A → α and A → β of the same nonterminal cause a conflict in the LL(1) parsing table exactly when which one of the following holds?",
+   "question_html": "<p class=\"qtext\">Two distinct productions <code class=\"mm\">A → α</code> and <code class=\"mm\">A → β</code> of the same nonterminal cause a conflict in the LL(1) parsing table exactly when which one of the following holds?</p>",
+   "options": [
+    "FIRST(α) ∩ FIRST(β) ≠ ∅, or one of the two right sides is nullable and the FIRST set of the other overlaps FOLLOW(A).",
+    "FIRST(α) ∩ FOLLOW(A) ≠ ∅ and FIRST(β) ∩ FOLLOW(A) ≠ ∅ at the same time.",
+    "α and β have the same number of symbols.",
+    "A appears on the left side of more than one production."
+   ],
+   "options_html": [
+    "<code class=\"mm\">FIRST(α) ∩ FIRST(β) ≠ ∅</code>, or one of the two right sides is nullable and the FIRST set of the other overlaps <code class=\"mm\">FOLLOW(A)</code>.",
+    "<code class=\"mm\">FIRST(α) ∩ FOLLOW(A) ≠ ∅</code> and <code class=\"mm\">FIRST(β) ∩ FOLLOW(A) ≠ ∅</code> at the same time.",
+    "<code class=\"mm\">α</code> and <code class=\"mm\">β</code> have the same number of symbols.",
+    "<code class=\"mm\">A</code> appears on the left side of more than one production."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two productions occupy overlapping cells when some single lookahead symbol justifies both. That happens through FIRST overlap, or through a nullable right side whose entry lands in <code class=\"mm\">FOLLOW(A)</code> columns that the other production also claims.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <code class=\"mm\">a ∈ FIRST(α) ∩ FIRST(β)</code>, both productions are entered in <code class=\"mm\">M[A, a]</code>.</li><li>If <code class=\"mm\">α ⇒* ε</code> and <code class=\"mm\">a ∈ FIRST(β) ∩ FOLLOW(A)</code>, then <code class=\"mm\">A → α</code> is entered in <code class=\"mm\">M[A, a]</code> as a nullable production while <code class=\"mm\">A → β</code> is entered there through <code class=\"mm\">FIRST(β)</code> — a conflict again. The symmetric case with <code class=\"mm\">β</code> nullable is the same.</li><li>(B) is a common confusion: <code class=\"mm\">FOLLOW(A)</code> columns are shared only by the nullable production, so overlap needs a FIRST set on the other side.</li><li>(C) and (D) are irrelevant: length and the mere number of productions say nothing about the cells.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">FIRST/FIRST overlap, or a nullable side meeting the other FIRST set in FOLLOW(A) — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Checking only FIRST sets. In <code class=\"mm\">S → A a</code>, <code class=\"mm\">A → a | ε</code> the FIRST sets are <code class=\"mm\">{a}</code> and <code class=\"mm\">{ε}</code> — disjoint — yet the grammar is not LL(1).</p>"
+  },
+  {
+   "id": "CD-U2-Q98",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "ll1-parsing-tables",
+   "subtopic": "ll1-parsing-tables",
+   "subtopic_label": "LL(1) parsing tables",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which one of the following grammars is LL(1) as written, with no rewriting of any kind?",
+   "question_html": "<p class=\"qtext\">Which one of the following grammars is LL(1) as written, with no rewriting of any kind?</p>",
+   "options": [
+    "S → a A | a B, A → b, B → c",
+    "S → A a, A → a | ε",
+    "S → a A | b B, A → c, B → c",
+    "S → S a | b"
+   ],
+   "options_html": [
+    "<code class=\"mm\">S → a A | a B</code>, <code class=\"mm\">A → b</code>, <code class=\"mm\">B → c</code>",
+    "<code class=\"mm\">S → A a</code>, <code class=\"mm\">A → a | ε</code>",
+    "<code class=\"mm\">S → a A | b B</code>, <code class=\"mm\">A → c</code>, <code class=\"mm\">B → c</code>",
+    "<code class=\"mm\">S → S a | b</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Test each grammar by building its table: the grammar is LL(1) when every cell receives at most one production. Two alternatives of the same nonterminal must have disjoint FIRST sets, and a nullable alternative must not overlap the others in the FOLLOW columns.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">FIRST(a A) = FIRST(a B) = { a }</code>, so <code class=\"mm\">M[S, a]</code> holds two productions. Not LL(1) — it needs left factoring.</li><li>(B): <code class=\"mm\">FOLLOW(A) = { a }</code>, so <code class=\"mm\">M[A, a]</code> holds both <code class=\"mm\">A → a</code> and <code class=\"mm\">A → ε</code>. Not LL(1).</li><li>(C): <code class=\"mm\">M[S, a] = S → a A</code>, <code class=\"mm\">M[S, b] = S → b B</code>, <code class=\"mm\">M[A, c] = A → c</code>, <code class=\"mm\">M[B, c] = B → c</code>. The two <code class=\"mm\">c</code> entries sit in different rows, so no cell holds two productions. LL(1).</li><li>(D): <code class=\"mm\">S</code> is left recursive, so no predictive parser exists for it as written. Not LL(1).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">S → a A | b B, A → c, B → c — option (C)</span></p><p class=\"row\"><b>Common trap.</b> Rejecting (C) because both <code class=\"mm\">A</code> and <code class=\"mm\">B</code> derive <code class=\"mm\">c</code>. A conflict needs two entries in the <i>same</i> cell; the parser knows which nonterminal is on the stack, so different rows never clash.</p>"
+  },
+  {
+   "id": "CD-U2-Q99",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "recursive-descent-parsers",
+   "subtopic": "recursive-descent-parsers",
+   "subtopic_label": "Recursive-descent parsers",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A recursive-descent parser is written for S → A B C, A → a | ε, B → b | ε, C → c. For which lookahead symbols does the procedure for A return immediately, choosing A → ε?",
+   "question_html": "<p class=\"qtext\">A recursive-descent parser is written for <code class=\"mm\">S → A B C</code>, <code class=\"mm\">A → a | ε</code>, <code class=\"mm\">B → b | ε</code>, <code class=\"mm\">C → c</code>. For which lookahead symbols does the procedure for <code class=\"mm\">A</code> return immediately, choosing <code class=\"mm\">A → ε</code>?</p>",
+   "options": [
+    "Only c",
+    "Both b and c",
+    "Only a",
+    "Never — A must consume an a"
+   ],
+   "options_html": [
+    "Only <code class=\"mm\">c</code>",
+    "Both <code class=\"mm\">b</code> and <code class=\"mm\">c</code>",
+    "Only <code class=\"mm\">a</code>",
+    "Never — <code class=\"mm\">A</code> must consume an <code class=\"mm\">a</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A nullable nonterminal is dropped exactly when the lookahead can follow it. So the procedure for <code class=\"mm\">A</code> chooses <code class=\"mm\">ε</code> on <code class=\"mm\">FOLLOW(A)</code> and on nothing else.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A</code> is followed by <code class=\"mm\">B</code> in <code class=\"mm\">S → A B C</code>, so <code class=\"mm\">FIRST(B) without ε is { b }</code> is in <code class=\"mm\">FOLLOW(A)</code>.</li><li><code class=\"mm\">B</code> is nullable, so what follows <code class=\"mm\">B</code> also follows <code class=\"mm\">A</code>: <code class=\"mm\">FIRST(C) = { c }</code> joins <code class=\"mm\">FOLLOW(A)</code>.</li><li><code class=\"mm\">FOLLOW(A) = { b, c }</code>, so on lookahead <code class=\"mm\">b</code> or <code class=\"mm\">c</code> the procedure returns immediately.</li><li>On lookahead <code class=\"mm\">a</code> it takes <code class=\"mm\">A → a</code> and consumes the <code class=\"mm\">a</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">b and c — option (B)</span></p><p class=\"row\"><b>Common trap.</b> Looking only at the symbol immediately after <code class=\"mm\">A</code> and answering <code class=\"mm\">b</code>. A nullable follower passes its own FOLLOW set back, which is why <code class=\"mm\">c</code> belongs here too.</p>"
+  },
+  {
+   "id": "CD-U2-Q100",
+   "subject": "compiler-design",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "top-down-parsing",
+   "unit_name": "Syntax Analysis: Top-Down Parsing",
+   "topic": "Syntax Analysis: Top-Down Parsing",
+   "sub": "left-recursion-and-factoring",
+   "subtopic": "left-recursion-and-factoring",
+   "subtopic_label": "Left recursion & factoring",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Immediate left recursion is removed from A → A α | β, giving A → β A′, A′ → α A′ | ε. Which one of the following statements about the rewritten grammar is TRUE?",
+   "question_html": "<p class=\"qtext\">Immediate left recursion is removed from <code class=\"mm\">A → A α | β</code>, giving <code class=\"mm\">A → β A′</code>, <code class=\"mm\">A′ → α A′ | ε</code>. Which one of the following statements about the rewritten grammar is TRUE?</p>",
+   "options": [
+    "The language is unchanged, FIRST(A) is unchanged, and FOLLOW(A′) = FOLLOW(A).",
+    "The language is unchanged, but FIRST(A) grows because A′ can derive ε.",
+    "The language is unchanged, but FOLLOW(A) loses every symbol that now follows A′.",
+    "The grammar becomes LL(1) for every choice of α and β."
+   ],
+   "options_html": [
+    "The language is unchanged, <code class=\"mm\">FIRST(A)</code> is unchanged, and <code class=\"mm\">FOLLOW(A′) = FOLLOW(A)</code>.",
+    "The language is unchanged, but <code class=\"mm\">FIRST(A)</code> grows because <code class=\"mm\">A′</code> can derive <code class=\"mm\">ε</code>.",
+    "The language is unchanged, but <code class=\"mm\">FOLLOW(A)</code> loses every symbol that now follows <code class=\"mm\">A′</code>.",
+    "The grammar becomes LL(1) for every choice of <code class=\"mm\">α</code> and <code class=\"mm\">β</code>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The rewrite is an equivalence: the recursive tail is moved into a new nonterminal that repeats the tails and may stop with <code class=\"mm\">ε</code>. FIRST of the original nonterminal depends only on <code class=\"mm\">β</code> before and after, and the new nonterminal inherits the FOLLOW set of the original because it always sits at the end of <code class=\"mm\">A</code>'s right side.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Language: every string of <code class=\"mm\">A</code> was <code class=\"mm\">β α α …</code> and is still exactly <code class=\"mm\">β α α …</code> derived through <code class=\"mm\">A′</code>.</li><li><code class=\"mm\">FIRST(A) = FIRST(β A′) = FIRST(β)</code>, which is the same as before the rewrite, so (B) is false.</li><li><code class=\"mm\">A′</code> occurs at the end of <code class=\"mm\">A → β A′</code> and at the end of <code class=\"mm\">A′ → α A′</code>, so <code class=\"mm\">FOLLOW(A′) = FOLLOW(A)</code>; nothing is lost, so (C) is false.</li><li>LL(1)-ness is not guaranteed: <code class=\"mm\">A′ → α A′ | ε</code> can still conflict with <code class=\"mm\">FOLLOW(A′)</code>, so (D) is false.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Language, FIRST(A) and FOLLOW(A′) = FOLLOW(A) all preserved — option (A)</span></p><p class=\"row\"><b>Common trap.</b> Assuming the rewrite guarantees LL(1). It removes one obstacle (left recursion); a common prefix or a nullable conflict still has to be dealt with separately.</p>"
   }
  ]
 }
