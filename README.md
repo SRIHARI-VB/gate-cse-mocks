@@ -7,37 +7,76 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 2 of 2 (second pass)**, 2026-11-01 →
-  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html)
+- **Operating Systems · Unit 2 — Inter-Process Communication & Synchronization, Set 2 of 2 (second pass)**,
+  2026-11-02 →
+  [`operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html`](operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Process states & PCB (5) · Threads: user vs kernel (5) · Preemptive vs non-preemptive (5) ·
-  FCFS, SJF, SRTF, RR & priority (10)
-- Rotation: MODE A. The draw over the eleven subjects in syllabus order used an unseeded `secrets.randbelow(11)`
-  and returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 18, unit 6, storage-file-systems, Set 1 of 2 (second pass)}`. Unit 6 held **75** questions,
-  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(storage-file-systems) = 5 + 1) mod 6 = 0` → **Unit 1, Process Management & CPU Scheduling**.
-  Every unit of the subject already holds 75 questions, so step B5 applies: the modulo wraps and the second pass
-  continues. No override was used and no partial set was generated.
-- Superseded paper: the 2026-10-29 paper moved to
-  `operating-systems/process-scheduling/archive/gate_os_mock_1_2026-10-29_run3.html` with its content frozen, so
+- Subtopics: Critical section & Peterson (7) · Hardware primitives (6) · Semaphores (6) ·
+  Classic problems: philosophers, producer-consumer (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 19, unit 1, process-scheduling, Set 2 of 2 (second pass)}`. Unit 1 held **100** questions,
+  above `UNIT_QUESTION_CAP = 50`, and had been current since 2026-10-26, so step B3 failed on both counts and step
+  B4 advanced exactly one unit: `(index_of(process-scheduling) = 0 + 1) mod 6 = 1` → **Unit 2, Inter-Process
+  Communication & Synchronization**. Unit 2 already held 75 questions, so step B5 applies and the second pass
+  continues; Section 1 step B4 permits exactly one advance per run, whatever unit it lands on. No override was
+  used and no partial set was generated.
+- Superseded paper: the 2026-10-30 paper moved to
+  `operating-systems/synchronization-ipc/archive/gate_os_mock_2_2026-10-30_run1.html` with its content frozen, so
   the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 1 of 2 (second pass)**,
+- Previous test: **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 2 of 2 (second pass)**,
   2026-11-01 →
-  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html)
+  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 164 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 19 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 99 archived |
+| Papers published (current + archived) | 165 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 100 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4100 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 475 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 4125 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 99 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 13 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 100 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-02 — Operating Systems Unit 2, Set 2 of 2 (second pass)
+
+- New paper at `operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html`. The 2026-10-30 paper moved to
+  `archive/gate_os_mock_2_2026-10-30_run1.html` with its content frozen (same questions, options, answers, solutions
+  and duration), so the unit folder holds exactly one current paper.
+- Selection: MODE A, an unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 8 — Operating Systems. `runs[]` gave unit 1 (`process-scheduling`, 100 questions, first paper 2026-10-26),
+  so both the cap and the 7-day backstop were exceeded and step B4 advanced one unit to Unit 2. Unit 2 stood at 75
+  questions, so step B5 applies and the second pass continues with this paper.
+- Composition: 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme.
+- Subtopics: critical section & Peterson 7 · hardware primitives 6 · semaphores 6 · classic problems 6.
+  Difficulty 10 easy / 10 medium / 5 hard.
+- Bank: 25 records appended with ids `OS-U2-Q76`–`OS-U2-Q100`; Operating Systems now holds 500 questions across
+  6 units. The portal bank feed `data/questions-operating-systems.js` was extended with the same 25 records.
+- Question Bank tab: 475 solved questions, the active 25 excluded, so no question appears twice on the page.
+- No `GATE_PYQ_VARIATION` tag. The only verified Operating Systems PYQ, `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1,
+  Q25, NAT, official answer 12), belongs to Unit 1 and is already used as the basis of `OS-U1-Q21`; nothing on this
+  paper is claimed as an official GATE question.
+- Overlap control: the 25 stems were checked against the 75 already banked for this unit. Two drafts were replaced
+  because they re-used a banked setup — a Peterson interleaving trace that duplicated `OS-U2B-Q03`, and a
+  bounded-buffer `empty` count that duplicated `OS-U2B-Q24` — and the progress/bounded-waiting question was rewritten
+  so it is not the mirror image of `OS-U2-Q20`.
+- Every numeric answer was recomputed by script: `C(4,2) = 6` interleavings; `40 000 / 100 × 3 = 1200` test-and-set
+  attempts; `10 − 4 = 6` ticket-lock spinners; `−4 = 2 − p + 6 → p = 12` semaphore operations; `⌊6/2⌋ = 3`
+  philosophers eating.
+- Verification on the shipped file (a Python structural check plus a jsdom run): 25 test cards, a 25-button palette,
+  475 bank cards, one card visible on load, no solution text anywhere in the test view before submit, the answer-key
+  tab disabled, all seven `data-*` attributes on all 25 test cards and on all 475 bank cards, the `:root` block
+  byte-identical to `design-tokens.css`, no CDN and no `<link>`, and the `<style>` block and engine `<script>`
+  byte-identical to the paper this one replaces. A perfect attempt scores 35 / 35; an attempt with every MCQ wrong,
+  every MSQ a strict subset and every NAT right scores 10 / 35, confirming that an MSQ earns nothing on a partial set
+  and that there is no negative marking.
+- Portal: the Unit 2 card was replaced in place (65 cards before and after) and moved to the head of `tests`; its
+  archive list now names the 2026-10-30 second-pass Set 1 and both first-pass sets. The static counters were
+  recomputed to 4125 records.
 
 ### 2026-11-01 — Operating Systems Unit 1, Set 2 of 2 (second pass)
 
