@@ -7,39 +7,117 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 1 — ER Models & Relational Algebra, Set 1 of 2 (second pass)**,
-  2026-11-02 →
-  [`databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html`](databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html)
+- **Operating Systems · Unit 3 — Deadlocks, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html`](operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: ER diagrams, cardinality & weak entities (7) · Relational model & constraints (6) ·
-  Relational algebra: σ, π, join, division (6) · Tuple & domain relational calculus (6)
-- Rotation: MODE A. A seeded subject draw (`random.Random(20261102)`) over the eleven subjects in syllabus order
-  returned index 9 — **Databases**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 16, unit 5, indexing-storage, Set 2 of 2}`. Unit 5 held **50** questions, exactly
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` → **Unit 1, ER Models & Relational Algebra**. All five
-  Databases units were at the cap, so **step B5 applies: the modulo wrapped and a second pass through the subject
-  begins**. No override was used and no partial set was generated: the paper is exactly 25 questions.
-- Superseded paper: Unit 1's 2026-10-26 paper moved to
-  `databases/er-relational-algebra/archive/gate_db_mock_1_2026-10-26_run2.html`, so the unit folder holds exactly
-  one current paper. The repository root still holds only `index.html`.
-- Previous test: **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 1 of 2**,
-  2026-11-02 →
-  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
+- Subtopics: Four conditions & RAG (5) · Prevention, avoidance & Banker's (7) · Detection & recovery (6) ·
+  Starvation vs deadlock (7)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
+  returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 20, unit 2, synchronization-ipc, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions,
+  twice `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, so it had also been current for 7 days —
+  both halves of step B3 failed. Step B4 advanced exactly one unit: `(index_of(synchronization-ipc) = 1 + 1) mod 6 = 2`
+  → **Unit 3, Deadlocks**. All six Operating Systems units already sit at or above the cap, so **step B5 applies:
+  the second pass continues**. Run 15 was Unit 3's first second-pass set, so this is **Set 2 of 2 of that pass**
+  and the unit's fourth set overall. No override was used and no partial set was generated.
+- Superseded paper: Unit 3's 2026-10-30 paper moved to
+  `operating-systems/deadlocks/archive/gate_os_mock_3_2026-10-30_run1.html`, so the unit folder holds exactly one
+  current paper. The repository root still holds only `index.html`.
+- Previous test: **Databases · Unit 1 — ER Models & Relational Algebra, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html`](databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 168 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 66 current · 102 archived |
+| Papers published (current + archived) | 169 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 66 current · 103 archived |
 | Test cards on the portal | 66 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4200 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4225 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 102 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 103 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Operating Systems Unit 3, Set 2 of 2 (second pass)
+
+- New paper at `operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html`. The 2026-10-30 paper moved to
+  `operating-systems/deadlocks/archive/gate_os_mock_3_2026-10-30_run1.html`, so the folder holds exactly one
+  current paper and the archive holds all three earlier sets.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-02, run 20, unit 2, synchronization-ipc, Set 2 of 2 (second pass)}`. Unit 2 held **100**
+  questions against a cap of 50 and had been current since 2026-10-26, so step B3 failed on both the cap and the
+  7-day backstop. Step B4 advanced exactly one unit: `(index_of(synchronization-ipc) = 1 + 1) mod 6 = 2` →
+  **Unit 3, Deadlocks**. Every one of the six Operating Systems units already holds 75–100 questions, so **step B5
+  applies and the second pass continues**; run 15 was this unit's first second-pass set, making this **Set 2 of 2
+  of that pass** (the unit's fourth set overall). No override, no partial set: exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: Four conditions & RAG 5 · Prevention, avoidance & Banker's 7 ·
+  Detection & recovery 6 · Starvation vs deadlock 7. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Four conditions and RAG: the four conditions as necessary but not sufficient, a concrete
+  two-type graph whose cycle does <i>not</i> deadlock (P₁→R₂→P₃→R₁→P₁ with available = 0, reduced to completion),
+  the two cycle theorems as a multi-select, a three-type reduction leaving three processes unmarked, and a
+  three-instance graph in which a self-loop P₁→R₁→P₁ is present and <i>no</i> process is deadlocked. Prevention
+  and Banker's: what a declared maximum claim buys, a five-process safe-sequence search, which condition each
+  prevention technique denies (with spooling correctly mapped to mutual exclusion), how many of three pending
+  requests may be granted, the claim-violation trap in which a request is available and still illegal, a count of
+  all safe sequences, and safety-versus-unsafe as statements. Detection and recovery: the cost of one pass on an
+  adjacency matrix, the victim cost measure, the three questions of pre-emption recovery, a full four-process
+  reduction, the trade-off between terminating all and terminating one at a time, and the minimum number of
+  terminations that clears two disjoint cycles. Starvation: bounded waiting as the anti-starvation requirement,
+  first-come-first-served as a fairness device, safety without fairness, livelock distinguished from deadlock and
+  starvation, repeated victim selection, and an aging calculation.
+- **Answers recomputed, not asserted.** Every numeric key came from a script. The reduction engine (finish what
+  can be finished, release, repeat) returned `[False, False, False, True]` for the three-type graph, hence **3**
+  deadlocked; `[True, True, True]` for the three-instance self-loop graph, hence **0**; and
+  `[False, False, True, True]` for the four-process detection state, hence **{P₁, P₂}**. The safety engine
+  enumerated safe sequences: the five-process state has **16**, which is why the option set was built from
+  sequences that provably never start with P0, P2 or P4; the three-process state has exactly **3**
+  (P₀P₁P₂, P₀P₂P₁, P₂P₀P₁); and of the three pending requests, `P₁`'s is available and unsafe, `P₂`'s and `P₃`'s
+  are safe, hence **2**. The claim trap was checked as `Need(P₁) = (2,1) − (1,0) = (1,1) < (2,1)`. The aging
+  answer is `(9 − 3) × 50 = 300`, and the termination answer is the number of node-disjoint cycles, **2**.
+- **Ids and bank.** 25 records appended as `OS-U3C-Q01`–`OS-U3C-Q25`; Operating Systems now holds **525** questions
+  across 6 units, and `data/questions-operating-systems.js` grew from 500 to 525 records.
+- **Question Bank tab.** 500 solved questions — the 525 in the bank less the 25 on this paper — so the active set
+  is not repeated there. Unit 3's accordion now shows 100 solved questions (75 + the 25 just banked).
+- **Provenance.** `verified_pyqs` holds one item for Operating Systems, `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1,
+  Q25, official answer 12), which belongs to Unit 1 and is used only there as a re-worded variation. No
+  deadlock previous-year question has been verified against an official paper and answer key, so no item on this
+  paper carries `GATE_PYQ_VARIATION` and nothing is claimed as an official GATE question. Sources are
+  `STANDARD_TEXTBOOK` (16) and `ORIGINAL_SYNTHESIS` (9).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are (A), (B);
+  (A), (C), (D); (A), (B), (D); (A), (B), (C); and (A), (C) — one two-element set and four three-element sets with
+  three different letter patterns, so they are not five copies of one pattern. Every letter named inside a
+  solution is the letter the candidate sees.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,243 bytes) and the engine `<script>`
+  (9,428 bytes) are byte-identical to the Operating Systems Unit 2 paper this one follows, compared byte for byte.
+  One copy: `find . -name '*.html'` shows `index.html` at the root, exactly one current file per paper and one file
+  per archived set (170 files, 66 current, 103 archived), and no unit folder holds two current papers. Links: all
+  66 test paths and all 103 archive paths in the portal's data block resolve. Tokens: the `:root` block is
+  byte-identical to `design-tokens.css` and to `index.html`; no CDN and no `<link>`. Counts: 25 test cards, a
+  25-button palette, 500 bank cards, 5 NAT inputs, 80 option inputs and all seven `data-*` attributes on all 25
+  test cards and all 500 bank cards. No duplicate content: none of the 25 active ids appears in the Question Bank
+  tab.
+- **Interface run (jsdom).** 21 structural and behavioural checks pass on the shipped file: exactly one card
+  visible on load, the timer at 60:00, the answer-key tab disabled and its list empty, no `ansline`, no
+  "Detailed solution" text, no `correct`/`wrongpick` class and no filled `.mark` anywhere in `#qhost` before
+  submit, every `.sol` hidden and empty, palette states moving grey → red → green → violet → violet-with-dot, a
+  mark-for-review toggle, palette navigation, Clear Response restoring the visited-only state, and a perfect
+  attempt scoring **35 / 35** with all 25 palette buttons turning `ok` and every solution revealed. A second
+  attempt in which every MCQ is wrong, every MSQ has one extra option selected and every NAT is right scores
+  **10 / 35**, confirming no negative marking and that an MSQ earns nothing on an enlarged set.
+- **Portal.** The Operating Systems Unit 3 card was replaced (not duplicated) and moved to the head of `tests`
+  with three archive links, and the static counters were recomputed: 66 units, 4225 banked, 4200 in the review
+  archive, 4225 records in the subject banks.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus literal hex outside `:root`, no explicit
+  `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than their `-d`
+  variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Databases Unit 1, Set 1 of 2 (second pass)
 
