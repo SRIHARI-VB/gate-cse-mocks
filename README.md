@@ -7,38 +7,94 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html)
+- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 2 of 2**, 2026-11-01 →
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: distance vector & count to infinity (6) · link state, OSPF & Dijkstra (6) ·
-  BGP & path vector (6) · ARP, ICMP, DHCP & NAT (7)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all
-  eleven and returned Computer Networks. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 15, unit 3, ipv4-subnetting, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions,
-  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(ipv4-subnetting) = 2 + 1) mod 6 = 3` → **Unit 4, Network Layer: Routing & Protocols**. Unit 4
-  already held **50** questions from 2026-10-29, so this paper opens its **third pass**; the unit now holds
-  **75**. The advance landed on a unit that was already at the cap, which Section 1 step B4 allows and step
-  B5 requires be recorded: the pass is recorded here, and no override was used. The next Computer Networks
-  run advances `(3 + 1) mod 6 = 4` → Unit 5.
-- Superseded paper: the 2026-10-29 Set 2 moved to
-  `computer-networks/routing-protocols/archive/gate_cn_mock_4_2026-10-29_run2.html` with its content frozen,
+- Subtopics: hash functions (6) · collision resolution by chaining (6) · open addressing (7) ·
+  load factor & rehashing (6)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the five
+  subjects whose current unit was still below `UNIT_QUESTION_CAP = 50` — Discrete Mathematics (Unit 11, 25),
+  Computer Architecture (Unit 6, 25), Programming and Data Structures (Unit 7, 25), Algorithms (Unit 6, 25) and
+  Databases (Unit 5, 25) — in syllabus order, and an unseeded `secrets.randbelow` draw returned index 2, giving
+  **Programming and Data Structures**. `runs[]` gave the most recent paper as
+  `{2026-11-01, run 13, unit 7, hashing, Set 1 of 2}`. Unit 7 held **25** questions, below the cap, and had been
+  current for 0 days, so step B3 held and step B4 was not reached: the unit was generated again as **Set 2 of 2**.
+  25 + 25 = 50 closes Unit 7 at the cap, so the next Programming and Data Structures run advances
+  `(index_of(hashing) = 6 + 1) mod 7 = 0` → Unit 1, opening a second pass. No override was used.
+- Superseded paper: the Set 1 paper of this date moved to
+  `programming-data-structures/hashing/archive/gate_ds_mock_7_2026-11-01_run1.html` with its content frozen,
   so the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Compiler Design · Unit 1 — Lexical Analysis, Set 2 of 2 (second pass)**, 2026-11-01 →
-  [`compiler-design/lexical-analysis/gate_cd_mock_1_2026-11-01.html`](compiler-design/lexical-analysis/gate_cd_mock_1_2026-11-01.html)
+- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 1 of 2 (third pass)**, 2026-11-01 →
+  [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 154 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 89 archived |
+| Papers published (current + archived) | 155 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 90 archived |
 | Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3850 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3875 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 89 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 6 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 90 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Programming and Data Structures Unit 7, Set 2 of 2
+
+- New paper at `programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`. The unit folder held the
+  Set 1 paper of the same date, which was moved to
+  `programming-data-structures/hashing/archive/gate_ds_mock_7_2026-11-01_run1.html` with its content frozen
+  (same questions, options, answers, solutions and duration); the folder now holds exactly one current paper
+  and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw
+  ran over the five whose current unit was still below `UNIT_QUESTION_CAP = 50`, in syllabus order:
+  discrete-mathematics (Unit 11, 25 questions), computer-architecture (Unit 6, 25),
+  programming-data-structures (Unit 7, 25), algorithms (Unit 6, 25) and databases (Unit 5, 25). An unseeded
+  `secrets.randbelow(5)` draw returned index 2 → **Programming and Data Structures**.
+  `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 13, unit 7, hashing, Set 1 of 2}`. Unit 7 held **25** questions, below the cap, and had
+  been current for 0 days, below `DAYS_PER_UNIT_MAX = 7`, so step B3 held and step B4 was not reached: the
+  current unit was generated again as **Set 2 of 2**. The unit now holds exactly **50** questions, closing it
+  at `UNIT_QUESTION_CAP`, so the next Programming and Data Structures run advances
+  `(index_of(hashing) = 6 + 1) mod 7 = 0` → **Unit 1, C Programming Foundations**, which opens a second pass
+  (recorded here as Section 1 step B5 requires). No override was used and no partial set was generated: the
+  paper is exactly 25 questions.
+- Coverage: all four Unit 7 subtopics — hash functions (6); collision resolution by chaining (6); open
+  addressing, linear/quadratic/double (7); load factor & rehashing (6). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. MCQ carries 1 mark, MSQ and NAT 2 marks, no
+  negative marking, and an MSQ scores only on the exact set of correct options — the practice scheme, not the
+  official GATE scheme, and the paper says so in its About tab.
+- **What the set tests.** The pigeonhole bound on the busiest slot; the properties a hash function must and must
+  not have; the division method on keys that share a factor with the table size; the multiplication method; a
+  universal family and its per-pair collision probability; the expected number of colliding pairs; chaining's
+  worst case against its expected case; load factors above 1; the successful and unsuccessful search bounds; why
+  deletion needs a tombstone under open addressing; linear-probing probe counts and wraparound; the reachable
+  offsets of quadratic probing modulo a non-prime; total probe counts for a run of colliding keys; the
+  half-full guarantee for prime table sizes; the clustering penalty; the load factor at a threshold; the
+  amortised cost of doubling; and the number of rehashes over a run of insertions.
+- Every question carries `data-subject="programming-data-structures"`, `data-unit="hashing"`,
+  `data-unit-number="7"`, the subtopic slug, `data-type`, `data-difficulty` and `data-source`. All 25 items are
+  new (`DS-U7-Q26` … `DS-U7-Q50`); no id and no normalised stem collides with the 325 records already banked
+  for this subject, and none repeats a Set 1 item.
+- **Verification.** Every numeric answer was recomputed by script rather than by hand: the multiplication-method
+  slot `⌊1000·(1234A mod 1)⌋ = 653`; the expected colliding-pair count `C(101,2)/50 = 101`; the two non-empty
+  slots for keys that are multiples of 13; the longest chain of 3 for `k mod 5`; 3 probes for 43 under linear
+  probing; the final slot 4 for the key 22 in a 7-slot table; the three reachable offsets `{0, 1, 4}` of
+  `i² mod 8`; 10 total probes for the 11/22/33/0 run; `12/17 = 0.71`; 12 keys at a 0.75 load factor on 16 slots;
+  and 7 rehashes while inserting 100 keys with doubling from one slot.
+- **No PYQ claim.** `verified_pyqs` is empty for this subject, so no item is tagged `GATE_PYQ_VARIATION` and
+  nothing on this paper is called an official GATE question; the paper's Question Bank tab says the same.
+- **Bookkeeping.** `master_bank.json` grew from 325 to 350 records with run 14 appended;
+  `data/questions-programming-data-structures.js` grew from 325 to 350 records; `index.html` kept its 81 cards
+  (the Unit 7 card now points at the Set 2 paper with the Set 1 paper as its earlier-set link) and its header
+  counters were recomputed from the banks (3875 records, 65 of 71 units, 279 subtopics).
+- **Shell parity.** The paper was generated from the same shell as the rest of the series: the `<style>` block
+  and the driving JavaScript are byte-identical to the current papers, the `:root` block matches
+  `design-tokens.css`, and the paper differs only in its question payload, its bank tab, its About tab and its
+  metadata.
+- **Hygiene.** The paper is filed at exactly one path, `programming-data-structures/hashing/`, and nowhere
+  else; no temporary or loose files were left in the repository root.
 
 ### 2026-11-01 — Computer Networks Unit 4, Set 1 of 2 (third pass)
 
