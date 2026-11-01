@@ -7,38 +7,72 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 2 — Syntax Analysis: Top-Down Parsing, Set 2 of 2 (second pass)**, 2026-11-01 →
-  [`compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html`](compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html)
+- **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 1 of 2 (second pass)**, 2026-11-01 →
+  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: FIRST and FOLLOW sets (6) · LL(1) parsing tables (7) · Recursive-descent parsers (6) ·
-  Left recursion & factoring (6)
-- Rotation: MODE A. The draw over the eleven subjects in syllabus order used an unseeded
-  `secrets.randbelow(11)` and returned index 7 of 11 — **Compiler Design**. `runs[]` sorted by `(date, run)`
-  gave the most recent paper as `{2026-11-01, run 16, unit 1, lexical-analysis, Set 2 of 2 (second pass)}`.
-  Unit 1 held **100** questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4
-  advanced exactly one unit: `(index_of(lexical-analysis) = 0 + 1) mod 5 = 1` → **Unit 2, Syntax Analysis:
-  Top-Down Parsing**. Every unit of Compiler Design is at or above the cap (100, 75, 75, 75, 75), so step B5
-  applies: the modulo wraps and a further pass over Compiler Design continues with this paper. No override
-  was used and no partial set was generated.
-- Superseded paper: the 2026-10-30 paper moved to
-  `compiler-design/top-down-parsing/archive/gate_cd_mock_2_2026-10-30_run1.html` with its content frozen, so
+- Subtopics: Latches vs flip-flops (7) · Setup & hold times (6) · Characteristic equations (7) · Shift registers (5)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the full
+  eleven in syllabus order with an unseeded `secrets.randbelow(11)` and returned index 2 of 11 — **Digital Logic**.
+  `runs[]` sorted by `(date, run)` gave the most recent paper as `{2026-11-01, run 10, unit 2,
+  combinational-circuits, Set 1 of 2 (second pass)}`. Unit 2 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(combinational-circuits) = 1 + 1) mod 4 = 2` → **Unit 3, Sequential Circuits: Flip-Flops &
+  Registers**. Unit 3 already held 50 questions from the first pass, so every unit of Digital Logic is at or
+  above the cap (75, 75, 50, 50) and step B5 applies: the modulo wraps, the second pass continues, and Unit 3
+  receives the first set of that pass. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-28 paper moved to
+  `digital-logic/sequential-flipflops/archive/gate_dl_mock_3_2026-10-28_run2.html` with its content frozen, so
   the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 1 of 2 (second
-  pass)**, 2026-11-01 →
-  [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html)
+- Previous test: **Compiler Design · Unit 2 — Syntax Analysis: Top-Down Parsing, Set 2 of 2 (second pass)**,
+  2026-11-01 →
+  [`compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html`](compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 162 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 97 archived |
+| Papers published (current + archived) | 163 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 98 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4050 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 4075 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 97 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 98 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Digital Logic Unit 3, Set 1 of 2 (second pass)
+
+- New paper at `digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html`. The 2026-10-28 paper moved to
+  `archive/gate_dl_mock_3_2026-10-28_run2.html` with its content frozen (same questions, options, answers,
+  solutions and duration), so the unit folder holds exactly one current paper.
+- Selection: MODE A, an unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 2 — Digital Logic. `runs[]` gave unit 2 (`combinational-circuits`, 75 questions, above the cap), so step
+  B4 advanced one unit to Unit 3. Every unit of the subject is at or above the cap (75, 75, 50, 50), so step B5
+  applies and the second pass continues with this paper.
+- Composition: 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme.
+- Subtopics: latches vs flip-flops 7 · setup & hold times 6 · characteristic equations 7 · shift registers 5.
+  Difficulty 10 easy / 10 medium / 5 hard.
+- Bank: 25 records appended with ids `DL-U3C-Q01`–`DL-U3C-Q25`; Digital Logic now holds 275 questions across
+  4 units. The portal bank feed `data/questions-digital-logic.js` was extended with the same 25 records.
+- Question Bank tab: 250 solved questions, the active 25 excluded, so no question appears twice on the page.
+- No `GATE_PYQ_VARIATION` tag. No flip-flop, timing, characteristic-equation or shift-register previous-year
+  question has been verified against an official paper and answer key, so nothing on this paper is claimed as
+  an official GATE question. The two verified Digital Logic PYQs stay where they were, in Unit 1.
+- Overlap control: the 25 stems were checked against the 50 already-banked Unit 3 items. Three drafts were
+  replaced because they reused a banked setup — the gated-D-latch MSQ, the ring/Johnson statements MSQ and the
+  5-bit Johnson counter NAT — and the 125 MHz maximum-frequency NAT was re-parameterised to 250 MHz to avoid
+  repeating the answer of a banked question.
+- Every numeric answer was recomputed by script: maximum clock frequency `1/(1 + 2 + 1) ns = 250 MHz`; hold
+  slack `1 + 0.5 − 0.6 = 0.9 ns`; two legal `(J, K)` combinations for a 0 → 1 transition; six-stage Johnson
+  cycle `2n = 12`; and the four-gate count of a clocked SR latch.
+- Verification on the shipped file (jsdom): 25 test cards, a 25-button palette, exactly one card visible before
+  submit, no answer text or solution anywhere in the page body before submit, the answer-key tab disabled, all
+  seven `data-*` attributes on all 25 test cards and on all 250 bank cards, palette states moving
+  grey → red → green → violet → violet-with-dot, the timer at 60:00, and a full submit run scoring 5 / 35 for
+  three deliberately correct answers with 22 skipped.
+- Portal: the Unit 3 card was replaced in place (65 cards before and after), so the archive now lists Set 2
+  (2026-10-28) and Set 1 (2026-10-27) as earlier sets. The static counters were recomputed to 4075 records.
 
 ### 2026-11-01 — Compiler Design Unit 2, Set 2 of 2 (second pass)
 
