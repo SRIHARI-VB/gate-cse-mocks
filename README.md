@@ -7,39 +7,112 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 2 — Inter-Process Communication & Synchronization, Set 2 of 2 (second pass)**,
+- **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 2 of 2**,
+  2026-11-02 →
+  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Programmed I/O & interrupts (6) · DMA controller (6) · Secondary storage disks (7) · RAID levels (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 3 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 9, unit 6, io-interfaces, Set 1 of 2}`. Unit 6 held **25** questions, below
+  `UNIT_QUESTION_CAP = 50`, and had been current since 2026-11-01, that is 1 day, below `DAYS_PER_UNIT_MAX = 7`,
+  so step B3 held and step B4 was not reached: the current unit was generated again as **Set 2 of 2**. Unit 6 now
+  holds exactly 50 questions, closing it at the cap, so the next Computer Architecture run advances
+  `(index_of(io-interfaces) = 5 + 1) mod 6 = 0` → **Unit 1, Machine Instructions & Addressing Modes**, which opens
+  a second pass over the subject (Section 1 step B5). No override was used and no partial set was generated: the
+  paper is exactly 25 questions.
+- Superseded paper: the 2026-11-01 paper moved to
+  `computer-architecture/io-interfaces/archive/gate_co_mock_6_2026-11-01_run1.html` with its content frozen, so
+  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Operating Systems · Unit 2 — Inter-Process Communication & Synchronization, Set 2 of 2 (second pass)**,
   2026-11-02 →
   [`operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html`](operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-02.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Critical section & Peterson (7) · Hardware primitives (6) · Semaphores (6) ·
-  Classic problems: philosophers, producer-consumer (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 19, unit 1, process-scheduling, Set 2 of 2 (second pass)}`. Unit 1 held **100** questions,
-  above `UNIT_QUESTION_CAP = 50`, and had been current since 2026-10-26, so step B3 failed on both counts and step
-  B4 advanced exactly one unit: `(index_of(process-scheduling) = 0 + 1) mod 6 = 1` → **Unit 2, Inter-Process
-  Communication & Synchronization**. Unit 2 already held 75 questions, so step B5 applies and the second pass
-  continues; Section 1 step B4 permits exactly one advance per run, whatever unit it lands on. No override was
-  used and no partial set was generated.
-- Superseded paper: the 2026-10-30 paper moved to
-  `operating-systems/synchronization-ipc/archive/gate_os_mock_2_2026-10-30_run1.html` with its content frozen, so
-  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 2 of 2 (second pass)**,
-  2026-11-01 →
-  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html)
 
 ## Status
 
+
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 165 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 100 archived |
+| Papers published (current + archived) | 166 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 65 current · 101 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4125 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
+| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 4150 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 100 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 101 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Computer Architecture Unit 6, Set 2 of 2
+
+- New paper at `computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html`. The 2026-11-01 paper moved to
+  `archive/gate_co_mock_6_2026-11-01_run1.html` with its content frozen (same questions, options, answers, solutions
+  and duration), so the unit folder holds exactly one current paper.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 3 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 9, unit 6, io-interfaces, Set 1 of 2}`. Unit 6 held **25** questions, below the cap, and
+  had been current for **1** day, below `DAYS_PER_UNIT_MAX = 7`, so step B3 held and step B4 was not reached: the
+  current unit was generated again as **Set 2 of 2**. The unit now holds exactly **50** questions, closing it at
+  `UNIT_QUESTION_CAP`, so the next Computer Architecture run advances to Unit 1 and opens a second pass over the
+  subject (step B5). No override was used and no partial set was generated.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: programmed I/O & interrupts 6 · DMA controller 6 · secondary storage disks 7 ·
+  RAID levels 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks, and why it is not Set 1 again.** Set 1 asked what each mechanism is and what it costs; this set
+  asks where the definitions break and how the numbers are derived. Programmed I/O and interrupts: daisy-chain
+  priority, nested interrupts, the processor cost of one service including the context switch (**68%** left of 100%),
+  the entry latency of the last device in a four-device chain (**2.6 &micro;s**), programmed against interrupt-driven
+  I/O as statements, and the load at which interrupts alone cannot meet a 40% requirement (**80%** consumed, so DMA).
+  DMA: the registers a controller holds, the bus-request / bus-grant handshake, why cycle stealing releases the bus
+  after every word, cache coherence and scatter-gather, the crossover at which DMA equals interrupt-driven I/O
+  (**25 bytes**), and a burst transfer of 4 KB at 4 bytes per 100 ns cycle (**102.4 &micro;s**). Disks: cylinder
+  locality and seek time, capacity from surfaces and cylinders (**1 600 000** sectors), transfer time per sector
+  (**12 &micro;s**), disk geometry statements, access-time statements, a full 8 KB read inside one track
+  (**13.5 ms**), and average rotational latency at 15 000 rpm (**2 ms**). RAID: the failure tolerance of RAID 6,
+  throughput without redundancy, parity placement across RAID 4/5/6 and the capacity rule, RAID 5 usable capacity
+  (**20 TB**), RAID 10 with six disks, and the risk of a second failure during a rebuild (**0.04%**).
+- **Answers recomputed, not asserted.** Every numeric answer was produced by script rather than by hand:
+  `100 &minus; 8/25 &times; 100 = 68`; `2 + 4 &times; 0.15 = 2.6`; `4/5 = 80%`; `5n = 100 + n → n = 25`;
+  `4096/4 &times; 100 ns = 102.4 &micro;s`; `8 &times; 1000 &times; 200 = 1 600 000`; `60/10 000 &divide; 500 = 12 &micro;s`;
+  `9 + 4.167 + 16/400 &times; 8.333 = 13.5 ms`; `(60/15 000)/2 = 2 ms`; `(6 &minus; 1) &times; 4 = 20 TB`;
+  `4/100 000 &times; 10 &times; 100 = 0.04%`.
+- **Ids and bank.** 25 records appended as `CO-U6-Q26`–`CO-U6-Q50`; Computer Architecture now holds **250** questions
+  across 6 units, and the portal feed `data/questions-computer-architecture.js` grew from 225 to 250 records.
+- **Question Bank tab.** 225 solved questions — the 250 in the bank less the 25 on this paper — so the active set is
+  not repeated there. The tab's closing line now reads "Unit 1 has no banked questions yet."; the paper it replaces
+  said "Units 1–6", which was wrong.
+- **Provenance.** `verified_pyqs` is empty for Computer Architecture: no I/O-interface, DMA, disk-geometry or RAID
+  previous-year question has been verified against an official paper and answer key, so no item carries
+  `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE question. Sources are
+  `STANDARD_TEXTBOOK` (12) and `ORIGINAL_SYNTHESIS` (13).
+- **Pre-existing inconsistency, not touched.** Three Unit 2 records (`CO-U2-Q07`, `CO-U2-Q13`, `CO-U2-Q23`) carry
+  `data-source="GATE_PYQ_VARIATION"` while `verified_pyqs` is empty for this subject, so their claim of a
+  previous-year basis is unverified. The bank is append-only, so they were left as they are; nothing on this paper is
+  affected and none of the three appears on it.
+- **Overlap control.** All 25 stems were checked against the 25 already banked for this unit. Set 1 had used the
+  polling-ready-bit question, the interrupt-versus-polling advantage, the trap-versus-interrupt distinction, the
+  64 KB cycle-stealing count, burst/cycle-stealing/transparent as an MSQ, the DMA-versus-interrupt ratio, 7200 rpm
+  average rotational latency, the 4 KB read at 12.21 ms, the cylinder definition, 25.6 MB/s sustained rate, 10 ms per
+  revolution at 6000 rpm, zoned recording, the RAID 5 definition, RAID 6 capacity, the RAID 5 versus RAID 4
+  bottleneck, the 5-disk MTTF, and the 75% capacity question. None of those stems, numbers or answer sets is reused
+  here; where a concept recurs (rotational latency, usable capacity) it is asked with different parameters and a
+  different reasoning step.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block and the engine `<script>` are byte-identical to
+  the paper this one replaces (checked by hashing, not by eye), so only the payload, the 25 question cards, the
+  Question Bank tab, the About tab and five metadata strings (title, header sub-line, date chip, set chip, Question
+  Bank count) differ. One copy: `find . -name '*.html'` shows `index.html` at the root plus exactly one current file
+  per paper and one file per archived set, and nothing else at the root. Tokens: the `:root` block is byte-identical
+  to `design-tokens.css` and to `index.html`; no CDN and no `<link>`. Counts: 25 test cards, a 25-button palette,
+  225 bank cards, 5 NAT inputs, and all seven `data-*` attributes present on all 25 test cards and all 225 bank
+  cards. No duplicate content: the active 25 ids do not appear in the Question Bank tab.
+- **Interface run (jsdom).** 24 structural and behavioural checks pass on the shipped file: exactly one card visible
+  on load, the timer at 60:00, the answer-key tab disabled and its list empty, no solution text anywhere in the test
+  view before submit, palette states moving grey → red → violet → violet-with-dot, a mark-for-review toggle, palette
+  navigation, a perfect attempt scoring **35 / 35** with all 25 palette buttons turning `ok` and 25 key entries, and
+  a second attempt in which every MCQ is wrong, every MSQ a strict subset of its correct set and every NAT right,
+  scoring **10 / 35** — confirming that an MSQ earns nothing on a partial set and that there is no negative marking.
+- **Portal.** The Unit 6 card was replaced in place (65 cards before and after) and moved to the head of `tests`; its
+  archive list now names the 2026-11-01 Set 1. The static counter was recomputed to 4150 records.
 
 ### 2026-11-02 — Operating Systems Unit 2, Set 2 of 2 (second pass)
 
