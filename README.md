@@ -7,36 +7,108 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 2 of 2**, 2026-11-01 →
-  [`databases/indexing-storage/gate_db_mock_5_2026-11-01.html`](databases/indexing-storage/gate_db_mock_5_2026-11-01.html)
+- **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 1 of 2 (third pass)**, 2026-11-01 →
+  [`computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html`](computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Primary, secondary & clustering indexes (6) · Dense vs sparse indexing (6) ·
-  B-trees & B+ trees, order & capacity (7) · Static & dynamic hashing (6)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven
-  in syllabus order with an unseeded `secrets.randbelow(11)` and returned index 9 — **Databases**. `runs[]` gave
-  the most recent paper as `{2026-11-01, run 8, unit 5, indexing-storage, Set 1 of 2}`. Unit 5 held **25**
-  questions and had been current for 0 days, so step B3 held and step B4 was not reached: the unit was generated
-  again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 5 at the cap, so the next Databases run advances
-  `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` → Unit 1, ER Models & Relational Algebra, opening a second
-  pass. No override was used.
-- Superseded paper: the Set 1 paper of this date moved to
-  `databases/indexing-storage/archive/gate_db_mock_5_2026-11-01_run1.html` with its content frozen, so the unit
-  folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 2 of 2**, 2026-11-01 →
-  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
+- Subtopics: UDP datagram simplicity (6) · TCP header & connection management (7) ·
+  Flow control & sliding window (6) · Congestion control: slow start & AIMD (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 10 — **Computer Networks**. `runs[]` gave the most recent paper as `{2026-11-01, run 16, unit 4,
+  routing-protocols, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions, above `UNIT_QUESTION_CAP = 50`, so
+  step B3 failed on the cap and step B4 advanced exactly one unit: `(index_of(routing-protocols) = 3 + 1) mod 6 = 4`
+  → **Unit 5, Transport Layer: TCP, UDP & Congestion**. Unit 5 already held 50 questions from 2026-10-30, so every
+  unit of the subject is at or above the cap and step B5 applies: the third pass continues and Unit 5 takes the
+  first set of that pass. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-30 Set 2 paper moved to
+  `computer-networks/transport-layer/archive/gate_cn_mock_5_2026-10-30_run2.html` with its content frozen, so the
+  unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 1 of 2 (third pass)**,
+  2026-11-01 → [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 158 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 93 archived |
+| Papers published (current + archived) | 159 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 94 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3950 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3975 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 93 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 94 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Computer Networks Unit 5, Set 1 of 2 (third pass)
+
+- New paper at `computer-networks/transport-layer/gate_cn_mock_5_2026-11-01.html`. The 2026-10-30 Set 2 paper moved
+  to `archive/gate_cn_mock_5_2026-10-30_run2.html` with its content frozen (same questions, options, answers,
+  solutions and duration), so the unit folder holds exactly one current paper and the repository root still holds
+  only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned **Computer Networks** (index 10). All eleven subjects already carried a paper dated
+  2026-11-01, so the draw had to run over all eleven. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 16, unit 4, routing-protocols, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(routing-protocols) = 3 + 1) mod 6 = 4` → **Unit 5, Transport Layer: TCP, UDP & Congestion**. Unit 5 held
+  **50** questions banked on 2026-10-30, so it was already at the cap and this paper opens its third pass; the unit
+  now holds **75**. Section 1 step B4 permits exactly this — one advance per run, whatever unit it lands on — and
+  step B5 requires the pass to be recorded, which this section does. No override was used and no partial set was
+  generated: the paper is exactly 25 questions.
+- Coverage: all four Unit 5 subtopics — UDP datagram simplicity (6); TCP header & connection management (7); flow
+  control & sliding window (6); congestion control, slow start & AIMD (6). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ
+  all-or-nothing. Practice scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`CN-U5-Q51` … `CN-U5-Q75`) and collide with nothing already in the Computer Networks bank,
+  which held `CN-U1` … `CN-U4` plus `CN-U5-Q01` … `CN-U5-Q50`. The subject bank now holds **425** questions and the
+  paper's Question Bank tab shows the **400** that are not on it, so the active set is not repeated there.
+- Every question carries `data-subject="computer-networks"`, `data-unit="transport-layer"`,
+  `data-unit-number="5"`, its subtopic slug, type, difficulty and source — on the 25 test cards and on all 400 bank
+  cards alike. Difficulty is lowercase in the attributes, in the bank and in the portal data, and the UI capitalises
+  it with CSS.
+- What the set asks. UDP: the all-zeros checksum meaning "not computed"; ephemeral against well-known ports;
+  **4** datagrams for 5000 bytes at an MTU of 1500 with DF set (`⌈5000 / 1472⌉`); duplicate delivery blamed on IP,
+  not on UDP; an IP payload longer than the UDP length field treated as padding; and the true/false set on
+  congestion blindness, the IPv4/IPv6 checksum rule, ordering and message boundaries. TCP: the acknowledgement
+  number as the next byte expected; MSS = **1460** at an MTU of 1500 and **8960** at 9000; the PSH flag; the reset
+  sent to a closed port; SYN and FIN each costing a sequence number; and the CLOSE_WAIT, SYN_SENT, FIN_WAIT_1 and
+  TIME_WAIT states. Flow control: the 65535-byte ceiling of the unscaled window; **2 MSS** usable with
+  cwnd 10, rwnd 8 and 6 MSS in flight; the usable-window expression; delayed ACKs; flow control against congestion
+  control; and Clark's rule against silly window syndrome. Congestion: who owns cwnd; **6** round trips for slow
+  start to reach 64 MSS from 1 MSS; Reno's **9 MSS** in fast recovery (ssthresh 6 plus 3); the AIMD sawtooth and the
+  0.75W/R throughput estimate; Tahoe's **1 MSS** after three duplicate ACKs; and the 1.5× growth of slow start under
+  delayed ACKs.
+- Every numeric answer was recomputed by script, not by hand: 4 from `⌈5000 / (1500 − 20 − 8)⌉` with 3 × 1472 = 4416
+  and 584 left over; 8960 from `9000 − 20 − 20`; 2 from `min(10, 8) − 6`; 6 from `log2 64`; 9 from `12/2 + 3`; 1 from
+  Tahoe's reset; 65535 from `2^16 − 1`.
+- Option balance: the 15 MCQ answers are spread 4 A / 3 B / 4 C / 4 D, and the five MSQ answer sets are
+  (A), (B), (D); (B), (C), (D); (A), (B), (D); (A), (C), (D); and (B), (C), (D). The options were written in the
+  order that produces that spread and every letter reference inside each solution names the letter the candidate
+  actually sees.
+- Source tags: 19 `STANDARD_TEXTBOOK`, 6 `ORIGINAL_SYNTHESIS` (the five NAT items and the padding item),
+  0 `GATE_PYQ_VARIATION`. `verified_pyqs` stays empty for Computer Networks: no UDP, TCP, flow-control or
+  congestion-control previous-year question on this unit has been verified against an official paper and answer key,
+  so nothing on this paper is called an official GATE question, and the bank tab says so in one sentence.
+- Shell parity: the paper was produced by splicing the new payload, question cards, Question Bank tab, About text
+  and seven metadata strings (title, header sub-line, candidate id, meta strip, Question Bank count, and the two
+  bank chips) into the shipped shell of the Computer Networks Unit 4 paper (2026-11-01). With those regions removed,
+  the remaining bytes — `<style>` block, exam `<script>`, palette, answer-key shell, summary card and footer — are
+  identical to that shell, checked by byte comparison rather than by eye. The shell's own single unclosed `</div>`
+  is inherited unchanged.
+- `index.html` was regenerated from its own `#data` block: the Computer Networks Unit 5 card was replaced in place
+  (one card in, one card out, 65 cards before and after) and moved to the head of `tests`; its archive list now
+  points at the 2026-10-30 Set 1 and Set 2 files. The static "3950 solved" string became "3975 solved".
+  `data/questions-computer-networks.js` grew from 400 to 425 records, in the plain-text record shape the portal's
+  archive view expects. No unit was added to the portal's `units` table, since Computer Networks Units 1–6 were
+  already registered.
+- Bank rendering defect repaired in this paper only: 20 records of the Computer Networks Unit 3 run
+  (`CN-U3-Q26` … `CN-U3-Q50`) store `options_html` as one string rather than a list, so every earlier paper rendered
+  them as one `<li>` per character. The new paper falls back to the plain `options` array when `options_html` is not
+  a list of the right length, so those 20 cards now display their four options properly. The bank records
+  themselves are untouched, because the bank is append-only.
+- Known deviation, unchanged from every earlier run: the `:root` token block is byte-identical in `index.html`,
+  `design-tokens.css` and this paper, but the shipped shell also carries raw hex values in inline styles outside
+  `:root` (for example `color:#5b6b7a` on the marks label). They belong to the template, not to this run's payload,
+  and were left alone so the shell stays byte-identical across papers.
 
 ### 2026-11-01 — Databases Unit 5, Set 2 of 2
 
