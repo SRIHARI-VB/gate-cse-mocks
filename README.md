@@ -7,37 +7,105 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 1 of 2**,
+- **Databases · Unit 1 — ER Models & Relational Algebra, Set 1 of 2 (second pass)**,
+  2026-11-02 →
+  [`databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html`](databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: ER diagrams, cardinality & weak entities (7) · Relational model & constraints (6) ·
+  Relational algebra: σ, π, join, division (6) · Tuple & domain relational calculus (6)
+- Rotation: MODE A. A seeded subject draw (`random.Random(20261102)`) over the eleven subjects in syllabus order
+  returned index 9 — **Databases**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 16, unit 5, indexing-storage, Set 2 of 2}`. Unit 5 held **50** questions, exactly
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` → **Unit 1, ER Models & Relational Algebra**. All five
+  Databases units were at the cap, so **step B5 applies: the modulo wrapped and a second pass through the subject
+  begins**. No override was used and no partial set was generated: the paper is exactly 25 questions.
+- Superseded paper: Unit 1's 2026-10-26 paper moved to
+  `databases/er-relational-algebra/archive/gate_db_mock_1_2026-10-26_run2.html`, so the unit folder holds exactly
+  one current paper. The repository root still holds only `index.html`.
+- Previous test: **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 1 of 2**,
   2026-11-02 →
   [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Classes P and NP (7) · Polynomial-time reductions (6) · NP-complete problems (6) · NP-hard identification (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 12, unit 6, shortest-paths, Set 2 of 2}`. Unit 6 held **50** questions, exactly
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(shortest-paths) = 5 + 1) mod 7 = 6` → **Unit 7, Complexity Theory & NP-Completeness**, which held no
-  questions. This is therefore **Set 1 of 2**, the first paper of the unit's first pass. No override was used and
-  no partial set was generated: the paper is exactly 25 questions.
-- No superseded paper: Unit 7 had no banked questions, so nothing was archived and the new unit folder holds
-  exactly one current paper. The repository root still holds only `index.html`.
-- Previous test: **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 2 of 2**,
-  2026-11-02 →
-  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 167 (25 Discrete Mathematics, 13 Algorithms, 10 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 66 current · 101 archived |
+| Papers published (current + archived) | 168 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 20 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 66 current · 102 archived |
 | Test cards on the portal | 66 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4175 (625 Discrete Mathematics, 325 Algorithms, 250 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4200 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 500 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 101 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 102 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 14 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Databases Unit 1, Set 1 of 2 (second pass)
+
+- New paper at `databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html`. The 2026-10-26 paper moved to
+  `databases/er-relational-algebra/archive/gate_db_mock_1_2026-10-26_run2.html`, so the folder holds exactly one
+  current paper and the archive holds both earlier sets (run1 and run2).
+- **Rotation (Section 1, MODE A).** A seeded subject draw (`random.Random(20261102)`, seed = the run date) over the
+  eleven GATE CSE subjects in syllabus order returned index 9 — **Databases**. `runs[]` sorted by `(date, run)`
+  gave the most recent paper as `{2026-11-01, run 16, unit 5, indexing-storage, Set 2 of 2}`. Unit 5 held **50**
+  questions, exactly `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(indexing-storage) = 4 + 1) mod 5 = 0` → **Unit 1, ER Models & Relational Algebra**. Every one of the
+  five Databases units already held 50 questions, so **step B5 applies and a second pass through the subject has
+  started**; Unit 1's 50 banked questions make this **Set 1 of 2 of that second pass**. No override, no partial
+  set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: ER diagrams, cardinality & weak entities 7 · relational model &
+  constraints 6 · relational algebra (σ, π, join, division) 6 · tuple & domain relational calculus 6. Difficulty
+  10 easy / 10 medium / 5 hard.
+- **What the set asks.** ER: the identifying relationship's symbol (**double diamond**), the double edge as total
+  participation, the relation count for a 1:N schema (**2**), a full translation count (**5**), the standard
+  mapping rules as statements, why a ternary relationship's constraints are not derivable from three binaries,
+  and the dashed underline as a partial key. Relational model: what a foreign key actually checks, the superkey
+  count under one key (**8**) and under two overlapping candidate keys (**7**), null as absence of a value,
+  integrity-constraint statements, and picking a superkey that is not minimal. Relational algebra: intersection,
+  a division instance (**{1}**), the maximum natural-join size when the far side is keyed (**5**), the algebraic
+  laws that hold, the query the basic algebra cannot express (transitive closure), and the product–filter–project
+  form of a natural join. Relational calculus: a range atom plus predicate as a selection, tuple variables versus
+  domain variables, the TRC/DRC equivalence, a universally quantified query's size (**2**), and an unsafe
+  expression.
+- **Answers recomputed, not asserted.** Every key was produced by a script, not by inspection. Candidate keys and
+  superkey counts come from a closure engine (`2^(n−k)` = 8 for one key of size 1; `4 + 4 − 1` = 7 for `AB` and
+  `CD`); the division answer was computed from the tuple sets ({1}); the join bound from the key on the far side
+  (5 × 1 = 5); and the calculus answer from evaluating `∀b (S(b) → R(a,b))` row by row ({1, 2}, so **2**). The
+  minimal cover used in the solution text ({A→B, B→C, C→D}) was checked by redundancy elimination.
+- **Ids and bank.** 25 records appended as `DB-U1B-Q01`–`DB-U1B-Q25`; Databases now holds **275** questions across
+  5 units, and `data/questions-databases.js` grew from 250 to 275 records. The `B` in the id marks the second
+  pass, so the new records cannot collide with the 50 first-pass `DB-U1-*` records.
+- **Question Bank tab.** 250 solved questions — the 275 in the bank less the 25 on this paper — so the active set
+  is not repeated there.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION`. The single verified PYQ in the Databases bank
+  (`PYQ-GATE2014S3-Q30`, GATE CSE 2014 Set 3, official key D) is an ER/relational-algebra item from Unit 1, but its
+  variation `DB-U1-Q17` belongs to the first pass and was not re-used here, so this paper claims nothing as
+  official. Sources are `STANDARD_TEXTBOOK` (9) and `ORIGINAL_SYNTHESIS` (16).
+- **Option balance.** The 15 MCQ answers are spread 3 A / 5 B / 4 C / 3 D. The five MSQ answer sets are (B), (D);
+  (A), (D); (B), (C), (D); (A), (C); and (B), (C) — two two-element sets, one two-element set with different
+  members, one three-element set and one two-element set, so the five are not copies of one pattern.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block, the engine `<script>`, the palette `<aside>`
+  and the tail from `<footer class="foot">` to the payload are byte-identical to the Databases Unit 5 paper this
+  one follows (compared byte for byte, not by eye). One copy: `find . -name '*.html'` shows `index.html` at the
+  root plus exactly one current file per paper and one file per archived set, and the new paper exists at exactly
+  one path. Tokens: the `:root` block is byte-identical to `design-tokens.css` and to `index.html`; no CDN and no
+  `<link>`. Counts: 25 test cards, a 25-button palette, 250 bank cards, 5 NAT inputs, four options on every MCQ
+  and MSQ, and all seven `data-*` attributes on all 25 test cards and all 250 bank cards. No duplicate content:
+  the active 25 ids do not appear in the Question Bank tab.
+- **Mock Test Mode.** No answer, option mark, hint or solution string appears anywhere in the test view before
+  submit: the strings `Detailed solution` and `ansline` occur zero times in the served test markup, and the answer
+  key tab is `disabled` until Submit. Answers and solutions live in the base64 payload and are rendered only by
+  the grading routine.
+- **Portal.** The Unit 1 card was replaced (not duplicated) and moved to the head of `tests` with two archive
+  links, and the static counters were recomputed: 66 units, 4200 banked, 4175 in the review archive, 4200 records
+  in the subject banks.
+- **Shell defect inherited, unchanged.** The shipped shell carries a nested duplicate `id="view-bank"` /
+  `id="view-about"` wrapper and a stray `</footer>`. Both are identical in every paper of the series and were left
+  as they are, so the shell stays byte-identical across papers.
 
 ### 2026-11-02 — Algorithms Unit 7, Set 1 of 2
 
