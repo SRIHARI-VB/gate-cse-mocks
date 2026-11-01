@@ -7,38 +7,118 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 3 — Deadlocks, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html`](operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html)
+- **Computer Networks · Unit 6 — Application Layer & Network Security, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html`](computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Four conditions & RAG (5) · Prevention, avoidance & Banker's (7) · Detection & recovery (6) ·
-  Starvation vs deadlock (7)
+- Subtopics: DNS hierarchy & resolution (7) · HTTP, HTTPS, SMTP & FTP (6) · Symmetric & asymmetric cryptography,
+  RSA (6) · Digital signatures, certificates & firewalls (6)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 20, unit 2, synchronization-ipc, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions,
-  twice `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, so it had also been current for 7 days —
-  both halves of step B3 failed. Step B4 advanced exactly one unit: `(index_of(synchronization-ipc) = 1 + 1) mod 6 = 2`
-  → **Unit 3, Deadlocks**. All six Operating Systems units already sit at or above the cap, so **step B5 applies:
-  the second pass continues**. Run 15 was Unit 3's first second-pass set, so this is **Set 2 of 2 of that pass**
-  and the unit's fourth set overall. No override was used and no partial set was generated.
-- Superseded paper: Unit 3's 2026-10-30 paper moved to
-  `operating-systems/deadlocks/archive/gate_os_mock_3_2026-10-30_run1.html`, so the unit folder holds exactly one
-  current paper. The repository root still holds only `index.html`.
-- Previous test: **Databases · Unit 1 — ER Models & Relational Algebra, Set 1 of 2 (second pass)**, 2026-11-02 →
-  [`databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html`](databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html)
+  returned index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 17, unit 5, transport-layer, Set 1 of 2 (third pass)}`. Unit 5 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-10-30, so the 7-day backstop was
+  not the reason. Step B4 advanced exactly one unit: `(index_of(transport-layer) = 4 + 1) mod 6 = 5` →
+  **Unit 6, Application Layer & Network Security**. Unit 6 already held **50** questions from its two 2026-10-31
+  sets, so every Computer Networks unit now sits at or above the cap and **step B5 applies: the second pass
+  continues**. Run 17 was Unit 5's first third-pass set, so this is Unit 6's **first second-pass set** — the unit's
+  third set overall. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-31 Set 2 moved to
+  `computer-networks/application-layer-security/archive/gate_cn_mock_6_2026-10-31_run2.html`, so the unit folder
+  holds exactly one current paper and the archive holds both earlier sets. The repository root still holds only
+  `index.html`.
+- Previous test: **Operating Systems · Unit 3 — Deadlocks, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html`](operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 169 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 66 current · 103 archived |
+| Papers published (current + archived) | 170 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 66 current · 104 archived |
 | Test cards on the portal | 66 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4225 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4250 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 103 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 104 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Computer Networks Unit 6, Set 1 of 2 (second pass)
+
+- New paper at `computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html`. The 2026-10-31
+  Set 2 moved to `computer-networks/application-layer-security/archive/gate_cn_mock_6_2026-10-31_run2.html`, so
+  the folder holds exactly one current paper and the archive holds both earlier sets.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 17, unit 5, transport-layer, Set 1 of 2 (third pass)}`. Unit 5 held **75** questions
+  against a cap of 50, so step B3 failed on the cap; its first paper was 2026-10-30, three days earlier, so the
+  7-day backstop played no part. Step B4 advanced exactly one unit:
+  `(index_of(transport-layer) = 4 + 1) mod 6 = 5` → **Unit 6, Application Layer & Network Security**. Unit 6
+  already held 50 questions from its two 2026-10-31 sets, so all six Computer Networks units now sit at or above
+  the cap: **step B5 applies, the second pass continues**, and this is the first set of that pass. Exactly 25
+  questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: DNS hierarchy & resolution 7 · HTTP, HTTPS, SMTP & FTP 6 · Symmetric &
+  asymmetric cryptography, RSA 6 · Digital signatures, certificates & firewalls 6. Difficulty 10 easy / 10 medium /
+  5 hard.
+- **What the set asks.** DNS: `NS` as the act of delegation against `A`, `CNAME` and `MX`; the 63-octet label limit
+  as against the 255-octet name limit; `AXFR` over TCP while the port stays 53; the header read as three questions
+  (`ID`, `AA`, `RA`) as a multi-select; the 16-bit identifier as a NAT; wire-format arithmetic for
+  `www.example.com` (17 octets) as a NAT; and an out-of-bailiwick referral with no glue, which forces a second
+  resolution from the root. Application protocols: 443 for HTTPS; 5xx as the server's own failure; chunked framing
+  for a body of unknown length; 307 as the method-preserving redirect; SMTP as a push protocol over port 25 that
+  still needs MIME for binary, as a multi-select; and three `Set-Cookie` fields collapsing into one `Cookie` field
+  as a NAT. Cryptography: RSA against factorisation; the three conditions of a one-time pad; Fermat factorisation
+  of close primes; the unpadded `e = 3` cube-root attack; DES 64/56 against AES's fixed 128-bit block, two-key
+  3DES at 112 bits and ECB's lack of semantic security, as a multi-select; and `C(10,2) = 45` symmetric keys as a
+  NAT. Signatures and firewalls: the self-signed certificate as an unvouched binding; replay against freshness and
+  the nonce that supplies it; sign-then-encrypt ordering; hash properties against a keyed MAC, as a multi-select;
+  revocation against expiry as a multi-select; and a default-deny ACL walk over seven packets as a NAT.
+- **Answers recomputed, not asserted.** The four arithmetic keys were checked by script: `C(10, 2) = 45`;
+  wire size `3 + 7 + 3 + 4 = 17`; the header identifier field is 16 bits; three `Set-Cookie` fields produce one
+  `Cookie` field; and the ACL walk returns **3**, from (a), (f) and (g), with (c) killed by rule 1 before rule 2 is
+  reached and (e) outside `10.0.0.0/24` because the prefix fixes the first three octets.
+- **Ids and bank.** 25 records appended as `CN-U6C-Q01`–`CN-U6C-Q25` (the `C` marks the unit's third set);
+  Computer Networks now holds **450** questions across 6 units, and `data/questions-computer-networks.js` grew from
+  425 to 450 records.
+- **Question Bank tab.** 425 solved questions — the 425 in the bank before this paper — so the active set is not
+  repeated there. Unit 6's accordion shows the 50 questions of its two first-pass sets; the 25 added here appear on
+  the paper itself and are excluded from the tab.
+- **Provenance.** `verified_pyqs` is empty for Computer Networks, so no item on this paper carries
+  `GATE_PYQ_VARIATION` and nothing is claimed as an official GATE question: no DNS, HTTP, cryptography,
+  digital-signature or firewall previous-year question has been verified against an official paper and answer key
+  for this unit. Sources are `STANDARD_TEXTBOOK` (18) and `ORIGINAL_SYNTHESIS` (7).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (B), (C); (A), (D); (A), (C); (A), (B), (D); and (A), (B) — one two-element set, one pair, and three
+  different three-element or short patterns, so they are not five copies of one pattern. Every letter named inside a
+  solution is the letter the candidate sees.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,243 bytes) and the engine `<script>`
+  (9,428 bytes) are byte-identical to the Computer Networks Unit 6 paper of 2026-10-31, compared byte for byte. One
+  copy: the paper exists at exactly one path, the superseded set at exactly one archive path, and `index.html` is
+  the only HTML file at the root. Links: all 66 test paths and all 104 archive paths in the portal's data block
+  resolve, and the retired 2026-10-31 path is referenced nowhere. Tokens: the `:root` block is byte-identical to
+  `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no external URL of any kind. Counts: 25 test cards,
+  a 25-button palette, 5 NAT inputs, 80 option inputs, 425 bank cards, and all seven `data-*` attributes on all 25
+  test cards and all 425 bank cards. No duplicate content: none of the 25 active ids appears in the Question Bank
+  tab, and no bank id repeats.
+- **Interface run (jsdom, 28 checks).** Exactly one card visible on load; the timer at 60:00; the answer-key tab
+  disabled with an empty list; no `ansline`, no "Detailed solution" text, no `correct`/`wrongpick` class and no
+  filled `.mark` anywhere in `#qhost` before submit; every `.sol` hidden and empty; palette states moving
+  na → ans → amr → ans → na through mark-for-review, unmark and Clear Response; a perfect attempt scoring
+  **35 / 35** with all 25 palette buttons turning `ok`, every solution revealed and every input disabled; and a
+  second attempt in which every MCQ is wrong, every MSQ has one extra option selected and every NAT is right
+  scoring **10 / 35**, confirming no negative marking and that an MSQ earns nothing on an enlarged set.
+- **Portal.** The Computer Networks Unit 6 card was replaced, not duplicated: it now carries the new date, the new
+  path, and two earlier-set links (`First pass · Set 2` → the run2 archive, `First pass · Set 1` → the run1
+  archive). The static counters, stale since the Discrete Mathematics era, were recomputed from the data:
+  71 units in the series, 66 test cards, 4225 solved questions in the review archive, 4250 records in the subject
+  banks, 68 of 71 units covered and 292 subtopics.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus literal hex outside `:root`, no explicit
+  `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than their `-d`
+  variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Operating Systems Unit 3, Set 2 of 2 (second pass)
 
