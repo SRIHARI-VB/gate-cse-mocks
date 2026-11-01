@@ -7,35 +7,73 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html)
+- **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 1 of 2**, 2026-11-01 →
+  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: adders and subtractors (5) · multiplexers and demultiplexers (5) · decoders and encoders (5) ·
-  code converters (5) · hazards and glitches (5)
-- Rotation: MODE A. Four subjects had no paper dated 2026-11-01 (Computer Architecture, Compiler Design, Digital
-  Logic, Discrete Mathematics), so the draw ran over those four in syllabus order with an unseeded
-  `secrets.randbelow(4)` and returned index 2 — **Digital Logic**. Its most recent run was `{2026-10-31, run 9,
-  unit 1, number-systems, Set 1 of 2 (second pass)}`. Unit 1 held **75** questions, above
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced one unit:
-  `(index_of(number-systems) = 0 + 1) mod 4 = 1` → **Unit 2, Combinational Circuit Design**. Every Digital Logic
-  unit is at or above the cap, so the modulo wraps and the second pass continues. No override, no partial set.
-- The superseded 2026-10-27 paper moved to
-  `digital-logic/combinational-circuits/archive/gate_dl_mock_2_2026-10-27_run2.html` with its content frozen, so the
-  unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 1 of 2**, 2026-11-01 →
-  [`databases/indexing-storage/gate_db_mock_5_2026-11-01.html`](databases/indexing-storage/gate_db_mock_5_2026-11-01.html)
+- Subtopics: Boolean identities and duality (6) · SOP and POS forms (6) · minterms and maxterms (6) ·
+  K-map simplification (7)
+- Rotation: MODE A. Three subjects had no paper dated 2026-11-01 (Computer Architecture, Compiler Design,
+  Discrete Mathematics), so the draw ran over those three in syllabus order with an unseeded
+  `secrets.randbelow(3)` and returned index 2 — **Discrete Mathematics**. Its most recent run was
+  `{2026-10-31, run 13, unit 10, graph-theory-advanced, Set 2 of 2}`. Unit 10 held **50** questions, at
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(graph-theory-advanced) = 9 + 1) mod 16 = 10` → **Unit 11, Boolean Algebra & Switching Logic**.
+  No override, no partial set.
+- Unit 11 had no banked questions, so this is the first set of its first pass; it holds 25 of the 50-question
+  cap and the next Discrete Mathematics run will publish Set 2 against the same unit.
+- No superseded paper was created: Unit 11 had no earlier paper, so nothing moved into `archive/` and the
+  unit folder holds exactly one current paper. The repository root still holds only `index.html`.
+- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (second pass)**, 2026-11-01 →
+  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 148 (23 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 8 Computer Architecture) |
-| Current papers / archived sets | 63 current · 85 archived |
-| Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
-| Units covered | 11 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
-| Questions in the subject banks | 3700 (575 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 200 Computer Architecture) |
+| Papers published (current + archived) | 149 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 8 Computer Architecture) |
+| Current papers / archived sets | 64 current · 85 archived |
+| Test cards on the portal | 82 (one card per current paper; superseded sets are links on that card) |
+| Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 4 of 6 in Computer Architecture |
+| Questions in the subject banks | 3725 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 200 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 85 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 6 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Discrete Mathematics Unit 11, Set 1 of 2
+
+- New paper at `discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`. Unit 11 had no earlier
+  paper, so nothing was superseded and nothing moved into `archive/`; the unit folder holds exactly one current
+  paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** At draw time eight subjects already carried a paper dated 2026-11-01
+  (Algorithms, Computer Networks, Databases, Engineering Mathematics, Operating Systems, Programming and Data
+  Structures, Theory of Computation, Digital Logic), so the draw ran over the remaining three in syllabus order
+  (Computer Architecture, Compiler Design, Discrete Mathematics) with an unseeded `secrets.randbelow(3)` and
+  returned index 2 — **Discrete Mathematics**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-10-31, run 13, unit 10, graph-theory-advanced, Set 2 of 2}`. Unit 10 held **50** questions, at the cap,
+  so step B3 failed and step B4 advanced exactly one unit: `(9 + 1) mod 16 = 10` → **Unit 11, Boolean Algebra &
+  Switching Logic**. No override was used and no partial set was generated.
+- Coverage: all four Unit 11 subtopics — Boolean identities and duality (6); SOP and POS forms (6); minterms and
+  maxterms (6); K-map simplification (7). Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium /
+  5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ all-or-nothing. Practice
+  scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`DM-BA-Q01` … `DM-BA-Q25`) and collide with nothing already in the Discrete Mathematics
+  bank. The subject bank now holds **600** questions and the paper's Question Bank tab shows the **575**
+  previously banked items, so the active set is not repeated there.
+- Every question carries `data-subject="discrete-mathematics"`, `data-unit="boolean-algebra"`,
+  `data-unit-number="11"`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source`. Sources used:
+  `STANDARD_TEXTBOOK` 17, `ORIGINAL_SYNTHESIS` 8. No `GATE_PYQ_VARIATION` item: `verified_pyqs` holds two Unit 16
+  logic questions and no Boolean-algebra previous-year question has been verified against an official paper and
+  key, so nothing on this paper is claimed as an official GATE question.
+- Every Boolean and K-map answer was recomputed by script rather than by hand: the 256 functions of three
+  variables; the 16 self-dual functions; the maxterm counts 3 and 5; the two minterms of
+  `(x ⊕ y)·(y ⊕ z)`; the minimal covers `x′y′ + yz′ + xz` (3 terms) and `x′ + w′y′z` (2 terms with the
+  don't-care set, 3 without); and the four prime implicants of `Σm(0,1,2,3,5,7,8,10,13,15)`. A Quine–McCluskey
+  enumeration produced each prime-implicant list, the essential set and the minimum cover, so the quoted
+  counts are computed, not assumed.
+- Interface: the shell, the palette, the four tabs, the answer-key engine and the footer are byte-identical to
+  the Digital Logic 2026-11-01 paper; only the payload, the 25 question cards, the bank tab, the About tab and
+  the header metadata differ. A jsdom run of the shipped file confirms 25 cards, 25 palette buttons, no
+  solution visible before submit, the locked answer-key tab, correct scoring (7/35 on a seeded attempt), the
+  `ok`/`bad`/`skip` palette after submit and 575 banked cards in the Question Bank tab.
 
 ### 2026-11-01 — Digital Logic Unit 2, Set 1 of 2 (second pass)
 
