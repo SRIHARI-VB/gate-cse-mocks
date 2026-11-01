@@ -6,7 +6,7 @@
   "created": "2026-10-25",
   "last_updated": "2026-11-01",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 600,
+  "total_questions": 625,
   "units_with_questions": [
    1,
    2,
@@ -906,6 +906,68 @@
     "DM-BA-Q24",
     "DM-BA-Q25"
    ]
+  },
+  {
+   "run": 15,
+   "date": "2026-11-01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "set": "Set 2 of 2",
+   "count": 25,
+   "file": "discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html",
+   "archived_previous": "discrete-mathematics/boolean-algebra/archive/gate_dm_mock_11_2026-11-01_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "Boolean identities & duality": 7,
+    "SOP & POS forms": 6,
+    "Minterms & maxterms": 6,
+    "K-map simplification": 6
+   },
+   "question_ids": [
+    "DM-BA2-Q01",
+    "DM-BA2-Q02",
+    "DM-BA2-Q03",
+    "DM-BA2-Q04",
+    "DM-BA2-Q05",
+    "DM-BA2-Q06",
+    "DM-BA2-Q07",
+    "DM-BA2-Q08",
+    "DM-BA2-Q09",
+    "DM-BA2-Q10",
+    "DM-BA2-Q11",
+    "DM-BA2-Q12",
+    "DM-BA2-Q13",
+    "DM-BA2-Q14",
+    "DM-BA2-Q15",
+    "DM-BA2-Q16",
+    "DM-BA2-Q17",
+    "DM-BA2-Q18",
+    "DM-BA2-Q19",
+    "DM-BA2-Q20",
+    "DM-BA2-Q21",
+    "DM-BA2-Q22",
+    "DM-BA2-Q23",
+    "DM-BA2-Q24",
+    "DM-BA2-Q25"
+   ],
+   "mode": "A",
+   "selection": "random subject draw over units below UNIT_QUESTION_CAP; unit 11 under cap (25) and current 0 days, so step B3 held",
+   "note": "Set 2 of 2 closes Unit 11 at UNIT_QUESTION_CAP = 50. Next Discrete Mathematics run advances (index_of(boolean-algebra) = 10 + 1) mod 16 = 11 -> Unit 12, Algebraic Structures."
   }
  ],
  "verified_pyqs": [
@@ -27544,6 +27606,1157 @@
     ],
     "final": "Options (A), (B) and (D).",
     "misconception": "Treating a don&rsquo;t-care as a &ldquo;must be 1&rdquo; or &ldquo;must be 0&rdquo; cell. It is a free cell: the only rule is that the final circuit must be correct on the specified rows."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which one of the following is the dual of the distributive identity x·(y + z) = x·y + x·z?",
+   "question_html": "<p class=\"qtext\">Which one of the following is the <b>dual</b> of the distributive identity <code class=\"mm\">x&middot;(y + z) = x&middot;y + x&middot;z</code>?</p>",
+   "options": [
+    "<code class=\"mm\">x + y&middot;z = (x + y)&middot;(x + z)</code>",
+    "<code class=\"mm\">x + (y + z) = (x + y) + (x + z)</code>",
+    "<code class=\"mm\">x&middot;(y + z) = x&middot;y + x&middot;z</code>",
+    "<code class=\"mm\">x + y&middot;z = (x + y)&middot;z</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The dual of a Boolean expression is formed by interchanging the operators + and &middot;, interchanging the constants 0 and 1, and leaving every literal unchanged.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the expression in its operator skeleton: <code class=\"mm\">x &middot; (y + z) = (x &middot; y) + (x &middot; z)</code>.</li><li>Interchange &middot; with + and + with &middot; on both sides: <code class=\"mm\">x + (y &middot; z) = (x + y) &middot; (x + z)</code>.</li><li>There is no constant 0 or 1 in the identity, so nothing else changes.</li><li>The result is a genuine law — it is the other distributive law — so the dual of a distributive identity is again a distributive identity.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x + y&middot;z = (x + y)&middot;(x + z)</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Interchanging the operators but forgetting the parentheses, which gives option (D). Duality swaps the operations and keeps the grouping; <code class=\"mm\">(x + y)&middot;z</code> is not equivalent to the correct dual.</p>",
+   "solution": {
+    "concept": "The dual of a Boolean expression is formed by interchanging the operators + and &middot;, interchanging the constants 0 and 1, and leaving every literal unchanged.",
+    "steps": [
+     "Write the expression in its operator skeleton: <code class=\"mm\">x &middot; (y + z) = (x &middot; y) + (x &middot; z)</code>.",
+     "Interchange &middot; with + and + with &middot; on both sides: <code class=\"mm\">x + (y &middot; z) = (x + y) &middot; (x + z)</code>.",
+     "There is no constant 0 or 1 in the identity, so nothing else changes.",
+     "The result is a genuine law — it is the other distributive law — so the dual of a distributive identity is again a distributive identity."
+    ],
+    "final": "<code class=\"mm\">x + y&middot;z = (x + y)&middot;(x + z)</code>, option (A).",
+    "misconception": "Interchanging the operators but forgetting the parentheses, which gives option (D). Duality swaps the operations and keeps the grouping; <code class=\"mm\">(x + y)&middot;z</code> is not equivalent to the correct dual."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "By De Morgan’s law, the complement (x·y)′ equals:",
+   "question_html": "<p class=\"qtext\">By De Morgan&rsquo;s law, the complement <code class=\"mm\">(x&middot;y)&prime;</code> equals:</p>",
+   "options": [
+    "<code class=\"mm\">x&prime; + y&prime;</code>",
+    "<code class=\"mm\">x&prime;&middot;y&prime;</code>",
+    "<code class=\"mm\">x + y</code>",
+    "<code class=\"mm\">(x + y)&prime;</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> De Morgan&rsquo;s laws move a complement across an operator and flip the operator: <code class=\"mm\">(x&middot;y)&prime; = x&prime; + y&prime;</code> and <code class=\"mm\">(x + y)&prime; = x&prime;&middot;y&prime;</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Check the row x = 1, y = 1: then <code class=\"mm\">(x&middot;y)&prime; = (1)&prime; = 0</code>.</li><li>On that same row <code class=\"mm\">x&prime; + y&prime; = 0 + 0 = 0</code>, so option (A) agrees; <code class=\"mm\">x&prime;&middot;y&prime; = 0</code> also agrees here, so one row is not enough.</li><li>Check the row x = 1, y = 0: <code class=\"mm\">(x&middot;y)&prime; = (0)&prime; = 1</code>, while <code class=\"mm\">x&prime;&middot;y&prime; = 0&middot;1 = 0</code>. Option (B) fails.</li><li>Check the row x = 0, y = 0: <code class=\"mm\">(x&middot;y)&prime; = 1</code> and <code class=\"mm\">x + y = 0</code>, so option (C) fails. Option (D) is <code class=\"mm\">(x + y)&prime; = x&prime;y&prime;</code>, which fails on the first row.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x&prime; + y&prime;</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Dropping the complements instead of moving them: option (C) is the complement-free expression, which is not the complement of the product. The operator must also flip — AND becomes OR.</p>",
+   "solution": {
+    "concept": "De Morgan&rsquo;s laws move a complement across an operator and flip the operator: <code class=\"mm\">(x&middot;y)&prime; = x&prime; + y&prime;</code> and <code class=\"mm\">(x + y)&prime; = x&prime;&middot;y&prime;</code>.",
+    "steps": [
+     "Check the row x = 1, y = 1: then <code class=\"mm\">(x&middot;y)&prime; = (1)&prime; = 0</code>.",
+     "On that same row <code class=\"mm\">x&prime; + y&prime; = 0 + 0 = 0</code>, so option (A) agrees; <code class=\"mm\">x&prime;&middot;y&prime; = 0</code> also agrees here, so one row is not enough.",
+     "Check the row x = 1, y = 0: <code class=\"mm\">(x&middot;y)&prime; = (0)&prime; = 1</code>, while <code class=\"mm\">x&prime;&middot;y&prime; = 0&middot;1 = 0</code>. Option (B) fails.",
+     "Check the row x = 0, y = 0: <code class=\"mm\">(x&middot;y)&prime; = 1</code> and <code class=\"mm\">x + y = 0</code>, so option (C) fails. Option (D) is <code class=\"mm\">(x + y)&prime; = x&prime;y&prime;</code>, which fails on the first row."
+    ],
+    "final": "<code class=\"mm\">x&prime; + y&prime;</code>, option (A).",
+    "misconception": "Dropping the complements instead of moving them: option (C) is the complement-free expression, which is not the complement of the product. The operator must also flip — AND becomes OR."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The Boolean expression f = x + x′·y + x·y′ simplifies to a minimal sum-of-products form. How many literals does that minimal form contain?",
+   "question_html": "<p class=\"qtext\">The Boolean expression <code class=\"mm\">f = x + x&prime;&middot;y + x&middot;y&prime;</code> simplifies to a minimal sum-of-products form. How many literals does that minimal form contain?</p>",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A minimal SOP form is one with the fewest product terms and, among those, the fewest literals; simplification merges terms that differ in exactly one variable.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Merge <code class=\"mm\">x + x&prime;&middot;y</code>: by the identity <code class=\"mm\">x + x&prime;y = x + y</code>, the expression becomes <code class=\"mm\">x + y + x&middot;y&prime;</code>.</li><li>Now apply absorption: <code class=\"mm\">x + x&middot;y&prime; = x</code>, so the expression collapses to <code class=\"mm\">x + y</code>.</li><li>Check by truth table: the original expression is 0 only on the row x = 0, y = 0, which is exactly the zero set of <code class=\"mm\">x + y</code>.</li><li>The minimal form <code class=\"mm\">x + y</code> has two product terms of one literal each, so it contains <b>2</b> literals.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Counting the literals of the original written form (five) or simplifying only the first pair and stopping at <code class=\"mm\">x + y + xy&prime;</code>. Absorption still applies, and the term <code class=\"mm\">x&middot;y&prime;</code> is redundant.</p>",
+   "solution": {
+    "concept": "A minimal SOP form is one with the fewest product terms and, among those, the fewest literals; simplification merges terms that differ in exactly one variable.",
+    "steps": [
+     "Merge <code class=\"mm\">x + x&prime;&middot;y</code>: by the identity <code class=\"mm\">x + x&prime;y = x + y</code>, the expression becomes <code class=\"mm\">x + y + x&middot;y&prime;</code>.",
+     "Now apply absorption: <code class=\"mm\">x + x&middot;y&prime; = x</code>, so the expression collapses to <code class=\"mm\">x + y</code>.",
+     "Check by truth table: the original expression is 0 only on the row x = 0, y = 0, which is exactly the zero set of <code class=\"mm\">x + y</code>.",
+     "The minimal form <code class=\"mm\">x + y</code> has two product terms of one literal each, so it contains <b>2</b> literals."
+    ],
+    "final": "2",
+    "misconception": "Counting the literals of the original written form (five) or simplifying only the first pair and stopping at <code class=\"mm\">x + y + xy&prime;</code>. Absorption still applies, and the term <code class=\"mm\">x&middot;y&prime;</code> is redundant."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q04",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The dual of the expression f = x·y′ + x′·z + 0 is:",
+   "question_html": "<p class=\"qtext\">The <b>dual</b> of the expression <code class=\"mm\">f = x&middot;y&prime; + x&prime;&middot;z + 0</code> is:</p>",
+   "options": [
+    "<code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;1</code>",
+    "<code class=\"mm\">(x&prime; + y)&middot;(x + z&prime;)&middot;1</code>",
+    "<code class=\"mm\">x&middot;y&prime; + x&prime;&middot;z + 1</code>",
+    "<code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;0</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Duality acts on the operators and on the constants only: + becomes &middot;, &middot; becomes +, 0 becomes 1, 1 becomes 0, and every literal — complemented or not — is carried across unchanged.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Split the expression into its operator skeleton: <code class=\"mm\">(x &middot; y&prime;) + (x&prime; &middot; z) + 0</code>.</li><li>Interchange the two operators: <code class=\"mm\">(x + y&prime;) &middot; (x&prime; + z) &middot; ?</code>.</li><li>Interchange the constant: the trailing 0 becomes 1, giving <code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;1</code>.</li><li>The literals <code class=\"mm\">x, y&prime;, x&prime;, z</code> are untouched, so option (B), which complements them, is wrong; option (D) keeps the constant 0; option (C) changes only the constant.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;1</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Treating the dual as the complement, so that every literal is negated (option (B)). Duality is not complementation: it never touches a literal, and applying both operations is a different (also useful) transformation.</p>",
+   "solution": {
+    "concept": "Duality acts on the operators and on the constants only: + becomes &middot;, &middot; becomes +, 0 becomes 1, 1 becomes 0, and every literal — complemented or not — is carried across unchanged.",
+    "steps": [
+     "Split the expression into its operator skeleton: <code class=\"mm\">(x &middot; y&prime;) + (x&prime; &middot; z) + 0</code>.",
+     "Interchange the two operators: <code class=\"mm\">(x + y&prime;) &middot; (x&prime; + z) &middot; ?</code>.",
+     "Interchange the constant: the trailing 0 becomes 1, giving <code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;1</code>.",
+     "The literals <code class=\"mm\">x, y&prime;, x&prime;, z</code> are untouched, so option (B), which complements them, is wrong; option (D) keeps the constant 0; option (C) changes only the constant."
+    ],
+    "final": "<code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)&middot;1</code>, option (A).",
+    "misconception": "Treating the dual as the complement, so that every literal is negated (option (B)). Duality is not complementation: it never touches a literal, and applying both operations is a different (also useful) transformation."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q05",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which of the following are valid Boolean identities? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following are valid Boolean identities? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">x + x&prime;&middot;y = x + y</code>",
+    "<code class=\"mm\">x&middot;(x&prime; + y) = x&middot;y</code>",
+    "<code class=\"mm\">x + x&middot;y&prime; = x</code>",
+    "<code class=\"mm\">x&prime;&middot;y&prime; + x&middot;y = x &oplus; y</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every identity is proved either by expanding with distributivity and absorption, or by checking the two sides agree on all rows of the truth table.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">x + x&prime;y = (x + x&prime;)(x + y) = 1&middot;(x + y) = x + y</code> — valid.</li><li>(B) <code class=\"mm\">x(x&prime; + y) = x&middot;x&prime; + x&middot;y = 0 + xy = xy</code> — valid.</li><li>(C) <code class=\"mm\">x + x&middot;y&prime; = x(1 + y&prime;) = x&middot;1 = x</code> — valid (absorption with the literal <code class=\"mm\">y&prime;</code>).</li><li>(D) <code class=\"mm\">x&prime;y&prime; + xy</code> is 1 exactly when x and y agree, which is XNOR, i.e. <code class=\"mm\">(x &oplus; y)&prime;</code>, not <code class=\"mm\">x &oplus; y</code> — invalid. Test the row x = 0, y = 0: the left side is 1 and <code class=\"mm\">x &oplus; y</code> is 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Accepting (D) because both sides look symmetric. XOR is 1 when the inputs <i>differ</i>; the expression given is 1 when they <i>agree</i>, which is its complement.</p>",
+   "solution": {
+    "concept": "Every identity is proved either by expanding with distributivity and absorption, or by checking the two sides agree on all rows of the truth table.",
+    "steps": [
+     "(A) <code class=\"mm\">x + x&prime;y = (x + x&prime;)(x + y) = 1&middot;(x + y) = x + y</code> — valid.",
+     "(B) <code class=\"mm\">x(x&prime; + y) = x&middot;x&prime; + x&middot;y = 0 + xy = xy</code> — valid.",
+     "(C) <code class=\"mm\">x + x&middot;y&prime; = x(1 + y&prime;) = x&middot;1 = x</code> — valid (absorption with the literal <code class=\"mm\">y&prime;</code>).",
+     "(D) <code class=\"mm\">x&prime;y&prime; + xy</code> is 1 exactly when x and y agree, which is XNOR, i.e. <code class=\"mm\">(x &oplus; y)&prime;</code>, not <code class=\"mm\">x &oplus; y</code> — invalid. Test the row x = 0, y = 0: the left side is 1 and <code class=\"mm\">x &oplus; y</code> is 0."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Accepting (D) because both sides look symmetric. XOR is 1 when the inputs <i>differ</i>; the expression given is 1 when they <i>agree</i>, which is its complement."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q06",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The identity x·y + x′·z + y·z = x·y + x′·z is known as:",
+   "question_html": "<p class=\"qtext\">The identity <code class=\"mm\">x&middot;y + x&prime;&middot;z + y&middot;z = x&middot;y + x&prime;&middot;z</code> is known as:</p>",
+   "options": [
+    "the consensus theorem",
+    "the absorption law",
+    "De Morgan&rsquo;s law",
+    "the idempotence law"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The consensus theorem says that the term <code class=\"mm\">y&middot;z</code> — the consensus of <code class=\"mm\">x&middot;y</code> and <code class=\"mm\">x&prime;&middot;z</code> — is redundant, because it is already implied by the other two terms.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Expand <code class=\"mm\">x&middot;y + x&prime;&middot;z + y&middot;z</code> by adding the missing variable to the consensus term: <code class=\"mm\">y&middot;z = (x + x&prime;)&middot;y&middot;z = x&middot;y&middot;z + x&prime;&middot;y&middot;z</code>.</li><li>The first part <code class=\"mm\">x&middot;y&middot;z</code> is absorbed by <code class=\"mm\">x&middot;y</code>, and the second part <code class=\"mm\">x&prime;&middot;y&middot;z</code> is absorbed by <code class=\"mm\">x&prime;&middot;z</code>.</li><li>So the extra term contributes nothing and can be deleted, which is exactly the statement of the theorem.</li><li>The theorem is useful in reverse: it lets a redundant product term be added or removed freely, which is how a term is eliminated during simplification.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: The consensus theorem, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Confusing it with absorption. Absorption removes a term that is a superset of another (<code class=\"mm\">x + xy = x</code>); the consensus theorem removes a term built from the two halves of the split variable, which no absorption rule covers.</p>",
+   "solution": {
+    "concept": "The consensus theorem says that the term <code class=\"mm\">y&middot;z</code> — the consensus of <code class=\"mm\">x&middot;y</code> and <code class=\"mm\">x&prime;&middot;z</code> — is redundant, because it is already implied by the other two terms.",
+    "steps": [
+     "Expand <code class=\"mm\">x&middot;y + x&prime;&middot;z + y&middot;z</code> by adding the missing variable to the consensus term: <code class=\"mm\">y&middot;z = (x + x&prime;)&middot;y&middot;z = x&middot;y&middot;z + x&prime;&middot;y&middot;z</code>.",
+     "The first part <code class=\"mm\">x&middot;y&middot;z</code> is absorbed by <code class=\"mm\">x&middot;y</code>, and the second part <code class=\"mm\">x&prime;&middot;y&middot;z</code> is absorbed by <code class=\"mm\">x&prime;&middot;z</code>.",
+     "So the extra term contributes nothing and can be deleted, which is exactly the statement of the theorem.",
+     "The theorem is useful in reverse: it lets a redundant product term be added or removed freely, which is how a term is eliminated during simplification."
+    ],
+    "final": "The consensus theorem, option (A).",
+    "misconception": "Confusing it with absorption. Absorption removes a term that is a superset of another (<code class=\"mm\">x + xy = x</code>); the consensus theorem removes a term built from the two halves of the split variable, which no absorption rule covers."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q07",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "boolean-identities-duality",
+   "subtopic": "boolean-identities-duality",
+   "subtopic_label": "Boolean identities & duality",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "A Boolean function f(x, y, z) is called monotone if changing any input from 0 to 1 never changes the output from 1 to 0. How many of the 256 Boolean functions of three variables are monotone?",
+   "question_html": "<p class=\"qtext\">A Boolean function <code class=\"mm\">f(x, y, z)</code> is called <b>monotone</b> if changing any input from 0 to 1 never changes the output from 1 to 0. How many of the 256 Boolean functions of three variables are monotone?</p>",
+   "options": [],
+   "answer": 20,
+   "answer_display": "20",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A monotone function is one expressible without negation; its set of 1-rows is closed upward under the partial order on assignments, so counting monotone functions is counting upward-closed families of subsets.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Identify each assignment with the set of variables that are 1: <code class=\"mm\">{}</code>, <code class=\"mm\">{x}</code>, …, <code class=\"mm\">{x, y, z}</code>. Monotonicity says that if a set is a 1-row, every superset of it must also be a 1-row.</li><li>So a monotone function is an upward-closed family of the 8 subsets of <code class=\"mm\">{x, y, z}</code>, and it is fixed completely by the antichain of its minimal 1-sets.</li><li>Count the antichains of those 8 subsets by how many sets they contain: 0 sets gives 1 (the all-zero function); 1 set gives 8; 2 incomparable sets gives 9; 3 incomparable sets gives 2 (the three singletons, and the three 2-element sets).</li><li>Total <code class=\"mm\">1 + 8 + 9 + 2 = 20</code>, which is the third Dedekind number <code class=\"mm\">M(3)</code>.</li><li>Sanity check by brute force: the monotone functions of 1 variable are 3 (<code class=\"mm\">0, x, 1</code>), of 2 variables 6, and of 3 variables 20 — the Dedekind numbers <code class=\"mm\">M(0..3) = 2, 3, 6, 20</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 20</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the count is <code class=\"mm\">2<sup>8</sup>/2 = 128</code> by a symmetry argument, or answering 8 (the number of rows). Monotone functions are a small, structured subclass: for three variables there are only 20 of the 256.</p>",
+   "solution": {
+    "concept": "A monotone function is one expressible without negation; its set of 1-rows is closed upward under the partial order on assignments, so counting monotone functions is counting upward-closed families of subsets.",
+    "steps": [
+     "Identify each assignment with the set of variables that are 1: <code class=\"mm\">{}</code>, <code class=\"mm\">{x}</code>, …, <code class=\"mm\">{x, y, z}</code>. Monotonicity says that if a set is a 1-row, every superset of it must also be a 1-row.",
+     "So a monotone function is an upward-closed family of the 8 subsets of <code class=\"mm\">{x, y, z}</code>, and it is fixed completely by the antichain of its minimal 1-sets.",
+     "Count the antichains of those 8 subsets by how many sets they contain: 0 sets gives 1 (the all-zero function); 1 set gives 8; 2 incomparable sets gives 9; 3 incomparable sets gives 2 (the three singletons, and the three 2-element sets).",
+     "Total <code class=\"mm\">1 + 8 + 9 + 2 = 20</code>, which is the third Dedekind number <code class=\"mm\">M(3)</code>.",
+     "Sanity check by brute force: the monotone functions of 1 variable are 3 (<code class=\"mm\">0, x, 1</code>), of 2 variables 6, and of 3 variables 20 — the Dedekind numbers <code class=\"mm\">M(0..3) = 2, 3, 6, 20</code>."
+    ],
+    "final": "20",
+    "misconception": "Assuming the count is <code class=\"mm\">2<sup>8</sup>/2 = 128</code> by a symmetry argument, or answering 8 (the number of rows). Monotone functions are a small, structured subclass: for three variables there are only 20 of the 256."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q08",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Expanding the product-of-sums form f = (x + y′)·z into a sum of products gives:",
+   "question_html": "<p class=\"qtext\">Expanding the product-of-sums form <code class=\"mm\">f = (x + y&prime;)&middot;z</code> into a sum of products gives:</p>",
+   "options": [
+    "<code class=\"mm\">x&middot;z + y&prime;&middot;z</code>",
+    "<code class=\"mm\">x + y&prime;&middot;z</code>",
+    "<code class=\"mm\">x&middot;y&prime;&middot;z</code>",
+    "<code class=\"mm\">x&middot;z + y&prime;</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Multiplying out a product of sums uses distributivity of &middot; over +: every term of the first factor multiplies every term of the second.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Distribute <code class=\"mm\">z</code> over the sum <code class=\"mm\">(x + y&prime;)</code>: <code class=\"mm\">(x + y&prime;)&middot;z = x&middot;z + y&prime;&middot;z</code>.</li><li>Both resulting terms are products of literals, so the expression is already a sum of products.</li><li>No term can be dropped: <code class=\"mm\">x&middot;z</code> is 1 on the rows x = 1, z = 1 and <code class=\"mm\">y&prime;&middot;z</code> is 1 on y = 0, z = 1, and neither contains the other.</li><li>Check one row: at x = 0, y = 0, z = 1 the original form is <code class=\"mm\">(0 + 1)&middot;1 = 1</code>, and <code class=\"mm\">x&middot;z + y&prime;&middot;z = 0 + 1 = 1</code> — the same.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x&middot;z + y&prime;&middot;z</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying the two factors into a single product (option (C)) — distributivity adds terms, it does not multiply the factors together. Option (D) drops the literal z from one term, which changes the function.</p>",
+   "solution": {
+    "concept": "Multiplying out a product of sums uses distributivity of &middot; over +: every term of the first factor multiplies every term of the second.",
+    "steps": [
+     "Distribute <code class=\"mm\">z</code> over the sum <code class=\"mm\">(x + y&prime;)</code>: <code class=\"mm\">(x + y&prime;)&middot;z = x&middot;z + y&prime;&middot;z</code>.",
+     "Both resulting terms are products of literals, so the expression is already a sum of products.",
+     "No term can be dropped: <code class=\"mm\">x&middot;z</code> is 1 on the rows x = 1, z = 1 and <code class=\"mm\">y&prime;&middot;z</code> is 1 on y = 0, z = 1, and neither contains the other.",
+     "Check one row: at x = 0, y = 0, z = 1 the original form is <code class=\"mm\">(0 + 1)&middot;1 = 1</code>, and <code class=\"mm\">x&middot;z + y&prime;&middot;z = 0 + 1 = 1</code> — the same."
+    ],
+    "final": "<code class=\"mm\">x&middot;z + y&prime;&middot;z</code>, option (A).",
+    "misconception": "Multiplying the two factors into a single product (option (C)) — distributivity adds terms, it does not multiply the factors together. Option (D) drops the literal z from one term, which changes the function."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q09",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which one of the following is in canonical (standard) product-of-sums form for the variables x and y?",
+   "question_html": "<p class=\"qtext\">Which one of the following is in <b>canonical</b> (standard) product-of-sums form for the variables x and y?</p>",
+   "options": [
+    "<code class=\"mm\">(x + y)&middot;(x + y&prime;)&middot;(x&prime; + y)</code>",
+    "<code class=\"mm\">(x + y)&middot;(x + z)</code>",
+    "<code class=\"mm\">x&middot;(y + z)</code>",
+    "<code class=\"mm\">(x + y&prime;)&middot;(x&prime; + z)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A product of sums is canonical when every sum is a maxterm: each factor contains every variable of the function exactly once, either complemented or not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count the variables: the function is over x and y, so every factor must mention both x and y exactly once.</li><li>Option (A): each of the three factors contains both x and y once — <code class=\"mm\">(x + y)</code>, <code class=\"mm\">(x + y&prime;)</code>, <code class=\"mm\">(x&prime; + y)</code>. It is canonical.</li><li>Option (B) mentions the variable z, which is not a variable of the function, and its first factor omits nothing but the second introduces an alien variable; option (D) has the same defect. Neither is a maxterm form over x and y.</li><li>Option (C) is a product of a single literal and a two-literal sum; it is neither canonical POS nor even a product of maxterms.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">(x + y)&middot;(x + y&prime;)&middot;(x&prime; + y)</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Accepting any product of sums as canonical. Canonical POS is a specific normal form in which every maxterm names every variable; <code class=\"mm\">(x + y)(x + z)</code> is a valid POS but is not canonical over the variables x, y (and it is not even a function of x and y alone).</p>",
+   "solution": {
+    "concept": "A product of sums is canonical when every sum is a maxterm: each factor contains every variable of the function exactly once, either complemented or not.",
+    "steps": [
+     "Count the variables: the function is over x and y, so every factor must mention both x and y exactly once.",
+     "Option (A): each of the three factors contains both x and y once — <code class=\"mm\">(x + y)</code>, <code class=\"mm\">(x + y&prime;)</code>, <code class=\"mm\">(x&prime; + y)</code>. It is canonical.",
+     "Option (B) mentions the variable z, which is not a variable of the function, and its first factor omits nothing but the second introduces an alien variable; option (D) has the same defect. Neither is a maxterm form over x and y.",
+     "Option (C) is a product of a single literal and a two-literal sum; it is neither canonical POS nor even a product of maxterms."
+    ],
+    "final": "<code class=\"mm\">(x + y)&middot;(x + y&prime;)&middot;(x&prime; + y)</code>, option (A).",
+    "misconception": "Accepting any product of sums as canonical. Canonical POS is a specific normal form in which every maxterm names every variable; <code class=\"mm\">(x + y)(x + z)</code> is a valid POS but is not canonical over the variables x, y (and it is not even a function of x and y alone)."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q10",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "For the three-variable function f(x, y, z) = Σm(1, 6), how many literals appear in its canonical sum-of-products expression?",
+   "question_html": "<p class=\"qtext\">For the three-variable function <code class=\"mm\">f(x, y, z) = &Sigma;m(1, 6)</code>, how many literals appear in its canonical sum-of-products expression?</p>",
+   "options": [],
+   "answer": 6,
+   "answer_display": "6",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The canonical SOP writes one minterm per 1-row, and a minterm of n variables is a product of exactly n literals — so the literal count is n times the number of minterms.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Row 1 is <code class=\"mm\">(0, 0, 1)</code>, giving the minterm <code class=\"mm\">m<sub>1</sub> = x&prime;&middot;y&prime;&middot;z</code> — three literals.</li><li>Row 6 is <code class=\"mm\">(1, 1, 0)</code>, giving <code class=\"mm\">m<sub>6</sub> = x&middot;y&middot;z&prime;</code> — three literals.</li><li>The canonical SOP is <code class=\"mm\">x&prime;y&prime;z + xyz&prime;</code>, which contains <code class=\"mm\">3 + 3 = 6</code> literals.</li><li>No merging is possible: the two minterms differ in all three variables, so neither can be combined with the other.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6</span></p><p class=\"row\"><b>Common misconception.</b> Counting 2 (one literal per minterm) or 3 (one row). A minterm of a three-variable function always has three literals; the count scales with the number of 1-rows, not with the number of variables in the function name.</p>",
+   "solution": {
+    "concept": "The canonical SOP writes one minterm per 1-row, and a minterm of n variables is a product of exactly n literals — so the literal count is n times the number of minterms.",
+    "steps": [
+     "Row 1 is <code class=\"mm\">(0, 0, 1)</code>, giving the minterm <code class=\"mm\">m<sub>1</sub> = x&prime;&middot;y&prime;&middot;z</code> — three literals.",
+     "Row 6 is <code class=\"mm\">(1, 1, 0)</code>, giving <code class=\"mm\">m<sub>6</sub> = x&middot;y&middot;z&prime;</code> — three literals.",
+     "The canonical SOP is <code class=\"mm\">x&prime;y&prime;z + xyz&prime;</code>, which contains <code class=\"mm\">3 + 3 = 6</code> literals.",
+     "No merging is possible: the two minterms differ in all three variables, so neither can be combined with the other."
+    ],
+    "final": "6",
+    "misconception": "Counting 2 (one literal per minterm) or 3 (one row). A minterm of a three-variable function always has three literals; the count scales with the number of 1-rows, not with the number of variables in the function name."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q11",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which product-of-sums expression is equivalent to the sum-of-products form x·y′ + x′·y?",
+   "question_html": "<p class=\"qtext\">Which product-of-sums expression is equivalent to the sum-of-products form <code class=\"mm\">x&middot;y&prime; + x&prime;&middot;y</code>?</p>",
+   "options": [
+    "<code class=\"mm\">(x + y)&middot;(x&prime; + y&prime;)</code>",
+    "<code class=\"mm\">(x + y&prime;)&middot;(x&prime; + y)</code>",
+    "<code class=\"mm\">(x + y)&middot;(x + y&prime;)</code>",
+    "<code class=\"mm\">(x&prime; + y&prime;)&middot;(x&prime; + y)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The SOP lists the 1-rows as minterms and the POS lists the 0-rows as maxterms, so converting one form to the other means switching to the complementary index set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The given SOP is 1 on rows <code class=\"mm\">(1, 0)</code> and <code class=\"mm\">(0, 1)</code>, i.e. <code class=\"mm\">m<sub>2</sub> + m<sub>1</sub></code>, and 0 on rows 0 and 3.</li><li>The POS must therefore be the product of the maxterms of rows 0 and 3: <code class=\"mm\">M<sub>0</sub>&middot;M<sub>3</sub></code>.</li><li><code class=\"mm\">M<sub>0</sub></code> is 0 at <code class=\"mm\">(0, 0)</code>, so it is <code class=\"mm\">(x + y)</code>; <code class=\"mm\">M<sub>3</sub></code> is 0 at <code class=\"mm\">(1, 1)</code>, so it is <code class=\"mm\">(x&prime; + y&prime;)</code>.</li><li>Hence <code class=\"mm\">f = (x + y)&middot;(x&prime; + y&prime;)</code>. Check row <code class=\"mm\">(1, 1)</code>: the SOP gives 0 and the POS gives <code class=\"mm\">(1)(0) = 0</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">(x + y)&middot;(x&prime; + y&prime;)</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the maxterms off the 1-rows (option (B)). That produces the complement of the function: the maxterm indices of a POS are exactly the minterm indices that are <i>absent</i> from the SOP.</p>",
+   "solution": {
+    "concept": "The SOP lists the 1-rows as minterms and the POS lists the 0-rows as maxterms, so converting one form to the other means switching to the complementary index set.",
+    "steps": [
+     "The given SOP is 1 on rows <code class=\"mm\">(1, 0)</code> and <code class=\"mm\">(0, 1)</code>, i.e. <code class=\"mm\">m<sub>2</sub> + m<sub>1</sub></code>, and 0 on rows 0 and 3.",
+     "The POS must therefore be the product of the maxterms of rows 0 and 3: <code class=\"mm\">M<sub>0</sub>&middot;M<sub>3</sub></code>.",
+     "<code class=\"mm\">M<sub>0</sub></code> is 0 at <code class=\"mm\">(0, 0)</code>, so it is <code class=\"mm\">(x + y)</code>; <code class=\"mm\">M<sub>3</sub></code> is 0 at <code class=\"mm\">(1, 1)</code>, so it is <code class=\"mm\">(x&prime; + y&prime;)</code>.",
+     "Hence <code class=\"mm\">f = (x + y)&middot;(x&prime; + y&prime;)</code>. Check row <code class=\"mm\">(1, 1)</code>: the SOP gives 0 and the POS gives <code class=\"mm\">(1)(0) = 0</code>."
+    ],
+    "final": "<code class=\"mm\">(x + y)&middot;(x&prime; + y&prime;)</code>, option (A).",
+    "misconception": "Reading the maxterms off the 1-rows (option (B)). That produces the complement of the function: the maxterm indices of a POS are exactly the minterm indices that are <i>absent</i> from the SOP."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q12",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "A two-variable function f(x, y) is 1 on exactly the rows (x, y) = (0, 1) and (1, 0), and 0 on the other two rows. Which of the following expressions represent f? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">A two-variable function <code class=\"mm\">f(x, y)</code> is 1 on exactly the rows <code class=\"mm\">(x, y) = (0, 1)</code> and <code class=\"mm\">(1, 0)</code>, and 0 on the other two rows. Which of the following expressions represent f? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">x&prime;&middot;y + x&middot;y&prime;</code>",
+    "<code class=\"mm\">(x + y)&middot;(x&prime; + y&prime;)</code>",
+    "<code class=\"mm\">x &oplus; y</code>",
+    "<code class=\"mm\">&Sigma;m(0, 3)</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> One Boolean function has many correct expressions; any two expressions that agree on every row of the truth table are equivalent, whatever form they are written in.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Tabulate f: <code class=\"mm\">f(0,0) = 0</code>, <code class=\"mm\">f(0,1) = 1</code>, <code class=\"mm\">f(1,0) = 1</code>, <code class=\"mm\">f(1,1) = 0</code>.</li><li>Option (A) is exactly the canonical SOP of those two 1-rows: <code class=\"mm\">m<sub>1</sub> + m<sub>2</sub></code> — correct.</li><li>Option (B) is the product of the maxterms of the two 0-rows, <code class=\"mm\">M<sub>0</sub>&middot;M<sub>3</sub></code>; it is 0 on rows 0 and 3 and 1 elsewhere — correct.</li><li>Option (C) <code class=\"mm\">x &oplus; y</code> is 1 exactly when the inputs differ, which is the definition of these two rows — correct.</li><li>Option (D) <code class=\"mm\">&Sigma;m(0, 3)</code> is 1 on rows 0 and 3 and 0 on rows 1 and 2 — that is the complement of f, so it is wrong.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Rejecting (B) because it is not in the same form as the definition. Form is irrelevant to equivalence: the SOP and POS of the same function are related by complementary index sets, and both describe f.</p>",
+   "solution": {
+    "concept": "One Boolean function has many correct expressions; any two expressions that agree on every row of the truth table are equivalent, whatever form they are written in.",
+    "steps": [
+     "Tabulate f: <code class=\"mm\">f(0,0) = 0</code>, <code class=\"mm\">f(0,1) = 1</code>, <code class=\"mm\">f(1,0) = 1</code>, <code class=\"mm\">f(1,1) = 0</code>.",
+     "Option (A) is exactly the canonical SOP of those two 1-rows: <code class=\"mm\">m<sub>1</sub> + m<sub>2</sub></code> — correct.",
+     "Option (B) is the product of the maxterms of the two 0-rows, <code class=\"mm\">M<sub>0</sub>&middot;M<sub>3</sub></code>; it is 0 on rows 0 and 3 and 1 elsewhere — correct.",
+     "Option (C) <code class=\"mm\">x &oplus; y</code> is 1 exactly when the inputs differ, which is the definition of these two rows — correct.",
+     "Option (D) <code class=\"mm\">&Sigma;m(0, 3)</code> is 1 on rows 0 and 3 and 0 on rows 1 and 2 — that is the complement of f, so it is wrong."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Rejecting (B) because it is not in the same form as the definition. Form is irrelevant to equivalence: the SOP and POS of the same function are related by complementary index sets, and both describe f."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q13",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "sop-pos-forms",
+   "subtopic": "sop-pos-forms",
+   "subtopic_label": "SOP & POS forms",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The function f(x, y, z) = ΠM(0, 1, 2, 4). Which one of the following is a minimal sum-of-products expression for f?",
+   "question_html": "<p class=\"qtext\">The function <code class=\"mm\">f(x, y, z) = &Pi;M(0, 1, 2, 4)</code>. Which one of the following is a minimal sum-of-products expression for f?</p>",
+   "options": [
+    "<code class=\"mm\">x&middot;y + y&middot;z + x&middot;z</code>",
+    "<code class=\"mm\">x&prime;&middot;y&prime; + y&prime;&middot;z&prime; + x&prime;&middot;z&prime;</code>",
+    "<code class=\"mm\">x + y + z</code>",
+    "<code class=\"mm\">x&middot;y&middot;z</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &Pi;M lists the rows where the function is 0, so the 1-rows are the complement of that index set; the minimal SOP is then read from the 1-rows.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The 0-rows are 0, 1, 2, 4, so the 1-rows are 3, 5, 6, 7 — the rows with at least two 1s.</li><li>Merge the pairs: <code class=\"mm\">m<sub>3</sub> + m<sub>7</sub> = y&middot;z</code>, <code class=\"mm\">m<sub>5</sub> + m<sub>7</sub> = x&middot;z</code>, <code class=\"mm\">m<sub>6</sub> + m<sub>7</sub> = x&middot;y</code>.</li><li>No pair covers two 1-rows without leaving one of <code class=\"mm\">m<sub>3</sub>, m<sub>5</sub>, m<sub>6</sub></code> uncovered, and each of those minterms admits exactly one merge, so all three terms are essential.</li><li>The minimal SOP is <code class=\"mm\">xy + yz + xz</code> — the majority function. Check the excluded rows: at <code class=\"mm\">(1, 1, 0)</code> the expression gives <code class=\"mm\">1&middot;1 = 1</code>, and row 6 is a 1-row, as required.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x&middot;y + y&middot;z + x&middot;z</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the maxterm indices as minterms (option (B)), which yields the complement — it is 1 exactly on the rows 0, 1, 2, 4 where f is 0. The index set of a &Pi;M form is the set of 0-rows.</p>",
+   "solution": {
+    "concept": "&Pi;M lists the rows where the function is 0, so the 1-rows are the complement of that index set; the minimal SOP is then read from the 1-rows.",
+    "steps": [
+     "The 0-rows are 0, 1, 2, 4, so the 1-rows are 3, 5, 6, 7 — the rows with at least two 1s.",
+     "Merge the pairs: <code class=\"mm\">m<sub>3</sub> + m<sub>7</sub> = y&middot;z</code>, <code class=\"mm\">m<sub>5</sub> + m<sub>7</sub> = x&middot;z</code>, <code class=\"mm\">m<sub>6</sub> + m<sub>7</sub> = x&middot;y</code>.",
+     "No pair covers two 1-rows without leaving one of <code class=\"mm\">m<sub>3</sub>, m<sub>5</sub>, m<sub>6</sub></code> uncovered, and each of those minterms admits exactly one merge, so all three terms are essential.",
+     "The minimal SOP is <code class=\"mm\">xy + yz + xz</code> — the majority function. Check the excluded rows: at <code class=\"mm\">(1, 1, 0)</code> the expression gives <code class=\"mm\">1&middot;1 = 1</code>, and row 6 is a 1-row, as required."
+    ],
+    "final": "<code class=\"mm\">x&middot;y + y&middot;z + x&middot;z</code>, option (A).",
+    "misconception": "Reading the maxterm indices as minterms (option (B)), which yields the complement — it is 1 exactly on the rows 0, 1, 2, 4 where f is 0. The index set of a &Pi;M form is the set of 0-rows."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q14",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which minterm of a four-variable function (variables w, x, y, z, with w the most significant bit) is 1 exactly when w = 1, x = 0, y = 0, z = 1?",
+   "question_html": "<p class=\"qtext\">Which minterm of a four-variable function (variables w, x, y, z, with w the most significant bit) is 1 exactly when w = 1, x = 0, y = 0, z = 1?</p>",
+   "options": [
+    "<code class=\"mm\">m<sub>9</sub></code>",
+    "<code class=\"mm\">m<sub>6</sub></code>",
+    "<code class=\"mm\">m<sub>12</sub></code>",
+    "<code class=\"mm\">m<sub>3</sub></code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The index of a minterm is the integer whose binary form is the assignment, with the most significant variable on the left: <code class=\"mm\">m<sub>i</sub></code> where <code class=\"mm\">i = 8w + 4x + 2y + z</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the assignment as a 4-bit word in the order w, x, y, z: <code class=\"mm\">1 0 0 1</code>.</li><li>Evaluate the weights: <code class=\"mm\">8&middot;1 + 4&middot;0 + 2&middot;0 + 1&middot;1 = 9</code>.</li><li>So the minterm is <code class=\"mm\">m<sub>9</sub> = w&middot;x&prime;&middot;y&prime;&middot;z</code>.</li><li>Check the distractors: <code class=\"mm\">m<sub>6</sub></code> is <code class=\"mm\">0 1 1 0</code>, <code class=\"mm\">m<sub>12</sub></code> is <code class=\"mm\">1 1 0 0</code>, <code class=\"mm\">m<sub>3</sub></code> is <code class=\"mm\">0 0 1 1</code> — none matches.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">m<sub>9</sub></code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the bit string as a binary number with z as the most significant bit, which gives <code class=\"mm\">m<sub>9</sub></code> only by coincidence here but scrambles every other index. Fix the bit order once — most significant variable first — and keep it.</p>",
+   "solution": {
+    "concept": "The index of a minterm is the integer whose binary form is the assignment, with the most significant variable on the left: <code class=\"mm\">m<sub>i</sub></code> where <code class=\"mm\">i = 8w + 4x + 2y + z</code>.",
+    "steps": [
+     "Write the assignment as a 4-bit word in the order w, x, y, z: <code class=\"mm\">1 0 0 1</code>.",
+     "Evaluate the weights: <code class=\"mm\">8&middot;1 + 4&middot;0 + 2&middot;0 + 1&middot;1 = 9</code>.",
+     "So the minterm is <code class=\"mm\">m<sub>9</sub> = w&middot;x&prime;&middot;y&prime;&middot;z</code>.",
+     "Check the distractors: <code class=\"mm\">m<sub>6</sub></code> is <code class=\"mm\">0 1 1 0</code>, <code class=\"mm\">m<sub>12</sub></code> is <code class=\"mm\">1 1 0 0</code>, <code class=\"mm\">m<sub>3</sub></code> is <code class=\"mm\">0 0 1 1</code> — none matches."
+    ],
+    "final": "<code class=\"mm\">m<sub>9</sub></code>, option (A).",
+    "misconception": "Reading the bit string as a binary number with z as the most significant bit, which gives <code class=\"mm\">m<sub>9</sub></code> only by coincidence here but scrambles every other index. Fix the bit order once — most significant variable first — and keep it."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q15",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "For a three-variable function, what is the value of the maxterm M3 evaluated at the assignment (x, y, z) = (0, 1, 1)?",
+   "question_html": "<p class=\"qtext\">For a three-variable function, what is the value of the maxterm <code class=\"mm\">M<sub>3</sub></code> evaluated at the assignment <code class=\"mm\">(x, y, z) = (0, 1, 1)</code>?</p>",
+   "options": [],
+   "answer": 0,
+   "answer_display": "0",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A maxterm <code class=\"mm\">M<sub>i</sub></code> is the sum that is 0 on exactly the row i and 1 on every other row; a minterm is the dual object, 1 on exactly one row.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Row 3 is <code class=\"mm\">(0, 1, 1)</code>, since <code class=\"mm\">0&middot;4 + 1&middot;2 + 1&middot;1 = 3</code>.</li><li>The maxterm <code class=\"mm\">M<sub>3</sub></code> is built by complementing each bit: <code class=\"mm\">x + y&prime; + z&prime;</code>.</li><li>Substitute <code class=\"mm\">x = 0, y = 1, z = 1</code>: <code class=\"mm\">0 + 0 + 0 = 0</code>.</li><li>This is the defining property — a maxterm vanishes on its own row and equals 1 on all other rows, so the answer must be 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0</span></p><p class=\"row\"><b>Common misconception.</b> Answering 1 by confusing the maxterm with its row&rsquo;s minterm. <code class=\"mm\">m<sub>3</sub></code> is 1 on row 3; <code class=\"mm\">M<sub>3</sub></code> is 0 there and 1 everywhere else.</p>",
+   "solution": {
+    "concept": "A maxterm <code class=\"mm\">M<sub>i</sub></code> is the sum that is 0 on exactly the row i and 1 on every other row; a minterm is the dual object, 1 on exactly one row.",
+    "steps": [
+     "Row 3 is <code class=\"mm\">(0, 1, 1)</code>, since <code class=\"mm\">0&middot;4 + 1&middot;2 + 1&middot;1 = 3</code>.",
+     "The maxterm <code class=\"mm\">M<sub>3</sub></code> is built by complementing each bit: <code class=\"mm\">x + y&prime; + z&prime;</code>.",
+     "Substitute <code class=\"mm\">x = 0, y = 1, z = 1</code>: <code class=\"mm\">0 + 0 + 0 = 0</code>.",
+     "This is the defining property — a maxterm vanishes on its own row and equals 1 on all other rows, so the answer must be 0."
+    ],
+    "final": "0",
+    "misconception": "Answering 1 by confusing the maxterm with its row&rsquo;s minterm. <code class=\"mm\">m<sub>3</sub></code> is 1 on row 3; <code class=\"mm\">M<sub>3</sub></code> is 0 there and 1 everywhere else."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q16",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Of the 16 minterms of a four-variable function, how many contain the literal x′?",
+   "question_html": "<p class=\"qtext\">Of the 16 minterms of a four-variable function, how many contain the literal <code class=\"mm\">x&prime;</code>?</p>",
+   "options": [
+    "8",
+    "4",
+    "16",
+    "12"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each literal of a minterm is fixed by one bit of its index, so a condition on one variable halves the set of minterms.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A minterm of four variables fixes all four bits, so the index runs over 0 to 15, one minterm per index.</li><li>The literal <code class=\"mm\">x&prime;</code> appears exactly in the minterms whose x-bit is 0, i.e. the indices with <code class=\"mm\">x = 0</code>.</li><li>The other three bits are free, so there are <code class=\"mm\">2<sup>3</sup> = 8</code> such indices: 0, 1, 2, 3, 8, 9, 10, 11.</li><li>Equivalently, half of the 16 minterms contain <code class=\"mm\">x&prime;</code> and half contain <code class=\"mm\">x</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4 by counting the variables rather than the free bits, or 12 by confusing “contains the literal x&prime;” with “does not contain x” — those are the same set, and it has 8 elements.</p>",
+   "solution": {
+    "concept": "Each literal of a minterm is fixed by one bit of its index, so a condition on one variable halves the set of minterms.",
+    "steps": [
+     "A minterm of four variables fixes all four bits, so the index runs over 0 to 15, one minterm per index.",
+     "The literal <code class=\"mm\">x&prime;</code> appears exactly in the minterms whose x-bit is 0, i.e. the indices with <code class=\"mm\">x = 0</code>.",
+     "The other three bits are free, so there are <code class=\"mm\">2<sup>3</sup> = 8</code> such indices: 0, 1, 2, 3, 8, 9, 10, 11.",
+     "Equivalently, half of the 16 minterms contain <code class=\"mm\">x&prime;</code> and half contain <code class=\"mm\">x</code>."
+    ],
+    "final": "8, option (A).",
+    "misconception": "Answering 4 by counting the variables rather than the free bits, or 12 by confusing “contains the literal x&prime;” with “does not contain x” — those are the same set, and it has 8 elements."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q17",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which of the following statements about the minterms and maxterms of a function of n variables are correct? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the minterms and maxterms of a function of n variables are correct? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">M<sub>i</sub>&middot;M<sub>j</sub> = 0</code> whenever <code class=\"mm\">i &ne; j</code>",
+    "<code class=\"mm\">m<sub>i</sub> + M<sub>i</sub> = 1</code> for every i",
+    "<code class=\"mm\">m<sub>0</sub>&middot;m<sub>1</sub>&middot;…&middot;m<sub>2<sup>n</sup>&minus;1</sub> = 0</code>",
+    "<code class=\"mm\">m<sub>i</sub>&middot;m<sub>j</sub> = 1</code> for some <code class=\"mm\">i &ne; j</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Exactly one minterm is 1 on any given row and exactly one maxterm is 0 there; every other minterm is 0 and every other maxterm is 1 on that row.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) On the row j, <code class=\"mm\">M<sub>j</sub> = 0</code>, so the product <code class=\"mm\">M<sub>i</sub>&middot;M<sub>j</sub></code> is 0 there; on every other row <code class=\"mm\">M<sub>i</sub> = 0</code>. The product is 0 on all rows, so it is 0 identically — correct.</li><li>(B) <code class=\"mm\">M<sub>i</sub> = m<sub>i</sub>&prime;</code>, so <code class=\"mm\">m<sub>i</sub> + M<sub>i</sub> = m<sub>i</sub> + m<sub>i</sub>&prime; = 1</code> — correct.</li><li>(C) On any row exactly one minterm is 1 and all the others are 0, so the product of all of them is 0 — correct.</li><li>(D) Two distinct minterms are 1 on different rows, so they are never 1 together; the product of any two distinct minterms is identically 0 — wrong.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Believing that two minterms can both be 1. Each minterm names one complete row, so the 1-rows of distinct minterms are disjoint — which is exactly why a canonical SOP is a sum of non-overlapping terms.</p>",
+   "solution": {
+    "concept": "Exactly one minterm is 1 on any given row and exactly one maxterm is 0 there; every other minterm is 0 and every other maxterm is 1 on that row.",
+    "steps": [
+     "(A) On the row j, <code class=\"mm\">M<sub>j</sub> = 0</code>, so the product <code class=\"mm\">M<sub>i</sub>&middot;M<sub>j</sub></code> is 0 there; on every other row <code class=\"mm\">M<sub>i</sub> = 0</code>. The product is 0 on all rows, so it is 0 identically — correct.",
+     "(B) <code class=\"mm\">M<sub>i</sub> = m<sub>i</sub>&prime;</code>, so <code class=\"mm\">m<sub>i</sub> + M<sub>i</sub> = m<sub>i</sub> + m<sub>i</sub>&prime; = 1</code> — correct.",
+     "(C) On any row exactly one minterm is 1 and all the others are 0, so the product of all of them is 0 — correct.",
+     "(D) Two distinct minterms are 1 on different rows, so they are never 1 together; the product of any two distinct minterms is identically 0 — wrong."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Believing that two minterms can both be 1. Each minterm names one complete row, so the 1-rows of distinct minterms are disjoint — which is exactly why a canonical SOP is a sum of non-overlapping terms."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q18",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "For a three-variable function, the product term x·z is 1 on exactly which pair of minterms?",
+   "question_html": "<p class=\"qtext\">For a three-variable function, the product term <code class=\"mm\">x&middot;z</code> is 1 on exactly which pair of minterms?</p>",
+   "options": [
+    "<code class=\"mm\">m<sub>5</sub></code> and <code class=\"mm\">m<sub>7</sub></code>",
+    "<code class=\"mm\">m<sub>1</sub></code> and <code class=\"mm\">m<sub>3</sub></code>",
+    "<code class=\"mm\">m<sub>2</sub></code> and <code class=\"mm\">m<sub>6</sub></code>",
+    "<code class=\"mm\">m<sub>6</sub></code> and <code class=\"mm\">m<sub>7</sub></code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A product term with k literals in an n-variable function is 1 on <code class=\"mm\">2<sup>n&minus;k</sup></code> minterms — one for each way of assigning the remaining variables.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">x&middot;z</code> fixes two of the three bits: x = 1 and z = 1. The variable y is free.</li><li>The two assignments are <code class=\"mm\">(x, y, z) = (1, 0, 1)</code> and <code class=\"mm\">(1, 1, 1)</code>.</li><li>Their indices are <code class=\"mm\">4 + 0 + 1 = 5</code> and <code class=\"mm\">4 + 2 + 1 = 7</code>.</li><li>Check the distractors: <code class=\"mm\">m<sub>1</sub>, m<sub>3</sub></code> are the rows with <code class=\"mm\">x&prime;z</code>; <code class=\"mm\">m<sub>2</sub>, m<sub>6</sub></code> are the rows with <code class=\"mm\">y&middot;z&prime;</code>; <code class=\"mm\">m<sub>6</sub>, m<sub>7</sub></code> are the rows with <code class=\"mm\">x&middot;y</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">m<sub>5</sub></code> and <code class=\"mm\">m<sub>7</sub></code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Taking the free variable to be the one with the largest weight, or misreading the index as <code class=\"mm\">4x + 2y + z</code> with the wrong bit order. Fix the order w, x, y, z (or x, y, z) from the most significant bit down and the index follows mechanically.</p>",
+   "solution": {
+    "concept": "A product term with k literals in an n-variable function is 1 on <code class=\"mm\">2<sup>n&minus;k</sup></code> minterms — one for each way of assigning the remaining variables.",
+    "steps": [
+     "<code class=\"mm\">x&middot;z</code> fixes two of the three bits: x = 1 and z = 1. The variable y is free.",
+     "The two assignments are <code class=\"mm\">(x, y, z) = (1, 0, 1)</code> and <code class=\"mm\">(1, 1, 1)</code>.",
+     "Their indices are <code class=\"mm\">4 + 0 + 1 = 5</code> and <code class=\"mm\">4 + 2 + 1 = 7</code>.",
+     "Check the distractors: <code class=\"mm\">m<sub>1</sub>, m<sub>3</sub></code> are the rows with <code class=\"mm\">x&prime;z</code>; <code class=\"mm\">m<sub>2</sub>, m<sub>6</sub></code> are the rows with <code class=\"mm\">y&middot;z&prime;</code>; <code class=\"mm\">m<sub>6</sub>, m<sub>7</sub></code> are the rows with <code class=\"mm\">x&middot;y</code>."
+    ],
+    "final": "<code class=\"mm\">m<sub>5</sub></code> and <code class=\"mm\">m<sub>7</sub></code>, option (A).",
+    "misconception": "Taking the free variable to be the one with the largest weight, or misreading the index as <code class=\"mm\">4x + 2y + z</code> with the wrong bit order. Fix the order w, x, y, z (or x, y, z) from the most significant bit down and the index follows mechanically."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q19",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "minterms-maxterms",
+   "subtopic": "minterms-maxterms",
+   "subtopic_label": "Minterms & maxterms",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The three-variable function f(x, y, z) = ΠM(0, 3, 5, 6) is equivalent to:",
+   "question_html": "<p class=\"qtext\">The three-variable function <code class=\"mm\">f(x, y, z) = &Pi;M(0, 3, 5, 6)</code> is equivalent to:</p>",
+   "options": [
+    "<code class=\"mm\">x &oplus; y &oplus; z</code>",
+    "<code class=\"mm\">(x &oplus; y &oplus; z)&prime;</code>",
+    "<code class=\"mm\">x + y + z</code>",
+    "<code class=\"mm\">x&middot;y + y&middot;z + z&middot;x</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &Pi;M lists the 0-rows, so the function is 1 on the complementary rows; identifying that set is the whole problem.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The 0-rows are 0, 3, 5, 6; the 1-rows are therefore 1, 2, 4, 7.</li><li>In binary these are 001, 010, 100 and 111 — exactly the assignments with an odd number of 1s.</li><li>A function that is 1 precisely on the odd-parity rows is the three-input XOR, <code class=\"mm\">x &oplus; y &oplus; z</code>.</li><li>Confirm by evaluating the other option: <code class=\"mm\">(x &oplus; y &oplus; z)&prime;</code> is 1 on the even-parity rows 0, 3, 5, 6, which is the complement of f, not f.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x &oplus; y &oplus; z</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the maxterm index set is the set of 1-rows (option (B)). The XOR/XNOR pair is the standard place where this slip is invisible at a glance, because the two functions are complements and both look “parity-like”.</p>",
+   "solution": {
+    "concept": "&Pi;M lists the 0-rows, so the function is 1 on the complementary rows; identifying that set is the whole problem.",
+    "steps": [
+     "The 0-rows are 0, 3, 5, 6; the 1-rows are therefore 1, 2, 4, 7.",
+     "In binary these are 001, 010, 100 and 111 — exactly the assignments with an odd number of 1s.",
+     "A function that is 1 precisely on the odd-parity rows is the three-input XOR, <code class=\"mm\">x &oplus; y &oplus; z</code>.",
+     "Confirm by evaluating the other option: <code class=\"mm\">(x &oplus; y &oplus; z)&prime;</code> is 1 on the even-parity rows 0, 3, 5, 6, which is the complement of f, not f."
+    ],
+    "final": "<code class=\"mm\">x &oplus; y &oplus; z</code>, option (A).",
+    "misconception": "Assuming the maxterm index set is the set of 1-rows (option (B)). The XOR/XNOR pair is the standard place where this slip is invisible at a glance, because the two functions are complements and both look “parity-like”."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q20",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "In a Karnaugh map, a group of four adjacent 1-cells eliminates how many variables from the product term it produces?",
+   "question_html": "<p class=\"qtext\">In a Karnaugh map, a group of four adjacent 1-cells eliminates how many variables from the product term it produces?</p>",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "4"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A group of <code class=\"mm\">2<sup>k</sup></code> cells removes k variables, because the k variables that vary inside the group take every combination of values and therefore cancel out.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A group of 4 cells is <code class=\"mm\">2<sup>2</sup></code> cells, so <code class=\"mm\">k = 2</code>.</li><li>Inside such a group two variables range over all four of their combinations while the remaining literals stay fixed.</li><li>The two varying variables therefore drop out, and the group is described by the fixed literals alone.</li><li>Check the familiar cases: a group of 2 removes 1 variable, a group of 4 removes 2, a group of 8 removes 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the number of cells with the number of variables removed (answering 4). The rule is logarithmic in the group size: <code class=\"mm\">k = log<sub>2</sub>(cells)</code>.</p>",
+   "solution": {
+    "concept": "A group of <code class=\"mm\">2<sup>k</sup></code> cells removes k variables, because the k variables that vary inside the group take every combination of values and therefore cancel out.",
+    "steps": [
+     "A group of 4 cells is <code class=\"mm\">2<sup>2</sup></code> cells, so <code class=\"mm\">k = 2</code>.",
+     "Inside such a group two variables range over all four of their combinations while the remaining literals stay fixed.",
+     "The two varying variables therefore drop out, and the group is described by the fixed literals alone.",
+     "Check the familiar cases: a group of 2 removes 1 variable, a group of 4 removes 2, a group of 8 removes 3."
+    ],
+    "final": "2, option (A).",
+    "misconception": "Confusing the number of cells with the number of variables removed (answering 4). The rule is logarithmic in the group size: <code class=\"mm\">k = log<sub>2</sub>(cells)</code>."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q21",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Two cells of a Karnaugh map can be combined into a single group of two only when their minterm indices differ in exactly:",
+   "question_html": "<p class=\"qtext\">Two cells of a Karnaugh map can be combined into a single group of two only when their minterm indices differ in exactly:</p>",
+   "options": [
+    "one variable",
+    "two variables",
+    "three variables",
+    "any number of variables"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two cells are adjacent when the assignments they represent differ in exactly one variable — that is, when their indices differ by one bit.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Combining two cells merges two product terms that are identical except in one literal.</li><li>Merging removes that one literal, which is exactly what “differ in one variable” means.</li><li>If the assignments differed in two variables the merged term would have to drop both, but a group of two cells can only drop one.</li><li>This is why a group of two produces a term one literal shorter than a minterm: <code class=\"mm\">x&prime;yz + xyz = yz</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: One variable, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Thinking that cells must be physically adjacent on the drawn map. Adjacency is a property of the <i>assignments</i>; the map is drawn in Gray code precisely so that one-variable differences appear as touching cells, including across the edges.</p>",
+   "solution": {
+    "concept": "Two cells are adjacent when the assignments they represent differ in exactly one variable — that is, when their indices differ by one bit.",
+    "steps": [
+     "Combining two cells merges two product terms that are identical except in one literal.",
+     "Merging removes that one literal, which is exactly what “differ in one variable” means.",
+     "If the assignments differed in two variables the merged term would have to drop both, but a group of two cells can only drop one.",
+     "This is why a group of two produces a term one literal shorter than a minterm: <code class=\"mm\">x&prime;yz + xyz = yz</code>."
+    ],
+    "final": "One variable, option (A).",
+    "misconception": "Thinking that cells must be physically adjacent on the drawn map. Adjacency is a property of the <i>assignments</i>; the map is drawn in Gray code precisely so that one-variable differences appear as touching cells, including across the edges."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q22",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "Which of the following statements about Karnaugh-map grouping are correct? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about Karnaugh-map grouping are correct? (Select all that apply.)</p>",
+   "options": [
+    "Groups may wrap around the edges of the map",
+    "A group of two cells removes exactly one variable",
+    "A prime implicant corresponds to a group that is not contained in any larger group",
+    "A cell may belong to at most one group"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A legal group is a rectangle of <code class=\"mm\">2<sup>k</sup></code> cells all containing 1s, and the map is a torus — the top edge touches the bottom and the left touches the right.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Wrap-around is legal because the Gray-code ordering makes the first and last columns (and rows) differ in one bit, so they are genuinely adjacent — statement (A) is correct.</li><li>A group of two merges two minterms differing in one literal, so exactly one variable disappears — statement (B) is correct.</li><li>A prime implicant is by definition a maximal group: it cannot be enlarged without absorbing a 0-cell — statement (C) is correct.</li><li>Groups overlap freely, and a cell is often shared by several groups (the cell <code class=\"mm\">m<sub>7</sub></code> in the majority function belongs to three). Statement (D) is wrong.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Treating the map as a flat grid and missing wrap-around groups, which is the single most common cause of a “minimal” SOP that is not minimal. Overlapping groups are allowed and are frequently necessary.</p>",
+   "solution": {
+    "concept": "A legal group is a rectangle of <code class=\"mm\">2<sup>k</sup></code> cells all containing 1s, and the map is a torus — the top edge touches the bottom and the left touches the right.",
+    "steps": [
+     "Wrap-around is legal because the Gray-code ordering makes the first and last columns (and rows) differ in one bit, so they are genuinely adjacent — statement (A) is correct.",
+     "A group of two merges two minterms differing in one literal, so exactly one variable disappears — statement (B) is correct.",
+     "A prime implicant is by definition a maximal group: it cannot be enlarged without absorbing a 0-cell — statement (C) is correct.",
+     "Groups overlap freely, and a cell is often shared by several groups (the cell <code class=\"mm\">m<sub>7</sub></code> in the majority function belongs to three). Statement (D) is wrong."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Treating the map as a flat grid and missing wrap-around groups, which is the single most common cause of a “minimal” SOP that is not minimal. Overlapping groups are allowed and are frequently necessary."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q23",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "The four-variable function f(w, x, y, z) is 1 on every minterm except m15. How many literals does its minimal sum-of-products expression contain?",
+   "question_html": "<p class=\"qtext\">The four-variable function <code class=\"mm\">f(w, x, y, z)</code> is 1 on every minterm except <code class=\"mm\">m<sub>15</sub></code>. How many literals does its minimal sum-of-products expression contain?</p>",
+   "options": [],
+   "answer": 4,
+   "answer_display": "4",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A function that is 0 on a single minterm is the complement of that minterm, and complementing a minterm turns each of its literals into the opposite literal in a sum.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">f&prime; = m<sub>15</sub> = w&middot;x&middot;y&middot;z</code>, since 15 is the only row where f is 0.</li><li>Complement both sides with De Morgan: <code class=\"mm\">f = w&prime; + x&prime; + y&prime; + z&prime;</code>.</li><li>Each of the four terms is a single literal, so the expression has <code class=\"mm\">4</code> literals and 4 product terms.</li><li>It is minimal: no term can be dropped (each <code class=\"mm\">m</code> with exactly one 1 among w, x, y, z is covered by only one of the four terms), and no term can be shortened since each is already a single literal.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Answering 1 by “simplifying” the whole expression to a single literal, or 15 by counting the 1-rows. The complement view is what makes this fast: a single missing minterm means a four-literal sum.</p>",
+   "solution": {
+    "concept": "A function that is 0 on a single minterm is the complement of that minterm, and complementing a minterm turns each of its literals into the opposite literal in a sum.",
+    "steps": [
+     "<code class=\"mm\">f&prime; = m<sub>15</sub> = w&middot;x&middot;y&middot;z</code>, since 15 is the only row where f is 0.",
+     "Complement both sides with De Morgan: <code class=\"mm\">f = w&prime; + x&prime; + y&prime; + z&prime;</code>.",
+     "Each of the four terms is a single literal, so the expression has <code class=\"mm\">4</code> literals and 4 product terms.",
+     "It is minimal: no term can be dropped (each <code class=\"mm\">m</code> with exactly one 1 among w, x, y, z is covered by only one of the four terms), and no term can be shortened since each is already a single literal."
+    ],
+    "final": "4",
+    "misconception": "Answering 1 by “simplifying” the whole expression to a single literal, or 15 by counting the 1-rows. The complement view is what makes this fast: a single missing minterm means a four-literal sum."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q24",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "For f(w, x, y, z) = Σm(0, 1, 2, 5, 6, 7, 8, 9, 10, 14), which of the following are essential prime implicants? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">For <code class=\"mm\">f(w, x, y, z) = &Sigma;m(0, 1, 2, 5, 6, 7, 8, 9, 10, 14)</code>, which of the following are <b>essential</b> prime implicants? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">x&prime;&middot;y&prime;</code>",
+    "<code class=\"mm\">y&middot;z&prime;</code>",
+    "<code class=\"mm\">w&prime;&middot;x&middot;z</code>",
+    "<code class=\"mm\">w&prime;&middot;x&middot;y</code>"
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "marks": 2,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A prime implicant is essential when it is the only prime implicant covering some 1-cell; only essential prime implicants are forced into every minimal cover.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The prime implicants of f are <code class=\"mm\">x&prime;y&prime;</code> (rows 0, 1, 5, 8, 9), <code class=\"mm\">x&prime;z&prime;</code> (0, 2, 8, 10), <code class=\"mm\">w&prime;y&prime;z</code> (1, 5), <code class=\"mm\">yz&prime;</code> (2, 6, 10, 14), <code class=\"mm\">w&prime;xz</code> (5, 7) and <code class=\"mm\">w&prime;xy</code> (6, 7).</li><li>Cover each 1-cell by its prime implicants. Cell <code class=\"mm\">m<sub>0</sub></code> is covered by <code class=\"mm\">x&prime;y&prime;</code> and <code class=\"mm\">x&prime;z&prime;</code>; cell <code class=\"mm\">m<sub>14</sub></code> only by <code class=\"mm\">yz&prime;</code>, so <code class=\"mm\">yz&prime;</code> is essential.</li><li>Cell <code class=\"mm\">m<sub>8</sub></code> is covered only by <code class=\"mm\">x&prime;y&prime;</code>, so <code class=\"mm\">x&prime;y&prime;</code> is essential as well.</li><li>Cells <code class=\"mm\">m<sub>5</sub></code> and <code class=\"mm\">m<sub>6</sub></code> are each covered by two prime implicants (<code class=\"mm\">w&prime;xz</code> or <code class=\"mm\">x&prime;y&prime;</code> for <code class=\"mm\">m<sub>5</sub></code>; <code class=\"mm\">w&prime;xy</code> or <code class=\"mm\">yz&prime;</code> for <code class=\"mm\">m<sub>6</sub></code>), so neither <code class=\"mm\">w&prime;xz</code> nor <code class=\"mm\">w&prime;xy</code> is essential. Both are genuine prime implicants, but a minimum cover may pick either.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x&prime;&middot;y&prime;</code> and <code class=\"mm\">y&middot;z&prime;</code>, options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Marking every prime implicant as essential. Being prime only means the group cannot be enlarged; being essential means some cell depends on that particular group. Here <code class=\"mm\">w&prime;xz</code> and <code class=\"mm\">w&prime;xy</code> are prime but redundant, because the cells they cover are also covered by essential implicants.</p>",
+   "solution": {
+    "concept": "A prime implicant is essential when it is the only prime implicant covering some 1-cell; only essential prime implicants are forced into every minimal cover.",
+    "steps": [
+     "The prime implicants of f are <code class=\"mm\">x&prime;y&prime;</code> (rows 0, 1, 5, 8, 9), <code class=\"mm\">x&prime;z&prime;</code> (0, 2, 8, 10), <code class=\"mm\">w&prime;y&prime;z</code> (1, 5), <code class=\"mm\">yz&prime;</code> (2, 6, 10, 14), <code class=\"mm\">w&prime;xz</code> (5, 7) and <code class=\"mm\">w&prime;xy</code> (6, 7).",
+     "Cover each 1-cell by its prime implicants. Cell <code class=\"mm\">m<sub>0</sub></code> is covered by <code class=\"mm\">x&prime;y&prime;</code> and <code class=\"mm\">x&prime;z&prime;</code>; cell <code class=\"mm\">m<sub>14</sub></code> only by <code class=\"mm\">yz&prime;</code>, so <code class=\"mm\">yz&prime;</code> is essential.",
+     "Cell <code class=\"mm\">m<sub>8</sub></code> is covered only by <code class=\"mm\">x&prime;y&prime;</code>, so <code class=\"mm\">x&prime;y&prime;</code> is essential as well.",
+     "Cells <code class=\"mm\">m<sub>5</sub></code> and <code class=\"mm\">m<sub>6</sub></code> are each covered by two prime implicants (<code class=\"mm\">w&prime;xz</code> or <code class=\"mm\">x&prime;y&prime;</code> for <code class=\"mm\">m<sub>5</sub></code>; <code class=\"mm\">w&prime;xy</code> or <code class=\"mm\">yz&prime;</code> for <code class=\"mm\">m<sub>6</sub></code>), so neither <code class=\"mm\">w&prime;xz</code> nor <code class=\"mm\">w&prime;xy</code> is essential. Both are genuine prime implicants, but a minimum cover may pick either."
+    ],
+    "final": "<code class=\"mm\">x&prime;&middot;y&prime;</code> and <code class=\"mm\">y&middot;z&prime;</code>, options (A) and (B).",
+    "misconception": "Marking every prime implicant as essential. Being prime only means the group cannot be enlarged; being essential means some cell depends on that particular group. Here <code class=\"mm\">w&prime;xz</code> and <code class=\"mm\">w&prime;xy</code> are prime but redundant, because the cells they cover are also covered by essential implicants."
+   },
+   "question_format": "text"
+  },
+  {
+   "id": "DM-BA2-Q25",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 11,
+   "unit_number": 11,
+   "unit_slug": "boolean-algebra",
+   "unit_name": "Boolean Algebra & Switching Logic",
+   "topic": "Boolean Algebra & Switching Logic",
+   "sub": "k-maps-simplification",
+   "subtopic": "k-maps-simplification",
+   "subtopic_label": "K-map simplification",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-01",
+   "set": "Set 2 of 2",
+   "run": 15,
+   "run_date": "2026-11-01",
+   "question": "For f(w, x, y, z) = Σm(0, 1, 2, 5, 6, 7, 8, 9, 10, 14), which one of the following is a minimal sum-of-products expression?",
+   "question_html": "<p class=\"qtext\">For <code class=\"mm\">f(w, x, y, z) = &Sigma;m(0, 1, 2, 5, 6, 7, 8, 9, 10, 14)</code>, which one of the following is a <b>minimal</b> sum-of-products expression?</p>",
+   "options": [
+    "<code class=\"mm\">x&prime;&middot;y&prime; + y&middot;z&prime; + w&prime;&middot;x&middot;z</code>",
+    "<code class=\"mm\">x&prime; + y&middot;z&prime;</code>",
+    "<code class=\"mm\">x&prime;&middot;y&prime; + y&middot;z&prime; + w&prime;&middot;x&middot;z + w&prime;&middot;x&middot;y</code>",
+    "<code class=\"mm\">x&prime;&middot;y&prime; + y&middot;z&prime; + w&prime;&middot;z</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A minimal SOP takes every essential prime implicant and then the fewest further prime implicants needed to cover the remaining 1-cells.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The essential prime implicants are <code class=\"mm\">x&prime;y&prime;</code> and <code class=\"mm\">yz&prime;</code>. Together they cover rows 0, 1, 2, 5, 6, 8, 9, 10, 14.</li><li>Only row 7 is left. It is covered by <code class=\"mm\">w&prime;xz</code> or by <code class=\"mm\">w&prime;xy</code>, so one more 2- or 3-literal term is needed; either choice gives 3 terms and 7 literals.</li><li>Option (A) is such a cover, so it is minimal. Option (C) adds both extra terms, which is valid but has 4 terms and is therefore not minimal.</li><li>Option (B) is not even the same function: <code class=\"mm\">x&prime; + yz&prime;</code> misses rows 5 and 7, where x = 1. Option (D) uses <code class=\"mm\">w&prime;z</code>, which is not an implicant at all — it would also be 1 on row 3, where f = 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">x&prime;&middot;y&prime; + y&middot;z&prime; + w&prime;&middot;x&middot;z</code>, option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Choosing the option with the most terms “to be safe” (option (C)). Extra terms never make an expression wrong, but they make it non-minimal; and a term that is not an implicant, such as <code class=\"mm\">w&prime;z</code> in option (D), makes it outright incorrect.</p>",
+   "solution": {
+    "concept": "A minimal SOP takes every essential prime implicant and then the fewest further prime implicants needed to cover the remaining 1-cells.",
+    "steps": [
+     "The essential prime implicants are <code class=\"mm\">x&prime;y&prime;</code> and <code class=\"mm\">yz&prime;</code>. Together they cover rows 0, 1, 2, 5, 6, 8, 9, 10, 14.",
+     "Only row 7 is left. It is covered by <code class=\"mm\">w&prime;xz</code> or by <code class=\"mm\">w&prime;xy</code>, so one more 2- or 3-literal term is needed; either choice gives 3 terms and 7 literals.",
+     "Option (A) is such a cover, so it is minimal. Option (C) adds both extra terms, which is valid but has 4 terms and is therefore not minimal.",
+     "Option (B) is not even the same function: <code class=\"mm\">x&prime; + yz&prime;</code> misses rows 5 and 7, where x = 1. Option (D) uses <code class=\"mm\">w&prime;z</code>, which is not an implicant at all — it would also be 1 on row 3, where f = 0."
+    ],
+    "final": "<code class=\"mm\">x&prime;&middot;y&prime; + y&middot;z&prime; + w&prime;&middot;x&middot;z</code>, option (A).",
+    "misconception": "Choosing the option with the most terms “to be safe” (option (C)). Extra terms never make an expression wrong, but they make it non-minimal; and a term that is not an implicant, such as <code class=\"mm\">w&prime;z</code> in option (D), makes it outright incorrect."
    },
    "question_format": "text"
   }
