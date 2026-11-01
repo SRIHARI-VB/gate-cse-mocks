@@ -7,36 +7,70 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html)
+- **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 1 of 2 (third pass)**, 2026-11-01 →
+  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: S-attributed vs L-attributed definitions (7) · Three-address code, quadruples & triples (6) ·
-  Syntax trees & DAGs (6) · Type checking (6)
-- Rotation: MODE A. All ten other subjects already carried a paper dated 2026-11-01, leaving Compiler Design as
-  the only subject eligible for the draw. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-10-31, run 13, unit 3, bottom-up-parsing, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions, above
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(bottom-up-parsing) = 2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**.
-  Units 1, 2, 3, 4 and 5 hold 75, 75, 75, 50 and 50 questions, so every unit of the subject is at or above the cap
-  and Section 1 step B5 applies: the modulo wraps and a **further pass over Compiler Design begins**. No override,
-  no partial set.
-- Superseded paper: the 2026-10-29 Set 2 moved to
-  `compiler-design/sdt-intermediate-code/archive/gate_cd_mock_4_2026-10-29_run2.html` with its content frozen, so
-  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 1 of 2**, 2026-11-01 →
-  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html)
+- Subtopics: activation records & the call stack (6) · basic blocks & flow graphs (6) ·
+  local & loop optimizations (6) · data-flow analysis & liveness (7)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven
+  and returned Compiler Design. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 14, unit 4, sdt-intermediate-code, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(sdt-intermediate-code) = 3 + 1) mod 5 = 4` → **Unit 5, Runtime Environments & Code Optimization**.
+  Unit 5 held **50** questions, so it is at the cap too and Section 1 step B5 applies: the further pass over
+  Compiler Design that began with Unit 4 continues. No override, no partial set.
+- Superseded paper: the 2026-10-30 Set 2 moved to
+  `compiler-design/runtime-code-optimization/archive/gate_cd_mock_5_2026-10-30_run2.html` with its content frozen, so the unit folder holds
+  exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 1 of 2
+  (third pass)**, 2026-11-01 →
+  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 151 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 86 archived |
+| Papers published (current + archived) | 152 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 15 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 87 archived |
 | Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3775 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 350 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3800 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 375 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 86 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 9 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 87 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 10 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+
+
+### 2026-11-01 — Compiler Design Unit 5, Set 1 of 2 (third pass)
+
+- New paper at `compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html`. The superseded 2026-10-30 paper moved to
+  `compiler-design/runtime-code-optimization/archive/gate_cd_mock_5_2026-10-30_run2.html` with its content frozen, so the unit folder holds exactly one
+  current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw ran
+  over all eleven and returned **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 14, unit 4, sdt-intermediate-code, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so step B3 failed and step B4 advanced exactly one unit:
+  `(3 + 1) mod 5 = 4` → **Unit 5, Runtime Environments & Code Optimization**. Unit 5 held **50** questions, so it is
+  at the cap as well and step B5 applies: the further pass over Compiler Design continues. No override was used and
+  no partial set was generated; the paper is exactly 25 questions.
+- Coverage: all four Unit 5 subtopics — activation records and the call stack (6); basic blocks and flow graphs (6);
+  local and loop optimizations (6); data-flow analysis and liveness (7). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ
+  all-or-nothing. Practice scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`CD-U5-Q51` … `CD-U5-Q75`) and collide with nothing already in the Compiler Design bank,
+  which held `CD-U5-Q01` … `CD-U5-Q50`. The subject bank now holds **375** questions and
+  the paper's Question Bank tab shows the **350** previously banked items, so the
+  active set is not repeated there.
+- Every question carries `data-subject="compiler-design"`, `data-unit="runtime-code-optimization"`,
+  `data-unit-number="5"`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source`. Sources used:
+  `STANDARD_TEXTBOOK` 18, `ORIGINAL_SYNTHESIS` 7. No `GATE_PYQ_VARIATION` item: the Compiler Design bank records no
+  verified previous-year question, so nothing on this paper is claimed as an official GATE question.
+- The five numerical answers were recomputed by script rather than by hand: frame size 8 + 12 + 20 + 16 + 4 = 60
+  padded to **64**; the largest basic block, 5 instructions; the three removable `b + c` recomputations, **3**; the
+  four definitions reaching the block at instruction 8, **4**; the liveness kill set `{a, b, c}`, **3**.
+- Shell: the paper is generated from the Compiler Design Unit 5 paper of 2026-10-30. Its `<style>` block and its
+  exam `<script>` are byte-identical to that shell, and its `:root` block is byte-identical to `design-tokens.css`.
+- The paper was checked with a text-and-structure pass on the shipped file: 25 test cards, a 25-button palette, 350
+  banked cards in the Question Bank tab, the active 25 absent from that tab, and no solution text rendered inside
+  the test view before submit.
 
 ### 2026-11-01 — Compiler Design Unit 4, Set 1 of 2 (third pass)
 
