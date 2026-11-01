@@ -7,40 +7,67 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html)
+- **Compiler Design · Unit 2 — Syntax Analysis: Top-Down Parsing, Set 2 of 2 (second pass)**, 2026-11-01 →
+  [`compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html`](compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Data types & operators (7) · Control structures (6) · Functions & parameter passing (6) ·
-  Recursion & stack execution (6)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the
-  full eleven-subject list in syllabus order with an unseeded `secrets.randbelow(11)`; it returned index 4 of
-  11 — **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 14, unit 7, hashing, Set 2 of 2}`. Unit 7 held **50** questions, equal to
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(hashing) = 6 + 1) mod 7 = 0` → **Unit 1, C Programming Foundations**. Unit 1 already held 50
-  questions and every other unit of the subject holds 50 as well, so step B5 applies: the modulo wraps and a
-  **second pass over Programming and Data Structures begins** with this paper. No override was used and no
-  partial set was generated.
-- Superseded paper: the 2026-10-26 paper moved to
-  `programming-data-structures/c-programming-core/archive/gate_ds_mock_1_2026-10-26_run2.html` with its content
-  frozen, so the unit folder holds exactly one current paper and the repository root still holds only
-  `index.html`.
-- Previous test: **Engineering Mathematics · Unit 3 — Calculus: Limits, Continuity & Differentiability,
-  Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`engineering-mathematics/calculus-limits-derivatives/gate_em_mock_3_2026-11-01.html`](engineering-mathematics/calculus-limits-derivatives/gate_em_mock_3_2026-11-01.html)
+- Subtopics: FIRST and FOLLOW sets (6) · LL(1) parsing tables (7) · Recursive-descent parsers (6) ·
+  Left recursion & factoring (6)
+- Rotation: MODE A. The draw over the eleven subjects in syllabus order used an unseeded
+  `secrets.randbelow(11)` and returned index 7 of 11 — **Compiler Design**. `runs[]` sorted by `(date, run)`
+  gave the most recent paper as `{2026-11-01, run 16, unit 1, lexical-analysis, Set 2 of 2 (second pass)}`.
+  Unit 1 held **100** questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4
+  advanced exactly one unit: `(index_of(lexical-analysis) = 0 + 1) mod 5 = 1` → **Unit 2, Syntax Analysis:
+  Top-Down Parsing**. Every unit of Compiler Design is at or above the cap (100, 75, 75, 75, 75), so step B5
+  applies: the modulo wraps and a further pass over Compiler Design continues with this paper. No override
+  was used and no partial set was generated.
+- Superseded paper: the 2026-10-30 paper moved to
+  `compiler-design/top-down-parsing/archive/gate_cd_mock_2_2026-10-30_run1.html` with its content frozen, so
+  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 1 of 2 (second
+  pass)**, 2026-11-01 →
+  [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 161 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 16 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 96 archived |
+| Papers published (current + archived) | 162 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 97 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4025 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 400 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 4050 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 96 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 11 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 97 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Compiler Design Unit 2, Set 2 of 2 (second pass)
+
+- New paper at `compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html`. The 2026-10-30 paper moved to
+  `archive/gate_cd_mock_2_2026-10-30_run1.html` with its content frozen (same questions, options, answers,
+  solutions and duration), so the unit folder holds exactly one current paper.
+- Selection: MODE A, an unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order
+  returned index 7 — Compiler Design. `runs[]` gave unit 1 (`lexical-analysis`, 100 questions, above the cap),
+  so step B4 advanced one unit to Unit 2. Every unit of the subject is at or above the cap, so step B5 applies
+  and a further pass over Compiler Design continues with this paper.
+- Composition: 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme.
+- Subtopics: FIRST and FOLLOW sets 6 · LL(1) parsing tables 7 · recursive-descent parsers 6 · left recursion &
+  factoring 6. Difficulty 10 easy / 10 medium / 5 hard.
+- Bank: 25 records appended with ids `CD-U2-Q76`–`CD-U2-Q100`; Compiler Design now holds 425 questions across
+  5 units. The portal bank feed `data/questions-compiler-design.js` was extended with the same 25 records.
+- Question Bank tab: 400 solved questions, the active 25 excluded, so no question appears twice on the page.
+- Every grammar computation was recomputed by script (FIRST/FOLLOW fixed point, LL(1) table construction, and
+  the recursive-descent call count): `FOLLOW(T) = {+, ), $}` in the expression grammar; `FIRST(AB) = {a, b, ε}`
+  for `S → A B, A → a | ε, B → b | ε`; `FOLLOW(A) = {a, b, $}` (3 symbols) for `S → aB | bA, A → a | aS | bAA,
+  B → b | bS | aBB`; `M[A, a]` is the single two-entry cell of `S → A a, A → a | ε`; `S → a A | b B, A → c, B → c`
+  is the only LL(1) candidate among four; `FOLLOW(A′) = FOLLOW(A)` after removing left recursion from
+  `A → A α | β`; `A → B a | c, B → A b | d` becomes 5 productions after the substitution step; and the
+  recursive-descent parser for `S → a S b | ε` calls `S` 4 times on `a a a b b b`.
+- Shell parity: the paper's stripped shell is byte-identical to the previous paper's; only the title, the
+  sub-line, the meta strip, the 25 question cards, the palette, the bank view, the about text and the payload
+  differ.
+- No item is tagged `GATE_PYQ_VARIATION`: `verified_pyqs` is empty for this subject, so nothing on this paper is
+  claimed as an official GATE question.
 
 ### 2026-11-01 — Programming and Data Structures Unit 1, Set 1 of 2 (second pass)
 
