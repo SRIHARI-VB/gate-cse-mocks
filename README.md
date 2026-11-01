@@ -7,38 +7,101 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 6 — Graph Algorithms: Shortest Paths, Set 2 of 2**, 2026-11-01 →
-  [`algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html`](algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html)
+- **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 2 of 2**, 2026-11-01 →
+  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Dijkstra's algorithm (7) · Bellman–Ford algorithm (6) · DAG shortest paths (6) ·
-  transitive closure & Floyd–Warshall (6)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the four
-  subjects whose current unit was still below `UNIT_QUESTION_CAP = 50` — Discrete Mathematics (Unit 11, 25),
-  Computer Architecture (Unit 6, 25), Algorithms (Unit 6, 25) and Databases (Unit 5, 25) — in syllabus order,
-  and an unseeded `secrets.randbelow(4)` draw returned index 2, giving **Algorithms**. `runs[]` gave the most
-  recent paper as `{2026-11-01, run 11, unit 6, shortest-paths, Set 1 of 2}`. Unit 6 held **25** questions,
-  below the cap, and had been current for 0 days, so step B3 held and step B4 was not reached: the unit was
-  generated again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 6 at the cap, so the next Algorithms run advances
-  `(index_of(shortest-paths) = 5 + 1) mod 7 = 6` → Unit 7, Complexity Theory & NP-Completeness, opening a
-  second pass. No override was used.
+- Subtopics: Boolean identities & duality (7) · SOP & POS forms (6) · Minterms & maxterms (6) ·
+  K-map simplification (6)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the eight
+  subjects whose current unit was still below `UNIT_QUESTION_CAP = 50` in its current pass — Discrete Mathematics
+  (Unit 11, 25), Engineering Mathematics (Unit 2, 25), Digital Logic (Unit 2, 25), Computer Architecture (Unit 6, 25),
+  Theory of Computation (Unit 4, 25), Operating Systems (Unit 6, 25), Databases (Unit 5, 25) and Computer Networks
+  (Unit 4, 25) — in syllabus order, and an unseeded `secrets.randbelow(8)` draw returned index 0, giving
+  **Discrete Mathematics**. `runs[]` gave the most recent paper as `{2026-11-01, run 14, unit 11, boolean-algebra,
+  Set 1 of 2}`. Unit 11 held **25** questions and had been current for 0 days, so step B3 held and step B4 was not
+  reached: the unit was generated again as **Set 2 of 2**. 25 + 25 = 50 closes Unit 11 at the cap, so the next
+  Discrete Mathematics run advances `(index_of(boolean-algebra) = 10 + 1) mod 16 = 11` → Unit 12, Algebraic
+  Structures. No override was used.
 - Superseded paper: the Set 1 paper of this date moved to
-  `algorithms/shortest-paths/archive/gate_algo_mock_6_2026-11-01_run1.html` with its content frozen,
+  `discrete-mathematics/boolean-algebra/archive/gate_dm_mock_11_2026-11-01_run1.html` with its content frozen,
   so the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 2 of 2**, 2026-11-01 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-01.html)
+- Previous test: **Algorithms · Unit 6 — Graph Algorithms: Shortest Paths, Set 2 of 2**, 2026-11-01 →
+  [`algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html`](algorithms/shortest-paths/gate_algo_mock_6_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 156 (24 Discrete Mathematics, 12 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 91 archived |
-| Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
+| Papers published (current + archived) | 157 (25 Discrete Mathematics, 12 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 92 archived |
+| Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3900 (600 Discrete Mathematics, 300 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3925 (625 Discrete Mathematics, 300 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 350 Programming and Data Structures, 400 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 91 (12 Discrete Mathematics, 6 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 92 (13 Discrete Mathematics, 6 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 7 Programming and Data Structures, 10 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Discrete Mathematics Unit 11, Set 2 of 2
+
+- New paper at `discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`. The unit folder held the
+  Set 1 paper of the same date, which was moved to
+  `discrete-mathematics/boolean-algebra/archive/gate_dm_mock_11_2026-11-01_run1.html` with its content frozen
+  (same questions, options, answers, solutions and duration); the folder now holds exactly one current paper and
+  the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw ran
+  over the eight whose current unit was still below `UNIT_QUESTION_CAP = 50` in the pass under way, in syllabus
+  order: discrete-mathematics (Unit 11, 25 questions), engineering-mathematics (Unit 2, 25), digital-logic
+  (Unit 2, 25), computer-architecture (Unit 6, 25), theory-of-computation (Unit 4, 25), operating-systems
+  (Unit 6, 25), databases (Unit 5, 25) and computer-networks (Unit 4, 25). An unseeded `secrets.randbelow(8)`
+  draw returned index 0 → **Discrete Mathematics**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 14, unit 11, boolean-algebra, Set 1 of 2}`. Unit 11 held **25** questions, below the cap, and
+  had been current for 0 days, below `DAYS_PER_UNIT_MAX = 7`, so step B3 held and step B4 was not reached: the
+  current unit was generated again as **Set 2 of 2**. The unit now holds exactly **50** questions, closing it at
+  `UNIT_QUESTION_CAP`, so the next Discrete Mathematics run advances
+  `(index_of(boolean-algebra) = 10 + 1) mod 16 = 11` → **Unit 12, Algebraic Structures**. No override was used and
+  no partial set was generated: the paper is exactly 25 questions.
+- **Coverage.** All four unit subtopics appear: Boolean identities & duality (7), SOP & POS forms (6),
+  minterms & maxterms (6), K-map simplification (6). Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy /
+  10 medium / 5 hard; 35 marks in 60 minutes; no negative marking, and an MSQ scores only for the exact set of
+  correct options.
+- **Answers recomputed, not asserted.** A Quine–McCluskey run over every implicant question confirms the answers:
+  `ΠM(0,1,2,4)` minimises to `xy + yz + xz` (three essential prime implicants); `ΠM(0,3,5,6)` is the parity
+  function `x ⊕ y ⊕ z` with four prime implicants and no merges; `Σm(0,1,2,5,6,7,8,9,10,14)` has the six prime
+  implicants `x'y', x'z', w'y'z, yz', w'xz, w'xy` of which only `x'y'` and `yz'` are essential, so its minimal SOP
+  is `x'y' + yz' + w'xz` (7 literals); the all-but-`m15` function minimises to `w' + x' + y' + z'` (4 literals);
+  and the 256 three-variable functions contain exactly 20 monotone ones, verified by brute force and by counting
+  the 20 antichains of the Boolean lattice on three elements. Every multiple-choice option was evaluated on the
+  full truth table: each of questions 1, 2, 4, 8, 9, 11, 13, 19 and 25 has exactly one option equal to the stated
+  function, and each MSQ answer set is exactly the set of options that hold.
+- **Provenance.** `verified_pyqs` records no Boolean-algebra question, so no item carries `GATE_PYQ_VARIATION` and
+  nothing on this paper is claimed as an official GATE question. Sources used are `STANDARD_TEXTBOOK` (13) and
+  `ORIGINAL_SYNTHESIS` (12). Every question carries `data-subject="discrete-mathematics"` alongside unit, unit
+  number, subtopic, type, difficulty and source.
+- **Verification (Section 6.8).** Shell parity: with the question payload, the bank tab, the About tab and the
+  metadata stripped, the remaining bytes are identical to the Set 1 paper this one replaces, and each of the three
+  card types (MCQ, MSQ, NAT) carries the same tag sequence as its Set 1 counterpart. Beyond that, the `<style>` block
+  and the engine `<script>` are byte-identical in all 65 current papers (checked programmatically), so the template
+  lock holds where it matters; the static markup still differs between older papers in whitespace and in whether
+  metadata is written as entities or as literal Unicode, a drift that predates this run. One copy: `find . -name '*.html'` shows `index.html` at the root plus
+  exactly one file per paper. Links: every `href` in the portal card and in the paper's archive list resolves.
+  Tokens: the `:root` block matches `design-tokens.css` and `index.html` byte for byte. Counts: 25 test cards, a
+  25-button palette and 600 banked questions rendered in the paper, matching `master_bank.json` (625 DM questions
+  minus the 25 active ones). No duplicate content: the active 25 ids and question texts do not appear in the
+  Question Bank tab. Rotation: computed from `master_bank.json`, and no unit exceeds 50 questions.
+- **Portal repair.** The data block carried 16 stale cards that launched an archived paper instead of the unit's
+  current one (e.g. a card for `heaps-priority-queues/archive/gate_ds_mock_6_2026-10-30_run1.html` alongside the
+  card for the current `gate_ds_mock_6_2026-10-31.html`). Each stale card's paper and its own archive links were
+  merged into that unit's surviving card and the stale entry was dropped, so the portal now holds **65 cards for 65
+  current papers**, all **92** archived sets are reachable as links on their unit's card, and no link dangles.
+  Seven archive lists also named their own paper as an "earlier set" (a self-link that reloaded the same page);
+  those entries were dropped.
+- **Two data repairs, recorded rather than silent.** (1) `data/questions-algorithms.js` never received the 25
+  `ALG-U6B-*` records of the 2026-11-01 Set 2 paper, so the portal archive lagged its bank by 25; the missing
+  records were appended and the archive now mirrors the banks exactly (3925 records in both, 65 units, 279
+  subtopics). (2) Four MCQ records of the archived Set 1 paper (`DM-BA-Q06`, `Q13`, `Q18`, `Q19`) carry an
+  `answer_display` that is the option text (`16`, `5`, `2`, `3`) instead of `Option (X)`; scoring is unaffected
+  because the answer indices are correct, but the Answer Key tab of that archived paper shows the bare value. The
+  archive is left frozen as the rules require; the Set 2 records use `Option (X)` throughout.
 
 ### 2026-11-01 — Algorithms Unit 6, Set 2 of 2
 
