@@ -7,38 +7,72 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 1 of 2 (second pass)**, 2026-11-01 →
-  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html)
+- **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 2 of 2 (second pass)**, 2026-11-01 →
+  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Latches vs flip-flops (7) · Setup & hold times (6) · Characteristic equations (7) · Shift registers (5)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over the full
-  eleven in syllabus order with an unseeded `secrets.randbelow(11)` and returned index 2 of 11 — **Digital Logic**.
-  `runs[]` sorted by `(date, run)` gave the most recent paper as `{2026-11-01, run 10, unit 2,
-  combinational-circuits, Set 1 of 2 (second pass)}`. Unit 2 held **75** questions, above
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(combinational-circuits) = 1 + 1) mod 4 = 2` → **Unit 3, Sequential Circuits: Flip-Flops &
-  Registers**. Unit 3 already held 50 questions from the first pass, so every unit of Digital Logic is at or
-  above the cap (75, 75, 50, 50) and step B5 applies: the modulo wraps, the second pass continues, and Unit 3
-  receives the first set of that pass. No override was used and no partial set was generated.
-- Superseded paper: the 2026-10-28 paper moved to
-  `digital-logic/sequential-flipflops/archive/gate_dl_mock_3_2026-10-28_run2.html` with its content frozen, so
+- Subtopics: Process states & PCB (5) · Threads: user vs kernel (5) · Preemptive vs non-preemptive (5) ·
+  FCFS, SJF, SRTF, RR & priority (10)
+- Rotation: MODE A. The draw over the eleven subjects in syllabus order used an unseeded `secrets.randbelow(11)`
+  and returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 18, unit 6, storage-file-systems, Set 1 of 2 (second pass)}`. Unit 6 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(storage-file-systems) = 5 + 1) mod 6 = 0` → **Unit 1, Process Management & CPU Scheduling**.
+  Every unit of the subject already holds 75 questions, so step B5 applies: the modulo wraps and the second pass
+  continues. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-29 paper moved to
+  `operating-systems/process-scheduling/archive/gate_os_mock_1_2026-10-29_run3.html` with its content frozen, so
   the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Compiler Design · Unit 2 — Syntax Analysis: Top-Down Parsing, Set 2 of 2 (second pass)**,
+- Previous test: **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 1 of 2 (second pass)**,
   2026-11-01 →
-  [`compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html`](compiler-design/top-down-parsing/gate_cd_mock_2_2026-11-01.html)
+  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 163 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 18 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 98 archived |
+| Papers published (current + archived) | 164 (25 Discrete Mathematics, 12 Algorithms, 10 Databases, 17 Compiler Design, 19 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 99 archived |
 | Test cards on the portal | 65 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4075 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 450 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 4100 (625 Discrete Mathematics, 300 Algorithms, 250 Databases, 425 Compiler Design, 475 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 425 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 98 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 12 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 99 (13 Discrete Mathematics, 6 Algorithms, 5 Databases, 12 Compiler Design, 13 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 11 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Operating Systems Unit 1, Set 2 of 2 (second pass)
+
+- New paper at `operating-systems/process-scheduling/gate_os_mock_1_2026-11-01.html`. The 2026-10-29 paper moved to
+  `archive/gate_os_mock_1_2026-10-29_run3.html` with its content frozen (same questions, options, answers, solutions
+  and duration), so the unit folder holds exactly one current paper.
+- Selection: MODE A, an unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
+  index 8 — Operating Systems. `runs[]` gave unit 6 (`storage-file-systems`, 75 questions, above the cap), so step B4
+  advanced one unit: `(5 + 1) mod 6 = 0` → Unit 1. Every unit of the subject is at 75, above the cap, so step B5
+  applies and the second pass continues with this paper.
+- Composition: 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme.
+- Subtopics: process states & PCB 5 · threads: user vs kernel 5 · preemptive vs non-preemptive 5 ·
+  FCFS, SJF, SRTF, RR & priority 10. Difficulty 10 easy / 10 medium / 5 hard.
+- Bank: 25 records appended with ids `OS-U1-Q76`–`OS-U1-Q100`; Operating Systems now holds 475 questions across
+  6 units. The portal bank feed `data/questions-operating-systems.js` was extended with the same 25 records.
+- Question Bank tab: 450 solved questions, the active 25 excluded, so no question appears twice on the page.
+- No `GATE_PYQ_VARIATION` tag. The only verified Operating Systems PYQ, `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1,
+  Q25, NAT, official answer 12), was already used as the basis of `OS-U1-Q21`; it is not re-used here, so nothing on
+  this paper is claimed as an official GATE question.
+- Overlap control: the 25 stems were checked against the 75 already banked for this unit. Three statement-selection
+  stems that began like banked ones (`OS-U1-Q06`, `OS-U1-Q36`) were rewritten to name their own ground, so no stem
+  repeats.
+- Every numeric answer was recomputed by script with a step-by-step scheduler simulator: round-robin finish time
+  16 ms; non-preemptive priority average waiting time 4.75 ms; SRTF average waiting time 6.5 ms and 2.75 ms on the two
+  tables used here; round-robin average waiting time 4.67 ms; Amdahl speedup `1/(0.2 + 0.8/4) = 2.5`; and four
+  entries into Ready in the state trace.
+- Verification on the shipped file (a Python structural check over the DOM plus a byte-level shell diff): 25 test
+  cards, a 25-button palette, no answer text, option mark or solution anywhere in the page body before submit, the
+  answer-key tab disabled, all seven `data-*` attributes on all 25 test cards and on all 450 bank cards, the `:root`
+  block byte-identical to `design-tokens.css`, no CDN and no `<link>`, and the shell identical to the previous paper
+  once the payload and the content regions are masked.
+- Portal: the Unit 1 card was replaced in place (65 cards before and after), so the archive now lists Set 1 of the
+  second pass (2026-10-29) and both first-pass sets (2026-10-26) as earlier sets. The static counters were
+  recomputed to 4100 records.
 
 ### 2026-11-01 — Digital Logic Unit 3, Set 1 of 2 (second pass)
 
