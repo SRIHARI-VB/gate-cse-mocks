@@ -7,37 +7,108 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 1 of 2 (third pass)**, 2026-11-01 →
-  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html)
+- **Compiler Design · Unit 1 — Lexical Analysis, Set 2 of 2 (second pass)**, 2026-11-01 →
+  [`compiler-design/lexical-analysis/gate_cd_mock_1_2026-11-01.html`](compiler-design/lexical-analysis/gate_cd_mock_1_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: activation records & the call stack (6) · basic blocks & flow graphs (6) ·
-  local & loop optimizations (6) · data-flow analysis & liveness (7)
-- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven
-  and returned Compiler Design. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 14, unit 4, sdt-intermediate-code, Set 1 of 2 (third pass)}`. Unit 4 held **75** questions,
-  above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
-  `(index_of(sdt-intermediate-code) = 3 + 1) mod 5 = 4` → **Unit 5, Runtime Environments & Code Optimization**.
-  Unit 5 held **50** questions, so it is at the cap too and Section 1 step B5 applies: the further pass over
-  Compiler Design that began with Unit 4 continues. No override, no partial set.
-- Superseded paper: the 2026-10-30 Set 2 moved to
-  `compiler-design/runtime-code-optimization/archive/gate_cd_mock_5_2026-10-30_run2.html` with its content frozen, so the unit folder holds
-  exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 1 of 2
+- Subtopics: tokens, lexemes & patterns (7) · regular expressions to lexers (7) ·
+  Lex input structure (7) · input buffering & lookahead (4)
+- Rotation: MODE A. All eleven subjects already carried a paper dated 2026-11-01, so the draw ran over all
+  eleven and returned Compiler Design. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 15, unit 5, runtime-code-optimization, Set 1 of 2 (third pass)}`. Unit 5 held **75**
+  questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one
+  unit: `(index_of(runtime-code-optimization) = 4 + 1) mod 5 = 0` → **Unit 1, Lexical Analysis**. Unit 1 held
+  **75** questions, so every unit of the subject is at or above the cap (75, 75, 75, 75, 75) and Section 1
+  step B5 applies: the modulo wraps and a further pass over Compiler Design begins with this paper. No
+  override, no partial set.
+- Superseded paper: the 2026-10-30 Set 1 moved to
+  `compiler-design/lexical-analysis/archive/gate_cd_mock_1_2026-10-30_run3.html` with its content frozen, so
+  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 1 of 2
   (third pass)**, 2026-11-01 →
-  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html)
+  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 152 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 15 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 87 archived |
+| Papers published (current + archived) | 153 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 16 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 88 archived |
 | Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3800 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 375 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3825 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 400 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 87 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 10 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 88 (12 Discrete Mathematics, 5 Algorithms, 4 Databases, 11 Compiler Design, 12 Operating Systems, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 12 Theory of Computation, 6 Digital Logic, 4 Computer Architecture) |
 
+
+### 2026-11-01 — Compiler Design Unit 1, Set 2 of 2 (second pass)
+
+- New paper at `compiler-design/lexical-analysis/gate_cd_mock_1_2026-11-01.html`. The superseded 2026-10-30
+  paper moved to `compiler-design/lexical-analysis/archive/gate_cd_mock_1_2026-10-30_run3.html` with its
+  content frozen, so the unit folder holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-01, so the draw
+  ran over all eleven and returned **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 15, unit 5, runtime-code-optimization, Set 1 of 2 (third pass)}`. Unit 5 held
+  **75** questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed and step B4 advanced exactly one unit:
+  `(4 + 1) mod 5 = 0` → **Unit 1, Lexical Analysis**. Unit 1 held **75** questions, so every unit of the
+  subject is at or above the cap and Section 1 step B5 applies: the modulo wraps and a further pass over
+  Compiler Design begins here. No override was used and no partial set was generated; the paper is exactly
+  25 questions.
+- Coverage: all four Unit 1 subtopics — tokens, lexemes and patterns (7); regular expressions to lexers (7);
+  Lex input structure (7); input buffering and lookahead (4). Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty
+  10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ
+  all-or-nothing. Practice scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`CD-U1-Q76` … `CD-U1-Q100`) and collide with nothing already in the Compiler Design
+  bank, which held `CD-U1-Q01` … `CD-U1-Q75`. The subject bank now holds **400** questions and the paper's
+  Question Bank tab shows the **375** previously banked items, so the active set is not repeated there.
+- Every question carries `data-subject="compiler-design"`, `data-unit="lexical-analysis"`,
+  `data-unit-number="1"`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source`. Sources used:
+  `STANDARD_TEXTBOOK` 20, `ORIGINAL_SYNTHESIS` 5. No `GATE_PYQ_VARIATION` item: the Compiler Design bank
+  records no verified previous-year question, so nothing on this paper is claimed as an official GATE
+  question.
+- What the set asks, and why it is not Set 1 again. Set 1 asked what a token is and how a DFA recognises one;
+  this set asks what the scanner does at its three boundaries. Tokens: the end-of-file token as the parser's
+  endmarker; the attribute of an identifier as a symbol-table index; local recovery by deleting a character
+  that begins no lexeme; maximal munch over `...`, `..` and `.` giving ELLIPSIS then DOT for `....`; the
+  token count of `x++ + ++y;` (**6**); and the classic `a = b/*c;`, where `/*` is longer than `/` and so
+  silently opens a comment. Regular expressions: a negated character class; why declaredness is not a
+  regular property; regular definitions as non-recursive abbreviations, with `{name}` literal inside a
+  character class; the Thompson NFA of `(a|b)*abb` (**14** states); `(a*b*)*` against `(a|b)*`; "every `a`
+  immediately followed by a `b`" as `(b|ab)*`; and three patterns combined under one start state (**19**
+  states). Lex input structure: an empty action as a discard; the third section as verbatim C code; the `^`
+  anchor; longest match against rule order, trailing context and `REJECT`; `yylineno` after 40 newlines with
+  no trailing newline (**41**); the default rule and `%option nodefault`; and inclusive `%s` against
+  exclusive `%x`. Input buffering: `lexemeBegin` and `forward`; the one character of lookahead that ending a
+  token costs (**1**); the refill a sentinel triggers in mid-lexeme; and `yywrap()` with
+  `yy_switch_to_buffer()` and `yy_scan_string()`.
+- Every numerical answer was recomputed by script rather than by hand: the six tokens of `x++ + ++y;` were
+  re-scanned with maximal munch; the 14 states of `(a|b)*abb` came from an implementation of Thompson's
+  construction (2 per symbol, 2 per alternation, 2 per star, nothing per concatenation); 4 + 6 + 8 + 1 = 19;
+  1 + 40 = 41 for `yylineno`; and the one character read past the ID token in `abc123` follows from the DFA
+  having no digit transition out of its accepting state. The two regular-expression identities were checked
+  by brute force over all strings of length ≤ 7 on `{a, b}`: `(a*b*)*` matches exactly `(a|b)*` (0
+  disagreements), while `a*b*`, `(ab|a)*` and `(a|b)*b` each disagree; and `(b|ab)*` matches exactly the
+  strings in which every `a` is followed by a `b` (0 disagreements), while `b*(ab)*`, `(ba)*b*` and
+  `(a|b)*b` each disagree.
+- The correct option is spread 3 A / 5 B / 4 C / 3 D across the 15 MCQ; the five MSQ answer sets are
+  (A, B, C, E), (A, C, D), (A, B, C, D), (A, C, D, E) and (A, B, C, E); the five NAT answers are 6, 14, 19,
+  41 and 1.
+- Shell: the paper is generated from the Compiler Design Unit 5 paper of 2026-11-01. Its `<style>` block, its
+  exam `<script>`, its palette aside, its answer-key view and its footer are byte-identical to that shell,
+  and its `:root` block is byte-identical to `design-tokens.css` and to `index.html`. The literal-hex-outside-
+  `:root` count is unchanged at 136.
+- A jsdom run of the shipped file confirms 25 test cards, a 25-button palette, exactly one card visible on
+  load, no solution or option mark rendered inside the test before submit, the locked answer-key tab, the
+  timer at 60:00, all seven data attributes on all 25 test cards and all 375 bank cards, the mark-for-review,
+  unmark, clear-response and palette-navigation states, **35 / 35** on a perfect attempt, **0 / 35** with 24
+  unattempted on a single wrong pick, the key tab unlocking with 25 entries and 34 correct-option marks, the
+  `ok`/`skip` palette classes after submit, and the active 25 absent from the Question Bank tab.
+- `index.html`: the Compiler Design Unit 1 card was replaced in the data block (new date, path, set label and
+  archive list) and moved to the head of `tests`; its archive list now points at `..._2026-10-30_run3.html`
+  plus the two first-pass files. The static counter line became "3725 solved questions banked". No unit was
+  added to the portal's `units` table, since Compiler Design Units 1–5 were already registered.
+- `data/questions-compiler-design.js`: the 25 new records were appended, so the portal archive view now holds
+  400 Compiler Design questions.
 
 ### 2026-11-01 — Compiler Design Unit 5, Set 1 of 2 (third pass)
 
