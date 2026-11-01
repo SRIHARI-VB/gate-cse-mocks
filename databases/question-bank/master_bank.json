@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 250,
+  "total_questions": 275,
   "units_with_questions": [
    1,
    2,
@@ -560,6 +560,66 @@
     "static-and-dynamic-hashing"
    ],
    "selection": "MODE A (random subject, bank-driven unit rotation). All eleven GATE CSE subjects already carried a paper dated 2026-11-01, so the draw ran over all eleven in syllabus order with an unseeded secrets.randbelow(11) and returned index 9 of 11 - Databases. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 8, unit 5, indexing-storage, Set 1 of 2}. Unit 5 held 25 questions, below UNIT_QUESTION_CAP = 50, and had been current for 0 days, below DAYS_PER_UNIT_MAX = 7, so step B3 held and step B4 was not reached: the current unit ran again as Set 2 of 2. Unit 5 now holds exactly 50 questions and closes at the cap; the next Databases run advances (index_of(indexing-storage) = 4 + 1) mod 5 = 0 -> Unit 1, ER Models & Relational Algebra, opening a second pass. No override was used and no partial set was generated: the paper is exactly 25 questions."
+  },
+  {
+   "run": 17,
+   "date": "2026-11-02",
+   "subject": "databases",
+   "subject_name": "Databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "set": "Set 1 of 2 (second pass)",
+   "file": "databases/er-relational-algebra/gate_db_mock_1_2026-11-02.html",
+   "archived_previous": "databases/er-relational-algebra/archive/gate_db_mock_1_2026-10-26_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "question_ids": [
+    "DB-U1B-Q01",
+    "DB-U1B-Q02",
+    "DB-U1B-Q03",
+    "DB-U1B-Q04",
+    "DB-U1B-Q05",
+    "DB-U1B-Q06",
+    "DB-U1B-Q07",
+    "DB-U1B-Q08",
+    "DB-U1B-Q09",
+    "DB-U1B-Q10",
+    "DB-U1B-Q11",
+    "DB-U1B-Q12",
+    "DB-U1B-Q13",
+    "DB-U1B-Q14",
+    "DB-U1B-Q15",
+    "DB-U1B-Q16",
+    "DB-U1B-Q17",
+    "DB-U1B-Q18",
+    "DB-U1B-Q19",
+    "DB-U1B-Q20",
+    "DB-U1B-Q21",
+    "DB-U1B-Q22",
+    "DB-U1B-Q23",
+    "DB-U1B-Q24",
+    "DB-U1B-Q25"
+   ],
+   "subtopics": [
+    "er-diagrams-cardinality-weak-entities",
+    "relational-model-constraints",
+    "relational-algebra-select-project-join-division",
+    "tuple-and-domain-relational-calculus"
+   ],
+   "selection": "MODE A. Seeded subject draw (seed 20261102) over the eleven subjects in syllabus order returned index 9, Databases. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 16, unit 5, indexing-storage, Set 2 of 2}. Unit 5 held 50 questions, exactly UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced one unit: (4 + 1) mod 5 = 0 -> Unit 1, ER Models & Relational Algebra. All five Databases units were at the cap, so step B5 applies: the modulo wrapped and a second pass through the subject begins. No override.",
+   "note": "First paper of the second pass over Databases. Unit 1 already held 50 questions from 2026-10-26, so the previously current paper was archived as run2 and the folder holds exactly one current paper. 25 new questions, every one of the four subtopics represented. No question on this paper is claimed as an official GATE question; no ER, relational-model, relational-algebra or relational-calculus PYQ was verified for this run."
   }
  ],
  "verified_pyqs": [
@@ -10728,6 +10788,950 @@
     "trap": "Splitting the bucket without doubling the directory when local depth already equals global depth. That is exactly the condition that triggers the doubling."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A bucket can be split without touching the directory only if its local depth is below the global depth. When the two are equal there is no spare directory entry, so the directory must double first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The overflowing bucket has local depth 2, equal to the global depth 2.</li><li>A split would need two directory entries per hash prefix, but only one currently points at this bucket.</li><li>So the directory doubles: global depth 2 → <b>3</b>, entries 4 → <b>8</b>.</li><li>Each old bucket is now referenced by two entries, and the overflowing bucket is split into two, each with local depth 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — global depth 3 and 8 directory entries</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) A split is impossible while local depth equals global depth; the directory must grow first.</li><li>(B) A directory is a power-of-two array indexed by hash bits; it cannot grow by one entry.</li><li>(D) Global depth 3 forces 2³ = 8 entries, not 4.</li></ul><p class=\"row\"><b>Common misconception.</b> Splitting the bucket without doubling the directory when local depth already equals global depth. That is exactly the condition that triggers the doubling.</p><p class=\"row\"><b>Takeaway.</b> Directory doubles ⇔ the overflowing bucket's local depth equals the global depth; otherwise only that bucket's local depth increases.</p>"
+  },
+  {
+   "id": "DB-U1B-Q01",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "In an entity&ndash;relationship diagram, the identifying relationship of a weak entity set is drawn as",
+   "options": [
+    "a double rectangle.",
+    "a double diamond.",
+    "a single diamond drawn with a dashed outline.",
+    "a double ellipse."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Chen notation gives a weak entity set and its identifying relationship two different symbols. The <b>weak entity set</b> is a double rectangle; the <b>identifying relationship</b> through which it is identified is a double diamond. The partial key is underlined with a dashed line and the weak set's total participation in that relationship is shown by a double line.",
+    "steps": [
+     "A weak entity set has no key attribute of its own. It is identified only by the pair (owner entity key, partial key).",
+     "The relationship that supplies the owner key is therefore not an ordinary relationship: it carries the identification, so it is drawn with the double outline.",
+     "The double outline on a <i>diamond</i> is the identifying relationship; on a <i>rectangle</i> it is the weak entity set itself."
+    ],
+    "final": "Option (B) &mdash; a double diamond",
+    "trap": "Confusing the symbol for the weak entity set with the symbol for its identifying relationship. Both are double outlined, but the shape decides the meaning."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Chen notation gives a weak entity set and its identifying relationship two different symbols. The <b>weak entity set</b> is a double rectangle; the <b>identifying relationship</b> through which it is identified is a double diamond. The partial key is underlined with a dashed line and the weak set's total participation in that relationship is shown by a double line.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A weak entity set has no key attribute of its own. It is identified only by the pair (owner entity key, partial key).</li><li>The relationship that supplies the owner key is therefore not an ordinary relationship: it carries the identification, so it is drawn with the double outline.</li><li>The double outline on a <i>diamond</i> is the identifying relationship; on a <i>rectangle</i> it is the weak entity set itself.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; a double diamond</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) A double rectangle is the weak entity set, not the relationship that identifies it.</li><li>(C) Chen notation has no dashed diamond; dashes are used under a partial key, not around a diamond.</li><li>(D) A double ellipse is a multivalued attribute.</li></ul><p class=\"row\"><b>Common misconception.</b> Confusing the symbol for the weak entity set with the symbol for its identifying relationship. Both are double outlined, but the shape decides the meaning.</p><p class=\"row\"><b>Takeaway.</b> Shape says what the object is (rectangle = set, diamond = relationship, ellipse = attribute); the double outline says it is the weak or identifying one.</p>"
+  },
+  {
+   "id": "DB-U1B-Q02",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "In an entity&ndash;relationship diagram, a <i>double line</i> joining an entity set to a relationship set expresses",
+   "options": [
+    "partial participation of that entity set in the relationship.",
+    "a many-to-many cardinality ratio.",
+    "total participation of that entity set in the relationship.",
+    "that the entity set is weak."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Participation is drawn on the edge between an entity set and a relationship set. A single line is partial participation (some entities take part); a double line is <b>total participation</b> (every entity of the set takes part in at least one relationship instance).",
+    "steps": [
+     "Cardinality (1:1, 1:N, M:N) is written on the edge as a number or letter, not as a line style.",
+     "Line multiplicity on the edge encodes participation: single = partial, double = total.",
+     "So a double line between an entity set and a relationship set means every entity of that set must participate."
+    ],
+    "final": "Option (C) &mdash; total participation",
+    "trap": "Reading the double line as a cardinality. Cardinality counts how many; participation says whether every entity must appear."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Participation is drawn on the edge between an entity set and a relationship set. A single line is partial participation (some entities take part); a double line is <b>total participation</b> (every entity of the set takes part in at least one relationship instance).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Cardinality (1:1, 1:N, M:N) is written on the edge as a number or letter, not as a line style.</li><li>Line multiplicity on the edge encodes participation: single = partial, double = total.</li><li>So a double line between an entity set and a relationship set means every entity of that set must participate.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; total participation</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Partial participation is the single line.</li><li>(B) Cardinality is a separate annotation (1, N, M) placed on the edge.</li><li>(D) A weak entity set is marked by a double rectangle around the set, not by the edge.</li></ul><p class=\"row\"><b>Common misconception.</b> Reading the double line as a cardinality. Cardinality counts how many; participation says whether every entity must appear.</p><p class=\"row\"><b>Takeaway.</b> Double edge = every entity participates. Numbers on the edge = how many participate.</p>"
+  },
+  {
+   "id": "DB-U1B-Q03",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "An ER schema has entity sets <code class=\"mm\">Department</code> and <code class=\"mm\">Employee</code> in a 1:N relationship: one department has many employees, and every employee belongs to exactly one department. Translating the schema to relations, what is the minimum number of relation schemas?",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "4"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A 1:N relationship needs no relation of its own. Each entity on the N side is associated with at most one entity on the 1 side, so the key of the 1 side can be carried into the N side as a foreign key. The relationship is absorbed; only the two entity sets become relations.",
+    "steps": [
+     "Every entity set becomes a relation, so <code class=\"mm\">Department</code> and <code class=\"mm\">Employee</code> already give two schemas.",
+     "For 1:N, put the key of the 1 side (<code class=\"mm\">dept_id</code>) into the relation of the N side as a foreign key: <code class=\"mm\">Employee(emp_id, name, dept_id)</code>.",
+     "That foreign key holds the whole relationship, so no third schema is needed. Total = 2.",
+     "Because the participation of <code class=\"mm\">Employee</code> is total, the foreign key is NOT NULL &mdash; still one column, not one relation."
+    ],
+    "final": "Option (A) &mdash; 2 relation schemas",
+    "trap": "Adding a relation for the relationship out of habit. A 1:N relationship is always absorbed into the N side; only M:N relationships and multivalued attributes need a relation of their own."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A 1:N relationship needs no relation of its own. Each entity on the N side is associated with at most one entity on the 1 side, so the key of the 1 side can be carried into the N side as a foreign key. The relationship is absorbed; only the two entity sets become relations.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every entity set becomes a relation, so <code class=\"mm\">Department</code> and <code class=\"mm\">Employee</code> already give two schemas.</li><li>For 1:N, put the key of the 1 side (<code class=\"mm\">dept_id</code>) into the relation of the N side as a foreign key: <code class=\"mm\">Employee(emp_id, name, dept_id)</code>.</li><li>That foreign key holds the whole relationship, so no third schema is needed. Total = 2.</li><li>Because the participation of <code class=\"mm\">Employee</code> is total, the foreign key is NOT NULL &mdash; still one column, not one relation.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; 2 relation schemas</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) A single relation would force employee data to repeat once per department row, which is the redundancy normalisation removes.</li><li>(C) A third relation is needed only for an M:N relationship, where one row cannot hold both keys without duplication.</li><li>(D) Four schemas would arise from mapping every relationship and every multivalued attribute separately, which this schema does not contain.</li></ul><p class=\"row\"><b>Common misconception.</b> Adding a relation for the relationship out of habit. A 1:N relationship is always absorbed into the N side; only M:N relationships and multivalued attributes need a relation of their own.</p><p class=\"row\"><b>Takeaway.</b> 1:N costs nothing extra. 1:1 can be absorbed into either side. M:N costs one relation.</p>"
+  },
+  {
+   "id": "DB-U1B-Q04",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "An ER schema contains 3 strong entity sets, 1 weak entity set whose identifying relationship links it to one of the strong sets, and 1 many-to-many relationship set between two of the strong sets. The weak entity set has one multivalued attribute. What is the minimum number of relation schemas in the relational translation?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 5,
+   "answer_display": "5",
+   "solution": {
+    "concept": "Count by rule, not by entity: every strong entity set is one relation; a weak entity set is one relation that also carries its owner's key; an M:N relationship set is one relation; a multivalued attribute is one relation; an identifying relationship and any 1:N or 1:1 relationship add nothing.",
+    "steps": [
+     "3 strong entity sets &rarr; 3 relations.",
+     "1 weak entity set &rarr; 1 relation, keyed by (owner key, partial key). Its identifying relationship is absorbed into that relation and adds 0.",
+     "1 M:N relationship set &rarr; 1 relation holding the two participating keys plus any descriptive attributes.",
+     "1 multivalued attribute &rarr; 1 relation keyed by (owner key, attribute value).",
+     "Total = 3 + 1 + 1 + 1 = 5."
+    ],
+    "final": "5 relation schemas",
+    "trap": "Two traps: counting the identifying relationship as a relation of its own (it is absorbed by the weak entity's relation), and forgetting that a multivalued attribute needs its own relation because a single cell cannot hold a set of values."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Count by rule, not by entity: every strong entity set is one relation; a weak entity set is one relation that also carries its owner's key; an M:N relationship set is one relation; a multivalued attribute is one relation; an identifying relationship and any 1:N or 1:1 relationship add nothing.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>3 strong entity sets &rarr; 3 relations.</li><li>1 weak entity set &rarr; 1 relation, keyed by (owner key, partial key). Its identifying relationship is absorbed into that relation and adds 0.</li><li>1 M:N relationship set &rarr; 1 relation holding the two participating keys plus any descriptive attributes.</li><li>1 multivalued attribute &rarr; 1 relation keyed by (owner key, attribute value).</li><li>Total = 3 + 1 + 1 + 1 = 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 5 relation schemas</span></p><p class=\"row\"><b>Common misconception.</b> Two traps: counting the identifying relationship as a relation of its own (it is absorbed by the weak entity's relation), and forgetting that a multivalued attribute needs its own relation because a single cell cannot hold a set of values.</p><p class=\"row\"><b>Takeaway.</b> Relations = strong sets + weak sets + M:N relationships + multivalued attributes. Nothing else.</p>"
+  },
+  {
+   "id": "DB-U1B-Q05",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about translating an ER schema into relations are TRUE? (Select all that apply.)",
+   "options": [
+    "A composite attribute is mapped to one separate relation for each of its components.",
+    "A multivalued attribute is mapped to its own relation, keyed by the owning entity's key together with the attribute value.",
+    "A ternary relationship is equivalent to three binary relationships and may therefore be dropped.",
+    "A 1:N relationship can be represented without a separate relation, by placing the key of the 1 side into the relation of the N side."
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "solution": {
+    "concept": "Each ER construct has exactly one standard mapping. Composite attributes are flattened into one column per component, never split into relations. Multivalued attributes cannot be flattened (a cell holds one value), so they become a relation keyed by owner key plus value. A 1:N relationship is absorbed as a foreign key on the N side. A ternary relationship is <i>not</i> three binaries.",
+    "steps": [
+     "(B) is the standard multivalued-attribute rule: <code class=\"mm\">Phone(emp_id, phone_no)</code> for a multivalued <code class=\"mm\">Phone</code> of <code class=\"mm\">Employee</code>.",
+     "(D) is the standard 1:N rule: each N-side entity has at most one 1-side partner, so one foreign key column suffices.",
+     "(A) is false: components of a composite attribute become ordinary columns of the same relation.",
+     "(C) is false: a ternary relationship can carry a constraint no pair of binaries can express, so it may lose information."
+    ],
+    "final": "Options (B) and (D)",
+    "trap": "Treating composite and multivalued attributes as if they behaved the same way. Composite = flattened columns; multivalued = separate relation."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each ER construct has exactly one standard mapping. Composite attributes are flattened into one column per component, never split into relations. Multivalued attributes cannot be flattened (a cell holds one value), so they become a relation keyed by owner key plus value. A 1:N relationship is absorbed as a foreign key on the N side. A ternary relationship is <i>not</i> three binaries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) is the standard multivalued-attribute rule: <code class=\"mm\">Phone(emp_id, phone_no)</code> for a multivalued <code class=\"mm\">Phone</code> of <code class=\"mm\">Employee</code>.</li><li>(D) is the standard 1:N rule: each N-side entity has at most one 1-side partner, so one foreign key column suffices.</li><li>(A) is false: components of a composite attribute become ordinary columns of the same relation.</li><li>(C) is false: a ternary relationship can carry a constraint no pair of binaries can express, so it may lose information.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Splitting a composite attribute into relations multiplies joins for no gain; its components are simply columns.</li><li>(C) Ternary and three-binary schemas admit different sets of instances, so they are not equivalent.</li></ul><p class=\"row\"><b>Common misconception.</b> Treating composite and multivalued attributes as if they behaved the same way. Composite = flattened columns; multivalued = separate relation.</p><p class=\"row\"><b>Takeaway.</b> Flatten what fits in a cell, add a relation for what does not.</p>"
+  },
+  {
+   "id": "DB-U1B-Q06",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A ternary relationship set <code class=\"mm\">R</code> associates entity sets <code class=\"mm\">A</code>, <code class=\"mm\">B</code> and <code class=\"mm\">C</code>. Which of the following statements is TRUE?",
+   "options": [
+    "R can always be replaced by three binary relationships without losing any information.",
+    "The participation and cardinality constraints of R cannot in general be derived from the three pairwise binary relationships between A, B and C.",
+    "R never needs a relation of its own provided at least one of A, B or C participates totally.",
+    "R is legal only when all three of A, B and C are weak entity sets."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A ternary relationship is a set of triples. Three binary relationships are three sets of pairs, and a set of triples is not recoverable from its three pairwise projections: the projections lose the correlation between the three participants. That is why a ternary relationship must be modelled as a single construct.",
+    "steps": [
+     "A triple (a, b, c) in R projects to (a, b), (b, c) and (a, c) in the three binaries.",
+     "Different ternary instances can share all three projections &mdash; the classic supply example, where the three binaries admit triples that the ternary constraint forbids.",
+     "So neither the instance nor the constraints of R are determined by the pairwise relationships. (B) follows.",
+     "R becomes a relation whenever its cardinality is many-to-many in some direction; total participation alone does not remove that need."
+    ],
+    "final": "Option (B) &mdash; ternary constraints are not derivable from pairwise ones",
+    "trap": "Assuming arity is cosmetic. A ternary relationship encodes a correlation that no collection of binary relationships carries."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A ternary relationship is a set of triples. Three binary relationships are three sets of pairs, and a set of triples is not recoverable from its three pairwise projections: the projections lose the correlation between the three participants. That is why a ternary relationship must be modelled as a single construct.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A triple (a, b, c) in R projects to (a, b), (b, c) and (a, c) in the three binaries.</li><li>Different ternary instances can share all three projections &mdash; the classic supply example, where the three binaries admit triples that the ternary constraint forbids.</li><li>So neither the instance nor the constraints of R are determined by the pairwise relationships. (B) follows.</li><li>R becomes a relation whenever its cardinality is many-to-many in some direction; total participation alone does not remove that need.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; ternary constraints are not derivable from pairwise ones</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Replacing R by three binaries can create spurious triples on a join &mdash; a lossy change.</li><li>(C) Absorption is decided by cardinality, not by participation.</li><li>(D) Weakness of the participants is unrelated to the arity of the relationship.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming arity is cosmetic. A ternary relationship encodes a correlation that no collection of binary relationships carries.</p><p class=\"row\"><b>Takeaway.</b> A relationship of degree n is a set of n-tuples; its pairwise projections lose information whenever n &ge; 3.</p>"
+  },
+  {
+   "id": "DB-U1B-Q07",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "er-diagrams-cardinality-weak-entities",
+   "subtopic": "er-diagrams-cardinality-weak-entities",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "In an ER diagram, an attribute name underlined with a <i>dashed</i> line denotes",
+   "options": [
+    "a derived attribute.",
+    "a multivalued attribute.",
+    "the primary key of a strong entity set.",
+    "a partial key (discriminator) of a weak entity set."
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Underlining is about identification. A solid underline marks the primary key of a strong entity set. A dashed underline marks a <b>partial key</b>: an attribute that distinguishes weak entities belonging to the <i>same</i> owner but does not identify them globally.",
+    "steps": [
+     "A weak entity set has no key of its own, so it cannot carry a solid underline.",
+     "Within one owner entity, a discriminator such as <code class=\"mm\">dependent_name</code> separates the weak entities. That attribute is the partial key.",
+     "Chen notation distinguishes it from a full key by using a dashed underline."
+    ],
+    "final": "Option (D) &mdash; a partial key (discriminator)",
+    "trap": "Confusing the dashed ellipse (derived) with the dashed underline (partial key). The shape marks the attribute's kind; the line under it marks its identifying role."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Underlining is about identification. A solid underline marks the primary key of a strong entity set. A dashed underline marks a <b>partial key</b>: an attribute that distinguishes weak entities belonging to the <i>same</i> owner but does not identify them globally.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A weak entity set has no key of its own, so it cannot carry a solid underline.</li><li>Within one owner entity, a discriminator such as <code class=\"mm\">dependent_name</code> separates the weak entities. That attribute is the partial key.</li><li>Chen notation distinguishes it from a full key by using a dashed underline.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) &mdash; a partial key (discriminator)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) A derived attribute is drawn with a dashed <i>ellipse</i>, not a dashed underline.</li><li>(B) A multivalued attribute is drawn with a double ellipse.</li><li>(C) The primary key of a strong entity set is a solid underline.</li></ul><p class=\"row\"><b>Common misconception.</b> Confusing the dashed ellipse (derived) with the dashed underline (partial key). The shape marks the attribute's kind; the line under it marks its identifying role.</p><p class=\"row\"><b>Takeaway.</b> Solid underline = key; dashed underline = partial key; double ellipse = multivalued; dashed ellipse = derived.</p>"
+  },
+  {
+   "id": "DB-U1B-Q08",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A foreign key constraint on attribute <code class=\"mm\">R.D</code> referencing the key <code class=\"mm\">S.B</code> enforces that",
+   "options": [
+    "the values of <code class=\"mm\">R.D</code> must be a candidate key of <code class=\"mm\">R</code>.",
+    "no tuple of <code class=\"mm\">S</code> may be updated while <code class=\"mm\">R</code> exists.",
+    "every non-null value of <code class=\"mm\">R.D</code> appears as a value of <code class=\"mm\">S.B</code>.",
+    "the values of <code class=\"mm\">R.D</code> can never be null."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A foreign key is a referential integrity constraint: it restricts the <i>values</i> of the referencing attribute, not their number or nullability. Each non-null value must match some value of the referenced key. A null foreign key is allowed and means &lsquo;no reference&rsquo;.",
+    "steps": [
+     "Referential integrity says: <code class=\"mm\">∀ t ∈ R : t[D] = NULL ∨ ∃ s ∈ S : s[B] = t[D]</code>.",
+     "The referenced side must be a key (primary or unique), which is why at most one tuple of <code class=\"mm\">S</code> can match a given value.",
+     "Nulls are exempt from the check, so a foreign key column may be null unless it is separately declared NOT NULL."
+    ],
+    "final": "Option (C) &mdash; every non-null value must appear in the referenced key",
+    "trap": "Believing a foreign key must be unique or non-null. Uniqueness belongs to the referenced key; the referencing column may repeat values and may be null."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A foreign key is a referential integrity constraint: it restricts the <i>values</i> of the referencing attribute, not their number or nullability. Each non-null value must match some value of the referenced key. A null foreign key is allowed and means &lsquo;no reference&rsquo;.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Referential integrity says: <code class=\"mm\">∀ t ∈ R : t[D] = NULL ∨ ∃ s ∈ S : s[B] = t[D]</code>.</li><li>The referenced side must be a key (primary or unique), which is why at most one tuple of <code class=\"mm\">S</code> can match a given value.</li><li>Nulls are exempt from the check, so a foreign key column may be null unless it is separately declared NOT NULL.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; every non-null value must appear in the referenced key</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) A foreign key is usually <i>not</i> unique in <code class=\"mm\">R</code>; many tuples may reference the same row of <code class=\"mm\">S</code>.</li><li>(B) Updating <code class=\"mm\">S</code> is controlled by the declared action (RESTRICT, CASCADE, SET NULL), not forbidden outright.</li><li>(D) Nullability is a separate NOT NULL constraint; a foreign key alone permits nulls.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing a foreign key must be unique or non-null. Uniqueness belongs to the referenced key; the referencing column may repeat values and may be null.</p><p class=\"row\"><b>Takeaway.</b> Foreign key = values must exist on the other side, or be NULL. Nothing more.</p>"
+  },
+  {
+   "id": "DB-U1B-Q09",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A relation schema <code class=\"mm\">R(A, B, C, D)</code> has exactly one declared key, the primary key <code class=\"mm\">A</code>. How many superkeys does <code class=\"mm\">R</code> have?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 8,
+   "answer_display": "8",
+   "solution": {
+    "concept": "A superkey is any attribute set that contains a candidate key. Once <code class=\"mm\">A</code> is in the set the set determines every attribute, so the superkeys are exactly the subsets of <code class=\"mm\">{A, B, C, D}</code> that contain <code class=\"mm\">A</code>.",
+    "steps": [
+     "Fix <code class=\"mm\">A</code> in the set. The remaining attributes <code class=\"mm\">B, C, D</code> may each be present or absent, independently.",
+     "Number of such sets = <code class=\"mm\">2³</code> = 8.",
+     "They are <code class=\"mm\">A, AB, AC, AD, ABC, ABD, ACD, ABCD</code> &mdash; all superkeys.",
+     "Only <code class=\"mm\">A</code> is minimal, so <code class=\"mm\">R</code> has one candidate key but eight superkeys."
+    ],
+    "final": "8 superkeys",
+    "trap": "Reporting 1, the number of candidate keys. A superkey need not be minimal; only the candidate keys are."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A superkey is any attribute set that contains a candidate key. Once <code class=\"mm\">A</code> is in the set the set determines every attribute, so the superkeys are exactly the subsets of <code class=\"mm\">{A, B, C, D}</code> that contain <code class=\"mm\">A</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Fix <code class=\"mm\">A</code> in the set. The remaining attributes <code class=\"mm\">B, C, D</code> may each be present or absent, independently.</li><li>Number of such sets = <code class=\"mm\">2³</code> = 8.</li><li>They are <code class=\"mm\">A, AB, AC, AD, ABC, ABD, ACD, ABCD</code> &mdash; all superkeys.</li><li>Only <code class=\"mm\">A</code> is minimal, so <code class=\"mm\">R</code> has one candidate key but eight superkeys.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8 superkeys</span></p><p class=\"row\"><b>Common misconception.</b> Reporting 1, the number of candidate keys. A superkey need not be minimal; only the candidate keys are.</p><p class=\"row\"><b>Takeaway.</b> With n attributes and one key of size k, the superkey count is <code class=\"mm\">2^(n−k)</code>.</p>"
+  },
+  {
+   "id": "DB-U1B-Q10",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "In the relational model, a null value represents",
+   "options": [
+    "the number zero.",
+    "a value that is unknown or not applicable.",
+    "an empty string.",
+    "a value that violates the primary key."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Null is a marker for the <i>absence</i> of a value, not a value itself. It stands for either &lsquo;unknown&rsquo; or &lsquo;does not apply&rsquo;, which is why comparisons with null yield UNKNOWN rather than TRUE or FALSE.",
+    "steps": [
+     "Zero and the empty string are ordinary values: <code class=\"mm\">0 = 0</code> is TRUE and <code class=\"mm\">'' = ''</code> is TRUE.",
+     "Null is not equal to itself in SQL: <code class=\"mm\">NULL = NULL</code> evaluates to UNKNOWN, so a row is kept by a WHERE clause only when the predicate is TRUE.",
+     "Hence null encodes missing or inapplicable information, not a particular value."
+    ],
+    "final": "Option (B) &mdash; unknown or not applicable",
+    "trap": "Treating null as a third ordinary value and expecting <code class=\"mm\">NULL = NULL</code> to be TRUE, or expecting <code class=\"mm\">COUNT(col)</code> to include nulls."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Null is a marker for the <i>absence</i> of a value, not a value itself. It stands for either &lsquo;unknown&rsquo; or &lsquo;does not apply&rsquo;, which is why comparisons with null yield UNKNOWN rather than TRUE or FALSE.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Zero and the empty string are ordinary values: <code class=\"mm\">0 = 0</code> is TRUE and <code class=\"mm\">'' = ''</code> is TRUE.</li><li>Null is not equal to itself in SQL: <code class=\"mm\">NULL = NULL</code> evaluates to UNKNOWN, so a row is kept by a WHERE clause only when the predicate is TRUE.</li><li>Hence null encodes missing or inapplicable information, not a particular value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; unknown or not applicable</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Zero is a legitimate number and compares equal to itself.</li><li>(C) The empty string is a legitimate string value of length 0.</li><li>(D) A primary key forbids nulls; null does not itself violate anything.</li></ul><p class=\"row\"><b>Common misconception.</b> Treating null as a third ordinary value and expecting <code class=\"mm\">NULL = NULL</code> to be TRUE, or expecting <code class=\"mm\">COUNT(col)</code> to include nulls.</p><p class=\"row\"><b>Takeaway.</b> Null means no value. Three-valued logic follows from that, and every aggregate except <code class=\"mm\">COUNT(*)</code> skips nulls.</p>"
+  },
+  {
+   "id": "DB-U1B-Q11",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A relation schema <code class=\"mm\">R(A, B, C, D)</code> has exactly two candidate keys, <code class=\"mm\">AB</code> and <code class=\"mm\">CD</code>. How many superkeys does <code class=\"mm\">R</code> have?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 7,
+   "answer_display": "7",
+   "solution": {
+    "concept": "A superkey is any attribute set containing at least one candidate key. With two candidate keys the superkeys are the union of the supersets of each key, and the two families overlap in the supersets of their union.",
+    "steps": [
+     "Supersets of <code class=\"mm\">AB</code> inside <code class=\"mm\">{A,B,C,D}</code>: <code class=\"mm\">AB, ABC, ABD, ABCD</code> &mdash; 4 sets (add any subset of <code class=\"mm\">{C,D}</code>).",
+     "Supersets of <code class=\"mm\">CD</code>: <code class=\"mm\">CD, ACD, BCD, ABCD</code> &mdash; 4 sets (add any subset of <code class=\"mm\">{A,B}</code>).",
+     "Intersection = supersets of <code class=\"mm\">ABCD</code> = the single set <code class=\"mm\">ABCD</code>.",
+     "By inclusion&ndash;exclusion: 4 + 4 &minus; 1 = 7."
+    ],
+    "final": "7 superkeys",
+    "trap": "Adding 4 + 4 = 8 and double counting <code class=\"mm\">ABCD</code>, which is a superkey of both keys at once."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A superkey is any attribute set containing at least one candidate key. With two candidate keys the superkeys are the union of the supersets of each key, and the two families overlap in the supersets of their union.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Supersets of <code class=\"mm\">AB</code> inside <code class=\"mm\">{A,B,C,D}</code>: <code class=\"mm\">AB, ABC, ABD, ABCD</code> &mdash; 4 sets (add any subset of <code class=\"mm\">{C,D}</code>).</li><li>Supersets of <code class=\"mm\">CD</code>: <code class=\"mm\">CD, ACD, BCD, ABCD</code> &mdash; 4 sets (add any subset of <code class=\"mm\">{A,B}</code>).</li><li>Intersection = supersets of <code class=\"mm\">ABCD</code> = the single set <code class=\"mm\">ABCD</code>.</li><li>By inclusion&ndash;exclusion: 4 + 4 &minus; 1 = 7.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 7 superkeys</span></p><p class=\"row\"><b>Common misconception.</b> Adding 4 + 4 = 8 and double counting <code class=\"mm\">ABCD</code>, which is a superkey of both keys at once.</p><p class=\"row\"><b>Takeaway.</b> Superkeys = union over candidate keys of their supersets; subtract the overlap with inclusion&ndash;exclusion.</p>"
+  },
+  {
+   "id": "DB-U1B-Q12",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about SQL integrity constraints are TRUE? (Select all that apply.)",
+   "options": [
+    "A PRIMARY KEY declaration implies both UNIQUE and NOT NULL.",
+    "A CHECK constraint may contain a subquery that reads another table.",
+    "Deleting a referenced tuple always fails, whatever referential action was declared.",
+    "A foreign key column may hold NULL even though the referenced key can never be null."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "Each constraint has a precise scope. PRIMARY KEY = UNIQUE + NOT NULL on the key columns. CHECK is row-local in standard SQL: it may not query other tables. Referential actions (RESTRICT, CASCADE, SET NULL, SET DEFAULT) decide what a delete of a referenced row does. A foreign key value is checked only when it is non-null.",
+    "steps": [
+     "(A) is true by definition: a primary key is unique and non-null; the pair of constraints is implied.",
+     "(D) is true: referential integrity is a conditional check, and NULL satisfies it vacuously. The referenced key being NOT NULL does not propagate to the referencing column.",
+     "(B) is false: standard SQL forbids subqueries in CHECK, precisely so that a row's validity does not depend on other tables. (Some products relax this with triggers.)",
+     "(C) is false: with ON DELETE CASCADE the delete succeeds and the referencing rows are deleted; with SET NULL they are nulled."
+    ],
+    "final": "Options (A) and (D)",
+    "trap": "Assuming a foreign key inherits NOT NULL from the key it references, and assuming every delete of a referenced row is refused."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each constraint has a precise scope. PRIMARY KEY = UNIQUE + NOT NULL on the key columns. CHECK is row-local in standard SQL: it may not query other tables. Referential actions (RESTRICT, CASCADE, SET NULL, SET DEFAULT) decide what a delete of a referenced row does. A foreign key value is checked only when it is non-null.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true by definition: a primary key is unique and non-null; the pair of constraints is implied.</li><li>(D) is true: referential integrity is a conditional check, and NULL satisfies it vacuously. The referenced key being NOT NULL does not propagate to the referencing column.</li><li>(B) is false: standard SQL forbids subqueries in CHECK, precisely so that a row's validity does not depend on other tables. (Some products relax this with triggers.)</li><li>(C) is false: with ON DELETE CASCADE the delete succeeds and the referencing rows are deleted; with SET NULL they are nulled.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) A cross-table CHECK would make constraint checking depend on rows outside the modified table, which the standard excludes.</li><li>(C) RESTRICT and NO ACTION are only two of four standard referential actions.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming a foreign key inherits NOT NULL from the key it references, and assuming every delete of a referenced row is refused.</p><p class=\"row\"><b>Takeaway.</b> PK = UNIQUE + NOT NULL. FK is conditional on non-null. CHECK is row-local. The delete behaviour is whatever the referential action says.</p>"
+  },
+  {
+   "id": "DB-U1B-Q13",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-model-constraints",
+   "subtopic": "relational-model-constraints",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A relation <code class=\"mm\">R(A, B, C)</code> has candidate keys <code class=\"mm\">AB</code> and <code class=\"mm\">C</code>. Which of the following attribute sets is a superkey but <i>not</i> a candidate key?",
+   "options": [
+    "<code class=\"mm\">AB</code>",
+    "<code class=\"mm\">C</code>",
+    "<code class=\"mm\">ABC</code>",
+    "<code class=\"mm\">A</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A superkey determines every attribute; a candidate key is a superkey with no proper subset that is also a superkey. <code class=\"mm\">ABC</code> determines everything (it contains the key <code class=\"mm\">C</code>) but is not minimal, so it is a superkey only.",
+    "steps": [
+     "<code class=\"mm\">AB</code> and <code class=\"mm\">C</code> are given as candidate keys.",
+     "<code class=\"mm\">ABC</code> contains <code class=\"mm\">C</code>, so it determines every attribute &rarr; superkey. It has the proper subset <code class=\"mm\">C</code> which is already a key &rarr; not minimal &rarr; not a candidate key.",
+     "<code class=\"mm\">A</code> alone determines nothing beyond itself, so it is not a superkey at all.",
+     "Hence exactly one listed set is a superkey but not a candidate key."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">ABC</code>",
+    "trap": "Reading &lsquo;superkey&rsquo; as &lsquo;any set of attributes that looks complete&rsquo;. The test is determination plus minimality, and adding attributes never destroys the superkey property but always destroys minimality."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A superkey determines every attribute; a candidate key is a superkey with no proper subset that is also a superkey. <code class=\"mm\">ABC</code> determines everything (it contains the key <code class=\"mm\">C</code>) but is not minimal, so it is a superkey only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">AB</code> and <code class=\"mm\">C</code> are given as candidate keys.</li><li><code class=\"mm\">ABC</code> contains <code class=\"mm\">C</code>, so it determines every attribute &rarr; superkey. It has the proper subset <code class=\"mm\">C</code> which is already a key &rarr; not minimal &rarr; not a candidate key.</li><li><code class=\"mm\">A</code> alone determines nothing beyond itself, so it is not a superkey at all.</li><li>Hence exactly one listed set is a superkey but not a candidate key.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">ABC</code></span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) <code class=\"mm\">AB</code> is a candidate key by hypothesis.</li><li>(B) <code class=\"mm\">C</code> is a candidate key by hypothesis.</li><li>(D) <code class=\"mm\">A</code> is not a superkey, so it is neither.</li></ul><p class=\"row\"><b>Common misconception.</b> Reading &lsquo;superkey&rsquo; as &lsquo;any set of attributes that looks complete&rsquo;. The test is determination plus minimality, and adding attributes never destroys the superkey property but always destroys minimality.</p><p class=\"row\"><b>Takeaway.</b> Every candidate key is a superkey; a superkey is a candidate key only when no proper subset of it is one.</p>"
+  },
+  {
+   "id": "DB-U1B-Q14",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which relational algebra expression returns exactly those tuples that appear in both <code class=\"mm\">R</code> and <code class=\"mm\">S</code>, where both are union-compatible?",
+   "options": [
+    "<code class=\"mm\">R − S</code>",
+    "<code class=\"mm\">R ⋈ S</code>",
+    "<code class=\"mm\">R × S</code>",
+    "<code class=\"mm\">R ∩ S</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Set intersection over union-compatible relations: a tuple is in <code class=\"mm\">R ∩ S</code> exactly when it is in both. It is not a primitive &mdash; it is definable as <code class=\"mm\">R − (R − S)</code> &mdash; but it is the operator that means &lsquo;in both&rsquo;.",
+    "steps": [
+     "<code class=\"mm\">R − S</code> keeps tuples of <code class=\"mm\">R</code> that are absent from <code class=\"mm\">S</code>: the opposite of what is asked.",
+     "<code class=\"mm\">R ⋈ S</code> is a natural join: it concatenates matching tuples, so its schema is wider than either input.",
+     "<code class=\"mm\">R × S</code> is the Cartesian product: |R|·|S| tuples.",
+     "<code class=\"mm\">R ∩ S</code> keeps the tuples common to both, with the same schema &mdash; exactly the requirement."
+    ],
+    "final": "Option (D) &mdash; <code class=\"mm\">R ∩ S</code>",
+    "trap": "Using <code class=\"mm\">R ⋈ S</code> when the question asks for common tuples. A join combines; an intersection filters."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Set intersection over union-compatible relations: a tuple is in <code class=\"mm\">R ∩ S</code> exactly when it is in both. It is not a primitive &mdash; it is definable as <code class=\"mm\">R − (R − S)</code> &mdash; but it is the operator that means &lsquo;in both&rsquo;.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">R − S</code> keeps tuples of <code class=\"mm\">R</code> that are absent from <code class=\"mm\">S</code>: the opposite of what is asked.</li><li><code class=\"mm\">R ⋈ S</code> is a natural join: it concatenates matching tuples, so its schema is wider than either input.</li><li><code class=\"mm\">R × S</code> is the Cartesian product: |R|·|S| tuples.</li><li><code class=\"mm\">R ∩ S</code> keeps the tuples common to both, with the same schema &mdash; exactly the requirement.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) &mdash; <code class=\"mm\">R ∩ S</code></span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Difference removes the common tuples.</li><li>(B) A natural join returns combined rows, not common rows.</li><li>(C) A Cartesian product pairs every tuple with every tuple.</li></ul><p class=\"row\"><b>Common misconception.</b> Using <code class=\"mm\">R ⋈ S</code> when the question asks for common tuples. A join combines; an intersection filters.</p><p class=\"row\"><b>Takeaway.</b> &cap; keeps whole tuples present in both. &cap; = <code class=\"mm\">R − (R − S)</code>.</p>"
+  },
+  {
+   "id": "DB-U1B-Q15",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Let <code class=\"mm\">R(A, B)</code> = {(1, x), (1, y), (2, x), (3, y)} and <code class=\"mm\">S(B)</code> = {x, y}. What is <code class=\"mm\">R ÷ S</code>?",
+   "options": [
+    "{2}",
+    "{1}",
+    "{1, 2}",
+    "&empty;"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Division answers &lsquo;for all&rsquo;: <code class=\"mm\">R ÷ S</code> = { a | for every b in S, (a, b) is in R }. An <code class=\"mm\">a</code> survives only if it is paired with <i>every</i> value in <code class=\"mm\">S</code>.",
+    "steps": [
+     "Values of <code class=\"mm\">S</code> are x and y, so a survivor must appear with both.",
+     "a = 1: (1, x) and (1, y) are both in <code class=\"mm\">R</code> &rarr; survives.",
+     "a = 2: only (2, x) &mdash; y is missing &rarr; rejected.",
+     "a = 3: only (3, y) &mdash; x is missing &rarr; rejected.",
+     "Result = {1}, a one-attribute relation over <code class=\"mm\">A</code>."
+    ],
+    "final": "Option (B) &mdash; {1}",
+    "trap": "Computing the projection <code class=\"mm\">π_A(R)</code> = {1, 2, 3} and stopping there, or answering for <code class=\"mm\">S = {x}</code>. Division is a universal test, not a membership test."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Division answers &lsquo;for all&rsquo;: <code class=\"mm\">R ÷ S</code> = { a | for every b in S, (a, b) is in R }. An <code class=\"mm\">a</code> survives only if it is paired with <i>every</i> value in <code class=\"mm\">S</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Values of <code class=\"mm\">S</code> are x and y, so a survivor must appear with both.</li><li>a = 1: (1, x) and (1, y) are both in <code class=\"mm\">R</code> &rarr; survives.</li><li>a = 2: only (2, x) &mdash; y is missing &rarr; rejected.</li><li>a = 3: only (3, y) &mdash; x is missing &rarr; rejected.</li><li>Result = {1}, a one-attribute relation over <code class=\"mm\">A</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; {1}</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) {2} is the <code class=\"mm\">a</code> that appears with x only.</li><li>(C) {1, 2} would be the answer if <code class=\"mm\">S</code> were {x} alone.</li><li>(D) &empty; would need every <code class=\"mm\">a</code> to miss some value of <code class=\"mm\">S</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> Computing the projection <code class=\"mm\">π_A(R)</code> = {1, 2, 3} and stopping there, or answering for <code class=\"mm\">S = {x}</code>. Division is a universal test, not a membership test.</p><p class=\"row\"><b>Takeaway.</b> <code class=\"mm\">R ÷ S = π_A(R) − π_A( (π_A(R) × S) − R )</code> &mdash; drop the <code class=\"mm\">a</code> that is missing some <code class=\"mm\">b</code>.</p>"
+  },
+  {
+   "id": "DB-U1B-Q16",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Relation <code class=\"mm\">R(A, B)</code> holds 5 tuples and relation <code class=\"mm\">S(B, C)</code> holds 4 tuples. Attribute <code class=\"mm\">B</code> is a candidate key of <code class=\"mm\">S</code>. What is the <i>maximum</i> possible number of tuples in the natural join <code class=\"mm\">R ⋈ S</code>?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 5,
+   "answer_display": "5",
+   "solution": {
+    "concept": "The size of a natural join is governed by how many tuples of <code class=\"mm\">S</code> each tuple of <code class=\"mm\">R</code> can match. Because <code class=\"mm\">B</code> is a candidate key of <code class=\"mm\">S</code>, a given <code class=\"mm\">B</code> value occurs at most once there, so each <code class=\"mm\">R</code> tuple matches at most one <code class=\"mm\">S</code> tuple.",
+    "steps": [
+     "Matching is on the common attribute <code class=\"mm\">B</code>.",
+     "Key of <code class=\"mm\">S</code> &rarr; at most one <code class=\"mm\">S</code> tuple per <code class=\"mm\">B</code> value.",
+     "So each of the 5 tuples of <code class=\"mm\">R</code> contributes at most 1 joined tuple.",
+     "Maximum = 5 × 1 = 5, attained when every <code class=\"mm\">B</code> value in <code class=\"mm\">R</code> exists in <code class=\"mm\">S</code>."
+    ],
+    "final": "At most 5 tuples",
+    "trap": "Multiplying 5 × 4 = 20, which is the size of a Cartesian product, or the size of the join when <code class=\"mm\">B</code> is <i>not</i> a key of <code class=\"mm\">S</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The size of a natural join is governed by how many tuples of <code class=\"mm\">S</code> each tuple of <code class=\"mm\">R</code> can match. Because <code class=\"mm\">B</code> is a candidate key of <code class=\"mm\">S</code>, a given <code class=\"mm\">B</code> value occurs at most once there, so each <code class=\"mm\">R</code> tuple matches at most one <code class=\"mm\">S</code> tuple.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Matching is on the common attribute <code class=\"mm\">B</code>.</li><li>Key of <code class=\"mm\">S</code> &rarr; at most one <code class=\"mm\">S</code> tuple per <code class=\"mm\">B</code> value.</li><li>So each of the 5 tuples of <code class=\"mm\">R</code> contributes at most 1 joined tuple.</li><li>Maximum = 5 × 1 = 5, attained when every <code class=\"mm\">B</code> value in <code class=\"mm\">R</code> exists in <code class=\"mm\">S</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: At most 5 tuples</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying 5 × 4 = 20, which is the size of a Cartesian product, or the size of the join when <code class=\"mm\">B</code> is <i>not</i> a key of <code class=\"mm\">S</code>.</p><p class=\"row\"><b>Takeaway.</b> Join size = |R| × (matches per R tuple). A key on the other side caps the multiplier at 1.</p>"
+  },
+  {
+   "id": "DB-U1B-Q17",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following pairs of relational algebra expressions are equivalent for all relations of the appropriate schemas? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">π_A(R ⋈ S)</code> and <code class=\"mm\">π_A(R) ⋈ π_A(S)</code>",
+    "<code class=\"mm\">σ_{A&gt;5}(σ_{B&lt;3}(R))</code> and <code class=\"mm\">σ_{B&lt;3}(σ_{A&gt;5}(R))</code>",
+    "<code class=\"mm\">R ⋈ S</code> and <code class=\"mm\">S ⋈ R</code>",
+    "<code class=\"mm\">σ_{A=1}(R ∪ S)</code> and <code class=\"mm\">σ_{A=1}(R) ∪ σ_{A=1}(S)</code>"
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "Selection commutes with itself and distributes over union and difference; natural join is commutative and associative. Projection does <i>not</i> distribute over join, because projecting each side first can discard the attribute the join needs or create pairs that never coexisted.",
+    "steps": [
+     "(B) Nested selections on independent predicates can be applied in any order &mdash; both give <code class=\"mm\">σ_{A&gt;5 ∧ B&lt;3}(R)</code>.",
+     "(C) Natural join matches on the common attributes symmetrically, so the result set is the same; only the column order differs.",
+     "(D) Selection distributes over union: filtering a union equals the union of the filters.",
+     "(A) fails: dropping the join attribute before joining leaves nothing to match on (and the right side may even be ill-formed)."
+    ],
+    "final": "Options (B), (C) and (D)",
+    "trap": "Assuming every operator distributes over every other. Projection loses information, so it rarely commutes with join."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Selection commutes with itself and distributes over union and difference; natural join is commutative and associative. Projection does <i>not</i> distribute over join, because projecting each side first can discard the attribute the join needs or create pairs that never coexisted.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) Nested selections on independent predicates can be applied in any order &mdash; both give <code class=\"mm\">σ_{A&gt;5 ∧ B&lt;3}(R)</code>.</li><li>(C) Natural join matches on the common attributes symmetrically, so the result set is the same; only the column order differs.</li><li>(D) Selection distributes over union: filtering a union equals the union of the filters.</li><li>(A) fails: dropping the join attribute before joining leaves nothing to match on (and the right side may even be ill-formed).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Projection does not distribute over join. Counterexample: <code class=\"mm\">R(A,B) = {(1,2)}</code>, <code class=\"mm\">S(B,C) = {(2,3),(4,5)}</code>; the left side gives {1}, while <code class=\"mm\">π_A(R) ⋈ π_A(S)</code> needs a common attribute that no longer exists.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming every operator distributes over every other. Projection loses information, so it rarely commutes with join.</p><p class=\"row\"><b>Takeaway.</b> Push selections down freely; push projections down only when they keep the join attributes.</p>"
+  },
+  {
+   "id": "DB-U1B-Q18",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following queries can <i>not</i> be expressed in the basic relational algebra <code class=\"mm\">{σ, π, ×, ∪, −, ρ}</code>?",
+   "options": [
+    "the transitive closure of a binary relation",
+    "<code class=\"mm\">R ÷ S</code>",
+    "<code class=\"mm\">R ∩ S</code>",
+    "a theta join <code class=\"mm\">R ⋈_θ S</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The basic algebra is first-order: every query it can write has a fixed, finite number of join and selection steps. Transitive closure needs a number of steps that depends on the <i>data</i>, which no fixed expression can supply.",
+    "steps": [
+     "(B) Division is definable: <code class=\"mm\">R ÷ S = π_A(R) − π_A((π_A(R) × S) − R)</code>.",
+     "(C) Intersection is definable: <code class=\"mm\">R ∩ S = R − (R − S)</code>.",
+     "(D) A theta join is definable: <code class=\"mm\">σ_θ(R × S)</code>.",
+     "(A) Transitive closure of <code class=\"mm\">R</code> requires iterating the join until a fixed point is reached. The iteration count is unbounded in the data, so no single expression of the basic algebra computes it &mdash; this is the standard proof that the algebra is not Turing-complete."
+    ],
+    "final": "Option (A) &mdash; transitive closure",
+    "trap": "Believing division is the &lsquo;hard&rsquo; operator that escapes the algebra. Division is expressible; recursion is not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The basic algebra is first-order: every query it can write has a fixed, finite number of join and selection steps. Transitive closure needs a number of steps that depends on the <i>data</i>, which no fixed expression can supply.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) Division is definable: <code class=\"mm\">R ÷ S = π_A(R) − π_A((π_A(R) × S) − R)</code>.</li><li>(C) Intersection is definable: <code class=\"mm\">R ∩ S = R − (R − S)</code>.</li><li>(D) A theta join is definable: <code class=\"mm\">σ_θ(R × S)</code>.</li><li>(A) Transitive closure of <code class=\"mm\">R</code> requires iterating the join until a fixed point is reached. The iteration count is unbounded in the data, so no single expression of the basic algebra computes it &mdash; this is the standard proof that the algebra is not Turing-complete.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; transitive closure</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Division is a derived operator, not a primitive.</li><li>(C) Intersection is a derived operator.</li><li>(D) Theta join is a derived operator, <code class=\"mm\">σ_θ</code> applied to a product.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing division is the &lsquo;hard&rsquo; operator that escapes the algebra. Division is expressible; recursion is not.</p><p class=\"row\"><b>Takeaway.</b> Fixed expressions cannot express unbounded iteration. Closure, aggregation and recursion all sit outside the basic algebra.</p>"
+  },
+  {
+   "id": "DB-U1B-Q19",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "relational-algebra-select-project-join-division",
+   "subtopic": "relational-algebra-select-project-join-division",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Let <code class=\"mm\">R(A, B)</code> and <code class=\"mm\">S(B, C)</code> have exactly one common attribute, <code class=\"mm\">B</code>. Which expression computes the natural join <code class=\"mm\">R ⋈ S</code>?",
+   "options": [
+    "<code class=\"mm\">σ_{R.B = S.B}(R × S)</code>",
+    "<code class=\"mm\">π_{A,C}(σ_{R.B = S.B}(R × S))</code>",
+    "<code class=\"mm\">π_{A,B,C}(σ_{R.B = S.B}(R × S))</code>",
+    "<code class=\"mm\">R × S</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Natural join = Cartesian product, then keep rows whose common attributes agree, then project away the duplicate copy of those attributes. Because the duplicate <code class=\"mm\">B</code> column is removed, the result schema is <code class=\"mm\">(A, B, C)</code> with one <code class=\"mm\">B</code>.",
+    "steps": [
+     "Product: schema <code class=\"mm\">(R.A, R.B, S.B, S.C)</code>.",
+     "Equijoin condition on the common attribute: <code class=\"mm\">σ_{R.B = S.B}</code> keeps only agreeing rows.",
+     "Project onto <code class=\"mm\">{A, B, C}</code> to collapse the two identical <code class=\"mm\">B</code> columns into one.",
+     "That is exactly <code class=\"mm\">R ⋈ S</code>."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">π_{A,B,C}(σ_{R.B=S.B}(R × S))</code>",
+    "trap": "Forgetting the final projection, which is what makes the join <i>natural</i> rather than an equijoin that keeps both copies of the common attribute."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Natural join = Cartesian product, then keep rows whose common attributes agree, then project away the duplicate copy of those attributes. Because the duplicate <code class=\"mm\">B</code> column is removed, the result schema is <code class=\"mm\">(A, B, C)</code> with one <code class=\"mm\">B</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Product: schema <code class=\"mm\">(R.A, R.B, S.B, S.C)</code>.</li><li>Equijoin condition on the common attribute: <code class=\"mm\">σ_{R.B = S.B}</code> keeps only agreeing rows.</li><li>Project onto <code class=\"mm\">{A, B, C}</code> to collapse the two identical <code class=\"mm\">B</code> columns into one.</li><li>That is exactly <code class=\"mm\">R ⋈ S</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">π_{A,B,C}(σ_{R.B=S.B}(R × S))</code></span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Keeps both copies of <code class=\"mm\">B</code>, so the schema is not that of the natural join.</li><li>(B) Drops <code class=\"mm\">B</code> entirely &mdash; a projection of the join, not the join.</li><li>(D) No match condition at all: the Cartesian product.</li></ul><p class=\"row\"><b>Common misconception.</b> Forgetting the final projection, which is what makes the join <i>natural</i> rather than an equijoin that keeps both copies of the common attribute.</p><p class=\"row\"><b>Takeaway.</b> Natural join = product &rarr; equality filter &rarr; drop the duplicate column.</p>"
+  },
+  {
+   "id": "DB-U1B-Q20",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "The tuple relational calculus query <code class=\"mm\">{ t | t ∈ R ∧ t[A] > 5 }</code> is equivalent to which relational algebra expression?",
+   "options": [
+    "<code class=\"mm\">π_A(σ_{A>5}(R))</code>",
+    "<code class=\"mm\">σ_{A>5}(R)</code>",
+    "<code class=\"mm\">R ⋈ σ_{A>5}(R)</code>",
+    "<code class=\"mm\">σ_{A=5}(R)</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The calculus formula names a range relation (<code class=\"mm\">t ∈ R</code>) and a condition on its attributes <code class=\"mm\">(t[A] > 5)</code>. That is a pure filter: the tuple variable ranges over <code class=\"mm\">R</code> and the result keeps whole tuples that satisfy the condition. A filter is a selection.",
+    "steps": [
+     "Restrict the tuple variable to <code class=\"mm\">R</code> &rarr; the result is a subset of <code class=\"mm\">R</code>.",
+     "Keep whole tuples &rarr; no attribute is dropped, so no projection.",
+     "The condition is on one attribute &rarr; a selection <code class=\"mm\">σ_{A>5}(R)</code>.",
+     "No second relation appears, so no join."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">σ_{A>5}(R)</code>",
+    "trap": "Projecting because the condition mentions <code class=\"mm\">A</code>. A condition on an attribute filters tuples; it does not restrict the output schema."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The calculus formula names a range relation (<code class=\"mm\">t ∈ R</code>) and a condition on its attributes <code class=\"mm\">(t[A] > 5)</code>. That is a pure filter: the tuple variable ranges over <code class=\"mm\">R</code> and the result keeps whole tuples that satisfy the condition. A filter is a selection.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Restrict the tuple variable to <code class=\"mm\">R</code> &rarr; the result is a subset of <code class=\"mm\">R</code>.</li><li>Keep whole tuples &rarr; no attribute is dropped, so no projection.</li><li>The condition is on one attribute &rarr; a selection <code class=\"mm\">σ_{A>5}(R)</code>.</li><li>No second relation appears, so no join.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">σ_{A>5}(R)</code></span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Projecting onto <code class=\"mm\">A</code> discards <code class=\"mm\">B</code>, which the calculus query does not.</li><li>(C) A self-join is not implied by ranging over one relation.</li><li>(D) The predicate is <code class=\"mm\">></code>, not <code class=\"mm\">=</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> Projecting because the condition mentions <code class=\"mm\">A</code>. A condition on an attribute filters tuples; it does not restrict the output schema.</p><p class=\"row\"><b>Takeaway.</b> A range atom <code class=\"mm\">t ∈ R</code> plus a predicate is a selection; adding <code class=\"mm\">∃</code> over another relation is a join.</p>"
+  },
+  {
+   "id": "DB-U1B-Q21",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Domain relational calculus differs from tuple relational calculus in that its variables range over",
+   "options": [
+    "relations rather than attributes.",
+    "the database schema.",
+    "the set of all keys.",
+    "individual attribute domains (values) rather than whole tuples."
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Tuple calculus binds a variable to an entire tuple: <code class=\"mm\">{ t | t ∈ R ∧ … }</code>. Domain calculus binds one variable per column: <code class=\"mm\">{ ⟨a, b⟩ | ⟨a, b⟩ ∈ R ∧ … }</code>, so each variable ranges over an attribute's domain. The two calculi have the same expressive power.",
+    "steps": [
+     "In TRC a variable <code class=\"mm\">t</code> is a tuple and attributes are accessed as <code class=\"mm\">t[A]</code>.",
+     "In DRC there is one variable per attribute position, each drawn from that attribute's domain.",
+     "Formulas are built from membership atoms <code class=\"mm\">⟨a₁,…,aₙ⟩ ∈ R</code> and comparison atoms over the domain variables.",
+     "Hence the difference is the unit of quantification: tuple versus value."
+    ],
+    "final": "Option (D) &mdash; attribute domains (values)",
+    "trap": "Assuming the domain calculus is weaker because it quantifies over single values. With the same safety restriction the two are equivalent."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Tuple calculus binds a variable to an entire tuple: <code class=\"mm\">{ t | t ∈ R ∧ … }</code>. Domain calculus binds one variable per column: <code class=\"mm\">{ ⟨a, b⟩ | ⟨a, b⟩ ∈ R ∧ … }</code>, so each variable ranges over an attribute's domain. The two calculi have the same expressive power.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>In TRC a variable <code class=\"mm\">t</code> is a tuple and attributes are accessed as <code class=\"mm\">t[A]</code>.</li><li>In DRC there is one variable per attribute position, each drawn from that attribute's domain.</li><li>Formulas are built from membership atoms <code class=\"mm\">⟨a₁,…,aₙ⟩ ∈ R</code> and comparison atoms over the domain variables.</li><li>Hence the difference is the unit of quantification: tuple versus value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) &mdash; attribute domains (values)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Relations are the range in neither calculus; both name them in membership atoms.</li><li>(B) The schema is not quantified over in either.</li><li>(C) Keys are not a range for either.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming the domain calculus is weaker because it quantifies over single values. With the same safety restriction the two are equivalent.</p><p class=\"row\"><b>Takeaway.</b> TRC quantifies over tuples, DRC over values; both are first-order and equally expressive.</p>"
+  },
+  {
+   "id": "DB-U1B-Q22",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about relational calculus are TRUE? (Select all that apply.)",
+   "options": [
+    "Tuple relational calculus and domain relational calculus have the same expressive power.",
+    "Every syntactically valid calculus expression denotes a finite relation, so no safety restriction is needed.",
+    "A calculus query states what to retrieve rather than how to retrieve it.",
+    "Relational calculus can express the transitive closure of a binary relation."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "The calculus is a declarative first-order language. TRC and DRC are inter-translatable, so they have identical power, and both are exactly as powerful as the basic relational algebra once safety is imposed. Safety is what keeps answers finite; without it, expressions such as <code class=\"mm\">{ t | ¬(t ∈ R) }</code> denote infinite sets.",
+    "steps": [
+     "(A) is the standard equivalence: each calculus translates into the other, and both equal the algebra on safe expressions.",
+     "(C) is the defining property of a declarative language: the formula constrains the answer, and the engine chooses the plan.",
+     "(B) is false: the complement of a relation is infinite, so the formula alone does not determine a finite answer.",
+     "(D) is false: closure needs unbounded iteration, which a fixed first-order formula cannot express."
+    ],
+    "final": "Options (A) and (C)",
+    "trap": "Thinking the calculus is more powerful than the algebra because it looks like logic. It is not: it is the same first-order power, restricted to safe expressions."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The calculus is a declarative first-order language. TRC and DRC are inter-translatable, so they have identical power, and both are exactly as powerful as the basic relational algebra once safety is imposed. Safety is what keeps answers finite; without it, expressions such as <code class=\"mm\">{ t | ¬(t ∈ R) }</code> denote infinite sets.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the standard equivalence: each calculus translates into the other, and both equal the algebra on safe expressions.</li><li>(C) is the defining property of a declarative language: the formula constrains the answer, and the engine chooses the plan.</li><li>(B) is false: the complement of a relation is infinite, so the formula alone does not determine a finite answer.</li><li>(D) is false: closure needs unbounded iteration, which a fixed first-order formula cannot express.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Unsafe expressions such as <code class=\"mm\">{ t | ¬(t ∈ R) }</code> range over the whole universe of tuples, so safety is essential, not decorative.</li><li>(D) Closure is not first-order expressible, exactly as in the algebra.</li></ul><p class=\"row\"><b>Common misconception.</b> Thinking the calculus is more powerful than the algebra because it looks like logic. It is not: it is the same first-order power, restricted to safe expressions.</p><p class=\"row\"><b>Takeaway.</b> TRC = DRC = safe calculus = basic algebra. Closure and aggregation lie outside all of them.</p>"
+  },
+  {
+   "id": "DB-U1B-Q23",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Let <code class=\"mm\">R(A, B)</code> = {(1, x), (1, y), (2, x), (2, y), (3, x)} and <code class=\"mm\">S(B)</code> = {x, y}. Consider the tuple calculus query <code class=\"mm\">{ ⟨a⟩ | ∀b ( S(b) → R(a, b) ) }</code>. How many tuples does the result contain?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "A universally quantified implication <code class=\"mm\">∀b (S(b) → R(a,b))</code> holds for an <code class=\"mm\">a</code> only when that <code class=\"mm\">a</code> is paired in <code class=\"mm\">R</code> with <i>every</i> value that occurs in <code class=\"mm\">S</code>. This is the calculus form of division.",
+    "steps": [
+     "Values in <code class=\"mm\">S</code> are x and y, so a qualifying <code class=\"mm\">a</code> needs both (a, x) and (a, y) in <code class=\"mm\">R</code>.",
+     "a = 1: (1, x) and (1, y) present &rarr; qualifies.",
+     "a = 2: (2, x) and (2, y) present &rarr; qualifies.",
+     "a = 3: only (3, x); the implication fails at b = y &rarr; rejected.",
+     "Result = {⟨1⟩, ⟨2⟩}, two tuples."
+    ],
+    "final": "2 tuples",
+    "trap": "Reading the implication as existential and answering 3, or reading <code class=\"mm\">S(b)</code> as ranging over all of <code class=\"mm\">R</code>'s <code class=\"mm\">B</code> values. The implication is vacuously true only for <code class=\"mm\">b</code> outside <code class=\"mm\">S</code>, so the binding values come from <code class=\"mm\">S</code> alone."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A universally quantified implication <code class=\"mm\">∀b (S(b) → R(a,b))</code> holds for an <code class=\"mm\">a</code> only when that <code class=\"mm\">a</code> is paired in <code class=\"mm\">R</code> with <i>every</i> value that occurs in <code class=\"mm\">S</code>. This is the calculus form of division.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Values in <code class=\"mm\">S</code> are x and y, so a qualifying <code class=\"mm\">a</code> needs both (a, x) and (a, y) in <code class=\"mm\">R</code>.</li><li>a = 1: (1, x) and (1, y) present &rarr; qualifies.</li><li>a = 2: (2, x) and (2, y) present &rarr; qualifies.</li><li>a = 3: only (3, x); the implication fails at b = y &rarr; rejected.</li><li>Result = {⟨1⟩, ⟨2⟩}, two tuples.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 tuples</span></p><p class=\"row\"><b>Common misconception.</b> Reading the implication as existential and answering 3, or reading <code class=\"mm\">S(b)</code> as ranging over all of <code class=\"mm\">R</code>'s <code class=\"mm\">B</code> values. The implication is vacuously true only for <code class=\"mm\">b</code> outside <code class=\"mm\">S</code>, so the binding values come from <code class=\"mm\">S</code> alone.</p><p class=\"row\"><b>Takeaway.</b> <code class=\"mm\">∀b (S(b) → R(a,b))</code> is division by <code class=\"mm\">S</code>: keep <code class=\"mm\">a</code> only if it is paired with every <code class=\"mm\">b</code> in <code class=\"mm\">S</code>.</p>"
+  },
+  {
+   "id": "DB-U1B-Q24",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following relational calculus expressions is <i>not</i> safe?",
+   "options": [
+    "<code class=\"mm\">{ t | ¬(t ∈ R) }</code>",
+    "<code class=\"mm\">{ t | t ∈ R ∧ t[A] = 5 }</code>",
+    "<code class=\"mm\">{ t | t ∈ R ∧ ¬∃s ∈ S ( s[B] = t[A] ) }</code>",
+    "<code class=\"mm\">{ t | ∃s ∈ S ( t[A] = s[B] ∧ t[C] = s[C] ) }</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Safety requires that every value in the answer come from the constants of the expression or from the relations it names. <code class=\"mm\">{ t | ¬(t ∈ R) }</code> quantifies over the entire universe of tuples, whose complement of <code class=\"mm\">R</code> is infinite, so it is unsafe.",
+    "steps": [
+     "(A) The answer is every tuple not in <code class=\"mm\">R</code> &mdash; infinitely many, and drawn from no named relation. Unsafe.",
+     "(B) Ranges over <code class=\"mm\">R</code> and filters, so all values come from <code class=\"mm\">R</code> and the constant 5. Safe.",
+     "(C) Ranges over <code class=\"mm\">R</code> with a negated existential over <code class=\"mm\">S</code>; the free variable still ranges over <code class=\"mm\">R</code>. Safe.",
+     "(D) Free variable <code class=\"mm\">t</code> is constrained by an existential over <code class=\"mm\">S</code>, which bounds every value it can take. Safe."
+    ],
+    "final": "Option (A) &mdash; <code class=\"mm\">{ t | ¬(t ∈ R) }</code>",
+    "trap": "Assuming a negated atom is automatically unsafe. Negation is fine when the variable is still bounded by a positive membership atom; here it is not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Safety requires that every value in the answer come from the constants of the expression or from the relations it names. <code class=\"mm\">{ t | ¬(t ∈ R) }</code> quantifies over the entire universe of tuples, whose complement of <code class=\"mm\">R</code> is infinite, so it is unsafe.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) The answer is every tuple not in <code class=\"mm\">R</code> &mdash; infinitely many, and drawn from no named relation. Unsafe.</li><li>(B) Ranges over <code class=\"mm\">R</code> and filters, so all values come from <code class=\"mm\">R</code> and the constant 5. Safe.</li><li>(C) Ranges over <code class=\"mm\">R</code> with a negated existential over <code class=\"mm\">S</code>; the free variable still ranges over <code class=\"mm\">R</code>. Safe.</li><li>(D) Free variable <code class=\"mm\">t</code> is constrained by an existential over <code class=\"mm\">S</code>, which bounds every value it can take. Safe.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">{ t | ¬(t ∈ R) }</code></span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B), (C) and (D) each bind their free tuple variable to a named relation, which is exactly the condition that keeps the answer finite.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming a negated atom is automatically unsafe. Negation is fine when the variable is still bounded by a positive membership atom; here it is not.</p><p class=\"row\"><b>Takeaway.</b> Safety = every free variable bounded by a named relation, and every quantified variable too. A bare negated atom breaks it.</p>"
+  },
+  {
+   "id": "DB-U1B-Q25",
+   "subject": "databases",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "er-relational-algebra",
+   "unit_name": "ER Models & Relational Algebra",
+   "topic": "ER Models & Relational Algebra",
+   "sub": "tuple-and-domain-relational-calculus",
+   "subtopic": "tuple-and-domain-relational-calculus",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "Aggregate functions such as COUNT and SUM can be expressed in the basic relational algebra.",
+    "Relational algebra and <i>safe</i> relational calculus have the same expressive power.",
+    "Division can be expressed using only <code class=\"mm\">σ, π, ×</code> and <code class=\"mm\">−</code>.",
+    "The transitive closure of a binary relation is expressible in relational calculus."
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "answer_display": "Options (B) and (C)",
+   "solution": {
+    "concept": "The classical result is that basic relational algebra, safe tuple calculus and safe domain calculus all define the same class of queries. Division is inside that class; aggregation and recursion are outside it.",
+    "steps": [
+     "(B) is the fundamental equivalence theorem for the relational model.",
+     "(C) holds because <code class=\"mm\">R ÷ S = π_A(R) − π_A((π_A(R) × S) − R)</code> uses only those four operators.",
+     "(A) is false: COUNT and SUM collapse many tuples into one value, which no expression built from set operations and projections can do &mdash; the algebra is tuple-preserving, aggregation is not.",
+     "(D) is false: closure needs unbounded iteration, and the calculus is first-order."
+    ],
+    "final": "Options (B) and (C)",
+    "trap": "Assuming the calculus can do anything the algebra can plus more. Both stop at the same first-order boundary."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The classical result is that basic relational algebra, safe tuple calculus and safe domain calculus all define the same class of queries. Division is inside that class; aggregation and recursion are outside it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) is the fundamental equivalence theorem for the relational model.</li><li>(C) holds because <code class=\"mm\">R ÷ S = π_A(R) − π_A((π_A(R) × S) − R)</code> uses only those four operators.</li><li>(A) is false: COUNT and SUM collapse many tuples into one value, which no expression built from set operations and projections can do &mdash; the algebra is tuple-preserving, aggregation is not.</li><li>(D) is false: closure needs unbounded iteration, and the calculus is first-order.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (C)</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Aggregation is not first-order definable; it is added to the algebra as a separate operator.</li><li>(D) A first-order formula has a fixed number of quantifiers, so it cannot iterate to a fixed point.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming the calculus can do anything the algebra can plus more. Both stop at the same first-order boundary.</p><p class=\"row\"><b>Takeaway.</b> Algebra = safe calculus. Aggregation and recursion are extensions bolted on afterwards.</p>"
   }
  ]
 }
