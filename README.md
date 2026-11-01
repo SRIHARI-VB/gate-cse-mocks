@@ -7,38 +7,79 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 1 of 2**, 2026-11-01 →
-  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html)
+- **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 1 of 2 (third pass)**, 2026-11-01 →
+  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Programmed I/O & interrupts (6) · DMA controller (6) · Secondary storage disks (7) · RAID levels (6)
-- Rotation: MODE A. Nine subjects already carried a paper dated 2026-11-01 (Algorithms, Computer Networks,
-  Databases, Digital Logic, Discrete Mathematics, Engineering Mathematics, Operating Systems, Programming and
-  Data Structures, Theory of Computation), leaving Computer Architecture and Compiler Design. The cap check then
-  left exactly one: Computer Architecture's most recent run `{2026-10-31, run 8, unit 5, pipelining, Set 2 of 2}`
-  sits on a unit holding 50 questions, so it advances to unit 6, which is empty, while Compiler Design's most
-  recent run (unit 3, 75 questions) would advance onto unit 4 `sdt-intermediate-code`, already at 50, so it
-  cannot take another set. `secrets.choice` over the one eligible subject returned **Computer Architecture**.
-  Unit 5 held **50** questions, exactly `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4
-  advanced exactly one unit: `(index_of(pipelining) = 4 + 1) mod 6 = 5` → **Unit 6, I/O Interface & Storage**.
-  No override, no partial set.
-- Unit 6 had no banked questions, so this is the first set of its first pass; it holds 25 of the 50-question cap
-  and the next Computer Architecture run will publish Set 2 against the same unit.
-- No superseded paper was created: Unit 6 had no earlier paper, so nothing moved into `archive/` and the unit
-  folder holds exactly one current paper. The repository root still holds only `index.html`.
-- Previous test: **Discrete Mathematics · Unit 11 — Boolean Algebra & Switching Logic, Set 1 of 2**, 2026-11-01 →
-  [`discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html`](discrete-mathematics/boolean-algebra/gate_dm_mock_11_2026-11-01.html)
+- Subtopics: S-attributed vs L-attributed definitions (7) · Three-address code, quadruples & triples (6) ·
+  Syntax trees & DAGs (6) · Type checking (6)
+- Rotation: MODE A. All ten other subjects already carried a paper dated 2026-11-01, leaving Compiler Design as
+  the only subject eligible for the draw. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-10-31, run 13, unit 3, bottom-up-parsing, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap and step B4 advanced exactly one unit:
+  `(index_of(bottom-up-parsing) = 2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**.
+  Units 1, 2, 3, 4 and 5 hold 75, 75, 75, 50 and 50 questions, so every unit of the subject is at or above the cap
+  and Section 1 step B5 applies: the modulo wraps and a **further pass over Compiler Design begins**. No override,
+  no partial set.
+- Superseded paper: the 2026-10-29 Set 2 moved to
+  `compiler-design/sdt-intermediate-code/archive/gate_cd_mock_4_2026-10-29_run2.html` with its content frozen, so
+  the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Computer Architecture · Unit 6 — I/O Interface & Storage, Set 1 of 2**, 2026-11-01 →
+  [`computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html`](computer-architecture/io-interfaces/gate_co_mock_6_2026-11-01.html)
 
 ## Status
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 150 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 13 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
-| Current papers / archived sets | 65 current · 85 archived |
-| Test cards on the portal | 83 (one card per current paper; superseded sets are links on that card) |
+| Papers published (current + archived) | 151 (24 Discrete Mathematics, 11 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 12 Engineering Mathematics, 13 Programming and Data Structures, 15 Computer Networks, 16 Theory of Computation, 10 Digital Logic, 9 Computer Architecture) |
+| Current papers / archived sets | 65 current · 86 archived |
+| Test cards on the portal | 81 (one card per current paper; superseded sets are links on that card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 6 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 3750 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 325 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
+| Questions in the subject banks | 3775 (600 Discrete Mathematics, 275 Algorithms, 225 Databases, 350 Compiler Design, 450 Operating Systems, 300 Engineering Mathematics, 325 Programming and Data Structures, 375 Computer Networks, 400 Theory of Computation, 250 Digital Logic, 225 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 85 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 8 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 6 Digital Logic, 4 Computer Architecture) |
+| Archived sets (earlier runs) | 86 (12 Discrete Mathematics, 12 Operating Systems, 12 Theory of Computation, 9 Compiler Design, 7 Engineering Mathematics, 6 Programming and Data Structures, 9 Computer Networks, 5 Algorithms, 4 Databases, 6 Digital Logic, 4 Computer Architecture) |
+
+### 2026-11-01 — Compiler Design Unit 4, Set 1 of 2 (third pass)
+
+- New paper at `compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-01.html`. The superseded 2026-10-29
+  paper moved to `archive/gate_cd_mock_4_2026-10-29_run2.html` with its content frozen, so the unit folder holds
+  exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** At draw time every subject except Compiler Design already carried a paper dated
+  2026-11-01 (Algorithms, Computer Architecture, Computer Networks, Databases, Digital Logic, Discrete Mathematics,
+  Engineering Mathematics, Operating Systems, Programming and Data Structures, Theory of Computation), so the draw
+  returned **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-10-31, run 13, unit 3, bottom-up-parsing, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed and step B4 advanced exactly one unit:
+  `(2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**. Units 1, 2, 3, 4 and 5 hold
+  75, 75, 75, 50 and 50 questions, so no unit of the subject is under the cap; Section 1 step B5 therefore applies
+  and the modulo wraps into a **further pass over Compiler Design**. No override was used and no partial set was
+  generated; the paper is exactly 25 questions.
+- Coverage: all four Unit 4 subtopics — S-attributed vs L-attributed definitions (7); three-address code,
+  quadruples and triples (6); syntax trees and DAGs (6); type checking (6). Composition 15 MCQ / 5 MSQ / 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; marks 15 × 1 + 10 × 2 = **35** in 60 minutes, no negative marking, MSQ
+  all-or-nothing. Practice scheme, not the official GATE scheme, and the About tab says so.
+- All 25 ids are new (`CD-U4-Q51` … `CD-U4-Q75`) and collide with nothing already in the Compiler Design bank,
+  which held `CD-U4-Q01` … `CD-U4-Q50`. The subject bank now holds **350** questions and the paper's Question Bank
+  tab shows the **325** previously banked items, so the active set is not repeated there.
+- Every question carries `data-subject="compiler-design"`, `data-unit="sdt-intermediate-code"`,
+  `data-unit-number="4"`, `data-subtopic`, `data-type`, `data-difficulty` and `data-source`. Sources used:
+  `STANDARD_TEXTBOOK` 12, `ORIGINAL_SYNTHESIS` 13. No `GATE_PYQ_VARIATION` item: the Compiler Design bank records no
+  verified previous-year question, so nothing on this paper is claimed as an official GATE question.
+- Numerical answers were recomputed by script rather than by hand: the four dependency edges of the L-condition
+  example; the instruction counts 3 (unary minus) and 3 (`b * c + d`); the four instructions left after local
+  common-subexpression elimination; the DAG node totals 7, 9 and 8; the 8-byte pointer element and the
+  5 × 8 × 4 = 160-byte object.
+- Shell: the paper is generated from the Compiler Design Unit 4 paper of 2026-10-29. Its `<style>` block and its
+  exam `<script>` are byte-identical to that shell, its `:root` block is byte-identical to `design-tokens.css`, and
+  its literal-hex-outside-`:root` count is unchanged at 135.
+- A jsdom run of the shipped file confirms 25 test cards, a 25-button palette, one visible card before submit, no
+  solution rendered inside the test before submit, the locked answer-key tab, scoring (a seeded attempt scoring
+  6/35), the `ok`/`bad`/`skip` palette after submit and 325 banked cards in the Question Bank tab.
+- **Portal defect fixed in this run.** `index.html` carried a stale duplicate card whose `path` pointed into
+  `compiler-design/runtime-code-optimization/archive/`, so one archived paper was listed as a test card as well as
+  under its current card's "earlier sets". The duplicate was removed. Fifteen similar pre-existing cards that point
+  into `archive/` in other subjects remain, together with seven archive files that only those cards link to; they
+  are a carried-over defect, not one introduced here, and repairing them needs each file attached to its current
+  card first.
 
 ### 2026-11-01 — Computer Architecture Unit 6, Set 1 of 2
 
