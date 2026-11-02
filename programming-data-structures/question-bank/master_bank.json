@@ -15878,7 +15878,18 @@
     2
    ],
    "answer_display": "Option (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In row-major order the whole of row 0 is stored before row 1 begins, so the flat offset of <span class=\"mm\">A[i][j]</span> in an array of <span class=\"mm\">C</span> columns is <span class=\"mm\">i · C + j</span>, counted from 0.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The array has <span class=\"mm\">C = 4</span> columns, so each row occupies 4 consecutive slots.</li><li>Row 2 therefore begins at flat index <span class=\"mm\">2 · 4 = 8</span>.</li><li>Within row 2, column 3 adds another 3 slots: <span class=\"mm\">8 + 3 = 11</span>.</li><li>The element <span class=\"mm\">A[2][3]</span> is the 12th element, so its 0-based index is 11.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">B[11]</code> — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Counting the element's position as 12 and forgetting that <code class=\"mm\">B</code> is 0-based. The 12th element sits at index 11.</p><p class=\"row\"><b>Takeaway.</b> Row-major flat index = <span class=\"mm\">i · C + j</span>; column-major flat index = <span class=\"mm\">j · R + i</span>.</p>",
+   "solution": {
+    "concept": "In row-major order the whole of row 0 is stored before row 1 begins, so the flat offset of <span class=\"mm\">A[i][j]</span> in an array of <span class=\"mm\">C</span> columns is <span class=\"mm\">i · C + j</span>, counted from 0.",
+    "steps": [
+     "The array has <span class=\"mm\">C = 4</span> columns, so each row occupies 4 consecutive slots.",
+     "Row 2 therefore begins at flat index <span class=\"mm\">2 · 4 = 8</span>.",
+     "Within row 2, column 3 adds another 3 slots: <span class=\"mm\">8 + 3 = 11</span>.",
+     "The element <span class=\"mm\">A[2][3]</span> is the 12th element, so its 0-based index is 11."
+    ],
+    "final": "Answer: <code class=\"mm\">B[11]</code> — option (C).",
+    "trap": "Counting the element's position as 12 and forgetting that <code class=\"mm\">B</code> is 0-based. The 12th element sits at index 11.",
+    "takeaway": "Row-major flat index = <span class=\"mm\">i · C + j</span>; column-major flat index = <span class=\"mm\">j · R + i</span>."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In row-major order the whole of row 0 is stored before row 1 begins, so the flat offset of <span class=\"mm\">A[i][j]</span> in an array of <span class=\"mm\">C</span> columns is <span class=\"mm\">i · C + j</span>, counted from 0.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The array has <span class=\"mm\">C = 4</span> columns, so each row occupies 4 consecutive slots.</li><li>Row 2 therefore begins at flat index <span class=\"mm\">2 · 4 = 8</span>.</li><li>Within row 2, column 3 adds another 3 slots: <span class=\"mm\">8 + 3 = 11</span>.</li><li>The element <span class=\"mm\">A[2][3]</span> is the 12th element, so its 0-based index is 11.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">B[11]</code> — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Counting the element's position as 12 and forgetting that <code class=\"mm\">B</code> is 0-based. The 12th element sits at index 11.</p><p class=\"row\"><b>Takeaway.</b> Row-major flat index = <span class=\"mm\">i · C + j</span>; column-major flat index = <span class=\"mm\">j · R + i</span>.</p>"
   },
   {
@@ -15905,7 +15916,18 @@
    "options_html": [],
    "answer": 120,
    "answer_display": "120",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A multidimensional array declaration gives the size of each dimension, and the total number of elements is the product of those sizes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The three dimensions are 4, 6 and 5.</li><li><span class=\"mm\">4 · 6 = 24</span> elements per outermost slice.</li><li><span class=\"mm\">24 · 5 = 120</span> elements in all.</li><li>Each of the 120 elements is a separate <code class=\"mm\">int</code> object, laid out contiguously.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 120.</span></p><p class=\"row\"><b>Common trap.</b> Adding the dimensions (4 + 6 + 5 = 15) instead of multiplying them, or reading the declaration as 4 elements of type <code class=\"mm\">int[6][5]</code> and reporting 4.</p><p class=\"row\"><b>Takeaway.</b> Total elements = product of all declared sizes.</p>",
+   "solution": {
+    "concept": "A multidimensional array declaration gives the size of each dimension, and the total number of elements is the product of those sizes.",
+    "steps": [
+     "The three dimensions are 4, 6 and 5.",
+     "<span class=\"mm\">4 · 6 = 24</span> elements per outermost slice.",
+     "<span class=\"mm\">24 · 5 = 120</span> elements in all.",
+     "Each of the 120 elements is a separate <code class=\"mm\">int</code> object, laid out contiguously."
+    ],
+    "final": "Answer: 120.",
+    "trap": "Adding the dimensions (4 + 6 + 5 = 15) instead of multiplying them, or reading the declaration as 4 elements of type <code class=\"mm\">int[6][5]</code> and reporting 4.",
+    "takeaway": "Total elements = product of all declared sizes."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A multidimensional array declaration gives the size of each dimension, and the total number of elements is the product of those sizes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The three dimensions are 4, 6 and 5.</li><li><span class=\"mm\">4 · 6 = 24</span> elements per outermost slice.</li><li><span class=\"mm\">24 · 5 = 120</span> elements in all.</li><li>Each of the 120 elements is a separate <code class=\"mm\">int</code> object, laid out contiguously.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 120.</span></p><p class=\"row\"><b>Common trap.</b> Adding the dimensions (4 + 6 + 5 = 15) instead of multiplying them, or reading the declaration as 4 elements of type <code class=\"mm\">int[6][5]</code> and reporting 4.</p><p class=\"row\"><b>Takeaway.</b> Total elements = product of all declared sizes.</p>"
   },
   {
@@ -15944,7 +15966,18 @@
     0
    ],
    "answer_display": "Option (A)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An array occupies the number of its elements multiplied by the size of one element; the shape of the array does not add any padding of its own.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The array holds <span class=\"mm\">10 · 20 = 200</span> elements.</li><li>Each element is an <code class=\"mm\">int</code> of 4 bytes.</li><li><span class=\"mm\">200 · 4 = 800</span> bytes in total.</li><li>All 800 bytes are contiguous.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 800 bytes — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Multiplying only one dimension by the element size (10 · 4 = 40) or treating the two dimensions as two separate arrays and doubling the count.</p><p class=\"row\"><b>Takeaway.</b> Bytes = product of dimensions × element size.</p>",
+   "solution": {
+    "concept": "An array occupies the number of its elements multiplied by the size of one element; the shape of the array does not add any padding of its own.",
+    "steps": [
+     "The array holds <span class=\"mm\">10 · 20 = 200</span> elements.",
+     "Each element is an <code class=\"mm\">int</code> of 4 bytes.",
+     "<span class=\"mm\">200 · 4 = 800</span> bytes in total.",
+     "All 800 bytes are contiguous."
+    ],
+    "final": "Answer: 800 bytes — option (A).",
+    "trap": "Multiplying only one dimension by the element size (10 · 4 = 40) or treating the two dimensions as two separate arrays and doubling the count.",
+    "takeaway": "Bytes = product of dimensions × element size."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An array occupies the number of its elements multiplied by the size of one element; the shape of the array does not add any padding of its own.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The array holds <span class=\"mm\">10 · 20 = 200</span> elements.</li><li>Each element is an <code class=\"mm\">int</code> of 4 bytes.</li><li><span class=\"mm\">200 · 4 = 800</span> bytes in total.</li><li>All 800 bytes are contiguous.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 800 bytes — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Multiplying only one dimension by the element size (10 · 4 = 40) or treating the two dimensions as two separate arrays and doubling the count.</p><p class=\"row\"><b>Takeaway.</b> Bytes = product of dimensions × element size.</p>"
   },
   {
@@ -15983,7 +16016,18 @@
     3
    ],
    "answer_display": "Option (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Column-major order stores all of column 0 first, then all of column 1, and so on. The stride along a column is therefore 1, and the stride between columns is the number of rows <span class=\"mm\">R</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every complete column before column <span class=\"mm\">j</span> holds <span class=\"mm\">R</span> elements, so <span class=\"mm\">j · R</span> elements precede column <span class=\"mm\">j</span>.</li><li>Inside column <span class=\"mm\">j</span>, the element in row <span class=\"mm\">i</span> is <span class=\"mm\">i</span> places further along.</li><li>The flat index is <span class=\"mm\">j · R + i</span>, and the byte offset is that index times 4.</li><li>Adding <code class=\"mm\">base</code> gives the address.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">base + (j * R + i) * 4</code> — option (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (C) keeps the correct shape but swaps the roles of <span class=\"mm\">R</span> and <span class=\"mm\">C</span>. In column-major order the number of rows, not the number of columns, is the stride between columns.</p><p class=\"row\"><b>Takeaway.</b> Row-major: <span class=\"mm\">i · C + j</span>. Column-major: <span class=\"mm\">j · R + i</span>. The stride always belongs to the dimension that is *not* varying fastest.</p>",
+   "solution": {
+    "concept": "Column-major order stores all of column 0 first, then all of column 1, and so on. The stride along a column is therefore 1, and the stride between columns is the number of rows <span class=\"mm\">R</span>.",
+    "steps": [
+     "Every complete column before column <span class=\"mm\">j</span> holds <span class=\"mm\">R</span> elements, so <span class=\"mm\">j · R</span> elements precede column <span class=\"mm\">j</span>.",
+     "Inside column <span class=\"mm\">j</span>, the element in row <span class=\"mm\">i</span> is <span class=\"mm\">i</span> places further along.",
+     "The flat index is <span class=\"mm\">j · R + i</span>, and the byte offset is that index times 4.",
+     "Adding <code class=\"mm\">base</code> gives the address."
+    ],
+    "final": "Answer: <code class=\"mm\">base + (j * R + i) * 4</code> — option (D).",
+    "trap": "Option (C) keeps the correct shape but swaps the roles of <span class=\"mm\">R</span> and <span class=\"mm\">C</span>. In column-major order the number of rows, not the number of columns, is the stride between columns.",
+    "takeaway": "Row-major: <span class=\"mm\">i · C + j</span>. Column-major: <span class=\"mm\">j · R + i</span>. The stride always belongs to the dimension that is *not* varying fastest."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Column-major order stores all of column 0 first, then all of column 1, and so on. The stride along a column is therefore 1, and the stride between columns is the number of rows <span class=\"mm\">R</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every complete column before column <span class=\"mm\">j</span> holds <span class=\"mm\">R</span> elements, so <span class=\"mm\">j · R</span> elements precede column <span class=\"mm\">j</span>.</li><li>Inside column <span class=\"mm\">j</span>, the element in row <span class=\"mm\">i</span> is <span class=\"mm\">i</span> places further along.</li><li>The flat index is <span class=\"mm\">j · R + i</span>, and the byte offset is that index times 4.</li><li>Adding <code class=\"mm\">base</code> gives the address.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">base + (j * R + i) * 4</code> — option (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (C) keeps the correct shape but swaps the roles of <span class=\"mm\">R</span> and <span class=\"mm\">C</span>. In column-major order the number of rows, not the number of columns, is the stride between columns.</p><p class=\"row\"><b>Takeaway.</b> Row-major: <span class=\"mm\">i · C + j</span>. Column-major: <span class=\"mm\">j · R + i</span>. The stride always belongs to the dimension that is *not* varying fastest.</p>"
   },
   {
@@ -16024,7 +16068,18 @@
     3
    ],
    "answer_display": "Options (A), (B) and (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> C fixes the layout of an array: elements are stored in row-major order, so the rightmost subscript moves fastest. Locality, and therefore speed, follows from that layout.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE. The C standard requires array elements to be contiguous with the last subscript varying fastest, which is row-major order.</li><li>(B) TRUE. With <code class=\"mm\">j</code> innermost, consecutive iterations touch consecutive addresses; exchanging the loops walks one element per 100-element row and touches a new cache line every time.</li><li>(C) FALSE. The layout is fixed by the language, not chosen by the compiler for speed. A program that wants column-major storage must emulate it (for example <code class=\"mm\">A[j][i]</code>).</li><li>(D) TRUE. The address is <code class=\"mm\">base + (i * 100 + j) * sizeof(int)</code>, a fixed number of multiplications and additions.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A), (B) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Believing the compiler may reorder storage. It may reorder *accesses* and vectorise loops, but the address of every element is fixed by the declaration.</p><p class=\"row\"><b>Takeaway.</b> Row-major layout means the innermost loop should vary the last subscript.</p>",
+   "solution": {
+    "concept": "C fixes the layout of an array: elements are stored in row-major order, so the rightmost subscript moves fastest. Locality, and therefore speed, follows from that layout.",
+    "steps": [
+     "(A) TRUE. The C standard requires array elements to be contiguous with the last subscript varying fastest, which is row-major order.",
+     "(B) TRUE. With <code class=\"mm\">j</code> innermost, consecutive iterations touch consecutive addresses; exchanging the loops walks one element per 100-element row and touches a new cache line every time.",
+     "(C) FALSE. The layout is fixed by the language, not chosen by the compiler for speed. A program that wants column-major storage must emulate it (for example <code class=\"mm\">A[j][i]</code>).",
+     "(D) TRUE. The address is <code class=\"mm\">base + (i * 100 + j) * sizeof(int)</code>, a fixed number of multiplications and additions."
+    ],
+    "final": "Answer: options (A), (B) and (D).",
+    "trap": "Believing the compiler may reorder storage. It may reorder *accesses* and vectorise loops, but the address of every element is fixed by the declaration.",
+    "takeaway": "Row-major layout means the innermost loop should vary the last subscript."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> C fixes the layout of an array: elements are stored in row-major order, so the rightmost subscript moves fastest. Locality, and therefore speed, follows from that layout.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE. The C standard requires array elements to be contiguous with the last subscript varying fastest, which is row-major order.</li><li>(B) TRUE. With <code class=\"mm\">j</code> innermost, consecutive iterations touch consecutive addresses; exchanging the loops walks one element per 100-element row and touches a new cache line every time.</li><li>(C) FALSE. The layout is fixed by the language, not chosen by the compiler for speed. A program that wants column-major storage must emulate it (for example <code class=\"mm\">A[j][i]</code>).</li><li>(D) TRUE. The address is <code class=\"mm\">base + (i * 100 + j) * sizeof(int)</code>, a fixed number of multiplications and additions.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A), (B) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Believing the compiler may reorder storage. It may reorder *accesses* and vectorise loops, but the address of every element is fixed by the declaration.</p><p class=\"row\"><b>Takeaway.</b> Row-major layout means the innermost loop should vary the last subscript.</p>"
   },
   {
@@ -16051,7 +16106,18 @@
    "options_html": [],
    "answer": 298,
    "answer_display": "298",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A tridiagonal matrix has <span class=\"mm\">n</span> entries on the main diagonal, <span class=\"mm\">n − 1</span> on the diagonal above it and <span class=\"mm\">n − 1</span> below it, giving <span class=\"mm\">3n − 2</span> non-zero entries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Main diagonal: <span class=\"mm\">n = 100</span> entries.</li><li>Super-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.</li><li>Sub-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.</li><li>Total <span class=\"mm\">100 + 99 + 99 = 298</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 298.</span></p><p class=\"row\"><b>Common trap.</b> Counting <span class=\"mm\">3n = 300</span> by forgetting that each of the two off-diagonals is one entry short, or packing the full <span class=\"mm\">n² = 10 000</span> cells out of habit.</p><p class=\"row\"><b>Takeaway.</b> Banded matrices are counted band by band, not row by row.</p>",
+   "solution": {
+    "concept": "A tridiagonal matrix has <span class=\"mm\">n</span> entries on the main diagonal, <span class=\"mm\">n − 1</span> on the diagonal above it and <span class=\"mm\">n − 1</span> below it, giving <span class=\"mm\">3n − 2</span> non-zero entries.",
+    "steps": [
+     "Main diagonal: <span class=\"mm\">n = 100</span> entries.",
+     "Super-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.",
+     "Sub-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.",
+     "Total <span class=\"mm\">100 + 99 + 99 = 298</span>."
+    ],
+    "final": "Answer: 298.",
+    "trap": "Counting <span class=\"mm\">3n = 300</span> by forgetting that each of the two off-diagonals is one entry short, or packing the full <span class=\"mm\">n² = 10 000</span> cells out of habit.",
+    "takeaway": "Banded matrices are counted band by band, not row by row."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A tridiagonal matrix has <span class=\"mm\">n</span> entries on the main diagonal, <span class=\"mm\">n − 1</span> on the diagonal above it and <span class=\"mm\">n − 1</span> below it, giving <span class=\"mm\">3n − 2</span> non-zero entries.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Main diagonal: <span class=\"mm\">n = 100</span> entries.</li><li>Super-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.</li><li>Sub-diagonal: <span class=\"mm\">n − 1 = 99</span> entries.</li><li>Total <span class=\"mm\">100 + 99 + 99 = 298</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 298.</span></p><p class=\"row\"><b>Common trap.</b> Counting <span class=\"mm\">3n = 300</span> by forgetting that each of the two off-diagonals is one entry short, or packing the full <span class=\"mm\">n² = 10 000</span> cells out of habit.</p><p class=\"row\"><b>Takeaway.</b> Banded matrices are counted band by band, not row by row.</p>"
   },
   {
@@ -16090,7 +16156,19 @@
     2
    ],
    "answer_display": "Option (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In column-major order the strides grow with the dimensions in declaration order: the first subscript has stride 1, the second has stride equal to the first dimension, and the third has stride equal to the product of the first two.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Stride of the first subscript: 1.</li><li>Stride of the second subscript: <span class=\"mm\">3</span> (the size of the first dimension).</li><li>Stride of the third subscript: <span class=\"mm\">3 · 4 = 12</span>.</li><li>Flat index of <span class=\"mm\">A[2][1][3]</span> is <span class=\"mm\">2 · 1 + 1 · 3 + 3 · 12 = 2 + 3 + 36 = 41</span>.</li><li>Byte address <span class=\"mm\">41 · 4 = 164</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 164 — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Applying the row-major formula <span class=\"mm\">(i · 4 + j) · 5 + k = 48</span>, which gives 192 and is option (D). Column-major order reverses which subscript moves fastest.</p><p class=\"row\"><b>Takeaway.</b> Column-major strides are <span class=\"mm\">1, d₁, d₁d₂</span>; row-major strides are <span class=\"mm\">d₂d₃, d₃, 1</span>.</p>",
+   "solution": {
+    "concept": "In column-major order the strides grow with the dimensions in declaration order: the first subscript has stride 1, the second has stride equal to the first dimension, and the third has stride equal to the product of the first two.",
+    "steps": [
+     "Stride of the first subscript: 1.",
+     "Stride of the second subscript: <span class=\"mm\">3</span> (the size of the first dimension).",
+     "Stride of the third subscript: <span class=\"mm\">3 · 4 = 12</span>.",
+     "Flat index of <span class=\"mm\">A[2][1][3]</span> is <span class=\"mm\">2 · 1 + 1 · 3 + 3 · 12 = 2 + 3 + 36 = 41</span>.",
+     "Byte address <span class=\"mm\">41 · 4 = 164</span>."
+    ],
+    "final": "Answer: 164 — option (C).",
+    "trap": "Applying the row-major formula <span class=\"mm\">(i · 4 + j) · 5 + k = 48</span>, which gives 192 and is option (D). Column-major order reverses which subscript moves fastest.",
+    "takeaway": "Column-major strides are <span class=\"mm\">1, d₁, d₁d₂</span>; row-major strides are <span class=\"mm\">d₂d₃, d₃, 1</span>."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In column-major order the strides grow with the dimensions in declaration order: the first subscript has stride 1, the second has stride equal to the first dimension, and the third has stride equal to the product of the first two.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Stride of the first subscript: 1.</li><li>Stride of the second subscript: <span class=\"mm\">3</span> (the size of the first dimension).</li><li>Stride of the third subscript: <span class=\"mm\">3 · 4 = 12</span>.</li><li>Flat index of <span class=\"mm\">A[2][1][3]</span> is <span class=\"mm\">2 · 1 + 1 · 3 + 3 · 12 = 2 + 3 + 36 = 41</span>.</li><li>Byte address <span class=\"mm\">41 · 4 = 164</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 164 — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Applying the row-major formula <span class=\"mm\">(i · 4 + j) · 5 + k = 48</span>, which gives 192 and is option (D). Column-major order reverses which subscript moves fastest.</p><p class=\"row\"><b>Takeaway.</b> Column-major strides are <span class=\"mm\">1, d₁, d₁d₂</span>; row-major strides are <span class=\"mm\">d₂d₃, d₃, 1</span>.</p>"
   },
   {
@@ -16129,7 +16207,17 @@
     0
    ],
    "answer_display": "Option (A)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Inserting after a known node touches exactly two links: the new node must point at the old successor, and the predecessor must point at the new node. Order matters, because the old successor's address is lost once <code class=\"mm\">p->next</code> is overwritten.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">r->next = p->next;</code> — the new node adopts the old successor <code class=\"mm\">q</code>.</li><li><code class=\"mm\">p->next = r;</code> — the predecessor now points at the new node.</li><li>No other link changes: nothing else referred to the position between <code class=\"mm\">p</code> and <code class=\"mm\">q</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Writing <code class=\"mm\">p->next = r;</code> first. That destroys the only pointer to <code class=\"mm\">q</code>, and the rest of the list is lost.</p><p class=\"row\"><b>Takeaway.</b> Always give the new node its successor before overwriting the predecessor's link.</p>",
+   "solution": {
+    "concept": "Inserting after a known node touches exactly two links: the new node must point at the old successor, and the predecessor must point at the new node. Order matters, because the old successor's address is lost once <code class=\"mm\">p->next</code> is overwritten.",
+    "steps": [
+     "<code class=\"mm\">r->next = p->next;</code> — the new node adopts the old successor <code class=\"mm\">q</code>.",
+     "<code class=\"mm\">p->next = r;</code> — the predecessor now points at the new node.",
+     "No other link changes: nothing else referred to the position between <code class=\"mm\">p</code> and <code class=\"mm\">q</code>."
+    ],
+    "final": "Answer: 2 — option (A).",
+    "trap": "Writing <code class=\"mm\">p->next = r;</code> first. That destroys the only pointer to <code class=\"mm\">q</code>, and the rest of the list is lost.",
+    "takeaway": "Always give the new node its successor before overwriting the predecessor's link."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Inserting after a known node touches exactly two links: the new node must point at the old successor, and the predecessor must point at the new node. Order matters, because the old successor's address is lost once <code class=\"mm\">p->next</code> is overwritten.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">r->next = p->next;</code> — the new node adopts the old successor <code class=\"mm\">q</code>.</li><li><code class=\"mm\">p->next = r;</code> — the predecessor now points at the new node.</li><li>No other link changes: nothing else referred to the position between <code class=\"mm\">p</code> and <code class=\"mm\">q</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Writing <code class=\"mm\">p->next = r;</code> first. That destroys the only pointer to <code class=\"mm\">q</code>, and the rest of the list is lost.</p><p class=\"row\"><b>Takeaway.</b> Always give the new node its successor before overwriting the predecessor's link.</p>"
   },
   {
@@ -16168,7 +16256,18 @@
     1
    ],
    "answer_display": "Option (B)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A singly linked list carries only forward links, so from a node you can reach everything after it and nothing before it. Work that needs the predecessor is expensive; work that needs only the successor is constant time.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is false: removing <code class=\"mm\">p</code> itself requires changing <code class=\"mm\">p->prev</code>, and no predecessor link exists.</li><li>(B) is true: <code class=\"mm\">q = p->next; p->next = q->next; free(q);</code> unlinks the successor with a fixed number of operations.</li><li>(C) is false: the predecessor can only be found by walking from the head, which costs Θ(n).</li><li>(D) is false: a full reversal must visit every node.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (B).</span></p><p class=\"row\"><b>Common trap.</b> Assuming <code class=\"mm\">p</code> is enough to delete its own node. That is true in a doubly linked list, where <code class=\"mm\">p->prev</code> is stored, and false in a singly linked list.</p><p class=\"row\"><b>Takeaway.</b> In a singly linked list, \"delete the node after p\" is Θ(1); \"delete p\" is not.</p>",
+   "solution": {
+    "concept": "A singly linked list carries only forward links, so from a node you can reach everything after it and nothing before it. Work that needs the predecessor is expensive; work that needs only the successor is constant time.",
+    "steps": [
+     "(A) is false: removing <code class=\"mm\">p</code> itself requires changing <code class=\"mm\">p->prev</code>, and no predecessor link exists.",
+     "(B) is true: <code class=\"mm\">q = p->next; p->next = q->next; free(q);</code> unlinks the successor with a fixed number of operations.",
+     "(C) is false: the predecessor can only be found by walking from the head, which costs Θ(n).",
+     "(D) is false: a full reversal must visit every node."
+    ],
+    "final": "Answer: option (B).",
+    "trap": "Assuming <code class=\"mm\">p</code> is enough to delete its own node. That is true in a doubly linked list, where <code class=\"mm\">p->prev</code> is stored, and false in a singly linked list.",
+    "takeaway": "In a singly linked list, \"delete the node after p\" is Θ(1); \"delete p\" is not."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A singly linked list carries only forward links, so from a node you can reach everything after it and nothing before it. Work that needs the predecessor is expensive; work that needs only the successor is constant time.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is false: removing <code class=\"mm\">p</code> itself requires changing <code class=\"mm\">p->prev</code>, and no predecessor link exists.</li><li>(B) is true: <code class=\"mm\">q = p->next; p->next = q->next; free(q);</code> unlinks the successor with a fixed number of operations.</li><li>(C) is false: the predecessor can only be found by walking from the head, which costs Θ(n).</li><li>(D) is false: a full reversal must visit every node.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (B).</span></p><p class=\"row\"><b>Common trap.</b> Assuming <code class=\"mm\">p</code> is enough to delete its own node. That is true in a doubly linked list, where <code class=\"mm\">p->prev</code> is stored, and false in a singly linked list.</p><p class=\"row\"><b>Takeaway.</b> In a singly linked list, \"delete the node after p\" is Θ(1); \"delete p\" is not.</p>"
   },
   {
@@ -16207,7 +16306,20 @@
     2
    ],
    "answer_display": "Option (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two-pointer technique advances one pointer twice as fast as the other, so when the fast pointer reaches the end the slow pointer has covered half the list. With an even number of nodes it lands on the second of the two middle nodes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start: <code class=\"mm\">slow = 1</code>, <code class=\"mm\">fast = 1</code>.</li><li>Iteration 1: <code class=\"mm\">slow = 2</code>, <code class=\"mm\">fast = 3</code>.</li><li>Iteration 2: <code class=\"mm\">slow = 3</code>, <code class=\"mm\">fast = 5</code>.</li><li>Iteration 3: <code class=\"mm\">slow = 4</code>, <code class=\"mm\">fast = 7</code>.</li><li>Iteration 4: <code class=\"mm\">slow = 5</code>, <code class=\"mm\">fast = NULL</code> because <code class=\"mm\">fast->next</code> of node 7 is node 8 and node 8's successor is NULL.</li><li>The test <code class=\"mm\">fast != NULL</code> now fails, so the loop stops with <code class=\"mm\">slow</code> on node 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the node holding 5 — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Expecting node 4 by assuming the slow pointer stops on the first middle node. For an even length the second middle node is reached, because the loop makes one further half-step before the fast pointer runs off the end.</p><p class=\"row\"><b>Takeaway.</b> For n nodes, this loop leaves <code class=\"mm\">slow</code> at position <span class=\"mm\">⌊n/2⌋ + 1</span>.</p>",
+   "solution": {
+    "concept": "The two-pointer technique advances one pointer twice as fast as the other, so when the fast pointer reaches the end the slow pointer has covered half the list. With an even number of nodes it lands on the second of the two middle nodes.",
+    "steps": [
+     "Start: <code class=\"mm\">slow = 1</code>, <code class=\"mm\">fast = 1</code>.",
+     "Iteration 1: <code class=\"mm\">slow = 2</code>, <code class=\"mm\">fast = 3</code>.",
+     "Iteration 2: <code class=\"mm\">slow = 3</code>, <code class=\"mm\">fast = 5</code>.",
+     "Iteration 3: <code class=\"mm\">slow = 4</code>, <code class=\"mm\">fast = 7</code>.",
+     "Iteration 4: <code class=\"mm\">slow = 5</code>, <code class=\"mm\">fast = NULL</code> because <code class=\"mm\">fast->next</code> of node 7 is node 8 and node 8's successor is NULL.",
+     "The test <code class=\"mm\">fast != NULL</code> now fails, so the loop stops with <code class=\"mm\">slow</code> on node 5."
+    ],
+    "final": "Answer: the node holding 5 — option (C).",
+    "trap": "Expecting node 4 by assuming the slow pointer stops on the first middle node. For an even length the second middle node is reached, because the loop makes one further half-step before the fast pointer runs off the end.",
+    "takeaway": "For n nodes, this loop leaves <code class=\"mm\">slow</code> at position <span class=\"mm\">⌊n/2⌋ + 1</span>."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two-pointer technique advances one pointer twice as fast as the other, so when the fast pointer reaches the end the slow pointer has covered half the list. With an even number of nodes it lands on the second of the two middle nodes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start: <code class=\"mm\">slow = 1</code>, <code class=\"mm\">fast = 1</code>.</li><li>Iteration 1: <code class=\"mm\">slow = 2</code>, <code class=\"mm\">fast = 3</code>.</li><li>Iteration 2: <code class=\"mm\">slow = 3</code>, <code class=\"mm\">fast = 5</code>.</li><li>Iteration 3: <code class=\"mm\">slow = 4</code>, <code class=\"mm\">fast = 7</code>.</li><li>Iteration 4: <code class=\"mm\">slow = 5</code>, <code class=\"mm\">fast = NULL</code> because <code class=\"mm\">fast->next</code> of node 7 is node 8 and node 8's successor is NULL.</li><li>The test <code class=\"mm\">fast != NULL</code> now fails, so the loop stops with <code class=\"mm\">slow</code> on node 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the node holding 5 — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Expecting node 4 by assuming the slow pointer stops on the first middle node. For an even length the second middle node is reached, because the loop makes one further half-step before the fast pointer runs off the end.</p><p class=\"row\"><b>Takeaway.</b> For n nodes, this loop leaves <code class=\"mm\">slow</code> at position <span class=\"mm\">⌊n/2⌋ + 1</span>.</p>"
   },
   {
@@ -16234,7 +16346,18 @@
    "options_html": [],
    "answer": 14,
    "answer_display": "14",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each comparison consumes exactly one node from one of the two lists, and the merge stops as soon as one list is exhausted — the remaining tail is appended without further comparisons.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every comparison appends one node, so after <span class=\"mm\">m + n − 1</span> comparisons at most one node is still unplaced.</li><li>That last node needs no comparison, which is why the bound is <span class=\"mm\">m + n − 1</span>.</li><li>Here <span class=\"mm\">6 + 9 − 1 = 14</span>.</li><li>The bound is attained, for example, when the lists interleave and the final element of one list is larger than every element of the other.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 14.</span></p><p class=\"row\"><b>Common trap.</b> Answering 15 by assuming every node is compared. The last remaining node is appended without a comparison, so the count is one short of <span class=\"mm\">m + n</span>.</p><p class=\"row\"><b>Takeaway.</b> Merging two sorted lists costs at most <span class=\"mm\">m + n − 1</span> comparisons and Θ(1) extra space when the nodes are relinked rather than copied.</p>",
+   "solution": {
+    "concept": "Each comparison consumes exactly one node from one of the two lists, and the merge stops as soon as one list is exhausted — the remaining tail is appended without further comparisons.",
+    "steps": [
+     "Every comparison appends one node, so after <span class=\"mm\">m + n − 1</span> comparisons at most one node is still unplaced.",
+     "That last node needs no comparison, which is why the bound is <span class=\"mm\">m + n − 1</span>.",
+     "Here <span class=\"mm\">6 + 9 − 1 = 14</span>.",
+     "The bound is attained, for example, when the lists interleave and the final element of one list is larger than every element of the other."
+    ],
+    "final": "Answer: 14.",
+    "trap": "Answering 15 by assuming every node is compared. The last remaining node is appended without a comparison, so the count is one short of <span class=\"mm\">m + n</span>.",
+    "takeaway": "Merging two sorted lists costs at most <span class=\"mm\">m + n − 1</span> comparisons and Θ(1) extra space when the nodes are relinked rather than copied."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each comparison consumes exactly one node from one of the two lists, and the merge stops as soon as one list is exhausted — the remaining tail is appended without further comparisons.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every comparison appends one node, so after <span class=\"mm\">m + n − 1</span> comparisons at most one node is still unplaced.</li><li>That last node needs no comparison, which is why the bound is <span class=\"mm\">m + n − 1</span>.</li><li>Here <span class=\"mm\">6 + 9 − 1 = 14</span>.</li><li>The bound is attained, for example, when the lists interleave and the final element of one list is larger than every element of the other.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 14.</span></p><p class=\"row\"><b>Common trap.</b> Answering 15 by assuming every node is compared. The last remaining node is appended without a comparison, so the count is one short of <span class=\"mm\">m + n</span>.</p><p class=\"row\"><b>Takeaway.</b> Merging two sorted lists costs at most <span class=\"mm\">m + n − 1</span> comparisons and Θ(1) extra space when the nodes are relinked rather than copied.</p>"
   },
   {
@@ -16274,7 +16397,18 @@
     2
    ],
    "answer_display": "Options (B) and (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An array buys constant-time indexing by storing its elements contiguously; a linked list buys constant-time insertion and deletion at a known position by paying one pointer per node.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE. Each node is allocated separately and may sit anywhere in the heap; only the links impose order.</li><li>(B) TRUE. There is no index arithmetic, so the list must be walked node by node — Θ(k) steps.</li><li>(C) TRUE. Two link writes complete the insertion, as long as the position is already known.</li><li>(D) FALSE. Each node carries at least one pointer, so a list of n integers needs n integers plus n pointers; for small element types the array is the smaller structure.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Treating the linked list as a compact structure. It trades memory and locality for cheap insertion and deletion; it is not the smaller representation.</p><p class=\"row\"><b>Takeaway.</b> Array: Θ(1) index, Θ(n) insert. List: Θ(n) index, Θ(1) insert at a known node.</p>",
+   "solution": {
+    "concept": "An array buys constant-time indexing by storing its elements contiguously; a linked list buys constant-time insertion and deletion at a known position by paying one pointer per node.",
+    "steps": [
+     "(A) FALSE. Each node is allocated separately and may sit anywhere in the heap; only the links impose order.",
+     "(B) TRUE. There is no index arithmetic, so the list must be walked node by node — Θ(k) steps.",
+     "(C) TRUE. Two link writes complete the insertion, as long as the position is already known.",
+     "(D) FALSE. Each node carries at least one pointer, so a list of n integers needs n integers plus n pointers; for small element types the array is the smaller structure."
+    ],
+    "final": "Answer: options (B) and (C).",
+    "trap": "Treating the linked list as a compact structure. It trades memory and locality for cheap insertion and deletion; it is not the smaller representation.",
+    "takeaway": "Array: Θ(1) index, Θ(n) insert. List: Θ(n) index, Θ(1) insert at a known node."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An array buys constant-time indexing by storing its elements contiguously; a linked list buys constant-time insertion and deletion at a known position by paying one pointer per node.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE. Each node is allocated separately and may sit anywhere in the heap; only the links impose order.</li><li>(B) TRUE. There is no index arithmetic, so the list must be walked node by node — Θ(k) steps.</li><li>(C) TRUE. Two link writes complete the insertion, as long as the position is already known.</li><li>(D) FALSE. Each node carries at least one pointer, so a list of n integers needs n integers plus n pointers; for small element types the array is the smaller structure.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Treating the linked list as a compact structure. It trades memory and locality for cheap insertion and deletion; it is not the smaller representation.</p><p class=\"row\"><b>Takeaway.</b> Array: Θ(1) index, Θ(n) insert. List: Θ(n) index, Θ(1) insert at a known node.</p>"
   },
   {
@@ -16313,7 +16447,18 @@
     0
    ],
    "answer_display": "Option (A)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The loop maintains three invariants: <code class=\"mm\">p</code> is the head of the part already reversed, <code class=\"mm\">q</code> is the head of the part not yet touched, and the reversed part ends in a NULL link. One iteration moves one node from the second part to the first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Iteration 1: <code class=\"mm\">r = 2</code>, node 1 points to NULL, <code class=\"mm\">p = 1</code>, <code class=\"mm\">q = 2</code>.</li><li>Iteration 2: <code class=\"mm\">r = 3</code>, node 2 points to node 1, <code class=\"mm\">p = 2</code>, <code class=\"mm\">q = 3</code>.</li><li>Iteration 3: <code class=\"mm\">r = 4</code>, node 3 points to node 2, <code class=\"mm\">p = 3</code>, <code class=\"mm\">q = 4</code>.</li><li>The reversed prefix is 3 → 2 → 1 → NULL and the untouched suffix is 4 → 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (A).</span></p><p class=\"row\"><b>Common trap.</b> Reading <code class=\"mm\">p</code> as the node just processed and expecting it to be 4 after three iterations. It is the node processed in the third iteration, which is 3, and <code class=\"mm\">q</code> has already moved on to 4.</p><p class=\"row\"><b>Takeaway.</b> Three pointers are needed because the only link to the rest of the list is overwritten during the reversal; <code class=\"mm\">r</code> preserves it.</p>",
+   "solution": {
+    "concept": "The loop maintains three invariants: <code class=\"mm\">p</code> is the head of the part already reversed, <code class=\"mm\">q</code> is the head of the part not yet touched, and the reversed part ends in a NULL link. One iteration moves one node from the second part to the first.",
+    "steps": [
+     "Iteration 1: <code class=\"mm\">r = 2</code>, node 1 points to NULL, <code class=\"mm\">p = 1</code>, <code class=\"mm\">q = 2</code>.",
+     "Iteration 2: <code class=\"mm\">r = 3</code>, node 2 points to node 1, <code class=\"mm\">p = 2</code>, <code class=\"mm\">q = 3</code>.",
+     "Iteration 3: <code class=\"mm\">r = 4</code>, node 3 points to node 2, <code class=\"mm\">p = 3</code>, <code class=\"mm\">q = 4</code>.",
+     "The reversed prefix is 3 → 2 → 1 → NULL and the untouched suffix is 4 → 5."
+    ],
+    "final": "Answer: option (A).",
+    "trap": "Reading <code class=\"mm\">p</code> as the node just processed and expecting it to be 4 after three iterations. It is the node processed in the third iteration, which is 3, and <code class=\"mm\">q</code> has already moved on to 4.",
+    "takeaway": "Three pointers are needed because the only link to the rest of the list is overwritten during the reversal; <code class=\"mm\">r</code> preserves it."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The loop maintains three invariants: <code class=\"mm\">p</code> is the head of the part already reversed, <code class=\"mm\">q</code> is the head of the part not yet touched, and the reversed part ends in a NULL link. One iteration moves one node from the second part to the first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Iteration 1: <code class=\"mm\">r = 2</code>, node 1 points to NULL, <code class=\"mm\">p = 1</code>, <code class=\"mm\">q = 2</code>.</li><li>Iteration 2: <code class=\"mm\">r = 3</code>, node 2 points to node 1, <code class=\"mm\">p = 2</code>, <code class=\"mm\">q = 3</code>.</li><li>Iteration 3: <code class=\"mm\">r = 4</code>, node 3 points to node 2, <code class=\"mm\">p = 3</code>, <code class=\"mm\">q = 4</code>.</li><li>The reversed prefix is 3 → 2 → 1 → NULL and the untouched suffix is 4 → 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (A).</span></p><p class=\"row\"><b>Common trap.</b> Reading <code class=\"mm\">p</code> as the node just processed and expecting it to be 4 after three iterations. It is the node processed in the third iteration, which is 3, and <code class=\"mm\">q</code> has already moved on to 4.</p><p class=\"row\"><b>Takeaway.</b> Three pointers are needed because the only link to the rest of the list is overwritten during the reversal; <code class=\"mm\">r</code> preserves it.</p>"
   },
   {
@@ -16352,7 +16497,19 @@
     1
    ],
    "answer_display": "Option (B)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In prefix (Polish) notation every operator precedes its two operands. The operator of lowest precedence sits outermost, so the root of the expression tree is written first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The expression tree has <code class=\"mm\">+</code> at the root, with <code class=\"mm\">A</code> on the left and <code class=\"mm\">B * C</code> on the right.</li><li>Writing the root first: <code class=\"mm\">+</code>.</li><li>Then the left subtree, which is the single operand <code class=\"mm\">A</code>.</li><li>Then the right subtree in prefix form: <code class=\"mm\">* B C</code>.</li><li>Concatenating: <code class=\"mm\">+ A * B C</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">+ A * B C</code> — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Option (A) puts the multiplication outermost, which would mean <code class=\"mm\">(A + B) * C</code>. The operator written first must be the last one evaluated.</p><p class=\"row\"><b>Takeaway.</b> Prefix writes operators before operands, postfix after; the tree is the same.</p>",
+   "solution": {
+    "concept": "In prefix (Polish) notation every operator precedes its two operands. The operator of lowest precedence sits outermost, so the root of the expression tree is written first.",
+    "steps": [
+     "The expression tree has <code class=\"mm\">+</code> at the root, with <code class=\"mm\">A</code> on the left and <code class=\"mm\">B * C</code> on the right.",
+     "Writing the root first: <code class=\"mm\">+</code>.",
+     "Then the left subtree, which is the single operand <code class=\"mm\">A</code>.",
+     "Then the right subtree in prefix form: <code class=\"mm\">* B C</code>.",
+     "Concatenating: <code class=\"mm\">+ A * B C</code>."
+    ],
+    "final": "Answer: <code class=\"mm\">+ A * B C</code> — option (B).",
+    "trap": "Option (A) puts the multiplication outermost, which would mean <code class=\"mm\">(A + B) * C</code>. The operator written first must be the last one evaluated.",
+    "takeaway": "Prefix writes operators before operands, postfix after; the tree is the same."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In prefix (Polish) notation every operator precedes its two operands. The operator of lowest precedence sits outermost, so the root of the expression tree is written first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The expression tree has <code class=\"mm\">+</code> at the root, with <code class=\"mm\">A</code> on the left and <code class=\"mm\">B * C</code> on the right.</li><li>Writing the root first: <code class=\"mm\">+</code>.</li><li>Then the left subtree, which is the single operand <code class=\"mm\">A</code>.</li><li>Then the right subtree in prefix form: <code class=\"mm\">* B C</code>.</li><li>Concatenating: <code class=\"mm\">+ A * B C</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">+ A * B C</code> — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Option (A) puts the multiplication outermost, which would mean <code class=\"mm\">(A + B) * C</code>. The operator written first must be the last one evaluated.</p><p class=\"row\"><b>Takeaway.</b> Prefix writes operators before operands, postfix after; the tree is the same.</p>"
   },
   {
@@ -16379,8 +16536,20 @@
    "options_html": [],
    "answer": 15,
    "answer_display": "15",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A prefix expression is evaluated right to left: a digit is pushed, and an operator pops its two operands, applies itself, and pushes the result. The first operand popped is the right operand.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The tokens, read right to left, are <code class=\"mm\">2, 3, +, 4, 5, *, -</code>.</li><li>Push 2, then push 3. Reach <code class=\"mm\">+</code>: the first value popped is the left operand, so <span class=\"mm\">3 + 2 = 5</span> is pushed. The stack holds <span class=\"mm\">[5]</span>.</li><li>Push 4, then push 5, so the stack holds <span class=\"mm\">[5, 4, 5]</span> with 5 on top.</li><li>Reach <code class=\"mm\">*</code>: pop 5 (left) and 4 (right), push <span class=\"mm\">5 · 4 = 20</span>. The stack holds <span class=\"mm\">[5, 20]</span>.</li><li>Reach <code class=\"mm\">-</code>: pop 20 (left) and 5 (right), push <span class=\"mm\">20 − 5 = 15</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 15.</span></p><p class=\"row\"><b>Common trap.</b> Reading the expression left to right and pairing the operands by eye. A prefix expression must be scanned right to left, and the operand popped first is the left one — getting that backwards turns <span class=\"mm\">20 − 5</span> into <span class=\"mm\">5 − 20 = −15</span>.</p><p class=\"row\"><b>Takeaway.</b> The expression means <code class=\"mm\">(5 * 4) - (3 + 2)</code>; the scan order, not the operand order in the text, decides which value is subtracted from which.</p>",
-   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A prefix expression is evaluated right to left: a digit is pushed, and an operator pops its two operands, applies itself, and pushes the result. The first operand popped is the right operand.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The tokens, read right to left, are <code class=\"mm\">2, 3, +, 4, 5, *, -</code>.</li><li>Push 2, then push 3. Reach <code class=\"mm\">+</code>: the first value popped is the left operand, so <span class=\"mm\">3 + 2 = 5</span> is pushed. The stack holds <span class=\"mm\">[5]</span>.</li><li>Push 4, then push 5, so the stack holds <span class=\"mm\">[5, 4, 5]</span> with 5 on top.</li><li>Reach <code class=\"mm\">*</code>: pop 5 (left) and 4 (right), push <span class=\"mm\">5 · 4 = 20</span>. The stack holds <span class=\"mm\">[5, 20]</span>.</li><li>Reach <code class=\"mm\">-</code>: pop 20 (left) and 5 (right), push <span class=\"mm\">20 − 5 = 15</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 15.</span></p><p class=\"row\"><b>Common trap.</b> Reading the expression left to right and pairing the operands by eye. A prefix expression must be scanned right to left, and the operand popped first is the left one — getting that backwards turns <span class=\"mm\">20 − 5</span> into <span class=\"mm\">5 − 20 = −15</span>.</p><p class=\"row\"><b>Takeaway.</b> The expression means <code class=\"mm\">(5 * 4) - (3 + 2)</code>; the scan order, not the operand order in the text, decides which value is subtracted from which.</p>"
+   "solution": {
+    "concept": "A prefix expression is evaluated right to left: a digit is pushed, and an operator pops its two operands, applies itself, and pushes the result. The first operand popped is the left one, then the right.",
+    "steps": [
+     "The tokens, read right to left, are <code class=\"mm\">2, 3, +, 4, 5, *, -</code>.",
+     "Push 2, then push 3. Reach <code class=\"mm\">+</code>: the first value popped is the left operand, so <span class=\"mm\">3 + 2 = 5</span> is pushed. The stack holds <span class=\"mm\">[5]</span>.",
+     "Push 4, then push 5, so the stack holds <span class=\"mm\">[5, 4, 5]</span> with 5 on top.",
+     "Reach <code class=\"mm\">*</code>: pop 5 (left) and 4 (right), push <span class=\"mm\">5 · 4 = 20</span>. The stack holds <span class=\"mm\">[5, 20]</span>.",
+     "Reach <code class=\"mm\">-</code>: pop 20 (left) and 5 (right), push <span class=\"mm\">20 − 5 = 15</span>."
+    ],
+    "final": "Answer: 15.",
+    "trap": "Reading the expression left to right and pairing the operands by eye. A prefix expression must be scanned right to left, and the operand popped first is the left one — getting that backwards turns <span class=\"mm\">20 − 5</span> into <span class=\"mm\">5 − 20 = −15</span>.",
+    "takeaway": "The expression means <code class=\"mm\">(5 * 4) - (3 + 2)</code>; the scan order, not the operand order in the text, decides which value is subtracted from which."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A prefix expression is evaluated right to left: a digit is pushed, and an operator pops its two operands, applies itself, and pushes the result. The first operand popped is the left one, then the right.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The tokens, read right to left, are <code class=\"mm\">2, 3, +, 4, 5, *, -</code>.</li><li>Push 2, then push 3. Reach <code class=\"mm\">+</code>: the first value popped is the left operand, so <span class=\"mm\">3 + 2 = 5</span> is pushed. The stack holds <span class=\"mm\">[5]</span>.</li><li>Push 4, then push 5, so the stack holds <span class=\"mm\">[5, 4, 5]</span> with 5 on top.</li><li>Reach <code class=\"mm\">*</code>: pop 5 (left) and 4 (right), push <span class=\"mm\">5 · 4 = 20</span>. The stack holds <span class=\"mm\">[5, 20]</span>.</li><li>Reach <code class=\"mm\">-</code>: pop 20 (left) and 5 (right), push <span class=\"mm\">20 − 5 = 15</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 15.</span></p><p class=\"row\"><b>Common trap.</b> Reading the expression left to right and pairing the operands by eye. A prefix expression must be scanned right to left, and the operand popped first is the left one — getting that backwards turns <span class=\"mm\">20 − 5</span> into <span class=\"mm\">5 − 20 = −15</span>.</p><p class=\"row\"><b>Takeaway.</b> The expression means <code class=\"mm\">(5 * 4) - (3 + 2)</code>; the scan order, not the operand order in the text, decides which value is subtracted from which.</p>"
   },
   {
    "id": "DS-U3-Q66",
@@ -16418,7 +16587,19 @@
     0
    ],
    "answer_display": "Option (A)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The operator-stack algorithm outputs operands as they arrive, pushes operators, pops on a closing bracket and at the end. <code class=\"mm\">*</code> and <code class=\"mm\">/</code> have equal precedence and associate left to right, so <code class=\"mm\">*</code> is popped before <code class=\"mm\">/</code> is pushed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Read <code class=\"mm\">(A - B)</code>: output <code class=\"mm\">A B</code>, push <code class=\"mm\">-</code>, pop it on the closing bracket → <code class=\"mm\">A B -</code>.</li><li>Push <code class=\"mm\">*</code>.</li><li>Read <code class=\"mm\">(C + D)</code>: output <code class=\"mm\">C D</code>, push and pop <code class=\"mm\">+</code> → <code class=\"mm\">A B - C D +</code>.</li><li>The closing bracket pops <code class=\"mm\">*</code> → <code class=\"mm\">A B - C D + *</code>.</li><li>Push <code class=\"mm\">/</code>, output <code class=\"mm\">E</code>, and at the end pop <code class=\"mm\">/</code> → <code class=\"mm\">A B - C D + * E /</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">A B - C D + * E /</code> — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Option (B) applies the division before the multiplication, which would compute <code class=\"mm\">(A - B) * ((C + D) / E)</code>. Equal precedence with left associativity forbids that.</p><p class=\"row\"><b>Takeaway.</b> When precedences tie, the operator already on the stack is popped first.</p>",
+   "solution": {
+    "concept": "The operator-stack algorithm outputs operands as they arrive, pushes operators, pops on a closing bracket and at the end. <code class=\"mm\">*</code> and <code class=\"mm\">/</code> have equal precedence and associate left to right, so <code class=\"mm\">*</code> is popped before <code class=\"mm\">/</code> is pushed.",
+    "steps": [
+     "Read <code class=\"mm\">(A - B)</code>: output <code class=\"mm\">A B</code>, push <code class=\"mm\">-</code>, pop it on the closing bracket → <code class=\"mm\">A B -</code>.",
+     "Push <code class=\"mm\">*</code>.",
+     "Read <code class=\"mm\">(C + D)</code>: output <code class=\"mm\">C D</code>, push and pop <code class=\"mm\">+</code> → <code class=\"mm\">A B - C D +</code>.",
+     "The closing bracket pops <code class=\"mm\">*</code> → <code class=\"mm\">A B - C D + *</code>.",
+     "Push <code class=\"mm\">/</code>, output <code class=\"mm\">E</code>, and at the end pop <code class=\"mm\">/</code> → <code class=\"mm\">A B - C D + * E /</code>."
+    ],
+    "final": "Answer: <code class=\"mm\">A B - C D + * E /</code> — option (A).",
+    "trap": "Option (B) applies the division before the multiplication, which would compute <code class=\"mm\">(A - B) * ((C + D) / E)</code>. Equal precedence with left associativity forbids that.",
+    "takeaway": "When precedences tie, the operator already on the stack is popped first."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The operator-stack algorithm outputs operands as they arrive, pushes operators, pops on a closing bracket and at the end. <code class=\"mm\">*</code> and <code class=\"mm\">/</code> have equal precedence and associate left to right, so <code class=\"mm\">*</code> is popped before <code class=\"mm\">/</code> is pushed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Read <code class=\"mm\">(A - B)</code>: output <code class=\"mm\">A B</code>, push <code class=\"mm\">-</code>, pop it on the closing bracket → <code class=\"mm\">A B -</code>.</li><li>Push <code class=\"mm\">*</code>.</li><li>Read <code class=\"mm\">(C + D)</code>: output <code class=\"mm\">C D</code>, push and pop <code class=\"mm\">+</code> → <code class=\"mm\">A B - C D +</code>.</li><li>The closing bracket pops <code class=\"mm\">*</code> → <code class=\"mm\">A B - C D + *</code>.</li><li>Push <code class=\"mm\">/</code>, output <code class=\"mm\">E</code>, and at the end pop <code class=\"mm\">/</code> → <code class=\"mm\">A B - C D + * E /</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">A B - C D + * E /</code> — option (A).</span></p><p class=\"row\"><b>Common trap.</b> Option (B) applies the division before the multiplication, which would compute <code class=\"mm\">(A - B) * ((C + D) / E)</code>. Equal precedence with left associativity forbids that.</p><p class=\"row\"><b>Takeaway.</b> When precedences tie, the operator already on the stack is popped first.</p>"
   },
   {
@@ -16458,7 +16639,18 @@
     2
    ],
    "answer_display": "Options (A) and (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A postfix expression is well formed exactly when, scanning left to right, the count of operands always stays at least one ahead of the operators and ends at exactly one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">A B +</code> leaves one value; <code class=\"mm\">C</code> makes two; <code class=\"mm\">*</code> reduces them to one. Valid, and equals <code class=\"mm\">(A + B) * C</code>.</li><li>(B) <code class=\"mm\">A B +</code> leaves one value, and <code class=\"mm\">*</code> then needs two. Invalid.</li><li>(C) <code class=\"mm\">B C *</code> leaves one value; <code class=\"mm\">A</code> makes two; <code class=\"mm\">+</code> reduces them to one. Valid, and equals <code class=\"mm\">A + (B * C)</code>.</li><li>(D) contains an operator before two operands have been read, which no postfix evaluation can use. Invalid.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Judging validity by counting operators and operands overall. The counts can balance while the running value count dips below one in the middle, as in <code class=\"mm\">A B + * C</code>.</p><p class=\"row\"><b>Takeaway.</b> A postfix string is valid iff the running value count never drops below 1 and ends at 1.</p>",
+   "solution": {
+    "concept": "A postfix expression is well formed exactly when, scanning left to right, the count of operands always stays at least one ahead of the operators and ends at exactly one.",
+    "steps": [
+     "(A) <code class=\"mm\">A B +</code> leaves one value; <code class=\"mm\">C</code> makes two; <code class=\"mm\">*</code> reduces them to one. Valid, and equals <code class=\"mm\">(A + B) * C</code>.",
+     "(B) <code class=\"mm\">A B +</code> leaves one value, and <code class=\"mm\">*</code> then needs two. Invalid.",
+     "(C) <code class=\"mm\">B C *</code> leaves one value; <code class=\"mm\">A</code> makes two; <code class=\"mm\">+</code> reduces them to one. Valid, and equals <code class=\"mm\">A + (B * C)</code>.",
+     "(D) contains an operator before two operands have been read, which no postfix evaluation can use. Invalid."
+    ],
+    "final": "Answer: options (A) and (C).",
+    "trap": "Judging validity by counting operators and operands overall. The counts can balance while the running value count dips below one in the middle, as in <code class=\"mm\">A B + * C</code>.",
+    "takeaway": "A postfix string is valid iff the running value count never drops below 1 and ends at 1."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A postfix expression is well formed exactly when, scanning left to right, the count of operands always stays at least one ahead of the operators and ends at exactly one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">A B +</code> leaves one value; <code class=\"mm\">C</code> makes two; <code class=\"mm\">*</code> reduces them to one. Valid, and equals <code class=\"mm\">(A + B) * C</code>.</li><li>(B) <code class=\"mm\">A B +</code> leaves one value, and <code class=\"mm\">*</code> then needs two. Invalid.</li><li>(C) <code class=\"mm\">B C *</code> leaves one value; <code class=\"mm\">A</code> makes two; <code class=\"mm\">+</code> reduces them to one. Valid, and equals <code class=\"mm\">A + (B * C)</code>.</li><li>(D) contains an operator before two operands have been read, which no postfix evaluation can use. Invalid.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Judging validity by counting operators and operands overall. The counts can balance while the running value count dips below one in the middle, as in <code class=\"mm\">A B + * C</code>.</p><p class=\"row\"><b>Takeaway.</b> A postfix string is valid iff the running value count never drops below 1 and ends at 1.</p>"
   },
   {
@@ -16497,7 +16689,18 @@
     1
    ],
    "answer_display": "Option (B)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Right associativity groups a chain of equal-precedence operators from the right: <span class=\"mm\">2 ^ 3 ^ 2</span> means <span class=\"mm\">2 ^ (3 ^ 2)</span>, not <span class=\"mm\">(2 ^ 3) ^ 2</span>. The whole chain is one operand of the multiplication.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The expression is <span class=\"mm\">(2 ^ (3 ^ 2)) * 4</span>.</li><li>The inner power <span class=\"mm\">3 ^ 2</span> becomes postfix <code class=\"mm\">3 2 ^</code>.</li><li>The outer power takes <code class=\"mm\">2</code> and that result: <code class=\"mm\">2 3 2 ^ ^</code>.</li><li>The multiplication then takes that value and 4: <code class=\"mm\">2 3 2 ^ ^ 4 *</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">2 3 2 ^ ^ 4 *</code> — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Option (A) is the left-associative reading <span class=\"mm\">(2 ^ 3) ^ 2</span>, which is a different number (<span class=\"mm\">64</span> against <span class=\"mm\">512</span>). With equal-precedence right-associative operators the stack is not popped until the whole chain has been read.</p><p class=\"row\"><b>Takeaway.</b> Right associativity delays the pop; left associativity forces it as soon as the next equal operator arrives.</p>",
+   "solution": {
+    "concept": "Right associativity groups a chain of equal-precedence operators from the right: <span class=\"mm\">2 ^ 3 ^ 2</span> means <span class=\"mm\">2 ^ (3 ^ 2)</span>, not <span class=\"mm\">(2 ^ 3) ^ 2</span>. The whole chain is one operand of the multiplication.",
+    "steps": [
+     "The expression is <span class=\"mm\">(2 ^ (3 ^ 2)) * 4</span>.",
+     "The inner power <span class=\"mm\">3 ^ 2</span> becomes postfix <code class=\"mm\">3 2 ^</code>.",
+     "The outer power takes <code class=\"mm\">2</code> and that result: <code class=\"mm\">2 3 2 ^ ^</code>.",
+     "The multiplication then takes that value and 4: <code class=\"mm\">2 3 2 ^ ^ 4 *</code>."
+    ],
+    "final": "Answer: <code class=\"mm\">2 3 2 ^ ^ 4 *</code> — option (B).",
+    "trap": "Option (A) is the left-associative reading <span class=\"mm\">(2 ^ 3) ^ 2</span>, which is a different number (<span class=\"mm\">64</span> against <span class=\"mm\">512</span>). With equal-precedence right-associative operators the stack is not popped until the whole chain has been read.",
+    "takeaway": "Right associativity delays the pop; left associativity forces it as soon as the next equal operator arrives."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Right associativity groups a chain of equal-precedence operators from the right: <span class=\"mm\">2 ^ 3 ^ 2</span> means <span class=\"mm\">2 ^ (3 ^ 2)</span>, not <span class=\"mm\">(2 ^ 3) ^ 2</span>. The whole chain is one operand of the multiplication.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The expression is <span class=\"mm\">(2 ^ (3 ^ 2)) * 4</span>.</li><li>The inner power <span class=\"mm\">3 ^ 2</span> becomes postfix <code class=\"mm\">3 2 ^</code>.</li><li>The outer power takes <code class=\"mm\">2</code> and that result: <code class=\"mm\">2 3 2 ^ ^</code>.</li><li>The multiplication then takes that value and 4: <code class=\"mm\">2 3 2 ^ ^ 4 *</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">2 3 2 ^ ^ 4 *</code> — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Option (A) is the left-associative reading <span class=\"mm\">(2 ^ 3) ^ 2</span>, which is a different number (<span class=\"mm\">64</span> against <span class=\"mm\">512</span>). With equal-precedence right-associative operators the stack is not popped until the whole chain has been read.</p><p class=\"row\"><b>Takeaway.</b> Right associativity delays the pop; left associativity forces it as soon as the next equal operator arrives.</p>"
   },
   {
@@ -16538,7 +16741,18 @@
     3
    ],
    "answer_display": "Options (A), (C) and (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A single stack does not remember the minimum of the elements below its top, so that information must be stored as the stack grows. The standard trick is a parallel stack of running minima.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE. The auxiliary stack holds one entry per element, so the extra space is O(n) and the top entry answers <code class=\"mm\">getMin</code> in one step.</li><li>(B) FALSE. Finding the minimum of the current contents means examining every element, which is Θ(n), not Θ(1).</li><li>(C) TRUE. Because the two stacks are kept in step, the top of the auxiliary stack always describes the minimum of exactly the elements currently in the main stack.</li><li>(D) TRUE. Popping the main stack pops the auxiliary stack too, and the new top is the minimum of the remaining elements — the answer before the pop was pushed earlier and is still there.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Storing only the current minimum. After that element is popped the older minimum is gone, which is exactly why one entry per element is needed.</p><p class=\"row\"><b>Takeaway.</b> A running-minimum stack makes <code class=\"mm\">getMin</code> a peek, and every operation stays Θ(1).</p>",
+   "solution": {
+    "concept": "A single stack does not remember the minimum of the elements below its top, so that information must be stored as the stack grows. The standard trick is a parallel stack of running minima.",
+    "steps": [
+     "(A) TRUE. The auxiliary stack holds one entry per element, so the extra space is O(n) and the top entry answers <code class=\"mm\">getMin</code> in one step.",
+     "(B) FALSE. Finding the minimum of the current contents means examining every element, which is Θ(n), not Θ(1).",
+     "(C) TRUE. Because the two stacks are kept in step, the top of the auxiliary stack always describes the minimum of exactly the elements currently in the main stack.",
+     "(D) TRUE. Popping the main stack pops the auxiliary stack too, and the new top is the minimum of the remaining elements — the answer before the pop was pushed earlier and is still there."
+    ],
+    "final": "Answer: options (A), (C) and (D).",
+    "trap": "Storing only the current minimum. After that element is popped the older minimum is gone, which is exactly why one entry per element is needed.",
+    "takeaway": "A running-minimum stack makes <code class=\"mm\">getMin</code> a peek, and every operation stays Θ(1)."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A single stack does not remember the minimum of the elements below its top, so that information must be stored as the stack grows. The standard trick is a parallel stack of running minima.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE. The auxiliary stack holds one entry per element, so the extra space is O(n) and the top entry answers <code class=\"mm\">getMin</code> in one step.</li><li>(B) FALSE. Finding the minimum of the current contents means examining every element, which is Θ(n), not Θ(1).</li><li>(C) TRUE. Because the two stacks are kept in step, the top of the auxiliary stack always describes the minimum of exactly the elements currently in the main stack.</li><li>(D) TRUE. Popping the main stack pops the auxiliary stack too, and the new top is the minimum of the remaining elements — the answer before the pop was pushed earlier and is still there.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (A), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Storing only the current minimum. After that element is popped the older minimum is gone, which is exactly why one entry per element is needed.</p><p class=\"row\"><b>Takeaway.</b> A running-minimum stack makes <code class=\"mm\">getMin</code> a peek, and every operation stays Θ(1).</p>"
   },
   {
@@ -16577,7 +16791,17 @@
     3
    ],
    "answer_display": "Option (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a circular queue with one slot left unused, the number of stored elements is the forward distance from <code class=\"mm\">front</code> to <code class=\"mm\">rear</code>, taken modulo the array size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The forward distance is <span class=\"mm\">7 − 3 = 4</span>.</li><li>Because the distance is positive, no wrap is needed: <span class=\"mm\">(7 − 3 + 10) mod 10 = 4</span>.</li><li>The four elements occupy slots 3, 4, 5 and 6; slot 7 is the next free position.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 — option (D).</span></p><p class=\"row\"><b>Common trap.</b> Reporting 4 as \"slots 3 to 7\", which counts slot 7 as occupied. <code class=\"mm\">rear</code> is the *next free* position in this convention, not the last occupied one.</p><p class=\"row\"><b>Takeaway.</b> Count = <span class=\"mm\">(rear − front + n) mod n</span> when one slot is kept free.</p>",
+   "solution": {
+    "concept": "In a circular queue with one slot left unused, the number of stored elements is the forward distance from <code class=\"mm\">front</code> to <code class=\"mm\">rear</code>, taken modulo the array size.",
+    "steps": [
+     "The forward distance is <span class=\"mm\">7 − 3 = 4</span>.",
+     "Because the distance is positive, no wrap is needed: <span class=\"mm\">(7 − 3 + 10) mod 10 = 4</span>.",
+     "The four elements occupy slots 3, 4, 5 and 6; slot 7 is the next free position."
+    ],
+    "final": "Answer: 4 — option (D).",
+    "trap": "Reporting 4 as \"slots 3 to 7\", which counts slot 7 as occupied. <code class=\"mm\">rear</code> is the *next free* position in this convention, not the last occupied one.",
+    "takeaway": "Count = <span class=\"mm\">(rear − front + n) mod n</span> when one slot is kept free."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a circular queue with one slot left unused, the number of stored elements is the forward distance from <code class=\"mm\">front</code> to <code class=\"mm\">rear</code>, taken modulo the array size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The forward distance is <span class=\"mm\">7 − 3 = 4</span>.</li><li>Because the distance is positive, no wrap is needed: <span class=\"mm\">(7 − 3 + 10) mod 10 = 4</span>.</li><li>The four elements occupy slots 3, 4, 5 and 6; slot 7 is the next free position.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 — option (D).</span></p><p class=\"row\"><b>Common trap.</b> Reporting 4 as \"slots 3 to 7\", which counts slot 7 as occupied. <code class=\"mm\">rear</code> is the *next free* position in this convention, not the last occupied one.</p><p class=\"row\"><b>Takeaway.</b> Count = <span class=\"mm\">(rear − front + n) mod n</span> when one slot is kept free.</p>"
   },
   {
@@ -16616,7 +16840,17 @@
     2
    ],
    "answer_display": "Option (C)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The unused slot exists only to let <code class=\"mm\">front == rear</code> mean \"empty\" without ambiguity. A separate counter removes that ambiguity, so every slot can be used.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Without a counter, a full queue and an empty queue can both have <code class=\"mm\">front == rear</code>, so one slot must stay free.</li><li>With a <code class=\"mm\">count</code> field, full means <code class=\"mm\">count == n</code> and empty means <code class=\"mm\">count == 0</code> — two different tests.</li><li>Therefore all <code class=\"mm\">n</code> slots are usable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">n</code> — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Carrying over the <code class=\"mm\">n − 1</code> capacity of the slot-free implementation. The counter is exactly what buys the extra slot back.</p><p class=\"row\"><b>Takeaway.</b> Capacity is <code class=\"mm\">n − 1</code> without a counter and <code class=\"mm\">n</code> with one.</p>",
+   "solution": {
+    "concept": "The unused slot exists only to let <code class=\"mm\">front == rear</code> mean \"empty\" without ambiguity. A separate counter removes that ambiguity, so every slot can be used.",
+    "steps": [
+     "Without a counter, a full queue and an empty queue can both have <code class=\"mm\">front == rear</code>, so one slot must stay free.",
+     "With a <code class=\"mm\">count</code> field, full means <code class=\"mm\">count == n</code> and empty means <code class=\"mm\">count == 0</code> — two different tests.",
+     "Therefore all <code class=\"mm\">n</code> slots are usable."
+    ],
+    "final": "Answer: <code class=\"mm\">n</code> — option (C).",
+    "trap": "Carrying over the <code class=\"mm\">n − 1</code> capacity of the slot-free implementation. The counter is exactly what buys the extra slot back.",
+    "takeaway": "Capacity is <code class=\"mm\">n − 1</code> without a counter and <code class=\"mm\">n</code> with one."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The unused slot exists only to let <code class=\"mm\">front == rear</code> mean \"empty\" without ambiguity. A separate counter removes that ambiguity, so every slot can be used.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Without a counter, a full queue and an empty queue can both have <code class=\"mm\">front == rear</code>, so one slot must stay free.</li><li>With a <code class=\"mm\">count</code> field, full means <code class=\"mm\">count == n</code> and empty means <code class=\"mm\">count == 0</code> — two different tests.</li><li>Therefore all <code class=\"mm\">n</code> slots are usable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <code class=\"mm\">n</code> — option (C).</span></p><p class=\"row\"><b>Common trap.</b> Carrying over the <code class=\"mm\">n − 1</code> capacity of the slot-free implementation. The counter is exactly what buys the extra slot back.</p><p class=\"row\"><b>Takeaway.</b> Capacity is <code class=\"mm\">n − 1</code> without a counter and <code class=\"mm\">n</code> with one.</p>"
   },
   {
@@ -16655,7 +16889,17 @@
     1
    ],
    "answer_display": "Option (B)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The five stored elements occupy consecutive slots starting at <code class=\"mm\">front</code>, so the last one sits <span class=\"mm\">count − 1</span> steps further on, modulo the array size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Elements are at <span class=\"mm\">(4 + 0) mod 6 = 4</span>, <span class=\"mm\">(4 + 1) mod 6 = 5</span>, <span class=\"mm\">(4 + 2) mod 6 = 0</span>, <span class=\"mm\">(4 + 3) mod 6 = 1</span> and <span class=\"mm\">(4 + 4) mod 6 = 2</span>.</li><li>The most recent element is the last of these, at index 2.</li><li>Equivalently <span class=\"mm\">(front + count − 1) mod 6 = 8 mod 6 = 2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Computing <span class=\"mm\">(front + count) mod 6 = 3</span>, which is the next *free* slot rather than the last inserted element.</p><p class=\"row\"><b>Takeaway.</b> With a counter: last index = <span class=\"mm\">(front + count − 1) mod n</span>, next free = <span class=\"mm\">(front + count) mod n</span>.</p>",
+   "solution": {
+    "concept": "The five stored elements occupy consecutive slots starting at <code class=\"mm\">front</code>, so the last one sits <span class=\"mm\">count − 1</span> steps further on, modulo the array size.",
+    "steps": [
+     "Elements are at <span class=\"mm\">(4 + 0) mod 6 = 4</span>, <span class=\"mm\">(4 + 1) mod 6 = 5</span>, <span class=\"mm\">(4 + 2) mod 6 = 0</span>, <span class=\"mm\">(4 + 3) mod 6 = 1</span> and <span class=\"mm\">(4 + 4) mod 6 = 2</span>.",
+     "The most recent element is the last of these, at index 2.",
+     "Equivalently <span class=\"mm\">(front + count − 1) mod 6 = 8 mod 6 = 2</span>."
+    ],
+    "final": "Answer: 2 — option (B).",
+    "trap": "Computing <span class=\"mm\">(front + count) mod 6 = 3</span>, which is the next *free* slot rather than the last inserted element.",
+    "takeaway": "With a counter: last index = <span class=\"mm\">(front + count − 1) mod n</span>, next free = <span class=\"mm\">(front + count) mod n</span>."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The five stored elements occupy consecutive slots starting at <code class=\"mm\">front</code>, so the last one sits <span class=\"mm\">count − 1</span> steps further on, modulo the array size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Elements are at <span class=\"mm\">(4 + 0) mod 6 = 4</span>, <span class=\"mm\">(4 + 1) mod 6 = 5</span>, <span class=\"mm\">(4 + 2) mod 6 = 0</span>, <span class=\"mm\">(4 + 3) mod 6 = 1</span> and <span class=\"mm\">(4 + 4) mod 6 = 2</span>.</li><li>The most recent element is the last of these, at index 2.</li><li>Equivalently <span class=\"mm\">(front + count − 1) mod 6 = 8 mod 6 = 2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 — option (B).</span></p><p class=\"row\"><b>Common trap.</b> Computing <span class=\"mm\">(front + count) mod 6 = 3</span>, which is the next *free* slot rather than the last inserted element.</p><p class=\"row\"><b>Takeaway.</b> With a counter: last index = <span class=\"mm\">(front + count − 1) mod n</span>, next free = <span class=\"mm\">(front + count) mod n</span>.</p>"
   },
   {
@@ -16682,7 +16926,18 @@
    "options_html": [],
    "answer": 2,
    "answer_display": "2",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A queue performs this elimination in the order the process describes, because moving a person to the back is exactly the rotation a circular queue supports in Θ(1).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Eliminated in order: 1, 4, 7, 10, 5, 9, 6, 3, 8.</li><li>The queue is rotated after each elimination, so after eliminating 1 the order becomes 4, 5, 6, 7, 8, 9, 10, 2, 3.</li><li>Continuing the same way removes nine people, and 2 is never reached at the front while more than one person remains.</li><li>The last person left is 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2.</span></p><p class=\"row\"><b>Common trap.</b> Eliminating the first person and then also skipping them, or rotating only one person per step. The step says: eliminate the front, then move exactly two people.</p><p class=\"row\"><b>Takeaway.</b> This is Josephus elimination with step 3, done with a queue in Θ(n) rotations overall.</p>",
+   "solution": {
+    "concept": "A queue performs this elimination in the order the process describes, because moving a person to the back is exactly the rotation a circular queue supports in Θ(1).",
+    "steps": [
+     "Eliminated in order: 1, 4, 7, 10, 5, 9, 6, 3, 8.",
+     "The queue is rotated after each elimination, so after eliminating 1 the order becomes 4, 5, 6, 7, 8, 9, 10, 2, 3.",
+     "Continuing the same way removes nine people, and 2 is never reached at the front while more than one person remains.",
+     "The last person left is 2."
+    ],
+    "final": "Answer: 2.",
+    "trap": "Eliminating the first person and then also skipping them, or rotating only one person per step. The step says: eliminate the front, then move exactly two people.",
+    "takeaway": "This is Josephus elimination with step 3, done with a queue in Θ(n) rotations overall."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A queue performs this elimination in the order the process describes, because moving a person to the back is exactly the rotation a circular queue supports in Θ(1).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Eliminated in order: 1, 4, 7, 10, 5, 9, 6, 3, 8.</li><li>The queue is rotated after each elimination, so after eliminating 1 the order becomes 4, 5, 6, 7, 8, 9, 10, 2, 3.</li><li>Continuing the same way removes nine people, and 2 is never reached at the front while more than one person remains.</li><li>The last person left is 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2.</span></p><p class=\"row\"><b>Common trap.</b> Eliminating the first person and then also skipping them, or rotating only one person per step. The step says: eliminate the front, then move exactly two people.</p><p class=\"row\"><b>Takeaway.</b> This is Josephus elimination with step 3, done with a queue in Θ(n) rotations overall.</p>"
   },
   {
@@ -16723,7 +16978,18 @@
     3
    ],
    "answer_display": "Options (B), (C) and (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A circular array supports growth at both ends because \"one slot backwards\" is just a decrement modulo <code class=\"mm\">n</code>; no element ever has to move.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE. Reallocation happens only when the deque is full, exactly as for a circular queue; individual insertions at either end are Θ(1).</li><li>(B) TRUE. <code class=\"mm\">rear</code> is the next free slot at the back, so removing from the back steps it backwards: <code class=\"mm\">rear = (rear - 1 + n) % n</code>.</li><li>(C) TRUE. <code class=\"mm\">front</code> steps backwards in the same way, and the new element is written at the new <code class=\"mm\">front</code>.</li><li>(D) TRUE. Restricting the operations to one end removes the deque's extra freedom, and the last-in first-out discipline of <code class=\"mm\">push_back</code>/<code class=\"mm\">pop_back</code> is that of a stack.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (B), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Assuming a deque must shift elements when it grows at the front. The modular index does the work, so the cost is constant.</p><p class=\"row\"><b>Takeaway.</b> A deque in a circular array is a queue that can move <code class=\"mm\">front</code> in either direction.</p>",
+   "solution": {
+    "concept": "A circular array supports growth at both ends because \"one slot backwards\" is just a decrement modulo <code class=\"mm\">n</code>; no element ever has to move.",
+    "steps": [
+     "(A) FALSE. Reallocation happens only when the deque is full, exactly as for a circular queue; individual insertions at either end are Θ(1).",
+     "(B) TRUE. <code class=\"mm\">rear</code> is the next free slot at the back, so removing from the back steps it backwards: <code class=\"mm\">rear = (rear - 1 + n) % n</code>.",
+     "(C) TRUE. <code class=\"mm\">front</code> steps backwards in the same way, and the new element is written at the new <code class=\"mm\">front</code>.",
+     "(D) TRUE. Restricting the operations to one end removes the deque's extra freedom, and the last-in first-out discipline of <code class=\"mm\">push_back</code>/<code class=\"mm\">pop_back</code> is that of a stack."
+    ],
+    "final": "Answer: options (B), (C) and (D).",
+    "trap": "Assuming a deque must shift elements when it grows at the front. The modular index does the work, so the cost is constant.",
+    "takeaway": "A deque in a circular array is a queue that can move <code class=\"mm\">front</code> in either direction."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A circular array supports growth at both ends because \"one slot backwards\" is just a decrement modulo <code class=\"mm\">n</code>; no element ever has to move.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE. Reallocation happens only when the deque is full, exactly as for a circular queue; individual insertions at either end are Θ(1).</li><li>(B) TRUE. <code class=\"mm\">rear</code> is the next free slot at the back, so removing from the back steps it backwards: <code class=\"mm\">rear = (rear - 1 + n) % n</code>.</li><li>(C) TRUE. <code class=\"mm\">front</code> steps backwards in the same way, and the new element is written at the new <code class=\"mm\">front</code>.</li><li>(D) TRUE. Restricting the operations to one end removes the deque's extra freedom, and the last-in first-out discipline of <code class=\"mm\">push_back</code>/<code class=\"mm\">pop_back</code> is that of a stack.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options (B), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Assuming a deque must shift elements when it grows at the front. The modular index does the work, so the cost is constant.</p><p class=\"row\"><b>Takeaway.</b> A deque in a circular array is a queue that can move <code class=\"mm\">front</code> in either direction.</p>"
   },
   {
@@ -16762,7 +17028,18 @@
     3
    ],
    "answer_display": "Option (D)",
-   "solution": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A circular list makes the last node and the first node neighbours, so a single pointer to the last node gives immediate access to both ends.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Enqueue: create a node, link it after <code class=\"mm\">rear</code>, then set <code class=\"mm\">rear</code> to the new node — a fixed number of writes.</li><li>Dequeue: the front is <code class=\"mm\">rear->next</code>, so unlink that node by setting <code class=\"mm\">rear->next = front->next</code> — again a fixed number of writes.</li><li>The one special case is a single-element queue, where the front and the rear are the same node; the code then has to reset <code class=\"mm\">rear</code> to NULL, which is still Θ(1).</li><li>Neither operation walks the list, so both are Θ(1).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (D).</span></p><p class=\"row\"><b>Common trap.</b> Expecting dequeue to be expensive because a plain singly linked list with only a head pointer cannot reach the tail cheaply. Here the pointer is to the *rear* of a *circular* list, which makes the front the next node along.</p><p class=\"row\"><b>Takeaway.</b> One pointer suffices for both ends when the list is circular: keep it at the rear.</p>",
+   "solution": {
+    "concept": "A circular list makes the last node and the first node neighbours, so a single pointer to the last node gives immediate access to both ends.",
+    "steps": [
+     "Enqueue: create a node, link it after <code class=\"mm\">rear</code>, then set <code class=\"mm\">rear</code> to the new node — a fixed number of writes.",
+     "Dequeue: the front is <code class=\"mm\">rear->next</code>, so unlink that node by setting <code class=\"mm\">rear->next = front->next</code> — again a fixed number of writes.",
+     "The one special case is a single-element queue, where the front and the rear are the same node; the code then has to reset <code class=\"mm\">rear</code> to NULL, which is still Θ(1).",
+     "Neither operation walks the list, so both are Θ(1)."
+    ],
+    "final": "Answer: option (D).",
+    "trap": "Expecting dequeue to be expensive because a plain singly linked list with only a head pointer cannot reach the tail cheaply. Here the pointer is to the *rear* of a *circular* list, which makes the front the next node along.",
+    "takeaway": "One pointer suffices for both ends when the list is circular: keep it at the rear."
+   },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A circular list makes the last node and the first node neighbours, so a single pointer to the last node gives immediate access to both ends.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Enqueue: create a node, link it after <code class=\"mm\">rear</code>, then set <code class=\"mm\">rear</code> to the new node — a fixed number of writes.</li><li>Dequeue: the front is <code class=\"mm\">rear->next</code>, so unlink that node by setting <code class=\"mm\">rear->next = front->next</code> — again a fixed number of writes.</li><li>The one special case is a single-element queue, where the front and the rear are the same node; the code then has to reset <code class=\"mm\">rear</code> to NULL, which is still Θ(1).</li><li>Neither operation walks the list, so both are Θ(1).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (D).</span></p><p class=\"row\"><b>Common trap.</b> Expecting dequeue to be expensive because a plain singly linked list with only a head pointer cannot reach the tail cheaply. Here the pointer is to the *rear* of a *circular* list, which makes the front the next node along.</p><p class=\"row\"><b>Takeaway.</b> One pointer suffices for both ends when the list is circular: keep it at the rear.</p>"
   }
  ]
