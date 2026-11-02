@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-25",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 675,
+  "total_questions": 700,
   "units_with_questions": [
    1,
    2,
@@ -20,6 +20,7 @@
    10,
    11,
    12,
+   13,
    16
   ]
  },
@@ -1094,6 +1095,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order was taken, then restricted, as in runs 12-26, to subjects whose current unit is still below UNIT_QUESTION_CAP = 50 so that units are completed before a second pass opens. Only Discrete Mathematics qualified: every other subject's current unit stands at 50 or above. discrete-mathematics/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 18, unit 12, algebraic-structures, Set 1 of 2}. Unit 12 held 25 questions, below the cap, and its first paper was dated 2026-11-02, zero days earlier, so step B3 held on both counts: the unit stays current and this is Set 2 of 2. Step B4 was not reached. No override was used and no partial set was generated.",
    "note": "Set 2 of 2 for Discrete Mathematics Unit 12, the unit's second and final set, taking it to exactly 50 banked questions. The 2026-11-02 Set 1 paper moved to archive/gate_dm_mock_12_2026-11-02_run1.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (DM-U12-Q26..Q50); no id and no normalised stem collides with the 650 items already banked for Discrete Mathematics. Coverage: binary operations & properties 5, semigroups & monoids 5, groups & abelian groups 5, subgroups & cyclic groups 5, homomorphisms & isomorphisms 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: 3^6 = 729 commutative operations on a 3-element set; the invertible integers of a+b-2ab are exactly {0, 1}; phi(20) = 8 units in Z20; exactly 8 associative tables on a 2-element set; ord_12(5) = 12; ord_10(4) = 5; 8 elements of order 3 in Z3 x Z9; 8 subgroups of Z30; 5 subgroups and ord_16(6) = 8 in Z16; phi(60) = 16 generators of Z60; 8 elements of order 12 in Z4 x Z6 (lcm(4,3) = lcm(4,6) = 12); 6 homomorphisms Z -> Z6; |ker| = 4 and |im| = 6 for k -> 3k from Z24 to Z18; gcd(4,12) = 4 homomorphisms Z4 -> Z12; |Aut(Z2 x Z2)| = 6. verified_pyqs is unchanged, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 20,
+   "date": "2026-11-03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "set": "Set 1 of 2",
+   "count": 25,
+   "file": "discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html",
+   "archived_previous": null,
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "Posets & Hasse diagrams": 7,
+    "LUB, GLB, meet & join": 6,
+    "Bounded & complemented lattices": 6,
+    "Distributive & modular lattices": 6
+   },
+   "question_ids": [
+    "DM-U13-Q01",
+    "DM-U13-Q02",
+    "DM-U13-Q03",
+    "DM-U13-Q04",
+    "DM-U13-Q05",
+    "DM-U13-Q06",
+    "DM-U13-Q07",
+    "DM-U13-Q08",
+    "DM-U13-Q09",
+    "DM-U13-Q10",
+    "DM-U13-Q11",
+    "DM-U13-Q12",
+    "DM-U13-Q13",
+    "DM-U13-Q14",
+    "DM-U13-Q15",
+    "DM-U13-Q16",
+    "DM-U13-Q17",
+    "DM-U13-Q18",
+    "DM-U13-Q19",
+    "DM-U13-Q20",
+    "DM-U13-Q21",
+    "DM-U13-Q22",
+    "DM-U13-Q23",
+    "DM-U13-Q24",
+    "DM-U13-Q25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order was taken, then restricted, as in runs 12-27, to subjects whose post-B4 target unit is still below UNIT_QUESTION_CAP = 50 so that units are completed before a second pass opens. Only Discrete Mathematics qualified: its most recent paper is {2026-11-02, run 19, unit 12, algebraic-structures, Set 2 of 2}, unit 12 stands at 50 questions and its first paper was 2026-11-02, so B3 fails on the cap and B4 advances one unit: (11 + 1) mod 16 = 12, the 0-based index of unit 13. Unit 13 held 0 questions, so this is Set 1 of 2. Every other subject's next unit already sits at or above 50 and would have opened a second pass. No override was used and no partial set was generated.",
+   "note": "Set 1 of 2 for Discrete Mathematics Unit 13, the unit's first set. All 25 items are new (DM-U13-Q01..Q25); no id and no normalised stem collides with the 675 items already banked for Discrete Mathematics. Coverage: posets & Hasse diagrams 7, LUB/GLB/meet/join 6, bounded & complemented lattices 6, distributive & modular lattices 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: 20 Hasse edges in D(60) (8 of ratio 2, 6 of ratio 3, 6 of ratio 5); width of D(360) = 6 from rank sizes 1,3,5,6,5,3,1 over 24 divisors, confirmed by Dilworth as 24 - 18; gcd(4,6) = 2; C(4,2) = 6 joins of two atoms in B4; exactly 6 partitions of a 4-set cover the bottom of the refinement lattice; the complement of 4 in D(12) is 3; 4 of the 6 elements of D(45) are complemented (1, 5, 9, 45); b has exactly 2 complements in N5 (a and c); M3 has 8 ordered complement pairs; D(72) has 5 join-irreducibles (2, 3, 4, 8, 9); a chain of 5 elements has C(5,2) = 10 strict comparisons. The squarefree criterion for a Boolean divisor lattice was brute-forced over every n from 2 to 120 with no counterexample, and distributivity of D(12), non-distributivity of M3 and N5, and modularity of M3 were checked by exhaustive evaluation of the lattice laws. verified_pyqs is unchanged, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [
@@ -31423,6 +31486,1271 @@
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> ℤ₂ × ℤ₂ is a two-dimensional vector space over 𝔽₂, and its group automorphisms are exactly the invertible linear maps, i.e. the elements of GL(2, 2).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>An automorphism fixes 0 and permutes the three non-identity elements, but not every permutation works: it must be additive.</li><li>Viewing the group as 𝔽₂², an automorphism is a 2 × 2 matrix over 𝔽₂ with non-zero determinant.</li><li>The first column may be any of the 3 non-zero vectors; the second any non-zero vector outside the line spanned by the first, which leaves 2 choices: 3 · 2 = 6.</li><li>Equivalently |GL(2, 2)| = (2² − 1)(2² − 2) = 3 · 2 = 6, which is S₃ acting on the three non-identity elements.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Answering φ(4) = 2 by the cyclic-group formula — ℤ₂ × ℤ₂ is not cyclic, and it has 6 automorphisms, not 2. The count 3! = 6 is right here, but only because every permutation of the three non-identity elements happens to be linear over 𝔽₂.</p>",
    "question_format": "text"
+  },
+  {
+   "id": "DM-U13-Q01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Which one of the following relations on the set <code class=\"mm\">ℤ</code> is <b>not</b> a partial order?",
+   "question_html": "<p class=\"qtext\">Which one of the following relations on the set <code class=\"mm\">ℤ</code> is <b>not</b> a partial order?</p>",
+   "options": [
+    "<code class=\"mm\">a ≼ b ⇔ a ≤ b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ a ≥ b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ a = b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ |a − b| ≤ 1</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">a ≼ b ⇔ a ≤ b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ a ≥ b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ a = b</code>",
+    "<code class=\"mm\">a ≼ b ⇔ |a − b| ≤ 1</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "A partial order must be reflexive, antisymmetric and transitive. Antisymmetry is the axiom that a relation joining distinct elements in both directions breaks.",
+    "steps": [
+     "(A) and (B) are the usual <code class=\"mm\">≤</code> and its reverse <code class=\"mm\">≥</code>. Both are reflexive and transitive, and antisymmetric because a ≤ b and b ≤ a force a = b; both are in fact total orders.",
+     "(C) equality is reflexive, transitive and antisymmetric, since a = b and b = a give a = b. It is the smallest partial order on <code class=\"mm\">ℤ</code>.",
+     "(D) is reflexive, because |a − a| = 0 ≤ 1. Take a = 0 and b = 1: |0 − 1| = 1 ≤ 1 and |1 − 0| = 1 ≤ 1, so 0 ≼ 1 and 1 ≼ 0 while 0 ≠ 1. Antisymmetry fails, so this is not a partial order."
+    ],
+    "final": "Option (D).",
+    "misconception": "Reflexivity and symmetry are checked, the relation is seen to hold, and it is accepted as an order. Any relation that links two distinct elements in both directions fails antisymmetry at once: a symmetric antisymmetric relation must be a subset of equality."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A partial order must be reflexive, antisymmetric and transitive. Antisymmetry is the axiom that a relation joining distinct elements in both directions breaks.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) and (B) are the usual <code class=\"mm\">≤</code> and its reverse <code class=\"mm\">≥</code>. Both are reflexive and transitive, and antisymmetric because a ≤ b and b ≤ a force a = b; both are in fact total orders.</li><li>(C) equality is reflexive, transitive and antisymmetric, since a = b and b = a give a = b. It is the smallest partial order on <code class=\"mm\">ℤ</code>.</li><li>(D) is reflexive, because |a − a| = 0 ≤ 1. Take a = 0 and b = 1: |0 − 1| = 1 ≤ 1 and |1 − 0| = 1 ≤ 1, so 0 ≼ 1 and 1 ≼ 0 while 0 ≠ 1. Antisymmetry fails, so this is not a partial order.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Reflexivity and symmetry are checked, the relation is seen to hold, and it is accepted as an order. Any relation that links two distinct elements in both directions fails antisymmetry at once: a symmetric antisymmetric relation must be a subset of equality.</p>"
+  },
+  {
+   "id": "DM-U13-Q02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Consider the poset <code class=\"mm\">(P, ∣)</code> where <code class=\"mm\">P = {1, 2, 3, 4, 6, 12}</code> and <code class=\"mm\">∣</code> is divisibility. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Consider the poset <code class=\"mm\">(P, ∣)</code> where <code class=\"mm\">P = {1, 2, 3, 4, 6, 12}</code> and <code class=\"mm\">∣</code> is divisibility. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">1</code> is the least element of P.",
+    "<code class=\"mm\">12</code> is the greatest element of P.",
+    "<code class=\"mm\">4</code> and <code class=\"mm\">6</code> have a least upper bound in P, namely <code class=\"mm\">12</code>.",
+    "<code class=\"mm\">2</code> and <code class=\"mm\">6</code> are incomparable."
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code> is the least element of P.",
+    "<code class=\"mm\">12</code> is the greatest element of P.",
+    "<code class=\"mm\">4</code> and <code class=\"mm\">6</code> have a least upper bound in P, namely <code class=\"mm\">12</code>.",
+    "<code class=\"mm\">2</code> and <code class=\"mm\">6</code> are incomparable."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "The least element is below every element and the greatest is above every element; in a divisibility poset these are 1 and the maximum under divisibility. Least upper bound means the smallest common multiple that is present in the set.",
+    "steps": [
+     "Every element of P divides 12, so 12 is above all of them and is the greatest element. Every element is divisible by 1, so 1 is the least element: P is bounded, and (A) and (B) are true.",
+     "The upper bounds of 4 and 6 are the elements divisible by both 4 and 6, that is by <code class=\"mm\">lcm(4, 6) = 12</code>. The only such element of P is 12, so <code class=\"mm\">4 ∨ 6 = 12</code> and (C) is true.",
+     "2 divides 6, so <code class=\"mm\">2 ≺ 6</code>: the pair is comparable and (D) is false."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "The greatest element is confused with a maximal element. Here the two coincide because 12 sits above everything, but a poset can have several maximal elements and no greatest one, as Unit 13 question 6 shows."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The least element is below every element and the greatest is above every element; in a divisibility poset these are 1 and the maximum under divisibility. Least upper bound means the smallest common multiple that is present in the set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every element of P divides 12, so 12 is above all of them and is the greatest element. Every element is divisible by 1, so 1 is the least element: P is bounded, and (A) and (B) are true.</li><li>The upper bounds of 4 and 6 are the elements divisible by both 4 and 6, that is by <code class=\"mm\">lcm(4, 6) = 12</code>. The only such element of P is 12, so <code class=\"mm\">4 ∨ 6 = 12</code> and (C) is true.</li><li>2 divides 6, so <code class=\"mm\">2 ≺ 6</code>: the pair is comparable and (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> The greatest element is confused with a maximal element. Here the two coincide because 12 sits above everything, but a poset can have several maximal elements and no greatest one, as Unit 13 question 6 shows.</p>"
+  },
+  {
+   "id": "DM-U13-Q03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "A poset has the Hasse diagram <code class=\"mm\">a₁ ⋖ a₂ ⋖ a₃ ⋖ a₄ ⋖ a₅</code>, a path of five elements. How many ordered pairs <code class=\"mm\">(x, y)</code> satisfy <code class=\"mm\">x ≺ y</code>?",
+   "question_html": "<p class=\"qtext\">A poset has the Hasse diagram <code class=\"mm\">a₁ ⋖ a₂ ⋖ a₃ ⋖ a₄ ⋖ a₅</code>, a path of five elements. How many ordered pairs <code class=\"mm\">(x, y)</code> satisfy <code class=\"mm\">x ≺ y</code>?</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">10</code>",
+    "<code class=\"mm\">20</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">10</code>",
+    "<code class=\"mm\">20</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "A Hasse diagram drawn as one path means the poset is a chain, and in a chain every pair of distinct elements is comparable. The diagram omits the relations that transitivity forces, but those relations are still in the order.",
+    "steps": [
+     "The diagram says <code class=\"mm\">a₁ ⋖ a₂ ⋖ a₃ ⋖ a₄ ⋖ a₅</code>, so <code class=\"mm\">aᵢ ≺ aⱼ</code> whenever i < j.",
+     "Every two distinct elements therefore satisfy <code class=\"mm\">x ≺ y</code> in exactly one direction, so the count is the number of 2-element subsets of the five elements.",
+     "<code class=\"mm\">C(5, 2) = 10</code>."
+    ],
+    "final": "Option (C).",
+    "misconception": "Counting the four drawn edges. The Hasse diagram suppresses the comparisons implied by transitivity — here all ten of them are in the order relation."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Hasse diagram drawn as one path means the poset is a chain, and in a chain every pair of distinct elements is comparable. The diagram omits the relations that transitivity forces, but those relations are still in the order.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The diagram says <code class=\"mm\">a₁ ⋖ a₂ ⋖ a₃ ⋖ a₄ ⋖ a₅</code>, so <code class=\"mm\">aᵢ ≺ aⱼ</code> whenever i < j.</li><li>Every two distinct elements therefore satisfy <code class=\"mm\">x ≺ y</code> in exactly one direction, so the count is the number of 2-element subsets of the five elements.</li><li><code class=\"mm\">C(5, 2) = 10</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Counting the four drawn edges. The Hasse diagram suppresses the comparisons implied by transitivity — here all ten of them are in the order relation.</p>"
+  },
+  {
+   "id": "DM-U13-Q04",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the poset <code class=\"mm\">(ℤ⁺, ∣)</code> of positive integers ordered by divisibility, which of the following is true?",
+   "question_html": "<p class=\"qtext\">In the poset <code class=\"mm\">(ℤ⁺, ∣)</code> of positive integers ordered by divisibility, which of the following is true?</p>",
+   "options": [
+    "It is a lattice, but not a total order.",
+    "It is a total order.",
+    "It is not a lattice, because <code class=\"mm\">2</code> and <code class=\"mm\">3</code> have no upper bound.",
+    "It is not a lattice, because the join of <code class=\"mm\">4</code> and <code class=\"mm\">6</code> does not exist."
+   ],
+   "options_html": [
+    "It is a lattice, but not a total order.",
+    "It is a total order.",
+    "It is not a lattice, because <code class=\"mm\">2</code> and <code class=\"mm\">3</code> have no upper bound.",
+    "It is not a lattice, because the join of <code class=\"mm\">4</code> and <code class=\"mm\">6</code> does not exist."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "In <code class=\"mm\">(ℤ⁺, ∣)</code> the greatest lower bound of a and b is <code class=\"mm\">gcd(a, b)</code> and the least upper bound is <code class=\"mm\">lcm(a, b)</code>. Both are positive integers, so every pair has a meet and a join.",
+    "steps": [
+     "For any a, b ∈ ℤ⁺, gcd(a, b) is the largest common divisor and lcm(a, b) the smallest common multiple, so every pair has a meet and a join: the poset is a lattice.",
+     "2 and 3 are incomparable, since neither divides the other, so the order is not total: (B) is false.",
+     "Upper bounds of 2 and 3 do exist — 6, 12, 18, … — and the least is 6, so (C) is false. The join of 4 and 6 is 12, so (D) is false."
+    ],
+    "final": "Option (A).",
+    "misconception": "Believing a lattice needs a top and a bottom element. <code class=\"mm\">(ℤ⁺, ∣)</code> has a least element 1 and no greatest element, and is still a lattice."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In <code class=\"mm\">(ℤ⁺, ∣)</code> the greatest lower bound of a and b is <code class=\"mm\">gcd(a, b)</code> and the least upper bound is <code class=\"mm\">lcm(a, b)</code>. Both are positive integers, so every pair has a meet and a join.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For any a, b ∈ ℤ⁺, gcd(a, b) is the largest common divisor and lcm(a, b) the smallest common multiple, so every pair has a meet and a join: the poset is a lattice.</li><li>2 and 3 are incomparable, since neither divides the other, so the order is not total: (B) is false.</li><li>Upper bounds of 2 and 3 do exist — 6, 12, 18, … — and the least is 6, so (C) is false. The join of 4 and 6 is 12, so (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Believing a lattice needs a top and a bottom element. <code class=\"mm\">(ℤ⁺, ∣)</code> has a least element 1 and no greatest element, and is still a lattice.</p>"
+  },
+  {
+   "id": "DM-U13-Q05",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "How many edges does the Hasse diagram of the divisibility poset on the positive divisors of <code class=\"mm\">60</code> have?",
+   "question_html": "<div class=\"qtext\">How many edges does the Hasse diagram of the divisibility poset on the positive divisors of <code class=\"mm\">60</code> have?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 20,
+   "answer_display": "20",
+   "marks": 2,
+   "solution": {
+    "concept": "A Hasse edge joins x to y exactly when x properly divides y and no element of the set lies strictly between them. In a divisor lattice that happens precisely when the ratio y/x is prime.",
+    "steps": [
+     "The divisors of 60 are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60 — twelve elements.",
+     "60 = 2² · 3 · 5, so the possible ratios are the primes 2, 3 and 5.",
+     "Ratio 2: 1→2, 2→4, 3→6, 5→10, 6→12, 10→20, 15→30, 30→60 — eight edges.",
+     "Ratio 3: 1→3, 2→6, 4→12, 5→15, 10→30, 20→60 — six edges.",
+     "Ratio 5: 1→5, 2→10, 3→15, 4→20, 6→30, 12→60 — six edges.",
+     "Total 8 + 6 + 6 = 20 edges."
+    ],
+    "final": "20",
+    "misconception": "Counting all comparable pairs, which is the whole divisibility relation, instead of only the cover relations. The ratio test catches it: 1→4 is not an edge because 2 lies between, since 4/1 = 4 is not prime."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Hasse edge joins x to y exactly when x properly divides y and no element of the set lies strictly between them. In a divisor lattice that happens precisely when the ratio y/x is prime.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The divisors of 60 are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60 — twelve elements.</li><li>60 = 2² · 3 · 5, so the possible ratios are the primes 2, 3 and 5.</li><li>Ratio 2: 1→2, 2→4, 3→6, 5→10, 6→12, 10→20, 15→30, 30→60 — eight edges.</li><li>Ratio 3: 1→3, 2→6, 4→12, 5→15, 10→30, 20→60 — six edges.</li><li>Ratio 5: 1→5, 2→10, 3→15, 4→20, 6→30, 12→60 — six edges.</li><li>Total 8 + 6 + 6 = 20 edges.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 20</span></p><p class=\"row\"><b>Common misconception.</b> Counting all comparable pairs, which is the whole divisibility relation, instead of only the cover relations. The ratio test catches it: 1→4 is not an edge because 2 lies between, since 4/1 = 4 is not prime.</p>",
+   "question_format": "text",
+   "nat_answer": 20,
+   "nat_format": "an integer",
+   "hint": "Answer format: an integer."
+  },
+  {
+   "id": "DM-U13-Q06",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the poset <code class=\"mm\">(P, ∣)</code> with <code class=\"mm\">P = {2, 3, 4, 6, 9, 12, 18}</code>, which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">In the poset <code class=\"mm\">(P, ∣)</code> with <code class=\"mm\">P = {2, 3, 4, 6, 9, 12, 18}</code>, which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "The minimal elements of P are <code class=\"mm\">2</code> and <code class=\"mm\">3</code>.",
+    "<code class=\"mm\">6</code> covers exactly two elements of P, namely <code class=\"mm\">12</code> and <code class=\"mm\">18</code>.",
+    "<code class=\"mm\">9</code> is a maximal element of P.",
+    "P has a greatest element."
+   ],
+   "options_html": [
+    "The minimal elements of P are <code class=\"mm\">2</code> and <code class=\"mm\">3</code>.",
+    "<code class=\"mm\">6</code> covers exactly two elements of P, namely <code class=\"mm\">12</code> and <code class=\"mm\">18</code>.",
+    "<code class=\"mm\">9</code> is a maximal element of P.",
+    "P has a greatest element."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "marks": 2,
+   "solution": {
+    "concept": "An element is minimal when nothing in the set lies strictly below it, and maximal when nothing lies strictly above it. A greatest element must be above every element, which is a much stronger demand than being maximal.",
+    "steps": [
+     "Minimal elements: 2 has no proper divisor in P and 3 has none either. Every other element — 4, 6, 9, 12, 18 — is a multiple of 2 or of 3, so it sits above something. Hence the minimal elements are 2 and 3: (A) is true.",
+     "Multiples of 6 in P are 12 and 18, and 6 · 2 = 12, 6 · 3 = 18, with no element of P strictly between 6 and either of them. So 6 covers 12 and covers 18, exactly two elements: (B) is true.",
+     "9 divides 18, so 9 ≺ 18 and 9 is not maximal: (C) is false.",
+     "A greatest element would have to be divisible by both 12 and 18, hence by lcm(12, 18) = 36, and no element of P qualifies. Indeed 12 and 18 are incomparable, so P has two maximal elements and no greatest one: (D) is false."
+    ],
+    "final": "Options (A) and (B).",
+    "misconception": "Assuming a finite poset must have a greatest element, or that the maximal elements are unique. P has two maximal elements, 12 and 18, and no greatest element."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An element is minimal when nothing in the set lies strictly below it, and maximal when nothing lies strictly above it. A greatest element must be above every element, which is a much stronger demand than being maximal.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Minimal elements: 2 has no proper divisor in P and 3 has none either. Every other element — 4, 6, 9, 12, 18 — is a multiple of 2 or of 3, so it sits above something. Hence the minimal elements are 2 and 3: (A) is true.</li><li>Multiples of 6 in P are 12 and 18, and 6 · 2 = 12, 6 · 3 = 18, with no element of P strictly between 6 and either of them. So 6 covers 12 and covers 18, exactly two elements: (B) is true.</li><li>9 divides 18, so 9 ≺ 18 and 9 is not maximal: (C) is false.</li><li>A greatest element would have to be divisible by both 12 and 18, hence by lcm(12, 18) = 36, and no element of P qualifies. Indeed 12 and 18 are incomparable, so P has two maximal elements and no greatest one: (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming a finite poset must have a greatest element, or that the maximal elements are unique. P has two maximal elements, 12 and 18, and no greatest element.</p>"
+  },
+  {
+   "id": "DM-U13-Q07",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "posets-and-hasse",
+   "subtopic": "posets-and-hasse",
+   "subtopic_label": "Posets & Hasse diagrams",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the poset of the positive divisors of <code class=\"mm\">360</code> ordered by divisibility, the width — the size of a largest antichain — is",
+   "question_html": "<p class=\"qtext\">In the poset of the positive divisors of <code class=\"mm\">360</code> ordered by divisibility, the width — the size of a largest antichain — is</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "An antichain is a set of pairwise incomparable elements. In a divisor lattice, rank each divisor by its total exponent count: elements of the same rank cannot divide one another, so each rank class is an antichain.",
+    "steps": [
+     "360 = 2³ · 3² · 5, so every divisor is <code class=\"mm\">2^i 3^j 5^k</code> with 0 ≤ i ≤ 3, 0 ≤ j ≤ 2, 0 ≤ k ≤ 1: that is 4 · 3 · 2 = 24 divisors.",
+     "Rank a divisor by i + j + k. Two divisors of equal rank divide one another only if they are equal, so each rank class is an antichain.",
+     "Counting the classes for total exponent 0, 1, 2, 3, 4, 5, 6 gives sizes 1, 3, 5, 6, 5, 3, 1 — the largest is 6.",
+     "The divisor lattice is the product of the chains <code class=\"mm\">C₄ × C₃ × C₂</code>, and a product of chains has the Sperner property: no antichain beats the largest rank class. So the width is 6."
+    ],
+    "final": "Option (B).",
+    "misconception": "Reading the width off the number of distinct prime factors (3) or off the top rank. The width is the largest rank class, which sits in the middle of the lattice, not at the atoms."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An antichain is a set of pairwise incomparable elements. In a divisor lattice, rank each divisor by its total exponent count: elements of the same rank cannot divide one another, so each rank class is an antichain.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>360 = 2³ · 3² · 5, so every divisor is <code class=\"mm\">2^i 3^j 5^k</code> with 0 ≤ i ≤ 3, 0 ≤ j ≤ 2, 0 ≤ k ≤ 1: that is 4 · 3 · 2 = 24 divisors.</li><li>Rank a divisor by i + j + k. Two divisors of equal rank divide one another only if they are equal, so each rank class is an antichain.</li><li>Counting the classes for total exponent 0, 1, 2, 3, 4, 5, 6 gives sizes 1, 3, 5, 6, 5, 3, 1 — the largest is 6.</li><li>The divisor lattice is the product of the chains <code class=\"mm\">C₄ × C₃ × C₂</code>, and a product of chains has the Sperner property: no antichain beats the largest rank class. So the width is 6.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the width off the number of distinct prime factors (3) or off the top rank. The width is the largest rank class, which sits in the middle of the lattice, not at the atoms.</p>"
+  },
+  {
+   "id": "DM-U13-Q08",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the divisor lattice <code class=\"mm\">D(36)</code> — the positive divisors of 36 ordered by divisibility — the meet (greatest lower bound) of <code class=\"mm\">4</code> and <code class=\"mm\">6</code> is",
+   "question_html": "<p class=\"qtext\">In the divisor lattice <code class=\"mm\">D(36)</code> — the positive divisors of 36 ordered by divisibility — the meet (greatest lower bound) of <code class=\"mm\">4</code> and <code class=\"mm\">6</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">24</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">24</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "In a divisor lattice the meet is the gcd and the join is the lcm, because gcd is the largest common divisor (the greatest lower bound) and lcm the smallest common multiple (the least upper bound).",
+    "steps": [
+     "<code class=\"mm\">gcd(4, 6) = 2</code>, and 2 divides 36, so 2 is an element of <code class=\"mm\">D(36)</code>.",
+     "Every common divisor of 4 and 6 divides 2, so 2 is the greatest lower bound: <code class=\"mm\">4 ∧ 6 = 2</code>.",
+     "For comparison the join is <code class=\"mm\">lcm(4, 6) = 12</code>."
+    ],
+    "final": "Option (B).",
+    "misconception": "Swapping meet and join, or answering 12. The lcm is the least upper bound — the join — not the meet."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a divisor lattice the meet is the gcd and the join is the lcm, because gcd is the largest common divisor (the greatest lower bound) and lcm the smallest common multiple (the least upper bound).</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">gcd(4, 6) = 2</code>, and 2 divides 36, so 2 is an element of <code class=\"mm\">D(36)</code>.</li><li>Every common divisor of 4 and 6 divides 2, so 2 is the greatest lower bound: <code class=\"mm\">4 ∧ 6 = 2</code>.</li><li>For comparison the join is <code class=\"mm\">lcm(4, 6) = 12</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Swapping meet and join, or answering 12. The lcm is the least upper bound — the join — not the meet.</p>"
+  },
+  {
+   "id": "DM-U13-Q09",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">P = {a, b, c, d}</code> be a poset whose only strict order relations are <code class=\"mm\">a ≺ c</code>, <code class=\"mm\">a ≺ d</code>, <code class=\"mm\">b ≺ c</code> and <code class=\"mm\">b ≺ d</code>. Which of the following is true?",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">P = {a, b, c, d}</code> be a poset whose only strict order relations are <code class=\"mm\">a ≺ c</code>, <code class=\"mm\">a ≺ d</code>, <code class=\"mm\">b ≺ c</code> and <code class=\"mm\">b ≺ d</code>. Which of the following is true?</p>",
+   "options": [
+    "P is a lattice.",
+    "<code class=\"mm\">a</code> and <code class=\"mm\">b</code> have no least upper bound, so P is not a lattice.",
+    "<code class=\"mm\">c</code> and <code class=\"mm\">d</code> have two lower bounds, so P is a lattice.",
+    "P is a chain."
+   ],
+   "options_html": [
+    "P is a lattice.",
+    "<code class=\"mm\">a</code> and <code class=\"mm\">b</code> have no least upper bound, so P is not a lattice.",
+    "<code class=\"mm\">c</code> and <code class=\"mm\">d</code> have two lower bounds, so P is a lattice.",
+    "P is a chain."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "A join must be a single least upper bound. Two incomparable minimal upper bounds give an upper bound but not a least one, and one missing join is enough to destroy the lattice property.",
+    "steps": [
+     "The upper bounds of a and b are c and d, since each of c, d is above both a and b.",
+     "c and d are incomparable — neither relation c ≺ d nor d ≺ c is in the order — so neither of them is below the other.",
+     "Hence there is no least element among the upper bounds: <code class=\"mm\">a ∨ b</code> does not exist, and P is not a lattice. (B) is true.",
+     "P is not a chain, because a and b are incomparable, so (D) is false; (C) reaches the right conclusion from the wrong premise, and (A) is false."
+    ],
+    "final": "Option (B).",
+    "misconception": "Checking only that common upper bounds exist. A join is the least upper bound, and two incomparable minimal upper bounds are precisely the classic obstruction — the same shape as the diamond M₃ but without the bottom element."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A join must be a single least upper bound. Two incomparable minimal upper bounds give an upper bound but not a least one, and one missing join is enough to destroy the lattice property.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The upper bounds of a and b are c and d, since each of c, d is above both a and b.</li><li>c and d are incomparable — neither relation c ≺ d nor d ≺ c is in the order — so neither of them is below the other.</li><li>Hence there is no least element among the upper bounds: <code class=\"mm\">a ∨ b</code> does not exist, and P is not a lattice. (B) is true.</li><li>P is not a chain, because a and b are incomparable, so (D) is false; (C) reaches the right conclusion from the wrong premise, and (A) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Checking only that common upper bounds exist. A join is the least upper bound, and two incomparable minimal upper bounds are precisely the classic obstruction — the same shape as the diamond M₃ but without the bottom element.</p>"
+  },
+  {
+   "id": "DM-U13-Q10",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In a lattice <code class=\"mm\">(L, ∨, ∧)</code>, which of the following identities holds for all <code class=\"mm\">a, b ∈ L</code>?",
+   "question_html": "<p class=\"qtext\">In a lattice <code class=\"mm\">(L, ∨, ∧)</code>, which of the following identities holds for all <code class=\"mm\">a, b ∈ L</code>?</p>",
+   "options": [
+    "<code class=\"mm\">a ∨ (a ∧ b) = a</code>",
+    "<code class=\"mm\">a ∨ (a ∧ b) = b</code>",
+    "<code class=\"mm\">a ∧ (a ∨ b) = b</code>",
+    "<code class=\"mm\">a ∨ (a ∧ b) = a ∧ b</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">a ∨ (a ∧ b) = a</code>",
+    "<code class=\"mm\">a ∨ (a ∧ b) = b</code>",
+    "<code class=\"mm\">a ∧ (a ∨ b) = b</code>",
+    "<code class=\"mm\">a ∨ (a ∧ b) = a ∧ b</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The absorption law <code class=\"mm\">a ∨ (a ∧ b) = a</code> and its dual <code class=\"mm\">a ∧ (a ∨ b) = a</code> hold in every lattice, distributive or not.",
+    "steps": [
+     "<code class=\"mm\">a ∧ b ≤ a</code> always, and <code class=\"mm\">a ≤ a</code>, so a is an upper bound of both a and a ∧ b. Hence <code class=\"mm\">a ∨ (a ∧ b) ≤ a</code>.",
+     "Also <code class=\"mm\">a ≤ a ∨ (a ∧ b)</code> because the join is an upper bound of a. The two inequalities give equality: <code class=\"mm\">a ∨ (a ∧ b) = a</code>.",
+     "(B) fails as soon as a ≠ b; (C) fails for the same reason; (D) fails because the left side is a, which equals a ∧ b only when a ≤ b."
+    ],
+    "final": "Option (A).",
+    "misconception": "Treating ∨ and ∧ as ordinary addition and multiplication and 'simplifying' a ∨ (a ∧ b) arithmetically. Absorption is an order-theoretic identity with no arithmetic analogue."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The absorption law <code class=\"mm\">a ∨ (a ∧ b) = a</code> and its dual <code class=\"mm\">a ∧ (a ∨ b) = a</code> hold in every lattice, distributive or not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">a ∧ b ≤ a</code> always, and <code class=\"mm\">a ≤ a</code>, so a is an upper bound of both a and a ∧ b. Hence <code class=\"mm\">a ∨ (a ∧ b) ≤ a</code>.</li><li>Also <code class=\"mm\">a ≤ a ∨ (a ∧ b)</code> because the join is an upper bound of a. The two inequalities give equality: <code class=\"mm\">a ∨ (a ∧ b) = a</code>.</li><li>(B) fails as soon as a ≠ b; (C) fails for the same reason; (D) fails because the left side is a, which equals a ∧ b only when a ≤ b.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Treating ∨ and ∧ as ordinary addition and multiplication and 'simplifying' a ∨ (a ∧ b) arithmetically. Absorption is an order-theoretic identity with no arithmetic analogue.</p>"
+  },
+  {
+   "id": "DM-U13-Q11",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In a lattice <code class=\"mm\">(L, ≤)</code>, the join <code class=\"mm\">a ∨ b</code> is the least upper bound of a and b. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">In a lattice <code class=\"mm\">(L, ≤)</code>, the join <code class=\"mm\">a ∨ b</code> is the least upper bound of a and b. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">a ∨ b = b</code> whenever <code class=\"mm\">a ≤ b</code>.",
+    "<code class=\"mm\">a ∨ b</code> is the unique smallest element of L that lies above both a and b.",
+    "If <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are incomparable, then <code class=\"mm\">a ∨ b</code> does not exist.",
+    "<code class=\"mm\">a ∨ (b ∨ c) = (a ∨ b) ∨ c</code> for all <code class=\"mm\">a, b, c ∈ L</code>."
+   ],
+   "options_html": [
+    "<code class=\"mm\">a ∨ b = b</code> whenever <code class=\"mm\">a ≤ b</code>.",
+    "<code class=\"mm\">a ∨ b</code> is the unique smallest element of L that lies above both a and b.",
+    "If <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are incomparable, then <code class=\"mm\">a ∨ b</code> does not exist.",
+    "<code class=\"mm\">a ∨ (b ∨ c) = (a ∨ b) ∨ c</code> for all <code class=\"mm\">a, b, c ∈ L</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "In a lattice every pair has a join, defined as the least upper bound. It always exists — even for incomparable elements — and it is unique because a least element of a set is unique.",
+    "steps": [
+     "If <code class=\"mm\">a ≤ b</code> then b is already an upper bound of a and b, and it is the least such element because any upper bound is above b. So <code class=\"mm\">a ∨ b = b</code>: (A) is true.",
+     "The join is by definition the least upper bound, and a least element of a non-empty set is unique, so (B) is true.",
+     "Incomparability is not a failure of existence. In <code class=\"mm\">D(12)</code> the elements 4 and 6 are incomparable and <code class=\"mm\">4 ∨ 6 = 12</code> exists; in a powerset, <code class=\"mm\">{1} ∪ {2} = {1, 2}</code>. So (C) is false.",
+     "The join is associative in every lattice: both sides are the least upper bound of a, b and c. So (D) is true."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "misconception": "Reading 'incomparable' as 'no join'. Incomparability only means neither element is below the other; the lattice axioms still supply a least upper bound, which sits strictly above both."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a lattice every pair has a join, defined as the least upper bound. It always exists — even for incomparable elements — and it is unique because a least element of a set is unique.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <code class=\"mm\">a ≤ b</code> then b is already an upper bound of a and b, and it is the least such element because any upper bound is above b. So <code class=\"mm\">a ∨ b = b</code>: (A) is true.</li><li>The join is by definition the least upper bound, and a least element of a non-empty set is unique, so (B) is true.</li><li>Incomparability is not a failure of existence. In <code class=\"mm\">D(12)</code> the elements 4 and 6 are incomparable and <code class=\"mm\">4 ∨ 6 = 12</code> exists; in a powerset, <code class=\"mm\">{1} ∪ {2} = {1, 2}</code>. So (C) is false.</li><li>The join is associative in every lattice: both sides are the least upper bound of a, b and c. So (D) is true.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Reading 'incomparable' as 'no join'. Incomparability only means neither element is below the other; the lattice axioms still supply a least upper bound, which sits strictly above both.</p>"
+  },
+  {
+   "id": "DM-U13-Q12",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the Boolean lattice of all subsets of a four-element set, ordered by <code class=\"mm\">⊆</code>, how many elements are the join of exactly two distinct atoms?",
+   "question_html": "<p class=\"qtext\">In the Boolean lattice of all subsets of a four-element set, ordered by <code class=\"mm\">⊆</code>, how many elements are the join of exactly two distinct atoms?</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "The atoms of a powerset lattice are the singletons, since nothing but the empty set lies below a singleton. The join is set union.",
+    "steps": [
+     "The atoms are the four singletons {1}, {2}, {3}, {4}.",
+     "The join of two distinct atoms {x} and {y} is <code class=\"mm\">{x} ∪ {y} = {x, y}</code>, a 2-element subset.",
+     "Distinct pairs of atoms give distinct 2-element subsets, and every 2-element subset arises from exactly one pair, so the count is <code class=\"mm\">C(4, 2) = 6</code>."
+    ],
+    "final": "Option (B).",
+    "misconception": "Answering 8 by counting ordered pairs. The join of {x} and {y} is the same element as the join of {y} and {x}, so ordered pairs would double-count."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The atoms of a powerset lattice are the singletons, since nothing but the empty set lies below a singleton. The join is set union.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The atoms are the four singletons {1}, {2}, {3}, {4}.</li><li>The join of two distinct atoms {x} and {y} is <code class=\"mm\">{x} ∪ {y} = {x, y}</code>, a 2-element subset.</li><li>Distinct pairs of atoms give distinct 2-element subsets, and every 2-element subset arises from exactly one pair, so the count is <code class=\"mm\">C(4, 2) = 6</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 8 by counting ordered pairs. The join of {x} and {y} is the same element as the join of {y} and {x}, so ordered pairs would double-count.</p>"
+  },
+  {
+   "id": "DM-U13-Q13",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "lub-glb-meet-join",
+   "subtopic": "lub-glb-meet-join",
+   "subtopic_label": "LUB, GLB, meet & join",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the lattice of all partitions of the set <code class=\"mm\">{1, 2, 3, 4}</code> ordered by refinement, how many partitions cover the least element?",
+   "question_html": "<p class=\"qtext\">In the lattice of all partitions of the set <code class=\"mm\">{1, 2, 3, 4}</code> ordered by refinement, how many partitions cover the least element?</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "Under refinement the least element is the finest partition, with every block a singleton, and 'finer' means 'more blocks'. Covering the least element therefore means being exactly one merge away from it.",
+    "steps": [
+     "The least element is <code class=\"mm\">{{1}, {2}, {3}, {4}}</code>, four singleton blocks.",
+     "A partition covers it exactly when it is obtained by a single merge, that is when it has one block of size 2 and two singleton blocks.",
+     "Choosing the 2-element block means choosing 2 of the 4 elements: <code class=\"mm\">C(4, 2) = 6</code> partitions. Each of them covers the bottom, since no partition lies strictly between it and the finest one.",
+     "A partition with a block of size 3, or with two 2-blocks, lies strictly above one of these six, so it does not cover the bottom."
+    ],
+    "final": "Option (B).",
+    "misconception": "Counting all partitions of a four-element set (15), or only the partitions into two blocks. Covering the bottom means exactly one merge, not merely 'coarser than the finest partition'."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Under refinement the least element is the finest partition, with every block a singleton, and 'finer' means 'more blocks'. Covering the least element therefore means being exactly one merge away from it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The least element is <code class=\"mm\">{{1}, {2}, {3}, {4}}</code>, four singleton blocks.</li><li>A partition covers it exactly when it is obtained by a single merge, that is when it has one block of size 2 and two singleton blocks.</li><li>Choosing the 2-element block means choosing 2 of the 4 elements: <code class=\"mm\">C(4, 2) = 6</code> partitions. Each of them covers the bottom, since no partition lies strictly between it and the finest one.</li><li>A partition with a block of size 3, or with two 2-blocks, lies strictly above one of these six, so it does not cover the bottom.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Counting all partitions of a four-element set (15), or only the partitions into two blocks. Covering the bottom means exactly one merge, not merely 'coarser than the finest partition'.</p>"
+  },
+  {
+   "id": "DM-U13-Q14",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "A lattice <code class=\"mm\">(L, ≤)</code> is called <b>bounded</b> when",
+   "question_html": "<p class=\"qtext\">A lattice <code class=\"mm\">(L, ≤)</code> is called <b>bounded</b> when</p>",
+   "options": [
+    "it has a least element and a greatest element.",
+    "it is finite.",
+    "every element has a complement.",
+    "it is distributive."
+   ],
+   "options_html": [
+    "it has a least element and a greatest element.",
+    "it is finite.",
+    "every element has a complement.",
+    "it is distributive."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A bounded lattice is one that possesses a bottom 0 and a top 1 — an element below, respectively above, every element of L.",
+    "steps": [
+     "The definition is exactly the existence of a least element 0 and a greatest element 1: (A).",
+     "Finiteness is not the definition: the real interval <code class=\"mm\">[0, 1]</code> under <code class=\"mm\">≤</code> is bounded and infinite.",
+     "Complements are defined only once 0 and 1 exist, so (C) presupposes boundedness instead of defining it.",
+     "Distributivity is an independent axiom: M₃ is bounded and not distributive."
+    ],
+    "final": "Option (A).",
+    "misconception": "Equating bounded with finite. Every finite lattice is bounded — take the meet and join of all elements — but boundedness is about the existence of 0 and 1, not about cardinality."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A bounded lattice is one that possesses a bottom 0 and a top 1 — an element below, respectively above, every element of L.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The definition is exactly the existence of a least element 0 and a greatest element 1: (A).</li><li>Finiteness is not the definition: the real interval <code class=\"mm\">[0, 1]</code> under <code class=\"mm\">≤</code> is bounded and infinite.</li><li>Complements are defined only once 0 and 1 exist, so (C) presupposes boundedness instead of defining it.</li><li>Distributivity is an independent axiom: M₃ is bounded and not distributive.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Equating bounded with finite. Every finite lattice is bounded — take the meet and join of all elements — but boundedness is about the existence of 0 and 1, not about cardinality.</p>"
+  },
+  {
+   "id": "DM-U13-Q15",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the divisor lattice <code class=\"mm\">D(12) = ({1, 2, 3, 4, 6, 12}, ∣)</code>, the complement of <code class=\"mm\">4</code> is",
+   "question_html": "<p class=\"qtext\">In the divisor lattice <code class=\"mm\">D(12) = ({1, 2, 3, 4, 6, 12}, ∣)</code>, the complement of <code class=\"mm\">4</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "In a bounded lattice, y is a complement of x when <code class=\"mm\">x ∧ y = 0</code> and <code class=\"mm\">x ∨ y = 1</code>. In <code class=\"mm\">D(12)</code> the bottom is 1 and the top is 12, so the two conditions read <code class=\"mm\">gcd(4, y) = 1</code> and <code class=\"mm\">lcm(4, y) = 12</code>.",
+    "steps": [
+     "<code class=\"mm\">gcd(4, y) = 1</code> with y ∈ D(12) leaves y ∈ {1, 3}.",
+     "y = 1 gives <code class=\"mm\">lcm(4, 1) = 4 ≠ 12</code>, so it fails the join condition.",
+     "y = 3 gives <code class=\"mm\">lcm(4, 3) = 12</code> and <code class=\"mm\">gcd(4, 3) = 1</code>, so both conditions hold.",
+     "The complement is therefore 3, and it is unique because <code class=\"mm\">D(12)</code> is distributive."
+    ],
+    "final": "Option (C).",
+    "misconception": "Answering 6, the visually 'opposite' element in the divisor diagram. <code class=\"mm\">4 ∧ 6 = 2</code>, not 1, so 6 is not a complement of 4."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a bounded lattice, y is a complement of x when <code class=\"mm\">x ∧ y = 0</code> and <code class=\"mm\">x ∨ y = 1</code>. In <code class=\"mm\">D(12)</code> the bottom is 1 and the top is 12, so the two conditions read <code class=\"mm\">gcd(4, y) = 1</code> and <code class=\"mm\">lcm(4, y) = 12</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">gcd(4, y) = 1</code> with y ∈ D(12) leaves y ∈ {1, 3}.</li><li>y = 1 gives <code class=\"mm\">lcm(4, 1) = 4 ≠ 12</code>, so it fails the join condition.</li><li>y = 3 gives <code class=\"mm\">lcm(4, 3) = 12</code> and <code class=\"mm\">gcd(4, 3) = 1</code>, so both conditions hold.</li><li>The complement is therefore 3, and it is unique because <code class=\"mm\">D(12)</code> is distributive.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6, the visually 'opposite' element in the divisor diagram. <code class=\"mm\">4 ∧ 6 = 2</code>, not 1, so 6 is not a complement of 4.</p>"
+  },
+  {
+   "id": "DM-U13-Q16",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "The divisor lattice <code class=\"mm\">D(45)</code> has six elements. How many of them have a complement?",
+   "question_html": "<div class=\"qtext\">The divisor lattice <code class=\"mm\">D(45)</code> has six elements. How many of them have a complement?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 4,
+   "answer_display": "4",
+   "marks": 2,
+   "solution": {
+    "concept": "In <code class=\"mm\">D(45)</code> the bottom is 1 and the top is 45, so y complements x exactly when <code class=\"mm\">gcd(x, y) = 1</code> and <code class=\"mm\">lcm(x, y) = 45</code>.",
+    "steps": [
+     "<code class=\"mm\">D(45) = {1, 3, 5, 9, 15, 45}</code>, since 45 = 3² · 5.",
+     "x = 1 is complemented by y = 45; x = 45 is complemented by y = 1.",
+     "x = 5 needs y a multiple of 9 and coprime to 5: y = 9 works. Symmetrically x = 9 is complemented by y = 5.",
+     "x = 3 needs y a multiple of 15; the candidates are 15 and 45, and both share the factor 3 with x, so <code class=\"mm\">gcd(3, y) ≠ 1</code>. No complement.",
+     "x = 15 needs y a multiple of 3 that is coprime to 15; every candidate 3, 9, 15, 45 shares a factor with 15. No complement.",
+     "Complemented elements: 1, 5, 9, 45 — four of the six."
+    ],
+    "final": "4",
+    "misconception": "Assuming every element of a bounded lattice is complemented, or that the complement of x is always 45/x. Here 45/3 = 15 is not coprime to 3, so 3 has no complement at all."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In <code class=\"mm\">D(45)</code> the bottom is 1 and the top is 45, so y complements x exactly when <code class=\"mm\">gcd(x, y) = 1</code> and <code class=\"mm\">lcm(x, y) = 45</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">D(45) = {1, 3, 5, 9, 15, 45}</code>, since 45 = 3² · 5.</li><li>x = 1 is complemented by y = 45; x = 45 is complemented by y = 1.</li><li>x = 5 needs y a multiple of 9 and coprime to 5: y = 9 works. Symmetrically x = 9 is complemented by y = 5.</li><li>x = 3 needs y a multiple of 15; the candidates are 15 and 45, and both share the factor 3 with x, so <code class=\"mm\">gcd(3, y) ≠ 1</code>. No complement.</li><li>x = 15 needs y a multiple of 3 that is coprime to 15; every candidate 3, 9, 15, 45 shares a factor with 15. No complement.</li><li>Complemented elements: 1, 5, 9, 45 — four of the six.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every element of a bounded lattice is complemented, or that the complement of x is always 45/x. Here 45/3 = 15 is not coprime to 3, so 3 has no complement at all.</p>",
+   "question_format": "text",
+   "nat_answer": 4,
+   "nat_format": "an integer",
+   "hint": "Answer format: an integer."
+  },
+  {
+   "id": "DM-U13-Q17",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In a bounded lattice with least element <code class=\"mm\">0</code> and greatest element <code class=\"mm\">1</code>, which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">In a bounded lattice with least element <code class=\"mm\">0</code> and greatest element <code class=\"mm\">1</code>, which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "In <code class=\"mm\">D(30)</code> every element has a complement.",
+    "In <code class=\"mm\">D(12)</code> the element <code class=\"mm\">2</code> has no complement.",
+    "<code class=\"mm\">D(12)</code> is a Boolean lattice.",
+    "Every finite lattice is bounded."
+   ],
+   "options_html": [
+    "In <code class=\"mm\">D(30)</code> every element has a complement.",
+    "In <code class=\"mm\">D(12)</code> the element <code class=\"mm\">2</code> has no complement.",
+    "<code class=\"mm\">D(12)</code> is a Boolean lattice.",
+    "Every finite lattice is bounded."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Boundedness supplies 0 and 1; being complemented is a separate condition. For a divisor lattice, <code class=\"mm\">D(n)</code> is Boolean exactly when n is squarefree.",
+    "steps": [
+     "30 = 2 · 3 · 5 is squarefree, so <code class=\"mm\">D(30)</code> is isomorphic to the Boolean lattice of subsets of a 3-element set. Every element has a complement, and it is unique: (A) is true.",
+     "In <code class=\"mm\">D(12)</code> a complement of 2 needs <code class=\"mm\">gcd(2, y) = 1</code> and <code class=\"mm\">lcm(2, y) = 12</code>. The first forces y = 3, but <code class=\"mm\">lcm(2, 3) = 6 ≠ 12</code>. So 2 has no complement: (B) is true.",
+     "<code class=\"mm\">D(12)</code> therefore has an uncomplemented element and is not Boolean — 12 = 2² · 3 is not squarefree: (C) is false.",
+     "A finite lattice has a least and a greatest element, obtained as the meet and the join of all its elements, so it is bounded: (D) is true."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "misconception": "Assuming bounded implies complemented. Boundedness only gives 0 and 1; the existence of complements is an extra demand that 2 already violates in the small lattice <code class=\"mm\">D(12)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Boundedness supplies 0 and 1; being complemented is a separate condition. For a divisor lattice, <code class=\"mm\">D(n)</code> is Boolean exactly when n is squarefree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>30 = 2 · 3 · 5 is squarefree, so <code class=\"mm\">D(30)</code> is isomorphic to the Boolean lattice of subsets of a 3-element set. Every element has a complement, and it is unique: (A) is true.</li><li>In <code class=\"mm\">D(12)</code> a complement of 2 needs <code class=\"mm\">gcd(2, y) = 1</code> and <code class=\"mm\">lcm(2, y) = 12</code>. The first forces y = 3, but <code class=\"mm\">lcm(2, 3) = 6 ≠ 12</code>. So 2 has no complement: (B) is true.</li><li><code class=\"mm\">D(12)</code> therefore has an uncomplemented element and is not Boolean — 12 = 2² · 3 is not squarefree: (C) is false.</li><li>A finite lattice has a least and a greatest element, obtained as the meet and the join of all its elements, so it is bounded: (D) is true.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming bounded implies complemented. Boundedness only gives 0 and 1; the existence of complements is an extra demand that 2 already violates in the small lattice <code class=\"mm\">D(12)</code>.</p>"
+  },
+  {
+   "id": "DM-U13-Q18",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "The divisor lattice <code class=\"mm\">D(n)</code> is a Boolean lattice exactly when",
+   "question_html": "<p class=\"qtext\">The divisor lattice <code class=\"mm\">D(n)</code> is a Boolean lattice exactly when</p>",
+   "options": [
+    "<code class=\"mm\">n</code> is prime.",
+    "<code class=\"mm\">n</code> is a product of distinct primes.",
+    "<code class=\"mm\">n</code> is odd.",
+    "<code class=\"mm\">n</code> has exactly two prime factors."
+   ],
+   "options_html": [
+    "<code class=\"mm\">n</code> is prime.",
+    "<code class=\"mm\">n</code> is a product of distinct primes.",
+    "<code class=\"mm\">n</code> is odd.",
+    "<code class=\"mm\">n</code> has exactly two prime factors."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "If <code class=\"mm\">n = p₁^a₁ ⋯ p_k^a_k</code> then <code class=\"mm\">D(n)</code> is isomorphic to the product of the chains of lengths a₁ + 1, …, a_k + 1. A product of chains is Boolean exactly when every chain has just two elements.",
+    "steps": [
+     "Each prime power <code class=\"mm\">p_i^0, p_i^1, …, p_i^{a_i}</code> forms a chain of a_i + 1 elements, and <code class=\"mm\">D(n)</code> is their product.",
+     "A product of chains is Boolean exactly when every factor is the two-element chain, that is when every a_i = 1.",
+     "That is precisely the condition that n is a product of distinct primes (squarefree), and then <code class=\"mm\">D(n) ≅ 2^k</code> with k the number of distinct prime factors.",
+     "Primality (A) and exactly two prime factors (D) are special cases of that condition, not the condition itself. Oddness (C) is irrelevant: <code class=\"mm\">D(9)</code> is odd and not Boolean."
+    ],
+    "final": "Option (B).",
+    "misconception": "Testing n = 6 and n = 12, seeing one Boolean and one not, and generalising. The criterion is about the exponents, not about how many distinct primes n has."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> If <code class=\"mm\">n = p₁^a₁ ⋯ p_k^a_k</code> then <code class=\"mm\">D(n)</code> is isomorphic to the product of the chains of lengths a₁ + 1, …, a_k + 1. A product of chains is Boolean exactly when every chain has just two elements.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Each prime power <code class=\"mm\">p_i^0, p_i^1, …, p_i^{a_i}</code> forms a chain of a_i + 1 elements, and <code class=\"mm\">D(n)</code> is their product.</li><li>A product of chains is Boolean exactly when every factor is the two-element chain, that is when every a_i = 1.</li><li>That is precisely the condition that n is a product of distinct primes (squarefree), and then <code class=\"mm\">D(n) ≅ 2^k</code> with k the number of distinct prime factors.</li><li>Primality (A) and exactly two prime factors (D) are special cases of that condition, not the condition itself. Oddness (C) is irrelevant: <code class=\"mm\">D(9)</code> is odd and not Boolean.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Testing n = 6 and n = 12, seeing one Boolean and one not, and generalising. The criterion is about the exponents, not about how many distinct primes n has.</p>"
+  },
+  {
+   "id": "DM-U13-Q19",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "bounded-complemented-lattices",
+   "subtopic": "bounded-complemented-lattices",
+   "subtopic_label": "Bounded & complemented lattices",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the pentagon lattice <code class=\"mm\">N₅</code>, with elements <code class=\"mm\">0 ≺ a ≺ c ≺ 1</code> and <code class=\"mm\">0 ≺ b ≺ 1</code> where <code class=\"mm\">b</code> is incomparable with both <code class=\"mm\">a</code> and <code class=\"mm\">c</code>, how many complements does the element <code class=\"mm\">b</code> have?",
+   "question_html": "<div class=\"qtext\">In the pentagon lattice <code class=\"mm\">N₅</code>, with elements <code class=\"mm\">0 ≺ a ≺ c ≺ 1</code> and <code class=\"mm\">0 ≺ b ≺ 1</code> where <code class=\"mm\">b</code> is incomparable with both <code class=\"mm\">a</code> and <code class=\"mm\">c</code>, how many complements does the element <code class=\"mm\">b</code> have?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 2,
+   "answer_display": "2",
+   "marks": 2,
+   "solution": {
+    "concept": "y complements b when <code class=\"mm\">b ∧ y = 0</code> and <code class=\"mm\">b ∨ y = 1</code>. Uniqueness of complements is a property of distributive lattices only, and N₅ is not distributive.",
+    "steps": [
+     "y = a: b and a are incomparable, so their only lower bound is 0 and <code class=\"mm\">b ∧ a = 0</code>. The upper bounds of b and a are those elements above both; c is not above b and 1 is, so <code class=\"mm\">b ∨ a = 1</code>. So a is a complement of b.",
+     "y = c: again <code class=\"mm\">b ∧ c = 0</code> and <code class=\"mm\">b ∨ c = 1</code>, so c is a second complement of b.",
+     "y = 0 gives <code class=\"mm\">b ∨ 0 = b ≠ 1</code>; y = 1 gives <code class=\"mm\">b ∧ 1 = b ≠ 0</code>; y = b gives <code class=\"mm\">b ∧ b = b ≠ 0</code>. None of them works.",
+     "Exactly two complements: a and c."
+    ],
+    "final": "2",
+    "misconception": "Expecting a unique complement. Uniqueness holds in distributive lattices; in N₅ the element b has two, and that failure is exactly what makes N₅ non-distributive."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> y complements b when <code class=\"mm\">b ∧ y = 0</code> and <code class=\"mm\">b ∨ y = 1</code>. Uniqueness of complements is a property of distributive lattices only, and N₅ is not distributive.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>y = a: b and a are incomparable, so their only lower bound is 0 and <code class=\"mm\">b ∧ a = 0</code>. The upper bounds of b and a are those elements above both; c is not above b and 1 is, so <code class=\"mm\">b ∨ a = 1</code>. So a is a complement of b.</li><li>y = c: again <code class=\"mm\">b ∧ c = 0</code> and <code class=\"mm\">b ∨ c = 1</code>, so c is a second complement of b.</li><li>y = 0 gives <code class=\"mm\">b ∨ 0 = b ≠ 1</code>; y = 1 gives <code class=\"mm\">b ∧ 1 = b ≠ 0</code>; y = b gives <code class=\"mm\">b ∧ b = b ≠ 0</code>. None of them works.</li><li>Exactly two complements: a and c.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Expecting a unique complement. Uniqueness holds in distributive lattices; in N₅ the element b has two, and that failure is exactly what makes N₅ non-distributive.</p>",
+   "question_format": "text",
+   "nat_answer": 2,
+   "nat_format": "an integer",
+   "hint": "Answer format: an integer."
+  },
+  {
+   "id": "DM-U13-Q20",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Which of the following implications holds for every lattice?",
+   "question_html": "<p class=\"qtext\">Which of the following implications holds for every lattice?</p>",
+   "options": [
+    "distributive ⇒ modular",
+    "modular ⇒ distributive",
+    "complemented ⇒ distributive",
+    "bounded ⇒ distributive"
+   ],
+   "options_html": [
+    "distributive ⇒ modular",
+    "modular ⇒ distributive",
+    "complemented ⇒ distributive",
+    "bounded ⇒ distributive"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Modularity is the law <code class=\"mm\">a ≤ b ⇒ a ∨ (x ∧ b) = (a ∨ x) ∧ b</code>; distributivity is <code class=\"mm\">a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c)</code>. Distributivity is strictly stronger.",
+    "steps": [
+     "Assume distributivity. For <code class=\"mm\">a ≤ b</code>, expand <code class=\"mm\">(a ∨ x) ∧ b</code> and use <code class=\"mm\">a ∧ b = a</code>; distributivity reduces it to <code class=\"mm\">a ∨ (x ∧ b)</code>. So every distributive lattice is modular: (A) holds.",
+     "The converse fails: the diamond M₃ is modular but not distributive, so (B) fails.",
+     "M₃ is also complemented and bounded and not distributive, so (C) and (D) fail."
+    ],
+    "final": "Option (A).",
+    "misconception": "Treating modular and distributive as synonyms. Distributive implies modular, never the other way round, and M₃ is the smallest witness."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Modularity is the law <code class=\"mm\">a ≤ b ⇒ a ∨ (x ∧ b) = (a ∨ x) ∧ b</code>; distributivity is <code class=\"mm\">a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c)</code>. Distributivity is strictly stronger.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Assume distributivity. For <code class=\"mm\">a ≤ b</code>, expand <code class=\"mm\">(a ∨ x) ∧ b</code> and use <code class=\"mm\">a ∧ b = a</code>; distributivity reduces it to <code class=\"mm\">a ∨ (x ∧ b)</code>. So every distributive lattice is modular: (A) holds.</li><li>The converse fails: the diamond M₃ is modular but not distributive, so (B) fails.</li><li>M₃ is also complemented and bounded and not distributive, so (C) and (D) fail.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Treating modular and distributive as synonyms. Distributive implies modular, never the other way round, and M₃ is the smallest witness.</p>"
+  },
+  {
+   "id": "DM-U13-Q21",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Which of the following lattices is distributive?",
+   "question_html": "<p class=\"qtext\">Which of the following lattices is distributive?</p>",
+   "options": [
+    "<code class=\"mm\">M₃</code>, the diamond",
+    "<code class=\"mm\">N₅</code>, the pentagon",
+    "<code class=\"mm\">D(12)</code>, the positive divisors of 12 under divisibility",
+    "the lattice of partitions of a four-element set"
+   ],
+   "options_html": [
+    "<code class=\"mm\">M₃</code>, the diamond",
+    "<code class=\"mm\">N₅</code>, the pentagon",
+    "<code class=\"mm\">D(12)</code>, the positive divisors of 12 under divisibility",
+    "the lattice of partitions of a four-element set"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "A lattice is distributive exactly when it has no sublattice isomorphic to M₃ or to N₅. A product of chains is always distributive, and every divisor lattice is a product of chains.",
+    "steps": [
+     "M₃ and N₅ are the two minimal non-distributive lattices, so (A) and (B) are out.",
+     "The partition lattice of a four-element set contains a copy of M₃ — three partitions into two blocks of a 3-element subset, sitting below the partition with one block — so it is not distributive either: (D) is out.",
+     "12 = 2² · 3, so <code class=\"mm\">D(12)</code> is the product of the chains {1, 2, 4} and {1, 3}. A product of chains is distributive, so (C) is the answer."
+    ],
+    "final": "Option (C).",
+    "misconception": "Assuming a lattice is distributive as soon as it is not literally the pentagon. The diamond M₃ also breaks distributivity, and so does any lattice containing a copy of either."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A lattice is distributive exactly when it has no sublattice isomorphic to M₃ or to N₅. A product of chains is always distributive, and every divisor lattice is a product of chains.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>M₃ and N₅ are the two minimal non-distributive lattices, so (A) and (B) are out.</li><li>The partition lattice of a four-element set contains a copy of M₃ — three partitions into two blocks of a 3-element subset, sitting below the partition with one block — so it is not distributive either: (D) is out.</li><li>12 = 2² · 3, so <code class=\"mm\">D(12)</code> is the product of the chains {1, 2, 4} and {1, 3}. A product of chains is distributive, so (C) is the answer.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming a lattice is distributive as soon as it is not literally the pentagon. The diamond M₃ also breaks distributivity, and so does any lattice containing a copy of either.</p>"
+  },
+  {
+   "id": "DM-U13-Q22",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "A lattice <code class=\"mm\">L</code> is modular if and only if",
+   "question_html": "<p class=\"qtext\">A lattice <code class=\"mm\">L</code> is modular if and only if</p>",
+   "options": [
+    "<code class=\"mm\">a ≤ b</code> implies <code class=\"mm\">a ∨ (x ∧ b) = (a ∨ x) ∧ b</code> for all <code class=\"mm\">x</code>.",
+    "<code class=\"mm\">a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c)</code> for all <code class=\"mm\">a, b, c</code>.",
+    "<code class=\"mm\">L</code> contains no sublattice isomorphic to <code class=\"mm\">M₃</code>.",
+    "<code class=\"mm\">L</code> is finite."
+   ],
+   "options_html": [
+    "<code class=\"mm\">a ≤ b</code> implies <code class=\"mm\">a ∨ (x ∧ b) = (a ∨ x) ∧ b</code> for all <code class=\"mm\">x</code>.",
+    "<code class=\"mm\">a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c)</code> for all <code class=\"mm\">a, b, c</code>.",
+    "<code class=\"mm\">L</code> contains no sublattice isomorphic to <code class=\"mm\">M₃</code>.",
+    "<code class=\"mm\">L</code> is finite."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Modularity has two standard forms: the inequality <code class=\"mm\">a ≤ b ⇒ a ∨ (x ∧ b) = (a ∨ x) ∧ b</code>, and the condition that L has no sublattice isomorphic to the pentagon N₅.",
+    "steps": [
+     "(A) is the modular law itself, so it characterises modularity.",
+     "(B) is distributivity, which is strictly stronger: M₃ satisfies (A) and fails (B).",
+     "(C) describes distributivity, not modularity. A lattice is distributive iff it has no sublattice isomorphic to M₃ or to N₅; forbidding only N₅ gives modularity, and M₃ itself is modular yet does contain M₃.",
+     "(D) is irrelevant: the lattice of subspaces of any vector space is modular and infinite."
+    ],
+    "final": "Option (A).",
+    "misconception": "Swapping the two forbidden sublattices. Forbidding both M₃ and N₅ gives distributivity; forbidding only the pentagon gives modularity."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Modularity has two standard forms: the inequality <code class=\"mm\">a ≤ b ⇒ a ∨ (x ∧ b) = (a ∨ x) ∧ b</code>, and the condition that L has no sublattice isomorphic to the pentagon N₅.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the modular law itself, so it characterises modularity.</li><li>(B) is distributivity, which is strictly stronger: M₃ satisfies (A) and fails (B).</li><li>(C) describes distributivity, not modularity. A lattice is distributive iff it has no sublattice isomorphic to M₃ or to N₅; forbidding only N₅ gives modularity, and M₃ itself is modular yet does contain M₃.</li><li>(D) is irrelevant: the lattice of subspaces of any vector space is modular and infinite.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Swapping the two forbidden sublattices. Forbidding both M₃ and N₅ gives distributivity; forbidding only the pentagon gives modularity.</p>"
+  },
+  {
+   "id": "DM-U13-Q23",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "Which of the following statements about modular and distributive lattices are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about modular and distributive lattices are true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">M₃</code> is modular but not distributive.",
+    "<code class=\"mm\">N₅</code> is not modular.",
+    "Every chain is distributive.",
+    "The lattice of subgroups of a group, ordered by inclusion, is always distributive."
+   ],
+   "options_html": [
+    "<code class=\"mm\">M₃</code> is modular but not distributive.",
+    "<code class=\"mm\">N₅</code> is not modular.",
+    "Every chain is distributive.",
+    "The lattice of subgroups of a group, ordered by inclusion, is always distributive."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "M₃ and N₅ are the two minimal failures: M₃ breaks distributivity but keeps modularity, N₅ breaks modularity as well. Chains are the best-behaved lattices of all.",
+    "steps": [
+     "In M₃ with atoms a, b, c: <code class=\"mm\">a ∧ (b ∨ c) = a ∧ 1 = a</code> while <code class=\"mm\">(a ∧ b) ∨ (a ∧ c) = 0 ∨ 0 = 0</code>, so distributivity fails. The modular law still holds in M₃, so (A) is true.",
+     "In N₅, take <code class=\"mm\">a ≤ c</code>: <code class=\"mm\">a ∨ (b ∧ c) = a ∨ 0 = a</code> while <code class=\"mm\">(a ∨ b) ∧ c = 1 ∧ c = c ≠ a</code>. The modular law fails, so (B) is true.",
+     "In a chain, meet is min and join is max, and min distributes over max: (C) is true.",
+     "The subgroup lattice of <code class=\"mm\">ℤ₂ × ℤ₂</code> has three subgroups of order 2 with pairwise trivial intersection, whose joins are the whole group — a copy of M₃. So it is not distributive: (D) is false."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Assuming that lattices built out of groups are automatically well behaved. The subgroup lattice of a group is always modular, but it is distributive only for special groups."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> M₃ and N₅ are the two minimal failures: M₃ breaks distributivity but keeps modularity, N₅ breaks modularity as well. Chains are the best-behaved lattices of all.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>In M₃ with atoms a, b, c: <code class=\"mm\">a ∧ (b ∨ c) = a ∧ 1 = a</code> while <code class=\"mm\">(a ∧ b) ∨ (a ∧ c) = 0 ∨ 0 = 0</code>, so distributivity fails. The modular law still holds in M₃, so (A) is true.</li><li>In N₅, take <code class=\"mm\">a ≤ c</code>: <code class=\"mm\">a ∨ (b ∧ c) = a ∨ 0 = a</code> while <code class=\"mm\">(a ∨ b) ∧ c = 1 ∧ c = c ≠ a</code>. The modular law fails, so (B) is true.</li><li>In a chain, meet is min and join is max, and min distributes over max: (C) is true.</li><li>The subgroup lattice of <code class=\"mm\">ℤ₂ × ℤ₂</code> has three subgroups of order 2 with pairwise trivial intersection, whose joins are the whole group — a copy of M₃. So it is not distributive: (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that lattices built out of groups are automatically well behaved. The subgroup lattice of a group is always modular, but it is distributive only for special groups.</p>"
+  },
+  {
+   "id": "DM-U13-Q24",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "The diamond lattice <code class=\"mm\">M₃</code> has elements <code class=\"mm\">0, a, b, c, 1</code>, where <code class=\"mm\">a, b, c</code> are pairwise incomparable atoms and <code class=\"mm\">1</code> lies above all three. How many ordered pairs <code class=\"mm\">(x, y)</code> of elements satisfy <code class=\"mm\">x ∧ y = 0</code> and <code class=\"mm\">x ∨ y = 1</code>?",
+   "question_html": "<div class=\"qtext\">The diamond lattice <code class=\"mm\">M₃</code> has elements <code class=\"mm\">0, a, b, c, 1</code>, where <code class=\"mm\">a, b, c</code> are pairwise incomparable atoms and <code class=\"mm\">1</code> lies above all three. How many ordered pairs <code class=\"mm\">(x, y)</code> of elements satisfy <code class=\"mm\">x ∧ y = 0</code> and <code class=\"mm\">x ∨ y = 1</code>?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 8,
+   "answer_display": "8",
+   "marks": 2,
+   "solution": {
+    "concept": "The two conditions say that y is a complement of x. The pair is ordered, so (x, y) and (y, x) count separately, and in M₃ complements exist but are not unique.",
+    "steps": [
+     "x = 0: the only y with <code class=\"mm\">0 ∧ y = 0</code> and <code class=\"mm\">0 ∨ y = 1</code> is y = 1. That gives (0, 1).",
+     "x = 1: the only y is 0. That gives (1, 0).",
+     "x = a: <code class=\"mm\">a ∧ b = 0</code> and <code class=\"mm\">a ∨ b = 1</code>, and likewise for c, while <code class=\"mm\">a ∧ a = a ≠ 0</code>. So (a, b) and (a, c).",
+     "By symmetry: (b, a), (b, c), (c, a), (c, b).",
+     "Total 2 + 6 = 8 ordered pairs. As unordered complement pairs the count would be 4."
+    ],
+    "final": "8",
+    "misconception": "Answering 4 by counting unordered pairs, or 4 by forgetting that 0 and 1 complement each other. Complements in M₃ are not unique — that is precisely why M₃ is not distributive."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two conditions say that y is a complement of x. The pair is ordered, so (x, y) and (y, x) count separately, and in M₃ complements exist but are not unique.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>x = 0: the only y with <code class=\"mm\">0 ∧ y = 0</code> and <code class=\"mm\">0 ∨ y = 1</code> is y = 1. That gives (0, 1).</li><li>x = 1: the only y is 0. That gives (1, 0).</li><li>x = a: <code class=\"mm\">a ∧ b = 0</code> and <code class=\"mm\">a ∨ b = 1</code>, and likewise for c, while <code class=\"mm\">a ∧ a = a ≠ 0</code>. So (a, b) and (a, c).</li><li>By symmetry: (b, a), (b, c), (c, a), (c, b).</li><li>Total 2 + 6 = 8 ordered pairs. As unordered complement pairs the count would be 4.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4 by counting unordered pairs, or 4 by forgetting that 0 and 1 complement each other. Complements in M₃ are not unique — that is precisely why M₃ is not distributive.</p>",
+   "question_format": "text",
+   "nat_answer": 8,
+   "nat_format": "an integer",
+   "hint": "Answer format: an integer."
+  },
+  {
+   "id": "DM-U13-Q25",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 13,
+   "unit_number": 13,
+   "unit_slug": "lattices-posets",
+   "unit_name": "Lattices & Posets",
+   "topic": "Lattices & Posets",
+   "sub": "distributive-modular-lattices",
+   "subtopic": "distributive-modular-lattices",
+   "subtopic_label": "Distributive & modular lattices",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 20,
+   "run_date": "2026-11-03",
+   "question": "In the divisor lattice <code class=\"mm\">D(72)</code>, call an element <i>join-irreducible</i> if it is not <code class=\"mm\">1</code> and cannot be written as the join of two elements both different from itself. How many elements of <code class=\"mm\">D(72)</code> are join-irreducible?",
+   "question_html": "<div class=\"qtext\">In the divisor lattice <code class=\"mm\">D(72)</code>, call an element <i>join-irreducible</i> if it is not <code class=\"mm\">1</code> and cannot be written as the join of two elements both different from itself. How many elements of <code class=\"mm\">D(72)</code> are join-irreducible?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 5,
+   "answer_display": "5",
+   "marks": 2,
+   "solution": {
+    "concept": "In a divisor lattice the join is the lcm, so x is join-irreducible when x ≠ 1 and there is no way to write x as <code class=\"mm\">lcm(u, v)</code> with u, v both different from x. In <code class=\"mm\">D(n)</code> these are exactly the prime powers <code class=\"mm\">p^k</code> with 1 ≤ k ≤ a_p.",
+    "steps": [
+     "72 = 2³ · 3², so a divisor is <code class=\"mm\">2^i 3^j</code> with 0 ≤ i ≤ 3 and 0 ≤ j ≤ 2.",
+     "If i ≥ 1 and j ≥ 1, then <code class=\"mm\">x = lcm(2^i, 3^j)</code> with both factors different from x, so x is reducible. This eliminates 6, 12, 18, 24, 36 and 72.",
+     "What remains above 1 are the pure prime powers: 2, 4, 8, 3, 9.",
+     "None of these five is an lcm of two smaller divisors of 72, since any two divisors whose lcm is <code class=\"mm\">2^k</code> must both be powers of 2, and then one of them already equals <code class=\"mm\">2^k</code>. So all five are join-irreducible."
+    ],
+    "final": "5",
+    "misconception": "Including 1, which is the join of the empty set and is excluded by definition, or including 6 = lcm(2, 3). In a divisor lattice the join-irreducibles are the prime powers above 1, one family per prime."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a divisor lattice the join is the lcm, so x is join-irreducible when x ≠ 1 and there is no way to write x as <code class=\"mm\">lcm(u, v)</code> with u, v both different from x. In <code class=\"mm\">D(n)</code> these are exactly the prime powers <code class=\"mm\">p^k</code> with 1 ≤ k ≤ a_p.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>72 = 2³ · 3², so a divisor is <code class=\"mm\">2^i 3^j</code> with 0 ≤ i ≤ 3 and 0 ≤ j ≤ 2.</li><li>If i ≥ 1 and j ≥ 1, then <code class=\"mm\">x = lcm(2^i, 3^j)</code> with both factors different from x, so x is reducible. This eliminates 6, 12, 18, 24, 36 and 72.</li><li>What remains above 1 are the pure prime powers: 2, 4, 8, 3, 9.</li><li>None of these five is an lcm of two smaller divisors of 72, since any two divisors whose lcm is <code class=\"mm\">2^k</code> must both be powers of 2, and then one of them already equals <code class=\"mm\">2^k</code>. So all five are join-irreducible.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 5</span></p><p class=\"row\"><b>Common misconception.</b> Including 1, which is the join of the empty set and is excluded by definition, or including 6 = lcm(2, 3). In a divisor lattice the join-irreducibles are the prime powers above 1, one family per prime.</p>",
+   "question_format": "text",
+   "nat_answer": 5,
+   "nat_format": "an integer",
+   "hint": "Answer format: an integer."
   }
  ]
 }

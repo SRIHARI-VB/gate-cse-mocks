@@ -7,36 +7,88 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 1 — Layering, Physical & Framing, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html`](computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html)
+- **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 1 of 2**, 2026-11-03 →
+  [`discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`](discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: OSI & TCP/IP models (6) · delays & bandwidth-delay product (7) · framing: bit & byte stuffing (6) ·
-  CRC, checksum & Hamming (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 18, unit 6, application-layer-security, Set 1 of 2 (second pass)}`. Unit 6 held **75**
-  questions, above `UNIT_QUESTION_CAP = 50`, so rule B3 failed on the cap and step B4 advanced exactly one unit:
-  `(5 + 1) mod 6 = 0` → **Unit 1, network-fundamentals-framing**. Unit 1 already held 75 questions from three
-  earlier sets, so this paper is **Set 2 of 2 of the unit's second pass**. No override, no partial set, exactly
-  25 questions.
-- Superseded: the 2026-10-31 Set 1 paper moved to
-  `computer-networks/network-fundamentals-framing/archive/gate_cn_mock_1_2026-10-31_run3.html` with its content
-  frozen, so the unit folder holds exactly one current paper and the repository root holds only `index.html`.
-- Previous test: **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html)
+- Subtopics: posets & Hasse diagrams (7) · LUB, GLB, meet & join (6) · bounded & complemented lattices (6) ·
+  distributive & modular lattices (6)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order was taken,
+  then restricted, as in runs 12–27, to subjects whose **post-B4** target unit is still below
+  `UNIT_QUESTION_CAP = 50`. Only **Discrete Mathematics** qualified. Its most recent paper is
+  `{2026-11-02, run 19, unit 12, algebraic-structures, Set 2 of 2}`; unit 12 stands at **50** questions, so rule B3
+  fails on the cap and step B4 advances exactly one unit: `(11 + 1) mod 16 = 12`, the 0-based index of **Unit 13,
+  lattices-posets**. Unit 13 held **0** questions, so this is **Set 1 of 2**. Every other subject's next unit
+  already sits at or above 50 and would have opened a second pass.
+- New unit folder, so nothing was superseded: `discrete-mathematics/lattices-posets/` holds this one current paper
+  and no archive yet. The repository root still holds only `index.html`.
+- Previous test: **Computer Networks · Unit 1 — Layering, Physical & Framing, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html`](computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 190 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 68 current · 122 archived |
-| Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4750 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Papers published (current + archived) | 191 (28 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 69 current · 122 archived |
+| Test cards on the portal | 69 (one card per current paper; every superseded set is a link on its unit’s card) |
+| Units covered | 14 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 4775 (700 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 122 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 13, Set 1 of 2
+
+- New paper at `discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`. Unit 13 had never been
+  papered, so a new unit folder was created and nothing was superseded — the folder holds exactly one current paper
+  and has no archive yet.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order was taken, then restricted — as in runs 12–27 — to subjects whose post-B4 target unit is still below
+  `UNIT_QUESTION_CAP = 50`, so that a unit is completed before a second pass opens. Only **Discrete Mathematics**
+  qualified: every other subject's next unit already stands at 50 or more. Its `runs[]` sorted by `(date, run)` gave
+  the most recent paper as `{2026-11-02, run 19, unit 12, algebraic-structures}`. Unit 12 held **50** questions and
+  its first paper was dated 2026-11-02, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(11 + 1) mod 16 = 12` → **Unit 13, Lattices & Posets**. Unit 13 held 0 questions, so this is **Set 1 of 2**. No
+  override, no partial set, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking
+  · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: posets & Hasse diagrams 7 · LUB, GLB, meet & join 6 · bounded & complemented
+  lattices 6 · distributive & modular lattices 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Posets: which relation on ℤ fails antisymmetry (`|a − b| ≤ 1`), an MSQ on least/greatest and
+  `lub(4, 6)` in `{1, 2, 3, 4, 6, 12}`, the 10 strict comparisons a five-element path diagram hides, why `(ℤ⁺, ∣)` is
+  a lattice but not a chain, **20** Hasse edges in `D(60)`, an MSQ separating minimal from greatest in
+  `{2, 3, 4, 6, 9, 12, 18}`, and the width of `D(360)` (**6**). Meet and join: `gcd(4, 6) = 2` in `D(36)`, a poset
+  whose two minimal upper bounds kill the join, the absorption law, an MSQ on join as least upper bound, the **6**
+  joins of two atoms in `B₄`, and the **6** partitions of a 4-set that cover the bottom of the refinement lattice.
+  Bounded and complemented: the definition, the complement of 4 in `D(12)` (**3**), **4** of the six elements of
+  `D(45)` complemented, an MSQ on `D(30)` versus `D(12)`, the squarefree criterion, and the **2** complements of `b`
+  in the pentagon. Distributive and modular: distributive ⇒ modular, `D(12)` as the distributive one, the modular law
+  against distributivity, an MSQ on `M₃`/`N₅`/chains/subgroup lattices, the **8** ordered complement pairs of `M₃`,
+  and the **5** join-irreducibles of `D(72)`.
+- **Answers recomputed, not asserted.** Every key came from a script. Hasse edges of `D(60)` = 8 (ratio 2) + 6
+  (ratio 3) + 6 (ratio 5) = 20; width of `D(360)` = 6, from rank sizes 1, 3, 5, 6, 5, 3, 1 over its 24 divisors and
+  confirmed independently by Dilworth as `24 − 18` (minimum chain cover); `C(5, 2) = 10`; `C(4, 2) = 6` twice, for
+  the atom joins and for the partitions one merge above the bottom; complements of 4 in `D(12)` = {3}; complemented
+  elements of `D(45)` = {1, 5, 9, 45}; complements of `b` in `N₅` = {a, c}; ordered complement pairs of `M₃` = 8;
+  join-irreducibles of `D(72)` = {2, 3, 4, 8, 9}. The squarefree criterion for a Boolean divisor lattice was
+  brute-forced for every n from 2 to 120 with no counterexample, and distributivity of `D(12)`, non-distributivity of
+  `M₃` and `N₅`, and modularity of `M₃` were checked by exhaustive evaluation of the lattice laws over every triple
+  of elements. The grading engine was then replayed against the decoded payload: a perfect attempt scores 35/35 with
+  25 correct, dropping one option from an MSQ scores 0 for that question, and a blank paper scores 0/35 with 25
+  unattempted.
+- **No PYQ claim.** The Discrete Mathematics bank's two verified previous-year items (PYQ-GATE2023-Q26, official key
+  B, C; PYQ-GATE2015, official key C) are Unit 16 logic questions and are not reused here. No lattices-and-posets
+  previous-year question has been verified against an official paper and answer key, so nothing on this paper is
+  called an official GATE question and none of the 25 active items carries `GATE_PYQ_VARIATION`.
+- **Repaired in the same run.** `data/questions-computer-architecture.js` and
+  `data/questions-programming-data-structures.js` each ended with a duplicated closing bracket, so both files threw a
+  parse error in the browser and those two subjects rendered no entries in the portal's question archive. Both
+  trailing brackets were removed; all eleven data files now parse and hold 4775 records in total, matching the eleven
+  master banks exactly.
+- **Portal.** `index.html` gained one test card (69 cards) and the archive view now shows Unit 13 with its four
+  subtopic pills, a `Practise Set 1 →` button and a review expander. The summary chips were recomputed from the
+  repository rather than carried forward: 71 units in the series, 69 test cards, 4775 records, 69 of 71 units and
+  296 subtopics with questions.
 
 ### 2026-11-03 — Computer Networks Unit 1, Set 2 of 2 (second pass)
 
