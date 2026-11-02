@@ -7,37 +7,125 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 2 — Combinational Circuit Design, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html)
+- **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: adders & subtractors (5) · multiplexers & demultiplexers (5) · decoders & encoders (5) ·
-  code converters (5) · hazards & glitches (5)
+- Subtopics: latches vs flip-flops (7) · setup & hold times (6) · characteristic equations (6) ·
+  shift registers (6)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
   index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 13, unit 1, number-systems, Set 2 of 2 (second pass)}`. Unit 1 held **100** questions, above
-  `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, eight days earlier, so rule B3 failed on both
-  tests and step B4 advanced exactly one unit: `(0 + 1) mod 4 = 1` → **Unit 2, combinational-circuits**. Unit 2
-  already held 75 questions, so this paper closes the unit's second pass as **Set 2 of 2**. No override, no
-  partial set, exactly 25 questions.
+  `{2026-11-03, run 14, unit 2, combinational-circuits, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions,
+  above `UNIT_QUESTION_CAP = 50`, and had been current since 2026-10-27, so rule B3 failed on both the cap and the
+  backstop and step B4 advanced exactly one unit: `(1 + 1) mod 4 = 2` → **Unit 3, sequential-flipflops**. Unit 3
+  already held 75 questions, so this paper closes the unit's second pass as **Set 2 of 2**. No override, no partial
+  set, exactly 25 questions.
 - Superseded: the 2026-11-01 Set 1 paper moved to
-  `digital-logic/combinational-circuits/archive/gate_dl_mock_2_2026-11-01_run1.html` with its content frozen, so
-  the unit folder holds exactly one current paper.
-- Previous test: **Programming and Data Structures · Unit 5 — Binary Search Trees & Balanced Trees, Set 1 of 2
-  (second pass)**, 2026-11-03 →
-  [`programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html`](programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html)
+  `digital-logic/sequential-flipflops/archive/gate_dl_mock_3_2026-11-01_run1.html` with its content frozen, so the
+  unit folder holds exactly one current paper.
+- Repaired in the same run: `gate_dl_mock_2_2026-11-03.html` and `gate_toc_mock_2_2026-10-31.html` had been built with
+  the global question number in every card's `data-n` (76–100) instead of the palette index (1–25), which left both
+  palettes dead; both now number 1–25 in the cards, the inputs, the `qno` labels and the payload.
+- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 188 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 68 current · 120 archived |
+| Papers published (current + archived) | 189 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 68 current · 121 archived |
 | Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4700 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 350 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4725 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 120 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 10 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 121 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Digital Logic Unit 3, Set 2 of 2 (second pass)
+
+- New paper at `digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html`. The 2026-11-01 Set 1 paper moved to
+  `digital-logic/sequential-flipflops/archive/gate_dl_mock_3_2026-11-01_run1.html` with its content frozen (same
+  questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper and the
+  repository root holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-03, run 14, unit 2, combinational-circuits, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions,
+  twice `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-27, seven days earlier, so B3 failed on both the cap
+  and the 7-day backstop and **B4 advanced exactly one unit**: (1 + 1) mod 4 = 2 → **Unit 3, Sequential Circuits:
+  Flip-Flops & Registers**. Unit 3 held 75 questions from three earlier sets, so this paper is **Set 2 of 2 (second
+  pass)** and the unit now stands at 100. All four Digital Logic units sit at 100 / 100 / 100 / 75, so the subject is
+  on its second pass and the next Digital Logic run wraps to Unit 4. No override, no partial set, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: latches vs flip-flops 7 · setup & hold times 6 · characteristic equations 6 ·
+  shift registers 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Latches: a gated D latch held opaque while D changes twice (**Q stays 1**), an active-low NAND
+  latch driven with R′ = 0 (**Q = 0, reset**), the instant a master–slave D flip-flop transfers D (**the falling edge**),
+  an MSQ on asynchronous preset and clear (**A, B, D**), a NOR latch stepped through (0,1), (0,0), (1,0), (0,0)
+  (**Q = 1**), the minimum period of a two-phase latch pipeline (**10 ns**), and why a clock gate holds its enable in a
+  latch (**transparent only while the clock is low**). Setup and hold: the one repair that clears a hold failure
+  (**a delay buffer**), the highest frequency for tcq 1.0 ns, 6.0 ns of logic and tsu 1.0 ns (**125 MHz**), a hold check
+  with 0.3 ns of skew (**passes, 0.4 ns margin**), an MSQ on how data delay and skew trade the two checks (**B, C, D**),
+  the delay window that satisfies both checks (**0 ≤ d ≤ 7.5 ns**), and a rising-to-falling half-cycle path (**11 ns**).
+  Characteristic equations: the JK entry for 0 → 1 (**J = 1, K = X**), an SR flip-flop with S = R = 0 (**Q⁺ = Q**), an MSQ
+  on T = X (**A, C, D**), the excitation entries for all four types (**A, B, C**), J = X with K = X′ (**Q⁺ = X**), and two
+  JK flip-flops followed for three clocks (**Q₁Q₂ = 10**). Shift registers: a SIPO load of 1, 0, 1, 1 (**1101**), an 8-bit
+  register shifted right three times (**2**), the universal-register mode word for parallel load (**11**), an MSQ on what
+  the four modes can and cannot do (**A, B, D**), why a Johnson counter decodes with 2-input gates (**a contiguous run of
+  1s then 0s leaves a complementary adjacent pair**), and 10010110 shifted right twice then left twice (**148**).
+- **Answers recomputed, not asserted.** Every key came from a script: the NOR latch stepped pair by pair to 1;
+  2 × (1.5 + 3.5) = 10 ns; 1 / (1.0 + 6.0 + 1.0) ns = 125 MHz; 0.8 + 0.4 − 0.5 − 0.3 = 0.4 ns; 10 − 1.5 − 1.0 = 7.5 ns
+  against a vacuous 0.5 − 0.8 = −0.3 ns floor; 2 × 5.5 = 11 ns; the two-flip-flop machine simulated as Q₁⁺ = Q₂,
+  Q₂⁺ = Q₁′ through 00 → 01 → 11 → 10; the SIPO register shifted four times to 1101; 22 >> 3 = 2; and
+  150 → 37 → 148 with no overflow. The grading engine was then replayed against the decoded payload: a perfect attempt
+  scores **35 / 35**, an empty attempt **0 / 35** with 25 unattempted, and an MSQ answered with a strict subset of the
+  correct set loses both marks.
+- **Ids and bank.** 25 records appended as `DL-U3D-Q01`–`DL-U3D-Q25`, continuing the letter convention
+  (`DL-U3`, `DL-U3B`, `DL-U3C`); Digital Logic now holds **375** questions across 4 units, and
+  `data/questions-digital-logic.js` grew from 350 to 375 records.
+- **Question Bank tab.** 350 solved questions — the 375 in the bank less the 25 of the active set, which are not
+  repeated there. Unit 3's accordion shows its 75 earlier questions (2026-10-27, 2026-10-28 and 2026-11-01) under the
+  four subtopics.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official
+  GATE question. The two verified Digital Logic PYQs, `PYQ-GATE2019-Q4` and `PYQ-GATE2016S1-Q7`, are Unit 1
+  number-system items and are not reused here; no flip-flop, register or timing previous-year question has been verified
+  against an official paper and key, and the bank tab says so in one sentence. Sources are `STANDARD_TEXTBOOK` (13) and
+  `ORIGINAL_SYNTHESIS` (12).
+- **Option balance.** The 15 MCQ answers are spread 3 A / 4 B / 4 C / 4 D. The five MSQ answer sets are (A), (B), (D);
+  (B), (C), (D); (A), (C), (D); (A), (B), (C); and (A), (B), (D) — five different letter patterns. Every letter named
+  inside a solution is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 75 already banked for this unit: the NOR and NAND latch
+  races, master–slave toggling and race-around, the setup and hold definitions, the hold and setup inequalities, the
+  JK/T/SR excitation tables, flip-flop conversions, ring, Johnson and LFSR counts, and the serial/parallel register
+  traces. None of those stems, numbers or answer sets is reused; where a concept recurs it is asked from a different
+  angle (a latch pipeline's period, a half-cycle path, a delay window, a two-flip-flop state sequence, an
+  opposite-direction shift pair).
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,228 bytes) and the engine `<script>`
+  (9,445 bytes) are byte-identical to `gate_dl_mock_1_2026-11-02.html`, the paper this shell was taken from; with title,
+  sub-line, candidate block, bank-count button, meta strip, question host, bank view, About view and payload masked, the
+  remaining **27,251 bytes** are identical. One copy: the paper exists at exactly one path, `index.html` is the only HTML
+  file at the root, and `find . -name "*.html"` returns 190 files (index plus 189 papers). Links: all 68 test paths and
+  all 121 archive paths in the portal's data block resolve. Tokens: the `:root` block is byte-identical to
+  `design-tokens.css` and to `index.html`; the shell's pre-existing literal colours, identical in every paper of the
+  series, were not touched. Counts: the paper renders 25 test cards, a 25-button palette, 5 NAT inputs, 80 option inputs
+  and 350 banked question cards, and all seven `data-*` attributes are present on all 25 cards. No duplicate content: none
+  of the 25 active ids appears in the Question Bank tab. No CDN: the file has no `<link>`, no `http` URL and no KaTeX.
+  README: this table and this entry.
+- **Interface run (payload simulation).** The grading engine was replayed against the decoded payload: a perfect attempt
+  scores **35 / 35** (15 × 1 + 10 × 2), an empty attempt **0 / 35** with 25 unattempted, and an MSQ answered with a strict
+  subset of the correct set loses both marks, so there is no partial credit. Structural checks on the shipped file: the
+  answer-key tab `disabled` with an empty list, no `ansline` or “Detailed solution” anywhere in the question host, no
+  `correct`/`wrongpick` class before submit, and all 25 `.sol` blocks empty until submission.
+- **Defect repair.** `digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html` and
+  `theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-10-31.html` had been generated with the bank's global question
+  number (76–100) in every card's `data-n`, in the option inputs, in the `qno` labels and in the payload keys, while the
+  palette and the engine address questions 1–25 — so in both papers `card(1)` was null and the test view was dead. Both
+  are now numbered 1–25 throughout (cards, inputs, labels, payload) with content otherwise frozen; each renders 25 cards,
+  a 25-button palette and a working engine.
+- **Portal.** The Digital Logic Unit 3 card was updated in place — same position, new date and path, labelled
+  `Set 2 of 2 (second pass)`, with the 2026-11-01 paper listed as an earlier set pointing into `archive/` — so `tests`
+  still holds 68 entries. `data/questions-digital-logic.js` carries the 25 new records, so the Topic & Subtopic archive
+  counts Unit 3 at 100 solved questions.
 
 ### 2026-11-03 — Digital Logic Unit 2, Set 2 of 2 (second pass)
 
