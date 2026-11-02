@@ -7,40 +7,122 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 2 — SQL & Advanced Querying, Set 1 of 2 (second pass)**, 2026-11-02 →
-  [`databases/sql-querying/gate_db_mock_2_2026-11-02.html`](databases/sql-querying/gate_db_mock_2_2026-11-02.html)
+- **Discrete Mathematics · Unit 12 — Algebraic Structures, Set 2 of 2**, 2026-11-02 →
+  [`discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`](discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: DDL, DML & DCL (5) · Nested & correlated subqueries (5) · Aggregates, GROUP BY & HAVING (5) ·
-  Joins & outer joins (5) · Views, triggers & constraints (5)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 9 — **Databases**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 17, unit 1, er-relational-algebra, Set 1 of 2 (second pass)}`. Unit 1 held **75** questions
-  against `UNIT_QUESTION_CAP = 50`, so **step B3 failed on the cap**; its first paper was 2026-10-26, six days
-  earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit:
-  `(index_of(er-relational-algebra) = 0 + 1) mod 5 = 1`, that is **unit 2 — sql-querying**. Every Databases unit
-  already stands at or above the cap (75, 50, 50, 50, 50), so **step B5 applies** and the modulo advance continues
-  into the second pass rather than hunting for a unit below the cap; the paper is the unit's third and takes it
-  from 50 to 75 banked questions, **Set 1 of 2 of the second pass**. No override was used and no partial set was
-  generated.
-- Superseded: the previous paper `gate_db_mock_2_2026-10-28.html` moved to
-  `databases/sql-querying/archive/gate_db_mock_2_2026-10-28_run1.html`, content frozen; the unit folder now holds
-  exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 2 of 2 (third pass)**,
-  2026-11-02 →
-  [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html)
+- Subtopics: Binary operations & properties (5) · Semigroups & monoids (5) · Groups & abelian groups (5) ·
+  Subgroups & cyclic groups (5) · Homomorphisms & isomorphisms (5)
+- Rotation: MODE A. The unseeded `secrets.randbelow(11)` draw was taken over the eleven subjects and then
+  restricted, as in runs 12–26, to subjects whose current unit is still below `UNIT_QUESTION_CAP = 50`, so that a
+  unit is finished before a new pass opens; only **Discrete Mathematics** qualified, because every other subject’s
+  current unit already stands at 50 or more. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 18, unit 12, algebraic-structures, Set 1 of 2}`. Unit 12 held **25** questions, below the cap,
+  and its first paper was dated 2026-11-02, zero days earlier, so **step B3 held on both counts**: the unit stays
+  current and this is **Set 2 of 2**, taking the unit to exactly 50 banked questions. Step B4 was not reached. No
+  override was used and no partial set was generated.
+- Superseded: the previous paper `gate_dm_mock_12_2026-11-02.html` moved to
+  `discrete-mathematics/algebraic-structures/archive/gate_dm_mock_12_2026-11-02_run1.html`, content frozen; the unit
+  folder now holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Databases · Unit 2 — SQL & Advanced Querying, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`databases/sql-querying/gate_db_mock_2_2026-11-02.html`](databases/sql-querying/gate_db_mock_2_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 179 (26 Discrete Mathematics, 14 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 112 archived |
+| Papers published (current + archived) | 180 (27 Discrete Mathematics, 14 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 113 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4475 (650 Discrete Mathematics, 350 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4500 (675 Discrete Mathematics, 350 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 112 (13 Discrete Mathematics, 7 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 113 (14 Discrete Mathematics, 7 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Discrete Mathematics Unit 12, Set 2 of 2
+
+- New paper at `discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`. The 2026-11-02 Set 1
+  paper of the same unit moved to
+  `discrete-mathematics/algebraic-structures/archive/gate_dm_mock_12_2026-11-02_run1.html` with its content frozen
+  (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order was taken and then restricted, as in runs 12–26, to the subjects whose current unit is still below
+  `UNIT_QUESTION_CAP = 50` — the rule that finishes a unit before a second pass opens. Only **Discrete Mathematics**
+  qualified: every other subject’s current unit stands at 50 or more (Algorithms 50, Compiler Design 100,
+  Computer Architecture 50, Computer Networks 75, Databases 75, Digital Logic 75, Engineering Mathematics 75,
+  Operating Systems 100, Programming and Data Structures 75, Theory of Computation 100). `runs[]` sorted by
+  `(date, run)` gave the most recent paper as `{2026-11-02, run 18, unit 12, algebraic-structures, Set 1 of 2}`.
+  Unit 12 held **25** questions against the cap and its first paper was dated 2026-11-02, zero days earlier, so
+  **step B3 held on both counts**: the unit stays current and the paper is **Set 2 of 2**. Step B4 was not reached,
+  step B5 does not apply (units 13, 14 and 15 are still unopened, so Discrete Mathematics remains on its first pass),
+  and no override was used. Exactly 25 questions, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All five unit subtopics, five questions each: binary operations & properties · semigroups &
+  monoids · groups & abelian groups · subgroups & cyclic groups · homomorphisms & isomorphisms. Difficulty 10 easy /
+  10 medium / 5 hard.
+- **What the set asks.** Binary operations: the identity of `a ∗ b = ab/2` on ℚ⁺ (**2**), the projection
+  `a ∗ b = a` against associativity and commutativity, the axioms of `a ∗ b = 2ab` as a multi-select, the number of
+  commutative operations on a 3-element set (**729**), and the integers invertible under `a ∗ b = a + b − 2ab`
+  (**{0, 1}**). Semigroups and monoids: `(2ℤ, ·)` as a semigroup without identity, four candidates for “is a
+  group”, the units of ℤ₁₂, the units of ℤ₂₀ (**8**), and the associative tables on a two-element set (**8**).
+  Groups: the order of 5 in ℤ₁₂ (**12**), a group of order 6 against Lagrange (none exists), a group of order 15 by
+  Sylow counting (cyclic, with an element of order 15), the order of 4 in ℤ₁₀ (**5**), and the elements of order 3
+  in ℤ₃ × ℤ₉ (**8**). Subgroups: `⟨12, 18⟩ = 6ℤ`, the eight subgroups of ℤ₃₀, the five subgroups and the order of 6
+  in ℤ₁₆, the generators of ℤ₆₀ (**16**), and the elements of order 12 in ℤ₄ × ℤ₆ (**8**). Homomorphisms: the six
+  homomorphisms ℤ → ℤ₆, recognising an additive map on ℤ, kernel and image of `k ↦ 3k` from ℤ₂₄ to ℤ₁₈
+  (|ker| = 4, |im| = 6) as a multi-select, the four homomorphisms ℤ₄ → ℤ₁₂ (**4**), and the automorphisms of
+  ℤ₂ × ℤ₂ (**6**).
+- **Answers recomputed, not asserted.** Every numeric key came from a script: `3⁶ = 729`; the identity and the
+  invertible set of `a + b − 2ab` obtained by solving `b(1 − 2a) = −a` and testing `2a − 1 | a`, giving
+  **{0, 1}**; `φ(20) = 8`; all 16 two-element tables tested for associativity, exactly **8** pass, and the named
+  eight (two constants, two projections, min and max, the two ℤ₂ tables) are exactly that set; `ord₁₂(5) = 12`;
+  `ord₁₀(4) = 5`; the order-3 elements of ℤ₃ × ℤ₉ enumerated, **8**; the divisors of 30, **8**; the five divisors of
+  16 and `ord₁₆(6) = 8`; `φ(60) = 16`; the order-12 elements of ℤ₄ × ℤ₆ enumerated as (1,1), (1,2), (1,4), (1,5) and
+  the same four with first coordinate 3, **8** — `lcm(4, 3) = lcm(4, 6) = 12`, so both component orders 3 and 6
+  count; 6 homomorphisms ℤ → ℤ₆; `ker = {0, 6, 12, 18}`, `im = {0, 3, 6, 9, 12, 15}`, and
+  `|G| / |ker| = 24 / 4 = 6 = |im|`; `gcd(4, 12) = 4`; `|GL(2, 2)| = 3 · 2 = 6`.
+- **Ids and bank.** 25 records appended as `DM-U12-Q26`–`DM-U12-Q50`; Discrete Mathematics now holds **675**
+  questions across 13 units, and `data/questions-discrete-mathematics.js` grew from 650 to 675 records. No id and no
+  normalised stem collides with the 650 items already banked; the only repeated stems in the bank are five generic
+  multi-select prompts that predate this run.
+- **Question Bank tab.** 650 solved questions — the 625 that predate Set 1 plus the 25 Set 1 items of Unit 12, which
+  now appear under a new `Unit 12 — Algebraic Structures` accordion with its five subtopics (5 · 5 · 5 · 6 · 4). The
+  25 active questions are not repeated, and the closing line now reads “Units 13–15 have no banked questions yet.”
+- **Provenance.** `verified_pyqs` is unchanged: `PYQ-GATE2023-Q26` (GATE CSE 2023, official key B, C) and
+  `PYQ-GATE2015` (GATE CSE 2015, official key C), both Unit 16 logic items and neither reused here. No
+  algebraic-structures previous-year question has been verified against an official paper and answer key, so no item
+  on this paper carries `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE question.
+  Sources are `STANDARD_TEXTBOOK` (15) and `ORIGINAL_SYNTHESIS` (10).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 3 C / 4 D. The five MSQ answer sets are (A), (D);
+  (A), (B); (B), (D); (A), (C), (D); and (B), (C) — five different letter patterns, so they are not five copies of
+  one shape. Every letter named inside a solution is the letter the candidate sees.
+- **Verification (Section 6.8).** Shell parity: with title, sub-line, candidate id, bank-count button, meta strip,
+  question host, bank view, About view and payload masked, the remaining **27,914 bytes** are byte-identical to the
+  archived Set 1 paper; the `<style>` block and the engine `<script>` are byte-identical, compared byte for byte.
+  One copy: the paper exists at exactly one path, `index.html` is the only HTML file at the root, and no unit folder
+  holds two current papers. Links: all 67 test paths and all 113 archive paths in the portal’s data block resolve.
+  Tokens: the `:root` block is byte-identical to `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no
+  external URL of any kind. Counts: 25 test cards, a 25-button palette, 5 NAT inputs, 80 option inputs, 650 bank
+  cards, and all seven `data-*` attributes on all 25 test cards and all 650 bank cards. No duplicate content: none
+  of the 25 active ids appears in the Question Bank tab.
+- **Interface run (payload simulation).** jsdom is still unavailable in this environment, so the grading engine was
+  exercised by replaying its exact scoring rules against the decoded payload: a perfect attempt scores **35 / 35**,
+  an empty attempt **0 / 35** with 25 unattempted, a wrong MCQ **34**, a wrong NAT **33**, and an MSQ answered with
+  a strict subset of the correct set loses both marks (no partial credit). Structural checks on the shipped file: the
+  answer-key tab `disabled` with an empty list, `ansline` and “Detailed solution” absent from the question host, no
+  `correct`/`wrongpick` class anywhere before submit, and all 25 `.sol` blocks empty and hidden.
+- **Portal.** The Discrete Mathematics Unit 12 card was updated in place — same path, now `Set 2 of 2`, with
+  `Set 1` listed as an earlier set pointing into `archive/` — so `tests` still holds 67 entries and the card sits at
+  the head. The static counters were recomputed from the data: 71 units, 67 test cards, **4500** solved questions in
+  the review archive and **4500** records in the subject banks, 67 of 71 units covered, 305 subtopics. The archive
+  and bank totals now agree, the earlier Engineering Mathematics gap having been closed by a previous run.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus literal hex outside `:root`, no explicit
+  `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than their `-d`
+  variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Databases Unit 2, Set 1 of 2 (second pass)
 
