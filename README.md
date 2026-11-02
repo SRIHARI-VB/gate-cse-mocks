@@ -7,38 +7,64 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 12 — Algebraic Structures, Set 1 of 2**, 2026-11-02 →
-  [`discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`](discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html)
+- **Programming and Data Structures · Unit 2 — Pointers, Memory & Preprocessors, Set 1 of 2 (second pass)**,
+  2026-11-02 →
+  [`programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html`](programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Binary operations & properties (5) · Semigroups & monoids (5) · Groups & abelian groups (5) ·
-  Subgroups & cyclic groups (6) · Homomorphisms & isomorphisms (4)
+- Subtopics: Pointer arithmetic (7) · Pointers to functions (6) · Dynamic memory allocation (6) ·
+  Macro expansion, scope & lifetime (6)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 0 — **Discrete Mathematics**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 15, unit 11, boolean-algebra, Set 2 of 2}`. Unit 11 held **50** questions, exactly
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-11-01, one day earlier, so the
-  7-day backstop played no part. Step B4 advanced exactly one unit:
-  `(index_of(boolean-algebra) = 10 + 1) mod 16 = 11` → **Unit 12, Algebraic Structures**. Unit 12 held **0**
-  questions, so this is its first pass and **Set 1 of 2**; step B5 does not apply to this subject, because units 13,
-  14 and 15 are still unopened. No override was used and no partial set was generated.
-- Nothing superseded: Unit 12 had no earlier paper, so no archive entry was created and the unit folder holds
-  exactly one current paper. The repository root still holds only `index.html`.
-- Previous test: **Digital Logic · Unit 4 — Sequential Circuits: Counters & State Machines, Set 1 of 2 (second
-  pass)**, 2026-11-02 →
-  [`digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-02.html`](digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-02.html)
+  returned index 4 — **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 15, unit 1, c-programming-core, Set 1 of 2 (second pass)}`. Unit 1 held **75**
+  questions, above `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, seven days earlier, so step B3
+  failed on both the cap and the `DAYS_PER_UNIT_MAX = 7` backstop. Step B4 advanced exactly one unit:
+  `(index_of(c-programming-core) = 0 + 1) mod 7 = 1` → **Unit 2, Pointers, Memory & Preprocessors**. The subject
+  is on its second pass — units 1–7 all reached 50 in the first pass and the wrap returned to Unit 1 on 2026-11-01 —
+  so this set is **Set 1 of 2 (second pass)**. No override was used and no partial set was generated.
+- Superseded: the 2026-10-27 paper `gate_ds_mock_2_2026-10-27.html` moved to
+  `programming-data-structures/pointers-memory/archive/gate_ds_mock_2_2026-10-27_run2.html`, content frozen; the
+  unit folder now holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Discrete Mathematics · Unit 12 — Algebraic Structures, Set 1 of 2**, 2026-11-02 →
+  [`discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`](discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 172 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 105 archived |
+| Papers published (current + archived) | 173 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 106 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4300 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4325 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 105 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 106 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Programming and Data Structures Unit 2, Set 1 of 2 (second pass)
+
+- New paper at `programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html`. The previous current
+  paper for the unit, `gate_ds_mock_2_2026-10-27.html`, moved to
+  `programming-data-structures/pointers-memory/archive/gate_ds_mock_2_2026-10-27_run2.html` with its content frozen,
+  so the unit folder holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 4 — **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the
+  most recent paper as `{2026-11-01, run 15, unit 1, c-programming-core, Set 1 of 2 (second pass)}`. Unit 1 held
+  **75** questions, above `UNIT_QUESTION_CAP = 50`, and had been current since 2026-10-26, so step B3 failed on both
+  the cap and the 7-day backstop. Step B4 advanced exactly one unit:
+  `(index_of(c-programming-core) = 0 + 1) mod 7 = 1` → **Unit 2, Pointers, Memory & Preprocessors**. Units 1–7 all
+  reached 50 questions in the first pass (2026-10-26 to 2026-11-01) and the wrap returned to Unit 1 on 2026-11-01,
+  so the subject is on its **second pass**; Unit 2 is reopened as **Set 1 of 2 (second pass)**. Exactly 25
+  questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: pointer arithmetic 7 · pointers to functions 6 · dynamic memory allocation
+  6 · macro expansion, scope & lifetime 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **Bank.** 25 questions appended as `DS-U2C-Q01`–`DS-U2C-Q25`; the subject bank now holds 400 questions and 16
+  runs. Unit 2 holds 75 questions after this set (50 from the first pass, 25 from this one).
+- **Provenance.** The Programming and Data Structures bank records **no verified GATE PYQ**, so nothing on this
+  paper is claimed as official; every item is practice material. No PYQ quota was filled with an unverified item.
 
 ### 2026-11-02 — Discrete Mathematics Unit 12, Set 1 of 2
 
