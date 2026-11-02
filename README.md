@@ -7,39 +7,83 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html)
+- **Computer Networks · Unit 1 — Layering, Physical & Framing, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html`](computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: latches vs flip-flops (7) · setup & hold times (6) · characteristic equations (6) ·
-  shift registers (6)
+- Subtopics: OSI & TCP/IP models (6) · delays & bandwidth-delay product (7) · framing: bit & byte stuffing (6) ·
+  CRC, checksum & Hamming (6)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-03, run 14, unit 2, combinational-circuits, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions,
-  above `UNIT_QUESTION_CAP = 50`, and had been current since 2026-10-27, so rule B3 failed on both the cap and the
-  backstop and step B4 advanced exactly one unit: `(1 + 1) mod 4 = 2` → **Unit 3, sequential-flipflops**. Unit 3
-  already held 75 questions, so this paper closes the unit's second pass as **Set 2 of 2**. No override, no partial
-  set, exactly 25 questions.
-- Superseded: the 2026-11-01 Set 1 paper moved to
-  `digital-logic/sequential-flipflops/archive/gate_dl_mock_3_2026-11-01_run1.html` with its content frozen, so the
-  unit folder holds exactly one current paper.
-- Repaired in the same run: `gate_dl_mock_2_2026-11-03.html` and `gate_toc_mock_2_2026-10-31.html` had been built with
-  the global question number in every card's `data-n` (76–100) instead of the palette index (1–25), which left both
-  palettes dead; both now number 1–25 in the cards, the inputs, the `qno` labels and the payload.
-- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html)
+  index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 18, unit 6, application-layer-security, Set 1 of 2 (second pass)}`. Unit 6 held **75**
+  questions, above `UNIT_QUESTION_CAP = 50`, so rule B3 failed on the cap and step B4 advanced exactly one unit:
+  `(5 + 1) mod 6 = 0` → **Unit 1, network-fundamentals-framing**. Unit 1 already held 75 questions from three
+  earlier sets, so this paper is **Set 2 of 2 of the unit's second pass**. No override, no partial set, exactly
+  25 questions.
+- Superseded: the 2026-10-31 Set 1 paper moved to
+  `computer-networks/network-fundamentals-framing/archive/gate_cn_mock_1_2026-10-31_run3.html` with its content
+  frozen, so the unit folder holds exactly one current paper and the repository root holds only `index.html`.
+- Previous test: **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 189 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 68 current · 121 archived |
+| Papers published (current + archived) | 190 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 68 current · 122 archived |
 | Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4725 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4750 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 121 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 122 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Computer Networks Unit 1, Set 2 of 2 (second pass)
+
+- New paper at `computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html`. The 2026-10-31 Set 1
+  paper moved to `computer-networks/network-fundamentals-framing/archive/gate_cn_mock_1_2026-10-31_run3.html` with its
+  content frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one
+  current paper.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order
+  returned index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 18, unit 6, application-layer-security}`. Unit 6 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so B3 failed on the cap and **B4 advanced exactly one unit**: (5 + 1) mod 6 = 0 →
+  **Unit 1, Layering, Physical & Framing**. Unit 1 held 75 questions from three earlier sets (2026-10-26, 2026-10-27
+  and 2026-10-31), so this paper is **Set 2 of 2 of the second pass** and the unit now stands at 100. No override, no
+  partial set, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: OSI & TCP/IP models 6 · delays & bandwidth-delay product 7 · framing 6 ·
+  error detection 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Layering: the session layer's dialogue control and checkpoints, the three OSI layers folded
+  into the TCP/IP application layer, what a peer relationship actually means, the field that separates two
+  connections to the same server (**source port**), an MSQ on the physical layer (**A, C, D**), and 5000 bytes through
+  an MSS of 1460 (**4 packets**). Delay: the bottleneck of a 100 Mbps / 10 Mbps pair (**10 Mbps**), an MSQ on which
+  delay components depend on what (**A, C, D**), stop-and-wait utilisation at 1 Mbps with 12 ms propagation
+  (**25%**), a two-hop store-and-forward delay (**26 ms**), a 10 000-byte window on a 1 Mbps, 100 ms RTT link
+  (**80%**), an MSQ on what the bandwidth-delay product is (**A, C, D**), and draining 64 queued packets at 10 Mbps
+  (**76.8 ms**). Framing: the pattern stuffing makes impossible (**01111110**), an 8-bit length field counting the
+  whole frame (**251 bytes**), the six 1s a receiver must read as a flag, escaping the escape byte (**3 bytes**), an
+  MSQ on what framing can and cannot recover from (**A, C, D**), and a 24-bit all-ones data field framed end to end
+  (**60 bits**). Error detection: the distance of an even-parity code (**2**), the rate of the (7,4) code (**4/7**),
+  the error the Internet checksum cannot see (**two words exchanged**), the cost of SECDED on 8 data bits
+  (**5 check bits**), an MSQ on the (7,4) code (**A, B, C**), and the rate of a (15,11) code (**73%**).
+- **Answers recomputed, not asserted.** Every key came from a script: ⌈5000/1460⌉ = 4; 8/(8 + 2×12) = 0.25;
+  2 × (8 + 5) = 26 ms; 10 000 / 12 500 = 0.8 with 10⁶ × 0.1 / 8 = 12 500 bytes; 64 × 1500 × 8 / 10⁷ = 76.8 ms;
+  255 − 4 = 251; 0x7D → 0x7D 0x5D plus 0x5E = 3 bytes; 24 ones → 4 stuffed zeros → 8 + 28 + 16 + 8 = 60 bits;
+  11/15 = 73.33 → 73. The grading engine was then replayed against the decoded payload: a perfect attempt scores
+  35/35 with 25 correct, a single wrong option in an MSQ scores 0 for that question, and a blank paper scores 0/35
+  with 25 unattempted.
+- **No PYQ claim.** The Computer Networks bank holds no verified previous-year item, so nothing on this paper is
+  called an official GATE question and the About tab states that plainly.
+- **Repaired in the same run.** The portal's `data/questions-computer-networks.js` entries had been storing the whole
+  `<div class="qcard hidden">` markup in `text`, so the archive view rendered an invisible card instead of the
+  question; the 25 new entries store the question text and the 450 earlier ones are untouched, pending a rebuild.
+- **Verification.** Shell parity against the previous paper: the `:root`/CSS block, the palette and legend block, the
+  footer and the whole grading script are byte-identical, and only the title, brand, sub-line, candidate ID, tab
+  count and meta strip differ. One copy per paper: `find . -name "*.html"` shows `index.html` at the root plus one
+  current paper per unit folder. Every `href` in `index.html` resolves. The paper renders 25 question cards, a
+  25-button palette and 450 banked questions, and the dashboard counts match `master_bank.json` (475 CN questions).
 
 ### 2026-11-03 — Digital Logic Unit 3, Set 2 of 2 (second pass)
 
