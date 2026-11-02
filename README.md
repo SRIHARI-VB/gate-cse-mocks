@@ -7,43 +7,88 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 1 — Asymptotic Analysis & Recurrences, Set 3 (second pass)**, 2026-11-02 →
-  [`algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html`](algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html)
+- **Computer Architecture · Unit 1 — Machine Instructions & Addressing Modes, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`](computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Big-O / Ω / Θ (7) · Master theorem cases (6) · Recursion tree method (7) · Substitution method (5)
-- Rotation: MODE A. Every one of the eleven subjects already carried a paper dated 2026-11-02 and every current unit
-  stood at or above `UNIT_QUESTION_CAP = 50` (Algorithms 50, Compiler Design 100, Computer Architecture 50, Computer
-  Networks 75, Databases 75, Digital Logic 100, Engineering Mathematics 75, Operating Systems 100, Programming and
-  Data Structures 75, Theory of Computation 125, Discrete Mathematics 50), so no subject qualified on the "current
-  unit still below the cap" rule used by runs 12–27. The draw was restricted instead to the six subjects whose
-  **next** unit, after the modulo advance, is still below the cap — the only draws that do not push a unit further
-  over it: Computer Architecture (6 → 1, 0 questions), Discrete Mathematics (12 → 13, 0), Algorithms (7 → 1, 50),
-  Databases (2 → 3, 50), Engineering Mathematics (4 → 5, 50) and Programming and Data Structures (2 → 3, 50). An
-  unseeded `secrets.randbelow(6)` draw over those six in syllabus order returned index 3 — **Algorithms**. `runs[]`
-  sorted by `(date, run)` gave the most recent Algorithms paper as
-  `{2026-11-02, run 14, unit 7, complexity-np-complete, Set 2 of 2}`. Unit 7 held **50** questions, exactly the cap,
-  so **step B4 applied**: (6 + 1) mod 7 = 0 → **Unit 1, Asymptotic Analysis & Recurrences**. Unit 1 already held 50
-  questions from runs 1 and 2 (2026-10-26), so this paper is **Set 3**; all seven Algorithms units stand at 50, so the
-  modulo has wrapped and the subject's **second pass has started** (Section 1, step B5). No override was used and no
-  partial set was generated.
-- Superseded: `gate_algo_mock_1_2026-10-26.html` moved to
-  `algorithms/asymptotic-analysis/archive/gate_algo_mock_1_2026-10-26_run2.html`, content frozen; the unit folder now
-  holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Digital Logic · Unit 1 — Number Systems & Representation, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html`](digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html)
+- Subtopics: Instruction formats & opcodes (7) · Addressing modes & effective address (8) · RISC vs CISC (5) ·
+  Stack & subroutines (5)
+- Rotation: MODE A. Every one of the eleven subjects already carried a paper dated 2026-11-02, and after the earlier
+  runs of the day every current unit stood at or above `UNIT_QUESTION_CAP = 50` (Discrete Mathematics 50,
+  Computer Architecture 50, Algorithms 75, Compiler Design 100, Computer Networks 75, Databases 50, Digital Logic 100,
+  Engineering Mathematics 75, Operating Systems 100, Programming and Data Structures 75, Theory of Computation 125),
+  so rule B3 — "current unit still below the cap" — qualified no subject. As in the previous run, the draw was
+  restricted to the subjects whose **next** unit, after the modulo advance, is still below the cap, because every
+  other draw would push an already-over-cap unit further over it: Discrete Mathematics (12 → 13, 0 questions) and
+  Computer Architecture (6 → 1, 0). An unseeded `secrets.randbelow(2)` draw over those two in syllabus order returned
+  index 1 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent Computer Architecture
+  paper as `{2026-11-02, run 10, unit 6, io-interfaces, Set 2 of 2}`. Unit 6 held **50** questions, exactly the cap,
+  so **step B4 applied**: (5 + 1) mod 6 = 0 → **Unit 1, Machine Instructions & Addressing Modes**. Unit 1 had never
+  been covered — 0 questions, no folder, no `runs[]` entry — so this paper is **Set 1 of 2** for the unit and no paper
+  was superseded. No override, no partial set, exactly 25 questions.
+- Nothing archived: `computer-architecture/instructions-addressing/` was created by this run and holds one current
+  paper; the repository root still holds only `index.html`.
+- Previous test: **Algorithms · Unit 1 — Asymptotic Analysis & Recurrences, Set 3 (second pass)**, 2026-11-02 →
+  [`algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html`](algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 182 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 115 archived |
-| Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4550 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 250 Computer Architecture) |
+| Papers published (current + archived) | 183 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 11 Computer Architecture) |
+| Current papers / archived sets | 68 current · 115 archived |
+| Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
+| Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 4575 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 275 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 115 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Computer Architecture Unit 1, Set 1 of 2 (second pass)
+
+- New paper at `computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`. Unit 1 had no
+  earlier paper, so nothing moved into `archive/`; the unit folder holds exactly one current paper and the
+  repository root holds only `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects already carried a paper dated 2026-11-02 and every current
+  unit stood at or above `UNIT_QUESTION_CAP = 50`, so rule B3 could not be applied to any subject and step B4
+  (advance one unit by modulo) applied everywhere. The draw was restricted, as in the previous run, to the subjects
+  whose next unit is still below the cap: Discrete Mathematics (12 → 13, 0 questions) and Computer Architecture
+  (6 → 1, 0). An unseeded `secrets.randbelow(2)` draw over the two in syllabus order returned index 1 —
+  **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 10, unit 6, io-interfaces, Set 2 of 2}`; Unit 6 held 50 questions, so (5 + 1) mod 6 = 0 →
+  **Unit 1, Machine Instructions & Addressing Modes**. Unit 1 was uncovered, so this is **Set 1 of 2**.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: instruction formats & opcodes 7 · addressing modes & effective address 8 ·
+  RISC vs CISC 5 · stack & subroutines 5. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Instruction formats: the immediate width in a 32-bit word (**14**), the 0-address space of
+  a 12-bit expanding opcode (**32**), the opcode bits for 100 operations (**7**), equal-width register fields
+  (**4**), an MSQ on what an expanding opcode does and does not change, the 0-address space behind a 2-bit escape
+  (**64**), and the ordinary instructions left after reserving one escape (**63**). Addressing modes: indirect
+  effective address (**620**), indexed address (**2036**), a two-word PC-relative target (**1028**), position
+  independence, a signed 8-bit offset counted in words (**986**), an MSQ on mode semantics, base-minus-displacement
+  (**2988**), and the mode that needs no operand fetch. RISC vs CISC: the defining features of each, an MSQ
+  comparing the two designs, register-specifier widths (5 bits each, 15 bits for three), and why a fixed format
+  eases pipelining. Stack: three pushes from SP 1000 (**988**), five activation records of 32 bytes from SP 8000
+  (**7840**), a return address in one fixed slot, an MSQ on linkage responsibilities, and the peak stack depth of
+  `A B C * + D E * F + *` (**3**).
+- **Answers recomputed, not asserted.** Every key was checked by hand and, where arithmetic was involved, by a
+  script: 32 − 8 − 5 − 5 = 14; 2 escapes × 2⁴ = 32; ⌈log₂ 100⌉ = 7; (16 − 4 − 4)/2 = 4; 2⁶ = 64; 64 − 1 = 63;
+  1004 + 24 = 1028; 0xF8 → −8 words → 1002 − 16 = 986; 3000 − 12 = 2988; 1000 − 3·4 = 988; 8000 − 5·32 = 7840;
+  and the running stack depth of the postfix expression, which peaks at 3 while `A B C` and again while `D E * F`
+  are held.
+- **Ids and bank.** 25 records appended as `CO-U1-Q01`–`CO-U1-Q25`; Computer Architecture now holds **275**
+  questions across 6 units, and `data/questions-computer-architecture.js` grew from 250 to 275 records.
+- **Question Bank tab.** 250 solved questions — the 275 in the bank less the 25 on this paper — so the active set is
+  not repeated there. Units 2–6 supply all 250; Unit 1's only questions are the active set.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION` and nothing on it is claimed as an official GATE
+  question. Sources are `STANDARD_TEXTBOOK` (16) and `ORIGINAL_SYNTHESIS` (9). The Computer Architecture bank records
+  no verified previous-year question, and the bank tab says so in one sentence.
+- **Checks run.** Shell parity against `gate_co_mock_6_2026-11-02.html` (identical `:root`, CSS and JavaScript; only
+  the question cards, palette-independent payload, bank view, About view and meta strip differ); 25 question cards
+  and a 25-button palette; one HTML file per paper with `index.html` alone at the root; every `href` in
+  `index.html` resolves; the `:root` block byte-identical to `design-tokens.css`; the portal's counts matching
+  `master_bank.json`; and no active question repeated in the Question Bank tab.
 
 ### 2026-11-02 — Algorithms Unit 1, Set 3 (second pass)
 
