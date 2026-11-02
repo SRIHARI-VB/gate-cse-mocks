@@ -7,40 +7,143 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 6 — Application Layer & Network Security, Set 1 of 2 (second pass)**, 2026-11-02 →
-  [`computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html`](computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html)
+- **Digital Logic · Unit 4 — Sequential Circuits: Counters & State Machines, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-02.html`](digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: DNS hierarchy & resolution (7) · HTTP, HTTPS, SMTP & FTP (6) · Symmetric & asymmetric cryptography,
-  RSA (6) · Digital signatures, certificates & firewalls (6)
+- Subtopics: Synchronous & asynchronous counters (7) · FSM: Mealy & Moore machines (9) · State reduction &
+  assignment (5) · Timing analysis (4)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 10 — **Computer Networks**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 17, unit 5, transport-layer, Set 1 of 2 (third pass)}`. Unit 5 held **75** questions, above
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-10-30, so the 7-day backstop was
-  not the reason. Step B4 advanced exactly one unit: `(index_of(transport-layer) = 4 + 1) mod 6 = 5` →
-  **Unit 6, Application Layer & Network Security**. Unit 6 already held **50** questions from its two 2026-10-31
-  sets, so every Computer Networks unit now sits at or above the cap and **step B5 applies: the second pass
-  continues**. Run 17 was Unit 5's first third-pass set, so this is Unit 6's **first second-pass set** — the unit's
-  third set overall. No override was used and no partial set was generated.
-- Superseded paper: the 2026-10-31 Set 2 moved to
-  `computer-networks/application-layer-security/archive/gate_cn_mock_6_2026-10-31_run2.html`, so the unit folder
-  holds exactly one current paper and the archive holds both earlier sets. The repository root still holds only
+  returned index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 11, unit 3, sequential-flipflops, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the
+  7-day backstop was not the reason. Step B4 advanced exactly one unit:
+  `(index_of(sequential-flipflops) = 2 + 1) mod 4 = 3` → **Unit 4, Sequential Circuits: Counters & State
+  Machines**. Unit 4 already held **50** questions from its two first-pass sets, so all four Digital Logic units now
+  sit at or above the cap and **step B5 applies: the second pass continues**. This is Unit 4's **first second-pass
+  set**, the unit's third set overall. No override was used and no partial set was generated.
+- Superseded paper: the 2026-10-30 Set 2 moved to
+  `digital-logic/sequential-fsm-counters/archive/gate_dl_mock_4_2026-10-30_run2.html`, so the unit folder holds
+  exactly one current paper and the archive holds both first-pass sets. The repository root still holds only
   `index.html`.
-- Previous test: **Operating Systems · Unit 3 — Deadlocks, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html`](operating-systems/deadlocks/gate_os_mock_3_2026-11-02.html)
+- Previous test: **Computer Networks · Unit 6 — Application Layer & Network Security, Set 1 of 2 (second
+  pass)**, 2026-11-02 →
+  [`computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html`](computer-networks/application-layer-security/gate_cn_mock_6_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 170 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 11 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 66 current · 104 archived |
+| Papers published (current + archived) | 171 (25 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 15 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 66 current · 105 archived |
 | Test cards on the portal | 66 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 12 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4250 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 275 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4275 (625 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 375 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 104 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 7 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 105 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 8 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
 
+
+### 2026-11-02 — Digital Logic Unit 4, Set 1 of 2 (second pass)
+
+- New paper at `digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-02.html`. The 2026-10-30 Set 2 moved to
+  `digital-logic/sequential-fsm-counters/archive/gate_dl_mock_4_2026-10-30_run2.html` with its content frozen (same
+  questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper and the
+  archive holds both first-pass sets.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 11, unit 3, sequential-flipflops, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions against
+  a cap of 50, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the 7-day backstop
+  played no part. Step B4 advanced exactly one unit: `(index_of(sequential-flipflops) = 2 + 1) mod 4 = 3` →
+  **Unit 4, Sequential Circuits: Counters & State Machines**. Unit 4 already held **50** questions from its two
+  first-pass sets, so all four Digital Logic units now sit at or above the cap: **step B5 applies, the second pass
+  continues**, and this is the first set of that pass — the unit's third set overall. Exactly 25 questions, no
+  override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: synchronous & asynchronous counters 7 · FSM: Mealy & Moore machines 9 ·
+  state reduction & assignment 5 · timing analysis 4. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks, and why it is not Set 1 or Set 2 again.** The two first-pass sets asked what each mechanism
+  is and how one number follows from another; this set asks where the definitions break, how many states a
+  construction really needs, and which of two nearly identical rules applies. Counters: the modulus of a cascaded
+  pair (**80**), the six illegal codes of a BCD decade, the ripple-decoding hazard and the two remedies that
+  actually remove it, a modulo-5 counter that is self-starting from 110 (**two** clock pulses), the asynchronous
+  clear that must decode `N` against the synchronous clear that must decode `N − 1`, the pulses per cycle of a
+  modulo-13 counter (**13**), and the number of 2-input AND gates in a 4-bit toggle chain (**3**). Mealy and Moore:
+  the two states of a serial adder, the nine output symbols a Moore machine emits for eight inputs, the three
+  remainders that decide divisibility by 3, why a Moore conversion costs both states and a clock period, the
+  six-state product of a mod-3 counter and a parity tracker, the four-state Moore and three-state Mealy detectors
+  for 1 1 0 with and without overlap, a ten-period Moore trace (**5** ones), and the four detections of a
+  "consecutive bits differ" Mealy machine. State reduction: the recursive definition of equivalence, `4! = 24`
+  state assignments, an eight-state Moore machine reduced to **six** states in two refinement rounds, compatibility
+  in an incompletely specified machine and why it is not transitive, the one unused code of a 7-state binary
+  encoding (**1**), and what one-hot, binary and Gray coding each optimise. Timing: a positive setup slack of
+  **1.0 ns**, the largest combinational delay at 200 MHz (**3.5 ns**), and the 6 ns period of a path split by one
+  pipeline register.
+- **Answers recomputed, not asserted.** Every numeric key came from a script, not by inspection. The eight-state
+  Moore machine was reduced by a partition-refinement program that reports the partition after each round
+  (`{A}{B,C,D}{E}{F,G}{H}` after round 1, `{A}{B,C}{D}{E}{F,G}{H}` after round 2, unchanged after round 3), hence
+  **6**; the ten-period Moore trace was generated state by state and yields the output stream `0 1 0 1 1 0 0 1 0 1`,
+  hence **5**; the "bits differ" Mealy run over `1 1 0 1 0 0 1` gives `0 1 1 1 0 1`, hence **4**; and the arithmetic
+  keys were checked as `10 × 8 = 80`, `16 − 10 = 6`, `10 − (1.2 + 7.0 + 0.8) = 1.0`, `5 − 0.9 − 0.6 = 3.5`,
+  `1 + 4 + 1 = 6`, `0 + 0 + 1 + 2 = 3`, `8 − 7 = 1` and `13` displayed states. The modulo-5 counter's recovery from
+  110 was stepped through the transition table (`110 → 111 → 000`) rather than assumed.
+- **Ids and bank.** 25 records appended as `DL-U4C-Q01`–`DL-U4C-Q25` (the `C` marks the unit's third set, matching
+  the `DL-U3C-*` convention); Digital Logic now holds **300** questions across 4 units, and
+  `data/questions-digital-logic.js` grew from 275 to 300 records.
+- **Question Bank tab.** 275 solved questions — the 300 in the bank less the 25 on this paper — so the active set
+  is not repeated there. Unit 4's accordion therefore shows the 50 questions of its two first-pass sets; the 25
+  added here appear on the paper itself and are excluded from the tab.
+- **Provenance.** `verified_pyqs` holds two items for Digital Logic, `PYQ-GATE2019-Q4` and `PYQ-GATE2016S1-Q7`, both
+  number-systems questions used in Unit 1. No counter, FSM, state-reduction or timing previous-year question has
+  been verified against an official paper and answer key, so no item on this paper carries
+  `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE question. Sources are
+  `STANDARD_TEXTBOOK` (18) and `ORIGINAL_SYNTHESIS` (7).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (C), (D); (A), (C); (A), (B), (C); (A), (B), (D); and (B), (C), (D) — one two-element set, one pair and three
+  different three-element patterns, so they are not five copies of one shape. Every letter named inside a solution
+  is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 50 already banked for this unit. The first pass had
+  used the minimum flip-flops for 0–59, an 8 MHz 4-bit ripple output frequency, the mod-13 decode state, a 12 ns
+  ripple maximum frequency, the Moore output definition, the 1011 Mealy/Moore state counts, a Mealy trace, two
+  Mealy reductions, one-hot and binary flip-flop counts, three setup/hold arithmetic questions, the 1101 Moore
+  count and the first MSQ/NAT batch on counters, encoding, equivalence and skew. The second pass had used the T2
+  toggle expression, Johnson and ring cycle lengths, a T-flip-flop cycle, Mealy transition counts, the 0101 state
+  count, a Moore output trace, unused one-hot codes, two further reductions, setup period and frequency, the delay
+  corner for the setup check, the largest positive skew and the two-path comparison. None of those stems, numbers
+  or answer sets is reused here; where a concept recurs (cascade modulus, Moore output length, partition
+  refinement, setup arithmetic) it is asked with different parameters, a different question form or a different
+  reasoning step — the cascade is asked for its modulus rather than its display, the Moore length is asked for the
+  output count rather than a state count, and the reduction is asked on an eight-state machine whose fixed point
+  needs two rounds.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,243 bytes) and the engine `<script>` are
+  byte-identical to the paper this one replaces and to the Digital Logic Unit 3 and Unit 2 papers, compared byte
+  for byte; with title, sub-line, bank-count button, date and set chips, question host, bank and About views and
+  payload masked, the remaining 27,969 bytes are identical. One copy: the paper exists at exactly one path, the
+  superseded set at exactly one archive path, `index.html` is the only HTML file at the root, and no unit folder
+  holds two current papers. Links: all 66 test paths and all 105 archive paths in the portal's data block resolve,
+  and the retired 2026-10-30 path is referenced nowhere. Tokens: the `:root` block is byte-identical to
+  `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no external URL of any kind. Counts: 25 test cards,
+  a 25-button palette, 5 NAT inputs, 80 option inputs, 275 bank cards, and all seven `data-*` attributes on all 25
+  test cards and all 275 bank cards. No duplicate content: none of the 25 active ids appears in the Question Bank
+  tab, and no bank id repeats.
+- **Interface run (payload simulation).** jsdom could not be installed in this environment, so the grading engine
+  was exercised by replaying its exact scoring rules against the decoded payload: a perfect attempt scores
+  **35 / 35**, and an attempt with every MCQ wrong, every MSQ enlarged and every NAT right scores no more than the
+  NAT marks, confirming that there is no negative marking and that an MSQ earns nothing on a set that is not
+  exactly right. Structural checks on the shipped file: exactly one card visible on load, the answer-key tab
+  `disabled`, `ansline` and `Detailed solution` absent from the question host, no `correct`/`wrongpick` class and no
+  filled `.mark` anywhere before submit, and every `.sol` empty and hidden.
+- **Portal.** The Digital Logic Unit 4 card was replaced, not duplicated: it now carries the new date, the new path,
+  the second-pass set label and two earlier-set links (`First pass · Set 2` → the run2 archive,
+  `First pass · Set 1` → the run1 archive), and it moved to the head of `tests`. The static counters were
+  recomputed from the data: 71 units in the series, 66 test cards, 4250 solved questions in the review archive,
+  4275 records in the subject banks, 68 of 71 units covered and 292 subtopics.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus literal hex outside `:root`, no explicit
+  `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than their `-d`
+  variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Computer Networks Unit 6, Set 1 of 2 (second pass)
 
