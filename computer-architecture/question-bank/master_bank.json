@@ -6,8 +6,9 @@
   "created": "2026-10-27",
   "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 250,
+  "total_questions": 275,
   "units_with_questions": [
+   1,
    2,
    3,
    4,
@@ -616,6 +617,65 @@
     "CO-U6-Q50"
    ],
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 3 - Computer Architecture. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 9, unit 6, io-interfaces, Set 1 of 2}. Unit 6 held 25 questions, below UNIT_QUESTION_CAP = 50, and had been current since 2026-11-01, that is 1 day, below DAYS_PER_UNIT_MAX = 7, so step B3 held and step B4 was not reached: the current unit was generated again as Set 2 of 2. The unit now holds exactly 50 questions, closing it at the cap, so the next Computer Architecture run advances (index_of(io-interfaces) = 5 + 1) mod 6 = 0 -> Unit 1, Machine Instructions & Addressing Modes, which opens a second pass over the subject (Section 1 step B5). No override was used and no partial set was generated."
+  },
+  {
+   "run": 11,
+   "date": "2026-11-02",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "set": "Set 1 of 2 (second pass)",
+   "file": "computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "mcq": 15,
+    "msq": 5,
+    "nat": 5,
+    "total": 25
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "instruction-formats-opcodes",
+    "addressing-modes-effective-address",
+    "risc-vs-cisc",
+    "stack-and-subroutines"
+   ],
+   "question_ids": [
+    "CO-U1-Q01",
+    "CO-U1-Q02",
+    "CO-U1-Q03",
+    "CO-U1-Q04",
+    "CO-U1-Q05",
+    "CO-U1-Q06",
+    "CO-U1-Q07",
+    "CO-U1-Q08",
+    "CO-U1-Q09",
+    "CO-U1-Q10",
+    "CO-U1-Q11",
+    "CO-U1-Q12",
+    "CO-U1-Q13",
+    "CO-U1-Q14",
+    "CO-U1-Q15",
+    "CO-U1-Q16",
+    "CO-U1-Q17",
+    "CO-U1-Q18",
+    "CO-U1-Q19",
+    "CO-U1-Q20",
+    "CO-U1-Q21",
+    "CO-U1-Q22",
+    "CO-U1-Q23",
+    "CO-U1-Q24",
+    "CO-U1-Q25"
+   ],
+   "count": 25
   }
  ],
  "verified_pyqs": [],
@@ -8681,6 +8741,943 @@
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> After one failure, the disks that can destroy the array are the n &minus; 1 survivors. Their combined failure rate is (n &minus; 1) / MTTF, and for a short window the probability of a failure inside it is approximately rate &times; window.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Remaining disks = 5 &minus; 1 = 4.</li><li>Combined failure rate = 4 / 100 000 = 4 &times; 10<sup>&minus;5</sup> per hour.</li><li>Window = 10 hours.</li><li>Probability &asymp; 4 &times; 10<sup>&minus;5</sup> &times; 10 = 4 &times; 10<sup>&minus;4</sup>.</li><li>As a percentage: 4 &times; 10<sup>&minus;4</sup> &times; 100 = 0.04%.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.04 percent.</span></p><p class=\"row\"><b>Common misconception.</b> Counting all five disks instead of the four survivors, which gives 0.05%, or stopping at 0.0004 and calling that the percentage. The question asks for percent.</p>",
    "answer_value": 0.04,
    "answer_tolerance": 0
+  },
+  {
+   "id": "CO-U1-Q01",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A processor uses 32-bit instructions. Every instruction has an 8-bit opcode and two register specifiers of 5 bits each; all the remaining bits form the immediate operand. The width of the immediate field is",
+   "options": [
+    "10 bits",
+    "12 bits",
+    "14 bits",
+    "16 bits"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "An instruction format is a budget of bits: the opcode, the register specifiers and the operand field must together fit exactly into one instruction word, so every field is obtained by subtracting the others from the word length.",
+    "steps": [
+     "Word length = 32 bits.",
+     "Opcode = 8 bits; register specifiers = 5 + 5 = 10 bits.",
+     "Immediate = 32 − 8 − 10 = 14 bits."
+    ],
+    "final": "Option (C) — 14 bits",
+    "trap": "Subtracting only one register field (giving 19) or forgetting the opcode. A format is only valid if the fields add up to the word length exactly, so the check 8 + 5 + 5 + 14 = 32 is part of the answer."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An instruction format is a budget of bits: the opcode, the register specifiers and the operand field must together fit exactly into one instruction word, so every field is obtained by subtracting the others from the word length.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Word length = 32 bits.</li><li>Opcode = 8 bits; register specifiers = 5 + 5 = 10 bits.</li><li>Immediate = 32 − 8 − 10 = 14 bits.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — 14 bits</span></p><p class=\"row\"><b>Common misconception.</b> Subtracting only one register field (giving 19) or forgetting the opcode. A format is only valid if the fields add up to the word length exactly, so the check 8 + 5 + 5 + 14 = 32 is part of the answer.</p>"
+  },
+  {
+   "id": "CO-U1-Q02",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A 12-bit machine uses an expanding opcode. The first four bits are the opcode: the twelve values `0000`–`1011` are 2-address instructions with two 4-bit register fields, the two values `1100` and `1101` are 1-address instructions with one 4-bit register field, and the two values `1110` and `1111` open a second 4-bit opcode field for 0-address instructions. How many 0-address instructions can this encoding provide?",
+   "options": [
+    "16",
+    "24",
+    "32",
+    "64"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "In an expanding (variable-width) opcode the instruction length stays fixed, but one primary opcode value is spent as an escape: it opens a further opcode field, and each escape value multiplies the number of codes available at the next level.",
+    "steps": [
+     "The twelve 2-address opcodes and the two 1-address opcodes use 4 + 4 + 4 = 12 bits, so they fit the word exactly.",
+     "Two primary values, `1110` and `1111`, are escapes rather than instructions.",
+     "Each escape opens 4 more opcode bits, that is 2⁴ = 16 codes, and the two escapes are independent.",
+     "Total 0-address instructions = 2 × 16 = 32."
+    ],
+    "final": "Option (C) — 32",
+    "trap": "Counting the whole second-level space as 16 (one escape only) or answering 64 by assuming the remaining 4 bits of the 2-address format are also available. Each escape is worth exactly 2⁴ codes, and only two escapes exist."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In an expanding (variable-width) opcode the instruction length stays fixed, but one primary opcode value is spent as an escape: it opens a further opcode field, and each escape value multiplies the number of codes available at the next level.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The twelve 2-address opcodes and the two 1-address opcodes use 4 + 4 + 4 = 12 bits, so they fit the word exactly.</li><li>Two primary values, `1110` and `1111`, are escapes rather than instructions.</li><li>Each escape opens 4 more opcode bits, that is 2⁴ = 16 codes, and the two escapes are independent.</li><li>Total 0-address instructions = 2 × 16 = 32.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — 32</span></p><p class=\"row\"><b>Common misconception.</b> Counting the whole second-level space as 16 (one escape only) or answering 64 by assuming the remaining 4 bits of the 2-address format are also available. Each escape is worth exactly 2⁴ codes, and only two escapes exist.</p>"
+  },
+  {
+   "id": "CO-U1-Q03",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "An instruction set must provide 100 distinct operation codes. What is the minimum number of bits in the opcode field?",
+   "options": [],
+   "answer": 7,
+   "answer_display": "7",
+   "solution": {
+    "concept": "An n-bit opcode can name 2ⁿ distinct operations, so the opcode width is the smallest n with 2ⁿ ≥ number of operations required.",
+    "steps": [
+     "2⁶ = 64 < 100, so six bits are not enough.",
+     "2⁷ = 128 ≥ 100, so seven bits suffice (28 codes stay unused).",
+     "The width is therefore ⌈log₂ 100⌉ = 7."
+    ],
+    "final": "7",
+    "trap": "Writing 6 after noticing that 64 is the largest power of two below 100, or writing 100 as if the opcode stored a count rather than a code."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An n-bit opcode can name 2ⁿ distinct operations, so the opcode width is the smallest n with 2ⁿ ≥ number of operations required.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>2⁶ = 64 < 100, so six bits are not enough.</li><li>2⁷ = 128 ≥ 100, so seven bits suffice (28 codes stay unused).</li><li>The width is therefore ⌈log₂ 100⌉ = 7.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 7</span></p><p class=\"row\"><b>Common misconception.</b> Writing 6 after noticing that 64 is the largest power of two below 100, or writing 100 as if the opcode stored a count rather than a code.</p>"
+  },
+  {
+   "id": "CO-U1-Q04",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A 16-bit instruction has a 4-bit opcode, two register specifier fields of equal width, and a 4-bit immediate. Each register specifier occupies",
+   "options": [
+    "3 bits",
+    "4 bits",
+    "5 bits",
+    "6 bits"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Equal-width register fields split whatever bit budget is left after the opcode and the immediate, so the arithmetic is (word length − opcode − immediate) / 2.",
+    "steps": [
+     "Bits left for the two register fields = 16 − 4 − 4 = 8.",
+     "The two fields are equal, so each is 8 / 2 = 4 bits.",
+     "Check: 4 + 4 + 4 + 4 = 16. Four bits address 2⁴ = 16 registers."
+    ],
+    "final": "Option (B) — 4 bits",
+    "trap": "Dividing the whole word by two, or assuming a register field must be 5 bits because most textbook machines have 32 registers. The width is fixed by this format's budget, not by a convention."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Equal-width register fields split whatever bit budget is left after the opcode and the immediate, so the arithmetic is (word length − opcode − immediate) / 2.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Bits left for the two register fields = 16 − 4 − 4 = 8.</li><li>The two fields are equal, so each is 8 / 2 = 4 bits.</li><li>Check: 4 + 4 + 4 + 4 = 16. Four bits address 2⁴ = 16 registers.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 4 bits</span></p><p class=\"row\"><b>Common misconception.</b> Dividing the whole word by two, or assuming a register field must be 5 bits because most textbook machines have 32 registers. The width is fixed by this format's budget, not by a convention.</p>"
+  },
+  {
+   "id": "CO-U1-Q05",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about expanding (variable-width) opcodes are TRUE? (Select all that apply.)",
+   "options": [
+    "The instruction length stays fixed while the number of opcode bits varies from one instruction class to another.",
+    "Spending one primary opcode value as an escape reduces the number of instruction classes that the primary field alone can encode by one.",
+    "An expanding opcode can encode more distinct instructions than the same number of bits used as a single fixed opcode field.",
+    "The decoder must first determine the instruction length before it can identify the opcode."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Expanding opcodes trade opcode space for operand space at a fixed instruction length: short opcodes keep long address fields, and rare instructions pay with an escape code.",
+    "steps": [
+     "(A) is the definition: the word is 12 bits (or 16, or 32) for every class; only the split between opcode bits and operand bits changes.",
+     "(B) is true by construction — the escape value is no longer an instruction, so the primary field loses exactly one class in exchange for a whole second-level space.",
+     "(C) is true: 12 primary codes plus 2 escapes × 16 second-level codes = 44 classes here, against 16 with a plain 4-bit opcode.",
+     "(D) is false: with a fixed instruction length the decoder already knows how many bits the word has; it is the *field split* that varies, not the length."
+    ],
+    "final": "Options (A), (B) and (C)",
+    "trap": "Confusing an expanding opcode with a variable-length instruction set (as in x86). Expanding opcodes keep a fixed word; the price of extra codes is paid in operand bits, never in instruction length."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Expanding opcodes trade opcode space for operand space at a fixed instruction length: short opcodes keep long address fields, and rare instructions pay with an escape code.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the definition: the word is 12 bits (or 16, or 32) for every class; only the split between opcode bits and operand bits changes.</li><li>(B) is true by construction — the escape value is no longer an instruction, so the primary field loses exactly one class in exchange for a whole second-level space.</li><li>(C) is true: 12 primary codes plus 2 escapes × 16 second-level codes = 44 classes here, against 16 with a plain 4-bit opcode.</li><li>(D) is false: with a fixed instruction length the decoder already knows how many bits the word has; it is the *field split* that varies, not the length.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Confusing an expanding opcode with a variable-length instruction set (as in x86). Expanding opcodes keep a fixed word; the price of extra codes is paid in operand bits, never in instruction length.</p>"
+  },
+  {
+   "id": "CO-U1-Q06",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "An 8-bit instruction set uses a 2-bit opcode. The values `00`, `01` and `10` are 1-address instructions whose remaining 6 bits are an address. The value `11` is an escape that opens a 6-bit opcode field for 0-address instructions. What is the largest number of 0-address instructions this encoding can provide?",
+   "options": [],
+   "answer": 64,
+   "answer_display": "64",
+   "solution": {
+    "concept": "An escape opcode releases the operand bits of the shorter formats for use as opcode bits, so the size of the escaped space is 2 raised to the number of released bits.",
+    "steps": [
+     "The escape value `11` leaves 6 bits free in the 8-bit word.",
+     "Those 6 bits become a 6-bit opcode field: 2⁶ = 64 distinct 0-address instructions.",
+     "The three 1-address classes are unaffected, so the maximum is 64."
+    ],
+    "final": "64",
+    "trap": "Answering 63 by reserving one of the 64 codes for a further escape that the question does not ask for, or answering 4 by counting opcode values instead of codes."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An escape opcode releases the operand bits of the shorter formats for use as opcode bits, so the size of the escaped space is 2 raised to the number of released bits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The escape value `11` leaves 6 bits free in the 8-bit word.</li><li>Those 6 bits become a 6-bit opcode field: 2⁶ = 64 distinct 0-address instructions.</li><li>The three 1-address classes are unaffected, so the maximum is 64.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 64</span></p><p class=\"row\"><b>Common misconception.</b> Answering 63 by reserving one of the 64 codes for a further escape that the question does not ask for, or answering 4 by counting opcode values instead of codes.</p>"
+  },
+  {
+   "id": "CO-U1-Q07",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "instruction-formats-opcodes",
+   "subtopic": "instruction-formats-opcodes",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A machine has a 6-bit opcode. The value `000000` is reserved as an escape that opens a second 6-bit opcode field, and every other primary value is an ordinary instruction. How many ordinary instructions does the primary opcode space hold?",
+   "options": [
+    "32",
+    "63",
+    "64",
+    "127"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Reserving one opcode value for an escape removes exactly one instruction from the primary space; the remaining values are ordinary instructions.",
+    "steps": [
+     "A 6-bit field has 2⁶ = 64 values.",
+     "One value, `000000`, is not an instruction but an escape.",
+     "Ordinary instructions = 64 − 1 = 63.",
+     "The escape in turn opens 2⁶ = 64 further codes, which is where the remaining instructions live."
+    ],
+    "final": "Option (B) — 63",
+    "trap": "Answering 64 by forgetting the escape, or 127 by assuming the escaped codes join the primary space. The two spaces are separate, and only the primary space is asked about."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Reserving one opcode value for an escape removes exactly one instruction from the primary space; the remaining values are ordinary instructions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A 6-bit field has 2⁶ = 64 values.</li><li>One value, `000000`, is not an instruction but an escape.</li><li>Ordinary instructions = 64 − 1 = 63.</li><li>The escape in turn opens 2⁶ = 64 further codes, which is where the remaining instructions live.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 63</span></p><p class=\"row\"><b>Common misconception.</b> Answering 64 by forgetting the escape, or 127 by assuming the escaped codes join the primary space. The two spaces are separate, and only the primary space is asked about.</p>"
+  },
+  {
+   "id": "CO-U1-Q08",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "An instruction at address 1000 has address field 500 and uses indirect addressing. Memory[500] = 620 and Memory[620] = 7. The effective address of the operand is",
+   "options": [
+    "500",
+    "620",
+    "7",
+    "1000"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In indirect addressing the address field points to a memory word that holds the address of the operand, so the effective address is the *contents* of the location named by the address field.",
+    "steps": [
+     "Direct addressing would make the effective address 500.",
+     "Indirect addressing adds one level: EA = Memory[500] = 620.",
+     "The operand itself is Memory[620] = 7, which is the operand, not its address."
+    ],
+    "final": "Option (B) — 620",
+    "trap": "Reporting 7 (the operand value) or 500 (the address field). Indirect addressing asks for the address held in memory, one dereference short of the operand."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In indirect addressing the address field points to a memory word that holds the address of the operand, so the effective address is the *contents* of the location named by the address field.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Direct addressing would make the effective address 500.</li><li>Indirect addressing adds one level: EA = Memory[500] = 620.</li><li>The operand itself is Memory[620] = 7, which is the operand, not its address.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 620</span></p><p class=\"row\"><b>Common misconception.</b> Reporting 7 (the operand value) or 500 (the address field). Indirect addressing asks for the address held in memory, one dereference short of the operand.</p>"
+  },
+  {
+   "id": "CO-U1-Q09",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "An indexed instruction uses base register R1 = 2000 and index register R2 = 36; the effective address is computed as R1 + R2 with no scaling. The operand is read from memory address",
+   "options": [
+    "1964",
+    "2000",
+    "2036",
+    "36"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Indexed addressing forms the effective address by adding a register (the index, which the program changes) to a base, which is what lets one instruction walk through an array.",
+    "steps": [
+     "EA = base + index = 2000 + 36.",
+     "EA = 2036.",
+     "With a scale factor of 4 (a 4-byte element), the same instruction would give 2000 + 4 × 36 = 2144; the question states no scaling."
+    ],
+    "final": "Option (C) — 2036",
+    "trap": "Subtracting instead of adding, or applying an array-element scale that the question did not state. Scaling must be specified; it is not part of the definition of indexed addressing."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Indexed addressing forms the effective address by adding a register (the index, which the program changes) to a base, which is what lets one instruction walk through an array.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>EA = base + index = 2000 + 36.</li><li>EA = 2036.</li><li>With a scale factor of 4 (a 4-byte element), the same instruction would give 2000 + 4 × 36 = 2144; the question states no scaling.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — 2036</span></p><p class=\"row\"><b>Common misconception.</b> Subtracting instead of adding, or applying an array-element scale that the question did not state. Scaling must be specified; it is not part of the definition of indexed addressing.</p>"
+  },
+  {
+   "id": "CO-U1-Q10",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A two-word instruction occupies addresses 1000 and 1002. Its second word holds a PC-relative offset of +24, which is added to the PC value 1004 — the address of the next instruction. The branch target address is",
+   "options": [],
+   "answer": 1028,
+   "answer_display": "1028",
+   "solution": {
+    "concept": "PC-relative addressing adds the offset to the PC *after* the instruction has been fetched, so the reference point is the next instruction, not the current one.",
+    "steps": [
+     "The instruction occupies 1000 and 1002, so the next instruction begins at 1004.",
+     "Target = PC + offset = 1004 + 24.",
+     "Target = 1028."
+    ],
+    "final": "1028",
+    "trap": "Adding the offset to 1000, the address of the branch itself, which gives 1024. Every PC-relative computation is anchored at the end of the instruction, and a two-word instruction ends 4 bytes later."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> PC-relative addressing adds the offset to the PC *after* the instruction has been fetched, so the reference point is the next instruction, not the current one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The instruction occupies 1000 and 1002, so the next instruction begins at 1004.</li><li>Target = PC + offset = 1004 + 24.</li><li>Target = 1028.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1028</span></p><p class=\"row\"><b>Common misconception.</b> Adding the offset to 1000, the address of the branch itself, which gives 1024. Every PC-relative computation is anchored at the end of the instruction, and a two-word instruction ends 4 bytes later.</p>"
+  },
+  {
+   "id": "CO-U1-Q11",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A program must run at a different load address on every execution without being reassembled. Which addressing mode makes the code position independent?",
+   "options": [
+    "Direct (absolute) addressing",
+    "PC-relative addressing",
+    "Indexed addressing with an absolute base address",
+    "Indirect addressing through a fixed memory location"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Code is position independent when every address it forms is relative to the program counter, because the PC moves with the code while absolute addresses do not.",
+    "steps": [
+     "Direct addressing embeds a fixed absolute address, so the code breaks when the base address changes.",
+     "Indexed addressing with an absolute base and indirect addressing through a fixed location both still contain an absolute address.",
+     "PC-relative addressing computes target = PC + offset, and both the PC and the target shift by the same amount, so the code relocates unchanged."
+    ],
+    "final": "Option (B) — PC-relative addressing",
+    "trap": "Assuming any register-based mode is relocatable. Only the register that holds the moving base matters: the PC moves with the program, an arbitrary base register does not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Code is position independent when every address it forms is relative to the program counter, because the PC moves with the code while absolute addresses do not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Direct addressing embeds a fixed absolute address, so the code breaks when the base address changes.</li><li>Indexed addressing with an absolute base and indirect addressing through a fixed location both still contain an absolute address.</li><li>PC-relative addressing computes target = PC + offset, and both the PC and the target shift by the same amount, so the code relocates unchanged.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — PC-relative addressing</span></p><p class=\"row\"><b>Common misconception.</b> Assuming any register-based mode is relocatable. Only the register that holds the moving base matters: the PC moves with the program, an arbitrary base register does not.</p>"
+  },
+  {
+   "id": "CO-U1-Q12",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A byte-addressable machine has 16-bit instructions. A branch instruction at address 1000 carries an 8-bit two's-complement offset that is counted in *words* and added to the PC of the next instruction. The offset byte is `0xF8`. The branch target is",
+   "options": [
+    "986",
+    "992",
+    "1002",
+    "1018"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A branch offset must be sign-extended and then scaled by the instruction size before it is added to the PC; ignoring either step gives a plausible but wrong target.",
+    "steps": [
+     "0xF8 as an 8-bit two's-complement number is 248 − 256 = −8, so the branch goes backwards.",
+     "One word is 2 bytes, so the scaled offset is −8 × 2 = −16 bytes.",
+     "The next instruction is at 1000 + 2 = 1002.",
+     "Target = 1002 − 16 = 986."
+    ],
+    "final": "Option (A) — 986",
+    "trap": "Reading 0xF8 as +248 and branching forwards, forgetting the word scaling and answering 994, or anchoring at 1000 instead of 1002. Three separate traps sit on this one instruction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A branch offset must be sign-extended and then scaled by the instruction size before it is added to the PC; ignoring either step gives a plausible but wrong target.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0xF8 as an 8-bit two's-complement number is 248 − 256 = −8, so the branch goes backwards.</li><li>One word is 2 bytes, so the scaled offset is −8 × 2 = −16 bytes.</li><li>The next instruction is at 1000 + 2 = 1002.</li><li>Target = 1002 − 16 = 986.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — 986</span></p><p class=\"row\"><b>Common misconception.</b> Reading 0xF8 as +248 and branching forwards, forgetting the word scaling and answering 994, or anchoring at 1000 instead of 1002. Three separate traps sit on this one instruction.</p>"
+  },
+  {
+   "id": "CO-U1-Q13",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about addressing modes are TRUE? (Select all that apply.)",
+   "options": [
+    "In register indirect addressing the effective address is held in a register, so fetching the operand costs one memory access.",
+    "Immediate addressing requires a memory access to fetch the operand.",
+    "In direct addressing the address field of the instruction is itself the effective address.",
+    "In indexed addressing the effective address is formed by adding a base and an index."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "An addressing mode is a rule for computing the effective address; the number of memory accesses it costs follows directly from how many levels of indirection the rule contains.",
+    "steps": [
+     "(A) is true: the register supplies the address, and only the operand fetch touches memory.",
+     "(B) is false: in immediate addressing the operand is a field of the instruction and is already in the instruction register, so no operand fetch happens at all.",
+     "(C) is true: that is the definition of direct (absolute) addressing.",
+     "(D) is true: EA = base + index, possibly with a scale factor."
+    ],
+    "final": "Options (A), (C) and (D)",
+    "trap": "Believing that immediate addressing still needs a fetch because the value 'comes from memory eventually'. It does not: the value is inside the instruction word, which is why immediate is the cheapest mode for constants."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An addressing mode is a rule for computing the effective address; the number of memory accesses it costs follows directly from how many levels of indirection the rule contains.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: the register supplies the address, and only the operand fetch touches memory.</li><li>(B) is false: in immediate addressing the operand is a field of the instruction and is already in the instruction register, so no operand fetch happens at all.</li><li>(C) is true: that is the definition of direct (absolute) addressing.</li><li>(D) is true: EA = base + index, possibly with a scale factor.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common misconception.</b> Believing that immediate addressing still needs a fetch because the value 'comes from memory eventually'. It does not: the value is inside the instruction word, which is why immediate is the cheapest mode for constants.</p>"
+  },
+  {
+   "id": "CO-U1-Q14",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A load instruction uses base-plus-displacement addressing with base register = 3000 and a displacement field of −12. The effective address is",
+   "options": [],
+   "answer": 2988,
+   "answer_display": "2988",
+   "solution": {
+    "concept": "In base-plus-displacement addressing the displacement is a signed value, so it can address elements before the base as well as after it.",
+    "steps": [
+     "EA = base + displacement = 3000 + (−12).",
+     "EA = 2988.",
+     "A negative displacement is normal: it is how a frame pointer reaches locals and saved registers that lie below it."
+    ],
+    "final": "2988",
+    "trap": "Ignoring the sign and answering 3012. The displacement is signed precisely so that one base register can serve a whole activation record on both sides of itself."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In base-plus-displacement addressing the displacement is a signed value, so it can address elements before the base as well as after it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>EA = base + displacement = 3000 + (−12).</li><li>EA = 2988.</li><li>A negative displacement is normal: it is how a frame pointer reaches locals and saved registers that lie below it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2988</span></p><p class=\"row\"><b>Common misconception.</b> Ignoring the sign and answering 3012. The displacement is signed precisely so that one base register can serve a whole activation record on both sides of itself.</p>"
+  },
+  {
+   "id": "CO-U1-Q15",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "addressing-modes-effective-address",
+   "subtopic": "addressing-modes-effective-address",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following addressing modes needs no memory access to obtain the operand itself?",
+   "options": [
+    "Direct addressing",
+    "Indirect addressing",
+    "Immediate addressing",
+    "Indexed addressing"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The cost of a mode is the number of memory accesses between the instruction and the operand: immediate needs none, direct needs one, indirect needs two.",
+    "steps": [
+     "Immediate: the operand is part of the instruction word, which has already been fetched — no additional access.",
+     "Direct: one operand fetch from the address in the instruction.",
+     "Indirect: one access for the address plus one for the operand.",
+     "Indexed: the address is computed in the ALU, then one operand fetch."
+    ],
+    "final": "Option (C) — immediate addressing",
+    "trap": "Choosing indirect because 'it is more flexible'. Flexibility is bought with memory cycles; the question asks which mode is cheapest, and that is immediate."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The cost of a mode is the number of memory accesses between the instruction and the operand: immediate needs none, direct needs one, indirect needs two.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Immediate: the operand is part of the instruction word, which has already been fetched — no additional access.</li><li>Direct: one operand fetch from the address in the instruction.</li><li>Indirect: one access for the address plus one for the operand.</li><li>Indexed: the address is computed in the ALU, then one operand fetch.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — immediate addressing</span></p><p class=\"row\"><b>Common misconception.</b> Choosing indirect because 'it is more flexible'. Flexibility is bought with memory cycles; the question asks which mode is cheapest, and that is immediate.</p>"
+  },
+  {
+   "id": "CO-U1-Q16",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "risc-vs-cisc",
+   "subtopic": "risc-vs-cisc",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following is characteristic of a RISC instruction set?",
+   "options": [
+    "Arithmetic instructions may take one operand directly from memory",
+    "Fixed-length instructions and a load/store architecture",
+    "A microprogrammed control store that decodes most instructions",
+    "A large number of instruction formats of different lengths"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "RISC is defined by regularity: fixed-length instructions, a small set of simple formats, and memory reached only by explicit load and store instructions.",
+    "steps": [
+     "(A) describes a memory-to-memory CISC arithmetic instruction; RISC ALU operands come from registers.",
+     "(B) is the defining pair: uniform words are easy to fetch and decode, and load/store keeps the data path simple.",
+     "(C) and (D) describe microcoded, variable-length CISC designs."
+    ],
+    "final": "Option (B)",
+    "trap": "Treating 'RISC' as a marketing word for 'faster'. The testable content is architectural: fixed length, load/store, many registers, simple addressing modes."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> RISC is defined by regularity: fixed-length instructions, a small set of simple formats, and memory reached only by explicit load and store instructions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) describes a memory-to-memory CISC arithmetic instruction; RISC ALU operands come from registers.</li><li>(B) is the defining pair: uniform words are easy to fetch and decode, and load/store keeps the data path simple.</li><li>(C) and (D) describe microcoded, variable-length CISC designs.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Treating 'RISC' as a marketing word for 'faster'. The testable content is architectural: fixed length, load/store, many registers, simple addressing modes.</p>"
+  },
+  {
+   "id": "CO-U1-Q17",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "risc-vs-cisc",
+   "subtopic": "risc-vs-cisc",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following is characteristic of a CISC instruction set?",
+   "options": [
+    "Every instruction completes in exactly one clock cycle by design",
+    "All arithmetic operands must be loaded into registers first",
+    "Variable-length instructions and complex instructions implemented with microcode",
+    "A single fixed 32-bit instruction format"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "CISC spends instruction-set complexity to save program bytes and instructions: variable lengths, rich addressing modes, and microcode to decode the complex cases.",
+    "steps": [
+     "(A) is a RISC goal, not a CISC property.",
+     "(B) is the load/store rule of RISC.",
+     "(C) matches CISC: variable length plus a microprogrammed control store.",
+     "(D) is a fixed-format RISC design."
+    ],
+    "final": "Option (C)",
+    "trap": "Assuming CISC means 'no pipelining' or 'old'. Modern CISC processors pipeline heavily and translate complex instructions into micro-operations; the instruction *format* is what stays complex."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> CISC spends instruction-set complexity to save program bytes and instructions: variable lengths, rich addressing modes, and microcode to decode the complex cases.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is a RISC goal, not a CISC property.</li><li>(B) is the load/store rule of RISC.</li><li>(C) matches CISC: variable length plus a microprogrammed control store.</li><li>(D) is a fixed-format RISC design.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Assuming CISC means 'no pipelining' or 'old'. Modern CISC processors pipeline heavily and translate complex instructions into micro-operations; the instruction *format* is what stays complex.</p>"
+  },
+  {
+   "id": "CO-U1-Q18",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "risc-vs-cisc",
+   "subtopic": "risc-vs-cisc",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following statements comparing RISC and CISC designs are TRUE? (Select all that apply.)",
+   "options": [
+    "A RISC machine typically has a larger register file than a CISC machine, because operands must come from registers.",
+    "A single CISC instruction can perform work that a RISC machine needs several instructions to do, such as a memory-to-memory add.",
+    "RISC instructions are normally decoded by microcode held in a control store.",
+    "RISC's simple, fixed-format instructions make pipelining easier than a variable-length CISC format."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "The two designs differ in where they spend complexity: RISC in the compiler and the register file, CISC in the decoder and the microcode.",
+    "steps": [
+     "(A) is true: with load/store arithmetic, keeping values in registers is the only way to avoid traffic, so register files grew to 32 and beyond.",
+     "(B) is true: memory-to-memory add and string operations are classic CISC instructions.",
+     "(C) is false: hardwired control is the RISC norm precisely because the instructions are simple; microcode is the CISC answer to complexity.",
+     "(D) is true: a known instruction length lets the fetch stage take a whole instruction every cycle."
+    ],
+    "final": "Options (A), (B) and (D)",
+    "trap": "Reversing the control-unit story. Simple, regular instructions are cheap to hardwire; complex, irregular ones are what motivate a control store."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two designs differ in where they spend complexity: RISC in the compiler and the register file, CISC in the decoder and the microcode.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: with load/store arithmetic, keeping values in registers is the only way to avoid traffic, so register files grew to 32 and beyond.</li><li>(B) is true: memory-to-memory add and string operations are classic CISC instructions.</li><li>(C) is false: hardwired control is the RISC norm precisely because the instructions are simple; microcode is the CISC answer to complexity.</li><li>(D) is true: a known instruction length lets the fetch stage take a whole instruction every cycle.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D)</span></p><p class=\"row\"><b>Common misconception.</b> Reversing the control-unit story. Simple, regular instructions are cheap to hardwire; complex, irregular ones are what motivate a control store.</p>"
+  },
+  {
+   "id": "CO-U1-Q19",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "risc-vs-cisc",
+   "subtopic": "risc-vs-cisc",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A 32-bit RISC machine has 32 general-purpose registers and a three-register instruction format. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "Each register specifier needs 5 bits.",
+    "The three register specifiers together occupy 15 bits of the instruction.",
+    "If the machine had 64 registers, 6 bits per specifier would be enough.",
+    "Four bits per specifier would still be able to name all 32 registers."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "A register specifier is an index into the register file, so its width is ⌈log₂(number of registers)⌉ and the fields simply add up inside the instruction word.",
+    "steps": [
+     "32 = 2⁵, so each specifier is 5 bits: (A) is true.",
+     "Three specifiers = 3 × 5 = 15 bits: (B) is true.",
+     "64 = 2⁶, so 6 bits per specifier would suffice: (C) is true.",
+     "4 bits name only 2⁴ = 16 registers, so (D) is false — 16 of the 32 registers would be unreachable."
+    ],
+    "final": "Options (A), (B) and (C)",
+    "trap": "Forgetting that register width is logarithmic in the register count, which makes 'a few more registers' cost only one extra bit per specifier — and three extra bits per instruction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A register specifier is an index into the register file, so its width is ⌈log₂(number of registers)⌉ and the fields simply add up inside the instruction word.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>32 = 2⁵, so each specifier is 5 bits: (A) is true.</li><li>Three specifiers = 3 × 5 = 15 bits: (B) is true.</li><li>64 = 2⁶, so 6 bits per specifier would suffice: (C) is true.</li><li>4 bits name only 2⁴ = 16 registers, so (D) is false — 16 of the 32 registers would be unreachable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting that register width is logarithmic in the register count, which makes 'a few more registers' cost only one extra bit per specifier — and three extra bits per instruction.</p>"
+  },
+  {
+   "id": "CO-U1-Q20",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "risc-vs-cisc",
+   "subtopic": "risc-vs-cisc",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "Why does a fixed-length RISC instruction format make pipelining easier than a variable-length CISC format?",
+   "options": [
+    "Because fixed-length instructions always complete in fewer clock cycles",
+    "Because the instruction length is known before decoding, so fetch and decode need no length-dependent stalling or byte-alignment logic",
+    "Because fixed-length instructions never create data hazards",
+    "Because a RISC machine needs no branch handling in the pipeline"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A pipeline works best when every stage's work per cycle is identical. A known instruction length lets the fetch stage take exactly one instruction per cycle without waiting to learn how long it is.",
+    "steps": [
+     "With variable lengths, the fetch unit must decode the first bytes to learn the length, then shift by a variable amount; the pipeline needs extra alignment logic and can stall.",
+     "With a fixed length, instruction i is always at a fixed offset from instruction i − 1, so fetch, decode and issue stay in lockstep.",
+     "Cycle counts, data hazards and branch handling are separate issues: a fixed length does not remove them (a load-use hazard still stalls), so (A), (C) and (D) are false."
+    ],
+    "final": "Option (B)",
+    "trap": "Confusing the benefits of a fixed format with the elimination of hazards. RISC pipelines still need forwarding, stalls and branch prediction; the fixed length only removes the fetch/decode uncertainty."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A pipeline works best when every stage's work per cycle is identical. A known instruction length lets the fetch stage take exactly one instruction per cycle without waiting to learn how long it is.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>With variable lengths, the fetch unit must decode the first bytes to learn the length, then shift by a variable amount; the pipeline needs extra alignment logic and can stall.</li><li>With a fixed length, instruction i is always at a fixed offset from instruction i − 1, so fetch, decode and issue stay in lockstep.</li><li>Cycle counts, data hazards and branch handling are separate issues: a fixed length does not remove them (a load-use hazard still stalls), so (A), (C) and (D) are false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the benefits of a fixed format with the elimination of hazards. RISC pipelines still need forwarding, stalls and branch prediction; the fixed length only removes the fetch/decode uncertainty.</p>"
+  },
+  {
+   "id": "CO-U1-Q21",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "stack-and-subroutines",
+   "subtopic": "stack-and-subroutines",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A stack grows downwards and the stack pointer holds the address of the top element. Each item is 4 bytes. With the stack pointer at 1000, after three pushes the stack pointer is",
+   "options": [
+    "988",
+    "996",
+    "1000",
+    "1012"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A downward-growing stack decrements the stack pointer before storing, so each push moves the pointer down by one item size.",
+    "steps": [
+     "Each push moves SP down by 4 bytes.",
+     "Three pushes move it 3 × 4 = 12 bytes.",
+     "SP = 1000 − 12 = 988."
+    ],
+    "final": "Option (A) — 988",
+    "trap": "Adding instead of subtracting because the pointer 'grows with the stack', or decrementing by 1 instead of by the item size. Both errors come from forgetting that the pointer counts bytes while the stack counts items."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A downward-growing stack decrements the stack pointer before storing, so each push moves the pointer down by one item size.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Each push moves SP down by 4 bytes.</li><li>Three pushes move it 3 × 4 = 12 bytes.</li><li>SP = 1000 − 12 = 988.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — 988</span></p><p class=\"row\"><b>Common misconception.</b> Adding instead of subtracting because the pointer 'grows with the stack', or decrementing by 1 instead of by the item size. Both errors come from forgetting that the pointer counts bytes while the stack counts items.</p>"
+  },
+  {
+   "id": "CO-U1-Q22",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "stack-and-subroutines",
+   "subtopic": "stack-and-subroutines",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A recursive procedure uses 32-byte activation records and the stack grows downwards. At the first call the stack pointer is 8000. When the recursion is five activations deep, the stack pointer is",
+   "options": [],
+   "answer": 7840,
+   "answer_display": "7840",
+   "solution": {
+    "concept": "Every activation of a recursive procedure allocates its own record on the stack, so the depth of the recursion times the record size is exactly how far the stack pointer has moved.",
+    "steps": [
+     "Five activations means five records are live at once.",
+     "Total allocated = 5 × 32 = 160 bytes.",
+     "The stack grows downwards, so SP = 8000 − 160 = 7840."
+    ],
+    "final": "7840",
+    "trap": "Multiplying by four (counting only the four returns still pending) or moving upwards. The record of the deepest activation is allocated as soon as it is entered, so all five records are live."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every activation of a recursive procedure allocates its own record on the stack, so the depth of the recursion times the record size is exactly how far the stack pointer has moved.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Five activations means five records are live at once.</li><li>Total allocated = 5 × 32 = 160 bytes.</li><li>The stack grows downwards, so SP = 8000 − 160 = 7840.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 7840</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying by four (counting only the four returns still pending) or moving upwards. The record of the deepest activation is allocated as soon as it is entered, so all five records are live.</p>"
+  },
+  {
+   "id": "CO-U1-Q23",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "stack-and-subroutines",
+   "subtopic": "stack-and-subroutines",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "A subroutine saves its return address in one fixed memory location. It is then called recursively. What happens?",
+   "options": [
+    "The recursion works, because each call overwrites the location with the current return address",
+    "The outer call's return address is overwritten, so when the inner call returns, control comes back to the same subroutine instead of the original caller",
+    "The processor raises an overflow exception on the first recursive call",
+    "Nothing changes, because the return address is also kept in the program counter"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A return address is per-activation state. A single fixed slot holds only the most recent one, so it cannot support nesting; a stack of return addresses can.",
+    "steps": [
+     "Call 1 stores its return address R1 in the fixed slot.",
+     "The recursive call stores R2 in the same slot, destroying R1.",
+     "The inner return uses R2 correctly, so control returns into the subroutine again.",
+     "When the outer level finally returns, the slot holds R2, so it jumps back into itself — an infinite loop rather than a return to the caller."
+    ],
+    "final": "Option (B)",
+    "trap": "Thinking the PC 'also remembers' the address. The PC holds only the current instruction address; the return address exists solely where the linkage put it, and one slot means one level of nesting."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A return address is per-activation state. A single fixed slot holds only the most recent one, so it cannot support nesting; a stack of return addresses can.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Call 1 stores its return address R1 in the fixed slot.</li><li>The recursive call stores R2 in the same slot, destroying R1.</li><li>The inner return uses R2 correctly, so control returns into the subroutine again.</li><li>When the outer level finally returns, the slot holds R2, so it jumps back into itself — an infinite loop rather than a return to the caller.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Thinking the PC 'also remembers' the address. The PC holds only the current instruction address; the return address exists solely where the linkage put it, and one slot means one level of nesting.</p>"
+  },
+  {
+   "id": "CO-U1-Q24",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "stack-and-subroutines",
+   "subtopic": "stack-and-subroutines",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "question": "Which of the following statements about subroutine linkage are TRUE? (Select all that apply.)",
+   "options": [
+    "A call instruction saves the address of the instruction that follows the call.",
+    "Using one fixed memory location for the return address prevents reentrant or recursive use of the subroutine.",
+    "A stack-based linkage supports nested and recursive calls because every activation gets its own frame.",
+    "The stack pointer must be restored by the caller after the callee returns, because the callee cannot know the caller's stack pointer."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Linkage is about where per-activation state lives. One slot allows one activation; a stack allows arbitrarily many, which is exactly the difference between a leaf-only helper and a reentrant procedure.",
+    "steps": [
+     "(A) is true by definition: the return address is the address of the next instruction, not the call itself.",
+     "(B) is true: the second activation overwrites the first activation's return address.",
+     "(C) is true: each call pushes a frame holding its own return address, saved registers and locals.",
+     "(D) is false: the callee's epilogue restores the stack pointer (and the frame pointer) before returning, which is why the caller's frame survives."
+    ],
+    "final": "Options (A), (B) and (C)",
+    "trap": "Reversing the responsibility for the stack pointer. Restoring SP is part of the callee's epilogue; a callee that leaves the stack unbalanced is a bug, not a convention."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Linkage is about where per-activation state lives. One slot allows one activation; a stack allows arbitrarily many, which is exactly the difference between a leaf-only helper and a reentrant procedure.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true by definition: the return address is the address of the next instruction, not the call itself.</li><li>(B) is true: the second activation overwrites the first activation's return address.</li><li>(C) is true: each call pushes a frame holding its own return address, saved registers and locals.</li><li>(D) is false: the callee's epilogue restores the stack pointer (and the frame pointer) before returning, which is why the caller's frame survives.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Reversing the responsibility for the stack pointer. Restoring SP is part of the callee's epilogue; a callee that leaves the stack unbalanced is a bug, not a convention.</p>"
+  },
+  {
+   "id": "CO-U1-Q25",
+   "subject": "computer-architecture",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "instructions-addressing",
+   "unit_name": "Machine Instructions & Addressing Modes",
+   "topic": "Machine Instructions & Addressing Modes",
+   "sub": "stack-and-subroutines",
+   "subtopic": "stack-and-subroutines",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "question": "A stack machine evaluates the postfix expression `A B C * + D E * F + *`. What is the maximum number of operands the stack must hold at any moment?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In postfix evaluation each operand pushes one item and each operator pops two and pushes one, so the stack depth at any point is the running count, and its maximum is the extra storage the expression needs.",
+    "steps": [
+     "A → 1; B → 2; C → 3 (maximum so far 3).",
+     "* → 2; + → 1. The first sub-expression needs depth 3.",
+     "D → 2; E → 3; * → 2; F → 3; + → 2; * → 1.",
+     "The maximum over the whole expression is 3."
+    ],
+    "final": "Option (B) — 3",
+    "trap": "Counting the number of distinct variables (6) or the depth at the end (1). The requirement is the peak of the running depth, which occurs while `A B C` and again while `D E * F` are on the stack."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In postfix evaluation each operand pushes one item and each operator pops two and pushes one, so the stack depth at any point is the running count, and its maximum is the extra storage the expression needs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A → 1; B → 2; C → 3 (maximum so far 3).</li><li>* → 2; + → 1. The first sub-expression needs depth 3.</li><li>D → 2; E → 3; * → 2; F → 3; + → 2; * → 1.</li><li>The maximum over the whole expression is 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 3</span></p><p class=\"row\"><b>Common misconception.</b> Counting the number of distinct variables (6) or the depth at the end (1). The requirement is the peak of the running depth, which occurs while `A B C` and again while `D E * F` are on the stack.</p>"
   }
  ]
 }
