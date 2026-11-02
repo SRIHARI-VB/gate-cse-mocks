@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-25",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 625,
+  "total_questions": 650,
   "units_with_questions": [
    1,
    2,
@@ -19,6 +19,7 @@
    9,
    10,
    11,
+   12,
    16
   ]
  },
@@ -968,6 +969,68 @@
    "mode": "A",
    "selection": "random subject draw over units below UNIT_QUESTION_CAP; unit 11 under cap (25) and current 0 days, so step B3 held",
    "note": "Set 2 of 2 closes Unit 11 at UNIT_QUESTION_CAP = 50. Next Discrete Mathematics run advances (index_of(boolean-algebra) = 10 + 1) mod 16 = 11 -> Unit 12, Algebraic Structures."
+  },
+  {
+   "run": 18,
+   "date": "2026-11-02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "set": "Set 1 of 2",
+   "count": 25,
+   "file": "discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "Binary operations & properties": 5,
+    "Semigroups & monoids": 5,
+    "Groups & abelian groups": 5,
+    "Subgroups & cyclic groups": 6,
+    "Homomorphisms & isomorphisms": 4
+   },
+   "question_ids": [
+    "DM-U12-Q01",
+    "DM-U12-Q02",
+    "DM-U12-Q03",
+    "DM-U12-Q04",
+    "DM-U12-Q05",
+    "DM-U12-Q06",
+    "DM-U12-Q07",
+    "DM-U12-Q08",
+    "DM-U12-Q09",
+    "DM-U12-Q10",
+    "DM-U12-Q11",
+    "DM-U12-Q12",
+    "DM-U12-Q13",
+    "DM-U12-Q14",
+    "DM-U12-Q15",
+    "DM-U12-Q16",
+    "DM-U12-Q17",
+    "DM-U12-Q18",
+    "DM-U12-Q19",
+    "DM-U12-Q20",
+    "DM-U12-Q21",
+    "DM-U12-Q22",
+    "DM-U12-Q23",
+    "DM-U12-Q24",
+    "DM-U12-Q25"
+   ],
+   "mode": "A",
+   "selection": "random subject draw returned index 0 (Discrete Mathematics); most recent paper was 2026-11-01, run 15, unit 11 at 50 questions, so the cap in step B3 failed and step B4 advanced (index_of(boolean-algebra) = 10 + 1) mod 16 = 11 -> Unit 12",
+   "note": "First pass over Unit 12 opens; the unit holds 25 of its 50 questions. Next Discrete Mathematics run stays on Unit 12 (under the cap) and closes it at Set 2 of 2."
   }
  ],
  "verified_pyqs": [
@@ -28759,6 +28822,1276 @@
     "misconception": "Choosing the option with the most terms “to be safe” (option (C)). Extra terms never make an expression wrong, but they make it non-minimal; and a term that is not an implicant, such as <code class=\"mm\">w&prime;z</code> in option (D), makes it outright incorrect."
    },
    "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "binary-operations-properties",
+   "subtopic": "binary-operations-properties",
+   "subtopic_label": "Binary operations & properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Which one of the following is <b>not</b> a binary operation on the set <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code> of positive integers?",
+   "question_html": "<p class=\"qtext\">Which one of the following is <b>not</b> a binary operation on the set <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code> of positive integers?</p>",
+   "options": [
+    "<code class=\"mm\">a + b</code>",
+    "<code class=\"mm\">a · b</code>",
+    "<code class=\"mm\">a − b</code>",
+    "<code class=\"mm\">max(a, b)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">a + b</code>",
+    "<code class=\"mm\">a · b</code>",
+    "<code class=\"mm\">a − b</code>",
+    "<code class=\"mm\">max(a, b)</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "A binary operation on a set S is a <i>total</i> function S × S → S: it must be defined for every ordered pair and its value must again lie in S (closure).",
+    "steps": [
+     "a + b and a · b are positive whenever a and b are positive, and max(a, b) is one of the two inputs, so all three land back in ℤ⁺.",
+     "Subtraction does not: 1 − 2 = −1 ∉ ℤ⁺.",
+     "So a − b is only a partial operation on ℤ⁺ and fails the definition."
+    ],
+    "final": "Option (C).",
+    "misconception": "Closure is often spot-checked on a few “typical” pairs. One pair whose result leaves the set is enough to disqualify the operation, and being defined for every pair is part of the definition."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A binary operation on a set S is a <i>total</i> function S × S → S: it must be defined for every ordered pair and its value must again lie in S (closure).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>a + b and a · b are positive whenever a and b are positive, and max(a, b) is one of the two inputs, so all three land back in ℤ⁺.</li><li>Subtraction does not: 1 − 2 = −1 ∉ ℤ⁺.</li><li>So a − b is only a partial operation on ℤ⁺ and fails the definition.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Closure is often spot-checked on a few “typical” pairs. One pair whose result leaves the set is enough to disqualify the operation, and being defined for every pair is part of the definition.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "binary-operations-properties",
+   "subtopic": "binary-operations-properties",
+   "subtopic_label": "Binary operations & properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "On <code class=\"mm\">ℝ</code> define <code class=\"mm\">a ∗ b = a + b − ab</code>. The identity element of <code class=\"mm\">(ℝ, ∗)</code> is",
+   "question_html": "<p class=\"qtext\">On <code class=\"mm\">ℝ</code> define <code class=\"mm\">a ∗ b = a + b − ab</code>. The identity element of <code class=\"mm\">(ℝ, ∗)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">−1</code>",
+    "no identity element exists",
+    "<code class=\"mm\">0</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">−1</code>",
+    "no identity element exists",
+    "<code class=\"mm\">0</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "An identity e must satisfy a ∗ e = e ∗ a = a for every element a of the set.",
+    "steps": [
+     "a ∗ e = a + e − ae. Setting this equal to a gives e(1 − a) = 0, which must hold for every a, so e = 0.",
+     "Check directly: a ∗ 0 = a + 0 − 0 = a and 0 ∗ a = a, so 0 is a two-sided identity.",
+     "The tempting 1 fails: a ∗ 1 = a + 1 − a = 1, which is not a unless a = 1."
+    ],
+    "final": "Option (D).",
+    "misconception": "For a product-like operation the identity is assumed to be 1. Here 1 is almost the opposite of an identity — every element is sent to 1 — and the identity is 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An identity e must satisfy a ∗ e = e ∗ a = a for every element a of the set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>a ∗ e = a + e − ae. Setting this equal to a gives e(1 − a) = 0, which must hold for every a, so e = 0.</li><li>Check directly: a ∗ 0 = a + 0 − 0 = a and 0 ∗ a = a, so 0 is a two-sided identity.</li><li>The tempting 1 fails: a ∗ 1 = a + 1 − a = 1, which is not a unless a = 1.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Common misconception.</b> For a product-like operation the identity is assumed to be 1. Here 1 is almost the opposite of an identity — every element is sent to 1 — and the identity is 0.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "binary-operations-properties",
+   "subtopic": "binary-operations-properties",
+   "subtopic_label": "Binary operations & properties",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "On <code class=\"mm\">ℤ</code> define <code class=\"mm\">a ∗ b = a + b + ab</code>. Which one of the following statements is true?",
+   "question_html": "<p class=\"qtext\">On <code class=\"mm\">ℤ</code> define <code class=\"mm\">a ∗ b = a + b + ab</code>. Which one of the following statements is true?</p>",
+   "options": [
+    "<code class=\"mm\">(ℤ, ∗)</code> is a commutative monoid that is not a group.",
+    "<code class=\"mm\">∗</code> is not associative.",
+    "<code class=\"mm\">∗</code> is associative but has no identity element.",
+    "<code class=\"mm\">(ℤ, ∗)</code> is an abelian group."
+   ],
+   "options_html": [
+    "<code class=\"mm\">(ℤ, ∗)</code> is a commutative monoid that is not a group.",
+    "<code class=\"mm\">∗</code> is not associative.",
+    "<code class=\"mm\">∗</code> is associative but has no identity element.",
+    "<code class=\"mm\">(ℤ, ∗)</code> is an abelian group."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Test the four axioms in order — closure, associativity, identity, inverses. A monoid is the first three; a group needs the fourth for every element.",
+    "steps": [
+     "Closure: a + b + ab ∈ ℤ for all integers a, b.",
+     "(a ∗ b) ∗ c = (a + b + ab) + c + (a + b + ab)c = a + b + c + ab + ac + bc + abc, which is symmetric in a, b, c, hence equal to a ∗ (b ∗ c): associative.",
+     "Identity: a ∗ 0 = a + 0 + 0 = a, so 0 is the identity.",
+     "Inverses: a ∗ b = 0 requires b(1 + a) = −a, i.e. b = −a/(1 + a). For a = 1 this gives b = −1/2 ∉ ℤ, so 1 has no inverse and the structure is not a group."
+    ],
+    "final": "Option (A).",
+    "misconception": "Once 0 turns out to be the identity, closure and associativity are accepted and the structure is called a group. Inverses must be tested on a non-trivial element, and a = 1 already breaks them."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Test the four axioms in order — closure, associativity, identity, inverses. A monoid is the first three; a group needs the fourth for every element.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Closure: a + b + ab ∈ ℤ for all integers a, b.</li><li>(a ∗ b) ∗ c = (a + b + ab) + c + (a + b + ab)c = a + b + c + ab + ac + bc + abc, which is symmetric in a, b, c, hence equal to a ∗ (b ∗ c): associative.</li><li>Identity: a ∗ 0 = a + 0 + 0 = a, so 0 is the identity.</li><li>Inverses: a ∗ b = 0 requires b(1 + a) = −a, i.e. b = −a/(1 + a). For a = 1 this gives b = −1/2 ∉ ℤ, so 1 has no inverse and the structure is not a group.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Once 0 turns out to be the identity, closure and associativity are accepted and the structure is called a group. Inverses must be tested on a non-trivial element, and a = 1 already breaks them.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q04",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "binary-operations-properties",
+   "subtopic": "binary-operations-properties",
+   "subtopic_label": "Binary operations & properties",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "On <code class=\"mm\">ℤ</code> define <code class=\"mm\">a ∗ b = a + b − 1</code>. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">On <code class=\"mm\">ℤ</code> define <code class=\"mm\">a ∗ b = a + b − 1</code>. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">∗</code> is associative.",
+    "<code class=\"mm\">1</code> is the identity element for <code class=\"mm\">∗</code>.",
+    "every element of ℤ has an inverse under <code class=\"mm\">∗</code>.",
+    "<code class=\"mm\">∗</code> is not commutative."
+   ],
+   "options_html": [
+    "<code class=\"mm\">∗</code> is associative.",
+    "<code class=\"mm\">1</code> is the identity element for <code class=\"mm\">∗</code>.",
+    "every element of ℤ has an inverse under <code class=\"mm\">∗</code>.",
+    "<code class=\"mm\">∗</code> is not commutative."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "Shifting a familiar operation by a constant keeps associativity and commutativity, but moves the identity; the inverse formula has to be recomputed.",
+    "steps": [
+     "(a ∗ b) ∗ c = (a + b − 1) + c − 1 = a + b + c − 2 and a ∗ (b ∗ c) = a + (b + c − 1) − 1 = a + b + c − 2, so ∗ is associative.",
+     "a ∗ 1 = a + 1 − 1 = a and 1 ∗ a = a, so 1 is a two-sided identity.",
+     "a ∗ b = 1 ⟺ a + b − 1 = 1 ⟺ b = 2 − a, which is an integer for every a; so every element is invertible and (ℤ, ∗) is in fact an abelian group.",
+     "a ∗ b = a + b − 1 = b ∗ a, so ∗ is commutative and (D) is false."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "An operation written with a “− 1” is assumed to be neither associative nor commutative. A constant shift preserves both; what changes is the identity, from 0 to 1."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Shifting a familiar operation by a constant keeps associativity and commutativity, but moves the identity; the inverse formula has to be recomputed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(a ∗ b) ∗ c = (a + b − 1) + c − 1 = a + b + c − 2 and a ∗ (b ∗ c) = a + (b + c − 1) − 1 = a + b + c − 2, so ∗ is associative.</li><li>a ∗ 1 = a + 1 − 1 = a and 1 ∗ a = a, so 1 is a two-sided identity.</li><li>a ∗ b = 1 ⟺ a + b − 1 = 1 ⟺ b = 2 − a, which is an integer for every a; so every element is invertible and (ℤ, ∗) is in fact an abelian group.</li><li>a ∗ b = a + b − 1 = b ∗ a, so ∗ is commutative and (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> An operation written with a “− 1” is assumed to be neither associative nor commutative. A constant shift preserves both; what changes is the identity, from 0 to 1.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q05",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "binary-operations-properties",
+   "subtopic": "binary-operations-properties",
+   "subtopic_label": "Binary operations & properties",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let S be a set with exactly 3 elements. How many distinct binary operations can be defined on S?",
+   "question_html": "<p class=\"qtext\">Let S be a set with exactly 3 elements. How many distinct binary operations can be defined on S?</p>",
+   "options": [],
+   "options_html": [],
+   "answer": 19683,
+   "answer_display": "19683",
+   "marks": 2,
+   "solution": {
+    "concept": "A binary operation on a finite set S is an arbitrary function S × S → S, so it is counted by |S| raised to the number of ordered pairs.",
+    "steps": [
+     "|S × S| = 3 × 3 = 9 ordered pairs, and the operation table has 9 free entries.",
+     "Each entry independently takes any of the 3 elements of S.",
+     "So the count is 3⁹ = 19683."
+    ],
+    "final": "19683",
+    "misconception": "3³ = 27 counts a single row of the table, and 2⁹ counts relations rather than functions; the table is 3 × 3 with three choices in every cell."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A binary operation on a finite set S is an arbitrary function S × S → S, so it is counted by |S| raised to the number of ordered pairs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>|S × S| = 3 × 3 = 9 ordered pairs, and the operation table has 9 free entries.</li><li>Each entry independently takes any of the 3 elements of S.</li><li>So the count is 3⁹ = 19683.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 19683</span></p><p class=\"row\"><b>Common misconception.</b> 3³ = 27 counts a single row of the table, and 2⁹ counts relations rather than functions; the table is 3 × 3 with three choices in every cell.</p>",
+   "question_format": "text",
+   "nat_answer": 19683,
+   "nat_format": "an integer"
+  },
+  {
+   "id": "DM-U12-Q06",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "semigroups-monoids",
+   "subtopic": "semigroups-monoids",
+   "subtopic_label": "Semigroups & monoids",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Take <code class=\"mm\">ℕ = {0, 1, 2, …}</code>. Which one of the following is a semigroup but <b>not</b> a monoid?",
+   "question_html": "<p class=\"qtext\">Take <code class=\"mm\">ℕ = {0, 1, 2, …}</code>. Which one of the following is a semigroup but <b>not</b> a monoid?</p>",
+   "options": [
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(ℤ⁺, +)</code>, where <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code>",
+    "<code class=\"mm\">(ℤ, ·)</code>",
+    "<code class=\"mm\">(ℕ, ·)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(ℤ⁺, +)</code>, where <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code>",
+    "<code class=\"mm\">(ℤ, ·)</code>",
+    "<code class=\"mm\">(ℕ, ·)</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "A semigroup is a set with an associative binary operation; a monoid is a semigroup whose identity element belongs to the set.",
+    "steps": [
+     "(ℕ, +): addition is associative and 0 ∈ ℕ is the identity — a monoid.",
+     "(ℤ⁺, +): addition is associative, but the identity of addition is 0, and 0 ∉ ℤ⁺ — a semigroup with no identity, hence not a monoid.",
+     "(ℤ, ·) and (ℕ, ·): multiplication is associative with identity 1 in the set — monoids."
+    ],
+    "final": "Option (B).",
+    "misconception": "“Closed and associative” is treated as sufficient for a monoid. The identity must be an element of the set, and ℤ⁺ under addition simply does not contain it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A semigroup is a set with an associative binary operation; a monoid is a semigroup whose identity element belongs to the set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(ℕ, +): addition is associative and 0 ∈ ℕ is the identity — a monoid.</li><li>(ℤ⁺, +): addition is associative, but the identity of addition is 0, and 0 ∉ ℤ⁺ — a semigroup with no identity, hence not a monoid.</li><li>(ℤ, ·) and (ℕ, ·): multiplication is associative with identity 1 in the set — monoids.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> “Closed and associative” is treated as sufficient for a monoid. The identity must be an element of the set, and ℤ⁺ under addition simply does not contain it.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q07",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "semigroups-monoids",
+   "subtopic": "semigroups-monoids",
+   "subtopic_label": "Semigroups & monoids",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "The group of units of the monoid <code class=\"mm\">(ℤ, ·)</code> is",
+   "question_html": "<p class=\"qtext\">The group of units of the monoid <code class=\"mm\">(ℤ, ·)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">{1}</code>",
+    "<code class=\"mm\">{1, −1}</code>",
+    "<code class=\"mm\">ℤ − {0}</code>",
+    "<code class=\"mm\">{0, 1}</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">{1}</code>",
+    "<code class=\"mm\">{1, −1}</code>",
+    "<code class=\"mm\">ℤ − {0}</code>",
+    "<code class=\"mm\">{0, 1}</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "A unit of a monoid is an element with a two-sided inverse <i>inside the monoid</i>; the units always form a group under the same operation.",
+    "steps": [
+     "We need integers a, b with a · b = 1. Since |a| · |b| = 1 and both are integers, |a| = |b| = 1.",
+     "So the units are 1 and −1, each its own inverse.",
+     "2 is not a unit because 1/2 ∉ ℤ, which is why ℤ − {0} is wrong."
+    ],
+    "final": "Option (B).",
+    "misconception": "Every non-zero integer is assumed to be invertible because 1/a exists in ℚ. The inverse has to live in the monoid itself, not in a larger ring."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A unit of a monoid is an element with a two-sided inverse <i>inside the monoid</i>; the units always form a group under the same operation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>We need integers a, b with a · b = 1. Since |a| · |b| = 1 and both are integers, |a| = |b| = 1.</li><li>So the units are 1 and −1, each its own inverse.</li><li>2 is not a unit because 1/2 ∉ ℤ, which is why ℤ − {0} is wrong.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Every non-zero integer is assumed to be invertible because 1/a exists in ℚ. The inverse has to live in the monoid itself, not in a larger ring.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q08",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "semigroups-monoids",
+   "subtopic": "semigroups-monoids",
+   "subtopic_label": "Semigroups & monoids",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "On <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code> define <code class=\"mm\">a ∗ b = gcd(a, b)</code>. Which one of the following statements is true?",
+   "question_html": "<p class=\"qtext\">On <code class=\"mm\">ℤ⁺ = {1, 2, 3, …}</code> define <code class=\"mm\">a ∗ b = gcd(a, b)</code>. Which one of the following statements is true?</p>",
+   "options": [
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a monoid whose identity is 1.",
+    "<code class=\"mm\">∗</code> is not associative.",
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a commutative semigroup with no identity element.",
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a group."
+   ],
+   "options_html": [
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a monoid whose identity is 1.",
+    "<code class=\"mm\">∗</code> is not associative.",
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a commutative semigroup with no identity element.",
+    "<code class=\"mm\">(ℤ⁺, ∗)</code> is a group."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "gcd is associative and commutative; an identity e would have to satisfy gcd(a, e) = a for every a, which forces e to be a common multiple of every positive integer.",
+    "steps": [
+     "gcd(gcd(a, b), c) = gcd(a, b, c) = gcd(a, gcd(b, c)), so ∗ is associative.",
+     "gcd(a, b) = gcd(b, a), so ∗ is commutative.",
+     "If e were an identity then gcd(a, e) = a for every a ∈ ℤ⁺, so a | e for every a — impossible for a positive integer e. Hence there is no identity element.",
+     "With no identity there are no inverses either, so (ℤ⁺, ∗) is a commutative semigroup and nothing more."
+    ],
+    "final": "Option (C).",
+    "misconception": "1 is offered as the identity because gcd(a, 1) = 1. That equation gives 1, not a, so 1 is the opposite of an identity here: it collapses every element."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> gcd is associative and commutative; an identity e would have to satisfy gcd(a, e) = a for every a, which forces e to be a common multiple of every positive integer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>gcd(gcd(a, b), c) = gcd(a, b, c) = gcd(a, gcd(b, c)), so ∗ is associative.</li><li>gcd(a, b) = gcd(b, a), so ∗ is commutative.</li><li>If e were an identity then gcd(a, e) = a for every a ∈ ℤ⁺, so a | e for every a — impossible for a positive integer e. Hence there is no identity element.</li><li>With no identity there are no inverses either, so (ℤ⁺, ∗) is a commutative semigroup and nothing more.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> 1 is offered as the identity because gcd(a, 1) = 1. That equation gives 1, not a, so 1 is the opposite of an identity here: it collapses every element.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q09",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "semigroups-monoids",
+   "subtopic": "semigroups-monoids",
+   "subtopic_label": "Semigroups & monoids",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Take <code class=\"mm\">ℕ = {0, 1, 2, …}</code>. Which of the following are monoids? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Take <code class=\"mm\">ℕ = {0, 1, 2, …}</code>. Which of the following are monoids? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">(ℤ, −)</code>",
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(2ℤ, ·)</code>, the even integers under multiplication",
+    "<code class=\"mm\">(ℤ, ·)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(ℤ, −)</code>",
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(2ℤ, ·)</code>, the even integers under multiplication",
+    "<code class=\"mm\">(ℤ, ·)</code>"
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "A monoid needs three things: closure, associativity, and an identity element that is a member of the set.",
+    "steps": [
+     "(ℤ, −): subtraction is not associative — (1 − 2) − 3 = −4 but 1 − (2 − 3) = 2 — so it is not even a semigroup.",
+     "(ℕ, +): closed and associative, with identity 0 ∈ ℕ — a monoid.",
+     "(2ℤ, ·): closed (a product of two even integers is even) and associative, but the multiplicative identity 1 is odd, so 1 ∉ 2ℤ and there is no identity — not a monoid.",
+     "(ℤ, ·): closed, associative, identity 1 — a monoid."
+    ],
+    "final": "Options (B) and (D).",
+    "misconception": "Closure under multiplication is mistaken for having an identity: 2ℤ is closed under ·, yet it cannot contain 1, so it is a semigroup only."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A monoid needs three things: closure, associativity, and an identity element that is a member of the set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(ℤ, −): subtraction is not associative — (1 − 2) − 3 = −4 but 1 − (2 − 3) = 2 — so it is not even a semigroup.</li><li>(ℕ, +): closed and associative, with identity 0 ∈ ℕ — a monoid.</li><li>(2ℤ, ·): closed (a product of two even integers is even) and associative, but the multiplicative identity 1 is odd, so 1 ∉ 2ℤ and there is no identity — not a monoid.</li><li>(ℤ, ·): closed, associative, identity 1 — a monoid.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Closure under multiplication is mistaken for having an identity: 2ℤ is closed under ·, yet it cannot contain 1, so it is a semigroup only.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q10",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "semigroups-monoids",
+   "subtopic": "semigroups-monoids",
+   "subtopic_label": "Semigroups & monoids",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let X be a set with exactly 3 elements. How many of the 27 functions X → X are units of the monoid of all functions X → X under composition?",
+   "question_html": "<p class=\"qtext\">Let X be a set with exactly 3 elements. How many of the 27 functions X → X are units of the monoid of all functions X → X under composition?</p>",
+   "options": [],
+   "options_html": [],
+   "answer": 6,
+   "answer_display": "6",
+   "marks": 2,
+   "solution": {
+    "concept": "A unit of the composition monoid is a function with a two-sided inverse, i.e. a bijection; on a finite set the bijections are exactly the permutations.",
+    "steps": [
+     "There are 3³ = 27 functions X → X in total.",
+     "A function on a finite set is invertible exactly when it is injective, and the injective ones are the bijections.",
+     "The bijections number 3! = 6, and each has a two-sided inverse, so 6 units."
+    ],
+    "final": "6",
+    "misconception": "Counting 3² = 9 or all 27 functions. Only permutations are invertible; a function that repeats a value cannot be undone."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A unit of the composition monoid is a function with a two-sided inverse, i.e. a bijection; on a finite set the bijections are exactly the permutations.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>There are 3³ = 27 functions X → X in total.</li><li>A function on a finite set is invertible exactly when it is injective, and the injective ones are the bijections.</li><li>The bijections number 3! = 6, and each has a two-sided inverse, so 6 units.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6</span></p><p class=\"row\"><b>Common misconception.</b> Counting 3² = 9 or all 27 functions. Only permutations are invertible; a function that repeats a value cannot be undone.</p>",
+   "question_format": "text",
+   "nat_answer": 6,
+   "nat_format": "an integer"
+  },
+  {
+   "id": "DM-U12-Q11",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "groups-abelian-groups",
+   "subtopic": "groups-abelian-groups",
+   "subtopic_label": "Groups & abelian groups",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Which one of the following is a group?",
+   "question_html": "<p class=\"qtext\">Which one of the following is a group?</p>",
+   "options": [
+    "<code class=\"mm\">(ℚ⁺, ·)</code>, the positive rationals under multiplication",
+    "<code class=\"mm\">(ℤ, ·)</code>",
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(ℤ, −)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(ℚ⁺, ·)</code>, the positive rationals under multiplication",
+    "<code class=\"mm\">(ℤ, ·)</code>",
+    "<code class=\"mm\">(ℕ, +)</code>",
+    "<code class=\"mm\">(ℤ, −)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A group needs closure, associativity, an identity in the set, and an inverse in the set for every element.",
+    "steps": [
+     "ℚ⁺ is closed under multiplication, multiplication is associative, 1 ∈ ℚ⁺ is the identity, and 1/q ∈ ℚ⁺ is the inverse of q. So (ℚ⁺, ·) is a group.",
+     "(ℤ, ·) fails: 2 has no multiplicative inverse in ℤ.",
+     "(ℕ, +) fails: 3 has no inverse in ℕ, since −3 ∉ ℕ.",
+     "(ℤ, −) fails at associativity: (1 − 2) − 3 = −4 but 1 − (2 − 3) = 2."
+    ],
+    "final": "Option (A).",
+    "misconception": "A closed set with an identity is called a group. Inverses are the axiom that actually fails in three of these four options."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A group needs closure, associativity, an identity in the set, and an inverse in the set for every element.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>ℚ⁺ is closed under multiplication, multiplication is associative, 1 ∈ ℚ⁺ is the identity, and 1/q ∈ ℚ⁺ is the inverse of q. So (ℚ⁺, ·) is a group.</li><li>(ℤ, ·) fails: 2 has no multiplicative inverse in ℤ.</li><li>(ℕ, +) fails: 3 has no inverse in ℕ, since −3 ∉ ℕ.</li><li>(ℤ, −) fails at associativity: (1 − 2) − 3 = −4 but 1 − (2 − 3) = 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> A closed set with an identity is called a group. Inverses are the axiom that actually fails in three of these four options.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q12",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "groups-abelian-groups",
+   "subtopic": "groups-abelian-groups",
+   "subtopic_label": "Groups & abelian groups",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "In the group <code class=\"mm\">(ℤ₁₂, +₁₂)</code>, the order of the element <code class=\"mm\">8</code> is",
+   "question_html": "<p class=\"qtext\">In the group <code class=\"mm\">(ℤ₁₂, +₁₂)</code>, the order of the element <code class=\"mm\">8</code> is</p>",
+   "options": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "In ℤₙ the order of k is n / gcd(n, k), the smallest positive t with tk ≡ 0 (mod n).",
+    "steps": [
+     "gcd(12, 8) = 4, so ord(8) = 12 / 4 = 3.",
+     "Check by adding: 8 + 8 = 16 ≡ 4, and 4 + 8 = 12 ≡ 0, so 3·8 ≡ 0 and no smaller positive multiple is 0."
+    ],
+    "final": "Option (B).",
+    "misconception": "Computing 12/8 or reading “8” as if its order were its size. The order divides |G| = 12, and the formula n/gcd(n, k) gives 3."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In ℤₙ the order of k is n / gcd(n, k), the smallest positive t with tk ≡ 0 (mod n).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>gcd(12, 8) = 4, so ord(8) = 12 / 4 = 3.</li><li>Check by adding: 8 + 8 = 16 ≡ 4, and 4 + 8 = 12 ≡ 0, so 3·8 ≡ 0 and no smaller positive multiple is 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Computing 12/8 or reading “8” as if its order were its size. The order divides |G| = 12, and the formula n/gcd(n, k) gives 3.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q13",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "groups-abelian-groups",
+   "subtopic": "groups-abelian-groups",
+   "subtopic_label": "Groups & abelian groups",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let G be a finite group with identity e. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let G be a finite group with identity e. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "If <code class=\"mm\">x² = e</code> for every x ∈ G, then G is abelian.",
+    "The order of every element of G divides |G|.",
+    "Every group of order 4 is cyclic.",
+    "<code class=\"mm\">(ab)⁻¹ = a⁻¹b⁻¹</code> for all a, b ∈ G."
+   ],
+   "options_html": [
+    "If <code class=\"mm\">x² = e</code> for every x ∈ G, then G is abelian.",
+    "The order of every element of G divides |G|.",
+    "Every group of order 4 is cyclic.",
+    "<code class=\"mm\">(ab)⁻¹ = a⁻¹b⁻¹</code> for all a, b ∈ G."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "marks": 2,
+   "solution": {
+    "concept": "Order facts in finite groups come from Lagrange's theorem, and the inverse of a product reverses the order of the factors.",
+    "steps": [
+     "(A) is true: if x² = e then x = x⁻¹, so ab = (ab)⁻¹ = b⁻¹a⁻¹ = ba and G is abelian.",
+     "(B) is true: the order of x is |⟨x⟩|, the size of a subgroup, and Lagrange's theorem says that size divides |G|.",
+     "(C) is false: the Klein four-group V₄ = {e, a, b, ab} with a² = b² = e has no element of order 4.",
+     "(D) is false: the correct rule is (ab)⁻¹ = b⁻¹a⁻¹, and (D) holds only in an abelian group."
+    ],
+    "final": "Options (A) and (B).",
+    "misconception": "(D) is accepted because the inverse “looks distributive”. Inverting a product reverses the factors — the socks-and-shoes rule — and equality needs commutativity."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Order facts in finite groups come from Lagrange's theorem, and the inverse of a product reverses the order of the factors.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: if x² = e then x = x⁻¹, so ab = (ab)⁻¹ = b⁻¹a⁻¹ = ba and G is abelian.</li><li>(B) is true: the order of x is |⟨x⟩|, the size of a subgroup, and Lagrange's theorem says that size divides |G|.</li><li>(C) is false: the Klein four-group V₄ = {e, a, b, ab} with a² = b² = e has no element of order 4.</li><li>(D) is false: the correct rule is (ab)⁻¹ = b⁻¹a⁻¹, and (D) holds only in an abelian group.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> (D) is accepted because the inverse “looks distributive”. Inverting a product reverses the factors — the socks-and-shoes rule — and equality needs commutativity.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q14",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "groups-abelian-groups",
+   "subtopic": "groups-abelian-groups",
+   "subtopic_label": "Groups & abelian groups",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let G be a group of order 6. Which one of the following statements is true?",
+   "question_html": "<p class=\"qtext\">Let G be a group of order 6. Which one of the following statements is true?</p>",
+   "options": [
+    "G must be cyclic.",
+    "G must be abelian.",
+    "G is either cyclic or isomorphic to <code class=\"mm\">S₃</code>.",
+    "G has exactly one element of order 2."
+   ],
+   "options_html": [
+    "G must be cyclic.",
+    "G must be abelian.",
+    "G is either cyclic or isomorphic to <code class=\"mm\">S₃</code>.",
+    "G has exactly one element of order 2."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "Groups of order 6 are classified: up to isomorphism there are exactly two, ℤ₆ and S₃.",
+    "steps": [
+     "By Cauchy's theorem G has an element a of order 2 and an element b of order 3.",
+     "If G is abelian, ab has order 6, so G = ⟨ab⟩ ≅ ℤ₆.",
+     "If G is not abelian, the subgroup ⟨b⟩ has index 2 and is therefore normal; the conjugation action on its two cosets gives an injective homomorphism G → S₃, which is an isomorphism since both sides have order 6. So G ≅ S₃.",
+     "ℤ₆ has exactly one element of order 2, but S₃ has three transpositions, so (D) fails; (A) and (B) fail for S₃."
+    ],
+    "final": "Option (C).",
+    "misconception": "“The order 6 = 2 · 3 is square-free, so the group is cyclic” is a common over-generalisation. The cyclic conclusion needs p ∤ (q − 1); here 2 | (3 − 1), and S₃ is exactly the exception."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Groups of order 6 are classified: up to isomorphism there are exactly two, ℤ₆ and S₃.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>By Cauchy's theorem G has an element a of order 2 and an element b of order 3.</li><li>If G is abelian, ab has order 6, so G = ⟨ab⟩ ≅ ℤ₆.</li><li>If G is not abelian, the subgroup ⟨b⟩ has index 2 and is therefore normal; the conjugation action on its two cosets gives an injective homomorphism G → S₃, which is an isomorphism since both sides have order 6. So G ≅ S₃.</li><li>ℤ₆ has exactly one element of order 2, but S₃ has three transpositions, so (D) fails; (A) and (B) fail for S₃.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C).</span></p><p class=\"row\"><b>Common misconception.</b> “The order 6 = 2 · 3 is square-free, so the group is cyclic” is a common over-generalisation. The cyclic conclusion needs p ∤ (q − 1); here 2 | (3 − 1), and S₃ is exactly the exception.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q15",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "groups-abelian-groups",
+   "subtopic": "groups-abelian-groups",
+   "subtopic_label": "Groups & abelian groups",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "In the group <code class=\"mm\">(ℤ₁₈, +₁₈)</code>, how many elements have order exactly 6?",
+   "question_html": "<p class=\"qtext\">In the group <code class=\"mm\">(ℤ₁₈, +₁₈)</code>, how many elements have order exactly 6?</p>",
+   "options": [],
+   "options_html": [],
+   "answer": 2,
+   "answer_display": "2",
+   "marks": 2,
+   "solution": {
+    "concept": "In ℤₙ the elements of order d (where d | n) number φ(d); equivalently k has order n/gcd(n, k).",
+    "steps": [
+     "We need 18 / gcd(18, k) = 6, i.e. gcd(18, k) = 3.",
+     "The k in {0, …, 17} with gcd(18, k) = 3 are k = 3 and k = 15.",
+     "Check: 3, 6, 9, 12, 15, 18 ≡ 0, so 6·3 ≡ 0 and no smaller multiple is 0 — order 6. Likewise 15 + 15 = 12, 9, 6, 3, 0 — order 6.",
+     "The count is φ(6) = 2."
+    ],
+    "final": "2",
+    "misconception": "Answering 6 (the order itself) or counting all six multiples of 3, which include elements of orders 2 and 3. Only φ(6) = 2 of them have order exactly 6."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In ℤₙ the elements of order d (where d | n) number φ(d); equivalently k has order n/gcd(n, k).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>We need 18 / gcd(18, k) = 6, i.e. gcd(18, k) = 3.</li><li>The k in {0, …, 17} with gcd(18, k) = 3 are k = 3 and k = 15.</li><li>Check: 3, 6, 9, 12, 15, 18 ≡ 0, so 6·3 ≡ 0 and no smaller multiple is 0 — order 6. Likewise 15 + 15 = 12, 9, 6, 3, 0 — order 6.</li><li>The count is φ(6) = 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6 (the order itself) or counting all six multiples of 3, which include elements of orders 2 and 3. Only φ(6) = 2 of them have order exactly 6.</p>",
+   "question_format": "text",
+   "nat_answer": 2,
+   "nat_format": "an integer"
+  },
+  {
+   "id": "DM-U12-Q16",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "The number of subgroups of the cyclic group <code class=\"mm\">(ℤ₁₂, +₁₂)</code> is",
+   "question_html": "<p class=\"qtext\">The number of subgroups of the cyclic group <code class=\"mm\">(ℤ₁₂, +₁₂)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">12</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "A cyclic group of order n has exactly one subgroup for each divisor of n, so the number of subgroups equals the number of divisors of n.",
+    "steps": [
+     "The divisors of 12 are 1, 2, 3, 4, 6, 12 — six of them.",
+     "The corresponding subgroups are ⟨0⟩, ⟨6⟩, ⟨4⟩, ⟨3⟩, ⟨2⟩, ⟨1⟩, of orders 1, 2, 3, 4, 6, 12.",
+     "So there are 6 subgroups."
+    ],
+    "final": "Option (B).",
+    "misconception": "Counting the generators (φ(12) = 4) or all twelve elements. Subgroups correspond to divisors, and 12 has six divisors."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A cyclic group of order n has exactly one subgroup for each divisor of n, so the number of subgroups equals the number of divisors of n.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The divisors of 12 are 1, 2, 3, 4, 6, 12 — six of them.</li><li>The corresponding subgroups are ⟨0⟩, ⟨6⟩, ⟨4⟩, ⟨3⟩, ⟨2⟩, ⟨1⟩, of orders 1, 2, 3, 4, 6, 12.</li><li>So there are 6 subgroups.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Counting the generators (φ(12) = 4) or all twelve elements. Subgroups correspond to divisors, and 12 has six divisors.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q17",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "The number of generators of the cyclic group <code class=\"mm\">(ℤ₂₄, +₂₄)</code> is",
+   "question_html": "<p class=\"qtext\">The number of generators of the cyclic group <code class=\"mm\">(ℤ₂₄, +₂₄)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">16</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">16</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "In ℤₙ the element k generates the whole group exactly when gcd(k, n) = 1, so the generators number φ(n).",
+    "steps": [
+     "φ(24) = 24 · (1 − 1/2) · (1 − 1/3) = 24 · 1/2 · 2/3 = 8.",
+     "The generators are 1, 5, 7, 11, 13, 17, 19, 23 — the residues coprime to 24.",
+     "Each of them has order 24 and therefore generates the group."
+    ],
+    "final": "Option (A).",
+    "misconception": "Answering 12 (half of the elements) or listing the primes below 24. Coprimality with 24, not primality, is the criterion."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In ℤₙ the element k generates the whole group exactly when gcd(k, n) = 1, so the generators number φ(n).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>φ(24) = 24 · (1 − 1/2) · (1 − 1/3) = 24 · 1/2 · 2/3 = 8.</li><li>The generators are 1, 5, 7, 11, 13, 17, 19, 23 — the residues coprime to 24.</li><li>Each of them has order 24 and therefore generates the group.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 12 (half of the elements) or listing the primes below 24. Coprimality with 24, not primality, is the criterion.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q18",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let G be a finite group. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let G be a finite group. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "Every subgroup of a cyclic group is cyclic.",
+    "The union of two subgroups of G is always a subgroup of G.",
+    "The intersection of two subgroups of G is a subgroup of G.",
+    "A subgroup of index 2 in G is normal in G."
+   ],
+   "options_html": [
+    "Every subgroup of a cyclic group is cyclic.",
+    "The union of two subgroups of G is always a subgroup of G.",
+    "The intersection of two subgroups of G is a subgroup of G.",
+    "A subgroup of index 2 in G is normal in G."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Subgroups inherit structure under intersection but not under union, and index 2 is special because there is only one other coset.",
+    "steps": [
+     "(A) is true: if H ≤ ⟨g⟩ then H = ⟨g^d⟩ for some d, so H is cyclic.",
+     "(B) is false: in ℤ₆ the subgroups {0, 2, 4} and {0, 3} have union {0, 2, 3, 4}, and 2 + 3 = 5 is not in it, so the union is not closed.",
+     "(C) is true: the intersection contains e, and is closed under products and inverses.",
+     "(D) is true: if [G : H] = 2 the two left cosets are H and G − H, which are also the two right cosets, so gH = Hg for every g."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "misconception": "The union is expected to behave like the intersection. Closure fails as soon as two elements from different subgroups are combined; a union of subgroups is a subgroup only when one contains the other."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Subgroups inherit structure under intersection but not under union, and index 2 is special because there is only one other coset.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: if H ≤ ⟨g⟩ then H = ⟨g^d⟩ for some d, so H is cyclic.</li><li>(B) is false: in ℤ₆ the subgroups {0, 2, 4} and {0, 3} have union {0, 2, 3, 4}, and 2 + 3 = 5 is not in it, so the union is not closed.</li><li>(C) is true: the intersection contains e, and is closed under products and inverses.</li><li>(D) is true: if [G : H] = 2 the two left cosets are H and G − H, which are also the two right cosets, so gH = Hg for every g.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> The union is expected to behave like the intersection. Closure fails as soon as two elements from different subgroups are combined; a union of subgroups is a subgroup only when one contains the other.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q19",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "In the group <code class=\"mm\">G = ℤ₂ × ℤ₄</code>, how many elements have order 4?",
+   "question_html": "<p class=\"qtext\">In the group <code class=\"mm\">G = ℤ₂ × ℤ₄</code>, how many elements have order 4?</p>",
+   "options": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "In a direct product ord(a, b) = lcm(ord(a), ord(b)); order 4 therefore needs a component of order 4.",
+    "steps": [
+     "For a ∈ ℤ₂, ord(a) ∈ {1, 2}; for b ∈ ℤ₄, ord(b) ∈ {1, 2, 4}.",
+     "lcm(ord a, ord b) = 4 requires ord(b) = 4, i.e. b ∈ {1, 3}, while a may be 0 or 1.",
+     "That gives 2 × 2 = 4 elements: (0, 1), (0, 3), (1, 1), (1, 3).",
+     "Note G is not cyclic — it has no element of order 8 — yet it does have elements of order 4."
+    ],
+    "final": "Option (D).",
+    "misconception": "Treating the product as if it were ℤ₈ and answering φ(4) = 2. In a non-cyclic group the number of elements of a given order is not φ of that order."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a direct product ord(a, b) = lcm(ord(a), ord(b)); order 4 therefore needs a component of order 4.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For a ∈ ℤ₂, ord(a) ∈ {1, 2}; for b ∈ ℤ₄, ord(b) ∈ {1, 2, 4}.</li><li>lcm(ord a, ord b) = 4 requires ord(b) = 4, i.e. b ∈ {1, 3}, while a may be 0 or 1.</li><li>That gives 2 × 2 = 4 elements: (0, 1), (0, 3), (1, 1), (1, 3).</li><li>Note G is not cyclic — it has no element of order 8 — yet it does have elements of order 4.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Treating the product as if it were ℤ₈ and answering φ(4) = 2. In a non-cyclic group the number of elements of a given order is not φ of that order.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q20",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "How many subgroups of order 2 does the group <code class=\"mm\">ℤ₂ × ℤ₂ × ℤ₂</code> have?",
+   "question_html": "<p class=\"qtext\">How many subgroups of order 2 does the group <code class=\"mm\">ℤ₂ × ℤ₂ × ℤ₂</code> have?</p>",
+   "options": [],
+   "options_html": [],
+   "answer": 7,
+   "answer_display": "7",
+   "marks": 2,
+   "solution": {
+    "concept": "In an elementary abelian 2-group every non-identity element has order 2, and distinct elements span distinct subgroups of order 2.",
+    "steps": [
+     "The group has 2³ = 8 elements, of which 7 are different from the identity.",
+     "Every non-identity element x satisfies x + x = 0, so {0, x} is a subgroup of order 2.",
+     "If {0, x} = {0, y} then x = y, so the seven non-identity elements give seven distinct subgroups.",
+     "The identity spans nothing of order 2, so the count is exactly 7."
+    ],
+    "final": "7",
+    "misconception": "Answering 3 (the number of factors) or 8 (all elements). One subgroup is lost because the identity generates only the trivial subgroup."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In an elementary abelian 2-group every non-identity element has order 2, and distinct elements span distinct subgroups of order 2.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The group has 2³ = 8 elements, of which 7 are different from the identity.</li><li>Every non-identity element x satisfies x + x = 0, so {0, x} is a subgroup of order 2.</li><li>If {0, x} = {0, y} then x = y, so the seven non-identity elements give seven distinct subgroups.</li><li>The identity spans nothing of order 2, so the count is exactly 7.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 7</span></p><p class=\"row\"><b>Common misconception.</b> Answering 3 (the number of factors) or 8 (all elements). One subgroup is lost because the identity generates only the trivial subgroup.</p>",
+   "question_format": "text",
+   "nat_answer": 7,
+   "nat_format": "an integer"
+  },
+  {
+   "id": "DM-U12-Q21",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "subgroups-cyclic-groups",
+   "subtopic": "subgroups-cyclic-groups",
+   "subtopic_label": "Subgroups & cyclic groups",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let <code class=\"mm\">G = (ℤ₁₀₀, +)</code> and <code class=\"mm\">H = ⟨25⟩</code>. The index <code class=\"mm\">[G : H]</code> is",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">G = (ℤ₁₀₀, +)</code> and <code class=\"mm\">H = ⟨25⟩</code>. The index <code class=\"mm\">[G : H]</code> is</p>",
+   "options": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">20</code>",
+    "<code class=\"mm\">25</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">20</code>",
+    "<code class=\"mm\">25</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "For a finite group, [G : H] = |G| / |H| — the index counts cosets, not elements of H.",
+    "steps": [
+     "⟨25⟩ = {0, 25, 50, 75}, so |H| = 4.",
+     "|G| = 100, so [G : H] = 100 / 4 = 25.",
+     "Equivalently, the cosets are 25 + k for k = 0, …, 24, giving 25 of them."
+    ],
+    "final": "Option (D).",
+    "misconception": "Answering 4, which is |H|. The index is the number of cosets, and there are 25 of them because each coset holds 4 elements."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a finite group, [G : H] = |G| / |H| — the index counts cosets, not elements of H.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>⟨25⟩ = {0, 25, 50, 75}, so |H| = 4.</li><li>|G| = 100, so [G : H] = 100 / 4 = 25.</li><li>Equivalently, the cosets are 25 + k for k = 0, …, 24, giving 25 of them.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4, which is |H|. The index is the number of cosets, and there are 25 of them because each coset holds 4 elements.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q22",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "homomorphisms-isomorphisms",
+   "subtopic": "homomorphisms-isomorphisms",
+   "subtopic_label": "Homomorphisms & isomorphisms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let <code class=\"mm\">f : G → H</code> be a group homomorphism. Then <code class=\"mm\">f(e_G)</code> is",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">f : G → H</code> be a group homomorphism. Then <code class=\"mm\">f(e_G)</code> is</p>",
+   "options": [
+    "the identity element of H",
+    "an element of H of order 2",
+    "the identity of H only when f is injective",
+    "any element of H that commutes with every element of im f"
+   ],
+   "options_html": [
+    "the identity element of H",
+    "an element of H of order 2",
+    "the identity of H only when f is injective",
+    "any element of H that commutes with every element of im f"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A homomorphism preserves the operation, and the identity is definable from the operation, so it must be preserved too.",
+    "steps": [
+     "f(e) = f(e · e) = f(e) · f(e).",
+     "Multiplying both sides on the left by f(e)⁻¹ gives e_H = f(e).",
+     "No injectivity is used, so f(e_G) is always e_H."
+    ],
+    "final": "Option (A).",
+    "misconception": "Injectivity is thought to be needed before the identity is preserved. Injectivity is needed for the converse direction: ker f = {e} ⟹ f is injective."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A homomorphism preserves the operation, and the identity is definable from the operation, so it must be preserved too.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>f(e) = f(e · e) = f(e) · f(e).</li><li>Multiplying both sides on the left by f(e)⁻¹ gives e_H = f(e).</li><li>No injectivity is used, so f(e_G) is always e_H.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Injectivity is thought to be needed before the identity is preserved. Injectivity is needed for the converse direction: ker f = {e} ⟹ f is injective.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q23",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "homomorphisms-isomorphisms",
+   "subtopic": "homomorphisms-isomorphisms",
+   "subtopic_label": "Homomorphisms & isomorphisms",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "The number of group homomorphisms from <code class=\"mm\">(ℤ₁₂, +)</code> to <code class=\"mm\">(ℤ₁₈, +)</code> is",
+   "question_html": "<p class=\"qtext\">The number of group homomorphisms from <code class=\"mm\">(ℤ₁₂, +)</code> to <code class=\"mm\">(ℤ₁₈, +)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "A homomorphism out of ℤ_m is fixed by f(1), and f(1) = a is legal exactly when m·a ≡ 0 (mod n); the number of legal a is gcd(m, n).",
+    "steps": [
+     "Any homomorphism satisfies f(k) = k · a mod 18 where a = f(1).",
+     "The relation 12 · a ≡ 0 (mod 18) means 18 | 12a, i.e. 3 | 2a, i.e. 3 | a.",
+     "So a ∈ {0, 3, 6, 9, 12, 15} — six choices, and each gives a genuine homomorphism.",
+     "gcd(12, 18) = 6 confirms the count."
+    ],
+    "final": "Option (D).",
+    "misconception": "Answering 18 (all possible images of 1) or 12 (the size of the domain). The image of 1 is restricted by the order relation 12 · f(1) = 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A homomorphism out of ℤ_m is fixed by f(1), and f(1) = a is legal exactly when m·a ≡ 0 (mod n); the number of legal a is gcd(m, n).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Any homomorphism satisfies f(k) = k · a mod 18 where a = f(1).</li><li>The relation 12 · a ≡ 0 (mod 18) means 18 | 12a, i.e. 3 | 2a, i.e. 3 | a.</li><li>So a ∈ {0, 3, 6, 9, 12, 15} — six choices, and each gives a genuine homomorphism.</li><li>gcd(12, 18) = 6 confirms the count.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 18 (all possible images of 1) or 12 (the size of the domain). The image of 1 is restricted by the order relation 12 · f(1) = 0.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q24",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "homomorphisms-isomorphisms",
+   "subtopic": "homomorphisms-isomorphisms",
+   "subtopic_label": "Homomorphisms & isomorphisms",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "Let <code class=\"mm\">f : G → H</code> be a group homomorphism with kernel K. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">f : G → H</code> be a group homomorphism with kernel K. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "K is a normal subgroup of G.",
+    "f is injective if and only if K = {e_G}.",
+    "im f is always a normal subgroup of H.",
+    "The order of f(g) divides the order of g."
+   ],
+   "options_html": [
+    "K is a normal subgroup of G.",
+    "f is injective if and only if K = {e_G}.",
+    "im f is always a normal subgroup of H.",
+    "The order of f(g) divides the order of g."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "The kernel is where a homomorphism loses information; the first isomorphism theorem makes that precise, and normality of the kernel is automatic while normality of the image is not.",
+    "steps": [
+     "(A) is true: for k ∈ K and g ∈ G, f(gkg⁻¹) = f(g)·e_H·f(g)⁻¹ = e_H, so gKg⁻¹ ⊆ K.",
+     "(B) is true: f(a) = f(b) ⟺ f(ab⁻¹) = e_H ⟺ ab⁻¹ ∈ K, so f is injective exactly when K = {e}.",
+     "(C) is false: the image is normal in H only when f is onto (or H is abelian). The inclusion of ⟨(1 2)⟩ in S₃ has image {e, (1 2)}, which is not normal in S₃.",
+     "(D) is true: f(g)^n = f(g^n), so f(g)^ord(g) = e_H, and the order of f(g) divides ord(g)."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "misconception": "(C) is accepted by analogy with (A). Normality of the kernel holds for every homomorphism; normality of the image requires surjectivity."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The kernel is where a homomorphism loses information; the first isomorphism theorem makes that precise, and normality of the kernel is automatic while normality of the image is not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: for k ∈ K and g ∈ G, f(gkg⁻¹) = f(g)·e_H·f(g)⁻¹ = e_H, so gKg⁻¹ ⊆ K.</li><li>(B) is true: f(a) = f(b) ⟺ f(ab⁻¹) = e_H ⟺ ab⁻¹ ∈ K, so f is injective exactly when K = {e}.</li><li>(C) is false: the image is normal in H only when f is onto (or H is abelian). The inclusion of ⟨(1 2)⟩ in S₃ has image {e, (1 2)}, which is not normal in S₃.</li><li>(D) is true: f(g)^n = f(g^n), so f(g)^ord(g) = e_H, and the order of f(g) divides ord(g).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> (C) is accepted by analogy with (A). Normality of the kernel holds for every homomorphism; normality of the image requires surjectivity.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-U12-Q25",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 12,
+   "unit_number": 12,
+   "unit_slug": "algebraic-structures",
+   "unit_name": "Algebraic Structures",
+   "topic": "Algebraic Structures",
+   "sub": "homomorphisms-isomorphisms",
+   "subtopic": "homomorphisms-isomorphisms",
+   "subtopic_label": "Homomorphisms & isomorphisms",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2",
+   "run": 18,
+   "run_date": "2026-11-02",
+   "question": "How many isomorphisms are there from the group <code class=\"mm\">(ℤ₈, +)</code> onto itself?",
+   "question_html": "<p class=\"qtext\">How many isomorphisms are there from the group <code class=\"mm\">(ℤ₈, +)</code> onto itself?</p>",
+   "options": [],
+   "options_html": [],
+   "answer": 4,
+   "answer_display": "4",
+   "marks": 2,
+   "solution": {
+    "concept": "An isomorphism ℤ₈ → ℤ₈ must send 1 to an element that also generates ℤ₈, and every generator determines exactly one automorphism.",
+    "steps": [
+     "If f is an isomorphism then f(1) = a must have order 8, so gcd(a, 8) = 1, i.e. a ∈ {1, 3, 5, 7}.",
+     "Conversely, for each such a the map k ↦ a·k is an automorphism: it is a homomorphism, and it is invertible because a has an inverse mod 8.",
+     "So the count is φ(8) = 4."
+    ],
+    "final": "4",
+    "misconception": "Answering 8 (all elements). An isomorphism preserves element orders, so only the four generators can be the image of 1."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An isomorphism ℤ₈ → ℤ₈ must send 1 to an element that also generates ℤ₈, and every generator determines exactly one automorphism.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If f is an isomorphism then f(1) = a must have order 8, so gcd(a, 8) = 1, i.e. a ∈ {1, 3, 5, 7}.</li><li>Conversely, for each such a the map k ↦ a·k is an automorphism: it is a homomorphism, and it is invertible because a has an inverse mod 8.</li><li>So the count is φ(8) = 4.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Answering 8 (all elements). An isomorphism preserves element orders, so only the four generators can be the image of 1.</p>",
+   "question_format": "text",
+   "nat_answer": 4,
+   "nat_format": "an integer"
   }
  ]
 }
