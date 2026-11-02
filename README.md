@@ -7,36 +7,77 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 5 — Binary Search Trees & Balanced Trees, Set 1 of 2 (second pass)**,
-  2026-11-03 →
-  [`programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html`](programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html)
+- **Digital Logic · Unit 2 — Combinational Circuit Design, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: BST insertion & deletion (8) · AVL trees & rotations (7) · B-trees & B+ trees (5) · Trie basics (5)
+- Subtopics: adders & subtractors (5) · multiplexers & demultiplexers (5) · decoders & encoders (5) ·
+  code converters (5) · hazards & glitches (5)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 4 — **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 18, unit 4, trees-traversals, Set 1 of 2 (second pass)}`. Unit 4 held **75** questions, above
-  `UNIT_QUESTION_CAP = 50`, so rule B3 failed on the cap and step B4 advanced exactly one unit:
-  `(3 + 1) mod 7 = 4` → **Unit 5, search-trees**. Unit 5 already held 50 questions from 2026-10-29, so this paper
-  opens the unit's second pass as **Set 1 of 2**. No override, no partial set, exactly 25 questions.
-- Superseded: the 2026-10-29 Set 2 paper moved to
-  `programming-data-structures/search-trees/archive/gate_ds_mock_5_2026-10-29_run2.html` with its content frozen, so
+  index 2 — **Digital Logic**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 13, unit 1, number-systems, Set 2 of 2 (second pass)}`. Unit 1 held **100** questions, above
+  `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, eight days earlier, so rule B3 failed on both
+  tests and step B4 advanced exactly one unit: `(0 + 1) mod 4 = 1` → **Unit 2, combinational-circuits**. Unit 2
+  already held 75 questions, so this paper closes the unit's second pass as **Set 2 of 2**. No override, no
+  partial set, exactly 25 questions.
+- Superseded: the 2026-11-01 Set 1 paper moved to
+  `digital-logic/combinational-circuits/archive/gate_dl_mock_2_2026-11-01_run1.html` with its content frozen, so
   the unit folder holds exactly one current paper.
-- Previous test: **Programming and Data Structures · Unit 4 — Binary Trees & Tree Traversals, Set 1 of 2 (second
-  pass)**, 2026-11-02 →
-  [`programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html`](programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html)
+- Previous test: **Programming and Data Structures · Unit 5 — Binary Search Trees & Balanced Trees, Set 1 of 2
+  (second pass)**, 2026-11-03 →
+  [`programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html`](programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 187 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 68 current · 119 archived |
+| Papers published (current + archived) | 188 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 68 current · 120 archived |
 | Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4675 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4700 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 350 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 119 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 120 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 10 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Digital Logic Unit 2, Set 2 of 2 (second pass)
+
+- New paper at `digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-03.html`. The 2026-11-01 Set 1 paper
+  moved to `digital-logic/combinational-circuits/archive/gate_dl_mock_2_2026-11-01_run1.html` with its content
+  frozen, so the unit folder holds exactly one current paper and the repository root holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 2 — **Digital Logic**. The most recent paper in `runs[]` was `{2026-11-02, run 13, unit 1,
+  number-systems, Set 2 of 2 (second pass)}`. Unit 1 held **100** questions, above `UNIT_QUESTION_CAP = 50`, and
+  had been current since 2026-10-26 (eight days), so B3 failed on both the cap and the backstop and **B4 advanced
+  exactly one unit**: (0 + 1) mod 4 = 1 → **Unit 2, Combinational Circuit Design**. Unit 2 held 75 questions, so
+  this paper is **Set 2 of 2 (second pass)** and the unit now stands at 100. No override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All five unit subtopics at five questions each: adders & subtractors 5 · multiplexers &
+  demultiplexers 5 · decoders & encoders 5 · code converters 5 · hazards & glitches 5. Difficulty 10 easy /
+  10 medium / 5 hard.
+- **What the set asks.** Adders: a half subtractor with A = 0, B = 1 (**D = 1, B_out = 1**), a 4-bit
+  adder–subtractor on 0101 − 0011 (**sum 0010, C4 = 1**), the five-bit value of 1001 + 0110 (**15**), an MSQ on
+  borrow and difference logic, and the worst-case carry path of a blocked carry-skip adder (**17 ns**).
+  Multiplexers: steering a demultiplexer data input to **O2**, a 4-to-1 implementation of Σm(0,1,2,4) with
+  select AB (**D3D2D1D0 = 0, C′, C′, 1**), the size of a 4-to-1 tree for 16-to-1 (**5**), an MSQ on selector
+  properties, and a 4-to-1 implementation of a 4-variable function (**I0 = I2 = (C·D)′, I1 = I3 = C + D**).
+  Decoders: the LOW output of an active-low 2-to-4 decoder (**O1′**), a 4-to-16 cascade from 2-to-4 devices
+  (**5**), the same target from 3-to-8 devices (**2**), an MSQ on decoder and encoder properties, and a
+  product-of-maxterms realisation (**NAND of O0, O3, O5, O10, O12, O15**). Codes: binary 0110 to Gray (**0101**),
+  Gray 0101 back to binary (**0110**), the gate count of a 4-bit Gray converter (**3**), an MSQ on decimal codes,
+  and the carry of an excess-3 to BCD converter (**always 1**). Hazards: the condition for a hazard, the consensus
+  sum term of (A+B)(A′+C) (**B + C**), the width of a glitch (**2 ns**), an MSQ on hazard classification, and the
+  transition that exposes a static-1 hazard in A′C′ + BC (**C changing with A = 0, B = 1**).
+- **Verification.** Every answer was recomputed from its truth table or arithmetic before the paper was written:
+  the two multiplexer implementations were checked minterm by minterm, the maxterm NAND against ΠM, the hazard
+  transition against the term that holds the output on each side, and the Gray conversions bit by bit. The paper
+  reproduces the previous paper's `<style>` block and its script byte for byte, and its `<div>` nesting matches
+  the archived paper exactly (same single inherited `<head>` quirk as every other paper in the series).
+- **Known issue carried forward.** `data/questions-computer-architecture.js`, `data/questions-programming-data-structures.js`
+  and `data/questions-computer-networks.js` were left by earlier runs with a trailing `]` (the first two) or a
+  truncated tail (the third). `data/questions-digital-logic.js` is rewritten well-formed by this run; the other
+  three are untouched and need the same repair.
 
 ### 2026-11-03 — Programming and Data Structures Unit 5, Set 1 of 2 (second pass)
 
@@ -9622,7 +9663,7 @@ Algorithms:
 | # | Unit | Slug | Questions in bank | Covered |
 | --- | --- | --- | --- | --- |
 | 1 | Number Systems & Representation | `number-systems` | 50 | yes |
-| 2 | Combinational Circuit Design | `combinational-circuits` | 75 | yes |
+| 2 | Combinational Circuit Design | `combinational-circuits` | 100 | yes |
 | 3 | Sequential Circuits: Flip-Flops & Registers | `sequential-flipflops` | 50 | yes |
 | 4 | Sequential Circuits: Counters & State Machines | `sequential-fsm-counters` | 50 | yes |
 
