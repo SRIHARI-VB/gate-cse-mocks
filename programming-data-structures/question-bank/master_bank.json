@@ -6,7 +6,7 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 425,
+  "total_questions": 450,
   "units_with_questions": [
    1,
    2,
@@ -16,7 +16,7 @@
    6,
    7
   ],
-  "total_runs": 17
+  "total_runs": 18
  },
  "runs": [
   {
@@ -1015,6 +1015,66 @@
     "DS-U3-Q75"
    ],
    "note": "Second pass for Unit 3: the unit already held 50 questions from 2026-10-28."
+  },
+  {
+   "run": 18,
+   "date": "2026-11-02",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html",
+   "archived_previous": "programming-data-structures/trees-traversals/archive/gate_ds_mock_4_2026-10-28_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "binary-tree-properties": 7,
+    "tree-traversals-inorder-pre-post": 8,
+    "threaded-binary-trees": 5,
+    "expression-trees": 5
+   },
+   "question_ids": [
+    "DS-U4-S3-Q01",
+    "DS-U4-S3-Q02",
+    "DS-U4-S3-Q03",
+    "DS-U4-S3-Q04",
+    "DS-U4-S3-Q05",
+    "DS-U4-S3-Q06",
+    "DS-U4-S3-Q07",
+    "DS-U4-S3-Q08",
+    "DS-U4-S3-Q09",
+    "DS-U4-S3-Q10",
+    "DS-U4-S3-Q11",
+    "DS-U4-S3-Q12",
+    "DS-U4-S3-Q13",
+    "DS-U4-S3-Q14",
+    "DS-U4-S3-Q15",
+    "DS-U4-S3-Q16",
+    "DS-U4-S3-Q17",
+    "DS-U4-S3-Q18",
+    "DS-U4-S3-Q19",
+    "DS-U4-S3-Q20",
+    "DS-U4-S3-Q21",
+    "DS-U4-S3-Q22",
+    "DS-U4-S3-Q23",
+    "DS-U4-S3-Q24",
+    "DS-U4-S3-Q25"
+   ],
+   "note": "Second pass for Unit 4: the unit already held 50 questions from 2026-10-28. Unit 3 had reached 75 (cap 50), so step B4 advanced one unit; every unit of the subject is at or above the cap, so the series is on its second pass."
   }
  ],
  "verified_pyqs": [],
@@ -17041,6 +17101,1169 @@
     "takeaway": "One pointer suffices for both ends when the list is circular: keep it at the rear."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A circular list makes the last node and the first node neighbours, so a single pointer to the last node gives immediate access to both ends.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Enqueue: create a node, link it after <code class=\"mm\">rear</code>, then set <code class=\"mm\">rear</code> to the new node — a fixed number of writes.</li><li>Dequeue: the front is <code class=\"mm\">rear->next</code>, so unlink that node by setting <code class=\"mm\">rear->next = front->next</code> — again a fixed number of writes.</li><li>The one special case is a single-element queue, where the front and the rear are the same node; the code then has to reset <code class=\"mm\">rear</code> to NULL, which is still Θ(1).</li><li>Neither operation walks the list, so both are Θ(1).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: option (D).</span></p><p class=\"row\"><b>Common trap.</b> Expecting dequeue to be expensive because a plain singly linked list with only a head pointer cannot reach the tail cheaply. Here the pointer is to the *rear* of a *circular* list, which makes the front the next node along.</p><p class=\"row\"><b>Takeaway.</b> One pointer suffices for both ends when the list is circular: keep it at the rear.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q01",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The height of a binary tree is the number of edges on the longest path from the root down to a leaf, and the root sits at level 0. What is the largest number of nodes a binary tree of height 6 can have?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">The height of a binary tree is the number of edges on the longest path from the root down to a leaf, and the root sits at level 0. What is the largest number of nodes a binary tree of height 6 can have?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">63</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">64</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">127</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">128</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "63",
+    "64",
+    "127",
+    "128"
+   ],
+   "options_html": [
+    "63",
+    "64",
+    "127",
+    "128"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Level <i>i</i> of a binary tree holds at most 2<sup><i>i</i></sup> nodes, so a tree of height <i>h</i> holds at most 2<sup><i>h</i>+1</sup> &minus; 1 nodes, the count for a perfect tree in which every level is completely filled.",
+    "steps": [
+     "Level 0 holds 1 node, level 1 holds at most 2, level 2 at most 4, and so on up to level 6.",
+     "The sum is 1 + 2 + 4 + 8 + 16 + 32 + 64, a geometric series with 7 terms.",
+     "1 + 2 + 4 + 8 + 16 + 32 + 64 = 2<sup>7</sup> &minus; 1 = 127."
+    ],
+    "final": "Answer: 127 nodes, option (C).",
+    "trap": "Answering 64, the capacity of the last level alone, or 128, which is 2<sup>7</sup> and counts one level too many. The exponent is <i>h</i> + 1 because levels are numbered from 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Level <i>i</i> of a binary tree holds at most 2<sup><i>i</i></sup> nodes, so a tree of height <i>h</i> holds at most 2<sup><i>h</i>+1</sup> &minus; 1 nodes, the count for a perfect tree in which every level is completely filled.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Level 0 holds 1 node, level 1 holds at most 2, level 2 at most 4, and so on up to level 6.</li><li>The sum is 1 + 2 + 4 + 8 + 16 + 32 + 64, a geometric series with 7 terms.</li><li>1 + 2 + 4 + 8 + 16 + 32 + 64 = 2<sup>7</sup> &minus; 1 = 127.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">127 nodes, option (C).</span></p><p class=\"row\"><b>Common trap.</b> Answering 64, the capacity of the last level alone, or 128, which is 2<sup>7</sup> and counts one level too many. The exponent is <i>h</i> + 1 because levels are numbered from 0.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q02",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Every node of a binary tree has either 0 or 2 children. The tree has 32 leaves. How many nodes does the tree have?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Every node of a binary tree has either 0 or 2 children. The tree has 32 leaves. How many nodes does the tree have?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">62</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">63</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">64</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">65</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "62",
+    "63",
+    "64",
+    "65"
+   ],
+   "options_html": [
+    "62",
+    "63",
+    "64",
+    "65"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In any binary tree the number of leaves exceeds the number of two-child nodes by exactly one: <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1. A tree in which no node has exactly one child has no <i>n</i><sub>1</sub> nodes at all, so its node count is <i>n</i><sub>0</sub> + <i>n</i><sub>2</sub>.",
+    "steps": [
+     "<i>n</i><sub>0</sub> = 32, so <i>n</i><sub>2</sub> = 31.",
+     "There are no one-child nodes, so the total is 32 + 31 = 63.",
+     "Check with the general form for a full binary tree: <i>n</i> = 2<i>n</i><sub>0</sub> &minus; 1 = 64 &minus; 1 = 63."
+    ],
+    "final": "Answer: 63 nodes, option (B).",
+    "trap": "Answering 64 by doubling the leaves. A full binary tree has 2<i>n</i><sub>0</sub> &minus; 1 nodes, not 2<i>n</i><sub>0</sub>, because the root is counted once in both halves of the doubling."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In any binary tree the number of leaves exceeds the number of two-child nodes by exactly one: <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1. A tree in which no node has exactly one child has no <i>n</i><sub>1</sub> nodes at all, so its node count is <i>n</i><sub>0</sub> + <i>n</i><sub>2</sub>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><i>n</i><sub>0</sub> = 32, so <i>n</i><sub>2</sub> = 31.</li><li>There are no one-child nodes, so the total is 32 + 31 = 63.</li><li>Check with the general form for a full binary tree: <i>n</i> = 2<i>n</i><sub>0</sub> &minus; 1 = 64 &minus; 1 = 63.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">63 nodes, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Answering 64 by doubling the leaves. A full binary tree has 2<i>n</i><sub>0</sub> &minus; 1 nodes, not 2<i>n</i><sub>0</sub>, because the root is counted once in both halves of the doubling.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q03",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A complete binary tree has 200 nodes. The root is at level 0, and every level except possibly the last is completely filled, with the last level filled from left to right. How many nodes lie on the last level?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A complete binary tree has 200 nodes. The root is at level 0, and every level except possibly the last is completely filled, with the last level filled from left to right. How many nodes lie on the last level?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">72</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">73</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">74</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">100</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "72",
+    "73",
+    "74",
+    "100"
+   ],
+   "options_html": [
+    "72",
+    "73",
+    "74",
+    "100"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A complete binary tree fills its levels in order, so every level before the last is perfect. Level <i>i</i> holds 2<sup><i>i</i></sup> nodes, and the nodes on the last level are simply what is left over after the full levels above it.",
+    "steps": [
+     "Levels 0 to 6 are complete: 2<sup>7</sup> &minus; 1 = 127 nodes.",
+     "127 &le; 200 &lt; 255 = 2<sup>8</sup> &minus; 1, so the last level is level 7.",
+     "Nodes on level 7 = 200 &minus; 127 = 73, and 73 &le; 128, so the level is partially filled as required."
+    ],
+    "final": "Answer: 73 nodes, option (B).",
+    "trap": "Subtracting 128 instead of 127, which answers 72 and treats the first seven levels as a perfect tree of height 6 in the other convention. With the root at level 0, levels 0&ndash;6 hold 127 nodes, not 128."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A complete binary tree fills its levels in order, so every level before the last is perfect. Level <i>i</i> holds 2<sup><i>i</i></sup> nodes, and the nodes on the last level are simply what is left over after the full levels above it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Levels 0 to 6 are complete: 2<sup>7</sup> &minus; 1 = 127 nodes.</li><li>127 &le; 200 &lt; 255 = 2<sup>8</sup> &minus; 1, so the last level is level 7.</li><li>Nodes on level 7 = 200 &minus; 127 = 73, and 73 &le; 128, so the level is partially filled as required.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">73 nodes, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Subtracting 128 instead of 127, which answers 72 and treats the first seven levels as a perfect tree of height 6 in the other convention. With the root at level 0, levels 0&ndash;6 hold 127 nodes, not 128.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q04",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree has 100 nodes. Its height is the number of edges on the longest root-to-leaf path, with the root at level 0. What is the minimum possible height?",
+   "question_html": "<div class=\"qbody\"><div class=\"qtext\">A binary tree has 100 nodes. Its height is the number of edges on the longest root-to-leaf path, with the root at level 0. What is the minimum possible height?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 4\" autocomplete=\"off\" class=\"natinput\" data-n=\"4\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 6,
+   "answer_display": "6",
+   "solution": {
+    "concept": "A tree of height <i>h</i> holds at most 2<sup><i>h</i>+1</sup> &minus; 1 nodes, so the shortest tree that can hold <i>n</i> nodes is the one whose capacity first reaches <i>n</i>.",
+    "steps": [
+     "At height 5 the capacity is 2<sup>6</sup> &minus; 1 = 63, which is less than 100.",
+     "At height 6 the capacity is 2<sup>7</sup> &minus; 1 = 127, which is at least 100.",
+     "So a complete tree with its 100 nodes packed into levels 0 to 6 works, and no tree of height 5 can hold them."
+    ],
+    "final": "Answer: 6.",
+    "trap": "Answering 7 by taking log<sub>2</sub> 100 &asymp; 6.64 and rounding up. That rounds up the height <i>plus one</i>; the level count is 7, but the height in edges is 6."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A tree of height <i>h</i> holds at most 2<sup><i>h</i>+1</sup> &minus; 1 nodes, so the shortest tree that can hold <i>n</i> nodes is the one whose capacity first reaches <i>n</i>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>At height 5 the capacity is 2<sup>6</sup> &minus; 1 = 63, which is less than 100.</li><li>At height 6 the capacity is 2<sup>7</sup> &minus; 1 = 127, which is at least 100.</li><li>So a complete tree with its 100 nodes packed into levels 0 to 6 works, and no tree of height 5 can hold them.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">6.</span></p><p class=\"row\"><b>Common trap.</b> Answering 7 by taking log<sub>2</sub> 100 &asymp; 6.64 and rounding up. That rounds up the height <i>plus one</i>; the level count is 7, but the height in edges is 6.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q05",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree has 40 nodes, exactly 15 of which have exactly one child. How many leaves does the tree have?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A binary tree has 40 nodes, exactly 15 of which have exactly one child. How many leaves does the tree have?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">12</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">13</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">14</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">15</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "options_html": [
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Two facts fix the shape counts of a binary tree: the three counts add to the total, <i>n</i><sub>0</sub> + <i>n</i><sub>1</sub> + <i>n</i><sub>2</sub> = <i>n</i>, and the leaves exceed the two-child nodes by one, <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1.",
+    "steps": [
+     "With <i>n</i><sub>1</sub> = 15: <i>n</i><sub>0</sub> + <i>n</i><sub>2</sub> = 40 &minus; 15 = 25.",
+     "Substituting <i>n</i><sub>2</sub> = <i>n</i><sub>0</sub> &minus; 1 gives 2<i>n</i><sub>0</sub> &minus; 1 = 25, so <i>n</i><sub>0</sub> = 13 and <i>n</i><sub>2</sub> = 12.",
+     "Check: 13 + 15 + 12 = 40."
+    ],
+    "final": "Answer: 13 leaves, option (B).",
+    "trap": "Halving the 25 remaining nodes and answering 12 or 13 by eye. The leaf rule <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1 makes the split uneven, and it is the only thing that decides which of the two neighbours is correct."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two facts fix the shape counts of a binary tree: the three counts add to the total, <i>n</i><sub>0</sub> + <i>n</i><sub>1</sub> + <i>n</i><sub>2</sub> = <i>n</i>, and the leaves exceed the two-child nodes by one, <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>With <i>n</i><sub>1</sub> = 15: <i>n</i><sub>0</sub> + <i>n</i><sub>2</sub> = 40 &minus; 15 = 25.</li><li>Substituting <i>n</i><sub>2</sub> = <i>n</i><sub>0</sub> &minus; 1 gives 2<i>n</i><sub>0</sub> &minus; 1 = 25, so <i>n</i><sub>0</sub> = 13 and <i>n</i><sub>2</sub> = 12.</li><li>Check: 13 + 15 + 12 = 40.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">13 leaves, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Halving the 25 remaining nodes and answering 12 or 13 by eye. The leaf rule <i>n</i><sub>0</sub> = <i>n</i><sub>2</sub> + 1 makes the split uneven, and it is the only thing that decides which of the two neighbours is correct.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q06",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree has 1000 nodes. What is the largest possible number of leaves it can have?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A binary tree has 1000 nodes. What is the largest possible number of leaves it can have?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">499</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">500</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">501</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">999</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "499",
+    "500",
+    "501",
+    "999"
+   ],
+   "options_html": [
+    "499",
+    "500",
+    "501",
+    "999"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Leaves are bought with internal nodes. If a tree has <i>L</i> leaves, it has exactly <i>L</i> &minus; 1 nodes with two children, and the remaining internal nodes must have exactly one child. Every one-child node costs a slot that could otherwise have been a leaf, so the leaf count is maximised by using as few of them as possible.",
+    "steps": [
+     "Write the total as <i>n</i> = <i>L</i> + (<i>L</i> &minus; 1) + <i>y</i>, where <i>y</i> is the number of one-child nodes.",
+     "So <i>L</i> = (<i>n</i> + 1 &minus; <i>y</i>)/2, which is largest when <i>y</i> is as small as possible.",
+     "With <i>n</i> = 1000, <i>y</i> = 0 would need <i>L</i> = 500.5, which is not an integer, so the smallest legal <i>y</i> is 1.",
+     "Then <i>L</i> = (1000 + 1 &minus; 1)/2 = 500, with 499 two-child nodes and 1 one-child node, and 500 + 499 + 1 = 1000."
+    ],
+    "final": "Answer: 500 leaves, option (B).",
+    "trap": "Assuming a chain of 1000 nodes has the most leaves; it has exactly one. Leaves and internal nodes alternate, so roughly half the nodes can be leaves at best, and the parity of <i>n</i> decides whether the half rounds down."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Leaves are bought with internal nodes. If a tree has <i>L</i> leaves, it has exactly <i>L</i> &minus; 1 nodes with two children, and the remaining internal nodes must have exactly one child. Every one-child node costs a slot that could otherwise have been a leaf, so the leaf count is maximised by using as few of them as possible.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the total as <i>n</i> = <i>L</i> + (<i>L</i> &minus; 1) + <i>y</i>, where <i>y</i> is the number of one-child nodes.</li><li>So <i>L</i> = (<i>n</i> + 1 &minus; <i>y</i>)/2, which is largest when <i>y</i> is as small as possible.</li><li>With <i>n</i> = 1000, <i>y</i> = 0 would need <i>L</i> = 500.5, which is not an integer, so the smallest legal <i>y</i> is 1.</li><li>Then <i>L</i> = (1000 + 1 &minus; 1)/2 = 500, with 499 two-child nodes and 1 one-child node, and 500 + 499 + 1 = 1000.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">500 leaves, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Assuming a chain of 1000 nodes has the most leaves; it has exactly one. Leaves and internal nodes alternate, so roughly half the nodes can be leaves at best, and the parity of <i>n</i> decides whether the half rounds down.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q07",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "binary-tree-properties",
+   "subtopic": "binary-tree-properties",
+   "subtopic_label": "Binary tree properties",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A complete binary tree with <i>n</i> nodes is stored in a 1-indexed array <code class=\"mm\">A[1..n]</code>, level by level and left to right within a level. Which of the following statements are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A complete binary tree with <i>n</i> nodes is stored in a 1-indexed array <code class=\"mm\">A[1..n]</code>, level by level and left to right within a level. Which of the following statements are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"7\" data-typ=\"MSQ\" name=\"q7\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The children of <code class=\"mm\">A[i]</code> are <code class=\"mm\">A[2i]</code> and <code class=\"mm\">A[2i+1]</code>, whenever those indices do not exceed <i>n</i>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"7\" data-typ=\"MSQ\" name=\"q7\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">For <i>i</i> &gt; 1, the parent of <code class=\"mm\">A[i]</code> is <code class=\"mm\">A[&lfloor;i/2&rfloor;]</code>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"7\" data-typ=\"MSQ\" name=\"q7\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The last internal node, that is the parent of <code class=\"mm\">A[n]</code>, is <code class=\"mm\">A[&lfloor;n/2&rfloor;]</code>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"7\" data-typ=\"MSQ\" name=\"q7\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In a complete binary tree with 12 nodes, <code class=\"mm\">A[6]</code> is a leaf.</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "The children of <code class=\"mm\">A[i]</code> are <code class=\"mm\">A[2i]</code> and <code class=\"mm\">A[2i+1]</code>, whenever those indices do not exceed <i>n</i>.",
+    "For <i>i</i> &gt; 1, the parent of <code class=\"mm\">A[i]</code> is <code class=\"mm\">A[&lfloor;i/2&rfloor;]</code>.",
+    "The last internal node, that is the parent of <code class=\"mm\">A[n]</code>, is <code class=\"mm\">A[&lfloor;n/2&rfloor;]</code>.",
+    "In a complete binary tree with 12 nodes, <code class=\"mm\">A[6]</code> is a leaf."
+   ],
+   "options_html": [
+    "The children of <code class=\"mm\">A[i]</code> are <code class=\"mm\">A[2i]</code> and <code class=\"mm\">A[2i+1]</code>, whenever those indices do not exceed <i>n</i>.",
+    "For <i>i</i> &gt; 1, the parent of <code class=\"mm\">A[i]</code> is <code class=\"mm\">A[&lfloor;i/2&rfloor;]</code>.",
+    "The last internal node, that is the parent of <code class=\"mm\">A[n]</code>, is <code class=\"mm\">A[&lfloor;n/2&rfloor;]</code>.",
+    "In a complete binary tree with 12 nodes, <code class=\"mm\">A[6]</code> is a leaf."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B), (C)",
+   "solution": {
+    "concept": "The array layout is a level-order numbering, and level-order numbering makes the index arithmetic exact: doubling an index moves to the next level, and halving it moves back to the parent.",
+    "steps": [
+     "(A) is the definition of the layout: the two children of the <i>i</i>-th node occupy positions 2<i>i</i> and 2<i>i</i>+1. True.",
+     "(B) inverts the same rule, since integer division by 2 maps both 2<i>i</i> and 2<i>i</i>+1 back to <i>i</i>. True.",
+     "(C) follows: the parent of the last node is the deepest index that still has a child, and &lfloor;<i>n</i>/2&rfloor; is exactly that index. True.",
+     "(D) with <i>n</i> = 12, &lfloor;12/2&rfloor; = 6, so <code class=\"mm\">A[6]</code> is the last internal node; its left child is <code class=\"mm\">A[12]</code>. False."
+    ],
+    "final": "Answer: Options (A), (B) and (C).",
+    "trap": "Calling <code class=\"mm\">A[n/2]</code> the last leaf. It is the last node that still has a child, so it is internal; the leaves begin at &lfloor;<i>n</i>/2&rfloor; + 1 and run to <i>n</i>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The array layout is a level-order numbering, and level-order numbering makes the index arithmetic exact: doubling an index moves to the next level, and halving it moves back to the parent.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the definition of the layout: the two children of the <i>i</i>-th node occupy positions 2<i>i</i> and 2<i>i</i>+1. True.</li><li>(B) inverts the same rule, since integer division by 2 maps both 2<i>i</i> and 2<i>i</i>+1 back to <i>i</i>. True.</li><li>(C) follows: the parent of the last node is the deepest index that still has a child, and &lfloor;<i>n</i>/2&rfloor; is exactly that index. True.</li><li>(D) with <i>n</i> = 12, &lfloor;12/2&rfloor; = 6, so <code class=\"mm\">A[6]</code> is the last internal node; its left child is <code class=\"mm\">A[12]</code>. False.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Calling <code class=\"mm\">A[n/2]</code> the last leaf. It is the last node that still has a child, so it is internal; the leaves begin at &lfloor;<i>n</i>/2&rfloor; + 1 and run to <i>n</i>.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q08",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A complete binary tree with 7 nodes is stored as <code class=\"mm\">A[1..7]</code> with the root at <code class=\"mm\">A[1]</code>, and the nodes hold the keys A, B, C, D, E, F, G in that array order. Which traversal visits the nodes in the order D B E A F C G?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A complete binary tree with 7 nodes is stored as <code class=\"mm\">A[1..7]</code> with the root at <code class=\"mm\">A[1]</code>, and the nodes hold the keys A, B, C, D, E, F, G in that array order. Which traversal visits the nodes in the order D B E A F C G?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Preorder</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Inorder</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Postorder</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Level order</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "Preorder",
+    "Inorder",
+    "Postorder",
+    "Level order"
+   ],
+   "options_html": [
+    "Preorder",
+    "Inorder",
+    "Postorder",
+    "Level order"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The array order is the level order, so the root is A with children B and C; B has children D and E, and C has children F and G. An inorder traversal visits the left subtree, then the node, then the right subtree.",
+    "steps": [
+     "Left subtree of A is rooted at B, whose left subtree is D and right subtree is E: inorder gives D B E.",
+     "Then the root A.",
+     "Right subtree of A is rooted at C, whose children are F and G: inorder gives F C G.",
+     "Concatenating: D B E A F C G."
+    ],
+    "final": "Answer: Inorder, option (B).",
+    "trap": "Choosing preorder because the sequence begins with a leaf. Preorder would start at the root and read A B D E C F G; postorder would end at the root and read D E B F G C A."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The array order is the level order, so the root is A with children B and C; B has children D and E, and C has children F and G. An inorder traversal visits the left subtree, then the node, then the right subtree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Left subtree of A is rooted at B, whose left subtree is D and right subtree is E: inorder gives D B E.</li><li>Then the root A.</li><li>Right subtree of A is rooted at C, whose children are F and G: inorder gives F C G.</li><li>Concatenating: D B E A F C G.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Inorder, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Choosing preorder because the sequence begins with a leaf. Preorder would start at the root and read A B D E C F G; postorder would end at the root and read D E B F G C A.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q09",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. What is its postorder traversal?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. What is its postorder traversal?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A C B E F D L P M K</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A B C D E F K L M P</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">C A B F E D P L M K</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">K D B A C F E M L P</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "A C B E F D L P M K",
+    "A B C D E F K L M P",
+    "C A B F E D P L M K",
+    "K D B A C F E M L P"
+   ],
+   "options_html": [
+    "A C B E F D L P M K",
+    "A B C D E F K L M P",
+    "C A B F E D P L M K",
+    "K D B A C F E M L P"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Preorder names the root first, so its first key is the root of the whole tree; that root splits the inorder sequence into a left part and a right part. Applying the same rule to each part rebuilds the tree, and postorder then reads the rebuilt tree as left, right, root.",
+    "steps": [
+     "Root K. Inorder splits into left {A B C D E F} and right {L M P}.",
+     "Left part, preorder D B A C F E: root D, its left {A B C} rooted at B with children A and C, its right {F E} rooted at F with left child E.",
+     "Right part, preorder M L P: root M with left child L and right child P.",
+     "Postorder of the left subtree is A C B E F D, of the right subtree L P M, then the root K."
+    ],
+    "final": "Answer: A C B E F D L P M K, option (A).",
+    "trap": "Reading the answer off the inorder sequence because it happens to be alphabetical. Inorder is a projection of the tree, not a substitute for rebuilding it; only the two sequences together fix the shape."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Preorder names the root first, so its first key is the root of the whole tree; that root splits the inorder sequence into a left part and a right part. Applying the same rule to each part rebuilds the tree, and postorder then reads the rebuilt tree as left, right, root.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root K. Inorder splits into left {A B C D E F} and right {L M P}.</li><li>Left part, preorder D B A C F E: root D, its left {A B C} rooted at B with children A and C, its right {F E} rooted at F with left child E.</li><li>Right part, preorder M L P: root M with left child L and right child P.</li><li>Postorder of the left subtree is A C B E F D, of the right subtree L P M, then the root K.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">A C B E F D L P M K, option (A).</span></p><p class=\"row\"><b>Common trap.</b> Reading the answer off the inorder sequence because it happens to be alphabetical. Inorder is a projection of the tree, not a substitute for rebuilding it; only the two sequences together fix the shape.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q10",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. Its height, counted in edges with the root at level 0, is",
+   "question_html": "<div class=\"qbody\"><div class=\"qtext\">A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. Its height, counted in edges with the root at level 0, is</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 10\" autocomplete=\"off\" class=\"natinput\" data-n=\"10\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "Rebuilding the tree from a preorder and inorder pair fixes the shape completely, and the height is then read off the rebuilt tree.",
+    "steps": [
+     "Root K, left subtree {A B C D E F} rooted at D, right subtree {L M P} rooted at M.",
+     "Under D, the left subtree {A B C} is rooted at B with leaves A and C, and the right subtree {F E} is rooted at F with left child E.",
+     "The longest root-to-leaf paths are K&ndash;D&ndash;B&ndash;A, K&ndash;D&ndash;B&ndash;C, K&ndash;D&ndash;F&ndash;E and K&ndash;M&ndash;L, all of length 3."
+    ],
+    "final": "Answer: 3.",
+    "trap": "Counting nodes instead of edges on the longest path, which gives 4. With the root at level 0 the height is the largest level number, and level 3 is the deepest one here."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Rebuilding the tree from a preorder and inorder pair fixes the shape completely, and the height is then read off the rebuilt tree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root K, left subtree {A B C D E F} rooted at D, right subtree {L M P} rooted at M.</li><li>Under D, the left subtree {A B C} is rooted at B with leaves A and C, and the right subtree {F E} is rooted at F with left child E.</li><li>The longest root-to-leaf paths are K&ndash;D&ndash;B&ndash;A, K&ndash;D&ndash;B&ndash;C, K&ndash;D&ndash;F&ndash;E and K&ndash;M&ndash;L, all of length 3.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3.</span></p><p class=\"row\"><b>Common trap.</b> Counting nodes instead of edges on the longest path, which gives 4. With the root at level 0 the height is the largest level number, and level 3 is the deepest one here.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q11",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. How many of its nodes have exactly one child?",
+   "question_html": "<div class=\"qbody\"><div class=\"qtext\">A binary tree with distinct keys has preorder K D B A C F E M L P and inorder A B C D E F K L M P. How many of its nodes have exactly one child?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 11\" autocomplete=\"off\" class=\"natinput\" data-n=\"11\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 1,
+   "answer_display": "1",
+   "solution": {
+    "concept": "A node has exactly one child when, in the rebuilt tree, one of its two positions is empty and the other is not. The traversals must be used to rebuild the shape first; the counts then follow directly.",
+    "steps": [
+     "Root K has children D and M: two children.",
+     "D has B and F; B has A and C; M has L and P: all two children.",
+     "F has only the left child E: exactly one child.",
+     "A, C, E, L and P are leaves. So exactly one node, F, has a single child."
+    ],
+    "final": "Answer: 1.",
+    "trap": "Counting leaves or counting the internal nodes. The question asks for the third category, the nodes with a single child, which is what <i>n</i><sub>1</sub> measures."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A node has exactly one child when, in the rebuilt tree, one of its two positions is empty and the other is not. The traversals must be used to rebuild the shape first; the counts then follow directly.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root K has children D and M: two children.</li><li>D has B and F; B has A and C; M has L and P: all two children.</li><li>F has only the left child E: exactly one child.</li><li>A, C, E, L and P are leaves. So exactly one node, F, has a single child.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">1.</span></p><p class=\"row\"><b>Common trap.</b> Counting leaves or counting the internal nodes. The question asks for the third category, the nodes with a single child, which is what <i>n</i><sub>1</sub> measures.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q12",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree with distinct keys has preorder 1 2 3 4 5 6 7 and inorder 3 2 4 1 6 5 7. Its postorder traversal is",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A binary tree with distinct keys has preorder 1 2 3 4 5 6 7 and inorder 3 2 4 1 6 5 7. Its postorder traversal is</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">3 4 2 6 7 5 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">4 3 2 7 6 5 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">3 2 4 6 5 7 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">2 3 4 5 6 7 1</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "3 4 2 6 7 5 1",
+    "4 3 2 7 6 5 1",
+    "3 2 4 6 5 7 1",
+    "2 3 4 5 6 7 1"
+   ],
+   "options_html": [
+    "3 4 2 6 7 5 1",
+    "4 3 2 7 6 5 1",
+    "3 2 4 6 5 7 1",
+    "2 3 4 5 6 7 1"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The first key of the preorder is the root, and its position in the inorder splits the remaining keys into the left subtree and the right subtree. Recursing on each part rebuilds the tree, and postorder reads it as left, right, root.",
+    "steps": [
+     "Root 1. Inorder splits into left {3 2 4} and right {6 5 7}.",
+     "Left part, preorder 2 3 4: root 2 with left child 3 and right child 4.",
+     "Right part, preorder 5 6 7: root 5 with left child 6 and right child 7.",
+     "Postorder: 3, 4, 2 for the left; 6, 7, 5 for the right; then 1."
+    ],
+    "final": "Answer: 3 4 2 6 7 5 1, option (A).",
+    "trap": "Reversing the preorder, which would give 7 6 5 4 3 2 1. Postorder is not the reverse of preorder; it is the reverse of the order in which the preorder finishes each subtree, which is a different thing."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The first key of the preorder is the root, and its position in the inorder splits the remaining keys into the left subtree and the right subtree. Recursing on each part rebuilds the tree, and postorder reads it as left, right, root.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root 1. Inorder splits into left {3 2 4} and right {6 5 7}.</li><li>Left part, preorder 2 3 4: root 2 with left child 3 and right child 4.</li><li>Right part, preorder 5 6 7: root 5 with left child 6 and right child 7.</li><li>Postorder: 3, 4, 2 for the left; 6, 7, 5 for the right; then 1.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3 4 2 6 7 5 1, option (A).</span></p><p class=\"row\"><b>Common trap.</b> Reversing the preorder, which would give 7 6 5 4 3 2 1. Postorder is not the reverse of preorder; it is the reverse of the order in which the preorder finishes each subtree, which is a different thing.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q13",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Every node of a binary tree has either 0 or 2 children. Its preorder traversal is A B C D E F G and its postorder traversal is C D B F G E A. Its inorder traversal is",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Every node of a binary tree has either 0 or 2 children. Its preorder traversal is A B C D E F G and its postorder traversal is C D B F G E A. Its inorder traversal is</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">C B D A F E G</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">C D B A F G E</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">B C D A E F G</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">C B D A F G E</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "C B D A F E G",
+    "C D B A F G E",
+    "B C D A E F G",
+    "C B D A F G E"
+   ],
+   "options_html": [
+    "C B D A F E G",
+    "C D B A F G E",
+    "B C D A E F G",
+    "C B D A F G E"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "In a tree where every node has 0 or 2 children, the two subtrees of the root are each complete blocks in both sequences, so the split can be found without an inorder sequence: the second key of the preorder is the root of the left subtree, and its position in the postorder marks the end of that subtree.",
+    "steps": [
+     "Root A. The left subtree starts at B in the preorder, and B is the third key of the postorder, so the left subtree is {B C D} and the right is {E F G}.",
+     "Left subtree: preorder B C D, postorder C D B. Root B, and C is the left child, D the right child, so its inorder is C B D.",
+     "Right subtree: preorder E F G, postorder F G E. Root E, with F and G as its children, so its inorder is F E G.",
+     "Full inorder: C B D, then A, then F E G."
+    ],
+    "final": "Answer: C B D A F E G, option (A).",
+    "trap": "Assuming preorder plus postorder never determines a tree. It fails in general only because a node with a single child looks identical on both sides; the no-one-child condition removes exactly that ambiguity."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a tree where every node has 0 or 2 children, the two subtrees of the root are each complete blocks in both sequences, so the split can be found without an inorder sequence: the second key of the preorder is the root of the left subtree, and its position in the postorder marks the end of that subtree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Root A. The left subtree starts at B in the preorder, and B is the third key of the postorder, so the left subtree is {B C D} and the right is {E F G}.</li><li>Left subtree: preorder B C D, postorder C D B. Root B, and C is the left child, D the right child, so its inorder is C B D.</li><li>Right subtree: preorder E F G, postorder F G E. Root E, with F and G as its children, so its inorder is F E G.</li><li>Full inorder: C B D, then A, then F E G.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">C B D A F E G, option (A).</span></p><p class=\"row\"><b>Common trap.</b> Assuming preorder plus postorder never determines a tree. It fails in general only because a node with a single child looks identical on both sides; the no-one-child condition removes exactly that ambiguity.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q14",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about the memory a tree traversal needs are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Which of the following statements about the memory a tree traversal needs are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"14\" data-typ=\"MSQ\" name=\"q14\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A recursive inorder traversal uses recursion-stack space proportional to the height of the tree.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"14\" data-typ=\"MSQ\" name=\"q14\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">An iterative inorder traversal with an explicit stack also needs O(h) space, where h is the height.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"14\" data-typ=\"MSQ\" name=\"q14\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Morris inorder traversal needs neither a stack nor parent pointers, at the cost of temporarily rewriting some right pointers.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"14\" data-typ=\"MSQ\" name=\"q14\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Level-order traversal needs no auxiliary memory, because every node is visited exactly once.</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "A recursive inorder traversal uses recursion-stack space proportional to the height of the tree.",
+    "An iterative inorder traversal with an explicit stack also needs O(h) space, where h is the height.",
+    "Morris inorder traversal needs neither a stack nor parent pointers, at the cost of temporarily rewriting some right pointers.",
+    "Level-order traversal needs no auxiliary memory, because every node is visited exactly once."
+   ],
+   "options_html": [
+    "A recursive inorder traversal uses recursion-stack space proportional to the height of the tree.",
+    "An iterative inorder traversal with an explicit stack also needs O(h) space, where h is the height.",
+    "Morris inorder traversal needs neither a stack nor parent pointers, at the cost of temporarily rewriting some right pointers.",
+    "Level-order traversal needs no auxiliary memory, because every node is visited exactly once."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B), (C)",
+   "solution": {
+    "concept": "Every traversal that must remember where to come back to pays for that memory. Recursion hides the memory in the call stack, an explicit stack makes it visible, and Morris threading borrows the tree's own empty pointers instead.",
+    "steps": [
+     "(A) the recursion depth is the height, so the stack holds <i>h</i> frames. True.",
+     "(B) the explicit stack holds at most one frame per level, again O(<i>h</i>). True.",
+     "(C) Morris stores the successor in the empty right pointer of the predecessor and restores it on the way back, so its extra space is O(1). True.",
+     "(D) level order needs a queue that can hold a whole level, so it uses O(w) space where w is the width. False."
+    ],
+    "final": "Answer: Options (A), (B) and (C).",
+    "trap": "Confusing &ldquo;each node is visited once&rdquo; with &ldquo;nothing is stored&rdquo;. Visiting each node once is a statement about time; the queue still has to hold every node of a level before it is expanded."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every traversal that must remember where to come back to pays for that memory. Recursion hides the memory in the call stack, an explicit stack makes it visible, and Morris threading borrows the tree's own empty pointers instead.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) the recursion depth is the height, so the stack holds <i>h</i> frames. True.</li><li>(B) the explicit stack holds at most one frame per level, again O(<i>h</i>). True.</li><li>(C) Morris stores the successor in the empty right pointer of the predecessor and restores it on the way back, so its extra space is O(1). True.</li><li>(D) level order needs a queue that can hold a whole level, so it uses O(w) space where w is the width. False.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Confusing &ldquo;each node is visited once&rdquo; with &ldquo;nothing is stored&rdquo;. Visiting each node once is a statement about time; the queue still has to hold every node of a level before it is expanded.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q15",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "tree-traversals-inorder-pre-post",
+   "subtopic": "tree-traversals-inorder-pre-post",
+   "subtopic_label": "Inorder, preorder & postorder",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about level-order traversal are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Which of the following statements about level-order traversal are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"15\" data-typ=\"MSQ\" name=\"q15\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">With a FIFO queue, the largest number of nodes the queue ever holds equals the maximum number of nodes on any single level.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"15\" data-typ=\"MSQ\" name=\"q15\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Level-order traversal of a binary tree needs O(w) auxiliary space, where w is the maximum width of the tree.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"15\" data-typ=\"MSQ\" name=\"q15\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">For a tree with distinct keys, the level-order traversal together with the inorder traversal determines the tree uniquely.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"15\" data-typ=\"MSQ\" name=\"q15\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">For a complete binary tree, level-order traversal and preorder traversal produce the same sequence.</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "With a FIFO queue, the largest number of nodes the queue ever holds equals the maximum number of nodes on any single level.",
+    "Level-order traversal of a binary tree needs O(w) auxiliary space, where w is the maximum width of the tree.",
+    "For a tree with distinct keys, the level-order traversal together with the inorder traversal determines the tree uniquely.",
+    "For a complete binary tree, level-order traversal and preorder traversal produce the same sequence."
+   ],
+   "options_html": [
+    "With a FIFO queue, the largest number of nodes the queue ever holds equals the maximum number of nodes on any single level.",
+    "Level-order traversal of a binary tree needs O(w) auxiliary space, where w is the maximum width of the tree.",
+    "For a tree with distinct keys, the level-order traversal together with the inorder traversal determines the tree uniquely.",
+    "For a complete binary tree, level-order traversal and preorder traversal produce the same sequence."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B), (C)",
+   "solution": {
+    "concept": "Level order is a breadth-first sweep: a FIFO queue holds the frontier, so its size tracks the width of the tree rather than its height. Because it names the root first, it carries the same kind of information as a preorder traversal.",
+    "steps": [
+     "(A) the queue holds exactly the nodes of the current level plus the part of the next level already generated, and its peak is the widest level. True.",
+     "(B) that peak is w, so the space bound is O(w). True.",
+     "(C) the first key of the level order is the root; the inorder sequence then splits into the two subtrees, and the remaining level order keys split accordingly, so the recursion determines the tree. True.",
+     "(D) for the 7-node complete tree the level order is A B C D E F G while the preorder is A B D E C F G. False."
+    ],
+    "final": "Answer: Options (A), (B) and (C).",
+    "trap": "Believing that only a depth-first traversal can pin down a tree. Any traversal that reveals the root of every subtree together with the inorder sequence is enough; level order reveals the root of every subtree, level by level."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Level order is a breadth-first sweep: a FIFO queue holds the frontier, so its size tracks the width of the tree rather than its height. Because it names the root first, it carries the same kind of information as a preorder traversal.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) the queue holds exactly the nodes of the current level plus the part of the next level already generated, and its peak is the widest level. True.</li><li>(B) that peak is w, so the space bound is O(w). True.</li><li>(C) the first key of the level order is the root; the inorder sequence then splits into the two subtrees, and the remaining level order keys split accordingly, so the recursion determines the tree. True.</li><li>(D) for the 7-node complete tree the level order is A B C D E F G while the preorder is A B D E C F G. False.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Believing that only a depth-first traversal can pin down a tree. Any traversal that reveals the root of every subtree together with the inorder sequence is enough; level order reveals the root of every subtree, level by level.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q16",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "threaded-binary-trees",
+   "subtopic": "threaded-binary-trees",
+   "subtopic_label": "Threaded binary trees",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "In a fully inorder-threaded binary tree, how is the inorder successor of a node that has a non-empty right child found?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">In a fully inorder-threaded binary tree, how is the inorder successor of a node that has a non-empty right child found?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">By following the node's right thread</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">By taking the leftmost node of its right subtree, following left links</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">By taking the rightmost node of its left subtree</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">By moving to the parent and then to the parent's right child</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "By following the node's right thread",
+    "By taking the leftmost node of its right subtree, following left links",
+    "By taking the rightmost node of its left subtree",
+    "By moving to the parent and then to the parent's right child"
+   ],
+   "options_html": [
+    "By following the node's right thread",
+    "By taking the leftmost node of its right subtree, following left links",
+    "By taking the rightmost node of its left subtree",
+    "By moving to the parent and then to the parent's right child"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Threads replace only the pointers that would otherwise be empty. A node that really has a right child keeps an ordinary link there, so its successor lies inside its own right subtree, at the first node visited there.",
+    "steps": [
+     "If the right pointer is a real link, the successor is the smallest key greater than the node, which is the leftmost node of the right subtree.",
+     "Follow left links from the right child until a node whose left pointer is a thread is reached; that node is the successor.",
+     "Only when the right pointer is a thread does the successor come straight from the stored thread."
+    ],
+    "final": "Answer: The leftmost node of its right subtree, option (B).",
+    "trap": "Following the right pointer blindly, which jumps into the subtree rather than to the successor. In a threaded tree the right pointer means two different things depending on its tag bit, and only the tag says which."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Threads replace only the pointers that would otherwise be empty. A node that really has a right child keeps an ordinary link there, so its successor lies inside its own right subtree, at the first node visited there.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If the right pointer is a real link, the successor is the smallest key greater than the node, which is the leftmost node of the right subtree.</li><li>Follow left links from the right child until a node whose left pointer is a thread is reached; that node is the successor.</li><li>Only when the right pointer is a thread does the successor come straight from the stored thread.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">The leftmost node of its right subtree, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Following the right pointer blindly, which jumps into the subtree rather than to the successor. In a threaded tree the right pointer means two different things depending on its tag bit, and only the tag says which.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q17",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "threaded-binary-trees",
+   "subtopic": "threaded-binary-trees",
+   "subtopic_label": "Threaded binary trees",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A fully inorder-threaded binary tree uses a dummy header node whose left link points to the root and whose right link points to itself. The right thread of the last node in the inorder sequence points to",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A fully inorder-threaded binary tree uses a dummy header node whose left link points to the root and whose right link points to itself. The right thread of the last node in the inorder sequence points to</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">the root</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">the header node</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">NULL</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">the first node in the inorder sequence</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "the root",
+    "the header node",
+    "NULL",
+    "the first node in the inorder sequence"
+   ],
+   "options_html": [
+    "the root",
+    "the header node",
+    "NULL",
+    "the first node in the inorder sequence"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The header node exists precisely so that no thread is ever NULL: every empty pointer is redirected, and the two ends of the inorder sequence wrap around to the header, which makes traversal terminate on a single test.",
+    "steps": [
+     "The last node in inorder has no right child, so its right pointer is a thread.",
+     "That thread must name the successor of the last node, and the successor is the header, which stands for &ldquo;past the end&rdquo;.",
+     "Symmetrically, the left thread of the first node points to the header, and the header's own left link is the root."
+    ],
+    "final": "Answer: The header node, option (B).",
+    "trap": "Answering NULL, which is what a tree without a header does. The header is what buys the O(1) termination test and the ability to find the predecessor of the first node."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The header node exists precisely so that no thread is ever NULL: every empty pointer is redirected, and the two ends of the inorder sequence wrap around to the header, which makes traversal terminate on a single test.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The last node in inorder has no right child, so its right pointer is a thread.</li><li>That thread must name the successor of the last node, and the successor is the header, which stands for &ldquo;past the end&rdquo;.</li><li>Symmetrically, the left thread of the first node points to the header, and the header's own left link is the root.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">The header node, option (B).</span></p><p class=\"row\"><b>Common trap.</b> Answering NULL, which is what a tree without a header does. The header is what buys the O(1) termination test and the ability to find the predecessor of the first node.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q18",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "threaded-binary-trees",
+   "subtopic": "threaded-binary-trees",
+   "subtopic_label": "Threaded binary trees",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree has root 50. The left child of 50 is 30, whose children are 20 and 40; the right child of 50 is 70, whose children are 60 and 80. The tree is stored as a fully inorder-threaded binary tree. How many of its right pointers are threads?",
+   "question_html": "<div class=\"qbody\"><div class=\"qtext\">A binary tree has root 50. The left child of 50 is 30, whose children are 20 and 40; the right child of 50 is 70, whose children are 60 and 80. The tree is stored as a fully inorder-threaded binary tree. How many of its right pointers are threads?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 18\" autocomplete=\"off\" class=\"natinput\" data-n=\"18\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "A right pointer becomes a thread exactly when the node has no right child, so counting right threads is counting nodes with an empty right link.",
+    "steps": [
+     "The leaves are 20, 40, 60 and 80, and none of them has a right child.",
+     "30, 50 and 70 each have a right child, so their right pointers stay ordinary links.",
+     "So 4 right pointers are threads. Cross-check: the tree has 7 nodes, a fully threaded tree has <i>n</i> + 1 = 8 threads in total, and the 4 left threads belong to the same four leaves."
+    ],
+    "final": "Answer: 4.",
+    "trap": "Counting only the leaves that are right children, or answering 8 by counting both directions. The question fixes the direction, and only the four leaves are missing a right child."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A right pointer becomes a thread exactly when the node has no right child, so counting right threads is counting nodes with an empty right link.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The leaves are 20, 40, 60 and 80, and none of them has a right child.</li><li>30, 50 and 70 each have a right child, so their right pointers stay ordinary links.</li><li>So 4 right pointers are threads. Cross-check: the tree has 7 nodes, a fully threaded tree has <i>n</i> + 1 = 8 threads in total, and the 4 left threads belong to the same four leaves.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">4.</span></p><p class=\"row\"><b>Common trap.</b> Counting only the leaves that are right children, or answering 8 by counting both directions. The question fixes the direction, and only the four leaves are missing a right child.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q19",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "threaded-binary-trees",
+   "subtopic": "threaded-binary-trees",
+   "subtopic_label": "Threaded binary trees",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about threaded binary trees are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Which of the following statements about threaded binary trees are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Each pointer field needs a one-bit tag, or an equivalent encoding, to distinguish a thread from a real child link.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">In a fully threaded binary tree with n nodes, exactly n + 1 pointers are threads.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">An inorder-threaded tree can be traversed in inorder without recursion and without an auxiliary stack.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Inorder threading by itself also removes the need for a stack in a preorder traversal.</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "Each pointer field needs a one-bit tag, or an equivalent encoding, to distinguish a thread from a real child link.",
+    "In a fully threaded binary tree with n nodes, exactly n + 1 pointers are threads.",
+    "An inorder-threaded tree can be traversed in inorder without recursion and without an auxiliary stack.",
+    "Inorder threading by itself also removes the need for a stack in a preorder traversal."
+   ],
+   "options_html": [
+    "Each pointer field needs a one-bit tag, or an equivalent encoding, to distinguish a thread from a real child link.",
+    "In a fully threaded binary tree with n nodes, exactly n + 1 pointers are threads.",
+    "An inorder-threaded tree can be traversed in inorder without recursion and without an auxiliary stack.",
+    "Inorder threading by itself also removes the need for a stack in a preorder traversal."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B), (C)",
+   "solution": {
+    "concept": "Threading replaces the <i>n</i> + 1 empty pointers of an <i>n</i>-node tree with links to predecessors and successors. Because a pointer can now mean two things, the node must record which meaning applies.",
+    "steps": [
+     "(A) without a tag the traversal cannot tell &ldquo;go down&rdquo; from &ldquo;jump to successor&rdquo;. True.",
+     "(B) a binary tree with <i>n</i> nodes has 2<i>n</i> pointers of which <i>n</i> &minus; 1 are real links, leaving <i>n</i> + 1 empty ones. True.",
+     "(C) that is the whole purpose of inorder threading. True.",
+     "(D) preorder needs to remember a right subtree while descending into a left one, and inorder threads do not encode that. False."
+    ],
+    "final": "Answer: Options (A), (B) and (C).",
+    "trap": "Assuming threads serve every traversal equally. They encode the inorder neighbour only, so any traversal that needs a different kind of &ldquo;what comes next&rdquo; still needs its own stack."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Threading replaces the <i>n</i> + 1 empty pointers of an <i>n</i>-node tree with links to predecessors and successors. Because a pointer can now mean two things, the node must record which meaning applies.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) without a tag the traversal cannot tell &ldquo;go down&rdquo; from &ldquo;jump to successor&rdquo;. True.</li><li>(B) a binary tree with <i>n</i> nodes has 2<i>n</i> pointers of which <i>n</i> &minus; 1 are real links, leaving <i>n</i> + 1 empty ones. True.</li><li>(C) that is the whole purpose of inorder threading. True.</li><li>(D) preorder needs to remember a right subtree while descending into a left one, and inorder threads do not encode that. False.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Assuming threads serve every traversal equally. They encode the inorder neighbour only, so any traversal that needs a different kind of &ldquo;what comes next&rdquo; still needs its own stack.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q20",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "threaded-binary-trees",
+   "subtopic": "threaded-binary-trees",
+   "subtopic_label": "Threaded binary trees",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A binary tree is threaded only on the right: every empty right pointer is replaced by a thread to the inorder successor, and the left pointers are left as ordinary links. Which statement is TRUE?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">A binary tree is threaded only on the right: every empty right pointer is replaced by a thread to the inorder successor, and the left pointers are left as ordinary links. Which statement is TRUE?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The tree can be traversed in inorder without a stack, but finding the inorder predecessor of an arbitrary node still needs a stack or a parent pointer.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Neither inorder nor reverse-inorder traversal can be done without a stack.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Both inorder and reverse-inorder traversal can be done without a stack, because the threads cover both directions.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Right threading turns the tree into a doubly linked list, so both directions cost O(1).</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "The tree can be traversed in inorder without a stack, but finding the inorder predecessor of an arbitrary node still needs a stack or a parent pointer.",
+    "Neither inorder nor reverse-inorder traversal can be done without a stack.",
+    "Both inorder and reverse-inorder traversal can be done without a stack, because the threads cover both directions.",
+    "Right threading turns the tree into a doubly linked list, so both directions cost O(1)."
+   ],
+   "options_html": [
+    "The tree can be traversed in inorder without a stack, but finding the inorder predecessor of an arbitrary node still needs a stack or a parent pointer.",
+    "Neither inorder nor reverse-inorder traversal can be done without a stack.",
+    "Both inorder and reverse-inorder traversal can be done without a stack, because the threads cover both directions.",
+    "Right threading turns the tree into a doubly linked list, so both directions cost O(1)."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A thread stores one neighbour. Right threading stores the successor, so the inorder walk is a chain of threads and real links; nothing stores the predecessor, and the left links only point downwards.",
+    "steps": [
+     "Successor of a node: if its right pointer is a thread, follow it; otherwise descend to the leftmost node of the right subtree. Either way O(1) amortised per step, so the inorder walk needs no stack.",
+     "Predecessor of a node: the information is not stored anywhere. You must either keep a stack of the path or store parent pointers.",
+     "Hence one direction is stack-free and the other is not."
+    ],
+    "final": "Answer: Option (A).",
+    "trap": "Reading threads as if they were symmetric. A fully threaded tree stores both neighbours and costs two tag bits; a single-threaded tree buys half the memory and gives up the reverse direction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A thread stores one neighbour. Right threading stores the successor, so the inorder walk is a chain of threads and real links; nothing stores the predecessor, and the left links only point downwards.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Successor of a node: if its right pointer is a thread, follow it; otherwise descend to the leftmost node of the right subtree. Either way O(1) amortised per step, so the inorder walk needs no stack.</li><li>Predecessor of a node: the information is not stored anywhere. You must either keep a stack of the path or store parent pointers.</li><li>Hence one direction is stack-free and the other is not.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (A).</span></p><p class=\"row\"><b>Common trap.</b> Reading threads as if they were symmetric. A fully threaded tree stores both neighbours and costs two tag bits; a single-threaded tree buys half the memory and gives up the reverse direction.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q21",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "expression-trees",
+   "subtopic": "expression-trees",
+   "subtopic_label": "Expression trees",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "In the expression tree of <code class=\"mm\">a + b * c</code>, where <code class=\"mm\">*</code> binds tighter than <code class=\"mm\">+</code>, the root node holds",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">In the expression tree of <code class=\"mm\">a + b * c</code>, where <code class=\"mm\">*</code> binds tighter than <code class=\"mm\">+</code>, the root node holds</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">+</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">*</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">a</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">b</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "+",
+    "*",
+    "a",
+    "b"
+   ],
+   "options_html": [
+    "+",
+    "*",
+    "a",
+    "b"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "An expression tree is built from the outside in: the operator applied last sits at the root, and its operands become the two subtrees.",
+    "steps": [
+     "Precedence makes <code class=\"mm\">b * c</code> a single operand of the addition.",
+     "So the expression is <code class=\"mm\">a + (b * c)</code>, and the last operator applied is <code class=\"mm\">+</code>.",
+     "The root is therefore <code class=\"mm\">+</code>, with <code class=\"mm\">a</code> as the left subtree and the multiplication as the right subtree."
+    ],
+    "final": "Answer: +, option (A).",
+    "trap": "Putting <code class=\"mm\">*</code> at the root because it is the first operator read from the left. The root is the operator of lowest precedence, not the first one encountered."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An expression tree is built from the outside in: the operator applied last sits at the root, and its operands become the two subtrees.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Precedence makes <code class=\"mm\">b * c</code> a single operand of the addition.</li><li>So the expression is <code class=\"mm\">a + (b * c)</code>, and the last operator applied is <code class=\"mm\">+</code>.</li><li>The root is therefore <code class=\"mm\">+</code>, with <code class=\"mm\">a</code> as the left subtree and the multiplication as the right subtree.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">+, option (A).</span></p><p class=\"row\"><b>Common trap.</b> Putting <code class=\"mm\">*</code> at the root because it is the first operator read from the left. The root is the operator of lowest precedence, not the first one encountered.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q22",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "expression-trees",
+   "subtopic": "expression-trees",
+   "subtopic_label": "Expression trees",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Evaluate the prefix expression <code class=\"mm\">* + 2 3 &minus; 8 4</code>. Every value is an exact integer.",
+   "question_html": "<div class=\"qbody\"><div class=\"qtext\">Evaluate the prefix expression <code class=\"mm\">* + 2 3 &minus; 8 4</code>. Every value is an exact integer.</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 22\" autocomplete=\"off\" class=\"natinput\" data-n=\"22\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 20,
+   "answer_display": "20",
+   "solution": {
+    "concept": "A prefix expression is read left to right with a stack: an operand is pushed, and an operator pops its two operands and pushes the result. Equivalently, the first operator after the leading operator owns the next two complete sub-expressions.",
+    "steps": [
+     "<code class=\"mm\">+ 2 3</code> evaluates to 5.",
+     "<code class=\"mm\">&minus; 8 4</code> evaluates to 4.",
+     "The leading <code class=\"mm\">*</code> multiplies them: 5 &times; 4 = 20."
+    ],
+    "final": "Answer: 20.",
+    "trap": "Evaluating the subtraction as 4 &minus; 8. In prefix form the operator's first operand is the left one, so <code class=\"mm\">&minus; 8 4</code> is 8 &minus; 4; reading operands in the wrong order silently negates the whole expression."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A prefix expression is read left to right with a stack: an operand is pushed, and an operator pops its two operands and pushes the result. Equivalently, the first operator after the leading operator owns the next two complete sub-expressions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">+ 2 3</code> evaluates to 5.</li><li><code class=\"mm\">&minus; 8 4</code> evaluates to 4.</li><li>The leading <code class=\"mm\">*</code> multiplies them: 5 &times; 4 = 20.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">20.</span></p><p class=\"row\"><b>Common trap.</b> Evaluating the subtraction as 4 &minus; 8. In prefix form the operator's first operand is the left one, so <code class=\"mm\">&minus; 8 4</code> is 8 &minus; 4; reading operands in the wrong order silently negates the whole expression.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q23",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "expression-trees",
+   "subtopic": "expression-trees",
+   "subtopic_label": "Expression trees",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The prefix expression <code class=\"mm\">* &minus; a b + c d</code> represents which infix expression?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">The prefix expression <code class=\"mm\">* &minus; a b + c d</code> represents which infix expression?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">a &minus; b * c + d</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">(a &minus; b) * (c + d)</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">a &minus; (b * (c + d))</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">((a &minus; b) * c) + d</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "a &minus; b * c + d",
+    "(a &minus; b) * (c + d)",
+    "a &minus; (b * (c + d))",
+    "((a &minus; b) * c) + d"
+   ],
+   "options_html": [
+    "a &minus; b * c + d",
+    "(a &minus; b) * (c + d)",
+    "a &minus; (b * (c + d))",
+    "((a &minus; b) * c) + d"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Prefix form fixes the grouping completely, so the infix form can be recovered by reading the tree that the prefix string encodes: the leading operator is the root and each of its two operands is itself a complete prefix expression.",
+    "steps": [
+     "The root is <code class=\"mm\">*</code>.",
+     "Its left operand is <code class=\"mm\">&minus; a b</code>, which is <code class=\"mm\">(a &minus; b)</code>.",
+     "Its right operand is <code class=\"mm\">+ c d</code>, which is <code class=\"mm\">(c + d)</code>.",
+     "So the expression is <code class=\"mm\">(a &minus; b) * (c + d)</code>."
+    ],
+    "final": "Answer: (a &minus; b) * (c + d), option (B).",
+    "trap": "Dropping the parentheses and relying on precedence, which changes the meaning to <code class=\"mm\">a &minus; (b * c) + d</code>. Prefix form is fully parenthesised by construction; the brackets are not decoration."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Prefix form fixes the grouping completely, so the infix form can be recovered by reading the tree that the prefix string encodes: the leading operator is the root and each of its two operands is itself a complete prefix expression.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The root is <code class=\"mm\">*</code>.</li><li>Its left operand is <code class=\"mm\">&minus; a b</code>, which is <code class=\"mm\">(a &minus; b)</code>.</li><li>Its right operand is <code class=\"mm\">+ c d</code>, which is <code class=\"mm\">(c + d)</code>.</li><li>So the expression is <code class=\"mm\">(a &minus; b) * (c + d)</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">(a &minus; b) * (c + d), option (B).</span></p><p class=\"row\"><b>Common trap.</b> Dropping the parentheses and relying on precedence, which changes the meaning to <code class=\"mm\">a &minus; (b * c) + d</code>. Prefix form is fully parenthesised by construction; the brackets are not decoration.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q24",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "expression-trees",
+   "subtopic": "expression-trees",
+   "subtopic_label": "Expression trees",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about expression trees are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Which of the following statements about expression trees are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The postfix form of an expression is exactly the postorder traversal of its expression tree.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The prefix form is the preorder traversal, and the inorder traversal gives the infix form without its parentheses.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A postfix expression of length m can be evaluated with a single stack in O(m) time.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">An expression tree for a valid infix expression with n binary operators has exactly n leaves.</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "The postfix form of an expression is exactly the postorder traversal of its expression tree.",
+    "The prefix form is the preorder traversal, and the inorder traversal gives the infix form without its parentheses.",
+    "A postfix expression of length m can be evaluated with a single stack in O(m) time.",
+    "An expression tree for a valid infix expression with n binary operators has exactly n leaves."
+   ],
+   "options_html": [
+    "The postfix form of an expression is exactly the postorder traversal of its expression tree.",
+    "The prefix form is the preorder traversal, and the inorder traversal gives the infix form without its parentheses.",
+    "A postfix expression of length m can be evaluated with a single stack in O(m) time.",
+    "An expression tree for a valid infix expression with n binary operators has exactly n leaves."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B), (C)",
+   "solution": {
+    "concept": "The three notations are the three traversals of one tree: prefix is preorder, infix is inorder and postfix is postorder. That is why a stack suffices to evaluate a postfix string, and why an expression tree for <i>n</i> operators has <i>n</i> + 1 operands.",
+    "steps": [
+     "(A) postorder visits both children before the operator, which is exactly postfix. True.",
+     "(B) preorder visits the operator first, and inorder puts it between the operands. True.",
+     "(C) each token is pushed or popped once, so the work is linear. True.",
+     "(D) a binary operator has two operands, so <i>n</i> operators need <i>n</i> + 1 leaves, not <i>n</i>. False."
+    ],
+    "final": "Answer: Options (A), (B) and (C).",
+    "trap": "Counting one leaf per operator. Every internal node of a full binary tree has two children, so leaves outnumber operators by exactly one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three notations are the three traversals of one tree: prefix is preorder, infix is inorder and postfix is postorder. That is why a stack suffices to evaluate a postfix string, and why an expression tree for <i>n</i> operators has <i>n</i> + 1 operands.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) postorder visits both children before the operator, which is exactly postfix. True.</li><li>(B) preorder visits the operator first, and inorder puts it between the operands. True.</li><li>(C) each token is pushed or popped once, so the work is linear. True.</li><li>(D) a binary operator has two operands, so <i>n</i> operators need <i>n</i> + 1 leaves, not <i>n</i>. False.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Counting one leaf per operator. Every internal node of a full binary tree has two children, so leaves outnumber operators by exactly one.</p>"
+  },
+  {
+   "id": "DS-U4-S3-Q25",
+   "subject": "programming-data-structures",
+   "subject_name": "Programming and Data Structures",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "trees-traversals",
+   "unit_name": "Binary Trees & Tree Traversals",
+   "topic": "Binary Trees & Tree Traversals",
+   "sub": "expression-trees",
+   "subtopic": "expression-trees",
+   "subtopic_label": "Expression trees",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Consider the expression tree of <code class=\"mm\">(a + b) * (c &minus; d)</code>, in which every internal node is a binary operator. Using the Sethi&ndash;Ullman labelling, what is the minimum number of registers needed to evaluate the tree without spilling?",
+   "question_html": "<div class=\"qbody\"><p class=\"qtext\">Consider the expression tree of <code class=\"mm\">(a + b) * (c &minus; d)</code>, in which every internal node is a binary operator. Using the Sethi&ndash;Ullman labelling, what is the minimum number of registers needed to evaluate the tree without spilling?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"25\" data-typ=\"MCQ\" name=\"q25\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"25\" data-typ=\"MCQ\" name=\"q25\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"25\" data-typ=\"MCQ\" name=\"q25\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">3</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"25\" data-typ=\"MCQ\" name=\"q25\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">4</span><span class=\"mark\"></span></label></div></div>",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "options_html": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The Sethi&ndash;Ullman label of a leaf is 1. An internal node whose two children have equal labels <i>l</i> gets <i>l</i> + 1, because one child's result must be held in a register while the other is computed; if the labels differ, the node takes the larger of the two, because the more demanding subtree is evaluated first and its result kept. The root's label is the number of registers needed.",
+    "steps": [
+     "Leaves a, b, c, d all carry label 1.",
+     "<code class=\"mm\">+</code> has children labelled 1 and 1, so it takes label 2. Likewise <code class=\"mm\">&minus;</code> takes label 2.",
+     "<code class=\"mm\">*</code> has children labelled 2 and 2, so it takes 2 + 1 = 3.",
+     "Three registers suffice: compute (a + b) into R1 using R2, then compute (c &minus; d) into R2 using R3 while R1 is held, then multiply into R3."
+    ],
+    "final": "Answer: 3, option (C).",
+    "trap": "Answering 2 because each subtree alone needs only 2. The two subtrees overlap in time: the left result must stay live while the right one is computed, and that extra live value is the third register."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The Sethi&ndash;Ullman label of a leaf is 1. An internal node whose two children have equal labels <i>l</i> gets <i>l</i> + 1, because one child's result must be held in a register while the other is computed; if the labels differ, the node takes the larger of the two, because the more demanding subtree is evaluated first and its result kept. The root's label is the number of registers needed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Leaves a, b, c, d all carry label 1.</li><li><code class=\"mm\">+</code> has children labelled 1 and 1, so it takes label 2. Likewise <code class=\"mm\">&minus;</code> takes label 2.</li><li><code class=\"mm\">*</code> has children labelled 2 and 2, so it takes 2 + 1 = 3.</li><li>Three registers suffice: compute (a + b) into R1 using R2, then compute (c &minus; d) into R2 using R3 while R1 is held, then multiply into R3.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3, option (C).</span></p><p class=\"row\"><b>Common trap.</b> Answering 2 because each subtree alone needs only 2. The two subtrees overlap in time: the left result must stay live while the right one is computed, and that extra live value is the third register.</p>"
   }
  ]
 }
