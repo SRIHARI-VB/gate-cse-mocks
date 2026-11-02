@@ -7,35 +7,70 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 1 of 2**, 2026-11-03 →
+- **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 2 of 2**, 2026-11-03 →
   [`discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`](discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: posets & Hasse diagrams (7) · LUB, GLB, meet & join (6) · bounded & complemented lattices (6) ·
+- Subtopics: posets & Hasse diagrams (6) · LUB, GLB, meet & join (7) · bounded & complemented lattices (6) ·
   distributive & modular lattices (6)
-- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order was taken,
-  then restricted, as in runs 12–27, to subjects whose **post-B4** target unit is still below
-  `UNIT_QUESTION_CAP = 50`. Only **Discrete Mathematics** qualified. Its most recent paper is
-  `{2026-11-02, run 19, unit 12, algebraic-structures, Set 2 of 2}`; unit 12 stands at **50** questions, so rule B3
-  fails on the cap and step B4 advances exactly one unit: `(11 + 1) mod 16 = 12`, the 0-based index of **Unit 13,
-  lattices-posets**. Unit 13 held **0** questions, so this is **Set 1 of 2**. Every other subject's next unit
-  already sits at or above 50 and would have opened a second pass.
-- New unit folder, so nothing was superseded: `discrete-mathematics/lattices-posets/` holds this one current paper
-  and no archive yet. The repository root still holds only `index.html`.
-- Previous test: **Computer Networks · Unit 1 — Layering, Physical & Framing, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html`](computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html)
+- Rotation: MODE A. The unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order was
+  taken, then restricted, as in runs 12–28, to subjects whose **post-B4** target unit is still below
+  `UNIT_QUESTION_CAP = 50`. Only **Discrete Mathematics** qualified. Its most recent paper was
+  `{2026-11-03, run 20, unit 13, lattices-posets, Set 1 of 2}`; unit 13 stood at **25** questions, below the cap,
+  and had been current for **0** days, so rule **B3 held** and the unit was generated again as **Set 2 of 2**.
+  No advance, no override. Unit 13 now stands at **50** and the rotation leaves it on the next run.
+- Superseded set: Set 1 moved to
+  [`archive/gate_dm_mock_13_2026-11-03_run1.html`](discrete-mathematics/lattices-posets/archive/gate_dm_mock_13_2026-11-03_run1.html)
+  with its questions, options, answers, solutions and duration frozen. The unit folder holds exactly one current
+  paper; the repository root still holds only `index.html`.
+- Previous test: **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 1 of 2**, 2026-11-03 →
+  [`archive/gate_dm_mock_13_2026-11-03_run1.html`](discrete-mathematics/lattices-posets/archive/gate_dm_mock_13_2026-11-03_run1.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 191 (28 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 69 current · 122 archived |
+| Papers published (current + archived) | 192 (29 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 69 current · 123 archived |
 | Test cards on the portal | 69 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 14 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4775 (700 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4800 (725 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 122 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 123 (15 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 13, Set 2 of 2
+
+- Second and final set of Unit 13. The paper at `discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`
+  was regenerated and the superseded Set 1 moved to `archive/gate_dm_mock_13_2026-11-03_run1.html`, content frozen.
+  Unit 13 now stands at **50** questions, so the rotation advances away from it on the next run.
+- **Rotation (Section 1, MODE A).** Same draw and same restriction as runs 12–28. Only Discrete Mathematics had a
+  post-B4 target unit below the cap: its most recent paper was `{2026-11-03, run 20, unit 13, Set 1 of 2}`, unit 13
+  held **25** questions and had been current **0** days, so **B3 held** and the unit was generated again. No
+  advance, no override, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking
+  · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: posets & Hasse diagrams 6 · LUB, GLB, meet & join 7 · bounded &
+  complemented lattices 6 · distributive & modular lattices 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Posets: which of four relations on `{1,2,3}` is a partial order, the definition of the cover
+  relation, the **6** maximal chains of `D(30)`, an MSQ on a diamond with a top, the **5** linear extensions of a
+  four-element poset, and the width of `D(180)` (**5**). Meet and join: `6 ∨ 8 = 24` in `D(24)`, why the meet under
+  divisibility is gcd, **3** solutions of `x ∨ 18 = 72` in `D(72)`, the identities every lattice obeys, which
+  subset of `D(30)` is closed under gcd and lcm, the **27** ordered pairs `(x, y)` of disjoint sets in `B₃`, and a
+  join in the partition lattice. Bounded and complemented: the least element of `D(20)`, the identities using 0 and
+  1, the **2** complemented elements of the chain `D(16)`, uniqueness against existence of complements, the false
+  statement among four, and the **4** elements of the pentagon with exactly one complement. Distributive and
+  modular: the diamond as the smallest non-distributive lattice, Birkhoff's forbidden sublattices, the **6**
+  two-element sublattices of a four-element chain, inheritance of distributivity, the subgroup lattice of `ℤ₄`, and
+  the **3** join-irreducibles of `M₃`.
+- **Interface fix.** The Set 1 paper shipped two meta strips — a leftover Unit 12 strip above the Unit 13 one. The
+  duplicate is removed in the new paper and in the archived copy; question content is untouched.
+- **Verification (Section 6.8).** CSS block, exam script, palette and footer are byte-identical to the Set 1 shell;
+  one file per paper and nothing new at the repository root; every `href` resolves; the `:root` block still matches
+  `design-tokens.css`; 25 test cards, a 25-button palette and 700 banked questions render, the active 25 are absent
+  from the Question Bank tab; the portal counts match `master_bank.json`; the unit generated is the one Section 1
+  selects, computed from the cap, not from the calendar.
+- **Questions banked.** `discrete-mathematics/question-bank/master_bank.json` now holds **725** questions
+  (DM-U13-Q26 … DM-U13-Q50 appended, run 21 recorded). `data/questions-discrete-mathematics.js` was extended to match.
 
 ### 2026-11-03 — Discrete Mathematics Unit 13, Set 1 of 2
 
