@@ -7,37 +7,81 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 1 — Machine Instructions & Addressing Modes, Set 2 of 2**, 2026-11-02 →
-  [`computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`](computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html)
+- **Programming and Data Structures · Unit 4 — Binary Trees & Tree Traversals, Set 1 of 2 (second pass)**, 2026-11-02 →
+  [`programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html`](programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Instruction formats & opcodes (7) · Addressing modes & effective address (7) · RISC vs CISC (5) ·
-  Stack & subroutines (6)
-- Rotation: MODE A, with the draw taken over all eleven subjects as Section 1 step A states. An unseeded
-  `secrets.randbelow(11)` draw in syllabus order returned index 3 — **Computer Architecture**. `runs[]` sorted by
-  `(date, run)` gave the most recent paper as `{2026-11-02, run 11, unit 1, instructions-addressing, Set 1 of 2}`.
-  Unit 1 held **25** questions, below `UNIT_QUESTION_CAP = 50`, and its first paper was dated 2026-11-02, so it had
-  been current for **zero** days, under `DAYS_PER_UNIT_MAX = 7`. **Rule B3 held on both counts**, so the unit stayed
-  current and this paper is **Set 2 of 2**; step B4 was not reached. No override, no partial set, exactly 25
-  questions — the unit closes at exactly 50.
-- Superseded: the 2026-11-02 Set 1 paper moved to
-  `computer-architecture/instructions-addressing/archive/gate_co_mock_1_2026-11-02_run1.html` with its content
+- Subtopics: Binary tree properties (7) · Inorder, preorder & postorder (8) · Threaded binary trees (5) ·
+  Expression trees (5)
+- Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw in syllabus order returned index 4 —
+  **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 17, unit 3, linear-data-structures, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions,
+  above `UNIT_QUESTION_CAP = 50`, so rule B3 failed on the cap and step B4 advanced exactly one unit:
+  `(2 + 1) mod 7 = 3` → **Unit 4, trees-traversals**. Every unit of the subject now sits at or above the cap
+  (75 / 75 / 75 / 50 / 50 / 50 / 50), so the modulo wraps and the **second pass** is under way; Unit 4 opens its
+  second pass with Set 1 of 2. No override, no partial set, exactly 25 questions.
+- Superseded: the 2026-10-28 paper moved to
+  `programming-data-structures/trees-traversals/archive/gate_ds_mock_4_2026-10-28_run2.html` with its content
   frozen, so the unit folder holds exactly one current paper.
-- Previous test: **Programming and Data Structures · Unit 3 — Linear Data Structures, Set 1 of 2 (second pass)**,
-  2026-11-02 →
-  [`programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html`](programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html)
+- Previous test: **Computer Architecture · Unit 1 — Machine Instructions & Addressing Modes, Set 2 of 2**, 2026-11-02 →
+  [`computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`](computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 185 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 17 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 68 current · 117 archived |
+| Papers published (current + archived) | 186 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 18 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 68 current · 118 archived |
 | Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4625 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 425 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4650 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 450 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 117 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 10 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 118 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 11 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-02 — Programming and Data Structures Unit 4, Set 1 of 2 (second pass)
+
+- New paper at `programming-data-structures/trees-traversals/gate_ds_mock_4_2026-11-02.html`. The 2026-10-28 paper
+  moved to `programming-data-structures/trees-traversals/archive/gate_ds_mock_4_2026-10-28_run2.html` with its content
+  frozen, so the unit folder holds exactly one current paper and the repository root holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 4 — **Programming and Data Structures**. The most recent run in `runs[]` was
+  `{2026-11-02, run 17, unit 3, linear-data-structures}`. Unit 3 held 75 banked questions, so the cap
+  (`UNIT_QUESTION_CAP = 50`) had been reached and rule B3 failed; step B4 advanced one unit,
+  `(2 + 1) mod 7 = 3` → Unit 4, `trees-traversals`. Every unit of the subject is at or above the cap
+  (75 / 75 / 75 / 50 / 50 / 50 / 50), so the modulo wraps into the second pass — the same state units 1, 2 and 3
+  are already in. No override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab
+  says so.
+- **Coverage.** All four unit subtopics: binary tree properties 7 · inorder, preorder & postorder 8 · threaded binary
+  trees 5 · expression trees 5. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Properties: the node capacity of a tree of height 6 (**127**), the node count of a full tree
+  with 32 leaves (**63**), the last level of a 200-node complete tree (**73**), the minimum height for 100 nodes
+  (**6**), leaves from a 40-node tree with 15 one-child nodes (**13**), the largest leaf count for 1000 nodes
+  (**500**), and an MSQ on the 1-indexed array layout. Traversals: reading a traversal off a complete tree's array,
+  preorder plus inorder to postorder (**A C B E F D L P M K**), the height (**3**) and the one-child count (**1**) of
+  that tree, postorder from preorder 1–7 and inorder 3 2 4 1 6 5 7 (**3 4 2 6 7 5 1**), an inorder recovered from
+  preorder and postorder when no node has a single child (**C B D A F E G**), an MSQ on traversal memory (recursion,
+  explicit stack, Morris) and an MSQ on level order (queue peak = width, O(w) space, uniqueness with inorder). Threads:
+  the successor of a node with a real right child, the right thread of the last node (**the header**), right threads
+  in a 7-node tree (**4**), an MSQ on the tag bit and the <i>n</i> + 1 thread count, and a hard MCQ on what
+  single-sided threading gives up. Expression trees: the root operator of `a + b * c`, prefix evaluation
+  (`* + 2 3 − 8 4` = **20**), prefix to infix (`* − a b + c d`), an MSQ on the traversal correspondence, and the
+  Sethi–Ullman register bound for `(a + b) * (c − d)` (**3**).
+- **Answers recomputed, not asserted.** Every key was checked by script: 2⁷ − 1 = 127; 2·32 − 1 = 63;
+  200 − 127 = 73; 2⁶ − 1 = 63 < 100 ≤ 127 = 2⁷ − 1; (40 − 15 + 1)/2 = 13; (1000 + 1 − 1)/2 = 500;
+  preorder+inorder rebuilt to postorder A C B E F D L P M K with height 3 and one single-child node; the 1–7 tree
+  rebuilt to postorder 3 4 2 6 7 5 1; the full tree rebuilt to inorder C B D A F E G; (2 + 3)·(8 − 4) = 20;
+  Sethi–Ullman labels 1,1 → 2 and 2,2 → 3. The rendered paper was then driven in a headless DOM: all 25 correct
+  answers scored **35 / 35** with 25 green palette buttons, and a deliberately wrong MCQ, a wrong NAT value and a
+  partial MSQ scored **0 / 35** with 3 incorrect and 22 unattempted, so the exact-set rule for MSQ holds.
+- **Ids and bank.** 25 records appended as `DS-U4-S3-Q01`–`DS-U4-S3-Q25`; Programming and Data Structures now holds
+  **450** questions across 7 units, and `data/questions-programming-data-structures.js` grew from 425 to 450 records.
+- **Question Bank tab.** 425 solved questions — the 450 in the bank less the 25 active on this paper — so the active
+  set is not repeated there. Unit 4 supplies its 50 archived questions, Units 1–3 and 5–7 supply the other 375.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION` and nothing on it is claimed as an official GATE
+  question: no previous-year question on this unit has been verified against an official paper and answer key. The
+  paper is tagged `STANDARD_TEXTBOOK` and `ORIGINAL_SYNTHESIS` only.
 
 ### 2026-11-02 — Computer Architecture Unit 1, Set 2 of 2
 
