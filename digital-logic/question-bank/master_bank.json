@@ -6,14 +6,14 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 300,
+  "total_questions": 325,
   "units_with_questions": [
    1,
    2,
    3,
    4
   ],
-  "total_runs": 12
+  "total_runs": 13
  },
  "runs": [
   {
@@ -767,6 +767,76 @@
     "STANDARD_TEXTBOOK": 18,
     "ORIGINAL_SYNTHESIS": 7
    }
+  },
+  {
+   "run": 13,
+   "date": "2026-11-02",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "set": "Set 2 of 2 (second pass)",
+   "count": 25,
+   "file": "digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html",
+   "archived_previous": "digital-logic/number-systems/archive/gate_dl_mock_1_2026-10-31_run3.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "base-conversions",
+    "floating-point-ieee-754",
+    "ones-twos-complement",
+    "range-and-overflow"
+   ],
+   "subtopic_counts": {
+    "base-conversions": 7,
+    "floating-point-ieee-754": 7,
+    "ones-twos-complement": 6,
+    "range-and-overflow": 5
+   },
+   "question_ids": [
+    "DL-U1-D-Q01",
+    "DL-U1-D-Q02",
+    "DL-U1-D-Q03",
+    "DL-U1-D-Q04",
+    "DL-U1-D-Q05",
+    "DL-U1-D-Q06",
+    "DL-U1-D-Q07",
+    "DL-U1-D-Q08",
+    "DL-U1-D-Q09",
+    "DL-U1-D-Q10",
+    "DL-U1-D-Q11",
+    "DL-U1-D-Q12",
+    "DL-U1-D-Q13",
+    "DL-U1-D-Q14",
+    "DL-U1-D-Q15",
+    "DL-U1-D-Q16",
+    "DL-U1-D-Q17",
+    "DL-U1-D-Q18",
+    "DL-U1-D-Q19",
+    "DL-U1-D-Q20",
+    "DL-U1-D-Q21",
+    "DL-U1-D-Q22",
+    "DL-U1-D-Q23",
+    "DL-U1-D-Q24",
+    "DL-U1-D-Q25"
+   ],
+   "sources": {
+    "ORIGINAL_SYNTHESIS": 14,
+    "STANDARD_TEXTBOOK": 11
+   },
+   "rotation_note": "MODE A. Every Digital Logic unit stands at 75 banked questions, above UNIT_QUESTION_CAP = 50, so step B5 applied: the advance wrapped (3 + 1) mod 4 = 0 from Unit 4 to Unit 1, which closes its second pass with Set 2 of 2."
   }
  ],
  "verified_pyqs": [
@@ -11694,6 +11764,1210 @@
    ],
    "answer_display": "4",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The condition depends on two consecutive bits, so the machine only has to remember the previous bit. That gives two states, one per value of the previous bit, and the output sits on the transition because it depends on the present input as well.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Bits 1 and 1 are the same, output 0.</li><li>Bits 1 and 0 differ, output 1.</li><li>Bits 0 and 1 differ, output 1.</li><li>Bits 1 and 0 differ, output 1.</li><li>Bits 0 and 0 are the same, output 0.</li><li>Bits 0 and 1 differ, output 1.</li><li>The outputs are 0 1 1 1 0 1, so the output is 1 on four of the six transitions.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Counting the bits rather than the adjacent pairs and answering 7 or 6, or ignoring the first bit so that the first pair is missed.</p><p class=\"row\"><b>Takeaway.</b> For a property of two consecutive bits, the number of decisions equals the number of bits minus one.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q01",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The base-7 numeral <code class=\"mm\">(135)<sub>7</sub></code> equals which decimal value?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"1\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 1</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The base-7 numeral <code class=\"mm\">(135)<sub>7</sub></code> equals which decimal value?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">75</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">85</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">63</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">96</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "75",
+    "85",
+    "63",
+    "96"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">75</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">85</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">63</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">96</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A positional numeral is a weighted sum: the digit in position k, counting from 0 at the right-hand digit, is multiplied by b<sup>k</sup>.",
+    "steps": [
+     "Write the place values for base 7: 7<sup>2</sup> = 49, 7<sup>1</sup> = 7, 7<sup>0</sup> = 1.",
+     "Multiply each digit by its place value: 1&times;49 + 3&times;7 + 5&times;1.",
+     "Add: 49 + 21 + 5 = 75.",
+     "Check by dividing back: 75 = 1&times;49 + 26, and 26 = 3&times;7 + 5, so the digits are 1, 3, 5 again."
+    ],
+    "final": "Option (A), 75.",
+    "misconception": "Reading the digits with decimal weights (1&times;100 + 3&times;10 + 5 = 135) or starting the running multiply at 7 instead of 1, which gives 7&times;7 + 3&times;7 + 5 = 75 by coincidence of the wrong method only in some cases.",
+    "takeaway": "Write the place values above the digits before multiplying; the leftmost place value of an n-digit numeral in base b is b<sup>n&minus;1</sup>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A positional numeral is a weighted sum: the digit in position k, counting from 0 at the right-hand digit, is multiplied by b<sup>k</sup>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the place values for base 7: 7<sup>2</sup> = 49, 7<sup>1</sup> = 7, 7<sup>0</sup> = 1.</li><li>Multiply each digit by its place value: 1&times;49 + 3&times;7 + 5&times;1.</li><li>Add: 49 + 21 + 5 = 75.</li><li>Check by dividing back: 75 = 1&times;49 + 26, and 26 = 3&times;7 + 5, so the digits are 1, 3, 5 again.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A), 75.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the digits with decimal weights (1&times;100 + 3&times;10 + 5 = 135) or starting the running multiply at 7 instead of 1, which gives 7&times;7 + 3&times;7 + 5 = 75 by coincidence of the wrong method only in some cases.</p><p class=\"row\"><b>Takeaway.</b> Write the place values above the digits before multiplying; the leftmost place value of an n-digit numeral in base b is b<sup>n&minus;1</sup>.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q02",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "How many bits are needed to write the octal numeral <code class=\"mm\">(777)<sub>8</sub></code> in binary?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"2\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 2</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">How many bits are needed to write the octal numeral <code class=\"mm\">(777)<sub>8</sub></code> in binary?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">8</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">9</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">10</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">12</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "8",
+    "9",
+    "10",
+    "12"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">8</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">9</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">10</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">12</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Octal and binary are linked by 8 = 2<sup>3</sup>, so every octal digit expands to exactly three bits, independently of its neighbours.",
+    "steps": [
+     "Count the octal digits: 7, 7, 7 &mdash; three digits.",
+     "Each digit takes three bits, so 3 &times; 3 = 9 bits are needed.",
+     "Expand to confirm: 7 = 111, so (777)<sub>8</sub> = 111 111 111<sub>2</sub>, nine bits, with no leading zero to drop.",
+     "Cross-check in decimal: (777)<sub>8</sub> = 7&times;64 + 7&times;8 + 7 = 511, and 511 = 2<sup>9</sup> &minus; 1, which needs exactly nine bits."
+    ],
+    "final": "Option (B), 9 bits.",
+    "misconception": "Grouping octal digits in fours, the rule for hexadecimal, which would give 12 bits; or assuming the leading group can be shortened when the value is small, which is not the case here because 7 is the widest octal digit.",
+    "takeaway": "Bits = 3 &times; (number of octal digits) unless the leading digit is below 4, in which case the leading group is written with fewer bits only when leading zeros are dropped."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Octal and binary are linked by 8 = 2<sup>3</sup>, so every octal digit expands to exactly three bits, independently of its neighbours.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count the octal digits: 7, 7, 7 &mdash; three digits.</li><li>Each digit takes three bits, so 3 &times; 3 = 9 bits are needed.</li><li>Expand to confirm: 7 = 111, so (777)<sub>8</sub> = 111 111 111<sub>2</sub>, nine bits, with no leading zero to drop.</li><li>Cross-check in decimal: (777)<sub>8</sub> = 7&times;64 + 7&times;8 + 7 = 511, and 511 = 2<sup>9</sup> &minus; 1, which needs exactly nine bits.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B), 9 bits.</span></p><p class=\"row\"><b>Common misconception.</b> Grouping octal digits in fours, the rule for hexadecimal, which would give 12 bits; or assuming the leading group can be shortened when the value is small, which is not the case here because 7 is the widest octal digit.</p><p class=\"row\"><b>Takeaway.</b> Bits = 3 &times; (number of octal digits) unless the leading digit is below 4, in which case the leading group is written with fewer bits only when leading zeros are dropped.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q03",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The binary numeral <code class=\"mm\">(110 011.101)<sub>2</sub></code>, written in octal, is",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"3\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 3</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The binary numeral <code class=\"mm\">(110 011.101)<sub>2</sub></code>, written in octal, is</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">(36.5)<sub>8</sub></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">(71.5)<sub>8</sub></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">(63.5)<sub>8</sub></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">(63.625)<sub>8</sub></span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "(36.5)<sub>8</sub>",
+    "(71.5)<sub>8</sub>",
+    "(63.5)<sub>8</sub>",
+    "(63.625)<sub>8</sub>"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">(36.5)<sub>8</sub></span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">(71.5)<sub>8</sub></span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">(63.5)<sub>8</sub></span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">(63.625)<sub>8</sub></span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Convert binary to octal by regrouping in threes, starting at the radix point and moving outward in both directions.",
+    "steps": [
+     "Integer part 110 011 is already grouped in threes from the point: 110 = 6, 011 = 3, so the integer part is 63.",
+     "Fraction part 101 is one group of three: 101 = 5, so the fraction is .5.",
+     "The octal numeral is (63.5)<sub>8</sub>.",
+     "Check through decimal: (110 011.101)<sub>2</sub> = 32 + 16 + 2 + 1 + 0.5 + 0.125 = 51.625, and (63.5)<sub>8</sub> = 6&times;8 + 3 + 5/8 = 48 + 3 + 0.625 = 51.625."
+    ],
+    "final": "Option (C), (63.5)<sub>8</sub>.",
+    "misconception": "Writing the binary fraction .101 straight across as the octal fraction .101 or as .625, which treats three binary digits as three octal digits; and regrouping the integer part from the left instead of from the radix point.",
+    "takeaway": "Group in threes outward from the radix point; pad the fraction on the right and the integer part on the left, never in the middle."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Convert binary to octal by regrouping in threes, starting at the radix point and moving outward in both directions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Integer part 110 011 is already grouped in threes from the point: 110 = 6, 011 = 3, so the integer part is 63.</li><li>Fraction part 101 is one group of three: 101 = 5, so the fraction is .5.</li><li>The octal numeral is (63.5)<sub>8</sub>.</li><li>Check through decimal: (110 011.101)<sub>2</sub> = 32 + 16 + 2 + 1 + 0.5 + 0.125 = 51.625, and (63.5)<sub>8</sub> = 6&times;8 + 3 + 5/8 = 48 + 3 + 0.625 = 51.625.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C), (63.5)<sub>8</sub>.</span></p><p class=\"row\"><b>Common misconception.</b> Writing the binary fraction .101 straight across as the octal fraction .101 or as .625, which treats three binary digits as three octal digits; and regrouping the integer part from the left instead of from the radix point.</p><p class=\"row\"><b>Takeaway.</b> Group in threes outward from the radix point; pad the fraction on the right and the integer part on the left, never in the middle.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q04",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The 8-bit two&rsquo;s complement pattern <code class=\"mm\">1110 0110</code> represents which decimal integer?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"4\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 4</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The 8-bit two&rsquo;s complement pattern <code class=\"mm\">1110 0110</code> represents which decimal integer?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">&minus;25</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">&minus;122</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">26</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">&minus;26</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "&minus;25",
+    "&minus;122",
+    "26",
+    "&minus;26"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">&minus;25</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">&minus;122</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">26</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">&minus;26</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "In an n-bit two&rsquo;s complement pattern the leading bit carries the weight &minus;2<sup>n&minus;1</sup>; every other bit keeps its positive weight.",
+    "steps": [
+     "The leading bit is 1, so the value is negative.",
+     "Sum the weights: &minus;128 + 64 + 32 + 4 + 2 = &minus;26.",
+     "Confirm by complementing: invert 1110 0110 to 0001 1001 = 25, add 1 to get 26, so the pattern is &minus;26.",
+     "A second check: 256 &minus; 230 = 26, and the sign bit is 1, so the value is &minus;26."
+    ],
+    "final": "Option (D), &minus;26.",
+    "misconception": "Inverting without adding 1, which gives the one&rsquo;s complement reading of &minus;25, or ignoring the sign bit and reading 230 as unsigned.",
+    "takeaway": "Two quick routes for a negative pattern: &minus;(2<sup>n</sup> &minus; unsigned value), or read the leading weight as &minus;2<sup>n&minus;1</sup> and add the rest."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In an n-bit two&rsquo;s complement pattern the leading bit carries the weight &minus;2<sup>n&minus;1</sup>; every other bit keeps its positive weight.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The leading bit is 1, so the value is negative.</li><li>Sum the weights: &minus;128 + 64 + 32 + 4 + 2 = &minus;26.</li><li>Confirm by complementing: invert 1110 0110 to 0001 1001 = 25, add 1 to get 26, so the pattern is &minus;26.</li><li>A second check: 256 &minus; 230 = 26, and the sign bit is 1, so the value is &minus;26.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D), &minus;26.</span></p><p class=\"row\"><b>Common misconception.</b> Inverting without adding 1, which gives the one&rsquo;s complement reading of &minus;25, or ignoring the sign bit and reading 230 as unsigned.</p><p class=\"row\"><b>Takeaway.</b> Two quick routes for a negative pattern: &minus;(2<sup>n</sup> &minus; unsigned value), or read the leading weight as &minus;2<sup>n&minus;1</sup> and add the rest.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q05",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following is the 8-bit two&rsquo;s complement representation of &minus;45?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"5\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 5</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following is the 8-bit two&rsquo;s complement representation of &minus;45?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1101 0010</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">1010 1101</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">1101 0011</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">0010 1101</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "1101 0010",
+    "1010 1101",
+    "1101 0011",
+    "0010 1101"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">1101 0010</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">1010 1101</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">1101 0011</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">0010 1101</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "To negate in two&rsquo;s complement, write the magnitude in n bits, invert every bit, then add 1.",
+    "steps": [
+     "+45 in 8 bits is 0010 1101.",
+     "Invert every bit: 1101 0010.",
+     "Add 1: 1101 0011.",
+     "Check by weight: &minus;128 + 64 + 16 + 2 + 1 = &minus;45."
+    ],
+    "final": "Option (C), 1101 0011.",
+    "misconception": "Stopping after the inversion, which yields the one&rsquo;s complement pattern 1101 0010 and a value of &minus;44; or setting the sign bit on the magnitude, which gives 1010 1101 and a value of &minus;83.",
+    "takeaway": "Invert then add 1 &mdash; and always check the result by weighting the bits, which catches a forgotten carry."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> To negate in two&rsquo;s complement, write the magnitude in n bits, invert every bit, then add 1.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>+45 in 8 bits is 0010 1101.</li><li>Invert every bit: 1101 0010.</li><li>Add 1: 1101 0011.</li><li>Check by weight: &minus;128 + 64 + 16 + 2 + 1 = &minus;45.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C), 1101 0011.</span></p><p class=\"row\"><b>Common misconception.</b> Stopping after the inversion, which yields the one&rsquo;s complement pattern 1101 0010 and a value of &minus;44; or setting the sign bit on the magnitude, which gives 1010 1101 and a value of &minus;83.</p><p class=\"row\"><b>Takeaway.</b> Invert then add 1 &mdash; and always check the result by weighting the bits, which catches a forgotten carry.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q06",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "How many distinct integer values can an n-bit one&rsquo;s complement register represent?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"6\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 6</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">How many distinct integer values can an n-bit one&rsquo;s complement register represent?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">2<sup>n</sup></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2<sup>n</sup> &minus; 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">2<sup>n</sup> + 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">2<sup>n&minus;1</sup></span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "2<sup>n</sup>",
+    "2<sup>n</sup> &minus; 1",
+    "2<sup>n</sup> + 1",
+    "2<sup>n&minus;1</sup>"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">2<sup>n</sup></span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">2<sup>n</sup> &minus; 1</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">2<sup>n</sup> + 1</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">2<sup>n&minus;1</sup></span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "One&rsquo;s complement has two representations of zero &mdash; all zeros and all ones &mdash; so the 2<sup>n</sup> patterns carry one value fewer.",
+    "steps": [
+     "An n-bit register has 2<sup>n</sup> patterns.",
+     "000&hellip;0 and 111&hellip;1 both denote zero, so one pattern is wasted.",
+     "The representable range is &minus;(2<sup>n&minus;1</sup> &minus; 1) to +(2<sup>n&minus;1</sup> &minus; 1), a count of 2(2<sup>n&minus;1</sup> &minus; 1) + 1 = 2<sup>n</sup> &minus; 1.",
+     "For n = 4 this gives &minus;7 to +7, fifteen values, which agrees with the formula."
+    ],
+    "final": "Option (B), 2<sup>n</sup> &minus; 1.",
+    "misconception": "Answering 2<sup>n</sup> by analogy with two&rsquo;s complement, where every pattern is a distinct value; the double zero is the whole difference between the two systems.",
+    "takeaway": "One&rsquo;s complement: 2<sup>n</sup> &minus; 1 values, two zeros, range symmetric about zero. Two&rsquo;s complement: 2<sup>n</sup> values, one zero, range asymmetric."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> One&rsquo;s complement has two representations of zero &mdash; all zeros and all ones &mdash; so the 2<sup>n</sup> patterns carry one value fewer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>An n-bit register has 2<sup>n</sup> patterns.</li><li>000&hellip;0 and 111&hellip;1 both denote zero, so one pattern is wasted.</li><li>The representable range is &minus;(2<sup>n&minus;1</sup> &minus; 1) to +(2<sup>n&minus;1</sup> &minus; 1), a count of 2(2<sup>n&minus;1</sup> &minus; 1) + 1 = 2<sup>n</sup> &minus; 1.</li><li>For n = 4 this gives &minus;7 to +7, fifteen values, which agrees with the formula.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B), 2<sup>n</sup> &minus; 1.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2<sup>n</sup> by analogy with two&rsquo;s complement, where every pattern is a distinct value; the double zero is the whole difference between the two systems.</p><p class=\"row\"><b>Takeaway.</b> One&rsquo;s complement: 2<sup>n</sup> &minus; 1 values, two zeros, range symmetric about zero. Two&rsquo;s complement: 2<sup>n</sup> values, one zero, range asymmetric.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q07",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "In IEEE 754 double precision, how many bits are devoted to the fraction field?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"7\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 7</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">In IEEE 754 double precision, how many bits are devoted to the fraction field?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">52</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">23</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">51</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">64</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "52",
+    "23",
+    "51",
+    "64"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">52</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">23</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">51</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">64</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "IEEE 754 binary64 is 1 sign bit, 11 exponent bits and 52 fraction bits, 64 bits in total.",
+    "steps": [
+     "Total width is 64 bits.",
+     "Sign takes 1 bit and the exponent takes 11 bits, so the fraction takes 64 &minus; 1 &minus; 11 = 52 bits.",
+     "For normal numbers the leading 1 is implicit, so the effective precision is 53 bits even though only 52 are stored."
+    ],
+    "final": "Option (A), 52 bits.",
+    "misconception": "Answering 51 because the implicit leading 1 is thought to consume one of the stored fraction bits; it does not &mdash; it is in addition to the 52 stored bits.",
+    "takeaway": "binary32: 1 + 8 + 23. binary64: 1 + 11 + 52. Effective precision is one more than the fraction width."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> IEEE 754 binary64 is 1 sign bit, 11 exponent bits and 52 fraction bits, 64 bits in total.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Total width is 64 bits.</li><li>Sign takes 1 bit and the exponent takes 11 bits, so the fraction takes 64 &minus; 1 &minus; 11 = 52 bits.</li><li>For normal numbers the leading 1 is implicit, so the effective precision is 53 bits even though only 52 are stored.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A), 52 bits.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 51 because the implicit leading 1 is thought to consume one of the stored fraction bits; it does not &mdash; it is in addition to the 52 stored bits.</p><p class=\"row\"><b>Takeaway.</b> binary32: 1 + 8 + 23. binary64: 1 + 11 + 52. Effective precision is one more than the fraction width.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q08",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "In IEEE 754 single precision, which 8-bit exponent field encodes a stored (unbiased) exponent of 0?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"8\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 8</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">In IEEE 754 single precision, which 8-bit exponent field encodes a stored (unbiased) exponent of 0?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">0000 0000</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">1000 0000</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">1111 1111</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">0111 1111</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "0000 0000",
+    "1000 0000",
+    "1111 1111",
+    "0111 1111"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">0000 0000</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">1000 0000</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">1111 1111</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">0111 1111</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The exponent is stored in excess-127 form: the field holds e + 127 for an unbiased exponent e.",
+    "steps": [
+     "e = 0, so the field holds 0 + 127 = 127.",
+     "127 in 8 bits is 0111 1111.",
+     "The neighbouring fields are reserved: 0000 0000 marks zero and subnormal numbers, 1111 1111 marks infinity and NaN.",
+     "So an exponent field of 0111 1111 with a zero fraction is the value 1.0 &times; 2<sup>0</sup> = 1.0."
+    ],
+    "final": "Option (D), 0111 1111.",
+    "misconception": "Writing 0000 0000 for exponent zero, which is the reserved all-zero field and does not mean 2<sup>0</sup>; or using excess-128, the convention of some other formats.",
+    "takeaway": "Stored field = e + bias with bias 127 for binary32 and 1023 for binary64; the all-zero and all-one fields are reserved and never carry a normal exponent."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The exponent is stored in excess-127 form: the field holds e + 127 for an unbiased exponent e.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>e = 0, so the field holds 0 + 127 = 127.</li><li>127 in 8 bits is 0111 1111.</li><li>The neighbouring fields are reserved: 0000 0000 marks zero and subnormal numbers, 1111 1111 marks infinity and NaN.</li><li>So an exponent field of 0111 1111 with a zero fraction is the value 1.0 &times; 2<sup>0</sup> = 1.0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D), 0111 1111.</span></p><p class=\"row\"><b>Common misconception.</b> Writing 0000 0000 for exponent zero, which is the reserved all-zero field and does not mean 2<sup>0</sup>; or using excess-128, the convention of some other formats.</p><p class=\"row\"><b>Takeaway.</b> Stored field = e + bias with bias 127 for binary32 and 1023 for binary64; the all-zero and all-one fields are reserved and never carry a normal exponent.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q09",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The 32-bit word <code class=\"mm\">0x7F800000</code>, read as an IEEE 754 single precision number, is",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"9\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 9</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The 32-bit word <code class=\"mm\">0x7F800000</code>, read as an IEEE 754 single precision number, is</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">NaN</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">+&infin;</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">+0</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">the largest finite positive value</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "NaN",
+    "+&infin;",
+    "+0",
+    "the largest finite positive value"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">NaN</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">+&infin;</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">+0</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">the largest finite positive value</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In IEEE 754 an all-ones exponent field marks the exceptional values: with a zero fraction it is infinity, with a non-zero fraction it is NaN.",
+    "steps": [
+     "0x7F800000 is 0111 1111 1000 0000 &hellip; 0000 in binary.",
+     "Sign bit 0, exponent field 1111 1111 = 255, which is all ones, fraction field all zeros.",
+     "All-ones exponent with a zero fraction is +&infin;.",
+     "For comparison: 0x7F7FFFFF is the largest finite value, 0x00000000 is +0, and 0x7FC00000 is a NaN."
+    ],
+    "final": "Option (B), +&infin;.",
+    "misconception": "Reading the all-ones exponent as the largest legal exponent and calling the pattern the largest finite value; that value is 0x7F7FFFFF, one bit pattern below.",
+    "takeaway": "Learn the three special fields as a table: exponent all zeros (zero or subnormal), all ones with zero fraction (infinity), all ones with non-zero fraction (NaN)."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In IEEE 754 an all-ones exponent field marks the exceptional values: with a zero fraction it is infinity, with a non-zero fraction it is NaN.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0x7F800000 is 0111 1111 1000 0000 &hellip; 0000 in binary.</li><li>Sign bit 0, exponent field 1111 1111 = 255, which is all ones, fraction field all zeros.</li><li>All-ones exponent with a zero fraction is +&infin;.</li><li>For comparison: 0x7F7FFFFF is the largest finite value, 0x00000000 is +0, and 0x7FC00000 is a NaN.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B), +&infin;.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the all-ones exponent as the largest legal exponent and calling the pattern the largest finite value; that value is 0x7F7FFFFF, one bit pattern below.</p><p class=\"row\"><b>Takeaway.</b> Learn the three special fields as a table: exponent all zeros (zero or subnormal), all ones with zero fraction (infinity), all ones with non-zero fraction (NaN).</p>"
+  },
+  {
+   "id": "DL-U1-D-Q10",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "range-and-overflow",
+   "subtopic": "range-and-overflow",
+   "subtopic_label": "Range & overflow",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following decimal values cannot be stored in an 8-bit unsigned register?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"10\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"range-and-overflow\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 10</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">range-and-overflow</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following decimal values cannot be stored in an 8-bit unsigned register?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">0</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">128</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">255</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">256</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "0",
+    "128",
+    "255",
+    "256"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">0</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">128</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">255</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">256</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "An n-bit unsigned register holds the 2<sup>n</sup> values 0 to 2<sup>n</sup> &minus; 1.",
+    "steps": [
+     "For n = 8 the range is 0 to 2<sup>8</sup> &minus; 1 = 255.",
+     "0, 128 and 255 all lie inside that range.",
+     "256 needs nine bits (1 0000 0000), so it cannot be stored in eight.",
+     "The register has 256 distinct patterns, but the top value is 255, not 256."
+    ],
+    "final": "Option (D), 256.",
+    "misconception": "Confusing the number of patterns (2<sup>n</sup> = 256) with the largest value (2<sup>n</sup> &minus; 1 = 255), and concluding that 256 fits.",
+    "takeaway": "Range of an n-bit unsigned register: 0 &hellip; 2<sup>n</sup> &minus; 1. The count of values and the maximum value differ by one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An n-bit unsigned register holds the 2<sup>n</sup> values 0 to 2<sup>n</sup> &minus; 1.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For n = 8 the range is 0 to 2<sup>8</sup> &minus; 1 = 255.</li><li>0, 128 and 255 all lie inside that range.</li><li>256 needs nine bits (1 0000 0000), so it cannot be stored in eight.</li><li>The register has 256 distinct patterns, but the top value is 255, not 256.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D), 256.</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the number of patterns (2<sup>n</sup> = 256) with the largest value (2<sup>n</sup> &minus; 1 = 255), and concluding that 256 fits.</p><p class=\"row\"><b>Takeaway.</b> Range of an n-bit unsigned register: 0 &hellip; 2<sup>n</sup> &minus; 1. The count of values and the maximum value differ by one.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q11",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "For which base b is the numeral <code class=\"mm\">(144)<sub>b</sub></code> equal to the decimal number 100?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"11\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 11</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">For which base b is the numeral <code class=\"mm\">(144)<sub>b</sub></code> equal to the decimal number 100?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">7</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">9</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">8</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">12</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "7",
+    "9",
+    "8",
+    "12"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">7</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">9</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">8</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">12</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Evaluate the numeral as a polynomial in b and solve for b; the answer must also satisfy every digit &lt; b.",
+    "steps": [
+     "(144)<sub>b</sub> = 1&middot;b<sup>2</sup> + 4&middot;b + 4 = 100.",
+     "Rearrange: b<sup>2</sup> + 4b &minus; 96 = 0.",
+     "Factor: (b + 12)(b &minus; 8) = 0, so b = 8 (a base cannot be negative).",
+     "Check: 64 + 32 + 4 = 100, and the digit 4 &lt; 8, so the numeral is legal in base 8."
+    ],
+    "final": "Option (C), b = 8.",
+    "misconception": "Trying the bases by eye and accepting b = 9 because (121)<sub>9</sub> = 100, a different numeral; or accepting the negative root because the arithmetic &lsquo;works&rsquo;.",
+    "takeaway": "Always solve the polynomial, then discard any root smaller than the largest digit used."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Evaluate the numeral as a polynomial in b and solve for b; the answer must also satisfy every digit &lt; b.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(144)<sub>b</sub> = 1&middot;b<sup>2</sup> + 4&middot;b + 4 = 100.</li><li>Rearrange: b<sup>2</sup> + 4b &minus; 96 = 0.</li><li>Factor: (b + 12)(b &minus; 8) = 0, so b = 8 (a base cannot be negative).</li><li>Check: 64 + 32 + 4 = 100, and the digit 4 &lt; 8, so the numeral is legal in base 8.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C), b = 8.</span></p><p class=\"row\"><b>Common misconception.</b> Trying the bases by eye and accepting b = 9 because (121)<sub>9</sub> = 100, a different numeral; or accepting the negative root because the arithmetic &lsquo;works&rsquo;.</p><p class=\"row\"><b>Takeaway.</b> Always solve the polynomial, then discard any root smaller than the largest digit used.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q12",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "An 8-bit two&rsquo;s complement adder computes <code class=\"mm\">0111 0101 + 0010 1101</code>. Which result pattern is produced, and does signed overflow occur?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"12\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 12</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">An 8-bit two&rsquo;s complement adder computes <code class=\"mm\">0111 0101 + 0010 1101</code>. Which result pattern is produced, and does signed overflow occur?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1010 0010, and signed overflow occurs</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">1010 0010, and no signed overflow occurs</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">0010 0010, and signed overflow occurs</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"12\" data-typ=\"MCQ\" name=\"q12\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">0010 0010, and no signed overflow occurs</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "1010 0010, and signed overflow occurs",
+    "1010 0010, and no signed overflow occurs",
+    "0010 0010, and signed overflow occurs",
+    "0010 0010, and no signed overflow occurs"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">1010 0010, and signed overflow occurs</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">1010 0010, and no signed overflow occurs</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">0010 0010, and signed overflow occurs</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">0010 0010, and no signed overflow occurs</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Signed overflow occurs when both operands share a sign and the result has the opposite sign; it is not the same flag as the carry out of the sign bit.",
+    "steps": [
+     "Read the operands: 0111 0101 = 117, 0010 1101 = 45, both positive.",
+     "117 + 45 = 162, which is greater than the largest positive 8-bit value, 127.",
+     "162 &minus; 256 = &minus;94, whose pattern is 1010 0010 (128 + 32 + 2 = 162 as unsigned).",
+     "The two positive operands produced a negative result, so signed overflow is flagged; the carry out of the sign bit is 0, which is why the carry flag alone would have missed it."
+    ],
+    "final": "Option (A), 1010 0010 with signed overflow.",
+    "misconception": "Watching the carry out of the most significant bit: here it is 0, so a candidate who uses it as the overflow flag reports no overflow on a sum that clearly overflows.",
+    "takeaway": "Overflow rule for addition: same signs in, different sign out. The carry out answers a different question, about unsigned arithmetic."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Signed overflow occurs when both operands share a sign and the result has the opposite sign; it is not the same flag as the carry out of the sign bit.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Read the operands: 0111 0101 = 117, 0010 1101 = 45, both positive.</li><li>117 + 45 = 162, which is greater than the largest positive 8-bit value, 127.</li><li>162 &minus; 256 = &minus;94, whose pattern is 1010 0010 (128 + 32 + 2 = 162 as unsigned).</li><li>The two positive operands produced a negative result, so signed overflow is flagged; the carry out of the sign bit is 0, which is why the carry flag alone would have missed it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A), 1010 0010 with signed overflow.</span></p><p class=\"row\"><b>Common misconception.</b> Watching the carry out of the most significant bit: here it is 0, so a candidate who uses it as the overflow flag reports no overflow on a sum that clearly overflows.</p><p class=\"row\"><b>Takeaway.</b> Overflow rule for addition: same signs in, different sign out. The carry out answers a different question, about unsigned arithmetic.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q13",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The 32-bit word <code class=\"mm\">0x40A00000</code> is an IEEE 754 single precision number. Which decimal value does it represent?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"13\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 13</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The 32-bit word <code class=\"mm\">0x40A00000</code> is an IEEE 754 single precision number. Which decimal value does it represent?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">2.5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">4.5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">5.0</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">10.0</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "2.5",
+    "4.5",
+    "5.0",
+    "10.0"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">2.5</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">4.5</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">5.0</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">10.0</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Decode in three steps: split sign, exponent and fraction; subtract the bias 127; form 1.fraction and scale by 2<sup>e</sup>.",
+    "steps": [
+     "0x40A00000 = 0100 0000 1010 0000 &hellip; 0000. Sign 0, so the value is positive.",
+     "Exponent field 1000 0001 = 129, so e = 129 &minus; 127 = 2.",
+     "Fraction bits 010 0000 &hellip; = 0x200000 = 2 097 152, and 2 097 152 / 2<sup>23</sup> = 0.25.",
+     "Value = (1 + 0.25) &times; 2<sup>2</sup> = 1.25 &times; 4 = 5.0."
+    ],
+    "final": "Option (C), 5.0.",
+    "misconception": "Dropping the implicit leading 1, which gives 0.25 &times; 4 = 1.0; or subtracting 128 instead of 127, which halves the answer.",
+    "takeaway": "Write the three fields first, then evaluate 1.f &times; 2<sup>field&minus;bias</sup>; the implicit 1 is present for every normal number."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Decode in three steps: split sign, exponent and fraction; subtract the bias 127; form 1.fraction and scale by 2<sup>e</sup>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0x40A00000 = 0100 0000 1010 0000 &hellip; 0000. Sign 0, so the value is positive.</li><li>Exponent field 1000 0001 = 129, so e = 129 &minus; 127 = 2.</li><li>Fraction bits 010 0000 &hellip; = 0x200000 = 2 097 152, and 2 097 152 / 2<sup>23</sup> = 0.25.</li><li>Value = (1 + 0.25) &times; 2<sup>2</sup> = 1.25 &times; 4 = 5.0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C), 5.0.</span></p><p class=\"row\"><b>Common misconception.</b> Dropping the implicit leading 1, which gives 0.25 &times; 4 = 1.0; or subtracting 128 instead of 127, which halves the answer.</p><p class=\"row\"><b>Takeaway.</b> Write the three fields first, then evaluate 1.f &times; 2<sup>field&minus;bias</sup>; the implicit 1 is present for every normal number.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q14",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "In IEEE 754 single precision, how many representable values lie strictly between 1.0 and 2.0?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"14\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 14</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">In IEEE 754 single precision, how many representable values lie strictly between 1.0 and 2.0?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">2<sup>22</sup></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2<sup>23</sup> &minus; 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">2<sup>23</sup></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">2<sup>24</sup> &minus; 1</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "2<sup>22</sup>",
+    "2<sup>23</sup> &minus; 1",
+    "2<sup>23</sup>",
+    "2<sup>24</sup> &minus; 1"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">2<sup>22</sup></span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">2<sup>23</sup> &minus; 1</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">2<sup>23</sup></span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">2<sup>24</sup> &minus; 1</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The interval [1, 2) is one binade: every value in it has exponent field 127 and differs only in the 23 fraction bits, spaced 2<sup>&minus;23</sup> apart.",
+    "steps": [
+     "With exponent field 127 the representable values are 1 + k&middot;2<sup>&minus;23</sup> for k = 0, 1, &hellip;, 2<sup>23</sup> &minus; 1.",
+     "That is 2<sup>23</sup> values in the half-open interval [1, 2).",
+     "The value 1.0 itself corresponds to k = 0 and must be excluded, so 2<sup>23</sup> &minus; 1 values lie strictly above 1.",
+     "2.0 is the first value of the next binade, so it was never counted. Hence 8 388 608 &minus; 1 = 8 388 607."
+    ],
+    "final": "Option (B), 2<sup>23</sup> &minus; 1 = 8 388 607.",
+    "misconception": "Answering 2<sup>23</sup> by counting the binade inclusively at the bottom, or 2<sup>24</sup> &minus; 1 by using the 24-bit effective precision, which mixes the implicit 1 into the count of stored patterns.",
+    "takeaway": "A binade holds 2<sup>23</sup> values; the spacing inside [2<sup>e</sup>, 2<sup>e+1</sup>) is 2<sup>e&minus;23</sup>, which is why precision is relative, not absolute."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The interval [1, 2) is one binade: every value in it has exponent field 127 and differs only in the 23 fraction bits, spaced 2<sup>&minus;23</sup> apart.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>With exponent field 127 the representable values are 1 + k&middot;2<sup>&minus;23</sup> for k = 0, 1, &hellip;, 2<sup>23</sup> &minus; 1.</li><li>That is 2<sup>23</sup> values in the half-open interval [1, 2).</li><li>The value 1.0 itself corresponds to k = 0 and must be excluded, so 2<sup>23</sup> &minus; 1 values lie strictly above 1.</li><li>2.0 is the first value of the next binade, so it was never counted. Hence 8 388 608 &minus; 1 = 8 388 607.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B), 2<sup>23</sup> &minus; 1 = 8 388 607.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2<sup>23</sup> by counting the binade inclusively at the bottom, or 2<sup>24</sup> &minus; 1 by using the 24-bit effective precision, which mixes the implicit 1 into the count of stored patterns.</p><p class=\"row\"><b>Takeaway.</b> A binade holds 2<sup>23</sup> values; the spacing inside [2<sup>e</sup>, 2<sup>e+1</sup>) is 2<sup>e&minus;23</sup>, which is why precision is relative, not absolute.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q15",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "range-and-overflow",
+   "subtopic": "range-and-overflow",
+   "subtopic_label": "Range & overflow",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "An 8-bit adder receives <code class=\"mm\">1111 0001</code> and <code class=\"mm\">0000 1111</code>, and the result is read both as unsigned and as two&rsquo;s complement. Which statement is correct?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"15\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"range-and-overflow\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 15</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">range-and-overflow</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">An 8-bit adder receives <code class=\"mm\">1111 0001</code> and <code class=\"mm\">0000 1111</code>, and the result is read both as unsigned and as two&rsquo;s complement. Which statement is correct?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The carry-out is 1 and the overflow flag is 0; the stored result 0000 0000 is 0 under either reading.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The carry-out is 1 and the overflow flag is 1, because the sign bit changed.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The carry-out is 0 and the overflow flag is 1, because the sum wrapped.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The carry-out is 0 and the overflow flag is 0; the stored result is 1111 1111.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The carry-out is 1 and the overflow flag is 0; the stored result 0000 0000 is 0 under either reading.",
+    "The carry-out is 1 and the overflow flag is 1, because the sign bit changed.",
+    "The carry-out is 0 and the overflow flag is 1, because the sum wrapped.",
+    "The carry-out is 0 and the overflow flag is 0; the stored result is 1111 1111."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The carry-out is 1 and the overflow flag is 0; the stored result 0000 0000 is 0 under either reading.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The carry-out is 1 and the overflow flag is 1, because the sign bit changed.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The carry-out is 0 and the overflow flag is 1, because the sum wrapped.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The carry-out is 0 and the overflow flag is 0; the stored result is 1111 1111.</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Carry-out and overflow are separate flags: carry-out reports that the unsigned sum exceeded 2<sup>n</sup> &minus; 1, overflow reports that the signed sum left the two&rsquo;s complement range.",
+    "steps": [
+     "Unsigned reading: 241 + 15 = 256, so the stored 8 bits are 0000 0000 and the carry-out is 1.",
+     "Signed reading: 1111 0001 = &minus;15 and 0000 1111 = +15, whose sum is 0 with no overflow, because operands of opposite signs cannot overflow.",
+     "Flag check by the XOR rule: the carry into the sign bit is 1 and the carry out of it is 1, so the overflow flag is 1 &oplus; 1 = 0.",
+     "Both readings therefore give the value 0 from the stored pattern 0000 0000, while only the unsigned view needs the carry-out to know that 256 was produced."
+    ],
+    "final": "Option (A), carry-out 1, overflow 0, result 0000 0000.",
+    "misconception": "Assuming a carry-out of 1 implies signed overflow. Here the same addition wraps the unsigned sum past 255 yet is exactly correct in signed arithmetic, which is why the two flags are wired differently.",
+    "takeaway": "Carry-out = unsigned wrap. Overflow = XOR of the carry into and out of the sign bit. A single addition can set one, both or neither."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Carry-out and overflow are separate flags: carry-out reports that the unsigned sum exceeded 2<sup>n</sup> &minus; 1, overflow reports that the signed sum left the two&rsquo;s complement range.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Unsigned reading: 241 + 15 = 256, so the stored 8 bits are 0000 0000 and the carry-out is 1.</li><li>Signed reading: 1111 0001 = &minus;15 and 0000 1111 = +15, whose sum is 0 with no overflow, because operands of opposite signs cannot overflow.</li><li>Flag check by the XOR rule: the carry into the sign bit is 1 and the carry out of it is 1, so the overflow flag is 1 &oplus; 1 = 0.</li><li>Both readings therefore give the value 0 from the stored pattern 0000 0000, while only the unsigned view needs the carry-out to know that 256 was produced.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A), carry-out 1, overflow 0, result 0000 0000.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming a carry-out of 1 implies signed overflow. Here the same addition wraps the unsigned sum past 255 yet is exactly correct in signed arithmetic, which is why the two flags are wired differently.</p><p class=\"row\"><b>Takeaway.</b> Carry-out = unsigned wrap. Overflow = XOR of the carry into and out of the sign bit. A single addition can set one, both or neither.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q16",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about positional numerals are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"16\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 16</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about positional numerals are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">In base b the numeral (11)<sub>b</sub> has the value b + 1.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Every non-negative integer has exactly one base-b representation that uses no leading zeros.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">In base b the permitted digits are 0 through b.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The decimal fraction 0.5 is written (0.1)<sub>2</sub> in binary.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "In base b the numeral (11)<sub>b</sub> has the value b + 1.",
+    "Every non-negative integer has exactly one base-b representation that uses no leading zeros.",
+    "In base b the permitted digits are 0 through b.",
+    "The decimal fraction 0.5 is written (0.1)<sub>2</sub> in binary."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">In base b the numeral (11)<sub>b</sub> has the value b + 1.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Every non-negative integer has exactly one base-b representation that uses no leading zeros.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">In base b the permitted digits are 0 through b.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The decimal fraction 0.5 is written (0.1)<sub>2</sub> in binary.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "A base-b positional system uses digits 0 to b&minus;1, weights b<sup>k</sup>, and gives a unique normalised representation to every non-negative integer.",
+    "steps": [
+     "(A): (11)<sub>b</sub> = 1&middot;b + 1 = b + 1. True for every b &ge; 2.",
+     "(B): the representation is the remainder sequence of repeated division by b, read upwards, which is unique once leading zeros are forbidden. True.",
+     "(C): the digit b is not available &mdash; base b has exactly b digits, 0 to b &minus; 1. False; (10)<sub>b</sub> is the numeral that carries the value b.",
+     "(D): (0.1)<sub>2</sub> = 1&middot;2<sup>&minus;1</sup> = 0.5. True."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "misconception": "Accepting (C) because base 10 is imagined to run 0&ndash;10; the digit 9 is the largest in base 10, and in general b is written as 10 in base b, never as a single digit.",
+    "takeaway": "Digits run 0 &hellip; b&minus;1; the value of a fraction digit at position &minus;k is b<sup>&minus;k</sup>, so (0.1)<sub>b</sub> = 1/b."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A base-b positional system uses digits 0 to b&minus;1, weights b<sup>k</sup>, and gives a unique normalised representation to every non-negative integer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): (11)<sub>b</sub> = 1&middot;b + 1 = b + 1. True for every b &ge; 2.</li><li>(B): the representation is the remainder sequence of repeated division by b, read upwards, which is unique once leading zeros are forbidden. True.</li><li>(C): the digit b is not available &mdash; base b has exactly b digits, 0 to b &minus; 1. False; (10)<sub>b</sub> is the numeral that carries the value b.</li><li>(D): (0.1)<sub>2</sub> = 1&middot;2<sup>&minus;1</sup> = 0.5. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Accepting (C) because base 10 is imagined to run 0&ndash;10; the digit 9 is the largest in base 10, and in general b is written as 10 in base b, never as a single digit.</p><p class=\"row\"><b>Takeaway.</b> Digits run 0 &hellip; b&minus;1; the value of a fraction digit at position &minus;k is b<sup>&minus;k</sup>, so (0.1)<sub>b</sub> = 1/b.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q17",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about sign extension are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"17\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 17</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about sign extension are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Extending an 8-bit two&rsquo;s complement number to 16 bits replicates bit 7 eight times.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Sign extension changes the value of a two&rsquo;s complement number.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Zero-extending an 8-bit two&rsquo;s complement pattern preserves its value exactly when the number is non-negative.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In one&rsquo;s complement a value is also extended by replicating its sign bit.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Extending an 8-bit two&rsquo;s complement number to 16 bits replicates bit 7 eight times.",
+    "Sign extension changes the value of a two&rsquo;s complement number.",
+    "Zero-extending an 8-bit two&rsquo;s complement pattern preserves its value exactly when the number is non-negative.",
+    "In one&rsquo;s complement a value is also extended by replicating its sign bit."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Extending an 8-bit two&rsquo;s complement number to 16 bits replicates bit 7 eight times.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Sign extension changes the value of a two&rsquo;s complement number.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Zero-extending an 8-bit two&rsquo;s complement pattern preserves its value exactly when the number is non-negative.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">In one&rsquo;s complement a value is also extended by replicating its sign bit.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Widening a signed number keeps its value only if the new high bits copy the old sign bit; zero-filling is correct only for unsigned or non-negative values.",
+    "steps": [
+     "(A): the added bits must all equal the original sign bit, so eight copies of bit 7 are appended. True.",
+     "(B): extension is defined to preserve the value; if the value changed the operation would be useless. False.",
+     "(C): for a non-negative number the sign bit is 0, so zero-filling copies the sign bit and preserves the value; for a negative number zero-filling would turn it positive. True.",
+     "(D): in one&rsquo;s complement the sign bit is also the value&rsquo;s sign marker, and replicating it preserves the value, including the negative-zero pattern. True."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "misconception": "Thinking zero-extension is always safe because the added bits are &lsquo;just zeros&rsquo;; for a negative pattern those zeros destroy the sign and change &minus;26 into 230.",
+    "takeaway": "Sign-extend for signed types, zero-extend for unsigned ones. The rule to remember is &lsquo;copy the sign bit&rsquo;, not &lsquo;pad with zeros&rsquo;."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Widening a signed number keeps its value only if the new high bits copy the old sign bit; zero-filling is correct only for unsigned or non-negative values.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): the added bits must all equal the original sign bit, so eight copies of bit 7 are appended. True.</li><li>(B): extension is defined to preserve the value; if the value changed the operation would be useless. False.</li><li>(C): for a non-negative number the sign bit is 0, so zero-filling copies the sign bit and preserves the value; for a negative number zero-filling would turn it positive. True.</li><li>(D): in one&rsquo;s complement the sign bit is also the value&rsquo;s sign marker, and replicating it preserves the value, including the negative-zero pattern. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Thinking zero-extension is always safe because the added bits are &lsquo;just zeros&rsquo;; for a negative pattern those zeros destroy the sign and change &minus;26 into 230.</p><p class=\"row\"><b>Takeaway.</b> Sign-extend for signed types, zero-extend for unsigned ones. The rule to remember is &lsquo;copy the sign bit&rsquo;, not &lsquo;pad with zeros&rsquo;.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q18",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following IEEE 754 single precision patterns denote an exact integer value? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"18\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 18</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following IEEE 754 single precision patterns denote an exact integer value? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\"><code class=\"mm\">0x3E800000</code></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\"><code class=\"mm\">0x3F800000</code></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\"><code class=\"mm\">0x4B000000</code></span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\"><code class=\"mm\">0x40400000</code></span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "<code class=\"mm\">0x3E800000</code>",
+    "<code class=\"mm\">0x3F800000</code>",
+    "<code class=\"mm\">0x4B000000</code>",
+    "<code class=\"mm\">0x40400000</code>"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\"><code class=\"mm\">0x3E800000</code></span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\"><code class=\"mm\">0x3F800000</code></span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\"><code class=\"mm\">0x4B000000</code></span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\"><code class=\"mm\">0x40400000</code></span>"
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "A single precision value is an exact integer exactly when its unbiased exponent is large enough to shift every fraction bit into the integer part.",
+    "steps": [
+     "0x3E800000: exponent field 0111 1101 = 125, so e = &minus;2 and the value is 1.0 &times; 2<sup>&minus;2</sup> = 0.25. Not an integer.",
+     "0x3F800000: exponent field 0111 1111 = 127, e = 0, fraction 0, so the value is 1.0. Integer.",
+     "0x4B000000: exponent field 1001 0110 = 150, e = 23, fraction 0, so the value is 2<sup>23</sup> = 8 388 608. Integer.",
+     "0x40400000: exponent field 1000 0000 = 128, e = 1, fraction 0.5, so the value is 1.5 &times; 2 = 3.0. Integer."
+    ],
+    "final": "Options (B), (C) and (D).",
+    "misconception": "Assuming any pattern with a zero fraction is an integer; 0x3E800000 has a zero fraction but its exponent is negative, so its value is the fraction 0.25.",
+    "takeaway": "Integer &hArr; e &ge; 0 and the fraction, shifted by e, has no bits below the point. Values with e &lt; 0 are proper fractions or halves."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A single precision value is an exact integer exactly when its unbiased exponent is large enough to shift every fraction bit into the integer part.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0x3E800000: exponent field 0111 1101 = 125, so e = &minus;2 and the value is 1.0 &times; 2<sup>&minus;2</sup> = 0.25. Not an integer.</li><li>0x3F800000: exponent field 0111 1111 = 127, e = 0, fraction 0, so the value is 1.0. Integer.</li><li>0x4B000000: exponent field 1001 0110 = 150, e = 23, fraction 0, so the value is 2<sup>23</sup> = 8 388 608. Integer.</li><li>0x40400000: exponent field 1000 0000 = 128, e = 1, fraction 0.5, so the value is 1.5 &times; 2 = 3.0. Integer.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming any pattern with a zero fraction is an integer; 0x3E800000 has a zero fraction but its exponent is negative, so its value is the fraction 0.25.</p><p class=\"row\"><b>Takeaway.</b> Integer &hArr; e &ge; 0 and the fraction, shifted by e, has no bits below the point. Values with e &lt; 0 are proper fractions or halves.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q19",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "range-and-overflow",
+   "subtopic": "range-and-overflow",
+   "subtopic_label": "Range & overflow",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A 4-bit two&rsquo;s complement system is used. Which of the following statements are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"19\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"range-and-overflow\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 19</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">range-and-overflow</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">A 4-bit two&rsquo;s complement system is used. Which of the following statements are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The representable range is &minus;8 to +7.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The addition <code class=\"mm\">0101 + 0100</code> produces signed overflow.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The pattern <code class=\"mm\">1000</code> denotes negative zero.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"19\" data-typ=\"MSQ\" name=\"q19\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The pattern <code class=\"mm\">1111</code> denotes &minus;7.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The representable range is &minus;8 to +7.",
+    "The addition <code class=\"mm\">0101 + 0100</code> produces signed overflow.",
+    "The pattern <code class=\"mm\">1000</code> denotes negative zero.",
+    "The pattern <code class=\"mm\">1111</code> denotes &minus;7."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The representable range is &minus;8 to +7.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The addition <code class=\"mm\">0101 + 0100</code> produces signed overflow.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The pattern <code class=\"mm\">1000</code> denotes negative zero.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The pattern <code class=\"mm\">1111</code> denotes &minus;7.</span>"
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution": {
+    "concept": "A 4-bit two&rsquo;s complement register holds &minus;2<sup>3</sup> to 2<sup>3</sup> &minus; 1, has one zero, and every pattern is a distinct value.",
+    "steps": [
+     "(A): the range is &minus;2<sup>n&minus;1</sup> to 2<sup>n&minus;1</sup> &minus; 1 = &minus;8 to +7. True.",
+     "(B): 0101 = 5 and 0100 = 4; 5 + 4 = 9 exceeds +7, and the stored pattern 1001 = &minus;7. Two positive operands, negative result, so overflow. True.",
+     "(C): 1000 = &minus;8, the most negative value; two&rsquo;s complement has a single zero, 0000. False.",
+     "(D): 1111 = &minus;1, not &minus;7; the value &minus;7 is 1001. False."
+    ],
+    "final": "Options (A) and (B).",
+    "misconception": "Carrying the one&rsquo;s complement habit into two&rsquo;s complement and expecting a negative zero; the extra pattern was spent on &minus;8 instead, which is exactly why the range is asymmetric.",
+    "takeaway": "For n = 4: 16 patterns, values &minus;8 to +7, one zero, and 1000 is the value with no positive counterpart."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A 4-bit two&rsquo;s complement register holds &minus;2<sup>3</sup> to 2<sup>3</sup> &minus; 1, has one zero, and every pattern is a distinct value.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): the range is &minus;2<sup>n&minus;1</sup> to 2<sup>n&minus;1</sup> &minus; 1 = &minus;8 to +7. True.</li><li>(B): 0101 = 5 and 0100 = 4; 5 + 4 = 9 exceeds +7, and the stored pattern 1001 = &minus;7. Two positive operands, negative result, so overflow. True.</li><li>(C): 1000 = &minus;8, the most negative value; two&rsquo;s complement has a single zero, 0000. False.</li><li>(D): 1111 = &minus;1, not &minus;7; the value &minus;7 is 1001. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Carrying the one&rsquo;s complement habit into two&rsquo;s complement and expecting a negative zero; the extra pattern was spent on &minus;8 instead, which is exactly why the range is asymmetric.</p><p class=\"row\"><b>Takeaway.</b> For n = 4: 16 patterns, values &minus;8 to +7, one zero, and 1000 is the value with no positive counterpart.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q20",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "range-and-overflow",
+   "subtopic": "range-and-overflow",
+   "subtopic_label": "Range & overflow",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "In an 8-bit two&rsquo;s complement system the negation of a value is formed by inverting every bit and adding 1. Which of the following statements are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"20\" data-type=\"MSQ\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"range-and-overflow\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 20</span><span class=\"tag msq\">MSQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">range-and-overflow</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">In an 8-bit two&rsquo;s complement system the negation of a value is formed by inverting every bit and adding 1. Which of the following statements are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Negating <code class=\"mm\">0000 0000</code> returns <code class=\"mm\">0000 0000</code>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Negating <code class=\"mm\">1000 0000</code> returns <code class=\"mm\">1000 0000</code>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">For every value other than &minus;128, negation produces a value of the opposite sign.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Negating <code class=\"mm\">0111 1111</code> returns <code class=\"mm\">1000 0000</code>.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Negating <code class=\"mm\">0000 0000</code> returns <code class=\"mm\">0000 0000</code>.",
+    "Negating <code class=\"mm\">1000 0000</code> returns <code class=\"mm\">1000 0000</code>.",
+    "For every value other than &minus;128, negation produces a value of the opposite sign.",
+    "Negating <code class=\"mm\">0111 1111</code> returns <code class=\"mm\">1000 0000</code>."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Negating <code class=\"mm\">0000 0000</code> returns <code class=\"mm\">0000 0000</code>.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Negating <code class=\"mm\">1000 0000</code> returns <code class=\"mm\">1000 0000</code>.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">For every value other than &minus;128, negation produces a value of the opposite sign.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">Negating <code class=\"mm\">0111 1111</code> returns <code class=\"mm\">1000 0000</code>.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Negation is an involution except at the two ends of the range: zero maps to itself, and the most negative value maps to itself because its positive counterpart does not exist.",
+    "steps": [
+     "(A): inverting 0000 0000 gives 1111 1111, and adding 1 gives 1 0000 0000, whose stored 8 bits are 0000 0000. True, with a carry out that is discarded.",
+     "(B): inverting 1000 0000 gives 0111 1111, and adding 1 gives 1000 0000 again, so the operation returns the same pattern and sets the overflow flag. True.",
+     "(C): for every other non-zero value the pattern is neither 0000 0000 nor 1000 0000, so inverting flips the sign bit and the increment cannot restore it; the result is the opposite sign. True.",
+     "(D): inverting 0111 1111 gives 1000 0000, and adding 1 gives 1000 0001, which is &minus;127. False."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Forgetting the final increment on the boundary case and concluding that negating +127 gives &minus;128; the correct result is &minus;127, and &minus;128 is reachable only from itself.",
+    "takeaway": "Negation fixes exactly two patterns, 0000 0000 and 1000 0000; at the second one the operation overflows silently, which is why &minus;128 must be handled specially."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Negation is an involution except at the two ends of the range: zero maps to itself, and the most negative value maps to itself because its positive counterpart does not exist.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): inverting 0000 0000 gives 1111 1111, and adding 1 gives 1 0000 0000, whose stored 8 bits are 0000 0000. True, with a carry out that is discarded.</li><li>(B): inverting 1000 0000 gives 0111 1111, and adding 1 gives 1000 0000 again, so the operation returns the same pattern and sets the overflow flag. True.</li><li>(C): for every other non-zero value the pattern is neither 0000 0000 nor 1000 0000, so inverting flips the sign bit and the increment cannot restore it; the result is the opposite sign. True.</li><li>(D): inverting 0111 1111 gives 1000 0000, and adding 1 gives 1000 0001, which is &minus;127. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting the final increment on the boundary case and concluding that negating +127 gives &minus;128; the correct result is &minus;127, and &minus;128 is reachable only from itself.</p><p class=\"row\"><b>Takeaway.</b> Negation fixes exactly two patterns, 0000 0000 and 1000 0000; at the second one the operation overflows silently, which is why &minus;128 must be handled specially.</p>"
+  },
+  {
+   "id": "DL-U1-D-Q21",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "What is the decimal value of the base-3 numeral <code class=\"mm\">(2102)<sub>3</sub></code>? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"21\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 21</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">What is the decimal value of the base-3 numeral <code class=\"mm\">(2102)<sub>3</sub></code>? (Enter an integer.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 21\" autocomplete=\"off\" class=\"natinput\" data-n=\"21\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 65,
+   "answer_display": "65",
+   "solution": {
+    "concept": "The digit in position k of a base-3 numeral carries the weight 3<sup>k</sup>.",
+    "steps": [
+     "Place values from the right: 3<sup>0</sup> = 1, 3<sup>1</sup> = 3, 3<sup>2</sup> = 9, 3<sup>3</sup> = 27.",
+     "Multiply digit by weight: 2&times;27 + 1&times;9 + 0&times;3 + 2&times;1.",
+     "Add: 54 + 9 + 0 + 2 = 65.",
+     "Check by repeated division: 65 = 2&times;27 + 11, 11 = 1&times;9 + 2, 2 = 0&times;3 + 2, giving 2, 1, 0, 2."
+    ],
+    "final": "65",
+    "misconception": "Using powers of 2 because the digits happen to be 0, 1 and 2 only; the base is fixed by the subscript, not by the digit set actually used.",
+    "takeaway": "Read the subscript first, then write the place values. Ternary digits look binary but weigh 3<sup>k</sup>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The digit in position k of a base-3 numeral carries the weight 3<sup>k</sup>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Place values from the right: 3<sup>0</sup> = 1, 3<sup>1</sup> = 3, 3<sup>2</sup> = 9, 3<sup>3</sup> = 27.</li><li>Multiply digit by weight: 2&times;27 + 1&times;9 + 0&times;3 + 2&times;1.</li><li>Add: 54 + 9 + 0 + 2 = 65.</li><li>Check by repeated division: 65 = 2&times;27 + 11, 11 = 1&times;9 + 2, 2 = 0&times;3 + 2, giving 2, 1, 0, 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 65</span></p><p class=\"row\"><b>Common misconception.</b> Using powers of 2 because the digits happen to be 0, 1 and 2 only; the base is fixed by the subscript, not by the digit set actually used.</p><p class=\"row\"><b>Takeaway.</b> Read the subscript first, then write the place values. Ternary digits look binary but weigh 3<sup>k</sup>.</p>",
+   "answer_format": "Answer format: an integer."
+  },
+  {
+   "id": "DL-U1-D-Q22",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "ones-twos-complement",
+   "subtopic": "ones-twos-complement",
+   "subtopic_label": "One's & two's complement",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The 8-bit pattern <code class=\"mm\">1100 0111</code> is read as an 8-bit two&rsquo;s complement integer. What decimal value does it represent? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"22\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"ones-twos-complement\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 22</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">ones-twos-complement</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">The 8-bit pattern <code class=\"mm\">1100 0111</code> is read as an 8-bit two&rsquo;s complement integer. What decimal value does it represent? (Enter an integer.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 22\" autocomplete=\"off\" class=\"natinput\" data-n=\"22\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer, with a minus sign if the value is negative.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": -57,
+   "answer_display": "&minus;57",
+   "solution": {
+    "concept": "For a pattern with a leading 1, the value is the leading weight &minus;2<sup>n&minus;1</sup> plus the positive weights of the remaining 1 bits.",
+    "steps": [
+     "The leading bit is 1, so the value is negative.",
+     "Sum the weights of the set bits: &minus;128 + 64 + 4 + 2 + 1.",
+     "&minus;128 + 71 = &minus;57.",
+     "Check by complementing: invert 1100 0111 to 0011 1000 = 56, add 1 to get 57, so the pattern is &minus;57."
+    ],
+    "final": "&minus;57",
+    "misconception": "Reading 1100 0111 as unsigned 199 and reporting a positive value, or stopping at the inversion and reporting &minus;56.",
+    "takeaway": "&minus;(2<sup>n</sup> &minus; unsigned) is the fastest route: 256 &minus; 199 = 57, and the sign bit makes it &minus;57."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a pattern with a leading 1, the value is the leading weight &minus;2<sup>n&minus;1</sup> plus the positive weights of the remaining 1 bits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The leading bit is 1, so the value is negative.</li><li>Sum the weights of the set bits: &minus;128 + 64 + 4 + 2 + 1.</li><li>&minus;128 + 71 = &minus;57.</li><li>Check by complementing: invert 1100 0111 to 0011 1000 = 56, add 1 to get 57, so the pattern is &minus;57.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: &minus;57</span></p><p class=\"row\"><b>Common misconception.</b> Reading 1100 0111 as unsigned 199 and reporting a positive value, or stopping at the inversion and reporting &minus;56.</p><p class=\"row\"><b>Takeaway.</b> &minus;(2<sup>n</sup> &minus; unsigned) is the fastest route: 256 &minus; 199 = 57, and the sign bit makes it &minus;57.</p>",
+   "answer_format": "Answer format: an integer, with a minus sign if the value is negative."
+  },
+  {
+   "id": "DL-U1-D-Q23",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "base-conversions",
+   "subtopic": "base-conversions",
+   "subtopic_label": "Base conversions",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Write the decimal number 1000 as a base-9 numeral and enter it as a decimal integer (for example, enter 1234 for the numeral <code class=\"mm\">(1234)<sub>9</sub></code>).",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"23\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"base-conversions\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 23</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">base-conversions</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">Write the decimal number 1000 as a base-9 numeral and enter it as a decimal integer (for example, enter 1234 for the numeral <code class=\"mm\">(1234)<sub>9</sub></code>).</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 23\" autocomplete=\"off\" class=\"natinput\" data-n=\"23\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer, the base-9 numeral read as its digits.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 1331,
+   "answer_display": "1331",
+   "solution": {
+    "concept": "To convert to base b, divide repeatedly by b and read the remainders bottom-up; equivalently, take the largest power of b that fits at each position.",
+    "steps": [
+     "The powers of 9 are 1, 9, 81, 729, 6561 &hellip; The largest that fits in 1000 is 729 = 9<sup>3</sup>, so there are four digits.",
+     "1000 &minus; 1&times;729 = 271.",
+     "271 &divide; 81 = 3 remainder 28, so the second digit is 3.",
+     "28 &divide; 9 = 3 remainder 1, so the third digit is 3 and the last digit is 1.",
+     "The numeral is (1331)<sub>9</sub>; check: 729 + 243 + 27 + 1 = 1000."
+    ],
+    "final": "1331",
+    "misconception": "Using 8 as the base because 1000 = 8<sup>3</sup> + &hellip; looks tempting, which gives (1750)<sub>8</sub>; the base is 9, so the weights are 729, 81, 9 and 1.",
+    "takeaway": "Powers of the base decide the digit count: 9<sup>3</sup> &le; 1000 &lt; 9<sup>4</sup>, so exactly four base-9 digits."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> To convert to base b, divide repeatedly by b and read the remainders bottom-up; equivalently, take the largest power of b that fits at each position.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The powers of 9 are 1, 9, 81, 729, 6561 &hellip; The largest that fits in 1000 is 729 = 9<sup>3</sup>, so there are four digits.</li><li>1000 &minus; 1&times;729 = 271.</li><li>271 &divide; 81 = 3 remainder 28, so the second digit is 3.</li><li>28 &divide; 9 = 3 remainder 1, so the third digit is 3 and the last digit is 1.</li><li>The numeral is (1331)<sub>9</sub>; check: 729 + 243 + 27 + 1 = 1000.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1331</span></p><p class=\"row\"><b>Common misconception.</b> Using 8 as the base because 1000 = 8<sup>3</sup> + &hellip; looks tempting, which gives (1750)<sub>8</sub>; the base is 9, so the weights are 729, 81, 9 and 1.</p><p class=\"row\"><b>Takeaway.</b> Powers of the base decide the digit count: 9<sup>3</sup> &le; 1000 &lt; 9<sup>4</sup>, so exactly four base-9 digits.</p>",
+   "answer_format": "Answer format: an integer, the base-9 numeral read as its digits."
+  },
+  {
+   "id": "DL-U1-D-Q24",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "floating-point-ieee-754",
+   "subtopic": "floating-point-ieee-754",
+   "subtopic_label": "Floating point & IEEE 754",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "How many distinct IEEE 754 single precision bit patterns denote normal positive numbers &mdash; that is, sign bit 0 and an exponent field that is neither all zeros nor all ones? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"24\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"floating-point-ieee-754\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 24</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">floating-point-ieee-754</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">How many distinct IEEE 754 single precision bit patterns denote normal positive numbers &mdash; that is, sign bit 0 and an exponent field that is neither all zeros nor all ones? (Enter an integer.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 24\" autocomplete=\"off\" class=\"natinput\" data-n=\"24\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 2130706432,
+   "answer_display": "2130706432",
+   "solution": {
+    "concept": "Count the usable exponent fields and the fraction patterns independently, then multiply.",
+    "steps": [
+     "The exponent field is 8 bits, so it has 256 values; all zeros and all ones are reserved, leaving 254 usable values.",
+     "The fraction field is 23 bits, so each exponent field admits 2<sup>23</sup> = 8 388 608 patterns, all of them legal for a normal number.",
+     "The sign bit is fixed at 0, so there is exactly one choice for it.",
+     "Total = 254 &times; 8 388 608 = 2 130 706 432."
+    ],
+    "final": "2 130 706 432",
+    "misconception": "Multiplying 256 &times; 2<sup>23</sup>, which includes the two reserved exponent fields, or subtracting one for the value 1.0, which is a perfectly legal normal number.",
+    "takeaway": "For binary32: 2 &times; 254 &times; 2<sup>23</sup> normal values in total, plus 2 &times; (2<sup>23</sup> &minus; 1) subnormals, two zeros, two infinities and the NaNs."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Count the usable exponent fields and the fraction patterns independently, then multiply.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The exponent field is 8 bits, so it has 256 values; all zeros and all ones are reserved, leaving 254 usable values.</li><li>The fraction field is 23 bits, so each exponent field admits 2<sup>23</sup> = 8 388 608 patterns, all of them legal for a normal number.</li><li>The sign bit is fixed at 0, so there is exactly one choice for it.</li><li>Total = 254 &times; 8 388 608 = 2 130 706 432.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 130 706 432</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying 256 &times; 2<sup>23</sup>, which includes the two reserved exponent fields, or subtracting one for the value 1.0, which is a perfectly legal normal number.</p><p class=\"row\"><b>Takeaway.</b> For binary32: 2 &times; 254 &times; 2<sup>23</sup> normal values in total, plus 2 &times; (2<sup>23</sup> &minus; 1) subnormals, two zeros, two infinities and the NaNs.</p>",
+   "answer_format": "Answer format: an integer."
+  },
+  {
+   "id": "DL-U1-D-Q25",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "number-systems",
+   "unit_name": "Number Systems & Representation",
+   "topic": "Number Systems & Representation",
+   "sub": "range-and-overflow",
+   "subtopic": "range-and-overflow",
+   "subtopic_label": "Range & overflow",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "An 8-bit unsigned register holds 200. Its value is tripled and only the low 8 bits of the product are kept. What decimal value is stored? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"25\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"number-systems\" data-unit-number=\"1\" data-subtopic=\"range-and-overflow\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 25</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">range-and-overflow</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">An 8-bit unsigned register holds 200. Its value is tripled and only the low 8 bits of the product are kept. What decimal value is stored? (Enter an integer.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 25\" autocomplete=\"off\" class=\"natinput\" data-n=\"25\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": 88,
+   "answer_display": "88",
+   "solution": {
+    "concept": "Keeping the low n bits of a result is arithmetic modulo 2<sup>n</sup>; the discarded high bits are the overflow.",
+    "steps": [
+     "3 &times; 200 = 600.",
+     "The largest value the register can hold is 255, and 600 &gt; 255, so the result wraps.",
+     "Reduce modulo 256: 600 = 2&times;256 + 88.",
+     "So the stored pattern is 88, and the 512 that was discarded sits above the register&rsquo;s range."
+    ],
+    "final": "88",
+    "misconception": "Subtracting 255 instead of 256, which gives 90 and treats the register as if it had 255 states rather than 256 patterns.",
+    "takeaway": "Low-bits arithmetic is mod 2<sup>n</sup>. Reduce with the modulus 2<sup>n</sup>, never with the maximum value 2<sup>n</sup>&minus;1."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Keeping the low n bits of a result is arithmetic modulo 2<sup>n</sup>; the discarded high bits are the overflow.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>3 &times; 200 = 600.</li><li>The largest value the register can hold is 255, and 600 &gt; 255, so the result wraps.</li><li>Reduce modulo 256: 600 = 2&times;256 + 88.</li><li>So the stored pattern is 88, and the 512 that was discarded sits above the register&rsquo;s range.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 88</span></p><p class=\"row\"><b>Common misconception.</b> Subtracting 255 instead of 256, which gives 90 and treats the register as if it had 255 states rather than 256 patterns.</p><p class=\"row\"><b>Takeaway.</b> Low-bits arithmetic is mod 2<sup>n</sup>. Reduce with the modulus 2<sup>n</sup>, never with the maximum value 2<sup>n</sup>&minus;1.</p>",
+   "answer_format": "Answer format: an integer."
   }
  ]
 }
