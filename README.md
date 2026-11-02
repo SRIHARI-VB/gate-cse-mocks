@@ -7,37 +7,127 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 3 — Syntax Analysis: Bottom-Up Parsing, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html`](compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html)
+- **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 2 of 2 (third pass)**, 2026-11-02 →
+  [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: LR(0) items & parsing (7) · SLR(1) parsing & conflicts (6) · LR(1) and LALR(1) parsers (7) ·
-  operator-precedence parsing (5)
+- Subtopics: DFA construction & minimisation (7) · NFA to DFA: subset construction (6) · Regular expressions (6) ·
+  Pumping lemma for regular languages (6)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 7 — **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 17, unit 2, top-down-parsing, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions against
-  `UNIT_QUESTION_CAP = 50`, so **step B3 failed on the cap** and step B4 advanced exactly one unit:
-  `(2 − 1 + 1) mod 5 = 2`, that is **unit 3 — bottom-up-parsing**. Every Compiler Design unit already stands at or
-  above the cap (100, 100, 75, 75, 75), so this subject is in a **second pass**; the paper is the unit's fourth and
-  takes it from 75 to 100 banked questions, **Set 2 of 2 of the second pass**. No override was used and no partial
-  set was generated.
-- Superseded: the previous paper `gate_cd_mock_3_2026-10-31.html` moved to
-  `compiler-design/bottom-up-parsing/archive/gate_cd_mock_3_2026-10-31_run3.html`, content frozen; the unit folder
-  now holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 2 of 2**, 2026-11-02 →
-  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
+  returned index 6 — **Theory of Computation**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 16, unit 4, turing-machines-decidability, Set 1 of 2 (third pass)}`. Unit 4 held **100**
+  questions against `UNIT_QUESTION_CAP = 50`, so **step B3 failed on the cap**, and its first paper was 2026-10-27,
+  six days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit:
+  `(3 + 1) mod 4 = 0`, that is **unit 1 — regular-languages-fa**. Every Theory of Computation unit already stands at
+  or above the cap (100, 100, 100, 100), so **step B5 applies, the modulo wraps and a further pass begins**; the paper
+  is the unit's fifth and takes it from 100 to 125 banked questions, **Set 2 of 2 of the third pass**. No override was
+  used and no partial set was generated.
+- Superseded: the previous paper `gate_toc_mock_1_2026-10-30.html` moved to
+  `theory-of-computation/regular-languages-fa/archive/gate_toc_mock_1_2026-10-30_run1.html`, content frozen; the unit
+  folder now holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Compiler Design · Unit 3 — Syntax Analysis: Bottom-Up Parsing, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html`](compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 177 (26 Discrete Mathematics, 14 Algorithms, 11 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 110 archived |
+| Papers published (current + archived) | 178 (26 Discrete Mathematics, 14 Algorithms, 11 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 111 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4425 (650 Discrete Mathematics, 350 Algorithms, 275 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4450 (650 Discrete Mathematics, 350 Algorithms, 275 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 110 (13 Discrete Mathematics, 7 Algorithms, 6 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 111 (13 Discrete Mathematics, 7 Algorithms, 6 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Theory of Computation Unit 1, Set 2 of 2 (third pass)
+
+- New paper at `theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html`. The 2026-10-30 paper of
+  the same unit moved to `theory-of-computation/regular-languages-fa/archive/gate_toc_mock_1_2026-10-30_run1.html`
+  with its content frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly
+  one current paper and the archive holds the superseded set.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 6 — **Theory of Computation**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 16, unit 4, turing-machines-decidability, Set 1 of 2 (third pass)}`. Unit 4 held **100**
+  questions against a cap of 50 and its first paper was 2026-10-27, so step B3 failed on both counts and step B4
+  applied: `(index_of(turing-machines-decidability) = 3 + 1) mod 4 = 0`, that is **unit 1**. Theory of Computation is
+  in a **third pass** — all four units already stand at the cap (100, 100, 100, 100) — so **step B5 applies**, the
+  modulo wraps and the pass continues. Unit 1 goes from 100 to 125 banked questions, its fifth set overall. Exactly
+  25 questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** DFA construction & minimisation 7 · NFA to DFA: subset construction 6 · Regular expressions 6 ·
+  Pumping lemma for regular languages 6. All four unit subtopics are represented; difficulty 10 easy / 10 medium /
+  5 hard.
+- **What the set asks, and why it is not one of the four earlier sets again.** The first pass asked for the classic
+  state counts and the standard definitions; the second and third passes asked for ε-closures, table-filling and
+  closure properties. This set asks where the standard rules stop applying. DFA minimisation: the starting partition
+  of Hopcroft’s algorithm, the **3** states needed for a length condition modulo 3, uniqueness of the minimal DFA up
+  to renaming, what a collapse from four states to three forces, four state counts at once (2, 2, 4 and **4**, the
+  last refuting the offered 3), the **4**-state DFA for “contains aa or bb”, and the product of two minimal DFAs
+  whose **mn** bound is attainable. Subset construction: acceptance of ε through the ε-closure, the empty set as a
+  never-final state, the **3** states of a cyclic ε-closure, the family “n-th symbol from the end is 1” that makes the
+  **2ⁿ** bound tight, what the construction does and does not guarantee, and the **n + 1**-state NFA behind an
+  exponential DFA. Regular expressions: begin-and-end constraints, a substring constraint, four expressions that all
+  denote **Σ\***, what `L((aa + b)*)` really is, which pairs are equivalent, and the effect of state-elimination
+  order. Pumping lemma: the contrapositive form, the quantifier order of the constant, what the lemma can and cannot
+  prove, the **1** pump count that keeps `a³b³` inside `aⁿbⁿ`, Ogden’s lemma, and the Myhill–Nerode criterion.
+- **Answers recomputed, not asserted.** Every numeric key came from a script, not by inspection. A canonical DFA
+  minimiser returned 3 states for the length-modulo-3 language, 2 / 2 / 4 / 4 for the four languages in the MSQ (so
+  the “m = 3” claim is the false one), and 4 for “contains aa or bb”; a Myhill–Nerode computation over prefixes and
+  suffixes of length up to 4 returned exactly 2ⁿ classes for “n-th symbol from the end is 1” at n = 1, 2, 3; a
+  brute-force matcher over all words of length up to 9 confirmed that `(a*b*)*`, `(a + b*)*`, `(ε + a + b)*` and
+  `(a*b*a*)*` all denote Σ* while `a*` and `(aa)*` differ at `a`, and that `(a + b)*ab(a + b)*` and
+  `(a + b)*a(a + b)*b(a + b)*` agree while `(ab)*` and `a*b*` differ at `ab`; `L((aa + b)*)` was checked word by word
+  against “every maximal block of a’s has even length” with no mismatch; and the pump-count question was replayed for
+  every legal `y`, giving i = 1 as the only solution in all three cases.
+- **Ids and bank.** 25 records appended as `TOC-U1-Q101`–`TOC-U1-Q125`, continuing the unit’s numeric sequence after
+  `TOC-U1-Q100`; Theory of Computation now holds **425** questions across 4 units and 17 runs.
+- **Question Bank tab.** 400 solved questions — every record in the bank except the 25 on this paper — so the active
+  set is not repeated there. Unit 1’s accordion shows the 100 questions of its four earlier sets.
+- **Provenance.** `verified_pyqs` is empty for Theory of Computation, so no item carries `GATE_PYQ_VARIATION` and
+  nothing on this paper is claimed as an official GATE question: no regular-language previous-year item has been
+  verified against an official paper and answer key. Sources are `STANDARD_TEXTBOOK` (15) and
+  `ORIGINAL_SYNTHESIS` (10).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (B), (C); (A), (C), (D); (A), (D); (A), (C), (D); and (A), (C) — two two-element sets and three
+  different three-element patterns, so they are not five copies of one shape. Every letter named inside a solution is
+  the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 100 already banked for this unit, by exact normalised
+  comparison and by similarity ratio. The only exact match found on the first pass was the bare stem “Which of the
+  following statements are TRUE?”, which was rewritten to name the pumping lemma and the Myhill–Nerode theorem
+  explicitly; nothing else exceeded a similarity of 0.93, and where a concept recurs (a state count, an ε-closure,
+  the 2ⁿ bound, a pumping argument) it is asked with a different machine, a different question form or a different
+  reasoning step — the state counts are asked four at a time in one MSQ, the 2ⁿ bound is asked as tightness rather
+  than as an upper bound, and the pumping question counts pump indices instead of naming a contradiction.
+- **Verification (Section 6.8).** Shell parity holds: with the title, brand, sub-line, candidate block, bank-count
+  button, meta strip, question host, bank view, About view and payload masked, the remaining **27 665 bytes** are
+  byte-identical to the Algorithms Unit 7 paper, which is the template this shell was taken from. The bank renderer
+  and the question-host renderer were themselves validated first by regenerating that paper’s own bank view and
+  question host from `master_bank.json` and obtaining its shipped bytes exactly. One copy: `find . -name '*.html'`
+  returns 179 files — `index.html` plus 67 current papers and 111 archived sets — no unit folder holds two current
+  papers, and the repository root holds only `index.html`. Links: all 67 test paths and all 111 archive paths in the
+  portal’s data block resolve, and every paper on disk is referenced. Tokens: the `:root` block is byte-identical to
+  `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no external URL of any kind. Counts: 25 test cards, a
+  25-button palette, 5 NAT inputs, 80 option inputs, 400 bank cards, and all seven `data-*` attributes on all 25 test
+  cards and all 400 bank cards, with lowercase difficulty values only. No duplicate content: none of the 25 active
+  ids appears in the Question Bank tab and no bank id repeats. The inline engine script passes `node --check`, the
+  answer-key tab ships `disabled` with an empty `keyList`, and `ansline`, “Detailed solution”, `correct` and
+  `wrongpick` are absent from the question host before submit.
+- **Portal.** The Theory of Computation Unit 1 card was replaced, not duplicated: it now carries the new date, the new
+  path, the third-pass set label and four earlier-set links. The static counters were recomputed from the data: 71
+  units in the series, 67 test cards, 4450 records in the subject banks, 67 of 71 units covered and 305 subtopics.
+  The “297 subtopics” figure carried in earlier runs was stale and is corrected here.
+- **Repaired, not merely recorded.** `data/questions-algorithms.js` held 325 records while its bank held 350 — the
+  same class of gap closed for Engineering Mathematics in an earlier run. It was regenerated from
+  `algorithms/question-bank/master_bank.json` without touching any content, so the portal now loads all eleven
+  subjects and all 4450 records; the file passes `node --check`.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus 38 distinct literal hex colours outside `:root`
+  in the stylesheet, no explicit `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet`
+  tokens rather than their `-d` variants. All are identical in every paper of the series and were left as they are so
+  the shell stays byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Compiler Design Unit 3, Set 2 of 2 (second pass)
 
