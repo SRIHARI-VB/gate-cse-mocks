@@ -7,39 +7,80 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 4 — Memory Management & Paging, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html`](operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html)
+- **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 2 of 2**, 2026-11-02 →
+  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Contiguous allocation (7) · Paging & page tables (7) · Inverted page tables (6) ·
-  Segmentation & paged segmentation (5)
+- Subtopics: Classes P and NP (7) · Polynomial-time reductions (6) · NP-complete problems: 3-SAT, clique,
+  vertex cover (7) · NP-hard identification (5)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 21, unit 3, deadlocks, Set 2 of 2 (second pass)}`. Unit 3 held **100** questions, above
-  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the
-  7-day backstop played no part. Step B4 advanced exactly one unit:
-  `(index_of(deadlocks) = 2 + 1) mod 6 = 3` → **Unit 4, Memory Management & Paging**. Every Operating Systems unit
-  sits at or above the cap (100, 100, 100, 75, 75, 75), so **step B5 applies and the second pass continues**; this
-  is the second set of that pass and the unit's fourth set overall. No override was used and no partial set was
-  generated.
-- Superseded: the 2026-10-30 paper `gate_os_mock_4_2026-10-30.html` moved to
-  `operating-systems/memory-paging/archive/gate_os_mock_4_2026-10-30_run3.html`, content frozen; the unit folder
+  returned index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 13, unit 7, complexity-np-complete, Set 1 of 2}`. Unit 7 held **25** questions, below
+  `UNIT_QUESTION_CAP = 50`, and its first paper was dated 2026-11-02, zero days earlier, so **step B3 held on both
+  counts**: the unit stays current and this run generates it again. Step B4 was not reached, so the modulo advance
+  played no part. This is **Set 2 of 2**, taking the unit to exactly 50 banked questions; every Algorithms unit is
+  now at the cap (50, 50, 50, 50, 50, 50, 50), so the next Algorithms draw advances into a second pass. No override
+  was used and no partial set was generated.
+- Superseded: the Set 1 paper `gate_algo_mock_7_2026-11-02.html` moved to
+  `algorithms/complexity-np-complete/archive/gate_algo_mock_7_2026-11-02_run1.html`, content frozen; the unit folder
   now holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Engineering Mathematics · Unit 4 — Calculus: Maxima, Minima & Integrals, Set 1 of 2 (second
-  pass)**, 2026-11-02 →
-  [`engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html`](engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html)
+- Previous test: **Operating Systems · Unit 4 — Memory Management & Paging, Set 2 of 2 (second pass)**,
+  2026-11-02 →
+  [`operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html`](operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 175 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 108 archived |
+| Papers published (current + archived) | 176 (26 Discrete Mathematics, 14 Algorithms, 11 Databases, 17 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 109 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4375 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4400 (650 Discrete Mathematics, 350 Algorithms, 275 Databases, 425 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 108 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 109 (13 Discrete Mathematics, 7 Algorithms, 6 Databases, 12 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Algorithms Unit 7, Set 2 of 2
+
+- New paper at `algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`. The Set 1 paper of the same
+  date moved to `algorithms/complexity-np-complete/archive/gate_algo_mock_7_2026-11-02_run1.html` with its content
+  frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current
+  paper and the archive holds the superseded set.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper
+  as `{2026-11-02, run 13, unit 7, complexity-np-complete, Set 1 of 2}`. Unit 7 held **25** questions against a cap
+  of 50, and its first paper was 2026-11-02, zero days earlier, so step B3 held on the cap and on the 7-day backstop
+  at once: the unit is generated again. Step B4 was not reached. Unit 7 now stands at exactly 50 questions, so
+  **every Algorithms unit is at the cap** (50, 50, 50, 50, 50, 50, 50) and the next Algorithms draw will wrap to
+  Unit 1 for a second pass. Exactly 25 questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** Classes P and NP 7 · Polynomial-time reductions 6 · NP-complete problems: 3-SAT, clique, vertex
+  cover 7 · NP-hard identification 5. All four unit subtopics are represented; difficulty 10 easy / 10 medium /
+  5 hard.
+- **Content.** New ids ALG-U7-Q26..Q50, none of which collides with the 325 items already banked for Algorithms, and
+  no normalised stem repeats an earlier item. The set works the parts of the unit Set 1 left alone: the definition of
+  co-NP and the proved inclusion P ⊆ NP ∩ co-NP, what follows when an NP-complete language lies in co-NP, closure
+  of NP under union, intersection and star but not complement, the biconditional form of a reduction and the false
+  symmetry of ≤p, the tractable 2-SAT against 3-SAT, the decision form of VERTEX COVER, the target clique size and
+  the complement-graph vertex-cover size of the 3-SAT construction, the CLIQUE to INDEPENDENT SET complement, and
+  hardness outside NP through the chromatic number and the halting problem.
+- **Numeric answers, recomputed by script.** 3 of the five listed languages are known to lie in NP (SAT, 3-SAT,
+  VERTEX COVER; the halting problem is undecidable and the complement of SAT is exactly the open NP = co-NP
+  question); the composed reduction cost n² + (n³)² gives k = 6; the 3-SAT to CLIQUE target clique size on a
+  five-clause formula is 5; the twelve-vertex complement graph on a four-clause formula gives a vertex cover of
+  12 − 4 = 8; and 3 of the five listed languages are NP-hard (SAT, the halting problem, VERTEX COVER; 2-SAT and
+  primality are in P).
+- **Provenance.** `verified_pyqs` is empty for Algorithms, so no item carries `GATE_PYQ_VARIATION` and nothing on
+  this paper is claimed as an official GATE question.
+- **Verification (Section 6.8).** Shell parity holds: the paper and the archived Set 1 differ only in the payload
+  lines (title, header sub-line, set chip, question cards, palette count, bank tab, About tab, base64 payload); the
+  remaining 459 lines are byte-identical. `find . -name '*.html'` returns `index.html` plus exactly one file per
+  paper. Every href in `index.html` and in the paper's archive list resolves. The `:root` block in the paper,
+  `index.html` and `design-tokens.css` is byte-identical and no hex colour appears outside it. The paper renders 25
+  test cards, a 25-button palette and 325 banked questions, and the 25 active ids do not appear in the Question Bank
+  tab. Dashboard counts match `master_bank.json` (350 questions, 14 runs).
 
 ### 2026-11-02 — Operating Systems Unit 4, Set 2 of 2 (second pass)
 
