@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 450,
+  "total_questions": 475,
   "units_with_questions": [
    1,
    2,
@@ -15,7 +15,7 @@
    5,
    6
   ],
-  "total_runs": 18
+  "total_runs": 19
  },
  "runs": [
   {
@@ -1092,6 +1092,77 @@
     "ORIGINAL_SYNTHESIS": 9
    },
    "note": "Unit 5 held 75 banked questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap (its first paper was 2026-10-30, only three days earlier, so the 7-day backstop was not the reason). Step B4 advanced exactly one unit: (index_of(transport-layer) = 4 + 1) mod 6 = 5 -> Unit 6, Application Layer & Network Security. Unit 6 already held 50 questions from its two 2026-10-31 sets, so every Computer Networks unit now sits at or above the cap and step B5 applies: the second pass continues and Unit 6 receives the first set of that pass. The paper is exactly 25 questions, the unit now holds 75, and the next Computer Networks run advances to (5 + 1) mod 6 = 0 -> Unit 1, Layering, Physical & Framing, on its third pass."
+  },
+  {
+   "run": 19,
+   "date": "2026-11-03",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "set": "Set 2 of 2 (second pass)",
+   "count": 25,
+   "file": "computer-networks/network-fundamentals-framing/gate_cn_mock_1_2026-11-03.html",
+   "archived_previous": "computer-networks/network-fundamentals-framing/archive/gate_cn_mock_1_2026-10-31_run3.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "osi-and-tcp-ip-models",
+    "transmission-delays-bandwidth-delay-product",
+    "framing-bit-byte-stuffing",
+    "error-detection-crc-checksum-hamming"
+   ],
+   "subtopic_counts": {
+    "osi-and-tcp-ip-models": 6,
+    "transmission-delays-bandwidth-delay-product": 7,
+    "framing-bit-byte-stuffing": 6,
+    "error-detection-crc-checksum-hamming": 6
+   },
+   "question_ids": [
+    "CN-U1-Q76",
+    "CN-U1-Q77",
+    "CN-U1-Q78",
+    "CN-U1-Q79",
+    "CN-U1-Q80",
+    "CN-U1-Q81",
+    "CN-U1-Q82",
+    "CN-U1-Q83",
+    "CN-U1-Q84",
+    "CN-U1-Q85",
+    "CN-U1-Q86",
+    "CN-U1-Q87",
+    "CN-U1-Q88",
+    "CN-U1-Q89",
+    "CN-U1-Q90",
+    "CN-U1-Q91",
+    "CN-U1-Q92",
+    "CN-U1-Q93",
+    "CN-U1-Q94",
+    "CN-U1-Q95",
+    "CN-U1-Q96",
+    "CN-U1-Q97",
+    "CN-U1-Q98",
+    "CN-U1-Q99",
+    "CN-U1-Q100"
+   ],
+   "sources": {
+    "STANDARD_TEXTBOOK": 12,
+    "ORIGINAL_SYNTHESIS": 13
+   },
+   "selection": "MODE A. One subject was drawn uniformly at random from the 11 GATE CSE subjects with an unseeded secrets.randbelow(11) draw; the draw returned index 10 of 11, Computer Networks. runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 18, unit 6, application-layer-security}. Unit 6 held 75 questions, above UNIT_QUESTION_CAP = 50, and its first paper was 2026-10-31, so B3 failed on the cap and B4 advanced exactly one unit: (5 + 1) mod 6 = 0 -> Unit 1, network-fundamentals-framing. Unit 1 held 75 questions from three earlier sets, so this paper is Set 2 of 2 of the unit's second pass. No override used.",
+   "note": "25 new questions, all four unit subtopics represented (6 OSI/TCP-IP, 7 delay and bandwidth-delay product, 6 framing, 6 error detection). Difficulty 10 easy / 10 medium / 5 hard; composition 15 MCQ, 5 MSQ, 5 NAT. No question is claimed as an official GATE PYQ: the Computer Networks bank holds no verified previous-year item, and the paper says so in its About tab. The superseded 2026-10-31 paper moved to archive/gate_cn_mock_1_2026-10-31_run3.html with its content frozen, so the unit folder holds exactly one current paper. Every numeric answer (4 segments, 25% stop-and-wait utilisation, 26 ms, 80% window utilisation, 76.8 ms, 251 bytes, 3 stuffed bytes, 60 bits, 73%) was recomputed by script before the paper was written."
   }
  ],
  "verified_pyqs": [],
@@ -17125,6 +17196,916 @@
    "answer": 3,
    "answer_display": "3",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A stateless filter reads the five-tuple of each packet in isolation and walks the rule list from the top; the first rule that matches decides, and the trailing deny makes the policy default-deny.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(a) tcp, port 443, source in 10.0.0.0/24 &rarr; rule 2 permits.</li><li>(b) tcp, port 22 &rarr; no rule matches until rule 3 &rarr; denied.</li><li>(c) tcp, port 23 &rarr; rule 1 denies, and it is first, so rule 2 is never reached.</li><li>(d) udp &rarr; rule 2 names tcp only, so rule 3 denies.</li><li>(e) tcp, port 443, but source 10.0.1.20 is outside 10.0.0.0/24 &rarr; rule 3 denies.</li><li>(f) tcp, port 443, source 10.0.0.200 &rarr; inside the /24 &rarr; rule 2 permits.</li><li>(g) tcp, port 443, source 10.0.0.31 &rarr; inside the /24 &rarr; rule 2 permits.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 packets &mdash; (a), (f) and (g).</span></p><p class=\"row\"><b>Common misconception.</b> Two traps. Packet (c) looks permitted because port 443 rules are usually generous, but it goes to port 23 and the deny rule sits above the permit. Packet (e) looks like a source inside the permitted block, yet 10.0.1.20 is not in 10.0.0.0/24: the prefix fixes the first three octets.</p><p class=\"row\"><b>Takeaway.</b> Evaluate order first, then the exact tuple: protocol, source prefix, destination port.</p>"
+  },
+  {
+   "id": "CN-U1-Q76",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which OSI layer opens, manages and closes the dialogue between two application processes, and inserts checkpoints so that a long transfer can resume after a failure instead of restarting?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"1\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 1</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which OSI layer opens, manages and closes the dialogue between two application processes, and inserts checkpoints so that a long transfer can resume after a failure instead of restarting?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The application layer</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The session layer</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The presentation layer</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The transport layer</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The application layer",
+    "The session layer",
+    "The presentation layer",
+    "The transport layer"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The application layer</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The session layer</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The presentation layer</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The transport layer</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The OSI upper three layers split work by kind: the application layer is the user of the network, the presentation layer fixes the <i>syntax</i> of the data (encoding, compression, encryption), and the session layer controls the <i>dialogue</i> &mdash; who may transmit when, and where the synchronisation points are.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Dialogue control and checkpointing are session-layer functions by definition.</li><li>Resuming after a failure means keeping synchronisation points, which is the session layer's checkpoint service.</li><li>The transport layer does give end-to-end reliability, but it recovers lost <i>segments</i>, not a half-finished application dialogue.</li><li>So the layer described is the session layer, option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">The session layer (option B)</span></p><p class=\"row\"><b>Common trap.</b> The transport layer is tempting because both talk about recovery. Transport recovery is per segment and knows nothing about an application dialogue; the session layer is the one that marks and resumes a conversation.</p>"
+  },
+  {
+   "id": "CN-U1-Q77",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The TCP/IP reference model has a single application layer. Which OSI layers does that one layer cover?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"2\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 2</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The TCP/IP reference model has a single application layer. Which OSI layers does that one layer cover?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Only the OSI application layer</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The OSI application and presentation layers</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The OSI application, presentation and session layers</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The OSI application, session and transport layers</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Only the OSI application layer",
+    "The OSI application and presentation layers",
+    "The OSI application, presentation and session layers",
+    "The OSI application, session and transport layers"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Only the OSI application layer</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The OSI application and presentation layers</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The OSI application, presentation and session layers</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The OSI application, session and transport layers</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> TCP/IP has four layers &mdash; application, transport, internet and network access. Where OSI separates the application, presentation and session layers, TCP/IP leaves those three jobs to whatever application protocol needs them, so they all sit inside one application layer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>OSI layers 7, 6 and 5 are application, presentation and session.</li><li>TCP/IP folds all three into its application layer, so the mapping is three-to-one.</li><li>The transport layer is a separate TCP/IP layer, so option (D) wrongly absorbs it.</li><li>The correct mapping is option (C).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (C): application, presentation and session</span></p><p class=\"row\"><b>Common trap.</b> The common slip is to keep presentation separate because encoding feels like its own job. In TCP/IP it is not a layer; MIME, TLS and similar protocols do that work inside the application layer.</p>"
+  },
+  {
+   "id": "CN-U1-Q78",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Layering is described as peer-to-peer. Which statement states that idea correctly?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"3\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 3</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Layering is described as peer-to-peer. Which statement states that idea correctly?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Layer n at the sender and layer n at the receiver communicate logically with each other, and the header layer n adds is read by its peer and not by the layers below it.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Every layer reads the headers added by all the layers above it before passing the message down.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A router on the path must implement all seven OSI layers to forward a packet.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The physical layer header is examined by every intermediate device on the path.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Layer n at the sender and layer n at the receiver communicate logically with each other, and the header layer n adds is read by its peer and not by the layers below it.",
+    "Every layer reads the headers added by all the layers above it before passing the message down.",
+    "A router on the path must implement all seven OSI layers to forward a packet.",
+    "The physical layer header is examined by every intermediate device on the path."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Layer n at the sender and layer n at the receiver communicate logically with each other, and the header layer n adds is read by its peer and not by the layers below it.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Every layer reads the headers added by all the layers above it before passing the message down.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">A router on the path must implement all seven OSI layers to forward a packet.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The physical layer header is examined by every intermediate device on the path.</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each layer is written as if it talked directly to the same layer at the far end; the layers below are a delivery service. A header added at layer n is payload to layer n&minus;1 and is only interpreted by layer n at the receiver.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Option (A) is the definition of a peer relationship and of encapsulation.</li><li>Option (B) is false: a lower layer treats the headers above it as opaque data, which is exactly what makes the layers independent.</li><li>Option (C) is false: a router forwards on the network layer, so it needs the physical, data link and network layers only.</li><li>Option (D) is false: a frame header is read by the devices on one link, not by every device end to end.</li><li>Only option (A) survives.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (A)</span></p><p class=\"row\"><b>Common trap.</b> It is easy to read 'peer-to-peer' as meaning the two machines are equal. It means the two <i>same-layer entities</i> converse logically, while the actual bits travel down and up the stacks.</p>"
+  },
+  {
+   "id": "CN-U1-Q79",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A server S listens for TLS on port 443. One client host A opens two separate connections to S at the same time from two browser tabs. At S, which single header field distinguishes the two connections?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"4\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 4</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A server S listens for TLS on port 443. One client host A opens two separate connections to S at the same time from two browser tabs. At S, which single header field distinguishes the two connections?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The destination port number</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The source port number</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The destination IP address</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"4\" data-typ=\"MCQ\" name=\"q4\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The protocol field of the IP header</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The destination port number",
+    "The source port number",
+    "The destination IP address",
+    "The protocol field of the IP header"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The destination port number</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The source port number</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The destination IP address</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The protocol field of the IP header</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A transport-layer connection is identified by the four-tuple (source IP, source port, destination IP, destination port). A host may reuse a well-known destination port many times; what makes each connection distinct is a different ephemeral <i>source</i> port on the client.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Both connections go to the same service, so the destination port is 443 in both.</li><li>Both connections are addressed to the same server address, so the destination IP address is the same in both.</li><li>Both connections use TCP, so the protocol field is 6 in both.</li><li>The client's operating system allocates a different ephemeral source port to each socket, so the source port is the only field that differs.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B), the source port number</span></p><p class=\"row\"><b>Common trap.</b> Students often answer 'the destination port', thinking the server tells the connections apart by service. The service is the same for both; the client's source port is what separates the two sockets, and the server replies to that port.</p>"
+  },
+  {
+   "id": "CN-U1-Q80",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about the physical layer are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"5\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 5</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about the physical layer are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"5\" data-typ=\"MSQ\" name=\"q5\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">It turns the bit stream into signals and defines how a bit is represented on the medium.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"5\" data-typ=\"MSQ\" name=\"q5\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">It appends the frame check sequence so that a corrupted frame can be detected.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"5\" data-typ=\"MSQ\" name=\"q5\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">It fixes the data rate, the line coding or modulation, and the mechanical shape of connectors.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"5\" data-typ=\"MSQ\" name=\"q5\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">It is the only layer that a repeater implements.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "It turns the bit stream into signals and defines how a bit is represented on the medium.",
+    "It appends the frame check sequence so that a corrupted frame can be detected.",
+    "It fixes the data rate, the line coding or modulation, and the mechanical shape of connectors.",
+    "It is the only layer that a repeater implements."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">It turns the bit stream into signals and defines how a bit is represented on the medium.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">It appends the frame check sequence so that a corrupted frame can be detected.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">It fixes the data rate, the line coding or modulation, and the mechanical shape of connectors.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">It is the only layer that a repeater implements.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Option (A), Option (C) and Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The physical layer is concerned with moving bits, not with what the bits mean: bit representation, data rate, synchronisation of bits, the physical medium, and the mechanical and electrical specification of the interface.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: bit-to-signal conversion is the physical layer's job.</li><li>(B) is false: the frame check sequence belongs to the frame, so it is added by the data link layer.</li><li>(C) is true: rate, line coding or modulation and connector geometry are all physical-layer specifications.</li><li>(D) is true: a repeater regenerates the signal and forwards every bit, so it implements only the physical layer.</li><li>The true statements are (A), (C) and (D).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common trap.</b> The FCS sits in the frame trailer and looks like part of 'getting the bits across', but detecting errors in a frame is data link work. A repeater forwards bits without ever seeing a frame.</p>"
+  },
+  {
+   "id": "CN-U1-Q81",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "osi-and-tcp-ip-models",
+   "subtopic": "osi-and-tcp-ip-models",
+   "subtopic_label": "OSI & TCP/IP models",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "An application hands 5000 bytes of data to TCP in a single write. TCP uses a maximum segment size of 1460 bytes, and every segment carries a 20-byte TCP header and a 20-byte IP header. Ignoring IP options and fragmentation, how many IP packets carry the 5000 bytes?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"6\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"osi-and-tcp-ip-models\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 6</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">osi-and-tcp-ip-models</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">An application hands 5000 bytes of data to TCP in a single write. TCP uses a maximum segment size of 1460 bytes, and every segment carries a 20-byte TCP header and a 20-byte IP header. Ignoring IP options and fragmentation, how many IP packets carry the 5000 bytes?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 6\" autocomplete=\"off\" class=\"natinput\" data-n=\"6\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    4
+   ],
+   "answer_display": "4",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The MSS limits the <i>payload</i> of one segment, not the whole message. A message longer than the MSS is split into as many segments as needed, and each segment becomes one IP packet.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Payload per segment = 1460 bytes.</li><li>Segments needed = &#8968;5000 / 1460&#8969; = &#8968;3.42&#8969; = 4.</li><li>The first three segments carry 1460 + 1460 + 1460 = 4380 bytes, leaving 620 bytes for the fourth.</li><li>Each segment gets its own 20-byte TCP and 20-byte IP header, and each becomes one IP packet, so 4 packets.</li><li>The last packet is not padded to the MSS: the answer is 4.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">4 IP packets</span></p><p class=\"row\"><b>Common trap.</b> A frequent error is 5000/1460 = 3.42 and answering 3, forgetting to round up, or adding the 40 bytes of headers into the division. The headers never change the number of segments here; only the payload per segment does.</p>"
+  },
+  {
+   "id": "CN-U1-Q82",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A file travels from A to B over two links in series: the first has a bandwidth of 100 Mbps, the second 10 Mbps. Both links are otherwise idle. Ignoring every delay other than transmission, what throughput does the transfer achieve?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"7\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 7</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A file travels from A to B over two links in series: the first has a bandwidth of 100 Mbps, the second 10 Mbps. Both links are otherwise idle. Ignoring every delay other than transmission, what throughput does the transfer achieve?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">55 Mbps</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">10 Mbps</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">100 Mbps</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">110 Mbps</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "55 Mbps",
+    "10 Mbps",
+    "100 Mbps",
+    "110 Mbps"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">55 Mbps</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">10 Mbps</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">100 Mbps</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">110 Mbps</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For links in series the throughput is set by the slowest link. The fast link spends most of its time waiting for the slow one, so its extra capacity cannot be used.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Link 1 can deliver 100 Mbps and link 2 only 10 Mbps.</li><li>Bits cannot leave the second link faster than 10 Mbps, so the end-to-end rate cannot exceed 10 Mbps.</li><li>The slow link is kept busy at 10 Mbps, so the achieved throughput is 10 Mbps.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">10 Mbps (option B)</span></p><p class=\"row\"><b>Common trap.</b> Averaging the two rates to 55 Mbps, or adding them, are both wrong. Throughput of a serial path is the minimum of the link rates, never a sum or a mean.</p>"
+  },
+  {
+   "id": "CN-U1-Q83",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about the components of nodal delay are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"8\" data-type=\"MSQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 8</span><span class=\"tag msq\">MSQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about the components of nodal delay are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"8\" data-typ=\"MSQ\" name=\"q8\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The transmission delay of a packet grows with its length and falls as the link rate rises.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"8\" data-typ=\"MSQ\" name=\"q8\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The propagation delay of a link grows with the packet length.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"8\" data-typ=\"MSQ\" name=\"q8\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The queueing delay at a router grows as the traffic intensity approaches 1.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"8\" data-typ=\"MSQ\" name=\"q8\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The bandwidth-delay product of a link does not depend on the packet length.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The transmission delay of a packet grows with its length and falls as the link rate rises.",
+    "The propagation delay of a link grows with the packet length.",
+    "The queueing delay at a router grows as the traffic intensity approaches 1.",
+    "The bandwidth-delay product of a link does not depend on the packet length."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The transmission delay of a packet grows with its length and falls as the link rate rises.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The propagation delay of a link grows with the packet length.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The queueing delay at a router grows as the traffic intensity approaches 1.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The bandwidth-delay product of a link does not depend on the packet length.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Option (A), Option (C) and Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Transmission delay is <code class=\"mm\">L/R</code>; propagation delay is <code class=\"mm\">d/s</code>; queueing delay depends on how close the arrival rate is to the service rate; the bandwidth-delay product is <code class=\"mm\">R &times; d/s</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: <code class=\"mm\">L/R</code> rises with L and falls as R rises.</li><li>(B) is false: propagation delay depends on distance and signal speed only, so a longer packet does not stay on the wire longer.</li><li>(C) is true: as the traffic intensity approaches 1 the queue grows without bound.</li><li>(D) is true: the bandwidth-delay product is a property of the link alone.</li><li>The true statements are (A), (C) and (D).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common trap.</b> The classic error is to think a bigger packet takes longer to cross the link. It takes longer to <i>push onto</i> the link, but once the first bit is in, the last bit follows after the same propagation delay as any other packet.</p>"
+  },
+  {
+   "id": "CN-U1-Q84",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Stop-and-wait ARQ runs over a 1 Mbps link whose one-way propagation delay is 12 ms. Frames are 1000 bytes and acknowledgements are negligibly small. Ignoring processing and queueing, what fraction of the link capacity is used to carry data?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"9\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 9</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Stop-and-wait ARQ runs over a 1 Mbps link whose one-way propagation delay is 12 ms. Frames are 1000 bytes and acknowledgements are negligibly small. Ignoring processing and queueing, what fraction of the link capacity is used to carry data?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">25%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">33.3%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">50%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">75%</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "25%",
+    "33.3%",
+    "50%",
+    "75%"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">25%</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">33.3%</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">50%</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">75%</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Stop-and-wait sends one frame, then waits for the acknowledgement, so the sender is idle for one round trip. Utilisation is <code class=\"mm\">U = T<sub>t</sub> / (T<sub>t</sub> + 2T<sub>p</sub>)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Transmission time <code class=\"mm\">T<sub>t</sub> = 1000 &times; 8 / 10<sup>6</sup> = 8 ms</code>.</li><li>One-way propagation <code class=\"mm\">T<sub>p</sub> = 12 ms</code>, so the sender waits <code class=\"mm\">2T<sub>p</sub> = 24 ms</code> for the acknowledgement.</li><li>One cycle lasts <code class=\"mm\">8 + 24 = 32 ms</code>, of which only 8 ms is used for transmitting data.</li><li><code class=\"mm\">U = 8 / 32 = 0.25</code>, that is 25%.</li><li>The answer is option (A).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">25% (option A)</span></p><p class=\"row\"><b>Common trap.</b> Using only one propagation delay instead of the round trip gives 8/(8+12) = 40%, which matches no option and is the usual mistake. The data must reach the receiver <i>and</i> the acknowledgement must come back.</p>"
+  },
+  {
+   "id": "CN-U1-Q85",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A 1000-byte packet crosses two store-and-forward links in series. Each link runs at 1 Mbps and has a one-way propagation delay of 5 ms. Processing and queueing are negligible. What is the end-to-end delay from the first bit leaving the source to the last bit arriving at the destination?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"10\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 10</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 1000-byte packet crosses two store-and-forward links in series. Each link runs at 1 Mbps and has a one-way propagation delay of 5 ms. Processing and queueing are negligible. What is the end-to-end delay from the first bit leaving the source to the last bit arriving at the destination?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">16 ms</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">18 ms</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">26 ms</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">10 ms</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "16 ms",
+    "18 ms",
+    "26 ms",
+    "10 ms"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">16 ms</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">18 ms</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">26 ms</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">10 ms</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> With store-and-forward switching the whole packet must be received before it can be forwarded, so the transmission time is paid once per link, and each link also contributes its propagation delay.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Transmission time on one link <code class=\"mm\">L/R = 8000 / 10<sup>6</sup> = 8 ms</code>.</li><li>The packet is fully received at the router after <code class=\"mm\">8 + 5 = 13 ms</code>.</li><li>The router then transmits it on the second link, which takes another 8 ms, and it propagates for another 5 ms.</li><li>Total <code class=\"mm\">= 8 + 5 + 8 + 5 = 26 ms</code>.</li><li>The answer is option (C).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">26 ms (option C)</span></p><p class=\"row\"><b>Common trap.</b> Adding the propagation delays but counting the transmission time only once gives 18 ms. A store-and-forward node must transmit the packet again on the next link, so transmission is paid per hop.</p>"
+  },
+  {
+   "id": "CN-U1-Q86",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A sender and a receiver are joined by a 1 Mbps link with a round-trip time of 100 ms. The sender keeps a sliding window of 10 000 bytes in flight and never needs to retransmit. Ignoring header overhead, what fraction of the link capacity does the sender use?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"11\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 11</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A sender and a receiver are joined by a 1 Mbps link with a round-trip time of 100 ms. The sender keeps a sliding window of 10 000 bytes in flight and never needs to retransmit. Ignoring header overhead, what fraction of the link capacity does the sender use?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">62.5%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">80%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">100%</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">50%</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "62.5%",
+    "80%",
+    "100%",
+    "50%"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">62.5%</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">80%</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">100%</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">50%</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The bandwidth-delay product is the number of bits the link can hold in flight; a window equal to it keeps the link continuously busy. Utilisation is window divided by bandwidth-delay product, capped at 100%.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Bandwidth-delay product <code class=\"mm\">= 10<sup>6</sup> &times; 0.1 / 8 = 12 500 bytes</code>.</li><li>The window is 10 000 bytes, which is smaller than 12 500 bytes, so the sender runs out of data before the acknowledgement returns.</li><li><code class=\"mm\">U = 10 000 / 12 500 = 0.8</code>, that is 80%.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">80% (option B)</span></p><p class=\"row\"><b>Common trap.</b> Dividing the window by the one-way delay instead of the round trip gives 160%, which is impossible and is the standard slip. The window must cover a full round trip, because the sender learns that data arrived only when the acknowledgement returns.</p>"
+  },
+  {
+   "id": "CN-U1-Q87",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about the bandwidth-delay product of a link are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"12\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 12</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about the bandwidth-delay product of a link are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"12\" data-typ=\"MSQ\" name=\"q12\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">It is the number of bits that can be in flight on the link at one instant.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"12\" data-typ=\"MSQ\" name=\"q12\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">It is measured in seconds.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"12\" data-typ=\"MSQ\" name=\"q12\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A sender whose window equals the bandwidth-delay product can keep the link busy continuously.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"12\" data-typ=\"MSQ\" name=\"q12\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">For a fixed link rate it grows as the one-way propagation delay grows.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "It is the number of bits that can be in flight on the link at one instant.",
+    "It is measured in seconds.",
+    "A sender whose window equals the bandwidth-delay product can keep the link busy continuously.",
+    "For a fixed link rate it grows as the one-way propagation delay grows."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">It is the number of bits that can be in flight on the link at one instant.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">It is measured in seconds.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">A sender whose window equals the bandwidth-delay product can keep the link busy continuously.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">For a fixed link rate it grows as the one-way propagation delay grows.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Option (A), Option (C) and Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The bandwidth-delay product is <code class=\"mm\">R &times; (d/s)</code>: a rate multiplied by a time, so it is a quantity of <i>bits</i>, not a time. Physically it is the amount of data that fits in the pipe.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: bits that have left the sender but not reached the receiver are the bits in flight.</li><li>(B) is false: rate &times; time gives bits.</li><li>(C) is true: that is exactly the condition for full utilisation in a sliding-window protocol.</li><li>(D) is true: a longer or slower medium means a longer pipe, hence more bits in flight.</li><li>The true statements are (A), (C) and (D).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common trap.</b> Calling the bandwidth-delay product a delay is the usual confusion. It contains a delay, but the product is a number of bits: how much data the link holds while it is full.</p>"
+  },
+  {
+   "id": "CN-U1-Q88",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "transmission-delays-bandwidth-delay-product",
+   "subtopic": "transmission-delays-bandwidth-delay-product",
+   "subtopic_label": "Delays & bandwidth-delay product",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A router's output queue holds 64 packets of 1500 bytes each when the outgoing link, which runs at 10 Mbps, begins to drain it. No further packets arrive. How long does the queue take to empty? (Enter the answer in milliseconds.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"13\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"transmission-delays-bandwidth-delay-product\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 13</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">transmission-delays-bandwidth-delay-product</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A router's output queue holds 64 packets of 1500 bytes each when the outgoing link, which runs at 10 Mbps, begins to drain it. No further packets arrive. How long does the queue take to empty? (Enter the answer in milliseconds.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 13\" autocomplete=\"off\" class=\"natinput\" data-n=\"13\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a decimal number of milliseconds, e.g. 76.8.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    76.8
+   ],
+   "answer_display": "76.8 ms",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Draining a queue is pure transmission delay: the backlog in bits divided by the link rate. Propagation delay does not delay the emptying of the local queue.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Backlog in bytes <code class=\"mm\">= 64 &times; 1500 = 96 000 bytes</code>.</li><li>Backlog in bits <code class=\"mm\">= 96 000 &times; 8 = 768 000 bits</code>.</li><li>Time <code class=\"mm\">= 768 000 / 10<sup>7</sup> = 0.0768 s</code>.</li><li><code class=\"mm\">0.0768 s = 76.8 ms</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">76.8 ms</span></p><p class=\"row\"><b>Common trap.</b> Forgetting the factor of 8 between bytes and bits gives 9.6 ms, and adding the propagation delay to the answer is wrong as well: the queue is empty once the last bit has been <i>transmitted</i>.</p>"
+  },
+  {
+   "id": "CN-U1-Q89",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A bit-oriented protocol uses 01111110 as the frame delimiter and inserts a 0 after every five consecutive 1s of data. Which of the following bit patterns can never occur inside the body of a frame?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"14\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 14</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A bit-oriented protocol uses 01111110 as the frame delimiter and inserts a 0 after every five consecutive 1s of data. Which of the following bit patterns can never occur inside the body of a frame?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">01111100</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">01111110</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">11111011</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">00111111</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "01111100",
+    "01111110",
+    "11111011",
+    "00111111"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">01111100</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">01111110</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">11111011</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">00111111</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The delimiter itself is the pattern the stuffing rule is designed to remove from the data. After five 1s the transmitter always sends a 0, so a sixth consecutive 1 can only be part of a flag.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Any data run of five 1s is followed by an inserted 0, so the body never contains six consecutive 1s.</li><li>The delimiter 01111110 contains six consecutive 1s, so it cannot appear in the stuffed body.</li><li>01111100 has five 1s followed by a 0, which is a legal stuffed sequence.</li><li>11111011 and 00111111 have at most five consecutive 1s, so both are legal.</li><li>The impossible pattern is 01111110, option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">01111110 (option B)</span></p><p class=\"row\"><b>Common trap.</b> It is tempting to answer one of the patterns with exactly five 1s. Five 1s are perfectly legal in the data; it is the sixth 1 that the stuffing rule prevents.</p>"
+  },
+  {
+   "id": "CN-U1-Q90",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A frame format has an 8-bit length field that gives the total number of bytes in the frame, counting the 2-byte header and the 2-byte frame check sequence. What is the largest data field this format can carry?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"15\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 15</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A frame format has an 8-bit length field that gives the total number of bytes in the frame, counting the 2-byte header and the 2-byte frame check sequence. What is the largest data field this format can carry?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">247 bytes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">253 bytes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">251 bytes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">255 bytes</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "247 bytes",
+    "253 bytes",
+    "251 bytes",
+    "255 bytes"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">247 bytes</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">253 bytes</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">251 bytes</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">255 bytes</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An 8-bit field counts from 0 to 255, so the largest total frame is 255 bytes. The length field counts the whole frame, so every byte of header and trailer is taken out of that budget.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Largest total frame <code class=\"mm\">= 2<sup>8</sup> &minus; 1 = 255 bytes</code>.</li><li>Header and trailer together use <code class=\"mm\">2 + 2 = 4 bytes</code>.</li><li>Largest data field <code class=\"mm\">= 255 &minus; 4 = 251 bytes</code>.</li><li>The answer is option (C).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">251 bytes (option C)</span></p><p class=\"row\"><b>Common trap.</b> Answering 255 forgets the header and trailer, and 253 forgets the frame check sequence. If the field counts the whole frame, every other field is inside the budget.</p>"
+  },
+  {
+   "id": "CN-U1-Q91",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A receiver is de-stuffing a bit-oriented frame whose delimiter is 01111110. Inside the body it has just seen five consecutive 1s, and the next bit received is a 1. What must the receiver conclude?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"16\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 16</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A receiver is de-stuffing a bit-oriented frame whose delimiter is 01111110. Inside the body it has just seen five consecutive 1s, and the next bit received is a 1. What must the receiver conclude?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">The 1 is a data bit; the run counter is reset and reception continues.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Those six 1s, together with the 0 that preceded them, form the closing flag, so the frame body ends here.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A bit error has occurred, so the frame is discarded at once.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The 1 is a stuffed bit and must be removed before the frame is passed up.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "The 1 is a data bit; the run counter is reset and reception continues.",
+    "Those six 1s, together with the 0 that preceded them, form the closing flag, so the frame body ends here.",
+    "A bit error has occurred, so the frame is discarded at once.",
+    "The 1 is a stuffed bit and must be removed before the frame is passed up."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">The 1 is a data bit; the run counter is reset and reception continues.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Those six 1s, together with the 0 that preceded them, form the closing flag, so the frame body ends here.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">A bit error has occurred, so the frame is discarded at once.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The 1 is a stuffed bit and must be removed before the frame is passed up.</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The transmitter never lets six consecutive 1s appear in the body, so at the receiver six 1s are a signal, not data. The flag is 0 111111 0, which is exactly a 0, six 1s and a 0.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>After five 1s a stuffed 0 would be expected, and the receiver would drop it.</li><li>Receiving a 1 instead makes six consecutive 1s, which is the middle of the flag.</li><li>Together with the preceding 0 the receiver has 0111111, and the next bit completes the flag 01111110.</li><li>So the frame body ends and the frame is handed up to be checked.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B): the closing flag has been found</span></p><p class=\"row\"><b>Common trap.</b> Six 1s are not an error &mdash; that is what the flag looks like. Seven or more 1s, or an abort sequence of eight 1s, is the error case, and that distinction is what this question tests.</p>"
+  },
+  {
+   "id": "CN-U1-Q92",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "PPP on an asynchronous link uses byte stuffing with FLAG = 0x7E and ESC = 0x7D. A data byte equal to FLAG or to ESC is sent as ESC followed by that byte XOR 0x20. The two data bytes 0x7D and 0x5E are to be transmitted. How many bytes does the transmitter place on the link for these two data bytes alone? (Do not count the flags or the FCS.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"17\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 17</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">PPP on an asynchronous link uses byte stuffing with FLAG = 0x7E and ESC = 0x7D. A data byte equal to FLAG or to ESC is sent as ESC followed by that byte XOR 0x20. The two data bytes 0x7D and 0x5E are to be transmitted. How many bytes does the transmitter place on the link for these two data bytes alone? (Do not count the flags or the FCS.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 17\" autocomplete=\"off\" class=\"natinput\" data-n=\"17\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer number of bytes.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3 bytes",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Byte stuffing escapes exactly the bytes that could be mistaken for control characters: the flag and the escape byte itself. Every other byte travels unchanged, so the expansion is one extra byte per escaped byte.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0x7D equals ESC, so it must be escaped: 0x7D XOR 0x20 = 0x5D, sent as 0x7D 0x5D &mdash; two bytes.</li><li>0x5E is neither FLAG nor ESC, so it is sent as itself &mdash; one byte.</li><li>Total <code class=\"mm\">= 2 + 1 = 3 bytes</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">3 bytes</span></p><p class=\"row\"><b>Common trap.</b> Escaping only the flag gives 2 bytes and forgets that the escape byte must escape itself, otherwise the receiver could not tell an escaped 0x7D from a real ESC. Also, 0x5E must not be escaped: only FLAG and ESC are special.</p>"
+  },
+  {
+   "id": "CN-U1-Q93",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "Which of the following statements about framing are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"18\" data-type=\"MSQ\" data-difficulty=\"hard\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 18</span><span class=\"tag msq\">MSQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about framing are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Framing is what lets a receiver locate the first and the last bit of each frame.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Every framing method recovers on its own from a corrupted length field.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Because bit stuffing keeps the flag out of the body, a receiver can resynchronise on the next flag even when a frame is damaged.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"18\" data-typ=\"MSQ\" name=\"q18\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The frame check sequence sits in the trailer and lets the receiver detect, but not correct, errors.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Framing is what lets a receiver locate the first and the last bit of each frame.",
+    "Every framing method recovers on its own from a corrupted length field.",
+    "Because bit stuffing keeps the flag out of the body, a receiver can resynchronise on the next flag even when a frame is damaged.",
+    "The frame check sequence sits in the trailer and lets the receiver detect, but not correct, errors."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Framing is what lets a receiver locate the first and the last bit of each frame.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Every framing method recovers on its own from a corrupted length field.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Because bit stuffing keeps the flag out of the body, a receiver can resynchronise on the next flag even when a frame is damaged.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The frame check sequence sits in the trailer and lets the receiver detect, but not correct, errors.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Option (A), Option (C) and Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Framing has to answer one question &mdash; where does this frame end &mdash; and the three standard answers are a length field, a flag with byte stuffing, and a flag with bit stuffing. They differ in exactly what happens after an error.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: marking the frame boundaries is the definition of framing.</li><li>(B) is false: with character-count framing a corrupted count field destroys the boundary of the <i>next</i> frame as well, so the receiver cannot resynchronise by itself.</li><li>(C) is true: a flag is a fixed pattern, so the next one found is a reliable restart point.</li><li>(D) is true: the FCS detects errors; correcting them needs redundancy the FCS does not have, so recovery is by retransmission.</li><li>The true statements are (A), (C) and (D).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common trap.</b> Character-count framing looks the most efficient and is the least robust. One corrupted count byte merges or splits frames, and the receiver has no marker to resynchronise on; that is why flag-based framing is used in practice.</p>"
+  },
+  {
+   "id": "CN-U1-Q94",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "framing-bit-byte-stuffing",
+   "subtopic": "framing-bit-byte-stuffing",
+   "subtopic_label": "Framing: bit & byte stuffing",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A bit-oriented frame carries a 24-bit data field in which every bit is 1. The transmitter inserts a 0 after every five consecutive 1s of the data field, and the run count restarts after each inserted 0. An 8-bit flag 01111110 is sent at each end and a 16-bit frame check sequence is sent without stuffing. How many bits does the whole frame occupy on the link?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"19\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"framing-bit-byte-stuffing\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 19</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">framing-bit-byte-stuffing</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A bit-oriented frame carries a 24-bit data field in which every bit is 1. The transmitter inserts a 0 after every five consecutive 1s of the data field, and the run count restarts after each inserted 0. An 8-bit flag 01111110 is sent at each end and a 16-bit frame check sequence is sent without stuffing. How many bits does the whole frame occupy on the link?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 19\" autocomplete=\"off\" class=\"natinput\" data-n=\"19\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer number of bits.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    60
+   ],
+   "answer_display": "60 bits",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Bit stuffing adds one bit for every completed run of five 1s, so a data field of all 1s is the worst case for overhead. The frame length is the stuffed data field plus both flags plus the FCS.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Walk the 24 ones: after the 5th, 10th, 15th and 20th 1 a 0 is inserted, and the count restarts each time.</li><li>The remaining four 1s (the 21st to 24th) complete no run of five, so nothing more is inserted.</li><li>Stuffed data field <code class=\"mm\">= 24 + 4 = 28 bits</code>.</li><li>Whole frame <code class=\"mm\">= 8 (opening flag) + 28 + 16 (FCS) + 8 (closing flag) = 60 bits</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">60 bits</span></p><p class=\"row\"><b>Common trap.</b> Two traps sit here. Counting a fifth insertion after the 24th bit assumes 24 is a multiple of five. And answering 28 gives the stuffed data field only &mdash; the two flags and the FCS are part of what goes on the link.</p>"
+  },
+  {
+   "id": "CN-U1-Q95",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A code consists of every 8-bit word that has even parity. What is the minimum Hamming distance of this code?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"20\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 20</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A code consists of every 8-bit word that has even parity. What is the minimum Hamming distance of this code?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">3</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">4</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">1</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">2</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">3</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">4</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The minimum distance of a code is the smallest number of bit positions in which any two valid codewords differ. Flipping one bit of an even-parity word makes the parity odd, so no single flip can reach another codeword.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Take any codeword with even parity; flipping one bit gives odd parity, which is not a codeword, so d &ge; 2.</li><li>Flipping two bits keeps the parity even, so a codeword at distance 2 exists.</li><li>Therefore the minimum distance is exactly 2.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">2 (option B)</span></p><p class=\"row\"><b>Common trap.</b> Distance 1 would mean two codewords differing in a single bit, which would make the code useless. A single parity bit buys distance 2: it detects any one-bit error but cannot correct one, because every received word is at distance 1 from many codewords.</p>"
+  },
+  {
+   "id": "CN-U1-Q96",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A (7,4) Hamming code carries 4 data bits and 3 check bits in every 7-bit codeword. What is its code rate?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"21\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 21</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A (7,4) Hamming code carries 4 data bits and 3 check bits in every 7-bit codeword. What is its code rate?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4/7</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">3/7</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">1/2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">7/11</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "4/7",
+    "3/7",
+    "1/2",
+    "7/11"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4/7</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">3/7</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">1/2</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">7/11</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Code rate is the fraction of the transmitted bits that carry data: data bits divided by total bits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Data bits <code class=\"mm\">k = 4</code>, total bits <code class=\"mm\">n = 7</code>.</li><li>Rate <code class=\"mm\">= k/n = 4/7 &asymp; 0.571</code>.</li><li>3/7 is the fraction spent on check bits, not the rate.</li><li>The answer is option (A).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">4/7 (option A)</span></p><p class=\"row\"><b>Common trap.</b> 3/7 is the redundancy, not the rate, and 7/11 comes from mixing the (7,4) code with a (11,7) code. The rate is always data over total.</p>"
+  },
+  {
+   "id": "CN-U1-Q97",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "The 16-bit Internet checksum adds the 16-bit words of a header using one's-complement arithmetic with end-around carry. Which of the following errors is NOT detected by this checksum?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"22\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 22</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">The 16-bit Internet checksum adds the 16-bit words of a header using one's-complement arithmetic with end-around carry. Which of the following errors is NOT detected by this checksum?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A single bit flipped in one 16-bit word</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A 16-bit word changing from 0x1234 to 0x1235</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Two 16-bit words of the header exchanged in position</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">A single bit flipped in the last 16-bit word</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "A single bit flipped in one 16-bit word",
+    "A 16-bit word changing from 0x1234 to 0x1235",
+    "Two 16-bit words of the header exchanged in position",
+    "A single bit flipped in the last 16-bit word"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">A single bit flipped in one 16-bit word</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">A 16-bit word changing from 0x1234 to 0x1235</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Two 16-bit words of the header exchanged in position</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">A single bit flipped in the last 16-bit word</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The checksum is a sum, and addition is commutative. Any error that leaves the multiset of 16-bit words unchanged leaves the sum &mdash; and therefore the checksum &mdash; unchanged as well.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is detected: one flipped bit changes the sum by a non-zero power of two.</li><li>(B) is detected: the sum changes by 1.</li><li>(C) is not detected: reordering the words permutes the same values, and the sum of a permuted multiset is identical.</li><li>(D) is detected for the same reason as (A).</li><li>The undetected error is option (C).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C): exchanging two 16-bit words</span></p><p class=\"row\"><b>Common trap.</b> Because the checksum is positional-blind, it also misses inserting or deleting a zero word, and two compensating bit flips. That is one reason IPv6 dropped the header checksum and left error detection to the link layer and to TCP.</p>"
+  },
+  {
+   "id": "CN-U1-Q98",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A SECDED code (single-error correction, double-error detection) is to protect an 8-bit data word. How many check bits are required in total?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"23\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 23</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A SECDED code (single-error correction, double-error detection) is to protect an 8-bit data word. How many check bits are required in total?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">7</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">5</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">6</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">7</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Hamming code that corrects one error needs <code class=\"mm\">2<sup>r</sup> &ge; m + r + 1</code> check bits. SECDED adds one more bit &mdash; an overall parity bit &mdash; so that a double error can be told apart from a single error.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Try <code class=\"mm\">r = 3</code>: <code class=\"mm\">2<sup>3</sup> = 8 &lt; 8 + 3 + 1 = 12</code>, too small.</li><li>Try <code class=\"mm\">r = 4</code>: <code class=\"mm\">2<sup>4</sup> = 16 &ge; 13</code>, so a SEC code needs 4 check bits.</li><li>SECDED needs one additional overall parity bit, giving <code class=\"mm\">4 + 1 = 5</code>.</li><li>The answer is option (B).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">5 check bits (option B)</span></p><p class=\"row\"><b>Common trap.</b> Stopping at 4 gives SEC only. Without the extra overall parity bit a double error looks exactly like a single error in some other position, and the decoder would 'correct' a wrong bit.</p>"
+  },
+  {
+   "id": "CN-U1-Q99",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "For the (7,4) Hamming code, which of the following statements are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"24\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 24</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">For the (7,4) Hamming code, which of the following statements are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">It corrects any single-bit error.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">It detects any double-bit error.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Its minimum Hamming distance is 3.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"24\" data-typ=\"MSQ\" name=\"q24\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">It corrects any double-bit error.</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "It corrects any single-bit error.",
+    "It detects any double-bit error.",
+    "Its minimum Hamming distance is 3.",
+    "It corrects any double-bit error."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">It corrects any single-bit error.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">It detects any double-bit error.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Its minimum Hamming distance is 3.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">It corrects any double-bit error.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Option (A), Option (B) and Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A code with minimum distance <code class=\"mm\">d</code> corrects <code class=\"mm\">&#8970;(d&minus;1)/2&#8971;</code> errors and detects <code class=\"mm\">d&minus;1</code>. The (7,4) Hamming code has <code class=\"mm\">d = 3</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">d = 3</code> gives correction <code class=\"mm\">&#8970;(3&minus;1)/2&#8971; = 1</code> error, so (A) is true.</li><li>Detection is <code class=\"mm\">d &minus; 1 = 2</code> errors, so (B) is true.</li><li>(C) is true by construction: no two of the 16 codewords differ in fewer than 3 positions.</li><li>(D) is false: correcting 2 errors needs <code class=\"mm\">d &ge; 5</code>, which the (7,4) code does not have.</li><li>The true statements are (A), (B) and (C).</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common trap.</b> The commonest error is to assume a code that corrects one error also corrects two, or that detection and correction capability are the same number. Detection is always stronger than correction for the same code.</p>"
+  },
+  {
+   "id": "CN-U1-Q100",
+   "subject": "computer-networks",
+   "subject_name": "Computer Networks",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "network-fundamentals-framing",
+   "unit_name": "Layering, Physical & Framing",
+   "topic": "Layering, Physical & Framing",
+   "sub": "error-detection-crc-checksum-hamming",
+   "subtopic": "error-detection-crc-checksum-hamming",
+   "subtopic_label": "CRC, checksum & Hamming",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2 (second pass)",
+   "question": "A (15,11) Hamming code sends 11 data bits and 4 check bits in every 15-bit codeword. Enter its code rate as a percentage, rounded down to the nearest integer.",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"25\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"computer-networks\" data-unit=\"network-fundamentals-framing\" data-unit-number=\"1\" data-subtopic=\"error-detection-crc-checksum-hamming\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 25</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">error-detection-crc-checksum-hamming</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A (15,11) Hamming code sends 11 data bits and 4 check bits in every 15-bit codeword. Enter its code rate as a percentage, rounded down to the nearest integer.</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 25\" autocomplete=\"off\" class=\"natinput\" data-n=\"25\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer percentage, rounded down.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    73
+   ],
+   "answer_display": "73",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Code rate is data bits over total bits. Expressed as a percentage it is <code class=\"mm\">100k/n</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">k = 11</code>, <code class=\"mm\">n = 15</code>.</li><li><code class=\"mm\">k/n = 11/15 = 0.7333...</code></li><li>As a percentage, <code class=\"mm\">73.33%</code>, and rounding down gives 73.</li><li>The answer is 73.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">73</span></p><p class=\"row\"><b>Common trap.</b> Multiplying by 100 and rounding up gives 74, and computing 4/15 gives the redundancy (26.7%), not the rate. The question asks for the data fraction, rounded down.</p>"
   }
  ]
 }
