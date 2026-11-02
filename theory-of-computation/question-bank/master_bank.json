@@ -4,19 +4,19 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as practice.",
   "unit_question_cap": 50,
   "set_size": 25,
   "sets_per_unit": 2,
-  "total_questions": 400,
+  "total_questions": 425,
   "units_with_questions": [
    1,
    2,
    3,
    4
   ],
-  "total_runs": 16
+  "total_runs": 17
  },
  "runs": [
   {
@@ -897,6 +897,95 @@
    "mode": "MODE A (random subject draw, bank-driven unit rotation)",
    "selection": "MODE A. Three subjects already carried a paper dated 2026-11-01 (algorithms, computer-networks, operating-systems), so the draw ran over the remaining eight in syllabus order (discrete-mathematics, engineering-mathematics, digital-logic, computer-architecture, programming-data-structures, compiler-design, databases, theory-of-computation) with an unseeded secrets.choice, which returned theory-of-computation (index 7). theory-of-computation/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-10-31, run 15, unit 3, pushdown-automata, Set 1 of 2 (third pass)}. Unit 3 held 100 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(pushdown-automata) = 2 + 1) mod 4 = 3 -> Unit 4, Turing Machines & Decidability. Unit 4 already held 75 questions from its first and second passes, so every unit of the subject is at or above the cap and step B5 applies: the modulo wraps, the third pass continues, and Unit 4 receives the first set of that pass. No override was used and no partial set was generated.",
    "note": "Third pass, Set 1 of 2 for Theory of Computation Unit 4. The unit folder held the 2026-10-29 paper, which moved to archive/gate_toc_mock_4_2026-10-29_run3.html with its content frozen, so the folder holds exactly one current paper and the repository root holds no copy. All 25 ids are new (TOC-U4-Q76..Q100); no id and no normalised stem collides with the 75 Unit 4 items already banked or with the other 300 Theory of Computation questions, and the paper's Question Bank tab shows the 375 that are not on it. Coverage: standard TM models 5, recursive vs r.e. 5, halting problem 6, Rice and reductions 5, Chomsky hierarchy 4. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: a two-tape table over 4 states and 3 tape symbols has 4 x 3 x 3 = 36 entries; the mark-write-sweep machine takes 2n+1 = 9 moves on 1111; the right-moving machine accepts 12 strings of length at most 4 (0 + 0 + 1 + 3 + 8, the length-4 count from the no-two-consecutive-zeros recurrence); 2 of the five listed sets are decidable; membership is decidable for 3 of the 4 Chomsky levels. The two trace questions (Q86 loops on 01, Q90 halts on every input) and the step and acceptance counts were produced by a step-accurate TM simulator, not by hand. No GATE_PYQ_VARIATION item: verified_pyqs is empty for this subject, so nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 17,
+   "date": "2026-11-02",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "set": "Set 2 of 2 (third pass)",
+   "count": 25,
+   "file": "theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-02.html",
+   "archived_previous": "theory-of-computation/regular-languages-fa/archive/gate_toc_mock_1_2026-10-30_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "dfa-construction-minimization",
+    "nfa-to-dfa-subset-construction",
+    "regular-expressions",
+    "pumping-lemma-for-regular",
+    "dfa-construction-minimization",
+    "nfa-to-dfa-subset-construction",
+    "regular-expressions",
+    "nfa-to-dfa-subset-construction",
+    "dfa-construction-minimization",
+    "regular-expressions",
+    "dfa-construction-minimization",
+    "nfa-to-dfa-subset-construction",
+    "regular-expressions",
+    "pumping-lemma-for-regular",
+    "dfa-construction-minimization",
+    "nfa-to-dfa-subset-construction",
+    "regular-expressions",
+    "pumping-lemma-for-regular",
+    "dfa-construction-minimization",
+    "pumping-lemma-for-regular",
+    "dfa-construction-minimization",
+    "nfa-to-dfa-subset-construction",
+    "regular-expressions",
+    "pumping-lemma-for-regular",
+    "pumping-lemma-for-regular"
+   ],
+   "subtopic_counts": {
+    "dfa-construction-minimization": 7,
+    "nfa-to-dfa-subset-construction": 6,
+    "regular-expressions": 6,
+    "pumping-lemma-for-regular": 6
+   },
+   "question_ids": [
+    "TOC-U1-Q101",
+    "TOC-U1-Q102",
+    "TOC-U1-Q103",
+    "TOC-U1-Q104",
+    "TOC-U1-Q105",
+    "TOC-U1-Q106",
+    "TOC-U1-Q107",
+    "TOC-U1-Q108",
+    "TOC-U1-Q109",
+    "TOC-U1-Q110",
+    "TOC-U1-Q111",
+    "TOC-U1-Q112",
+    "TOC-U1-Q113",
+    "TOC-U1-Q114",
+    "TOC-U1-Q115",
+    "TOC-U1-Q116",
+    "TOC-U1-Q117",
+    "TOC-U1-Q118",
+    "TOC-U1-Q119",
+    "TOC-U1-Q120",
+    "TOC-U1-Q121",
+    "TOC-U1-Q122",
+    "TOC-U1-Q123",
+    "TOC-U1-Q124",
+    "TOC-U1-Q125"
+   ],
+   "mode": "MODE A (random subject draw, bank-driven unit rotation)",
+   "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 6 -> Theory of Computation. theory-of-computation/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 16, unit 4, turing-machines-decidability, Set 1 of 2 (third pass)}. Unit 4 held 100 questions against UNIT_QUESTION_CAP = 50, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit: (index_of(turing-machines-decidability) = 3 + 1) mod 4 = 0 -> Unit 1, Regular Languages & Finite Automata. Unit 1 already held 100 questions from its first, second and third passes, and all four Theory of Computation units now sit at or above the cap (100, 100, 100, 100): step B5 applies, the modulo wraps and a further pass begins, so this is Set 2 of 2 of the third pass on Unit 1 and the unit's fifth set overall. Exactly 25 questions, no override, no partial set.",
+   "note": "Set 2 of 2 (third pass) on Unit 1. 15 MCQ / 5 MSQ / 5 NAT, 10 easy / 10 medium / 5 hard. All four unit subtopics covered: 7 / 6 / 6 / 6."
   }
  ],
  "verified_pyqs": [],
@@ -15864,6 +15953,1174 @@
    "answer_display": "3",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Membership asks one question about one string. It is decidable whenever the computation that answers it is bounded &mdash; by the input length, or by a bound computable from the input.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>Regular:</b> run the DFA on <span class=\"mm\">w</span>, at most <span class=\"mm\">|w|</span> transitions. Decidable.</li><li><b>Context-free:</b> CYK on Chomsky normal form takes <span class=\"mm\">O(|w|³ · |G|)</span>. Decidable.</li><li><b>Context-sensitive:</b> a linear-bounded automaton has at most <span class=\"mm\">|Q| · |w| · |Γ|^|w|</span> configurations, so simulate that many steps and stop if no accepting configuration is reached. Decidable.</li><li><b>Recursively enumerable:</b> no such bound exists. The simulation of an arbitrary machine on <span class=\"mm\">w</span> may run forever, so a &ldquo;no&rdquo; answer can never be delivered. Undecidable &mdash; this is the acceptance problem.</li><li>Decidable for three of the four classes, so the answer is <span class=\"mm\">3</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4 on the grounds that a universal machine can always &ldquo;just simulate&rdquo;. Simulation decides acceptance only when it halts; on a string outside the language it may never halt, and a decision procedure must answer every input.</p>",
    "solution_plain": "Detailed solutionConcept. Membership asks one question about one string. It is decidable whenever the computation that answers it is bounded — by the input length, or by a bound computable from the input.Step by step.Regular: run the DFA on w, at most |w| transitions. Decidable.Context-free: CYK on Chomsky normal form takes O(|w|³ · |G|). Decidable.Context-sensitive: a linear-bounded automaton has at most |Q| · |w| · |Γ|^|w| configurations, so simulate that many steps and stop if no accepting configuration is reached. Decidable.Recursively enumerable: no such bound exists. The simulation of an arbitrary machine on w may run forever, so a “no” answer can never be delivered. Undecidable — this is the acceptance problem.Decidable for three of the four classes, so the answer is 3.Answer: 3.Common misconception. Answering 4 on the grounds that a universal machine can always “just simulate”. Simulation decides acceptance only when it halts; on a string outside the language it may never halt, and a decision procedure must answer every input."
+  },
+  {
+   "id": "TOC-U1-Q101",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Hopcroft&rsquo;s partition-refinement algorithm starts from which partition of the state set <span class=\"mm\">Q</span> of a complete DFA?",
+   "options": [
+    "one block for every state of <span class=\"mm\">Q</span>",
+    "<span class=\"mm\">{F, Q \\ F}</span>, the final states and the non-final states",
+    "<span class=\"mm\">{q&#8320;}</span> and <span class=\"mm\">Q \\ {q&#8320;}</span>",
+    "<span class=\"mm\">Q</span> taken as a single block"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "Minimisation must begin from the coarsest partition that every equivalent-state relation has to respect, and refine it until it is stable.",
+    "steps": [
+     "The relation &ldquo;same future behaviour&rdquo; can never put a final state and a non-final state in one block, because <span class=\"mm\">&epsilon;</span> tells them apart.",
+     "So the coarsest legal starting partition separates <span class=\"mm\">F</span> from <span class=\"mm\">Q \\ F</span>; every later block is a subset of one of those two.",
+     "Refinement then splits a block whenever two of its states move on some symbol into two different blocks.",
+     "Hence <span class=\"mm\">{F, Q \\ F}</span> is the start partition, and the algorithm ends when no block splits again."
+    ],
+    "final": "the partition <span class=\"mm\">{F, Q \\ F}</span> &mdash; option B.",
+    "trap": "Option D forgets that final and non-final states are already distinguishable. Option A is the finest partition, which assumes the answer instead of computing it, and option C confuses the start state with the only distinction the algorithm begins from."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Hopcroft&rsquo;s partition-refinement algorithm starts from which partition of the state set <span class=\"mm\">Q</span> of a complete DFA?</p>",
+   "options_html": [
+    "one block for every state of <span class=\"mm\">Q</span>",
+    "<span class=\"mm\">{F, Q \\ F}</span>, the final states and the non-final states",
+    "<span class=\"mm\">{q&#8320;}</span> and <span class=\"mm\">Q \\ {q&#8320;}</span>",
+    "<span class=\"mm\">Q</span> taken as a single block"
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Minimisation must begin from the coarsest partition that every equivalent-state relation has to respect, and refine it until it is stable.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The relation &ldquo;same future behaviour&rdquo; can never put a final state and a non-final state in one block, because <span class=\"mm\">&epsilon;</span> tells them apart.</li><li>So the coarsest legal starting partition separates <span class=\"mm\">F</span> from <span class=\"mm\">Q \\ F</span>; every later block is a subset of one of those two.</li><li>Refinement then splits a block whenever two of its states move on some symbol into two different blocks.</li><li>Hence <span class=\"mm\">{F, Q \\ F}</span> is the start partition, and the algorithm ends when no block splits again.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the partition <span class=\"mm\">{F, Q \\ F}</span> &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Option D forgets that final and non-final states are already distinguishable. Option A is the finest partition, which assumes the answer instead of computing it, and option C confuses the start state with the only distinction the algorithm begins from.</p>",
+   "solution_plain": "Detailed solutionConcept. Minimisation must begin from the coarsest partition that every equivalent-state relation has to respect, and refine it until it is stable.Step by step.The relation “same future behaviour” can never put a final state and a non-final state in one block, because ε tells them apart.So the coarsest legal starting partition separates F from Q \\ F; every later block is a subset of one of those two.Refinement then splits a block whenever two of its states move on some symbol into two different blocks.Hence {F, Q \\ F} is the start partition, and the algorithm ends when no block splits again.Answer: the partition {F, Q \\ F} — option B.Common misconception. Option D forgets that final and non-final states are already distinguishable. Option A is the finest partition, which assumes the answer instead of computing it, and option C confuses the start state with the only distinction the algorithm begins from."
+  },
+  {
+   "id": "TOC-U1-Q102",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "<span class=\"mm\">N = (Q, &Sigma;, &delta;, q&#8320;, F)</span> is an <span class=\"mm\">&epsilon;</span>-NFA. <span class=\"mm\">N</span> accepts the empty string <span class=\"mm\">&epsilon;</span> exactly when:",
+   "options": [
+    "<span class=\"mm\">q&#8320; &isin; F</span>",
+    "<span class=\"mm\">F &ne; &empty;</span>",
+    "<span class=\"mm\">&delta;(q&#8320;, &epsilon;) &ne; &empty;</span>",
+    "<span class=\"mm\">&epsilon;-closure({q&#8320;}) &cap; F &ne; &empty;</span>"
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "A string is accepted when some run of the machine ends in a final state; for <span class=\"mm\">&epsilon;</span> the runs available are exactly the <span class=\"mm\">&epsilon;</span>-moves out of the start state.",
+    "steps": [
+     "Reading <span class=\"mm\">&epsilon;</span> consumes no symbol, so the machine may move along <span class=\"mm\">&epsilon;</span>-transitions only.",
+     "The states reachable from <span class=\"mm\">q&#8320;</span> using <span class=\"mm\">&epsilon;</span>-moves alone are precisely <span class=\"mm\">&epsilon;-closure({q&#8320;})</span>.",
+     "The run accepts if any of those states is final, that is if the closure meets <span class=\"mm\">F</span>.",
+     "Option A is the special case with no <span class=\"mm\">&epsilon;</span>-moves; options B and C are neither necessary nor sufficient."
+    ],
+    "final": "the <span class=\"mm\">&epsilon;</span>-closure of the start state meets <span class=\"mm\">F</span> &mdash; option D.",
+    "trap": "Reading the condition as <span class=\"mm\">q&#8320; &isin; F</span>. With <span class=\"mm\">&epsilon;</span>-moves a machine whose start state is not final still accepts <span class=\"mm\">&epsilon;</span>, and a non-empty <span class=\"mm\">F</span> elsewhere in the machine proves nothing."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\"><span class=\"mm\">N = (Q, &Sigma;, &delta;, q&#8320;, F)</span> is an <span class=\"mm\">&epsilon;</span>-NFA. <span class=\"mm\">N</span> accepts the empty string <span class=\"mm\">&epsilon;</span> exactly when:</p>",
+   "options_html": [
+    "<span class=\"mm\">q&#8320; &isin; F</span>",
+    "<span class=\"mm\">F &ne; &empty;</span>",
+    "<span class=\"mm\">&delta;(q&#8320;, &epsilon;) &ne; &empty;</span>",
+    "<span class=\"mm\">&epsilon;-closure({q&#8320;}) &cap; F &ne; &empty;</span>"
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A string is accepted when some run of the machine ends in a final state; for <span class=\"mm\">&epsilon;</span> the runs available are exactly the <span class=\"mm\">&epsilon;</span>-moves out of the start state.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Reading <span class=\"mm\">&epsilon;</span> consumes no symbol, so the machine may move along <span class=\"mm\">&epsilon;</span>-transitions only.</li><li>The states reachable from <span class=\"mm\">q&#8320;</span> using <span class=\"mm\">&epsilon;</span>-moves alone are precisely <span class=\"mm\">&epsilon;-closure({q&#8320;})</span>.</li><li>The run accepts if any of those states is final, that is if the closure meets <span class=\"mm\">F</span>.</li><li>Option A is the special case with no <span class=\"mm\">&epsilon;</span>-moves; options B and C are neither necessary nor sufficient.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the <span class=\"mm\">&epsilon;</span>-closure of the start state meets <span class=\"mm\">F</span> &mdash; option D.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the condition as <span class=\"mm\">q&#8320; &isin; F</span>. With <span class=\"mm\">&epsilon;</span>-moves a machine whose start state is not final still accepts <span class=\"mm\">&epsilon;</span>, and a non-empty <span class=\"mm\">F</span> elsewhere in the machine proves nothing.</p>",
+   "solution_plain": "Detailed solutionConcept. A string is accepted when some run of the machine ends in a final state; for ε the runs available are exactly the ε-moves out of the start state.Step by step.Reading ε consumes no symbol, so the machine may move along ε-transitions only.The states reachable from q₀ using ε-moves alone are precisely ε-closure({q₀}).The run accepts if any of those states is final, that is if the closure meets F.Option A is the special case with no ε-moves; options B and C are neither necessary nor sufficient.Answer: the ε-closure of the start state meets F — option D.Common misconception. Reading the condition as q₀ ∈ F. With ε-moves a machine whose start state is not final still accepts ε, and a non-empty F elsewhere in the machine proves nothing."
+  },
+  {
+   "id": "TOC-U1-Q103",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which regular expression denotes exactly the strings over <span class=\"mm\">&Sigma; = {a, b}</span> that begin with <span class=\"mm\">b</span> and end with <span class=\"mm\">a</span>?",
+   "options": [
+    "<span class=\"mm\">b(a + b)*a</span>",
+    "<span class=\"mm\">(a + b)*ba</span>",
+    "<span class=\"mm\">b(a + b)*</span>",
+    "<span class=\"mm\">(ba)*</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Each position in a regular expression is a constraint: a leading literal pins the first symbol, a trailing literal pins the last one, and the star in the middle absorbs everything between.",
+    "steps": [
+     "The first symbol must be <span class=\"mm\">b</span>, so the expression starts with the literal <span class=\"mm\">b</span>.",
+     "The last symbol must be <span class=\"mm\">a</span>, so the expression ends with the literal <span class=\"mm\">a</span>.",
+     "Everything between is arbitrary, which is <span class=\"mm\">(a + b)*</span>.",
+     "Concatenating gives <span class=\"mm\">b(a + b)*a</span>, which also forces <span class=\"mm\">|w| &ge; 2</span>, exactly as the description does."
+    ],
+    "final": "<span class=\"mm\">b(a + b)*a</span> &mdash; option A.",
+    "trap": "Option B is the mirror image: it fixes the last two symbols as <span class=\"mm\">ba</span> and lets the start be anything. Option C drops the final <span class=\"mm\">a</span> entirely, and option D only generates alternating strings such as <span class=\"mm\">ba</span> and <span class=\"mm\">baba</span>."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which regular expression denotes exactly the strings over <span class=\"mm\">&Sigma; = {a, b}</span> that begin with <span class=\"mm\">b</span> and end with <span class=\"mm\">a</span>?</p>",
+   "options_html": [
+    "<span class=\"mm\">b(a + b)*a</span>",
+    "<span class=\"mm\">(a + b)*ba</span>",
+    "<span class=\"mm\">b(a + b)*</span>",
+    "<span class=\"mm\">(ba)*</span>"
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each position in a regular expression is a constraint: a leading literal pins the first symbol, a trailing literal pins the last one, and the star in the middle absorbs everything between.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The first symbol must be <span class=\"mm\">b</span>, so the expression starts with the literal <span class=\"mm\">b</span>.</li><li>The last symbol must be <span class=\"mm\">a</span>, so the expression ends with the literal <span class=\"mm\">a</span>.</li><li>Everything between is arbitrary, which is <span class=\"mm\">(a + b)*</span>.</li><li>Concatenating gives <span class=\"mm\">b(a + b)*a</span>, which also forces <span class=\"mm\">|w| &ge; 2</span>, exactly as the description does.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">b(a + b)*a</span> &mdash; option A.</span></p><p class=\"row\"><b>Common misconception.</b> Option B is the mirror image: it fixes the last two symbols as <span class=\"mm\">ba</span> and lets the start be anything. Option C drops the final <span class=\"mm\">a</span> entirely, and option D only generates alternating strings such as <span class=\"mm\">ba</span> and <span class=\"mm\">baba</span>.</p>",
+   "solution_plain": "Detailed solutionConcept. Each position in a regular expression is a constraint: a leading literal pins the first symbol, a trailing literal pins the last one, and the star in the middle absorbs everything between.Step by step.The first symbol must be b, so the expression starts with the literal b.The last symbol must be a, so the expression ends with the literal a.Everything between is arbitrary, which is (a + b)*.Concatenating gives b(a + b)*a, which also forces |w| ≥ 2, exactly as the description does.Answer: b(a + b)*a — option A.Common misconception. Option B is the mirror image: it fixes the last two symbols as ba and lets the start be anything. Option C drops the final a entirely, and option D only generates alternating strings such as ba and baba."
+  },
+  {
+   "id": "TOC-U1-Q104",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "The pumping lemma is applied in its contrapositive form. Which of the following is that form?",
+   "options": [
+    "If <span class=\"mm\">L</span> is not regular then no long string of <span class=\"mm\">L</span> can be pumped.",
+    "If every long string of <span class=\"mm\">L</span> can be pumped then <span class=\"mm\">L</span> is regular.",
+    "If for every <span class=\"mm\">p &ge; 1</span> there is some <span class=\"mm\">w &isin; L</span> with <span class=\"mm\">|w| &ge; p</span> such that no split <span class=\"mm\">w = xyz</span> with <span class=\"mm\">|xy| &le; p</span> and <span class=\"mm\">|y| &ge; 1</span> keeps <span class=\"mm\">xy&#8311;z &isin; L</span> for every <span class=\"mm\">i &ge; 0</span>, then <span class=\"mm\">L</span> is not regular.",
+    "If some string of <span class=\"mm\">L</span> cannot be pumped then <span class=\"mm\">L</span> is not regular."
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "The lemma says: regular <span class=\"mm\">&rArr;</span> (exists <span class=\"mm\">p</span>) (for all long <span class=\"mm\">w</span>) (exists split) (for all <span class=\"mm\">i</span>) the pumped word stays in <span class=\"mm\">L</span>. The contrapositive negates the quantifiers in that order.",
+    "steps": [
+     "Write the lemma as <span class=\"mm\">L</span> regular <span class=\"mm\">&rArr; &exist;p &forall;w&isin;L, |w|&ge;p &rArr; &exist;xyz &forall;i, xy&#8311;z&isin;L</span>.",
+     "Negate the right-hand side: <span class=\"mm\">&forall;p &exist;w&isin;L</span> with <span class=\"mm\">|w|&ge;p</span> such that <span class=\"mm\">&forall;xyz</span> with the two length conditions there is an <span class=\"mm\">i</span> with <span class=\"mm\">xy&#8311;z &notin; L</span>.",
+     "So the hypothesis to establish is that no <span class=\"mm\">p</span> works, one counterexample string being enough for each <span class=\"mm\">p</span>.",
+     "Option C states exactly that, and it is the only one that keeps the <span class=\"mm\">&forall;p</span> outside."
+    ],
+    "final": "the statement that no pumping constant works for <span class=\"mm\">L</span> &mdash; option C.",
+    "trap": "Option B is the converse, which is false: languages that are not regular can satisfy the lemma. Option D drops the requirement that the string be at least <span class=\"mm\">p</span> long and that the failure hold for every <span class=\"mm\">p</span>, so it proves nothing."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">The pumping lemma is applied in its contrapositive form. Which of the following is that form?</p>",
+   "options_html": [
+    "If <span class=\"mm\">L</span> is not regular then no long string of <span class=\"mm\">L</span> can be pumped.",
+    "If every long string of <span class=\"mm\">L</span> can be pumped then <span class=\"mm\">L</span> is regular.",
+    "If for every <span class=\"mm\">p &ge; 1</span> there is some <span class=\"mm\">w &isin; L</span> with <span class=\"mm\">|w| &ge; p</span> such that no split <span class=\"mm\">w = xyz</span> with <span class=\"mm\">|xy| &le; p</span> and <span class=\"mm\">|y| &ge; 1</span> keeps <span class=\"mm\">xy&#8311;z &isin; L</span> for every <span class=\"mm\">i &ge; 0</span>, then <span class=\"mm\">L</span> is not regular.",
+    "If some string of <span class=\"mm\">L</span> cannot be pumped then <span class=\"mm\">L</span> is not regular."
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The lemma says: regular <span class=\"mm\">&rArr;</span> (exists <span class=\"mm\">p</span>) (for all long <span class=\"mm\">w</span>) (exists split) (for all <span class=\"mm\">i</span>) the pumped word stays in <span class=\"mm\">L</span>. The contrapositive negates the quantifiers in that order.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the lemma as <span class=\"mm\">L</span> regular <span class=\"mm\">&rArr; &exist;p &forall;w&isin;L, |w|&ge;p &rArr; &exist;xyz &forall;i, xy&#8311;z&isin;L</span>.</li><li>Negate the right-hand side: <span class=\"mm\">&forall;p &exist;w&isin;L</span> with <span class=\"mm\">|w|&ge;p</span> such that <span class=\"mm\">&forall;xyz</span> with the two length conditions there is an <span class=\"mm\">i</span> with <span class=\"mm\">xy&#8311;z &notin; L</span>.</li><li>So the hypothesis to establish is that no <span class=\"mm\">p</span> works, one counterexample string being enough for each <span class=\"mm\">p</span>.</li><li>Option C states exactly that, and it is the only one that keeps the <span class=\"mm\">&forall;p</span> outside.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the statement that no pumping constant works for <span class=\"mm\">L</span> &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Option B is the converse, which is false: languages that are not regular can satisfy the lemma. Option D drops the requirement that the string be at least <span class=\"mm\">p</span> long and that the failure hold for every <span class=\"mm\">p</span>, so it proves nothing.</p>",
+   "solution_plain": "Detailed solutionConcept. The lemma says: regular ⇒ (exists p) (for all long w) (exists split) (for all i) the pumped word stays in L. The contrapositive negates the quantifiers in that order.Step by step.Write the lemma as L regular ⇒ ∃p ∀w∈L, |w|≥p ⇒ ∃xyz ∀i, xy⁷z∈L.Negate the right-hand side: ∀p ∃w∈L with |w|≥p such that ∀xyz with the two length conditions there is an i with xy⁷z ∉ L.So the hypothesis to establish is that no p works, one counterexample string being enough for each p.Option C states exactly that, and it is the only one that keeps the ∀p outside.Answer: the statement that no pumping constant works for L — option C.Common misconception. Option B is the converse, which is false: languages that are not regular can satisfy the lemma. Option D drops the requirement that the string be at least p long and that the failure hold for every p, so it proves nothing."
+  },
+  {
+   "id": "TOC-U1-Q105",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Over <span class=\"mm\">&Sigma; = {a, b}</span>, how many states does the minimal complete DFA have that accepts exactly those strings whose length is a multiple of 3?",
+   "options": [],
+   "answer": 3,
+   "solution": {
+    "concept": "A DFA can count only what it can store, so a property of <span class=\"mm\">|w|</span> modulo <span class=\"mm\">k</span> costs exactly <span class=\"mm\">k</span> states.",
+    "steps": [
+     "The only information needed after reading <span class=\"mm\">w</span> is <span class=\"mm\">|w| mod 3</span>, which has three possible values.",
+     "Take states <span class=\"mm\">0, 1, 2</span> with <span class=\"mm\">&delta;(j, c) = (j + 1) mod 3</span> for both symbols, start state 0 and final state <span class=\"mm\">{0}</span>.",
+     "All three states are reachable, and states <span class=\"mm\">j &ne; j&prime;</span> are distinguished by appending <span class=\"mm\">a</span> repeated <span class=\"mm\">(3 - j) mod 3</span> times.",
+     "So the three classes of the Myhill&ndash;Nerode relation are exactly the residues, and the minimal DFA has 3 states."
+    ],
+    "final": "3 states.",
+    "trap": "Reading &ldquo;multiple of 3&rdquo; as a condition on the symbols rather than on the length, which leads to counting <span class=\"mm\">a</span>s or <span class=\"mm\">b</span>s instead."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Over <span class=\"mm\">&Sigma; = {a, b}</span>, how many states does the minimal complete DFA have that accepts exactly those strings whose length is a multiple of 3?</p>",
+   "options_html": [],
+   "answer_display": 3,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A DFA can count only what it can store, so a property of <span class=\"mm\">|w|</span> modulo <span class=\"mm\">k</span> costs exactly <span class=\"mm\">k</span> states.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The only information needed after reading <span class=\"mm\">w</span> is <span class=\"mm\">|w| mod 3</span>, which has three possible values.</li><li>Take states <span class=\"mm\">0, 1, 2</span> with <span class=\"mm\">&delta;(j, c) = (j + 1) mod 3</span> for both symbols, start state 0 and final state <span class=\"mm\">{0}</span>.</li><li>All three states are reachable, and states <span class=\"mm\">j &ne; j&prime;</span> are distinguished by appending <span class=\"mm\">a</span> repeated <span class=\"mm\">(3 - j) mod 3</span> times.</li><li>So the three classes of the Myhill&ndash;Nerode relation are exactly the residues, and the minimal DFA has 3 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 states.</span></p><p class=\"row\"><b>Common misconception.</b> Reading &ldquo;multiple of 3&rdquo; as a condition on the symbols rather than on the length, which leads to counting <span class=\"mm\">a</span>s or <span class=\"mm\">b</span>s instead.</p>",
+   "solution_plain": "Detailed solutionConcept. A DFA can count only what it can store, so a property of |w| modulo k costs exactly k states.Step by step.The only information needed after reading w is |w| mod 3, which has three possible values.Take states 0, 1, 2 with δ(j, c) = (j + 1) mod 3 for both symbols, start state 0 and final state {0}.All three states are reachable, and states j ≠ j′ are distinguished by appending a repeated (3 - j) mod 3 times.So the three classes of the Myhill–Nerode relation are exactly the residues, and the minimal DFA has 3 states.Answer: 3 states.Common misconception. Reading “multiple of 3” as a condition on the symbols rather than on the length, which leads to counting as or bs instead."
+  },
+  {
+   "id": "TOC-U1-Q106",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "In the subset construction the empty set <span class=\"mm\">&empty;</span> can appear as a state of the resulting DFA. When is <span class=\"mm\">&empty;</span> a final state of that DFA?",
+   "options": [
+    "always",
+    "only when the NFA has no final state",
+    "never",
+    "only when <span class=\"mm\">q&#8320; &notin; F</span>"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "A subset state is final when it contains at least one final state of the NFA, and the empty set contains nothing.",
+    "steps": [
+     "The final states of the DFA are the reachable subsets <span class=\"mm\">S &sube; Q</span> with <span class=\"mm\">S &cap; F &ne; &empty;</span>.",
+     "For <span class=\"mm\">S = &empty;</span> the intersection <span class=\"mm\">&empty; &cap; F</span> is <span class=\"mm\">&empty;</span>, so the condition fails whatever <span class=\"mm\">F</span> is.",
+     "The state <span class=\"mm\">&empty;</span> is therefore an ordinary rejecting sink: every symbol loops it back to itself.",
+     "It exists to keep the DFA complete, not to accept anything."
+    ],
+    "final": "never &mdash; option C.",
+    "trap": "Expecting <span class=\"mm\">&empty;</span> to be final when the NFA has no final state, or forgetting that the subset construction produces a complete DFA in which a rejecting sink is mandatory."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">In the subset construction the empty set <span class=\"mm\">&empty;</span> can appear as a state of the resulting DFA. When is <span class=\"mm\">&empty;</span> a final state of that DFA?</p>",
+   "options_html": [
+    "always",
+    "only when the NFA has no final state",
+    "never",
+    "only when <span class=\"mm\">q&#8320; &notin; F</span>"
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A subset state is final when it contains at least one final state of the NFA, and the empty set contains nothing.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The final states of the DFA are the reachable subsets <span class=\"mm\">S &sube; Q</span> with <span class=\"mm\">S &cap; F &ne; &empty;</span>.</li><li>For <span class=\"mm\">S = &empty;</span> the intersection <span class=\"mm\">&empty; &cap; F</span> is <span class=\"mm\">&empty;</span>, so the condition fails whatever <span class=\"mm\">F</span> is.</li><li>The state <span class=\"mm\">&empty;</span> is therefore an ordinary rejecting sink: every symbol loops it back to itself.</li><li>It exists to keep the DFA complete, not to accept anything.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: never &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Expecting <span class=\"mm\">&empty;</span> to be final when the NFA has no final state, or forgetting that the subset construction produces a complete DFA in which a rejecting sink is mandatory.</p>",
+   "solution_plain": "Detailed solutionConcept. A subset state is final when it contains at least one final state of the NFA, and the empty set contains nothing.Step by step.The final states of the DFA are the reachable subsets S ⊆ Q with S ∩ F ≠ ∅.For S = ∅ the intersection ∅ ∩ F is ∅, so the condition fails whatever F is.The state ∅ is therefore an ordinary rejecting sink: every symbol loops it back to itself.It exists to keep the DFA complete, not to accept anything.Answer: never — option C.Common misconception. Expecting ∅ to be final when the NFA has no final state, or forgetting that the subset construction produces a complete DFA in which a rejecting sink is mandatory."
+  },
+  {
+   "id": "TOC-U1-Q107",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which regular expression denotes exactly the strings over <span class=\"mm\">&Sigma; = {a, b}</span> that contain <span class=\"mm\">bb</span> as a substring?",
+   "options": [
+    "<span class=\"mm\">(a + bb)*</span>",
+    "<span class=\"mm\">(a + b)*bb(a + b)*</span>",
+    "<span class=\"mm\">a*bb*</span>",
+    "<span class=\"mm\">(ab)*bb</span>"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "&ldquo;Contains <span class=\"mm\">bb</span>&rdquo; is a reachability condition, so it needs one occurrence of <span class=\"mm\">bb</span> with arbitrary material on both sides.",
+    "steps": [
+     "Any string containing <span class=\"mm\">bb</span> splits as (prefix)(<span class=\"mm\">bb</span>)(suffix), where both parts are arbitrary words over <span class=\"mm\">&Sigma;</span>.",
+     "Arbitrary words are <span class=\"mm\">(a + b)*</span>, so the language is <span class=\"mm\">(a + b)*bb(a + b)*</span>.",
+     "Every string of that form contains <span class=\"mm\">bb</span>, and every string containing <span class=\"mm\">bb</span> is of that form.",
+     "Options C and D impose extra structure on the prefix or suffix and lose strings such as <span class=\"mm\">abbab</span>."
+    ],
+    "final": "<span class=\"mm\">(a + b)*bb(a + b)*</span> &mdash; option B.",
+    "trap": "Option A is the usual trap: <span class=\"mm\">(a + bb)*</span> builds strings from the blocks <span class=\"mm\">a</span> and <span class=\"mm\">bb</span>, so it misses <span class=\"mm\">abbab</span>, which does contain <span class=\"mm\">bb</span>."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which regular expression denotes exactly the strings over <span class=\"mm\">&Sigma; = {a, b}</span> that contain <span class=\"mm\">bb</span> as a substring?</p>",
+   "options_html": [
+    "<span class=\"mm\">(a + bb)*</span>",
+    "<span class=\"mm\">(a + b)*bb(a + b)*</span>",
+    "<span class=\"mm\">a*bb*</span>",
+    "<span class=\"mm\">(ab)*bb</span>"
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;Contains <span class=\"mm\">bb</span>&rdquo; is a reachability condition, so it needs one occurrence of <span class=\"mm\">bb</span> with arbitrary material on both sides.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Any string containing <span class=\"mm\">bb</span> splits as (prefix)(<span class=\"mm\">bb</span>)(suffix), where both parts are arbitrary words over <span class=\"mm\">&Sigma;</span>.</li><li>Arbitrary words are <span class=\"mm\">(a + b)*</span>, so the language is <span class=\"mm\">(a + b)*bb(a + b)*</span>.</li><li>Every string of that form contains <span class=\"mm\">bb</span>, and every string containing <span class=\"mm\">bb</span> is of that form.</li><li>Options C and D impose extra structure on the prefix or suffix and lose strings such as <span class=\"mm\">abbab</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">(a + b)*bb(a + b)*</span> &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Option A is the usual trap: <span class=\"mm\">(a + bb)*</span> builds strings from the blocks <span class=\"mm\">a</span> and <span class=\"mm\">bb</span>, so it misses <span class=\"mm\">abbab</span>, which does contain <span class=\"mm\">bb</span>.</p>",
+   "solution_plain": "Detailed solutionConcept. “Contains bb” is a reachability condition, so it needs one occurrence of bb with arbitrary material on both sides.Step by step.Any string containing bb splits as (prefix)(bb)(suffix), where both parts are arbitrary words over Σ.Arbitrary words are (a + b)*, so the language is (a + b)*bb(a + b)*.Every string of that form contains bb, and every string containing bb is of that form.Options C and D impose extra structure on the prefix or suffix and lose strings such as abbab.Answer: (a + b)*bb(a + b)* — option B.Common misconception. Option A is the usual trap: (a + bb)* builds strings from the blocks a and bb, so it misses abbab, which does contain bb."
+  },
+  {
+   "id": "TOC-U1-Q108",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "An <span class=\"mm\">&epsilon;</span>-NFA over <span class=\"mm\">&Sigma; = {0, 1}</span> has states <span class=\"mm\">{p, q, r}</span> and exactly these <span class=\"mm\">&epsilon;</span>-moves: <span class=\"mm\">p &rarr; q</span>, <span class=\"mm\">q &rarr; r</span>, <span class=\"mm\">r &rarr; p</span>. There are no other <span class=\"mm\">&epsilon;</span>-moves. How many states belong to <span class=\"mm\">&epsilon;-closure({p})</span>?",
+   "options": [],
+   "answer": 3,
+   "solution": {
+    "concept": "The <span class=\"mm\">&epsilon;</span>-closure is the set of states reachable by a path of zero or more <span class=\"mm\">&epsilon;</span>-moves, so it follows the <span class=\"mm\">&epsilon;</span>-graph transitively.",
+    "steps": [
+     "Start with <span class=\"mm\">p</span> itself, since zero moves are allowed.",
+     "One <span class=\"mm\">&epsilon;</span>-move from <span class=\"mm\">p</span> reaches <span class=\"mm\">q</span>; from <span class=\"mm\">q</span> it reaches <span class=\"mm\">r</span>; from <span class=\"mm\">r</span> it returns to <span class=\"mm\">p</span>.",
+     "The three states therefore all lie in the closure and the cycle adds nothing new.",
+     "So <span class=\"mm\">&epsilon;-closure({p}) = {p, q, r}</span>, three states."
+    ],
+    "final": "3 states.",
+    "trap": "Stopping after the first hop and answering 2, which ignores that the closure is transitive, or assuming a cycle makes the closure infinite."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">An <span class=\"mm\">&epsilon;</span>-NFA over <span class=\"mm\">&Sigma; = {0, 1}</span> has states <span class=\"mm\">{p, q, r}</span> and exactly these <span class=\"mm\">&epsilon;</span>-moves: <span class=\"mm\">p &rarr; q</span>, <span class=\"mm\">q &rarr; r</span>, <span class=\"mm\">r &rarr; p</span>. There are no other <span class=\"mm\">&epsilon;</span>-moves. How many states belong to <span class=\"mm\">&epsilon;-closure({p})</span>?</p>",
+   "options_html": [],
+   "answer_display": 3,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The <span class=\"mm\">&epsilon;</span>-closure is the set of states reachable by a path of zero or more <span class=\"mm\">&epsilon;</span>-moves, so it follows the <span class=\"mm\">&epsilon;</span>-graph transitively.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start with <span class=\"mm\">p</span> itself, since zero moves are allowed.</li><li>One <span class=\"mm\">&epsilon;</span>-move from <span class=\"mm\">p</span> reaches <span class=\"mm\">q</span>; from <span class=\"mm\">q</span> it reaches <span class=\"mm\">r</span>; from <span class=\"mm\">r</span> it returns to <span class=\"mm\">p</span>.</li><li>The three states therefore all lie in the closure and the cycle adds nothing new.</li><li>So <span class=\"mm\">&epsilon;-closure({p}) = {p, q, r}</span>, three states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 states.</span></p><p class=\"row\"><b>Common misconception.</b> Stopping after the first hop and answering 2, which ignores that the closure is transitive, or assuming a cycle makes the closure infinite.</p>",
+   "solution_plain": "Detailed solutionConcept. The ε-closure is the set of states reachable by a path of zero or more ε-moves, so it follows the ε-graph transitively.Step by step.Start with p itself, since zero moves are allowed.One ε-move from p reaches q; from q it reaches r; from r it returns to p.The three states therefore all lie in the closure and the cycle adds nothing new.So ε-closure({p}) = {p, q, r}, three states.Answer: 3 states.Common misconception. Stopping after the first hop and answering 2, which ignores that the closure is transitive, or assuming a cycle makes the closure infinite."
+  },
+  {
+   "id": "TOC-U1-Q109",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Two complete DFAs are both minimal and accept the same language. Which of the following is TRUE?",
+   "options": [
+    "They are isomorphic: one is obtained from the other by renaming states.",
+    "Their transition tables must be identical.",
+    "One of them may have strictly fewer states than the other.",
+    "They may differ in the number of final states."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "A regular language has one minimal complete DFA up to renaming, because its states are the classes of the Myhill&ndash;Nerode relation.",
+    "steps": [
+     "Let <span class=\"mm\">L</span> be the common language and <span class=\"mm\">&equiv;_L</span> its Myhill&ndash;Nerode relation.",
+     "In a minimal DFA for <span class=\"mm\">L</span> every state is reachable, and two distinct states must be distinguishable, so distinct states have distinct right languages.",
+     "Hence each state corresponds to exactly one <span class=\"mm\">&equiv;_L</span>-class, and the correspondence is a bijection between the two state sets.",
+     "Transitions and final states are determined by the classes, so the two machines agree once states are renamed."
+    ],
+    "final": "they are isomorphic &mdash; option A.",
+    "trap": "Reading uniqueness as literal identity. The same language can be presented with the states called <span class=\"mm\">A, B, C</span> or <span class=\"mm\">0, 1, 2</span>; option C contradicts minimality, and option D is impossible because the number of final states is fixed by the classes."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Two complete DFAs are both minimal and accept the same language. Which of the following is TRUE?</p>",
+   "options_html": [
+    "They are isomorphic: one is obtained from the other by renaming states.",
+    "Their transition tables must be identical.",
+    "One of them may have strictly fewer states than the other.",
+    "They may differ in the number of final states."
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A regular language has one minimal complete DFA up to renaming, because its states are the classes of the Myhill&ndash;Nerode relation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let <span class=\"mm\">L</span> be the common language and <span class=\"mm\">&equiv;_L</span> its Myhill&ndash;Nerode relation.</li><li>In a minimal DFA for <span class=\"mm\">L</span> every state is reachable, and two distinct states must be distinguishable, so distinct states have distinct right languages.</li><li>Hence each state corresponds to exactly one <span class=\"mm\">&equiv;_L</span>-class, and the correspondence is a bijection between the two state sets.</li><li>Transitions and final states are determined by the classes, so the two machines agree once states are renamed.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: they are isomorphic &mdash; option A.</span></p><p class=\"row\"><b>Common misconception.</b> Reading uniqueness as literal identity. The same language can be presented with the states called <span class=\"mm\">A, B, C</span> or <span class=\"mm\">0, 1, 2</span>; option C contradicts minimality, and option D is impossible because the number of final states is fixed by the classes.</p>",
+   "solution_plain": "Detailed solutionConcept. A regular language has one minimal complete DFA up to renaming, because its states are the classes of the Myhill–Nerode relation.Step by step.Let L be the common language and ≡_L its Myhill–Nerode relation.In a minimal DFA for L every state is reachable, and two distinct states must be distinguishable, so distinct states have distinct right languages.Hence each state corresponds to exactly one ≡_L-class, and the correspondence is a bijection between the two state sets.Transitions and final states are determined by the classes, so the two machines agree once states are renamed.Answer: they are isomorphic — option A.Common misconception. Reading uniqueness as literal identity. The same language can be presented with the states called A, B, C or 0, 1, 2; option C contradicts minimality, and option D is impossible because the number of final states is fixed by the classes."
+  },
+  {
+   "id": "TOC-U1-Q110",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "How many of the following four regular expressions over <span class=\"mm\">&Sigma; = {a, b}</span> denote <span class=\"mm\">&Sigma;*</span>, that is the same language as <span class=\"mm\">(a + b)*</span>? (i) <span class=\"mm\">(a*b*)*</span> (ii) <span class=\"mm\">(a + b*)*</span> (iii) <span class=\"mm\">(&epsilon; + a + b)*</span> (iv) <span class=\"mm\">(a*b*a*)*</span>",
+   "options": [],
+   "answer": 4,
+   "solution": {
+    "concept": "Two expressions denote the same language when each can generate every string the other can; a star over a set that already generates every single symbol generates everything.",
+    "steps": [
+     "(i) <span class=\"mm\">(a*b*)*</span>: every string splits into alternating runs of <span class=\"mm\">a</span>s and <span class=\"mm\">b</span>s, and each run is a factor <span class=\"mm\">a*b*</span>, so all of <span class=\"mm\">&Sigma;*</span> is covered.",
+     "(ii) <span class=\"mm\">(a + b*)*</span>: the factors <span class=\"mm\">a</span> and <span class=\"mm\">b*</span> between them supply <span class=\"mm\">a</span>, <span class=\"mm\">b</span> and <span class=\"mm\">&epsilon;</span>, so again all strings.",
+     "(iii) <span class=\"mm\">(&epsilon; + a + b)*</span>: the starred set contains both symbols, so it is <span class=\"mm\">&Sigma;*</span> by definition.",
+     "(iv) <span class=\"mm\">(a*b*a*)*</span>: a single factor cannot produce <span class=\"mm\">ba</span>, but two factors <span class=\"mm\">b</span> and <span class=\"mm\">a</span> do, and any string splits into one-symbol factors. All four denote <span class=\"mm\">&Sigma;*</span>."
+    ],
+    "final": "4 &mdash; all four.",
+    "trap": "Judging by the shape of the expression rather than by the language. <span class=\"mm\">(a*b*)*</span> looks as if it forces all the <span class=\"mm\">a</span>s before all the <span class=\"mm\">b</span>s, but the outer star removes that restriction."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">How many of the following four regular expressions over <span class=\"mm\">&Sigma; = {a, b}</span> denote <span class=\"mm\">&Sigma;*</span>, that is the same language as <span class=\"mm\">(a + b)*</span>? (i) <span class=\"mm\">(a*b*)*</span> (ii) <span class=\"mm\">(a + b*)*</span> (iii) <span class=\"mm\">(&epsilon; + a + b)*</span> (iv) <span class=\"mm\">(a*b*a*)*</span></p>",
+   "options_html": [],
+   "answer_display": 4,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two expressions denote the same language when each can generate every string the other can; a star over a set that already generates every single symbol generates everything.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(i) <span class=\"mm\">(a*b*)*</span>: every string splits into alternating runs of <span class=\"mm\">a</span>s and <span class=\"mm\">b</span>s, and each run is a factor <span class=\"mm\">a*b*</span>, so all of <span class=\"mm\">&Sigma;*</span> is covered.</li><li>(ii) <span class=\"mm\">(a + b*)*</span>: the factors <span class=\"mm\">a</span> and <span class=\"mm\">b*</span> between them supply <span class=\"mm\">a</span>, <span class=\"mm\">b</span> and <span class=\"mm\">&epsilon;</span>, so again all strings.</li><li>(iii) <span class=\"mm\">(&epsilon; + a + b)*</span>: the starred set contains both symbols, so it is <span class=\"mm\">&Sigma;*</span> by definition.</li><li>(iv) <span class=\"mm\">(a*b*a*)*</span>: a single factor cannot produce <span class=\"mm\">ba</span>, but two factors <span class=\"mm\">b</span> and <span class=\"mm\">a</span> do, and any string splits into one-symbol factors. All four denote <span class=\"mm\">&Sigma;*</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 &mdash; all four.</span></p><p class=\"row\"><b>Common misconception.</b> Judging by the shape of the expression rather than by the language. <span class=\"mm\">(a*b*)*</span> looks as if it forces all the <span class=\"mm\">a</span>s before all the <span class=\"mm\">b</span>s, but the outer star removes that restriction.</p>",
+   "solution_plain": "Detailed solutionConcept. Two expressions denote the same language when each can generate every string the other can; a star over a set that already generates every single symbol generates everything.Step by step.(i) (a*b*)*: every string splits into alternating runs of as and bs, and each run is a factor a*b*, so all of Σ* is covered.(ii) (a + b*)*: the factors a and b* between them supply a, b and ε, so again all strings.(iii) (ε + a + b)*: the starred set contains both symbols, so it is Σ* by definition.(iv) (a*b*a*)*: a single factor cannot produce ba, but two factors b and a do, and any string splits into one-symbol factors. All four denote Σ*.Answer: 4 — all four.Common misconception. Judging by the shape of the expression rather than by the language. (a*b*)* looks as if it forces all the as before all the bs, but the outer star removes that restriction."
+  },
+  {
+   "id": "TOC-U1-Q111",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "A complete DFA over <span class=\"mm\">&Sigma; = {0, 1}</span> has exactly 4 states, all reachable from the start state. Minimisation turns it into an equivalent DFA with exactly 3 states. Which of the following must be TRUE?",
+   "options": [
+    "Exactly two of the four states are unreachable.",
+    "Exactly two of the four states are distinguishable.",
+    "The DFA had exactly two final states.",
+    "Exactly one pair of distinct states is indistinguishable."
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "Minimisation merges the states of one equivalence class into one state, so the drop from 4 states to 3 counts classes, not pairs.",
+    "steps": [
+     "Four reachable states are partitioned into exactly three classes, so the class sizes are 2, 1, 1.",
+     "The class of size 2 contributes exactly one unordered pair of distinct states that are indistinguishable from each other.",
+     "Every other pair lies in different classes, hence is distinguishable.",
+     "So exactly one pair is indistinguishable; nothing is said about how many states are final."
+    ],
+    "final": "exactly one pair of distinct states is indistinguishable &mdash; option D.",
+    "trap": "Adding up the pairs in each class instead of counting classes. With class sizes 2, 1, 1 only one pair exists, and the number of final states is unconstrained &mdash; a 3-state minimal DFA may have one, two or three final states."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">A complete DFA over <span class=\"mm\">&Sigma; = {0, 1}</span> has exactly 4 states, all reachable from the start state. Minimisation turns it into an equivalent DFA with exactly 3 states. Which of the following must be TRUE?</p>",
+   "options_html": [
+    "Exactly two of the four states are unreachable.",
+    "Exactly two of the four states are distinguishable.",
+    "The DFA had exactly two final states.",
+    "Exactly one pair of distinct states is indistinguishable."
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Minimisation merges the states of one equivalence class into one state, so the drop from 4 states to 3 counts classes, not pairs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Four reachable states are partitioned into exactly three classes, so the class sizes are 2, 1, 1.</li><li>The class of size 2 contributes exactly one unordered pair of distinct states that are indistinguishable from each other.</li><li>Every other pair lies in different classes, hence is distinguishable.</li><li>So exactly one pair is indistinguishable; nothing is said about how many states are final.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: exactly one pair of distinct states is indistinguishable &mdash; option D.</span></p><p class=\"row\"><b>Common misconception.</b> Adding up the pairs in each class instead of counting classes. With class sizes 2, 1, 1 only one pair exists, and the number of final states is unconstrained &mdash; a 3-state minimal DFA may have one, two or three final states.</p>",
+   "solution_plain": "Detailed solutionConcept. Minimisation merges the states of one equivalence class into one state, so the drop from 4 states to 3 counts classes, not pairs.Step by step.Four reachable states are partitioned into exactly three classes, so the class sizes are 2, 1, 1.The class of size 2 contributes exactly one unordered pair of distinct states that are indistinguishable from each other.Every other pair lies in different classes, hence is distinguishable.So exactly one pair is indistinguishable; nothing is said about how many states are final.Answer: exactly one pair of distinct states is indistinguishable — option D.Common misconception. Adding up the pairs in each class instead of counting classes. With class sizes 2, 1, 1 only one pair exists, and the number of final states is unconstrained — a 3-state minimal DFA may have one, two or three final states."
+  },
+  {
+   "id": "TOC-U1-Q112",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following language families shows that the <span class=\"mm\">2&#8319;</span> bound of the subset construction cannot be improved?",
+   "options": [
+    "<span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span>",
+    "<span class=\"mm\">{w &isin; {0,1}* : the n-th symbol from the end of w is 1}</span>, recognised by an NFA with <span class=\"mm\">n + 1</span> states",
+    "<span class=\"mm\">{w &isin; {0,1}* : w has even length}</span>",
+    "<span class=\"mm\">{w &isin; {0,1}* : w contains 01}</span>"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "A tightness example must be a language where a small NFA exists and every DFA provably needs the full power set.",
+    "steps": [
+     "<span class=\"mm\">{a&#8319;b&#8319;}</span> needs an unbounded counter, so no DFA of any size accepts it; it cannot witness a finite bound.",
+     "Even length and &ldquo;contains <span class=\"mm\">01</span>&rdquo; are recognised by DFAs with 2 and 3 states, so they are far from tight.",
+     "For &ldquo;the n-th symbol from the end is 1&rdquo; an NFA guesses the position and then verifies <span class=\"mm\">n - 1</span> symbols, using <span class=\"mm\">n + 1</span> states.",
+     "A DFA must remember the last <span class=\"mm\">n</span> symbols, which needs <span class=\"mm\">2&#8319;</span> states, and all of them are distinguishable, so the bound is attained."
+    ],
+    "final": "the family &ldquo;the n-th symbol from the end is 1&rdquo; &mdash; option B.",
+    "trap": "Picking <span class=\"mm\">{a&#8319;b&#8319;}</span> because it is the famous non-regular language. Tightness of the subset construction is about the gap between NFA and DFA size, and a non-regular language has no DFA at all."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following language families shows that the <span class=\"mm\">2&#8319;</span> bound of the subset construction cannot be improved?</p>",
+   "options_html": [
+    "<span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span>",
+    "<span class=\"mm\">{w &isin; {0,1}* : the n-th symbol from the end of w is 1}</span>, recognised by an NFA with <span class=\"mm\">n + 1</span> states",
+    "<span class=\"mm\">{w &isin; {0,1}* : w has even length}</span>",
+    "<span class=\"mm\">{w &isin; {0,1}* : w contains 01}</span>"
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A tightness example must be a language where a small NFA exists and every DFA provably needs the full power set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">{a&#8319;b&#8319;}</span> needs an unbounded counter, so no DFA of any size accepts it; it cannot witness a finite bound.</li><li>Even length and &ldquo;contains <span class=\"mm\">01</span>&rdquo; are recognised by DFAs with 2 and 3 states, so they are far from tight.</li><li>For &ldquo;the n-th symbol from the end is 1&rdquo; an NFA guesses the position and then verifies <span class=\"mm\">n - 1</span> symbols, using <span class=\"mm\">n + 1</span> states.</li><li>A DFA must remember the last <span class=\"mm\">n</span> symbols, which needs <span class=\"mm\">2&#8319;</span> states, and all of them are distinguishable, so the bound is attained.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the family &ldquo;the n-th symbol from the end is 1&rdquo; &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Picking <span class=\"mm\">{a&#8319;b&#8319;}</span> because it is the famous non-regular language. Tightness of the subset construction is about the gap between NFA and DFA size, and a non-regular language has no DFA at all.</p>",
+   "solution_plain": "Detailed solutionConcept. A tightness example must be a language where a small NFA exists and every DFA provably needs the full power set.Step by step.{aⁿbⁿ} needs an unbounded counter, so no DFA of any size accepts it; it cannot witness a finite bound.Even length and “contains 01” are recognised by DFAs with 2 and 3 states, so they are far from tight.For “the n-th symbol from the end is 1” an NFA guesses the position and then verifies n - 1 symbols, using n + 1 states.A DFA must remember the last n symbols, which needs 2ⁿ states, and all of them are distinguishable, so the bound is attained.Answer: the family “the n-th symbol from the end is 1” — option B.Common misconception. Picking {aⁿbⁿ} because it is the famous non-regular language. Tightness of the subset construction is about the gap between NFA and DFA size, and a non-regular language has no DFA at all."
+  },
+  {
+   "id": "TOC-U1-Q113",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Which of the following describes exactly <span class=\"mm\">L((aa + b)*)</span> over <span class=\"mm\">&Sigma; = {a, b}</span>?",
+   "options": [
+    "the strings with an even number of <span class=\"mm\">a</span>s",
+    "the strings of even length",
+    "the strings in which every maximal block of consecutive <span class=\"mm\">a</span>s has even length",
+    "the strings that contain no occurrence of <span class=\"mm\">aaa</span>"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "The starred set contains the single symbol <span class=\"mm\">b</span> and the two-symbol word <span class=\"mm\">aa</span>, so the <span class=\"mm\">a</span>s can only be consumed in pairs while <span class=\"mm\">b</span>s are free.",
+    "steps": [
+     "Each factor of a concatenation is either <span class=\"mm\">b</span> or <span class=\"mm\">aa</span>, so every <span class=\"mm\">a</span> in the string belongs to a pair contributed by one factor.",
+     "A run of <span class=\"mm\">a</span>s is therefore a concatenation of such pairs, hence has even length, and <span class=\"mm\">b</span>s may appear anywhere between runs.",
+     "Conversely, any string whose maximal <span class=\"mm\">a</span>-blocks are all even splits into factors <span class=\"mm\">b</span> and <span class=\"mm\">aa</span>.",
+     "<span class=\"mm\">abba</span> has two <span class=\"mm\">a</span>s in total, an even number, but its first block has length 1, so option A fails; <span class=\"mm\">ab</span> has even length and odd <span class=\"mm\">a</span>-blocks, so option B fails."
+    ],
+    "final": "the strings whose maximal <span class=\"mm\">a</span>-blocks all have even length &mdash; option C.",
+    "trap": "Confusing &ldquo;an even number of <span class=\"mm\">a</span>s overall&rdquo; with &ldquo;even blocks of <span class=\"mm\">a</span>s&rdquo;. <span class=\"mm\">abba</span> has two <span class=\"mm\">a</span>s yet is not in the language."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following describes exactly <span class=\"mm\">L((aa + b)*)</span> over <span class=\"mm\">&Sigma; = {a, b}</span>?</p>",
+   "options_html": [
+    "the strings with an even number of <span class=\"mm\">a</span>s",
+    "the strings of even length",
+    "the strings in which every maximal block of consecutive <span class=\"mm\">a</span>s has even length",
+    "the strings that contain no occurrence of <span class=\"mm\">aaa</span>"
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The starred set contains the single symbol <span class=\"mm\">b</span> and the two-symbol word <span class=\"mm\">aa</span>, so the <span class=\"mm\">a</span>s can only be consumed in pairs while <span class=\"mm\">b</span>s are free.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Each factor of a concatenation is either <span class=\"mm\">b</span> or <span class=\"mm\">aa</span>, so every <span class=\"mm\">a</span> in the string belongs to a pair contributed by one factor.</li><li>A run of <span class=\"mm\">a</span>s is therefore a concatenation of such pairs, hence has even length, and <span class=\"mm\">b</span>s may appear anywhere between runs.</li><li>Conversely, any string whose maximal <span class=\"mm\">a</span>-blocks are all even splits into factors <span class=\"mm\">b</span> and <span class=\"mm\">aa</span>.</li><li><span class=\"mm\">abba</span> has two <span class=\"mm\">a</span>s in total, an even number, but its first block has length 1, so option A fails; <span class=\"mm\">ab</span> has even length and odd <span class=\"mm\">a</span>-blocks, so option B fails.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the strings whose maximal <span class=\"mm\">a</span>-blocks all have even length &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Confusing &ldquo;an even number of <span class=\"mm\">a</span>s overall&rdquo; with &ldquo;even blocks of <span class=\"mm\">a</span>s&rdquo;. <span class=\"mm\">abba</span> has two <span class=\"mm\">a</span>s yet is not in the language.</p>",
+   "solution_plain": "Detailed solutionConcept. The starred set contains the single symbol b and the two-symbol word aa, so the as can only be consumed in pairs while bs are free.Step by step.Each factor of a concatenation is either b or aa, so every a in the string belongs to a pair contributed by one factor.A run of as is therefore a concatenation of such pairs, hence has even length, and bs may appear anywhere between runs.Conversely, any string whose maximal a-blocks are all even splits into factors b and aa.abba has two as in total, an even number, but its first block has length 1, so option A fails; ab has even length and odd a-blocks, so option B fails.Answer: the strings whose maximal a-blocks all have even length — option C.Common misconception. Confusing “an even number of as overall” with “even blocks of as”. abba has two as yet is not in the language."
+  },
+  {
+   "id": "TOC-U1-Q114",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "In the pumping lemma the constant <span class=\"mm\">p</span> is quantified before the string. What does that order imply?",
+   "options": [
+    "A single <span class=\"mm\">p</span> must work for every string of <span class=\"mm\">L</span> of length at least <span class=\"mm\">p</span>; <span class=\"mm\">p</span> may not be chosen afresh for each <span class=\"mm\">w</span>.",
+    "<span class=\"mm\">p</span> may be chosen separately for each string <span class=\"mm\">w</span> of <span class=\"mm\">L</span>.",
+    "<span class=\"mm\">p</span> must equal the number of states of the minimal DFA and nothing else will do.",
+    "<span class=\"mm\">p</span> may depend on the length of <span class=\"mm\">w</span>."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "The quantifier prefix <span class=\"mm\">&exist;p &forall;w</span> fixes one constant before any string is named, which is what makes the lemma a statement about the whole language.",
+    "steps": [
+     "The lemma reads: there is <span class=\"mm\">p &ge; 1</span> such that for every <span class=\"mm\">w &isin; L</span> with <span class=\"mm\">|w| &ge; p</span> a split exists.",
+     "Because <span class=\"mm\">p</span> is bound first, the same value must serve every long string; a proof that picks a different constant per string proves nothing.",
+     "The number of states of a DFA for <span class=\"mm\">L</span> is one legal choice of <span class=\"mm\">p</span>, but any larger integer also works, so option C is too strong.",
+     "Options B and D reverse the quantifier order, which is exactly the error the lemma is designed to punish."
+    ],
+    "final": "one constant must serve every long string &mdash; option A.",
+    "trap": "Choosing <span class=\"mm\">p</span> after looking at <span class=\"mm\">w</span>. This is the commonest invalid pumping argument: it proves a statement about one word, not about the language."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">In the pumping lemma the constant <span class=\"mm\">p</span> is quantified before the string. What does that order imply?</p>",
+   "options_html": [
+    "A single <span class=\"mm\">p</span> must work for every string of <span class=\"mm\">L</span> of length at least <span class=\"mm\">p</span>; <span class=\"mm\">p</span> may not be chosen afresh for each <span class=\"mm\">w</span>.",
+    "<span class=\"mm\">p</span> may be chosen separately for each string <span class=\"mm\">w</span> of <span class=\"mm\">L</span>.",
+    "<span class=\"mm\">p</span> must equal the number of states of the minimal DFA and nothing else will do.",
+    "<span class=\"mm\">p</span> may depend on the length of <span class=\"mm\">w</span>."
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The quantifier prefix <span class=\"mm\">&exist;p &forall;w</span> fixes one constant before any string is named, which is what makes the lemma a statement about the whole language.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The lemma reads: there is <span class=\"mm\">p &ge; 1</span> such that for every <span class=\"mm\">w &isin; L</span> with <span class=\"mm\">|w| &ge; p</span> a split exists.</li><li>Because <span class=\"mm\">p</span> is bound first, the same value must serve every long string; a proof that picks a different constant per string proves nothing.</li><li>The number of states of a DFA for <span class=\"mm\">L</span> is one legal choice of <span class=\"mm\">p</span>, but any larger integer also works, so option C is too strong.</li><li>Options B and D reverse the quantifier order, which is exactly the error the lemma is designed to punish.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: one constant must serve every long string &mdash; option A.</span></p><p class=\"row\"><b>Common misconception.</b> Choosing <span class=\"mm\">p</span> after looking at <span class=\"mm\">w</span>. This is the commonest invalid pumping argument: it proves a statement about one word, not about the language.</p>",
+   "solution_plain": "Detailed solutionConcept. The quantifier prefix ∃p ∀w fixes one constant before any string is named, which is what makes the lemma a statement about the whole language.Step by step.The lemma reads: there is p ≥ 1 such that for every w ∈ L with |w| ≥ p a split exists.Because p is bound first, the same value must serve every long string; a proof that picks a different constant per string proves nothing.The number of states of a DFA for L is one legal choice of p, but any larger integer also works, so option C is too strong.Options B and D reverse the quantifier order, which is exactly the error the lemma is designed to punish.Answer: one constant must serve every long string — option A.Common misconception. Choosing p after looking at w. This is the commonest invalid pumping argument: it proves a statement about one word, not about the language."
+  },
+  {
+   "id": "TOC-U1-Q115",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "For a language <span class=\"mm\">L</span> over <span class=\"mm\">&Sigma; = {0, 1}</span>, let <span class=\"mm\">m</span> be the number of states of the minimal complete DFA for <span class=\"mm\">L</span>. Which of the following are TRUE? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">m = 2</span> for <span class=\"mm\">L = {w : w ends in 1}</span>",
+    "<span class=\"mm\">m = 2</span> for <span class=\"mm\">L = {w : |w| is even}</span>",
+    "<span class=\"mm\">m = 4</span> for <span class=\"mm\">L = {w : #&#8321;(w) is odd and |w| is even}</span>",
+    "<span class=\"mm\">m = 3</span> for <span class=\"mm\">L = {w : #&#8321;(w) &equiv; 0 (mod 4)}</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "<span class=\"mm\">m</span> equals the number of Myhill&ndash;Nerode classes, so each claim is settled by asking what the machine must remember and whether all of it is needed.",
+    "steps": [
+     "Ends in 1: the only fact needed is the last symbol, so two states, both reachable and distinguishable. A is TRUE.",
+     "Even length: the only fact needed is <span class=\"mm\">|w| mod 2</span>, so two states. B is TRUE.",
+     "Odd <span class=\"mm\">#&#8321;</span> and even length: the pair of parities, of <span class=\"mm\">|w|</span> and of <span class=\"mm\">#&#8321;</span>, has 4 values, all reachable, and they are pairwise distinguished by appending suitable strings, so 4 states. C is TRUE.",
+     "<span class=\"mm\">#&#8321;(w) &equiv; 0 (mod 4)</span> needs the residue of <span class=\"mm\">#&#8321;</span> modulo 4, which has 4 values, so <span class=\"mm\">m = 4</span> and not 3. D is FALSE."
+    ],
+    "final": "A, B and C.",
+    "trap": "Assuming the two parities in C are independent enough to need only 3 states, or treating <span class=\"mm\">#&#8321; &equiv; 0 (mod 4)</span> as a 3-state counter. A modulo-<span class=\"mm\">k</span> counter always needs <span class=\"mm\">k</span> states."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">For a language <span class=\"mm\">L</span> over <span class=\"mm\">&Sigma; = {0, 1}</span>, let <span class=\"mm\">m</span> be the number of states of the minimal complete DFA for <span class=\"mm\">L</span>. Which of the following are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "<span class=\"mm\">m = 2</span> for <span class=\"mm\">L = {w : w ends in 1}</span>",
+    "<span class=\"mm\">m = 2</span> for <span class=\"mm\">L = {w : |w| is even}</span>",
+    "<span class=\"mm\">m = 4</span> for <span class=\"mm\">L = {w : #&#8321;(w) is odd and |w| is even}</span>",
+    "<span class=\"mm\">m = 3</span> for <span class=\"mm\">L = {w : #&#8321;(w) &equiv; 0 (mod 4)}</span>"
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <span class=\"mm\">m</span> equals the number of Myhill&ndash;Nerode classes, so each claim is settled by asking what the machine must remember and whether all of it is needed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Ends in 1: the only fact needed is the last symbol, so two states, both reachable and distinguishable. A is TRUE.</li><li>Even length: the only fact needed is <span class=\"mm\">|w| mod 2</span>, so two states. B is TRUE.</li><li>Odd <span class=\"mm\">#&#8321;</span> and even length: the pair of parities, of <span class=\"mm\">|w|</span> and of <span class=\"mm\">#&#8321;</span>, has 4 values, all reachable, and they are pairwise distinguished by appending suitable strings, so 4 states. C is TRUE.</li><li><span class=\"mm\">#&#8321;(w) &equiv; 0 (mod 4)</span> needs the residue of <span class=\"mm\">#&#8321;</span> modulo 4, which has 4 values, so <span class=\"mm\">m = 4</span> and not 3. D is FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A, B and C.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the two parities in C are independent enough to need only 3 states, or treating <span class=\"mm\">#&#8321; &equiv; 0 (mod 4)</span> as a 3-state counter. A modulo-<span class=\"mm\">k</span> counter always needs <span class=\"mm\">k</span> states.</p>",
+   "solution_plain": "Detailed solutionConcept. m equals the number of Myhill–Nerode classes, so each claim is settled by asking what the machine must remember and whether all of it is needed.Step by step.Ends in 1: the only fact needed is the last symbol, so two states, both reachable and distinguishable. A is TRUE.Even length: the only fact needed is |w| mod 2, so two states. B is TRUE.Odd #₁ and even length: the pair of parities, of |w| and of #₁, has 4 values, all reachable, and they are pairwise distinguished by appending suitable strings, so 4 states. C is TRUE.#₁(w) ≡ 0 (mod 4) needs the residue of #₁ modulo 4, which has 4 values, so m = 4 and not 3. D is FALSE.Answer: A, B and C.Common misconception. Assuming the two parities in C are independent enough to need only 3 states, or treating #₁ ≡ 0 (mod 4) as a 3-state counter. A modulo-k counter always needs k states."
+  },
+  {
+   "id": "TOC-U1-Q116",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Which of the following statements about the subset construction are TRUE? (Select all that apply.)",
+   "options": [
+    "Applied to an NFA with <span class=\"mm\">n</span> states, it produces a DFA with at most <span class=\"mm\">2&#8319;</span> states.",
+    "The DFA it produces is always minimal.",
+    "It can be carried out lazily, expanding only the subsets that are reachable.",
+    "Even when the NFA has no <span class=\"mm\">&epsilon;</span>-transitions, the empty set can occur as a state of the resulting DFA."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "solution": {
+    "concept": "The subset construction is a simulation of nondeterminism by sets of states; it bounds size, guarantees reachability only if run lazily, and says nothing about minimality.",
+    "steps": [
+     "The states of the DFA are subsets of <span class=\"mm\">Q</span>, of which there are <span class=\"mm\">2&#8319;</span>, so the bound holds. A is TRUE.",
+     "The construction typically produces many redundant states, for example several unreachable subsets if run eagerly, so minimality needs a separate step. B is FALSE.",
+     "Only reachable subsets need to be built, which is the standard practical implementation. C is TRUE.",
+     "If a reachable subset <span class=\"mm\">S</span> has no transition on some symbol, then <span class=\"mm\">&delta;_D(S, a) = &empty;</span>, so <span class=\"mm\">&empty;</span> becomes a state. D is TRUE."
+    ],
+    "final": "A, C and D.",
+    "trap": "Believing determinisation gives a minimal DFA, or believing the empty set can only appear through <span class=\"mm\">&epsilon;</span>-moves. Determinise, then minimise &mdash; in that order."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the subset construction are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "Applied to an NFA with <span class=\"mm\">n</span> states, it produces a DFA with at most <span class=\"mm\">2&#8319;</span> states.",
+    "The DFA it produces is always minimal.",
+    "It can be carried out lazily, expanding only the subsets that are reachable.",
+    "Even when the NFA has no <span class=\"mm\">&epsilon;</span>-transitions, the empty set can occur as a state of the resulting DFA."
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The subset construction is a simulation of nondeterminism by sets of states; it bounds size, guarantees reachability only if run lazily, and says nothing about minimality.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The states of the DFA are subsets of <span class=\"mm\">Q</span>, of which there are <span class=\"mm\">2&#8319;</span>, so the bound holds. A is TRUE.</li><li>The construction typically produces many redundant states, for example several unreachable subsets if run eagerly, so minimality needs a separate step. B is FALSE.</li><li>Only reachable subsets need to be built, which is the standard practical implementation. C is TRUE.</li><li>If a reachable subset <span class=\"mm\">S</span> has no transition on some symbol, then <span class=\"mm\">&delta;_D(S, a) = &empty;</span>, so <span class=\"mm\">&empty;</span> becomes a state. D is TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A, C and D.</span></p><p class=\"row\"><b>Common misconception.</b> Believing determinisation gives a minimal DFA, or believing the empty set can only appear through <span class=\"mm\">&epsilon;</span>-moves. Determinise, then minimise &mdash; in that order.</p>",
+   "solution_plain": "Detailed solutionConcept. The subset construction is a simulation of nondeterminism by sets of states; it bounds size, guarantees reachability only if run lazily, and says nothing about minimality.Step by step.The states of the DFA are subsets of Q, of which there are 2ⁿ, so the bound holds. A is TRUE.The construction typically produces many redundant states, for example several unreachable subsets if run eagerly, so minimality needs a separate step. B is FALSE.Only reachable subsets need to be built, which is the standard practical implementation. C is TRUE.If a reachable subset S has no transition on some symbol, then δ_D(S, a) = ∅, so ∅ becomes a state. D is TRUE.Answer: A, C and D.Common misconception. Believing determinisation gives a minimal DFA, or believing the empty set can only appear through ε-moves. Determinise, then minimise — in that order."
+  },
+  {
+   "id": "TOC-U1-Q117",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following pairs of regular expressions over <span class=\"mm\">&Sigma; = {a, b}</span> denote the same language? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">(a + b)*</span> and <span class=\"mm\">(a*b*)*</span>",
+    "<span class=\"mm\">a*</span> and <span class=\"mm\">(aa)*</span>",
+    "<span class=\"mm\">(ab)*</span> and <span class=\"mm\">a*b*</span>",
+    "<span class=\"mm\">(a + b)*ab(a + b)*</span> and <span class=\"mm\">(a + b)*a(a + b)*b(a + b)*</span>"
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "solution": {
+    "concept": "Equivalence of regular expressions is decided by comparing languages, not shapes; a counterexample word is enough to separate two expressions.",
+    "steps": [
+     "<span class=\"mm\">(a*b*)*</span> generates every string, because any string splits into alternating <span class=\"mm\">a</span>-runs and <span class=\"mm\">b</span>-runs, so A is TRUE.",
+     "<span class=\"mm\">a</span> lies in <span class=\"mm\">a*</span> but not in <span class=\"mm\">(aa)*</span>, which contains only even-length words, so B is FALSE.",
+     "<span class=\"mm\">ab</span> lies in <span class=\"mm\">(ab)*</span> but not in <span class=\"mm\">a*b*</span>, since <span class=\"mm\">a*b*</span> never puts an <span class=\"mm\">a</span> after a <span class=\"mm\">b</span>; C is FALSE.",
+     "Both expressions in D denote &ldquo;contains <span class=\"mm\">ab</span>&rdquo;: the second is just the first with the two positions spelled out, and each contains the other's strings. D is TRUE."
+    ],
+    "final": "A and D.",
+    "trap": "Accepting B because <span class=\"mm\">aa</span> generates half of <span class=\"mm\">a*</span>, or C because both sides look like they describe runs of <span class=\"mm\">a</span>s and <span class=\"mm\">b</span>s. A single counterexample word settles each."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following pairs of regular expressions over <span class=\"mm\">&Sigma; = {a, b}</span> denote the same language? (Select all that apply.)</p>",
+   "options_html": [
+    "<span class=\"mm\">(a + b)*</span> and <span class=\"mm\">(a*b*)*</span>",
+    "<span class=\"mm\">a*</span> and <span class=\"mm\">(aa)*</span>",
+    "<span class=\"mm\">(ab)*</span> and <span class=\"mm\">a*b*</span>",
+    "<span class=\"mm\">(a + b)*ab(a + b)*</span> and <span class=\"mm\">(a + b)*a(a + b)*b(a + b)*</span>"
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Equivalence of regular expressions is decided by comparing languages, not shapes; a counterexample word is enough to separate two expressions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">(a*b*)*</span> generates every string, because any string splits into alternating <span class=\"mm\">a</span>-runs and <span class=\"mm\">b</span>-runs, so A is TRUE.</li><li><span class=\"mm\">a</span> lies in <span class=\"mm\">a*</span> but not in <span class=\"mm\">(aa)*</span>, which contains only even-length words, so B is FALSE.</li><li><span class=\"mm\">ab</span> lies in <span class=\"mm\">(ab)*</span> but not in <span class=\"mm\">a*b*</span>, since <span class=\"mm\">a*b*</span> never puts an <span class=\"mm\">a</span> after a <span class=\"mm\">b</span>; C is FALSE.</li><li>Both expressions in D denote &ldquo;contains <span class=\"mm\">ab</span>&rdquo;: the second is just the first with the two positions spelled out, and each contains the other's strings. D is TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A and D.</span></p><p class=\"row\"><b>Common misconception.</b> Accepting B because <span class=\"mm\">aa</span> generates half of <span class=\"mm\">a*</span>, or C because both sides look like they describe runs of <span class=\"mm\">a</span>s and <span class=\"mm\">b</span>s. A single counterexample word settles each.</p>",
+   "solution_plain": "Detailed solutionConcept. Equivalence of regular expressions is decided by comparing languages, not shapes; a counterexample word is enough to separate two expressions.Step by step.(a*b*)* generates every string, because any string splits into alternating a-runs and b-runs, so A is TRUE.a lies in a* but not in (aa)*, which contains only even-length words, so B is FALSE.ab lies in (ab)* but not in a*b*, since a*b* never puts an a after a b; C is FALSE.Both expressions in D denote “contains ab”: the second is just the first with the two positions spelled out, and each contains the other's strings. D is TRUE.Answer: A and D.Common misconception. Accepting B because aa generates half of a*, or C because both sides look like they describe runs of as and bs. A single counterexample word settles each."
+  },
+  {
+   "id": "TOC-U1-Q118",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Which of the following statements about proving that a language is not regular are TRUE? (Select all that apply.)",
+   "options": [
+    "The pumping lemma proves that <span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span> is not regular.",
+    "The pumping lemma can prove that every non-regular language is non-regular.",
+    "The Myhill&ndash;Nerode theorem can prove that every non-regular language is non-regular.",
+    "Intersecting a language with a suitable regular language can turn a non-regularity proof into a contradiction."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "solution": {
+    "concept": "The pumping lemma is necessary but not sufficient for regularity, while Myhill&ndash;Nerode is an exact characterisation; closure properties give a third route.",
+    "steps": [
+     "For <span class=\"mm\">{a&#8319;b&#8319;}</span> the pumped word leaves the language, so the lemma applies and the language is not regular. A is TRUE.",
+     "Some non-regular languages satisfy the pumping lemma, for instance <span class=\"mm\">{a&#8291;b&#8302;c&#8342; : i = j or j = k}</span>, so the lemma cannot settle every case. B is FALSE.",
+     "<span class=\"mm\">L</span> is regular exactly when <span class=\"mm\">&equiv;_L</span> has finitely many classes, so exhibiting infinitely many pairwise inequivalent prefixes refutes regularity for any non-regular <span class=\"mm\">L</span>. C is TRUE.",
+     "If <span class=\"mm\">L &cap; R</span> is known to be non-regular while <span class=\"mm\">R</span> is regular, then <span class=\"mm\">L</span> cannot be regular, since regular languages are closed under intersection. D is TRUE."
+    ],
+    "final": "A, C and D.",
+    "trap": "Treating the pumping lemma as a characterisation. It can only refute; a language that survives it may still be non-regular, which is why Myhill&ndash;Nerode or a closure argument is sometimes needed."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following statements about proving that a language is not regular are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "The pumping lemma proves that <span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span> is not regular.",
+    "The pumping lemma can prove that every non-regular language is non-regular.",
+    "The Myhill&ndash;Nerode theorem can prove that every non-regular language is non-regular.",
+    "Intersecting a language with a suitable regular language can turn a non-regularity proof into a contradiction."
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The pumping lemma is necessary but not sufficient for regularity, while Myhill&ndash;Nerode is an exact characterisation; closure properties give a third route.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For <span class=\"mm\">{a&#8319;b&#8319;}</span> the pumped word leaves the language, so the lemma applies and the language is not regular. A is TRUE.</li><li>Some non-regular languages satisfy the pumping lemma, for instance <span class=\"mm\">{a&#8291;b&#8302;c&#8342; : i = j or j = k}</span>, so the lemma cannot settle every case. B is FALSE.</li><li><span class=\"mm\">L</span> is regular exactly when <span class=\"mm\">&equiv;_L</span> has finitely many classes, so exhibiting infinitely many pairwise inequivalent prefixes refutes regularity for any non-regular <span class=\"mm\">L</span>. C is TRUE.</li><li>If <span class=\"mm\">L &cap; R</span> is known to be non-regular while <span class=\"mm\">R</span> is regular, then <span class=\"mm\">L</span> cannot be regular, since regular languages are closed under intersection. D is TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A, C and D.</span></p><p class=\"row\"><b>Common misconception.</b> Treating the pumping lemma as a characterisation. It can only refute; a language that survives it may still be non-regular, which is why Myhill&ndash;Nerode or a closure argument is sometimes needed.</p>",
+   "solution_plain": "Detailed solutionConcept. The pumping lemma is necessary but not sufficient for regularity, while Myhill–Nerode is an exact characterisation; closure properties give a third route.Step by step.For {aⁿbⁿ} the pumped word leaves the language, so the lemma applies and the language is not regular. A is TRUE.Some non-regular languages satisfy the pumping lemma, for instance {a⁣b⁮cₖ : i = j or j = k}, so the lemma cannot settle every case. B is FALSE.L is regular exactly when ≡_L has finitely many classes, so exhibiting infinitely many pairwise inequivalent prefixes refutes regularity for any non-regular L. C is TRUE.If L ∩ R is known to be non-regular while R is regular, then L cannot be regular, since regular languages are closed under intersection. D is TRUE.Answer: A, C and D.Common misconception. Treating the pumping lemma as a characterisation. It can only refute; a language that survives it may still be non-regular, which is why Myhill–Nerode or a closure argument is sometimes needed."
+  },
+  {
+   "id": "TOC-U1-Q119",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Over <span class=\"mm\">&Sigma; = {a, b}</span>, how many states does the minimal complete DFA have for <span class=\"mm\">L = {w : w contains aa or bb as a substring}</span>?",
+   "options": [],
+   "answer": 4,
+   "solution": {
+    "concept": "The machine must remember only the last symbol seen, plus whether the condition has already been met, because a repeat of that symbol is exactly what triggers acceptance.",
+    "steps": [
+     "States: <span class=\"mm\">s</span> (nothing read yet), <span class=\"mm\">A</span> (last symbol <span class=\"mm\">a</span>, condition not yet met), <span class=\"mm\">B</span> (last symbol <span class=\"mm\">b</span>, condition not yet met), and <span class=\"mm\">F</span> (condition met, final).",
+     "Transitions: <span class=\"mm\">s &rarr; A</span> on <span class=\"mm\">a</span>, <span class=\"mm\">s &rarr; B</span> on <span class=\"mm\">b</span>; <span class=\"mm\">A &rarr; F</span> on <span class=\"mm\">a</span>, <span class=\"mm\">A &rarr; B</span> on <span class=\"mm\">b</span>; <span class=\"mm\">B &rarr; A</span> on <span class=\"mm\">a</span>, <span class=\"mm\">B &rarr; F</span> on <span class=\"mm\">b</span>; <span class=\"mm\">F &rarr; F</span> on both.",
+     "All four states are reachable, and they are pairwise distinguishable: <span class=\"mm\">F</span> is the only final state, <span class=\"mm\">A</span> and <span class=\"mm\">B</span> are separated by appending <span class=\"mm\">a</span>, and <span class=\"mm\">s</span> is separated from <span class=\"mm\">A</span> by appending <span class=\"mm\">a</span> (giving <span class=\"mm\">A</span> rather than <span class=\"mm\">F</span>).",
+     "So the minimal complete DFA has 4 states."
+    ],
+    "final": "4 states.",
+    "trap": "Trying to count how many <span class=\"mm\">aa</span> or <span class=\"mm\">bb</span> occurrences have been seen. Once the condition holds it can never be lost, so a single absorbing final state suffices."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Over <span class=\"mm\">&Sigma; = {a, b}</span>, how many states does the minimal complete DFA have for <span class=\"mm\">L = {w : w contains aa or bb as a substring}</span>?</p>",
+   "options_html": [],
+   "answer_display": 4,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The machine must remember only the last symbol seen, plus whether the condition has already been met, because a repeat of that symbol is exactly what triggers acceptance.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>States: <span class=\"mm\">s</span> (nothing read yet), <span class=\"mm\">A</span> (last symbol <span class=\"mm\">a</span>, condition not yet met), <span class=\"mm\">B</span> (last symbol <span class=\"mm\">b</span>, condition not yet met), and <span class=\"mm\">F</span> (condition met, final).</li><li>Transitions: <span class=\"mm\">s &rarr; A</span> on <span class=\"mm\">a</span>, <span class=\"mm\">s &rarr; B</span> on <span class=\"mm\">b</span>; <span class=\"mm\">A &rarr; F</span> on <span class=\"mm\">a</span>, <span class=\"mm\">A &rarr; B</span> on <span class=\"mm\">b</span>; <span class=\"mm\">B &rarr; A</span> on <span class=\"mm\">a</span>, <span class=\"mm\">B &rarr; F</span> on <span class=\"mm\">b</span>; <span class=\"mm\">F &rarr; F</span> on both.</li><li>All four states are reachable, and they are pairwise distinguishable: <span class=\"mm\">F</span> is the only final state, <span class=\"mm\">A</span> and <span class=\"mm\">B</span> are separated by appending <span class=\"mm\">a</span>, and <span class=\"mm\">s</span> is separated from <span class=\"mm\">A</span> by appending <span class=\"mm\">a</span> (giving <span class=\"mm\">A</span> rather than <span class=\"mm\">F</span>).</li><li>So the minimal complete DFA has 4 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 states.</span></p><p class=\"row\"><b>Common misconception.</b> Trying to count how many <span class=\"mm\">aa</span> or <span class=\"mm\">bb</span> occurrences have been seen. Once the condition holds it can never be lost, so a single absorbing final state suffices.</p>",
+   "solution_plain": "Detailed solutionConcept. The machine must remember only the last symbol seen, plus whether the condition has already been met, because a repeat of that symbol is exactly what triggers acceptance.Step by step.States: s (nothing read yet), A (last symbol a, condition not yet met), B (last symbol b, condition not yet met), and F (condition met, final).Transitions: s → A on a, s → B on b; A → F on a, A → B on b; B → A on a, B → F on b; F → F on both.All four states are reachable, and they are pairwise distinguishable: F is the only final state, A and B are separated by appending a, and s is separated from A by appending a (giving A rather than F).So the minimal complete DFA has 4 states.Answer: 4 states.Common misconception. Trying to count how many aa or bb occurrences have been seen. Once the condition holds it can never be lost, so a single absorbing final state suffices."
+  },
+  {
+   "id": "TOC-U1-Q120",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Let <span class=\"mm\">L = {a&#8319;b&#8319; : n &ge; 1}</span> and take the pumping constant <span class=\"mm\">p = 3</span> with <span class=\"mm\">w = a&sup3;b&sup3; = xyz</span>, where <span class=\"mm\">|xy| &le; 3</span> and <span class=\"mm\">|y| &ge; 1</span>. For how many values of <span class=\"mm\">i &ge; 0</span> does <span class=\"mm\">xy&#8311;z</span> belong to <span class=\"mm\">L</span>?",
+   "options": [],
+   "answer": 1,
+   "solution": {
+    "concept": "The bound <span class=\"mm\">|xy| &le; p</span> forces the pumped part to lie inside the first <span class=\"mm\">p</span> symbols, which here are all <span class=\"mm\">a</span>s, so pumping changes the <span class=\"mm\">a</span>-count and nothing else.",
+    "steps": [
+     "Since <span class=\"mm\">|xy| &le; 3</span> and the first three symbols of <span class=\"mm\">w</span> are <span class=\"mm\">a</span>s, both <span class=\"mm\">x</span> and <span class=\"mm\">y</span> consist only of <span class=\"mm\">a</span>s.",
+     "Write <span class=\"mm\">y = a&#7503;</span> with <span class=\"mm\">1 &le; k &le; 3</span>. Then <span class=\"mm\">xy&#8311;z = a^(3 + (i-1)k) b&sup3;</span>.",
+     "Membership in <span class=\"mm\">L</span> requires equal numbers of <span class=\"mm\">a</span> and <span class=\"mm\">b</span>, that is <span class=\"mm\">3 + (i - 1)k = 3</span>.",
+     "Since <span class=\"mm\">k &ge; 1</span>, this holds exactly when <span class=\"mm\">i = 1</span>, so exactly one value of <span class=\"mm\">i</span> works &mdash; whatever <span class=\"mm\">k</span> is."
+    ],
+    "final": "1.",
+    "trap": "Answering 0 on the grounds that pumping down removes <span class=\"mm\">a</span>s and breaks the balance, while forgetting that <span class=\"mm\">i = 1</span> is the untouched word, which of course stays in the language."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Let <span class=\"mm\">L = {a&#8319;b&#8319; : n &ge; 1}</span> and take the pumping constant <span class=\"mm\">p = 3</span> with <span class=\"mm\">w = a&sup3;b&sup3; = xyz</span>, where <span class=\"mm\">|xy| &le; 3</span> and <span class=\"mm\">|y| &ge; 1</span>. For how many values of <span class=\"mm\">i &ge; 0</span> does <span class=\"mm\">xy&#8311;z</span> belong to <span class=\"mm\">L</span>?</p>",
+   "options_html": [],
+   "answer_display": 1,
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The bound <span class=\"mm\">|xy| &le; p</span> forces the pumped part to lie inside the first <span class=\"mm\">p</span> symbols, which here are all <span class=\"mm\">a</span>s, so pumping changes the <span class=\"mm\">a</span>-count and nothing else.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Since <span class=\"mm\">|xy| &le; 3</span> and the first three symbols of <span class=\"mm\">w</span> are <span class=\"mm\">a</span>s, both <span class=\"mm\">x</span> and <span class=\"mm\">y</span> consist only of <span class=\"mm\">a</span>s.</li><li>Write <span class=\"mm\">y = a&#7503;</span> with <span class=\"mm\">1 &le; k &le; 3</span>. Then <span class=\"mm\">xy&#8311;z = a^(3 + (i-1)k) b&sup3;</span>.</li><li>Membership in <span class=\"mm\">L</span> requires equal numbers of <span class=\"mm\">a</span> and <span class=\"mm\">b</span>, that is <span class=\"mm\">3 + (i - 1)k = 3</span>.</li><li>Since <span class=\"mm\">k &ge; 1</span>, this holds exactly when <span class=\"mm\">i = 1</span>, so exactly one value of <span class=\"mm\">i</span> works &mdash; whatever <span class=\"mm\">k</span> is.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 0 on the grounds that pumping down removes <span class=\"mm\">a</span>s and breaks the balance, while forgetting that <span class=\"mm\">i = 1</span> is the untouched word, which of course stays in the language.</p>",
+   "solution_plain": "Detailed solutionConcept. The bound |xy| ≤ p forces the pumped part to lie inside the first p symbols, which here are all as, so pumping changes the a-count and nothing else.Step by step.Since |xy| ≤ 3 and the first three symbols of w are as, both x and y consist only of as.Write y = aᵏ with 1 ≤ k ≤ 3. Then xy⁷z = a^(3 + (i-1)k) b³.Membership in L requires equal numbers of a and b, that is 3 + (i - 1)k = 3.Since k ≥ 1, this holds exactly when i = 1, so exactly one value of i works — whatever k is.Answer: 1.Common misconception. Answering 0 on the grounds that pumping down removes as and breaks the balance, while forgetting that i = 1 is the untouched word, which of course stays in the language."
+  },
+  {
+   "id": "TOC-U1-Q121",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "<span class=\"mm\">A&#8321;</span> and <span class=\"mm\">A&#8322;</span> are minimal complete DFAs with <span class=\"mm\">m</span> and <span class=\"mm\">n</span> states over the same alphabet. Their product automaton recognises <span class=\"mm\">L(A&#8321;) &cup; L(A&#8322;)</span>. Which of the following is TRUE?",
+   "options": [
+    "The product has <span class=\"mm\">mn</span> states and is always minimal, so the union needs exactly <span class=\"mm\">mn</span> states.",
+    "The union may need more than <span class=\"mm\">mn</span> states.",
+    "The product has <span class=\"mm\">m + n</span> states.",
+    "The product has <span class=\"mm\">mn</span> states, the minimal DFA for the union has at most <span class=\"mm\">mn</span> states, and the bound can be attained."
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "The product construction runs the two machines in parallel, so a state is a pair; the reachable pairs give an upper bound, and minimality is a separate question.",
+    "steps": [
+     "A product state is a pair <span class=\"mm\">(p, q)</span> with <span class=\"mm\">p &isin; Q&#8321;</span> and <span class=\"mm\">q &isin; Q&#8322;</span>, so there are at most <span class=\"mm\">mn</span> of them.",
+     "Taking <span class=\"mm\">F = (F&#8321; &times; Q&#8322;) &cup; (Q&#8321; &times; F&#8322;)</span> makes the product accept the union, so at most <span class=\"mm\">mn</span> states suffice.",
+     "The product need not be minimal: the two coordinates can be correlated, leaving unreachable or equivalent pairs.",
+     "The bound is attainable, for example with <span class=\"mm\">L(A&#8321;) = {w : |w| &equiv; 0 mod m}</span> and <span class=\"mm\">L(A&#8322;) = {w : |w| &equiv; 0 mod n}</span> for coprime <span class=\"mm\">m, n</span>, where all <span class=\"mm\">mn</span> pairs are reachable and distinguishable."
+    ],
+    "final": "at most <span class=\"mm\">mn</span> states, and the bound is attainable &mdash; option D.",
+    "trap": "Confusing the size of the product with the size of the minimal DFA. The product is a construction, not a minimisation; option A is wrong precisely because minimisation may merge its states."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\"><span class=\"mm\">A&#8321;</span> and <span class=\"mm\">A&#8322;</span> are minimal complete DFAs with <span class=\"mm\">m</span> and <span class=\"mm\">n</span> states over the same alphabet. Their product automaton recognises <span class=\"mm\">L(A&#8321;) &cup; L(A&#8322;)</span>. Which of the following is TRUE?</p>",
+   "options_html": [
+    "The product has <span class=\"mm\">mn</span> states and is always minimal, so the union needs exactly <span class=\"mm\">mn</span> states.",
+    "The union may need more than <span class=\"mm\">mn</span> states.",
+    "The product has <span class=\"mm\">m + n</span> states.",
+    "The product has <span class=\"mm\">mn</span> states, the minimal DFA for the union has at most <span class=\"mm\">mn</span> states, and the bound can be attained."
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The product construction runs the two machines in parallel, so a state is a pair; the reachable pairs give an upper bound, and minimality is a separate question.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A product state is a pair <span class=\"mm\">(p, q)</span> with <span class=\"mm\">p &isin; Q&#8321;</span> and <span class=\"mm\">q &isin; Q&#8322;</span>, so there are at most <span class=\"mm\">mn</span> of them.</li><li>Taking <span class=\"mm\">F = (F&#8321; &times; Q&#8322;) &cup; (Q&#8321; &times; F&#8322;)</span> makes the product accept the union, so at most <span class=\"mm\">mn</span> states suffice.</li><li>The product need not be minimal: the two coordinates can be correlated, leaving unreachable or equivalent pairs.</li><li>The bound is attainable, for example with <span class=\"mm\">L(A&#8321;) = {w : |w| &equiv; 0 mod m}</span> and <span class=\"mm\">L(A&#8322;) = {w : |w| &equiv; 0 mod n}</span> for coprime <span class=\"mm\">m, n</span>, where all <span class=\"mm\">mn</span> pairs are reachable and distinguishable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: at most <span class=\"mm\">mn</span> states, and the bound is attainable &mdash; option D.</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the size of the product with the size of the minimal DFA. The product is a construction, not a minimisation; option A is wrong precisely because minimisation may merge its states.</p>",
+   "solution_plain": "Detailed solutionConcept. The product construction runs the two machines in parallel, so a state is a pair; the reachable pairs give an upper bound, and minimality is a separate question.Step by step.A product state is a pair (p, q) with p ∈ Q₁ and q ∈ Q₂, so there are at most mn of them.Taking F = (F₁ × Q₂) ∪ (Q₁ × F₂) makes the product accept the union, so at most mn states suffice.The product need not be minimal: the two coordinates can be correlated, leaving unreachable or equivalent pairs.The bound is attainable, for example with L(A₁) = {w : |w| ≡ 0 mod m} and L(A₂) = {w : |w| ≡ 0 mod n} for coprime m, n, where all mn pairs are reachable and distinguishable.Answer: at most mn states, and the bound is attainable — option D.Common misconception. Confusing the size of the product with the size of the minimal DFA. The product is a construction, not a minimisation; option A is wrong precisely because minimisation may merge its states."
+  },
+  {
+   "id": "TOC-U1-Q122",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "For <span class=\"mm\">n &ge; 1</span> let <span class=\"mm\">L&#8345; = {w &isin; {0,1}* : the n-th symbol from the end of w is 1}</span>. Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">L&#8345;</span> is not regular for <span class=\"mm\">n &ge; 2</span>.",
+    "<span class=\"mm\">L&#8345;</span> is recognised by an NFA with <span class=\"mm\">n + 1</span> states, while every DFA for <span class=\"mm\">L&#8345;</span> has at least <span class=\"mm\">2&#8319;</span> states.",
+    "The minimal DFA for <span class=\"mm\">L&#8345;</span> has <span class=\"mm\">n + 1</span> states.",
+    "<span class=\"mm\">L&#8345;</span> is recognised by a DFA with <span class=\"mm\">n</span> states for every <span class=\"mm\">n</span>."
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "The NFA may guess where the n-th symbol from the end sits, while a DFA has no such freedom and must remember a whole window of symbols.",
+    "steps": [
+     "An NFA with <span class=\"mm\">n + 1</span> states loops on the first state, moves to the second state on reading a 1, then checks <span class=\"mm\">n - 1</span> further symbols, accepting after exactly <span class=\"mm\">n</span> symbols from that guess.",
+     "A DFA cannot guess, so two prefixes that agree on their last <span class=\"mm\">n - 1</span> symbols but differ earlier can still be separated only by looking at what the machine stored; in fact the last <span class=\"mm\">n</span> symbols must be remembered.",
+     "Formally the <span class=\"mm\">2&#8319;</span> strings of length <span class=\"mm\">n</span> are pairwise inequivalent under <span class=\"mm\">&equiv;_L</span>, so the minimal DFA has <span class=\"mm\">2&#8319;</span> states.",
+     "Hence the language is regular for every <span class=\"mm\">n</span>, the NFA is linear in <span class=\"mm\">n</span> and the DFA is exponential."
+    ],
+    "final": "a linear-size NFA and an exponential DFA &mdash; option B.",
+    "trap": "Judging the language by the NFA's size, or thinking a bounded window makes the language non-regular. A window of fixed length <span class=\"mm\">n</span> is a finite memory, so the language is always regular; only the state count explodes."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">For <span class=\"mm\">n &ge; 1</span> let <span class=\"mm\">L&#8345; = {w &isin; {0,1}* : the n-th symbol from the end of w is 1}</span>. Which of the following is TRUE?</p>",
+   "options_html": [
+    "<span class=\"mm\">L&#8345;</span> is not regular for <span class=\"mm\">n &ge; 2</span>.",
+    "<span class=\"mm\">L&#8345;</span> is recognised by an NFA with <span class=\"mm\">n + 1</span> states, while every DFA for <span class=\"mm\">L&#8345;</span> has at least <span class=\"mm\">2&#8319;</span> states.",
+    "The minimal DFA for <span class=\"mm\">L&#8345;</span> has <span class=\"mm\">n + 1</span> states.",
+    "<span class=\"mm\">L&#8345;</span> is recognised by a DFA with <span class=\"mm\">n</span> states for every <span class=\"mm\">n</span>."
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The NFA may guess where the n-th symbol from the end sits, while a DFA has no such freedom and must remember a whole window of symbols.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>An NFA with <span class=\"mm\">n + 1</span> states loops on the first state, moves to the second state on reading a 1, then checks <span class=\"mm\">n - 1</span> further symbols, accepting after exactly <span class=\"mm\">n</span> symbols from that guess.</li><li>A DFA cannot guess, so two prefixes that agree on their last <span class=\"mm\">n - 1</span> symbols but differ earlier can still be separated only by looking at what the machine stored; in fact the last <span class=\"mm\">n</span> symbols must be remembered.</li><li>Formally the <span class=\"mm\">2&#8319;</span> strings of length <span class=\"mm\">n</span> are pairwise inequivalent under <span class=\"mm\">&equiv;_L</span>, so the minimal DFA has <span class=\"mm\">2&#8319;</span> states.</li><li>Hence the language is regular for every <span class=\"mm\">n</span>, the NFA is linear in <span class=\"mm\">n</span> and the DFA is exponential.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: a linear-size NFA and an exponential DFA &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Judging the language by the NFA's size, or thinking a bounded window makes the language non-regular. A window of fixed length <span class=\"mm\">n</span> is a finite memory, so the language is always regular; only the state count explodes.</p>",
+   "solution_plain": "Detailed solutionConcept. The NFA may guess where the n-th symbol from the end sits, while a DFA has no such freedom and must remember a whole window of symbols.Step by step.An NFA with n + 1 states loops on the first state, moves to the second state on reading a 1, then checks n - 1 further symbols, accepting after exactly n symbols from that guess.A DFA cannot guess, so two prefixes that agree on their last n - 1 symbols but differ earlier can still be separated only by looking at what the machine stored; in fact the last n symbols must be remembered.Formally the 2ⁿ strings of length n are pairwise inequivalent under ≡_L, so the minimal DFA has 2ⁿ states.Hence the language is regular for every n, the NFA is linear in n and the DFA is exponential.Answer: a linear-size NFA and an exponential DFA — option B.Common misconception. Judging the language by the NFA's size, or thinking a bounded window makes the language non-regular. A window of fixed length n is a finite memory, so the language is always regular; only the state count explodes."
+  },
+  {
+   "id": "TOC-U1-Q123",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Two students eliminate the states of the same DFA in two different orders, obtaining regular expressions <span class=\"mm\">R&#8321;</span> and <span class=\"mm\">R&#8322;</span>. Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">L(R&#8321;) = L(R&#8322;)</span> always, but the two expressions may differ in length.",
+    "<span class=\"mm\">L(R&#8321;) = L(R&#8322;)</span> only when the same state is eliminated first.",
+    "<span class=\"mm\">R&#8321;</span> and <span class=\"mm\">R&#8322;</span> are always the same string.",
+    "The elimination order can change the language recognised."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "State elimination applies Arden&rsquo;s lemma step by step, and each step rewrites the system without changing its solution set, so the language is invariant while the expression is not.",
+    "steps": [
+     "Each elimination step replaces the equations through one state by an equivalent set of equations, using <span class=\"mm\">X = AX + B &rArr; X = A*B</span> when <span class=\"mm\">&epsilon; &notin; A</span>.",
+     "Replacing a system by an equivalent one preserves the set of solutions, so the language read off at the end is <span class=\"mm\">L</span> whatever the order.",
+     "The intermediate expressions differ, so their lengths, and even which of them is shortest, depend on the order.",
+     "Hence the languages always agree while the expressions generally do not."
+    ],
+    "final": "the languages always agree, the expressions may differ &mdash; option A.",
+    "trap": "Reading a different expression as a different language, or expecting one canonical answer. Elimination order is a choice of proof, not a choice of result."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Two students eliminate the states of the same DFA in two different orders, obtaining regular expressions <span class=\"mm\">R&#8321;</span> and <span class=\"mm\">R&#8322;</span>. Which of the following is TRUE?</p>",
+   "options_html": [
+    "<span class=\"mm\">L(R&#8321;) = L(R&#8322;)</span> always, but the two expressions may differ in length.",
+    "<span class=\"mm\">L(R&#8321;) = L(R&#8322;)</span> only when the same state is eliminated first.",
+    "<span class=\"mm\">R&#8321;</span> and <span class=\"mm\">R&#8322;</span> are always the same string.",
+    "The elimination order can change the language recognised."
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> State elimination applies Arden&rsquo;s lemma step by step, and each step rewrites the system without changing its solution set, so the language is invariant while the expression is not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Each elimination step replaces the equations through one state by an equivalent set of equations, using <span class=\"mm\">X = AX + B &rArr; X = A*B</span> when <span class=\"mm\">&epsilon; &notin; A</span>.</li><li>Replacing a system by an equivalent one preserves the set of solutions, so the language read off at the end is <span class=\"mm\">L</span> whatever the order.</li><li>The intermediate expressions differ, so their lengths, and even which of them is shortest, depend on the order.</li><li>Hence the languages always agree while the expressions generally do not.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: the languages always agree, the expressions may differ &mdash; option A.</span></p><p class=\"row\"><b>Common misconception.</b> Reading a different expression as a different language, or expecting one canonical answer. Elimination order is a choice of proof, not a choice of result.</p>",
+   "solution_plain": "Detailed solutionConcept. State elimination applies Arden’s lemma step by step, and each step rewrites the system without changing its solution set, so the language is invariant while the expression is not.Step by step.Each elimination step replaces the equations through one state by an equivalent set of equations, using X = AX + B ⇒ X = A*B when ε ∉ A.Replacing a system by an equivalent one preserves the set of solutions, so the language read off at the end is L whatever the order.The intermediate expressions differ, so their lengths, and even which of them is shortest, depend on the order.Hence the languages always agree while the expressions generally do not.Answer: the languages always agree, the expressions may differ — option A.Common misconception. Reading a different expression as a different language, or expecting one canonical answer. Elimination order is a choice of proof, not a choice of result."
+  },
+  {
+   "id": "TOC-U1-Q124",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following languages satisfies the pumping lemma for regular languages but can be shown non-regular by Ogden&rsquo;s lemma?",
+   "options": [
+    "<span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span>",
+    "<span class=\"mm\">{ww : w &isin; {a,b}*}</span>",
+    "<span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span>",
+    "<span class=\"mm\">{a^(n&sup2;) : n &ge; 0}</span>"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "Ogden&rsquo;s lemma lets the proof mark positions as distinguished, which the plain pumping lemma cannot; languages whose constraint can be dodged by pumping only unmarked blocks need it.",
+    "steps": [
+     "<span class=\"mm\">{a&#8319;b&#8319;}</span>, <span class=\"mm\">{ww}</span> and <span class=\"mm\">{a^(n&sup2;)}</span> each fail the ordinary pumping lemma, so they do not witness the gap.",
+     "In <span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span> a word can always be pumped inside a block whose two partners are then re-balanced by choosing the right word, so the lemma is satisfied.",
+     "Marking the <span class=\"mm\">a</span>s, the <span class=\"mm\">b</span>s or the <span class=\"mm\">c</span>s as distinguished forces the pumped part into one block, and the three counts can no longer be kept in step.",
+     "So this language separates the two lemmas, which is exactly what the question asks for."
+    ],
+    "final": "<span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span> &mdash; option C.",
+    "trap": "Assuming any non-regular language demonstrates the weakness of the pumping lemma. The gap is shown only by a language that the pumping lemma fails to refute."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following languages satisfies the pumping lemma for regular languages but can be shown non-regular by Ogden&rsquo;s lemma?</p>",
+   "options_html": [
+    "<span class=\"mm\">{a&#8319;b&#8319; : n &ge; 0}</span>",
+    "<span class=\"mm\">{ww : w &isin; {a,b}*}</span>",
+    "<span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span>",
+    "<span class=\"mm\">{a^(n&sup2;) : n &ge; 0}</span>"
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Ogden&rsquo;s lemma lets the proof mark positions as distinguished, which the plain pumping lemma cannot; languages whose constraint can be dodged by pumping only unmarked blocks need it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">{a&#8319;b&#8319;}</span>, <span class=\"mm\">{ww}</span> and <span class=\"mm\">{a^(n&sup2;)}</span> each fail the ordinary pumping lemma, so they do not witness the gap.</li><li>In <span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span> a word can always be pumped inside a block whose two partners are then re-balanced by choosing the right word, so the lemma is satisfied.</li><li>Marking the <span class=\"mm\">a</span>s, the <span class=\"mm\">b</span>s or the <span class=\"mm\">c</span>s as distinguished forces the pumped part into one block, and the three counts can no longer be kept in step.</li><li>So this language separates the two lemmas, which is exactly what the question asks for.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">{a&#7522;b&#7508;c&#8342; : i = j or j = k}</span> &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming any non-regular language demonstrates the weakness of the pumping lemma. The gap is shown only by a language that the pumping lemma fails to refute.</p>",
+   "solution_plain": "Detailed solutionConcept. Ogden’s lemma lets the proof mark positions as distinguished, which the plain pumping lemma cannot; languages whose constraint can be dodged by pumping only unmarked blocks need it.Step by step.{aⁿbⁿ}, {ww} and {a^(n²)} each fail the ordinary pumping lemma, so they do not witness the gap.In {aᵢbᵔcₖ : i = j or j = k} a word can always be pumped inside a block whose two partners are then re-balanced by choosing the right word, so the lemma is satisfied.Marking the as, the bs or the cs as distinguished forces the pumped part into one block, and the three counts can no longer be kept in step.So this language separates the two lemmas, which is exactly what the question asks for.Answer: {aᵢbᵔcₖ : i = j or j = k} — option C.Common misconception. Assuming any non-regular language demonstrates the weakness of the pumping lemma. The gap is shown only by a language that the pumping lemma fails to refute."
+  },
+  {
+   "id": "TOC-U1-Q125",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-02",
+   "set": "Set 2 of 2 (third pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Which of the following statements about the pumping lemma and the Myhill&ndash;Nerode theorem are TRUE? (Select all that apply.)",
+   "options": [
+    "Every finite language satisfies the pumping lemma for regular languages.",
+    "A language that satisfies the pumping lemma is necessarily regular.",
+    "The Myhill&ndash;Nerode relation gives a necessary and sufficient condition for regularity.",
+    "The pumping lemma can be used to prove that a language is regular."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "solution": {
+    "concept": "The pumping lemma is one-directional: regular implies pumpable, never the reverse. Myhill&ndash;Nerode is the exact criterion.",
+    "steps": [
+     "A finite language <span class=\"mm\">L</span> has a longest word, say of length <span class=\"mm\">M</span>; taking <span class=\"mm\">p = M + 1</span> leaves no word of length at least <span class=\"mm\">p</span>, so the condition holds vacuously. A is TRUE.",
+     "Some non-regular languages satisfy the lemma, so satisfying it proves nothing. B is FALSE.",
+     "<span class=\"mm\">L</span> is regular exactly when <span class=\"mm\">&equiv;_L</span> has finitely many classes, an if-and-only-if. C is TRUE.",
+     "Because the lemma is only necessary, it cannot establish regularity; a finite automaton or a regular expression has to be produced. D is FALSE."
+    ],
+    "final": "A and C.",
+    "trap": "Using the pumping lemma as a sufficient condition. The vacuous case for finite languages is the giveaway: the lemma is satisfied by every finite language, regular by construction, and also by some infinite non-regular ones."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the pumping lemma and the Myhill&ndash;Nerode theorem are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "Every finite language satisfies the pumping lemma for regular languages.",
+    "A language that satisfies the pumping lemma is necessarily regular.",
+    "The Myhill&ndash;Nerode relation gives a necessary and sufficient condition for regularity.",
+    "The pumping lemma can be used to prove that a language is regular."
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The pumping lemma is one-directional: regular implies pumpable, never the reverse. Myhill&ndash;Nerode is the exact criterion.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A finite language <span class=\"mm\">L</span> has a longest word, say of length <span class=\"mm\">M</span>; taking <span class=\"mm\">p = M + 1</span> leaves no word of length at least <span class=\"mm\">p</span>, so the condition holds vacuously. A is TRUE.</li><li>Some non-regular languages satisfy the lemma, so satisfying it proves nothing. B is FALSE.</li><li><span class=\"mm\">L</span> is regular exactly when <span class=\"mm\">&equiv;_L</span> has finitely many classes, an if-and-only-if. C is TRUE.</li><li>Because the lemma is only necessary, it cannot establish regularity; a finite automaton or a regular expression has to be produced. D is FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A and C.</span></p><p class=\"row\"><b>Common misconception.</b> Using the pumping lemma as a sufficient condition. The vacuous case for finite languages is the giveaway: the lemma is satisfied by every finite language, regular by construction, and also by some infinite non-regular ones.</p>",
+   "solution_plain": "Detailed solutionConcept. The pumping lemma is one-directional: regular implies pumpable, never the reverse. Myhill–Nerode is the exact criterion.Step by step.A finite language L has a longest word, say of length M; taking p = M + 1 leaves no word of length at least p, so the condition holds vacuously. A is TRUE.Some non-regular languages satisfy the lemma, so satisfying it proves nothing. B is FALSE.L is regular exactly when ≡_L has finitely many classes, an if-and-only-if. C is TRUE.Because the lemma is only necessary, it cannot establish regularity; a finite automaton or a regular expression has to be produced. D is FALSE.Answer: A and C.Common misconception. Using the pumping lemma as a sufficient condition. The vacuous case for finite languages is the giveaway: the lemma is satisfied by every finite language, regular by construction, and also by some infinite non-regular ones."
   }
  ]
 }
