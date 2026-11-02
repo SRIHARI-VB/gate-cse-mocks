@@ -107,8 +107,8 @@ and no answer, option mark or hint visible until the test is submitted.
   byte for byte; with title, sub-line, bank-count button, date and set chips, question host, bank and About views and
   payload masked, the remaining **27,963 bytes** are identical. One copy: the paper exists at exactly one path, the
   root holds only `index.html`, and `find . -name "*.html"` returns 182 files (index plus one per paper). Links: the
-  unit's card lists the current paper and its three archived sets, all of which exist. Tokens: the `:root` block is
-  unchanged and no colour is written outside it. Counts: the paper renders 25 test cards, a 25-button palette and
+  unit's card lists the current paper and its three archived sets, all of which exist. Tokens: the `:root` block is byte-identical to `design-tokens.css` and to `index.html` (521 bytes); the
+  shell's pre-existing literal colours, identical in every paper of the series, were not touched. Counts: the paper renders 25 test cards, a 25-button palette and
   300 banked questions, and the portal's 67 cards match the 67 current papers. No duplicate content: the 25 active
   questions do not appear in the Question Bank tab. README: this table and this entry.
 - **Portal.** The Digital Logic Unit 1 card was replaced, not duplicated: it now carries the new date, path and set
