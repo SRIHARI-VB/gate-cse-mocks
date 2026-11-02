@@ -7,38 +7,85 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 3 — Linear Data Structures, Set 1 of 2 (second pass)**, 2026-11-02 →
-  [`programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html`](programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Arrays & multidimensional arrays (7) · Singly, doubly & circular linked lists (6) ·
-  Stacks: infix, postfix & applications (6) · Queues, circular queues & deques (6)
-- Rotation: MODE A, with the draw taken over all eleven subjects as Section 1 step A states. An unseeded
-  `secrets.randbelow(11)` draw in syllabus order returned index 4 — **Programming and Data Structures**. `runs[]`
-  sorted by `(date, run)` gave the most recent paper as `{2026-11-02, run 16, unit 2, pointers-memory, Set 1 of 2
-  (second pass)}`. Unit 2 held **75** questions, above `UNIT_QUESTION_CAP = 50`, so rule B3 failed on the cap and
-  **step B4 applied**: (2 + 1) mod 7 = 3 → **Unit 3, Linear Data Structures**. Unit 3 held 50 questions from
-  2026-10-28 (Sets 1 and 2), so this paper is **Set 1 of 2 (second pass)**; every Programming and Data Structures
-  unit now stands at or above the cap (75, 75, 50, 50, 50, 50, 50), so step B5 records that the subject's second
-  pass is under way. No override, no partial set, exactly 25 questions.
-- Superseded: the 2026-10-28 Set 2 paper moved to
-  `programming-data-structures/linear-data-structures/archive/gate_ds_mock_3_2026-10-28_run2.html` with its content
-  frozen, so the unit folder holds exactly one current paper.
-- Previous test: **Computer Architecture · Unit 1 — Machine Instructions & Addressing Modes, Set 1 of 2 (second
-  pass)**, 2026-11-02 →
+- **Computer Architecture · Unit 1 — Machine Instructions & Addressing Modes, Set 2 of 2**, 2026-11-02 →
   [`computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`](computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Instruction formats & opcodes (7) · Addressing modes & effective address (7) · RISC vs CISC (5) ·
+  Stack & subroutines (6)
+- Rotation: MODE A, with the draw taken over all eleven subjects as Section 1 step A states. An unseeded
+  `secrets.randbelow(11)` draw in syllabus order returned index 3 — **Computer Architecture**. `runs[]` sorted by
+  `(date, run)` gave the most recent paper as `{2026-11-02, run 11, unit 1, instructions-addressing, Set 1 of 2}`.
+  Unit 1 held **25** questions, below `UNIT_QUESTION_CAP = 50`, and its first paper was dated 2026-11-02, so it had
+  been current for **zero** days, under `DAYS_PER_UNIT_MAX = 7`. **Rule B3 held on both counts**, so the unit stayed
+  current and this paper is **Set 2 of 2**; step B4 was not reached. No override, no partial set, exactly 25
+  questions — the unit closes at exactly 50.
+- Superseded: the 2026-11-02 Set 1 paper moved to
+  `computer-architecture/instructions-addressing/archive/gate_co_mock_1_2026-11-02_run1.html` with its content
+  frozen, so the unit folder holds exactly one current paper.
+- Previous test: **Programming and Data Structures · Unit 3 — Linear Data Structures, Set 1 of 2 (second pass)**,
+  2026-11-02 →
+  [`programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html`](programming-data-structures/linear-data-structures/gate_ds_mock_3_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 184 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 17 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 11 Computer Architecture) |
-| Current papers / archived sets | 68 current · 116 archived |
+| Papers published (current + archived) | 185 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 17 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 68 current · 117 archived |
 | Test cards on the portal | 68 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4600 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 425 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 275 Computer Architecture) |
+| Questions in the subject banks | 4625 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 425 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 116 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 10 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 117 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 10 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-02 — Computer Architecture Unit 1, Set 2 of 2
+
+- New paper at `computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`. The 2026-11-02 Set 1
+  paper moved to `computer-architecture/instructions-addressing/archive/gate_co_mock_1_2026-11-02_run1.html` with its
+  content frozen, so the unit folder holds exactly one current paper and the repository root holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 3 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 11, unit 1, instructions-addressing, Set 1 of 2}`. Unit 1 held 25 questions (< 50) and its first
+  paper was dated 2026-11-02 (0 days < 7), so rule B3 held and the unit stayed current: this is **Set 2 of 2**.
+  Step B4 was not reached. No override, no partial set.
+- **Pass correction.** Unit 1 is on the series' **first** pass over Computer Architecture: it had no paper before
+  2026-11-02, so the Set 1 paper's "(second pass)" label was inaccurate. This entry records the correct pass and the
+  unit now closes at exactly 50 banked questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab
+  says so.
+- **Coverage.** All four unit subtopics: instruction formats & opcodes 7 · addressing modes & effective address 7 ·
+  RISC vs CISC 5 · stack & subroutines 6. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Instruction formats: opcode width in a 32-bit word with 64 registers (**12**), an immediate
+  width (**10**), the smallest opcode width under competing opcode and address requirements (**7**), an MSQ on
+  opcode-field arithmetic, a three-level expanding opcode (**32** one-address instructions), code size saved by
+  variable-length encoding (**2000** bytes), and an MSQ on a partitioned opcode shared by two classes. Addressing
+  modes: post-increment (**104**), direct addressing (EA 300, operand 45), a scaled index (**1056**), the reach of a
+  signed scaled displacement (**−128 to +124**), an MSQ on autoincrement/autodecrement, operand-fetch time
+  (**12** ms), and 32-bit wraparound effective-address arithmetic (**0x1000**). RISC vs CISC: why RISC is hardwired,
+  how CISC shortens the instruction count, an execution-time comparison (**3.125×**), a time ratio (**1.14**), and an
+  MCQ whose false statement is "a RISC program always completes in fewer cycles". Stack: push accounting (**16**
+  bytes), what a return does, frame-pointer arithmetic (**8980**), an MSQ on activation records, recursion depth
+  (**2048**), and an MSQ on stack-machine expression evaluation.
+- **Answers recomputed, not asserted.** Every key was checked by script: 32 − 6 − 6 − 8 = 12; 24 − 5 − 4 − 5 = 10;
+  2⁹ = 512 so 16 − 9 = 7; 16 − 14 = 2 escapes, 32 − 30 = 2 escapes, 2 × 2⁴ = 32; 5000 × 4 − (3000 × 2 + 2000 × 6)
+  = 2000; 1000 + 8 × 7 = 1056; (−32 × 4, 31 × 4) = (−128, 124); 1.2 × 10⁶ × 10 ns = 12 ms;
+  (0x1FFFFFFF × 8 + 0x1000 + 8) mod 2³² = 0x1000; 2 ms ÷ 0.64 ms = 3.125; 1.00 s ÷ 0.875 s = 1.14; 4 × 4 = 16;
+  9000 − 20 = 8980; 65536 ÷ 32 = 2048.
+- **Ids and bank.** 25 records appended as `CO-U1-Q26`–`CO-U1-Q50`; Computer Architecture now holds **300** questions
+  across 6 units, and `data/questions-computer-architecture.js` grew from 275 to 300 records.
+- **Question Bank tab.** 275 solved questions — the 300 in the bank less the 25 active on this paper — so the active
+  set is not repeated there. Unit 1 supplies its 25 archived Set 1 questions; Units 2–6 supply the other 250.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION` and nothing on it is claimed as an official GATE
+  question. Sources are `STANDARD_TEXTBOOK` (13) and `ORIGINAL_SYNTHESIS` (12). The Computer Architecture bank records
+  no verified previous-year question, and the bank tab says so in one sentence.
+- **Checks run.** Shell parity against the superseded paper (identical `:root`, CSS and JavaScript; only the question
+  cards, payload, bank view, About view, meta strip, title and header sub-line differ); 25 question cards and a
+  25-button palette; one HTML file per paper with `index.html` alone at the root; every `href` in `index.html`
+  resolves; the `:root` block byte-identical to `design-tokens.css`; the portal's counts matching
+  `master_bank.json`; no active question repeated in the Question Bank tab; no stem collision with the 275 items
+  already banked.
 
 ### 2026-11-02 — Programming and Data Structures Unit 3, Set 1 of 2 (second pass)
 
