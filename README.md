@@ -7,40 +7,116 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 1 — Number Systems & Representation, Set 2 of 2 (second pass)**, 2026-11-02 →
-  [`digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html`](digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html)
+- **Algorithms · Unit 1 — Asymptotic Analysis & Recurrences, Set 3 (second pass)**, 2026-11-02 →
+  [`algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html`](algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Base conversions (7) · One's & two's complement (6) · Floating point & IEEE 754 (7) ·
-  Range & overflow (5)
-- Rotation: MODE A. The unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order returned
-  index 2 — **Digital Logic**. Unlike runs 12–27 the draw could not be restricted to subjects still below
-  `UNIT_QUESTION_CAP = 50`, because this time not one of the eleven qualified: every current unit already stood at
-  50 or more (Algorithms 50, Compiler Design 100, Computer Architecture 50, Computer Networks 75, Databases 75,
-  Digital Logic 75, Engineering Mathematics 75, Operating Systems 100, Programming and Data Structures 75, Theory of
-  Computation 125, Discrete Mathematics 50). `runs[]` sorted by `(date, run)` gave the most recent Digital Logic
-  paper as `{2026-11-02, run 12, unit 4, sequential-fsm-counters, Set 1 of 2 (second pass)}`. Unit 4 held **75**
-  questions, above the cap, so **step B4 applied**: (3 + 1) mod 4 = 0 → **Unit 1, Number Systems & Representation**.
-  Every Digital Logic unit stands at 75, so the modulo wrapped into a further pass and Unit 1, which already held
-  75 questions from runs 1, 2 and 9, closes its second pass here as **Set 2 of 2**. No override was used and no
+- Subtopics: Big-O / Ω / Θ (7) · Master theorem cases (6) · Recursion tree method (7) · Substitution method (5)
+- Rotation: MODE A. Every one of the eleven subjects already carried a paper dated 2026-11-02 and every current unit
+  stood at or above `UNIT_QUESTION_CAP = 50` (Algorithms 50, Compiler Design 100, Computer Architecture 50, Computer
+  Networks 75, Databases 75, Digital Logic 100, Engineering Mathematics 75, Operating Systems 100, Programming and
+  Data Structures 75, Theory of Computation 125, Discrete Mathematics 50), so no subject qualified on the "current
+  unit still below the cap" rule used by runs 12–27. The draw was restricted instead to the six subjects whose
+  **next** unit, after the modulo advance, is still below the cap — the only draws that do not push a unit further
+  over it: Computer Architecture (6 → 1, 0 questions), Discrete Mathematics (12 → 13, 0), Algorithms (7 → 1, 50),
+  Databases (2 → 3, 50), Engineering Mathematics (4 → 5, 50) and Programming and Data Structures (2 → 3, 50). An
+  unseeded `secrets.randbelow(6)` draw over those six in syllabus order returned index 3 — **Algorithms**. `runs[]`
+  sorted by `(date, run)` gave the most recent Algorithms paper as
+  `{2026-11-02, run 14, unit 7, complexity-np-complete, Set 2 of 2}`. Unit 7 held **50** questions, exactly the cap,
+  so **step B4 applied**: (6 + 1) mod 7 = 0 → **Unit 1, Asymptotic Analysis & Recurrences**. Unit 1 already held 50
+  questions from runs 1 and 2 (2026-10-26), so this paper is **Set 3**; all seven Algorithms units stand at 50, so the
+  modulo has wrapped and the subject's **second pass has started** (Section 1, step B5). No override was used and no
   partial set was generated.
-- Superseded: `gate_dl_mock_1_2026-10-31.html` moved to
-  `digital-logic/number-systems/archive/gate_dl_mock_1_2026-10-31_run3.html`, content frozen; the unit folder now
+- Superseded: `gate_algo_mock_1_2026-10-26.html` moved to
+  `algorithms/asymptotic-analysis/archive/gate_algo_mock_1_2026-10-26_run2.html`, content frozen; the unit folder now
   holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Discrete Mathematics · Unit 12 — Algebraic Structures, Set 2 of 2**, 2026-11-02 →
-  [`discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`](discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html)
+- Previous test: **Digital Logic · Unit 1 — Number Systems & Representation, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html`](digital-logic/number-systems/gate_dl_mock_1_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 181 (27 Discrete Mathematics, 14 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 114 archived |
+| Papers published (current + archived) | 182 (27 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 17 Theory of Computation, 13 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 115 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4525 (675 Discrete Mathematics, 350 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4550 (675 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 425 Theory of Computation, 325 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 114 (14 Discrete Mathematics, 7 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 115 (14 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 13 Theory of Computation, 9 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Algorithms Unit 1, Set 3 (second pass)
+
+- New paper at `algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html`. The 2026-10-26 Set 2 paper of the
+  same unit moved to `algorithms/asymptotic-analysis/archive/gate_algo_mock_1_2026-10-26_run2.html` with its content
+  frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current
+  paper.
+- **Rotation (Section 1, MODE A).** Every one of the eleven subjects already carried a paper dated 2026-11-02, and
+  every current unit stood at or above `UNIT_QUESTION_CAP = 50`, so the "current unit still below the cap" rule of
+  runs 12–27 could not be applied to any subject. The draw was restricted instead to the six subjects whose **next**
+  unit, after the modulo advance, is still below the cap: Computer Architecture (6 → 1, 0 questions), Discrete
+  Mathematics (12 → 13, 0), Algorithms (7 → 1, 50), Databases (2 → 3, 50), Engineering Mathematics (4 → 5, 50) and
+  Programming and Data Structures (2 → 3, 50). An unseeded `secrets.randbelow(6)` draw over those six in syllabus
+  order returned index 3 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 14, unit 7, complexity-np-complete, Set 2 of 2}`. Unit 7 held **50** questions, exactly the cap,
+  so **step B4 applied**: (6 + 1) mod 7 = 0 → **Unit 1, Asymptotic Analysis & Recurrences**. Unit 1 already held 50
+  questions from runs 1 and 2, so this paper is **Set 3**; with all seven Algorithms units at 50 the modulo has
+  wrapped and the subject's **second pass has started** (step B5). No override, no partial set, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab
+  says so.
+- **Coverage.** All four unit subtopics: big-O, Ω and Θ 7 · master theorem cases 6 · recursion tree method 7 ·
+  substitution method 5. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks.** Big-O, Ω and Θ: `2ⁿ⁺¹` against `2ⁿ`, `log₂(n!)`, a FALSE-statement item built on the gap
+  between `log n` and `n⁰·¹`, the hard limit of `n^(log₂ n)/2ⁿ`, a four-way MSQ on ratios, the witness `n₀` for
+  `100n + 5000 ≤ n²` (**137**), and the quantifier that separates little-o from big-O. Master theorem: case 1 on
+  `4T(n/2) + n`, case 2 on `16T(n/4) + n²`, the logarithmic gap in `2T(n/2) + n/log₂ n`, case 3 with its regularity
+  condition on `2T(n/2) + n√n`, an MSQ on which recurrences take case 3, and the extended case giving **k = 2**.
+  Recursion tree: the growing level cost of `2T(n/2) + √n`, the halving level cost of `2T(n/2) + n²`, the constant
+  level cost of `9T(n/3) + n²`, a hard MSQ on `3T(n/2) + n`, the node count for `n = 4` (**7**), and the exact
+  `T(4) = 28`. Substitution: what the method is, the constant that closes `T(n/2) + n = O(n)` (**c ≥ 2**), a hard
+  MSQ on the merge-sort recurrence with floors and ceilings, `T(8)` of `T(n/2) + n` (**15**), and the smallest
+  integer `c` with `T(n) ≤ c·n²` (**2**).
+- **Answers recomputed, not asserted.** Every key came from a script: `T(4) = 28` and `T(8) = 15` by direct
+  unrolling; `n₀ = 137` by solving `n² − 100n − 5000 ≥ 0` and checking that 136 fails (18 496 < 18 600) while 137
+  holds (18 769 ≥ 18 700); the node count 1 + 2 + 4 = 7 for the `n = 4` tree; the leaf count `4^(log₂ n) = n²` for
+  `4T(n/2) + n`; the level cost `9ⁱ·(n/3ⁱ)² = n²` for `9T(n/3) + n²`; the level sum for `2T(n/2) + √n`, which
+  converges to about 3·41 n and so is Θ(n); and `c = 2` for `T(n) ≤ c·n²`, with `c = 1` failing at `n = 2` where
+  `T(2) = 6 > 4`.
+- **Ids and bank.** 25 records appended as `ALG-U1-Q51`–`ALG-U1-Q75`, continuing the unit's own numbering rather than
+  opening a letter series; Algorithms now holds **375** questions across 7 units, and `data/questions-algorithms.js`
+  grew from 350 to 375 records.
+- **Question Bank tab.** 350 solved questions — the 375 in the bank less the 25 on this paper — so the active set is
+  not repeated there. Unit 1's accordion shows its 50 earlier questions (2026-10-26) and Unit 7's shows all 50 of
+  today's two sets.
+- **Provenance.** No item on this paper carries `GATE_PYQ_VARIATION` and nothing on it is claimed as an official GATE
+  question. Sources are `STANDARD_TEXTBOOK` (16) and `ORIGINAL_SYNTHESIS` (9). Algorithms records no verified
+  previous-year question, and the bank tab says so in one sentence.
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (B), (C), (D); (A), (D); (A), (B); (A), (B), (C); and (A), (B), (D) — two two-element sets and three different
+  three-element patterns. Every letter named inside a solution is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 50 already banked for this unit. The first pass had used
+  `3n² + 5n log n + 7`, `n^(log₂ n)` against `n^1000`, `8T(n/2) + n²`, `T(n/3) + T(2n/3) + n`, `T(n−1) + n` and
+  the substitution constant for `2T(n/2) + n ≤ cn log n`; the second pass added the formal `O` definition, `n^(3/2)`
+  against `n log² n`, `n^(1 + 1/log₂ n)`, the extended form on `2T(n/2) + n log n`, leaf counts for
+  `3T(n/4) + cn²` and `4T(n/2) + n²`, and the guess that fails for `2T(n/2) + 1`. None of those stems, numbers or
+  answer sets is reused. Where a concept recurs it is asked from a different angle: the Master Theorem moves from
+  naming `k` to spotting the logarithmic gap and testing regularity, and the recursion tree moves from counting leaves
+  to reading a level cost that grows, stays flat or decays.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,243 bytes) and the engine `<script>`
+  (9,447 bytes) are byte-identical to the Algorithms Unit 7 paper the shell was taken from; with title, sub-line,
+  candidate block, bank-count button, meta strip, question host, bank and About views and payload masked, the
+  remaining **27,469 bytes** are identical. One copy: the paper exists at exactly one path, the root holds only
+  `index.html`, and `find . -name "*.html"` returns 183 files (index plus 182 papers). Links: the unit's card lists
+  the current paper and its two archived sets, all of which exist. Tokens: the `:root` block is byte-identical to
+  `design-tokens.css` and to `index.html`; the shell's pre-existing literal colours, identical in every paper of the
+  series, were not touched. Counts: the paper renders 25 test cards, a 25-button palette and 350 banked questions, and
+  the portal's 67 cards match the 67 current papers. No duplicate content: the 25 active questions do not appear in
+  the Question Bank tab. README: this table and this entry.
+- **Portal.** The Algorithms Unit 1 card was replaced, not duplicated: it now carries the new date, path and set
+  label, and lists the 2026-10-26 paper as an earlier set (`Set 2`, archived as `_run2`, and `Set 1`).
+  `data/questions-algorithms.js` carries the 25 new records, so the Topic & Subtopic archive counts Unit 1 at 75
+  solved questions.
 
 ### 2026-11-02 — Digital Logic Unit 1, Set 2 of 2 (second pass)
 

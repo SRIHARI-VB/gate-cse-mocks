@@ -6,7 +6,7 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 350,
+  "total_questions": 375,
   "units_with_questions": [
    1,
    2,
@@ -16,7 +16,7 @@
    6,
    7
   ],
-  "total_runs": 14
+  "total_runs": 15
  },
  "runs": [
   {
@@ -817,6 +817,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 5 - Algorithms. algorithms/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 13, unit 7, complexity-np-complete, Set 1 of 2}. Unit 7 held 25 questions, below UNIT_QUESTION_CAP = 50, and its first paper was dated 2026-11-02, zero days earlier, so step B3 held on both counts: the unit stays current and this is Set 2 of 2. Step B4 was not reached. No override was used and no partial set was generated.",
    "note": "Set 2 of 2 for Algorithms Unit 7, the unit's second and final set, taking it to exactly 50 banked questions. The 2026-11-02 Set 1 paper moved to archive/gate_algo_mock_7_2026-11-02_run1.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U7-Q26..Q50); no id and no normalised stem collides with the 325 items already banked for Algorithms. Coverage: classes P and NP 7, polynomial-time reductions 6, NP-complete problems 7, NP-hard identification 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: 3 of the five listed languages are known to lie in NP; the composed reduction cost n^2 + (n^3)^2 gives k = 6; the 3-SAT to CLIQUE target clique size on the five-clause formula is 5; the twelve-vertex complement graph gives a vertex cover of 12 - 4 = 8; 3 of the five listed languages are NP-hard. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 15,
+   "date": "2026-11-02",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "set": "Set 3 (second pass)",
+   "count": 25,
+   "file": "algorithms/asymptotic-analysis/gate_algo_mock_1_2026-11-02.html",
+   "archived_previous": "algorithms/asymptotic-analysis/archive/gate_algo_mock_1_2026-10-26_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "big-o-omega-theta": 7,
+    "master-theorem-cases": 6,
+    "recursion-tree-method": 7,
+    "substitution-method": 5
+   },
+   "question_ids": [
+    "ALG-U1-Q51",
+    "ALG-U1-Q52",
+    "ALG-U1-Q53",
+    "ALG-U1-Q54",
+    "ALG-U1-Q55",
+    "ALG-U1-Q56",
+    "ALG-U1-Q57",
+    "ALG-U1-Q58",
+    "ALG-U1-Q59",
+    "ALG-U1-Q60",
+    "ALG-U1-Q61",
+    "ALG-U1-Q62",
+    "ALG-U1-Q63",
+    "ALG-U1-Q64",
+    "ALG-U1-Q65",
+    "ALG-U1-Q66",
+    "ALG-U1-Q67",
+    "ALG-U1-Q68",
+    "ALG-U1-Q69",
+    "ALG-U1-Q70",
+    "ALG-U1-Q71",
+    "ALG-U1-Q72",
+    "ALG-U1-Q73",
+    "ALG-U1-Q74",
+    "ALG-U1-Q75"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. Every one of the eleven subjects already carried a paper dated 2026-11-02 and every current unit stood at or above UNIT_QUESTION_CAP = 50 (algorithms 50, compiler-design 100, computer-architecture 50, computer-networks 75, databases 75, digital-logic 100, engineering-mathematics 75, operating-systems 100, programming-data-structures 75, theory-of-computation 125, discrete-mathematics 50), so the draw was restricted to the six subjects whose next unit after the modulo advance would still be below the cap: computer-architecture (unit 6 -> 1, 0 questions), discrete-mathematics (12 -> 13, 0), algorithms (7 -> 1, 50), databases (2 -> 3, 50), engineering-mathematics (4 -> 5, 50) and programming-data-structures (2 -> 3, 50). An unseeded secrets.randbelow(6) draw over those six in syllabus order returned index 3 - Algorithms. runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 14, unit 7, complexity-np-complete, Set 2 of 2}. Unit 7 held 50 questions, exactly the cap, so step B3 failed and step B4 advanced exactly one unit: (6 + 1) mod 7 = 0 -> Unit 1, Asymptotic Analysis & Recurrences. Unit 1 already held 50 questions from runs 1 and 2 (2026-10-26), so this is Set 3, opening a second pass; all seven Algorithms units stand at 50, so the modulo has wrapped. No override was used and no partial set was generated.",
+   "note": "Set 3 (second pass) for Algorithms Unit 1, the first paper of the subject's second pass. The 2026-10-26 paper moved to archive/gate_algo_mock_1_2026-10-26_run2.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U1-Q51..Q75); no id and no normalised stem collides with the 50 items already banked for this unit. Coverage: big-O, omega and Theta 7, master theorem cases 6, recursion tree method 7, substitution method 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the big-O witness is n0 = 137 with 136 failing; T(4) = 28 and T(8) = 15 by direct unrolling; the recursion tree for T(n) = 2T(n/2) + n^2 on n = 4 has 7 nodes; the extended Master Theorem on 4T(n/2) + n^2 log n gives k = 2; and the smallest integer c with T(n) <= c n^2 is 2, since c = 1 fails at n = 2 where T(2) = 6 > 4. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [],
@@ -13742,6 +13804,896 @@
     ],
     "final": "no NP-complete language lies in P — option A.",
     "trap": "Believing P ≠ NP also settles NP versus co-NP, or that hardness forces undecidability. The two questions are separate."
+   }
+  },
+  {
+   "id": "ALG-U1-Q51",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For the two functions <span class=\"mm\">f(n) = 2ⁿ⁺¹</span> and <span class=\"mm\">g(n) = 2ⁿ</span>, which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">f(n) = Θ(g(n))</span>",
+    "<span class=\"mm\">f(n) = O(g(n))</span> but <span class=\"mm\">f(n) ≠ Θ(g(n))</span>",
+    "<span class=\"mm\">f(n) = ω(g(n))</span>",
+    "<span class=\"mm\">f(n) = o(g(n))</span>"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A constant factor is invisible to Θ. Here <span class=\"mm\">2ⁿ⁺¹ = 2 · 2ⁿ</span> exactly, so the two functions differ by the constant 2 at every n.",
+    "steps": [
+     "Write the ratio: <span class=\"mm\">f(n)/g(n) = 2ⁿ⁺¹ / 2ⁿ = 2</span> for every n.",
+     "A constant ratio c means <span class=\"mm\">f = Θ(g)</span> with both constants equal to 2.",
+     "Since the ratio is neither 0 nor ∞, the functions are of the same order."
+    ],
+    "final": "Option (A)",
+    "trap": "Reading the +1 in the exponent as an extra factor of n. An additive change in the exponent is a constant multiplier, which Θ ignores; only a multiplicative change in n would separate the classes."
+   }
+  },
+  {
+   "id": "ALG-U1-Q52",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">log₂(n!) = Θ(n log₂ n)</span>",
+    "<span class=\"mm\">log₂(n!) = Θ(n)</span>",
+    "<span class=\"mm\">log₂(n!) = Θ(n²)</span>",
+    "<span class=\"mm\">log₂(n!) = O(log₂ n)</span>"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "<span class=\"mm\">log(n!)</span> is a sum of n logarithmic terms, and a sum is trapped between its smallest and largest term times the number of terms.",
+    "steps": [
+     "Write <span class=\"mm\">log₂(n!) = Σ<sub>k=1..n</sub> log₂ k</span>.",
+     "Upper bound: every term is at most <span class=\"mm\">log₂ n</span>, so the sum is at most <span class=\"mm\">n log₂ n</span>.",
+     "Lower bound: the last ⌈n/2⌉ terms are each at least <span class=\"mm\">log₂(n/2) = log₂ n − 1</span>, so the sum is at least <span class=\"mm\">(n/2)(log₂ n − 1)</span>.",
+     "Both bounds are Θ(n log n), so <span class=\"mm\">log₂(n!) = Θ(n log₂ n)</span>. This is the weak form of Stirling's approximation."
+    ],
+    "final": "Option (A)",
+    "trap": "Answering Θ(n) because \"log of a factorial feels linear\". The factorial has n factors and each contributes a logarithm, so the product of that many log-sized terms is n log n."
+   }
+  },
+  {
+   "id": "ALG-U1-Q53",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements is FALSE?",
+   "options": [
+    "<span class=\"mm\">log₂ n = O(n⁰·¹)</span>",
+    "<span class=\"mm\">n⁰·¹ = O(log₂ n)</span>",
+    "<span class=\"mm\">n log₂ n = O(n¹·¹)</span>",
+    "<span class=\"mm\">2^(log₂ n) = Θ(n)</span>"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Every positive power of n eventually outgrows every power of log n, however small the exponent on n and however large the power on the log.",
+    "steps": [
+     "Option B asks whether <span class=\"mm\">n⁰·¹ / log₂ n</span> is bounded. It tends to ∞, so the statement is false.",
+     "Option A is the same ratio inverted, and it tends to 0, so it is true.",
+     "Option C: <span class=\"mm\">n log n / n¹·¹ = log n / n⁰·¹ → 0</span>, so it is true.",
+     "Option D: <span class=\"mm\">2^(log₂ n) = n</span> identically, so it is true."
+    ],
+    "final": "Option (B)",
+    "trap": "Options A and B look symmetric and both get marked true. The asymmetry is real: the logarithm is the slower-growing side, so log n is dominated by any positive power of n."
+   }
+  },
+  {
+   "id": "ALG-U1-Q54",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Let <span class=\"mm\">f(n) = n^(log₂ n) / 2ⁿ</span>. Which of the following is TRUE?",
+   "options": [
+    "<span class=\"mm\">f(n) = ω(1)</span>",
+    "<span class=\"mm\">f(n) = Θ(1)</span>",
+    "<span class=\"mm\">f(n) = o(1)</span>",
+    "<span class=\"mm\">f(n) = Ω(n)</span>"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Convert everything to one base. <span class=\"mm\">n^(log₂ n) = 2^((log₂ n)²)</span>, so the whole function is a single power of 2 with a comparison of exponents inside it.",
+    "steps": [
+     "Rewrite the numerator: <span class=\"mm\">n^(log₂ n) = (2^(log₂ n))^(log₂ n) = 2^((log₂ n)²)</span>.",
+     "So <span class=\"mm\">f(n) = 2^((log₂ n)² − n)</span>.",
+     "The exponent <span class=\"mm\">(log₂ n)² − n</span> tends to −∞, because a squared logarithm grows slower than n.",
+     "Hence <span class=\"mm\">f(n) → 0</span>, which is the definition of <span class=\"mm\">f(n) = o(1)</span>."
+    ],
+    "final": "Option (C)",
+    "trap": "The numerator grows faster than any fixed power of n, which tempts an answer of ω(1). But 2ⁿ is a full exponential, and an exponential beats any <span class=\"mm\">n^(log n)</span>."
+   }
+  },
+  {
+   "id": "ALG-U1-Q55",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">3ⁿ = O(2ⁿ)</span>",
+    "<span class=\"mm\">√n = O(n^(2/3))</span>",
+    "<span class=\"mm\">n² / log₂ n = ω(n)</span>",
+    "<span class=\"mm\">log₂(n²) = Θ(log₂ n)</span>"
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "Compare two functions by the limit of their ratio: a limit of 0 means little-o, a finite non-zero limit means Θ, and a limit of ∞ means ω.",
+    "steps": [
+     "A: <span class=\"mm\">3ⁿ / 2ⁿ = (3/2)ⁿ → ∞</span>, so 3ⁿ is not O(2ⁿ). This statement is false.",
+     "B: <span class=\"mm\">n^(1/2) / n^(2/3) = n^(−1/6) → 0</span>, so √n is strictly smaller, and the statement holds.",
+     "C: <span class=\"mm\">(n²/log n) / n = n / log n → ∞</span>, so the statement holds.",
+     "D: <span class=\"mm\">log₂(n²) = 2 log₂ n</span>, a constant multiple, so the statement holds."
+    ],
+    "final": "Options (B), (C) and (D)",
+    "trap": "Option A is the usual slip: for exponentials the larger base always wins, so 3ⁿ overtakes 2ⁿ and no constant rescues it. Option C is misjudged by assuming that dividing by log n turns n² into n."
+   }
+  },
+  {
+   "id": "ALG-U1-Q56",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">f(n) = 100n + 5000</span> and <span class=\"mm\">g(n) = n²</span>, the smallest integer n₀ such that <span class=\"mm\">f(n) ≤ g(n)</span> for every <span class=\"mm\">n ≥ n₀</span> is ____.",
+   "options": [],
+   "answer": 137,
+   "answer_display": "137",
+   "solution": {
+    "concept": "The witness n₀ of a big-O statement comes from solving the defining inequality, not from estimating it.",
+    "steps": [
+     "Solve <span class=\"mm\">n² ≥ 100n + 5000</span>, that is <span class=\"mm\">n² − 100n − 5000 ≥ 0</span>.",
+     "The roots are <span class=\"mm\">(100 ± √(10000 + 20000)) / 2 = (100 ± 173·2) / 2</span>, giving about 136·6 and −36·6.",
+     "So the inequality holds for <span class=\"mm\">n ≥ 136·6</span>, and the smallest integer candidate is 137.",
+     "Check the boundary: at n = 136, f = 18600 and g = 18496, so it fails; at n = 137, f = 18700 and g = 18769, so it holds."
+    ],
+    "final": "137",
+    "trap": "Rounding 136·6 down to 136 because \"n₀ can be any large number\". The smallest valid integer must be checked at the boundary, and 136 fails."
+   }
+  },
+  {
+   "id": "ALG-U1-Q57",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "big-o-omega-theta",
+   "subtopic": "big-o-omega-theta",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For asymptotically positive functions f and g, <span class=\"mm\">f(n) = o(g(n))</span> holds exactly when which of the following are true? (Select all that apply.)",
+   "options": [
+    "For every constant c &gt; 0 there is n₀ with <span class=\"mm\">f(n) &lt; c·g(n)</span> for all <span class=\"mm\">n ≥ n₀</span>.",
+    "There is a constant c &gt; 0 with <span class=\"mm\">f(n) &lt; c·g(n)</span> for all <span class=\"mm\">n ≥ n₀</span>.",
+    "<span class=\"mm\">f(n) / g(n) → ∞</span> as <span class=\"mm\">n → ∞</span>.",
+    "<span class=\"mm\">f(n) = O(g(n))</span> and <span class=\"mm\">f(n) ≠ Θ(g(n))</span>."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "Little-o is big-O with the quantifier strengthened from \"some constant\" to \"every constant\". The two definitions differ only in that word.",
+    "steps": [
+     "The definition of <span class=\"mm\">o(g)</span> quantifies over all constants c &gt; 0, which is option A.",
+     "Option B is exactly the definition of <span class=\"mm\">O(g)</span>, so it characterises big-O, not little-o.",
+     "Option C describes <span class=\"mm\">ω(g)</span>, the opposite relation.",
+     "For positive functions <span class=\"mm\">o(g) = O(g) − Θ(g)</span>: a function is little-o exactly when it is big-O but not of the same order. That is option D."
+    ],
+    "final": "Options (A) and (D)",
+    "trap": "Choosing B, because \"a constant works\" is what most students remember. The single word \"every\" is what separates o from O."
+   }
+  },
+  {
+   "id": "ALG-U1-Q58",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Using the Master Theorem, the solution of <span class=\"mm\">T(n) = 4T(n/2) + n</span> is:",
+   "options": [
+    "<span class=\"mm\">Θ(n²)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n² log n)</span>",
+    "<span class=\"mm\">Θ(n)</span>"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Case 1 of the Master Theorem: when the driving function is polynomially smaller than the watershed <span class=\"mm\">n^(log_b a)</span>, the recursion (the leaves) dominates.",
+    "steps": [
+     "Here a = 4 and b = 2, so the watershed is <span class=\"mm\">n^(log₂ 4) = n²</span>.",
+     "The driving function is f(n) = n, and <span class=\"mm\">n = O(n^(2−ε))</span> with ε = 1, a polynomial gap.",
+     "Case 1 therefore applies and <span class=\"mm\">T(n) = Θ(n^(log_b a)) = Θ(n²)</span>."
+    ],
+    "final": "Option (A)",
+    "trap": "Reading f(n) = n and answering Θ(n). In case 1 the root contributes only n; the n² leaves are what the Θ-class records."
+   }
+  },
+  {
+   "id": "ALG-U1-Q59",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "The solution of <span class=\"mm\">T(n) = 16T(n/4) + n²</span> is:",
+   "options": [
+    "<span class=\"mm\">Θ(n²)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n³)</span>",
+    "<span class=\"mm\">Θ(n² log n)</span>"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Case 2: when the driving function matches the watershed exactly, every level costs the same and an extra logarithmic factor appears.",
+    "steps": [
+     "a = 16 and b = 4, so the watershed is <span class=\"mm\">n^(log₄ 16) = n²</span>.",
+     "The driving function is f(n) = n², exactly the watershed, so case 2 applies.",
+     "Case 2 gives <span class=\"mm\">T(n) = Θ(n² log n)</span>.",
+     "A sanity check from the recursion tree: level i holds 16ⁱ nodes of size n/4ⁱ, and 16ⁱ·(n/4ⁱ)² = n² at every level, over log₄ n + 1 levels."
+    ],
+    "final": "Option (D)",
+    "trap": "Dropping the extra log factor and answering Θ(n²). Balance between the two sides is precisely the case where the level cost never decays, so the log cannot be dropped."
+   }
+  },
+  {
+   "id": "ALG-U1-Q60",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Consider <span class=\"mm\">T(n) = 2T(n/2) + n / log₂ n</span>. Which of the following statements is TRUE?",
+   "options": [
+    "Case 1 applies, so <span class=\"mm\">T(n) = Θ(n)</span>.",
+    "Case 2 applies, so <span class=\"mm\">T(n) = Θ(n log n)</span>.",
+    "None of the three cases applies, although <span class=\"mm\">T(n) = Θ(n log log n)</span>.",
+    "Case 3 applies, so <span class=\"mm\">T(n) = Θ(n log n)</span>."
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The three cases need a polynomial gap: f must be smaller or larger than the watershed by a factor <span class=\"mm\">n^ε</span>. A factor of only log n leaves a gap the theorem cannot classify.",
+    "steps": [
+     "The watershed is <span class=\"mm\">n^(log₂ 2) = n</span>.",
+     "Here <span class=\"mm\">f(n)/n = 1/log₂ n → 0</span>, so f is smaller than the watershed.",
+     "But f is not polynomially smaller: for every ε &gt; 0, <span class=\"mm\">n^ε / log₂ n → ∞</span>, so no ε satisfies the case-1 requirement.",
+     "So none of the three cases applies. The recurrence is still solvable by other means, and the known solution is <span class=\"mm\">Θ(n log log n)</span>."
+    ],
+    "final": "Option (C)",
+    "trap": "\"f grows slower than the watershed, therefore case 1\" is the trap. Case 1 demands a polynomial gap; a logarithmic gap falls between the cases."
+   }
+  },
+  {
+   "id": "ALG-U1-Q61",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "The solution of <span class=\"mm\">T(n) = 2T(n/2) + n√n</span> is:",
+   "options": [
+    "<span class=\"mm\">Θ(n)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n^(3/2))</span>",
+    "<span class=\"mm\">Θ(n²)</span>"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Case 3: the driving function is polynomially larger than the watershed, provided the regularity condition <span class=\"mm\">a·f(n/b) ≤ c·f(n)</span> holds for some c &lt; 1.",
+    "steps": [
+     "The watershed is <span class=\"mm\">n^(log₂ 2) = n</span>, and <span class=\"mm\">f(n) = n^(3/2)</span> is polynomially larger with ε = 1/2.",
+     "Check regularity: <span class=\"mm\">2·(n/2)^(3/2) = 2·n^(3/2)/(2√2) = n^(3/2)/√2</span>.",
+     "So <span class=\"mm\">a·f(n/b) = (1/√2)·f(n)</span> with c = 1/√2 &lt; 1, and the condition holds.",
+     "Case 3 gives <span class=\"mm\">T(n) = Θ(f(n)) = Θ(n^(3/2))</span>."
+    ],
+    "final": "Option (C)",
+    "trap": "Applying case 3 without checking regularity. The condition is not decoration: it is what guarantees the root cost dominates the sum, and here it holds with c = 1/√2."
+   }
+  },
+  {
+   "id": "ALG-U1-Q62",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For which of the following recurrences does case 3 of the Master Theorem apply, with its regularity condition satisfied? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">T(n) = 2T(n/2) + n²</span>",
+    "<span class=\"mm\">T(n) = 4T(n/2) + n³</span>",
+    "<span class=\"mm\">T(n) = 2T(n/2) + n</span>",
+    "<span class=\"mm\">T(n) = 8T(n/2) + n²</span>"
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution": {
+    "concept": "Case 3 needs two things at once: f polynomially larger than <span class=\"mm\">n^(log_b a)</span>, and <span class=\"mm\">a·f(n/b) ≤ c·f(n)</span> for some constant c &lt; 1.",
+    "steps": [
+     "A: watershed <span class=\"mm\">n^(log₂ 2) = n</span>, f = n² is larger, and <span class=\"mm\">2·(n/2)² = 0·5n² ≤ 0·5·f(n)</span>, so case 3 applies.",
+     "B: watershed <span class=\"mm\">n^(log₂ 4) = n²</span>, f = n³ is larger, and <span class=\"mm\">4·(n/2)³ = 0·5n³ ≤ 0·5·f(n)</span>, so case 3 applies.",
+     "C: watershed n and f = n are equal, so this is case 2, giving <span class=\"mm\">Θ(n log n)</span>.",
+     "D: watershed <span class=\"mm\">n^(log₂ 8) = n³</span> and f = n² is smaller, so this is case 1, giving <span class=\"mm\">Θ(n³)</span>."
+    ],
+    "final": "Options (A) and (B)",
+    "trap": "Option C is forced into case 3 because f(n) = n \"matches the n in the watershed\". Equality of orders is case 2, not case 3."
+   }
+  },
+  {
+   "id": "ALG-U1-Q63",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "master-theorem-cases",
+   "subtopic": "master-theorem-cases",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 4T(n/2) + n² log₂ n</span>, the extended Master Theorem gives <span class=\"mm\">T(n) = Θ(n² log^k n)</span>. The value of k is ____.",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "Extended case 2: if <span class=\"mm\">f(n) = Θ(n^(log_b a) · log^k n)</span> for k ≥ 0, the solution is <span class=\"mm\">Θ(n^(log_b a) · log^(k+1) n)</span>. The log exponent increases by one.",
+    "steps": [
+     "a = 4 and b = 2, so the watershed is <span class=\"mm\">n^(log₂ 4) = n²</span>.",
+     "Write f in watershed form: <span class=\"mm\">n² log₂ n = Θ(n² · log¹ n)</span>, so k = 1.",
+     "The extended case adds one to the exponent of the log, giving <span class=\"mm\">T(n) = Θ(n² log² n)</span>.",
+     "Matching <span class=\"mm\">Θ(n² log^k n)</span> gives k = 2."
+    ],
+    "final": "2",
+    "trap": "Reporting k = 1, the exponent read straight off f(n). The extended case always adds one more log factor, so the answer is k + 1."
+   }
+  },
+  {
+   "id": "ALG-U1-Q64",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "The solution of <span class=\"mm\">T(n) = 2T(n/2) + √n</span> is:",
+   "options": [
+    "<span class=\"mm\">Θ(√n)</span>",
+    "<span class=\"mm\">Θ(n)</span>",
+    "<span class=\"mm\">Θ(√n log n)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In a recursion tree, add the per-level costs. Here the level cost grows geometrically, so the deepest level dominates the sum.",
+    "steps": [
+     "At depth i there are 2ⁱ nodes, each of size n/2ⁱ, so the level cost is <span class=\"mm\">2ⁱ·√(n/2ⁱ) = √n · 2^(i/2)</span>.",
+     "The level cost increases with i by a factor √2, so the levels form a geometric series with ratio √2 &gt; 1.",
+     "The tree has depth log₂ n, so the last level costs <span class=\"mm\">√n · 2^(log₂ n / 2) = √n · √n = n</span>.",
+     "A geometric series is dominated by its largest term, so the total is Θ(n)."
+    ],
+    "final": "Option (B)",
+    "trap": "Answering Θ(√n log n) by assuming every level costs √n as it does for <span class=\"mm\">T(n) = 2T(n/4) + √n</span>. Here the divisor is 2, not 4, so the level cost grows instead of staying flat."
+   }
+  },
+  {
+   "id": "ALG-U1-Q65",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "In the recursion tree for <span class=\"mm\">T(n) = 2T(n/2) + n²</span>, the total cost of all nodes at depth i (the root is at depth 0) is:",
+   "options": [
+    "<span class=\"mm\">n² / 2ⁱ</span>",
+    "<span class=\"mm\">n²</span>",
+    "<span class=\"mm\">2ⁱ · n²</span>",
+    "<span class=\"mm\">n² / 4ⁱ</span>"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Level cost = (number of nodes at that depth) × (cost of one node at that depth).",
+    "steps": [
+     "The recursion doubles, so depth i has 2ⁱ nodes.",
+     "Each node at depth i represents a subproblem of size <span class=\"mm\">n/2ⁱ</span>, and its own cost is that size squared, <span class=\"mm\">n²/4ⁱ</span>.",
+     "Multiply: <span class=\"mm\">2ⁱ · n²/4ⁱ = n²/2ⁱ</span>.",
+     "The level costs halve at each step, so the root dominates and the total is Θ(n²)."
+    ],
+    "final": "Option (A)",
+    "trap": "Option D forgets the 2ⁱ nodes and reports only the per-node cost; option B forgets to square the shrinking size. Both look plausible, and only the product is right."
+   }
+  },
+  {
+   "id": "ALG-U1-Q66",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 4T(n/2) + n</span> with T(1) = 1 and <span class=\"mm\">n = 2^k</span>, the total cost contributed by the leaves of the recursion tree is:",
+   "options": [
+    "<span class=\"mm\">n</span>",
+    "<span class=\"mm\">n log n</span>",
+    "<span class=\"mm\">n²</span>",
+    "<span class=\"mm\">4n</span>"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Leaves of a recursion tree cost (number of leaves) × (cost of the base case).",
+    "steps": [
+     "Each node has 4 children, so depth i holds 4ⁱ nodes.",
+     "The tree reaches size 1 after k = log₂ n levels, so the number of leaves is <span class=\"mm\">4^k = 4^(log₂ n)</span>.",
+     "Rewrite in base n: <span class=\"mm\">4^(log₂ n) = n^(log₂ 4) = n²</span>.",
+     "Each leaf costs T(1) = 1, so the leaves contribute n² in total, which is also the Θ-class of the whole recurrence."
+    ],
+    "final": "Option (C)",
+    "trap": "Multiplying the leaf count n² by the subproblem size at the leaves (which is 1, not n). Counting leaves is enough here; their per-node cost is the constant 1."
+   }
+  },
+  {
+   "id": "ALG-U1-Q67",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "In the recursion tree for <span class=\"mm\">T(n) = 9T(n/3) + n²</span>, the total cost of all nodes at depth i is:",
+   "options": [
+    "<span class=\"mm\">n² / 3ⁱ</span>",
+    "<span class=\"mm\">n² / 9ⁱ</span>",
+    "<span class=\"mm\">3ⁱ · n²</span>",
+    "<span class=\"mm\">n²</span>"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A level cost stays constant exactly when the branching factor equals the square of the shrinking factor, that is when <span class=\"mm\">a = b²</span> here.",
+    "steps": [
+     "Depth i has 9ⁱ nodes, each of size n/3ⁱ.",
+     "A node of size n/3ⁱ costs <span class=\"mm\">(n/3ⁱ)² = n²/9ⁱ</span>.",
+     "Multiply: <span class=\"mm\">9ⁱ · n²/9ⁱ = n²</span>, the same at every depth.",
+     "With log₃ n + 1 levels each costing n², the total is <span class=\"mm\">Θ(n² log n)</span>."
+    ],
+    "final": "Option (D)",
+    "trap": "Expecting the decay seen in <span class=\"mm\">T(n) = 2T(n/2) + n²</span>. There the level cost halves; here 9·(1/3)² = 1, so nothing decays and the extra log factor appears."
+   }
+  },
+  {
+   "id": "ALG-U1-Q68",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 3T(n/2) + n</span> with T(1) = 1, which of the following statements about its recursion tree are TRUE? (Select all that apply.)",
+   "options": [
+    "The number of leaves is <span class=\"mm\">n^(log₂ 3)</span>.",
+    "The total cost of the nodes at depth i is <span class=\"mm\">(3/2)ⁱ · n</span>.",
+    "<span class=\"mm\">T(n) = Θ(n^(log₂ 3))</span>.",
+    "<span class=\"mm\">T(n) = Θ(n log n)</span>."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "When each level costs a constant factor more than the level above it, the leaves dominate the sum.",
+    "steps": [
+     "Depth i has 3ⁱ nodes of size n/2ⁱ, so its cost is <span class=\"mm\">3ⁱ · (n/2ⁱ) = (3/2)ⁱ · n</span>, confirming option B.",
+     "The tree has log₂ n levels, so the number of leaves is <span class=\"mm\">3^(log₂ n) = n^(log₂ 3)</span>, confirming option A.",
+     "The level costs form a geometric series with ratio 3/2 &gt; 1, so the total is dominated by the last level: <span class=\"mm\">Θ((3/2)^(log₂ n) · n) = Θ(n^(log₂ 3))</span>. Option C holds.",
+     "Since <span class=\"mm\">log₂ 3 ≈ 1·585</span>, the solution grows faster than n log n, so option D is false."
+    ],
+    "final": "Options (A), (B) and (C)",
+    "trap": "Option D: the tree is unbalanced in cost but balanced in depth, and students read balanced depth as \"n log n\". Because the level cost grows, the leaves, not the top levels, set the total."
+   }
+  },
+  {
+   "id": "ALG-U1-Q69",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 2T(n/2) + n²</span> with T(1) = 1, the total number of nodes in the recursion tree when n = 4 is ____.",
+   "options": [],
+   "answer": 7,
+   "answer_display": "7",
+   "solution": {
+    "concept": "The recursion tree stops branching when a subproblem reaches the base-case size of 1.",
+    "steps": [
+     "Depth 0: one node of size 4.",
+     "Depth 1: two nodes of size 2.",
+     "Depth 2: each size-2 node splits into two size-1 nodes, giving four nodes, which are base cases.",
+     "Total: 1 + 2 + 4 = 7 nodes."
+    ],
+    "final": "7",
+    "trap": "Stopping one level early and counting 1 + 2 = 3, or counting only the four leaves. Every node in the tree, internal and leaf, is counted."
+   }
+  },
+  {
+   "id": "ALG-U1-Q70",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "recursion-tree-method",
+   "subtopic": "recursion-tree-method",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 2T(n/2) + n²</span> with T(1) = 1, the exact value of T(4) is:",
+   "options": [
+    "24",
+    "28",
+    "32",
+    "36"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "An exact value is computed bottom-up from the base case; the asymptotic class says nothing about the constants.",
+    "steps": [
+     "Base: T(1) = 1.",
+     "T(2) = 2·T(1) + 2² = 2 + 4 = 6.",
+     "T(4) = 2·T(2) + 4² = 2·6 + 16 = 28."
+    ],
+    "final": "Option (B)",
+    "trap": "Substituting n = 4 into the asymptotic answer Θ(n²) and reporting 16, or doubling it to 32. The exact value carries the T(2) subtrees as well."
+   }
+  },
+  {
+   "id": "ALG-U1-Q71",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "substitution-method",
+   "subtopic": "substitution-method",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "The substitution method establishes an asymptotic bound on a recurrence by:",
+   "options": [
+    "computing T(1), T(2), T(3) and extrapolating the pattern.",
+    "expanding the recurrence level by level into a tree and summing each level.",
+    "matching the recurrence against one of the three Master Theorem cases.",
+    "guessing a bound and proving it by induction on n."
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The substitution method is guess-and-verify: propose a bound, then prove it by induction using the same bound on smaller inputs.",
+    "steps": [
+     "Guess a candidate bound, for example <span class=\"mm\">T(n) ≤ c n log n</span>.",
+     "Assume the bound for the subproblem sizes appearing on the right-hand side.",
+     "Substitute that assumption and show the bound holds for n, choosing constants as needed.",
+     "Repeat with the reversed inequality for a lower bound; together they give Θ."
+    ],
+    "final": "Option (D)",
+    "trap": "Option A: a few computed values can suggest a guess but never prove one, and option B describes the recursion-tree method, which is a different technique."
+   }
+  },
+  {
+   "id": "ALG-U1-Q72",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "substitution-method",
+   "subtopic": "substitution-method",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "To prove <span class=\"mm\">T(n) = T(n/2) + n = O(n)</span> by substitution, assume <span class=\"mm\">T(n/2) ≤ c·(n/2)</span>. The induction closes provided:",
+   "options": [
+    "<span class=\"mm\">c ≥ 1</span>",
+    "<span class=\"mm\">c ≥ 2</span>",
+    "any constant <span class=\"mm\">c &gt; 0</span> works",
+    "no constant works"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "After substitution, the inductive step becomes an inequality in c; the smallest constant satisfying it is the answer.",
+    "steps": [
+     "Substitute: <span class=\"mm\">T(n) ≤ c·(n/2) + n = n·(c/2 + 1)</span>.",
+     "For the induction to close we need <span class=\"mm\">n·(c/2 + 1) ≤ c·n</span>, that is <span class=\"mm\">c/2 + 1 ≤ c</span>.",
+     "This reduces to <span class=\"mm\">c ≥ 2</span>.",
+     "So the guess works for every c ≥ 2, and the base case is absorbed by enlarging c if necessary."
+    ],
+    "final": "Option (B)",
+    "trap": "Choosing c ≥ 1 by matching the coefficient of n in f(n). The subproblem already contributes c/2, so the constant has to cover both the subproblem and the root."
+   }
+  },
+  {
+   "id": "ALG-U1-Q73",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "substitution-method",
+   "subtopic": "substitution-method",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Consider <span class=\"mm\">T(n) = T(⌈n/2⌉) + T(⌊n/2⌋) + n</span> with T(1) = 1. Which of the following are TRUE? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">T(n) = Ω(n log₂ n)</span>",
+    "<span class=\"mm\">T(n) = O(n log₂ n)</span>",
+    "<span class=\"mm\">T(n) = Θ(n²)</span>",
+    "<span class=\"mm\">T(n) = Θ(n log₂ n)</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "Floors and ceilings split n into two parts that sum to n, so they change constants but never the order. This is the merge-sort recurrence.",
+    "steps": [
+     "The two subproblem sizes <span class=\"mm\">⌈n/2⌉</span> and <span class=\"mm\">⌊n/2⌋</span> sum to n, so every level of the recursion costs exactly n in total.",
+     "The depth is <span class=\"mm\">⌈log₂ n⌉</span>, because each step halves the size; ceilings add at most one level.",
+     "Hence <span class=\"mm\">T(n) ≤ n(⌈log₂ n⌉ + 1) = O(n log n)</span> and <span class=\"mm\">T(n) ≥ n·log₂ n = Ω(n log n)</span>.",
+     "The two bounds meet, so <span class=\"mm\">T(n) = Θ(n log n)</span>: options A, B and D hold and C does not."
+    ],
+    "final": "Options (A), (B) and (D)",
+    "trap": "Option C: a per-level cost of n repeated log n times is n log n, not n². Multiplying the two factors as if both were n is the standard slip."
+   }
+  },
+  {
+   "id": "ALG-U1-Q74",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "substitution-method",
+   "subtopic": "substitution-method",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "Let T(1) = 1 and <span class=\"mm\">T(n) = T(n/2) + n</span> for n &gt; 1. The value of T(8) is ____.",
+   "options": [],
+   "answer": 15,
+   "answer_display": "15",
+   "solution": {
+    "concept": "Unroll the recurrence from the top until the base case is reached, then add the terms back up.",
+    "steps": [
+     "T(2) = T(1) + 2 = 1 + 2 = 3.",
+     "T(4) = T(2) + 4 = 3 + 4 = 7.",
+     "T(8) = T(4) + 8 = 7 + 8 = 15.",
+     "Equivalently, <span class=\"mm\">T(8) = 8 + 4 + 2 + 1 = 15</span>."
+    ],
+    "final": "15",
+    "trap": "Summing 8 + 4 + 2 = 14 and dropping the base case. The unrolling ends at T(1) = 1, which is part of the total."
+   }
+  },
+  {
+   "id": "ALG-U1-Q75",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "asymptotic-analysis",
+   "unit_name": "Asymptotic Analysis & Recurrences",
+   "topic": "Asymptotic Analysis & Recurrences",
+   "sub": "substitution-method",
+   "subtopic": "substitution-method",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 3 (second pass)",
+   "question": "For <span class=\"mm\">T(n) = 2T(n/2) + n²</span> with T(1) = 1, the smallest integer c for which the guess <span class=\"mm\">T(n) ≤ c·n²</span> holds for every <span class=\"mm\">n ≥ 1</span> is ____.",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "Unrolling gives a geometric series; bounding that series gives the constant, and the base case must be checked separately.",
+    "steps": [
+     "Level i of the recursion costs <span class=\"mm\">2ⁱ·(n/2ⁱ)² = n²/2ⁱ</span>.",
+     "Summing down to the base case, <span class=\"mm\">T(n) = n²(1 + 1/2 + 1/4 + … ) &lt; 2n²</span>, so c = 2 is enough.",
+     "Check that no smaller integer works: T(2) = 2·1 + 4 = 6, and 6 &gt; 1·2² = 4, so c = 1 fails.",
+     "Therefore the smallest integer constant is 2."
+    ],
+    "final": "2",
+    "trap": "Testing only n = 1, where T(1) = 1 ≤ c for any c ≥ 1, and concluding c = 1. The binding constraint appears at n = 2, where the root term n² is already paid."
    }
   }
  ]
