@@ -7,38 +7,67 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 2 of 2**, 2026-11-02 →
-  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
+- **Compiler Design · Unit 3 — Syntax Analysis: Bottom-Up Parsing, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html`](compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Classes P and NP (7) · Polynomial-time reductions (6) · NP-complete problems: 3-SAT, clique,
-  vertex cover (7) · NP-hard identification (5)
+- Subtopics: LR(0) items & parsing (7) · SLR(1) parsing & conflicts (6) · LR(1) and LALR(1) parsers (7) ·
+  operator-precedence parsing (5)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 5 — **Algorithms**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-02, run 13, unit 7, complexity-np-complete, Set 1 of 2}`. Unit 7 held **25** questions, below
-  `UNIT_QUESTION_CAP = 50`, and its first paper was dated 2026-11-02, zero days earlier, so **step B3 held on both
-  counts**: the unit stays current and this run generates it again. Step B4 was not reached, so the modulo advance
-  played no part. This is **Set 2 of 2**, taking the unit to exactly 50 banked questions; every Algorithms unit is
-  now at the cap (50, 50, 50, 50, 50, 50, 50), so the next Algorithms draw advances into a second pass. No override
-  was used and no partial set was generated.
-- Superseded: the Set 1 paper `gate_algo_mock_7_2026-11-02.html` moved to
-  `algorithms/complexity-np-complete/archive/gate_algo_mock_7_2026-11-02_run1.html`, content frozen; the unit folder
+  returned index 7 — **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 17, unit 2, top-down-parsing, Set 2 of 2 (second pass)}`. Unit 2 held **100** questions against
+  `UNIT_QUESTION_CAP = 50`, so **step B3 failed on the cap** and step B4 advanced exactly one unit:
+  `(2 − 1 + 1) mod 5 = 2`, that is **unit 3 — bottom-up-parsing**. Every Compiler Design unit already stands at or
+  above the cap (100, 100, 75, 75, 75), so this subject is in a **second pass**; the paper is the unit's fourth and
+  takes it from 75 to 100 banked questions, **Set 2 of 2 of the second pass**. No override was used and no partial
+  set was generated.
+- Superseded: the previous paper `gate_cd_mock_3_2026-10-31.html` moved to
+  `compiler-design/bottom-up-parsing/archive/gate_cd_mock_3_2026-10-31_run3.html`, content frozen; the unit folder
   now holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Operating Systems · Unit 4 — Memory Management & Paging, Set 2 of 2 (second pass)**,
-  2026-11-02 →
-  [`operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html`](operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html)
+- Previous test: **Algorithms · Unit 7 — Complexity Theory & NP-Completeness, Set 2 of 2**, 2026-11-02 →
+  [`algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html`](algorithms/complexity-np-complete/gate_algo_mock_7_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 176 (26 Discrete Mathematics, 14 Algorithms, 11 Databases, 17 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 109 archived |
+| Papers published (current + archived) | 177 (26 Discrete Mathematics, 14 Algorithms, 11 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 110 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4400 (650 Discrete Mathematics, 350 Algorithms, 275 Databases, 425 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4425 (650 Discrete Mathematics, 350 Algorithms, 275 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 109 (13 Discrete Mathematics, 7 Algorithms, 6 Databases, 12 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 110 (13 Discrete Mathematics, 7 Algorithms, 6 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Compiler Design Unit 3, Set 2 of 2 (second pass)
+
+- New paper at `compiler-design/bottom-up-parsing/gate_cd_mock_3_2026-11-02.html`. The 2026-10-31 paper of the same
+  unit moved to `compiler-design/bottom-up-parsing/archive/gate_cd_mock_3_2026-10-31_run3.html` with its content
+  frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current
+  paper and the archive holds the superseded set.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 7 — **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-01, run 17, unit 2, top-down-parsing, Set 2 of 2 (second pass)}`. Unit 2 held **100**
+  questions against a cap of 50 and its first paper was 2026-10-27, so step B3 failed on both counts and step B4
+  applied: `(2 − 1 + 1) mod 5 = 2`, that is **unit 3**. Compiler Design is in a **second pass** — all five units
+  already stand at or above the cap (100, 100, 75, 75, 75) — so the modulo advance continues into the pass rather
+  than hunting for a unit below the cap. Unit 3 goes from 75 to 100 banked questions. Exactly 25 questions, no
+  override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** LR(0) items & parsing 7 · SLR(1) parsing & conflicts 6 · LR(1) and LALR(1) parsers 7 ·
+  operator-precedence parsing 5. All four unit subtopics are represented; difficulty 10 easy / 10 medium / 5 hard.
+- **Verification.** The state counts, LALR state counts and SLR reduce-cell counts quoted in the solutions were
+  recomputed with a canonical LR(0) and LR(1) construction rather than asserted. Shell parity holds: the paper's
+  markup and script, with the payload and the dynamic regions removed, is byte-identical to the template derived
+  from the 2026-11-02 Algorithms paper. The `:root` block matches `design-tokens.css` and `index.html` byte for
+  byte. Every question container on this paper carries `data-subject="compiler-design"`, and so do all 425 records
+  of its Question Bank tab. One copy only: the paper is filed at unit level and nowhere else.
+- **Open item.** Two archives from the first day, `discrete-mathematics/proof-techniques/archive/`
+  `gate_dm_mock_16_2026-10-25_run1.html` and `_run2.html`, still use the pre-shell template of 2026-10-25 and are
+  the only papers in the repository without `data-subject`. They need a rebuild on the current shell with their
+  content frozen; that is a separate task from the daily rotation and is recorded here rather than left silent.
 
 ### 2026-11-02 — Algorithms Unit 7, Set 2 of 2
 
