@@ -7,39 +7,150 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 2 — Pointers, Memory & Preprocessors, Set 1 of 2 (second pass)**,
+- **Engineering Mathematics · Unit 4 — Calculus: Maxima, Minima & Integrals, Set 1 of 2 (second pass)**,
   2026-11-02 →
-  [`programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html`](programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html)
+  [`engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html`](engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Pointer arithmetic (7) · Pointers to functions (6) · Dynamic memory allocation (6) ·
-  Macro expansion, scope & lifetime (6)
+- Subtopics: Single-variable extrema (7) · Multivariable extrema & saddle points (6) · Definite integrals (7) ·
+  Vector calculus basics (5)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 4 — **Programming and Data Structures**. `runs[]` sorted by `(date, run)` gave the most recent
-  paper as `{2026-11-01, run 15, unit 1, c-programming-core, Set 1 of 2 (second pass)}`. Unit 1 held **75**
-  questions, above `UNIT_QUESTION_CAP = 50`, and its first paper was 2026-10-26, seven days earlier, so step B3
-  failed on both the cap and the `DAYS_PER_UNIT_MAX = 7` backstop. Step B4 advanced exactly one unit:
-  `(index_of(c-programming-core) = 0 + 1) mod 7 = 1` → **Unit 2, Pointers, Memory & Preprocessors**. The subject
-  is on its second pass — units 1–7 all reached 50 in the first pass and the wrap returned to Unit 1 on 2026-11-01 —
-  so this set is **Set 1 of 2 (second pass)**. No override was used and no partial set was generated.
-- Superseded: the 2026-10-27 paper `gate_ds_mock_2_2026-10-27.html` moved to
-  `programming-data-structures/pointers-memory/archive/gate_ds_mock_2_2026-10-27_run2.html`, content frozen; the
-  unit folder now holds exactly one current paper and the repository root still holds only `index.html`.
-- Previous test: **Discrete Mathematics · Unit 12 — Algebraic Structures, Set 1 of 2**, 2026-11-02 →
-  [`discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html`](discrete-mathematics/algebraic-structures/gate_dm_mock_12_2026-11-02.html)
+  returned index 1 — **Engineering Mathematics**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-01, run 13, unit 3, calculus-limits-derivatives, Set 1 of 2 (second pass)}`. Unit 3 held **75**
+  questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap. Step B4 advanced exactly one unit:
+  `(index_of(calculus-limits-derivatives) = 2 + 1) mod 5 = 3` → **Unit 4, Calculus: Maxima, Minima & Integrals**.
+  All five Engineering Mathematics units now sit at or above the cap (75, 75, 75, 50, 50), so **step B5 applies
+  and the second pass continues**; this is the first set of that pass and the unit's third set overall. No
+  override was used and no partial set was generated.
+- Superseded: the 2026-10-29 paper `gate_em_mock_4_2026-10-29.html` moved to
+  `engineering-mathematics/calculus-optimization-integrals/archive/gate_em_mock_4_2026-10-29_run2.html`, content
+  frozen; the unit folder now holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- Previous test: **Programming and Data Structures · Unit 2 — Pointers, Memory & Preprocessors, Set 1 of 2
+  (second pass)**, 2026-11-02 →
+  [`programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html`](programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 173 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 13 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 106 archived |
+| Papers published (current + archived) | 174 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 107 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4325 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 325 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
+| Questions in the subject banks | 4350 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 106 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 8 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 107 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
 
+### 2026-11-02 — Engineering Mathematics Unit 4, Set 1 of 2 (second pass)
+
+- New paper at `engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html`. The
+  2026-10-29 paper moved to
+  `engineering-mathematics/calculus-optimization-integrals/archive/gate_em_mock_4_2026-10-29_run2.html` with its
+  content frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one
+  current paper and the archive holds both first-pass sets.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 1 — **Engineering Mathematics**. `runs[]` sorted by `(date, run)` gave the most
+  recent paper as `{2026-11-01, run 13, unit 3, calculus-limits-derivatives, Set 1 of 2 (second pass)}`. Unit 3
+  held **75** questions against a cap of 50, so step B3 failed on the cap; its first paper was 2026-10-27, six
+  days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit:
+  `(index_of(calculus-limits-derivatives) = 2 + 1) mod 5 = 3` → **Unit 4, Calculus: Maxima, Minima & Integrals**.
+  Unit 4 already held 50 questions from its two first-pass sets, and every one of the five Engineering Mathematics
+  units now sits at or above the cap (75, 75, 75, 50, 50): **step B5 applies, the second pass continues**, and this
+  is the first set of that pass — the unit's third set overall. Exactly 25 questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: single-variable extrema 7 · multivariable extrema & saddle points 6 ·
+  definite integrals 7 · vector calculus basics 5. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks, and why it is not Set 1 or Set 2 again.** The two first-pass sets asked for the value of a
+  maximum, the sign in a discriminant and the convergence of an improper integral; this set asks where the
+  standard tests stop working and which of two nearly identical rules applies. Single variable: the minimum of
+  `x + 4/x` (**4**), the maximum of `x²e^{−x}` on `x ≥ 0` (`4e^{−2}`), the three local extrema of `|x² − 4|`
+  (**3**), the inconclusive case `f′(0) = f″(0) = 0` at a strict minimum of `x⁴`, a five-way MSQ on open
+  intervals, sign of `f′` and a local maximum without `f″ < 0`, the largest rectangle inscribed in a circle of
+  radius 5 (**50**), and the maximum of `x^{1/x}` at `e` with limit 1. Multivariable: a quadratic with **no**
+  stationary point at all, the **two** saddle points among the four stationary points of `x³ + y³ − 3x − 3y`,
+  `max x²y` on `x² + y² = 3` (**2**), an MSQ separating `D > 0` from the degenerate `D = 0`, the maximum of
+  `(x²+y²)e^{−(x²+y²)}` (`1/e`), and the distance from the origin to `xyz = 8` (`2√3`). Definite integrals:
+  `∫₁^e ln x dx` (**1**), `∫₀^{π/2} cos²x dx` (`π/4`), `∫₁⁹ dx/√x` (**4**), a Riemann sum converging to **2/3**,
+  an MSQ on odd symmetry and on `f ≥ 0` with zero integral, `∫₀¹ ln x dx = −1` as a convergent improper
+  integral, and `∫₀¹ x ln x dx = −0.25`. Vector calculus: the largest directional derivative at `(3, 4)`
+  (**10**), `div F` of `(x²y, y²z, z²x)` at `(1,1,1)` (**6**), a conservative field with potential `x²y + xz`, an
+  MSQ on the two vanishing identities against the Laplacian, and the one harmonic field among four quadratics and
+  cubics.
+- **Answers recomputed, not asserted.** Every numeric key came from a script, not by inspection. sympy returned
+  `minimum(x + 4/x) = 4` on `(0, ∞)`; `maximum(x²e^{−x}) = 4e^{−2}` on `[0, ∞)` and unbounded on ℝ, which is why
+  the domain is stated; `f′(x) = 0` for `x^{1/x}` only at `x = e`, with value `e^{1/e}` and limit 1;
+  `solve(fx, fy)` for `x² − 2xy + y² + 2x` returned **no** solution; the four stationary points of
+  `x³ + y³ − 3x − 3y` gave `D = 36, 36, −36, −36`, hence **two** saddles; the Lagrange system for `x²y` on
+  `x² + y² = 3` gave values `{−2, 0, 2}`, hence **2**; `maximum(t e^{−t}) = e^{−1}`; the integrals evaluated to
+  `1`, `π/4`, `4`, `2/3`, `−1` and `−1/4`; `|∇f(3,4)| = 10`; `div F = 2xy + 2yz + 2zx = 6` at `(1,1,1)`; and the
+  Laplacians of `x² + y²`, `x³ + y³`, `x² − y²` and `x²y²` came out as `4`, `6(x + y)`, `0` and `2(x² + y²)`.
+- **Ids and bank.** 25 records appended as `EM-U4C-Q01`–`EM-U4C-Q25` (the `C` marks the unit's third set, matching
+  the `EM-U3C-*` and `DL-U4C-*` conventions); Engineering Mathematics now holds **350** questions across 5 units,
+  and `data/questions-engineering-mathematics.js` grew from 300 to 350 records.
+- **Question Bank tab.** 325 solved questions — every record in the bank except the 25 on this paper — so the
+  active set is not repeated there. Unit 4's accordion shows the 50 questions of its two first-pass sets; the 25
+  added here appear on the paper itself and are excluded from the tab.
+- **Provenance.** `verified_pyqs` is empty for Engineering Mathematics, so no item on this paper carries
+  `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE question: no maxima-and-minima,
+  definite-integral or vector-calculus previous-year item has been verified against an official paper and answer
+  key. Sources are `STANDARD_TEXTBOOK` (18) and `ORIGINAL_SYNTHESIS` (7).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (C), (D); (A), (B), (D); (A), (B), (C); (A), (C); and (B), (C), (D) — one two-element set, one pair and
+  three different three-element patterns, so they are not five copies of one shape. Every letter named inside a
+  solution is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 50 already banked for this unit. The first pass had
+  used `x³ − 3x` on `[−2, 2]`, `x² − 4x + 7`, `x⁴ − 4x³`, the `D`-test at a single stationary point, the minimum
+  of `x² + y² − 4x − 6y + 13`, `max(x + y)` on the unit circle, `x³ + y³ − 3xy`, `∫₀¹ x²`, `∫₀^{π/2} sin x`,
+  `∫₋₁¹ x³`, `∫₀¹ x eˣ`, the improper `p`-integral rules, `∇(x²y)`, `div(x, y, z)` and the directional derivative
+  of `x² + y²` along `(3, 4)`. The second pass had used `x³ − 6x² + 9x`, `x² + 6x + 2`, the concavity interval of
+  `x³ − 3x²`, `2x³ − 3x² − 12x + 5`, `x³` on `[−1, 2]`, `x³ − 12x` on `[−3, 3]`, `x² + y² + 2x − 4y + 7`,
+  `x² + xy + y²`, `∫₀¹(3x² + 2x)`, `∫₀^{π/2} cos x`, `∫₀²|x − 1|`, `∫₀^π x sin x`, `∫₀^{ln 2} e^{2x}`, `∇(xyz)`,
+  `∇(xy)` along `(1, 1)`, `curl(y², z², x²)` and `div(x²y, yz², zx²)`. None of those stems, numbers or answer sets
+  is reused here; where a concept recurs (the `D`-test, Lagrange multipliers, integration by parts, the curl
+  test) it is asked with a different function, a different question form or a different reasoning step — the
+  `D`-test is asked about four symmetric points at once, Lagrange is asked where the multiplier equations branch,
+  and the curl question asks for the potential rather than for the curl.
+- **Verification (Section 6.8).** Shell parity: the `<style>` block (13,243 bytes) and the engine `<script>`
+  (9,428 bytes) are byte-identical to the paper this one replaces, compared byte for byte; the aside, the
+  answer-key view, the About wrapper and the footer are byte-identical, and with title, sub-line, bank-count
+  button, date and set chips masked the remaining head is identical at 14,084 bytes. One copy: the paper exists at
+  exactly one path, the superseded set at exactly one archive path, `index.html` is the only HTML file at the
+  root, and no unit folder holds two current papers. Links: all 67 test paths and all 107 archive paths in the
+  portal's data block resolve, and the retired 2026-10-29 path is referenced nowhere. Tokens: the `:root` block is
+  byte-identical to `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no external URL of any kind; the
+  generated regions carry no raw hex at all, and the three literal hex values left in the file all sit inside the
+  frozen shell. Counts: 25 test cards, a 25-button palette, 5 NAT inputs, 80 option inputs, 325 bank cards, and all
+  seven `data-*` attributes on all 25 test cards. No duplicate content: none of the 25 active ids appears in the
+  Question Bank tab, and no bank id repeats.
+- **Interface run (payload simulation).** The grading engine was exercised by replaying its exact scoring rules
+  against the decoded payload: a perfect attempt scores **35 / 35**; an attempt in which every MCQ is wrong, every
+  MSQ has one extra option selected and every NAT is right scores **10 / 35**, confirming that there is no
+  negative marking and that an MSQ earns nothing on an enlarged set. Structural checks on the shipped file: the
+  answer-key tab `disabled`, `keyList` empty, `ansline` and "Detailed solution" absent from the question host, no
+  `correct`/`wrongpick` class anywhere before submit, and all 25 `.sol` blocks empty and hidden. Both inline
+  scripts parse, and the payload decodes to 25 answers and 25 solutions.
+- **Portal.** The Engineering Mathematics Unit 4 card was replaced, not duplicated: it now carries the new date,
+  the new path, the second-pass set label and two earlier-set links (`First pass · Set 2` → the run2 archive,
+  `First pass · Set 1` → the run1 archive). The static counters were recomputed from the data: 71 units in the
+  series, 67 test cards, 4350 solved questions in the review archive, 4350 records in the subject banks, 67 of 71
+  units covered and 297 subtopics. The "69 of 71 units" figure carried in earlier runs was stale — four units have
+  no banked questions (Computer Architecture unit 1, Discrete Mathematics units 13, 14 and 15) — and is corrected
+  here.
+- **Repaired, not merely recorded.** `data/questions-programming-data-structures.js` ended with `]];` instead of
+  `];`, a stray bracket that made the file a JavaScript syntax error, so the portal loaded only ten of the eleven
+  subjects and silently dropped the 400 Programming and Data Structures records from the review archive. The
+  bracket was removed, the array was rewritten from its own 400 records without touching any content, and the
+  portal now loads all eleven subjects and 4350 records. The 25-record gap between the Engineering Mathematics
+  bank and its portal data file, recorded as a pre-existing defect in the previous run, is also closed: the data
+  file is regenerated from the bank and now carries all 350 records.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus three literal hex values outside `:root`, no
+  explicit `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than their
+  `-d` variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Programming and Data Structures Unit 2, Set 1 of 2 (second pass)
 

@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such. total_questions was stale at 25 after the second run (50 records were present); it is recomputed from len(questions) on every append as of 2026-10-26.",
-  "total_questions": 325,
+  "total_questions": 350,
   "units_with_questions": [
    1,
    2,
@@ -14,7 +14,7 @@
    4,
    5
   ],
-  "total_runs": 13
+  "total_runs": 14
  },
  "runs": [
   {
@@ -841,6 +841,68 @@
    "mode": "MODE_A",
    "selection": "Random draw over the eleven GATE CSE subjects, random.Random(20261101).choice over the syllabus-ordered list, returned index 1, Engineering Mathematics. The narrower filter used on earlier runs (subjects carrying no paper for today) was empty, because all eleven subjects already held a 2026-11-01 paper, so the draw was taken over the full list. runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 12, unit 2, eigenvalues-eigenvectors, Set 1 of 2 (second pass)}. Unit 2 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(eigenvalues-eigenvectors) = 1 + 1) mod 5 = 2 -> Unit 3, calculus-limits-derivatives. Unit 3 already held 50 questions, so this is Set 1 of 2 of its second pass. No override was used and no partial set was generated.",
    "note": "Second pass over Unit 3. The 2026-10-27 paper of the unit was moved to archive/ as gate_em_mock_3_2026-10-27_run2.html with its content frozen."
+  },
+  {
+   "run": 14,
+   "date": "2026-11-02",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html",
+   "archived_previous": "engineering-mathematics/calculus-optimization-integrals/archive/gate_em_mock_4_2026-10-29_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "single-variable-extrema": 7,
+    "multivariable-extrema-saddle-points": 6,
+    "definite-integrals": 7,
+    "vector-calculus-basics": 5
+   },
+   "question_ids": [
+    "EM-U4C-Q01",
+    "EM-U4C-Q02",
+    "EM-U4C-Q03",
+    "EM-U4C-Q04",
+    "EM-U4C-Q05",
+    "EM-U4C-Q06",
+    "EM-U4C-Q07",
+    "EM-U4C-Q08",
+    "EM-U4C-Q09",
+    "EM-U4C-Q10",
+    "EM-U4C-Q11",
+    "EM-U4C-Q12",
+    "EM-U4C-Q13",
+    "EM-U4C-Q14",
+    "EM-U4C-Q15",
+    "EM-U4C-Q16",
+    "EM-U4C-Q17",
+    "EM-U4C-Q18",
+    "EM-U4C-Q19",
+    "EM-U4C-Q20",
+    "EM-U4C-Q21",
+    "EM-U4C-Q22",
+    "EM-U4C-Q23",
+    "EM-U4C-Q24",
+    "EM-U4C-Q25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 1 - Engineering Mathematics. engineering-mathematics/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 13, unit 3, calculus-limits-derivatives, Set 1 of 2 (second pass)}. Unit 3 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit: (index_of(calculus-limits-derivatives) = 2 + 1) mod 5 = 3 -> Unit 4, Calculus: Maxima, Minima & Integrals. Unit 4 already held 50 questions from its two first-pass sets, and every one of the five Engineering Mathematics units now sits at or above the cap (75, 75, 75, 50, 50), so step B5 applies and the second pass continues; this is the first set of that pass, the unit's third set overall. Exactly 25 questions, no override, no partial set.",
+   "note": "Second pass, Set 1 of 2 for Unit 4 (the unit's third set overall). Every numeric key was recomputed with sympy before the paper was written. No verified GATE PYQ exists for this unit, so nothing on this paper is claimed as official."
   }
  ],
  "verified_pyqs": [],
@@ -13369,6 +13431,1090 @@
    "answer_display": "3",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The theorem guarantees at least one interior point whose tangent is parallel to the chord; here the equation that determines those points is linear in <span class=\"mm\">c</span>, so there is exactly one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">f(0) = 1</span> and <span class=\"mm\">f(6) = 36 − 24 + 1 = 13</span>, so the chord slope is <span class=\"mm\">(13 − 1)/6 = 2</span>.</li><li><span class=\"mm\">f′(x) = 2x − 4</span>, so solve <span class=\"mm\">2c − 4 = 2</span>, giving <span class=\"mm\">c = 3</span>.</li><li><span class=\"mm\">3 ∈ (0, 6)</span>, so it is the only admissible point and the sum is <span class=\"mm\">3</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 (exact integer).</span></p><p class=\"row\"><b>Common misconception.</b> Summing the roots of <span class=\"mm\">f′(x) = 0</span> instead of the roots of <span class=\"mm\">f′(x) = </span> chord slope, which gives the vertex <span class=\"mm\">x = 2</span> rather than the point the theorem asserts. The chord slope must be computed from the two endpoints first.</p>",
    "solution": "Detailed solutionConcept. The theorem guarantees at least one interior point whose tangent is parallel to the chord; here the equation that determines those points is linear in c, so there is exactly one.Step by step.f(0) = 1 and f(6) = 36 − 24 + 1 = 13, so the chord slope is (13 − 1)/6 = 2.f′(x) = 2x − 4, so solve 2c − 4 = 2, giving c = 3.3 ∈ (0, 6), so it is the only admissible point and the sum is 3.Answer: 3 (exact integer).Common misconception. Summing the roots of f′(x) = 0 instead of the roots of f′(x) =  chord slope, which gives the vertex x = 2 rather than the point the theorem asserts. The chord slope must be computed from the two endpoints first."
+  },
+  {
+   "id": "EM-U4C-Q01",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">x &gt; 0</span>, the function <span class=\"mm\">f(x) = x + 4/x</span> attains its minimum value at exactly one point of its domain. That minimum value is",
+   "text": "For <span class=\"mm\">x &gt; 0</span>, the function <span class=\"mm\">f(x) = x + 4/x</span> attains its minimum value at exactly one point of its domain. That minimum value is",
+   "options": [
+    "4",
+    "2",
+    "2√2",
+    "The function has no minimum on x &gt; 0"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A differentiable function on an interval is minimised where its derivative vanishes and changes sign from negative to positive. The arithmetic–geometric mean inequality gives the same answer without any differentiation.",
+    "steps": [
+     "Differentiate: <span class=\"mm\">f′(x) = 1 − 4/x²</span>.",
+     "Set <span class=\"mm\">f′(x) = 0</span>: <span class=\"mm\">x² = 4</span>, so <span class=\"mm\">x = 2</span> on the stated domain <span class=\"mm\">x &gt; 0</span>.",
+     "The second derivative is <span class=\"mm\">f″(x) = 8/x³ &gt; 0</span> for <span class=\"mm\">x &gt; 0</span>, so <span class=\"mm\">x = 2</span> gives a minimum.",
+     "<span class=\"mm\">f(2) = 2 + 2 = 4</span>. As <span class=\"mm\">x → 0⁺</span> and as <span class=\"mm\">x → ∞</span>, <span class=\"mm\">f(x) → ∞</span>, so 4 is the global minimum, not merely a local one.",
+     "One-line check by AM–GM: <span class=\"mm\">x + 4/x ≥ 2√(x · 4/x) = 4</span>, with equality exactly when <span class=\"mm\">x = 4/x</span>, that is <span class=\"mm\">x = 2</span>."
+    ],
+    "final": "4 — option (A).",
+    "trap": "Reporting 2, the point where the minimum occurs, instead of 4, the minimum value. A second slip is to conclude that no minimum exists because <span class=\"mm\">f</span> grows without bound — but it does so only as <span class=\"mm\">x → 0⁺</span> and as <span class=\"mm\">x → ∞</span>, so a minimum is attained in between."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A differentiable function on an interval is minimised where its derivative vanishes and changes sign from negative to positive. The arithmetic–geometric mean inequality gives the same answer without any differentiation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Differentiate: <span class=\"mm\">f′(x) = 1 − 4/x²</span>.</li><li>Set <span class=\"mm\">f′(x) = 0</span>: <span class=\"mm\">x² = 4</span>, so <span class=\"mm\">x = 2</span> on the stated domain <span class=\"mm\">x &gt; 0</span>.</li><li>The second derivative is <span class=\"mm\">f″(x) = 8/x³ &gt; 0</span> for <span class=\"mm\">x &gt; 0</span>, so <span class=\"mm\">x = 2</span> gives a minimum.</li><li><span class=\"mm\">f(2) = 2 + 2 = 4</span>. As <span class=\"mm\">x → 0⁺</span> and as <span class=\"mm\">x → ∞</span>, <span class=\"mm\">f(x) → ∞</span>, so 4 is the global minimum, not merely a local one.</li><li>One-line check by AM–GM: <span class=\"mm\">x + 4/x ≥ 2√(x · 4/x) = 4</span>, with equality exactly when <span class=\"mm\">x = 4/x</span>, that is <span class=\"mm\">x = 2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reporting 2, the point where the minimum occurs, instead of 4, the minimum value. A second slip is to conclude that no minimum exists because <span class=\"mm\">f</span> grows without bound — but it does so only as <span class=\"mm\">x → 0⁺</span> and as <span class=\"mm\">x → ∞</span>, so a minimum is attained in between.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q02",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">x ≥ 0</span>, the maximum value of <span class=\"mm\">f(x) = x²e<sup>−x</sup></span> is",
+   "text": "For <span class=\"mm\">x ≥ 0</span>, the maximum value of <span class=\"mm\">f(x) = x²e<sup>−x</sup></span> is",
+   "options": [
+    "4e<sup>−2</sup>",
+    "2e<sup>−2</sup>",
+    "4e<sup>−1</sup>",
+    "e<sup>−2</sup>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A product of a polynomial and an exponential is differentiated by the product rule. The exponential factor is never zero, so the critical points come from the polynomial factor alone; the stated domain is what decides whether a maximum exists at all.",
+    "steps": [
+     "<span class=\"mm\">f′(x) = 2x e<sup>−x</sup> − x² e<sup>−x</sup> = x(2 − x) e<sup>−x</sup></span>.",
+     "Since <span class=\"mm\">e<sup>−x</sup> &gt; 0</span> for every <span class=\"mm\">x</span>, <span class=\"mm\">f′(x) = 0</span> only at <span class=\"mm\">x = 0</span> and <span class=\"mm\">x = 2</span>.",
+     "<span class=\"mm\">f(0) = 0</span> and <span class=\"mm\">f(2) = 4e<sup>−2</sup> ≈ 0.541</span>. As <span class=\"mm\">x → ∞</span>, <span class=\"mm\">f(x) → 0</span>, so <span class=\"mm\">x = 2</span> gives the maximum on <span class=\"mm\">[0, ∞)</span>.",
+     "The domain matters: on the whole real line <span class=\"mm\">x²e<sup>−x</sup> → ∞</span> as <span class=\"mm\">x → −∞</span>, so no maximum exists there."
+    ],
+    "final": "4e<sup>−2</sup> — option (A).",
+    "trap": "Dropping the exponential factor and answering 4, or differentiating incorrectly to <span class=\"mm\">x(1 − x)</span> and using <span class=\"mm\">x = 1</span>. The other trap is forgetting the stated domain: <span class=\"mm\">x ≥ 0</span> is exactly what makes the maximum exist."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A product of a polynomial and an exponential is differentiated by the product rule. The exponential factor is never zero, so the critical points come from the polynomial factor alone; the stated domain is what decides whether a maximum exists at all.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">f′(x) = 2x e<sup>−x</sup> − x² e<sup>−x</sup> = x(2 − x) e<sup>−x</sup></span>.</li><li>Since <span class=\"mm\">e<sup>−x</sup> &gt; 0</span> for every <span class=\"mm\">x</span>, <span class=\"mm\">f′(x) = 0</span> only at <span class=\"mm\">x = 0</span> and <span class=\"mm\">x = 2</span>.</li><li><span class=\"mm\">f(0) = 0</span> and <span class=\"mm\">f(2) = 4e<sup>−2</sup> ≈ 0.541</span>. As <span class=\"mm\">x → ∞</span>, <span class=\"mm\">f(x) → 0</span>, so <span class=\"mm\">x = 2</span> gives the maximum on <span class=\"mm\">[0, ∞)</span>.</li><li>The domain matters: on the whole real line <span class=\"mm\">x²e<sup>−x</sup> → ∞</span> as <span class=\"mm\">x → −∞</span>, so no maximum exists there.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4e<sup>−2</sup> — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Dropping the exponential factor and answering 4, or differentiating incorrectly to <span class=\"mm\">x(1 − x)</span> and using <span class=\"mm\">x = 1</span>. The other trap is forgetting the stated domain: <span class=\"mm\">x ≥ 0</span> is exactly what makes the maximum exist.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q03",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The number of local extrema of <span class=\"mm\">f(x) = |x² − 4|</span> on the whole real line is ______.",
+   "text": "The number of local extrema of <span class=\"mm\">f(x) = |x² − 4|</span> on the whole real line is ______.",
+   "options": [],
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "An absolute value changes formula where its argument vanishes. The candidate extrema are therefore the zeros of the derivative on each smooth piece, together with the corner points where the derivative does not exist.",
+    "steps": [
+     "Split the line: <span class=\"mm\">f(x) = 4 − x²</span> on <span class=\"mm\">[−2, 2]</span> and <span class=\"mm\">f(x) = x² − 4</span> outside it.",
+     "On <span class=\"mm\">(−2, 2)</span>, <span class=\"mm\">f′(x) = −2x</span>, which vanishes only at <span class=\"mm\">x = 0</span>; there <span class=\"mm\">f(0) = 4</span>, a local maximum.",
+     "Outside <span class=\"mm\">[−2, 2]</span>, <span class=\"mm\">f′(x) = 2x</span> is never zero, so there is no further stationary point.",
+     "At <span class=\"mm\">x = ±2</span> the graph has corners: <span class=\"mm\">f = 0</span> there and <span class=\"mm\">f &gt; 0</span> on both sides of each, so both points are local minima.",
+     "The local extrema are at <span class=\"mm\">x = −2</span>, <span class=\"mm\">x = 0</span> and <span class=\"mm\">x = 2</span>: three in all."
+    ],
+    "final": "3 (exact integer).",
+    "trap": "Counting only the two corners, or only the stationary point at 0. A related error is to differentiate <span class=\"mm\">|x² − 4|</span> formally as <span class=\"mm\">2x</span> and to call <span class=\"mm\">x = ±2</span> stationary points — the derivative does not exist there, which is precisely why they are extrema."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An absolute value changes formula where its argument vanishes. The candidate extrema are therefore the zeros of the derivative on each smooth piece, together with the corner points where the derivative does not exist.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Split the line: <span class=\"mm\">f(x) = 4 − x²</span> on <span class=\"mm\">[−2, 2]</span> and <span class=\"mm\">f(x) = x² − 4</span> outside it.</li><li>On <span class=\"mm\">(−2, 2)</span>, <span class=\"mm\">f′(x) = −2x</span>, which vanishes only at <span class=\"mm\">x = 0</span>; there <span class=\"mm\">f(0) = 4</span>, a local maximum.</li><li>Outside <span class=\"mm\">[−2, 2]</span>, <span class=\"mm\">f′(x) = 2x</span> is never zero, so there is no further stationary point.</li><li>At <span class=\"mm\">x = ±2</span> the graph has corners: <span class=\"mm\">f = 0</span> there and <span class=\"mm\">f &gt; 0</span> on both sides of each, so both points are local minima.</li><li>The local extrema are at <span class=\"mm\">x = −2</span>, <span class=\"mm\">x = 0</span> and <span class=\"mm\">x = 2</span>: three in all.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 (exact integer).</span></p><p class=\"row\"><b>Common misconception.</b> Counting only the two corners, or only the stationary point at 0. A related error is to differentiate <span class=\"mm\">|x² − 4|</span> formally as <span class=\"mm\">2x</span> and to call <span class=\"mm\">x = ±2</span> stationary points — the derivative does not exist there, which is precisely why they are extrema.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q04",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">f(x) = x⁴</span>. Which one of the following statements about the point <span class=\"mm\">x = 0</span> is TRUE?",
+   "text": "Let <span class=\"mm\">f(x) = x⁴</span>. Which one of the following statements about the point <span class=\"mm\">x = 0</span> is TRUE?",
+   "options": [
+    "<span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>, and 0 is a strict local minimum.",
+    "<span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>, and 0 is not a local extremum.",
+    "<span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 12 &gt; 0</span>, so the second-derivative test gives a local minimum.",
+    "<span class=\"mm\">f″(0) = 0</span> forces an inflection point at <span class=\"mm\">x = 0</span>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The second-derivative test is a sufficient test only. When <span class=\"mm\">f′(c) = 0</span> and <span class=\"mm\">f″(c) = 0</span> it is inconclusive, and the definition of a local minimum has to be applied directly.",
+    "steps": [
+     "<span class=\"mm\">f′(x) = 4x³</span> and <span class=\"mm\">f″(x) = 12x²</span>, so <span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>.",
+     "The second-derivative test therefore says nothing at <span class=\"mm\">x = 0</span>; it neither confirms nor excludes an extremum.",
+     "Go back to the definition: <span class=\"mm\">f(x) = x⁴ ≥ 0 = f(0)</span> for every real <span class=\"mm\">x</span>, so 0 is a strict minimum — in fact the global one.",
+     "<span class=\"mm\">f″(x) = 12x² ≥ 0</span> on both sides of 0, so the sign of concavity never changes and there is no inflection point."
+    ],
+    "final": "<span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>, and 0 is a strict local minimum — option (A).",
+    "trap": "Concluding \"not an extremum\" or \"an inflection point\" from <span class=\"mm\">f″(c) = 0</span>. That value makes the test inconclusive and nothing more: <span class=\"mm\">x⁴</span> has a minimum, <span class=\"mm\">x³</span> has an inflection and <span class=\"mm\">−x⁴</span> has a maximum, all with <span class=\"mm\">f′(0) = f″(0) = 0</span>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The second-derivative test is a sufficient test only. When <span class=\"mm\">f′(c) = 0</span> and <span class=\"mm\">f″(c) = 0</span> it is inconclusive, and the definition of a local minimum has to be applied directly.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">f′(x) = 4x³</span> and <span class=\"mm\">f″(x) = 12x²</span>, so <span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>.</li><li>The second-derivative test therefore says nothing at <span class=\"mm\">x = 0</span>; it neither confirms nor excludes an extremum.</li><li>Go back to the definition: <span class=\"mm\">f(x) = x⁴ ≥ 0 = f(0)</span> for every real <span class=\"mm\">x</span>, so 0 is a strict minimum — in fact the global one.</li><li><span class=\"mm\">f″(x) = 12x² ≥ 0</span> on both sides of 0, so the sign of concavity never changes and there is no inflection point.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">f′(0) = 0</span> and <span class=\"mm\">f″(0) = 0</span>, and 0 is a strict local minimum — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Concluding \"not an extremum\" or \"an inflection point\" from <span class=\"mm\">f″(c) = 0</span>. That value makes the test inconclusive and nothing more: <span class=\"mm\">x⁴</span> has a minimum, <span class=\"mm\">x³</span> has an inflection and <span class=\"mm\">−x⁴</span> has a maximum, all with <span class=\"mm\">f′(0) = f″(0) = 0</span>.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q05",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A function that is continuous on an open interval need not attain a maximum on that interval.",
+    "If <span class=\"mm\">f′(c) = 0</span> and <span class=\"mm\">f″(c) = 0</span>, then <span class=\"mm\">c</span> is not a local extremum of <span class=\"mm\">f</span>.",
+    "If <span class=\"mm\">f</span> is differentiable on ℝ and <span class=\"mm\">f′(x) ≠ 0</span> for every real <span class=\"mm\">x</span>, then <span class=\"mm\">f</span> is strictly monotone on ℝ.",
+    "A differentiable function can have a local maximum at <span class=\"mm\">c</span> without <span class=\"mm\">f″(c) &lt; 0</span>."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Extreme-value questions depend on the domain, and stationarity questions depend on which derivatives actually exist. Every option here has to be checked against a definition or a theorem rather than against intuition.",
+    "steps": [
+     "(A) TRUE. <span class=\"mm\">f(x) = x</span> is continuous on <span class=\"mm\">(0, 1)</span> and unbounded there, so it attains no maximum; the extreme-value theorem needs a closed bounded interval.",
+     "(B) FALSE. <span class=\"mm\">f(x) = x⁴</span> has <span class=\"mm\">f′(0) = f″(0) = 0</span> and a strict local minimum at 0, as Question 4 shows.",
+     "(C) TRUE. A derivative has the intermediate-value property (Darboux), so <span class=\"mm\">f′</span> cannot change sign without passing through 0. Since <span class=\"mm\">f′</span> never vanishes it keeps one sign throughout ℝ, and <span class=\"mm\">f</span> is strictly monotone.",
+     "(D) TRUE. <span class=\"mm\">f(x) = −x⁴</span> has a local maximum at 0 with <span class=\"mm\">f″(0) = 0</span>, and for <span class=\"mm\">f(x) = −x<sup>4/3</sup></span> the second derivative does not even exist at 0."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "trap": "Treating <span class=\"mm\">f″(c) = 0</span> as a disqualification in (B), and assuming that a local maximum must have <span class=\"mm\">f″ &lt; 0</span> in (D). Only the sufficient direction of the second-derivative test is valid; neither of its conclusions can be reversed."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Extreme-value questions depend on the domain, and stationarity questions depend on which derivatives actually exist. Every option here has to be checked against a definition or a theorem rather than against intuition.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE. <span class=\"mm\">f(x) = x</span> is continuous on <span class=\"mm\">(0, 1)</span> and unbounded there, so it attains no maximum; the extreme-value theorem needs a closed bounded interval.</li><li>(B) FALSE. <span class=\"mm\">f(x) = x⁴</span> has <span class=\"mm\">f′(0) = f″(0) = 0</span> and a strict local minimum at 0, as Question 4 shows.</li><li>(C) TRUE. A derivative has the intermediate-value property (Darboux), so <span class=\"mm\">f′</span> cannot change sign without passing through 0. Since <span class=\"mm\">f′</span> never vanishes it keeps one sign throughout ℝ, and <span class=\"mm\">f</span> is strictly monotone.</li><li>(D) TRUE. <span class=\"mm\">f(x) = −x⁴</span> has a local maximum at 0 with <span class=\"mm\">f″(0) = 0</span>, and for <span class=\"mm\">f(x) = −x<sup>4/3</sup></span> the second derivative does not even exist at 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Treating <span class=\"mm\">f″(c) = 0</span> as a disqualification in (B), and assuming that a local maximum must have <span class=\"mm\">f″ &lt; 0</span> in (D). Only the sufficient direction of the second-derivative test is valid; neither of its conclusions can be reversed.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q06",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A rectangle is inscribed in a circle of radius 5. The largest possible area of the rectangle is",
+   "text": "A rectangle is inscribed in a circle of radius 5. The largest possible area of the rectangle is",
+   "options": [
+    "25",
+    "50",
+    "50√2",
+    "100"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A constrained optimisation in one variable: express the area in terms of one half-side, use the constraint to eliminate the other, and differentiate on the admissible interval. The arithmetic–geometric mean inequality gives the same maximum in one step.",
+    "steps": [
+     "Let the rectangle have sides <span class=\"mm\">2x</span> and <span class=\"mm\">2y</span>. Its diagonal is a diameter of the circle, so <span class=\"mm\">x² + y² = 25</span>.",
+     "The area is <span class=\"mm\">A = 4xy</span>, so maximising <span class=\"mm\">A</span> means maximising <span class=\"mm\">xy</span> subject to <span class=\"mm\">x² + y² = 25</span>.",
+     "AM–GM: <span class=\"mm\">xy ≤ (x² + y²)/2 = 25/2</span>, with equality when <span class=\"mm\">x = y</span>. Hence <span class=\"mm\">A ≤ 4 · 25/2 = 50</span>.",
+     "The bound is attained by the square of diagonal 10, whose side is <span class=\"mm\">5√2</span> and whose area is <span class=\"mm\">(5√2)² = 50</span>.",
+     "Calculus check: <span class=\"mm\">A(x) = 4x√(25 − x²)</span> has <span class=\"mm\">A′(x) = 0</span> at <span class=\"mm\">x² = 25/2</span>, giving <span class=\"mm\">A = 50</span> again."
+    ],
+    "final": "50 — option (B).",
+    "trap": "Maximising the diagonal, which is fixed at 10, or its square, 100. Another slip is to use <span class=\"mm\">x² + y² = 5</span> and lose the radius, which returns 25. The largest inscribed rectangle is always the square, and its area is half the square of the diagonal."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A constrained optimisation in one variable: express the area in terms of one half-side, use the constraint to eliminate the other, and differentiate on the admissible interval. The arithmetic–geometric mean inequality gives the same maximum in one step.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let the rectangle have sides <span class=\"mm\">2x</span> and <span class=\"mm\">2y</span>. Its diagonal is a diameter of the circle, so <span class=\"mm\">x² + y² = 25</span>.</li><li>The area is <span class=\"mm\">A = 4xy</span>, so maximising <span class=\"mm\">A</span> means maximising <span class=\"mm\">xy</span> subject to <span class=\"mm\">x² + y² = 25</span>.</li><li>AM–GM: <span class=\"mm\">xy ≤ (x² + y²)/2 = 25/2</span>, with equality when <span class=\"mm\">x = y</span>. Hence <span class=\"mm\">A ≤ 4 · 25/2 = 50</span>.</li><li>The bound is attained by the square of diagonal 10, whose side is <span class=\"mm\">5√2</span> and whose area is <span class=\"mm\">(5√2)² = 50</span>.</li><li>Calculus check: <span class=\"mm\">A(x) = 4x√(25 − x²)</span> has <span class=\"mm\">A′(x) = 0</span> at <span class=\"mm\">x² = 25/2</span>, giving <span class=\"mm\">A = 50</span> again.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 50 — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Maximising the diagonal, which is fixed at 10, or its square, 100. Another slip is to use <span class=\"mm\">x² + y² = 5</span> and lose the radius, which returns 25. The largest inscribed rectangle is always the square, and its area is half the square of the diagonal.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q07",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "single-variable-extrema",
+   "subtopic": "single-variable-extrema",
+   "subtopic_label": "Single-variable extrema",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">f(x) = x<sup>1/x</sup></span> for <span class=\"mm\">x &gt; 0</span>. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Let <span class=\"mm\">f(x) = x<sup>1/x</sup></span> for <span class=\"mm\">x &gt; 0</span>. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">f</span> attains its maximum at <span class=\"mm\">x = e</span>.",
+    "<span class=\"mm\">f</span> is increasing on <span class=\"mm\">(0, e)</span> and decreasing on <span class=\"mm\">(e, ∞)</span>.",
+    "<span class=\"mm\">f(x) → e</span> as <span class=\"mm\">x → ∞</span>.",
+    "The maximum value of <span class=\"mm\">f</span> is <span class=\"mm\">e<sup>1/e</sup></span>."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "A variable exponent is handled by taking logarithms: <span class=\"mm\">ln f = (ln x)/x</span>, whose derivative decides where <span class=\"mm\">f</span> grows and where it decays. Because <span class=\"mm\">ln</span> is increasing, <span class=\"mm\">f</span> and <span class=\"mm\">ln f</span> have their maxima at the same point.",
+    "steps": [
+     "<span class=\"mm\">ln f(x) = (ln x)/x</span> for <span class=\"mm\">x &gt; 0</span>.",
+     "Differentiate: <span class=\"mm\">(ln f)′ = (1 − ln x)/x²</span>.",
+     "This vanishes only at <span class=\"mm\">x = e</span>; it is positive for <span class=\"mm\">x &lt; e</span> and negative for <span class=\"mm\">x &gt; e</span>, so <span class=\"mm\">f</span> increases on <span class=\"mm\">(0, e)</span> and decreases on <span class=\"mm\">(e, ∞)</span>.",
+     "Hence the maximum is attained at <span class=\"mm\">x = e</span>, with value <span class=\"mm\">f(e) = e<sup>1/e</sup> ≈ 1.4447</span>.",
+     "As <span class=\"mm\">x → ∞</span>, <span class=\"mm\">(ln x)/x → 0</span>, so <span class=\"mm\">f(x) = e<sup>(ln x)/x</sup> → e⁰ = 1</span>. The function therefore approaches 1, not <span class=\"mm\">e</span>."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "trap": "Option (C) is the trap: the limit is 1, and <span class=\"mm\">e</span> is where the maximum is attained, not what the function tends to. A second error is to differentiate <span class=\"mm\">x<sup>1/x</sup></span> with the power rule, which is valid only for a constant exponent."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A variable exponent is handled by taking logarithms: <span class=\"mm\">ln f = (ln x)/x</span>, whose derivative decides where <span class=\"mm\">f</span> grows and where it decays. Because <span class=\"mm\">ln</span> is increasing, <span class=\"mm\">f</span> and <span class=\"mm\">ln f</span> have their maxima at the same point.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">ln f(x) = (ln x)/x</span> for <span class=\"mm\">x &gt; 0</span>.</li><li>Differentiate: <span class=\"mm\">(ln f)′ = (1 − ln x)/x²</span>.</li><li>This vanishes only at <span class=\"mm\">x = e</span>; it is positive for <span class=\"mm\">x &lt; e</span> and negative for <span class=\"mm\">x &gt; e</span>, so <span class=\"mm\">f</span> increases on <span class=\"mm\">(0, e)</span> and decreases on <span class=\"mm\">(e, ∞)</span>.</li><li>Hence the maximum is attained at <span class=\"mm\">x = e</span>, with value <span class=\"mm\">f(e) = e<sup>1/e</sup> ≈ 1.4447</span>.</li><li>As <span class=\"mm\">x → ∞</span>, <span class=\"mm\">(ln x)/x → 0</span>, so <span class=\"mm\">f(x) = e<sup>(ln x)/x</sup> → e⁰ = 1</span>. The function therefore approaches 1, not <span class=\"mm\">e</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Option (C) is the trap: the limit is 1, and <span class=\"mm\">e</span> is where the maximum is attained, not what the function tends to. A second error is to differentiate <span class=\"mm\">x<sup>1/x</sup></span> with the power rule, which is valid only for a constant exponent.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q08",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "How many stationary points does <span class=\"mm\">f(x, y) = x² − 2xy + y² + 2x</span> have?",
+   "text": "How many stationary points does <span class=\"mm\">f(x, y) = x² − 2xy + y² + 2x</span> have?",
+   "options": [
+    "Exactly one",
+    "Exactly two",
+    "None",
+    "Infinitely many"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Stationary points solve the two first-order equations simultaneously. A pair of linear equations can be inconsistent, in which case the function has no stationary point at all — even when it looks like a harmless quadratic.",
+    "steps": [
+     "<span class=\"mm\">f<sub>x</sub> = 2x − 2y + 2</span> and <span class=\"mm\">f<sub>y</sub> = −2x + 2y</span>.",
+     "<span class=\"mm\">f<sub>x</sub> = 0</span> gives <span class=\"mm\">y = x + 1</span>; <span class=\"mm\">f<sub>y</sub> = 0</span> gives <span class=\"mm\">y = x</span>.",
+     "The two requirements contradict each other, so the system has no solution and the function has no stationary point.",
+     "Completing the square shows why: <span class=\"mm\">f = (x − y)² + 2x</span>, which tends to <span class=\"mm\">−∞</span> along the line <span class=\"mm\">y = x</span> as <span class=\"mm\">x → −∞</span>. A function unbounded below along a line needs no interior critical point."
+    ],
+    "final": "None — option (C).",
+    "trap": "Assuming that a quadratic in two variables must have a stationary point and answering \"exactly one\". \"Infinitely many\" tempts anyone who solves a single equation, or who sees the perfect square <span class=\"mm\">(x − y)²</span> and concludes that the flat direction gives a whole line of critical points — the extra term <span class=\"mm\">2x</span> destroys that."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Stationary points solve the two first-order equations simultaneously. A pair of linear equations can be inconsistent, in which case the function has no stationary point at all — even when it looks like a harmless quadratic.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">f<sub>x</sub> = 2x − 2y + 2</span> and <span class=\"mm\">f<sub>y</sub> = −2x + 2y</span>.</li><li><span class=\"mm\">f<sub>x</sub> = 0</span> gives <span class=\"mm\">y = x + 1</span>; <span class=\"mm\">f<sub>y</sub> = 0</span> gives <span class=\"mm\">y = x</span>.</li><li>The two requirements contradict each other, so the system has no solution and the function has no stationary point.</li><li>Completing the square shows why: <span class=\"mm\">f = (x − y)² + 2x</span>, which tends to <span class=\"mm\">−∞</span> along the line <span class=\"mm\">y = x</span> as <span class=\"mm\">x → −∞</span>. A function unbounded below along a line needs no interior critical point.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: None — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that a quadratic in two variables must have a stationary point and answering \"exactly one\". \"Infinitely many\" tempts anyone who solves a single equation, or who sees the perfect square <span class=\"mm\">(x − y)²</span> and concludes that the flat direction gives a whole line of critical points — the extra term <span class=\"mm\">2x</span> destroys that.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q09",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">f(x, y) = x³ + y³ − 3x − 3y</span>, the number of stationary points that are saddle points is ______.",
+   "text": "For <span class=\"mm\">f(x, y) = x³ + y³ − 3x − 3y</span>, the number of stationary points that are saddle points is ______.",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "For a twice differentiable function of two variables the second-derivative test uses <span class=\"mm\">D = f<sub>xx</sub>f<sub>yy</sub> − (f<sub>xy</sub>)²</span>: <span class=\"mm\">D &lt; 0</span> gives a saddle point, while <span class=\"mm\">D &gt; 0</span> gives a local extremum whose type is fixed by the sign of <span class=\"mm\">f<sub>xx</sub></span>.",
+    "steps": [
+     "<span class=\"mm\">f<sub>x</sub> = 3x² − 3 = 0</span> gives <span class=\"mm\">x = ±1</span>; <span class=\"mm\">f<sub>y</sub> = 3y² − 3 = 0</span> gives <span class=\"mm\">y = ±1</span>.",
+     "The four stationary points are <span class=\"mm\">(1, 1)</span>, <span class=\"mm\">(1, −1)</span>, <span class=\"mm\">(−1, 1)</span> and <span class=\"mm\">(−1, −1)</span>.",
+     "<span class=\"mm\">f<sub>xx</sub> = 6x</span>, <span class=\"mm\">f<sub>yy</sub> = 6y</span>, <span class=\"mm\">f<sub>xy</sub> = 0</span>, so <span class=\"mm\">D = 36xy</span>.",
+     "At <span class=\"mm\">(1, 1)</span>: <span class=\"mm\">D = 36 &gt; 0</span> and <span class=\"mm\">f<sub>xx</sub> = 6 &gt; 0</span>, a local minimum. At <span class=\"mm\">(−1, −1)</span>: <span class=\"mm\">D = 36 &gt; 0</span> and <span class=\"mm\">f<sub>xx</sub> = −6 &lt; 0</span>, a local maximum.",
+     "At <span class=\"mm\">(1, −1)</span> and <span class=\"mm\">(−1, 1)</span>: <span class=\"mm\">D = −36 &lt; 0</span>, so both are saddle points."
+    ],
+    "final": "2 (exact integer).",
+    "trap": "Counting all four stationary points as extrema because each satisfies both first-order conditions — stationarity is not extremality. Another slip is to look only at the sign of <span class=\"mm\">f<sub>xx</sub></span>, which calls all four points extrema and returns 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a twice differentiable function of two variables the second-derivative test uses <span class=\"mm\">D = f<sub>xx</sub>f<sub>yy</sub> − (f<sub>xy</sub>)²</span>: <span class=\"mm\">D &lt; 0</span> gives a saddle point, while <span class=\"mm\">D &gt; 0</span> gives a local extremum whose type is fixed by the sign of <span class=\"mm\">f<sub>xx</sub></span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">f<sub>x</sub> = 3x² − 3 = 0</span> gives <span class=\"mm\">x = ±1</span>; <span class=\"mm\">f<sub>y</sub> = 3y² − 3 = 0</span> gives <span class=\"mm\">y = ±1</span>.</li><li>The four stationary points are <span class=\"mm\">(1, 1)</span>, <span class=\"mm\">(1, −1)</span>, <span class=\"mm\">(−1, 1)</span> and <span class=\"mm\">(−1, −1)</span>.</li><li><span class=\"mm\">f<sub>xx</sub> = 6x</span>, <span class=\"mm\">f<sub>yy</sub> = 6y</span>, <span class=\"mm\">f<sub>xy</sub> = 0</span>, so <span class=\"mm\">D = 36xy</span>.</li><li>At <span class=\"mm\">(1, 1)</span>: <span class=\"mm\">D = 36 &gt; 0</span> and <span class=\"mm\">f<sub>xx</sub> = 6 &gt; 0</span>, a local minimum. At <span class=\"mm\">(−1, −1)</span>: <span class=\"mm\">D = 36 &gt; 0</span> and <span class=\"mm\">f<sub>xx</sub> = −6 &lt; 0</span>, a local maximum.</li><li>At <span class=\"mm\">(1, −1)</span> and <span class=\"mm\">(−1, 1)</span>: <span class=\"mm\">D = −36 &lt; 0</span>, so both are saddle points.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 (exact integer).</span></p><p class=\"row\"><b>Common misconception.</b> Counting all four stationary points as extrema because each satisfies both first-order conditions — stationarity is not extremality. Another slip is to look only at the sign of <span class=\"mm\">f<sub>xx</sub></span>, which calls all four points extrema and returns 0.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q10",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The maximum value of <span class=\"mm\">x²y</span> subject to the constraint <span class=\"mm\">x² + y² = 3</span> is",
+   "text": "The maximum value of <span class=\"mm\">x²y</span> subject to the constraint <span class=\"mm\">x² + y² = 3</span> is",
+   "options": [
+    "9/4",
+    "2",
+    "3",
+    "3/2"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Constrained optimisation by Lagrange multipliers: at an extremum of <span class=\"mm\">f</span> on the level curve <span class=\"mm\">g = 3</span> the two gradients are parallel. The multiplier equations have several branches, and every branch must be evaluated before the maximum is declared.",
+    "steps": [
+     "<span class=\"mm\">∇f = (2xy, x²)</span> and <span class=\"mm\">∇g = (2x, 2y)</span>, so the Lagrange equations are <span class=\"mm\">2xy = 2λx</span> and <span class=\"mm\">x² = 2λy</span>.",
+     "If <span class=\"mm\">x ≠ 0</span>, the first equation gives <span class=\"mm\">λ = y</span>, and the second then gives <span class=\"mm\">x² = 2y²</span>.",
+     "Substituting into <span class=\"mm\">x² + y² = 3</span>: <span class=\"mm\">3y² = 3</span>, so <span class=\"mm\">y = ±1</span> and <span class=\"mm\">x² = 2</span>.",
+     "The objective takes the value <span class=\"mm\">x²y = 2 · 1 = 2</span> at <span class=\"mm\">y = 1</span> and <span class=\"mm\">−2</span> at <span class=\"mm\">y = −1</span>.",
+     "If <span class=\"mm\">x = 0</span> then <span class=\"mm\">y² = 3</span> and <span class=\"mm\">x²y = 0</span>, which is neither the largest nor the smallest value. The maximum is therefore 2."
+    ],
+    "final": "2 — option (B).",
+    "trap": "<span class=\"mm\">9/4</span> is the maximum of <span class=\"mm\">x²y²</span> and <span class=\"mm\">3/2</span> is its square root; both come from squaring the objective, which silently discards the sign of <span class=\"mm\">y</span>. The value 3 comes from ignoring the constraint altogether."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Constrained optimisation by Lagrange multipliers: at an extremum of <span class=\"mm\">f</span> on the level curve <span class=\"mm\">g = 3</span> the two gradients are parallel. The multiplier equations have several branches, and every branch must be evaluated before the maximum is declared.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">∇f = (2xy, x²)</span> and <span class=\"mm\">∇g = (2x, 2y)</span>, so the Lagrange equations are <span class=\"mm\">2xy = 2λx</span> and <span class=\"mm\">x² = 2λy</span>.</li><li>If <span class=\"mm\">x ≠ 0</span>, the first equation gives <span class=\"mm\">λ = y</span>, and the second then gives <span class=\"mm\">x² = 2y²</span>.</li><li>Substituting into <span class=\"mm\">x² + y² = 3</span>: <span class=\"mm\">3y² = 3</span>, so <span class=\"mm\">y = ±1</span> and <span class=\"mm\">x² = 2</span>.</li><li>The objective takes the value <span class=\"mm\">x²y = 2 · 1 = 2</span> at <span class=\"mm\">y = 1</span> and <span class=\"mm\">−2</span> at <span class=\"mm\">y = −1</span>.</li><li>If <span class=\"mm\">x = 0</span> then <span class=\"mm\">y² = 3</span> and <span class=\"mm\">x²y = 0</span>, which is neither the largest nor the smallest value. The maximum is therefore 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> <span class=\"mm\">9/4</span> is the maximum of <span class=\"mm\">x²y²</span> and <span class=\"mm\">3/2</span> is its square root; both come from squaring the objective, which silently discards the sign of <span class=\"mm\">y</span>. The value 3 comes from ignoring the constraint altogether.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q11",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "If <span class=\"mm\">f</span> is differentiable and has a local extremum at an interior point <span class=\"mm\">(x₀, y₀)</span>, then <span class=\"mm\">∇f(x₀, y₀) = 0</span>.",
+    "The Lagrange condition <span class=\"mm\">∇f = λ∇g</span> is necessary but not sufficient for a constrained extremum.",
+    "If <span class=\"mm\">∇f(x₀, y₀) = 0</span> and <span class=\"mm\">D = f<sub>xx</sub>f<sub>yy</sub> − (f<sub>xy</sub>)² &gt; 0</span> at that point, then <span class=\"mm\">(x₀, y₀)</span> is a local extremum.",
+    "If <span class=\"mm\">∇f(x₀, y₀) = 0</span> and <span class=\"mm\">D = 0</span> at that point, then <span class=\"mm\">(x₀, y₀)</span> is a saddle point."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Stationarity is necessary for an interior extremum but not sufficient. The second-order behaviour, read from the Hessian through <span class=\"mm\">D</span>, decides the type of a stationary point, and the degenerate case <span class=\"mm\">D = 0</span> decides nothing at all.",
+    "steps": [
+     "(A) TRUE — this is Fermat's theorem in two variables: at an interior extremum every first partial derivative vanishes.",
+     "(B) TRUE — <span class=\"mm\">∇f = λ∇g</span> holds at constrained minima and constrained maxima alike, and also at points that are neither, so it cannot by itself certify an extremum.",
+     "(C) TRUE — <span class=\"mm\">D &gt; 0</span> means the Hessian is definite at the point, so the quadratic form is positive definite (local minimum) or negative definite (local maximum) near it.",
+     "(D) FALSE — <span class=\"mm\">D = 0</span> is the inconclusive case. For <span class=\"mm\">f = x⁴ + y⁴</span> the origin has <span class=\"mm\">D = 0</span> and is a strict minimum; for <span class=\"mm\">f = x³ + y³</span> it has <span class=\"mm\">D = 0</span> and is neither a maximum nor a minimum."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Treating <span class=\"mm\">D = 0</span> as a saddle point. The saddle case is <span class=\"mm\">D &lt; 0</span>, where the quadratic form is indefinite; when <span class=\"mm\">D = 0</span> the second-order information is simply insufficient and higher-order terms have to be examined."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Stationarity is necessary for an interior extremum but not sufficient. The second-order behaviour, read from the Hessian through <span class=\"mm\">D</span>, decides the type of a stationary point, and the degenerate case <span class=\"mm\">D = 0</span> decides nothing at all.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — this is Fermat's theorem in two variables: at an interior extremum every first partial derivative vanishes.</li><li>(B) TRUE — <span class=\"mm\">∇f = λ∇g</span> holds at constrained minima and constrained maxima alike, and also at points that are neither, so it cannot by itself certify an extremum.</li><li>(C) TRUE — <span class=\"mm\">D &gt; 0</span> means the Hessian is definite at the point, so the quadratic form is positive definite (local minimum) or negative definite (local maximum) near it.</li><li>(D) FALSE — <span class=\"mm\">D = 0</span> is the inconclusive case. For <span class=\"mm\">f = x⁴ + y⁴</span> the origin has <span class=\"mm\">D = 0</span> and is a strict minimum; for <span class=\"mm\">f = x³ + y³</span> it has <span class=\"mm\">D = 0</span> and is neither a maximum nor a minimum.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Treating <span class=\"mm\">D = 0</span> as a saddle point. The saddle case is <span class=\"mm\">D &lt; 0</span>, where the quadratic form is indefinite; when <span class=\"mm\">D = 0</span> the second-order information is simply insufficient and higher-order terms have to be examined.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q12",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The maximum value of <span class=\"mm\">f(x, y) = (x² + y²)e<sup>−(x²+y²)</sup></span> over the whole plane is",
+   "text": "The maximum value of <span class=\"mm\">f(x, y) = (x² + y²)e<sup>−(x²+y²)</sup></span> over the whole plane is",
+   "options": [
+    "1",
+    "1/(2e)",
+    "4/e²",
+    "1/e"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The function depends on <span class=\"mm\">x</span> and <span class=\"mm\">y</span> only through <span class=\"mm\">t = x² + y²</span>, so the two-variable problem collapses to maximising <span class=\"mm\">g(t) = te<sup>−t</sup></span> on <span class=\"mm\">[0, ∞)</span>.",
+    "steps": [
+     "Put <span class=\"mm\">t = x² + y² ≥ 0</span>. Then <span class=\"mm\">f = g(t) = te<sup>−t</sup></span>, and every <span class=\"mm\">t ≥ 0</span> is attained by some point of the plane.",
+     "<span class=\"mm\">g′(t) = e<sup>−t</sup>(1 − t)</span>, which is positive for <span class=\"mm\">t &lt; 1</span> and negative for <span class=\"mm\">t &gt; 1</span>.",
+     "So <span class=\"mm\">g</span> increases up to <span class=\"mm\">t = 1</span> and decreases afterwards, and the maximum is <span class=\"mm\">g(1) = 1/e</span>.",
+     "The maximum is attained on the whole circle <span class=\"mm\">x² + y² = 1</span>, where <span class=\"mm\">f = 1/e ≈ 0.368</span>."
+    ],
+    "final": "1/e — option (D).",
+    "trap": "<span class=\"mm\">4/e²</span> is the maximum of <span class=\"mm\">t²e<sup>−t</sup></span> and <span class=\"mm\">1/(2e)</span> that of <span class=\"mm\">te<sup>−2t</sup></span>; both come from mis-copying the exponent. The value 1 is not attained here at all, since <span class=\"mm\">g(0) = 0</span>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The function depends on <span class=\"mm\">x</span> and <span class=\"mm\">y</span> only through <span class=\"mm\">t = x² + y²</span>, so the two-variable problem collapses to maximising <span class=\"mm\">g(t) = te<sup>−t</sup></span> on <span class=\"mm\">[0, ∞)</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Put <span class=\"mm\">t = x² + y² ≥ 0</span>. Then <span class=\"mm\">f = g(t) = te<sup>−t</sup></span>, and every <span class=\"mm\">t ≥ 0</span> is attained by some point of the plane.</li><li><span class=\"mm\">g′(t) = e<sup>−t</sup>(1 − t)</span>, which is positive for <span class=\"mm\">t &lt; 1</span> and negative for <span class=\"mm\">t &gt; 1</span>.</li><li>So <span class=\"mm\">g</span> increases up to <span class=\"mm\">t = 1</span> and decreases afterwards, and the maximum is <span class=\"mm\">g(1) = 1/e</span>.</li><li>The maximum is attained on the whole circle <span class=\"mm\">x² + y² = 1</span>, where <span class=\"mm\">f = 1/e ≈ 0.368</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1/e — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> <span class=\"mm\">4/e²</span> is the maximum of <span class=\"mm\">t²e<sup>−t</sup></span> and <span class=\"mm\">1/(2e)</span> that of <span class=\"mm\">te<sup>−2t</sup></span>; both come from mis-copying the exponent. The value 1 is not attained here at all, since <span class=\"mm\">g(0) = 0</span>.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q13",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "multivariable-extrema-saddle-points",
+   "subtopic": "multivariable-extrema-saddle-points",
+   "subtopic_label": "Multivariable extrema & saddle points",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The minimum distance from the origin to a point of the surface <span class=\"mm\">xyz = 8</span> with <span class=\"mm\">x, y, z &gt; 0</span> is",
+   "text": "The minimum distance from the origin to a point of the surface <span class=\"mm\">xyz = 8</span> with <span class=\"mm\">x, y, z &gt; 0</span> is",
+   "options": [
+    "2",
+    "4",
+    "2√3",
+    "8"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Minimising a distance means minimising its square, which removes the square root. With the symmetric constraint <span class=\"mm\">xyz = 8</span> the Lagrange equations are symmetric, and either Lagrange multipliers or AM–GM identifies the closest point.",
+    "steps": [
+     "Minimise <span class=\"mm\">x² + y² + z²</span> subject to <span class=\"mm\">xyz = 8</span>, then take the square root.",
+     "Lagrange: <span class=\"mm\">2x = λyz</span>, <span class=\"mm\">2y = λxz</span>, <span class=\"mm\">2z = λxy</span>.",
+     "Multiplying the first equation by <span class=\"mm\">x</span> gives <span class=\"mm\">2x² = λxyz = 8λ</span>, and similarly <span class=\"mm\">2y² = 2z² = 8λ</span>. Hence <span class=\"mm\">x² = y² = z²</span>, and positivity forces <span class=\"mm\">x = y = z</span>.",
+     "Then <span class=\"mm\">x³ = 8</span>, so <span class=\"mm\">x = y = z = 2</span> and <span class=\"mm\">x² + y² + z² = 12</span>.",
+     "The distance is <span class=\"mm\">√12 = 2√3 ≈ 3.46</span>. AM–GM confirms it: <span class=\"mm\">x² + y² + z² ≥ 3(x²y²z²)<sup>1/3</sup> = 3 · 4 = 12</span>, with equality at <span class=\"mm\">x = y = z</span>."
+    ],
+    "final": "2√3 — option (C).",
+    "trap": "Answering 12, the minimum of the squared distance, instead of its square root; or minimising <span class=\"mm\">x + y + z</span>, whose minimum is 6. The value 8 in the options is the constraint itself, not a distance."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Minimising a distance means minimising its square, which removes the square root. With the symmetric constraint <span class=\"mm\">xyz = 8</span> the Lagrange equations are symmetric, and either Lagrange multipliers or AM–GM identifies the closest point.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Minimise <span class=\"mm\">x² + y² + z²</span> subject to <span class=\"mm\">xyz = 8</span>, then take the square root.</li><li>Lagrange: <span class=\"mm\">2x = λyz</span>, <span class=\"mm\">2y = λxz</span>, <span class=\"mm\">2z = λxy</span>.</li><li>Multiplying the first equation by <span class=\"mm\">x</span> gives <span class=\"mm\">2x² = λxyz = 8λ</span>, and similarly <span class=\"mm\">2y² = 2z² = 8λ</span>. Hence <span class=\"mm\">x² = y² = z²</span>, and positivity forces <span class=\"mm\">x = y = z</span>.</li><li>Then <span class=\"mm\">x³ = 8</span>, so <span class=\"mm\">x = y = z = 2</span> and <span class=\"mm\">x² + y² + z² = 12</span>.</li><li>The distance is <span class=\"mm\">√12 = 2√3 ≈ 3.46</span>. AM–GM confirms it: <span class=\"mm\">x² + y² + z² ≥ 3(x²y²z²)<sup>1/3</sup> = 3 · 4 = 12</span>, with equality at <span class=\"mm\">x = y = z</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2√3 — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 12, the minimum of the squared distance, instead of its square root; or minimising <span class=\"mm\">x + y + z</span>, whose minimum is 6. The value 8 in the options is the constraint itself, not a distance.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q14",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The value of <span class=\"mm\">∫₁<sup>e</sup> ln x dx</span> is",
+   "text": "The value of <span class=\"mm\">∫₁<sup>e</sup> ln x dx</span> is",
+   "options": [
+    "e − 1",
+    "e",
+    "0",
+    "1"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Integration by parts with the logarithm as the part to be differentiated: <span class=\"mm\">∫ ln x dx = x ln x − x</span>. The definite integral is then evaluated at the two limits.",
+    "steps": [
+     "Take <span class=\"mm\">u = ln x</span> and <span class=\"mm\">dv = dx</span>, so <span class=\"mm\">du = dx/x</span> and <span class=\"mm\">v = x</span>.",
+     "<span class=\"mm\">∫ ln x dx = x ln x − ∫ x · (1/x) dx = x ln x − x</span>.",
+     "At the upper limit <span class=\"mm\">x = e</span>: <span class=\"mm\">e · 1 − e = 0</span>.",
+     "At the lower limit <span class=\"mm\">x = 1</span>: <span class=\"mm\">1 · 0 − 1 = −1</span>.",
+     "The value is <span class=\"mm\">0 − (−1) = 1</span>."
+    ],
+    "final": "1 — option (D).",
+    "trap": "Forgetting the <span class=\"mm\">−x</span> term leaves <span class=\"mm\">x ln x</span> from 1 to <span class=\"mm\">e</span>, which is <span class=\"mm\">e</span> — the distractor. Reporting <span class=\"mm\">e − 1</span> comes from integrating the constant 1 instead of <span class=\"mm\">ln x</span>, and 0 from cancelling the two limits without evaluating them."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Integration by parts with the logarithm as the part to be differentiated: <span class=\"mm\">∫ ln x dx = x ln x − x</span>. The definite integral is then evaluated at the two limits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Take <span class=\"mm\">u = ln x</span> and <span class=\"mm\">dv = dx</span>, so <span class=\"mm\">du = dx/x</span> and <span class=\"mm\">v = x</span>.</li><li><span class=\"mm\">∫ ln x dx = x ln x − ∫ x · (1/x) dx = x ln x − x</span>.</li><li>At the upper limit <span class=\"mm\">x = e</span>: <span class=\"mm\">e · 1 − e = 0</span>.</li><li>At the lower limit <span class=\"mm\">x = 1</span>: <span class=\"mm\">1 · 0 − 1 = −1</span>.</li><li>The value is <span class=\"mm\">0 − (−1) = 1</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1 — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting the <span class=\"mm\">−x</span> term leaves <span class=\"mm\">x ln x</span> from 1 to <span class=\"mm\">e</span>, which is <span class=\"mm\">e</span> — the distractor. Reporting <span class=\"mm\">e − 1</span> comes from integrating the constant 1 instead of <span class=\"mm\">ln x</span>, and 0 from cancelling the two limits without evaluating them.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q15",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The value of <span class=\"mm\">∫₀<sup>π/2</sup> cos²x dx</span> is",
+   "text": "The value of <span class=\"mm\">∫₀<sup>π/2</sup> cos²x dx</span> is",
+   "options": [
+    "π/4",
+    "π/2",
+    "1",
+    "2"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A definite integral of an even power of a trigonometric function is handled with the double-angle identity, which turns <span class=\"mm\">cos²x</span> into a constant plus a term that integrates to zero over a whole number of half-periods.",
+    "steps": [
+     "Use <span class=\"mm\">cos²x = (1 + cos 2x)/2</span>.",
+     "<span class=\"mm\">∫₀<sup>π/2</sup> cos²x dx = ½∫₀<sup>π/2</sup> dx + ½∫₀<sup>π/2</sup> cos 2x dx</span>.",
+     "The first piece is <span class=\"mm\">½ · π/2 = π/4</span>.",
+     "The second piece is <span class=\"mm\">½ · [sin 2x / 2]₀<sup>π/2</sup> = ½ · (0 − 0) = 0</span>.",
+     "The value is <span class=\"mm\">π/4 ≈ 0.785</span>."
+    ],
+    "final": "π/4 — option (A).",
+    "trap": "<span class=\"mm\">π/2</span> comes from forgetting the factor ½ in the identity, and 1 from integrating <span class=\"mm\">cos x</span> instead of <span class=\"mm\">cos²x</span>. A useful check: over <span class=\"mm\">[0, π/2]</span>, <span class=\"mm\">cos²x</span> averages to ½, so the integral must be half the length of the interval."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A definite integral of an even power of a trigonometric function is handled with the double-angle identity, which turns <span class=\"mm\">cos²x</span> into a constant plus a term that integrates to zero over a whole number of half-periods.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Use <span class=\"mm\">cos²x = (1 + cos 2x)/2</span>.</li><li><span class=\"mm\">∫₀<sup>π/2</sup> cos²x dx = ½∫₀<sup>π/2</sup> dx + ½∫₀<sup>π/2</sup> cos 2x dx</span>.</li><li>The first piece is <span class=\"mm\">½ · π/2 = π/4</span>.</li><li>The second piece is <span class=\"mm\">½ · [sin 2x / 2]₀<sup>π/2</sup> = ½ · (0 − 0) = 0</span>.</li><li>The value is <span class=\"mm\">π/4 ≈ 0.785</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: π/4 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <span class=\"mm\">π/2</span> comes from forgetting the factor ½ in the identity, and 1 from integrating <span class=\"mm\">cos x</span> instead of <span class=\"mm\">cos²x</span>. A useful check: over <span class=\"mm\">[0, π/2]</span>, <span class=\"mm\">cos²x</span> averages to ½, so the integral must be half the length of the interval.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q16",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The value of <span class=\"mm\">∫₁<sup>9</sup> dx/√x</span> is ______.",
+   "text": "The value of <span class=\"mm\">∫₁<sup>9</sup> dx/√x</span> is ______.",
+   "options": [],
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "A power of <span class=\"mm\">x</span> integrates by raising the exponent by one and dividing by the new exponent: <span class=\"mm\">∫x<sup>n</sup>dx = x<sup>n+1</sup>/(n+1)</span>, which for <span class=\"mm\">n = −½</span> gives <span class=\"mm\">2√x</span>.",
+    "steps": [
+     "Write the integrand as <span class=\"mm\">x<sup>−1/2</sup></span>.",
+     "The antiderivative is <span class=\"mm\">x<sup>1/2</sup>/(½) = 2√x</span>.",
+     "Evaluate: <span class=\"mm\">2√9 − 2√1 = 6 − 2 = 4</span>."
+    ],
+    "final": "4 (exact integer).",
+    "trap": "Dropping the factor 2 and answering <span class=\"mm\">3 − 1 = 2</span>, the classic error of integrating <span class=\"mm\">x<sup>−1/2</sup></span> as <span class=\"mm\">√x</span>. The rule adds one to the exponent and divides by the new exponent; here the new exponent is ½, so the division doubles the result."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A power of <span class=\"mm\">x</span> integrates by raising the exponent by one and dividing by the new exponent: <span class=\"mm\">∫x<sup>n</sup>dx = x<sup>n+1</sup>/(n+1)</span>, which for <span class=\"mm\">n = −½</span> gives <span class=\"mm\">2√x</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the integrand as <span class=\"mm\">x<sup>−1/2</sup></span>.</li><li>The antiderivative is <span class=\"mm\">x<sup>1/2</sup>/(½) = 2√x</span>.</li><li>Evaluate: <span class=\"mm\">2√9 − 2√1 = 6 − 2 = 4</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 (exact integer).</span></p><p class=\"row\"><b>Common misconception.</b> Dropping the factor 2 and answering <span class=\"mm\">3 − 1 = 2</span>, the classic error of integrating <span class=\"mm\">x<sup>−1/2</sup></span> as <span class=\"mm\">√x</span>. The rule adds one to the exponent and divides by the new exponent; here the new exponent is ½, so the division doubles the result.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q17",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The value of <span class=\"mm\">lim<sub>n→∞</sub> (1/n)(√(1/n) + √(2/n) + … + √(n/n))</span> is",
+   "text": "The value of <span class=\"mm\">lim<sub>n→∞</sub> (1/n)(√(1/n) + √(2/n) + … + √(n/n))</span> is",
+   "options": [
+    "1/2",
+    "3/4",
+    "2/3",
+    "1"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A limit of a sum of the form <span class=\"mm\">(1/n)Σ f(k/n)</span> is a right-endpoint Riemann sum for <span class=\"mm\">∫₀¹ f(x) dx</span>, so the sum converges to that integral.",
+    "steps": [
+     "Write the sum as <span class=\"mm\">(1/n) Σ<sub>k=1</sub><sup>n</sup> √(k/n)</span>, a Riemann sum with <span class=\"mm\">Δx = 1/n</span> and <span class=\"mm\">x<sub>k</sub> = k/n</span>.",
+     "The limit is therefore <span class=\"mm\">∫₀¹ √x dx</span>.",
+     "<span class=\"mm\">∫₀¹ x<sup>1/2</sup> dx = [2/3 x<sup>3/2</sup>]₀¹ = 2/3</span>.",
+     "Numerical check at <span class=\"mm\">n = 4</span>: <span class=\"mm\">(1/4)(0.5 + 0.7071 + 0.8660 + 1) ≈ 0.768</span>, which lies above <span class=\"mm\">2/3 ≈ 0.667</span> and falls towards it."
+    ],
+    "final": "2/3 — option (C).",
+    "trap": "<span class=\"mm\">1/2</span> comes from reading the summand as <span class=\"mm\">k/n</span> and integrating <span class=\"mm\">x</span>; <span class=\"mm\">3/4</span> from integrating <span class=\"mm\">x<sup>3/2</sup></span>; and 1 from treating the sum as <span class=\"mm\">n</span> terms of size <span class=\"mm\">1/n</span> with summand 1. The square root has to survive into the integral."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A limit of a sum of the form <span class=\"mm\">(1/n)Σ f(k/n)</span> is a right-endpoint Riemann sum for <span class=\"mm\">∫₀¹ f(x) dx</span>, so the sum converges to that integral.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the sum as <span class=\"mm\">(1/n) Σ<sub>k=1</sub><sup>n</sup> √(k/n)</span>, a Riemann sum with <span class=\"mm\">Δx = 1/n</span> and <span class=\"mm\">x<sub>k</sub> = k/n</span>.</li><li>The limit is therefore <span class=\"mm\">∫₀¹ √x dx</span>.</li><li><span class=\"mm\">∫₀¹ x<sup>1/2</sup> dx = [2/3 x<sup>3/2</sup>]₀¹ = 2/3</span>.</li><li>Numerical check at <span class=\"mm\">n = 4</span>: <span class=\"mm\">(1/4)(0.5 + 0.7071 + 0.8660 + 1) ≈ 0.768</span>, which lies above <span class=\"mm\">2/3 ≈ 0.667</span> and falls towards it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2/3 — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> <span class=\"mm\">1/2</span> comes from reading the summand as <span class=\"mm\">k/n</span> and integrating <span class=\"mm\">x</span>; <span class=\"mm\">3/4</span> from integrating <span class=\"mm\">x<sup>3/2</sup></span>; and 1 from treating the sum as <span class=\"mm\">n</span> terms of size <span class=\"mm\">1/n</span> with summand 1. The square root has to survive into the integral.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q18",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "If <span class=\"mm\">f</span> is continuous and odd on <span class=\"mm\">[−a, a]</span>, then <span class=\"mm\">∫<sub>−a</sub><sup>a</sup> f(x) dx = 0</span>.",
+    "<span class=\"mm\">∫<sub>a</sub><sup>b</sup> f(x)g(x) dx = (∫<sub>a</sub><sup>b</sup> f(x) dx)(∫<sub>a</sub><sup>b</sup> g(x) dx)</span>.",
+    "If <span class=\"mm\">f</span> is continuous with <span class=\"mm\">f ≥ 0</span> on <span class=\"mm\">[a, b]</span> and <span class=\"mm\">∫<sub>a</sub><sup>b</sup> f = 0</span>, then <span class=\"mm\">f</span> is identically zero on <span class=\"mm\">[a, b]</span>.",
+    "The additivity rule <span class=\"mm\">∫<sub>a</sub><sup>b</sup> f = ∫<sub>a</sub><sup>c</sup> f + ∫<sub>c</sub><sup>b</sup> f</span> holds only when <span class=\"mm\">f</span> is continuous on <span class=\"mm\">[a, b]</span>."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "The integral is linear and order-preserving, but it is not multiplicative, and additivity does not require continuity. Each option tests one of those distinctions.",
+    "steps": [
+     "(A) TRUE — substitute <span class=\"mm\">x = −t</span> in <span class=\"mm\">∫<sub>−a</sub>⁰ f</span> to get <span class=\"mm\">−∫₀<sup>a</sup> f</span>, which cancels the other half exactly.",
+     "(B) FALSE — take <span class=\"mm\">f = g = x</span> on <span class=\"mm\">[0, 1]</span>: the left side is <span class=\"mm\">∫₀¹ x² = 1/3</span> while the right side is <span class=\"mm\">(1/2)(1/2) = 1/4</span>.",
+     "(C) TRUE — if <span class=\"mm\">f(x₀) &gt; 0</span> at some point of <span class=\"mm\">[a, b]</span>, continuity keeps <span class=\"mm\">f &gt; f(x₀)/2</span> on a small interval, and the integral is at least the area of that rectangle, which is positive.",
+     "(D) FALSE — additivity holds whenever all three integrals exist, for instance for piecewise continuous functions; continuity is sufficient but not necessary."
+    ],
+    "final": "Options (A) and (C).",
+    "trap": "Option (B) transplants the product rule to integrals, which is simply false. Option (D) overstates a hypothesis. A related trap is to think that <span class=\"mm\">∫f = 0</span> with <span class=\"mm\">f ≥ 0</span> allows <span class=\"mm\">f</span> to be positive at isolated points — for a continuous function it does not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The integral is linear and order-preserving, but it is not multiplicative, and additivity does not require continuity. Each option tests one of those distinctions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) TRUE — substitute <span class=\"mm\">x = −t</span> in <span class=\"mm\">∫<sub>−a</sub>⁰ f</span> to get <span class=\"mm\">−∫₀<sup>a</sup> f</span>, which cancels the other half exactly.</li><li>(B) FALSE — take <span class=\"mm\">f = g = x</span> on <span class=\"mm\">[0, 1]</span>: the left side is <span class=\"mm\">∫₀¹ x² = 1/3</span> while the right side is <span class=\"mm\">(1/2)(1/2) = 1/4</span>.</li><li>(C) TRUE — if <span class=\"mm\">f(x₀) &gt; 0</span> at some point of <span class=\"mm\">[a, b]</span>, continuity keeps <span class=\"mm\">f &gt; f(x₀)/2</span> on a small interval, and the integral is at least the area of that rectangle, which is positive.</li><li>(D) FALSE — additivity holds whenever all three integrals exist, for instance for piecewise continuous functions; continuity is sufficient but not necessary.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Option (B) transplants the product rule to integrals, which is simply false. Option (D) overstates a hypothesis. A related trap is to think that <span class=\"mm\">∫f = 0</span> with <span class=\"mm\">f ≥ 0</span> allows <span class=\"mm\">f</span> to be positive at isolated points — for a continuous function it does not.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q19",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The improper integral <span class=\"mm\">∫₀¹ ln x dx</span> is such that",
+   "text": "The improper integral <span class=\"mm\">∫₀¹ ln x dx</span> is such that",
+   "options": [
+    "it equals 1",
+    "it equals −1",
+    "it equals 0",
+    "it diverges to −∞"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "An improper integral with a singularity at an endpoint is defined as a limit of proper integrals. A logarithm that tends to <span class=\"mm\">−∞</span> can still be integrable, because <span class=\"mm\">∫ ln x dx = x ln x − x</span> and <span class=\"mm\">ε ln ε → 0</span>.",
+    "steps": [
+     "The integrand is unbounded at 0, so by definition <span class=\"mm\">∫₀¹ ln x dx = lim<sub>ε→0⁺</sub> ∫<sub>ε</sub>¹ ln x dx</span>.",
+     "The antiderivative is <span class=\"mm\">x ln x − x</span>.",
+     "At the upper limit: <span class=\"mm\">1 · 0 − 1 = −1</span>.",
+     "At the lower limit: <span class=\"mm\">ε ln ε − ε → 0 − 0 = 0</span>, since <span class=\"mm\">ε ln ε → 0</span> as <span class=\"mm\">ε → 0⁺</span>.",
+     "The limit exists and equals <span class=\"mm\">−1 − 0 = −1</span>, so the integral converges."
+    ],
+    "final": "it equals −1 — option (B).",
+    "trap": "Concluding \"diverges to −∞\" because the integrand does: an unbounded integrand may still have a finite integral. The decisive step is <span class=\"mm\">ε ln ε → 0</span>, the same limit that makes <span class=\"mm\">∫₀¹ x ln x dx</span> converge."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An improper integral with a singularity at an endpoint is defined as a limit of proper integrals. A logarithm that tends to <span class=\"mm\">−∞</span> can still be integrable, because <span class=\"mm\">∫ ln x dx = x ln x − x</span> and <span class=\"mm\">ε ln ε → 0</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The integrand is unbounded at 0, so by definition <span class=\"mm\">∫₀¹ ln x dx = lim<sub>ε→0⁺</sub> ∫<sub>ε</sub>¹ ln x dx</span>.</li><li>The antiderivative is <span class=\"mm\">x ln x − x</span>.</li><li>At the upper limit: <span class=\"mm\">1 · 0 − 1 = −1</span>.</li><li>At the lower limit: <span class=\"mm\">ε ln ε − ε → 0 − 0 = 0</span>, since <span class=\"mm\">ε ln ε → 0</span> as <span class=\"mm\">ε → 0⁺</span>.</li><li>The limit exists and equals <span class=\"mm\">−1 − 0 = −1</span>, so the integral converges.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: it equals −1 — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Concluding \"diverges to −∞\" because the integrand does: an unbounded integrand may still have a finite integral. The decisive step is <span class=\"mm\">ε ln ε → 0</span>, the same limit that makes <span class=\"mm\">∫₀¹ x ln x dx</span> converge.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q20",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "definite-integrals",
+   "subtopic": "definite-integrals",
+   "subtopic_label": "Definite integrals",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "The value of <span class=\"mm\">∫₀¹ x ln x dx</span> is ______.",
+   "text": "The value of <span class=\"mm\">∫₀¹ x ln x dx</span> is ______.",
+   "options": [],
+   "answer": -0.25,
+   "answer_display": "−0.25",
+   "solution": {
+    "concept": "Integration by parts with the logarithm differentiated and the power integrated. The endpoint <span class=\"mm\">x = 0</span> is a limit rather than a substitution, and the term <span class=\"mm\">x² ln x</span> vanishes there.",
+    "steps": [
+     "Take <span class=\"mm\">u = ln x</span> and <span class=\"mm\">dv = x dx</span>, so <span class=\"mm\">du = dx/x</span> and <span class=\"mm\">v = x²/2</span>.",
+     "<span class=\"mm\">∫ x ln x dx = (x²/2) ln x − ∫ (x²/2)(1/x) dx = (x²/2) ln x − x²/4</span>.",
+     "At <span class=\"mm\">x = 1</span>: <span class=\"mm\">0 − 1/4 = −1/4</span>.",
+     "As <span class=\"mm\">x → 0⁺</span>: <span class=\"mm\">x² ln x → 0</span> and <span class=\"mm\">x²/4 → 0</span>, so the lower limit contributes 0.",
+     "The value is <span class=\"mm\">−1/4 = −0.25</span>."
+    ],
+    "final": "−0.25 (exact decimal).",
+    "trap": "Reporting <span class=\"mm\">+0.25</span> by losing the sign of the <span class=\"mm\">−x²/4</span> term, or declaring divergence because <span class=\"mm\">ln x → −∞</span>. The integral is negative because <span class=\"mm\">ln x &lt; 0</span> throughout <span class=\"mm\">(0, 1)</span>, which is a quick sanity check on the sign."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Integration by parts with the logarithm differentiated and the power integrated. The endpoint <span class=\"mm\">x = 0</span> is a limit rather than a substitution, and the term <span class=\"mm\">x² ln x</span> vanishes there.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Take <span class=\"mm\">u = ln x</span> and <span class=\"mm\">dv = x dx</span>, so <span class=\"mm\">du = dx/x</span> and <span class=\"mm\">v = x²/2</span>.</li><li><span class=\"mm\">∫ x ln x dx = (x²/2) ln x − ∫ (x²/2)(1/x) dx = (x²/2) ln x − x²/4</span>.</li><li>At <span class=\"mm\">x = 1</span>: <span class=\"mm\">0 − 1/4 = −1/4</span>.</li><li>As <span class=\"mm\">x → 0⁺</span>: <span class=\"mm\">x² ln x → 0</span> and <span class=\"mm\">x²/4 → 0</span>, so the lower limit contributes 0.</li><li>The value is <span class=\"mm\">−1/4 = −0.25</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: −0.25 (exact decimal).</span></p><p class=\"row\"><b>Common misconception.</b> Reporting <span class=\"mm\">+0.25</span> by losing the sign of the <span class=\"mm\">−x²/4</span> term, or declaring divergence because <span class=\"mm\">ln x → −∞</span>. The integral is negative because <span class=\"mm\">ln x &lt; 0</span> throughout <span class=\"mm\">(0, 1)</span>, which is a quick sanity check on the sign.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q21",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "vector-calculus-basics",
+   "subtopic": "vector-calculus-basics",
+   "subtopic_label": "Vector calculus basics",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">f(x, y) = x² + y²</span>, the largest possible value of the directional derivative of <span class=\"mm\">f</span> at the point <span class=\"mm\">(3, 4)</span> is",
+   "text": "For <span class=\"mm\">f(x, y) = x² + y²</span>, the largest possible value of the directional derivative of <span class=\"mm\">f</span> at the point <span class=\"mm\">(3, 4)</span> is",
+   "options": [
+    "6",
+    "8",
+    "14",
+    "10"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The directional derivative of <span class=\"mm\">f</span> at a point in a unit direction <span class=\"mm\">u</span> is <span class=\"mm\">∇f · u</span>. Over all unit vectors this dot product is largest when <span class=\"mm\">u</span> points along <span class=\"mm\">∇f</span>, and the maximum value is <span class=\"mm\">|∇f|</span>.",
+    "steps": [
+     "<span class=\"mm\">∇f = (2x, 2y)</span>, so <span class=\"mm\">∇f(3, 4) = (6, 8)</span>.",
+     "For a unit vector <span class=\"mm\">u</span>, Cauchy–Schwarz gives <span class=\"mm\">D<sub>u</sub>f = ∇f · u ≤ |∇f||u| = |∇f|</span>.",
+     "<span class=\"mm\">|∇f| = √(36 + 64) = 10</span>, attained in the direction <span class=\"mm\">(3/5, 4/5)</span>."
+    ],
+    "final": "10 — option (D).",
+    "trap": "14 comes from adding the two components instead of taking the norm, and 6 or 8 from quoting a single partial derivative. A further trap is to use the direction vector without normalising it: the directional derivative is defined only for a unit vector."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The directional derivative of <span class=\"mm\">f</span> at a point in a unit direction <span class=\"mm\">u</span> is <span class=\"mm\">∇f · u</span>. Over all unit vectors this dot product is largest when <span class=\"mm\">u</span> points along <span class=\"mm\">∇f</span>, and the maximum value is <span class=\"mm\">|∇f|</span>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">∇f = (2x, 2y)</span>, so <span class=\"mm\">∇f(3, 4) = (6, 8)</span>.</li><li>For a unit vector <span class=\"mm\">u</span>, Cauchy–Schwarz gives <span class=\"mm\">D<sub>u</sub>f = ∇f · u ≤ |∇f||u| = |∇f|</span>.</li><li><span class=\"mm\">|∇f| = √(36 + 64) = 10</span>, attained in the direction <span class=\"mm\">(3/5, 4/5)</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 10 — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> 14 comes from adding the two components instead of taking the norm, and 6 or 8 from quoting a single partial derivative. A further trap is to use the direction vector without normalising it: the directional derivative is defined only for a unit vector.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q22",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "vector-calculus-basics",
+   "subtopic": "vector-calculus-basics",
+   "subtopic_label": "Vector calculus basics",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For <span class=\"mm\">F(x, y, z) = (x²y, y²z, z²x)</span>, the value of <span class=\"mm\">div F</span> at the point <span class=\"mm\">(1, 1, 1)</span> is ______.",
+   "text": "For <span class=\"mm\">F(x, y, z) = (x²y, y²z, z²x)</span>, the value of <span class=\"mm\">div F</span> at the point <span class=\"mm\">(1, 1, 1)</span> is ______.",
+   "options": [],
+   "answer": 6,
+   "answer_display": "6",
+   "solution": {
+    "concept": "The divergence of <span class=\"mm\">F = (F₁, F₂, F₃)</span> is <span class=\"mm\">∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z</span>: each component is differentiated with respect to its own variable, and the three results are added as scalars.",
+    "steps": [
+     "<span class=\"mm\">∂/∂x (x²y) = 2xy</span>.",
+     "<span class=\"mm\">∂/∂y (y²z) = 2yz</span>.",
+     "<span class=\"mm\">∂/∂z (z²x) = 2zx</span>.",
+     "<span class=\"mm\">div F = 2xy + 2yz + 2zx</span>, which at <span class=\"mm\">(1, 1, 1)</span> is <span class=\"mm\">2 + 2 + 2 = 6</span>."
+    ],
+    "final": "6 (exact integer).",
+    "trap": "Differentiating each component with respect to all three variables, which computes a Jacobian or a gradient rather than a divergence, or differentiating <span class=\"mm\">x²y</span> with respect to <span class=\"mm\">y</span> by mistake. Divergence is a scalar: if the working produces a vector, the wrong operator has been applied."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The divergence of <span class=\"mm\">F = (F₁, F₂, F₃)</span> is <span class=\"mm\">∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z</span>: each component is differentiated with respect to its own variable, and the three results are added as scalars.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">∂/∂x (x²y) = 2xy</span>.</li><li><span class=\"mm\">∂/∂y (y²z) = 2yz</span>.</li><li><span class=\"mm\">∂/∂z (z²x) = 2zx</span>.</li><li><span class=\"mm\">div F = 2xy + 2yz + 2zx</span>, which at <span class=\"mm\">(1, 1, 1)</span> is <span class=\"mm\">2 + 2 + 2 = 6</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6 (exact integer).</span></p><p class=\"row\"><b>Common misconception.</b> Differentiating each component with respect to all three variables, which computes a Jacobian or a gradient rather than a divergence, or differentiating <span class=\"mm\">x²y</span> with respect to <span class=\"mm\">y</span> by mistake. Divergence is a scalar: if the working produces a vector, the wrong operator has been applied.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q23",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "vector-calculus-basics",
+   "subtopic": "vector-calculus-basics",
+   "subtopic_label": "Vector calculus basics",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Let <span class=\"mm\">F(x, y, z) = (2xy + z, x², x)</span>. Which one of the following statements is TRUE?",
+   "text": "Let <span class=\"mm\">F(x, y, z) = (2xy + z, x², x)</span>. Which one of the following statements is TRUE?",
+   "options": [
+    "<span class=\"mm\">curl F = (1, 1, 0)</span>, so <span class=\"mm\">F</span> is not conservative.",
+    "<span class=\"mm\">F</span> is conservative, with potential <span class=\"mm\">φ(x, y, z) = x²y + xz</span>.",
+    "<span class=\"mm\">F</span> is not conservative, because <span class=\"mm\">∂F₁/∂x = 2y</span> is not zero.",
+    "<span class=\"mm\">F</span> is solenoidal, because <span class=\"mm\">div F = 0</span> everywhere."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A field on a simply connected region is conservative exactly when its curl vanishes; for <span class=\"mm\">F = (P, Q, R)</span> the curl is <span class=\"mm\">(R<sub>y</sub> − Q<sub>z</sub>, P<sub>z</sub> − R<sub>x</sub>, Q<sub>x</sub> − P<sub>y</sub>)</span>. A potential is then recovered by integrating the components.",
+    "steps": [
+     "Here <span class=\"mm\">P = 2xy + z</span>, <span class=\"mm\">Q = x²</span> and <span class=\"mm\">R = x</span>.",
+     "<span class=\"mm\">curl F = (0 − 0, 1 − 1, 2x − 2x) = (0, 0, 0)</span>.",
+     "<span class=\"mm\">ℝ³</span> is simply connected and <span class=\"mm\">F</span> is continuously differentiable, so a potential exists.",
+     "From <span class=\"mm\">φ<sub>x</sub> = 2xy + z</span> we get <span class=\"mm\">φ = x²y + xz + h(y, z)</span>. Then <span class=\"mm\">φ<sub>y</sub> = x²</span> forces <span class=\"mm\">h<sub>y</sub> = 0</span> and <span class=\"mm\">φ<sub>z</sub> = x</span> forces <span class=\"mm\">h<sub>z</sub> = 0</span>, so <span class=\"mm\">φ = x²y + xz</span> up to an additive constant.",
+     "Check the other claims: <span class=\"mm\">div F = 2y + 0 + 0 = 2y</span>, which is not identically zero, so <span class=\"mm\">F</span> is not solenoidal."
+    ],
+    "final": "F is conservative, with potential φ(x, y, z) = x²y + xz — option (B).",
+    "trap": "Reading a non-zero <span class=\"mm\">∂P/∂x</span> as evidence against conservativeness — the test is the curl, not the individual partial derivatives. Equally, a vanishing curl guarantees a potential only on a simply connected domain; on the punctured plane the classic vortex field has zero curl and no global potential."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A field on a simply connected region is conservative exactly when its curl vanishes; for <span class=\"mm\">F = (P, Q, R)</span> the curl is <span class=\"mm\">(R<sub>y</sub> − Q<sub>z</sub>, P<sub>z</sub> − R<sub>x</sub>, Q<sub>x</sub> − P<sub>y</sub>)</span>. A potential is then recovered by integrating the components.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Here <span class=\"mm\">P = 2xy + z</span>, <span class=\"mm\">Q = x²</span> and <span class=\"mm\">R = x</span>.</li><li><span class=\"mm\">curl F = (0 − 0, 1 − 1, 2x − 2x) = (0, 0, 0)</span>.</li><li><span class=\"mm\">ℝ³</span> is simply connected and <span class=\"mm\">F</span> is continuously differentiable, so a potential exists.</li><li>From <span class=\"mm\">φ<sub>x</sub> = 2xy + z</span> we get <span class=\"mm\">φ = x²y + xz + h(y, z)</span>. Then <span class=\"mm\">φ<sub>y</sub> = x²</span> forces <span class=\"mm\">h<sub>y</sub> = 0</span> and <span class=\"mm\">φ<sub>z</sub> = x</span> forces <span class=\"mm\">h<sub>z</sub> = 0</span>, so <span class=\"mm\">φ = x²y + xz</span> up to an additive constant.</li><li>Check the other claims: <span class=\"mm\">div F = 2y + 0 + 0 = 2y</span>, which is not identically zero, so <span class=\"mm\">F</span> is not solenoidal.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: F is conservative, with potential φ(x, y, z) = x²y + xz — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Reading a non-zero <span class=\"mm\">∂P/∂x</span> as evidence against conservativeness — the test is the curl, not the individual partial derivatives. Equally, a vanishing curl guarantees a potential only on a simply connected domain; on the punctured plane the classic vortex field has zero curl and no global potential.</p>",
+   "marks": 1
+  },
+  {
+   "id": "EM-U4C-Q24",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "vector-calculus-basics",
+   "subtopic": "vector-calculus-basics",
+   "subtopic_label": "Vector calculus basics",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements are TRUE for sufficiently smooth fields? (Select all that apply.)",
+   "text": "Which of the following statements are TRUE for sufficiently smooth fields? (Select all that apply.)",
+   "options": [
+    "<span class=\"mm\">∇ · (∇f) = 0</span> for every twice continuously differentiable scalar field <span class=\"mm\">f</span>.",
+    "<span class=\"mm\">∇ × (∇f) = 0</span> for every twice continuously differentiable scalar field <span class=\"mm\">f</span>.",
+    "<span class=\"mm\">∇ · (∇ × F) = 0</span> for every twice continuously differentiable vector field <span class=\"mm\">F</span>.",
+    "If <span class=\"mm\">curl F = 0</span> throughout a simply connected region, then <span class=\"mm\">F = ∇φ</span> for some scalar field <span class=\"mm\">φ</span> on that region."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "Two second-order identities hold for every sufficiently smooth field — the curl of a gradient and the divergence of a curl both vanish — while the divergence of a gradient is the Laplacian, which is not generally zero. The converse direction, curl-free implying a potential, needs simple connectivity.",
+    "steps": [
+     "(A) FALSE — <span class=\"mm\">∇ · ∇f = ∇²f</span> is the Laplacian. For <span class=\"mm\">f = x² + y²</span> it equals 4, not 0; only harmonic functions satisfy <span class=\"mm\">∇²f = 0</span>.",
+     "(B) TRUE — <span class=\"mm\">∇ × ∇f = 0</span>, because each component is a difference of mixed partials that are equal by Clairaut's theorem.",
+     "(C) TRUE — <span class=\"mm\">∇ · (∇ × F) = 0</span> identically; every term cancels against another mixed partial.",
+     "(D) TRUE — this is the Poincaré lemma: on a simply connected region a curl-free <span class=\"mm\">C¹</span> field is a gradient field."
+    ],
+    "final": "Options (B), (C) and (D).",
+    "trap": "Option (A) is the standard confusion between the two vanishing identities and the Laplacian. A second trap is to state (D) without the simple-connectivity hypothesis: on a domain with a hole a curl-free field can fail to have a potential."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two second-order identities hold for every sufficiently smooth field — the curl of a gradient and the divergence of a curl both vanish — while the divergence of a gradient is the Laplacian, which is not generally zero. The converse direction, curl-free implying a potential, needs simple connectivity.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) FALSE — <span class=\"mm\">∇ · ∇f = ∇²f</span> is the Laplacian. For <span class=\"mm\">f = x² + y²</span> it equals 4, not 0; only harmonic functions satisfy <span class=\"mm\">∇²f = 0</span>.</li><li>(B) TRUE — <span class=\"mm\">∇ × ∇f = 0</span>, because each component is a difference of mixed partials that are equal by Clairaut's theorem.</li><li>(C) TRUE — <span class=\"mm\">∇ · (∇ × F) = 0</span> identically; every term cancels against another mixed partial.</li><li>(D) TRUE — this is the Poincaré lemma: on a simply connected region a curl-free <span class=\"mm\">C¹</span> field is a gradient field.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Option (A) is the standard confusion between the two vanishing identities and the Laplacian. A second trap is to state (D) without the simple-connectivity hypothesis: on a domain with a hole a curl-free field can fail to have a potential.</p>",
+   "marks": 2
+  },
+  {
+   "id": "EM-U4C-Q25",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "calculus-optimization-integrals",
+   "unit_name": "Calculus: Maxima, Minima & Integrals",
+   "topic": "Calculus: Maxima, Minima & Integrals",
+   "sub": "vector-calculus-basics",
+   "subtopic": "vector-calculus-basics",
+   "subtopic_label": "Vector calculus basics",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-02",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which one of the following scalar fields is harmonic, that is, satisfies <span class=\"mm\">∇²f = 0</span> everywhere?",
+   "text": "Which one of the following scalar fields is harmonic, that is, satisfies <span class=\"mm\">∇²f = 0</span> everywhere?",
+   "options": [
+    "f = x² + y²",
+    "f = x³ + y³",
+    "f = x² − y²",
+    "f = x²y²"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A scalar field is harmonic when its Laplacian <span class=\"mm\">∇²f = f<sub>xx</sub> + f<sub>yy</sub></span> vanishes identically. For polynomials this is a direct computation, and harmonicity has nothing to do with having a minimum.",
+    "steps": [
+     "For <span class=\"mm\">f = x² + y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = 2</span>, so <span class=\"mm\">∇²f = 4 ≠ 0</span>.",
+     "For <span class=\"mm\">f = x³ + y³</span>: <span class=\"mm\">f<sub>xx</sub> = 6x</span>, <span class=\"mm\">f<sub>yy</sub> = 6y</span>, so <span class=\"mm\">∇²f = 6(x + y) ≠ 0</span>.",
+     "For <span class=\"mm\">f = x² − y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = −2</span>, so <span class=\"mm\">∇²f = 0</span> — harmonic.",
+     "For <span class=\"mm\">f = x²y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2y²</span>, <span class=\"mm\">f<sub>yy</sub> = 2x²</span>, so <span class=\"mm\">∇²f = 2(x² + y²) ≠ 0</span>."
+    ],
+    "final": "f = x² − y² — option (C).",
+    "trap": "Assuming every quadratic is harmonic, or that a harmonic function must have a minimum. <span class=\"mm\">x² − y²</span> is harmonic and has a saddle point at the origin: a non-constant harmonic function can never have an interior maximum or minimum."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A scalar field is harmonic when its Laplacian <span class=\"mm\">∇²f = f<sub>xx</sub> + f<sub>yy</sub></span> vanishes identically. For polynomials this is a direct computation, and harmonicity has nothing to do with having a minimum.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For <span class=\"mm\">f = x² + y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = 2</span>, so <span class=\"mm\">∇²f = 4 ≠ 0</span>.</li><li>For <span class=\"mm\">f = x³ + y³</span>: <span class=\"mm\">f<sub>xx</sub> = 6x</span>, <span class=\"mm\">f<sub>yy</sub> = 6y</span>, so <span class=\"mm\">∇²f = 6(x + y) ≠ 0</span>.</li><li>For <span class=\"mm\">f = x² − y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = −2</span>, so <span class=\"mm\">∇²f = 0</span> — harmonic.</li><li>For <span class=\"mm\">f = x²y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2y²</span>, <span class=\"mm\">f<sub>yy</sub> = 2x²</span>, so <span class=\"mm\">∇²f = 2(x² + y²) ≠ 0</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: f = x² − y² — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every quadratic is harmonic, or that a harmonic function must have a minimum. <span class=\"mm\">x² − y²</span> is harmonic and has a saddle point at the origin: a non-constant harmonic function can never have an interior maximum or minimum.</p>",
+   "marks": 1
   }
  ]
 }
