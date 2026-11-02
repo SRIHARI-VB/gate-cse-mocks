@@ -7,40 +7,139 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Engineering Mathematics · Unit 4 — Calculus: Maxima, Minima & Integrals, Set 1 of 2 (second pass)**,
-  2026-11-02 →
-  [`engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html`](engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html)
+- **Operating Systems · Unit 4 — Memory Management & Paging, Set 2 of 2 (second pass)**, 2026-11-02 →
+  [`operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html`](operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Single-variable extrema (7) · Multivariable extrema & saddle points (6) · Definite integrals (7) ·
-  Vector calculus basics (5)
+- Subtopics: Contiguous allocation (7) · Paging & page tables (7) · Inverted page tables (6) ·
+  Segmentation & paged segmentation (5)
 - Rotation: MODE A. An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in syllabus order
-  returned index 1 — **Engineering Mathematics**. `runs[]` sorted by `(date, run)` gave the most recent paper as
-  `{2026-11-01, run 13, unit 3, calculus-limits-derivatives, Set 1 of 2 (second pass)}`. Unit 3 held **75**
-  questions, above `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap. Step B4 advanced exactly one unit:
-  `(index_of(calculus-limits-derivatives) = 2 + 1) mod 5 = 3` → **Unit 4, Calculus: Maxima, Minima & Integrals**.
-  All five Engineering Mathematics units now sit at or above the cap (75, 75, 75, 50, 50), so **step B5 applies
-  and the second pass continues**; this is the first set of that pass and the unit's third set overall. No
-  override was used and no partial set was generated.
-- Superseded: the 2026-10-29 paper `gate_em_mock_4_2026-10-29.html` moved to
-  `engineering-mathematics/calculus-optimization-integrals/archive/gate_em_mock_4_2026-10-29_run2.html`, content
-  frozen; the unit folder now holds exactly one current paper and the repository root still holds only
-  `index.html`.
-- Previous test: **Programming and Data Structures · Unit 2 — Pointers, Memory & Preprocessors, Set 1 of 2
-  (second pass)**, 2026-11-02 →
-  [`programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html`](programming-data-structures/pointers-memory/gate_ds_mock_2_2026-11-02.html)
+  returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 21, unit 3, deadlocks, Set 2 of 2 (second pass)}`. Unit 3 held **100** questions, above
+  `UNIT_QUESTION_CAP = 50`, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the
+  7-day backstop played no part. Step B4 advanced exactly one unit:
+  `(index_of(deadlocks) = 2 + 1) mod 6 = 3` → **Unit 4, Memory Management & Paging**. Every Operating Systems unit
+  sits at or above the cap (100, 100, 100, 75, 75, 75), so **step B5 applies and the second pass continues**; this
+  is the second set of that pass and the unit's fourth set overall. No override was used and no partial set was
+  generated.
+- Superseded: the 2026-10-30 paper `gate_os_mock_4_2026-10-30.html` moved to
+  `operating-systems/memory-paging/archive/gate_os_mock_4_2026-10-30_run3.html`, content frozen; the unit folder
+  now holds exactly one current paper and the repository root still holds only `index.html`.
+- Previous test: **Engineering Mathematics · Unit 4 — Calculus: Maxima, Minima & Integrals, Set 1 of 2 (second
+  pass)**, 2026-11-02 →
+  [`engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html`](engineering-mathematics/calculus-optimization-integrals/gate_em_mock_4_2026-11-02.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 174 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 21 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
-| Current papers / archived sets | 67 current · 107 archived |
+| Papers published (current + archived) | 175 (26 Discrete Mathematics, 13 Algorithms, 11 Databases, 17 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 16 Programming and Data Structures, 18 Computer Networks, 16 Theory of Computation, 12 Digital Logic, 10 Computer Architecture) |
+| Current papers / archived sets | 67 current · 108 archived |
 | Test cards on the portal | 67 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 13 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 5 of 6 in Computer Architecture |
-| Questions in the subject banks | 4350 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 525 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
+| Questions in the subject banks | 4375 (650 Discrete Mathematics, 325 Algorithms, 275 Databases, 425 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 400 Programming and Data Structures, 450 Computer Networks, 400 Theory of Computation, 300 Digital Logic, 250 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 107 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 15 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+| Archived sets (earlier runs) | 108 (13 Discrete Mathematics, 6 Algorithms, 6 Databases, 12 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 9 Programming and Data Structures, 12 Computer Networks, 12 Theory of Computation, 8 Digital Logic, 5 Computer Architecture) |
+
+### 2026-11-02 — Operating Systems Unit 4, Set 2 of 2 (second pass)
+
+- New paper at `operating-systems/memory-paging/gate_os_mock_4_2026-11-02.html`. The 2026-10-30 paper moved to
+  `operating-systems/memory-paging/archive/gate_os_mock_4_2026-10-30_run3.html` with its content frozen (same
+  questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper and the
+  archive holds the whole second pass plus both first-pass sets.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven GATE CSE subjects in
+  syllabus order returned index 8 — **Operating Systems**. `runs[]` sorted by `(date, run)` gave the most recent
+  paper as `{2026-11-02, run 21, unit 3, deadlocks, Set 2 of 2 (second pass)}`. Unit 3 held **100** questions
+  against a cap of 50, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the
+  7-day backstop played no part. Step B4 advanced exactly one unit:
+  `(index_of(deadlocks) = 2 + 1) mod 6 = 3` → **Unit 4, Memory Management & Paging**. Unit 4 already held 75
+  questions (both first-pass sets and Set 1 of the second pass), and every Operating Systems unit now sits at or
+  above the cap (100, 100, 100, 75, 75, 75): **step B5 applies, the second pass continues**, and this is the second
+  set of that pass — the unit's fourth set overall. Exactly 25 questions, no override, no partial set.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Coverage.** All four unit subtopics: contiguous allocation 7 · paging & page tables 7 · inverted page tables
+  6 · segmentation & paged segmentation 5. Difficulty 10 easy / 10 medium / 5 hard.
+- **What the set asks, and why it is not one of the three earlier sets again.** The first two sets asked for a
+  placement arithmetic result, a page-table entry count or a base-plus-limit sum; this set asks where the rules
+  break and what each structure actually costs. Contiguous: why compaction is impossible under static relocation,
+  what the 50-percent rule does and does not claim, how many holes 400 blocks imply, what next fit trades away,
+  a best-fit run whose internal fragmentation adds to **9 KB**, a five-way statement set on compaction, and why
+  switching to best fit is not a cure for a hole-ridden free list. Paging: valid against present, the four memory
+  accesses of a three-level walk, **1024** entries in a one-page second-level table, what a multi-level table
+  really saves, the TLB flush and what an address-space identifier changes, an effective access time of **118 ns**
+  over a two-level walk, and the two page-table registers. Inverted: one table per system, why a sparse
+  2&#8308;&#8312;-byte space costs it nothing, a statement set whose answer is only two of four, the shared-frame
+  problem and its remedies, a **128 KB** table from 8192 sixteen-byte entries, and the hash anchor table. Segment-
+  ation: the protection that follows a logical unit, why the segment length is still needed once paging bounds the
+  access, a four-way comparison, the **26** pages a 100 KB segment really occupies, and how two processes share
+  one code region.
+- **Answers recomputed, not asserted.** Every numeric key came from a script, not by inspection: the best-fit run
+  over partitions 16/24/8 KB with requests 12/7/20 KB was replayed request by request and the remainders summed to
+  `4 + 1 + 4 = 9` KB; `4096 / 4 = 1024` entries per table page; the two-level effective access time
+  `0.96 × 110 + 0.04 × 310 = 118` ns, cross-checked as `110 + 0.04 × 200`; `8192 × 16 = 131 072` bytes
+  `= 128` KB; and `ceil(100 / 4) + 1 = 26` pages for the 100 KB segment.
+- **Ids and bank.** 25 records appended as `OS-U4-Q76`–`OS-U4-Q100`, continuing the unit's numeric sequence after
+  `OS-U4-Q75`; Operating Systems now holds **550** questions across 6 units, and
+  `data/questions-operating-systems.js` grew from 525 to 550 records.
+- **Question Bank tab.** 525 solved questions — every record in the bank except the 25 on this paper — so the
+  active set is not repeated there. Unit 4's accordion shows the 75 questions of its three earlier sets.
+- **Provenance.** `verified_pyqs` holds one item, `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1, Q25, official answer
+  12), which belongs to Unit 1 and is not reused here. No previous-year question on placement policies, page-table
+  structures, inverted tables or segmentation has been verified against an official paper and answer key, so no
+  item on this paper carries `GATE_PYQ_VARIATION` and nothing on this paper is claimed as an official GATE
+  question. Sources are `STANDARD_TEXTBOOK` (18) and `ORIGINAL_SYNTHESIS` (7).
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are
+  (A), (B), (D); (B), (C), (D); (A), (C), (D); (A), (C); and (A), (B), (C) — one two-element set and four
+  different three-element patterns, so they are not five copies of one shape. Every letter named inside a solution
+  is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 75 already banked for this unit. The first pass had
+  used hole sequences with first, best and worst fit, the definition questions on fragmentation, page-table
+  mapping, TLB arithmetic at hit ratios 0.9 and a two-level measurement, inverted-table sizes from physical
+  memory, base-and-limit arithmetic and a paged-segmentation table size. The second pass had used further hole
+  sequences, the 48-bit and 40-bit address splits, single-level table sizes, a TLB reach question, page-size
+  choice, a three-level address split, hash-on-(pid, page) at a TLB miss, a shared library frame and a segment
+  table with three segments. The third set had used base and limit registers, fixed against variable partitions,
+  a four-hole allocation trace, three more placement traces, the page-table walk without a TLB, TLB reach, a
+  2&#185;&#8313;-entry table, a page-size comparison, a two-level address split, an inverted table's defining
+  field, a 512 MB table size, sharing in a single inverted table, and segment-table arithmetic. None of those
+  stems, numbers or answer sets is reused here; where a concept recurs (the 50-percent rule, a placement run, a
+  table size, an effective access time, a segment's page count) it is asked with different numbers, a different
+  question form or a different reasoning step — the placement run now asks for the sum of the remainders rather
+  than for the chosen hole, the table size is derived from an entry count rather than from physical memory, and
+  the access time walks two levels instead of one.
+- **Verification (Section 6.8).** Shell parity: with title, brand, sub-line, candidate block, bank-count button,
+  meta strip, question host, palette, bank view, About view and payload masked, the remaining **26 035 bytes** are
+  byte-identical to the Operating Systems Unit 3 paper, and the `<style>` block, the engine `<script>` and the
+  footer are identical byte for byte. One copy: the paper exists at exactly one path, the superseded set at
+  exactly one archive path, `index.html` is the only HTML file at the root, and no unit folder holds two current
+  papers. Links: all 67 test paths and all 108 archive paths in the portal's data block resolve. Tokens: the
+  `:root` block is byte-identical to `design-tokens.css` and to `index.html`; no CDN, no `<link>`, no external URL
+  of any kind. Counts: 25 test cards, a 25-button palette, 5 NAT inputs, 80 option inputs, 525 bank cards, and all
+  seven `data-*` attributes on all 25 test cards and all 525 bank cards. No duplicate content: none of the 25
+  active ids appears in the Question Bank tab, and no bank id repeats.
+- **Interface run (payload simulation).** The grading engine's exact scoring rules were replayed against the
+  decoded payload: a perfect attempt scores **35 / 35**; an attempt in which every MCQ is wrong, every MSQ has one
+  extra option selected and every NAT is right scores **10 / 35**, confirming that there is no negative marking
+  and that an MSQ earns nothing on an enlarged set. Structural checks on the shipped file: the answer-key tab
+  `disabled` with an empty list, `ansline` and "Detailed solution" absent from the question host, no
+  `correct`/`wrongpick` class anywhere before submit, all 25 `.sol` blocks empty and hidden, and the inline script
+  passes `node --check`.
+- **Portal.** The Operating Systems Unit 4 card was replaced, not duplicated: it now carries the new date, the new
+  path, the second-pass set label and three earlier-set links (`Second pass · Set 1` → the run3 archive,
+  `First pass · Set 2` → run2, `First pass · Set 1` → run1). The static counters were recomputed from the data:
+  71 units in the series, 67 test cards, 4375 records in the subject banks, 67 of 71 units covered and 297
+  subtopics.
+- **Push.** The repository API refuses a single request much above 2 MB, and this run's payload (a 1.4 MB
+  self-contained paper, its 1.0 MB frozen predecessor, a 1.4 MB bank, a 1.2 MB portal data file, a 0.9 MB README
+  and the portal itself) is about 5.8 MB, so the changes were delivered as four commits carrying the same
+  message rather than one. The resulting tree is identical to a single-commit push.
+- **Shell defect inherited, unchanged.** The shipped shell still carries the nested duplicate `id="view-bank"`
+  wrapper, the stray `</footer>` and the unclosed `#view-test`, plus three literal hex values outside `:root`, no
+  explicit `:focus-visible` selector and palette fills on the `--green`/`--red`/`--violet` tokens rather than
+  their `-d` variants. All are identical in every paper of the series and were left as they are so the shell stays
+  byte-identical; they remain recorded here for the one-pass re-issue.
 
 ### 2026-11-02 — Engineering Mathematics Unit 4, Set 1 of 2 (second pass)
 
