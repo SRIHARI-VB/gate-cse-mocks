@@ -6,14 +6,14 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 375,
+  "total_questions": 400,
   "units_with_questions": [
    1,
    2,
    3,
    4
   ],
-  "total_runs": 15
+  "total_runs": 16
  },
  "runs": [
   {
@@ -924,6 +924,76 @@
     "ORIGINAL_SYNTHESIS": 12
    },
    "note": "Second pass over Unit 3, Set 2 of 2. Unit 2 held 100 questions and had been current since 2026-10-27, so step B4 advanced one unit: (1 + 1) mod 4 = 2 -> Unit 3. Unit 3 held 75 questions, so this paper closes its second pass at 100."
+  },
+  {
+   "run": 16,
+   "date": "2026-11-03",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "set": "Set 1 of 2 (third pass)",
+   "count": 25,
+   "file": "digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-03.html",
+   "archived_previous": "digital-logic/sequential-fsm-counters/archive/gate_dl_mock_4_2026-11-02_run3.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "synchronous-asynchronous-counters",
+    "fsm-mealy-moore",
+    "state-reduction-assignment",
+    "timing-analysis"
+   ],
+   "subtopic_counts": {
+    "synchronous-asynchronous-counters": 6,
+    "fsm-mealy-moore": 7,
+    "state-reduction-assignment": 6,
+    "timing-analysis": 6
+   },
+   "question_ids": [
+    "DL-U4D-Q01",
+    "DL-U4D-Q02",
+    "DL-U4D-Q03",
+    "DL-U4D-Q04",
+    "DL-U4D-Q05",
+    "DL-U4D-Q06",
+    "DL-U4D-Q07",
+    "DL-U4D-Q08",
+    "DL-U4D-Q09",
+    "DL-U4D-Q10",
+    "DL-U4D-Q11",
+    "DL-U4D-Q12",
+    "DL-U4D-Q13",
+    "DL-U4D-Q14",
+    "DL-U4D-Q15",
+    "DL-U4D-Q16",
+    "DL-U4D-Q17",
+    "DL-U4D-Q18",
+    "DL-U4D-Q19",
+    "DL-U4D-Q20",
+    "DL-U4D-Q21",
+    "DL-U4D-Q22",
+    "DL-U4D-Q23",
+    "DL-U4D-Q24",
+    "DL-U4D-Q25"
+   ],
+   "sources": {
+    "STANDARD_TEXTBOOK": 12,
+    "ORIGINAL_SYNTHESIS": 13
+   },
+   "note": "Third pass over Unit 4. Rotation check at generation time: the previous paper for this subject was Unit 3 (2026-11-03), and Unit 3 had reached 100 banked questions against the 50-question cap, so the unit advanced one step, wrapping as required. Unit 4 now stands at 100 banked questions, so the next Digital Logic run advances to Unit 1. Every subtopic of the unit is represented; no previous-year question on this unit has been verified, so no item carries a PYQ tag."
   }
  ],
  "verified_pyqs": [
@@ -14880,6 +14950,920 @@
    "answer": 148,
    "answer_display": "148",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each right shift halves the value with truncation, each left shift doubles it, and bits that leave the register are lost for good. So the two directions do not cancel.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">10010110<sub>2</sub> = 128 + 16 + 4 + 2 = 150</code>.</li><li>Right shift 1: <code class=\"mm\">01001011</code> = 75. Right shift 2: <code class=\"mm\">00100101</code> = 37.</li><li>Left shift 1: <code class=\"mm\">01001010</code> = 74. Left shift 2: <code class=\"mm\">10010100</code> = 148.</li><li>Check the arithmetic: <code class=\"mm\">&lfloor;150/4&rfloor; = 37</code> and <code class=\"mm\">37 &times; 4 = 148</code>, with no overflow because <code class=\"mm\">148 &lt; 256</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">148</span></p><p class=\"row\"><b>Common trap.</b> Assuming the shifts undo each other and answering 150. The two low-order bits <code class=\"mm\">10</code> were shifted out on the right and never came back; the two zeros shifted in on the left came back as zeros on the right.</p><p class=\"row\"><b>Takeaway.</b> A shift register is not a rotation: whatever leaves the end is gone unless it is fed back deliberately, which is exactly what a ring counter does.</p>"
+  },
+  {
+   "id": "DL-U4D-Q01",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Johnson (twisted-ring) counter is required to have a modulus of 12. How many flip-flops does it need?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"1\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 1</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A Johnson (twisted-ring) counter is required to have a modulus of <code class=\"mm\">12</code>. How many flip-flops does it need?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">12</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "12"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">5</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">6</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">12</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An <i>n</i>-stage Johnson counter has <code class=\"mm\">2n</code> distinct states: the register shifts one bit in from the inverted last stage, so it fills with ones and then empties with zeros before returning to the start. A ring counter, by contrast, has only <code class=\"mm\">n</code> states.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Modulus of a Johnson counter = <code class=\"mm\">2n</code>.</li><li>Set <code class=\"mm\">2n = 12</code>, giving <code class=\"mm\">n = 6</code>.</li><li>Check: a 6-bit Johnson counter runs 000000 \u2192 100000 \u2192 110000 \u2192 \u2026 \u2192 111111 \u2192 011111 \u2192 \u2026 \u2192 000001 \u2192 000000, which is 12 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) \u2014 6 flip-flops.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Four stages give a Johnson modulus of only 8.</li><li>(B) Five stages give 10 states, two short of 12.</li><li>(D) Twelve flip-flops would be a ring counter of modulus 12, not a Johnson counter.</li></ul><p class=\"row\"><b>Common misconception.</b> Using <code class=\"mm\">2<sup>n</sup> \u2265 12</code>, which is the rule for a binary counter and gives 4. A Johnson counter never visits more than <code class=\"mm\">2n</code> of the <code class=\"mm\">2<sup>n</sup></code> codes.</p>"
+  },
+  {
+   "id": "DL-U4D-Q02",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A 4-bit Johnson counter powers up holding 0000. How many clock pulses does it take before the register returns to 0000?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"2\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 2</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 4-bit Johnson counter powers up holding <code class=\"mm\">0000</code>. How many clock pulses does it take before the register returns to <code class=\"mm\">0000</code>?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">8</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">15</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"2\" data-typ=\"MCQ\" name=\"q2\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">16</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "4",
+    "8",
+    "15",
+    "16"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">8</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">15</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">16</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Johnson counter shifts right and feeds back the complement of the last stage. Starting from all zeros the register fills with ones, then empties with zeros, and only then repeats.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>0000 (start)</li><li>1000</li><li>1100</li><li>1110</li><li>1111</li><li>0111</li><li>0011</li><li>0001</li><li>0000 (again)</li></ol><p class=\"row\"><b>Counting.</b> Eight transitions are needed, so the register returns to 0000 after 8 clock pulses.</p><p class=\"row\"><span class=\"ansline\">Answer: Option (B) \u2014 8 clock pulses.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) 4 is the number of stages, and the number of states of a <i>ring</i> counter of that width.</li><li>(C) 15 is the period of a 4-bit binary counter, which visits 16 codes including 0000.</li><li>(D) 16 counts are available to a 4-bit register but only 8 of them lie on a Johnson cycle.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming the cycle length is <code class=\"mm\">2<sup>n</sup></code>. For a Johnson counter it is <code class=\"mm\">2n</code>, so half the register codes are never used.</p>"
+  },
+  {
+   "id": "DL-U4D-Q03",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A modulo-10 counter is built from a 4-bit binary up-counter by decoding the state 1010 and feeding the decoded signal to the asynchronous active-LOW CLEAR input. Which one of the following is TRUE?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"3\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 3</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A modulo-10 counter is built from a 4-bit binary up-counter by decoding the state <code class=\"mm\">1010</code> and feeding the decoded signal to the asynchronous active-LOW <code class=\"mm\">CLEAR</code> input. Which one of the following is <b>TRUE</b>?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">State <code class=\"mm\">1010</code> never appears at the outputs, so the counter has exactly 10 states.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The counter passes through 11 states, <code class=\"mm\">0000</code> to <code class=\"mm\">1010</code> inclusive, before it clears.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The modulus stays 16, because an asynchronous clear cannot reduce the number of states.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">State <code class=\"mm\">1010</code> appears briefly as a transient before the clear takes effect, and the count still repeats every 10 clock pulses.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "State 1010 never appears at the outputs, so the counter has exactly 10 states.",
+    "The counter passes through 11 states, 0000 to 1010 inclusive, before it clears.",
+    "The modulus stays 16, because an asynchronous clear cannot reduce the number of states.",
+    "State 1010 appears briefly as a transient before the clear takes effect, and the count still repeats every 10 clock pulses."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">State <code class=\"mm\">1010</code> never appears at the outputs, so the counter has exactly 10 states.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The counter passes through 11 states, <code class=\"mm\">0000</code> to <code class=\"mm\">1010</code> inclusive, before it clears.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The modulus stays 16, because an asynchronous clear cannot reduce the number of states.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">State <code class=\"mm\">1010</code> appears briefly as a transient before the clear takes effect, and the count still repeats every 10 clock pulses.</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A decode gate plus an asynchronous clear forms a feedback loop that does not wait for a clock edge. The decoded state is produced by the flip-flop outputs themselves, so the counter really does enter that state; the clear then acts after the gate and clear-path delays.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The counter counts 0000, 0001, \u2026, 1001 \u2014 ten states, ten clock pulses.</li><li>On the tenth pulse it reaches 1010; the decoder output falls immediately.</li><li>That level drives CLEAR, which resets the register to 0000 after the propagation delay of the gate and the flip-flop clear path.</li><li>So 1010 is visible for a short time (a few ns), and the sequence repeats after 10 pulses: the modulus is 10, with 1010 as a transient.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) \u2014 a brief transient state, modulus 10.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) The decoder cannot act before the state exists, so 1010 does appear, if only briefly.</li><li>(B) 11 states would be a modulus of 11; the clear returns the counter to 0000 without counting 1010 as a full period.</li><li>(C) An asynchronous clear does reduce the modulus; it is the standard way to build a non-power-of-two counter.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing the decoded state is \"skipped\". It is entered and then abandoned, which is why a design that also decodes 1010 for another purpose sees a narrow glitch there.</p>"
+  },
+  {
+   "id": "DL-U4D-Q04",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which of the following statements about ripple (asynchronous) and synchronous binary counters are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"4\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 4</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about ripple (asynchronous) and synchronous binary counters are <b>TRUE</b>? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A synchronous counter needs no decoding logic to obtain a modulus smaller than <code class=\"mm\">2<sup>n</sup></code>.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">In a ripple counter the flip-flops are not clocked simultaneously, so the count passes through intermediate states that a decoder can see.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">In a synchronous counter every flip-flop is clocked by the same clock, so the outputs change together apart from small skew.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The highest clock frequency of an <i>n</i>-stage ripple counter is limited by the total ripple delay through all <i>n</i> stages.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "A synchronous counter needs no decoding logic to obtain a modulus smaller than 2n.",
+    "In a ripple counter the flip-flops are not clocked simultaneously, so the count passes through intermediate states that a decoder can see.",
+    "In a synchronous counter every flip-flop is clocked by the same clock, so the outputs change together apart from small skew.",
+    "The highest clock frequency of an n-stage ripple counter is limited by the total ripple delay through all n stages."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">A synchronous counter needs no decoding logic to obtain a modulus smaller than <code class=\"mm\">2<sup>n</sup></code>.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">In a ripple counter the flip-flops are not clocked simultaneously, so the count passes through intermediate states that a decoder can see.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">In a synchronous counter every flip-flop is clocked by the same clock, so the outputs change together apart from small skew.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The highest clock frequency of an <i>n</i>-stage ripple counter is limited by the total ripple delay through all <i>n</i> stages.</span>"
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The difference between the two families is what clocks each flip-flop: in a ripple counter only the first stage sees the clock, and each later stage is clocked by the output of the one before it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) True. The stages settle one after another, so for a short time the register holds codes that are not part of the count sequence.</li><li>(C) True. A common clock is exactly what makes the next state appear in one step, limited only by clock skew.</li><li>(D) True. The clock period must exceed the sum of the stage delays, so <code class=\"mm\">f<sub>max</sub> = 1/(n\u00b7t<sub>pd</sub>)</code>.</li><li>(A) False. Any modulus below <code class=\"mm\">2<sup>n</sup></code> still has to be detected \u2014 by a decode gate with a clear or load \u2014 in a synchronous design as much as in a ripple one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Thinking a synchronous counter is \"self-truncating\". Synchronous only changes <i>when</i> the state changes, never <i>which</i> states are counted.</p>"
+  },
+  {
+   "id": "DL-U4D-Q05",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A 3-bit synchronous counter is built from D flip-flops holding Q2Q1Q0, with next-state inputs D2 = Q1, D1 = Q0 and D0 = Q2\u2032. Starting from 000, how many distinct states does the counter cycle through?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"5\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 5</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 3-bit synchronous counter is built from D flip-flops holding <code class=\"mm\">Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub></code>, with next-state inputs <code class=\"mm\">D<sub>2</sub> = Q<sub>1</sub></code>, <code class=\"mm\">D<sub>1</sub> = Q<sub>0</sub></code> and <code class=\"mm\">D<sub>0</sub> = Q<sub>2</sub>&#8242;</code>. Starting from <code class=\"mm\">000</code>, how many distinct states does the counter cycle through?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">7</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">5</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">6</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">7</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A synchronous counter is fully described by its next-state equations: whatever the present state, the next state is <code class=\"mm\">(D<sub>2</sub>, D<sub>1</sub>, D<sub>0</sub>)</code> evaluated at the present outputs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>000 \u2192 (Q<sub>1</sub>, Q<sub>0</sub>, Q<sub>2</sub>&#8242;) = (0, 0, 1) = 001</li><li>001 \u2192 (0, 1, 1) = 011</li><li>011 \u2192 (1, 1, 1) = 111</li><li>111 \u2192 (1, 1, 0) = 110</li><li>110 \u2192 (1, 0, 0) = 100</li><li>100 \u2192 (0, 0, 0) = 000, which closes the cycle.</li></ol><p class=\"row\"><b>Counting.</b> The six states 000, 001, 011, 111, 110, 100 repeat; 010 and 101 are never entered.</p><p class=\"row\"><span class=\"ansline\">Answer: Option (C) \u2014 6 states.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (B) come from stopping the trace early or from assuming the cycle must be a power of two.</li><li>(D) Seven would be the count if one state were excluded but the rest of the 8 codes were visited; here two codes, 010 and 101, are outside the cycle.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming a 3-bit counter must have period 8 or 7. The period is decided by the next-state equations, and here it is 6.</p>"
+  },
+  {
+   "id": "DL-U4D-Q06",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "synchronous-asynchronous-counters",
+   "subtopic": "synchronous-asynchronous-counters",
+   "subtopic_label": "Synchronous &amp; asynchronous counters",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A two-decade BCD counter counts 00 to 99 and repeats, and is clocked at 2 MHz. Its carry output clocks a 3-bit binary counter, and the last stage of that counter drives an output pin. What is the frequency at that pin, in Hz? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"6\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"synchronous-asynchronous-counters\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 6</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">synchronous-asynchronous-counters</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">A two-decade BCD counter counts <code class=\"mm\">00</code> to <code class=\"mm\">99</code> and repeats, and is clocked at <code class=\"mm\">2 MHz</code>. Its carry output clocks a 3-bit binary counter, and the last stage of that counter drives an output pin. What is the frequency at that pin, in Hz?<br/>(Enter an integer.)</p><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 6\" autocomplete=\"off\" class=\"natinput\" data-n=\"6\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a single number.</div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    2500
+   ],
+   "answer_display": "2500",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cascaded counters multiply their moduli, and each stage of a binary counter divides its input frequency by 2.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Two BCD decades in cascade give a modulus of <code class=\"mm\">10 \u00d7 10 = 100</code>.</li><li>Carry frequency = <code class=\"mm\">2 MHz / 100 = 20 kHz</code>.</li><li>A 3-bit counter divides by <code class=\"mm\">2<sup>3</sup> = 8</code>.</li><li>Output = <code class=\"mm\">20 kHz / 8 = 2.5 kHz = 2500 Hz</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2500 Hz.</span></p><p class=\"row\"><b>Common misconception.</b> Dividing by 10 instead of 100 for the two decades, or taking the last stage of the 3-bit counter as a divide-by-3. The pin toggles once per full cycle of that counter, that is every 8 input pulses.</p>",
+   "answer_format": "a number"
+  },
+  {
+   "id": "DL-U4D-Q07",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which one of the following statements about a Mealy machine is TRUE?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"7\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 7</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which one of the following statements about a Mealy machine is <b>TRUE</b>?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Its output is a function of the present state and the present input, so an input change can change the output between clock edges.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Its output is a function of the present state only, so it changes only at clock edges.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Its output depends on the next state, so it always appears one clock period after the input that caused it.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">It cannot be converted into an equivalent Moore machine.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "Its output is a function of the present state and the present input, so an input change can change the output between clock edges.",
+    "Its output is a function of the present state only, so it changes only at clock edges.",
+    "Its output depends on the next state, so it always appears one clock period after the input that caused it.",
+    "It cannot be converted into an equivalent Moore machine."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Its output is a function of the present state and the present input, so an input change can change the output between clock edges.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Its output is a function of the present state only, so it changes only at clock edges.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Its output depends on the next state, so it always appears one clock period after the input that caused it.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">It cannot be converted into an equivalent Moore machine.</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two machine models differ in where the output lives. In a Moore machine the output is attached to the state; in a Mealy machine it is attached to the transition, so it is a combinational function of state and input.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A Moore output is written on the state circle, so it can only change when the state changes, at a clock edge.</li><li>A Mealy output is written on the arrow, so it is computed from the present state and the present input.</li><li>Consequently a change of input propagates through the output logic immediately, without waiting for a clock.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) \u2014 output depends on state and input.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) describes a Moore machine.</li><li>(C) The output is produced <i>during</i> the transition, one cycle earlier than the Moore equivalent, not later.</li><li>(D) Mealy and Moore machines describe the same class of regular functions and are always inter-convertible.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing Mealy outputs are \"registered\" because the machine is clocked. The state is registered; the output is not.</p>"
+  },
+  {
+   "id": "DL-U4D-Q08",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Moore machine must raise its output to 1 exactly when the total number of 1s it has received since reset is a non-zero multiple of 4, and keep it at 0 otherwise. What is the minimum number of states it needs?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"8\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 8</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A Moore machine must raise its output to <code class=\"mm\">1</code> exactly when the total number of <code class=\"mm\">1</code>s it has received since reset is a non-zero multiple of <code class=\"mm\">4</code>, and keep it at <code class=\"mm\">0</code> otherwise. What is the minimum number of states it needs?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"8\" data-typ=\"MCQ\" name=\"q8\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">8</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "8"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">5</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">6</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">8</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Moore output is a function of the state alone. So the state must be able to distinguish every situation in which the output differs \u2014 including the reset state, where the count is 0 but the output must be 0.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The count modulo 4 has four residues: 0, 1, 2, 3.</li><li>Residue 0 is reached twice with different required outputs: at reset (count 0, output 0) and after 4, 8, \u2026 ones (output 1).</li><li>One state cannot carry two outputs, so residue 0 needs two states: <code class=\"mm\">S<sub>0</sub></code> for the reset position and <code class=\"mm\">S<sub>4</sub></code> for every later multiple of 4.</li><li>Residues 1, 2 and 3 need one state each. Total <code class=\"mm\">2 + 3 = 5</code> states.</li></ol><p class=\"row\"><b>Transition check.</b> S<sub>0</sub> --1--&gt; S<sub>1</sub> --1--&gt; S<sub>2</sub> --1--&gt; S<sub>3</sub> --1--&gt; S<sub>4</sub> --1--&gt; S<sub>1</sub>, with every 0-input transition staying in place and the output 1 only in S<sub>4</sub>.</p><p class=\"row\"><span class=\"ansline\">Answer: Option (B) \u2014 5 states.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Four states would force the reset state and the 4th-one state to be the same state, so the output would be 1 at reset.</li><li>(C) and (D) add states that no input string can tell apart from the five above.</li></ul><p class=\"row\"><b>Common misconception.</b> Counting only the residues. The Moore constraint \u2014 one output per state \u2014 adds the extra state, and the same trap appears whenever the output depends on whether a count has ever been reached.</p>"
+  },
+  {
+   "id": "DL-U4D-Q09",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Moore machine has states A, B, C, D with outputs A = 0, B = 1, C = 0, D = 1, initial state A, and the transitions below, written as input \u2192 next state. A: 0 \u2192 B, 1 \u2192 C B: 0 \u2192 A, 1 \u2192 D C: 0 \u2192 D, 1 \u2192 A D: 0 \u2192 C, 1 \u2192 B It receives the input 1 0 1 1 0. Counting the output shown in the initial state as the first value, what is the output sequence?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"9\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 9</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A Moore machine has states <code class=\"mm\">A, B, C, D</code> with outputs <code class=\"mm\">A = 0, B = 1, C = 0, D = 1</code>, initial state <code class=\"mm\">A</code>, and the transitions below, written as input \u2192 next state.<br/><br/>A: 0 \u2192 B, 1 \u2192 C<br/>B: 0 \u2192 A, 1 \u2192 D<br/>C: 0 \u2192 D, 1 \u2192 A<br/>D: 0 \u2192 C, 1 \u2192 B<br/><br/>It receives the input <code class=\"mm\">1 0 1 1 0</code>. Counting the output shown in the initial state as the first value, what is the output sequence?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">0 0 1 1 1 0</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">0 1 0 1 1 0</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">0 0 1 1 0 1</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">1 0 0 1 1 0</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "0 0 1 1 1 0",
+    "0 1 0 1 1 0",
+    "0 0 1 1 0 1",
+    "1 0 0 1 1 0"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">0 0 1 1 1 0</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">0 1 0 1 1 0</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">0 0 1 1 0 1</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">1 0 0 1 1 0</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a Moore machine the output is read from the state, so an input of length <i>k</i> produces <code class=\"mm\">k + 1</code> output values: the one in the initial state plus one after each input symbol.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start in A: output 0.</li><li>Input 1: A \u2192 C, output 0.</li><li>Input 0: C \u2192 D, output 1.</li><li>Input 1: D \u2192 B, output 1.</li><li>Input 1: B \u2192 D, output 1.</li><li>Input 0: D \u2192 C, output 0.</li></ol><p class=\"row\"><b>Result.</b> 0 0 1 1 1 0 \u2014 six values for five inputs.</p><p class=\"row\"><span class=\"ansline\">Answer: Option (A) \u2014 0 0 1 1 1 0.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) reads the output of the state that is about to be left, which is the Mealy convention, not the Moore one.</li><li>(C) and (D) mis-trace at least one transition; from B on input 1 the machine goes to D, and from D on input 0 it goes to C.</li></ul><p class=\"row\"><b>Common misconception.</b> Dropping the initial output and giving five values for five inputs. That is correct only for a Mealy machine.</p>"
+  },
+  {
+   "id": "DL-U4D-Q10",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Moore machine must output 1 for exactly one clock period whenever the last three bits received are 1 1 0, overlaps allowed. If the same function is built as a Mealy machine, which one of the following is TRUE?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"10\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 10</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A Moore machine must output <code class=\"mm\">1</code> for exactly one clock period whenever the last three bits received are <code class=\"mm\">1 1 0</code>, overlaps allowed. If the same function is built as a Mealy machine, which one of the following is <b>TRUE</b>?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">It needs the same number of states, and the output appears one clock period later.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">It needs one state more, because a Mealy output has to be stored on a transition.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">It cannot be built as a Mealy machine, because the output must be held for a whole clock period.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"10\" data-typ=\"MCQ\" name=\"q10\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">It needs one state fewer, and the output appears one clock period earlier, on the transition that completes the pattern.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "It needs the same number of states, and the output appears one clock period later.",
+    "It needs one state more, because a Mealy output has to be stored on a transition.",
+    "It cannot be built as a Mealy machine, because the output must be held for a whole clock period.",
+    "It needs one state fewer, and the output appears one clock period earlier, on the transition that completes the pattern."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">It needs the same number of states, and the output appears one clock period later.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">It needs one state more, because a Mealy output has to be stored on a transition.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">It cannot be built as a Mealy machine, because the output must be held for a whole clock period.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">It needs one state fewer, and the output appears one clock period earlier, on the transition that completes the pattern.</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Moore machine needs a separate state for \"pattern just completed\", because the output must be readable from the state. A Mealy machine does not: it can assert the output on the very transition that completes the pattern.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Moore states: S<sub>0</sub> (nothing), S<sub>1</sub> (seen 1), S<sub>2</sub> (seen 11), S<sub>3</sub> (seen 110, output 1) \u2014 four states.</li><li>Mealy states: S<sub>0</sub>, S<sub>1</sub> (seen 1), S<sub>2</sub> (seen 11) \u2014 three states; the transition S<sub>2</sub> --0--&gt; S<sub>0</sub> carries output 1.</li><li>The Mealy output is produced during the third input symbol; the Moore output is produced only after the state S<sub>3</sub> has been entered at the following clock edge.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) \u2014 one state fewer, output one cycle earlier.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) reverses the timing: Mealy is earlier, not later.</li><li>(B) Mealy outputs are combinational, never stored, so they never cost a state.</li><li>(C) Holding an output for a clock period is a property of the design, not a limit of the model; the Mealy output here is already one symbol wide.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing the two models always need the same number of states. They need the same number only when the output happens to depend on the state alone.</p>"
+  },
+  {
+   "id": "DL-U4D-Q11",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"11\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 11</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements are <b>TRUE</b>? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"11\" data-typ=\"MSQ\" name=\"q11\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Every Moore machine with <i>n</i> states can be converted into an equivalent Mealy machine with at most <i>n</i> states.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"11\" data-typ=\"MSQ\" name=\"q11\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A Mealy machine always has fewer states than the equivalent Moore machine.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"11\" data-typ=\"MSQ\" name=\"q11\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Every Mealy machine with <i>n</i> states and a binary output can be converted into an equivalent Moore machine with at most <code class=\"mm\">2n</code> states.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"11\" data-typ=\"MSQ\" name=\"q11\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In a Moore machine, two different input strings that leave the machine in the same state always produce the same output at that instant.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "Every Moore machine with n states can be converted into an equivalent Mealy machine with at most n states.",
+    "A Mealy machine always has fewer states than the equivalent Moore machine.",
+    "Every Mealy machine with n states and a binary output can be converted into an equivalent Moore machine with at most 2n states.",
+    "In a Moore machine, two different input strings that leave the machine in the same state always produce the same output at that instant."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Every Moore machine with <i>n</i> states can be converted into an equivalent Mealy machine with at most <i>n</i> states.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">A Mealy machine always has fewer states than the equivalent Moore machine.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Every Mealy machine with <i>n</i> states and a binary output can be converted into an equivalent Moore machine with at most <code class=\"mm\">2n</code> states.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">In a Moore machine, two different input strings that leave the machine in the same state always produce the same output at that instant.</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conversion moves the output from the state to the transitions (Moore \u2192 Mealy) or from the transitions back to the states (Mealy \u2192 Moore), and the state count changes in one direction only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. Every transition out of a state carries that state's output, so no new state is needed.</li><li>(C) True. Each Mealy state may have to be split by the output values on its incoming transitions; with a binary output that is at most two copies per state.</li><li>(D) True. That is the definition of a Moore output \u2014 a function of the state alone.</li><li>(B) False. The counts can be equal: a counter whose output is \"state = 0000\" needs the same number of states in either model.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Treating \"Mealy is usually smaller\" as an invariant. It is a tendency created by the extra output state in Moore machines, not a theorem.</p>"
+  },
+  {
+   "id": "DL-U4D-Q12",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Mealy machine raises its output to 1 exactly when the last two bits it has received are both 1 (overlaps allowed), and keeps it at 0 otherwise. Starting from the reset state with no history, it receives 1 1 0 1 1 1. How many times does its output equal 1? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"12\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 12</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">A Mealy machine raises its output to <code class=\"mm\">1</code> exactly when the last two bits it has received are both <code class=\"mm\">1</code> (overlaps allowed), and keeps it at <code class=\"mm\">0</code> otherwise. Starting from the reset state with no history, it receives <code class=\"mm\">1 1 0 1 1 1</code>. How many times does its output equal <code class=\"mm\">1</code>?<br/>(Enter an integer.)</p><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 12\" autocomplete=\"off\" class=\"natinput\" data-n=\"12\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a single number.</div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Mealy detector looks at the input together with the stored history, so the output for the <i>i</i>-th symbol is decided by symbols <i>i\u22121</i> and <i>i</i>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Symbols 1 and 2 are 1, 1 \u2014 output 1.</li><li>Symbols 2 and 3 are 1, 0 \u2014 output 0.</li><li>Symbols 3 and 4 are 0, 1 \u2014 output 0.</li><li>Symbols 4 and 5 are 1, 1 \u2014 output 1.</li><li>Symbols 5 and 6 are 1, 1 \u2014 output 1.</li></ol><p class=\"row\"><b>Counting.</b> Three assertions of the output.</p><p class=\"row\"><span class=\"ansline\">Answer: 3.</span></p><p class=\"row\"><b>Common misconception.</b> Counting disjoint pairs only, which gives 2 and misses the overlapping pair at the end. The machine's history is one bit, so consecutive pairs overlap.</p>",
+   "answer_format": "a number"
+  },
+  {
+   "id": "DL-U4D-Q13",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "fsm-mealy-moore",
+   "subtopic": "fsm-mealy-moore",
+   "subtopic_label": "FSM: Mealy &amp; Moore machines",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Moore machine is in state S, whose output is 0. Which one of the following is TRUE?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"13\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"fsm-mealy-moore\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 13</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">fsm-mealy-moore</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A Moore machine is in state <code class=\"mm\">S</code>, whose output is <code class=\"mm\">0</code>. Which one of the following is <b>TRUE</b>?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Applying an input that leads to a state whose output is 1 changes the output immediately, before the next clock edge.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The output can never become 1 while the input stays 0.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">The output can change only at a clock edge, because it depends only on the present state.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">The output is undefined until the machine has read at least one input symbol.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "Applying an input that leads to a state whose output is 1 changes the output immediately, before the next clock edge.",
+    "The output can never become 1 while the input stays 0.",
+    "The output can change only at a clock edge, because it depends only on the present state.",
+    "The output is undefined until the machine has read at least one input symbol."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Applying an input that leads to a state whose output is 1 changes the output immediately, before the next clock edge.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">The output can never become 1 while the input stays 0.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">The output can change only at a clock edge, because it depends only on the present state.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">The output is undefined until the machine has read at least one input symbol.</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A Moore output is a combinational function of the state register, and the state register only changes on a clock edge.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The output logic reads the state bits, not the input.</li><li>An input can change the <i>next</i> state, which is loaded at the next active clock edge.</li><li>Only when the new state is in place can the output change, so output transitions are aligned with clock edges.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) \u2014 the output changes only at a clock edge.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) describes a Mealy machine, whose output is a function of the input as well.</li><li>(B) A self-loop on a 0 input keeps the state, but a state with output 1 can be entered on a 0 input if the transition is defined that way.</li><li>(D) The initial state has a defined output, which is exactly why a Moore output sequence has one more value than the input has symbols.</li></ul><p class=\"row\"><b>Common misconception.</b> Assuming a Moore output is \"clean\" only after a reset sequence. It is clean from the first instant, but it is delayed by one clock relative to a Mealy output.</p>"
+  },
+  {
+   "id": "DL-U4D-Q14",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which one of the following is the principal advantage of one-hot state encoding over a compact binary encoding for a finite state machine?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"14\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 14</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which one of the following is the principal advantage of one-hot state encoding over a compact binary encoding for a finite state machine?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">It needs fewer flip-flops, because only one bit is 1 at a time.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">It uses more flip-flops but makes the next-state and output logic shallower, because each state has its own flip-flop.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">It removes the need for a reset signal.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"14\" data-typ=\"MCQ\" name=\"q14\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">It guarantees that the machine has no equivalent states.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "It needs fewer flip-flops, because only one bit is 1 at a time.",
+    "It uses more flip-flops but makes the next-state and output logic shallower, because each state has its own flip-flop.",
+    "It removes the need for a reset signal.",
+    "It guarantees that the machine has no equivalent states."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">It needs fewer flip-flops, because only one bit is 1 at a time.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">It uses more flip-flops but makes the next-state and output logic shallower, because each state has its own flip-flop.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">It removes the need for a reset signal.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">It guarantees that the machine has no equivalent states.</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> One-hot encoding gives each state its own flip-flop, so \"am I in state S?\" is answered by a single bit rather than by decoding several bits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>With <i>n</i> states, one-hot uses <i>n</i> flip-flops; binary uses <code class=\"mm\">\u2308log<sub>2</sub> n\u2309</code>.</li><li>The next-state input of each one-hot flip-flop is the OR of the transitions that enter its state, so the logic depth is small and independent of the state count.</li><li>The output of a Moore state is simply that state's bit \u2014 no decoder at all.</li><li>The cost is area: more flip-flops and more register bits to route.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) \u2014 more flip-flops, shallower logic.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) One-hot is the most expensive encoding in flip-flops, not the cheapest.</li><li>(C) The reset is still needed: at power-up all bits must be cleared.</li><li>(D) Encoding is applied after minimization; it can neither create nor remove equivalent states.</li></ul><p class=\"row\"><b>Common misconception.</b> Judging an encoding by flip-flop count alone. In FPGAs, where flip-flops are plentiful and logic depth sets the clock frequency, one-hot often wins.</p>"
+  },
+  {
+   "id": "DL-U4D-Q15",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A machine has 7 states, of which 2 cannot be reached from the reset state. Minimizing the reachable states merges one pair of equivalent states. How many states does the minimal equivalent machine have?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"15\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 15</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A machine has <code class=\"mm\">7</code> states, of which <code class=\"mm\">2</code> cannot be reached from the reset state. Minimizing the reachable states merges one pair of equivalent states. How many states does the minimal equivalent machine have?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">3</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">7</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "4",
+    "3",
+    "5",
+    "7"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">4</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">3</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">5</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">7</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> State reduction has two stages: delete states that no input string can reach, then merge states that no input string can tell apart. The order matters only in that unreachable states must go first \u2014 they can otherwise distort the equivalence classes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start with 7 states.</li><li>Remove the 2 unreachable states: 5 remain.</li><li>Merge the one equivalent pair: <code class=\"mm\">5 \u2212 1 = 4</code>.</li></ol><p class=\"row\"><b>Why one, not two.</b> Merging a pair replaces two states by a single state, so the count falls by exactly one per merged pair: 5 \u2192 4.</p><p class=\"row\"><span class=\"ansline\">Answer: Option (A) \u2014 4 states.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) 3 would need two merges among the five reachable states.</li><li>(C) 5 ignores the merge.</li><li>(D) 7 ignores both steps.</li></ul><p class=\"row\"><b>Common misconception.</b> Subtracting the number of states in a merged class from the total, which removes two states for a pair instead of one.</p>"
+  },
+  {
+   "id": "DL-U4D-Q16",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "In a Mealy machine two states are said to be 1-equivalent but not 2-equivalent. Which one of the following does that mean?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"16\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 16</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">In a Mealy machine two states are said to be <b>1-equivalent but not 2-equivalent</b>. Which one of the following does that mean?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">They give the same output for exactly one input string and different outputs for all the rest.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">They are equivalent for one clock cycle and permanently different afterwards.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">They differ on at most one transition, and that transition can be taken only once.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"16\" data-typ=\"MCQ\" name=\"q16\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">They give the same output for every input string of length at most 1, but there is an input string of length 2 for which their outputs differ.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "They give the same output for exactly one input string and different outputs for all the rest.",
+    "They are equivalent for one clock cycle and permanently different afterwards.",
+    "They differ on at most one transition, and that transition can be taken only once.",
+    "They give the same output for every input string of length at most 1, but there is an input string of length 2 for which their outputs differ."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">They give the same output for exactly one input string and different outputs for all the rest.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">They are equivalent for one clock cycle and permanently different afterwards.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">They differ on at most one transition, and that transition can be taken only once.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">They give the same output for every input string of length at most 1, but there is an input string of length 2 for which their outputs differ.</span>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two states are <i>k</i>-equivalent when they produce identical output sequences for every input string of length <i>k</i> or less. Equivalence is the limit of this sequence as <i>k</i> grows.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><i>k</i> = 1 compares the outputs for a single input symbol, that is, the output entries on the transitions out of the two states.</li><li><i>k</i> = 2 compares outputs for all input strings of length 1 and 2, which pulls in the successors of the two states.</li><li>\"1-equivalent but not 2-equivalent\" therefore means: identical on every string of length 0 and 1, different on at least one string of length 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) counts input strings instead of their lengths.</li><li>(B) describes a timing behaviour; equivalence is a property of the whole input\u2013output function.</li><li>(C) a single differing transition already breaks 1-equivalence.</li></ul><p class=\"row\"><b>Common misconception.</b> Reading \"not 2-equivalent\" as \"different in two places\". The number is the length of the input string being compared, not the number of differences.</p>"
+  },
+  {
+   "id": "DL-U4D-Q17",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which of the following statements about state reduction and state assignment are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"17\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 17</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about state reduction and state assignment are <b>TRUE</b>? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Removing states that cannot be reached from the reset state never changes the input\u2013output behaviour.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Merging two equivalent states never changes the input\u2013output behaviour.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A machine with <i>n</i> states always needs exactly <code class=\"mm\">\u2308log<sub>2</sub> n\u2309</code> flip-flops.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"17\" data-typ=\"MSQ\" name=\"q17\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In a Moore machine, two states with different outputs can never be equivalent.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "Removing states that cannot be reached from the reset state never changes the input\u2013output behaviour.",
+    "Merging two equivalent states never changes the input\u2013output behaviour.",
+    "A machine with n states always needs exactly \u2308log2 n\u2309 flip-flops.",
+    "In a Moore machine, two states with different outputs can never be equivalent."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Removing states that cannot be reached from the reset state never changes the input\u2013output behaviour.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Merging two equivalent states never changes the input\u2013output behaviour.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">A machine with <i>n</i> states always needs exactly <code class=\"mm\">\u2308log<sub>2</sub> n\u2309</code> flip-flops.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">In a Moore machine, two states with different outputs can never be equivalent.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Reduction preserves behaviour; assignment preserves nothing but the cost of the implementation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. No input string can reach an unreachable state, so its removal is invisible at the outputs.</li><li>(B) True. Equivalent states have, by definition, the same output for every input string.</li><li>(C) False. <code class=\"mm\">\u2308log<sub>2</sub> n\u2309</code> is the <i>minimum</i> for a compact binary code; one-hot uses <i>n</i> flip-flops.</li><li>(D) True. A Moore output is fixed by the state, so a differing output separates the two states immediately, at <i>k</i> = 0.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Treating the binary minimum as a requirement. It is a lower bound; any code with at least that many bits is legal, and extra bits simply leave unused codes.</p>"
+  },
+  {
+   "id": "DL-U4D-Q18",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "An 8-state machine is reduced to 5 states and implemented with a compact binary state assignment using the minimum number of flip-flops. How many flip-flops are used, and how many register codes are never used?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"18\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 18</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">An 8-state machine is reduced to <code class=\"mm\">5</code> states and implemented with a compact binary state assignment using the minimum number of flip-flops. How many flip-flops are used, and how many register codes are never used?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">3 flip-flops, 3 unused codes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">3 flip-flops, 5 unused codes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">4 flip-flops, 11 unused codes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">2 flip-flops, 0 unused codes</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "3 flip-flops, 3 unused codes",
+    "3 flip-flops, 5 unused codes",
+    "4 flip-flops, 11 unused codes",
+    "2 flip-flops, 0 unused codes"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">3 flip-flops, 3 unused codes</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">3 flip-flops, 5 unused codes</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">4 flip-flops, 11 unused codes</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">2 flip-flops, 0 unused codes</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An <i>m</i>-bit register has <code class=\"mm\">2<sup>m</sup></code> codes, so a machine with <i>s</i> states needs <code class=\"mm\">m = \u2308log<sub>2</sub> s\u2309</code> flip-flops and leaves <code class=\"mm\">2<sup>m</sup> \u2212 s</code> codes unused.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The reduced machine has 5 states, so <code class=\"mm\">2<sup>2</sup> = 4 &lt; 5 \u2264 8 = 2<sup>3</sup></code>: 3 flip-flops.</li><li>Available codes: 8. Used: 5.</li><li>Unused: <code class=\"mm\">8 \u2212 5 = 3</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) \u2014 3 flip-flops and 3 unused codes.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) counts the used codes, not the unused ones.</li><li>(C) uses 4 flip-flops, which is more than the minimum.</li><li>(D) 2 flip-flops can code only 4 states, fewer than the 5 needed.</li></ul><p class=\"row\"><b>Common misconception.</b> Forgetting that the unused codes still exist in the register and must be handled \u2014 either by forcing them back into the valid set or by proving they are never entered.</p>"
+  },
+  {
+   "id": "DL-U4D-Q19",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "state-reduction-assignment",
+   "subtopic": "state-reduction-assignment",
+   "subtopic_label": "State reduction &amp; assignment",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A Moore machine has six states A to F, reset state A, outputs A = 0, B = 0, C = 1, D = 0, E = 0, F = 0 and the transitions below, written as input \u2192 next state. A: 0 \u2192 B, 1 \u2192 C B: 0 \u2192 B, 1 \u2192 D C: 0 \u2192 D, 1 \u2192 C D: 0 \u2192 B, 1 \u2192 C E: 0 \u2192 E, 1 \u2192 F F: 0 \u2192 F, 1 \u2192 E Counting only states reachable from the reset state, how many states does the minimal equivalent machine have? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"19\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"state-reduction-assignment\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 19</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">state-reduction-assignment</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">A Moore machine has six states <code class=\"mm\">A</code> to <code class=\"mm\">F</code>, reset state <code class=\"mm\">A</code>, outputs <code class=\"mm\">A = 0, B = 0, C = 1, D = 0, E = 0, F = 0</code> and the transitions below, written as input \u2192 next state.<br/><br/>A: 0 \u2192 B, 1 \u2192 C<br/>B: 0 \u2192 B, 1 \u2192 D<br/>C: 0 \u2192 D, 1 \u2192 C<br/>D: 0 \u2192 B, 1 \u2192 C<br/>E: 0 \u2192 E, 1 \u2192 F<br/>F: 0 \u2192 F, 1 \u2192 E<br/><br/>Counting only states reachable from the reset state, how many states does the minimal equivalent machine have?<br/>(Enter an integer.)</p><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 19\" autocomplete=\"off\" class=\"natinput\" data-n=\"19\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a single number.</div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Reduce in two stages: drop unreachable states, then merge states that no input string can distinguish. For a Moore machine the first partition is by output value.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Reachability from A: A \u2192 B, C; B \u2192 B, D; C \u2192 D, C; D \u2192 B, C. The reachable set is {A, B, C, D}; E and F are never entered.</li><li>Partition by output: {A, B, D} (output 0) and {C} (output 1).</li><li>Refine {A, B, D} on input 1: A \u2192 C, D \u2192 C, but B \u2192 D. Since C and D lie in different blocks, B separates from A and D. Blocks: {A, D}, {B}, {C}.</li><li>Refine again: A and D both go to B on 0 and to C on 1, so {A, D} is stable.</li></ol><p class=\"row\"><b>Result.</b> Three classes \u2014 {A, D}, {B}, {C} \u2014 so the minimal machine has 3 states.</p><p class=\"row\"><span class=\"ansline\">Answer: 3.</span></p><p class=\"row\"><b>Common misconception.</b> Including the unreachable states E and F in the count. They are equivalent to each other and cannot be reached, so they contribute nothing to the minimal machine; a careless count of all six states after merging gives 4 instead of 3.</p>",
+   "answer_format": "a number"
+  },
+  {
+   "id": "DL-U4D-Q20",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A register-to-register path runs on a 10 ns clock, with clock-to-Q delay tcq = 2 ns and setup time tsu = 1 ns, and no clock skew. What is the largest combinational delay the path can tolerate?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"20\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 20</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A register-to-register path runs on a <code class=\"mm\">10 ns</code> clock, with clock-to-Q delay <code class=\"mm\">t<sub>cq</sub> = 2 ns</code> and setup time <code class=\"mm\">t<sub>su</sub> = 1 ns</code>, and no clock skew. What is the largest combinational delay the path can tolerate?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">8 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">11 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">7 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"20\" data-typ=\"MCQ\" name=\"q20\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">9 ns</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "8 ns",
+    "11 ns",
+    "7 ns",
+    "9 ns"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">8 ns</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">11 ns</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">7 ns</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">9 ns</span>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The setup check says the data must arrive at the capturing flip-flop one setup time before the next active edge: <code class=\"mm\">t<sub>cq</sub> + t<sub>comb</sub> + t<sub>su</sub> \u2264 T</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Rearrange: <code class=\"mm\">t<sub>comb</sub> \u2264 T \u2212 t<sub>cq</sub> \u2212 t<sub>su</sub></code>.</li><li>Substitute: <code class=\"mm\">10 \u2212 2 \u2212 1 = 7 ns</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) \u2014 7 ns.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) omits the setup time.</li><li>(D) omits the clock-to-Q delay.</li><li>(B) is larger than the clock period itself, which would make the path fail by inspection.</li></ul><p class=\"row\"><b>Common misconception.</b> Forgetting that the launching flip-flop's own clock-to-Q delay is part of the same clock period.</p>"
+  },
+  {
+   "id": "DL-U4D-Q21",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "On a path between two flip-flops, tcq,min = 1.0 ns, tcomb,min = 0.5 ns and th = 1.0 ns. The clock at the capturing flip-flop arrives 0.4 ns later than at the launching flip-flop. What is the hold slack, and is the path safe?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"21\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 21</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">On a path between two flip-flops, <code class=\"mm\">t<sub>cq,min</sub> = 1.0 ns</code>, <code class=\"mm\">t<sub>comb,min</sub> = 0.5 ns</code> and <code class=\"mm\">t<sub>h</sub> = 1.0 ns</code>. The clock at the capturing flip-flop arrives <code class=\"mm\">0.4 ns</code> later than at the launching flip-flop. What is the hold slack, and is the path safe?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1.5 ns; the path is safe</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">0.1 ns; the path is safe</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">\u22120.1 ns; the path has a hold violation</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"21\" data-typ=\"MCQ\" name=\"q21\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">0.9 ns; the path is safe</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "1.5 ns; the path is safe",
+    "0.1 ns; the path is safe",
+    "\u22120.1 ns; the path has a hold violation",
+    "0.9 ns; the path is safe"
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">1.5 ns; the path is safe</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">0.1 ns; the path is safe</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">\u22120.1 ns; the path has a hold violation</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">0.9 ns; the path is safe</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The hold check asks whether the data launched by one edge is still held long enough at the capturing flip-flop: <code class=\"mm\">t<sub>cq,min</sub> + t<sub>comb,min</sub> \u2265 t<sub>h</sub> + skew</code>, where positive skew means the capturing clock arrives later.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Earliest data arrival at the capturing flip-flop: <code class=\"mm\">1.0 + 0.5 = 1.5 ns</code> after the edge.</li><li>The data must stay stable for <code class=\"mm\">t<sub>h</sub> + skew = 1.0 + 0.4 = 1.4 ns</code>.</li><li>Slack = <code class=\"mm\">1.5 \u2212 1.4 = 0.1 ns</code>, which is positive.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) \u2014 0.1 ns of hold slack; the path is safe.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(C) subtracts the skew in the wrong direction.</li><li>(A) adds the skew instead of subtracting it.</li><li>(D) drops the skew altogether.</li></ul><p class=\"row\"><b>Common misconception.</b> Treating positive skew as harmless. It shortens the effective hold requirement for the destination but steals setup margin; a large enough positive skew turns this path into a hold violation.</p>"
+  },
+  {
+   "id": "DL-U4D-Q22",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which of the following statements about timing are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"22\" data-type=\"MSQ\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 22</span><span class=\"tag msq\">MSQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about timing are <b>TRUE</b>? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"22\" data-typ=\"MSQ\" name=\"q22\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A path that misses its setup check can be given two clock cycles, which relaxes both the setup and the hold requirement for that path.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"22\" data-typ=\"MSQ\" name=\"q22\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Splitting a long combinational path with a pipeline register can raise the maximum clock frequency, at the cost of one extra cycle of latency.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"22\" data-typ=\"MSQ\" name=\"q22\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Adding a delay buffer to a short path can repair a hold violation, but it makes the setup check harder.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"22\" data-typ=\"MSQ\" name=\"q22\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">A path with <code class=\"mm\">t<sub>cq</sub> = 1 ns</code>, <code class=\"mm\">t<sub>comb,max</sub> = 9 ns</code> and <code class=\"mm\">t<sub>su</sub> = 1 ns</code> meets its setup requirement at <code class=\"mm\">100 MHz</code>.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "A path that misses its setup check can be given two clock cycles, which relaxes both the setup and the hold requirement for that path.",
+    "Splitting a long combinational path with a pipeline register can raise the maximum clock frequency, at the cost of one extra cycle of latency.",
+    "Adding a delay buffer to a short path can repair a hold violation, but it makes the setup check harder.",
+    "A path with tcq = 1 ns, tcomb,max = 9 ns and tsu = 1 ns meets its setup requirement at 100 MHz."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">A path that misses its setup check can be given two clock cycles, which relaxes both the setup and the hold requirement for that path.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Splitting a long combinational path with a pipeline register can raise the maximum clock frequency, at the cost of one extra cycle of latency.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">Adding a delay buffer to a short path can repair a hold violation, but it makes the setup check harder.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">A path with <code class=\"mm\">t<sub>cq</sub> = 1 ns</code>, <code class=\"mm\">t<sub>comb,max</sub> = 9 ns</code> and <code class=\"mm\">t<sub>su</sub> = 1 ns</code> meets its setup requirement at <code class=\"mm\">100 MHz</code>.</span>"
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "answer_display": "Options (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Setup and hold are separate inequalities. Setup depends on the clock period; hold does not. A multicycle path lengthens the time allowed for the data to arrive, so it relaxes setup only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) False. Hold is checked against the <i>same</i> edge, so allowing two cycles for setup leaves the hold condition unchanged; a multicycle path usually needs its own hold check and often a delay buffer.</li><li>(B) True. Each shorter segment must fit in one period, so the clock can be faster, at the cost of a cycle of latency.</li><li>(C) True. Extra delay widens the gap between the fastest data arrival and the hold window, which is the hold fix, while eating into the period available for setup.</li><li>(D) False. At 100 MHz, <code class=\"mm\">T = 10 ns</code>, but <code class=\"mm\">1 + 9 + 1 = 11 ns &gt; 10 ns</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Believing a multicycle path is a blanket relaxation. It buys setup margin only, and the hold check on the same edge still has to pass on its own.</p>"
+  },
+  {
+   "id": "DL-U4D-Q23",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "Which of the following statements about setup and hold times are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"23\" data-type=\"MSQ\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 23</span><span class=\"tag msq\">MSQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about setup and hold times are <b>TRUE</b>? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"23\" data-typ=\"MSQ\" name=\"q23\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Setup time is the interval before the active clock edge during which the data input must already be stable.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"23\" data-typ=\"MSQ\" name=\"q23\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Hold time is the interval after the active clock edge during which the data input must stay stable.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"23\" data-typ=\"MSQ\" name=\"q23\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A setup violation can be removed by lengthening the clock period.</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"23\" data-typ=\"MSQ\" name=\"q23\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">A hold violation can be removed by lengthening the clock period.</span><span class=\"mark\"></span></label></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [
+    "Setup time is the interval before the active clock edge during which the data input must already be stable.",
+    "Hold time is the interval after the active clock edge during which the data input must stay stable.",
+    "A setup violation can be removed by lengthening the clock period.",
+    "A hold violation can be removed by lengthening the clock period."
+   ],
+   "options_html": [
+    "<span class=\"lbl\">A</span><span class=\"txt\">Setup time is the interval before the active clock edge during which the data input must already be stable.</span>",
+    "<span class=\"lbl\">B</span><span class=\"txt\">Hold time is the interval after the active clock edge during which the data input must stay stable.</span>",
+    "<span class=\"lbl\">C</span><span class=\"txt\">A setup violation can be removed by lengthening the clock period.</span>",
+    "<span class=\"lbl\">D</span><span class=\"txt\">A hold violation can be removed by lengthening the clock period.</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A flip-flop samples its input in a small window around the active edge: the setup window before it and the hold window after it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True by definition \u2014 the data must be valid <code class=\"mm\">t<sub>su</sub></code> before the edge.</li><li>(B) True by definition \u2014 it must remain valid <code class=\"mm\">t<sub>h</sub></code> after the edge.</li><li>(C) True. The setup inequality contains the period, so a longer period buys margin.</li><li>(D) False. The hold inequality contains no period at all: slowing the clock changes nothing.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Believing every timing failure is cured by running slower. A hold violation is a race between two paths in the same cycle and survives any clock period.</p>"
+  },
+  {
+   "id": "DL-U4D-Q24",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "A register-to-register path has tcq = 1 ns, tcomb,max = 5 ns and tsu = 2 ns, with no clock skew. What is the highest clock frequency, in MHz, at which the circuit can run? (Enter an integer.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"24\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 24</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">A register-to-register path has <code class=\"mm\">t<sub>cq</sub> = 1 ns</code>, <code class=\"mm\">t<sub>comb,max</sub> = 5 ns</code> and <code class=\"mm\">t<sub>su</sub> = 2 ns</code>, with no clock skew. What is the highest clock frequency, in MHz, at which the circuit can run?<br/>(Enter an integer.)</p><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 24\" autocomplete=\"off\" class=\"natinput\" data-n=\"24\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a single number.</div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    125
+   ],
+   "answer_display": "125",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The minimum clock period is the sum of the launch delay, the path delay and the capture setup requirement; the maximum frequency is its reciprocal.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">T<sub>min</sub> = t<sub>cq</sub> + t<sub>comb,max</sub> + t<sub>su</sub></code>.</li><li><code class=\"mm\">T<sub>min</sub> = 1 + 5 + 2 = 8 ns</code>.</li><li><code class=\"mm\">f<sub>max</sub> = 1 / 8 ns = 125 MHz</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 125 MHz.</span></p><p class=\"row\"><b>Common misconception.</b> Using only the combinational delay, which gives <code class=\"mm\">1/5 ns = 200 MHz</code>. The flip-flop's own delays are part of every cycle.</p>",
+   "answer_format": "a number"
+  },
+  {
+   "id": "DL-U4D-Q25",
+   "subject": "digital-logic",
+   "subject_name": "Digital Logic",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "sequential-fsm-counters",
+   "unit_name": "Sequential Circuits: Counters & State Machines",
+   "topic": "Sequential Circuits: Counters & State Machines",
+   "sub": "timing-analysis",
+   "subtopic": "timing-analysis",
+   "subtopic_label": "Timing analysis",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (third pass)",
+   "question": "On a register-to-register path, tcq,min = 1.0 ns, tcomb,min = 0.5 ns and th = 0.8 ns. The clock at the capturing flip-flop arrives 1.0 ns later than at the launching flip-flop, and the setup check is already met. What is the minimum extra delay, in ns, that must be added to the combinational path to remove the hold violation? (Enter the value to one decimal place.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"25\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"digital-logic\" data-unit=\"sequential-fsm-counters\" data-unit-number=\"4\" data-subtopic=\"timing-analysis\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 25</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">timing-analysis</span><span class=\"tag src\">original gate-style</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">On a register-to-register path, <code class=\"mm\">t<sub>cq,min</sub> = 1.0 ns</code>, <code class=\"mm\">t<sub>comb,min</sub> = 0.5 ns</code> and <code class=\"mm\">t<sub>h</sub> = 0.8 ns</code>. The clock at the capturing flip-flop arrives <code class=\"mm\">1.0 ns</code> later than at the launching flip-flop, and the setup check is already met. What is the minimum extra delay, in ns, that must be added to the combinational path to remove the hold violation?<br/>(Enter the value to one decimal place.)</p><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 25\" autocomplete=\"off\" class=\"natinput\" data-n=\"25\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: a single number.</div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div></div>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    0.3
+   ],
+   "answer_display": "0.3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The hold condition is <code class=\"mm\">t<sub>cq,min</sub> + t<sub>comb,min</sub> \u2265 t<sub>h</sub> + skew</code>. Positive skew (capturing clock later) tightens it, because the destination captures while the data is still arriving.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Required: <code class=\"mm\">t<sub>h</sub> + skew = 0.8 + 1.0 = 1.8 ns</code>.</li><li>Available: <code class=\"mm\">1.0 + 0.5 = 1.5 ns</code>.</li><li>Shortfall: <code class=\"mm\">1.8 \u2212 1.5 = 0.3 ns</code>.</li><li>Adding <code class=\"mm\">0.3 ns</code> of combinational delay makes the arrival exactly 1.8 ns, satisfying hold with zero slack.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.3 ns.</span></p><p class=\"row\"><b>Common misconception.</b> Trying to fix the violation by shortening the path, for example by speeding up the logic. Hold needs the data to arrive <i>later</i>, so the fix is more delay, a slower path or a reduction in skew.</p>",
+   "answer_format": "a number"
   }
  ]
 }
