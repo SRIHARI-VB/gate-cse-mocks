@@ -7,34 +7,91 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 4 — Main Memory & Virtual Memory Interface, Set 1 of 2 (second pass)**, 2026-11-04 →
-  [`computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html`](computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html)
+- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2 (second pass)**, 2026-11-04 →
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: DRAM & SRAM organization (6) · Paging & TLB hit ratio (9) · Effective access time (6) · Segmentation (4)
-- Rotation: MODE A. An unseeded `random.SystemRandom()` draw over the eleven subjects in syllabus order returned
-  **Computer Architecture**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-03, run 14, unit 3, cache-memory, Set 1 of 2 (second pass)}` and unit 3 stood at **75** questions, so
-  **B3 failed on the cap** (its first paper was 2026-10-29, so the 7-day backstop was not the reason).
-  **B4 advanced exactly one unit**: `(index_of(cache-memory) = 2 + 1) mod 6 = 3` → **Unit 4, Main Memory &
-  Virtual Memory Interface**, which already held 50 questions from 2026-10-30. **B5 applies: every unit of the
+- Subtopics: Hash functions (7) · Collision resolution: chaining (5) · Open addressing: linear, quadratic & double
+  hashing (7) · Load factor & rehashing (6)
+- Rotation: MODE A. An unseeded `random.SystemRandom()` draw over the eight subjects that had no paper dated
+  2026-11-04 returned **Programming and Data Structures**. Read from its own `master_bank.json`, the most recent
+  paper was `{2026-11-03, run 20, unit 6, heaps-priority-queues, Set 1 of 2 (second pass)}` and unit 6 stood at
+  **75** questions, so **B3 failed on the cap** (its first paper was 2026-10-30, so the 7-day backstop was not the
+  reason). **B4 advanced exactly one unit**: `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7,
+  Hashing & Hash Tables**, which already held 50 questions from 2026-11-01. **B5 applies: every unit of the
   subject stands at or above the cap**, the modulo has wrapped, and this paper is the unit's third set, labelled
   Set 1 of 2 (second pass), taking it to 75. No override was passed and no partial set was generated: exactly
   25 questions.
-- Previous test: **Databases · Unit 1 — ER Models & Relational Algebra, Set 1 of 2 (second pass)**, 2026-11-04 →
-  [`databases/er-relational-algebra/gate_db_mock_1_2026-11-04.html`](databases/er-relational-algebra/gate_db_mock_1_2026-11-04.html)
+- Previous test: **Computer Architecture · Unit 4 — Main Memory & Virtual Memory Interface, Set 1 of 2 (second
+  pass)**, 2026-11-04 →
+  [`computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html`](computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 214 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 143 archived |
+| Papers published (current + archived) | 215 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 21 Programming and Data Structures, 19 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 144 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5350 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5375 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 525 Programming and Data Structures, 475 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 143 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 144 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 14 Programming and Data Structures, 13 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Programming and Data Structures Unit 7, Set 1 of 2 (second pass)
+
+- New paper at `programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_ds_mock_7_2026-11-01_run2.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `random.SystemRandom()` draw over the eight subjects that had no
+  paper dated 2026-11-04 — Computer Architecture, Databases and Theory of Computation were already served that
+  day — returned **Programming and Data Structures**; that restriction is a scheduling choice, not a rotation
+  constant, and it changes nothing in B1–B6. Read from its own bank, the most recent paper was
+  `{2026-11-03, run 20, unit 6, heaps-priority-queues, Set 1 of 2 (second pass)}` and unit 6 stood at **75**
+  questions, so **B3 failed on the cap** (its first paper was 2026-10-30, five days earlier, so the 7-day
+  backstop was not the deciding test). **B4 advanced exactly one unit**:
+  `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7, Hashing & Hash Tables**, which already held
+  50 questions from its two 2026-11-01 sets. **B5 applies: every unit of the subject is at or above the cap, the
+  modulo has wrapped, and this is the unit's third set** — labelled Set 1 of 2 (second pass) and taking the unit
+  to **75**. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics carry new questions — hash functions 7, collision resolution by chaining 5,
+  open addressing 7, load factor & rehashing 6. Every item is new against the 50 already banked for this unit;
+  the overlaps that were checked and deliberately avoided are the division-method choice of `m` (Q01, Q05), the
+  multiplication-method evaluations (Q04, Q29), the universal-family count (Q06), the linear-probing probe
+  counts (Q07, Q20, Q39, Q41), the quadratic-probing reach (Q22, Q40), the double-hashing landing slot (Q11) and
+  the expected-cost formulas already stated in Q13, Q19, Q34, Q43 and Q50.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every answer was recomputed by script before the paper was written: the Horner hash of Q2 is
+  `((1·31 + 2)·31 + 3) mod 1000 = 1026 mod 1000 = 26`; the folding hash of Q4 is `987 + 654 + 321 = 1962 → 962`;
+  the aligned keys of Q5 reach `2^12 / 2^6 = 64` slots; the four keys of Q6 all give `k mod 8 = 4`; the expected
+  empty slots of Q7 are `100·(1 − 1/100)^100 ≈ 36.6`, that is 37; the double-hashing step of Q10 is
+  `h₂(6) = 2` with `gcd(2,12) = 2`, so `12/2 = 6` distinct slots, the sequence being 6, 8, 10, 0, 2, 4; the
+  successful-search figure of Q11 is `2·ln 2 ≈ 1.39`; Q13 crosses the threshold at `13/16 = 0.8125 > 0.75` and
+  doubles to 32; Q15 is `200/100 = 2.00` before and `200/211 ≈ 0.95` after; the multiples of 8 of Q21 occupy
+  `2000/gcd(8,2000) = 250` slots; the five keys of Q22 all sit in slot 7, leaving 11 empty; the six insertions of
+  Q23 probe `1+2+3+4+5+6 = 21` slots (simulated); Q24 is `20/17 ≈ 1.18`; and Q25 copies
+  `1+2+4+8+16+32+64 = 127` keys across seven rehashes, ending in a 128-slot table. The five MSQ answer sets were
+  checked option by option, each marked option proved and each unmarked option refuted. The grading engine was
+  replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with
+  25 unattempted, and an MSQ answered with a strict subset or a strict superset of the correct set scores 0 for
+  that question (35 → 25 in both cases, five MSQs at two marks each).
+- **Provenance.** The Programming and Data Structures bank records no verified PYQ, so no question on this paper
+  is claimed as an official GATE question; no item carries the `GATE_PYQ_VARIATION` tag, and the About tab says
+  so. Sources: 16 textbook-inspired, 9 original synthesis.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 7 card is replaced in place and
+  now lists the two first-pass sets as archives (`run1`, `run2`); the question archive renders 5,375 banked
+  records across the eleven per-subject data files, 525 of them Programming and Data Structures.
+- **Verification checklist (Section 6.8).** Shell parity: masking the title, brand line, sub-line, candidate
+  block, meta strip, question host, bank view, About view and payload leaves the new paper and the 2026-11-04
+  Computer Architecture paper byte-identical, so the `:root` block, the stylesheet, the palette aside, the
+  answer-key view and the whole grading script are unchanged. One copy: `find . -name "*.html"` shows
+  `index.html` plus exactly one file per paper, and nothing at the repository root. Links: every `href` in
+  `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a 25-button palette and 500
+  banked cards (the 25 active items are excluded from the bank tab). Tokens: the `:root` block is byte-identical
+  to `design-tokens.css` and to every other paper's; no new colour is introduced outside `:root`. Rotation: unit
+  7 is the one Section 1 selects from `master_bank.json`, not from the calendar.
 
 ### 2026-11-04 — Computer Architecture Unit 4, Set 1 of 2 (second pass)
 
