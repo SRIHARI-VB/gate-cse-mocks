@@ -7,32 +7,73 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 6 — Heaps & Priority Queues, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html`](programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html)
+- **Operating Systems · Unit 6 — File Systems & Disk Scheduling, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html`](operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Min-heaps & max-heaps (7) · Heapify & build-heap (6) · Heap-sort (6) ·
-  Priority-queue applications (6)
-- Rotation: MODE A. An unseeded draw over the eleven GATE CSE subjects returned **Programming and Data Structures**.
-  Its most recent paper was `{2026-11-03, run 19, unit 5, search-trees, Set 1 of 2 (second pass)}`, and unit 5 stood
-  at **75** questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(index_of(search-trees) = 4 + 1) mod 7 = 5` → **Unit 6, Heaps & Priority Queues**, which already held 50
-  questions. The unit therefore opens a second pass, its 25 new questions taking it to 75. No override, no partial
-  set, exactly 25 questions.
-- Previous test: **Programming and Data Structures · Unit 5 — Binary Search Trees & Balanced Trees, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html`](programming-data-structures/search-trees/gate_ds_mock_5_2026-11-03.html)
+- Subtopics: File allocation: indexed & linked (11) · Free-space management (4) · Disk scheduling (5) ·
+  Access control & protection (5)
+- Rotation: MODE A. An unseeded draw over the eleven GATE CSE subjects returned **Operating Systems**. Its most
+  recent paper was `{2026-11-03, run 23, unit 5, virtual-memory, Set 1 of 2 (third pass)}`, and unit 5 stood at
+  **100** questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(index_of(virtual-memory) = 4 + 1) mod 6 = 5` → **Unit 6, File Systems & Disk Scheduling**, which already held
+  75 questions. Every unit of all eleven subjects now stands at or above the 50-question cap, so the series is on
+  its second pass everywhere; this paper takes Unit 6 to 100. No override, no partial set, exactly 25 questions.
+- Previous test: **Programming and Data Structures · Unit 6 — Heaps & Priority Queues, Set 1 of 2 (second pass)**, 2026-11-03 →
+  [`programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html`](programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 207 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 71 current · 136 archived |
+| Papers published (current + archived) | 208 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 137 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5175 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5200 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 136 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 137 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Operating Systems Unit 6, Set 2 of 2 (second pass)
+
+- New paper at `operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_os_mock_6_2026-11-01_run1.html` with its content frozen, so the unit folder holds
+  exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 8, **Operating Systems**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 23, unit 5, virtual-memory, Set 1 of 2 (third pass)}` and unit 5 stood at **100** questions, so
+  **B3 failed on the cap**. **B4 advanced exactly one unit**: `(index_of(virtual-memory) = 4 + 1) mod 6 = 5` →
+  **Unit 6, File Systems & Disk Scheduling**, which already held 75. Every unit of all eleven subjects now stands at
+  or above the 50-question cap, so no subject can receive a first-pass set any longer and the series runs its second
+  pass everywhere (Discrete Mathematics is already there, its Unit 16 carrying 75). This paper is the second set of
+  Unit 6's second pass and takes the unit to 100. No override was passed and no partial set was generated: exactly
+  25 questions.
+- **Coverage.** All four subtopics of the unit carry questions — file allocation: indexed & linked 11, free-space
+  management 4, disk scheduling 5, access control & protection 5. Unit 6 now holds **100** questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every numeric answer was recomputed independently by script before the paper was written: 6000
+  rpm is one revolution in 10 ms, so 5 ms of average rotational latency; 4 platters with both surfaces used, 1024
+  tracks, 512 sectors of 512 B give exactly 2 GiB; a 4 KB block holds 1024 pointers of 4 B, so one index block
+  reaches 4 MiB; byte 5,000,000 of a file with 12 direct pointers falls in block 184 of the double-indirect region
+  (5,000,000 − 4,243,456 = 756,544 and 184 × 4096 = 753,664), which costs 4 reads counting the inode read;
+  `0x0000FFFF` with the low bit as block 0 leaves block 16 as the first free block; SCAN from cylinder 143 moving
+  down over 86, 147, 91, 177, 94, 150, 102, 175, 130 travels 57 + 86 + 177 = 320 cylinders, where LOOK would travel
+  148; 12.5 % of a 256 MB partition is 32 MB, which holds 131,072 inodes of 256 B; and 1024³ blocks of 4 KB is 2⁴²
+  bytes, that is 4096 GiB. The five MSQ answer sets were checked option by option, each marked option proved and
+  each unmarked option refuted.
+- **Grading engine.** Replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank
+  paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0.
+- **Interface.** Same shell as every other paper — identical markup, CSS and JavaScript. The `<style>` and closing
+  `<script>` blocks hash to the same digests as the 2026-11-03 Unit 5 paper this one follows, and the `:root` block
+  matches `design-tokens.css`. The Question Bank tab shows the 575 banked items that are not on the active paper,
+  and the portal's `tests[]` entry, its archive links and `data/questions-operating-systems.js` were extended from
+  the same 25 records.
+- **Provenance.** No previous-year question on file allocation, free-space management, disk scheduling or file
+  protection has been verified against an official paper and answer key, so nothing on this paper is claimed as an
+  official GATE question and no item carries `GATE_PYQ_VARIATION`. Sources: 13 textbook-inspired, 12 original
+  synthesis.
 
 ### 2026-11-03 — Programming and Data Structures Unit 6, Set 1 of 2 (second pass)
 
