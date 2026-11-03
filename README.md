@@ -7,32 +7,91 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 3 — Database Normalization, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`databases/normalization/gate_db_mock_3_2026-11-03.html`](databases/normalization/gate_db_mock_3_2026-11-03.html)
+- **Algorithms · Unit 2 — Divide and Conquer & Sorting, Set 3 (second pass)**, 2026-11-03 →
+  [`algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html`](algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: FD & Armstrong's axioms (5) · closure of attribute sets & keys (5) · 1NF/2NF/3NF/BCNF (5) ·
-  lossless join & dependency preservation (5) · multivalued dependencies & 4NF (5)
-- Rotation: MODE A. The draw returned **Databases**. Its most recent paper was `{2026-11-02, run 18, unit 2,
-  sql-querying}`, and unit 2 stood at **75** questions, above `UNIT_QUESTION_CAP = 50`, so **B3 failed** and **B4
-  advanced exactly one unit**: `(2 + 1) mod 5 = 3` → **Unit 3, Database Normalization**. All five databases units are
-  at or above the cap (75, 75, 50, 50, 50), so **B5 applies**: the modulo wraps and a second pass begins for this
-  subject. Unit 3 stood at 50 and now stands at 75, recorded here as a second-pass set. See the run entry below for why
-  the run-12–30 "target under the cap" restriction was not applied this time.
-- Previous test: **Discrete Mathematics · Unit 14 — Number Theory, Set 1 of 2**, 2026-11-03 →
-  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
+- Subtopics: merge sort & quick sort (7) · counting & radix sort (6) · selection & the k-th element (6) ·
+  inversion counting (6)
+- Rotation: MODE A. The draw returned **Algorithms**. Its most recent paper was `{2026-11-03, run 15, unit 1,
+  asymptotic-analysis}`, and unit 1 stood at **75** questions (above `UNIT_QUESTION_CAP = 50`) and had been current
+  for **8** days (above `DAYS_PER_UNIT_MAX = 7`), so **B3 failed on both tests** and **B4 advanced exactly one unit**:
+  `(0 + 1) mod 7 = 1` → **Unit 2, Divide and Conquer & Sorting**. Unit 2 held 50 questions from 2026-10-27 and
+  2026-10-28, so this is **Set 3**, opening the second pass for that unit.
+- Previous test: **Databases · Unit 3 — Database Normalization, Set 1 of 2 (second pass)**, 2026-11-03 →
+  [`databases/normalization/gate_db_mock_3_2026-11-03.html`](databases/normalization/gate_db_mock_3_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 194 (30 Discrete Mathematics, 15 Algorithms, 13 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 70 current · 124 archived |
+| Papers published (current + archived) | 195 (30 Discrete Mathematics, 16 Algorithms, 13 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 70 current · 125 archived |
 | Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4850 (750 Discrete Mathematics, 375 Algorithms, 325 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4875 (750 Discrete Mathematics, 400 Algorithms, 325 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 124 (15 Discrete Mathematics, 8 Algorithms, 8 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 125 (15 Discrete Mathematics, 9 Algorithms, 8 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Algorithms Unit 2, Set 3 (second pass)
+
+- New paper at `algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html`. The 2026-10-28 Set 2 paper
+  moved to `algorithms/sorting-divide-conquer/archive/gate_algo_mock_2_2026-10-28_run2.html` with its content frozen
+  (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper.
+  The repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `random.SystemRandom()` draw over the eleven subjects returned
+  **Algorithms**. `runs[]` gave the most recent paper as `{2026-11-03, run 15, unit 1, asymptotic-analysis, Set 3
+  (second pass)}`; unit 1 held **75** questions and had been current for **8** days, so **B3 failed** on both the cap
+  and the day backstop, and **B4 advanced exactly one unit**: `(0 + 1) mod 7 = 1` → **Unit 2, Divide and Conquer &
+  Sorting**. Unit 2 held 50 questions from 2026-10-27 and 2026-10-28, so this paper is **Set 3**, the second pass over
+  this unit; unit 2 now stands at 75. No override, no partial set, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: merge sort & quick sort 7 · counting & radix sort 6 · selection & the k-th
+  element 6 · inversion counting 6. Difficulty 10 easy / 10 medium / 5 hard. Sources: 23 `STANDARD_TEXTBOOK`,
+  2 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** Merge sort & quick sort: the smallest number of comparisons a merge of runs of sizes m and n
+  can make (**min(m, n)**), the tie-break that makes a merge stable (**take the left run**), the comparisons Lomuto
+  quicksort makes on 1, 2, …, n (**n(n − 1)/2**), what Hoare's partition returns (**a split point that need not be the
+  pivot's final place**), an MSQ on merge-sort levels and quicksort depth (**A, B**), the number of merge operations on
+  12 keys (**11**), and `T(6)` for `T(n) = T(n − 1) + (n − 1)` (**15**). Counting & radix sort: the input counting sort
+  cannot take at all (**real-valued keys**), MSD against LSD (**stability versus recursion into buckets**), the expected
+  time of bucket sort (**Θ(n)**), an MSQ on cost, space and the escaped lower bound (**A, B, C**), the prefix-sum entry
+  at index 2 for `[1, 0, 3, 1, 3]` (**3**), and radix sort against one full-range count array (**Θ(n) against Θ(2³²)**).
+  Selection: quickselect with a minimum pivot (**Θ(n²)**), the median of two sorted arrays (**O(log m)**), an MSQ on a
+  bounded heap and the Ω(n) lower bound (**A, B**), the comparison count on 8 keys (**28**), the recurrence
+  `T(3n/4) + Θ(n)` (**Θ(n)**), and quickselect against median-of-medians (**expected linear versus worst-case linear**).
+  Inversions: the array with exactly two inversions (**[2, 1, 4, 3]**), the inversions counted by one merge step (**4**),
+  an MSQ on inversion, adjacency and cross pairs (**A, B, D**), the parity of the count (**a transposition changes it by
+  an odd amount**), an MSQ on the Θ(n log n) counter (**A, B, C**), and a 10-key decreasing array with its first two keys
+  exchanged (**44**).
+- **Answers recomputed, not asserted.** Every key came from a script: the minimum merge comparisons of 5 and 8 keys is 5
+  (attained when the runs do not interleave); Lomuto quicksort makes 45 comparisons on 1..10 and `n(n − 1)/2` in general;
+  merge sort on 12 keys performs 11 merges; `T(6) = 15`; the prefix sums of `[1, 0, 3, 1, 3]` are `[1, 3, 3, 5]`, so
+  index 2 holds 3; quickselect with a minimum pivot makes 28 comparisons on 8 keys; the four candidate arrays have
+  1, 2, 3 and 3 inversions, so exactly one has two; the top-level merge of `[3, 4]` and `[1, 2]` adds 4; a 10-key
+  decreasing array has 45 inversions and one adjacent exchange gives 44. The claim that a permutation and its inverse
+  always agree on the inversion count was checked over all 120 permutations of 5 keys, and the claim that a
+  transposition changes the count by an odd amount over all 120 permutations of 4 keys. The grading engine was then
+  replayed against the decoded payload: a perfect attempt scores **35 / 35** with 25 correct, a blank paper **0 / 35**
+  with 25 unattempted, and an MSQ answered with a strict subset or a strict superset of the correct set scores 0 for
+  that question (**33 / 35**).
+- **No PYQ claim.** The algorithms bank records no verified previous-year question, so no item on this paper carries
+  `GATE_PYQ_VARIATION` and nothing here is called an official GATE question. The About tab says so plainly.
+- **Interface.** The paper is generated from the Unit 1 shell: with the title, sub-line, meta strip, question host,
+  bank view, About view and payload masked, the remaining **27,615 bytes** are byte-identical to
+  `gate_algo_mock_1_2026-11-02.html`. No `<link>`, no `http` URL, no KaTeX — the file opens offline. All seven
+  `data-*` attributes are present on all 25 cards and on all 375 bank cards; the palette has 25 buttons; 5 NAT inputs
+  and 80 option inputs render; the Answer Key tab ships `disabled` with an empty list; every `.sol` block is empty and
+  hidden until Submit. The `:root` block matches `design-tokens.css` and `index.html` byte for byte.
+- **Question Bank tab.** 375 solved questions — the 400 in the bank less the 25 of the active set, which are not
+  repeated. Unit 1 therefore reads 22 / 20 / 20 / 13 = 75 and Unit 2 reads 14 / 12 / 12 / 12 = 50, its two first-pass
+  sets; the 25 active items (ALG-U2-Q51 … ALG-U2-Q75) appear only in the test, never in the bank view.
+- **Questions banked.** `algorithms/question-bank/master_bank.json` now holds **400** questions (run 16 recorded), and
+  `data/questions-algorithms.js` was extended to match with 400 records.
+- **Portal.** `index.html` data block: the Algorithms Unit 2 entry now points at the 2026-11-03 paper with `Set 3
+  (second pass)`, and both earlier sets (2026-10-28, 2026-10-27) are listed as archive links on that card. The card
+  count is unchanged at 70.
 
 ### 2026-11-03 — Databases Unit 3, Set 1 of 2 (second pass)
 

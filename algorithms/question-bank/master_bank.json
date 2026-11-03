@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 375,
+  "total_questions": 400,
   "units_with_questions": [
    1,
    2,
@@ -16,7 +16,7 @@
    6,
    7
   ],
-  "total_runs": 15
+  "total_runs": 16
  },
  "runs": [
   {
@@ -879,6 +879,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. Every one of the eleven subjects already carried a paper dated 2026-11-02 and every current unit stood at or above UNIT_QUESTION_CAP = 50 (algorithms 50, compiler-design 100, computer-architecture 50, computer-networks 75, databases 75, digital-logic 100, engineering-mathematics 75, operating-systems 100, programming-data-structures 75, theory-of-computation 125, discrete-mathematics 50), so the draw was restricted to the six subjects whose next unit after the modulo advance would still be below the cap: computer-architecture (unit 6 -> 1, 0 questions), discrete-mathematics (12 -> 13, 0), algorithms (7 -> 1, 50), databases (2 -> 3, 50), engineering-mathematics (4 -> 5, 50) and programming-data-structures (2 -> 3, 50). An unseeded secrets.randbelow(6) draw over those six in syllabus order returned index 3 - Algorithms. runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 14, unit 7, complexity-np-complete, Set 2 of 2}. Unit 7 held 50 questions, exactly the cap, so step B3 failed and step B4 advanced exactly one unit: (6 + 1) mod 7 = 0 -> Unit 1, Asymptotic Analysis & Recurrences. Unit 1 already held 50 questions from runs 1 and 2 (2026-10-26), so this is Set 3, opening a second pass; all seven Algorithms units stand at 50, so the modulo has wrapped. No override was used and no partial set was generated.",
    "note": "Set 3 (second pass) for Algorithms Unit 1, the first paper of the subject's second pass. The 2026-10-26 paper moved to archive/gate_algo_mock_1_2026-10-26_run2.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U1-Q51..Q75); no id and no normalised stem collides with the 50 items already banked for this unit. Coverage: big-O, omega and Theta 7, master theorem cases 6, recursion tree method 7, substitution method 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the big-O witness is n0 = 137 with 136 failing; T(4) = 28 and T(8) = 15 by direct unrolling; the recursion tree for T(n) = 2T(n/2) + n^2 on n = 4 has 7 nodes; the extended Master Theorem on 4T(n/2) + n^2 log n gives k = 2; and the smallest integer c with T(n) <= c n^2 is 2, since c = 1 fails at n = 2 where T(2) = 6 > 4. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 16,
+   "date": "2026-11-03",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "set": "Set 3 (second pass)",
+   "count": 25,
+   "file": "algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html",
+   "archived_previous": "algorithms/sorting-divide-conquer/archive/gate_algo_mock_2_2026-10-28_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "merge-sort-quick-sort": 7,
+    "linear-time-sorts-counting-radix": 6,
+    "selection-kth-element": 6,
+    "inversion-counting": 6
+   },
+   "question_ids": [
+    "ALG-U2-Q51",
+    "ALG-U2-Q52",
+    "ALG-U2-Q53",
+    "ALG-U2-Q54",
+    "ALG-U2-Q55",
+    "ALG-U2-Q56",
+    "ALG-U2-Q57",
+    "ALG-U2-Q58",
+    "ALG-U2-Q59",
+    "ALG-U2-Q60",
+    "ALG-U2-Q61",
+    "ALG-U2-Q62",
+    "ALG-U2-Q63",
+    "ALG-U2-Q64",
+    "ALG-U2-Q65",
+    "ALG-U2-Q66",
+    "ALG-U2-Q67",
+    "ALG-U2-Q68",
+    "ALG-U2-Q69",
+    "ALG-U2-Q70",
+    "ALG-U2-Q71",
+    "ALG-U2-Q72",
+    "ALG-U2-Q73",
+    "ALG-U2-Q74",
+    "ALG-U2-Q75"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A, applied exactly as written. An unseeded random.SystemRandom() draw over the eleven syllabus subjects returned Algorithms. runs[] gave the most recent paper as {2026-11-03 earlier same day, run 15, unit 1, asymptotic-analysis, Set 3 (second pass)}; unit 1 held 75 questions, above UNIT_QUESTION_CAP = 50, and had been current for 8 days, above DAYS_PER_UNIT_MAX = 7, so step B3 failed on both tests and step B4 advanced exactly one unit: (0 + 1) mod 7 = 1 -> Unit 2, Divide and Conquer & Sorting. Unit 2 held 50 questions from 2026-10-27 and 2026-10-28, so this is Set 3, opening the second pass for this unit; the modulo now advances one unit per run, so unit 2 now stands at 75. No override, no partial set, exactly 25 questions.",
+   "note": "Set 3 (second pass) for Algorithms Unit 2. The 2026-10-28 paper moved to archive/gate_algo_mock_2_2026-10-28_run2.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U2-Q51..Q75) and none repeats a stem from the 50 items already banked for this unit. Coverage: merge sort & quick sort 7, counting & radix sort 6, selection & the k-th element 6, inversion counting 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the minimum comparisons of a merge of 5 and 8 keys is 5; Lomuto quicksort on 1..10 makes 45 comparisons, and on 1..n makes n(n-1)/2; merge sort on 12 keys performs 11 merges; T(6) = 15 for T(n) = T(n-1) + (n-1); the prefix-sum array of [1,0,3,1,3] over 0..3 is [1,3,3,5], so index 2 holds 3; quickselect with a minimum pivot makes 28 comparisons on 8 keys; [2,1,4,3] has exactly 2 inversions; the top-level merge of [3,4] and [1,2] counts 4; a 10-key decreasing array with its first two keys exchanged has 44 inversions; and a permutation and its inverse always agree on the inversion count, verified over all 120 permutations of 5 keys, as does the claim that a transposition changes the count by an odd amount, verified over all 120 permutations of 4 keys. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [],
@@ -14695,6 +14757,974 @@
     "final": "2",
     "trap": "Testing only n = 1, where T(1) = 1 ≤ c for any c ≥ 1, and concluding c = 1. The binding constraint appears at n = 2, where the root term n² is already paid."
    }
+  },
+  {
+   "id": "ALG-U2-Q51",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "The merge step of merge sort combines two sorted runs of sizes <span class=\"mm\">m</span> and <span class=\"mm\">n</span>. What is the smallest number of key comparisons the merge can perform?",
+   "options": [
+    "<span class=\"mm\">min(m, n)</span>",
+    "<span class=\"mm\">max(m, n)</span>",
+    "<span class=\"mm\">m + n − 1</span>",
+    "<span class=\"mm\">0</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "A two-way merge walks two pointers and compares only while both runs still have keys, so the number of comparisons depends on how the two runs interleave, not on their total length.",
+    "steps": [
+     "A comparison is made only while both runs are non-empty; once one run is exhausted the rest of the other run is copied without comparing.",
+     "The merge stops comparing exactly when the shorter run is exhausted, and exhausting a run of size <span class=\"mm\">min(m, n)</span> takes at least one comparison per key of that run.",
+     "That lower bound is attained: when every key of the shorter run is smaller than every key of the longer one, the merge takes one key of the shorter run per comparison and then copies the rest.",
+     "So the minimum is <span class=\"mm\">min(m, n)</span>."
+    ],
+    "final": "<span class=\"mm\">min(m, n)</span> — option A.",
+    "trap": "Reaching for <span class=\"mm\">m + n − 1</span>, the <i>maximum</i>, out of habit. The maximum needs the runs to interleave until one key remains; the minimum needs them not to interleave at all."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q52",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "A merge step is stable only if it breaks ties in one particular way. Which convention makes the two-way merge of merge sort stable?",
+   "options": [
+    "When the two current keys are equal, take the key from the left run first.",
+    "When the two current keys are equal, take the key from the right run first.",
+    "When the two current keys are equal, take the key from the longer run first.",
+    "No convention can make a merge stable, because the two runs are already interleaved."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Stability means equal keys keep their original relative order. In merge sort the left run always holds keys that came earlier in the input, so a tie must be resolved in favour of the left run.",
+    "steps": [
+     "The left run holds the earlier positions of the input; the right run holds the later ones.",
+     "If the right key is taken on a tie, an equal key that originally stood later is written first, and the relative order of the two equal keys is reversed.",
+     "Taking the left key on a tie keeps the earlier key earlier, at every level of the recursion.",
+     "Because the merge is stable and the split is by position, merge sort is stable overall."
+    ],
+    "final": "Take the left run on a tie — option A.",
+    "trap": "Believing that stability is a property of the comparison alone. It is a property of the tie-break rule, and a single <code>else</code> branch decides it."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q53",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Quicksort uses the Lomuto partition with the last element of each subarray as the pivot. On the input <span class=\"mm\">1, 2, …, n</span>, already in increasing order, how many key comparisons does the whole run perform?",
+   "options": [
+    "<span class=\"mm\">n(n − 1)/2</span>",
+    "<span class=\"mm\">n log₂ n</span>",
+    "<span class=\"mm\">n − 1</span>",
+    "<span class=\"mm\">n²/2 + 1</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "On sorted input with the last element as pivot, every pivot is the largest key of its subarray, so each partition peels off exactly one element and the subproblem shrinks by one.",
+    "steps": [
+     "On a subarray of size <span class=\"mm\">s</span> the pivot is the maximum, so the loop compares it with each of the other <span class=\"mm\">s − 1</span> keys and places it at the end.",
+     "The left part therefore has <span class=\"mm\">s − 1</span> keys and the right part is empty: <span class=\"mm\">T(s) = T(s − 1) + (s − 1)</span>.",
+     "Unrolling gives <span class=\"mm\">(n − 1) + (n − 2) + … + 1 = n(n − 1)/2</span>.",
+     "This is the worst case of quicksort, and sorted input reaches it whenever the pivot rule picks an extreme key."
+    ],
+    "final": "<span class=\"mm\">n(n − 1)/2</span> comparisons — option A.",
+    "trap": "Assuming the sorted input is the <i>good</i> case because the array is already ordered. The order of the input is irrelevant; what matters is where the pivot rule puts the pivot."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q54",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Hoare's original partition scheme moves two pointers inward from both ends, unlike Lomuto's single left-to-right scan. Which statement about Hoare's partition is TRUE?",
+   "options": [
+    "It returns a split point that need not be the final position of the pivot.",
+    "It always leaves the pivot at its final sorted position.",
+    "It is a stable partition, so equal keys keep their relative order.",
+    "A single call of it costs <span class=\"mm\">Θ(n²)</span> in the worst case."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Hoare's scheme guarantees only that every key left of the returned index is ≤ every key right of it; it does not isolate the pivot, so the pivot itself may move during the scan.",
+    "steps": [
+     "Two pointers start at the two ends and move inward, swapping keys that are on the wrong side.",
+     "The scan stops with <span class=\"mm\">i ≥ j</span> and returns <span class=\"mm\">j</span>; the pivot value may have been swapped into either part along the way.",
+     "The invariant is <span class=\"mm\">a[lo..j] ≤ a[j+1..hi]</span>, which is enough to recurse on <span class=\"mm\">[lo, j]</span> and <span class=\"mm\">[j+1, hi]</span>.",
+     "Lomuto, by contrast, does place the pivot at its final index, which is why its recursion excludes the pivot while Hoare's does not."
+    ],
+    "final": "The returned index is a split point, not the pivot's final place — option A.",
+    "trap": "Reading the Lomuto invariant into Hoare's code. Excluding the returned index as if it were the pivot either loses a key or loops forever on a two-element subarray."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q55",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "The recursion tree of merge sort on <span class=\"mm\">n</span> keys has <span class=\"mm\">⌈log₂ n⌉ + 1</span> levels, counting the root as level 0.",
+    "Quicksort's recursion depth is <span class=\"mm\">Θ(log n)</span> on average and <span class=\"mm\">Θ(n)</span> in the worst case.",
+    "Heapsort runs in <span class=\"mm\">Θ(n log n)</span> in the worst case and is stable.",
+    "The merge of two runs whose lengths add to <span class=\"mm\">m</span> can be performed in <span class=\"mm\">Θ(log m)</span> time by one processor."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "solution": {
+    "concept": "The shape of a divide-and-conquer recursion is read off its recursion tree: the number of levels and the work per level give both the running time and the stack depth.",
+    "steps": [
+     "Halving <span class=\"mm\">n</span> until the pieces are of size 1 takes <span class=\"mm\">⌈log₂ n⌉</span> splits, so the tree has <span class=\"mm\">⌈log₂ n⌉ + 1</span> levels — (A) is true.",
+     "Quicksort recurses on both parts: balanced splits give depth <span class=\"mm\">Θ(log n)</span>, one-sided splits give depth <span class=\"mm\">Θ(n)</span> — (B) is true.",
+     "Heapsort is <span class=\"mm\">Θ(n log n)</span> in the worst case but the heap operations move keys across long distances, so it is not stable — (C) is false.",
+     "Merging has to read and write every key, which is <span class=\"mm\">Ω(m)</span> work for one processor, never <span class=\"mm\">Θ(log m)</span> — (D) is false."
+    ],
+    "final": "Statements (A) and (B).",
+    "trap": "Treating heapsort as stable because it is an in-place <span class=\"mm\">Θ(n log n)</span> sort. Stability and asymptotic time are independent properties."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Options (A) and (B)"
+  },
+  {
+   "id": "ALG-U2-Q56",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Merge sort is run on an array of <span class=\"mm\">n = 12</span> keys. How many times is the merge step executed in total? (Enter an integer.)",
+   "options": null,
+   "answer": 11,
+   "solution": {
+    "concept": "Each call of the merge step takes two sorted runs and returns one, so a merge reduces the number of runs by exactly one.",
+    "steps": [
+     "The input starts as <span class=\"mm\">n = 12</span> runs of one key each.",
+     "Every merge combines two runs into one, so the run count drops by 1 per merge.",
+     "The recursion ends with a single run, so the number of merges is <span class=\"mm\">12 − 1 = 11</span>.",
+     "This count does not depend on how evenly the array is split — only on the number of keys."
+    ],
+    "final": "11 merges.",
+    "trap": "Counting the recursive calls instead of the merges. There are <span class=\"mm\">2n − 1</span> calls but only <span class=\"mm\">n − 1</span> of them reach the merge step."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "11"
+  },
+  {
+   "id": "ALG-U2-Q57",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "merge-sort-quick-sort",
+   "subtopic": "merge-sort-quick-sort",
+   "subtopic_label": null,
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Quicksort's pivot always splits off exactly one element, so its comparison count obeys <span class=\"mm\">T(n) = T(n − 1) + (n − 1)</span> with <span class=\"mm\">T(1) = 0</span>. What is <span class=\"mm\">T(6)</span>? (Enter an integer.)",
+   "options": null,
+   "answer": 15,
+   "solution": {
+    "concept": "A recurrence with a linear driving function and a one-element reduction is solved by unrolling: each level costs the size of the subarray minus one.",
+    "steps": [
+     "<span class=\"mm\">T(6) = T(5) + 5</span>.",
+     "<span class=\"mm\">T(5) = T(4) + 4</span>, <span class=\"mm\">T(4) = T(3) + 3</span>, <span class=\"mm\">T(3) = T(2) + 2</span>, <span class=\"mm\">T(2) = T(1) + 1</span>.",
+     "Adding with <span class=\"mm\">T(1) = 0</span>: <span class=\"mm\">1 + 2 + 3 + 4 + 5 = 15</span>.",
+     "In general <span class=\"mm\">T(n) = n(n − 1)/2</span>, which here gives <span class=\"mm\">6·5/2 = 15</span>."
+    ],
+    "final": "15 comparisons.",
+    "trap": "Substituting the size <span class=\"mm\">n</span> into a closed form for the <i>balanced</i> case and answering <span class=\"mm\">n log n</span>. The recurrence here is the one-sided one, so the answer grows quadratically."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "15"
+  },
+  {
+   "id": "ALG-U2-Q58",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Counting sort places each key at a position computed from the key's own value. For which input does it need a change of representation before it can be used at all?",
+   "options": [
+    "Keys that are arbitrary real numbers in <span class=\"mm\">[0, 1)</span>",
+    "Keys that are integers in <span class=\"mm\">0 … k − 1</span>",
+    "Keys that contain duplicates",
+    "Keys that are already in sorted order"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Counting sort uses the key itself as an index into a count array, so the keys must be integers drawn from a small contiguous range.",
+    "steps": [
+     "The count array is indexed by key value, which requires each key to be an integer in <span class=\"mm\">0 … k − 1</span>.",
+     "Real numbers in <span class=\"mm\">[0, 1)</span> cannot index an array at all: there are uncountably many of them.",
+     "The usual repair is to bucket the reals into equal-width intervals and sort each bucket, which is bucket sort, not counting sort.",
+     "Duplicates and pre-sorted input are both harmless: duplicates are counted, and order is irrelevant."
+    ],
+    "final": "Real-valued keys — option A.",
+    "trap": "Thinking that a large key range is the only limitation. Range is a cost problem; a non-integer key is a definition problem."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q59",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which statement correctly distinguishes MSD radix sort from LSD radix sort?",
+   "options": [
+    "LSD sorts from the least significant digit and needs every digit pass to be stable; MSD sorts from the most significant digit and recurses into buckets, which also lets it handle variable-length keys.",
+    "MSD is always faster, because it inspects fewer digits.",
+    "LSD works only in base 2, while MSD works in any base.",
+    "MSD can sort only strings, never integers."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "LSD radix sort relies on the correctness of earlier passes being preserved, which is exactly what a stable digit sort provides; MSD radix sort partitions first and recurses, so each bucket is sorted independently.",
+    "steps": [
+     "LSD processes digits from least to most significant, and each pass must not disturb the order established by the previous ones — hence stability.",
+     "MSD processes the most significant digit first and then recurses inside each bucket.",
+     "Because a bucket can be finished as soon as it holds one key, MSD also handles keys of different lengths, such as strings.",
+     "Both work in any base; the base is a free parameter in either variant."
+    ],
+    "final": "Stability is essential for LSD, while MSD recurses into buckets — option A.",
+    "trap": "Assuming LSD and MSD differ only in the direction of the scan. The recursion in MSD changes both the data structure and the class of keys it can handle."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q60",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Bucket sort distributes <span class=\"mm\">n</span> keys, drawn independently and uniformly from <span class=\"mm\">[0, 1)</span>, into <span class=\"mm\">n</span> equal-width buckets and sorts each bucket with insertion sort. What is the expected running time?",
+   "options": [
+    "<span class=\"mm\">Θ(n)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n²)</span>",
+    "<span class=\"mm\">Θ(√n)</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Bucket sort is linear when the keys are uniformly distributed, because the expected number of keys per bucket is a constant and the total cost of insertion sort inside the buckets becomes linear in expectation.",
+    "steps": [
+     "Distributing the keys costs <span class=\"mm\">Θ(n)</span> and the expected bucket size is 1.",
+     "Sorting a bucket of size <span class=\"mm\">k</span> by insertion sort costs <span class=\"mm\">Θ(k²)</span>, so the total is <span class=\"mm\">Θ(n) + Σ kᵢ²</span>.",
+     "For uniform keys <span class=\"mm\">E[Σ kᵢ²] = Θ(n)</span>, so the whole cost is <span class=\"mm\">Θ(n)</span>.",
+     "The bound collapses to <span class=\"mm\">Θ(n²)</span> as soon as all keys land in one bucket."
+    ],
+    "final": "<span class=\"mm\">Θ(n)</span> expected — option A.",
+    "trap": "Quoting <span class=\"mm\">Θ(n log n)</span> because \"sorting is <span class=\"mm\">n log n</span>\". That bound is for comparison sorts on arbitrary input; bucket sort buys linear time with an assumption about the distribution."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q61",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "Counting sort sorts <span class=\"mm\">n</span> keys in <span class=\"mm\">0 … k − 1</span> in <span class=\"mm\">Θ(n + k)</span> time and uses <span class=\"mm\">Θ(n + k)</span> extra space.",
+    "LSD radix sort with base <span class=\"mm\">b</span> on <span class=\"mm\">d</span>-digit keys is <span class=\"mm\">d</span> stable counting-sort passes.",
+    "Radix sort beats the <span class=\"mm\">Ω(n log n)</span> bound because it never compares two keys with each other.",
+    "Counting sort is an in-place algorithm that needs only the count array."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "Counting and radix sort replace comparisons by arithmetic on key values, which is why they are not bound by the comparison lower bound — and why they pay for it in extra space.",
+    "steps": [
+     "One pass over the keys and one pass over the count array give <span class=\"mm\">Θ(n + k)</span> time; the output array and the count array give <span class=\"mm\">Θ(n + k)</span> space — (A) is true.",
+     "Each LSD pass is a stable counting sort on one digit, and there are <span class=\"mm\">d</span> digits — (B) is true.",
+     "The <span class=\"mm\">Ω(n log n)</span> bound counts comparisons; radix sort never makes one, so the bound simply does not apply — (C) is true.",
+     "Counting sort writes into a separate output array, so it is not in place — (D) is false."
+    ],
+    "final": "Statements (A), (B) and (C).",
+    "trap": "Concluding from (C) that radix sort is universally better. It needs a bounded digit range and <span class=\"mm\">Θ(n + b)</span> working space per pass, and its constant factor is large."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Options (A), (B) and (C)"
+  },
+  {
+   "id": "ALG-U2-Q62",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Counting sort is applied to the array <span class=\"mm\">[1, 0, 3, 1, 3]</span> over the key range <span class=\"mm\">0 … 3</span>. After the frequency array has been converted into running prefix sums, what value is stored at index 2? (Enter an integer.)",
+   "options": null,
+   "answer": 3,
+   "solution": {
+    "concept": "The prefix-sum pass turns \"how many keys equal v\" into \"how many keys are ≤ v\", which is the 1-based position of the last occurrence of v in the sorted output.",
+    "steps": [
+     "Frequencies over <span class=\"mm\">0 … 3</span>: <span class=\"mm\">C = [1, 2, 0, 2]</span>, since the array has one 0, two 1s, no 2 and two 3s.",
+     "Running totals: <span class=\"mm\">C[0] = 1</span>, <span class=\"mm\">C[1] = 1 + 2 = 3</span>.",
+     "<span class=\"mm\">C[2] = 3 + 0 = 3</span>.",
+     "Check: exactly three keys are ≤ 2, namely 0, 1, 1 — so index 2 holds 3."
+    ],
+    "final": "3.",
+    "trap": "Reading index 2 as the frequency of the value 2, which is 0. After the prefix pass the array no longer stores frequencies."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "3"
+  },
+  {
+   "id": "ALG-U2-Q63",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "linear-time-sorts-counting-radix",
+   "subtopic": "linear-time-sorts-counting-radix",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "<span class=\"mm\">n</span> keys are uniformly random 32-bit integers. Compare LSD radix sort in base <span class=\"mm\">2⁸</span> (four passes, each costing <span class=\"mm\">Θ(n + 256)</span>) with a single counting sort over the whole 32-bit range. Which statement is TRUE?",
+   "options": [
+    "Radix sort wins: four count arrays of size 256 replace one of size <span class=\"mm\">2³²</span>, so its cost stays <span class=\"mm\">Θ(n)</span>.",
+    "Counting sort wins, because one pass is always cheaper than four.",
+    "Both are <span class=\"mm\">Θ(n)</span>, because both are linear in <span class=\"mm\">n</span>.",
+    "Radix sort cannot be used, because 32-bit keys are too large for a digit sort."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "The cost of a distribution sort is <span class=\"mm\">Θ(n + k)</span>, and <span class=\"mm\">k</span> is the size of the key range. Radix sort trades one huge <span class=\"mm\">k</span> for <span class=\"mm\">d</span> small ones.",
+    "steps": [
+     "Counting sort over the full range costs <span class=\"mm\">Θ(n + 2³²)</span>, and <span class=\"mm\">2³²</span> dwarfs any practical <span class=\"mm\">n</span>.",
+     "Radix sort splits the key into <span class=\"mm\">d = 32/8 = 4</span> digits, each costing <span class=\"mm\">Θ(n + 256)</span>.",
+     "The total is <span class=\"mm\">4·Θ(n + 256) = Θ(n)</span> for <span class=\"mm\">n ≫ 256</span>.",
+     "So the linear bound survives only because the digit range stays small; the number of passes is a constant here, not a growing quantity."
+    ],
+    "final": "Radix sort keeps the cost at <span class=\"mm\">Θ(n)</span> — option A.",
+    "trap": "Calling both algorithms <span class=\"mm\">Θ(n)</span> because both are \"linear sorts\". <span class=\"mm\">k</span> is a parameter of the input, and with <span class=\"mm\">k = 2³²</span> counting sort is linear in the key range, not in <span class=\"mm\">n</span>."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q64",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Quickselect looks for the <span class=\"mm\">k</span>-th smallest key, and its pivot is always the smallest key of the current subarray. What is its worst-case running time?",
+   "options": [
+    "<span class=\"mm\">Θ(n²)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n)</span>",
+    "<span class=\"mm\">Θ(log n)</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Selection discards one side of the partition, so its cost is the cost of the partitions it actually performs — one per level, not two.",
+    "steps": [
+     "A pivot that is the smallest key of the subarray leaves all other keys on one side.",
+     "Only that side is recursed into, and its size is <span class=\"mm\">s − 1</span> for a subarray of size <span class=\"mm\">s</span>.",
+     "The partitions therefore cost <span class=\"mm\">(n − 1) + (n − 2) + … + 1 = Θ(n²)</span>.",
+     "Only the constant is smaller than quicksort's worst case; the order is the same."
+    ],
+    "final": "<span class=\"mm\">Θ(n²)</span> — option A.",
+    "trap": "Assuming selection is always cheaper than sorting. Selection is <span class=\"mm\">Θ(n)</span> in expectation precisely because it recurses into one part; a bad pivot rule still gives <span class=\"mm\">Θ(n²)</span>."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q65",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Two sorted arrays hold <span class=\"mm\">m</span> and <span class=\"mm\">n</span> keys with <span class=\"mm\">m ≤ n</span>. What is the best time to find the median of all <span class=\"mm\">m + n</span> keys?",
+   "options": [
+    "<span class=\"mm\">O(log m)</span>",
+    "<span class=\"mm\">O(m + n)</span>",
+    "<span class=\"mm\">O(m log n)</span>",
+    "<span class=\"mm\">Ω(m + n)</span> is unavoidable, so no <span class=\"mm\">O(log m)</span> algorithm exists"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "The median is determined by a single split point: how many keys of each array fall below it. That split can be found by binary search over the smaller array.",
+    "steps": [
+     "Suppose <span class=\"mm\">i</span> keys of the first array and <span class=\"mm\">j</span> keys of the second lie below the median, with <span class=\"mm\">i + j = (m + n)/2</span>.",
+     "Once <span class=\"mm\">i</span> is fixed, <span class=\"mm\">j</span> is forced, so there is only one unknown.",
+     "The condition is <span class=\"mm\">A[i] ≤ B[j+1]</span> and <span class=\"mm\">B[j] ≤ A[i+1]</span>; it is monotone in <span class=\"mm\">i</span>, so binary search applies.",
+     "Searching over the smaller array gives <span class=\"mm\">O(log m)</span>, which beats the <span class=\"mm\">O(m + n)</span> merge."
+    ],
+    "final": "<span class=\"mm\">O(log m)</span> — option A.",
+    "trap": "Merging the arrays first. The median needs only the split point, and a monotone predicate on one index can be binary searched, so the linear scan is unnecessary."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q66",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A max-heap of size <span class=\"mm\">k</span>, maintained while scanning <span class=\"mm\">n</span> keys, reports the <span class=\"mm\">k</span> smallest keys in <span class=\"mm\">O(n log k)</span> time.",
+    "Any comparison-based algorithm that finds the median of <span class=\"mm\">n</span> keys must make <span class=\"mm\">Ω(n)</span> comparisons.",
+    "Randomised quickselect finishes in <span class=\"mm\">Θ(n)</span> time on every input.",
+    "Sorting the keys and reading position <span class=\"mm\">k</span> is the only way to select in <span class=\"mm\">Θ(n log n)</span> time."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "solution": {
+    "concept": "Selection has a linear lower bound and linear algorithms; the interesting statements are about which guarantees are worst-case and which are expected.",
+    "steps": [
+     "Keeping the <span class=\"mm\">k</span> smallest keys seen so far in a max-heap of size <span class=\"mm\">k</span> costs <span class=\"mm\">O(log k)</span> per key that displaces the root, so <span class=\"mm\">O(n log k)</span> overall — (A) is true.",
+     "A key that is never compared could be the median, so every key must be examined: <span class=\"mm\">Ω(n)</span> — (B) is true.",
+     "Randomisation gives <span class=\"mm\">Θ(n)</span> in expectation, but an adversarial pivot sequence still costs <span class=\"mm\">Θ(n²)</span> — (C) is false.",
+     "Median-of-medians selects in <span class=\"mm\">Θ(n)</span> worst case, which is faster than sorting, so sorting is not the only way — (D) is false."
+    ],
+    "final": "Statements (A) and (B).",
+    "trap": "Confusing \"expected linear\" with \"linear\". A randomised algorithm has a worst case as well, and quickselect's is quadratic."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Options (A) and (B)"
+  },
+  {
+   "id": "ALG-U2-Q67",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Quickselect looks for the <span class=\"mm\">k</span>-th smallest key, and its pivot is always the smallest key of the current subarray. On <span class=\"mm\">n = 8</span> distinct keys, how many key comparisons does it perform in the worst case? (Enter an integer.)",
+   "options": null,
+   "answer": 28,
+   "solution": {
+    "concept": "Each partition of a subarray of size <span class=\"mm\">s</span> compares the pivot with the other <span class=\"mm\">s − 1</span> keys; a pivot that is the minimum leaves a subproblem of size <span class=\"mm\">s − 1</span>.",
+    "steps": [
+     "The first partition of 8 keys makes 7 comparisons and leaves 7 keys.",
+     "The next makes 6 comparisons, then 5, and so on down to 1.",
+     "The total is <span class=\"mm\">7 + 6 + 5 + 4 + 3 + 2 + 1 = 28</span>.",
+     "That is <span class=\"mm\">n(n − 1)/2 = 28</span>, the quadratic worst case."
+    ],
+    "final": "28 comparisons.",
+    "trap": "Halving the count because selection discards half the keys. It discards a side of the <i>partition</i>, and a minimum pivot discards nothing — the subproblem shrinks by one."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "28"
+  },
+  {
+   "id": "ALG-U2-Q68",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Randomised quickselect discards a constant fraction of the keys in expectation, so its expected cost obeys <span class=\"mm\">T(n) ≤ T(3n/4) + Θ(n)</span>. What does this recurrence solve to?",
+   "options": [
+    "<span class=\"mm\">Θ(n)</span>",
+    "<span class=\"mm\">Θ(n log n)</span>",
+    "<span class=\"mm\">Θ(n²)</span>",
+    "<span class=\"mm\">Θ(log n)</span>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "A recurrence whose recursive term has a coefficient strictly below 1 and whose driving term is linear gives a decreasing geometric series of level costs, hence linear total work.",
+    "steps": [
+     "Level <span class=\"mm\">i</span> costs <span class=\"mm\">c·(3/4)ⁱ·n</span>.",
+     "Summing over all levels gives <span class=\"mm\">cn·(1 + 3/4 + (3/4)² + …)</span>.",
+     "The geometric series converges to <span class=\"mm\">4cn</span>, a constant times <span class=\"mm\">n</span>.",
+     "So <span class=\"mm\">T(n) = Θ(n)</span>."
+    ],
+    "final": "<span class=\"mm\">Θ(n)</span> — option A.",
+    "trap": "Applying the Master Theorem mechanically and reading Case 1 as <span class=\"mm\">Θ(n^(log_{4/3}1))</span>. The Master Theorem needs the recursive calls to be split into several parts; here there is one, and the sum of level costs is the right tool."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q69",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "selection-kth-element",
+   "subtopic": "selection-kth-element",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Randomised quickselect and median-of-medians both find the <span class=\"mm\">k</span>-th smallest of <span class=\"mm\">n</span> keys. Which statement is TRUE?",
+   "options": [
+    "Quickselect is <span class=\"mm\">Θ(n)</span> in expectation and faster in practice; median-of-medians guarantees <span class=\"mm\">Θ(n)</span> in the worst case with a much larger constant.",
+    "Quickselect guarantees <span class=\"mm\">Θ(n)</span> in the worst case, while median-of-medians only gives <span class=\"mm\">Θ(n log n)</span>.",
+    "Median-of-medians is faster in practice on every input, because its worst case is linear.",
+    "Both algorithms are <span class=\"mm\">Θ(n²)</span> in the worst case."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Asymptotic guarantees and practical speed are different questions. Randomisation buys a good expected bound with small constants; the deterministic algorithm buys a worst-case bound by paying per element.",
+    "steps": [
+     "Quickselect partitions once per level and recurses into one part: expected <span class=\"mm\">Θ(n)</span>, worst case <span class=\"mm\">Θ(n²)</span>.",
+     "Median-of-medians spends <span class=\"mm\">Θ(n)</span> work choosing a pivot that is guaranteed to lie between the 30th and 70th percentile, so every level discards a constant fraction.",
+     "Its recurrence <span class=\"mm\">T(n) ≤ T(n/5) + T(7n/10) + Θ(n)</span> is <span class=\"mm\">Θ(n)</span>, so the worst case is linear.",
+     "The pivot construction and the extra passes make its constant several times larger, which is why quickselect is preferred when inputs are not adversarial."
+    ],
+    "final": "Quickselect is expected-linear and faster in practice; median-of-medians is worst-case linear — option A.",
+    "trap": "Believing a linear worst-case bound makes an algorithm faster. A guarantee bounds the worst input; it says nothing about the constant on ordinary ones."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q70",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of these arrays of distinct keys has exactly two inversions?",
+   "options": [
+    "<span class=\"mm\">[1, 2, 4, 3]</span>",
+    "<span class=\"mm\">[2, 1, 4, 3]</span>",
+    "<span class=\"mm\">[3, 2, 1, 4]</span>",
+    "<span class=\"mm\">[4, 1, 2, 3]</span>"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "An inversion is a pair of positions <span class=\"mm\">i &lt; j</span> with <span class=\"mm\">a[i] &gt; a[j]</span>, so the count is found by listing the out-of-order pairs.",
+    "steps": [
+     "<span class=\"mm\">[1, 2, 4, 3]</span>: only <span class=\"mm\">(4, 3)</span> is out of order — 1 inversion.",
+     "<span class=\"mm\">[2, 1, 4, 3]</span>: <span class=\"mm\">(2, 1)</span> and <span class=\"mm\">(4, 3)</span> — 2 inversions.",
+     "<span class=\"mm\">[3, 2, 1, 4]</span>: <span class=\"mm\">(3,2), (3,1), (2,1)</span> — 3 inversions.",
+     "<span class=\"mm\">[4, 1, 2, 3]</span>: <span class=\"mm\">(4,1), (4,2), (4,3)</span> — 3 inversions."
+    ],
+    "final": "<span class=\"mm\">[2, 1, 4, 3]</span> — option B.",
+    "trap": "Counting only the elements that are out of place. A single key that has drifted far can create many inversions, and each inversion is a pair, not an element."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (B)"
+  },
+  {
+   "id": "ALG-U2-Q71",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "A merge-sort inversion counter is run on <span class=\"mm\">[4, 3, 2, 1]</span>. How many inversions are counted when the two sorted halves <span class=\"mm\">[3, 4]</span> and <span class=\"mm\">[1, 2]</span> are merged at the top level?",
+   "options": [
+    "<span class=\"mm\">2</span>",
+    "<span class=\"mm\">3</span>",
+    "<span class=\"mm\">4</span>",
+    "<span class=\"mm\">6</span>"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "When the next key comes from the right run, every key still left in the left run is larger than it, and each such pair is an inversion that is counted exactly once at this level.",
+    "steps": [
+     "Merge the two halves: compare 3 with 1 and take 1. Two keys (3 and 4) remain in the left run, so 2 inversions are added.",
+     "Compare 3 with 2 and take 2. Two keys still remain in the left run, so 2 more are added.",
+     "The left run is now empty, and 3 and 4 are copied without further comparisons.",
+     "This level contributes <span class=\"mm\">2 + 2 = 4</span>; the two halves contributed 1 each, giving the total <span class=\"mm\">6 = C(4, 2)</span> for the reverse-sorted array."
+    ],
+    "final": "4 inversions at the top level — option C.",
+    "trap": "Adding one inversion per right-run key taken. A single key taken from the right run creates an inversion with every key still left in the left run, which is why the count is a sum of remaining lengths."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (C)"
+  },
+  {
+   "id": "ALG-U2-Q72",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A permutation and its inverse always have the same number of inversions.",
+    "Every exchange of two adjacent elements changes the inversion count by exactly 1.",
+    "An array of <span class=\"mm\">n</span> distinct keys can have at most <span class=\"mm\">n</span> inversions.",
+    "Merging two sorted runs of sizes <span class=\"mm\">p</span> and <span class=\"mm\">q</span> creates at most <span class=\"mm\">p·q</span> new inversions."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "solution": {
+    "concept": "The inversion count is a structural statistic of a permutation: it is preserved by inversion, changed by exactly one by an adjacent transposition, and bounded by the number of cross pairs between two runs.",
+    "steps": [
+     "Inverting a permutation turns each inversion <span class=\"mm\">(i, j)</span> into an inversion of the inverse, and the correspondence is a bijection — (A) is true.",
+     "An adjacent exchange swaps one pair and leaves every other pair on the same side of the order, so the count moves by exactly 1 — (B) is true.",
+     "The maximum is <span class=\"mm\">C(n, 2) = n(n − 1)/2</span>, which exceeds <span class=\"mm\">n</span> for <span class=\"mm\">n ≥ 4</span> — (C) is false.",
+     "Only cross pairs can be created by a merge, and there are <span class=\"mm\">p·q</span> of them — (D) is true."
+    ],
+    "final": "Statements (A), (B) and (D).",
+    "trap": "Reading the maximum as <span class=\"mm\">n</span> because there are <span class=\"mm\">n</span> keys. Inversions are counted over pairs of positions, so the maximum is quadratic."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Options (A), (B) and (D)"
+  },
+  {
+   "id": "ALG-U2-Q73",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "<span class=\"mm\">I</span> is the inversion count of a permutation of <span class=\"mm\">n</span> distinct keys. Which statement about the parity of <span class=\"mm\">I</span> is TRUE?",
+   "options": [
+    "Exchanging any two elements changes <span class=\"mm\">I</span> by an odd number, so the parity of <span class=\"mm\">I</span> is the sign of the permutation.",
+    "Exchanging any two elements changes <span class=\"mm\">I</span> by exactly 1.",
+    "<span class=\"mm\">I</span> is even for every permutation of even length.",
+    "The parity of <span class=\"mm\">I</span> depends only on <span class=\"mm\">n</span>, not on the permutation."
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "The sign of a permutation is defined by the parity of its inversion count, and it is exactly the parity that a transposition flips.",
+    "steps": [
+     "An adjacent exchange changes <span class=\"mm\">I</span> by exactly 1, which is odd.",
+     "Any exchange of two elements at distance <span class=\"mm\">d</span> can be written as <span class=\"mm\">2d − 1</span> adjacent exchanges, an odd number.",
+     "An odd number of ±1 steps changes <span class=\"mm\">I</span> by an odd amount, so the parity of <span class=\"mm\">I</span> flips — that is the sign of the permutation.",
+     "The amount is odd, not necessarily 1: swapping keys three places apart changes <span class=\"mm\">I</span> by 3 or 5, for instance."
+    ],
+    "final": "A transposition changes <span class=\"mm\">I</span> by an odd amount — option A.",
+    "trap": "Extending the adjacent-swap fact to arbitrary swaps. Only adjacent exchanges are guaranteed to change the count by exactly 1; a long swap changes it by an odd number that is usually larger."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Option (A)"
+  },
+  {
+   "id": "ALG-U2-Q74",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A merge-sort based inversion counter runs in <span class=\"mm\">Θ(n log n)</span> time.",
+    "When the array has duplicates, counting only pairs with <span class=\"mm\">i &lt; j</span> and <span class=\"mm\">a[i] &gt; a[j]</span> still gives a well-defined count.",
+    "Comparing all pairs computes the inversion count in <span class=\"mm\">Θ(n²)</span> time.",
+    "Every comparison sort must perform exactly <span class=\"mm\">I</span> adjacent exchanges, where <span class=\"mm\">I</span> is the inversion count."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "Counting inversions is a counting problem, and the merge step is where the structure pays off: it counts a whole block of pairs at once instead of examining each pair.",
+    "steps": [
+     "The modified merge sort does the same work as merge sort and adds one addition per right-run key taken, so it is <span class=\"mm\">Θ(n log n)</span> — (A) is true.",
+     "Using a strict inequality makes equal keys contribute nothing, so the count is well defined even with duplicates — (B) is true.",
+     "The brute-force double loop examines every one of the <span class=\"mm\">C(n, 2)</span> pairs, which is <span class=\"mm\">Θ(n²)</span> — (C) is true.",
+     "Only insertion sort (and bubble sort) achieve exactly <span class=\"mm\">I</span> adjacent exchanges; heapsort and quicksort move keys far apart — (D) is false."
+    ],
+    "final": "Statements (A), (B) and (C).",
+    "trap": "Believing the count itself must cost <span class=\"mm\">Θ(n²)</span> because there are <span class=\"mm\">Θ(n²)</span> pairs. The merge step counts many pairs with one addition."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "Options (A), (B) and (C)"
+  },
+  {
+   "id": "ALG-U2-Q75",
+   "subject": "algorithms",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sorting-divide-conquer",
+   "unit_name": "Divide and Conquer &amp; Sorting",
+   "topic": "Divide and Conquer &amp; Sorting",
+   "sub": "inversion-counting",
+   "subtopic": "inversion-counting",
+   "subtopic_label": null,
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "An array of 10 distinct keys is in strictly decreasing order, except that its first two elements have been exchanged with each other. How many inversions does it contain? (Enter an integer.)",
+   "options": null,
+   "answer": 44,
+   "solution": {
+    "concept": "A strictly decreasing array of <span class=\"mm\">n</span> keys attains the maximum inversion count <span class=\"mm\">C(n, 2)</span>, and a single adjacent exchange moves that count by exactly 1.",
+    "steps": [
+     "The fully decreasing array <span class=\"mm\">[10, 9, …, 1]</span> has every pair inverted: <span class=\"mm\">C(10, 2) = 45</span>.",
+     "Exchanging the first two entries gives <span class=\"mm\">[9, 10, 8, …, 1]</span>, which differs from the decreasing array by one adjacent transposition.",
+     "An adjacent transposition changes the inversion count by exactly 1, and here the pair <span class=\"mm\">(10, 9)</span> stops being an inversion.",
+     "So the count is <span class=\"mm\">45 − 1 = 44</span>."
+    ],
+    "final": "44 inversions.",
+    "trap": "Recounting all pairs by hand and losing the pairs that involve the moved keys. The count differs from the maximum by exactly the one pair that was repaired."
+   },
+   "subject_name": "Algorithms",
+   "set": "Set 3 (second pass)",
+   "answer_display": "44"
   }
  ]
 }
