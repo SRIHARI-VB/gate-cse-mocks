@@ -7,32 +7,72 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 2 of 2 (third pass)**, 2026-11-03 →
-  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-03.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-03.html)
+- **Discrete Mathematics · Unit 15 — Discrete Probability, Set 1 of 2**, 2026-11-03 →
+  [`discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html`](discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: S-attributed vs L-attributed definitions (6) · three-address code, quadruples & triples (7) ·
-  syntax trees & DAGs (6) · type checking (6)
-- Rotation: MODE A. The draw returned **Compiler Design**. Its most recent paper was `{2026-11-02, run 18,
-  unit 3, bottom-up-parsing, Set 2 of 2 (second pass)}`, and unit 3 stood at **100** questions, above
-  `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**, which already held 75
-  questions from 2026-10-28, 2026-10-29 and 2026-11-01. **B5** therefore applies: the modulo has wrapped into a
-  third pass, and this paper is **Set 2 of 2 of the third pass**, taking unit 4 to 100.
-- Previous test: **Computer Architecture · Unit 3 — Memory Hierarchy & Cache Memory, Set 1 of 2 (second pass)**,
-  2026-11-03 → [`computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html`](computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html)
+- Subtopics: Sample spaces & events (5) · Conditional probability & Bayes (5) · Independence (5) ·
+  Counting-based probability (5) · Expectation & variance (5)
+- Rotation: MODE A. The most recent Discrete Mathematics paper was `{2026-11-03, run 23, unit 14, number-theory,
+  Set 2 of 2}`, and unit 14 stood at **50** questions, at `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and
+  **B4 advanced exactly one unit**: `(13 + 1) mod 16 = 14` → **Unit 15, Discrete Probability**, which held **0**
+  questions. It is the last never-covered unit of the subject, so the subject now stands at 16 of 16 units.
+- Previous test: **Discrete Mathematics · Unit 14 — Number Theory, Set 2 of 2**, 2026-11-03 →
+  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 203 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 70 current · 133 archived |
-| Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5075 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
+| Papers published (current + archived) | 204 (32 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 133 archived |
+| Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
+| Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 5100 (800 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 133 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 12 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 15, Set 1 of 2
+
+- New paper at `discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html`. Unit 15 had no paper
+  before this run, so nothing was archived: the unit folder holds exactly one current paper and the repository root
+  still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw ran over the subjects whose post-B4 target unit still stands below
+  `UNIT_QUESTION_CAP = 50` — the restriction in force since run 12, so that first-pass units finish before a
+  further pass opens. Every subject was read from its own `master_bank.json` and exactly one qualified:
+  **Discrete Mathematics**, whose most recent paper was `{2026-11-03, run 23, unit 14, number-theory, Set 2 of 2}`.
+  Unit 14 stood at **50** questions, at the cap, so **B3 failed on the cap**; its first paper was 2026-11-03, so the
+  7-day backstop was not the deciding test. **B4 advanced exactly one unit**: `(index_of(number-theory) = 13 + 1) mod
+  16 = 14` → **Unit 15, Discrete Probability**, which held 0 questions. Every other subject's post-B4 target is
+  already at or above 50 (algorithms 3 → 50, compiler-design 5 → 75, computer-architecture 4 → 50,
+  computer-networks 2 → 75, databases 5 → 50, digital-logic 1 → 100, engineering-mathematics 5 → 50,
+  operating-systems 6 → 75, programming-data-structures 6 → 50, theory-of-computation 3 → 100), so the
+  unseeded draw was over a single candidate and returned it. No override, no partial set, exactly 25 questions.
+- **Coverage.** Unit 15 was the last uncovered unit in Discrete Mathematics; it is now at 25 of its 50-question
+  allowance, so one more set completes it and the subject reaches 16 of 16 units.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no
+  negative marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and
+  the About tab says so. Every subtopic carries exactly 5 questions: sample spaces & events, conditional probability
+  & Bayes, independence, counting-based probability, expectation & variance.
+- **Verification.** All 25 answers were recomputed by script before the paper was written: `P(sum 7) = 6/36 = 1/6`;
+  `(13 + 12 − 3)/52 = 11/26`; `1 − 9/36 = 0.75` for an even product; `0.5 + 0.4 − 0.7 = 0.2 = 0.5 × 0.4`,
+  so those events are independent; `1/3` for the two-children problem; `0.0099/(0.0099 + 0.0099) = 0.5` for the
+  screening test; `3/9 = 1/3` for the urn; `(1/3)/(1/2) = 2/3` for the three-coin box; `P(B) = 0.6` from
+  `0.5 + 0.5p = 0.8`; `(1 + (1/3)⁴)/2 = 41/81` for an even head count; `12/24 = 1/2` for the even permutation;
+  `2 × 9!/10! = 0.2` for adjacent seats; `48/2,598,960 = 1/54,145` for four aces; `D₄/4! = 9/24 = 3/8` for the
+  letters; `3⁵ − 3·2⁵ + 3 = 150` and `C(10,3) = 120`; `E[X] = 1`; `7.5 − 6.25 = 1.25`; `9 × 4 = 36` for
+  `Var(3X − 2)`; and `n × 1/n = 1` for the expected number of fixed points. The grading engine was replayed
+  against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25
+  unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0.
+- **PYQ status.** No discrete-probability previous-year question has been verified against an official paper and
+  answer key, so nothing on this paper is claimed as an official GATE question and no item carries
+  `GATE_PYQ_VARIATION`. Sources: `STANDARD_TEXTBOOK` 17, `ORIGINAL_SYNTHESIS` 8.
+- **Section 6.8 checklist.** Shell parity: the new paper and the Unit 14 paper are byte-identical once the title,
+  header sub-line, candidate id, meta strip, question host, bank view, About view and payload are stripped. One copy:
+  `index.html` plus one file per paper, nothing else at the root. Links: every href in the portal and in the paper
+  resolves. Tokens: `:root` is byte-identical across the paper, `index.html` and `design-tokens.css`. Counts: 25 test
+  cards, a 25-button palette, 775 banked questions in the tab and 71 cards on the portal. No duplicate content: the
+  active 25 are absent from the Question Bank tab. README: this table matches reality.
 
 ### 2026-11-03 — Compiler Design Unit 4, Set 2 of 2 (third pass)
 
