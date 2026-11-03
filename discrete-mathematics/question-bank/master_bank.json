@@ -6,7 +6,7 @@
   "created": "2026-10-25",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 825,
+  "total_questions": 850,
   "units_with_questions": [
    1,
    2,
@@ -25,7 +25,7 @@
    15,
    16
   ],
-  "total_runs": 33
+  "total_runs": 34
  },
  "runs": [
   {
@@ -1472,6 +1472,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. The draw ran over the subjects whose post-B4 target unit still stands below UNIT_QUESTION_CAP = 50, the restriction in force since run 12 so that first-pass units finish before a further pass opens. Every subject was read from its own master_bank.json and exactly one qualified: Discrete Mathematics, whose most recent paper was {2026-11-03, run 24, unit 15, discrete-probability, Set 1 of 2}, where unit 15 stood at 25 questions, below the cap, so B3 held the unit rather than advancing; its first paper was 2026-11-03, so the 7-day backstop was not in play either. Unit 15 therefore takes its second and final set, reaching 50 of 50. Every other subject's post-B4 target already sits at or above 50 (algorithms 3 -> 50, compiler-design 5 -> 75, computer-architecture 4 -> 50, computer-networks 2 -> 75, databases 5 -> 50, digital-logic 1 -> 100, engineering-mathematics 5 -> 50, operating-systems 6 -> 75, programming-data-structures 6 -> 50, theory-of-computation 3 -> 100), so the draw was over a single candidate and returned it. No override, no partial set: exactly 25 questions, and unit 15 ends at 50, never 60.",
    "note": "Set 2 of 2 for Unit 15, the second and final pass over the last unit of the Discrete Mathematics syllabus; the unit now stands at 50 of its 50-question allowance and the subject at 16 of 16 units completed. All 25 items are new (DM-U15-Q26..Q50) and every subtopic carries exactly 5: sample spaces & events 5, conditional probability & Bayes 5, independence 5, counting-based probability 5, expectation & variance 5. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every answer was recomputed by script: 6/36 = 1/6 for a repeated face; (30 - 26)/30 = 2/15 for neither tea nor coffee; 27/216 = 0.125 for three dice summing to 10 (36 stars-and-bars solutions minus 9 violations); 12/36 = 1/3 for |i - j| >= 3; 3/51 = 1/17 for the second king; 0.3/0.5 = 0.6 for Mathematics given Physics; (1/6)(3/4) / ((1/6)(3/4) + (5/6)(1/4)) = 3/8 for the die-and-bag experiment; 0.045/(0.045 + 0.19) = 9/47 for the 90/80 test at 5% prevalence; 0.4 + 0.5 - 0.2 = 0.7 for the independent union; 6/24 + 3/24 + 2/24 = 11/24 for exactly one of three; 0.4 x 0.75 = 0.3 for P(A n B-c); the roots of 6t^2 - 5t + 1 = 0 give 1/2 and 1/3, so the difference is 1/6; C(5,3)/C(9,3) = 5/42 for the committee of men; C(8,3)/256 = 0.21875 for three 1s in eight bits; 2/4 = 1/2 around a circular table; 3744/2598960 = 6/4165 for a full house; 21/6 = 3.5 for the die; 1/2 - 0 = 0.5 for the symmetric three-point variable; 3 + 4 = 7 for E[X^2]; and 165/45 = 11/3 for the expected gap between two drawn balls. The four MSQ answer sets were checked by exhaustive sampling over 4,000 random probability distributions: in each, every option marked correct held without exception and every option left unmarked was refuted by an explicit counterexample. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0. No discrete-probability PYQ has been verified against an official paper and key, so nothing on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 15, ORIGINAL_SYNTHESIS 10."
+  },
+  {
+   "run": 34,
+   "date": "2026-11-03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "set": "Set 4 (second pass)",
+   "count": 25,
+   "file": "discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html",
+   "archived_previous": "discrete-mathematics/proof-techniques/archive/gate_dm_mock_16_2026-10-25_run3.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "direct-contradiction-contrapositive": 6,
+    "counterexamples": 6,
+    "biconditional-iff-proofs": 6,
+    "necessity-vs-sufficiency": 7
+   },
+   "question_ids": [
+    "DM-LPT4-M-01",
+    "DM-LPT4-M-02",
+    "DM-LPT4-M-03",
+    "DM-LPT4-M-04",
+    "DM-LPT4-S-16",
+    "DM-LPT4-N-21",
+    "DM-LPT4-M-05",
+    "DM-LPT4-M-06",
+    "DM-LPT4-M-07",
+    "DM-LPT4-M-08",
+    "DM-LPT4-S-17",
+    "DM-LPT4-N-22",
+    "DM-LPT4-M-09",
+    "DM-LPT4-M-10",
+    "DM-LPT4-M-11",
+    "DM-LPT4-M-12",
+    "DM-LPT4-S-18",
+    "DM-LPT4-N-23",
+    "DM-LPT4-M-13",
+    "DM-LPT4-M-14",
+    "DM-LPT4-M-15",
+    "DM-LPT4-S-19",
+    "DM-LPT4-S-20",
+    "DM-LPT4-N-24",
+    "DM-LPT4-N-25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. Every unit of every subject now stands at or above UNIT_QUESTION_CAP = 50, so the first pass is complete everywhere and the draw ran over all eleven subjects. An unseeded random.SystemRandom() draw returned Discrete Mathematics. From its runs[], the most recent paper was {2026-11-03, run 25, unit 15, discrete-probability, Set 2 of 2}; unit 15 stood at 50 questions, at the cap, so B3 failed on the cap and B4 advanced exactly one unit: (index_of(discrete-probability) = 14 + 1) mod 16 = 15 -> Unit 16, Logic & Proof Techniques, which already held 75 questions from three earlier sets. B5 applies: the modulo wraps into a second pass, recorded in README.md, and this paper is Set 4 of Unit 16, taking the unit to 100. No override, no partial set: exactly 25 questions.",
+   "note": "Set 4 of Unit 16, the first paper of the Discrete Mathematics second pass. All 25 items are new (DM-LPT4-M-01..M-15, DM-LPT4-S-16..S-20, DM-LPT4-N-21..N-25) and repeat none of the 75 items already banked for this unit. Coverage: direct proof, contradiction & contrapositive 6, counterexamples 6, biconditional (iff) proofs 6, necessity vs sufficiency 7 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every answer was recomputed by script: of the four derived forms of \"n^2 even -> n even\" all 4 are true over n in [-200, 200]; the odd numbers in 1..30 that are not multiples of 3 number 15 - 5 = 10; of the six divisibility biconditionals exactly 4 hold, with n = 2 refuting 4 | n^2 <-> 4 | n and n = 4 refuting 8 | n^2 <-> 8 | n; x > 3 is sufficient for 2 of the four listed conditions (x^2 > 9 and x > 1); 3 of the four listed conditions are necessary for 12 | n (4 | n, 6 | n, n even, but not 8 | n); sqrt(x^2) = x fails exactly at x = -3 among the options; the pair (4, 2) satisfies 4 | 2^2 but not 4 | 2 while (3, 6), (5, 10) and (2, 6) satisfy both; n! + 1 is composite from n = 4 (25 = 5^2) although n^3 - n is always divisible by 6 and p^2 - 1 by 8 for odd primes; |x + 1| = |x| + 1 fails at x = -1 and x = -0.5 and holds at 0 and 3; and the truth tables confirm ~(p <-> q) = p XOR q, that (p^q) v (~p^~q), ~(p XOR q) and (p->q)^(~p->~q) all equal p <-> q while (p->q) v (~p->q) is a tautology. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0. The two verified PYQs the subject bank records (PYQ-GATE2023-Q26, GATE CSE 2023, official key B, C; PYQ-GATE2015, GATE CSE 2015, official key C) are Unit 16 items and are not reused here, so no question on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 16, ORIGINAL_SYNTHESIS 9."
   }
  ],
  "verified_pyqs": [
@@ -39076,6 +39138,1305 @@
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Expectation is linear unconditionally; the product rule needs independence; variance scales quadratically; and a zero variance means the variable never deviates from its mean.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) Linearity holds for every joint distribution, dependent or not. True.</li><li>(B) For independent variables the joint density factorises, so <code class=\"mm\">E[XY] = E[X]E[Y]</code>. True.</li><li>(C) <code class=\"mm\">Var(aX) = a² Var(X)</code>, not <code class=\"mm\">a Var(X)</code>: scaling stretches every deviation by <code class=\"mm\">a</code> and variances carry squared deviations. False as written (it fails for <code class=\"mm\">a = 3</code>, where <code class=\"mm\">9 Var(X) ≠ 3 Var(X)</code>).</li><li>(D) <code class=\"mm\">Var(X) = E[(X − E[X])²] = 0</code> with a non-negative integrand forces <code class=\"mm\">(X − E[X])² = 0</code> with probability 1, i.e. <code class=\"mm\">X = E[X]</code> almost surely. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> (C) is the standard slip: variance is not linear, so a scale factor must be squared. (B) is often wrongly generalised to all pairs &mdash; <code class=\"mm\">E[XY] = E[X]E[Y]</code> characterises uncorrelated variables, and independence is only sufficient, not necessary.</p>",
    "question_format": "MSQ"
+  },
+  {
+   "id": "DM-LPT4-M-01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Contrapositive of a graph-theoretic implication",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which one of the following is the <b>contrapositive</b> of the statement &ldquo;if a graph is bipartite, then it has no cycle of odd length&rdquo;?",
+   "question_html": "<p class=\"qtext\">Which one of the following is the <b>contrapositive</b> of the statement &ldquo;if a graph is bipartite, then it has no cycle of odd length&rdquo;?</p>",
+   "options": [
+    "If a graph has a cycle of odd length, then it is not bipartite.",
+    "If a graph has no cycle of odd length, then it is bipartite.",
+    "If a graph is not bipartite, then it has a cycle of odd length.",
+    "If a graph is bipartite, then it has no cycle of even length."
+   ],
+   "options_html": [
+    "If a graph has a cycle of odd length, then it is not bipartite.",
+    "If a graph has no cycle of odd length, then it is bipartite.",
+    "If a graph is not bipartite, then it has a cycle of odd length.",
+    "If a graph is bipartite, then it has no cycle of even length."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The contrapositive of <code class=\"mm\">p → q</code> is <code class=\"mm\">¬q → ¬p</code>, and the two are logically equivalent. Swapping the parts without negating them gives the converse; negating without swapping gives the inverse.",
+    "steps": [
+     "Read off the parts: <code class=\"mm\">p</code> = &ldquo;the graph is bipartite&rdquo;, <code class=\"mm\">q</code> = &ldquo;the graph has no cycle of odd length&rdquo;.",
+     "Negate the conclusion: <code class=\"mm\">¬q</code> = &ldquo;the graph has a cycle of odd length&rdquo;.",
+     "Negate the hypothesis: <code class=\"mm\">¬p</code> = &ldquo;the graph is not bipartite&rdquo;.",
+     "Put the negated conclusion first: if a graph has a cycle of odd length, then it is not bipartite."
+    ],
+    "final": "Option (A).",
+    "misconception": "Option (B) is the converse and option (C) is the inverse. Both are obtained from the original by a swap or a negation alone, and neither is equivalent to it — only the contrapositive, which does both, is.",
+    "takeaway": "The contrapositive of p → q is ¬q → ¬p, and the two are logically equivalent."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The contrapositive of <code class=\"mm\">p → q</code> is <code class=\"mm\">¬q → ¬p</code>, and the two are logically equivalent. Swapping the parts without negating them gives the converse; negating without swapping gives the inverse.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Read off the parts: <code class=\"mm\">p</code> = &ldquo;the graph is bipartite&rdquo;, <code class=\"mm\">q</code> = &ldquo;the graph has no cycle of odd length&rdquo;.</li><li>Negate the conclusion: <code class=\"mm\">¬q</code> = &ldquo;the graph has a cycle of odd length&rdquo;.</li><li>Negate the hypothesis: <code class=\"mm\">¬p</code> = &ldquo;the graph is not bipartite&rdquo;.</li><li>Put the negated conclusion first: if a graph has a cycle of odd length, then it is not bipartite.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Option (B) is the converse and option (C) is the inverse. Both are obtained from the original by a swap or a negation alone, and neither is equivalent to it — only the contrapositive, which does both, is.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Contrapositive with a negated compound conclusion",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For real numbers <code class=\"mm\">x</code> and <code class=\"mm\">y</code>, the contrapositive of &ldquo;if <code class=\"mm\">xy</code> is irrational, then <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational&rdquo; is",
+   "question_html": "<p class=\"qtext\">For real numbers <code class=\"mm\">x</code> and <code class=\"mm\">y</code>, the contrapositive of &ldquo;if <code class=\"mm\">xy</code> is irrational, then <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational&rdquo; is</p>",
+   "options": [
+    "if <code class=\"mm\">x</code> is rational and <code class=\"mm\">y</code> is rational, then <code class=\"mm\">xy</code> is rational.",
+    "if <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational, then <code class=\"mm\">xy</code> is irrational.",
+    "if <code class=\"mm\">x</code> is rational or <code class=\"mm\">y</code> is rational, then <code class=\"mm\">xy</code> is rational.",
+    "if <code class=\"mm\">xy</code> is rational, then <code class=\"mm\">x</code> is rational and <code class=\"mm\">y</code> is rational."
+   ],
+   "options_html": [
+    "if <code class=\"mm\">x</code> is rational and <code class=\"mm\">y</code> is rational, then <code class=\"mm\">xy</code> is rational.",
+    "if <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational, then <code class=\"mm\">xy</code> is irrational.",
+    "if <code class=\"mm\">x</code> is rational or <code class=\"mm\">y</code> is rational, then <code class=\"mm\">xy</code> is rational.",
+    "if <code class=\"mm\">xy</code> is rational, then <code class=\"mm\">x</code> is rational and <code class=\"mm\">y</code> is rational."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Negating a compound statement needs De Morgan's laws. The contrapositive of <code class=\"mm\">p → q</code> is <code class=\"mm\">¬q → ¬p</code>, and <code class=\"mm\">¬(x irrational ∨ y irrational)</code> is <code class=\"mm\">x rational ∧ y rational</code>.",
+    "steps": [
+     "Hypothesis <code class=\"mm\">p</code>: <code class=\"mm\">xy</code> is irrational. Conclusion <code class=\"mm\">q</code>: <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational.",
+     "Negate <code class=\"mm\">q</code> with De Morgan: both <code class=\"mm\">x</code> and <code class=\"mm\">y</code> are rational.",
+     "Negate <code class=\"mm\">p</code>: <code class=\"mm\">xy</code> is rational.",
+     "Contrapositive: if <code class=\"mm\">x</code> and <code class=\"mm\">y</code> are both rational, then <code class=\"mm\">xy</code> is rational."
+    ],
+    "final": "Option (A).",
+    "misconception": "Option (D) negates the conclusion correctly but forgets to negate the hypothesis; option (C) uses &ldquo;or&rdquo; where De Morgan forces &ldquo;and&rdquo;. Negation of a disjunction is a conjunction, never a disjunction.",
+    "takeaway": "Negating a compound statement needs De Morgan's laws."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Negating a compound statement needs De Morgan's laws. The contrapositive of <code class=\"mm\">p → q</code> is <code class=\"mm\">¬q → ¬p</code>, and <code class=\"mm\">¬(x irrational ∨ y irrational)</code> is <code class=\"mm\">x rational ∧ y rational</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Hypothesis <code class=\"mm\">p</code>: <code class=\"mm\">xy</code> is irrational. Conclusion <code class=\"mm\">q</code>: <code class=\"mm\">x</code> is irrational or <code class=\"mm\">y</code> is irrational.</li><li>Negate <code class=\"mm\">q</code> with De Morgan: both <code class=\"mm\">x</code> and <code class=\"mm\">y</code> are rational.</li><li>Negate <code class=\"mm\">p</code>: <code class=\"mm\">xy</code> is rational.</li><li>Contrapositive: if <code class=\"mm\">x</code> and <code class=\"mm\">y</code> are both rational, then <code class=\"mm\">xy</code> is rational.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Option (D) negates the conclusion correctly but forgets to negate the hypothesis; option (C) uses &ldquo;or&rdquo; where De Morgan forces &ldquo;and&rdquo;. Negation of a disjunction is a conjunction, never a disjunction.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Contradiction for a non-existence claim",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which technique most naturally proves the statement &ldquo;there is no smallest positive rational number&rdquo;?",
+   "question_html": "<p class=\"qtext\">Which technique most naturally proves the statement &ldquo;there is no smallest positive rational number&rdquo;?</p>",
+   "options": [
+    "A direct proof, by writing down the smallest positive rational explicitly.",
+    "A proof by contradiction: assume a smallest positive rational <code class=\"mm\">r</code> exists and show that <code class=\"mm\">r/2</code> is a smaller positive rational.",
+    "A proof by counterexample: exhibit one positive rational that is not the smallest.",
+    "A proof by cases on the parity of the numerator of the smallest rational."
+   ],
+   "options_html": [
+    "A direct proof, by writing down the smallest positive rational explicitly.",
+    "A proof by contradiction: assume a smallest positive rational <code class=\"mm\">r</code> exists and show that <code class=\"mm\">r/2</code> is a smaller positive rational.",
+    "A proof by counterexample: exhibit one positive rational that is not the smallest.",
+    "A proof by cases on the parity of the numerator of the smallest rational."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "The statement is a negative existence claim. Its negation is a universal statement — &ldquo;every positive rational has a smaller positive rational&rdquo; — so proving the negation by producing a smaller candidate for an arbitrary candidate is the natural route, and that is a proof by contradiction.",
+    "steps": [
+     "Assume, for contradiction, that <code class=\"mm\">r</code> is the smallest positive rational.",
+     "Then <code class=\"mm\">r/2</code> is rational (a quotient of rationals) and <code class=\"mm\">0 < r/2 < r</code>.",
+     "So <code class=\"mm\">r/2</code> is a positive rational smaller than <code class=\"mm\">r</code>, contradicting minimality.",
+     "Hence no smallest positive rational exists."
+    ],
+    "final": "Option (B).",
+    "misconception": "A counterexample refutes a universal claim, not an existence claim. &ldquo;There is no smallest positive rational&rdquo; cannot be refuted by one number; what must be shown is that every candidate fails, and the halving argument does exactly that.",
+    "takeaway": "The statement is a negative existence claim."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The statement is a negative existence claim. Its negation is a universal statement — &ldquo;every positive rational has a smaller positive rational&rdquo; — so proving the negation by producing a smaller candidate for an arbitrary candidate is the natural route, and that is a proof by contradiction.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Assume, for contradiction, that <code class=\"mm\">r</code> is the smallest positive rational.</li><li>Then <code class=\"mm\">r/2</code> is rational (a quotient of rationals) and <code class=\"mm\">0 < r/2 < r</code>.</li><li>So <code class=\"mm\">r/2</code> is a positive rational smaller than <code class=\"mm\">r</code>, contradicting minimality.</li><li>Hence no smallest positive rational exists.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> A counterexample refutes a universal claim, not an existence claim. &ldquo;There is no smallest positive rational&rdquo; cannot be refuted by one number; what must be shown is that every candidate fails, and the halving argument does exactly that.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-04",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Opening line of a contrapositive proof",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "To prove, by contrapositive, that &ldquo;for every integer <code class=\"mm\">n</code>, if <code class=\"mm\">4 | n²</code> then <code class=\"mm\">n</code> is even&rdquo;, the proof must begin by assuming",
+   "question_html": "<p class=\"qtext\">To prove, by contrapositive, that &ldquo;for every integer <code class=\"mm\">n</code>, if <code class=\"mm\">4 | n²</code> then <code class=\"mm\">n</code> is even&rdquo;, the proof must begin by assuming</p>",
+   "options": [
+    "<code class=\"mm\">n</code> is even, and derive that <code class=\"mm\">4 | n²</code>.",
+    "<code class=\"mm\">4 ∤ n²</code>, and derive that <code class=\"mm\">n</code> is odd.",
+    "<code class=\"mm\">n</code> is odd, and derive that <code class=\"mm\">4 ∤ n²</code>.",
+    "<code class=\"mm\">4 | n²</code> and <code class=\"mm\">n</code> is odd, and derive a contradiction."
+   ],
+   "options_html": [
+    "<code class=\"mm\">n</code> is even, and derive that <code class=\"mm\">4 | n²</code>.",
+    "<code class=\"mm\">4 ∤ n²</code>, and derive that <code class=\"mm\">n</code> is odd.",
+    "<code class=\"mm\">n</code> is odd, and derive that <code class=\"mm\">4 ∤ n²</code>.",
+    "<code class=\"mm\">4 | n²</code> and <code class=\"mm\">n</code> is odd, and derive a contradiction."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "A proof by contrapositive proves <code class=\"mm\">¬q → ¬p</code> instead of <code class=\"mm\">p → q</code>. It never assumes the hypothesis <code class=\"mm\">p</code>; it assumes the negation of the conclusion.",
+    "steps": [
+     "Here <code class=\"mm\">p</code> is &ldquo;<code class=\"mm\">4 | n²</code>&rdquo; and <code class=\"mm\">q</code> is &ldquo;<code class=\"mm\">n</code> is even&rdquo;.",
+     "The contrapositive is &ldquo;if <code class=\"mm\">n</code> is odd then <code class=\"mm\">4 ∤ n²</code>&rdquo;.",
+     "So the proof starts by assuming <code class=\"mm\">n</code> is odd.",
+     "An odd <code class=\"mm\">n</code> satisfies <code class=\"mm\">n² ≡ 1 (mod 4)</code>, so 4 does not divide <code class=\"mm\">n²</code>, which is the conclusion sought."
+    ],
+    "final": "Option (C).",
+    "misconception": "Option (D) assumes the hypothesis together with the negated conclusion — that is a proof by contradiction, not by contrapositive. Option (A) proves the converse, which is a different statement.",
+    "takeaway": "A proof by contrapositive proves ¬q → ¬p instead of p → q."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A proof by contrapositive proves <code class=\"mm\">¬q → ¬p</code> instead of <code class=\"mm\">p → q</code>. It never assumes the hypothesis <code class=\"mm\">p</code>; it assumes the negation of the conclusion.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Here <code class=\"mm\">p</code> is &ldquo;<code class=\"mm\">4 | n²</code>&rdquo; and <code class=\"mm\">q</code> is &ldquo;<code class=\"mm\">n</code> is even&rdquo;.</li><li>The contrapositive is &ldquo;if <code class=\"mm\">n</code> is odd then <code class=\"mm\">4 ∤ n²</code>&rdquo;.</li><li>So the proof starts by assuming <code class=\"mm\">n</code> is odd.</li><li>An odd <code class=\"mm\">n</code> satisfies <code class=\"mm\">n² ≡ 1 (mod 4)</code>, so 4 does not divide <code class=\"mm\">n²</code>, which is the conclusion sought.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Option (D) assumes the hypothesis together with the negated conclusion — that is a proof by contradiction, not by contrapositive. Option (A) proves the converse, which is a different statement.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-S-16",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Anatomy of a proof by contradiction of a universal implication",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Consider a proof by contradiction of <code class=\"mm\">∀x (P(x) → Q(x))</code> over a non-empty domain. Which of the following statements are correct? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Consider a proof by contradiction of <code class=\"mm\">∀x (P(x) → Q(x))</code> over a non-empty domain. Which of the following statements are correct? (Select all that apply.)</p>",
+   "options": [
+    "The proof begins by assuming <code class=\"mm\">∃x (P(x) ∧ ¬Q(x))</code>.",
+    "The proof may end by deriving any statement of the form <code class=\"mm\">R ∧ ¬R</code>, even when <code class=\"mm\">R</code> has nothing to do with <code class=\"mm\">P</code> or <code class=\"mm\">Q</code>.",
+    "Establishing <code class=\"mm\">¬∃x (P(x) ∧ ¬Q(x))</code> is exactly the same target as establishing the original statement.",
+    "The proof must first fix an arbitrary <code class=\"mm\">x</code>, assume <code class=\"mm\">P(x)</code>, and derive <code class=\"mm\">Q(x)</code>."
+   ],
+   "options_html": [
+    "The proof begins by assuming <code class=\"mm\">∃x (P(x) ∧ ¬Q(x))</code>.",
+    "The proof may end by deriving any statement of the form <code class=\"mm\">R ∧ ¬R</code>, even when <code class=\"mm\">R</code> has nothing to do with <code class=\"mm\">P</code> or <code class=\"mm\">Q</code>.",
+    "Establishing <code class=\"mm\">¬∃x (P(x) ∧ ¬Q(x))</code> is exactly the same target as establishing the original statement.",
+    "The proof must first fix an arbitrary <code class=\"mm\">x</code>, assume <code class=\"mm\">P(x)</code>, and derive <code class=\"mm\">Q(x)</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "The negation of <code class=\"mm\">∀x (P(x) → Q(x))</code> is <code class=\"mm\">∃x (P(x) ∧ ¬Q(x))</code>, and in classical logic any contradiction <code class=\"mm\">R ∧ ¬R</code> is a valid way to close a reductio — the contradiction need not involve the hypothesis.",
+    "steps": [
+     "Negate the goal using the quantifier De Morgan laws: <code class=\"mm\">¬∀x (P(x) → Q(x)) ≡ ∃x ¬(P(x) → Q(x)) ≡ ∃x (P(x) ∧ ¬Q(x))</code>. So (A) is right.",
+     "A reductio is complete as soon as two contradictory statements are derived; by the principle of explosion any <code class=\"mm\">R ∧ ¬R</code> suffices, so (B) is right.",
+     "(C) is the same negation written with an outer <code class=\"mm\">¬∃</code>, so it is the same target.",
+     "(D) describes a direct proof: fixing an arbitrary <code class=\"mm\">x</code> and deriving <code class=\"mm\">Q(x)</code> from <code class=\"mm\">P(x)</code> never assumes the negation of the claim."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Students often insist that the contradiction must contradict the hypothesis. A contradiction with an established theorem, with a definition, or with itself is equally decisive. Option (D) is the shape of a direct proof and is not part of a contradiction proof.",
+    "takeaway": "The negation of ∀x (P(x) → Q(x)) is ∃x (P(x) ∧ ¬Q(x)), and in classical logic any contradiction R ∧ ¬R is a valid way to close a reductio — the contradiction need not involve the hypothesis."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The negation of <code class=\"mm\">∀x (P(x) → Q(x))</code> is <code class=\"mm\">∃x (P(x) ∧ ¬Q(x))</code>, and in classical logic any contradiction <code class=\"mm\">R ∧ ¬R</code> is a valid way to close a reductio — the contradiction need not involve the hypothesis.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Negate the goal using the quantifier De Morgan laws: <code class=\"mm\">¬∀x (P(x) → Q(x)) ≡ ∃x ¬(P(x) → Q(x)) ≡ ∃x (P(x) ∧ ¬Q(x))</code>. So (A) is right.</li><li>A reductio is complete as soon as two contradictory statements are derived; by the principle of explosion any <code class=\"mm\">R ∧ ¬R</code> suffices, so (B) is right.</li><li>(C) is the same negation written with an outer <code class=\"mm\">¬∃</code>, so it is the same target.</li><li>(D) describes a direct proof: fixing an arbitrary <code class=\"mm\">x</code> and deriving <code class=\"mm\">Q(x)</code> from <code class=\"mm\">P(x)</code> never assumes the negation of the claim.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Students often insist that the contradiction must contradict the hypothesis. A contradiction with an established theorem, with a definition, or with itself is equally decisive. Option (D) is the shape of a direct proof and is not part of a contradiction proof.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-N-21",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counting true forms of an implication",
+   "subtopic": "direct-contradiction-contrapositive",
+   "subtopic_label": "Direct proof, contradiction &amp; contrapositive",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">S</code> be the statement &ldquo;if <code class=\"mm\">n²</code> is even then <code class=\"mm\">n</code> is even&rdquo;, where <code class=\"mm\">n</code> ranges over the integers. How many of the following four statements are TRUE for every integer <code class=\"mm\">n</code>: (i) <code class=\"mm\">S</code> itself, (ii) the converse of <code class=\"mm\">S</code>, (iii) the inverse of <code class=\"mm\">S</code>, (iv) the contrapositive of <code class=\"mm\">S</code>? (Enter an integer.)",
+   "question_html": "<div class=\"qtext\">Let <code class=\"mm\">S</code> be the statement &ldquo;if <code class=\"mm\">n²</code> is even then <code class=\"mm\">n</code> is even&rdquo;, where <code class=\"mm\">n</code> ranges over the integers. How many of the following four statements are TRUE for every integer <code class=\"mm\">n</code>: (i) <code class=\"mm\">S</code> itself, (ii) the converse of <code class=\"mm\">S</code>, (iii) the inverse of <code class=\"mm\">S</code>, (iv) the contrapositive of <code class=\"mm\">S</code>? (Enter an integer.)</div>",
+   "options": null,
+   "options_html": null,
+   "answer": 4,
+   "answer_display": "4",
+   "marks": 2,
+   "solution": {
+    "concept": "An implication and its contrapositive are equivalent; the converse and the inverse are equivalent to each other. When the implication and its converse are both true, the implication is a biconditional and all four forms are true.",
+    "steps": [
+     "Contrapositive of <code class=\"mm\">S</code>: if <code class=\"mm\">n</code> is odd then <code class=\"mm\">n²</code> is odd. True, since an odd <code class=\"mm\">n = 2k + 1</code> gives <code class=\"mm\">n² = 2(2k² + 2k) + 1</code>. So <code class=\"mm\">S</code> is true.",
+     "Converse: if <code class=\"mm\">n</code> is even then <code class=\"mm\">n²</code> is even. True, because <code class=\"mm\">n = 2k</code> gives <code class=\"mm\">n² = 4k²</code>.",
+     "Inverse: if <code class=\"mm\">n²</code> is odd then <code class=\"mm\">n</code> is odd — the contrapositive of the converse, hence true.",
+     "Since <code class=\"mm\">S</code> and its converse are both true, <code class=\"mm\">S</code> is a biconditional and all four statements hold: the count is 4."
+    ],
+    "final": "4",
+    "misconception": "Answering 2 by reflex — &ldquo;only the implication and its contrapositive are true&rdquo;. That is correct only when the converse fails; here even <code class=\"mm\">n</code> and <code class=\"mm\">n²</code> even are equivalent, so the converse and inverse survive too.",
+    "takeaway": "An implication and its contrapositive are equivalent; the converse and the inverse are equivalent to each other."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An implication and its contrapositive are equivalent; the converse and the inverse are equivalent to each other. When the implication and its converse are both true, the implication is a biconditional and all four forms are true.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Contrapositive of <code class=\"mm\">S</code>: if <code class=\"mm\">n</code> is odd then <code class=\"mm\">n²</code> is odd. True, since an odd <code class=\"mm\">n = 2k + 1</code> gives <code class=\"mm\">n² = 2(2k² + 2k) + 1</code>. So <code class=\"mm\">S</code> is true.</li><li>Converse: if <code class=\"mm\">n</code> is even then <code class=\"mm\">n²</code> is even. True, because <code class=\"mm\">n = 2k</code> gives <code class=\"mm\">n² = 4k²</code>.</li><li>Inverse: if <code class=\"mm\">n²</code> is odd then <code class=\"mm\">n</code> is odd — the contrapositive of the converse, hence true.</li><li>Since <code class=\"mm\">S</code> and its converse are both true, <code class=\"mm\">S</code> is a biconditional and all four statements hold: the count is 4.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2 by reflex — &ldquo;only the implication and its contrapositive are true&rdquo;. That is correct only when the converse fails; here even <code class=\"mm\">n</code> and <code class=\"mm\">n²</code> even are equivalent, so the converse and inverse survive too.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-05",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counterexample to a square-root identity",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which single value of <code class=\"mm\">x</code> is a counterexample to the claim &ldquo;for every real number <code class=\"mm\">x</code>, <code class=\"mm\">√(x²) = x</code>&rdquo;?",
+   "question_html": "<p class=\"qtext\">Which single value of <code class=\"mm\">x</code> is a counterexample to the claim &ldquo;for every real number <code class=\"mm\">x</code>, <code class=\"mm\">√(x²) = x</code>&rdquo;?</p>",
+   "options": [
+    "<code class=\"mm\">x = −3</code>",
+    "<code class=\"mm\">x = 0</code>",
+    "<code class=\"mm\">x = 4</code>",
+    "<code class=\"mm\">x = 9</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">x = −3</code>",
+    "<code class=\"mm\">x = 0</code>",
+    "<code class=\"mm\">x = 4</code>",
+    "<code class=\"mm\">x = 9</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">√(x²) = |x|</code> for every real <code class=\"mm\">x</code>, and <code class=\"mm\">|x| = x</code> holds exactly when <code class=\"mm\">x ≥ 0</code>. So every negative real number is a counterexample.",
+    "steps": [
+     "Compute for <code class=\"mm\">x = −3</code>: <code class=\"mm\">√((−3)²) = √9 = 3</code>, while <code class=\"mm\">x = −3</code>. Since <code class=\"mm\">3 ≠ −3</code>, the claim fails.",
+     "For <code class=\"mm\">x = 0, 4, 9</code> the values <code class=\"mm\">√(x²)</code> and <code class=\"mm\">x</code> agree, so none of them refutes the claim.",
+     "One failing instance is enough to disprove a universal statement."
+    ],
+    "final": "Option (A).",
+    "misconception": "Believing that squaring and taking a square root always cancel. They cancel only for <code class=\"mm\">x ≥ 0</code>; the square root returns the non-negative root, which is <code class=\"mm\">|x|</code>.",
+    "takeaway": "√(x²) = |x| for every real x, and |x| = x holds exactly when x ≥ 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">√(x²) = |x|</code> for every real <code class=\"mm\">x</code>, and <code class=\"mm\">|x| = x</code> holds exactly when <code class=\"mm\">x ≥ 0</code>. So every negative real number is a counterexample.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Compute for <code class=\"mm\">x = −3</code>: <code class=\"mm\">√((−3)²) = √9 = 3</code>, while <code class=\"mm\">x = −3</code>. Since <code class=\"mm\">3 ≠ −3</code>, the claim fails.</li><li>For <code class=\"mm\">x = 0, 4, 9</code> the values <code class=\"mm\">√(x²)</code> and <code class=\"mm\">x</code> agree, so none of them refutes the claim.</li><li>One failing instance is enough to disprove a universal statement.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Believing that squaring and taking a square root always cancel. They cancel only for <code class=\"mm\">x ≥ 0</code>; the square root returns the non-negative root, which is <code class=\"mm\">|x|</code>.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-06",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counterexample to closure of the irrationals under addition",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which ordered pair <code class=\"mm\">(a, b)</code> of irrational numbers shows that the sum of two irrational numbers need not be irrational?",
+   "question_html": "<p class=\"qtext\">Which ordered pair <code class=\"mm\">(a, b)</code> of irrational numbers shows that the sum of two irrational numbers need not be irrational?</p>",
+   "options": [
+    "<code class=\"mm\">(√2, √2)</code>",
+    "<code class=\"mm\">(√2, −√2)</code>",
+    "<code class=\"mm\">(π, π)</code>",
+    "<code class=\"mm\">(√2, 1)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(√2, √2)</code>",
+    "<code class=\"mm\">(√2, −√2)</code>",
+    "<code class=\"mm\">(π, π)</code>",
+    "<code class=\"mm\">(√2, 1)</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "A single counterexample refutes a universal claim. Irrational numbers are not closed under addition, and the cheapest witness uses additive inverses.",
+    "steps": [
+     "<code class=\"mm\">√2</code> and <code class=\"mm\">−√2</code> are both irrational.",
+     "Their sum is <code class=\"mm\">√2 + (−√2) = 0</code>, and 0 is rational.",
+     "So the sum of two irrationals can be rational — the pair <code class=\"mm\">(√2, −√2)</code> is a counterexample.",
+     "The other pairs sum to <code class=\"mm\">2√2, 2π, 1 + √2</code>, each of which is irrational, so they are not counterexamples."
+    ],
+    "final": "Option (B).",
+    "misconception": "Treating &ldquo;irrational + irrational&rdquo; as automatically irrational. Irrationals are closed under neither addition nor multiplication: <code class=\"mm\">√2 · √2 = 2</code> is the multiplicative version of the same trap.",
+    "takeaway": "A single counterexample refutes a universal claim."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A single counterexample refutes a universal claim. Irrational numbers are not closed under addition, and the cheapest witness uses additive inverses.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">√2</code> and <code class=\"mm\">−√2</code> are both irrational.</li><li>Their sum is <code class=\"mm\">√2 + (−√2) = 0</code>, and 0 is rational.</li><li>So the sum of two irrationals can be rational — the pair <code class=\"mm\">(√2, −√2)</code> is a counterexample.</li><li>The other pairs sum to <code class=\"mm\">2√2, 2π, 1 + √2</code>, each of which is irrational, so they are not counterexamples.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Treating &ldquo;irrational + irrational&rdquo; as automatically irrational. Irrationals are closed under neither addition nor multiplication: <code class=\"mm\">√2 · √2 = 2</code> is the multiplicative version of the same trap.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-07",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counterexample to a divisibility implication",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which of the following ordered pairs <code class=\"mm\">(a, b)</code> of integers is a counterexample to &ldquo;if <code class=\"mm\">a | b²</code> then <code class=\"mm\">a | b</code>&rdquo;?",
+   "question_html": "<p class=\"qtext\">Which of the following ordered pairs <code class=\"mm\">(a, b)</code> of integers is a counterexample to &ldquo;if <code class=\"mm\">a | b²</code> then <code class=\"mm\">a | b</code>&rdquo;?</p>",
+   "options": [
+    "<code class=\"mm\">(4, 2)</code>",
+    "<code class=\"mm\">(3, 6)</code>",
+    "<code class=\"mm\">(5, 10)</code>",
+    "<code class=\"mm\">(2, 6)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(4, 2)</code>",
+    "<code class=\"mm\">(3, 6)</code>",
+    "<code class=\"mm\">(5, 10)</code>",
+    "<code class=\"mm\">(2, 6)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A counterexample must satisfy the hypothesis and violate the conclusion. Here the hypothesis is <code class=\"mm\">a | b²</code> and the conclusion is <code class=\"mm\">a | b</code>; both must be checked for every option.",
+    "steps": [
+     "<code class=\"mm\">(4, 2)</code>: <code class=\"mm\">b² = 4</code> and <code class=\"mm\">4 | 4</code>, so the hypothesis holds; but <code class=\"mm\">4 ∤ 2</code>, so the conclusion fails. Counterexample.",
+     "<code class=\"mm\">(3, 6)</code>: <code class=\"mm\">3 | 36</code> and <code class=\"mm\">3 | 6</code> — hypothesis and conclusion both hold, so it is not a counterexample.",
+     "<code class=\"mm\">(5, 10)</code>: <code class=\"mm\">5 | 100</code> and <code class=\"mm\">5 | 10</code> — not a counterexample.",
+     "<code class=\"mm\">(2, 6)</code>: <code class=\"mm\">2 | 36</code> and <code class=\"mm\">2 | 6</code> — not a counterexample."
+    ],
+    "final": "Option (A).",
+    "misconception": "Checking only the conclusion. An integer that does not satisfy the hypothesis — for instance a pair with <code class=\"mm\">a ∤ b²</code> — proves nothing about the implication, however badly the conclusion fails for it.",
+    "takeaway": "A counterexample must satisfy the hypothesis and violate the conclusion."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A counterexample must satisfy the hypothesis and violate the conclusion. Here the hypothesis is <code class=\"mm\">a | b²</code> and the conclusion is <code class=\"mm\">a | b</code>; both must be checked for every option.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">(4, 2)</code>: <code class=\"mm\">b² = 4</code> and <code class=\"mm\">4 | 4</code>, so the hypothesis holds; but <code class=\"mm\">4 ∤ 2</code>, so the conclusion fails. Counterexample.</li><li><code class=\"mm\">(3, 6)</code>: <code class=\"mm\">3 | 36</code> and <code class=\"mm\">3 | 6</code> — hypothesis and conclusion both hold, so it is not a counterexample.</li><li><code class=\"mm\">(5, 10)</code>: <code class=\"mm\">5 | 100</code> and <code class=\"mm\">5 | 10</code> — not a counterexample.</li><li><code class=\"mm\">(2, 6)</code>: <code class=\"mm\">2 | 36</code> and <code class=\"mm\">2 | 6</code> — not a counterexample.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Checking only the conclusion. An integer that does not satisfy the hypothesis — for instance a pair with <code class=\"mm\">a ∤ b²</code> — proves nothing about the implication, however badly the conclusion fails for it.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-08",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Identifying the single false universal claim",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Exactly one of the following statements is FALSE. Which one?",
+   "question_html": "<p class=\"qtext\">Exactly one of the following statements is FALSE. Which one?</p>",
+   "options": [
+    "For every integer <code class=\"mm\">n ≥ 2</code>, <code class=\"mm\">n! + 1</code> is prime.",
+    "For every integer <code class=\"mm\">n</code>, <code class=\"mm\">n³ − n</code> is divisible by 6.",
+    "For every prime <code class=\"mm\">p > 2</code>, <code class=\"mm\">p² − 1</code> is divisible by 8.",
+    "For every real number <code class=\"mm\">x</code>, <code class=\"mm\">x² + 1 > 0</code>."
+   ],
+   "options_html": [
+    "For every integer <code class=\"mm\">n ≥ 2</code>, <code class=\"mm\">n! + 1</code> is prime.",
+    "For every integer <code class=\"mm\">n</code>, <code class=\"mm\">n³ − n</code> is divisible by 6.",
+    "For every prime <code class=\"mm\">p > 2</code>, <code class=\"mm\">p² − 1</code> is divisible by 8.",
+    "For every real number <code class=\"mm\">x</code>, <code class=\"mm\">x² + 1 > 0</code>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A universal claim dies at its first counterexample, so a claim that looks true on small cases must be tested further before it is accepted.",
+    "steps": [
+     "Statement (A): <code class=\"mm\">n = 2</code> gives 3 and <code class=\"mm\">n = 3</code> gives 7, both prime — but <code class=\"mm\">n = 4</code> gives <code class=\"mm\">4! + 1 = 25 = 5²</code>, which is composite. (A) is FALSE.",
+     "Statement (B): <code class=\"mm\">n³ − n = (n − 1)n(n + 1)</code> is a product of three consecutive integers, so it is divisible by 2 and by 3, hence by 6. TRUE.",
+     "Statement (C): <code class=\"mm\">p</code> is odd, so <code class=\"mm\">p − 1</code> and <code class=\"mm\">p + 1</code> are consecutive even numbers; one of them is divisible by 4 and the other by 2, so the product <code class=\"mm\">(p − 1)(p + 1)</code> is divisible by 8. TRUE.",
+     "Statement (D): <code class=\"mm\">x² ≥ 0</code> for every real <code class=\"mm\">x</code>, so <code class=\"mm\">x² + 1 ≥ 1 > 0</code>. TRUE."
+    ],
+    "final": "Option (A).",
+    "misconception": "Stopping after <code class=\"mm\">n = 2, 3</code> because both give primes. Patterns in number theory fail late: <code class=\"mm\">n! + 1</code> is prime for <code class=\"mm\">n = 2, 3</code> and composite from <code class=\"mm\">n = 4</code> onward here, and <code class=\"mm\">n = 5</code> gives <code class=\"mm\">121 = 11²</code> as well.",
+    "takeaway": "A universal claim dies at its first counterexample, so a claim that looks true on small cases must be tested further before it is accepted."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A universal claim dies at its first counterexample, so a claim that looks true on small cases must be tested further before it is accepted.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Statement (A): <code class=\"mm\">n = 2</code> gives 3 and <code class=\"mm\">n = 3</code> gives 7, both prime — but <code class=\"mm\">n = 4</code> gives <code class=\"mm\">4! + 1 = 25 = 5²</code>, which is composite. (A) is FALSE.</li><li>Statement (B): <code class=\"mm\">n³ − n = (n − 1)n(n + 1)</code> is a product of three consecutive integers, so it is divisible by 2 and by 3, hence by 6. TRUE.</li><li>Statement (C): <code class=\"mm\">p</code> is odd, so <code class=\"mm\">p − 1</code> and <code class=\"mm\">p + 1</code> are consecutive even numbers; one of them is divisible by 4 and the other by 2, so the product <code class=\"mm\">(p − 1)(p + 1)</code> is divisible by 8. TRUE.</li><li>Statement (D): <code class=\"mm\">x² ≥ 0</code> for every real <code class=\"mm\">x</code>, so <code class=\"mm\">x² + 1 ≥ 1 > 0</code>. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Stopping after <code class=\"mm\">n = 2, 3</code> because both give primes. Patterns in number theory fail late: <code class=\"mm\">n! + 1</code> is prime for <code class=\"mm\">n = 2, 3</code> and composite from <code class=\"mm\">n = 4</code> onward here, and <code class=\"mm\">n = 5</code> gives <code class=\"mm\">121 = 11²</code> as well.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-S-17",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counterexamples to a triangle-inequality identity",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which of the following values of <code class=\"mm\">x</code> are counterexamples to the claim &ldquo;for every real number <code class=\"mm\">x</code>, <code class=\"mm\">|x + 1| = |x| + 1</code>&rdquo;? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following values of <code class=\"mm\">x</code> are counterexamples to the claim &ldquo;for every real number <code class=\"mm\">x</code>, <code class=\"mm\">|x + 1| = |x| + 1</code>&rdquo;? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">x = 0</code>",
+    "<code class=\"mm\">x = −1</code>",
+    "<code class=\"mm\">x = −0.5</code>",
+    "<code class=\"mm\">x = 3</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">x = 0</code>",
+    "<code class=\"mm\">x = −1</code>",
+    "<code class=\"mm\">x = −0.5</code>",
+    "<code class=\"mm\">x = 3</code>"
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "answer_display": "Options (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "<code class=\"mm\">|a + b| ≤ |a| + |b|</code> always, with equality exactly when <code class=\"mm\">a</code> and <code class=\"mm\">b</code> have the same sign or one of them is 0. Here the equality holds precisely for <code class=\"mm\">x ≥ 0</code>.",
+    "steps": [
+     "<code class=\"mm\">x = 0</code>: <code class=\"mm\">|1| = 1</code> and <code class=\"mm\">|0| + 1 = 1</code> — equal, not a counterexample.",
+     "<code class=\"mm\">x = −1</code>: <code class=\"mm\">|0| = 0</code> but <code class=\"mm\">|−1| + 1 = 2</code> — a counterexample.",
+     "<code class=\"mm\">x = −0.5</code>: <code class=\"mm\">|0.5| = 0.5</code> but <code class=\"mm\">|−0.5| + 1 = 1.5</code> — a counterexample.",
+     "<code class=\"mm\">x = 3</code>: <code class=\"mm\">|4| = 4</code> and <code class=\"mm\">|3| + 1 = 4</code> — equal, not a counterexample."
+    ],
+    "final": "Options (B) and (C).",
+    "misconception": "Assuming <code class=\"mm\">|x + 1| = |x| + 1</code> is an identity. It is an equation that holds only on the region <code class=\"mm\">x ≥ 0</code>; every negative value of <code class=\"mm\">x</code> breaks it, and that region is exactly where the two summands have opposite signs.",
+    "takeaway": "|a + b| ≤ |a| + |b| always, with equality exactly when a and b have the same sign or one of them is 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">|a + b| ≤ |a| + |b|</code> always, with equality exactly when <code class=\"mm\">a</code> and <code class=\"mm\">b</code> have the same sign or one of them is 0. Here the equality holds precisely for <code class=\"mm\">x ≥ 0</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">x = 0</code>: <code class=\"mm\">|1| = 1</code> and <code class=\"mm\">|0| + 1 = 1</code> — equal, not a counterexample.</li><li><code class=\"mm\">x = −1</code>: <code class=\"mm\">|0| = 0</code> but <code class=\"mm\">|−1| + 1 = 2</code> — a counterexample.</li><li><code class=\"mm\">x = −0.5</code>: <code class=\"mm\">|0.5| = 0.5</code> but <code class=\"mm\">|−0.5| + 1 = 1.5</code> — a counterexample.</li><li><code class=\"mm\">x = 3</code>: <code class=\"mm\">|4| = 4</code> and <code class=\"mm\">|3| + 1 = 4</code> — equal, not a counterexample.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Assuming <code class=\"mm\">|x + 1| = |x| + 1</code> is an identity. It is an equation that holds only on the region <code class=\"mm\">x ≥ 0</code>; every negative value of <code class=\"mm\">x</code> breaks it, and that region is exactly where the two summands have opposite signs.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-N-22",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counting counterexamples in a range",
+   "subtopic": "counterexamples",
+   "subtopic_label": "Counterexamples",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "How many integers <code class=\"mm\">n</code> with <code class=\"mm\">1 ≤ n ≤ 30</code> are counterexamples to the claim &ldquo;if <code class=\"mm\">n</code> is odd then <code class=\"mm\">n</code> is divisible by 3&rdquo;? (Enter an integer.)",
+   "question_html": "<div class=\"qtext\">How many integers <code class=\"mm\">n</code> with <code class=\"mm\">1 ≤ n ≤ 30</code> are counterexamples to the claim &ldquo;if <code class=\"mm\">n</code> is odd then <code class=\"mm\">n</code> is divisible by 3&rdquo;? (Enter an integer.)</div>",
+   "options": null,
+   "options_html": null,
+   "answer": 10,
+   "answer_display": "10",
+   "marks": 2,
+   "solution": {
+    "concept": "A counterexample to <code class=\"mm\">p → q</code> must make <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false. Here it must be odd and not divisible by 3.",
+    "steps": [
+     "The odd integers in the range are <code class=\"mm\">1, 3, 5, …, 29</code> — there are 15 of them.",
+     "The odd integers in the range that are divisible by 3 are the odd multiples of 3: <code class=\"mm\">3, 9, 15, 21, 27</code> — five of them.",
+     "Counterexamples = odd and not divisible by 3: <code class=\"mm\">15 − 5 = 10</code>."
+    ],
+    "final": "10",
+    "misconception": "Counting the multiples of 3 (there are 10 in the range) — the complement of what is asked. The implication is violated by the odd numbers that are not multiples of 3, not by the multiples.",
+    "takeaway": "A counterexample to p → q must make p true and q false."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A counterexample to <code class=\"mm\">p → q</code> must make <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false. Here it must be odd and not divisible by 3.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The odd integers in the range are <code class=\"mm\">1, 3, 5, …, 29</code> — there are 15 of them.</li><li>The odd integers in the range that are divisible by 3 are the odd multiples of 3: <code class=\"mm\">3, 9, 15, 21, 27</code> — five of them.</li><li>Counterexamples = odd and not divisible by 3: <code class=\"mm\">15 − 5 = 10</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 10</span></p><p class=\"row\"><b>Common misconception.</b> Counting the multiples of 3 (there are 10 in the range) — the complement of what is asked. The implication is violated by the odd numbers that are not multiples of 3, not by the multiples.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-09",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Propositional Equivalence",
+   "sub": "Negation of a biconditional",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which one of the following is logically equivalent to <code class=\"mm\">¬(p ↔ q)</code>?",
+   "question_html": "<p class=\"qtext\">Which one of the following is logically equivalent to <code class=\"mm\">¬(p ↔ q)</code>?</p>",
+   "options": [
+    "<code class=\"mm\">p ⊕ q</code>",
+    "<code class=\"mm\">p ↔ q</code>",
+    "<code class=\"mm\">¬p ∧ ¬q</code>",
+    "<code class=\"mm\">p ∨ q</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">p ⊕ q</code>",
+    "<code class=\"mm\">p ↔ q</code>",
+    "<code class=\"mm\">¬p ∧ ¬q</code>",
+    "<code class=\"mm\">p ∨ q</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">p ↔ q</code> is true exactly when <code class=\"mm\">p</code> and <code class=\"mm\">q</code> have the same truth value, so its negation is true exactly when they differ — which is exclusive or.",
+    "steps": [
+     "<code class=\"mm\">p ↔ q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)</code>.",
+     "Negate and apply De Morgan: <code class=\"mm\">¬(p ↔ q) ≡ (¬p ∨ ¬q) ∧ (p ∨ q)</code>.",
+     "That is satisfied by exactly <code class=\"mm\">(p, q) = (T, F)</code> and <code class=\"mm\">(F, T)</code>, which is the truth table of <code class=\"mm\">p ⊕ q</code>.",
+     "So <code class=\"mm\">¬(p ↔ q) ≡ p ⊕ q</code>."
+    ],
+    "final": "Option (A).",
+    "misconception": "Writing <code class=\"mm\">¬(p ↔ q)</code> as <code class=\"mm\">¬p ↔ ¬q</code>. Negating both sides of a biconditional leaves it unchanged: <code class=\"mm\">¬p ↔ ¬q ≡ p ↔ q</code>. The negation of &ldquo;agree&rdquo; is &ldquo;disagree&rdquo;, not &ldquo;both false&rdquo;.",
+    "takeaway": "p ↔ q is true exactly when p and q have the same truth value, so its negation is true exactly when they differ — which is exclusive or."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">p ↔ q</code> is true exactly when <code class=\"mm\">p</code> and <code class=\"mm\">q</code> have the same truth value, so its negation is true exactly when they differ — which is exclusive or.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">p ↔ q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)</code>.</li><li>Negate and apply De Morgan: <code class=\"mm\">¬(p ↔ q) ≡ (¬p ∨ ¬q) ∧ (p ∨ q)</code>.</li><li>That is satisfied by exactly <code class=\"mm\">(p, q) = (T, F)</code> and <code class=\"mm\">(F, T)</code>, which is the truth table of <code class=\"mm\">p ⊕ q</code>.</li><li>So <code class=\"mm\">¬(p ↔ q) ≡ p ⊕ q</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Writing <code class=\"mm\">¬(p ↔ q)</code> as <code class=\"mm\">¬p ↔ ¬q</code>. Negating both sides of a biconditional leaves it unchanged: <code class=\"mm\">¬p ↔ ¬q ≡ p ↔ q</code>. The negation of &ldquo;agree&rdquo; is &ldquo;disagree&rdquo;, not &ldquo;both false&rdquo;.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-10",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Disproving a biconditional",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "To disprove a biconditional <code class=\"mm\">p ↔ q</code>, it is sufficient to",
+   "question_html": "<p class=\"qtext\">To disprove a biconditional <code class=\"mm\">p ↔ q</code>, it is sufficient to</p>",
+   "options": [
+    "exhibit one case in which <code class=\"mm\">p</code> is true and <code class=\"mm\">q</code> is false.",
+    "exhibit one case in which <code class=\"mm\">p</code> and <code class=\"mm\">q</code> are both true.",
+    "exhibit one case in which <code class=\"mm\">p</code> and <code class=\"mm\">q</code> are both false.",
+    "show that <code class=\"mm\">p → q</code> and <code class=\"mm\">q → p</code> are both true."
+   ],
+   "options_html": [
+    "exhibit one case in which <code class=\"mm\">p</code> is true and <code class=\"mm\">q</code> is false.",
+    "exhibit one case in which <code class=\"mm\">p</code> and <code class=\"mm\">q</code> are both true.",
+    "exhibit one case in which <code class=\"mm\">p</code> and <code class=\"mm\">q</code> are both false.",
+    "show that <code class=\"mm\">p → q</code> and <code class=\"mm\">q → p</code> are both true."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">p ↔ q ≡ (p → q) ∧ (q → p)</code>. A conjunction is false as soon as one conjunct is false, and one case with <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false refutes <code class=\"mm\">p → q</code>.",
+    "steps": [
+     "Rewrite the biconditional as the conjunction of the two implications.",
+     "Refuting either implication refutes the conjunction, hence the biconditional.",
+     "A case with <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false refutes <code class=\"mm\">p → q</code>, so one such case suffices.",
+     "Cases where <code class=\"mm\">p</code> and <code class=\"mm\">q</code> agree — options (B) and (C) — confirm the biconditional rather than refute it."
+    ],
+    "final": "Option (A).",
+    "misconception": "Believing that both directions must be refuted. Disproving a biconditional is disproving a conjunction, and one broken conjunct is enough.",
+    "takeaway": "p ↔ q ≡ (p → q) ∧ (q → p)."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">p ↔ q ≡ (p → q) ∧ (q → p)</code>. A conjunction is false as soon as one conjunct is false, and one case with <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false refutes <code class=\"mm\">p → q</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Rewrite the biconditional as the conjunction of the two implications.</li><li>Refuting either implication refutes the conjunction, hence the biconditional.</li><li>A case with <code class=\"mm\">p</code> true and <code class=\"mm\">q</code> false refutes <code class=\"mm\">p → q</code>, so one such case suffices.</li><li>Cases where <code class=\"mm\">p</code> and <code class=\"mm\">q</code> agree — options (B) and (C) — confirm the biconditional rather than refute it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Believing that both directions must be refuted. Disproving a biconditional is disproving a conjunction, and one broken conjunct is enough.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-11",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Which biconditional fails",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which one of the following biconditionals is <b>FALSE</b>?",
+   "question_html": "<p class=\"qtext\">Which one of the following biconditionals is <b>FALSE</b>?</p>",
+   "options": [
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">6 | n</code> ↔ <code class=\"mm\">2 | n</code> and <code class=\"mm\">3 | n</code>.",
+    "For every real <code class=\"mm\">x</code>: <code class=\"mm\">x³ = x</code> ↔ <code class=\"mm\">x ∈ {−1, 0, 1}</code>.",
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">4 | n²</code> ↔ <code class=\"mm\">4 | n</code>.",
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">n</code> is even ↔ <code class=\"mm\">n + 1</code> is odd."
+   ],
+   "options_html": [
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">6 | n</code> ↔ <code class=\"mm\">2 | n</code> and <code class=\"mm\">3 | n</code>.",
+    "For every real <code class=\"mm\">x</code>: <code class=\"mm\">x³ = x</code> ↔ <code class=\"mm\">x ∈ {−1, 0, 1}</code>.",
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">4 | n²</code> ↔ <code class=\"mm\">4 | n</code>.",
+    "For every integer <code class=\"mm\">n</code>: <code class=\"mm\">n</code> is even ↔ <code class=\"mm\">n + 1</code> is odd."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "A biconditional fails if either direction fails. The interesting failure here is the direction &ldquo;hypothesis ⟸ conclusion&rdquo; that students assume without checking.",
+    "steps": [
+     "(A): 6 = 2 · 3 with <code class=\"mm\">gcd(2, 3) = 1</code>, so <code class=\"mm\">6 | n ⟺ 2 | n</code> and <code class=\"mm\">3 | n</code>. TRUE.",
+     "(B): <code class=\"mm\">x³ − x = x(x − 1)(x + 1) = 0</code> exactly for <code class=\"mm\">x ∈ {−1, 0, 1}</code>. TRUE.",
+     "(C): take <code class=\"mm\">n = 2</code>. Then <code class=\"mm\">n² = 4</code> and <code class=\"mm\">4 | 4</code>, but <code class=\"mm\">4 ∤ 2</code>. FALSE.",
+     "(D): adding 1 flips parity for every integer. TRUE."
+    ],
+    "final": "Option (C).",
+    "misconception": "Assuming that <code class=\"mm\">4 | n²</code> forces <code class=\"mm\">4 | n</code>. It forces only that <code class=\"mm\">n</code> is even: <code class=\"mm\">n = 2k</code> gives <code class=\"mm\">n² = 4k²</code>, always divisible by 4, so every even <code class=\"mm\">n</code> satisfies the hypothesis while only multiples of 4 satisfy the conclusion.",
+    "takeaway": "A biconditional fails if either direction fails."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A biconditional fails if either direction fails. The interesting failure here is the direction &ldquo;hypothesis ⟸ conclusion&rdquo; that students assume without checking.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): 6 = 2 · 3 with <code class=\"mm\">gcd(2, 3) = 1</code>, so <code class=\"mm\">6 | n ⟺ 2 | n</code> and <code class=\"mm\">3 | n</code>. TRUE.</li><li>(B): <code class=\"mm\">x³ − x = x(x − 1)(x + 1) = 0</code> exactly for <code class=\"mm\">x ∈ {−1, 0, 1}</code>. TRUE.</li><li>(C): take <code class=\"mm\">n = 2</code>. Then <code class=\"mm\">n² = 4</code> and <code class=\"mm\">4 | 4</code>, but <code class=\"mm\">4 ∤ 2</code>. FALSE.</li><li>(D): adding 1 flips parity for every integer. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that <code class=\"mm\">4 | n²</code> forces <code class=\"mm\">4 | n</code>. It forces only that <code class=\"mm\">n</code> is even: <code class=\"mm\">n = 2k</code> gives <code class=\"mm\">n² = 4k²</code>, always divisible by 4, so every even <code class=\"mm\">n</code> satisfies the hypothesis while only multiples of 4 satisfy the conclusion.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-12",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Reading the direction of &ldquo;P if Q&rdquo;",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For an integer <code class=\"mm\">n</code>, consider the phrase &ldquo;<code class=\"mm\">n</code> is a multiple of 10 <b>if</b> <code class=\"mm\">n</code> ends in the digit 0&rdquo;. Which implication does this phrase assert?",
+   "question_html": "<p class=\"qtext\">For an integer <code class=\"mm\">n</code>, consider the phrase &ldquo;<code class=\"mm\">n</code> is a multiple of 10 <b>if</b> <code class=\"mm\">n</code> ends in the digit 0&rdquo;. Which implication does this phrase assert?</p>",
+   "options": [
+    "<code class=\"mm\">n</code> ends in 0 → <code class=\"mm\">n</code> is a multiple of 10.",
+    "<code class=\"mm\">n</code> is a multiple of 10 → <code class=\"mm\">n</code> ends in 0.",
+    "Both implications.",
+    "Neither implication."
+   ],
+   "options_html": [
+    "<code class=\"mm\">n</code> ends in 0 → <code class=\"mm\">n</code> is a multiple of 10.",
+    "<code class=\"mm\">n</code> is a multiple of 10 → <code class=\"mm\">n</code> ends in 0.",
+    "Both implications.",
+    "Neither implication."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "&ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; means <code class=\"mm\">Q → P</code>: the condition stated after &ldquo;if&rdquo; is the hypothesis. Only &ldquo;<code class=\"mm\">P</code> only if <code class=\"mm\">Q</code>&rdquo; asserts <code class=\"mm\">P → Q</code>.",
+    "steps": [
+     "&ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; expands to &ldquo;if <code class=\"mm\">Q</code> then <code class=\"mm\">P</code>&rdquo;.",
+     "With <code class=\"mm\">P</code> = &ldquo;multiple of 10&rdquo; and <code class=\"mm\">Q</code> = &ldquo;ends in 0&rdquo;, the assertion is <code class=\"mm\">Q → P</code>.",
+     "So the phrase claims that ending in 0 guarantees being a multiple of 10 — option (A).",
+     "The reverse implication is the separate claim &ldquo;<code class=\"mm\">P</code> only if <code class=\"mm\">Q</code>&rdquo;, and asserting both is the biconditional."
+    ],
+    "final": "Option (A).",
+    "misconception": "Reading &ldquo;if&rdquo; as &ldquo;if and only if&rdquo;. In mathematics &ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; is one direction only; the phrase for both directions is &ldquo;if and only if&rdquo;. Swapping the two directions is the commonest error in this unit.",
+    "takeaway": "\"P if Q\" means Q → P: the condition stated after \"if\" is the hypothesis."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; means <code class=\"mm\">Q → P</code>: the condition stated after &ldquo;if&rdquo; is the hypothesis. Only &ldquo;<code class=\"mm\">P</code> only if <code class=\"mm\">Q</code>&rdquo; asserts <code class=\"mm\">P → Q</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>&ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; expands to &ldquo;if <code class=\"mm\">Q</code> then <code class=\"mm\">P</code>&rdquo;.</li><li>With <code class=\"mm\">P</code> = &ldquo;multiple of 10&rdquo; and <code class=\"mm\">Q</code> = &ldquo;ends in 0&rdquo;, the assertion is <code class=\"mm\">Q → P</code>.</li><li>So the phrase claims that ending in 0 guarantees being a multiple of 10 — option (A).</li><li>The reverse implication is the separate claim &ldquo;<code class=\"mm\">P</code> only if <code class=\"mm\">Q</code>&rdquo;, and asserting both is the biconditional.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Reading &ldquo;if&rdquo; as &ldquo;if and only if&rdquo;. In mathematics &ldquo;<code class=\"mm\">P</code> if <code class=\"mm\">Q</code>&rdquo; is one direction only; the phrase for both directions is &ldquo;if and only if&rdquo;. Swapping the two directions is the commonest error in this unit.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-S-18",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Propositional Equivalence",
+   "sub": "Equivalent forms of a biconditional",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Which of the following are logically equivalent to <code class=\"mm\">p ↔ q</code>? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following are logically equivalent to <code class=\"mm\">p ↔ q</code>? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">(p ∧ q) ∨ (¬p ∧ ¬q)</code>",
+    "<code class=\"mm\">¬(p ⊕ q)</code>",
+    "<code class=\"mm\">(p → q) ∧ (¬p → ¬q)</code>",
+    "<code class=\"mm\">(p → q) ∨ (¬p → q)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">(p ∧ q) ∨ (¬p ∧ ¬q)</code>",
+    "<code class=\"mm\">¬(p ⊕ q)</code>",
+    "<code class=\"mm\">(p → q) ∧ (¬p → ¬q)</code>",
+    "<code class=\"mm\">(p → q) ∨ (¬p → q)</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "<code class=\"mm\">p ↔ q</code> says the two propositions agree. Any formula true exactly on the two agreeing rows — <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code> — is an equivalent form.",
+    "steps": [
+     "(A): <code class=\"mm\">(p ∧ q) ∨ (¬p ∧ ¬q)</code> is true exactly on <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code>. Equivalent.",
+     "(B): <code class=\"mm\">p ⊕ q</code> is true exactly on the disagreeing rows, so its negation is true exactly on the agreeing rows. Equivalent.",
+     "(C): <code class=\"mm\">(¬p ∨ q) ∧ (p ∨ ¬q)</code>, true on <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code> (check <code class=\"mm\">TF</code>: <code class=\"mm\">(F ∨ F) = F</code>). Equivalent.",
+     "(D): <code class=\"mm\">(¬p ∨ q) ∨ (p ∨ q) = ¬p ∨ p ∨ q</code>, which is a tautology, true on all four rows. Not equivalent."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Accepting (D) because it &ldquo;looks symmetric&rdquo;. Substituting <code class=\"mm\">p = T, q = F</code> gives <code class=\"mm\">(T → F) ∨ (F → F) = F ∨ T = T</code>, while <code class=\"mm\">p ↔ q</code> is false there — a one-row test settles it.",
+    "takeaway": "p ↔ q says the two propositions agree."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">p ↔ q</code> says the two propositions agree. Any formula true exactly on the two agreeing rows — <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code> — is an equivalent form.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">(p ∧ q) ∨ (¬p ∧ ¬q)</code> is true exactly on <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code>. Equivalent.</li><li>(B): <code class=\"mm\">p ⊕ q</code> is true exactly on the disagreeing rows, so its negation is true exactly on the agreeing rows. Equivalent.</li><li>(C): <code class=\"mm\">(¬p ∨ q) ∧ (p ∨ ¬q)</code>, true on <code class=\"mm\">TT</code> and <code class=\"mm\">FF</code> (check <code class=\"mm\">TF</code>: <code class=\"mm\">(F ∨ F) = F</code>). Equivalent.</li><li>(D): <code class=\"mm\">(¬p ∨ q) ∨ (p ∨ q) = ¬p ∨ p ∨ q</code>, which is a tautology, true on all four rows. Not equivalent.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Accepting (D) because it &ldquo;looks symmetric&rdquo;. Substituting <code class=\"mm\">p = T, q = F</code> gives <code class=\"mm\">(T → F) ∨ (F → F) = F ∨ T = T</code>, while <code class=\"mm\">p ↔ q</code> is false there — a one-row test settles it.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-N-23",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counting true divisibility biconditionals",
+   "subtopic": "biconditional-iff-proofs",
+   "subtopic_label": "Biconditional (iff) proofs",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "How many of the following six biconditionals are TRUE for every integer <code class=\"mm\">n</code>? (i) <code class=\"mm\">n</code> is even ↔ <code class=\"mm\">n²</code> is even; (ii) <code class=\"mm\">4 | n</code> ↔ <code class=\"mm\">4 | n²</code>; (iii) <code class=\"mm\">n</code> is odd ↔ <code class=\"mm\">n²</code> is odd; (iv) <code class=\"mm\">3 | n</code> ↔ <code class=\"mm\">3 | n²</code>; (v) <code class=\"mm\">6 | n</code> ↔ <code class=\"mm\">2 | n</code> and <code class=\"mm\">3 | n</code>; (vi) <code class=\"mm\">8 | n</code> ↔ <code class=\"mm\">8 | n²</code>. (Enter an integer.)",
+   "question_html": "<div class=\"qtext\">How many of the following six biconditionals are TRUE for every integer <code class=\"mm\">n</code>? (i) <code class=\"mm\">n</code> is even ↔ <code class=\"mm\">n²</code> is even; (ii) <code class=\"mm\">4 | n</code> ↔ <code class=\"mm\">4 | n²</code>; (iii) <code class=\"mm\">n</code> is odd ↔ <code class=\"mm\">n²</code> is odd; (iv) <code class=\"mm\">3 | n</code> ↔ <code class=\"mm\">3 | n²</code>; (v) <code class=\"mm\">6 | n</code> ↔ <code class=\"mm\">2 | n</code> and <code class=\"mm\">3 | n</code>; (vi) <code class=\"mm\">8 | n</code> ↔ <code class=\"mm\">8 | n²</code>. (Enter an integer.)</div>",
+   "options": null,
+   "options_html": null,
+   "answer": 4,
+   "answer_display": "4",
+   "marks": 2,
+   "solution": {
+    "concept": "Squaring preserves parity and preserves divisibility by a prime, but it does not preserve divisibility by a composite modulus: <code class=\"mm\">4 | n²</code> only forces <code class=\"mm\">n</code> even, and <code class=\"mm\">8 | n²</code> only forces <code class=\"mm\">n</code> divisible by 4.",
+    "steps": [
+     "(i) TRUE: <code class=\"mm\">n = 2k ⇒ n² = 4k²</code> even; <code class=\"mm\">n</code> odd <code class=\"mm\">⇒ n²</code> odd, so <code class=\"mm\">n²</code> even forces <code class=\"mm\">n</code> even.",
+     "(ii) FALSE: <code class=\"mm\">n = 2</code> gives <code class=\"mm\">n² = 4</code>, so <code class=\"mm\">4 | n²</code> holds while <code class=\"mm\">4 ∤ n</code>.",
+     "(iii) TRUE: squaring an odd number gives <code class=\"mm\">(2k + 1)² = 2(2k² + 2k) + 1</code>, odd; an even number squares to an even number.",
+     "(iv) TRUE: 3 is prime, so <code class=\"mm\">3 | n² ⇒ 3 | n</code>; the other direction is immediate.",
+     "(v) TRUE: <code class=\"mm\">2</code> and <code class=\"mm\">3</code> are coprime and <code class=\"mm\">lcm(2, 3) = 6</code>.",
+     "(vi) FALSE: <code class=\"mm\">n = 4</code> gives <code class=\"mm\">n² = 16</code>, so <code class=\"mm\">8 | n²</code> holds while <code class=\"mm\">8 ∤ n</code>.",
+     "True biconditionals: (i), (iii), (iv), (v) — four of the six."
+    ],
+    "final": "4",
+    "misconception": "Treating squaring as harmless for every modulus. For a prime modulus <code class=\"mm\">p</code>, <code class=\"mm\">p | n² ⇔ p | n</code>; for <code class=\"mm\">p²</code> it fails, because squaring doubles every exponent and can lift <code class=\"mm\">n</code> from <code class=\"mm\">p</code> to <code class=\"mm\">p²</code>.",
+    "takeaway": "Squaring preserves parity and preserves divisibility by a prime, but it does not preserve divisibility by a composite modulus: 4 | n² only forces n even, and 8 | n² only forces n divisible by 4."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Squaring preserves parity and preserves divisibility by a prime, but it does not preserve divisibility by a composite modulus: <code class=\"mm\">4 | n²</code> only forces <code class=\"mm\">n</code> even, and <code class=\"mm\">8 | n²</code> only forces <code class=\"mm\">n</code> divisible by 4.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(i) TRUE: <code class=\"mm\">n = 2k ⇒ n² = 4k²</code> even; <code class=\"mm\">n</code> odd <code class=\"mm\">⇒ n²</code> odd, so <code class=\"mm\">n²</code> even forces <code class=\"mm\">n</code> even.</li><li>(ii) FALSE: <code class=\"mm\">n = 2</code> gives <code class=\"mm\">n² = 4</code>, so <code class=\"mm\">4 | n²</code> holds while <code class=\"mm\">4 ∤ n</code>.</li><li>(iii) TRUE: squaring an odd number gives <code class=\"mm\">(2k + 1)² = 2(2k² + 2k) + 1</code>, odd; an even number squares to an even number.</li><li>(iv) TRUE: 3 is prime, so <code class=\"mm\">3 | n² ⇒ 3 | n</code>; the other direction is immediate.</li><li>(v) TRUE: <code class=\"mm\">2</code> and <code class=\"mm\">3</code> are coprime and <code class=\"mm\">lcm(2, 3) = 6</code>.</li><li>(vi) FALSE: <code class=\"mm\">n = 4</code> gives <code class=\"mm\">n² = 16</code>, so <code class=\"mm\">8 | n²</code> holds while <code class=\"mm\">8 ∤ n</code>.</li><li>True biconditionals: (i), (iii), (iv), (v) — four of the six.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Treating squaring as harmless for every modulus. For a prime modulus <code class=\"mm\">p</code>, <code class=\"mm\">p | n² ⇔ p | n</code>; for <code class=\"mm\">p²</code> it fails, because squaring doubles every exponent and can lift <code class=\"mm\">n</code> from <code class=\"mm\">p</code> to <code class=\"mm\">p²</code>.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-13",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Sufficient but not necessary",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For a real number <code class=\"mm\">x</code>, the condition <code class=\"mm\">x > 0</code> is",
+   "question_html": "<p class=\"qtext\">For a real number <code class=\"mm\">x</code>, the condition <code class=\"mm\">x > 0</code> is</p>",
+   "options": [
+    "sufficient but not necessary for <code class=\"mm\">x² > 0</code>.",
+    "necessary but not sufficient for <code class=\"mm\">x² > 0</code>.",
+    "necessary and sufficient for <code class=\"mm\">x² > 0</code>.",
+    "neither necessary nor sufficient for <code class=\"mm\">x² > 0</code>."
+   ],
+   "options_html": [
+    "sufficient but not necessary for <code class=\"mm\">x² > 0</code>.",
+    "necessary but not sufficient for <code class=\"mm\">x² > 0</code>.",
+    "necessary and sufficient for <code class=\"mm\">x² > 0</code>.",
+    "neither necessary nor sufficient for <code class=\"mm\">x² > 0</code>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">P</code> is sufficient for <code class=\"mm\">Q</code> when <code class=\"mm\">P → Q</code>, and necessary for <code class=\"mm\">Q</code> when <code class=\"mm\">Q → P</code>. Both directions must be checked separately.",
+    "steps": [
+     "Sufficiency: <code class=\"mm\">x > 0 ⇒ x² > 0</code> — true, since a positive times a positive is positive.",
+     "Necessity: does <code class=\"mm\">x² > 0</code> force <code class=\"mm\">x > 0</code>? No — take <code class=\"mm\">x = −1</code>, where <code class=\"mm\">x² = 1 > 0</code> but <code class=\"mm\">x > 0</code> fails.",
+     "So <code class=\"mm\">x > 0</code> implies <code class=\"mm\">x² > 0</code> but is not implied by it: sufficient, not necessary."
+    ],
+    "final": "Option (A).",
+    "misconception": "Forgetting the negative solutions of an inequality. <code class=\"mm\">x² > 0</code> holds for every <code class=\"mm\">x ≠ 0</code>, so the set satisfying it is much larger than the positive reals.",
+    "takeaway": "P is sufficient for Q when P → Q, and necessary for Q when Q → P."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">P</code> is sufficient for <code class=\"mm\">Q</code> when <code class=\"mm\">P → Q</code>, and necessary for <code class=\"mm\">Q</code> when <code class=\"mm\">Q → P</code>. Both directions must be checked separately.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sufficiency: <code class=\"mm\">x > 0 ⇒ x² > 0</code> — true, since a positive times a positive is positive.</li><li>Necessity: does <code class=\"mm\">x² > 0</code> force <code class=\"mm\">x > 0</code>? No — take <code class=\"mm\">x = −1</code>, where <code class=\"mm\">x² = 1 > 0</code> but <code class=\"mm\">x > 0</code> fails.</li><li>So <code class=\"mm\">x > 0</code> implies <code class=\"mm\">x² > 0</code> but is not implied by it: sufficient, not necessary.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting the negative solutions of an inequality. <code class=\"mm\">x² > 0</code> holds for every <code class=\"mm\">x ≠ 0</code>, so the set satisfying it is much larger than the positive reals.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-14",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Necessary but not sufficient",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For a real number <code class=\"mm\">x</code>, which condition is <b>necessary but not sufficient</b> for &ldquo;<code class=\"mm\">x</code> is an integer&rdquo;?",
+   "question_html": "<p class=\"qtext\">For a real number <code class=\"mm\">x</code>, which condition is <b>necessary but not sufficient</b> for &ldquo;<code class=\"mm\">x</code> is an integer&rdquo;?</p>",
+   "options": [
+    "<code class=\"mm\">x</code> is rational.",
+    "<code class=\"mm\">x</code> is a natural number.",
+    "<code class=\"mm\">x² = 4</code>",
+    "<code class=\"mm\">x</code> is irrational."
+   ],
+   "options_html": [
+    "<code class=\"mm\">x</code> is rational.",
+    "<code class=\"mm\">x</code> is a natural number.",
+    "<code class=\"mm\">x² = 4</code>",
+    "<code class=\"mm\">x</code> is irrational."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "&ldquo;<code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code>&rdquo; means <code class=\"mm\">Q → P</code>; &ldquo;not sufficient&rdquo; means <code class=\"mm\">P ⇏ Q</code>.",
+    "steps": [
+     "(A) Every integer is rational, so integer <code class=\"mm\">⇒</code> rational; but <code class=\"mm\">x = 1/2</code> is rational and not an integer. Necessary, not sufficient.",
+     "(B) Every natural number is an integer, so this is sufficient; it is not necessary because <code class=\"mm\">−3</code> is an integer but not natural.",
+     "(C) <code class=\"mm\">x² = 4</code> forces <code class=\"mm\">x = ±2</code>, both integers — sufficient, and not necessary since 3 is an integer with <code class=\"mm\">3² ≠ 4</code>.",
+     "(D) No irrational number is an integer, so this can never hold when the conclusion does — it is not necessary."
+    ],
+    "final": "Option (A).",
+    "misconception": "Swapping the two words. &ldquo;Necessary&rdquo; describes what the conclusion guarantees (a weaker consequence); &ldquo;sufficient&rdquo; describes what guarantees the conclusion (a stronger hypothesis). Rationality is the weaker one here.",
+    "takeaway": "\"P is necessary for Q\" means Q → P; \"not sufficient\" means P ⇏ Q."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;<code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code>&rdquo; means <code class=\"mm\">Q → P</code>; &ldquo;not sufficient&rdquo; means <code class=\"mm\">P ⇏ Q</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) Every integer is rational, so integer <code class=\"mm\">⇒</code> rational; but <code class=\"mm\">x = 1/2</code> is rational and not an integer. Necessary, not sufficient.</li><li>(B) Every natural number is an integer, so this is sufficient; it is not necessary because <code class=\"mm\">−3</code> is an integer but not natural.</li><li>(C) <code class=\"mm\">x² = 4</code> forces <code class=\"mm\">x = ±2</code>, both integers — sufficient, and not necessary since 3 is an integer with <code class=\"mm\">3² ≠ 4</code>.</li><li>(D) No irrational number is an integer, so this can never hold when the conclusion does — it is not necessary.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Swapping the two words. &ldquo;Necessary&rdquo; describes what the conclusion guarantees (a weaker consequence); &ldquo;sufficient&rdquo; describes what guarantees the conclusion (a stronger hypothesis). Rationality is the weaker one here.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-M-15",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Necessity and sufficiency among divisibility conditions",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For a positive integer <code class=\"mm\">n</code> let <code class=\"mm\">P</code> be &ldquo;<code class=\"mm\">12 | n</code>&rdquo;, <code class=\"mm\">Q</code> be &ldquo;<code class=\"mm\">4 | n</code>&rdquo; and <code class=\"mm\">R</code> be &ldquo;<code class=\"mm\">3 | n</code>&rdquo;. Which one of the following is TRUE?",
+   "question_html": "<p class=\"qtext\">For a positive integer <code class=\"mm\">n</code> let <code class=\"mm\">P</code> be &ldquo;<code class=\"mm\">12 | n</code>&rdquo;, <code class=\"mm\">Q</code> be &ldquo;<code class=\"mm\">4 | n</code>&rdquo; and <code class=\"mm\">R</code> be &ldquo;<code class=\"mm\">3 | n</code>&rdquo;. Which one of the following is TRUE?</p>",
+   "options": [
+    "<code class=\"mm\">P</code> is necessary and sufficient for (<code class=\"mm\">Q</code> and <code class=\"mm\">R</code>).",
+    "<code class=\"mm\">Q</code> is sufficient for <code class=\"mm\">P</code>.",
+    "<code class=\"mm\">R</code> is necessary but not sufficient for <code class=\"mm\">Q</code>.",
+    "<code class=\"mm\">P</code> is necessary but not sufficient for <code class=\"mm\">Q</code>."
+   ],
+   "options_html": [
+    "<code class=\"mm\">P</code> is necessary and sufficient for (<code class=\"mm\">Q</code> and <code class=\"mm\">R</code>).",
+    "<code class=\"mm\">Q</code> is sufficient for <code class=\"mm\">P</code>.",
+    "<code class=\"mm\">R</code> is necessary but not sufficient for <code class=\"mm\">Q</code>.",
+    "<code class=\"mm\">P</code> is necessary but not sufficient for <code class=\"mm\">Q</code>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">12 | n ⟺ 4 | n</code> and <code class=\"mm\">3 | n</code>, because <code class=\"mm\">lcm(4, 3) = 12</code>. Conditions on coprime moduli combine multiplicatively; conditions on related moduli do not.",
+    "steps": [
+     "If <code class=\"mm\">12 | n</code> then <code class=\"mm\">n = 12k</code> is divisible by both 4 and 3, so <code class=\"mm\">P → (Q ∧ R)</code>.",
+     "If <code class=\"mm\">4 | n</code> and <code class=\"mm\">3 | n</code> then <code class=\"mm\">n</code> is a common multiple of 4 and 3, hence a multiple of <code class=\"mm\">lcm(4, 3) = 12</code>, so <code class=\"mm\">(Q ∧ R) → P</code>.",
+     "Together the two directions give <code class=\"mm\">P ↔ (Q ∧ R)</code> — (A) is TRUE.",
+     "(B) fails at <code class=\"mm\">n = 4</code>; (C) fails because <code class=\"mm\">4 | n</code> does not force <code class=\"mm\">3 | n</code> (<code class=\"mm\">n = 4</code>) and <code class=\"mm\">3 | n</code> does not force <code class=\"mm\">4 | n</code> (<code class=\"mm\">n = 3</code>); (D) fails at <code class=\"mm\">n = 4</code>, where <code class=\"mm\">Q</code> holds but <code class=\"mm\">P</code> does not."
+    ],
+    "final": "Option (A).",
+    "misconception": "Assuming that divisibility by 4 and by 3 is merely &ldquo;two separate necessary conditions&rdquo;. Because 4 and 3 are coprime they are jointly sufficient as well, and <code class=\"mm\">lcm(4, 3) = 12</code> is what makes the equivalence work. The trap is a pair such as 4 and 2, where one condition implies the other and the conjunction is weaker than the single stronger condition.",
+    "takeaway": "12 | n ⟺ 4 | n and 3 | n, because lcm(4, 3) = 12."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">12 | n ⟺ 4 | n</code> and <code class=\"mm\">3 | n</code>, because <code class=\"mm\">lcm(4, 3) = 12</code>. Conditions on coprime moduli combine multiplicatively; conditions on related moduli do not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <code class=\"mm\">12 | n</code> then <code class=\"mm\">n = 12k</code> is divisible by both 4 and 3, so <code class=\"mm\">P → (Q ∧ R)</code>.</li><li>If <code class=\"mm\">4 | n</code> and <code class=\"mm\">3 | n</code> then <code class=\"mm\">n</code> is a common multiple of 4 and 3, hence a multiple of <code class=\"mm\">lcm(4, 3) = 12</code>, so <code class=\"mm\">(Q ∧ R) → P</code>.</li><li>Together the two directions give <code class=\"mm\">P ↔ (Q ∧ R)</code> — (A) is TRUE.</li><li>(B) fails at <code class=\"mm\">n = 4</code>; (C) fails because <code class=\"mm\">4 | n</code> does not force <code class=\"mm\">3 | n</code> (<code class=\"mm\">n = 4</code>) and <code class=\"mm\">3 | n</code> does not force <code class=\"mm\">4 | n</code> (<code class=\"mm\">n = 3</code>); (D) fails at <code class=\"mm\">n = 4</code>, where <code class=\"mm\">Q</code> holds but <code class=\"mm\">P</code> does not.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that divisibility by 4 and by 3 is merely &ldquo;two separate necessary conditions&rdquo;. Because 4 and 3 are coprime they are jointly sufficient as well, and <code class=\"mm\">lcm(4, 3) = 12</code> is what makes the equivalence work. The trap is a pair such as 4 and 2, where one condition implies the other and the conjunction is weaker than the single stronger condition.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-S-19",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Necessity and sufficiency for an inequality",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For a real number <code class=\"mm\">x</code> let <code class=\"mm\">A</code> be the statement <code class=\"mm\">x² > 4</code> and <code class=\"mm\">B</code> the statement <code class=\"mm\">x > 2</code>. Which of the following are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">For a real number <code class=\"mm\">x</code> let <code class=\"mm\">A</code> be the statement <code class=\"mm\">x² > 4</code> and <code class=\"mm\">B</code> the statement <code class=\"mm\">x > 2</code>. Which of the following are TRUE? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">B</code> is sufficient for <code class=\"mm\">A</code>.",
+    "<code class=\"mm\">B</code> is necessary for <code class=\"mm\">A</code>.",
+    "<code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>.",
+    "<code class=\"mm\">A</code> is sufficient for <code class=\"mm\">B</code>."
+   ],
+   "options_html": [
+    "<code class=\"mm\">B</code> is sufficient for <code class=\"mm\">A</code>.",
+    "<code class=\"mm\">B</code> is necessary for <code class=\"mm\">A</code>.",
+    "<code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>.",
+    "<code class=\"mm\">A</code> is sufficient for <code class=\"mm\">B</code>."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "<code class=\"mm\">B → A</code> says exactly two things at once: <code class=\"mm\">B</code> is sufficient for <code class=\"mm\">A</code>, and <code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>. One implication, read in two directions.",
+    "steps": [
+     "<code class=\"mm\">x > 2 ⇒ x² > 4</code>: both sides are positive, so squaring preserves the inequality. Hence (A) is TRUE.",
+     "The same implication says <code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>, so (C) is TRUE.",
+     "<code class=\"mm\">x² > 4</code> does not force <code class=\"mm\">x > 2</code>: <code class=\"mm\">x = −3</code> gives <code class=\"mm\">9 > 4</code> but <code class=\"mm\">−3 ≯ 2</code>. So (B) and (D) are FALSE."
+    ],
+    "final": "Options (A) and (C).",
+    "misconception": "Treating &ldquo;necessary&rdquo; and &ldquo;sufficient&rdquo; as independent facts about two different pairs of statements. For a fixed implication the two labels are two readings of one arrow, so (A) and (C) stand or fall together.",
+    "takeaway": "B → A says exactly two things at once: B is sufficient for A, and A is necessary for B."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">B → A</code> says exactly two things at once: <code class=\"mm\">B</code> is sufficient for <code class=\"mm\">A</code>, and <code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>. One implication, read in two directions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">x > 2 ⇒ x² > 4</code>: both sides are positive, so squaring preserves the inequality. Hence (A) is TRUE.</li><li>The same implication says <code class=\"mm\">A</code> is necessary for <code class=\"mm\">B</code>, so (C) is TRUE.</li><li><code class=\"mm\">x² > 4</code> does not force <code class=\"mm\">x > 2</code>: <code class=\"mm\">x = −3</code> gives <code class=\"mm\">9 > 4</code> but <code class=\"mm\">−3 ≯ 2</code>. So (B) and (D) are FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Treating &ldquo;necessary&rdquo; and &ldquo;sufficient&rdquo; as independent facts about two different pairs of statements. For a fixed implication the two labels are two readings of one arrow, so (A) and (C) stand or fall together.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-S-20",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Translating necessity and sufficiency into implications",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">P</code> and <code class=\"mm\">Q</code> be statements. Which of the following are logically correct? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">P</code> and <code class=\"mm\">Q</code> be statements. Which of the following are logically correct? (Select all that apply.)</p>",
+   "options": [
+    "&ldquo;<code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code>&rdquo; is equivalent to <code class=\"mm\">Q → P</code>.",
+    "&ldquo;<code class=\"mm\">P</code> is sufficient for <code class=\"mm\">Q</code>&rdquo; is equivalent to <code class=\"mm\">P → Q</code>.",
+    "If <code class=\"mm\">P</code> is both necessary and sufficient for <code class=\"mm\">Q</code>, then <code class=\"mm\">P ↔ Q</code>.",
+    "If <code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code> and <code class=\"mm\">Q</code> is false, then <code class=\"mm\">P</code> is false."
+   ],
+   "options_html": [
+    "&ldquo;<code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code>&rdquo; is equivalent to <code class=\"mm\">Q → P</code>.",
+    "&ldquo;<code class=\"mm\">P</code> is sufficient for <code class=\"mm\">Q</code>&rdquo; is equivalent to <code class=\"mm\">P → Q</code>.",
+    "If <code class=\"mm\">P</code> is both necessary and sufficient for <code class=\"mm\">Q</code>, then <code class=\"mm\">P ↔ Q</code>.",
+    "If <code class=\"mm\">P</code> is necessary for <code class=\"mm\">Q</code> and <code class=\"mm\">Q</code> is false, then <code class=\"mm\">P</code> is false."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "&ldquo;<code class=\"mm\">P</code> necessary for <code class=\"mm\">Q</code>&rdquo; = <code class=\"mm\">Q → P</code>; &ldquo;<code class=\"mm\">P</code> sufficient for <code class=\"mm\">Q</code>&rdquo; = <code class=\"mm\">P → Q</code>; both together = <code class=\"mm\">P ↔ Q</code>.",
+    "steps": [
+     "(A): necessity of <code class=\"mm\">P</code> for <code class=\"mm\">Q</code> says <code class=\"mm\">Q</code> cannot hold without <code class=\"mm\">P</code>, i.e. <code class=\"mm\">Q → P</code>. Correct.",
+     "(B): sufficiency of <code class=\"mm\">P</code> for <code class=\"mm\">Q</code> says <code class=\"mm\">P</code> guarantees <code class=\"mm\">Q</code>, i.e. <code class=\"mm\">P → Q</code>. Correct.",
+     "(C): necessity gives <code class=\"mm\">Q → P</code> and sufficiency gives <code class=\"mm\">P → Q</code>, whose conjunction is <code class=\"mm\">P ↔ Q</code>. Correct.",
+     "(D): from <code class=\"mm\">Q → P</code> and <code class=\"mm\">¬Q</code> nothing follows about <code class=\"mm\">P</code> — modus tollens needs <code class=\"mm\">¬P</code> to conclude <code class=\"mm\">¬Q</code>, not the other way round. Incorrect."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "misconception": "Applying modus tollens to <code class=\"mm\">Q → P</code> with <code class=\"mm\">¬Q</code>. Modus tollens concludes <code class=\"mm\">¬Q</code> from <code class=\"mm\">¬P</code>, or <code class=\"mm\">¬P</code> from <code class=\"mm\">¬Q</code> when the implication runs the other way. A false hypothesis of an implication leaves the implication true and says nothing about the conclusion.",
+    "takeaway": "\"P necessary for Q\" = Q → P; \"P sufficient for Q\" = P → Q; both together = P ↔ Q."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;<code class=\"mm\">P</code> necessary for <code class=\"mm\">Q</code>&rdquo; = <code class=\"mm\">Q → P</code>; &ldquo;<code class=\"mm\">P</code> sufficient for <code class=\"mm\">Q</code>&rdquo; = <code class=\"mm\">P → Q</code>; both together = <code class=\"mm\">P ↔ Q</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): necessity of <code class=\"mm\">P</code> for <code class=\"mm\">Q</code> says <code class=\"mm\">Q</code> cannot hold without <code class=\"mm\">P</code>, i.e. <code class=\"mm\">Q → P</code>. Correct.</li><li>(B): sufficiency of <code class=\"mm\">P</code> for <code class=\"mm\">Q</code> says <code class=\"mm\">P</code> guarantees <code class=\"mm\">Q</code>, i.e. <code class=\"mm\">P → Q</code>. Correct.</li><li>(C): necessity gives <code class=\"mm\">Q → P</code> and sufficiency gives <code class=\"mm\">P → Q</code>, whose conjunction is <code class=\"mm\">P ↔ Q</code>. Correct.</li><li>(D): from <code class=\"mm\">Q → P</code> and <code class=\"mm\">¬Q</code> nothing follows about <code class=\"mm\">P</code> — modus tollens needs <code class=\"mm\">¬P</code> to conclude <code class=\"mm\">¬Q</code>, not the other way round. Incorrect.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> Applying modus tollens to <code class=\"mm\">Q → P</code> with <code class=\"mm\">¬Q</code>. Modus tollens concludes <code class=\"mm\">¬Q</code> from <code class=\"mm\">¬P</code>, or <code class=\"mm\">¬P</code> from <code class=\"mm\">¬Q</code> when the implication runs the other way. A false hypothesis of an implication leaves the implication true and says nothing about the conclusion.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-N-24",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counting conditions for which a bound is sufficient",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For a real number <code class=\"mm\">x</code>, how many of the following four conditions <code class=\"mm\">C</code> are such that <code class=\"mm\">x > 3</code> is a <b>sufficient</b> condition for <code class=\"mm\">C</code>? (i) <code class=\"mm\">x > 5</code>; (ii) <code class=\"mm\">x² > 9</code>; (iii) <code class=\"mm\">x</code> is an integer; (iv) <code class=\"mm\">x > 1</code>. (Enter an integer.)",
+   "question_html": "<div class=\"qtext\">For a real number <code class=\"mm\">x</code>, how many of the following four conditions <code class=\"mm\">C</code> are such that <code class=\"mm\">x > 3</code> is a <b>sufficient</b> condition for <code class=\"mm\">C</code>? (i) <code class=\"mm\">x > 5</code>; (ii) <code class=\"mm\">x² > 9</code>; (iii) <code class=\"mm\">x</code> is an integer; (iv) <code class=\"mm\">x > 1</code>. (Enter an integer.)</div>",
+   "options": null,
+   "options_html": null,
+   "answer": 2,
+   "answer_display": "2",
+   "marks": 2,
+   "solution": {
+    "concept": "<code class=\"mm\">x > 3</code> is sufficient for <code class=\"mm\">C</code> exactly when every real number above 3 satisfies <code class=\"mm\">C</code> — that is, when <code class=\"mm\">(3, ∞)</code> is contained in the solution set of <code class=\"mm\">C</code>.",
+    "steps": [
+     "(i) <code class=\"mm\">x > 5</code>: <code class=\"mm\">x = 4</code> is above 3 but not above 5, so not sufficient.",
+     "(ii) <code class=\"mm\">x² > 9</code>: for <code class=\"mm\">x > 3</code> we get <code class=\"mm\">x² > 9</code> — sufficient.",
+     "(iii) integer: <code class=\"mm\">x = 3.5</code> is above 3 and not an integer — not sufficient.",
+     "(iv) <code class=\"mm\">x > 1</code>: <code class=\"mm\">x > 3</code> certainly gives <code class=\"mm\">x > 1</code> — sufficient.",
+     "Sufficient conditions: (ii) and (iv), so the count is 2."
+    ],
+    "final": "2",
+    "misconception": "Confusing sufficiency with necessity and counting (i), which is the opposite direction: <code class=\"mm\">x > 5</code> implies <code class=\"mm\">x > 3</code>, so <code class=\"mm\">x > 5</code> is a stronger condition that <code class=\"mm\">x > 3</code> does not guarantee.",
+    "takeaway": "x > 3 is sufficient for C exactly when every real number above 3 satisfies C — that is, when (3, ∞) is contained in the solution set of C."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">x > 3</code> is sufficient for <code class=\"mm\">C</code> exactly when every real number above 3 satisfies <code class=\"mm\">C</code> — that is, when <code class=\"mm\">(3, ∞)</code> is contained in the solution set of <code class=\"mm\">C</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(i) <code class=\"mm\">x > 5</code>: <code class=\"mm\">x = 4</code> is above 3 but not above 5, so not sufficient.</li><li>(ii) <code class=\"mm\">x² > 9</code>: for <code class=\"mm\">x > 3</code> we get <code class=\"mm\">x² > 9</code> — sufficient.</li><li>(iii) integer: <code class=\"mm\">x = 3.5</code> is above 3 and not an integer — not sufficient.</li><li>(iv) <code class=\"mm\">x > 1</code>: <code class=\"mm\">x > 3</code> certainly gives <code class=\"mm\">x > 1</code> — sufficient.</li><li>Sufficient conditions: (ii) and (iv), so the count is 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Confusing sufficiency with necessity and counting (i), which is the opposite direction: <code class=\"mm\">x > 5</code> implies <code class=\"mm\">x > 3</code>, so <code class=\"mm\">x > 5</code> is a stronger condition that <code class=\"mm\">x > 3</code> does not guarantee.</p>",
+   "question_format": "text"
+  },
+  {
+   "id": "DM-LPT4-N-25",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 16,
+   "unit_number": 16,
+   "unit_slug": "proof-techniques",
+   "unit_name": "Logic & Proof Techniques",
+   "topic": "Proof Techniques",
+   "sub": "Counting necessary conditions for divisibility by 12",
+   "subtopic": "necessity-vs-sufficiency",
+   "subtopic_label": "Necessity vs sufficiency",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 4 (second pass)",
+   "run": 26,
+   "run_date": "2026-11-03",
+   "question": "For an integer <code class=\"mm\">n</code>, how many of the following four conditions are <b>necessary</b> conditions for &ldquo;<code class=\"mm\">n</code> is a multiple of 12&rdquo;? (i) <code class=\"mm\">4 | n</code>; (ii) <code class=\"mm\">6 | n</code>; (iii) <code class=\"mm\">8 | n</code>; (iv) <code class=\"mm\">n</code> is even. (Enter an integer.)",
+   "question_html": "<div class=\"qtext\">For an integer <code class=\"mm\">n</code>, how many of the following four conditions are <b>necessary</b> conditions for &ldquo;<code class=\"mm\">n</code> is a multiple of 12&rdquo;? (i) <code class=\"mm\">4 | n</code>; (ii) <code class=\"mm\">6 | n</code>; (iii) <code class=\"mm\">8 | n</code>; (iv) <code class=\"mm\">n</code> is even. (Enter an integer.)</div>",
+   "options": null,
+   "options_html": null,
+   "answer": 3,
+   "answer_display": "3",
+   "marks": 2,
+   "solution": {
+    "concept": "A condition is necessary when every multiple of 12 satisfies it — that is, when its solution set contains the multiples of 12.",
+    "steps": [
+     "Write <code class=\"mm\">n = 12k</code>. Then <code class=\"mm\">n = 4(3k)</code>, so <code class=\"mm\">4 | n</code> — (i) is necessary.",
+     "<code class=\"mm\">n = 6(2k)</code>, so <code class=\"mm\">6 | n</code> — (ii) is necessary.",
+     "<code class=\"mm\">n = 8 · (3k/2)</code> needs <code class=\"mm\">3k</code> even, which fails for <code class=\"mm\">k = 1</code> (<code class=\"mm\">n = 12</code> is not divisible by 8) — (iii) is not necessary.",
+     "<code class=\"mm\">n = 12k</code> is even — (iv) is necessary.",
+     "Necessary conditions: (i), (ii) and (iv), so the count is 3."
+    ],
+    "final": "3",
+    "misconception": "Assuming every divisor of a multiple of 12 divides all multiples of 12, or that the conditions are interchangeable. 8 does not divide 12, so <code class=\"mm\">8 | n</code> is a genuinely extra demand.",
+    "takeaway": "A condition is necessary when every multiple of 12 satisfies it — that is, when its solution set contains the multiples of 12."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A condition is necessary when every multiple of 12 satisfies it — that is, when its solution set contains the multiples of 12.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write <code class=\"mm\">n = 12k</code>. Then <code class=\"mm\">n = 4(3k)</code>, so <code class=\"mm\">4 | n</code> — (i) is necessary.</li><li><code class=\"mm\">n = 6(2k)</code>, so <code class=\"mm\">6 | n</code> — (ii) is necessary.</li><li><code class=\"mm\">n = 8 · (3k/2)</code> needs <code class=\"mm\">3k</code> even, which fails for <code class=\"mm\">k = 1</code> (<code class=\"mm\">n = 12</code> is not divisible by 8) — (iii) is not necessary.</li><li><code class=\"mm\">n = 12k</code> is even — (iv) is necessary.</li><li>Necessary conditions: (i), (ii) and (iv), so the count is 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every divisor of a multiple of 12 divides all multiples of 12, or that the conditions are interchangeable. 8 does not divide 12, so <code class=\"mm\">8 | n</code> is a genuinely extra demand.</p>",
+   "question_format": "text"
   }
  ]
 }

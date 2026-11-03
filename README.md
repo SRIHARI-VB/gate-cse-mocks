@@ -7,32 +7,79 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Theory of Computation · Unit 3 — Pushdown Automata, Set 2 of 2 (third pass)**, 2026-11-03 →
-  [`theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html`](theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html)
+- **Discrete Mathematics · Unit 16 — Logic & Proof Techniques, Set 4 (second pass)**, 2026-11-03 →
+  [`discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html`](discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Deterministic PDA (7) · Nondeterministic PDA (7) · Acceptance: empty store vs final state (5) ·
-  Equivalence with CFG (6)
-- Rotation: MODE A. An unseeded draw over the eleven GATE CSE subjects returned **Theory of Computation**. Its most
-  recent paper was `{2026-11-03, run 18, unit 2, cfl-grammars, Set 2 of 2 (third pass)}`, and unit 2 stood at
-  **125** questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(index_of(cfl-grammars) = 1 + 1) mod 4 = 2` → **Unit 3, Pushdown Automata**, which already held 100 questions.
-  This paper is the second set of Unit 3's third pass and takes the unit to 125. No override, no partial set,
-  exactly 25 questions.
-- Previous test: **Operating Systems · Unit 6 — File Systems & Disk Scheduling, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html`](operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html)
+- Subtopics: Direct proof, contradiction & contrapositive (6) · Counterexamples (6) ·
+  Biconditional (iff) proofs (6) · Necessity vs sufficiency (7)
+- Rotation: MODE A. Every unit of every subject now stands at or above `UNIT_QUESTION_CAP = 50`, so the draw ran
+  over all eleven subjects and returned **Discrete Mathematics**. Its most recent paper was
+  `{2026-11-03, run 25, unit 15, discrete-probability, Set 2 of 2}`, and unit 15 stood at **50** questions, so
+  **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(index_of(discrete-probability) = 14 + 1) mod 16 = 15` → **Unit 16, Logic & Proof Techniques**, which already
+  held 75 questions. **B5 applies: the modulo has wrapped into a second pass for Discrete Mathematics**, and this
+  paper is Set 4 of Unit 16, taking the unit to 100. No override, no partial set, exactly 25 questions.
+- Previous test: **Theory of Computation · Unit 3 — Pushdown Automata, Set 2 of 2 (third pass)**, 2026-11-03 →
+  [`theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html`](theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 209 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 19 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 71 current · 138 archived |
+| Papers published (current + archived) | 210 (34 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 19 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 139 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5225 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 475 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5250 (850 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 475 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 138 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 15 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 139 (18 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 15 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 16, Set 4 (second pass begins)
+
+- New paper at `discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html`. The 2026-10-25 paper it
+  supersedes moved to `archive/gate_dm_mock_16_2026-10-25_run3.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Second pass started.** `UNIT_QUESTION_CAP = 50` has now been reached by every unit of every subject — Discrete
+  Mathematics stands at 50 in units 1–15 and at 75 in unit 16, and every other subject is at or above the cap on
+  every unit. Section 1 B5 therefore governs from this paper on: the modulo keeps advancing and a second pass
+  begins. Discrete Mathematics is the first subject to wrap, and its unit 16 is the first unit of that pass.
+- **Rotation (Section 1, MODE A).** An unseeded `random.SystemRandom()` draw over the eleven subjects in syllabus
+  order returned **Discrete Mathematics**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 25, unit 15, discrete-probability, Set 2 of 2}` and unit 15 stood at **50** questions, so
+  **B3 failed on the cap** (its first paper was 2026-11-03, so the 7-day backstop was not in play). **B4 advanced
+  exactly one unit**: `(index_of(discrete-probability) = 14 + 1) mod 16 = 15` → **Unit 16, Logic & Proof
+  Techniques**, which already held 75 questions from three earlier sets. This paper is **Set 4** of that unit and
+  takes it to **100**. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics of the unit carry new questions — direct proof, contradiction & contrapositive
+  6, counterexamples 6, biconditional (iff) proofs 6, necessity vs sufficiency 7.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every answer was recomputed by script before the paper was written: of the four derived forms
+  of “if `n²` is even then `n` is even” all four are true for `n` in `[−200, 200]`; the odd numbers in `1..30` that
+  are not multiples of 3 number `15 − 5 = 10`; of the six divisibility biconditionals exactly four hold, `n = 2`
+  refuting `4 | n² ↔ 4 | n` and `n = 4` refuting `8 | n² ↔ 8 | n`; `x > 3` is sufficient for 2 of the four listed
+  conditions; 3 of the four listed conditions are necessary for `12 | n`; `√(x²) = x` fails exactly at `x = −3`
+  among the options; `(4, 2)` satisfies `4 | 2²` but not `4 | 2` while the other three pairs satisfy both;
+  `n! + 1` is composite from `n = 4` (`25 = 5²`) although `n³ − n` is always divisible by 6 and `p² − 1` by 8 for
+  odd primes; `|x + 1| = |x| + 1` fails at `−1` and `−0.5` and holds at 0 and 3; and the truth tables confirm
+  `¬(p ↔ q) ≡ p ⊕ q`, that `(p ∧ q) ∨ (¬p ∧ ¬q)`, `¬(p ⊕ q)` and `(p → q) ∧ (¬p → ¬q)` all equal `p ↔ q` while
+  `(p → q) ∨ (¬p → q)` is a tautology. The grading engine was replayed against the decoded payload: a perfect
+  attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict
+  subset or superset of the correct set scores 0 for that question.
+- **Provenance.** The two verified PYQs the subject bank records (PYQ-GATE2023-Q26, GATE CSE 2023, official key
+  B, C; PYQ-GATE2015, GATE CSE 2015, official key C) are Unit 16 items and are **not** reused here, so no question
+  on this paper is claimed as an official GATE question and no item carries `GATE_PYQ_VARIATION`.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 16 card is replaced in place and
+  lists the three earlier sets as archives (`run1`, `run2`, `run3`); the question archive now renders 5,250 banked
+  records, 850 of them Discrete Mathematics.
+- **Verification checklist (Section 6.8).** Shell parity: the `:root` block, the stylesheet, the answer-key view,
+  the palette aside and the whole grading script are byte-identical to the previous paper. One copy: `find . -name
+  "*.html"` shows `index.html` plus exactly one file per paper, and nothing at the repository root. Links: every
+  `href` in `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a 25-button palette and
+  825 banked cards (the 25 active items are excluded from the bank tab). Tokens: no hex colour outside `:root`.
+  Rotation: unit 16 is the one Section 1 selects from `master_bank.json`, not from the calendar.
 
 ### 2026-11-03 — Theory of Computation Unit 3, Set 2 of 2 (third pass)
 
@@ -10825,15 +10872,15 @@ digital-logic/
 | 5 | Functions | `functions` | 50 | yes |
 | 6 | Mathematical Induction & Recursion | `induction-recursion` | 50 | yes |
 | 7 | Counting & Combinatorics | `combinatorics` | 50 | yes |
-| 8 | Recurrence Relations & Generating Functions | `recurrence-generating-functions` | 25 | yes |
-| 9 | Graph Theory Fundamentals | `graph-theory-fundamentals` | 0 | — |
-| 10 | Graph Theory Advanced | `graph-theory-advanced` | 0 | — |
-| 11 | Boolean Algebra & Switching Logic | `boolean-algebra` | 0 | — |
-| 12 | Algebraic Structures | `algebraic-structures` | 0 | — |
-| 13 | Lattices & Posets | `lattices-posets` | 0 | — |
-| 14 | Number Theory | `number-theory` | 0 | — |
-| 15 | Discrete Probability | `discrete-probability` | 0 | — |
-| 16 | Logic & Proof Techniques | `proof-techniques` | 75 | yes |
+| 8 | Recurrence Relations & Generating Functions | `recurrence-generating-functions` | 50 | yes |
+| 9 | Graph Theory Fundamentals | `graph-theory-fundamentals` | 50 | yes |
+| 10 | Graph Theory Advanced | `graph-theory-advanced` | 50 | yes |
+| 11 | Boolean Algebra & Switching Logic | `boolean-algebra` | 50 | yes |
+| 12 | Algebraic Structures | `algebraic-structures` | 50 | yes |
+| 13 | Lattices & Posets | `lattices-posets` | 50 | yes |
+| 14 | Number Theory | `number-theory` | 50 | yes |
+| 15 | Discrete Probability | `discrete-probability` | 50 | yes |
+| 16 | Logic & Proof Techniques | `proof-techniques` | 100 | yes |
 
 Algorithms:
 

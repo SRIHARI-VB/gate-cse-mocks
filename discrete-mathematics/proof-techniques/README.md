@@ -8,7 +8,8 @@ Subject: Discrete Mathematics · Unit 16 of 16 · slug `proof-techniques`
 |------|------|----------|-------------|
 | 2026-10-25 (Set 1) | [`gate_dm_mock_16_2026-10-25_run1.html`](archive/gate_dm_mock_16_2026-10-25_run1.html) | 60 min | 15 MCQ / 5 MSQ / 5 NAT |
 | 2026-10-25 (Set 2) | [`gate_dm_mock_16_2026-10-25_run2.html`](archive/gate_dm_mock_16_2026-10-25_run2.html) | 60 min | 15 MCQ / 5 MSQ / 5 NAT |
-| 2026-10-25 (Set 3) | [`gate_dm_mock_16_2026-10-25.html`](gate_dm_mock_16_2026-10-25.html) | 60 min | 15 MCQ / 5 MSQ / 5 NAT |
+| 2026-10-25 (Set 3) | [`gate_dm_mock_16_2026-10-25_run3.html`](archive/gate_dm_mock_16_2026-10-25_run3.html) | 60 min | 15 MCQ / 5 MSQ / 5 NAT |
+| 2026-11-03 (Set 4, second pass) | [`gate_dm_mock_16_2026-11-03.html`](gate_dm_mock_16_2026-11-03.html) | 60 min | 15 MCQ / 5 MSQ / 5 NAT |
 
 ## Subtopics (standardised slugs)
 
@@ -24,4 +25,4 @@ subtopic folders and not copied to the repository root — the dashboard links t
 250 KB self-contained paper creates two files that must stay byte-identical with nothing enforcing it. Subtopic
 review lives in the `data-subtopic` attribute on each question and in the dashboard archive, not in duplicated files.
 
-Earlier sets for the same date are kept in `archive/` so the day's work is never lost.
+Earlier sets are kept in `archive/` so the day's work is never lost. Unit 16 holds 100 banked questions: 75 from the first pass on 2026-10-25 and 25 from the first paper of the second pass on 2026-11-03.
