@@ -4,16 +4,20 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 300,
+  "total_questions": 325,
   "units_with_questions": [
    1,
    2,
    3,
    4,
    5
-  ]
+  ],
+  "total_runs": 12,
+  "unit_question_cap": 50,
+  "set_size": 25,
+  "sets_per_unit": 2
  },
  "runs": [
   {
@@ -689,6 +693,69 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 9 - Databases. databases/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 17, unit 1, er-relational-algebra, Set 1 of 2 (second pass)}. Unit 1 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap; its first paper was 2026-10-26, six days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit: (index_of(er-relational-algebra) = 0 + 1) mod 5 = 1 -> Unit 2, SQL & Advanced Querying. Every Databases unit already stands at or above the cap (75, 50, 50, 50, 50), so step B5 applies: the modulo advance continues into the second pass rather than hunting for a unit below the cap. Unit 2 goes from 50 to 75 banked questions. Exactly 25 questions, no override, no partial set.",
    "note": "Set 1 of 2 of the second pass over Databases Unit 2. The 2026-10-28 paper moved to archive/gate_db_mock_2_2026-10-28_run1.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (DB-U2-Q51..Q75); no id and no normalised stem collides with the 50 items already banked for this unit. Coverage: 5 DDL/DML/DCL, 5 subqueries, 5 aggregates, 5 joins, 5 views/triggers/constraints - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the privilege count is 3 of 4; >= ALL returns 2 rows; the double-NOT-EXISTS division returns 11 and 13; SUM/COUNT/AVG over 10,20,NULL is 30,2,15; the two-column GROUP BY returns 4 groups; the HAVING count over SUM(v) > 10 is 2; the LEFT JOIN count is 6; the FULL OUTER JOIN count is 4; the row-level trigger fires 7 times. verified_pyqs holds one item for Databases, PYQ-GATE2014S3-Q30, which belongs to Unit 1 and is not reused here, so no item on this paper carries GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 12,
+   "date": "2026-11-03",
+   "subject": "databases",
+   "subject_name": "Databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "databases/normalization/gate_db_mock_3_2026-11-03.html",
+   "archived_previous": "databases/normalization/archive/gate_db_mock_3_2026-10-29_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "Functional dependencies & Armstrong's axioms",
+    "Closure of attribute sets & keys",
+    "1NF, 2NF, 3NF & BCNF",
+    "Lossless join & dependency preservation",
+    "Multivalued dependencies & 4NF"
+   ],
+   "question_ids": [
+    "DB-U3-Q51",
+    "DB-U3-Q52",
+    "DB-U3-Q53",
+    "DB-U3-Q54",
+    "DB-U3-Q55",
+    "DB-U3-Q56",
+    "DB-U3-Q57",
+    "DB-U3-Q58",
+    "DB-U3-Q59",
+    "DB-U3-Q60",
+    "DB-U3-Q61",
+    "DB-U3-Q62",
+    "DB-U3-Q63",
+    "DB-U3-Q64",
+    "DB-U3-Q65",
+    "DB-U3-Q66",
+    "DB-U3-Q67",
+    "DB-U3-Q68",
+    "DB-U3-Q69",
+    "DB-U3-Q70",
+    "DB-U3-Q71",
+    "DB-U3-Q72",
+    "DB-U3-Q73",
+    "DB-U3-Q74",
+    "DB-U3-Q75"
+   ],
+   "mode": "MODE_A",
+   "selection": "random subject draw (databases); B3 failed on cap (unit 2 at 75); B4 advanced to unit 3; every databases unit is at or above the cap, so a second pass begins",
+   "note": "Second pass, Set 1 of 2. Unit 3 held 50 questions from 2026-10-28 and 2026-10-29; this set takes it to 75."
   }
  ],
  "verified_pyqs": [
@@ -12898,6 +12965,953 @@
     "trap": "Believing a foreign key must name the primary key. The standard requires the referenced columns to be covered by a unique constraint, which is why a foreign key onto a <code class=\"mm\">UNIQUE</code> column is legal."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Three separate rules are in play: what a foreign key may point at, what <code class=\"mm\">CREATE OR REPLACE</code> is allowed to change, and which mechanism restricts inserts through a view.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Option (A): the referenced columns need only be <code class=\"mm\">UNIQUE</code> (a primary key qualifies because it is unique). FALSE.</li><li>Option (B): replacement may append columns, but existing columns must keep their names, order and types, because dependent objects are bound to them. TRUE.</li><li>Option (C): an assertion is a constraint at schema level, checked over the whole database and free to span several tables. TRUE.</li><li>Option (D): constraints are declared on base tables; the way to restrict what may be inserted through a view is <code class=\"mm\">WITH CHECK OPTION</code> on the view. FALSE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: options B and C are TRUE; options A and D are FALSE.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) is the commonest foreign-key myth: any unique key will do.</li><li>(D) confuses <code class=\"mm\">CHECK</code> with <code class=\"mm\">WITH CHECK OPTION</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing a foreign key must name the primary key. The standard requires the referenced columns to be covered by a unique constraint, which is why a foreign key onto a <code class=\"mm\">UNIQUE</code> column is legal.</p>"
+  },
+  {
+   "id": "DB-U3-Q51",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "functional-dependencies-armstrong-axioms",
+   "subtopic": "functional-dependencies-armstrong-axioms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C)</code> satisfies <code class=\"mm\">F = {A &rarr; B}</code>. Which one of the following functional dependencies is in <code class=\"mm\">F&#8314;</code>?",
+   "options": [
+    "<code class=\"mm\">B &rarr; A</code>",
+    "<code class=\"mm\">AC &rarr; B</code>",
+    "<code class=\"mm\">C &rarr; A</code>",
+    "<code class=\"mm\">AB &rarr; C</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A dependency belongs to <code class=\"mm\">F&#8314;</code> exactly when the right-hand side is inside the closure of the left-hand side. Closures in <code class=\"mm\">F = {A &rarr; B}</code>: <code class=\"mm\">A&#8314; = {A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>, <code class=\"mm\">C&#8314; = {C}</code>, <code class=\"mm\">AC&#8314; = {A, B, C}</code>, <code class=\"mm\">AB&#8314; = {A, B}</code>.",
+    "steps": [
+     "The only dependency given is <code class=\"mm\">A &rarr; B</code>.",
+     "Augmenting it with <code class=\"mm\">C</code> gives <code class=\"mm\">AC &rarr; BC</code>; decomposition then gives <code class=\"mm\">AC &rarr; B</code>.",
+     "So <code class=\"mm\">AC &rarr; B</code> is in <code class=\"mm\">F&#8314;</code>.",
+     "The other three need <code class=\"mm\">B&#8314; &#8839; {A}</code>, <code class=\"mm\">C&#8314; &#8839; {A}</code> and <code class=\"mm\">AB&#8314; &#8839; {C}</code>, and none of those closures contains the required attribute."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">AC &rarr; B</code> is in <code class=\"mm\">F&#8314;</code>.",
+    "trap": "Augmentation adds attributes to the left-hand side only. It never lets you drop part of a left-hand side, and it never lets you reverse an arrow."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A dependency belongs to <code class=\"mm\">F&#8314;</code> exactly when the right-hand side is inside the closure of the left-hand side. Closures in <code class=\"mm\">F = {A &rarr; B}</code>: <code class=\"mm\">A&#8314; = {A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>, <code class=\"mm\">C&#8314; = {C}</code>, <code class=\"mm\">AC&#8314; = {A, B, C}</code>, <code class=\"mm\">AB&#8314; = {A, B}</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The only dependency given is <code class=\"mm\">A &rarr; B</code>.</li><li>Augmenting it with <code class=\"mm\">C</code> gives <code class=\"mm\">AC &rarr; BC</code>; decomposition then gives <code class=\"mm\">AC &rarr; B</code>.</li><li>So <code class=\"mm\">AC &rarr; B</code> is in <code class=\"mm\">F&#8314;</code>.</li><li>The other three need <code class=\"mm\">B&#8314; &#8839; {A}</code>, <code class=\"mm\">C&#8314; &#8839; {A}</code> and <code class=\"mm\">AB&#8314; &#8839; {C}</code>, and none of those closures contains the required attribute.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">AC &rarr; B</code> is in <code class=\"mm\">F&#8314;</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) reverses the arrow: <code class=\"mm\">B&#8314; = {B}</code> does not contain <code class=\"mm\">A</code>.</li><li>(C) invents a determinant: <code class=\"mm\">C</code> determines nothing here.</li><li>(D) needs <code class=\"mm\">C</code> in <code class=\"mm\">AB&#8314;</code>, and <code class=\"mm\">C</code> is determined by no dependency.</li></ul><p class=\"row\"><b>Common misconception.</b> Augmentation adds attributes to the left-hand side only. It never lets you drop part of a left-hand side, and it never lets you reverse an arrow.</p>"
+  },
+  {
+   "id": "DB-U3-Q52",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "functional-dependencies-armstrong-axioms",
+   "subtopic": "functional-dependencies-armstrong-axioms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {AB &rarr; C, C &rarr; D}</code>. Which one of the following functional dependencies is <b>NOT</b> in <code class=\"mm\">F&#8314;</code>?",
+   "options": [
+    "<code class=\"mm\">AB &rarr; D</code>",
+    "<code class=\"mm\">C &rarr; D</code>",
+    "<code class=\"mm\">A &rarr; C</code>",
+    "<code class=\"mm\">ABC &rarr; D</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "To test membership in <code class=\"mm\">F&#8314;</code> compute the closure of the left-hand side under <code class=\"mm\">F</code> and check whether the right-hand side is inside it.",
+    "steps": [
+     "<code class=\"mm\">A&#8314; = {A}</code>: no dependency applies, so <code class=\"mm\">A &rarr; C</code> is not derivable.",
+     "<code class=\"mm\">(AB)&#8314; = {A, B, C, D}</code> because <code class=\"mm\">AB &rarr; C</code> then <code class=\"mm\">C &rarr; D</code>, so <code class=\"mm\">AB &rarr; D</code> holds.",
+     "<code class=\"mm\">C &rarr; D</code> is given outright.",
+     "<code class=\"mm\">(ABC)&#8314; = {A, B, C, D}</code>, so <code class=\"mm\">ABC &rarr; D</code> holds."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">A &rarr; C</code> is the only listed dependency that is not in <code class=\"mm\">F&#8314;</code>.",
+    "trap": "A composite left-hand side is not decomposable. <code class=\"mm\">AB &rarr; C</code> says nothing about <code class=\"mm\">A &rarr; C</code>; the two are different determinants."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> To test membership in <code class=\"mm\">F&#8314;</code> compute the closure of the left-hand side under <code class=\"mm\">F</code> and check whether the right-hand side is inside it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A&#8314; = {A}</code>: no dependency applies, so <code class=\"mm\">A &rarr; C</code> is not derivable.</li><li><code class=\"mm\">(AB)&#8314; = {A, B, C, D}</code> because <code class=\"mm\">AB &rarr; C</code> then <code class=\"mm\">C &rarr; D</code>, so <code class=\"mm\">AB &rarr; D</code> holds.</li><li><code class=\"mm\">C &rarr; D</code> is given outright.</li><li><code class=\"mm\">(ABC)&#8314; = {A, B, C, D}</code>, so <code class=\"mm\">ABC &rarr; D</code> holds.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">A &rarr; C</code> is the only listed dependency that is not in <code class=\"mm\">F&#8314;</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A), (B) and (D) all follow: <code class=\"mm\">AB</code> and <code class=\"mm\">ABC</code> determine everything, and <code class=\"mm\">C &rarr; D</code> is in <code class=\"mm\">F</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> A composite left-hand side is not decomposable. <code class=\"mm\">AB &rarr; C</code> says nothing about <code class=\"mm\">A &rarr; C</code>; the two are different determinants.</p>"
+  },
+  {
+   "id": "DB-U3-Q53",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "functional-dependencies-armstrong-axioms",
+   "subtopic": "functional-dependencies-armstrong-axioms",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following inference rules for functional dependencies are valid? (Select all that apply.)",
+   "options": [
+    "If <code class=\"mm\">X &rarr; Y</code> and <code class=\"mm\">X &rarr; Z</code> then <code class=\"mm\">X &rarr; YZ</code>.",
+    "If <code class=\"mm\">XY &rarr; Z</code> then <code class=\"mm\">X &rarr; Z</code>.",
+    "If <code class=\"mm\">X &rarr; Y</code> then <code class=\"mm\">XZ &rarr; YZ</code>.",
+    "If <code class=\"mm\">X &rarr; Y</code> and <code class=\"mm\">WY &rarr; Z</code> then <code class=\"mm\">XW &rarr; Z</code>."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "The three rules (A), (C) and (D) are the union, augmentation and pseudotransitivity rules, all of which are derived from Armstrong's reflexivity, augmentation and transitivity and are therefore sound.",
+    "steps": [
+     "(A) is the union rule: <code class=\"mm\">X&#8314;</code> contains both <code class=\"mm\">Y</code> and <code class=\"mm\">Z</code>, hence <code class=\"mm\">YZ</code>.",
+     "(C) is augmentation: if equal <code class=\"mm\">X</code> values force equal <code class=\"mm\">Y</code> values, then equal <code class=\"mm\">XZ</code> values (which agree on <code class=\"mm\">X</code>) force equal <code class=\"mm\">YZ</code> values.",
+     "(D) is pseudotransitivity: augment <code class=\"mm\">X &rarr; Y</code> with <code class=\"mm\">W</code> to get <code class=\"mm\">XW &rarr; WY</code>, then apply transitivity with <code class=\"mm\">WY &rarr; Z</code>.",
+     "(B) is invalid: it drops <code class=\"mm\">Y</code> from a left-hand side that genuinely needs it."
+    ],
+    "final": "Options (A), (C) and (D) are valid; option (B) is not.",
+    "trap": "Every valid rule either adds attributes to a left-hand side or combines two dependencies that share a determinant. No rule removes an attribute from a left-hand side."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three rules (A), (C) and (D) are the union, augmentation and pseudotransitivity rules, all of which are derived from Armstrong's reflexivity, augmentation and transitivity and are therefore sound.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the union rule: <code class=\"mm\">X&#8314;</code> contains both <code class=\"mm\">Y</code> and <code class=\"mm\">Z</code>, hence <code class=\"mm\">YZ</code>.</li><li>(C) is augmentation: if equal <code class=\"mm\">X</code> values force equal <code class=\"mm\">Y</code> values, then equal <code class=\"mm\">XZ</code> values (which agree on <code class=\"mm\">X</code>) force equal <code class=\"mm\">YZ</code> values.</li><li>(D) is pseudotransitivity: augment <code class=\"mm\">X &rarr; Y</code> with <code class=\"mm\">W</code> to get <code class=\"mm\">XW &rarr; WY</code>, then apply transitivity with <code class=\"mm\">WY &rarr; Z</code>.</li><li>(B) is invalid: it drops <code class=\"mm\">Y</code> from a left-hand side that genuinely needs it.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D) are valid; option (B) is not.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) fails on <code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {AB &rarr; C}</code>: <code class=\"mm\">AB &rarr; C</code> holds, yet <code class=\"mm\">A &rarr; C</code> does not, because <code class=\"mm\">A&#8314; = {A}</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> Every valid rule either adds attributes to a left-hand side or combines two dependencies that share a determinant. No rule removes an attribute from a left-hand side.</p>"
+  },
+  {
+   "id": "DB-U3-Q54",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "functional-dependencies-armstrong-axioms",
+   "subtopic": "functional-dependencies-armstrong-axioms",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; BC, B &rarr; C, A &rarr; B, AB &rarr; C}</code>. How many functional dependencies are there in a minimal cover of <code class=\"mm\">F</code>?<br/>(Enter an integer.)",
+   "options": null,
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "A minimal cover has every right-hand side a single attribute, no redundant attribute on any left-hand side, and no dependency derivable from the others.",
+    "steps": [
+     "Split every right-hand side: <code class=\"mm\">A &rarr; B</code>, <code class=\"mm\">A &rarr; C</code>, <code class=\"mm\">B &rarr; C</code>, <code class=\"mm\">A &rarr; B</code> (a duplicate), <code class=\"mm\">AB &rarr; C</code>.",
+     "No left-hand side has a redundant attribute: dropping <code class=\"mm\">A</code> from <code class=\"mm\">AB &rarr; C</code> would leave <code class=\"mm\">B &rarr; C</code>, which is already present.",
+     "Prune redundant dependencies. <code class=\"mm\">A &rarr; C</code> is implied by <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">B &rarr; C</code>, so drop it. <code class=\"mm\">AB &rarr; C</code> is implied by the same pair, so drop it.",
+     "What remains is <code class=\"mm\">{A &rarr; B, B &rarr; C}</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code> without the second dependency, so neither survivor is redundant."
+    ],
+    "final": "2 &mdash; the minimal cover is <code class=\"mm\">{A &rarr; B, B &rarr; C}</code>.",
+    "trap": "The duplicate <code class=\"mm\">A &rarr; B</code> and the composite right-hand side <code class=\"mm\">A &rarr; BC</code> are the two traps. A minimal cover counts distinct single-attribute dependencies, not the lines written in <code class=\"mm\">F</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A minimal cover has every right-hand side a single attribute, no redundant attribute on any left-hand side, and no dependency derivable from the others.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Split every right-hand side: <code class=\"mm\">A &rarr; B</code>, <code class=\"mm\">A &rarr; C</code>, <code class=\"mm\">B &rarr; C</code>, <code class=\"mm\">A &rarr; B</code> (a duplicate), <code class=\"mm\">AB &rarr; C</code>.</li><li>No left-hand side has a redundant attribute: dropping <code class=\"mm\">A</code> from <code class=\"mm\">AB &rarr; C</code> would leave <code class=\"mm\">B &rarr; C</code>, which is already present.</li><li>Prune redundant dependencies. <code class=\"mm\">A &rarr; C</code> is implied by <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">B &rarr; C</code>, so drop it. <code class=\"mm\">AB &rarr; C</code> is implied by the same pair, so drop it.</li><li>What remains is <code class=\"mm\">{A &rarr; B, B &rarr; C}</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code> without the second dependency, so neither survivor is redundant.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 &mdash; the minimal cover is <code class=\"mm\">{A &rarr; B, B &rarr; C}</code>.</span></p><p class=\"row\"><b>Common misconception.</b> The duplicate <code class=\"mm\">A &rarr; B</code> and the composite right-hand side <code class=\"mm\">A &rarr; BC</code> are the two traps. A minimal cover counts distinct single-attribute dependencies, not the lines written in <code class=\"mm\">F</code>.</p>"
+  },
+  {
+   "id": "DB-U3-Q55",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "functional-dependencies-armstrong-axioms",
+   "subtopic": "functional-dependencies-armstrong-axioms",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "<code class=\"mm\">F = {A &rarr; B, AB &rarr; C, C &rarr; A}</code> is a set of dependencies on <code class=\"mm\">R(A, B, C)</code>. Which one of the following sets of dependencies is equivalent to <code class=\"mm\">F</code>?",
+   "options": [
+    "<code class=\"mm\">{A &rarr; B, C &rarr; A, B &rarr; C}</code>",
+    "<code class=\"mm\">{A &rarr; B, C &rarr; A, A &rarr; C}</code>",
+    "<code class=\"mm\">{A &rarr; B, C &rarr; A}</code>",
+    "<code class=\"mm\">{A &rarr; B, AB &rarr; C, B &rarr; C}</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Two sets are equivalent when each implies every dependency of the other, that is when they have the same closures for every attribute set. It is not enough to check one direction.",
+    "steps": [
+     "Closures under <code class=\"mm\">F</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code>, <code class=\"mm\">C&#8314; = {C, A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>.",
+     "Closures under option (B), <code class=\"mm\">G = {A &rarr; B, C &rarr; A, A &rarr; C}</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code>, <code class=\"mm\">C&#8314; = {C, A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code> &mdash; identical to those of <code class=\"mm\">F</code>.",
+     "So every dependency of <code class=\"mm\">F</code> follows from <code class=\"mm\">G</code> and vice versa: the two sets are equivalent.",
+     "The three distractors each lose a closure: <code class=\"mm\">B &rarr; C</code> in (A) would need <code class=\"mm\">B&#8314; &#8839; {C}</code>, <code class=\"mm\">AB &rarr; C</code> in (C) needs <code class=\"mm\">(AB)&#8314; &#8839; {C}</code> which fails when only <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; A</code> are given, and <code class=\"mm\">C &rarr; A</code> in (D) needs <code class=\"mm\">C&#8314; &#8839; {A}</code>."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">{A &rarr; B, C &rarr; A, A &rarr; C}</code> is equivalent to <code class=\"mm\">F</code>.",
+    "trap": "Checking only that <code class=\"mm\">F</code> implies <code class=\"mm\">G</code> is the standard error. Equivalence needs both directions, and the fastest check is the set of closures of the single attributes."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two sets are equivalent when each implies every dependency of the other, that is when they have the same closures for every attribute set. It is not enough to check one direction.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Closures under <code class=\"mm\">F</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code>, <code class=\"mm\">C&#8314; = {C, A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>.</li><li>Closures under option (B), <code class=\"mm\">G = {A &rarr; B, C &rarr; A, A &rarr; C}</code>: <code class=\"mm\">A&#8314; = {A, B, C}</code>, <code class=\"mm\">C&#8314; = {C, A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code> &mdash; identical to those of <code class=\"mm\">F</code>.</li><li>So every dependency of <code class=\"mm\">F</code> follows from <code class=\"mm\">G</code> and vice versa: the two sets are equivalent.</li><li>The three distractors each lose a closure: <code class=\"mm\">B &rarr; C</code> in (A) would need <code class=\"mm\">B&#8314; &#8839; {C}</code>, <code class=\"mm\">AB &rarr; C</code> in (C) needs <code class=\"mm\">(AB)&#8314; &#8839; {C}</code> which fails when only <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; A</code> are given, and <code class=\"mm\">C &rarr; A</code> in (D) needs <code class=\"mm\">C&#8314; &#8839; {A}</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">{A &rarr; B, C &rarr; A, A &rarr; C}</code> is equivalent to <code class=\"mm\">F</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) adds <code class=\"mm\">B &rarr; C</code>, which is not in <code class=\"mm\">F&#8314;</code> because <code class=\"mm\">B&#8314; = {B}</code>.</li><li>(C) drops the ability to derive <code class=\"mm\">AB &rarr; C</code>: with only <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; A</code>, <code class=\"mm\">(AB)&#8314; = {A, B}</code>.</li><li>(D) drops <code class=\"mm\">C &rarr; A</code>: <code class=\"mm\">C&#8314; = {C}</code> there, so <code class=\"mm\">C &rarr; A</code> is not derivable.</li></ul><p class=\"row\"><b>Common misconception.</b> Checking only that <code class=\"mm\">F</code> implies <code class=\"mm\">G</code> is the standard error. Equivalence needs both directions, and the fastest check is the set of closures of the single attributes.</p>"
+  },
+  {
+   "id": "DB-U3-Q56",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "closure-of-attribute-sets-keys",
+   "subtopic": "closure-of-attribute-sets-keys",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; B, C &rarr; D}</code>. Which one of the following is a candidate key of <code class=\"mm\">R</code>?",
+   "options": [
+    "<code class=\"mm\">{A, B}</code>",
+    "<code class=\"mm\">{A, C}</code>",
+    "<code class=\"mm\">{A, D}</code>",
+    "<code class=\"mm\">{B, C}</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A candidate key is a minimal set whose closure is the whole schema. <code class=\"mm\">A</code> and <code class=\"mm\">C</code> appear on no right-hand side, so every key must contain both; the only question is whether anything else is needed.",
+    "steps": [
+     "<code class=\"mm\">(AC)&#8314; = {A, C} &cup; {B} &cup; {D} = {A, B, C, D}</code> using <code class=\"mm\">A &rarr; B</code> then <code class=\"mm\">C &rarr; D</code>.",
+     "Neither <code class=\"mm\">A</code> alone (<code class=\"mm\">A&#8314; = {A, B}</code>) nor <code class=\"mm\">C</code> alone (<code class=\"mm\">C&#8314; = {C, D}</code>) determines all four attributes, so <code class=\"mm\">{A, C}</code> is minimal.",
+     "The other pairs fail: <code class=\"mm\">(AB)&#8314; = {A, B}</code>, <code class=\"mm\">(AD)&#8314; = {A, B, D}</code>, <code class=\"mm\">(BC)&#8314; = {B, C, D}</code>."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">{A, C}</code> is the only candidate key of <code class=\"mm\">R</code>.",
+    "trap": "Adding an attribute that is already determined, such as <code class=\"mm\">B</code> or <code class=\"mm\">D</code>, keeps a superkey a superkey but destroys minimality. A candidate key contains only attributes that are not themselves determined."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A candidate key is a minimal set whose closure is the whole schema. <code class=\"mm\">A</code> and <code class=\"mm\">C</code> appear on no right-hand side, so every key must contain both; the only question is whether anything else is needed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">(AC)&#8314; = {A, C} &cup; {B} &cup; {D} = {A, B, C, D}</code> using <code class=\"mm\">A &rarr; B</code> then <code class=\"mm\">C &rarr; D</code>.</li><li>Neither <code class=\"mm\">A</code> alone (<code class=\"mm\">A&#8314; = {A, B}</code>) nor <code class=\"mm\">C</code> alone (<code class=\"mm\">C&#8314; = {C, D}</code>) determines all four attributes, so <code class=\"mm\">{A, C}</code> is minimal.</li><li>The other pairs fail: <code class=\"mm\">(AB)&#8314; = {A, B}</code>, <code class=\"mm\">(AD)&#8314; = {A, B, D}</code>, <code class=\"mm\">(BC)&#8314; = {B, C, D}</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">{A, C}</code> is the only candidate key of <code class=\"mm\">R</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A), (C) and (D) each omit <code class=\"mm\">C</code> or <code class=\"mm\">A</code>, and neither attribute is determined by any dependency, so no superset that omits them can be a key.</li></ul><p class=\"row\"><b>Common misconception.</b> Adding an attribute that is already determined, such as <code class=\"mm\">B</code> or <code class=\"mm\">D</code>, keeps a superkey a superkey but destroys minimality. A candidate key contains only attributes that are not themselves determined.</p>"
+  },
+  {
+   "id": "DB-U3-Q57",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "closure-of-attribute-sets-keys",
+   "subtopic": "closure-of-attribute-sets-keys",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D, E)</code> satisfies <code class=\"mm\">F = {AB &rarr; C, CD &rarr; E}</code>. Which of the following sets of attributes must be present in every candidate key of <code class=\"mm\">R</code>?",
+   "options": [
+    "<code class=\"mm\">{C}</code>",
+    "<code class=\"mm\">{E}</code>",
+    "<code class=\"mm\">{A, B, D}</code>",
+    "<code class=\"mm\">{A, C}</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "An attribute that never appears on the right-hand side of a dependency can never be derived, so every candidate key must contain it. Here <code class=\"mm\">A</code>, <code class=\"mm\">B</code> and <code class=\"mm\">D</code> appear on no right-hand side.",
+    "steps": [
+     "Attributes on no right-hand side: <code class=\"mm\">A, B, D</code>. Every key therefore contains <code class=\"mm\">{A, B, D}</code>.",
+     "<code class=\"mm\">(ABD)&#8314; = {A, B, D} &cup; {C} &cup; {E} = {A, B, C, D, E}</code>: <code class=\"mm\">AB &rarr; C</code> adds <code class=\"mm\">C</code>, then <code class=\"mm\">CD &rarr; E</code> adds <code class=\"mm\">E</code>.",
+     "So <code class=\"mm\">{A, B, D}</code> is already the unique candidate key, and it is exactly the set that must be present in every key.",
+     "<code class=\"mm\">C</code> and <code class=\"mm\">E</code> are determined attributes: adding either to <code class=\"mm\">{A, B, D}</code> only makes a superkey."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">{A, B, D}</code> must be present in every candidate key of <code class=\"mm\">R</code>.",
+    "trap": "Determined attributes are the ones you may leave out. The attribute that looks least important &mdash; here <code class=\"mm\">D</code>, which never appears on the right &mdash; is the one a key cannot do without."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An attribute that never appears on the right-hand side of a dependency can never be derived, so every candidate key must contain it. Here <code class=\"mm\">A</code>, <code class=\"mm\">B</code> and <code class=\"mm\">D</code> appear on no right-hand side.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Attributes on no right-hand side: <code class=\"mm\">A, B, D</code>. Every key therefore contains <code class=\"mm\">{A, B, D}</code>.</li><li><code class=\"mm\">(ABD)&#8314; = {A, B, D} &cup; {C} &cup; {E} = {A, B, C, D, E}</code>: <code class=\"mm\">AB &rarr; C</code> adds <code class=\"mm\">C</code>, then <code class=\"mm\">CD &rarr; E</code> adds <code class=\"mm\">E</code>.</li><li>So <code class=\"mm\">{A, B, D}</code> is already the unique candidate key, and it is exactly the set that must be present in every key.</li><li><code class=\"mm\">C</code> and <code class=\"mm\">E</code> are determined attributes: adding either to <code class=\"mm\">{A, B, D}</code> only makes a superkey.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">{A, B, D}</code> must be present in every candidate key of <code class=\"mm\">R</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (B) name determined attributes, which need not be in a key at all.</li><li>(D) omits <code class=\"mm\">D</code>, which is never determined, so <code class=\"mm\">{A, C}</code> cannot be a key.</li></ul><p class=\"row\"><b>Common misconception.</b> Determined attributes are the ones you may leave out. The attribute that looks least important &mdash; here <code class=\"mm\">D</code>, which never appears on the right &mdash; is the one a key cannot do without.</p>"
+  },
+  {
+   "id": "DB-U3-Q58",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "closure-of-attribute-sets-keys",
+   "subtopic": "closure-of-attribute-sets-keys",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; B, BC &rarr; D, D &rarr; A}</code>. How many candidate keys does <code class=\"mm\">R</code> have?<br/>(Enter an integer.)",
+   "options": null,
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "Enumerate the attribute pairs, take closures, and keep only those that reach all four attributes; a pair is a candidate key exactly when neither of its members alone does.",
+    "steps": [
+     "<code class=\"mm\">A&#8314; = {A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>, <code class=\"mm\">C&#8314; = {C}</code>, <code class=\"mm\">D&#8314; = {D, A, B}</code>: no single attribute is a key.",
+     "<code class=\"mm\">(AC)&#8314; = {A, C} &cup; {B} &cup; {D} = {A, B, C, D}</code> &mdash; a key.",
+     "<code class=\"mm\">(BC)&#8314; = {B, C} &cup; {D} &cup; {A} = {A, B, C, D}</code> &mdash; a key.",
+     "<code class=\"mm\">(CD)&#8314; = {C, D} &cup; {A} &cup; {B} = {A, B, C, D}</code> &mdash; a key.",
+     "The remaining pairs fall short: <code class=\"mm\">(AB)&#8314; = {A, B}</code>, <code class=\"mm\">(AD)&#8314; = {A, B, D}</code>, <code class=\"mm\">(BD)&#8314; = {B, D, A}</code>."
+    ],
+    "final": "3 &mdash; the candidate keys are <code class=\"mm\">{A, C}</code>, <code class=\"mm\">{B, C}</code> and <code class=\"mm\">{C, D}</code>.",
+    "trap": "The cycle <code class=\"mm\">A &rarr; B</code>, <code class=\"mm\">BC &rarr; D</code>, <code class=\"mm\">D &rarr; A</code> lets any of <code class=\"mm\">A</code>, <code class=\"mm\">B</code> or <code class=\"mm\">D</code> stand in for the others once <code class=\"mm\">C</code> is present, which is why three different pairs all reach the full schema."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Enumerate the attribute pairs, take closures, and keep only those that reach all four attributes; a pair is a candidate key exactly when neither of its members alone does.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A&#8314; = {A, B}</code>, <code class=\"mm\">B&#8314; = {B}</code>, <code class=\"mm\">C&#8314; = {C}</code>, <code class=\"mm\">D&#8314; = {D, A, B}</code>: no single attribute is a key.</li><li><code class=\"mm\">(AC)&#8314; = {A, C} &cup; {B} &cup; {D} = {A, B, C, D}</code> &mdash; a key.</li><li><code class=\"mm\">(BC)&#8314; = {B, C} &cup; {D} &cup; {A} = {A, B, C, D}</code> &mdash; a key.</li><li><code class=\"mm\">(CD)&#8314; = {C, D} &cup; {A} &cup; {B} = {A, B, C, D}</code> &mdash; a key.</li><li>The remaining pairs fall short: <code class=\"mm\">(AB)&#8314; = {A, B}</code>, <code class=\"mm\">(AD)&#8314; = {A, B, D}</code>, <code class=\"mm\">(BD)&#8314; = {B, D, A}</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 &mdash; the candidate keys are <code class=\"mm\">{A, C}</code>, <code class=\"mm\">{B, C}</code> and <code class=\"mm\">{C, D}</code>.</span></p><p class=\"row\"><b>Common misconception.</b> The cycle <code class=\"mm\">A &rarr; B</code>, <code class=\"mm\">BC &rarr; D</code>, <code class=\"mm\">D &rarr; A</code> lets any of <code class=\"mm\">A</code>, <code class=\"mm\">B</code> or <code class=\"mm\">D</code> stand in for the others once <code class=\"mm\">C</code> is present, which is why three different pairs all reach the full schema.</p>"
+  },
+  {
+   "id": "DB-U3-Q59",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "closure-of-attribute-sets-keys",
+   "subtopic": "closure-of-attribute-sets-keys",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; BC, D &rarr; A}</code>. Which of the following statements are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">D</code> is the only candidate key of <code class=\"mm\">R</code>.",
+    "<code class=\"mm\">A</code> is a prime attribute of <code class=\"mm\">R</code>.",
+    "<code class=\"mm\">R</code> has 8 superkeys.",
+    "<code class=\"mm\">{A, D}</code> is a candidate key of <code class=\"mm\">R</code>."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "Prime means \"belongs to some candidate key\". Superkeys are all sets that contain a candidate key.",
+    "steps": [
+     "<code class=\"mm\">D&#8314; = {D, A, B, C} = {A, B, C, D}</code> using <code class=\"mm\">D &rarr; A</code> then <code class=\"mm\">A &rarr; BC</code>, so <code class=\"mm\">D</code> is a key.",
+     "<code class=\"mm\">A&#8314; = {A, B, C}</code> misses <code class=\"mm\">D</code>, and no other single attribute determines all four, so <code class=\"mm\">{D}</code> is the unique candidate key.",
+     "Therefore <code class=\"mm\">D</code> is the only prime attribute and <code class=\"mm\">A</code> is non-prime.",
+     "Superkeys are the supersets of <code class=\"mm\">{D}</code>: choose freely among <code class=\"mm\">A, B, C</code> &rarr; <code class=\"mm\">2&#179; = 8</code> superkeys.",
+     "<code class=\"mm\">{A, D}</code> is one of those eight, but it is not minimal, so it is a superkey and not a candidate key."
+    ],
+    "final": "Options (A) and (C) are TRUE; options (B) and (D) are FALSE.",
+    "trap": "A relation with one attribute that determines everything has a single candidate key of size one, so exactly one attribute is prime. Counting superkeys by <code class=\"mm\">2&#8319;&#8315;&#185;</code> is valid only when the key is unique and of size one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Prime means \"belongs to some candidate key\". Superkeys are all sets that contain a candidate key.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">D&#8314; = {D, A, B, C} = {A, B, C, D}</code> using <code class=\"mm\">D &rarr; A</code> then <code class=\"mm\">A &rarr; BC</code>, so <code class=\"mm\">D</code> is a key.</li><li><code class=\"mm\">A&#8314; = {A, B, C}</code> misses <code class=\"mm\">D</code>, and no other single attribute determines all four, so <code class=\"mm\">{D}</code> is the unique candidate key.</li><li>Therefore <code class=\"mm\">D</code> is the only prime attribute and <code class=\"mm\">A</code> is non-prime.</li><li>Superkeys are the supersets of <code class=\"mm\">{D}</code>: choose freely among <code class=\"mm\">A, B, C</code> &rarr; <code class=\"mm\">2&#179; = 8</code> superkeys.</li><li><code class=\"mm\">{A, D}</code> is one of those eight, but it is not minimal, so it is a superkey and not a candidate key.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C) are TRUE; options (B) and (D) are FALSE.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) fails because <code class=\"mm\">A</code> is in no candidate key: the only key is <code class=\"mm\">{D}</code>.</li><li>(D) fails because <code class=\"mm\">{A, D}</code> properly contains the key <code class=\"mm\">{D}</code>.</li></ul><p class=\"row\"><b>Common misconception.</b> A relation with one attribute that determines everything has a single candidate key of size one, so exactly one attribute is prime. Counting superkeys by <code class=\"mm\">2&#8319;&#8315;&#185;</code> is valid only when the key is unique and of size one.</p>"
+  },
+  {
+   "id": "DB-U3-Q60",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "closure-of-attribute-sets-keys",
+   "subtopic": "closure-of-attribute-sets-keys",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> has exactly two candidate keys, <code class=\"mm\">{A, C}</code> and <code class=\"mm\">{B, D}</code>. How many superkeys does <code class=\"mm\">R</code> have?",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A set is a superkey exactly when it contains at least one candidate key. Count the supersets of each key and subtract the sets counted twice, which are the supersets of the union of both keys.",
+    "steps": [
+     "Supersets of <code class=\"mm\">{A, C}</code>: choose freely among <code class=\"mm\">B</code> and <code class=\"mm\">D</code> &rarr; <code class=\"mm\">2&#178; = 4</code>.",
+     "Supersets of <code class=\"mm\">{B, D}</code>: choose freely among <code class=\"mm\">A</code> and <code class=\"mm\">C</code> &rarr; <code class=\"mm\">2&#178; = 4</code>.",
+     "Sets counted twice are those containing <code class=\"mm\">{A, B, C, D}</code>, that is only the full set &rarr; <code class=\"mm\">1</code>.",
+     "Total <code class=\"mm\">4 + 4 &minus; 1 = 7</code>: <code class=\"mm\">AC, ABC, ACD, ABCD, BD, ABD, BCD</code>."
+    ],
+    "final": "Option (C) &mdash; 7 superkeys.",
+    "trap": "With two overlapping keys the inclusion&ndash;exclusion step is compulsory. Adding the two counts gives 8 and double-counts <code class=\"mm\">{A, B, C, D}</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A set is a superkey exactly when it contains at least one candidate key. Count the supersets of each key and subtract the sets counted twice, which are the supersets of the union of both keys.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Supersets of <code class=\"mm\">{A, C}</code>: choose freely among <code class=\"mm\">B</code> and <code class=\"mm\">D</code> &rarr; <code class=\"mm\">2&#178; = 4</code>.</li><li>Supersets of <code class=\"mm\">{B, D}</code>: choose freely among <code class=\"mm\">A</code> and <code class=\"mm\">C</code> &rarr; <code class=\"mm\">2&#178; = 4</code>.</li><li>Sets counted twice are those containing <code class=\"mm\">{A, B, C, D}</code>, that is only the full set &rarr; <code class=\"mm\">1</code>.</li><li>Total <code class=\"mm\">4 + 4 &minus; 1 = 7</code>: <code class=\"mm\">AC, ABC, ACD, ABCD, BD, ABD, BCD</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; 7 superkeys.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>5 and 6 undercount by subtracting too much; 8 is <code class=\"mm\">2&#179;</code>, the count that would be right only if one attribute were forced into every key.</li></ul><p class=\"row\"><b>Common misconception.</b> With two overlapping keys the inclusion&ndash;exclusion step is compulsory. Adding the two counts gives 8 and double-counts <code class=\"mm\">{A, B, C, D}</code>.</p>"
+  },
+  {
+   "id": "DB-U3-Q61",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "1nf-2nf-3nf-bcnf",
+   "subtopic": "1nf-2nf-3nf-bcnf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which one of the following normal forms permits a non-trivial functional dependency <code class=\"mm\">X &rarr; A</code> in which <code class=\"mm\">X</code> is not a superkey, provided <code class=\"mm\">A</code> is a prime attribute?",
+   "options": [
+    "1NF",
+    "2NF",
+    "3NF",
+    "BCNF"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "3NF is the disjunction \"for every non-trivial <code class=\"mm\">X &rarr; A</code>, either <code class=\"mm\">X</code> is a superkey or <code class=\"mm\">A</code> is prime\". BCNF drops the second arm and keeps only the superkey condition.",
+    "steps": [
+     "1NF asks only that attribute values be atomic; it says nothing about dependencies.",
+     "2NF forbids partial dependencies of non-prime attributes on a candidate key, but permits a transitive dependency of a prime attribute.",
+     "3NF allows exactly the case in the question: <code class=\"mm\">X</code> not a superkey, <code class=\"mm\">A</code> prime.",
+     "BCNF requires <code class=\"mm\">X</code> to be a superkey for every non-trivial dependency, so it does not permit this case."
+    ],
+    "final": "Option (C) &mdash; 3NF.",
+    "trap": "The single difference between 3NF and BCNF is the prime-attribute escape clause. Every relation in BCNF is in 3NF, and the relations that separate the two classes are exactly those with an <code class=\"mm\">X &rarr; A</code> where <code class=\"mm\">A</code> is prime and <code class=\"mm\">X</code> is not a superkey."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> 3NF is the disjunction \"for every non-trivial <code class=\"mm\">X &rarr; A</code>, either <code class=\"mm\">X</code> is a superkey or <code class=\"mm\">A</code> is prime\". BCNF drops the second arm and keeps only the superkey condition.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>1NF asks only that attribute values be atomic; it says nothing about dependencies.</li><li>2NF forbids partial dependencies of non-prime attributes on a candidate key, but permits a transitive dependency of a prime attribute.</li><li>3NF allows exactly the case in the question: <code class=\"mm\">X</code> not a superkey, <code class=\"mm\">A</code> prime.</li><li>BCNF requires <code class=\"mm\">X</code> to be a superkey for every non-trivial dependency, so it does not permit this case.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; 3NF.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (B) are weaker conditions that do not describe the superkey-or-prime disjunction at all.</li><li>(D) is the one normal form that forbids the case outright.</li></ul><p class=\"row\"><b>Common misconception.</b> The single difference between 3NF and BCNF is the prime-attribute escape clause. Every relation in BCNF is in 3NF, and the relations that separate the two classes are exactly those with an <code class=\"mm\">X &rarr; A</code> where <code class=\"mm\">A</code> is prime and <code class=\"mm\">X</code> is not a superkey.</p>"
+  },
+  {
+   "id": "DB-U3-Q62",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "1nf-2nf-3nf-bcnf",
+   "subtopic": "1nf-2nf-3nf-bcnf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C)</code> has the single candidate key <code class=\"mm\">{A}</code> and satisfies <code class=\"mm\">B &rarr; C</code>. Which one of the following is <b>TRUE</b>?",
+   "options": [
+    "<code class=\"mm\">R</code> is in BCNF.",
+    "<code class=\"mm\">R</code> is in 3NF but not in BCNF.",
+    "<code class=\"mm\">R</code> is in 2NF but not in 3NF.",
+    "<code class=\"mm\">R</code> is not in 1NF."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Test each form in order. With <code class=\"mm\">{A}</code> the only key, <code class=\"mm\">A</code> is the only prime attribute and <code class=\"mm\">B</code>, <code class=\"mm\">C</code> are non-prime.",
+    "steps": [
+     "2NF: a partial dependency would need a proper subset of a key to determine a non-prime attribute. The only key has size one and has no non-empty proper subset, so 2NF holds.",
+     "3NF: <code class=\"mm\">B &rarr; C</code> is non-trivial, <code class=\"mm\">B</code> is not a superkey (<code class=\"mm\">B&#8314; = {B, C}</code>) and <code class=\"mm\">C</code> is non-prime. The disjunction fails, so 3NF does not hold.",
+     "BCNF fails for the same dependency, so it cannot be in BCNF either.",
+     "Atomic attributes give 1NF."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">R</code> is in 2NF but not in 3NF.",
+    "trap": "A single-attribute key guarantees 2NF and nothing more. It removes the possibility of a partial dependency but leaves transitive dependencies between non-prime attributes completely untouched."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Test each form in order. With <code class=\"mm\">{A}</code> the only key, <code class=\"mm\">A</code> is the only prime attribute and <code class=\"mm\">B</code>, <code class=\"mm\">C</code> are non-prime.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>2NF: a partial dependency would need a proper subset of a key to determine a non-prime attribute. The only key has size one and has no non-empty proper subset, so 2NF holds.</li><li>3NF: <code class=\"mm\">B &rarr; C</code> is non-trivial, <code class=\"mm\">B</code> is not a superkey (<code class=\"mm\">B&#8314; = {B, C}</code>) and <code class=\"mm\">C</code> is non-prime. The disjunction fails, so 3NF does not hold.</li><li>BCNF fails for the same dependency, so it cannot be in BCNF either.</li><li>Atomic attributes give 1NF.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">R</code> is in 2NF but not in 3NF.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (B) fail because <code class=\"mm\">B</code> is not a superkey, which breaks both BCNF and 3NF.</li><li>(D) fails because 1NF is about atomic values only, and nothing here suggests a repeating group.</li></ul><p class=\"row\"><b>Common misconception.</b> A single-attribute key guarantees 2NF and nothing more. It removes the possibility of a partial dependency but leaves transitive dependencies between non-prime attributes completely untouched.</p>"
+  },
+  {
+   "id": "DB-U3-Q63",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "1nf-2nf-3nf-bcnf",
+   "subtopic": "1nf-2nf-3nf-bcnf",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D, E)</code> satisfies <code class=\"mm\">F = {AB &rarr; C, C &rarr; D, D &rarr; E}</code>. How many of the five attributes of <code class=\"mm\">R</code> are non-prime?<br/>(Enter an integer.)",
+   "options": null,
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "Find every candidate key first; an attribute is prime exactly when it belongs to at least one candidate key.",
+    "steps": [
+     "<code class=\"mm\">A</code> and <code class=\"mm\">B</code> appear on no right-hand side, so both are in every key.",
+     "<code class=\"mm\">(AB)&#8314; = {A, B} &cup; {C} &cup; {D} &cup; {E} = {A, B, C, D, E}</code>, so <code class=\"mm\">{A, B}</code> is a key and is minimal.",
+     "No other attribute is forced into a key, so <code class=\"mm\">{A, B}</code> is the unique candidate key.",
+     "Prime attributes: <code class=\"mm\">A</code> and <code class=\"mm\">B</code>. Non-prime: <code class=\"mm\">C</code>, <code class=\"mm\">D</code>, <code class=\"mm\">E</code> &rarr; 3."
+    ],
+    "final": "3 &mdash; <code class=\"mm\">C</code>, <code class=\"mm\">D</code> and <code class=\"mm\">E</code> are non-prime.",
+    "trap": "The chain <code class=\"mm\">AB &rarr; C &rarr; D &rarr; E</code> makes the three trailing attributes look structural, but a determined attribute is never part of a minimal key, so none of them is prime."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Find every candidate key first; an attribute is prime exactly when it belongs to at least one candidate key.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A</code> and <code class=\"mm\">B</code> appear on no right-hand side, so both are in every key.</li><li><code class=\"mm\">(AB)&#8314; = {A, B} &cup; {C} &cup; {D} &cup; {E} = {A, B, C, D, E}</code>, so <code class=\"mm\">{A, B}</code> is a key and is minimal.</li><li>No other attribute is forced into a key, so <code class=\"mm\">{A, B}</code> is the unique candidate key.</li><li>Prime attributes: <code class=\"mm\">A</code> and <code class=\"mm\">B</code>. Non-prime: <code class=\"mm\">C</code>, <code class=\"mm\">D</code>, <code class=\"mm\">E</code> &rarr; 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 &mdash; <code class=\"mm\">C</code>, <code class=\"mm\">D</code> and <code class=\"mm\">E</code> are non-prime.</span></p><p class=\"row\"><b>Common misconception.</b> The chain <code class=\"mm\">AB &rarr; C &rarr; D &rarr; E</code> makes the three trailing attributes look structural, but a determined attribute is never part of a minimal key, so none of them is prime.</p>"
+  },
+  {
+   "id": "DB-U3-Q64",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "1nf-2nf-3nf-bcnf",
+   "subtopic": "1nf-2nf-3nf-bcnf",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about third normal form are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "In a 3NF relation no non-prime attribute depends transitively on a candidate key.",
+    "Every relation whose only candidate key consists of a single attribute is in 3NF.",
+    "A relation can be in 3NF without being in 2NF.",
+    "If every attribute of a relation is prime, the relation is in 3NF."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "3NF is equivalent to two familiar descriptions: no transitive dependency of a non-prime attribute on a key, and the superkey-or-prime disjunction on every non-trivial dependency.",
+    "steps": [
+     "(A) is the classical statement of 3NF and is exactly equivalent to the disjunction.",
+     "(B) is false: <code class=\"mm\">R(A, B, C)</code> with key <code class=\"mm\">{A}</code> and <code class=\"mm\">B &rarr; C</code> has a single-attribute key yet violates 3NF, because <code class=\"mm\">B</code> is not a superkey and <code class=\"mm\">C</code> is non-prime.",
+     "(C) is false: 3NF is stronger than 2NF, so every 3NF relation is in 2NF.",
+     "(D) is true: if every attribute is prime then the right-hand side of every non-trivial dependency is prime, so the disjunction holds for every dependency and 3NF is satisfied automatically."
+    ],
+    "final": "Options (A) and (D) are TRUE; options (B) and (C) are FALSE.",
+    "trap": "Normal forms nest downwards: BCNF implies 3NF, 3NF implies 2NF, 2NF implies 1NF. Any statement that a weaker form implies a stronger one is automatically false."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> 3NF is equivalent to two familiar descriptions: no transitive dependency of a non-prime attribute on a key, and the superkey-or-prime disjunction on every non-trivial dependency.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the classical statement of 3NF and is exactly equivalent to the disjunction.</li><li>(B) is false: <code class=\"mm\">R(A, B, C)</code> with key <code class=\"mm\">{A}</code> and <code class=\"mm\">B &rarr; C</code> has a single-attribute key yet violates 3NF, because <code class=\"mm\">B</code> is not a superkey and <code class=\"mm\">C</code> is non-prime.</li><li>(C) is false: 3NF is stronger than 2NF, so every 3NF relation is in 2NF.</li><li>(D) is true: if every attribute is prime then the right-hand side of every non-trivial dependency is prime, so the disjunction holds for every dependency and 3NF is satisfied automatically.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (D) are TRUE; options (B) and (C) are FALSE.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) confuses 2NF with 3NF: a one-attribute key kills partial dependencies but not transitive ones.</li><li>(C) reverses the containment, which runs 3NF &sub; 2NF &sub; 1NF.</li></ul><p class=\"row\"><b>Common misconception.</b> Normal forms nest downwards: BCNF implies 3NF, 3NF implies 2NF, 2NF implies 1NF. Any statement that a weaker form implies a stronger one is automatically false.</p>"
+  },
+  {
+   "id": "DB-U3-Q65",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "1nf-2nf-3nf-bcnf",
+   "subtopic": "1nf-2nf-3nf-bcnf",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Which one of the following relations is in 3NF but <b>NOT</b> in BCNF?",
+   "options": [
+    "<code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {AB &rarr; C, C &rarr; B}</code>",
+    "<code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {A &rarr; B, B &rarr; C}</code>",
+    "<code class=\"mm\">R(A, B, C, D)</code> with <code class=\"mm\">F = {A &rarr; B, BC &rarr; D}</code>",
+    "<code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {A &rarr; B, B &rarr; A, A &rarr; C}</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Compute the candidate keys, mark the prime attributes, then check each dependency against the 3NF disjunction and the BCNF superkey condition.",
+    "steps": [
+     "(A): keys <code class=\"mm\">{A, B}</code> and <code class=\"mm\">{A, C}</code>; all three attributes are prime. <code class=\"mm\">C &rarr; B</code> has a non-superkey left side but a prime right side, so 3NF holds and BCNF fails.",
+     "(B): key <code class=\"mm\">{A}</code>; <code class=\"mm\">B &rarr; C</code> has a non-superkey left side and a non-prime right side, so 3NF already fails.",
+     "(C): key <code class=\"mm\">{A, C}</code>; <code class=\"mm\">A &rarr; B</code> is a partial dependency of the non-prime <code class=\"mm\">B</code> on part of the key, so even 2NF fails.",
+     "(D): keys <code class=\"mm\">{A}</code> and <code class=\"mm\">{B}</code>; every left-hand side is a superkey, so the relation is in BCNF."
+    ],
+    "final": "Option (A) &mdash; <code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {AB &rarr; C, C &rarr; B}</code> is in 3NF but not in BCNF.",
+    "trap": "This is the textbook witness that 3NF is strictly weaker than BCNF. It needs an overlapping pair of candidate keys and a dependency whose left side is not a superkey but whose right side is prime."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Compute the candidate keys, mark the prime attributes, then check each dependency against the 3NF disjunction and the BCNF superkey condition.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): keys <code class=\"mm\">{A, B}</code> and <code class=\"mm\">{A, C}</code>; all three attributes are prime. <code class=\"mm\">C &rarr; B</code> has a non-superkey left side but a prime right side, so 3NF holds and BCNF fails.</li><li>(B): key <code class=\"mm\">{A}</code>; <code class=\"mm\">B &rarr; C</code> has a non-superkey left side and a non-prime right side, so 3NF already fails.</li><li>(C): key <code class=\"mm\">{A, C}</code>; <code class=\"mm\">A &rarr; B</code> is a partial dependency of the non-prime <code class=\"mm\">B</code> on part of the key, so even 2NF fails.</li><li>(D): keys <code class=\"mm\">{A}</code> and <code class=\"mm\">{B}</code>; every left-hand side is a superkey, so the relation is in BCNF.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">R(A, B, C)</code> with <code class=\"mm\">F = {AB &rarr; C, C &rarr; B}</code> is in 3NF but not in BCNF.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) is only in 2NF, so it is not a 3NF relation at all.</li><li>(C) is only in 1NF, because <code class=\"mm\">A &rarr; B</code> is a partial dependency.</li><li>(D) is in BCNF, which is stronger than what the question asks for.</li></ul><p class=\"row\"><b>Common misconception.</b> This is the textbook witness that 3NF is strictly weaker than BCNF. It needs an overlapping pair of candidate keys and a dependency whose left side is not a superkey but whose right side is prime.</p>"
+  },
+  {
+   "id": "DB-U3-Q66",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "lossless-join-dependency-preservation",
+   "subtopic": "lossless-join-dependency-preservation",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {B &rarr; D}</code> and is decomposed into <code class=\"mm\">R&#8321;(A, B, C)</code> and <code class=\"mm\">R&#8322;(B, D)</code>. Which one of the following is <b>TRUE</b>?",
+   "options": [
+    "The decomposition is lossless, because <code class=\"mm\">B &rarr; D</code> holds and <code class=\"mm\">B</code> determines all of <code class=\"mm\">R&#8322;</code>.",
+    "The decomposition is lossy, because <code class=\"mm\">B</code> is not a key of <code class=\"mm\">R</code>.",
+    "The decomposition is lossless only if <code class=\"mm\">A &rarr; B</code> also holds.",
+    "The decomposition is lossy, because <code class=\"mm\">R&#8321; &cap; R&#8322; = {B}</code> is not empty."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "For a decomposition into two relations the test is exact: it is lossless if and only if the common attributes functionally determine at least one of the two parts.",
+    "steps": [
+     "<code class=\"mm\">R&#8321; &cap; R&#8322; = {B}</code>.",
+     "<code class=\"mm\">B&#8314; = {B, D}</code>, which is exactly the attribute set of <code class=\"mm\">R&#8322;</code>.",
+     "So the intersection determines one part and the decomposition is lossless; no join can create spurious tuples.",
+     "Note that losslessness does not require <code class=\"mm\">B</code> to be a key of the original <code class=\"mm\">R</code>."
+    ],
+    "final": "Option (A) &mdash; the decomposition is lossless.",
+    "trap": "The common attribute must determine one whole part, not merely be non-empty. Losslessness is about the intersection's closure covering <code class=\"mm\">R&#8321;</code> or <code class=\"mm\">R&#8322;</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a decomposition into two relations the test is exact: it is lossless if and only if the common attributes functionally determine at least one of the two parts.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">R&#8321; &cap; R&#8322; = {B}</code>.</li><li><code class=\"mm\">B&#8314; = {B, D}</code>, which is exactly the attribute set of <code class=\"mm\">R&#8322;</code>.</li><li>So the intersection determines one part and the decomposition is lossless; no join can create spurious tuples.</li><li>Note that losslessness does not require <code class=\"mm\">B</code> to be a key of the original <code class=\"mm\">R</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; the decomposition is lossless.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) applies the wrong criterion: being a key of <code class=\"mm\">R</code> is sufficient for losslessness, not necessary.</li><li>(C) adds a condition the two-way test does not need.</li><li>(D) states the opposite of the truth: a non-empty intersection is what makes the test applicable at all.</li></ul><p class=\"row\"><b>Common misconception.</b> The common attribute must determine one whole part, not merely be non-empty. Losslessness is about the intersection's closure covering <code class=\"mm\">R&#8321;</code> or <code class=\"mm\">R&#8322;</code>.</p>"
+  },
+  {
+   "id": "DB-U3-Q67",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "lossless-join-dependency-preservation",
+   "subtopic": "lossless-join-dependency-preservation",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; B, B &rarr; C, C &rarr; D, D &rarr; A}</code> and is decomposed into <code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(C, D)</code>. How many of the four dependencies in <code class=\"mm\">F</code> are preserved by this decomposition?<br/>(Enter an integer.)",
+   "options": null,
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "A dependency is preserved when it can be derived from the union of the dependencies that hold inside the individual parts. Compute the projection of <code class=\"mm\">F</code> onto each part first.",
+    "steps": [
+     "On <code class=\"mm\">R&#8321;(A, B)</code>: <code class=\"mm\">A&#8314; = {A, B}</code> and <code class=\"mm\">B&#8314; = {B, C, D, A}</code>, so the projection contains <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">B &rarr; A</code>.",
+     "On <code class=\"mm\">R&#8322;(C, D)</code>: <code class=\"mm\">C&#8314; = {C, D, A, B}</code> and <code class=\"mm\">D&#8314; = {D, A, B, C}</code>, so the projection contains <code class=\"mm\">C &rarr; D</code> and <code class=\"mm\">D &rarr; C</code>.",
+     "The union of the two projections can derive <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; D</code> but nothing that crosses the two parts.",
+     "So <code class=\"mm\">B &rarr; C</code> and <code class=\"mm\">D &rarr; A</code> are lost: 2 of the 4 dependencies survive."
+    ],
+    "final": "2 &mdash; <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; D</code> are preserved; <code class=\"mm\">B &rarr; C</code> and <code class=\"mm\">D &rarr; A</code> are not.",
+    "trap": "This decomposition is also lossy, since <code class=\"mm\">R&#8321; &cap; R&#8322;</code> is empty. Losslessness and dependency preservation are independent properties, and a decomposition can fail either one while satisfying the other."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A dependency is preserved when it can be derived from the union of the dependencies that hold inside the individual parts. Compute the projection of <code class=\"mm\">F</code> onto each part first.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>On <code class=\"mm\">R&#8321;(A, B)</code>: <code class=\"mm\">A&#8314; = {A, B}</code> and <code class=\"mm\">B&#8314; = {B, C, D, A}</code>, so the projection contains <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">B &rarr; A</code>.</li><li>On <code class=\"mm\">R&#8322;(C, D)</code>: <code class=\"mm\">C&#8314; = {C, D, A, B}</code> and <code class=\"mm\">D&#8314; = {D, A, B, C}</code>, so the projection contains <code class=\"mm\">C &rarr; D</code> and <code class=\"mm\">D &rarr; C</code>.</li><li>The union of the two projections can derive <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; D</code> but nothing that crosses the two parts.</li><li>So <code class=\"mm\">B &rarr; C</code> and <code class=\"mm\">D &rarr; A</code> are lost: 2 of the 4 dependencies survive.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 &mdash; <code class=\"mm\">A &rarr; B</code> and <code class=\"mm\">C &rarr; D</code> are preserved; <code class=\"mm\">B &rarr; C</code> and <code class=\"mm\">D &rarr; A</code> are not.</span></p><p class=\"row\"><b>Common misconception.</b> This decomposition is also lossy, since <code class=\"mm\">R&#8321; &cap; R&#8322;</code> is empty. Losslessness and dependency preservation are independent properties, and a decomposition can fail either one while satisfying the other.</p>"
+  },
+  {
+   "id": "DB-U3-Q68",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "lossless-join-dependency-preservation",
+   "subtopic": "lossless-join-dependency-preservation",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies <code class=\"mm\">F = {A &rarr; B, B &rarr; C, C &rarr; D}</code> and is decomposed into <code class=\"mm\">R&#8321;(A, B)</code>, <code class=\"mm\">R&#8322;(B, C)</code> and <code class=\"mm\">R&#8323;(C, D)</code>. Which one of the following is <b>TRUE</b>?",
+   "options": [
+    "The decomposition is both lossless and dependency preserving.",
+    "The decomposition is lossless but not dependency preserving.",
+    "The decomposition is dependency preserving but not lossless.",
+    "The decomposition is neither lossless nor dependency preserving."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Check the two properties separately. Dependency preservation looks at whether each dependency lives inside some part; losslessness for a chain of parts is checked by joining them one at a time.",
+    "steps": [
+     "Preservation: <code class=\"mm\">A &rarr; B</code> lies inside <code class=\"mm\">R&#8321;</code>, <code class=\"mm\">B &rarr; C</code> inside <code class=\"mm\">R&#8322;</code>, <code class=\"mm\">C &rarr; D</code> inside <code class=\"mm\">R&#8323;</code>. Every dependency is preserved.",
+     "Losslessness of <code class=\"mm\">R&#8321;</code> and <code class=\"mm\">R&#8322;</code>: they share <code class=\"mm\">B</code> and <code class=\"mm\">B&#8314; = {B, C, D} &#8839; R&#8322;</code>, so the join is lossless and yields <code class=\"mm\">(A, B, C)</code>.",
+     "Losslessness of <code class=\"mm\">(A, B, C)</code> and <code class=\"mm\">R&#8323;(C, D)</code>: they share <code class=\"mm\">C</code> and <code class=\"mm\">C&#8314; = {C, D} = R&#8323;</code>, so the join is lossless.",
+     "Both properties hold."
+    ],
+    "final": "Option (A) &mdash; the decomposition is both lossless and dependency preserving.",
+    "trap": "A chain of relations linked by a key-to-foreign-key style dependency is the standard example of a decomposition that is good on both counts. Do not assume that a multi-way decomposition must be lossy: apply the test pairwise and merge."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Check the two properties separately. Dependency preservation looks at whether each dependency lives inside some part; losslessness for a chain of parts is checked by joining them one at a time.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Preservation: <code class=\"mm\">A &rarr; B</code> lies inside <code class=\"mm\">R&#8321;</code>, <code class=\"mm\">B &rarr; C</code> inside <code class=\"mm\">R&#8322;</code>, <code class=\"mm\">C &rarr; D</code> inside <code class=\"mm\">R&#8323;</code>. Every dependency is preserved.</li><li>Losslessness of <code class=\"mm\">R&#8321;</code> and <code class=\"mm\">R&#8322;</code>: they share <code class=\"mm\">B</code> and <code class=\"mm\">B&#8314; = {B, C, D} &#8839; R&#8322;</code>, so the join is lossless and yields <code class=\"mm\">(A, B, C)</code>.</li><li>Losslessness of <code class=\"mm\">(A, B, C)</code> and <code class=\"mm\">R&#8323;(C, D)</code>: they share <code class=\"mm\">C</code> and <code class=\"mm\">C&#8314; = {C, D} = R&#8323;</code>, so the join is lossless.</li><li>Both properties hold.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; the decomposition is both lossless and dependency preserving.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B), (C) and (D) each deny a property that the two tests above confirm.</li></ul><p class=\"row\"><b>Common misconception.</b> A chain of relations linked by a key-to-foreign-key style dependency is the standard example of a decomposition that is good on both counts. Do not assume that a multi-way decomposition must be lossy: apply the test pairwise and merge.</p>"
+  },
+  {
+   "id": "DB-U3-Q69",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "lossless-join-dependency-preservation",
+   "subtopic": "lossless-join-dependency-preservation",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about lossless-join decompositions are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "The tableau (chase) test is a necessary and sufficient test for losslessness.",
+    "A decomposition of <code class=\"mm\">R</code> is lossless if and only if at least one of the parts is a superkey of <code class=\"mm\">R</code>.",
+    "A decomposition of <code class=\"mm\">R</code> into two relations <code class=\"mm\">R&#8321;</code> and <code class=\"mm\">R&#8322;</code> is lossless if and only if <code class=\"mm\">R&#8321; &cap; R&#8322;</code> functionally determines <code class=\"mm\">R&#8321;</code> or <code class=\"mm\">R&#8322;</code>.",
+    "Any decomposition into two relations that share at least one attribute is lossless."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "The chase is the general decision procedure; for two parts it collapses to a simple closure test.",
+    "steps": [
+     "(A) is true: the chase terminates and produces a row of all distinguished variables exactly when the join is lossless.",
+     "(B) is false: a part being a superkey of <code class=\"mm\">R</code> is sufficient for losslessness but not necessary. A three-way chain such as <code class=\"mm\">R&#8321;(A, B)</code>, <code class=\"mm\">R&#8322;(B, C)</code>, <code class=\"mm\">R&#8323;(C, D)</code> can be lossless with no part a superkey of <code class=\"mm\">R</code>.",
+     "(C) is true and is the two-relation form of the chase.",
+     "(D) is false: sharing an attribute only makes the test applicable. <code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(B, C)</code> with no dependency at all is lossy."
+    ],
+    "final": "Options (A) and (C) are TRUE; options (B) and (D) are FALSE.",
+    "trap": "Sufficient is not necessary. A superkey part is the easy way to be lossless, not the only way, and the chase exists precisely because the easy test is incomplete."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The chase is the general decision procedure; for two parts it collapses to a simple closure test.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: the chase terminates and produces a row of all distinguished variables exactly when the join is lossless.</li><li>(B) is false: a part being a superkey of <code class=\"mm\">R</code> is sufficient for losslessness but not necessary. A three-way chain such as <code class=\"mm\">R&#8321;(A, B)</code>, <code class=\"mm\">R&#8322;(B, C)</code>, <code class=\"mm\">R&#8323;(C, D)</code> can be lossless with no part a superkey of <code class=\"mm\">R</code>.</li><li>(C) is true and is the two-relation form of the chase.</li><li>(D) is false: sharing an attribute only makes the test applicable. <code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(B, C)</code> with no dependency at all is lossy.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C) are TRUE; options (B) and (D) are FALSE.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) turns a sufficient condition into an if-and-only-if and fails on multi-way decompositions.</li><li>(D) mistakes a precondition of the test for a guarantee of its outcome.</li></ul><p class=\"row\"><b>Common misconception.</b> Sufficient is not necessary. A superkey part is the easy way to be lossless, not the only way, and the chase exists precisely because the easy test is incomplete.</p>"
+  },
+  {
+   "id": "DB-U3-Q70",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "lossless-join-dependency-preservation",
+   "subtopic": "lossless-join-dependency-preservation",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C)</code> satisfies <code class=\"mm\">F = {A &rarr; B, B &rarr; C}</code>. Which one of the following decompositions is lossless but <b>NOT</b> dependency preserving?",
+   "options": [
+    "<code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(A, C)</code>",
+    "<code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(B, C)</code>",
+    "<code class=\"mm\">R&#8321;(A, C)</code> and <code class=\"mm\">R&#8322;(B, C)</code>",
+    "<code class=\"mm\">R(A, B, C)</code> kept as a single relation"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Test losslessness with the intersection closure, then test preservation by asking whether each dependency can be derived from the union of the projections.",
+    "steps": [
+     "(A): <code class=\"mm\">R&#8321; &cap; R&#8322; = {A}</code> and <code class=\"mm\">A&#8314; = {A, B, C} &#8839; R&#8321;</code>, so lossless. The projections give <code class=\"mm\">A &rarr; B</code> only; <code class=\"mm\">B&#8314;</code> inside the union is <code class=\"mm\">{B}</code>, so <code class=\"mm\">B &rarr; C</code> is lost. Lossless, not preserving.",
+     "(B): <code class=\"mm\">R&#8321; &cap; R&#8322; = {B}</code> and <code class=\"mm\">B&#8314; = {B, C} &#8839; R&#8322;</code>, so lossless; <code class=\"mm\">B &rarr; C</code> lies inside <code class=\"mm\">R&#8322;</code>, so both dependencies are preserved.",
+     "(C): <code class=\"mm\">R&#8321; &cap; R&#8322; = {C}</code> and <code class=\"mm\">C&#8314; = {C}</code>, which covers neither part, so the join is lossy.",
+     "(D) is the trivial single-relation decomposition, lossless and preserving by definition."
+    ],
+    "final": "Option (A) &mdash; <code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(A, C)</code> is lossless but not dependency preserving.",
+    "trap": "This pair of relations is the standard counterexample to \"BCNF decomposition is always dependency preserving\". The lost dependency is the one whose left-hand side straddles both parts."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Test losslessness with the intersection closure, then test preservation by asking whether each dependency can be derived from the union of the projections.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">R&#8321; &cap; R&#8322; = {A}</code> and <code class=\"mm\">A&#8314; = {A, B, C} &#8839; R&#8321;</code>, so lossless. The projections give <code class=\"mm\">A &rarr; B</code> only; <code class=\"mm\">B&#8314;</code> inside the union is <code class=\"mm\">{B}</code>, so <code class=\"mm\">B &rarr; C</code> is lost. Lossless, not preserving.</li><li>(B): <code class=\"mm\">R&#8321; &cap; R&#8322; = {B}</code> and <code class=\"mm\">B&#8314; = {B, C} &#8839; R&#8322;</code>, so lossless; <code class=\"mm\">B &rarr; C</code> lies inside <code class=\"mm\">R&#8322;</code>, so both dependencies are preserved.</li><li>(C): <code class=\"mm\">R&#8321; &cap; R&#8322; = {C}</code> and <code class=\"mm\">C&#8314; = {C}</code>, which covers neither part, so the join is lossy.</li><li>(D) is the trivial single-relation decomposition, lossless and preserving by definition.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">R&#8321;(A, B)</code> and <code class=\"mm\">R&#8322;(A, C)</code> is lossless but not dependency preserving.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) is lossless and dependency preserving, so it satisfies too much.</li><li>(C) is lossy, so it fails the first half of the question.</li><li>(D) is both properties trivially.</li></ul><p class=\"row\"><b>Common misconception.</b> This pair of relations is the standard counterexample to \"BCNF decomposition is always dependency preserving\". The lost dependency is the one whose left-hand side straddles both parts.</p>"
+  },
+  {
+   "id": "DB-U3-Q71",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "multivalued-dependencies-4nf",
+   "subtopic": "multivalued-dependencies-4nf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies the non-trivial multivalued dependency <code class=\"mm\">A &rarr;&rarr; B</code>. Which one of the following is <b>TRUE</b>?",
+   "options": [
+    "<code class=\"mm\">R</code> is automatically in 4NF.",
+    "<code class=\"mm\">R</code> is in 4NF only if <code class=\"mm\">A</code> is a superkey of <code class=\"mm\">R</code>.",
+    "<code class=\"mm\">R</code> is in 4NF only if <code class=\"mm\">B</code> is a superkey of <code class=\"mm\">R</code>.",
+    "<code class=\"mm\">R</code> is in 4NF only if <code class=\"mm\">A &rarr;&rarr; B</code> is trivial."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "4NF: for every non-trivial multivalued dependency <code class=\"mm\">X &rarr;&rarr; Y</code> that holds, <code class=\"mm\">X</code> must be a superkey. The condition is on the left-hand side only.",
+    "steps": [
+     "The dependency given, <code class=\"mm\">A &rarr;&rarr; B</code>, is stated to be non-trivial, so it must be tested against the 4NF condition.",
+     "The condition requires <code class=\"mm\">A</code>, the left-hand side, to be a superkey.",
+     "If <code class=\"mm\">A</code> is a superkey the dependency is harmless and 4NF can hold; if <code class=\"mm\">A</code> is not a superkey the relation is not in 4NF.",
+     "Nothing is required of <code class=\"mm\">B</code>, and the dependency being non-trivial is exactly the situation the condition is written for."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">R</code> is in 4NF only if <code class=\"mm\">A</code> is a superkey of <code class=\"mm\">R</code>.",
+    "trap": "The left-hand side is the determinant in 4NF just as it is in BCNF. Checking the right-hand side, or assuming any multivalued dependency destroys 4NF, are the two usual errors."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> 4NF: for every non-trivial multivalued dependency <code class=\"mm\">X &rarr;&rarr; Y</code> that holds, <code class=\"mm\">X</code> must be a superkey. The condition is on the left-hand side only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The dependency given, <code class=\"mm\">A &rarr;&rarr; B</code>, is stated to be non-trivial, so it must be tested against the 4NF condition.</li><li>The condition requires <code class=\"mm\">A</code>, the left-hand side, to be a superkey.</li><li>If <code class=\"mm\">A</code> is a superkey the dependency is harmless and 4NF can hold; if <code class=\"mm\">A</code> is not a superkey the relation is not in 4NF.</li><li>Nothing is required of <code class=\"mm\">B</code>, and the dependency being non-trivial is exactly the situation the condition is written for.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">R</code> is in 4NF only if <code class=\"mm\">A</code> is a superkey of <code class=\"mm\">R</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) is false: a non-trivial multivalued dependency whose left side is not a superkey is precisely what 4NF forbids.</li><li>(C) checks the right-hand side, which the definition never mentions.</li><li>(D) is backwards: trivial multivalued dependencies are exempt, not required.</li></ul><p class=\"row\"><b>Common misconception.</b> The left-hand side is the determinant in 4NF just as it is in BCNF. Checking the right-hand side, or assuming any multivalued dependency destroys 4NF, are the two usual errors.</p>"
+  },
+  {
+   "id": "DB-U3-Q72",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "multivalued-dependencies-4nf",
+   "subtopic": "multivalued-dependencies-4nf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Which one of the following relations is in 4NF?",
+   "options": [
+    "<code class=\"mm\">R(A, B, C)</code> with candidate key <code class=\"mm\">{A, B}</code> and the non-trivial multivalued dependency <code class=\"mm\">A &rarr;&rarr; C</code>.",
+    "<code class=\"mm\">R(A, B, C)</code> with candidate key <code class=\"mm\">{A}</code> and the multivalued dependency <code class=\"mm\">A &rarr;&rarr; B</code>.",
+    "<code class=\"mm\">R(A, B, C, D)</code> with candidate key <code class=\"mm\">{A, B, C, D}</code> and the non-trivial multivalued dependency <code class=\"mm\">A &rarr;&rarr; B</code>.",
+    "<code class=\"mm\">R(A, B, C)</code> with candidate key <code class=\"mm\">{A, B}</code> and the non-trivial multivalued dependency <code class=\"mm\">B &rarr;&rarr; C</code>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A relation is in 4NF when every non-trivial multivalued dependency that holds has a superkey on its left. A dependency is trivial when <code class=\"mm\">Y &#8838; X</code> or <code class=\"mm\">X &cup; Y</code> is the whole schema.",
+    "steps": [
+     "(A): <code class=\"mm\">A &rarr;&rarr; C</code> is non-trivial and <code class=\"mm\">A</code> is not a superkey (the key is <code class=\"mm\">{A, B}</code>), so not 4NF.",
+     "(B): <code class=\"mm\">A</code> is the candidate key and therefore a superkey, so the dependency raises no 4NF violation. The relation is in 4NF.",
+     "(C): <code class=\"mm\">A &rarr;&rarr; B</code> is non-trivial because <code class=\"mm\">A &cup; B</code> is not all four attributes, and <code class=\"mm\">A</code> is not a superkey, so not 4NF.",
+     "(D): <code class=\"mm\">B &rarr;&rarr; C</code> is non-trivial and <code class=\"mm\">B</code> is not a superkey, so not 4NF."
+    ],
+    "final": "Option (B) &mdash; <code class=\"mm\">R(A, B, C)</code> with candidate key <code class=\"mm\">{A}</code> and <code class=\"mm\">A &rarr;&rarr; B</code> is in 4NF.",
+    "trap": "A relation can hold a multivalued dependency and still be in 4NF, provided the left side is a superkey. The presence of a multivalued dependency is not itself a violation."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A relation is in 4NF when every non-trivial multivalued dependency that holds has a superkey on its left. A dependency is trivial when <code class=\"mm\">Y &#8838; X</code> or <code class=\"mm\">X &cup; Y</code> is the whole schema.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">A &rarr;&rarr; C</code> is non-trivial and <code class=\"mm\">A</code> is not a superkey (the key is <code class=\"mm\">{A, B}</code>), so not 4NF.</li><li>(B): <code class=\"mm\">A</code> is the candidate key and therefore a superkey, so the dependency raises no 4NF violation. The relation is in 4NF.</li><li>(C): <code class=\"mm\">A &rarr;&rarr; B</code> is non-trivial because <code class=\"mm\">A &cup; B</code> is not all four attributes, and <code class=\"mm\">A</code> is not a superkey, so not 4NF.</li><li>(D): <code class=\"mm\">B &rarr;&rarr; C</code> is non-trivial and <code class=\"mm\">B</code> is not a superkey, so not 4NF.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <code class=\"mm\">R(A, B, C)</code> with candidate key <code class=\"mm\">{A}</code> and <code class=\"mm\">A &rarr;&rarr; B</code> is in 4NF.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (D) each hold a non-trivial multivalued dependency whose left side is not a superkey.</li><li>(C) does the same: a candidate key made of all four attributes makes the dependency non-trivial without making <code class=\"mm\">A</code> a superkey.</li></ul><p class=\"row\"><b>Common misconception.</b> A relation can hold a multivalued dependency and still be in 4NF, provided the left side is a superkey. The presence of a multivalued dependency is not itself a violation.</p>"
+  },
+  {
+   "id": "DB-U3-Q73",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "multivalued-dependencies-4nf",
+   "subtopic": "multivalued-dependencies-4nf",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D, E)</code> satisfies the multivalued dependencies <code class=\"mm\">A &rarr;&rarr; B</code>, <code class=\"mm\">A &rarr;&rarr; C</code> and <code class=\"mm\">A &rarr;&rarr; D</code>, and no other constraint. Applying the 4NF decomposition repeatedly until no non-trivial multivalued dependency with a non-superkey left-hand side remains, how many relations result?<br/>(Enter an integer.)",
+   "options": null,
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "Each non-trivial <code class=\"mm\">X &rarr;&rarr; Y</code> is removed by splitting into <code class=\"mm\">(X &cup; Y)</code> and <code class=\"mm\">(X &cup; (R &minus; X &minus; Y))</code>. Repeat on each part, because the remaining dependencies may still bite inside the larger piece.",
+    "steps": [
+     "<code class=\"mm\">A &rarr;&rarr; B</code> splits <code class=\"mm\">R</code> into <code class=\"mm\">(A, B)</code> and <code class=\"mm\">(A, C, D, E)</code>. The first part has no dependency left, so it is final.",
+     "Inside <code class=\"mm\">(A, C, D, E)</code>, <code class=\"mm\">A &rarr;&rarr; C</code> is still non-trivial, so split into <code class=\"mm\">(A, C)</code> and <code class=\"mm\">(A, D, E)</code>.",
+     "Inside <code class=\"mm\">(A, D, E)</code>, <code class=\"mm\">A &rarr;&rarr; D</code> is non-trivial, so split into <code class=\"mm\">(A, D)</code> and <code class=\"mm\">(A, E)</code>.",
+     "No part retains a non-trivial dependency with a non-superkey left side, so the process stops with four relations: <code class=\"mm\">(A, B)</code>, <code class=\"mm\">(A, C)</code>, <code class=\"mm\">(A, D)</code>, <code class=\"mm\">(A, E)</code>."
+    ],
+    "final": "4 &mdash; <code class=\"mm\">(A, B)</code>, <code class=\"mm\">(A, C)</code>, <code class=\"mm\">(A, D)</code> and <code class=\"mm\">(A, E)</code>.",
+    "trap": "A single split is not enough: after removing <code class=\"mm\">A &rarr;&rarr; B</code> the other two dependencies are still non-trivial inside the remainder, and each must be removed in turn. The final count is one relation per right-hand side plus the leftover attributes."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each non-trivial <code class=\"mm\">X &rarr;&rarr; Y</code> is removed by splitting into <code class=\"mm\">(X &cup; Y)</code> and <code class=\"mm\">(X &cup; (R &minus; X &minus; Y))</code>. Repeat on each part, because the remaining dependencies may still bite inside the larger piece.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">A &rarr;&rarr; B</code> splits <code class=\"mm\">R</code> into <code class=\"mm\">(A, B)</code> and <code class=\"mm\">(A, C, D, E)</code>. The first part has no dependency left, so it is final.</li><li>Inside <code class=\"mm\">(A, C, D, E)</code>, <code class=\"mm\">A &rarr;&rarr; C</code> is still non-trivial, so split into <code class=\"mm\">(A, C)</code> and <code class=\"mm\">(A, D, E)</code>.</li><li>Inside <code class=\"mm\">(A, D, E)</code>, <code class=\"mm\">A &rarr;&rarr; D</code> is non-trivial, so split into <code class=\"mm\">(A, D)</code> and <code class=\"mm\">(A, E)</code>.</li><li>No part retains a non-trivial dependency with a non-superkey left side, so the process stops with four relations: <code class=\"mm\">(A, B)</code>, <code class=\"mm\">(A, C)</code>, <code class=\"mm\">(A, D)</code>, <code class=\"mm\">(A, E)</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 &mdash; <code class=\"mm\">(A, B)</code>, <code class=\"mm\">(A, C)</code>, <code class=\"mm\">(A, D)</code> and <code class=\"mm\">(A, E)</code>.</span></p><p class=\"row\"><b>Common misconception.</b> A single split is not enough: after removing <code class=\"mm\">A &rarr;&rarr; B</code> the other two dependencies are still non-trivial inside the remainder, and each must be removed in turn. The final count is one relation per right-hand side plus the leftover attributes.</p>"
+  },
+  {
+   "id": "DB-U3-Q74",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "multivalued-dependencies-4nf",
+   "subtopic": "multivalued-dependencies-4nf",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about multivalued dependencies and 4NF are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "If <code class=\"mm\">X &rarr;&rarr; Y</code> and <code class=\"mm\">X &rarr;&rarr; Z</code> both hold, then <code class=\"mm\">X &rarr;&rarr; YZ</code> holds.",
+    "If <code class=\"mm\">X &rarr;&rarr; Y</code> holds, then <code class=\"mm\">X &rarr;&rarr; Y &minus; Z</code> holds for every set <code class=\"mm\">Z</code> of attributes.",
+    "In a relation that is in 4NF, every multivalued dependency that holds is trivial.",
+    "A non-trivial multivalued dependency whose left-hand side is a superkey may hold in a relation that is in 4NF."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "The multivalued inference rules mirror Armstrong's axioms: complementation, augmentation and transitivity, plus the derived union, intersection and difference rules that require a shared determinant.",
+    "steps": [
+     "(A) is the union rule for multivalued dependencies and is sound: agreement on <code class=\"mm\">X</code> already forces the <code class=\"mm\">Y</code> and <code class=\"mm\">Z</code> sets to vary independently, so their union varies independently too.",
+     "(B) is unsound: the difference rule needs <code class=\"mm\">X &rarr;&rarr; Z</code> as well, and without it <code class=\"mm\">Y &minus; Z</code> need not be independent of the rest.",
+     "(C) is false: 4NF exempts only non-trivial dependencies whose left side is not a superkey, so a trivial one or one with a superkey left side may hold freely.",
+     "(D) is true and is the whole point of the exemption: the 4NF test is applied only to non-trivial dependencies with a non-superkey left side."
+    ],
+    "final": "Options (A) and (D) are TRUE; options (B) and (C) are FALSE.",
+    "trap": "Every derived rule for multivalued dependencies that removes attributes needs two dependencies with the same left-hand side. A single multivalued dependency licenses complementation, not arbitrary subtraction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The multivalued inference rules mirror Armstrong's axioms: complementation, augmentation and transitivity, plus the derived union, intersection and difference rules that require a shared determinant.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the union rule for multivalued dependencies and is sound: agreement on <code class=\"mm\">X</code> already forces the <code class=\"mm\">Y</code> and <code class=\"mm\">Z</code> sets to vary independently, so their union varies independently too.</li><li>(B) is unsound: the difference rule needs <code class=\"mm\">X &rarr;&rarr; Z</code> as well, and without it <code class=\"mm\">Y &minus; Z</code> need not be independent of the rest.</li><li>(C) is false: 4NF exempts only non-trivial dependencies whose left side is not a superkey, so a trivial one or one with a superkey left side may hold freely.</li><li>(D) is true and is the whole point of the exemption: the 4NF test is applied only to non-trivial dependencies with a non-superkey left side.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (D) are TRUE; options (B) and (C) are FALSE.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) omits the second determinant that the difference rule requires.</li><li>(C) overstates 4NF: the normal form bans a particular class of multivalued dependency, not all of them.</li></ul><p class=\"row\"><b>Common misconception.</b> Every derived rule for multivalued dependencies that removes attributes needs two dependencies with the same left-hand side. A single multivalued dependency licenses complementation, not arbitrary subtraction.</p>"
+  },
+  {
+   "id": "DB-U3-Q75",
+   "subject": "databases",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "normalization",
+   "unit_name": "Database Normalization",
+   "topic": "Database Normalization",
+   "sub": "multivalued-dependencies-4nf",
+   "subtopic": "multivalued-dependencies-4nf",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Relation <code class=\"mm\">R(A, B, C, D)</code> satisfies both <code class=\"mm\">A &rarr;&rarr; BC</code> and <code class=\"mm\">A &rarr;&rarr; BD</code>. Which one of the following multivalued dependencies must hold in every such relation?",
+   "options": [
+    "<code class=\"mm\">A &rarr;&rarr; B</code>",
+    "<code class=\"mm\">B &rarr;&rarr; A</code>",
+    "<code class=\"mm\">C &rarr;&rarr; A</code>",
+    "<code class=\"mm\">D &rarr;&rarr; B</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Two multivalued dependencies with the same left-hand side can be combined. The intersection rule gives <code class=\"mm\">X &rarr;&rarr; Y &cap; Z</code> and the difference rule gives <code class=\"mm\">X &rarr;&rarr; Y &minus; Z</code> and <code class=\"mm\">X &rarr;&rarr; Z &minus; Y</code>.",
+    "steps": [
+     "Write the two given dependencies with the same determinant: <code class=\"mm\">Y = BC</code> and <code class=\"mm\">Z = BD</code>.",
+     "Intersection: <code class=\"mm\">Y &cap; Z = {B}</code>, so <code class=\"mm\">A &rarr;&rarr; B</code> holds.",
+     "For completeness the difference rule also gives <code class=\"mm\">A &rarr;&rarr; C</code> and <code class=\"mm\">A &rarr;&rarr; D</code>, and complementation then gives <code class=\"mm\">A &rarr;&rarr; D</code> again.",
+     "None of the other options follows: no rule turns <code class=\"mm\">B</code>, <code class=\"mm\">C</code> or <code class=\"mm\">D</code> into a determinant, because neither given dependency has any of them on the left."
+    ],
+    "final": "Option (A) &mdash; <code class=\"mm\">A &rarr;&rarr; B</code> must hold.",
+    "trap": "The right way to read <code class=\"mm\">A &rarr;&rarr; BC</code> is \"for a fixed <code class=\"mm\">A</code>, the <code class=\"mm\">B, C</code> values are independent of the <code class=\"mm\">D</code> values\". Two such statements with the same fixed <code class=\"mm\">A</code> can be intersected or subtracted, but the determinant stays <code class=\"mm\">A</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two multivalued dependencies with the same left-hand side can be combined. The intersection rule gives <code class=\"mm\">X &rarr;&rarr; Y &cap; Z</code> and the difference rule gives <code class=\"mm\">X &rarr;&rarr; Y &minus; Z</code> and <code class=\"mm\">X &rarr;&rarr; Z &minus; Y</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the two given dependencies with the same determinant: <code class=\"mm\">Y = BC</code> and <code class=\"mm\">Z = BD</code>.</li><li>Intersection: <code class=\"mm\">Y &cap; Z = {B}</code>, so <code class=\"mm\">A &rarr;&rarr; B</code> holds.</li><li>For completeness the difference rule also gives <code class=\"mm\">A &rarr;&rarr; C</code> and <code class=\"mm\">A &rarr;&rarr; D</code>, and complementation then gives <code class=\"mm\">A &rarr;&rarr; D</code> again.</li><li>None of the other options follows: no rule turns <code class=\"mm\">B</code>, <code class=\"mm\">C</code> or <code class=\"mm\">D</code> into a determinant, because neither given dependency has any of them on the left.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">A &rarr;&rarr; B</code> must hold.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B), (C) and (D) all move an attribute from the right-hand side to the left. Multivalued inference rules never do that; they only combine right-hand sides that share a determinant.</li></ul><p class=\"row\"><b>Common misconception.</b> The right way to read <code class=\"mm\">A &rarr;&rarr; BC</code> is \"for a fixed <code class=\"mm\">A</code>, the <code class=\"mm\">B, C</code> values are independent of the <code class=\"mm\">D</code> values\". Two such statements with the same fixed <code class=\"mm\">A</code> can be intersected or subtracted, but the determinant stays <code class=\"mm\">A</code>.</p>"
   }
  ]
 }
