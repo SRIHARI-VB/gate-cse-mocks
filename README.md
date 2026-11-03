@@ -7,32 +7,98 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 14 — Number Theory, Set 1 of 2**, 2026-11-03 →
-  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
+- **Databases · Unit 3 — Database Normalization, Set 1 of 2 (second pass)**, 2026-11-03 →
+  [`databases/normalization/gate_db_mock_3_2026-11-03.html`](databases/normalization/gate_db_mock_3_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: divisibility & division algorithm (7) · GCD, LCM & Euclidean algorithm (6) · modular arithmetic &
-  congruences (7) · inverses & Chinese remainder theorem (5)
-- Rotation: MODE A. The draw was taken, then restricted as in runs 12–29 to subjects whose **post-B4** target unit is
-  still below `UNIT_QUESTION_CAP = 50`. Every subject was checked from its own bank; only **Discrete Mathematics**
-  qualified. Its most recent paper was `{2026-11-03, run 21, unit 13, lattices-posets, Set 2 of 2}`; unit 13 stood at
-  **50**, exactly the cap, so **B3 failed** and **B4 advanced one unit**: `(12 + 1) mod 16 = 13` → **Unit 14, Number
-  Theory**, which held **0** questions. This is the unit's first paper, so nothing was superseded and the unit folder
-  holds exactly one current paper. No override, no partial set.
-- Previous test: **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 2 of 2**, 2026-11-03 →
-  [`discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`](discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html)
+- Subtopics: FD & Armstrong's axioms (5) · closure of attribute sets & keys (5) · 1NF/2NF/3NF/BCNF (5) ·
+  lossless join & dependency preservation (5) · multivalued dependencies & 4NF (5)
+- Rotation: MODE A. The draw returned **Databases**. Its most recent paper was `{2026-11-02, run 18, unit 2,
+  sql-querying}`, and unit 2 stood at **75** questions, above `UNIT_QUESTION_CAP = 50`, so **B3 failed** and **B4
+  advanced exactly one unit**: `(2 + 1) mod 5 = 3` → **Unit 3, Database Normalization**. All five databases units are
+  at or above the cap (75, 75, 50, 50, 50), so **B5 applies**: the modulo wraps and a second pass begins for this
+  subject. Unit 3 stood at 50 and now stands at 75, recorded here as a second-pass set. See the run entry below for why
+  the run-12–30 "target under the cap" restriction was not applied this time.
+- Previous test: **Discrete Mathematics · Unit 14 — Number Theory, Set 1 of 2**, 2026-11-03 →
+  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 193 (30 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 70 current · 123 archived |
+| Papers published (current + archived) | 194 (30 Discrete Mathematics, 15 Algorithms, 13 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 70 current · 124 archived |
 | Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4825 (750 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4850 (750 Discrete Mathematics, 375 Algorithms, 325 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 123 (15 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 124 (15 Discrete Mathematics, 8 Algorithms, 8 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Databases Unit 3, Set 1 of 2 (second pass)
+
+- New paper at `databases/normalization/gate_db_mock_3_2026-11-03.html`. The 2026-10-29 Set 2 paper moved to
+  `databases/normalization/archive/gate_db_mock_3_2026-10-29_run2.html` with its content frozen (same questions,
+  options, answers, solutions and duration), so the unit folder holds exactly one current paper. The repository root
+  still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `random.SystemRandom()` draw over the eleven subjects returned
+  **Databases**. `runs[]` gave the most recent paper as `{2026-11-02, run 18, unit 2, sql-querying}`; unit 2 held **75**
+  questions, above `UNIT_QUESTION_CAP = 50`, so **B3 failed** on the cap and **B4 advanced exactly one unit**:
+  `(2 + 1) mod 5 = 3` → **Unit 3, Database Normalization**, which held 50 questions from 2026-10-28 and 2026-10-29.
+  All five databases units now sit at or above the cap (75, 75, 50, 50, 50), which is precisely the trigger in **B5**:
+  the modulo wraps and a second pass begins. This paper is **Set 1 of 2 of the second pass**, and unit 3 now stands at
+  75. No override, no partial set, exactly 25 questions.
+- **Deviation recorded.** Runs 12–30 applied an extra restriction on top of Section 1: the draw was re-taken among
+  subjects whose post-B4 target unit was still *below* the cap, so that no unit entered a second pass while any unit
+  anywhere was incomplete. That restriction is not in the specification. Every subject except Discrete Mathematics is
+  now past the cap on every unit (algorithms 1 at 75 → 2 at 50; compiler-design 3 at 100 → 4 at 75; computer-
+  architecture 1 at 50 → 2 at 50; computer-networks 1 at 100 → 2 at 75; digital-logic 3 at 100 → 4 at 75;
+  engineering-mathematics 4 at 75 → 5 at 50; operating-systems 4 at 100 → 5 at 75; programming-data-structures 5 at
+  75 → 6 at 50; theory-of-computation 1 at 125 → 2 at 100), and the one remaining fresh unit — Discrete Mathematics
+  Unit 14 — had already been papered earlier the same day. Applying B4/B5 as written therefore opened the databases
+  second pass instead of repeating Discrete Mathematics a fourth time in one day. The cap-exceeding set is recorded
+  here, which is what B5 asks for.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All five unit subtopics, five questions each: FD & Armstrong's axioms · closure of attribute sets &
+  keys · 1NF/2NF/3NF/BCNF · lossless join & dependency preservation · multivalued dependencies & 4NF. Difficulty
+  10 easy / 10 medium / 5 hard. Sources: 12 `STANDARD_TEXTBOOK`, 13 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** FDs and axioms: which dependency is in `F⁺` for `F = {A → B}` (**AC → B**), which is not in
+  `F⁺` for `{AB → C, C → D}` (**A → C**), an MSQ on valid inference rules (**A, C, D**), the size of a minimal cover
+  of `{A → BC, B → C, A → B, AB → C}` (**2**), and which set is equivalent to `{A → B, AB → C, C → A}` (**B**).
+  Closure and keys: the candidate key of `{A → B, C → D}` (**{A, C}**), the attributes forced into every key of
+  `{AB → C, CD → E}` (**{A, B, D}**), the number of candidate keys of `{A → B, BC → D, D → A}` (**3**), an MSQ on
+  `{A → BC, D → A}` (**A, C**), and the superkey count for keys `{A, C}` and `{B, D}` (**7**). Normal forms: the form
+  that admits a non-superkey left side with a prime right side (**3NF**), a single-key relation with `B → C`
+  (**2NF but not 3NF**), the non-prime count of `{AB → C, C → D, D → E}` (**3**), an MSQ on 3NF (**A, D**), and the
+  relation in 3NF but not BCNF (**A**). Lossless join: the two-way test on `R₁(A, B, C)`, `R₂(B, D)` under `B → D`
+  (**A**), the preserved count for a two-part split of a four-cycle (**2**), the three-part chain of a chain
+  decomposition (**both properties hold**), an MSQ on the chase (**A, C**), and the lossless-but-not-preserving split
+  (**A**). MVDs and 4NF: the 4NF condition on `A →→ B` (**B**), which relation is in 4NF (**B**), the number of
+  relations after full 4NF decomposition under `A →→ B`, `A →→ C`, `A →→ D` (**4**), an MSQ on MVD rules (**A, D**),
+  and the MVD forced by `A →→ BC` with `A →→ BD` (**A →→ B**).
+- **Answers recomputed, not asserted.** Every key came from a script implementing closure, candidate-key enumeration,
+  minimal cover, superkey counting and the projection test, and the questions were only written after the script
+  agreed with the intended answer. It corrected four drafts: `{AB → C, C → D, D → A}` has candidate keys `{A, B}`,
+  `{B, C}`, `{B, D}` (not `{A, B}`, `{B, C}`, `{C, D}`), so that option set was rebuilt; two of the four candidates in
+  the 3NF-not-BCNF question turned out to be 3NF-not-BCNF and one was replaced; the "which MVD must hold" draft had
+  two correct options until the distractors were changed; and `{A → B, C → D}` has exactly one candidate key, so the
+  key question was rewritten around it. The grading engine was then replayed against the decoded payload: a perfect
+  attempt scores 35/35 with 25 correct, a blank paper scores 0/35 with 25 unattempted, and an MSQ with one wrong
+  option selected scores 0 for that question.
+- **No PYQ claim.** The databases bank holds one verified previous-year item (`DB-U1-Q17`, a variation of GATE CSE
+  2014 Set 3 Q30, official key D), and it is in Unit 1. No normalization previous-year question has been verified
+  against an official paper and key, so nothing on this paper is called an official GATE question and the About tab
+  says so plainly.
+- **Question Bank tab.** It carries the two chips (325 solved, 1 verified PYQ) and lists 300 questions — the 25 of the
+  active set are deliberately not repeated there, which is why the tab label and the chip differ by the size of the
+  current paper.
+- **Verification.** Shell parity: after stripping the payload, the question cards, the bank view, the meta strip and
+  the About text, the new paper and the archived 2026-10-29 paper are byte-identical (27,938 bytes each), so the CSS,
+  palette, legend, footer and grading script are the same file. The `:root` block matches `design-tokens.css` and
+  `index.html` byte for byte. One copy per paper: `find . -name "*.html"` shows `index.html` at the root plus one
+  current paper per unit folder (70). Every `href` in `index.html` resolves (70 test cards, 0 missing). The paper
+  renders 25 question cards, a 25-button palette, 300 banked questions, and no answer, option mark or hint before
+  submit. Dashboard counts match `master_bank.json` (325 databases questions, unit 3 at 75).
 
 ### 2026-11-03 — Discrete Mathematics Unit 14, Set 1 of 2
 
