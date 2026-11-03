@@ -7,30 +7,74 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 15 — Discrete Probability, Set 1 of 2**, 2026-11-03 →
+- **Discrete Mathematics · Unit 15 — Discrete Probability, Set 2 of 2**, 2026-11-03 →
   [`discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html`](discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
 - Subtopics: Sample spaces & events (5) · Conditional probability & Bayes (5) · Independence (5) ·
   Counting-based probability (5) · Expectation & variance (5)
-- Rotation: MODE A. The most recent Discrete Mathematics paper was `{2026-11-03, run 23, unit 14, number-theory,
-  Set 2 of 2}`, and unit 14 stood at **50** questions, at `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and
-  **B4 advanced exactly one unit**: `(13 + 1) mod 16 = 14` → **Unit 15, Discrete Probability**, which held **0**
-  questions. It is the last never-covered unit of the subject, so the subject now stands at 16 of 16 units.
-- Previous test: **Discrete Mathematics · Unit 14 — Number Theory, Set 2 of 2**, 2026-11-03 →
-  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
+- Rotation: MODE A. The most recent Discrete Mathematics paper was `{2026-11-03, run 24, unit 15,
+  discrete-probability, Set 1 of 2}`, and unit 15 stood at **25** questions — below `UNIT_QUESTION_CAP = 50` — with
+  its first paper dated today, so **B3 held the unit**: neither the cap nor the 7-day backstop fired. Unit 15 takes
+  its second and final set and now stands at **50 of 50**, completing the subject at 16 of 16 units.
+- Previous test: **Discrete Mathematics · Unit 15 — Discrete Probability, Set 1 of 2**, 2026-11-03 →
+  [`discrete-mathematics/discrete-probability/archive/gate_dm_mock_15_2026-11-03_run1.html`](discrete-mathematics/discrete-probability/archive/gate_dm_mock_15_2026-11-03_run1.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 204 (32 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 71 current · 133 archived |
+| Papers published (current + archived) | 205 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 134 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5100 (800 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5125 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 133 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 12 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 134 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 12 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 15, Set 2 of 2
+
+- New paper at `discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html`. The Set 1 paper it
+  supersedes moved to `archive/gate_dm_mock_15_2026-11-03_run1.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw ran over the subjects whose post-B4 target unit still stands below
+  `UNIT_QUESTION_CAP = 50`, the restriction in force since run 12 so that first-pass units finish before a further
+  pass opens. Every subject was read from its own `master_bank.json` and exactly one qualified: **Discrete
+  Mathematics**, whose most recent paper was `{2026-11-03, run 24, unit 15, discrete-probability, Set 1 of 2}`.
+  Unit 15 stood at **25** questions, so **B3 held the unit**; its first paper was 2026-11-03, so the 7-day backstop
+  was not the deciding test either. Unit 15 therefore takes its second and final set, reaching **50 of 50**. Every
+  other subject's post-B4 target is already at or above 50 (algorithms 3 → 50, compiler-design 5 → 75,
+  computer-architecture 4 → 50, computer-networks 2 → 75, databases 5 → 50, digital-logic 1 → 100,
+  engineering-mathematics 5 → 50, operating-systems 6 → 75, programming-data-structures 6 → 50,
+  theory-of-computation 3 → 100), so the unseeded draw was over a single candidate and returned it. No override,
+  no partial set, exactly 25 questions.
+- **Coverage.** Unit 15 is now complete at 50 of its 50-question allowance, and Discrete Mathematics stands at
+  16 of 16 units, every one of them at the cap. Every subtopic carries exactly 5 questions: sample spaces &
+  events, conditional probability & Bayes, independence, counting-based probability, expectation & variance.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** All 25 answers were recomputed by script before the paper was written: `6/36 = 1/6` for a
+  repeated face; `(30 − 26)/30 = 2/15` for neither tea nor coffee; `27/216 = 0.125` for three dice summing to 10
+  (36 stars-and-bars solutions minus 9 violations of the upper bound); `12/36 = 1/3` for `|i − j| ≥ 3`;
+  `3/51 = 1/17` for the second king; `0.3/0.5 = 0.6` for Mathematics given Physics; `3/8` for the die-and-bag
+  experiment; `0.045/(0.045 + 0.19) = 9/47` for the 90/80 test at 5% prevalence; `0.4 + 0.5 − 0.2 = 0.7` for the
+  independent union; `11/24` for exactly one of three events; `0.4 × 0.75 = 0.3` for `P(A ∩ Bᶜ)`; the roots of
+  `6t² − 5t + 1 = 0` give `1/2` and `1/3`, so the difference is `1/6`; `C(5,3)/C(9,3) = 5/42`;
+  `C(8,3)/256 = 0.21875`; `2/4 = 1/2` around a circular table; `3744/2,598,960 = 6/4165` for a full house;
+  `21/6 = 3.5` for the die; `0.5` for the symmetric three-point variable; `3 + 4 = 7` for `E[X²]`; and
+  `165/45 = 11/3` for the expected gap between two drawn balls. The four MSQ answer sets were checked by
+  exhaustive sampling over 4,000 random probability distributions: in each, every option marked correct held
+  without exception and every option left unmarked was refuted by an explicit counterexample.
+- **Grading engine.** Replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank
+  paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0.
+- **Interface.** Same shell as every other paper — identical markup, CSS and JavaScript; parity was verified by
+  masking the payload and metadata of the new paper and the superseded one, which left identical bytes. The
+  Question Bank tab shows the 800 banked items that are not on the active paper (including the 25 of Set 1) and the
+  portal's counts were regenerated from `master_bank.json` and the per-subject archive data.
+- **Provenance.** No discrete-probability previous-year question has been verified against an official paper and
+  answer key, so nothing on this paper is claimed as an official GATE question and no item carries
+  `GATE_PYQ_VARIATION`. Sources: 15 textbook-inspired, 10 original GATE-style.
 
 ### 2026-11-03 — Discrete Mathematics Unit 15, Set 1 of 2
 

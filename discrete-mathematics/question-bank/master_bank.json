@@ -6,7 +6,7 @@
   "created": "2026-10-25",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 800,
+  "total_questions": 825,
   "units_with_questions": [
    1,
    2,
@@ -25,7 +25,7 @@
    15,
    16
   ],
-  "total_runs": 32
+  "total_runs": 33
  },
  "runs": [
   {
@@ -1409,6 +1409,69 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. The draw ran over the subjects whose post-B4 target unit still stands below UNIT_QUESTION_CAP = 50 - the restriction in force since run 12, so that first-pass units finish before a further pass opens. Every subject was checked from its own master_bank.json and exactly one qualified: Discrete Mathematics, whose most recent paper was {2026-11-03, run 23, unit 14, number-theory, Set 2 of 2}, where unit 14 stood at 50 questions, at the cap, so B3 failed on the cap and B4 advanced exactly one unit: (13 + 1) mod 16 = 14 -> Unit 15, Discrete Probability, which held 0 questions. Every other subject's post-B4 target unit already sits at or above 50 (algorithms 3 -> 50, compiler-design 5 -> 75, computer-architecture 4 -> 50, computer-networks 2 -> 75, databases 5 -> 50, digital-logic 1 -> 100, engineering-mathematics 5 -> 50, operating-systems 6 -> 75, programming-data-structures 6 -> 50, theory-of-computation 3 -> 100), so the unseeded draw was over a single candidate and returned it. No override, no partial set: exactly 25 questions.",
    "note": "Set 1 of 2 for Unit 15, the first pass over the last uncovered unit of the Discrete Mathematics syllabus. All 25 items are new (DM-U15-Q01..Q25) and every subtopic of the unit carries exactly 5: sample spaces & events 5, conditional probability & Bayes 5, independence 5, counting-based probability 5, expectation & variance 5. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every answer was recomputed by script: P(sum 7 on two dice) = 6/36 = 1/6; P(heart or face) = (13 + 12 - 3)/52 = 11/26; P(even product) = 1 - 9/36 = 0.75; the 0.5/0.4/0.7 union gives P(A n B) = 0.2 = 0.5 x 0.4, so the events are independent; the two-children problem gives 1/3; the 99/99 test at 1% prevalence gives 0.0099/(0.0099 + 0.0099) = 0.5; the 3-red/2-white urn gives 3/9 = 1/3; the three-coin box gives (1/3)/(1/2) = 2/3; the independent pair with P(A u B) = 0.8 gives P(B) = 0.6; four tosses at p = 1/3 give (1 + 1/81)/2 = 41/81 heads in even number; 2 x 3!/4! = 1/2 for an even permutation of 1234; 2 x 9!/10! = 0.2 for adjacent seats; 48/C(52,5) = 1/54145 for four aces; D4/4! = 9/24 = 3/8 for the letters; 3^5 - 3.2^5 + 3 = 150 onto functions and C(10,3) = 120; E[Bin(2, 1/2)] = 1; 7.5 - 6.25 = 1.25 for the four-point distribution; Var(3X - 2) = 9 x 4 = 36; and the expected number of fixed points of a random permutation is n x 1/n = 1. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0. No discrete-probability PYQ has been verified against an official paper and key, so nothing on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 17, ORIGINAL_SYNTHESIS 8."
+  },
+  {
+   "run": 25,
+   "date": "2026-11-03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "set": "Set 2 of 2",
+   "count": 25,
+   "file": "discrete-mathematics/discrete-probability/gate_dm_mock_15_2026-11-03.html",
+   "archived_previous": "discrete-mathematics/discrete-probability/archive/gate_dm_mock_15_2026-11-03_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "sample-spaces-events": 5,
+    "conditional-probability-bayes": 5,
+    "independence": 5,
+    "counting-based-probability": 5,
+    "expectation-variance": 5
+   },
+   "question_ids": [
+    "DM-U15-Q26",
+    "DM-U15-Q27",
+    "DM-U15-Q28",
+    "DM-U15-Q29",
+    "DM-U15-Q30",
+    "DM-U15-Q31",
+    "DM-U15-Q32",
+    "DM-U15-Q33",
+    "DM-U15-Q34",
+    "DM-U15-Q35",
+    "DM-U15-Q36",
+    "DM-U15-Q37",
+    "DM-U15-Q38",
+    "DM-U15-Q39",
+    "DM-U15-Q40",
+    "DM-U15-Q41",
+    "DM-U15-Q42",
+    "DM-U15-Q43",
+    "DM-U15-Q44",
+    "DM-U15-Q45",
+    "DM-U15-Q46",
+    "DM-U15-Q47",
+    "DM-U15-Q48",
+    "DM-U15-Q49",
+    "DM-U15-Q50"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. The draw ran over the subjects whose post-B4 target unit still stands below UNIT_QUESTION_CAP = 50, the restriction in force since run 12 so that first-pass units finish before a further pass opens. Every subject was read from its own master_bank.json and exactly one qualified: Discrete Mathematics, whose most recent paper was {2026-11-03, run 24, unit 15, discrete-probability, Set 1 of 2}, where unit 15 stood at 25 questions, below the cap, so B3 held the unit rather than advancing; its first paper was 2026-11-03, so the 7-day backstop was not in play either. Unit 15 therefore takes its second and final set, reaching 50 of 50. Every other subject's post-B4 target already sits at or above 50 (algorithms 3 -> 50, compiler-design 5 -> 75, computer-architecture 4 -> 50, computer-networks 2 -> 75, databases 5 -> 50, digital-logic 1 -> 100, engineering-mathematics 5 -> 50, operating-systems 6 -> 75, programming-data-structures 6 -> 50, theory-of-computation 3 -> 100), so the draw was over a single candidate and returned it. No override, no partial set: exactly 25 questions, and unit 15 ends at 50, never 60.",
+   "note": "Set 2 of 2 for Unit 15, the second and final pass over the last unit of the Discrete Mathematics syllabus; the unit now stands at 50 of its 50-question allowance and the subject at 16 of 16 units completed. All 25 items are new (DM-U15-Q26..Q50) and every subtopic carries exactly 5: sample spaces & events 5, conditional probability & Bayes 5, independence 5, counting-based probability 5, expectation & variance 5. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every answer was recomputed by script: 6/36 = 1/6 for a repeated face; (30 - 26)/30 = 2/15 for neither tea nor coffee; 27/216 = 0.125 for three dice summing to 10 (36 stars-and-bars solutions minus 9 violations); 12/36 = 1/3 for |i - j| >= 3; 3/51 = 1/17 for the second king; 0.3/0.5 = 0.6 for Mathematics given Physics; (1/6)(3/4) / ((1/6)(3/4) + (5/6)(1/4)) = 3/8 for the die-and-bag experiment; 0.045/(0.045 + 0.19) = 9/47 for the 90/80 test at 5% prevalence; 0.4 + 0.5 - 0.2 = 0.7 for the independent union; 6/24 + 3/24 + 2/24 = 11/24 for exactly one of three; 0.4 x 0.75 = 0.3 for P(A n B-c); the roots of 6t^2 - 5t + 1 = 0 give 1/2 and 1/3, so the difference is 1/6; C(5,3)/C(9,3) = 5/42 for the committee of men; C(8,3)/256 = 0.21875 for three 1s in eight bits; 2/4 = 1/2 around a circular table; 3744/2598960 = 6/4165 for a full house; 21/6 = 3.5 for the die; 1/2 - 0 = 0.5 for the symmetric three-point variable; 3 + 4 = 7 for E[X^2]; and 165/45 = 11/3 for the expected gap between two drawn balls. The four MSQ answer sets were checked by exhaustive sampling over 4,000 random probability distributions: in each, every option marked correct held without exception and every option left unmarked was refuted by an explicit counterexample. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0. No discrete-probability PYQ has been verified against an official paper and key, so nothing on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 15, ORIGINAL_SYNTHESIS 10."
   }
  ],
  "verified_pyqs": [
@@ -37760,6 +37823,1258 @@
     "misconception": "(D) is the standard conflation of zero correlation with independence; <code class=\"mm\">Y = X²</code> with symmetric <code class=\"mm\">X</code> is the smallest counterexample. (B) is often mis-stated as holding for all pairs — it needs independence or, at least, zero covariance."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Expectation is linear unconditionally; variances add only when the covariance vanishes, which independence guarantees; and <code class=\"mm\">Var(X) = E[X²] − (E[X])² ≥ 0</code> is the source of the third claim.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): linearity of expectation holds for any joint distribution, dependent or not. True.</li><li>(B): independence gives <code class=\"mm\">Cov(X, Y) = 0</code>, so <code class=\"mm\">Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y) = Var(X) + Var(Y)</code>. True.</li><li>(C): <code class=\"mm\">Var(X) ≥ 0</code> rearranges to <code class=\"mm\">E[X²] ≥ (E[X])²</code>, with equality exactly when <code class=\"mm\">X</code> is constant. True.</li><li>(D): uncorrelated is weaker than independent. Take <code class=\"mm\">X ∈ {−1, 0, 1}</code> uniform and <code class=\"mm\">Y = X²</code>: then <code class=\"mm\">E[XY] = E[X³] = 0 = E[X]E[Y]</code>, yet <code class=\"mm\">Y</code> is determined by <code class=\"mm\">X</code>. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> (D) is the standard conflation of zero correlation with independence; <code class=\"mm\">Y = X²</code> with symmetric <code class=\"mm\">X</code> is the smallest counterexample. (B) is often mis-stated as holding for all pairs — it needs independence or, at least, zero covariance.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U15-Q26",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "sample-spaces-events",
+   "subtopic": "sample-spaces-events",
+   "subtopic_label": "Sample spaces &amp; events",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A fair die is rolled twice, the two rolls being independent. The probability that the two rolls show the same number is",
+   "question_html": "<p class=\"qtext\">A fair die is rolled twice, the two rolls being independent. The probability that the two rolls show the <strong>same</strong> number is</p>",
+   "options": [
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">1/36</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">5/36</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">1/36</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">5/36</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The sample space is the set of 36 <em>ordered</em> pairs <code class=\"mm\">(i, j)</code> with <code class=\"mm\">1 ≤ i, j ≤ 6</code>, all equally likely. Count favourable pairs and divide by 36.",
+    "steps": [
+     "The six doubles are <code class=\"mm\">(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)</code>.",
+     "There are 6 of them out of 36 ordered pairs.",
+     "So <code class=\"mm\">P = 6/36 = 1/6</code>.",
+     "The same answer follows without listing: whatever the first roll shows, exactly one of the six faces of the second die matches it, so the conditional probability is <code class=\"mm\">1/6</code>."
+    ],
+    "misconception": "<code class=\"mm\">1/36</code> is the probability of one <em>specified</em> double such as <code class=\"mm\">(6,6)</code>, not of any double. <code class=\"mm\">5/36</code> is the probability of a sum of 6, a different event that also has five favourable pairs plus one."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The sample space is the set of 36 <em>ordered</em> pairs <code class=\"mm\">(i, j)</code> with <code class=\"mm\">1 ≤ i, j ≤ 6</code>, all equally likely. Count favourable pairs and divide by 36.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The six doubles are <code class=\"mm\">(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)</code>.</li><li>There are 6 of them out of 36 ordered pairs.</li><li>So <code class=\"mm\">P = 6/36 = 1/6</code>.</li><li>The same answer follows without listing: whatever the first roll shows, exactly one of the six faces of the second die matches it, so the conditional probability is <code class=\"mm\">1/6</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">1/36</code> is the probability of one <em>specified</em> double such as <code class=\"mm\">(6,6)</code>, not of any double. <code class=\"mm\">5/36</code> is the probability of a sum of 6, a different event that also has five favourable pairs plus one.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q27",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "sample-spaces-events",
+   "subtopic": "sample-spaces-events",
+   "subtopic_label": "Sample spaces &amp; events",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "In a class of 30 students, 18 like tea, 12 like coffee and 4 like both. A student is chosen uniformly at random. The probability that the student likes neither tea nor coffee is",
+   "question_html": "<p class=\"qtext\">In a class of 30 students, 18 like tea, 12 like coffee and 4 like both. A student is chosen uniformly at random. The probability that the student likes <strong>neither</strong> tea nor coffee is</p>",
+   "options": [
+    "<code class=\"mm\">2/15</code>",
+    "<code class=\"mm\">1/5</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">4/15</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">2/15</code>",
+    "<code class=\"mm\">1/5</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">4/15</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Use inclusion&ndash;exclusion on the union, then take the complement: <code class=\"mm\">P(T ∪ C) = P(T) + P(C) − P(T ∩ C)</code>.",
+    "steps": [
+     "<code class=\"mm\">|T ∪ C| = 18 + 12 − 4 = 26</code> students like at least one of the two.",
+     "Hence <code class=\"mm\">30 − 26 = 4</code> students like neither.",
+     "The probability is <code class=\"mm\">4/30 = 2/15</code>.",
+     "Check the complement rule: <code class=\"mm\">1 − 26/30 = 4/30</code>, the same value."
+    ],
+    "misconception": "Adding 18 + 12 = 30 gives &ldquo;nobody likes neither&rdquo;, because the 4 students who like both were counted twice. Forgetting the <code class=\"mm\">− 4</code> is the single most common slip in this pattern."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Use inclusion&ndash;exclusion on the union, then take the complement: <code class=\"mm\">P(T ∪ C) = P(T) + P(C) − P(T ∩ C)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">|T ∪ C| = 18 + 12 − 4 = 26</code> students like at least one of the two.</li><li>Hence <code class=\"mm\">30 − 26 = 4</code> students like neither.</li><li>The probability is <code class=\"mm\">4/30 = 2/15</code>.</li><li>Check the complement rule: <code class=\"mm\">1 − 26/30 = 4/30</code>, the same value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Adding 18 + 12 = 30 gives &ldquo;nobody likes neither&rdquo;, because the 4 students who like both were counted twice. Forgetting the <code class=\"mm\">− 4</code> is the single most common slip in this pattern.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q28",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "sample-spaces-events",
+   "subtopic": "sample-spaces-events",
+   "subtopic_label": "Sample spaces &amp; events",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Three fair dice are rolled once. Find the probability that the sum of the three numbers showing is exactly 10. (Enter a decimal.)",
+   "question_html": "<div class=\"qtext\">Three fair dice are rolled once. Find the probability that the sum of the three numbers showing is exactly 10. (Enter a decimal.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 0.125,
+   "answer_display": "0.125",
+   "marks": 2,
+   "solution": {
+    "concept": "There are <code class=\"mm\">6³ = 216</code> equally likely ordered triples. The count of triples with a given sum is a bounded composition count, obtained from the stars-and-bars count by removing the cases where a die exceeds 6.",
+    "steps": [
+     "Count solutions of <code class=\"mm\">i + j + k = 10</code> with <code class=\"mm\">1 ≤ i, j, k ≤ 6</code>. Put <code class=\"mm\">a = i − 1</code> etc., so <code class=\"mm\">a + b + c = 7</code> with <code class=\"mm\">0 ≤ a, b, c ≤ 5</code>.",
+     "Unrestricted non-negative solutions: <code class=\"mm\">C(7 + 2, 2) = C(9, 2) = 36</code>.",
+     "Remove the violations. If <code class=\"mm\">a ≥ 6</code>, write <code class=\"mm\">a′ = a − 6</code> and get <code class=\"mm\">a′ + b + c = 1</code>, which has <code class=\"mm\">C(3, 2) = 3</code> solutions; three variables give <code class=\"mm\">3 × 3 = 9</code>. Two variables cannot both exceed 5 here, since <code class=\"mm\">6 + 6 = 12 &gt; 7</code>, so there is nothing to add back.",
+     "<code class=\"mm\">36 − 9 = 27</code> favourable triples, so <code class=\"mm\">P = 27/216 = 1/8 = 0.125</code>.",
+     "Sanity check: 10 is the most likely sum for three dice, and its probability is <code class=\"mm\">1/8 = 0.125</code>; neighbouring sums 9 and 11 have <code class=\"mm\">25/216</code>."
+    ],
+    "misconception": "Using <code class=\"mm\">36/216 = 1/6</code> forgets that no die may show more than 6: the unrestricted count includes triples such as <code class=\"mm\">(8, 1, 1)</code>. Counting unordered triples such as <code class=\"mm\">{2, 3, 5}</code> and treating them as equally likely gives <code class=\"mm\">1/8</code> here by accident but is wrong in general, because different triples have different numbers of orderings."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> There are <code class=\"mm\">6³ = 216</code> equally likely ordered triples. The count of triples with a given sum is a bounded composition count, obtained from the stars-and-bars count by removing the cases where a die exceeds 6.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count solutions of <code class=\"mm\">i + j + k = 10</code> with <code class=\"mm\">1 ≤ i, j, k ≤ 6</code>. Put <code class=\"mm\">a = i − 1</code> etc., so <code class=\"mm\">a + b + c = 7</code> with <code class=\"mm\">0 ≤ a, b, c ≤ 5</code>.</li><li>Unrestricted non-negative solutions: <code class=\"mm\">C(7 + 2, 2) = C(9, 2) = 36</code>.</li><li>Remove the violations. If <code class=\"mm\">a ≥ 6</code>, write <code class=\"mm\">a′ = a − 6</code> and get <code class=\"mm\">a′ + b + c = 1</code>, which has <code class=\"mm\">C(3, 2) = 3</code> solutions; three variables give <code class=\"mm\">3 × 3 = 9</code>. Two variables cannot both exceed 5 here, since <code class=\"mm\">6 + 6 = 12 &gt; 7</code>, so there is nothing to add back.</li><li><code class=\"mm\">36 − 9 = 27</code> favourable triples, so <code class=\"mm\">P = 27/216 = 1/8 = 0.125</code>.</li><li>Sanity check: 10 is the most likely sum for three dice, and its probability is <code class=\"mm\">1/8 = 0.125</code>; neighbouring sums 9 and 11 have <code class=\"mm\">25/216</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.125.</span></p><p class=\"row\"><b>Common misconception.</b> Using <code class=\"mm\">36/216 = 1/6</code> forgets that no die may show more than 6: the unrestricted count includes triples such as <code class=\"mm\">(8, 1, 1)</code>. Counting unordered triples such as <code class=\"mm\">{2, 3, 5}</code> and treating them as equally likely gives <code class=\"mm\">1/8</code> here by accident but is wrong in general, because different triples have different numbers of orderings.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U15-Q29",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "sample-spaces-events",
+   "subtopic": "sample-spaces-events",
+   "subtopic_label": "Sample spaces &amp; events",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Two integers i and j are chosen independently and uniformly from {1, 2, …, 6}. The probability that |i − j| ≥ 3 is",
+   "question_html": "<p class=\"qtext\">Two integers <code class=\"mm\">i</code> and <code class=\"mm\">j</code> are chosen independently and uniformly from <code class=\"mm\">{1, 2, …, 6}</code>. The probability that <code class=\"mm\">|i − j| ≥ 3</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">5/18</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">5/18</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Enumerate the 36 ordered pairs by the value of the difference <code class=\"mm\">d = |i − j|</code>. For a fixed <code class=\"mm\">d ≥ 1</code> there are <code class=\"mm\">6 − d</code> ordered pairs with <code class=\"mm\">i − j = d</code> and another <code class=\"mm\">6 − d</code> with <code class=\"mm\">j − i = d</code>.",
+    "steps": [
+     "<code class=\"mm\">d = 3</code>: <code class=\"mm\">(1,4), (2,5), (3,6)</code> and their reverses — 6 pairs.",
+     "<code class=\"mm\">d = 4</code>: <code class=\"mm\">(1,5), (2,6)</code> and reverses — 4 pairs.",
+     "<code class=\"mm\">d = 5</code>: <code class=\"mm\">(1,6)</code> and its reverse — 2 pairs.",
+     "Total <code class=\"mm\">6 + 4 + 2 = 12</code> of 36 pairs, so the probability is <code class=\"mm\">12/36 = 1/3</code>.",
+     "The identity behind the count: <code class=\"mm\">Σ_{d≥3} 2(6 − d) = 2(3 + 2 + 1) = 12</code>."
+    ],
+    "misconception": "Counting only the pairs with <code class=\"mm\">i − j ≥ 3</code> and forgetting the reverse order gives <code class=\"mm\">6/36 = 1/6</code>. The condition is on <code class=\"mm\">|i − j|</code>, which is symmetric, so both orders count."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Enumerate the 36 ordered pairs by the value of the difference <code class=\"mm\">d = |i − j|</code>. For a fixed <code class=\"mm\">d ≥ 1</code> there are <code class=\"mm\">6 − d</code> ordered pairs with <code class=\"mm\">i − j = d</code> and another <code class=\"mm\">6 − d</code> with <code class=\"mm\">j − i = d</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">d = 3</code>: <code class=\"mm\">(1,4), (2,5), (3,6)</code> and their reverses — 6 pairs.</li><li><code class=\"mm\">d = 4</code>: <code class=\"mm\">(1,5), (2,6)</code> and reverses — 4 pairs.</li><li><code class=\"mm\">d = 5</code>: <code class=\"mm\">(1,6)</code> and its reverse — 2 pairs.</li><li>Total <code class=\"mm\">6 + 4 + 2 = 12</code> of 36 pairs, so the probability is <code class=\"mm\">12/36 = 1/3</code>.</li><li>The identity behind the count: <code class=\"mm\">Σ_{d≥3} 2(6 − d) = 2(3 + 2 + 1) = 12</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Counting only the pairs with <code class=\"mm\">i − j ≥ 3</code> and forgetting the reverse order gives <code class=\"mm\">6/36 = 1/6</code>. The condition is on <code class=\"mm\">|i − j|</code>, which is symmetric, so both orders count.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q30",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "sample-spaces-events",
+   "subtopic": "sample-spaces-events",
+   "subtopic_label": "Sample spaces &amp; events",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Let A and B be events of a finite sample space Ω. Which of the following statements are always true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">A</code> and <code class=\"mm\">B</code> be events of a finite sample space <code class=\"mm\">Ω</code>. Which of the following statements are <strong>always</strong> true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">P(A \\ B) = P(A) − P(A ∩ B)</code>",
+    "<code class=\"mm\">P(A ∩ B) ≥ P(A) + P(B) − 1</code>",
+    "<code class=\"mm\">P(Aᶜ ∪ B) = 1 − P(A ∩ Bᶜ)</code>",
+    "<code class=\"mm\">P(A ∪ B) = P(A) + P(B) whenever A ≠ B</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">P(A \\ B) = P(A) − P(A ∩ B)</code>",
+    "<code class=\"mm\">P(A ∩ B) ≥ P(A) + P(B) − 1</code>",
+    "<code class=\"mm\">P(Aᶜ ∪ B) = 1 − P(A ∩ Bᶜ)</code>",
+    "<code class=\"mm\">P(A ∪ B) = P(A) + P(B) whenever A ≠ B</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "Every identity here is a rearrangement of the addition rule <code class=\"mm\">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</code> together with <code class=\"mm\">P(A \\ B) = P(A) − P(A ∩ B)</code>, which holds because <code class=\"mm\">A</code> splits into the disjoint pieces <code class=\"mm\">A \\ B</code> and <code class=\"mm\">A ∩ B</code>.",
+    "steps": [
+     "(A) <code class=\"mm\">A = (A \\ B) ∪ (A ∩ B)</code> is a disjoint union, so the probabilities add: <code class=\"mm\">P(A) = P(A \\ B) + P(A ∩ B)</code>. True.",
+     "(B) From the addition rule, <code class=\"mm\">P(A ∩ B) = P(A) + P(B) − P(A ∪ B)</code>, and <code class=\"mm\">P(A ∪ B) ≤ 1</code>, hence <code class=\"mm\">P(A ∩ B) ≥ P(A) + P(B) − 1</code>. This is the Bonferroni inequality. True.",
+     "(C) De Morgan gives <code class=\"mm\">Aᶜ ∪ B = (A ∩ Bᶜ)ᶜ</code>, so <code class=\"mm\">P(Aᶜ ∪ B) = 1 − P(A ∩ Bᶜ)</code>. True.",
+     "(D) Equality in the addition rule needs <code class=\"mm\">P(A ∩ B) = 0</code>, not <code class=\"mm\">A ≠ B</code>: take <code class=\"mm\">A = {1, 2}</code>, <code class=\"mm\">B = {2, 3}</code> on a fair die, when <code class=\"mm\">P(A ∪ B) = 2/3 ≠ 1/2 + 1/2</code>. False."
+    ],
+    "misconception": "(D) is accepted because distinct events &ldquo;look&rdquo; disjoint. Distinctness says nothing about overlap; only an empty (or probability-zero) intersection allows the probabilities to be added. (B) is often missed because students expect a bound in the other direction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every identity here is a rearrangement of the addition rule <code class=\"mm\">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</code> together with <code class=\"mm\">P(A \\ B) = P(A) − P(A ∩ B)</code>, which holds because <code class=\"mm\">A</code> splits into the disjoint pieces <code class=\"mm\">A \\ B</code> and <code class=\"mm\">A ∩ B</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">A = (A \\ B) ∪ (A ∩ B)</code> is a disjoint union, so the probabilities add: <code class=\"mm\">P(A) = P(A \\ B) + P(A ∩ B)</code>. True.</li><li>(B) From the addition rule, <code class=\"mm\">P(A ∩ B) = P(A) + P(B) − P(A ∪ B)</code>, and <code class=\"mm\">P(A ∪ B) ≤ 1</code>, hence <code class=\"mm\">P(A ∩ B) ≥ P(A) + P(B) − 1</code>. This is the Bonferroni inequality. True.</li><li>(C) De Morgan gives <code class=\"mm\">Aᶜ ∪ B = (A ∩ Bᶜ)ᶜ</code>, so <code class=\"mm\">P(Aᶜ ∪ B) = 1 − P(A ∩ Bᶜ)</code>. True.</li><li>(D) Equality in the addition rule needs <code class=\"mm\">P(A ∩ B) = 0</code>, not <code class=\"mm\">A ≠ B</code>: take <code class=\"mm\">A = {1, 2}</code>, <code class=\"mm\">B = {2, 3}</code> on a fair die, when <code class=\"mm\">P(A ∪ B) = 2/3 ≠ 1/2 + 1/2</code>. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> (D) is accepted because distinct events &ldquo;look&rdquo; disjoint. Distinctness says nothing about overlap; only an empty (or probability-zero) intersection allows the probabilities to be added. (B) is often missed because students expect a bound in the other direction.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U15-Q31",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "conditional-probability-bayes",
+   "subtopic": "conditional-probability-bayes",
+   "subtopic_label": "Conditional probability &amp; Bayes",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Two cards are drawn one after another, without replacement, from a well-shuffled deck of 52 cards. Given that the first card drawn is a king, the probability that the second card is also a king is",
+   "question_html": "<p class=\"qtext\">Two cards are drawn one after another, without replacement, from a well-shuffled deck of 52 cards. Given that the first card drawn is a king, the probability that the second card is also a king is</p>",
+   "options": [
+    "<code class=\"mm\">1/17</code>",
+    "<code class=\"mm\">4/51</code>",
+    "<code class=\"mm\">1/13</code>",
+    "<code class=\"mm\">3/52</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1/17</code>",
+    "<code class=\"mm\">4/51</code>",
+    "<code class=\"mm\">1/13</code>",
+    "<code class=\"mm\">3/52</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Conditioning on the first card restricts the sample space to the 51 cards that remain, and the conditioning event removes one king from the deck.",
+    "steps": [
+     "After a king has been drawn, 51 cards remain and 3 of them are kings.",
+     "Therefore <code class=\"mm\">P(second king | first king) = 3/51 = 1/17</code>.",
+     "Equivalently, by the multiplication rule: <code class=\"mm\">P(both kings) / P(first king) = (4/52 · 3/51)/(4/52) = 3/51</code>."
+    ],
+    "misconception": "<code class=\"mm\">4/51</code> keeps four kings in the reduced deck and so forgets that the drawn king left the deck. <code class=\"mm\">1/13</code> is the unconditional probability that a single card is a king, which ignores the conditioning entirely."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conditioning on the first card restricts the sample space to the 51 cards that remain, and the conditioning event removes one king from the deck.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>After a king has been drawn, 51 cards remain and 3 of them are kings.</li><li>Therefore <code class=\"mm\">P(second king | first king) = 3/51 = 1/17</code>.</li><li>Equivalently, by the multiplication rule: <code class=\"mm\">P(both kings) / P(first king) = (4/52 · 3/51)/(4/52) = 3/51</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">4/51</code> keeps four kings in the reduced deck and so forgets that the drawn king left the deck. <code class=\"mm\">1/13</code> is the unconditional probability that a single card is a king, which ignores the conditioning entirely.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q32",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "conditional-probability-bayes",
+   "subtopic": "conditional-probability-bayes",
+   "subtopic_label": "Conditional probability &amp; Bayes",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "In a class, 60% of the students passed Mathematics, 50% passed Physics and 30% passed both. A student is chosen uniformly at random. Given that the student passed Physics, find the probability that the student passed Mathematics. (Enter a decimal.)",
+   "question_html": "<div class=\"qtext\">In a class, 60% of the students passed Mathematics, 50% passed Physics and 30% passed both. A student is chosen uniformly at random. Given that the student passed Physics, find the probability that the student passed Mathematics. (Enter a decimal.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 0.6,
+   "answer_display": "0.6",
+   "marks": 2,
+   "solution": {
+    "concept": "Conditional probability is a ratio of the joint probability to the probability of the conditioning event: <code class=\"mm\">P(M | P) = P(M ∩ P) / P(P)</code>.",
+    "steps": [
+     "The conditioning event is &ldquo;passed Physics&rdquo;, with probability <code class=\"mm\">0.5</code>.",
+     "The joint event &ldquo;passed both&rdquo; has probability <code class=\"mm\">0.3</code>.",
+     "Therefore <code class=\"mm\">P(M | P) = 0.3/0.5 = 0.6</code>.",
+     "Consistency check: the answer must lie between 0 and 1, and it does; the reverse conditional <code class=\"mm\">P(P | M) = 0.3/0.6 = 0.5</code> is a different number."
+    ],
+    "misconception": "Answering 0.3 reports the joint probability and drops the division by <code class=\"mm\">P(P)</code>. Answering 0.5 reports <code class=\"mm\">P(P | M)</code>, the conditional in the wrong direction &mdash; conditioning is not symmetric."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conditional probability is a ratio of the joint probability to the probability of the conditioning event: <code class=\"mm\">P(M | P) = P(M ∩ P) / P(P)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The conditioning event is &ldquo;passed Physics&rdquo;, with probability <code class=\"mm\">0.5</code>.</li><li>The joint event &ldquo;passed both&rdquo; has probability <code class=\"mm\">0.3</code>.</li><li>Therefore <code class=\"mm\">P(M | P) = 0.3/0.5 = 0.6</code>.</li><li>Consistency check: the answer must lie between 0 and 1, and it does; the reverse conditional <code class=\"mm\">P(P | M) = 0.3/0.6 = 0.5</code> is a different number.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.6.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 0.3 reports the joint probability and drops the division by <code class=\"mm\">P(P)</code>. Answering 0.5 reports <code class=\"mm\">P(P | M)</code>, the conditional in the wrong direction &mdash; conditioning is not symmetric.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U15-Q33",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "conditional-probability-bayes",
+   "subtopic": "conditional-probability-bayes",
+   "subtopic_label": "Conditional probability &amp; Bayes",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A fair die is rolled. If it shows 6, a ball is drawn from bag X, which holds 3 red and 1 white ball; otherwise a ball is drawn from bag Y, which holds 1 red and 3 white balls. Given that the ball drawn is red, the probability that the die showed 6 is",
+   "question_html": "<p class=\"qtext\">A fair die is rolled. If it shows 6, a ball is drawn from bag <code class=\"mm\">X</code>, which holds 3 red and 1 white ball; otherwise a ball is drawn from bag <code class=\"mm\">Y</code>, which holds 1 red and 3 white balls. Given that the ball drawn is red, the probability that the die showed 6 is</p>",
+   "options": [
+    "<code class=\"mm\">3/8</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">3/4</code>",
+    "<code class=\"mm\">5/8</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">3/8</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">3/4</code>",
+    "<code class=\"mm\">5/8</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Bayes' theorem with two hypotheses: the prior weights are the die probabilities 1/6 and 5/6, and the likelihoods are the red fractions of the two bags.",
+    "steps": [
+     "<code class=\"mm\">P(6) = 1/6</code>, <code class=\"mm\">P(not 6) = 5/6</code>.",
+     "Likelihoods: <code class=\"mm\">P(R | X) = 3/4</code> and <code class=\"mm\">P(R | Y) = 1/4</code>.",
+     "Joint terms: <code class=\"mm\">(1/6)(3/4) = 3/24</code> and <code class=\"mm\">(5/6)(1/4) = 5/24</code>.",
+     "Total <code class=\"mm\">P(R) = 8/24 = 1/3</code>, so <code class=\"mm\">P(6 | R) = (3/24)/(8/24) = 3/8</code>.",
+     "The prior 1/6 is raised to 3/8 because bag <code class=\"mm\">X</code> is three times as likely to yield red, but the 5/6 prior of bag <code class=\"mm\">Y</code> keeps it from going higher."
+    ],
+    "misconception": "<code class=\"mm\">3/4</code> is the likelihood <code class=\"mm\">P(R | X)</code> and ignores the priors; <code class=\"mm\">1/6</code> is the prior and ignores the evidence; <code class=\"mm\">5/8</code> is the complement and answers the wrong question."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Bayes' theorem with two hypotheses: the prior weights are the die probabilities 1/6 and 5/6, and the likelihoods are the red fractions of the two bags.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">P(6) = 1/6</code>, <code class=\"mm\">P(not 6) = 5/6</code>.</li><li>Likelihoods: <code class=\"mm\">P(R | X) = 3/4</code> and <code class=\"mm\">P(R | Y) = 1/4</code>.</li><li>Joint terms: <code class=\"mm\">(1/6)(3/4) = 3/24</code> and <code class=\"mm\">(5/6)(1/4) = 5/24</code>.</li><li>Total <code class=\"mm\">P(R) = 8/24 = 1/3</code>, so <code class=\"mm\">P(6 | R) = (3/24)/(8/24) = 3/8</code>.</li><li>The prior 1/6 is raised to 3/8 because bag <code class=\"mm\">X</code> is three times as likely to yield red, but the 5/6 prior of bag <code class=\"mm\">Y</code> keeps it from going higher.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">3/4</code> is the likelihood <code class=\"mm\">P(R | X)</code> and ignores the priors; <code class=\"mm\">1/6</code> is the prior and ignores the evidence; <code class=\"mm\">5/8</code> is the complement and answers the wrong question.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q34",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "conditional-probability-bayes",
+   "subtopic": "conditional-probability-bayes",
+   "subtopic_label": "Conditional probability &amp; Bayes",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A medical condition affects 5% of a population. A diagnostic test for it is 90% sensitive (positive for a person who has the condition) and 80% specific (negative for a person who does not). A person chosen uniformly at random tests positive. The probability that the person actually has the condition is",
+   "question_html": "<p class=\"qtext\">A medical condition affects 5% of a population. A diagnostic test for it is 90% <em>sensitive</em> (positive for a person who has the condition) and 80% <em>specific</em> (negative for a person who does not). A person chosen uniformly at random tests positive. The probability that the person actually has the condition is</p>",
+   "options": [
+    "<code class=\"mm\">9/47</code>",
+    "<code class=\"mm\">9/20</code>",
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">19/47</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">9/47</code>",
+    "<code class=\"mm\">9/20</code>",
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">19/47</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Bayes' theorem on a rare condition: the false-positive stream from the healthy majority competes with the true-positive stream from the small affected group, and the answer is the true positives divided by all positives.",
+    "steps": [
+     "Prior: <code class=\"mm\">P(D) = 0.05</code>, <code class=\"mm\">P(Dᶜ) = 0.95</code>.",
+     "Sensitivity <code class=\"mm\">P(+ | D) = 0.90</code>; specificity 0.80 means <code class=\"mm\">P(+ | Dᶜ) = 0.20</code>.",
+     "True positives: <code class=\"mm\">0.05 × 0.90 = 0.045</code>. False positives: <code class=\"mm\">0.95 × 0.20 = 0.19</code>.",
+     "<code class=\"mm\">P(+) = 0.045 + 0.19 = 0.235</code>, so <code class=\"mm\">P(D | +) = 0.045/0.235 = 45/235 = 9/47 ≈ 0.191</code>.",
+     "The healthy group is nineteen times larger than the affected group and produces a 20% false-positive rate, which is why a positive result is still more likely to be a false alarm than a true one."
+    ],
+    "misconception": "<code class=\"mm\">9/20 = 0.45</code> comes from dividing the true-positive mass by the wrong denominator (or from treating 0.045 + 0.045 as the total); <code class=\"mm\">1/2</code> is the answer when sensitivity and specificity are equal and the priors are complementary. Reporting 0.90 mistakes <code class=\"mm\">P(+ | D)</code> for <code class=\"mm\">P(D | +)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Bayes' theorem on a rare condition: the false-positive stream from the healthy majority competes with the true-positive stream from the small affected group, and the answer is the true positives divided by all positives.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Prior: <code class=\"mm\">P(D) = 0.05</code>, <code class=\"mm\">P(Dᶜ) = 0.95</code>.</li><li>Sensitivity <code class=\"mm\">P(+ | D) = 0.90</code>; specificity 0.80 means <code class=\"mm\">P(+ | Dᶜ) = 0.20</code>.</li><li>True positives: <code class=\"mm\">0.05 × 0.90 = 0.045</code>. False positives: <code class=\"mm\">0.95 × 0.20 = 0.19</code>.</li><li><code class=\"mm\">P(+) = 0.045 + 0.19 = 0.235</code>, so <code class=\"mm\">P(D | +) = 0.045/0.235 = 45/235 = 9/47 ≈ 0.191</code>.</li><li>The healthy group is nineteen times larger than the affected group and produces a 20% false-positive rate, which is why a positive result is still more likely to be a false alarm than a true one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">9/20 = 0.45</code> comes from dividing the true-positive mass by the wrong denominator (or from treating 0.045 + 0.045 as the total); <code class=\"mm\">1/2</code> is the answer when sensitivity and specificity are equal and the priors are complementary. Reporting 0.90 mistakes <code class=\"mm\">P(+ | D)</code> for <code class=\"mm\">P(D | +)</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q35",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "conditional-probability-bayes",
+   "subtopic": "conditional-probability-bayes",
+   "subtopic_label": "Conditional probability &amp; Bayes",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Let A and B be events with P(B) > 0. Which of the following statements are always true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">A</code> and <code class=\"mm\">B</code> be events with <code class=\"mm\">P(B) &gt; 0</code>. Which of the following statements are always true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">P(A | B) + P(Aᶜ | B) = 1</code>",
+    "<code class=\"mm\">A and B are independent if and only if P(A | B) = P(A)</code>",
+    "<code class=\"mm\">P(A | B) ≥ P(A) for every pair of events</code>",
+    "<code class=\"mm\">If A ⊆ B then P(A | B) = P(A)/P(B)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">P(A | B) + P(Aᶜ | B) = 1</code>",
+    "<code class=\"mm\">A and B are independent if and only if P(A | B) = P(A)</code>",
+    "<code class=\"mm\">P(A | B) ≥ P(A) for every pair of events</code>",
+    "<code class=\"mm\">If A ⊆ B then P(A | B) = P(A)/P(B)</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Conditioning on a fixed event <code class=\"mm\">B</code> is itself a probability measure on the events inside <code class=\"mm\">B</code>, so every unconditional identity holds conditionally; and independence is exactly the statement that conditioning changes nothing.",
+    "steps": [
+     "(A) <code class=\"mm\">A ∩ B</code> and <code class=\"mm\">Aᶜ ∩ B</code> partition <code class=\"mm\">B</code>, so their conditional probabilities add to <code class=\"mm\">P(B | B) = 1</code>. True.",
+     "(B) <code class=\"mm\">P(A | B) = P(A ∩ B)/P(B) = P(A)</code> rearranges to <code class=\"mm\">P(A ∩ B) = P(A)P(B)</code>, which is the definition of independence (dividing by <code class=\"mm\">P(B) &gt; 0</code> is legitimate). True.",
+     "(C) Take <code class=\"mm\">B ⊆ A</code> with <code class=\"mm\">P(B) = 0.5</code> and <code class=\"mm\">P(A) = 0.5</code>: then <code class=\"mm\">P(A | B) = 1 &gt; 0.5</code>, but take <code class=\"mm\">B ⊆ Aᶜ</code> instead and <code class=\"mm\">P(A | B) = 0 &lt; P(A)</code>. The inequality can fail in either direction. False.",
+     "(D) If <code class=\"mm\">A ⊆ B</code> then <code class=\"mm\">A ∩ B = A</code>, so <code class=\"mm\">P(A | B) = P(A)/P(B)</code>. True."
+    ],
+    "misconception": "(C) is accepted because conditioning on evidence &ldquo;should&rdquo; raise a probability, but evidence can lower it just as easily: <code class=\"mm\">P(A | B)</code> is above or below <code class=\"mm\">P(A)</code> exactly according to whether <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are positively or negatively associated."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conditioning on a fixed event <code class=\"mm\">B</code> is itself a probability measure on the events inside <code class=\"mm\">B</code>, so every unconditional identity holds conditionally; and independence is exactly the statement that conditioning changes nothing.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">A ∩ B</code> and <code class=\"mm\">Aᶜ ∩ B</code> partition <code class=\"mm\">B</code>, so their conditional probabilities add to <code class=\"mm\">P(B | B) = 1</code>. True.</li><li>(B) <code class=\"mm\">P(A | B) = P(A ∩ B)/P(B) = P(A)</code> rearranges to <code class=\"mm\">P(A ∩ B) = P(A)P(B)</code>, which is the definition of independence (dividing by <code class=\"mm\">P(B) &gt; 0</code> is legitimate). True.</li><li>(C) Take <code class=\"mm\">B ⊆ A</code> with <code class=\"mm\">P(B) = 0.5</code> and <code class=\"mm\">P(A) = 0.5</code>: then <code class=\"mm\">P(A | B) = 1 &gt; 0.5</code>, but take <code class=\"mm\">B ⊆ Aᶜ</code> instead and <code class=\"mm\">P(A | B) = 0 &lt; P(A)</code>. The inequality can fail in either direction. False.</li><li>(D) If <code class=\"mm\">A ⊆ B</code> then <code class=\"mm\">A ∩ B = A</code>, so <code class=\"mm\">P(A | B) = P(A)/P(B)</code>. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> (C) is accepted because conditioning on evidence &ldquo;should&rdquo; raise a probability, but evidence can lower it just as easily: <code class=\"mm\">P(A | B)</code> is above or below <code class=\"mm\">P(A)</code> exactly according to whether <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are positively or negatively associated.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U15-Q36",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "independence",
+   "subtopic": "independence",
+   "subtopic_label": "Independence",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Events A and B are independent with P(A) = 0.4 and P(B) = 0.5. Then P(A ∪ B) is",
+   "question_html": "<p class=\"qtext\">Events <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are independent with <code class=\"mm\">P(A) = 0.4</code> and <code class=\"mm\">P(B) = 0.5</code>. Then <code class=\"mm\">P(A ∪ B)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">0.7</code>",
+    "<code class=\"mm\">0.9</code>",
+    "<code class=\"mm\">0.2</code>",
+    "<code class=\"mm\">0.45</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">0.7</code>",
+    "<code class=\"mm\">0.9</code>",
+    "<code class=\"mm\">0.2</code>",
+    "<code class=\"mm\">0.45</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Two steps: independence gives the intersection as a product, then the addition rule gives the union.",
+    "steps": [
+     "<code class=\"mm\">P(A ∩ B) = P(A)P(B) = 0.4 × 0.5 = 0.2</code>.",
+     "<code class=\"mm\">P(A ∪ B) = 0.4 + 0.5 − 0.2 = 0.7</code>.",
+     "Equivalently <code class=\"mm\">P(A ∪ B) = 1 − P(Aᶜ)P(Bᶜ) = 1 − 0.6 × 0.5 = 0.7</code>, the same value by a shorter route."
+    ],
+    "misconception": "<code class=\"mm\">0.9</code> adds the two probabilities and forgets the intersection that independence puts back; <code class=\"mm\">0.2</code> stops at the intersection; <code class=\"mm\">0.45</code> averages the two probabilities, which is not a probability law at all."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two steps: independence gives the intersection as a product, then the addition rule gives the union.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">P(A ∩ B) = P(A)P(B) = 0.4 × 0.5 = 0.2</code>.</li><li><code class=\"mm\">P(A ∪ B) = 0.4 + 0.5 − 0.2 = 0.7</code>.</li><li>Equivalently <code class=\"mm\">P(A ∪ B) = 1 − P(Aᶜ)P(Bᶜ) = 1 − 0.6 × 0.5 = 0.7</code>, the same value by a shorter route.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">0.9</code> adds the two probabilities and forgets the intersection that independence puts back; <code class=\"mm\">0.2</code> stops at the intersection; <code class=\"mm\">0.45</code> averages the two probabilities, which is not a probability law at all.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q37",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "independence",
+   "subtopic": "independence",
+   "subtopic_label": "Independence",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Three events A, B and C are mutually independent with P(A) = 1/2, P(B) = 1/3 and P(C) = 1/4. The probability that exactly one of the three occurs is",
+   "question_html": "<p class=\"qtext\">Three events <code class=\"mm\">A</code>, <code class=\"mm\">B</code> and <code class=\"mm\">C</code> are mutually independent with <code class=\"mm\">P(A) = 1/2</code>, <code class=\"mm\">P(B) = 1/3</code> and <code class=\"mm\">P(C) = 1/4</code>. The probability that <b>exactly one</b> of the three occurs is</p>",
+   "options": [
+    "<code class=\"mm\">11/24</code>",
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">13/24</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">11/24</code>",
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">13/24</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "&ldquo;Exactly one&rdquo; is the disjoint union of three events &mdash; <code class=\"mm\">A</code> only, <code class=\"mm\">B</code> only, <code class=\"mm\">C</code> only &mdash; and each term is a product because the complements of independent events are independent.",
+    "steps": [
+     "<code class=\"mm\">P(A only) = (1/2)(2/3)(3/4) = 6/24 = 1/4</code>.",
+     "<code class=\"mm\">P(B only) = (1/2)(1/3)(3/4) = 3/24 = 1/8</code>.",
+     "<code class=\"mm\">P(C only) = (1/2)(2/3)(1/4) = 2/24 = 1/12</code>.",
+     "Add the three disjoint pieces: <code class=\"mm\">(6 + 3 + 2)/24 = 11/24 ≈ 0.458</code>.",
+     "Cross-check with the complement: &ldquo;none&rdquo; has probability <code class=\"mm\">(1/2)(2/3)(3/4) = 1/4</code> and &ldquo;at least two&rdquo; has <code class=\"mm\">1 − 1/4 − 11/24 = 7/24</code>, so the three cases sum to 1."
+    ],
+    "misconception": "Computing <code class=\"mm\">P(A) + P(B) + P(C) = 13/24</code> counts the cases where two or three events occur several times, because the three events are not disjoint. <code class=\"mm\">1/4</code> is the probability that none occurs."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;Exactly one&rdquo; is the disjoint union of three events &mdash; <code class=\"mm\">A</code> only, <code class=\"mm\">B</code> only, <code class=\"mm\">C</code> only &mdash; and each term is a product because the complements of independent events are independent.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">P(A only) = (1/2)(2/3)(3/4) = 6/24 = 1/4</code>.</li><li><code class=\"mm\">P(B only) = (1/2)(1/3)(3/4) = 3/24 = 1/8</code>.</li><li><code class=\"mm\">P(C only) = (1/2)(2/3)(1/4) = 2/24 = 1/12</code>.</li><li>Add the three disjoint pieces: <code class=\"mm\">(6 + 3 + 2)/24 = 11/24 ≈ 0.458</code>.</li><li>Cross-check with the complement: &ldquo;none&rdquo; has probability <code class=\"mm\">(1/2)(2/3)(3/4) = 1/4</code> and &ldquo;at least two&rdquo; has <code class=\"mm\">1 − 1/4 − 11/24 = 7/24</code>, so the three cases sum to 1.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Computing <code class=\"mm\">P(A) + P(B) + P(C) = 13/24</code> counts the cases where two or three events occur several times, because the three events are not disjoint. <code class=\"mm\">1/4</code> is the probability that none occurs.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q38",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "independence",
+   "subtopic": "independence",
+   "subtopic_label": "Independence",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Events A and B are independent with P(A) = 0.4 and P(B) = 0.25. Find P(A ∩ Bᶜ). (Enter a decimal.)",
+   "question_html": "<div class=\"qtext\">Events <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are independent with <code class=\"mm\">P(A) = 0.4</code> and <code class=\"mm\">P(B) = 0.25</code>. Find <code class=\"mm\">P(A ∩ Bᶜ)</code>. (Enter a decimal.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 0.3,
+   "answer_display": "0.3",
+   "marks": 2,
+   "solution": {
+    "concept": "Independence is preserved under complementation: if <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are independent then so are <code class=\"mm\">A</code> and <code class=\"mm\">Bᶜ</code>, so the product rule may be applied to the pair <code class=\"mm\">(A, Bᶜ)</code>.",
+    "steps": [
+     "<code class=\"mm\">P(Bᶜ) = 1 − 0.25 = 0.75</code>.",
+     "By independence of <code class=\"mm\">A</code> and <code class=\"mm\">Bᶜ</code>: <code class=\"mm\">P(A ∩ Bᶜ) = 0.4 × 0.75 = 0.3</code>.",
+     "Check the direct route: <code class=\"mm\">P(A ∩ B) = 0.4 × 0.25 = 0.1</code>, and <code class=\"mm\">A</code> splits into <code class=\"mm\">A ∩ B</code> and <code class=\"mm\">A ∩ Bᶜ</code>, so <code class=\"mm\">0.4 − 0.1 = 0.3</code>. The two routes agree."
+    ],
+    "misconception": "Applying <code class=\"mm\">0.4 × 0.25 = 0.1</code> answers <code class=\"mm\">P(A ∩ B)</code>, not <code class=\"mm\">P(A ∩ Bᶜ)</code>. The complement inside the intersection changes the factor from <code class=\"mm\">P(B)</code> to <code class=\"mm\">1 − P(B)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Independence is preserved under complementation: if <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are independent then so are <code class=\"mm\">A</code> and <code class=\"mm\">Bᶜ</code>, so the product rule may be applied to the pair <code class=\"mm\">(A, Bᶜ)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">P(Bᶜ) = 1 − 0.25 = 0.75</code>.</li><li>By independence of <code class=\"mm\">A</code> and <code class=\"mm\">Bᶜ</code>: <code class=\"mm\">P(A ∩ Bᶜ) = 0.4 × 0.75 = 0.3</code>.</li><li>Check the direct route: <code class=\"mm\">P(A ∩ B) = 0.4 × 0.25 = 0.1</code>, and <code class=\"mm\">A</code> splits into <code class=\"mm\">A ∩ B</code> and <code class=\"mm\">A ∩ Bᶜ</code>, so <code class=\"mm\">0.4 − 0.1 = 0.3</code>. The two routes agree.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.3.</span></p><p class=\"row\"><b>Common misconception.</b> Applying <code class=\"mm\">0.4 × 0.25 = 0.1</code> answers <code class=\"mm\">P(A ∩ B)</code>, not <code class=\"mm\">P(A ∩ Bᶜ)</code>. The complement inside the intersection changes the factor from <code class=\"mm\">P(B)</code> to <code class=\"mm\">1 − P(B)</code>.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U15-Q39",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "independence",
+   "subtopic": "independence",
+   "subtopic_label": "Independence",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Events A and B are independent with P(A ∩ B) = 1/6 and P(A ∪ B) = 2/3. If P(A) > P(B), then P(A) − P(B) is",
+   "question_html": "<p class=\"qtext\">Events <code class=\"mm\">A</code> and <code class=\"mm\">B</code> are independent with <code class=\"mm\">P(A ∩ B) = 1/6</code> and <code class=\"mm\">P(A ∪ B) = 2/3</code>. If <code class=\"mm\">P(A) &gt; P(B)</code>, then <code class=\"mm\">P(A) − P(B)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">1/12</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">5/6</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">1/12</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">5/6</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Independence turns the two given probabilities into the sum and the product of the two unknowns, so <code class=\"mm\">P(A)</code> and <code class=\"mm\">P(B)</code> are the roots of a quadratic.",
+    "steps": [
+     "Independence gives <code class=\"mm\">P(A)P(B) = 1/6</code>.",
+     "The addition rule gives <code class=\"mm\">P(A) + P(B) = P(A ∪ B) + P(A ∩ B) = 2/3 + 1/6 = 5/6</code>.",
+     "So <code class=\"mm\">x = P(A)</code> and <code class=\"mm\">y = P(B)</code> satisfy <code class=\"mm\">t² − (5/6)t + 1/6 = 0</code>, i.e. <code class=\"mm\">6t² − 5t + 1 = 0</code>.",
+     "Factor: <code class=\"mm\">(3t − 1)(2t − 1) = 0</code>, giving <code class=\"mm\">t = 1/3</code> or <code class=\"mm\">t = 1/2</code>. Since <code class=\"mm\">P(A) &gt; P(B)</code>, <code class=\"mm\">P(A) = 1/2</code> and <code class=\"mm\">P(B) = 1/3</code>.",
+     "Hence <code class=\"mm\">P(A) − P(B) = 1/2 − 1/3 = 1/6</code>."
+    ],
+    "misconception": "<code class=\"mm\">5/6</code> is the sum, not the difference, and <code class=\"mm\">1/3</code> is the smaller root itself. Without the ordering condition the pair is not determined, so <code class=\"mm\">P(A) &gt; P(B)</code> is doing real work."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Independence turns the two given probabilities into the sum and the product of the two unknowns, so <code class=\"mm\">P(A)</code> and <code class=\"mm\">P(B)</code> are the roots of a quadratic.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Independence gives <code class=\"mm\">P(A)P(B) = 1/6</code>.</li><li>The addition rule gives <code class=\"mm\">P(A) + P(B) = P(A ∪ B) + P(A ∩ B) = 2/3 + 1/6 = 5/6</code>.</li><li>So <code class=\"mm\">x = P(A)</code> and <code class=\"mm\">y = P(B)</code> satisfy <code class=\"mm\">t² − (5/6)t + 1/6 = 0</code>, i.e. <code class=\"mm\">6t² − 5t + 1 = 0</code>.</li><li>Factor: <code class=\"mm\">(3t − 1)(2t − 1) = 0</code>, giving <code class=\"mm\">t = 1/3</code> or <code class=\"mm\">t = 1/2</code>. Since <code class=\"mm\">P(A) &gt; P(B)</code>, <code class=\"mm\">P(A) = 1/2</code> and <code class=\"mm\">P(B) = 1/3</code>.</li><li>Hence <code class=\"mm\">P(A) − P(B) = 1/2 − 1/3 = 1/6</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">5/6</code> is the sum, not the difference, and <code class=\"mm\">1/3</code> is the smaller root itself. Without the ordering condition the pair is not determined, so <code class=\"mm\">P(A) &gt; P(B)</code> is doing real work.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q40",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "independence",
+   "subtopic": "independence",
+   "subtopic_label": "Independence",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Let A, B and C be events of a sample space. Which of the following statements are always true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">A</code>, <code class=\"mm\">B</code> and <code class=\"mm\">C</code> be events of a sample space. Which of the following statements are <strong>always</strong> true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">If A and B are independent, then Aᶜ and B are independent.</code>",
+    "<code class=\"mm\">If A and B are independent with P(A) &gt; 0 and P(B) &gt; 0, then P(A ∩ B) &gt; 0.</code>",
+    "<code class=\"mm\">If A and B are independent, then A and B are mutually exclusive.</code>",
+    "<code class=\"mm\">If A, B, C are mutually independent, then A and B ∪ C are independent.</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">If A and B are independent, then Aᶜ and B are independent.</code>",
+    "<code class=\"mm\">If A and B are independent with P(A) &gt; 0 and P(B) &gt; 0, then P(A ∩ B) &gt; 0.</code>",
+    "<code class=\"mm\">If A and B are independent, then A and B are mutually exclusive.</code>",
+    "<code class=\"mm\">If A, B, C are mutually independent, then A and B ∪ C are independent.</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Independence is a product rule on probabilities, and it is closed under complementation and under unions of independent groups. Mutual exclusivity is the opposite condition, an <em>empty</em> intersection.",
+    "steps": [
+     "(A) <code class=\"mm\">P(Aᶜ ∩ B) = P(B) − P(A ∩ B) = P(B) − P(A)P(B) = (1 − P(A))P(B) = P(Aᶜ)P(B)</code>. True.",
+     "(B) <code class=\"mm\">P(A ∩ B) = P(A)P(B) &gt; 0</code> because both factors are strictly positive. True.",
+     "(C) If they were both independent and mutually exclusive, then <code class=\"mm\">P(A)P(B) = P(A ∩ B) = 0</code>, forcing <code class=\"mm\">P(A) = 0</code> or <code class=\"mm\">P(B) = 0</code> &mdash; and with positive probabilities the two conditions contradict each other. In general independence does not imply disjointness. False.",
+     "(D) <code class=\"mm\">P(A ∩ (B ∪ C)) = P(A ∩ B) + P(A ∩ C) − P(A ∩ B ∩ C) = P(A)P(B) + P(A)P(C) − P(A)P(B)P(C) = P(A)[P(B) + P(C) − P(B)P(C)] = P(A)P(B ∪ C)</code>. True."
+    ],
+    "misconception": "(C) is the classic inversion: students hear &ldquo;independent&rdquo; and picture &ldquo;unrelated, therefore no overlap&rdquo;. Independence is about the product of probabilities; two independent events of positive probability must actually overlap, which is exactly statement (B)."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Independence is a product rule on probabilities, and it is closed under complementation and under unions of independent groups. Mutual exclusivity is the opposite condition, an <em>empty</em> intersection.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) <code class=\"mm\">P(Aᶜ ∩ B) = P(B) − P(A ∩ B) = P(B) − P(A)P(B) = (1 − P(A))P(B) = P(Aᶜ)P(B)</code>. True.</li><li>(B) <code class=\"mm\">P(A ∩ B) = P(A)P(B) &gt; 0</code> because both factors are strictly positive. True.</li><li>(C) If they were both independent and mutually exclusive, then <code class=\"mm\">P(A)P(B) = P(A ∩ B) = 0</code>, forcing <code class=\"mm\">P(A) = 0</code> or <code class=\"mm\">P(B) = 0</code> &mdash; and with positive probabilities the two conditions contradict each other. In general independence does not imply disjointness. False.</li><li>(D) <code class=\"mm\">P(A ∩ (B ∪ C)) = P(A ∩ B) + P(A ∩ C) − P(A ∩ B ∩ C) = P(A)P(B) + P(A)P(C) − P(A)P(B)P(C) = P(A)[P(B) + P(C) − P(B)P(C)] = P(A)P(B ∪ C)</code>. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> (C) is the classic inversion: students hear &ldquo;independent&rdquo; and picture &ldquo;unrelated, therefore no overlap&rdquo;. Independence is about the product of probabilities; two independent events of positive probability must actually overlap, which is exactly statement (B).</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U15-Q41",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "counting-based-probability",
+   "subtopic": "counting-based-probability",
+   "subtopic_label": "Counting-based probability",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A committee of 3 is chosen uniformly at random from 5 men and 4 women. The probability that all three members are men is",
+   "question_html": "<p class=\"qtext\">A committee of 3 is chosen uniformly at random from 5 men and 4 women. The probability that all three members are men is</p>",
+   "options": [
+    "<code class=\"mm\">5/42</code>",
+    "<code class=\"mm\">5/21</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">10/21</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">5/42</code>",
+    "<code class=\"mm\">5/21</code>",
+    "<code class=\"mm\">1/6</code>",
+    "<code class=\"mm\">10/21</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "A committee is an unordered selection, so the sample space is <code class=\"mm\">C(9, 3)</code> equally likely 3-subsets and the numerator counts the 3-subsets drawn from the men alone.",
+    "steps": [
+     "Sample space: <code class=\"mm\">C(9, 3) = 84</code>.",
+     "Favourable: <code class=\"mm\">C(5, 3) = 10</code>.",
+     "So <code class=\"mm\">P = 10/84 = 5/42 ≈ 0.119</code>.",
+     "Check with the sequential product: <code class=\"mm\">(5/9)(4/8)(3/7) = 60/504 = 5/42</code>, the same value."
+    ],
+    "misconception": "<code class=\"mm\">5/21</code> comes from doubling the numerator, typically by counting the order in which the three men are picked; a committee has no order. <code class=\"mm\">1/6</code> would be right only if the class had equal numbers of men and women and the committee had size 1."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A committee is an unordered selection, so the sample space is <code class=\"mm\">C(9, 3)</code> equally likely 3-subsets and the numerator counts the 3-subsets drawn from the men alone.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sample space: <code class=\"mm\">C(9, 3) = 84</code>.</li><li>Favourable: <code class=\"mm\">C(5, 3) = 10</code>.</li><li>So <code class=\"mm\">P = 10/84 = 5/42 ≈ 0.119</code>.</li><li>Check with the sequential product: <code class=\"mm\">(5/9)(4/8)(3/7) = 60/504 = 5/42</code>, the same value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">5/21</code> comes from doubling the numerator, typically by counting the order in which the three men are picked; a committee has no order. <code class=\"mm\">1/6</code> would be right only if the class had equal numbers of men and women and the committee had size 1.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q42",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "counting-based-probability",
+   "subtopic": "counting-based-probability",
+   "subtopic_label": "Counting-based probability",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A binary string of length 8 is chosen uniformly at random from all 2⁸ = 256 strings. Find the probability that it contains exactly three 1s. (Enter a decimal.)",
+   "question_html": "<div class=\"qtext\">A binary string of length 8 is chosen uniformly at random from all <code class=\"mm\">2⁸ = 256</code> strings. Find the probability that it contains exactly three 1s. (Enter a decimal.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 0.21875,
+   "answer_display": "0.21875",
+   "marks": 2,
+   "solution": {
+    "concept": "The 256 strings are equally likely, so the probability is the number of strings with exactly three 1s divided by 256. Choosing which positions carry a 1 fixes the string.",
+    "steps": [
+     "Choose the 3 positions that hold a 1 out of 8: <code class=\"mm\">C(8, 3) = 56</code> strings.",
+     "So <code class=\"mm\">P = 56/256</code>.",
+     "<code class=\"mm\">56/256 = 7/32 = 0.21875</code>.",
+     "The full distribution over the number of 1s is binomial with <code class=\"mm\">n = 8</code>, <code class=\"mm\">p = 1/2</code>; the eight probabilities <code class=\"mm\">C(8,k)/256</code> sum to 1, and this is the <code class=\"mm\">k = 3</code> term."
+    ],
+    "misconception": "<code class=\"mm\">3/8 = 0.375</code> treats the three 1s as three independent slots and forgets that the other five positions must be 0 and that the positions can be chosen in <code class=\"mm\">C(8,3)</code> ways. Reporting <code class=\"mm\">56</code> instead of the ratio forgets the division by 256."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The 256 strings are equally likely, so the probability is the number of strings with exactly three 1s divided by 256. Choosing which positions carry a 1 fixes the string.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Choose the 3 positions that hold a 1 out of 8: <code class=\"mm\">C(8, 3) = 56</code> strings.</li><li>So <code class=\"mm\">P = 56/256</code>.</li><li><code class=\"mm\">56/256 = 7/32 = 0.21875</code>.</li><li>The full distribution over the number of 1s is binomial with <code class=\"mm\">n = 8</code>, <code class=\"mm\">p = 1/2</code>; the eight probabilities <code class=\"mm\">C(8,k)/256</code> sum to 1, and this is the <code class=\"mm\">k = 3</code> term.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.21875.</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">3/8 = 0.375</code> treats the three 1s as three independent slots and forgets that the other five positions must be 0 and that the positions can be chosen in <code class=\"mm\">C(8,3)</code> ways. Reporting <code class=\"mm\">56</code> instead of the ratio forgets the division by 256.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U15-Q43",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "counting-based-probability",
+   "subtopic": "counting-based-probability",
+   "subtopic_label": "Counting-based probability",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Five people, including A and B, are seated uniformly at random around a circular table with five seats. The probability that A and B sit next to each other is",
+   "question_html": "<p class=\"qtext\">Five people, including <code class=\"mm\">A</code> and <code class=\"mm\">B</code>, are seated uniformly at random around a circular table with five seats. The probability that <code class=\"mm\">A</code> and <code class=\"mm\">B</code> sit next to each other is</p>",
+   "options": [
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">2/5</code>",
+    "<code class=\"mm\">1/5</code>",
+    "<code class=\"mm\">1/4</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">2/5</code>",
+    "<code class=\"mm\">1/5</code>",
+    "<code class=\"mm\">1/4</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Condition on where <code class=\"mm\">A</code> sits. Rotational symmetry lets us fix <code class=\"mm\">A</code>'s seat, after which the other four people occupy the remaining four seats uniformly; the circular table then has exactly two seats adjacent to <code class=\"mm\">A</code>.",
+    "steps": [
+     "Seat <code class=\"mm\">A</code> anywhere; the arrangement of the other four is uniform over the four remaining seats.",
+     "Exactly 2 of those 4 seats are next to <code class=\"mm\">A</code>, so <code class=\"mm\">P = 2/4 = 1/2</code>.",
+     "Check by counting: total circular arrangements <code class=\"mm\">4! = 24</code>; with <code class=\"mm\">A</code> and <code class=\"mm\">B</code> as one block there are <code class=\"mm\">3! = 6</code> block arrangements times 2 internal orders = 12, and <code class=\"mm\">12/24 = 1/2</code>."
+    ],
+    "misconception": "<code class=\"mm\">2/5</code> is the answer for a straight row of five seats, where the end seats have only one neighbour. On a circle every seat has two neighbours, which is exactly why the probability is higher. <code class=\"mm\">1/4</code> comes from counting only one of the two neighbouring seats."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Condition on where <code class=\"mm\">A</code> sits. Rotational symmetry lets us fix <code class=\"mm\">A</code>'s seat, after which the other four people occupy the remaining four seats uniformly; the circular table then has exactly two seats adjacent to <code class=\"mm\">A</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Seat <code class=\"mm\">A</code> anywhere; the arrangement of the other four is uniform over the four remaining seats.</li><li>Exactly 2 of those 4 seats are next to <code class=\"mm\">A</code>, so <code class=\"mm\">P = 2/4 = 1/2</code>.</li><li>Check by counting: total circular arrangements <code class=\"mm\">4! = 24</code>; with <code class=\"mm\">A</code> and <code class=\"mm\">B</code> as one block there are <code class=\"mm\">3! = 6</code> block arrangements times 2 internal orders = 12, and <code class=\"mm\">12/24 = 1/2</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">2/5</code> is the answer for a straight row of five seats, where the end seats have only one neighbour. On a circle every seat has two neighbours, which is exactly why the probability is higher. <code class=\"mm\">1/4</code> comes from counting only one of the two neighbouring seats.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q44",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "counting-based-probability",
+   "subtopic": "counting-based-probability",
+   "subtopic_label": "Counting-based probability",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Five cards are dealt from a well-shuffled deck of 52 cards. The probability that the hand is a full house (three cards of one rank and two of another) is",
+   "question_html": "<p class=\"qtext\">Five cards are dealt from a well-shuffled deck of 52 cards. The probability that the hand is a <em>full house</em> (three cards of one rank and two of another) is</p>",
+   "options": [
+    "<code class=\"mm\">6/4165</code>",
+    "<code class=\"mm\">3/4165</code>",
+    "<code class=\"mm\">12/4165</code>",
+    "<code class=\"mm\">1/4165</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">6/4165</code>",
+    "<code class=\"mm\">3/4165</code>",
+    "<code class=\"mm\">12/4165</code>",
+    "<code class=\"mm\">1/4165</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Count full houses as a product of independent choices &mdash; the rank for the triple, its three suits, the rank for the pair, its two suits &mdash; and divide by the number of 5-card hands.",
+    "steps": [
+     "Sample space: <code class=\"mm\">C(52, 5) = 2,598,960</code> hands.",
+     "Choose the triple's rank (13 ways) and 3 of its 4 suits: <code class=\"mm\">13 × C(4, 3) = 52</code>.",
+     "Choose the pair's rank from the remaining 12 ranks and 2 of its 4 suits: <code class=\"mm\">12 × C(4, 2) = 72</code>.",
+     "Full houses: <code class=\"mm\">52 × 72 = 3744</code>. Hence <code class=\"mm\">P = 3744/2,598,960 = 6/4165 ≈ 0.00144</code>.",
+     "The count is exact: every full house has exactly one rank appearing three times and one appearing twice, so each hand is produced once."
+    ],
+    "misconception": "<code class=\"mm\">3/4165</code> forgets that the pair's rank is chosen from 12 remaining ranks rather than from 13; <code class=\"mm\">12/4165</code> double counts the two roles (once with the triple rank chosen first, once with the pair rank chosen first). <code class=\"mm\">1/4165</code> divides by the wrong denominator."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Count full houses as a product of independent choices &mdash; the rank for the triple, its three suits, the rank for the pair, its two suits &mdash; and divide by the number of 5-card hands.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sample space: <code class=\"mm\">C(52, 5) = 2,598,960</code> hands.</li><li>Choose the triple's rank (13 ways) and 3 of its 4 suits: <code class=\"mm\">13 × C(4, 3) = 52</code>.</li><li>Choose the pair's rank from the remaining 12 ranks and 2 of its 4 suits: <code class=\"mm\">12 × C(4, 2) = 72</code>.</li><li>Full houses: <code class=\"mm\">52 × 72 = 3744</code>. Hence <code class=\"mm\">P = 3744/2,598,960 = 6/4165 ≈ 0.00144</code>.</li><li>The count is exact: every full house has exactly one rank appearing three times and one appearing twice, so each hand is produced once.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">3/4165</code> forgets that the pair's rank is chosen from 12 remaining ranks rather than from 13; <code class=\"mm\">12/4165</code> double counts the two roles (once with the triple rank chosen first, once with the pair rank chosen first). <code class=\"mm\">1/4165</code> divides by the wrong denominator.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q45",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "counting-based-probability",
+   "subtopic": "counting-based-probability",
+   "subtopic_label": "Counting-based probability",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A committee of 4 is chosen uniformly at random from 6 men and 4 women. Which of the following statements are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">A committee of 4 is chosen uniformly at random from 6 men and 4 women. Which of the following statements are true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">The probability that all four members are men is 1/14.</code>",
+    "<code class=\"mm\">The probability that the committee has exactly two women is 3/7.</code>",
+    "<code class=\"mm\">The probability that the committee has at least one woman is 13/14.</code>",
+    "<code class=\"mm\">The probability that the committee has exactly one woman is 2/5.</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">The probability that all four members are men is 1/14.</code>",
+    "<code class=\"mm\">The probability that the committee has exactly two women is 3/7.</code>",
+    "<code class=\"mm\">The probability that the committee has at least one woman is 13/14.</code>",
+    "<code class=\"mm\">The probability that the committee has exactly one woman is 2/5.</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "Every committee of size 4 is an equally likely 4-subset of the 10 people, so each case is a product of two binomial coefficients divided by <code class=\"mm\">C(10, 4) = 210</code>.",
+    "steps": [
+     "(A) All men: <code class=\"mm\">C(6, 4)/210 = 15/210 = 1/14</code>. True.",
+     "(B) Exactly two women and two men: <code class=\"mm\">C(4, 2)C(6, 2) = 6 × 15 = 90</code>, and <code class=\"mm\">90/210 = 3/7</code>. True.",
+     "(C) At least one woman is the complement of (A): <code class=\"mm\">1 − 1/14 = 13/14</code>. True.",
+     "(D) Exactly one woman: <code class=\"mm\">C(4, 1)C(6, 3) = 4 × 20 = 80</code>, and <code class=\"mm\">80/210 = 8/21 ≈ 0.381</code>, not <code class=\"mm\">2/5 = 0.4</code>. False."
+    ],
+    "misconception": "(D) is close enough to 0.4 that rounding hides the error; <code class=\"mm\">2/5</code> would need 84 committees. The four cases &mdash; 0, 1, 2, 3 women &mdash; must sum to 210: <code class=\"mm\">15 + 80 + 90 + 25 = 210</code>, which is the fastest check on all four counts."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every committee of size 4 is an equally likely 4-subset of the 10 people, so each case is a product of two binomial coefficients divided by <code class=\"mm\">C(10, 4) = 210</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) All men: <code class=\"mm\">C(6, 4)/210 = 15/210 = 1/14</code>. True.</li><li>(B) Exactly two women and two men: <code class=\"mm\">C(4, 2)C(6, 2) = 6 × 15 = 90</code>, and <code class=\"mm\">90/210 = 3/7</code>. True.</li><li>(C) At least one woman is the complement of (A): <code class=\"mm\">1 − 1/14 = 13/14</code>. True.</li><li>(D) Exactly one woman: <code class=\"mm\">C(4, 1)C(6, 3) = 4 × 20 = 80</code>, and <code class=\"mm\">80/210 = 8/21 ≈ 0.381</code>, not <code class=\"mm\">2/5 = 0.4</code>. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> (D) is close enough to 0.4 that rounding hides the error; <code class=\"mm\">2/5</code> would need 84 committees. The four cases &mdash; 0, 1, 2, 3 women &mdash; must sum to 210: <code class=\"mm\">15 + 80 + 90 + 25 = 210</code>, which is the fastest check on all four counts.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U15-Q46",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "expectation-variance",
+   "subtopic": "expectation-variance",
+   "subtopic_label": "Expectation &amp; variance",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "A fair die is rolled once and X is the number shown. Then E[X] is",
+   "question_html": "<p class=\"qtext\">A fair die is rolled once and <code class=\"mm\">X</code> is the number shown. Then <code class=\"mm\">E[X]</code> is</p>",
+   "options": [
+    "<code class=\"mm\">3.5</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">3.25</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">3.5</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">3.25</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "For a discrete variable, <code class=\"mm\">E[X] = Σ x P(X = x)</code>; each face has probability <code class=\"mm\">1/6</code>.",
+    "steps": [
+     "<code class=\"mm\">E[X] = (1 + 2 + 3 + 4 + 5 + 6)/6 = 21/6</code>.",
+     "<code class=\"mm\">21/6 = 7/2 = 3.5</code>.",
+     "The value is the midpoint of the possible outcomes, as symmetry demands: <code class=\"mm\">1</code> and <code class=\"mm\">6</code>, <code class=\"mm\">2</code> and <code class=\"mm\">5</code>, <code class=\"mm\">3</code> and <code class=\"mm\">4</code> each average to 3.5.",
+     "Note that 3.5 is not a face of the die &mdash; an expectation need not be an attainable value."
+    ],
+    "misconception": "Answering 3 takes the middle <em>face</em> rather than the average; the six faces are 1 to 6, so their average is 3.5. Answering 4 treats the die as showing 1 to 7."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For a discrete variable, <code class=\"mm\">E[X] = Σ x P(X = x)</code>; each face has probability <code class=\"mm\">1/6</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">E[X] = (1 + 2 + 3 + 4 + 5 + 6)/6 = 21/6</code>.</li><li><code class=\"mm\">21/6 = 7/2 = 3.5</code>.</li><li>The value is the midpoint of the possible outcomes, as symmetry demands: <code class=\"mm\">1</code> and <code class=\"mm\">6</code>, <code class=\"mm\">2</code> and <code class=\"mm\">5</code>, <code class=\"mm\">3</code> and <code class=\"mm\">4</code> each average to 3.5.</li><li>Note that 3.5 is not a face of the die &mdash; an expectation need not be an attainable value.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 3 takes the middle <em>face</em> rather than the average; the six faces are 1 to 6, so their average is 3.5. Answering 4 treats the die as showing 1 to 7.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q47",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "expectation-variance",
+   "subtopic": "expectation-variance",
+   "subtopic_label": "Expectation &amp; variance",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "The random variable X takes the value −1 with probability 1/4, the value 0 with probability 1/2, and the value 1 with probability 1/4. Find Var(X). (Enter a decimal.)",
+   "question_html": "<div class=\"qtext\">The random variable <code class=\"mm\">X</code> takes the value <code class=\"mm\">−1</code> with probability <code class=\"mm\">1/4</code>, the value <code class=\"mm\">0</code> with probability <code class=\"mm\">1/2</code>, and the value <code class=\"mm\">1</code> with probability <code class=\"mm\">1/4</code>. Find <code class=\"mm\">Var(X)</code>. (Enter a decimal.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 0.5,
+   "answer_display": "0.5",
+   "marks": 2,
+   "solution": {
+    "concept": "Use <code class=\"mm\">Var(X) = E[X²] − (E[X])²</code>. The distribution is symmetric about 0, so the mean vanishes and the variance is just the second moment.",
+    "steps": [
+     "<code class=\"mm\">E[X] = (−1)(1/4) + 0(1/2) + 1(1/4) = 0</code>.",
+     "<code class=\"mm\">E[X²] = (1)(1/4) + (0)(1/2) + (1)(1/4) = 1/2</code>.",
+     "<code class=\"mm\">Var(X) = 1/2 − 0² = 0.5</code>.",
+     "Direct check: the deviations from the mean are <code class=\"mm\">−1, 0, 1</code>, whose squares average to <code class=\"mm\">(1 + 0 + 1)/4 = 0.5</code>."
+    ],
+    "misconception": "Reporting <code class=\"mm\">0</code> because the mean is 0 confuses the centre with the spread; a symmetric variable can have any variance. Reporting <code class=\"mm\">1</code> forgets the probabilities of the three outcomes and averages over distinct values only."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Use <code class=\"mm\">Var(X) = E[X²] − (E[X])²</code>. The distribution is symmetric about 0, so the mean vanishes and the variance is just the second moment.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">E[X] = (−1)(1/4) + 0(1/2) + 1(1/4) = 0</code>.</li><li><code class=\"mm\">E[X²] = (1)(1/4) + (0)(1/2) + (1)(1/4) = 1/2</code>.</li><li><code class=\"mm\">Var(X) = 1/2 − 0² = 0.5</code>.</li><li>Direct check: the deviations from the mean are <code class=\"mm\">−1, 0, 1</code>, whose squares average to <code class=\"mm\">(1 + 0 + 1)/4 = 0.5</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 0.5.</span></p><p class=\"row\"><b>Common misconception.</b> Reporting <code class=\"mm\">0</code> because the mean is 0 confuses the centre with the spread; a symmetric variable can have any variance. Reporting <code class=\"mm\">1</code> forgets the probabilities of the three outcomes and averages over distinct values only.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U15-Q48",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "expectation-variance",
+   "subtopic": "expectation-variance",
+   "subtopic_label": "Expectation &amp; variance",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Let X be a random variable with E[X] = 2 and Var(X) = 3. Then E[X²] is",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">X</code> be a random variable with <code class=\"mm\">E[X] = 2</code> and <code class=\"mm\">Var(X) = 3</code>. Then <code class=\"mm\">E[X²]</code> is</p>",
+   "options": [
+    "<code class=\"mm\">7</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">9</code>",
+    "<code class=\"mm\">1</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">7</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">9</code>",
+    "<code class=\"mm\">1</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The computational form of the variance is <code class=\"mm\">Var(X) = E[X²] − (E[X])²</code>, so the second moment is recovered by adding the square of the mean.",
+    "steps": [
+     "<code class=\"mm\">3 = E[X²] − 2²</code>.",
+     "<code class=\"mm\">E[X²] = 3 + 4 = 7</code>.",
+     "The answer must exceed <code class=\"mm\">(E[X])² = 4</code> because a variance is non-negative; 7 satisfies this, and it also satisfies <code class=\"mm\">E[X²] ≥ (E[X])²</code> strictly, which is right since the variance is positive."
+    ],
+    "misconception": "<code class=\"mm\">5</code> adds instead of adding the square, and <code class=\"mm\">1</code> subtracts. <code class=\"mm\">9</code> squares the variance. The only valid rearrangement is <code class=\"mm\">E[X²] = Var(X) + (E[X])²</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The computational form of the variance is <code class=\"mm\">Var(X) = E[X²] − (E[X])²</code>, so the second moment is recovered by adding the square of the mean.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">3 = E[X²] − 2²</code>.</li><li><code class=\"mm\">E[X²] = 3 + 4 = 7</code>.</li><li>The answer must exceed <code class=\"mm\">(E[X])² = 4</code> because a variance is non-negative; 7 satisfies this, and it also satisfies <code class=\"mm\">E[X²] ≥ (E[X])²</code> strictly, which is right since the variance is positive.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">5</code> adds instead of adding the square, and <code class=\"mm\">1</code> subtracts. <code class=\"mm\">9</code> squares the variance. The only valid rearrangement is <code class=\"mm\">E[X²] = Var(X) + (E[X])²</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q49",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "expectation-variance",
+   "subtopic": "expectation-variance",
+   "subtopic_label": "Expectation &amp; variance",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Two distinct balls are drawn uniformly at random, without replacement, from a box holding balls numbered 1 to 10. Let X be the positive difference between the two numbers drawn. Then E[X] is",
+   "question_html": "<p class=\"qtext\">Two distinct balls are drawn uniformly at random, without replacement, from a box holding balls numbered <code class=\"mm\">1</code> to <code class=\"mm\">10</code>. Let <code class=\"mm\">X</code> be the positive difference between the two numbers drawn. Then <code class=\"mm\">E[X]</code> is</p>",
+   "options": [
+    "<code class=\"mm\">11/3</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">10/3</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">11/3</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">10/3</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "All <code class=\"mm\">C(10, 2) = 45</code> unordered pairs are equally likely, so the expectation is a weighted average over the possible differences. For a difference <code class=\"mm\">d</code> there are <code class=\"mm\">10 − d</code> pairs.",
+    "steps": [
+     "Count pairs by difference: <code class=\"mm\">d = 1</code> gives 9 pairs, <code class=\"mm\">d = 2</code> gives 8, and so on down to <code class=\"mm\">d = 9</code>, which gives 1. The total is <code class=\"mm\">9 + 8 + … + 1 = 45</code>, as it must be.",
+     "Weighted sum: <code class=\"mm\">Σ d(10 − d) = 9 + 16 + 21 + 24 + 25 + 24 + 21 + 16 + 9 = 165</code>.",
+     "<code class=\"mm\">E[X] = 165/45 = 11/3 ≈ 3.667</code>.",
+     "A quick sanity check: the maximum possible difference is 9 and the average pair is far from the extremes, so an expectation a little under 4 is plausible."
+    ],
+    "misconception": "<code class=\"mm\">10/3</code> and <code class=\"mm\">3</code> come from treating the differences as equally likely, i.e. averaging <code class=\"mm\">1, 2, …, 9</code> and dividing by 9, which ignores that small differences are much more common. <code class=\"mm\">4</code> comes from <code class=\"mm\">E|X − Y| ≈ E[X] − E[Y]</code>, an invalid move because expectation is linear but absolute value is not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> All <code class=\"mm\">C(10, 2) = 45</code> unordered pairs are equally likely, so the expectation is a weighted average over the possible differences. For a difference <code class=\"mm\">d</code> there are <code class=\"mm\">10 − d</code> pairs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count pairs by difference: <code class=\"mm\">d = 1</code> gives 9 pairs, <code class=\"mm\">d = 2</code> gives 8, and so on down to <code class=\"mm\">d = 9</code>, which gives 1. The total is <code class=\"mm\">9 + 8 + … + 1 = 45</code>, as it must be.</li><li>Weighted sum: <code class=\"mm\">Σ d(10 − d) = 9 + 16 + 21 + 24 + 25 + 24 + 21 + 16 + 9 = 165</code>.</li><li><code class=\"mm\">E[X] = 165/45 = 11/3 ≈ 3.667</code>.</li><li>A quick sanity check: the maximum possible difference is 9 and the average pair is far from the extremes, so an expectation a little under 4 is plausible.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">10/3</code> and <code class=\"mm\">3</code> come from treating the differences as equally likely, i.e. averaging <code class=\"mm\">1, 2, …, 9</code> and dividing by 9, which ignores that small differences are much more common. <code class=\"mm\">4</code> comes from <code class=\"mm\">E|X − Y| ≈ E[X] − E[Y]</code>, an invalid move because expectation is linear but absolute value is not.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U15-Q50",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 15,
+   "unit_number": 15,
+   "unit_slug": "discrete-probability",
+   "unit_name": "Discrete Probability",
+   "topic": "Discrete Probability",
+   "sub": "expectation-variance",
+   "subtopic": "expectation-variance",
+   "subtopic_label": "Expectation &amp; variance",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 2 of 2",
+   "run": 25,
+   "run_date": "2026-11-03",
+   "question": "Let X and Y be random variables with finite variance, and let a be a real constant. Which of the following statements are always true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> be random variables with finite variance, and let <code class=\"mm\">a</code> be a real constant. Which of the following statements are <strong>always</strong> true? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">E[X + Y] = E[X] + E[Y]</code>",
+    "<code class=\"mm\">If X and Y are independent, then E[XY] = E[X] E[Y]</code>",
+    "<code class=\"mm\">Var(aX) = a Var(X)</code>",
+    "<code class=\"mm\">If Var(X) = 0, then X is constant with probability 1</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">E[X + Y] = E[X] + E[Y]</code>",
+    "<code class=\"mm\">If X and Y are independent, then E[XY] = E[X] E[Y]</code>",
+    "<code class=\"mm\">Var(aX) = a Var(X)</code>",
+    "<code class=\"mm\">If Var(X) = 0, then X is constant with probability 1</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Expectation is linear unconditionally; the product rule needs independence; variance scales quadratically; and a zero variance means the variable never deviates from its mean.",
+    "steps": [
+     "(A) Linearity holds for every joint distribution, dependent or not. True.",
+     "(B) For independent variables the joint density factorises, so <code class=\"mm\">E[XY] = E[X]E[Y]</code>. True.",
+     "(C) <code class=\"mm\">Var(aX) = a² Var(X)</code>, not <code class=\"mm\">a Var(X)</code>: scaling stretches every deviation by <code class=\"mm\">a</code> and variances carry squared deviations. False as written (it fails for <code class=\"mm\">a = 3</code>, where <code class=\"mm\">9 Var(X) ≠ 3 Var(X)</code>).",
+     "(D) <code class=\"mm\">Var(X) = E[(X − E[X])²] = 0</code> with a non-negative integrand forces <code class=\"mm\">(X − E[X])² = 0</code> with probability 1, i.e. <code class=\"mm\">X = E[X]</code> almost surely. True."
+    ],
+    "misconception": "(C) is the standard slip: variance is not linear, so a scale factor must be squared. (B) is often wrongly generalised to all pairs &mdash; <code class=\"mm\">E[XY] = E[X]E[Y]</code> characterises uncorrelated variables, and independence is only sufficient, not necessary."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Expectation is linear unconditionally; the product rule needs independence; variance scales quadratically; and a zero variance means the variable never deviates from its mean.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) Linearity holds for every joint distribution, dependent or not. True.</li><li>(B) For independent variables the joint density factorises, so <code class=\"mm\">E[XY] = E[X]E[Y]</code>. True.</li><li>(C) <code class=\"mm\">Var(aX) = a² Var(X)</code>, not <code class=\"mm\">a Var(X)</code>: scaling stretches every deviation by <code class=\"mm\">a</code> and variances carry squared deviations. False as written (it fails for <code class=\"mm\">a = 3</code>, where <code class=\"mm\">9 Var(X) ≠ 3 Var(X)</code>).</li><li>(D) <code class=\"mm\">Var(X) = E[(X − E[X])²] = 0</code> with a non-negative integrand forces <code class=\"mm\">(X − E[X])² = 0</code> with probability 1, i.e. <code class=\"mm\">X = E[X]</code> almost surely. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> (C) is the standard slip: variance is not linear, so a scale factor must be squared. (B) is often wrongly generalised to all pairs &mdash; <code class=\"mm\">E[XY] = E[X]E[Y]</code> characterises uncorrelated variables, and independence is only sufficient, not necessary.</p>",
    "question_format": "MSQ"
   }
  ]
