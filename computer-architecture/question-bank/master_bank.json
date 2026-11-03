@@ -6,7 +6,7 @@
   "created": "2026-10-27",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 325,
+  "total_questions": 350,
   "units_with_questions": [
    1,
    2,
@@ -15,7 +15,7 @@
    5,
    6
   ],
-  "total_runs": 13
+  "total_runs": 14
  },
  "runs": [
   {
@@ -801,6 +801,74 @@
     "CO-U2-Q75"
    ],
    "selection": "MODE A. Unseeded draw over the four subjects that had no paper dated 2026-11-03 (engineering-mathematics, computer-architecture, compiler-design, operating-systems) returned computer-architecture. Most recent paper: 2026-11-02 run 12, unit 1 instructions-addressing, Set 2 of 2. Unit 1 held 50 questions, equal to UNIT_QUESTION_CAP = 50, so B3 failed on the cap and B4 advanced one unit: (0 + 1) mod 6 = 1 -> Unit 2 datapath-control-unit. Unit 2 already held 50 questions, so this is Set 1 of 2 of the second pass (B5), taking the unit to 75.",
+   "note": "Practice paper. No verified PYQ in this unit; nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 14,
+   "date": "2026-11-03",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html",
+   "archived_previous": "computer-architecture/cache-memory/archive/gate_co_mock_3_2026-10-30_run1.html",
+   "mode": "MODE A",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": "15 MCQ (1 mark), 5 MSQ (2 marks), 5 NAT (2 marks); 35 marks; no negative marking; MSQ exact set only",
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "direct-associative-setassociative-mapping",
+    "cache-hit-miss-penalty",
+    "replacement-algorithms",
+    "write-policies-write-through-back"
+   ],
+   "subtopic_counts": {
+    "direct-associative-setassociative-mapping": 6,
+    "cache-hit-miss-penalty": 6,
+    "replacement-algorithms": 6,
+    "write-policies-write-through-back": 7
+   },
+   "question_ids": [
+    "CO-U3-Q51",
+    "CO-U3-Q52",
+    "CO-U3-Q53",
+    "CO-U3-Q54",
+    "CO-U3-Q55",
+    "CO-U3-Q56",
+    "CO-U3-Q57",
+    "CO-U3-Q58",
+    "CO-U3-Q59",
+    "CO-U3-Q60",
+    "CO-U3-Q61",
+    "CO-U3-Q62",
+    "CO-U3-Q63",
+    "CO-U3-Q64",
+    "CO-U3-Q65",
+    "CO-U3-Q66",
+    "CO-U3-Q67",
+    "CO-U3-Q68",
+    "CO-U3-Q69",
+    "CO-U3-Q70",
+    "CO-U3-Q71",
+    "CO-U3-Q72",
+    "CO-U3-Q73",
+    "CO-U3-Q74",
+    "CO-U3-Q75"
+   ],
+   "selection": "MODE A. Unseeded draw over the eleven subjects in syllabus order returned computer-architecture (index 3). Most recent paper: 2026-11-03 run 13, unit 2 datapath-control-unit, Set 1 of 2 (second pass). Unit 2 held 75 questions, above UNIT_QUESTION_CAP = 50, so B3 failed on the cap and B4 advanced exactly one unit: (1 + 1) mod 6 = 2 -> Unit 3 cache-memory. Unit 3 already held 50 questions from 2026-10-29 and 2026-10-30, so B5 applies: the second pass over Computer Architecture begins and this paper is Set 1 of 2 of that pass, taking unit 3 to 75. No override, no partial set, exactly 25 questions.",
+   "sources": {
+    "STANDARD_TEXTBOOK": 17,
+    "ORIGINAL_SYNTHESIS": 8
+   },
    "note": "Practice paper. No verified PYQ in this unit; nothing on this paper is claimed as an official GATE question."
   }
  ],
@@ -11349,6 +11417,1056 @@
     2,
     3
    ]
+  },
+  {
+   "id": "CO-U3-Q51",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A byte-addressable processor issues 32-bit addresses to a 16 KB direct-mapped cache whose block size is 64 bytes. How many bits of the address select the cache line?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"1\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 1</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A byte-addressable processor issues 32-bit addresses to a 16 KB direct-mapped cache whose block size is 64 bytes. How many bits of the address select the cache line?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">8</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">10</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"1\" data-typ=\"MCQ\" name=\"q1\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">14</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "6",
+    "8",
+    "10",
+    "14"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "In a direct-mapped cache each block has exactly one line it can occupy, so the address is split into tag | line index | block offset, and the index must be wide enough to name every line.",
+    "steps": [
+     "The number of lines is cache size / block size = 16384 / 64 = 256.",
+     "The index field must distinguish 256 lines, so it needs log&#8322; 256 = 8 bits.",
+     "The block offset needs log&#8322; 64 = 6 bits, and the remaining 32 &minus; 8 &minus; 6 = 18 bits form the tag.",
+     "So 8 bits select the line."
+    ],
+    "final": "8 bits &mdash; option B.",
+    "trap": "6 is the block offset, the bits that choose a byte inside a block; 14 is log&#8322; of the cache size in bytes; 10 is the index width of a 1 KB direct-mapped cache. The index width depends on the number of lines, never on the number of bytes."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a direct-mapped cache each block has exactly one line it can occupy, so the address is split into tag | line index | block offset, and the index must be wide enough to name every line.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The number of lines is cache size / block size = 16384 / 64 = 256.</li><li>The index field must distinguish 256 lines, so it needs log&#8322; 256 = 8 bits.</li><li>The block offset needs log&#8322; 64 = 6 bits, and the remaining 32 &minus; 8 &minus; 6 = 18 bits form the tag.</li><li>So 8 bits select the line.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8 bits &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> 6 is the block offset, the bits that choose a byte inside a block; 14 is log&#8322; of the cache size in bytes; 10 is the index width of a 1 KB direct-mapped cache. The index width depends on the number of lines, never on the number of bytes.</p>"
+  },
+  {
+   "id": "CO-U3-Q52",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A 32 KB cache is 4-way set associative with 64-byte blocks and 32-bit byte addresses. How many tag bits does each cache line store?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"2\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 2</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A 32 KB cache is 4-way set associative with 64-byte blocks and 32-bit byte addresses. How many tag bits does each cache line store?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 2\" autocomplete=\"off\" class=\"natinput\" data-n=\"2\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": null,
+   "answer": 19,
+   "solution": {
+    "concept": "The tag is whatever is left of the address after the index and the block offset: tag = address width &minus; index bits &minus; offset bits. The index names a set, and a set holds one line per way.",
+    "steps": [
+     "Number of sets = cache size / (block size &times; associativity) = 32768 / (64 &times; 4) = 128 sets.",
+     "Index bits = log&#8322; 128 = 7.",
+     "Block offset bits = log&#8322; 64 = 6.",
+     "Tag bits = 32 &minus; 7 &minus; 6 = 19."
+    ],
+    "final": "19 bits.",
+    "trap": "Dividing only by the block size gives 512 sets, 9 index bits and 17 tag bits; that is the arithmetic of a direct-mapped cache. The associativity divides the number of sets, not the number of lines."
+   },
+   "answer_display": "19",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The tag is whatever is left of the address after the index and the block offset: tag = address width &minus; index bits &minus; offset bits. The index names a set, and a set holds one line per way.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Number of sets = cache size / (block size &times; associativity) = 32768 / (64 &times; 4) = 128 sets.</li><li>Index bits = log&#8322; 128 = 7.</li><li>Block offset bits = log&#8322; 64 = 6.</li><li>Tag bits = 32 &minus; 7 &minus; 6 = 19.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 19 bits.</span></p><p class=\"row\"><b>Common misconception.</b> Dividing only by the block size gives 512 sets, 9 index bits and 17 tag bits; that is the arithmetic of a direct-mapped cache. The associativity divides the number of sets, not the number of lines.</p>"
+  },
+  {
+   "id": "CO-U3-Q53",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A 256 KB cache is 8-way set associative with 64-byte blocks, and the physical address is 40 bits wide. Which split into (tag, index, block offset) is correct?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"3\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 3</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 256 KB cache is 8-way set associative with 64-byte blocks, and the physical address is 40 bits wide. Which split into (tag, index, block offset) is correct?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">(22, 12, 6)</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">(25, 6, 9)</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">(28, 6, 6)</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"3\" data-typ=\"MCQ\" name=\"q3\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">(25, 9, 6)</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "(22, 12, 6)",
+    "(25, 6, 9)",
+    "(28, 6, 6)",
+    "(25, 9, 6)"
+   ],
+   "answer": [
+    3
+   ],
+   "solution": {
+    "concept": "Set-associative mapping divides the cache into sets of <code class=\"mm\">ways</code> lines. The index selects the set, the offset selects the byte inside the block, and the tag holds the rest of the address.",
+    "steps": [
+     "Number of sets = 262144 / (64 &times; 8) = 512, so the index needs 9 bits.",
+     "The block offset needs log&#8322; 64 = 6 bits.",
+     "The tag takes the remaining 40 &minus; 9 &minus; 6 = 25 bits.",
+     "The split is therefore (25, 9, 6)."
+    ],
+    "final": "(25, 9, 6) &mdash; option D.",
+    "trap": "(22, 12, 6) is the direct-mapped split, 4096 lines giving 12 index bits. (25, 6, 9) swaps the index and the offset. (28, 6, 6) uses 64 sets, which forgets the eight ways."
+   },
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Set-associative mapping divides the cache into sets of <code class=\"mm\">ways</code> lines. The index selects the set, the offset selects the byte inside the block, and the tag holds the rest of the address.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Number of sets = 262144 / (64 &times; 8) = 512, so the index needs 9 bits.</li><li>The block offset needs log&#8322; 64 = 6 bits.</li><li>The tag takes the remaining 40 &minus; 9 &minus; 6 = 25 bits.</li><li>The split is therefore (25, 9, 6).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: (25, 9, 6) &mdash; option D.</span></p><p class=\"row\"><b>Common misconception.</b> (22, 12, 6) is the direct-mapped split, 4096 lines giving 12 index bits. (25, 6, 9) swaps the index and the offset. (28, 6, 6) uses 64 sets, which forgets the eight ways.</p>"
+  },
+  {
+   "id": "CO-U3-Q54",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about where a block may be placed in a cache are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"4\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 4</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about where a block may be placed in a cache are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">In a direct-mapped cache a block can occupy exactly one line, so no search among ways is needed after the tag comparison</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Raising the associativity reduces conflict misses but can lengthen the hit time, because a multiplexer must pick among the ways after every tag has been compared</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A fully associative cache has no index field, so every line's tag is compared with the address in parallel</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"4\" data-typ=\"MSQ\" name=\"q4\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In a set-associative cache the block offset bits are stored with the line as part of its tag</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "In a direct-mapped cache a block can occupy exactly one line, so no search among ways is needed after the tag comparison",
+    "Raising the associativity reduces conflict misses but can lengthen the hit time, because a multiplexer must pick among the ways after every tag has been compared",
+    "A fully associative cache has no index field, so every line's tag is compared with the address in parallel",
+    "In a set-associative cache the block offset bits are stored with the line as part of its tag"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "Placement is a trade-off between the freedom to choose a line and the cost of finding the block. Direct mapping fixes the line, full associativity frees it entirely, and set associativity sits between the two.",
+    "steps": [
+     "(A) True. With one candidate line there is nothing to search: the index computes the line and one comparator decides hit or miss.",
+     "(B) True. The ways must be searched in parallel and their results selected, and that selection sits on the hit path.",
+     "(C) True. With one set the whole cache is the set, so every tag is compared simultaneously and no address bits are spent on an index.",
+     "(D) False. The offset is not stored: it is the same for the block and for the line, so only the tag needs to be kept for the comparison."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Statement (D) sounds harmless but doubles the stored tag for nothing. The line does not need to know where inside the block the byte is; that is computed from the address at access time."
+   },
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Placement is a trade-off between the freedom to choose a line and the cost of finding the block. Direct mapping fixes the line, full associativity frees it entirely, and set associativity sits between the two.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. With one candidate line there is nothing to search: the index computes the line and one comparator decides hit or miss.</li><li>(B) True. The ways must be searched in parallel and their results selected, and that selection sits on the hit path.</li><li>(C) True. With one set the whole cache is the set, so every tag is compared simultaneously and no address bits are spent on an index.</li><li>(D) False. The offset is not stored: it is the same for the block and for the line, so only the tag needs to be kept for the comparison.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Statement (D) sounds harmless but doubles the stored tag for nothing. The line does not need to know where inside the block the byte is; that is computed from the address at access time.</p>"
+  },
+  {
+   "id": "CO-U3-Q55",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A 64 KB two-way set-associative cache has 32-byte blocks and 32-bit byte addresses. Besides the data, every line stores its tag, a valid bit and a dirty bit. What is the total number of bits of tag and status storage in the cache?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"5\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 5</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 64 KB two-way set-associative cache has 32-byte blocks and 32-bit byte addresses. Besides the data, every line stores its tag, a valid bit and a dirty bit. What is the total number of bits of tag and status storage in the cache?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">34 816</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">36 864</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">38 912</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"5\" data-typ=\"MCQ\" name=\"q5\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">40 960</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "34 816",
+    "36 864",
+    "38 912",
+    "40 960"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "Tag and status storage is counted per line, not per set: a two-way set holds two independent lines, each with its own tag, valid bit and dirty bit.",
+    "steps": [
+     "Number of sets = 65536 / (32 &times; 2) = 1024, so the index is 10 bits and the offset is 5 bits.",
+     "Tag bits per line = 32 &minus; 10 &minus; 5 = 17.",
+     "Each line therefore needs 17 tag bits + 1 valid bit + 1 dirty bit = 19 bits.",
+     "Number of lines = 1024 sets &times; 2 ways = 2048, so the total is 2048 &times; 19 = 38 912 bits."
+    ],
+    "final": "38 912 bits &mdash; option C.",
+    "trap": "Counting 1024 lines instead of 2048 halves the answer. 36 864 is 2048 &times; 18, which forgets one of the two status bits, and 40 960 is 2048 &times; 20, one bit too many."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Tag and status storage is counted per line, not per set: a two-way set holds two independent lines, each with its own tag, valid bit and dirty bit.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Number of sets = 65536 / (32 &times; 2) = 1024, so the index is 10 bits and the offset is 5 bits.</li><li>Tag bits per line = 32 &minus; 10 &minus; 5 = 17.</li><li>Each line therefore needs 17 tag bits + 1 valid bit + 1 dirty bit = 19 bits.</li><li>Number of lines = 1024 sets &times; 2 ways = 2048, so the total is 2048 &times; 19 = 38 912 bits.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 38 912 bits &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Counting 1024 lines instead of 2048 halves the answer. 36 864 is 2048 &times; 18, which forgets one of the two status bits, and 40 960 is 2048 &times; 20, one bit too many.</p>"
+  },
+  {
+   "id": "CO-U3-Q56",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "direct-associative-setassociative-mapping",
+   "subtopic": "direct-associative-setassociative-mapping",
+   "subtopic_label": "Direct, associative & set-associative mapping",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A 64 KB cache with 128-byte blocks is 4-way set associative. How many sets does it contain?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"6\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"direct-associative-setassociative-mapping\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 6</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">direct-associative-setassociative-mapping</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 64 KB cache with 128-byte blocks is 4-way set associative. How many sets does it contain?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">64</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">256</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">128</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"6\" data-typ=\"MCQ\" name=\"q6\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">512</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "64",
+    "256",
+    "128",
+    "512"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "A set holds one line per way, so the number of sets is the number of lines divided by the associativity.",
+    "steps": [
+     "Number of lines = 65536 / 128 = 512.",
+     "Number of sets = 512 / 4 = 128.",
+     "Equivalently, sets = 65536 / (128 &times; 4) = 128."
+    ],
+    "final": "128 sets &mdash; option C.",
+    "trap": "512 is the number of lines, which is the answer to a different question. Forgetting the four ways and calling 512 the number of sets makes the index two bits too wide."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A set holds one line per way, so the number of sets is the number of lines divided by the associativity.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Number of lines = 65536 / 128 = 512.</li><li>Number of sets = 512 / 4 = 128.</li><li>Equivalently, sets = 65536 / (128 &times; 4) = 128.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 128 sets &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> 512 is the number of lines, which is the answer to a different question. Forgetting the four ways and calling 512 the number of sets makes the index two bits too wide.</p>"
+  },
+  {
+   "id": "CO-U3-Q57",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "For a single-level cache, the average memory access time is",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"7\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 7</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">For a single-level cache, the average memory access time is</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">(hit time + miss penalty) / miss rate</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">hit time &times; miss rate + miss penalty</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">hit time + miss rate &times; miss penalty</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"7\" data-typ=\"MCQ\" name=\"q7\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">hit time + miss penalty</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "(hit time + miss penalty) / miss rate",
+    "hit time &times; miss rate + miss penalty",
+    "hit time + miss rate &times; miss penalty",
+    "hit time + miss penalty"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "Every access pays the hit time, and a fraction of the accesses equal to the miss rate also pays the extra cost of going to the next level, the miss penalty.",
+    "steps": [
+     "Every access costs the hit time, so that term is never multiplied by a fraction.",
+     "A fraction equal to the miss rate pays the miss penalty as well.",
+     "Adding the two contributions gives AMAT = hit time + miss rate &times; miss penalty.",
+     "Dividing by the miss rate or adding the full penalty to every access overstates the cost."
+    ],
+    "final": "hit time + miss rate &times; miss penalty &mdash; option C.",
+    "trap": "Option A divides instead of weighting, and option D charges the miss penalty to every access. Only the misses pay the penalty."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every access pays the hit time, and a fraction of the accesses equal to the miss rate also pays the extra cost of going to the next level, the miss penalty.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every access costs the hit time, so that term is never multiplied by a fraction.</li><li>A fraction equal to the miss rate pays the miss penalty as well.</li><li>Adding the two contributions gives AMAT = hit time + miss rate &times; miss penalty.</li><li>Dividing by the miss rate or adding the full penalty to every access overstates the cost.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: hit time + miss rate &times; miss penalty &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Option A divides instead of weighting, and option D charges the miss penalty to every access. Only the misses pay the penalty.</p>"
+  },
+  {
+   "id": "CO-U3-Q58",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A cache has a hit time of 2 ns, a hit rate of 95% and a miss penalty of 40 ns. What is the average memory access time, in nanoseconds?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"8\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 8</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A cache has a hit time of 2 ns, a hit rate of 95% and a miss penalty of 40 ns. What is the average memory access time, in nanoseconds?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 8\" autocomplete=\"off\" class=\"natinput\" data-n=\"8\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": null,
+   "answer": 4,
+   "solution": {
+    "concept": "AMAT = hit time + miss rate &times; miss penalty. The hit rate must be converted to a miss rate before it is used.",
+    "steps": [
+     "Miss rate = 1 &minus; 0.95 = 0.05.",
+     "Average penalty = 0.05 &times; 40 ns = 2 ns.",
+     "AMAT = 2 ns + 2 ns = 4 ns."
+    ],
+    "final": "4 ns.",
+    "trap": "Using 0.95 as the miss rate gives 2 + 38 = 40 ns, which charges the penalty to the hits instead of the misses."
+   },
+   "answer_display": "4",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> AMAT = hit time + miss rate &times; miss penalty. The hit rate must be converted to a miss rate before it is used.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Miss rate = 1 &minus; 0.95 = 0.05.</li><li>Average penalty = 0.05 &times; 40 ns = 2 ns.</li><li>AMAT = 2 ns + 2 ns = 4 ns.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 ns.</span></p><p class=\"row\"><b>Common misconception.</b> Using 0.95 as the miss rate gives 2 + 38 = 40 ns, which charges the penalty to the hits instead of the misses.</p>"
+  },
+  {
+   "id": "CO-U3-Q59",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "An L1 cache has a hit time of 1 ns and a local miss rate of 5%. The L2 cache behind it has a hit time of 8 ns and a local miss rate of 20%. A miss in L2 costs a further 60 ns in main memory. What is the average memory access time?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"9\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 9</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">An L1 cache has a hit time of 1 ns and a local miss rate of 5%. The L2 cache behind it has a hit time of 8 ns and a local miss rate of 20%. A miss in L2 costs a further 60 ns in main memory. What is the average memory access time?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1.6 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2.0 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">4.4 ns</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"9\" data-typ=\"MCQ\" name=\"q9\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">9.0 ns</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "1.6 ns",
+    "2.0 ns",
+    "4.4 ns",
+    "9.0 ns"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "With two levels, the L1 miss penalty is the L2 hit time plus the L2 miss rate times the memory cost; that whole penalty is then weighted by the L1 miss rate.",
+    "steps": [
+     "L2 miss penalty = 8 ns + 0.20 &times; 60 ns = 8 + 12 = 20 ns.",
+     "L1 miss penalty = 20 ns, weighted by the L1 miss rate: 0.05 &times; 20 = 1 ns.",
+     "AMAT = 1 ns + 1 ns = 2.0 ns."
+    ],
+    "final": "2.0 ns &mdash; option B.",
+    "trap": "1.6 ns comes from multiplying the two miss rates into a 1% global miss rate and then charging the full 60 ns. 4.4 ns forgets to weight the L2 miss rate by the L1 miss rate, and 9.0 ns simply adds the two hit times to the L1 hit time."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> With two levels, the L1 miss penalty is the L2 hit time plus the L2 miss rate times the memory cost; that whole penalty is then weighted by the L1 miss rate.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>L2 miss penalty = 8 ns + 0.20 &times; 60 ns = 8 + 12 = 20 ns.</li><li>L1 miss penalty = 20 ns, weighted by the L1 miss rate: 0.05 &times; 20 = 1 ns.</li><li>AMAT = 1 ns + 1 ns = 2.0 ns.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2.0 ns &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> 1.6 ns comes from multiplying the two miss rates into a 1% global miss rate and then charging the full 60 ns. 4.4 ns forgets to weight the L2 miss rate by the L1 miss rate, and 9.0 ns simply adds the two hit times to the L1 hit time.</p>"
+  },
+  {
+   "id": "CO-U3-Q60",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about cache performance are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"10\" data-type=\"MSQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 10</span><span class=\"tag msq\">MSQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about cache performance are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"10\" data-typ=\"MSQ\" name=\"q10\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Halving the miss rate halves the average memory access time</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"10\" data-typ=\"MSQ\" name=\"q10\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A higher L2 hit rate reduces the average miss penalty that the L1 cache sees</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"10\" data-typ=\"MSQ\" name=\"q10\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Doubling the block size may lower the compulsory miss rate but can raise the miss penalty, because every miss now transfers twice as many bytes</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"10\" data-typ=\"MSQ\" name=\"q10\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">If the clock frequency is doubled while every memory latency in nanoseconds stays the same, the miss penalty measured in cycles stays the same</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Halving the miss rate halves the average memory access time",
+    "A higher L2 hit rate reduces the average miss penalty that the L1 cache sees",
+    "Doubling the block size may lower the compulsory miss rate but can raise the miss penalty, because every miss now transfers twice as many bytes",
+    "If the clock frequency is doubled while every memory latency in nanoseconds stays the same, the miss penalty measured in cycles stays the same"
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "AMAT has two terms, a hit-time term that every access pays and a miss term that only misses pay. Changing the miss behaviour cannot shrink the hit-time term, and a latency in nanoseconds becomes more cycles when the clock is faster.",
+    "steps": [
+     "(A) False. Only the miss term halves; the hit-time term is unchanged, so AMAT falls by less than half.",
+     "(B) True. A higher L2 hit rate means fewer L1 misses fall through to memory, so the average penalty per L1 miss is smaller.",
+     "(C) True. A larger block brings in neighbours that may be used, but each miss moves more data and so costs more time.",
+     "(D) False. The same nanosecond latency spans twice as many cycles at twice the frequency, so the penalty in cycles doubles."
+    ],
+    "final": "Options (B) and (C).",
+    "trap": "Statement (A) is the usual trap: the hit time is paid on every single access, so it survives any improvement in the miss rate. Statement (D) confuses a time with a count of cycles."
+   },
+   "answer_display": "Options (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> AMAT has two terms, a hit-time term that every access pays and a miss term that only misses pay. Changing the miss behaviour cannot shrink the hit-time term, and a latency in nanoseconds becomes more cycles when the clock is faster.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) False. Only the miss term halves; the hit-time term is unchanged, so AMAT falls by less than half.</li><li>(B) True. A higher L2 hit rate means fewer L1 misses fall through to memory, so the average penalty per L1 miss is smaller.</li><li>(C) True. A larger block brings in neighbours that may be used, but each miss moves more data and so costs more time.</li><li>(D) False. The same nanosecond latency spans twice as many cycles at twice the frequency, so the penalty in cycles doubles.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Statement (A) is the usual trap: the hit time is paid on every single access, so it survives any improvement in the miss rate. Statement (D) confuses a time with a count of cycles.</p>"
+  },
+  {
+   "id": "CO-U3-Q61",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A 2 GHz processor has a base CPI of 1.0 when every access hits in the cache. 30% of instructions are loads or stores, the miss rate per memory access is 4%, and the miss penalty is 50 ns. What is the effective CPI?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"11\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 11</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A 2 GHz processor has a base CPI of 1.0 when every access hits in the cache. 30% of instructions are loads or stores, the miss rate per memory access is 4%, and the miss penalty is 50 ns. What is the effective CPI?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">1.12</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">1.6</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">2.2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"11\" data-typ=\"MCQ\" name=\"q11\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">3.0</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "1.12",
+    "1.6",
+    "2.2",
+    "3.0"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "Memory stalls per instruction = (fraction of instructions that access memory) &times; (miss rate per access) &times; (miss penalty in cycles). The penalty must be converted from nanoseconds to cycles before it is used.",
+    "steps": [
+     "Miss penalty in cycles = 50 ns &times; 2 GHz = 100 cycles.",
+     "Memory instructions per instruction = 0.30.",
+     "Stall cycles per instruction = 0.30 &times; 0.04 &times; 100 = 1.2.",
+     "Effective CPI = 1.0 + 1.2 = 2.2."
+    ],
+    "final": "2.2 &mdash; option C.",
+    "trap": "1.6 comes from multiplying 0.30 &times; 0.04 &times; 50 without converting nanoseconds to cycles. 3.0 comes from applying the 4% miss rate to all instructions instead of only the memory instructions."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Memory stalls per instruction = (fraction of instructions that access memory) &times; (miss rate per access) &times; (miss penalty in cycles). The penalty must be converted from nanoseconds to cycles before it is used.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Miss penalty in cycles = 50 ns &times; 2 GHz = 100 cycles.</li><li>Memory instructions per instruction = 0.30.</li><li>Stall cycles per instruction = 0.30 &times; 0.04 &times; 100 = 1.2.</li><li>Effective CPI = 1.0 + 1.2 = 2.2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2.2 &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> 1.6 comes from multiplying 0.30 &times; 0.04 &times; 50 without converting nanoseconds to cycles. 3.0 comes from applying the 4% miss rate to all instructions instead of only the memory instructions.</p>"
+  },
+  {
+   "id": "CO-U3-Q62",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "cache-hit-miss-penalty",
+   "subtopic": "cache-hit-miss-penalty",
+   "subtopic_label": "Cache hit/miss & miss penalty",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "An L1 cache has a hit time of 1 cycle and a miss rate of 8%. The L2 cache behind it has a hit time of 10 cycles and a local miss rate of 20%; a miss in L2 costs a further 200 cycles. What is the average memory access time, in cycles?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"12\" data-type=\"NAT\" data-difficulty=\"hard\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"cache-hit-miss-penalty\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 12</span><span class=\"tag nat\">NAT</span><span class=\"tag hard\">hard</span><span class=\"tag src\">cache-hit-miss-penalty</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">An L1 cache has a hit time of 1 cycle and a miss rate of 8%. The L2 cache behind it has a hit time of 10 cycles and a local miss rate of 20%; a miss in L2 costs a further 200 cycles. What is the average memory access time, in cycles?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 12\" autocomplete=\"off\" class=\"natinput\" data-n=\"12\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": null,
+   "answer": 5,
+   "solution": {
+    "concept": "Each level contributes its own hit time weighted by the fraction of accesses that reach it. The L1 miss penalty is the L2 hit time plus the L2 miss rate times the memory cost.",
+    "steps": [
+     "L2 miss penalty = 10 + 0.20 &times; 200 = 10 + 40 = 50 cycles.",
+     "Every access reaches L1, so the L1 term is 1 cycle.",
+     "8% of accesses miss in L1 and pay the 50-cycle penalty: 0.08 &times; 50 = 4 cycles.",
+     "AMAT = 1 + 4 = 5 cycles."
+    ],
+    "final": "5 cycles.",
+    "trap": "Adding 10 and 200 and then weighting by 8% gives 17.8, which treats every L2 access as a miss. Using the two miss rates as 8% and 20% of all accesses without nesting them also overstates the answer."
+   },
+   "answer_display": "5",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each level contributes its own hit time weighted by the fraction of accesses that reach it. The L1 miss penalty is the L2 hit time plus the L2 miss rate times the memory cost.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>L2 miss penalty = 10 + 0.20 &times; 200 = 10 + 40 = 50 cycles.</li><li>Every access reaches L1, so the L1 term is 1 cycle.</li><li>8% of accesses miss in L1 and pay the 50-cycle penalty: 0.08 &times; 50 = 4 cycles.</li><li>AMAT = 1 + 4 = 5 cycles.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 5 cycles.</span></p><p class=\"row\"><b>Common misconception.</b> Adding 10 and 200 and then weighting by 8% gives 17.8, which treats every L2 access as a miss. Using the two miss rates as 8% and 20% of all accesses without nesting them also overstates the answer.</p>"
+  },
+  {
+   "id": "CO-U3-Q63",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A two-way set holds block 12, last used 40 accesses ago, and block 31, last used 3 accesses ago. A new block maps to this set and the cache replaces by LRU. Which line is replaced?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"13\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 13</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A two-way set holds block 12, last used 40 accesses ago, and block 31, last used 3 accesses ago. A new block maps to this set and the cache replaces by LRU. Which line is replaced?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">Block 31, because it is the more recently used of the two</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Block 12, because it was used least recently</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Whichever block has the smaller address</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"13\" data-typ=\"MCQ\" name=\"q13\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Neither; the request waits until a line becomes free</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "Block 31, because it is the more recently used of the two",
+    "Block 12, because it was used least recently",
+    "Whichever block has the smaller address",
+    "Neither; the request waits until a line becomes free"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "Least recently used means the block whose most recent reference is farthest in the past. It is about recency of use, not about size, address or arrival order.",
+    "steps": [
+     "The last use of block 12 was 40 accesses ago and of block 31 was 3 accesses ago.",
+     "40 accesses is further in the past than 3, so block 12 is the least recently used.",
+     "LRU evicts block 12 and installs the new block in its place."
+    ],
+    "final": "Block 12 &mdash; option B.",
+    "trap": "Address order and arrival order are not recency. Block 12 may well have arrived later than block 31 and still be the one to go, because it has not been touched for longer."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Least recently used means the block whose most recent reference is farthest in the past. It is about recency of use, not about size, address or arrival order.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The last use of block 12 was 40 accesses ago and of block 31 was 3 accesses ago.</li><li>40 accesses is further in the past than 3, so block 12 is the least recently used.</li><li>LRU evicts block 12 and installs the new block in its place.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Block 12 &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Address order and arrival order are not recency. Block 12 may well have arrived later than block 31 and still be the one to go, because it has not been touched for longer.</p>"
+  },
+  {
+   "id": "CO-U3-Q64",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A three-way set-associative cache replaces blocks by LRU. Within one set, the blocks referenced are 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many of the twelve references miss?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"14\" data-type=\"NAT\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 14</span><span class=\"tag nat\">NAT</span><span class=\"tag medium\">medium</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A three-way set-associative cache replaces blocks by LRU. Within one set, the blocks referenced are 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many of the twelve references miss?</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 14\" autocomplete=\"off\" class=\"natinput\" data-n=\"14\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": null,
+   "answer": 10,
+   "solution": {
+    "concept": "Simulating LRU needs the set contents after every reference plus the recency order. A reference misses when the block is absent, and every miss also changes the recency order of the block that is installed.",
+    "steps": [
+     "1, 2, 3 fill the set: three misses, order 1 2 3.",
+     "4 misses and evicts 1 (least recent): order 2 3 4.",
+     "1 misses and evicts 2: order 3 4 1. 2 misses and evicts 3: order 4 1 2.",
+     "5 misses and evicts 4: order 1 2 5.",
+     "1 hits (order 2 5 1). 2 hits (order 5 1 2).",
+     "3 misses and evicts 5: order 1 2 3. 4 misses and evicts 1: order 2 3 4. 5 misses and evicts 2: order 3 4 5.",
+     "Misses: 1, 2, 3, 4, 1, 2, 5, 3, 4, 5 = 10; hits: the second 1 and the second 2 only."
+    ],
+    "final": "10 misses.",
+    "trap": "9 is the FIFO count for the same string, so a simulation that quietly uses a FIFO queue looks right. LRU evicts by recency, so a block that was just re-referenced is protected even if it arrived long ago."
+   },
+   "answer_display": "10",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Simulating LRU needs the set contents after every reference plus the recency order. A reference misses when the block is absent, and every miss also changes the recency order of the block that is installed.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>1, 2, 3 fill the set: three misses, order 1 2 3.</li><li>4 misses and evicts 1 (least recent): order 2 3 4.</li><li>1 misses and evicts 2: order 3 4 1. 2 misses and evicts 3: order 4 1 2.</li><li>5 misses and evicts 4: order 1 2 5.</li><li>1 hits (order 2 5 1). 2 hits (order 5 1 2).</li><li>3 misses and evicts 5: order 1 2 3. 4 misses and evicts 1: order 2 3 4. 5 misses and evicts 2: order 3 4 5.</li><li>Misses: 1, 2, 3, 4, 1, 2, 5, 3, 4, 5 = 10; hits: the second 1 and the second 2 only.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 10 misses.</span></p><p class=\"row\"><b>Common misconception.</b> 9 is the FIFO count for the same string, so a simulation that quietly uses a FIFO queue looks right. LRU evicts by recency, so a block that was just re-referenced is protected even if it arrived long ago.</p>"
+  },
+  {
+   "id": "CO-U3-Q65",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which statement about Belady's anomaly is correct?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"15\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 15</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">Which statement about Belady's anomaly is correct?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">LRU can show it and FIFO cannot</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Both FIFO and LRU can show it</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">FIFO can show it, so a larger cache sometimes produces more misses, while LRU cannot</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"15\" data-typ=\"MCQ\" name=\"q15\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Neither policy can show it; more lines never means more misses</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "LRU can show it and FIFO cannot",
+    "Both FIFO and LRU can show it",
+    "FIFO can show it, so a larger cache sometimes produces more misses, while LRU cannot",
+    "Neither policy can show it; more lines never means more misses"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "A policy is a stack algorithm when the set of blocks it holds with n lines is always contained in the set it holds with n + 1 lines. LRU and the optimal policy are stack algorithms; FIFO is not.",
+    "steps": [
+     "Under LRU the resident blocks with n lines are exactly the n most recently used blocks, which is a subset of the n + 1 most recently used blocks.",
+     "A subset relation means every hit with n lines is also a hit with n + 1 lines, so misses can never increase.",
+     "FIFO keeps the n oldest arrivals, and the n oldest arrivals are not necessarily a subset of the n + 1 oldest arrivals.",
+     "So FIFO can produce more misses with more lines; the classic string 1 2 3 4 1 2 5 1 2 3 4 5 gives 9 misses with three lines and 10 with four."
+    ],
+    "final": "FIFO can show it and LRU cannot &mdash; option C.",
+    "trap": "Belady's anomaly is a property of FIFO, not of caches in general, and it is not a claim that a larger cache is useless. Under LRU and under the optimal policy more capacity is always at least as good."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A policy is a stack algorithm when the set of blocks it holds with n lines is always contained in the set it holds with n + 1 lines. LRU and the optimal policy are stack algorithms; FIFO is not.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Under LRU the resident blocks with n lines are exactly the n most recently used blocks, which is a subset of the n + 1 most recently used blocks.</li><li>A subset relation means every hit with n lines is also a hit with n + 1 lines, so misses can never increase.</li><li>FIFO keeps the n oldest arrivals, and the n oldest arrivals are not necessarily a subset of the n + 1 oldest arrivals.</li><li>So FIFO can produce more misses with more lines; the classic string 1 2 3 4 1 2 5 1 2 3 4 5 gives 9 misses with three lines and 10 with four.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: FIFO can show it and LRU cannot &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Belady's anomaly is a property of FIFO, not of caches in general, and it is not a claim that a larger cache is useless. Under LRU and under the optimal policy more capacity is always at least as good.</p>"
+  },
+  {
+   "id": "CO-U3-Q66",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about replacement policies are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"16\" data-type=\"MSQ\" data-difficulty=\"hard\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 16</span><span class=\"tag msq\">MSQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about replacement policies are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">LRU is a stack algorithm, so the blocks it holds with n ways are a subset of those it holds with n + 1 ways, and a larger set never produces more misses</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">The optimal policy needs knowledge of future references, so it is used as a lower bound against which real policies are measured</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Random replacement guarantees that a block is never evicted while it is still being reused</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"16\" data-typ=\"MSQ\" name=\"q16\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">In a direct-mapped cache the replacement policy is irrelevant, because each block can occupy only one line</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "LRU is a stack algorithm, so the blocks it holds with n ways are a subset of those it holds with n + 1 ways, and a larger set never produces more misses",
+    "The optimal policy needs knowledge of future references, so it is used as a lower bound against which real policies are measured",
+    "Random replacement guarantees that a block is never evicted while it is still being reused",
+    "In a direct-mapped cache the replacement policy is irrelevant, because each block can occupy only one line"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "solution": {
+    "concept": "A replacement policy decides which resident block gives up its line. Its properties matter only when a set has more than one candidate line, and its quality is judged against the optimal policy and against the stack property.",
+    "steps": [
+     "(A) True. The n most recently used blocks are a subset of the n + 1 most recently used blocks, so extra capacity can only help.",
+     "(B) True. The optimal policy evicts the block whose next use is farthest away, which requires the future string; it is a benchmark, not an implementation.",
+     "(C) False. Random replacement can evict a block that is about to be reused, and it makes no promise at all about reuse.",
+     "(D) True. With one candidate line there is no choice to make, so no policy can change the outcome."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "trap": "Statement (C) is the trap: randomness gives no guarantee, though it is cheap and avoids pathological patterns. Statement (D) is often marked false by candidates who assume every cache needs a policy."
+   },
+   "answer_display": "Options (A), (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A replacement policy decides which resident block gives up its line. Its properties matter only when a set has more than one candidate line, and its quality is judged against the optimal policy and against the stack property.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. The n most recently used blocks are a subset of the n + 1 most recently used blocks, so extra capacity can only help.</li><li>(B) True. The optimal policy evicts the block whose next use is farthest away, which requires the future string; it is a benchmark, not an implementation.</li><li>(C) False. Random replacement can evict a block that is about to be reused, and it makes no promise at all about reuse.</li><li>(D) True. With one candidate line there is no choice to make, so no policy can change the outcome.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Statement (C) is the trap: randomness gives no guarantee, though it is cheap and avoids pathological patterns. Statement (D) is often marked false by candidates who assume every cache needs a policy.</p>"
+  },
+  {
+   "id": "CO-U3-Q67",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A three-way set-associative cache replaces blocks by FIFO. Within one set, the blocks referenced are 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many of the twelve references hit?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"17\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 17</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A three-way set-associative cache replaces blocks by FIFO. Within one set, the blocks referenced are 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many of the twelve references hit?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">3</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">5</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"17\" data-typ=\"MCQ\" name=\"q17\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">9</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "2",
+    "3",
+    "5",
+    "9"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "FIFO evicts the block that arrived earliest, whatever its recent use. A hit does not change the arrival order, which is exactly where FIFO differs from LRU.",
+    "steps": [
+     "1, 2, 3 fill the set: three misses, queue 1 2 3.",
+     "4 misses and evicts 1: queue 2 3 4. 1 misses and evicts 2: queue 3 4 1.",
+     "2 misses and evicts 3: queue 4 1 2. 5 misses and evicts 4: queue 1 2 5.",
+     "1 hits and 2 hits; a hit leaves the queue unchanged, so it is still 1 2 5.",
+     "3 misses and evicts 1: queue 2 5 3. 4 misses and evicts 2: queue 5 3 4. 5 then hits, because it is still resident.",
+     "That gives 9 misses (1, 2, 3, 4, 1, 2, 5, 3, 4) and so 12 &minus; 9 = 3 hits (1, 2, 5)."
+    ],
+    "final": "3 hits &mdash; option B.",
+    "trap": "2 is the LRU hit count for the same string, which is the commonest slip: under LRU the just-referenced blocks are protected, under FIFO they are not. 9 is the miss count."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> FIFO evicts the block that arrived earliest, whatever its recent use. A hit does not change the arrival order, which is exactly where FIFO differs from LRU.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>1, 2, 3 fill the set: three misses, queue 1 2 3.</li><li>4 misses and evicts 1: queue 2 3 4. 1 misses and evicts 2: queue 3 4 1.</li><li>2 misses and evicts 3: queue 4 1 2. 5 misses and evicts 4: queue 1 2 5.</li><li>1 hits and 2 hits; a hit leaves the queue unchanged, so it is still 1 2 5.</li><li>3 misses and evicts 1: queue 2 5 3. 4 misses and evicts 2: queue 5 3 4. 5 then hits, because it is still resident.</li><li>That gives 9 misses (1, 2, 3, 4, 1, 2, 5, 3, 4) and so 12 &minus; 9 = 3 hits (1, 2, 5).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 hits &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> 2 is the LRU hit count for the same string, which is the commonest slip: under LRU the just-referenced blocks are protected, under FIFO they are not. 9 is the miss count.</p>"
+  },
+  {
+   "id": "CO-U3-Q68",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "replacement-algorithms",
+   "subtopic": "replacement-algorithms",
+   "subtopic_label": "Replacement algorithms",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A three-way set-associative cache is compared with the optimal policy on the reference string 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. By how many misses does LRU exceed the optimal policy?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"18\" data-type=\"MCQ\" data-difficulty=\"hard\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"replacement-algorithms\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 18</span><span class=\"tag mcq\">MCQ</span><span class=\"tag hard\">hard</span><span class=\"tag src\">replacement-algorithms</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A three-way set-associative cache is compared with the optimal policy on the reference string 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. By how many misses does LRU exceed the optimal policy?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">3</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"18\" data-typ=\"MCQ\" name=\"q18\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">6</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "The optimal policy evicts the block whose next use is farthest in the future. Its miss count includes every compulsory miss, so it is a lower bound, and the gap to LRU measures how much avoidable traffic a real policy creates.",
+    "steps": [
+     "Simulating LRU over the twenty references with three ways gives 15 misses.",
+     "Simulating the optimal policy over the same string gives 11 misses; both policies take the same first-touch misses, of which there are seven distinct blocks.",
+     "The difference is 15 &minus; 11 = 4 misses.",
+     "The four extra misses are the ones LRU creates by evicting a block that is needed again before the block it kept."
+    ],
+    "final": "4 misses &mdash; option C.",
+    "trap": "Answering 6 takes the seven compulsory misses for the six blocks after the first one, or subtracts a hit count from a miss count. The optimal policy also pays every compulsory miss; only the difference between the two policies is avoidable traffic."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The optimal policy evicts the block whose next use is farthest in the future. Its miss count includes every compulsory miss, so it is a lower bound, and the gap to LRU measures how much avoidable traffic a real policy creates.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Simulating LRU over the twenty references with three ways gives 15 misses.</li><li>Simulating the optimal policy over the same string gives 11 misses; both policies take the same first-touch misses, of which there are seven distinct blocks.</li><li>The difference is 15 &minus; 11 = 4 misses.</li><li>The four extra misses are the ones LRU creates by evicting a block that is needed again before the block it kept.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 misses &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6 takes the seven compulsory misses for the six blocks after the first one, or subtracts a hit count from a miss count. The optimal policy also pays every compulsory miss; only the difference between the two policies is avoidable traffic.</p>"
+  },
+  {
+   "id": "CO-U3-Q69",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "When a write hits in a write-through cache,",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"19\" data-type=\"MCQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 19</span><span class=\"tag mcq\">MCQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">When a write hits in a write-through cache,</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"19\" data-typ=\"MCQ\" name=\"q19\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">only the cache copy is updated and a dirty bit is set</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"19\" data-typ=\"MCQ\" name=\"q19\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">the cache and main memory are both updated at once, so memory never holds a stale copy and no dirty bit is needed</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"19\" data-typ=\"MCQ\" name=\"q19\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">the line is invalidated and memory is updated later</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"19\" data-typ=\"MCQ\" name=\"q19\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">the write goes to memory and the line is removed from the cache</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "only the cache copy is updated and a dirty bit is set",
+    "the cache and main memory are both updated at once, so memory never holds a stale copy and no dirty bit is needed",
+    "the line is invalidated and memory is updated later",
+    "the write goes to memory and the line is removed from the cache"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "A write-through policy keeps the memory copy current on every write. A write-back policy updates only the cache and defers the memory write until the line is evicted.",
+    "steps": [
+     "A write hit changes the cached block.",
+     "Write-through also sends the word to the next level immediately, so the two copies agree at all times.",
+     "Because memory is never stale, a line can be dropped without writing it back, and no dirty bit is required.",
+     "The dirty bit belongs to the write-back policy, where it records that the memory copy is out of date."
+    ],
+    "final": "Both copies are updated at once &mdash; option B.",
+    "trap": "Option A is the write-back behaviour. The dirty bit exists precisely because a write-back cache may hold a value that memory does not have."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A write-through policy keeps the memory copy current on every write. A write-back policy updates only the cache and defers the memory write until the line is evicted.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A write hit changes the cached block.</li><li>Write-through also sends the word to the next level immediately, so the two copies agree at all times.</li><li>Because memory is never stale, a line can be dropped without writing it back, and no dirty bit is required.</li><li>The dirty bit belongs to the write-back policy, where it records that the memory copy is out of date.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Both copies are updated at once &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> Option A is the write-back behaviour. The dirty bit exists precisely because a write-back cache may hold a value that memory does not have.</p>"
+  },
+  {
+   "id": "CO-U3-Q70",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about write policies are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"20\" data-type=\"MSQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 20</span><span class=\"tag msq\">MSQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about write policies are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A write-through cache can discard a block on eviction without writing it back, because memory already holds the current value</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A write-back cache sends a block to memory only when the block is dirty and about to be evicted, so a block rewritten many times is sent once</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">A write-back cache needs a dirty bit for every line</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"20\" data-typ=\"MSQ\" name=\"q20\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">A write-through cache always generates less memory traffic than a write-back cache</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "A write-through cache can discard a block on eviction without writing it back, because memory already holds the current value",
+    "A write-back cache sends a block to memory only when the block is dirty and about to be evicted, so a block rewritten many times is sent once",
+    "A write-back cache needs a dirty bit for every line",
+    "A write-through cache always generates less memory traffic than a write-back cache"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "The two policies differ in when memory is brought up to date: immediately on every write, or lazily when a modified line leaves the cache. The dirty bit is the record that makes the lazy policy safe.",
+    "steps": [
+     "(A) True. Every write has already reached memory, so eviction needs no write-back.",
+     "(B) True. Repeated writes to one resident block collapse into a single memory write at eviction.",
+     "(C) True. Without a dirty bit the cache could not tell which lines must be written back.",
+     "(D) False. Write-through sends every store to memory, so a workload that rewrites the same block many times produces far more traffic than write-back."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Statement (D) reverses the trade-off: write-back saves traffic on rewritten blocks but costs a write-back on eviction, and it complicates coherence because memory can be stale."
+   },
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The two policies differ in when memory is brought up to date: immediately on every write, or lazily when a modified line leaves the cache. The dirty bit is the record that makes the lazy policy safe.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. Every write has already reached memory, so eviction needs no write-back.</li><li>(B) True. Repeated writes to one resident block collapse into a single memory write at eviction.</li><li>(C) True. Without a dirty bit the cache could not tell which lines must be written back.</li><li>(D) False. Write-through sends every store to memory, so a workload that rewrites the same block many times produces far more traffic than write-back.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Statement (D) reverses the trade-off: write-back saves traffic on rewritten blocks but costs a write-back on eviction, and it complicates coherence because memory can be stale.</p>"
+  },
+  {
+   "id": "CO-U3-Q71",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A write-through cache with no write-allocate handles 2 &times; 10&#8310; stores of 8 bytes each, and every store is passed on to main memory. How many megabytes does it write to main memory? (Take 1 MB = 10&#8310; bytes.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"21\" data-type=\"NAT\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 21</span><span class=\"tag nat\">NAT</span><span class=\"tag easy\">easy</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><div class=\"qtext\">A write-through cache with no write-allocate handles 2 &times; 10&#8310; stores of 8 bytes each, and every store is passed on to main memory. How many megabytes does it write to main memory? (Take 1 MB = 10&#8310; bytes.)</div><div class=\"natrow\"><label style=\"font-size:13.5px;color:var(--muted)\">Your answer:</label><input aria-label=\"Numerical answer for question 21\" autocomplete=\"off\" class=\"natinput\" data-n=\"21\" inputmode=\"decimal\" placeholder=\"numeric value\" type=\"text\"/></div><div class=\"hintline\">Answer format: an integer.</div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": null,
+   "answer": 16,
+   "solution": {
+    "concept": "With write-through and no write-allocate, each store produces exactly one memory write of the stored size; there is no block fetch and no write-back.",
+    "steps": [
+     "Bytes per store = 8.",
+     "Number of stores = 2 &times; 10&#8310;.",
+     "Total bytes written = 2 &times; 10&#8310; &times; 8 = 16 &times; 10&#8310; bytes.",
+     "Dividing by 10&#8310; bytes per MB gives 16 MB."
+    ],
+    "final": "16 MB.",
+    "trap": "Multiplying by the block size instead of the store size, or counting a block fetch per miss as no-write-allocate would not, inflates the answer. With no write-allocate nothing is fetched."
+   },
+   "answer_display": "16",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> With write-through and no write-allocate, each store produces exactly one memory write of the stored size; there is no block fetch and no write-back.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Bytes per store = 8.</li><li>Number of stores = 2 &times; 10&#8310;.</li><li>Total bytes written = 2 &times; 10&#8310; &times; 8 = 16 &times; 10&#8310; bytes.</li><li>Dividing by 10&#8310; bytes per MB gives 16 MB.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 16 MB.</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying by the block size instead of the store size, or counting a block fetch per miss as no-write-allocate would not, inflates the answer. With no write-allocate nothing is fetched.</p>"
+  },
+  {
+   "id": "CO-U3-Q72",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A write miss occurs in a write-back cache. Which policy is normally used, and why?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"22\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 22</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A write miss occurs in a write-back cache. Which policy is normally used, and why?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">No-write-allocate: send the word straight to memory and leave the cache untouched, because fetching the block wastes bandwidth</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">Write through the miss and mark the line valid without fetching the rest of the block</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Bypass the cache for every write, whatever the access pattern</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"22\" data-typ=\"MCQ\" name=\"q22\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Write-allocate: fetch the block into the cache and write into it, so later writes to the same block hit and the dirty line goes to memory once at eviction</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "No-write-allocate: send the word straight to memory and leave the cache untouched, because fetching the block wastes bandwidth",
+    "Write through the miss and mark the line valid without fetching the rest of the block",
+    "Bypass the cache for every write, whatever the access pattern",
+    "Write-allocate: fetch the block into the cache and write into it, so later writes to the same block hit and the dirty line goes to memory once at eviction"
+   ],
+   "answer": [
+    3
+   ],
+   "solution": {
+    "concept": "Write-allocate and write-back go together. The block is fetched so that the writes that follow it land in the cache, and the deferred write-back then absorbs them all in one memory transfer.",
+    "steps": [
+     "A write miss with write-allocate first fetches the block from the next level.",
+     "The word is then written into the cached copy and the dirty bit is set.",
+     "Subsequent writes to the same block hit, so no further memory traffic occurs.",
+     "At eviction one write-back carries the whole block, which is why write-allocate pays off with write-back."
+    ],
+    "final": "Write-allocate &mdash; option D.",
+    "trap": "No-write-allocate is the natural partner of write-through, not write-back. Marking a line valid without fetching it, as option B suggests, would leave the rest of the block holding stale data."
+   },
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Write-allocate and write-back go together. The block is fetched so that the writes that follow it land in the cache, and the deferred write-back then absorbs them all in one memory transfer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A write miss with write-allocate first fetches the block from the next level.</li><li>The word is then written into the cached copy and the dirty bit is set.</li><li>Subsequent writes to the same block hit, so no further memory traffic occurs.</li><li>At eviction one write-back carries the whole block, which is why write-allocate pays off with write-back.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Write-allocate &mdash; option D.</span></p><p class=\"row\"><b>Common misconception.</b> No-write-allocate is the natural partner of write-through, not write-back. Marking a line valid without fetching it, as option B suggests, would leave the rest of the block holding stale data.</p>"
+  },
+  {
+   "id": "CO-U3-Q73",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A cache line's dirty bit is set when",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"23\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"STANDARD_TEXTBOOK\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 23</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">standard textbook</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A cache line's dirty bit is set when</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">the line has not been read since it was loaded</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">the line is invalid and holds no useful data</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">the line has been written since it was brought in, so its copy in memory is stale and it must be written back before the line is reused</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"23\" data-typ=\"MCQ\" name=\"q23\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">the line's tag matches more than one block</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "the line has not been read since it was loaded",
+    "the line is invalid and holds no useful data",
+    "the line has been written since it was brought in, so its copy in memory is stale and it must be written back before the line is reused",
+    "the line's tag matches more than one block"
+   ],
+   "answer": [
+    2
+   ],
+   "solution": {
+    "concept": "The dirty bit records a difference between the cached copy and the memory copy. It is meaningful only in a write-back cache, where a write updates the cache alone.",
+    "steps": [
+     "On a fetch the line is clean: the cache and memory hold the same data.",
+     "A write to the line changes only the cached copy, so the two copies now differ.",
+     "The dirty bit is set to record that difference.",
+     "On eviction a dirty line is written back, and a clean line is simply overwritten."
+    ],
+    "final": "The line has been written since it was loaded &mdash; option C.",
+    "trap": "The dirty bit says nothing about validity or about reads. A valid bit answers whether the line holds a real block; the dirty bit answers whether memory is out of date."
+   },
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The dirty bit records a difference between the cached copy and the memory copy. It is meaningful only in a write-back cache, where a write updates the cache alone.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>On a fetch the line is clean: the cache and memory hold the same data.</li><li>A write to the line changes only the cached copy, so the two copies now differ.</li><li>The dirty bit is set to record that difference.</li><li>On eviction a dirty line is written back, and a clean line is simply overwritten.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: The line has been written since it was loaded &mdash; option C.</span></p><p class=\"row\"><b>Common misconception.</b> The dirty bit says nothing about validity or about reads. A valid bit answers whether the line holds a real block; the dirty bit answers whether memory is out of date.</p>"
+  },
+  {
+   "id": "CO-U3-Q74",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "A program performs 2 &times; 10&#8310; stores of 4 bytes, spread over 125 000 distinct 32-byte blocks, each of which is written 16 times. A write-back cache writes a block to memory once, when it is evicted; a write-through cache with no write-allocate sends every store to memory. By what factor is the write-back traffic smaller?",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"24\" data-type=\"MCQ\" data-difficulty=\"medium\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 24</span><span class=\"tag mcq\">MCQ</span><span class=\"tag medium\">medium</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 1</span></div><div class=\"qbody\"><p class=\"qtext\">A program performs 2 &times; 10&#8310; stores of 4 bytes, spread over 125 000 distinct 32-byte blocks, each of which is written 16 times. A write-back cache writes a block to memory once, when it is evicted; a write-through cache with no write-allocate sends every store to memory. By what factor is the write-back traffic smaller?</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"24\" data-typ=\"MCQ\" name=\"q24\" type=\"radio\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">4</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"24\" data-typ=\"MCQ\" name=\"q24\" type=\"radio\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">2</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"24\" data-typ=\"MCQ\" name=\"q24\" type=\"radio\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">8</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"24\" data-typ=\"MCQ\" name=\"q24\" type=\"radio\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">16</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "4",
+    "2",
+    "8",
+    "16"
+   ],
+   "answer": [
+    1
+   ],
+   "solution": {
+    "concept": "Write-back traffic is counted in whole blocks written once, while write-through traffic is counted store by store. The comparison depends on how many stores fall inside one block.",
+    "steps": [
+     "Write-through traffic = 2 &times; 10&#8310; stores &times; 4 bytes = 8 &times; 10&#8310; bytes = 8 MB.",
+     "Write-back traffic = 125 000 blocks &times; 32 bytes = 4 &times; 10&#8310; bytes = 4 MB.",
+     "The ratio is 8 / 4 = 2, so write-back sends half as much.",
+     "The saving exists because each 32-byte block absorbs 64 bytes of stores before it is evicted."
+    ],
+    "final": "A factor of 2 &mdash; option B.",
+    "trap": "16 is the number of stores per block, not the ratio of traffic, and it ignores that a write-back moves the full 32-byte block. Write-back loses when a block is written only a few bytes before eviction."
+   },
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Write-back traffic is counted in whole blocks written once, while write-through traffic is counted store by store. The comparison depends on how many stores fall inside one block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write-through traffic = 2 &times; 10&#8310; stores &times; 4 bytes = 8 &times; 10&#8310; bytes = 8 MB.</li><li>Write-back traffic = 125 000 blocks &times; 32 bytes = 4 &times; 10&#8310; bytes = 4 MB.</li><li>The ratio is 8 / 4 = 2, so write-back sends half as much.</li><li>The saving exists because each 32-byte block absorbs 64 bytes of stores before it is evicted.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A factor of 2 &mdash; option B.</span></p><p class=\"row\"><b>Common misconception.</b> 16 is the number of stores per block, not the ratio of traffic, and it ignores that a write-back moves the full 32-byte block. Write-back loses when a block is written only a few bytes before eviction.</p>"
+  },
+  {
+   "id": "CO-U3-Q75",
+   "subject": "computer-architecture",
+   "subject_name": "Computer Architecture",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "cache-memory",
+   "unit_name": "Memory Hierarchy & Cache Memory",
+   "topic": "Memory Hierarchy & Cache Memory",
+   "sub": "write-policies-write-through-back",
+   "subtopic": "write-policies-write-through-back",
+   "subtopic_label": "Write policies: write-through & write-back",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2 (second pass)",
+   "question": "Which of the following statements about write buffers and write policies are TRUE? (Select all that apply.)",
+   "question_html": "<div class=\"qcard hidden\" data-n=\"25\" data-type=\"MSQ\" data-difficulty=\"easy\" data-subject=\"computer-architecture\" data-unit=\"cache-memory\" data-unit-number=\"3\" data-subtopic=\"write-policies-write-through-back\" data-source=\"ORIGINAL_SYNTHESIS\"><div class=\"card\"><div class=\"qhead\"><span class=\"qno\">Question 25</span><span class=\"tag msq\">MSQ</span><span class=\"tag easy\">easy</span><span class=\"tag src\">write-policies-write-through-back</span><span class=\"tag src\">original synthesis</span><span style=\"margin-left:auto;font-size:12.5px;color:var(--muted)\">Marks: 2</span></div><div class=\"qbody\"><p class=\"qtext\">Which of the following statements about write buffers and write policies are TRUE? (Select all that apply.)</p><div class=\"opts\"><label class=\"opt\" data-i=\"0\"><input data-n=\"25\" data-typ=\"MSQ\" name=\"q25\" type=\"checkbox\" value=\"0\"/><span class=\"lbl\">A</span><span class=\"txt\">A write buffer lets a write-through cache complete the store in the cache and continue before memory has accepted the data</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"1\"><input data-n=\"25\" data-typ=\"MSQ\" name=\"q25\" type=\"checkbox\" value=\"1\"/><span class=\"lbl\">B</span><span class=\"txt\">A write-back cache sends the block to memory on every write hit</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"2\"><input data-n=\"25\" data-typ=\"MSQ\" name=\"q25\" type=\"checkbox\" value=\"2\"/><span class=\"lbl\">C</span><span class=\"txt\">Write-allocate is used with write-back caches because the fetched block usually absorbs the later writes to the same block</span><span class=\"mark\"></span></label><label class=\"opt\" data-i=\"3\"><input data-n=\"25\" data-typ=\"MSQ\" name=\"q25\" type=\"checkbox\" value=\"3\"/><span class=\"lbl\">D</span><span class=\"txt\">Without a write buffer, every store in a write-through cache would stall the processor until memory responded</span><span class=\"mark\"></span></label></div></div><div class=\"qfoot\"><button class=\"btn warn sm\" id=\"btnMark\">Mark for review</button><button class=\"btn sm\" id=\"btnClear\">Clear response</button><span style=\"flex:1\"></span><button class=\"btn sm\" id=\"btnPrev\">&larr; Previous</button><button class=\"btn primary sm\" id=\"btnNext\">Save &amp; Next &rarr;</button></div><div class=\"sol hidden\"></div></div></div>",
+   "options": [
+    "A write buffer lets a write-through cache complete the store in the cache and continue before memory has accepted the data",
+    "A write-back cache sends the block to memory on every write hit",
+    "Write-allocate is used with write-back caches because the fetched block usually absorbs the later writes to the same block",
+    "Without a write buffer, every store in a write-through cache would stall the processor until memory responded"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "solution": {
+    "concept": "A write-through policy needs a small buffer to hide memory latency, while a write-back policy hides that latency behind the residency of the line. Both are about where the store waits.",
+    "steps": [
+     "(A) True. The buffer holds the store while the processor continues, and memory drains it in the background.",
+     "(B) False. A write hit in a write-back cache changes only the cached copy and sets the dirty bit; memory is written at eviction.",
+     "(C) True. Fetching the block on a write miss makes the following writes to that block hit, and the single write-back then carries them all.",
+     "(D) True. Write-through sends every store to memory, so without buffering the processor would wait for memory on each one."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "trap": "Statement (B) describes write-through, not write-back. A write buffer also has a limit: when it fills, the processor stalls, which is why a burst of stores can still expose memory latency."
+   },
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A write-through policy needs a small buffer to hide memory latency, while a write-back policy hides that latency behind the residency of the line. Both are about where the store waits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True. The buffer holds the store while the processor continues, and memory drains it in the background.</li><li>(B) False. A write hit in a write-back cache changes only the cached copy and sets the dirty bit; memory is written at eviction.</li><li>(C) True. Fetching the block on a write miss makes the following writes to that block hit, and the single write-back then carries them all.</li><li>(D) True. Write-through sends every store to memory, so without buffering the processor would wait for memory on each one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Statement (B) describes write-through, not write-back. A write buffer also has a limit: when it fills, the processor stalls, which is why a burst of stores can still expose memory latency.</p>"
   }
  ]
 }
