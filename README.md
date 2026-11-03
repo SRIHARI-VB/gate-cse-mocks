@@ -7,32 +7,116 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Theory of Computation · Unit 2 — Grammars & Context-Free Languages, Set 2 of 2 (third pass)**, 2026-11-03 →
-  [`theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-03.html`](theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-03.html)
+- **Computer Architecture · Unit 2 — CPU Control Design & Data Path, Set 1 of 2 (second pass)**, 2026-11-03 →
+  [`computer-architecture/datapath-control-unit/gate_co_mock_2_2026-11-03.html`](computer-architecture/datapath-control-unit/gate_co_mock_2_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: CFG derivation trees (7) · ambiguity in grammars (6) · CNF & GNF normal forms (6) ·
-  closure properties of CFLs (6)
-- Rotation: MODE A. The draw returned **Theory of Computation**. Its most recent paper was `{2026-11-02,
-  run 17, unit 1, regular-languages-fa, Set 2 of 2 (third pass)}`, and unit 1 stood at **125** questions
-  (above `UNIT_QUESTION_CAP = 50`), so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(0 + 1) mod 4 = 1` → **Unit 2, Grammars & Context-Free Languages**, which held 100 questions from
-  2026-10-26, 2026-10-27, 2026-10-28 and 2026-10-31. This paper is **Set 2 of 2 of the third pass** and
-  takes unit 2 to 125.
-- Previous test: **Databases · Unit 4 — Transactions & Concurrency Control, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html`](databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html)
+- Subtopics: hardwired control (6) · microprogrammed control (6) · ALU & datapath timing (7) ·
+  bus architectures (6)
+- Rotation: MODE A. The draw returned **Computer Architecture**. Its most recent paper was `{2026-11-02,
+  run 12, unit 1, instructions-addressing, Set 2 of 2}`, and unit 1 stood at **50** questions (equal to
+  `UNIT_QUESTION_CAP = 50`), so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(0 + 1) mod 6 = 1` → **Unit 2, CPU Control Design & Data Path**, which held 50 questions from
+  2026-10-27 and 2026-10-28. This paper is **Set 1 of 2 of the second pass** and takes unit 2 to 75.
+- Previous test: **Theory of Computation · Unit 2 — Grammars & Context-Free Languages, Set 2 of 2 (third pass)**, 2026-11-03 →
+  [`theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-03.html`](theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 198 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 70 current · 128 archived |
+| Papers published (current + archived) | 199 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 15 Digital Logic, 13 Computer Architecture) |
+| Current papers / archived sets | 70 current · 129 archived |
 | Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4950 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4975 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 375 Digital Logic, 325 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 128 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 129 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 11 Digital Logic, 7 Computer Architecture) |
+
+### 2026-11-03 — Computer Architecture Unit 2, Set 1 of 2 (second pass)
+
+- New paper at `computer-architecture/datapath-control-unit/gate_co_mock_2_2026-11-03.html`. The 2026-10-28 Set 2 paper
+  moved to `computer-architecture/datapath-control-unit/archive/gate_co_mock_2_2026-10-28_run2.html` with its content
+  frozen (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper.
+  The repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Ten papers already carried the date 2026-11-03 (algorithms, computer-networks,
+  databases twice, digital-logic twice, discrete-mathematics twice, programming-data-structures, theory-of-computation),
+  so the draw ran over the four subjects with no paper of that date, in syllabus order (engineering-mathematics,
+  computer-architecture, compiler-design, operating-systems), with an unseeded `secrets.randbelow(4)`. It returned
+  index 1 — **Computer Architecture**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-02, run 12, unit 1, instructions-addressing, Set 2 of 2}`. Unit 1 held **50** questions, equal to
+  `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(index_of(instructions-addressing) = 0 + 1) mod 6 = 1` → **Unit 2, CPU Control Design & Data Path**, which held
+  50 questions from 2026-10-27 and 2026-10-28. Every Computer Architecture unit now sits exactly at the cap
+  (50, 50, 50, 50, 50, 50), so **B5** applies: the modulo wraps, a second pass has begun, and this paper is
+  **Set 1 of 2 of the second pass**, the unit's third set overall, taking unit 2 to 75. No override, no partial set,
+  exactly 25 questions.
+- **Deviation recorded.** The same-day de-duplication noted under the Theory of Computation entry is still in force:
+  every unit of every subject is at or above `UNIT_QUESTION_CAP`, so the draw is taken over the subjects that have not
+  yet produced a paper dated 2026-11-03, and B4/B5 are then applied as written. The cap-exceeding set is recorded here,
+  which is what B5 asks for.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: hardwired control 6 · microprogrammed control 6 · ALU & datapath timing 7 ·
+  bus architectures 6. Difficulty 10 easy / 10 medium / 5 hard. Sources: 17 `STANDARD_TEXTBOOK`,
+  8 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** Hardwired control: what the control logic reads (**a fixed combinational network of opcode,
+  timing state and flags**), the unused codes of a 4-bit counter for 13 states (**3**), the Boolean form of a signal
+  that fires in T2 and T5 of ADD (**`ADD · (T2 + T5)`**), the links a merged PLA product term frees (**22**), an MSQ
+  on opcode-only signals, shared timing lines, flag tests and PLA sharing (**A, B, D**), and the size of a ROM-based
+  next-state table for a 5-bit state, 8-bit opcode and 40 outputs (**368 640 bits**). Microprogrammed control: how the
+  next microinstruction is addressed (**increment, unless a field or branch overrides**), the size of a 256-word,
+  24+6-bit control store (**7680 bits**), the width of an encoded microinstruction for 24 signals in three 8-way fields
+  (**9 bits**), one instruction in 5 microinstructions of 8 ns against one 20 ns hardwired cycle (**2 times slower**),
+  an MSQ on horizontal against vertical microcode (**A, B, C**), and the store-size gap between an 80-bit horizontal
+  and a 20+2+10-bit vertical machine (**49 152 bits**). ALU and datapath timing: what 2 read ports and 1 write port buy
+  (**two operands in, one result out, in one cycle**), the cycles a single-bus `R4 ← R1 + R2` needs (**3**), the
+  overflow condition (**carry in XOR carry out of the sign bit**), a block carry-lookahead delay (**25 ns**), an MSQ on
+  clock period, multiplexer delay, the zero flag and three buses (**A, B, D**), average CPI over a 40/50/10 mix
+  (**7.1**), and the clock limit from an 8.0 ns path with 0.5 ns of skew (**117.6 MHz**). Bus architectures: an MSQ on
+  master and slave roles, address-line direction, wait states and bus width (**A, B, C**), who inserts wait states
+  (**the addressed slave**), the time of a 1+8+1-cycle burst at 200 MHz (**50 ns**), daisy-chain priority
+  (**highest near the arbiter, with starvation**), the effective bandwidth of a 128-bit bus with an address phase
+  (**1280 MB/s**), and an MSQ on split transactions, clock scaling, arbitration policy and bridges (**A, C, D**).
+- **Answers recomputed, not asserted.** Every numeric key came from a script: `2⁴ − 13 = 3`; `2·8 + 6 = 22` links per
+  PLA product term; `2¹³ · 45 = 368 640` bits for the ROM-based table; `256 · 30 = 7680` bits of control store;
+  `3 · 3 = 9` encoded bits; `5 · 8 / 20 = 2` for the microprogrammed machine; `1024 · 80 − 1024 · 32 = 49 152` bits;
+  `7 · 3 + 4 = 25 ns` for the last sum bit (seven inter-block carries, not eight); `0.4·6 + 0.5·8 + 0.1·7 = 7.1` CPI;
+  `1 / 8.5 ns = 117.6 MHz`; `10 · 5 ns = 50 ns`; `64 B / 50 ns = 1280 MB/s`. The overflow identity
+  `V = c_in ⊕ c_out` was checked over all 256 pairs of 4-bit operands, and the four candidate expressions in the
+  control-signal question were compared over all eight assignments of ADD, T2 and T5. The grading engine was then
+  replayed against the decoded payload: a perfect attempt scores **35 / 35** with 25 correct, a blank paper **0 / 35**
+  with 25 unattempted, and an MSQ answered with a strict subset of the correct set scores 0 for that question
+  (**33 / 35**).
+- **No PYQ claim.** `verified_pyqs` is empty for Computer Architecture: no control-design or datapath previous-year
+  question has been verified against an official paper and answer key, so nothing on this paper is called an official
+  GATE question and no active item carries `GATE_PYQ_VARIATION`. The About tab and the Question Bank tab both say so.
+- **Interface.** The paper is generated from the Unit 1 shell: with the title, sub-line, candidate id, Question Bank
+  count, meta strip, question host, bank view, About view and payload masked, the remaining **27,832 bytes** are
+  byte-identical to `computer-architecture/instructions-addressing/gate_co_mock_1_2026-11-02.html`. No `<link>`, no
+  `http` URL, no KaTeX — the file opens offline. All seven `data-*` attributes are present on all 25 cards and on all
+  300 bank cards; the palette has 25 buttons; 5 NAT inputs, 60 radio and 20 checkbox inputs render; the Answer Key tab
+  ships `disabled` with an empty list; every `.sol` block is empty and hidden until Submit. The `:root` block matches
+  `design-tokens.css` and `index.html` byte for byte.
+- **Question Bank tab.** 300 solved questions listed — the 325 in the bank less the 25 of the active set, which are
+  not repeated. The chips read 300 solved and 0 verified PYQs. Unit 2's accordion shows its 50 earlier questions under
+  the four subtopics; the active items (CO-U2-Q51 … CO-U2-Q75) appear only in the test.
+- **Known pre-existing defect, unchanged.** Section 6.4 asks for no raw hex outside `:root`. The shell still carries
+  raw hex colour values outside the token block, inherited byte for byte from every previously shipped paper. Fixing
+  them would break shell parity with the other 198 papers, so they are left as they are and the deviation is recorded
+  rather than claimed as compliance.
+- **Questions banked.** `computer-architecture/question-bank/master_bank.json` now holds **325** questions (run 13
+  recorded), and `data/questions-computer-architecture.js` was extended to match with 325 records; all eleven data
+  files still parse and hold **4975** records in total, matching the eleven master banks.
+- **Portal.** `index.html` data block: the Computer Architecture Unit 2 entry now points at the 2026-11-03 paper with
+  `Set 1 of 2 (second pass)`, and the 2026-10-28 and 2026-10-27 papers are archive links on the same card. The card
+  count is unchanged at 70; the record chips were recomputed and now read 4975.
+- **Verification (Section 6.8).** One copy per paper: `find . -name "*.html"` shows `index.html` at the root plus
+  exactly one current paper per unit folder (70), 199 papers in all and nothing loose at the root. Every `href` in the
+  data block resolves. The paper renders 25 question cards, a 25-button palette and 300 banked questions, and no
+  answer, option mark or hint before submit. The unit generated is the one Section 1 selects from `master_bank.json`
+  (cap test then one-unit advance), not from the calendar, and no unit exceeds 50 questions without a recorded
+  override.
 
 ### 2026-11-03 — Theory of Computation Unit 2, Set 2 of 2 (third pass)
 
