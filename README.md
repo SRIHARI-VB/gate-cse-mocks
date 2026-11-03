@@ -7,36 +7,94 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 2 of 2**, 2026-11-03 →
-  [`discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`](discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html)
+- **Discrete Mathematics · Unit 14 — Number Theory, Set 1 of 2**, 2026-11-03 →
+  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: posets & Hasse diagrams (6) · LUB, GLB, meet & join (7) · bounded & complemented lattices (6) ·
-  distributive & modular lattices (6)
-- Rotation: MODE A. The unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus order was
-  taken, then restricted, as in runs 12–28, to subjects whose **post-B4** target unit is still below
-  `UNIT_QUESTION_CAP = 50`. Only **Discrete Mathematics** qualified. Its most recent paper was
-  `{2026-11-03, run 20, unit 13, lattices-posets, Set 1 of 2}`; unit 13 stood at **25** questions, below the cap,
-  and had been current for **0** days, so rule **B3 held** and the unit was generated again as **Set 2 of 2**.
-  No advance, no override. Unit 13 now stands at **50** and the rotation leaves it on the next run.
-- Superseded set: Set 1 moved to
-  [`archive/gate_dm_mock_13_2026-11-03_run1.html`](discrete-mathematics/lattices-posets/archive/gate_dm_mock_13_2026-11-03_run1.html)
-  with its questions, options, answers, solutions and duration frozen. The unit folder holds exactly one current
-  paper; the repository root still holds only `index.html`.
-- Previous test: **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 1 of 2**, 2026-11-03 →
-  [`archive/gate_dm_mock_13_2026-11-03_run1.html`](discrete-mathematics/lattices-posets/archive/gate_dm_mock_13_2026-11-03_run1.html)
+- Subtopics: divisibility & division algorithm (7) · GCD, LCM & Euclidean algorithm (6) · modular arithmetic &
+  congruences (7) · inverses & Chinese remainder theorem (5)
+- Rotation: MODE A. The draw was taken, then restricted as in runs 12–29 to subjects whose **post-B4** target unit is
+  still below `UNIT_QUESTION_CAP = 50`. Every subject was checked from its own bank; only **Discrete Mathematics**
+  qualified. Its most recent paper was `{2026-11-03, run 21, unit 13, lattices-posets, Set 2 of 2}`; unit 13 stood at
+  **50**, exactly the cap, so **B3 failed** and **B4 advanced one unit**: `(12 + 1) mod 16 = 13` → **Unit 14, Number
+  Theory**, which held **0** questions. This is the unit's first paper, so nothing was superseded and the unit folder
+  holds exactly one current paper. No override, no partial set.
+- Previous test: **Discrete Mathematics · Unit 13 — Lattices & Posets, Set 2 of 2**, 2026-11-03 →
+  [`discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html`](discrete-mathematics/lattices-posets/gate_dm_mock_13_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 192 (29 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 69 current · 123 archived |
-| Test cards on the portal | 69 (one card per current paper; every superseded set is a link on its unit’s card) |
-| Units covered | 14 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4800 (725 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Papers published (current + archived) | 193 (30 Discrete Mathematics, 15 Algorithms, 12 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 70 current · 123 archived |
+| Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
+| Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
+| Questions in the subject banks | 4825 (750 Discrete Mathematics, 375 Algorithms, 300 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
 | Archived sets (earlier runs) | 123 (15 Discrete Mathematics, 8 Algorithms, 7 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Discrete Mathematics Unit 14, Set 1 of 2
+
+- New paper at `discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`. Unit 14 had never been papered, so
+  a new unit folder was created and nothing was superseded — the folder holds exactly one current paper and has no
+  archive yet. The repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw was taken, then restricted as in runs 12–29 to subjects whose post-B4
+  target unit is still below `UNIT_QUESTION_CAP = 50`, so a unit is completed before a second pass opens. Each of the
+  eleven banks was recomputed from its own `runs[]` and question counts: algorithms (unit 1 at 75 → unit 2 at 50),
+  compiler-design (3 at 100 → 4 at 75), computer-architecture (1 at 50 → 2 at 50), computer-networks (1 at 100 → 2 at
+  75), databases (2 at 75 → 3 at 50), digital-logic (3 at 100 → 4 at 75), engineering-mathematics (4 at 75 → 5 at 50),
+  operating-systems (4 at 100 → 5 at 75), programming-data-structures (5 at 75 → 6 at 50), theory-of-computation (1 at
+  125 → 2 at 100) — every one of those targets sits at or above the cap, so none qualified. Only **Discrete
+  Mathematics** did: its most recent paper was `{2026-11-03, run 21, unit 13, lattices-posets, Set 2 of 2}`, unit 13
+  stood at **50** questions, exactly the cap, so **B3 failed** and **B4 advanced exactly one unit**:
+  `(12 + 1) mod 16 = 13` → **Unit 14, Number Theory**, which held 0 questions. No override, exactly 25 questions.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: divisibility & division algorithm 7 · GCD, LCM & Euclidean algorithm 6 ·
+  modular arithmetic & congruences 7 · inverses & Chinese remainder theorem 5. Difficulty 10 easy / 10 medium /
+  5 hard. Sources: 17 `STANDARD_TEXTBOOK`, 8 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** Divisibility: the bound `0 ≤ r < b` in the division algorithm, linear combinations of two
+  divisors, the 24 divisors of 360, Euclid's lemma against the false composite claim, the **16** divisors of 720
+  divisible by 6, an MSQ on divisibility facts, and the exponent of 3 in 100! (**48**). GCD and lcm: the Euclidean run
+  on 48 and 18, `lcm(12, 18) = 36`, `gcd(1071, 462)` (**21**), why `gcd(a + b, a − b)` is always 1 or 2, an MSQ on four
+  gcd identities, and φ(100) (**40**). Congruences: `2^10 mod 7 = 2`, solving `3x ≡ 1 (mod 7)`, the statement a
+  congruence does not survive, the last two digits of `7^2026` (**49**), an MSQ on congruence properties and
+  cancellation, the **4** roots of `x² ≡ 1 (mod 8)`, and `2^100 mod 13 = 3` by Fermat. Inverses and CRT: the inverse of
+  3 modulo 11, the self-inverse residues modulo 12, a three-modulus system (**23**), which linear congruences are
+  solvable, and the inverse of 17 modulo 100 (**53**).
+- **Answers recomputed, not asserted.** Every key came from a script: divisors of 360 = 4·3·2 = 24; divisors of 720
+  divisible by 6 = 4·2·2 = 16; `v₃(100!) = 33 + 11 + 3 + 1 = 48`; `gcd(48, 18) = 6`; `lcm(12, 18) = 36`;
+  `gcd(1071, 462) = 21`; the set of values of `gcd(a + b, a − b)` over all coprime pairs below 40 is exactly `{1, 2}`;
+  `φ(100) = 40`; `2^10 mod 7 = 2`; the solutions of `3x ≡ 1 (mod 7)` are `{5}`; `7^2026 mod 100 = 49` because
+  `2026 = 4·506 + 2`; the roots of `x² ≡ 1 (mod 8)` are `{1, 3, 5, 7}`; `2^100 mod 13 = 3`; `3⁻¹ mod 11 = 4`; the
+  self-inverse residues modulo 12 are `{1, 5, 7, 11}`; the CRT system has smallest solution 23, checked against all
+  three congruences; of the four linear congruences only `4x ≡ 6 (mod 10)` and `9x ≡ 6 (mod 15)` are solvable; and
+  `17·53 = 901 = 9·100 + 1`. The grading engine was then replayed against the decoded payload: a perfect attempt scores
+  **35 / 35** with 25 correct, a blank paper **0 / 35** with 25 unattempted, and an MSQ answered with a strict subset
+  (or a superset) of the correct set loses both marks.
+- **No PYQ claim.** The Discrete Mathematics bank's two verified previous-year items (PYQ-GATE2023-Q26, official key
+  B, C; PYQ-GATE2015, official key C) are Unit 16 logic questions and are not reused here. No number-theory
+  previous-year question has been verified against an official paper and answer key, so nothing on this paper is called
+  an official GATE question and none of the 25 active items carries `GATE_PYQ_VARIATION`.
+- **Interface.** The paper is generated from the Unit 13 shell: with the title, sub-line, candidate block, meta strip,
+  question host, bank view, About view and payload masked, the remaining **27,788 bytes** are byte-identical to
+  `gate_dm_mock_13_2026-11-03.html`. No `<link>`, no `http` URL, no KaTeX — the file opens offline. All seven `data-*`
+  attributes are present on all 25 cards; the palette has 25 buttons; 5 NAT inputs and 80 option inputs render; the
+  Answer Key tab ships `disabled` with an empty list; every `.sol` block is empty and hidden until Submit.
+- **Question Bank tab.** 725 solved questions — the 750 in the bank less the 25 of the active set, which are not
+  repeated. The 25 items newly banked from Unit 13 Set 2 (DM-U13-Q26 … DM-U13-Q50) were merged into Unit 13's four
+  subtopic accordions, so that unit now reads 13 / 13 / 12 / 12 = 50.
+- **Defect repair.** `data/questions-discrete-mathematics.js` ended with a duplicated closing bracket, so the whole
+  file threw a parse error and Discrete Mathematics rendered no entries in the portal's question archive; the stray
+  bracket is removed. `data/questions-databases.js` was missing its `window.GATE_BANK = window.GATE_BANK || {}`
+  initialiser, so it threw on load for the same effect; the prefix is restored. All eleven data files now parse and
+  hold **4825** records in total, matching the eleven master banks exactly.
+- **Questions banked.** `discrete-mathematics/question-bank/master_bank.json` now holds **750** questions
+  (DM-U14-Q01 … DM-U14-Q25 appended, run 22 recorded). `data/questions-discrete-mathematics.js` was extended to match.
+- **Portal.** `index.html` gained one test card (70 cards) and the archive view now shows Unit 14 with its four
+  subtopic pills, a `Practise Set 1 →` button and a review expander. Every `href` in the data block resolves; the
+  repository holds `index.html` at the root plus exactly one current paper per unit folder (194 HTML files).
 
 ### 2026-11-03 — Discrete Mathematics Unit 13, Set 2 of 2
 

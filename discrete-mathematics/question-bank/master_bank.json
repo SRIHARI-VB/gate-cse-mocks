@@ -6,7 +6,7 @@
   "created": "2026-10-25",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 725,
+  "total_questions": 750,
   "units_with_questions": [
    1,
    2,
@@ -21,9 +21,10 @@
    11,
    12,
    13,
+   14,
    16
   ],
-  "total_runs": 29
+  "total_runs": 22
  },
  "runs": [
   {
@@ -1220,6 +1221,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order was taken, then restricted, as in runs 12-28, to subjects whose post-B4 target unit is still below UNIT_QUESTION_CAP = 50 so that units are completed before a second pass opens. Only Discrete Mathematics qualified: its most recent paper was {2026-11-03, run 20, unit 13, lattices-posets, Set 1 of 2}. Unit 13 stood at 25 questions, below the cap of 50, and had been current for 0 days, so B3 held and the unit was generated again as Set 2 of 2, bringing the unit to exactly 50. Every other subject's next unit already sits at or above 50 and would have opened a second pass. No override.",
    "note": "Closes Unit 13 at the 50-question cap. The superseded Set 1 paper was moved to archive as run1 with its questions, options, answers, solutions and duration frozen."
+  },
+  {
+   "run": 22,
+   "date": "2026-11-03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "set": "Set 1 of 2",
+   "count": 25,
+   "file": "discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html",
+   "archived_previous": null,
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "divisibility-division-algorithm": 7,
+    "gcd-lcm-euclidean-algorithm": 6,
+    "modular-arithmetic-congruences": 7,
+    "multiplicative-inverses-chinese-remainder": 5
+   },
+   "question_ids": [
+    "DM-U14-Q01",
+    "DM-U14-Q02",
+    "DM-U14-Q03",
+    "DM-U14-Q04",
+    "DM-U14-Q05",
+    "DM-U14-Q06",
+    "DM-U14-Q07",
+    "DM-U14-Q08",
+    "DM-U14-Q09",
+    "DM-U14-Q10",
+    "DM-U14-Q11",
+    "DM-U14-Q12",
+    "DM-U14-Q13",
+    "DM-U14-Q14",
+    "DM-U14-Q15",
+    "DM-U14-Q16",
+    "DM-U14-Q17",
+    "DM-U14-Q18",
+    "DM-U14-Q19",
+    "DM-U14-Q20",
+    "DM-U14-Q21",
+    "DM-U14-Q22",
+    "DM-U14-Q23",
+    "DM-U14-Q24",
+    "DM-U14-Q25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. An unseeded secrets.randbelow(1) draw over the candidate subjects was taken, after the restriction used in runs 12-29: only subjects whose post-B4 target unit still stands below UNIT_QUESTION_CAP = 50 qualify, so that first-pass units finish before a second pass opens. Every subject was checked from its own master_bank.json. Discrete Mathematics was the only qualifier: its most recent paper was {2026-11-03, run 21, unit 13, lattices-posets, Set 2 of 2}, unit 13 stood at 50 questions, at the cap, so B3 failed on the cap and B4 advanced exactly one unit: (12 + 1) mod 16 = 13 -> Unit 14, Number Theory, which held 0 questions. Every other subject's post-B4 target unit already sits at or above 50 (algorithms 2 -> 50, compiler-design 4 -> 75, computer-architecture 2 -> 50, computer-networks 2 -> 75, databases 3 -> 50, digital-logic 4 -> 75, engineering-mathematics 5 -> 50, operating-systems 5 -> 75, programming-data-structures 6 -> 50, theory-of-computation 2 -> 100). No override was used and no partial set was generated: exactly 25 questions.",
+   "note": "Set 1 of 2 for Unit 14, the unit's first paper. No earlier paper exists for this unit, so the unit folder was created and nothing was superseded. All 25 items are new (DM-U14-Q01..Q25). Coverage: divisibility & division algorithm 7, gcd/lcm & Euclidean algorithm 6, modular arithmetic & congruences 7, multiplicative inverses & CRT 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every numeric answer was recomputed by script: 360 has 24 divisors; 720 has 16 divisors divisible by 6; v3(100!) = 33 + 11 + 3 + 1 = 48; gcd(48, 18) = 6; lcm(12, 18) = 36; gcd(1071, 462) = 21; gcd(a+b, a-b) for coprime a, b takes exactly the values 1 and 2 (brute-forced over all coprime pairs below 40); phi(100) = 40; 2^10 mod 7 = 2; 3x = 1 (mod 7) has the unique solution x = 5; 7^2026 mod 100 = 49 because 2026 = 4*506 + 2; x^2 = 1 (mod 8) has the four solutions 1, 3, 5, 7; 2^100 mod 13 = 3 by Fermat; 3^-1 mod 11 = 4; the self-inverse residues mod 12 are 1, 5, 7, 11; the CRT system (2 mod 3, 3 mod 5, 2 mod 7) has smallest solution 23; of 6x=5 (9), 4x=6 (10), 8x=3 (12), 9x=6 (15) only the second and fourth are solvable; 17^-1 mod 100 = 53 since 17*53 = 901. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset of the correct set scores 0 for that question. No number-theory PYQ has been verified against an official paper and key, so nothing on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 17, ORIGINAL_SYNTHESIS 8."
   }
  ],
  "verified_pyqs": [
@@ -34060,6 +34123,1255 @@
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An element x is join-irreducible when x = p ∨ q forces x = p or x = q. Excluding the least element, the join-irreducibles of a finite lattice are exactly the elements covering a single element — in the diamond, the three atoms.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The least element 0 is excluded by the wording; in any case <code class=\"mm\">0 = 0 ∨ 0</code> makes it reducible under the strict reading.</li><li>For the atom a: any <code class=\"mm\">p, q ≤ a</code> with <code class=\"mm\">p ∨ q = a</code> must have p = q = 0, and <code class=\"mm\">0 ∨ 0 = 0 ≠ a</code>. So a is not a join of two strictly smaller elements: join-irreducible. The same argument gives b and c.</li><li>For the top 1: <code class=\"mm\">1 = a ∨ b</code> with both a, b strictly below 1, so 1 is join-reducible.</li><li>Count: a, b, c — three elements.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3.</span></p><p class=\"row\"><b>Common misconception.</b> The top element is counted as join-irreducible because it covers three elements and “cannot be split” visually, or 0 is included, giving 4 or 5. Join-irreducibility is about writing the element as a join of strictly smaller ones.</p>",
    "question_format": "text"
+  },
+  {
+   "id": "DM-U14-Q01",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "For integers <code class=\"mm\">a</code> and <code class=\"mm\">b</code> with <code class=\"mm\">b > 0</code>, the division algorithm guarantees unique integers <code class=\"mm\">q</code> and <code class=\"mm\">r</code> with <code class=\"mm\">a = bq + r</code> and",
+   "question_html": "<p class=\"qtext\">For integers <code class=\"mm\">a</code> and <code class=\"mm\">b</code> with <code class=\"mm\">b > 0</code>, the division algorithm guarantees unique integers <code class=\"mm\">q</code> and <code class=\"mm\">r</code> with <code class=\"mm\">a = bq + r</code> and</p>",
+   "options": [
+    "<code class=\"mm\">0 ≤ r < b</code>",
+    "<code class=\"mm\">0 < r ≤ b</code>",
+    "<code class=\"mm\">−b < r ≤ 0</code>",
+    "<code class=\"mm\">0 ≤ r ≤ b</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">0 ≤ r < b</code>",
+    "<code class=\"mm\">0 < r ≤ b</code>",
+    "<code class=\"mm\">−b < r ≤ 0</code>",
+    "<code class=\"mm\">0 ≤ r ≤ b</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The division algorithm states that for every integer <code class=\"mm\">a</code> and every positive integer <code class=\"mm\">b</code> there are unique integers <code class=\"mm\">q</code> (quotient) and <code class=\"mm\">r</code> (remainder) with <code class=\"mm\">a = bq + r</code> and <code class=\"mm\">0 ≤ r < b</code>. The bound is strict on the right, and it is the bound that makes <code class=\"mm\">q</code> and <code class=\"mm\">r</code> unique.",
+    "steps": [
+     "Take <code class=\"mm\">a = 17, b = 5</code>: then <code class=\"mm\">q = 3</code> and <code class=\"mm\">r = 2</code>, and indeed <code class=\"mm\">0 ≤ 2 < 5</code>.",
+     "Take a negative dividend, <code class=\"mm\">a = −17, b = 5</code>. Here <code class=\"mm\">q = −4</code> and <code class=\"mm\">r = 3</code>, because <code class=\"mm\">−17 = 5(−4) + 3</code>. The remainder is still non-negative, which rules out (C).",
+     "If <code class=\"mm\">r = b</code> were allowed, then <code class=\"mm\">a = bq + b = b(q + 1) + 0</code> would give a second quotient, contradicting uniqueness. So the bound must be strict, ruling out (D).",
+     "If <code class=\"mm\">r</code> had to be positive, then <code class=\"mm\">a = 10, b = 5</code> would have no valid remainder (its remainder is 0). So (B) fails."
+    ],
+    "misconception": "A common habit from C or Java is truncating division, which gives <code class=\"mm\">−17 = 5(−3) − 2</code> and a remainder of <code class=\"mm\">−2</code>. GATE uses the floor convention <code class=\"mm\">0 ≤ r < b</code>, and that convention is exactly what makes the quotient unique."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The division algorithm states that for every integer <code class=\"mm\">a</code> and every positive integer <code class=\"mm\">b</code> there are unique integers <code class=\"mm\">q</code> (quotient) and <code class=\"mm\">r</code> (remainder) with <code class=\"mm\">a = bq + r</code> and <code class=\"mm\">0 ≤ r < b</code>. The bound is strict on the right, and it is the bound that makes <code class=\"mm\">q</code> and <code class=\"mm\">r</code> unique.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Take <code class=\"mm\">a = 17, b = 5</code>: then <code class=\"mm\">q = 3</code> and <code class=\"mm\">r = 2</code>, and indeed <code class=\"mm\">0 ≤ 2 < 5</code>.</li><li>Take a negative dividend, <code class=\"mm\">a = −17, b = 5</code>. Here <code class=\"mm\">q = −4</code> and <code class=\"mm\">r = 3</code>, because <code class=\"mm\">−17 = 5(−4) + 3</code>. The remainder is still non-negative, which rules out (C).</li><li>If <code class=\"mm\">r = b</code> were allowed, then <code class=\"mm\">a = bq + b = b(q + 1) + 0</code> would give a second quotient, contradicting uniqueness. So the bound must be strict, ruling out (D).</li><li>If <code class=\"mm\">r</code> had to be positive, then <code class=\"mm\">a = 10, b = 5</code> would have no valid remainder (its remainder is 0). So (B) fails.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> A common habit from C or Java is truncating division, which gives <code class=\"mm\">−17 = 5(−3) − 2</code> and a remainder of <code class=\"mm\">−2</code>. GATE uses the floor convention <code class=\"mm\">0 ≤ r < b</code>, and that convention is exactly what makes the quotient unique.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q02",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a, b, c</code> be integers with <code class=\"mm\">a ≠ 0</code>, and suppose <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>. Which one of the following is necessarily true?",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a, b, c</code> be integers with <code class=\"mm\">a ≠ 0</code>, and suppose <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>. Which one of the following is necessarily true?</p>",
+   "options": [
+    "<code class=\"mm\">a | (b + c)</code>",
+    "<code class=\"mm\">b | a</code>",
+    "<code class=\"mm\">(b + c) | a</code>",
+    "<code class=\"mm\">a | (b + c + 1)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">a | (b + c)</code>",
+    "<code class=\"mm\">b | a</code>",
+    "<code class=\"mm\">(b + c) | a</code>",
+    "<code class=\"mm\">a | (b + c + 1)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "Divisibility is preserved by integer linear combinations: if <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (mb + nc)</code> for all integers <code class=\"mm\">m, n</code>. Taking <code class=\"mm\">m = n = 1</code> gives <code class=\"mm\">a | (b + c)</code>.",
+    "steps": [
+     "Write <code class=\"mm\">b = aq₁</code> and <code class=\"mm\">c = aq₂</code>, which is what the two hypotheses mean.",
+     "Then <code class=\"mm\">b + c = a(q₁ + q₂)</code>, and <code class=\"mm\">q₁ + q₂</code> is an integer, so <code class=\"mm\">a | (b + c)</code>. This is (A).",
+     "(B) reverses the direction of divisibility; <code class=\"mm\">4 | 8</code> but <code class=\"mm\">8 ∤ 4</code>.",
+     "(C) also reverses it: <code class=\"mm\">2 | 4</code> and <code class=\"mm\">2 | 6</code> give <code class=\"mm\">2 | 10</code>, yet <code class=\"mm\">10 ∤ 2</code>.",
+     "(D) adds 1, which destroys divisibility: <code class=\"mm\">2 | 4</code> and <code class=\"mm\">2 | 6</code>, but <code class=\"mm\">2 ∤ 11</code>."
+    ],
+    "misconception": "Students often accept (C) because the expression looks symmetric. Divisibility is a one-way relation: <code class=\"mm\">a | b</code> says nothing about <code class=\"mm\">b | a</code> unless <code class=\"mm\">|a| = |b|</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Divisibility is preserved by integer linear combinations: if <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (mb + nc)</code> for all integers <code class=\"mm\">m, n</code>. Taking <code class=\"mm\">m = n = 1</code> gives <code class=\"mm\">a | (b + c)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write <code class=\"mm\">b = aq₁</code> and <code class=\"mm\">c = aq₂</code>, which is what the two hypotheses mean.</li><li>Then <code class=\"mm\">b + c = a(q₁ + q₂)</code>, and <code class=\"mm\">q₁ + q₂</code> is an integer, so <code class=\"mm\">a | (b + c)</code>. This is (A).</li><li>(B) reverses the direction of divisibility; <code class=\"mm\">4 | 8</code> but <code class=\"mm\">8 ∤ 4</code>.</li><li>(C) also reverses it: <code class=\"mm\">2 | 4</code> and <code class=\"mm\">2 | 6</code> give <code class=\"mm\">2 | 10</code>, yet <code class=\"mm\">10 ∤ 2</code>.</li><li>(D) adds 1, which destroys divisibility: <code class=\"mm\">2 | 4</code> and <code class=\"mm\">2 | 6</code>, but <code class=\"mm\">2 ∤ 11</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Students often accept (C) because the expression looks symmetric. Divisibility is a one-way relation: <code class=\"mm\">a | b</code> says nothing about <code class=\"mm\">b | a</code> unless <code class=\"mm\">|a| = |b|</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q03",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The number of positive divisors of <code class=\"mm\">360</code> is",
+   "question_html": "<p class=\"qtext\">The number of positive divisors of <code class=\"mm\">360</code> is</p>",
+   "options": [
+    "<code class=\"mm\">20</code>",
+    "<code class=\"mm\">22</code>",
+    "<code class=\"mm\">24</code>",
+    "<code class=\"mm\">27</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">20</code>",
+    "<code class=\"mm\">22</code>",
+    "<code class=\"mm\">24</code>",
+    "<code class=\"mm\">27</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "If <code class=\"mm\">n = p₁^{a₁} p₂^{a₂} ⋯ p_k^{a_k}</code> is the prime factorisation, every positive divisor is <code class=\"mm\">p₁^{e₁} ⋯ p_k^{e_k}</code> with <code class=\"mm\">0 ≤ e_i ≤ a_i</code>, so the count is <code class=\"mm\">∏(a_i + 1)</code>.",
+    "steps": [
+     "Factor: <code class=\"mm\">360 = 36 · 10 = 2²·3²·2·5 = 2³ · 3² · 5¹</code>.",
+     "The exponents are <code class=\"mm\">3, 2, 1</code>, so the divisor count is <code class=\"mm\">(3+1)(2+1)(1+1) = 4 · 3 · 2</code>.",
+     "That is <code class=\"mm\">24</code>."
+    ],
+    "misconception": "Adding the exponents (<code class=\"mm\">3+2+1 = 6</code>) or counting the prime factors (three) are the two usual slips. The product of one-more-than-each-exponent is the rule; it counts the independent choices of each exponent."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> If <code class=\"mm\">n = p₁^{a₁} p₂^{a₂} ⋯ p_k^{a_k}</code> is the prime factorisation, every positive divisor is <code class=\"mm\">p₁^{e₁} ⋯ p_k^{e_k}</code> with <code class=\"mm\">0 ≤ e_i ≤ a_i</code>, so the count is <code class=\"mm\">∏(a_i + 1)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Factor: <code class=\"mm\">360 = 36 · 10 = 2²·3²·2·5 = 2³ · 3² · 5¹</code>.</li><li>The exponents are <code class=\"mm\">3, 2, 1</code>, so the divisor count is <code class=\"mm\">(3+1)(2+1)(1+1) = 4 · 3 · 2</code>.</li><li>That is <code class=\"mm\">24</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Adding the exponents (<code class=\"mm\">3+2+1 = 6</code>) or counting the prime factors (three) are the two usual slips. The product of one-more-than-each-exponent is the rule; it counts the independent choices of each exponent.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q04",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a, b, c</code> be positive integers. Which one of the following statements is <b>false</b>?",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a, b, c</code> be positive integers. Which one of the following statements is <b>false</b>?</p>",
+   "options": [
+    "If <code class=\"mm\">a | bc</code> and <code class=\"mm\">gcd(a, b) = 1</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">b | c</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | bc</code>, then <code class=\"mm\">a | b</code> or <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (2b − 3c)</code>."
+   ],
+   "options_html": [
+    "If <code class=\"mm\">a | bc</code> and <code class=\"mm\">gcd(a, b) = 1</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">b | c</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | bc</code>, then <code class=\"mm\">a | b</code> or <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (2b − 3c)</code>."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "Euclid’s lemma: if <code class=\"mm\">a | bc</code> and <code class=\"mm\">gcd(a, b) = 1</code>, then <code class=\"mm\">a | c</code>. The coprimality hypothesis is essential — without it, divisibility does not behave like a prime.",
+    "steps": [
+     "(A) is Euclid’s lemma and is true.",
+     "(B) is transitivity of divisibility: <code class=\"mm\">b = aq</code> and <code class=\"mm\">c = br</code> give <code class=\"mm\">c = a(qr)</code>. True.",
+     "(D) is true because <code class=\"mm\">2b − 3c = a(2q₁ − 3q₂)</code> is an integer multiple of <code class=\"mm\">a</code>.",
+     "(C) fails: take <code class=\"mm\">a = 6, b = 2, c = 3</code>. Then <code class=\"mm\">bc = 6</code> and <code class=\"mm\">6 | 6</code>, but <code class=\"mm\">6 ∤ 2</code> and <code class=\"mm\">6 ∤ 3</code>. The prime factors of <code class=\"mm\">a</code> are split between the two factors."
+    ],
+    "misconception": "The statement in (C) is exactly the defining property of a prime, and it is applied to composites by mistake. Note also that (A) is not (C): (A) rescues the conclusion only when <code class=\"mm\">a</code> shares no factor with <code class=\"mm\">b</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Euclid’s lemma: if <code class=\"mm\">a | bc</code> and <code class=\"mm\">gcd(a, b) = 1</code>, then <code class=\"mm\">a | c</code>. The coprimality hypothesis is essential — without it, divisibility does not behave like a prime.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is Euclid’s lemma and is true.</li><li>(B) is transitivity of divisibility: <code class=\"mm\">b = aq</code> and <code class=\"mm\">c = br</code> give <code class=\"mm\">c = a(qr)</code>. True.</li><li>(D) is true because <code class=\"mm\">2b − 3c = a(2q₁ − 3q₂)</code> is an integer multiple of <code class=\"mm\">a</code>.</li><li>(C) fails: take <code class=\"mm\">a = 6, b = 2, c = 3</code>. Then <code class=\"mm\">bc = 6</code> and <code class=\"mm\">6 | 6</code>, but <code class=\"mm\">6 ∤ 2</code> and <code class=\"mm\">6 ∤ 3</code>. The prime factors of <code class=\"mm\">a</code> are split between the two factors.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> The statement in (C) is exactly the defining property of a prime, and it is applied to composites by mistake. Note also that (A) is not (C): (A) rescues the conclusion only when <code class=\"mm\">a</code> shares no factor with <code class=\"mm\">b</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q05",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "How many positive divisors of <code class=\"mm\">720 = 2⁴ · 3² · 5</code> are divisible by <code class=\"mm\">6</code>?<br/>(Enter an integer.)",
+   "question_html": "<div class=\"qtext\">How many positive divisors of <code class=\"mm\">720 = 2⁴ · 3² · 5</code> are divisible by <code class=\"mm\">6</code>?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 16,
+   "answer_display": "16",
+   "marks": 2,
+   "solution": {
+    "concept": "A divisor <code class=\"mm\">d = 2^{e₂} 3^{e₃} 5^{e₅}</code> of <code class=\"mm\">720</code> is divisible by <code class=\"mm\">6 = 2 · 3</code> exactly when both exponents are at least 1, since <code class=\"mm\">6 | d ⇔ 2 | d</code> and <code class=\"mm\">3 | d</code>.",
+    "steps": [
+     "The exponent ranges are <code class=\"mm\">0 ≤ e₂ ≤ 4</code>, <code class=\"mm\">0 ≤ e₃ ≤ 2</code>, <code class=\"mm\">0 ≤ e₅ ≤ 1</code>.",
+     "The condition <code class=\"mm\">6 | d</code> forces <code class=\"mm\">e₂ ≥ 1</code> and <code class=\"mm\">e₃ ≥ 1</code>, leaving <code class=\"mm\">e₂ ∈ {1,2,3,4}</code> — 4 choices — and <code class=\"mm\">e₃ ∈ {1,2}</code> — 2 choices.",
+     "The exponent <code class=\"mm\">e₅</code> is free: 2 choices.",
+     "Total <code class=\"mm\">4 · 2 · 2 = 16</code>."
+    ],
+    "misconception": "Dividing the divisor count 30 by 6 to get 5 is the classic error; divisibility by 6 is a condition on exponents, not a division of the count. Dropping the free exponent <code class=\"mm\">5</code> gives 8, the other common answer."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A divisor <code class=\"mm\">d = 2^{e₂} 3^{e₃} 5^{e₅}</code> of <code class=\"mm\">720</code> is divisible by <code class=\"mm\">6 = 2 · 3</code> exactly when both exponents are at least 1, since <code class=\"mm\">6 | d ⇔ 2 | d</code> and <code class=\"mm\">3 | d</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The exponent ranges are <code class=\"mm\">0 ≤ e₂ ≤ 4</code>, <code class=\"mm\">0 ≤ e₃ ≤ 2</code>, <code class=\"mm\">0 ≤ e₅ ≤ 1</code>.</li><li>The condition <code class=\"mm\">6 | d</code> forces <code class=\"mm\">e₂ ≥ 1</code> and <code class=\"mm\">e₃ ≥ 1</code>, leaving <code class=\"mm\">e₂ ∈ {1,2,3,4}</code> — 4 choices — and <code class=\"mm\">e₃ ∈ {1,2}</code> — 2 choices.</li><li>The exponent <code class=\"mm\">e₅</code> is free: 2 choices.</li><li>Total <code class=\"mm\">4 · 2 · 2 = 16</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 16</span></p><p class=\"row\"><b>Common misconception.</b> Dividing the divisor count 30 by 6 to get 5 is the classic error; divisibility by 6 is a condition on exponents, not a division of the count. Dropping the free exponent <code class=\"mm\">5</code> gives 8, the other common answer.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U14-Q06",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a, b, c</code> be integers with <code class=\"mm\">a ≠ 0</code>. Which of the following statements are true for all such <code class=\"mm\">a, b, c</code>? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a, b, c</code> be integers with <code class=\"mm\">a ≠ 0</code>. Which of the following statements are true for all such <code class=\"mm\">a, b, c</code>? (Select all that apply.)</p>",
+   "options": [
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">b | c</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (b − c)</code>.",
+    "If <code class=\"mm\">a | b</code>, then <code class=\"mm\">b | a</code>.",
+    "If <code class=\"mm\">a | b</code>, then <code class=\"mm\">a | bc</code>."
+   ],
+   "options_html": [
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">b | c</code>, then <code class=\"mm\">a | c</code>.",
+    "If <code class=\"mm\">a | b</code> and <code class=\"mm\">a | c</code>, then <code class=\"mm\">a | (b − c)</code>.",
+    "If <code class=\"mm\">a | b</code>, then <code class=\"mm\">b | a</code>.",
+    "If <code class=\"mm\">a | b</code>, then <code class=\"mm\">a | bc</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "Divisibility is a transitive relation that is preserved under integer linear combinations and under multiplication of the dividend by any integer.",
+    "steps": [
+     "(A): <code class=\"mm\">b = aq</code>, <code class=\"mm\">c = br</code> give <code class=\"mm\">c = a(qr)</code>. True.",
+     "(B): <code class=\"mm\">b − c = a(q₁ − q₂)</code>. True — the linear-combination rule with <code class=\"mm\">m = 1, n = −1</code>.",
+     "(C): <code class=\"mm\">4 | 8</code> but <code class=\"mm\">8 ∤ 4</code>, so this fails. False.",
+     "(D): <code class=\"mm\">bc = a(qc)</code>, an integer multiple of <code class=\"mm\">a</code>. True."
+    ],
+    "misconception": "(C) is chosen when students read <code class=\"mm\">|</code> as “is comparable to”. The only case in which both <code class=\"mm\">a | b</code> and <code class=\"mm\">b | a</code> hold is <code class=\"mm\">|a| = |b|</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Divisibility is a transitive relation that is preserved under integer linear combinations and under multiplication of the dividend by any integer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">b = aq</code>, <code class=\"mm\">c = br</code> give <code class=\"mm\">c = a(qr)</code>. True.</li><li>(B): <code class=\"mm\">b − c = a(q₁ − q₂)</code>. True — the linear-combination rule with <code class=\"mm\">m = 1, n = −1</code>.</li><li>(C): <code class=\"mm\">4 | 8</code> but <code class=\"mm\">8 ∤ 4</code>, so this fails. False.</li><li>(D): <code class=\"mm\">bc = a(qc)</code>, an integer multiple of <code class=\"mm\">a</code>. True.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D)</span></p><p class=\"row\"><b>Common misconception.</b> (C) is chosen when students read <code class=\"mm\">|</code> as “is comparable to”. The only case in which both <code class=\"mm\">a | b</code> and <code class=\"mm\">b | a</code> hold is <code class=\"mm\">|a| = |b|</code>.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U14-Q07",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "divisibility-division-algorithm",
+   "subtopic": "divisibility-division-algorithm",
+   "subtopic_label": "Divisibility & division algorithm",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">k</code> be the largest integer such that <code class=\"mm\">3^k</code> divides <code class=\"mm\">100!</code>. Then <code class=\"mm\">k</code> equals",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">k</code> be the largest integer such that <code class=\"mm\">3^k</code> divides <code class=\"mm\">100!</code>. Then <code class=\"mm\">k</code> equals</p>",
+   "options": [
+    "<code class=\"mm\">44</code>",
+    "<code class=\"mm\">46</code>",
+    "<code class=\"mm\">48</code>",
+    "<code class=\"mm\">50</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">44</code>",
+    "<code class=\"mm\">46</code>",
+    "<code class=\"mm\">48</code>",
+    "<code class=\"mm\">50</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "Legendre’s formula: the exponent of a prime <code class=\"mm\">p</code> in <code class=\"mm\">n!</code> is <code class=\"mm\">v_p(n!) = Σ_{i≥1} ⌊n / p^i⌋</code>. Each power of <code class=\"mm\">p</code> contributes one extra factor beyond the plain multiples of <code class=\"mm\">p</code>.",
+    "steps": [
+     "Multiples of 3 up to 100: <code class=\"mm\">⌊100/3⌋ = 33</code>.",
+     "Multiples of 9: <code class=\"mm\">⌊100/9⌋ = 11</code>. Multiples of 27: <code class=\"mm\">⌊100/27⌋ = 3</code>. Multiples of 81: <code class=\"mm\">⌊100/81⌋ = 1</code>.",
+     "The next power is <code class=\"mm\">243 > 100</code>, so the sum stops here: <code class=\"mm\">33 + 11 + 3 + 1 = 48</code>.",
+     "Hence <code class=\"mm\">3^48 | 100!</code> and <code class=\"mm\">3^49 ∤ 100!</code>."
+    ],
+    "misconception": "Stopping at <code class=\"mm\">⌊100/3⌋ = 33</code> is the standard mistake; it counts only the multiples of 3 and ignores the extra factors hidden inside 9, 27 and 81. A second slip is to use <code class=\"mm\">⌊100/2⌋</code> or another prime entirely, which answers the exponent of a different prime."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Legendre’s formula: the exponent of a prime <code class=\"mm\">p</code> in <code class=\"mm\">n!</code> is <code class=\"mm\">v_p(n!) = Σ_{i≥1} ⌊n / p^i⌋</code>. Each power of <code class=\"mm\">p</code> contributes one extra factor beyond the plain multiples of <code class=\"mm\">p</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Multiples of 3 up to 100: <code class=\"mm\">⌊100/3⌋ = 33</code>.</li><li>Multiples of 9: <code class=\"mm\">⌊100/9⌋ = 11</code>. Multiples of 27: <code class=\"mm\">⌊100/27⌋ = 3</code>. Multiples of 81: <code class=\"mm\">⌊100/81⌋ = 1</code>.</li><li>The next power is <code class=\"mm\">243 > 100</code>, so the sum stops here: <code class=\"mm\">33 + 11 + 3 + 1 = 48</code>.</li><li>Hence <code class=\"mm\">3^48 | 100!</code> and <code class=\"mm\">3^49 ∤ 100!</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Stopping at <code class=\"mm\">⌊100/3⌋ = 33</code> is the standard mistake; it counts only the multiples of 3 and ignores the extra factors hidden inside 9, 27 and 81. A second slip is to use <code class=\"mm\">⌊100/2⌋</code> or another prime entirely, which answers the exponent of a different prime.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q08",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Applying the Euclidean algorithm to <code class=\"mm\">48</code> and <code class=\"mm\">18</code>, the last non-zero remainder — that is, <code class=\"mm\">gcd(48, 18)</code> — equals",
+   "question_html": "<p class=\"qtext\">Applying the Euclidean algorithm to <code class=\"mm\">48</code> and <code class=\"mm\">18</code>, the last non-zero remainder — that is, <code class=\"mm\">gcd(48, 18)</code> — equals</p>",
+   "options": [
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">9</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">9</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "marks": 1,
+   "solution": {
+    "concept": "The Euclidean algorithm replaces <code class=\"mm\">(a, b)</code> by <code class=\"mm\">(b, a mod b)</code> and stops when the remainder is 0; the last non-zero remainder is the gcd. Each step is valid because <code class=\"mm\">gcd(a, b) = gcd(b, a mod b)</code>.",
+    "steps": [
+     "<code class=\"mm\">48 = 2 · 18 + 12</code>",
+     "<code class=\"mm\">18 = 1 · 12 + 6</code>",
+     "<code class=\"mm\">12 = 2 · 6 + 0</code>",
+     "The last non-zero remainder is <code class=\"mm\">6</code>, so <code class=\"mm\">gcd(48, 18) = 6</code>. Check: <code class=\"mm\">48 = 6 · 8</code>, <code class=\"mm\">18 = 6 · 3</code>, and <code class=\"mm\">gcd(8, 3) = 1</code>."
+    ],
+    "misconception": "Answering with the first remainder (12) or the first divisor (18) confuses the running values with the gcd. Only the last non-zero remainder answers the question."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The Euclidean algorithm replaces <code class=\"mm\">(a, b)</code> by <code class=\"mm\">(b, a mod b)</code> and stops when the remainder is 0; the last non-zero remainder is the gcd. Each step is valid because <code class=\"mm\">gcd(a, b) = gcd(b, a mod b)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">48 = 2 · 18 + 12</code></li><li><code class=\"mm\">18 = 1 · 12 + 6</code></li><li><code class=\"mm\">12 = 2 · 6 + 0</code></li><li>The last non-zero remainder is <code class=\"mm\">6</code>, so <code class=\"mm\">gcd(48, 18) = 6</code>. Check: <code class=\"mm\">48 = 6 · 8</code>, <code class=\"mm\">18 = 6 · 3</code>, and <code class=\"mm\">gcd(8, 3) = 1</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A)</span></p><p class=\"row\"><b>Common misconception.</b> Answering with the first remainder (12) or the first divisor (18) confuses the running values with the gcd. Only the last non-zero remainder answers the question.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q09",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "For <code class=\"mm\">a = 12</code> and <code class=\"mm\">b = 18</code>, the least common multiple <code class=\"mm\">lcm(a, b)</code> equals",
+   "question_html": "<p class=\"qtext\">For <code class=\"mm\">a = 12</code> and <code class=\"mm\">b = 18</code>, the least common multiple <code class=\"mm\">lcm(a, b)</code> equals</p>",
+   "options": [
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">36</code>",
+    "<code class=\"mm\">216</code>",
+    "<code class=\"mm\">72</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">36</code>",
+    "<code class=\"mm\">216</code>",
+    "<code class=\"mm\">72</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "For positive integers, <code class=\"mm\">gcd(a, b) · lcm(a, b) = ab</code>, so <code class=\"mm\">lcm(a, b) = ab / gcd(a, b)</code>.",
+    "steps": [
+     "<code class=\"mm\">gcd(12, 18) = 6</code>, since <code class=\"mm\">12 = 2²·3</code> and <code class=\"mm\">18 = 2·3²</code> share <code class=\"mm\">2·3</code>.",
+     "<code class=\"mm\">lcm = 12 · 18 / 6 = 216 / 6 = 36</code>.",
+     "Direct check by exponents: <code class=\"mm\">lcm = 2² · 3² = 36</code>, taking the larger exponent of each prime."
+    ],
+    "misconception": "<code class=\"mm\">216</code> is the product <code class=\"mm\">ab</code> and <code class=\"mm\">6</code> is the gcd; both are picked by students who mix the two formulas up. For the least common multiple the exponents must be the <i>maximum</i> of the two."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For positive integers, <code class=\"mm\">gcd(a, b) · lcm(a, b) = ab</code>, so <code class=\"mm\">lcm(a, b) = ab / gcd(a, b)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">gcd(12, 18) = 6</code>, since <code class=\"mm\">12 = 2²·3</code> and <code class=\"mm\">18 = 2·3²</code> share <code class=\"mm\">2·3</code>.</li><li><code class=\"mm\">lcm = 12 · 18 / 6 = 216 / 6 = 36</code>.</li><li>Direct check by exponents: <code class=\"mm\">lcm = 2² · 3² = 36</code>, taking the larger exponent of each prime.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">216</code> is the product <code class=\"mm\">ab</code> and <code class=\"mm\">6</code> is the gcd; both are picked by students who mix the two formulas up. For the least common multiple the exponents must be the <i>maximum</i> of the two.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q10",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Using the Euclidean algorithm, find <code class=\"mm\">gcd(1071, 462)</code>.<br/>(Enter an integer.)",
+   "question_html": "<div class=\"qtext\">Using the Euclidean algorithm, find <code class=\"mm\">gcd(1071, 462)</code>.</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 21,
+   "answer_display": "21",
+   "marks": 2,
+   "solution": {
+    "concept": "Repeatedly replace the larger number by its remainder on division by the smaller; the last non-zero remainder is the gcd. The number of steps is logarithmic in the inputs.",
+    "steps": [
+     "<code class=\"mm\">1071 = 2 · 462 + 147</code>",
+     "<code class=\"mm\">462 = 3 · 147 + 21</code>",
+     "<code class=\"mm\">147 = 7 · 21 + 0</code>",
+     "The last non-zero remainder is <code class=\"mm\">21</code>, so <code class=\"mm\">gcd(1071, 462) = 21</code>."
+    ],
+    "misconception": "Stopping at <code class=\"mm\">147</code> (the first remainder) or at <code class=\"mm\">21 · 7 = 147</code> confuses intermediate values with the answer. The algorithm terminates only when the remainder is 0."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Repeatedly replace the larger number by its remainder on division by the smaller; the last non-zero remainder is the gcd. The number of steps is logarithmic in the inputs.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">1071 = 2 · 462 + 147</code></li><li><code class=\"mm\">462 = 3 · 147 + 21</code></li><li><code class=\"mm\">147 = 7 · 21 + 0</code></li><li>The last non-zero remainder is <code class=\"mm\">21</code>, so <code class=\"mm\">gcd(1071, 462) = 21</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 21</span></p><p class=\"row\"><b>Common misconception.</b> Stopping at <code class=\"mm\">147</code> (the first remainder) or at <code class=\"mm\">21 · 7 = 147</code> confuses intermediate values with the answer. The algorithm terminates only when the remainder is 0.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U14-Q11",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a</code> and <code class=\"mm\">b</code> be positive integers with <code class=\"mm\">gcd(a, b) = 1</code>. Then <code class=\"mm\">gcd(a + b, a − b)</code> is always",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a</code> and <code class=\"mm\">b</code> be positive integers with <code class=\"mm\">gcd(a, b) = 1</code>. Then <code class=\"mm\">gcd(a + b, a − b)</code> is always</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">1 or 2</code>",
+    "<code class=\"mm\">2</code>",
+    "equal to <code class=\"mm\">gcd(a, b)</code>, that is <code class=\"mm\">1</code>, unless <code class=\"mm\">a = b</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">1 or 2</code>",
+    "<code class=\"mm\">2</code>",
+    "equal to <code class=\"mm\">gcd(a, b)</code>, that is <code class=\"mm\">1</code>, unless <code class=\"mm\">a = b</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "Any common divisor of <code class=\"mm\">a + b</code> and <code class=\"mm\">a − b</code> divides their sum <code class=\"mm\">2a</code> and their difference <code class=\"mm\">2b</code>, hence divides <code class=\"mm\">2·gcd(a, b)</code>. With <code class=\"mm\">gcd(a, b) = 1</code> only <code class=\"mm\">1</code> and <code class=\"mm\">2</code> remain possible.",
+    "steps": [
+     "Let <code class=\"mm\">d = gcd(a + b, a − b)</code>. Then <code class=\"mm\">d | (a + b) + (a − b) = 2a</code> and <code class=\"mm\">d | (a + b) − (a − b) = 2b</code>.",
+     "So <code class=\"mm\">d | gcd(2a, 2b) = 2·gcd(a, b) = 2</code>, giving <code class=\"mm\">d ∈ {1, 2}</code>.",
+     "Both values occur. With <code class=\"mm\">a = 2, b = 1</code>: <code class=\"mm\">gcd(3, 1) = 1</code>. With <code class=\"mm\">a = 3, b = 1</code>: <code class=\"mm\">gcd(4, 2) = 2</code> — in general <code class=\"mm\">2</code> occurs exactly when <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are both odd, which coprime pairs certainly allow.",
+     "Hence the gcd is always 1 or 2 and neither value alone is correct."
+    ],
+    "misconception": "Answering “1” assumes the coprimality of <code class=\"mm\">a</code> and <code class=\"mm\">b</code> carries over to <code class=\"mm\">a + b</code> and <code class=\"mm\">a − b</code>; it does not, because both new numbers are even whenever <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are odd. Answering “2” ignores the coprime pair <code class=\"mm\">(2, 1)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Any common divisor of <code class=\"mm\">a + b</code> and <code class=\"mm\">a − b</code> divides their sum <code class=\"mm\">2a</code> and their difference <code class=\"mm\">2b</code>, hence divides <code class=\"mm\">2·gcd(a, b)</code>. With <code class=\"mm\">gcd(a, b) = 1</code> only <code class=\"mm\">1</code> and <code class=\"mm\">2</code> remain possible.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let <code class=\"mm\">d = gcd(a + b, a − b)</code>. Then <code class=\"mm\">d | (a + b) + (a − b) = 2a</code> and <code class=\"mm\">d | (a + b) − (a − b) = 2b</code>.</li><li>So <code class=\"mm\">d | gcd(2a, 2b) = 2·gcd(a, b) = 2</code>, giving <code class=\"mm\">d ∈ {1, 2}</code>.</li><li>Both values occur. With <code class=\"mm\">a = 2, b = 1</code>: <code class=\"mm\">gcd(3, 1) = 1</code>. With <code class=\"mm\">a = 3, b = 1</code>: <code class=\"mm\">gcd(4, 2) = 2</code> — in general <code class=\"mm\">2</code> occurs exactly when <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are both odd, which coprime pairs certainly allow.</li><li>Hence the gcd is always 1 or 2 and neither value alone is correct.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Answering “1” assumes the coprimality of <code class=\"mm\">a</code> and <code class=\"mm\">b</code> carries over to <code class=\"mm\">a + b</code> and <code class=\"mm\">a − b</code>; it does not, because both new numbers are even whenever <code class=\"mm\">a</code> and <code class=\"mm\">b</code> are odd. Answering “2” ignores the coprime pair <code class=\"mm\">(2, 1)</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q12",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a</code> and <code class=\"mm\">b</code> be positive integers. Which of the following are true for all such <code class=\"mm\">a</code> and <code class=\"mm\">b</code>? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a</code> and <code class=\"mm\">b</code> be positive integers. Which of the following are true for all such <code class=\"mm\">a</code> and <code class=\"mm\">b</code>? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">gcd(a, b) · lcm(a, b) = ab</code>",
+    "<code class=\"mm\">gcd(a, b) = gcd(a, a + b)</code>",
+    "<code class=\"mm\">gcd(a², b²) = (gcd(a, b))²</code>",
+    "<code class=\"mm\">gcd(a, b) = gcd(a, b²)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">gcd(a, b) · lcm(a, b) = ab</code>",
+    "<code class=\"mm\">gcd(a, b) = gcd(a, a + b)</code>",
+    "<code class=\"mm\">gcd(a², b²) = (gcd(a, b))²</code>",
+    "<code class=\"mm\">gcd(a, b) = gcd(a, b²)</code>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "Each identity follows by reading the gcd off the prime exponents: <code class=\"mm\">gcd</code> takes the minimum exponent, <code class=\"mm\">lcm</code> the maximum, and the product restores the sum of exponents.",
+    "steps": [
+     "(A): with <code class=\"mm\">a = ∏p^{α}</code> and <code class=\"mm\">b = ∏p^{β}</code>, the min-times-max of each exponent pair is <code class=\"mm\">αβ</code>, which is exactly the exponent in <code class=\"mm\">ab</code>. True.",
+     "(B): any common divisor of <code class=\"mm\">a</code> and <code class=\"mm\">a + b</code> divides <code class=\"mm\">b</code>, and conversely; the two gcds therefore coincide. True.",
+     "(C): squaring doubles every exponent, so <code class=\"mm\">min(2α, 2β) = 2·min(α, β)</code>. True.",
+     "(D): take <code class=\"mm\">a = 4, b = 2</code>. Then <code class=\"mm\">gcd(4, 2) = 2</code> but <code class=\"mm\">gcd(4, 4) = 4</code>. False."
+    ],
+    "misconception": "(D) looks plausible because squaring “does not change the prime factors”, but it does change the exponents, and the gcd reads exponents. The identity that survives squaring is (C), where <i>both</i> arguments are squared."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each identity follows by reading the gcd off the prime exponents: <code class=\"mm\">gcd</code> takes the minimum exponent, <code class=\"mm\">lcm</code> the maximum, and the product restores the sum of exponents.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): with <code class=\"mm\">a = ∏p^{α}</code> and <code class=\"mm\">b = ∏p^{β}</code>, the min-times-max of each exponent pair is <code class=\"mm\">αβ</code>, which is exactly the exponent in <code class=\"mm\">ab</code>. True.</li><li>(B): any common divisor of <code class=\"mm\">a</code> and <code class=\"mm\">a + b</code> divides <code class=\"mm\">b</code>, and conversely; the two gcds therefore coincide. True.</li><li>(C): squaring doubles every exponent, so <code class=\"mm\">min(2α, 2β) = 2·min(α, β)</code>. True.</li><li>(D): take <code class=\"mm\">a = 4, b = 2</code>. Then <code class=\"mm\">gcd(4, 2) = 2</code> but <code class=\"mm\">gcd(4, 4) = 4</code>. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> (D) looks plausible because squaring “does not change the prime factors”, but it does change the exponents, and the gcd reads exponents. The identity that survives squaring is (C), where <i>both</i> arguments are squared.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U14-Q13",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "gcd-lcm-euclidean-algorithm",
+   "subtopic": "gcd-lcm-euclidean-algorithm",
+   "subtopic_label": "GCD, LCM & Euclidean algorithm",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "How many integers <code class=\"mm\">n</code> with <code class=\"mm\">1 ≤ n ≤ 100</code> satisfy <code class=\"mm\">gcd(n, 100) = 1</code>?<br/>(Enter an integer.)",
+   "question_html": "<div class=\"qtext\">How many integers <code class=\"mm\">n</code> with <code class=\"mm\">1 ≤ n ≤ 100</code> satisfy <code class=\"mm\">gcd(n, 100) = 1</code>?</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 40,
+   "answer_display": "40",
+   "marks": 2,
+   "solution": {
+    "concept": "The count of integers in <code class=\"mm\">1..N</code> coprime to <code class=\"mm\">N</code> is Euler’s totient <code class=\"mm\">φ(N)</code>. For a prime power <code class=\"mm\">φ(p^k) = p^k − p^{k−1}</code>, and <code class=\"mm\">φ</code> is multiplicative over coprime factors.",
+    "steps": [
+     "Factor: <code class=\"mm\">100 = 2² · 5²</code>.",
+     "<code class=\"mm\">φ(4) = 4 − 2 = 2</code> and <code class=\"mm\">φ(25) = 25 − 5 = 20</code>, and <code class=\"mm\">gcd(4, 25) = 1</code>, so <code class=\"mm\">φ(100) = 2 · 20 = 40</code>.",
+     "Equivalent form: <code class=\"mm\">φ(100) = 100 (1 − 1/2)(1 − 1/5) = 100 · ½ · ⅘ = 40</code>.",
+     "Check by inclusion–exclusion: <code class=\"mm\">100 − 50 − 20 + 10 = 40</code>, subtracting the multiples of 2 and of 5 and adding back the multiples of 10."
+    ],
+    "misconception": "<code class=\"mm\">100 − 2 − 5 = 93</code> counts numbers by “not a multiple of a prime” incorrectly. Note also that <code class=\"mm\">gcd(100, 100) = 100 ≠ 1</code>, so 100 itself is not counted — the count is over <code class=\"mm\">1 ≤ n ≤ 100</code>, and the formula already excludes it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The count of integers in <code class=\"mm\">1..N</code> coprime to <code class=\"mm\">N</code> is Euler’s totient <code class=\"mm\">φ(N)</code>. For a prime power <code class=\"mm\">φ(p^k) = p^k − p^{k−1}</code>, and <code class=\"mm\">φ</code> is multiplicative over coprime factors.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Factor: <code class=\"mm\">100 = 2² · 5²</code>.</li><li><code class=\"mm\">φ(4) = 4 − 2 = 2</code> and <code class=\"mm\">φ(25) = 25 − 5 = 20</code>, and <code class=\"mm\">gcd(4, 25) = 1</code>, so <code class=\"mm\">φ(100) = 2 · 20 = 40</code>.</li><li>Equivalent form: <code class=\"mm\">φ(100) = 100 (1 − 1/2)(1 − 1/5) = 100 · ½ · ⅘ = 40</code>.</li><li>Check by inclusion–exclusion: <code class=\"mm\">100 − 50 − 20 + 10 = 40</code>, subtracting the multiples of 2 and of 5 and adding back the multiples of 10.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 40</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">100 − 2 − 5 = 93</code> counts numbers by “not a multiple of a prime” incorrectly. Note also that <code class=\"mm\">gcd(100, 100) = 100 ≠ 1</code>, so 100 itself is not counted — the count is over <code class=\"mm\">1 ≤ n ≤ 100</code>, and the formula already excludes it.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U14-Q14",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The least non-negative residue of <code class=\"mm\">2^{10}</code> modulo <code class=\"mm\">7</code> is",
+   "question_html": "<p class=\"qtext\">The least non-negative residue of <code class=\"mm\">2^{10}</code> modulo <code class=\"mm\">7</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">6</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "Two integers are congruent modulo <code class=\"mm\">m</code> when their difference is divisible by <code class=\"mm\">m</code>; the least non-negative residue is the remainder in <code class=\"mm\">0..m−1</code>. Congruences may be multiplied and powered term by term.",
+    "steps": [
+     "<code class=\"mm\">2^{10} = 1024</code>.",
+     "Divide: <code class=\"mm\">1024 = 7 · 146 + 2</code>, since <code class=\"mm\">7 · 146 = 1022</code>.",
+     "So <code class=\"mm\">2^{10} ≡ 2 (mod 7)</code>.",
+     "Shortcut: <code class=\"mm\">2³ = 8 ≡ 1 (mod 7)</code>, so <code class=\"mm\">2^{10} = 2⁹ · 2 ≡ 1³ · 2 = 2</code>."
+    ],
+    "misconception": "Reporting <code class=\"mm\">1024</code> itself, or dividing 1024 by 7 and keeping the quotient 146. The residue is the remainder, and it must lie in <code class=\"mm\">0..6</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two integers are congruent modulo <code class=\"mm\">m</code> when their difference is divisible by <code class=\"mm\">m</code>; the least non-negative residue is the remainder in <code class=\"mm\">0..m−1</code>. Congruences may be multiplied and powered term by term.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">2^{10} = 1024</code>.</li><li>Divide: <code class=\"mm\">1024 = 7 · 146 + 2</code>, since <code class=\"mm\">7 · 146 = 1022</code>.</li><li>So <code class=\"mm\">2^{10} ≡ 2 (mod 7)</code>.</li><li>Shortcut: <code class=\"mm\">2³ = 8 ≡ 1 (mod 7)</code>, so <code class=\"mm\">2^{10} = 2⁹ · 2 ≡ 1³ · 2 = 2</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Reporting <code class=\"mm\">1024</code> itself, or dividing 1024 by 7 and keeping the quotient 146. The residue is the remainder, and it must lie in <code class=\"mm\">0..6</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q15",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "All solutions of the congruence <code class=\"mm\">3x ≡ 1 (mod 7)</code> are given by",
+   "question_html": "<p class=\"qtext\">All solutions of the congruence <code class=\"mm\">3x ≡ 1 (mod 7)</code> are given by</p>",
+   "options": [
+    "<code class=\"mm\">x ≡ 2 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 3 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 4 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 5 (mod 7)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">x ≡ 2 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 3 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 4 (mod 7)</code>",
+    "<code class=\"mm\">x ≡ 5 (mod 7)</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "When <code class=\"mm\">gcd(a, m) = 1</code>, the congruence <code class=\"mm\">ax ≡ b (mod m)</code> has the unique solution <code class=\"mm\">x ≡ a⁻¹b (mod m)</code>. The inverse exists precisely because 3 and 7 are coprime.",
+    "steps": [
+     "Find the inverse of 3 modulo 7: <code class=\"mm\">3 · 5 = 15 = 2 · 7 + 1</code>, so <code class=\"mm\">3⁻¹ ≡ 5</code>.",
+     "Multiply both sides by 5: <code class=\"mm\">x ≡ 5 · 1 = 5 (mod 7)</code>.",
+     "Verify: <code class=\"mm\">3 · 5 = 15 ≡ 1 (mod 7)</code>. ✓",
+     "Since <code class=\"mm\">gcd(3, 7) = 1</code>, the solution is unique modulo 7, so the full solution set is <code class=\"mm\">x ≡ 5 (mod 7)</code>."
+    ],
+    "misconception": "Dividing by 3 “in the ordinary way” gives <code class=\"mm\">x ≡ 1/3</code>, which is meaningless modulo 7. Division modulo <code class=\"mm\">m</code> means multiplication by the inverse, and the inverse of 3 is 5, not <code class=\"mm\">1/3</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> When <code class=\"mm\">gcd(a, m) = 1</code>, the congruence <code class=\"mm\">ax ≡ b (mod m)</code> has the unique solution <code class=\"mm\">x ≡ a⁻¹b (mod m)</code>. The inverse exists precisely because 3 and 7 are coprime.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Find the inverse of 3 modulo 7: <code class=\"mm\">3 · 5 = 15 = 2 · 7 + 1</code>, so <code class=\"mm\">3⁻¹ ≡ 5</code>.</li><li>Multiply both sides by 5: <code class=\"mm\">x ≡ 5 · 1 = 5 (mod 7)</code>.</li><li>Verify: <code class=\"mm\">3 · 5 = 15 ≡ 1 (mod 7)</code>. ✓</li><li>Since <code class=\"mm\">gcd(3, 7) = 1</code>, the solution is unique modulo 7, so the full solution set is <code class=\"mm\">x ≡ 5 (mod 7)</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D)</span></p><p class=\"row\"><b>Common misconception.</b> Dividing by 3 “in the ordinary way” gives <code class=\"mm\">x ≡ 1/3</code>, which is meaningless modulo 7. Division modulo <code class=\"mm\">m</code> means multiplication by the inverse, and the inverse of 3 is 5, not <code class=\"mm\">1/3</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q16",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">a ≡ b (mod m)</code> with <code class=\"mm\">m ≥ 2</code>. Which one of the following is <b>not</b> necessarily true?",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">a ≡ b (mod m)</code> with <code class=\"mm\">m ≥ 2</code>. Which one of the following is <b>not</b> necessarily true?</p>",
+   "options": [
+    "<code class=\"mm\">a + c ≡ b + c (mod m)</code> for every integer <code class=\"mm\">c</code>",
+    "<code class=\"mm\">a − b</code> is divisible by <code class=\"mm\">m</code>",
+    "<code class=\"mm\">a² ≡ b² (mod m)</code>",
+    "<code class=\"mm\">a ≡ b (mod km)</code> for every positive integer <code class=\"mm\">k</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">a + c ≡ b + c (mod m)</code> for every integer <code class=\"mm\">c</code>",
+    "<code class=\"mm\">a − b</code> is divisible by <code class=\"mm\">m</code>",
+    "<code class=\"mm\">a² ≡ b² (mod m)</code>",
+    "<code class=\"mm\">a ≡ b (mod km)</code> for every positive integer <code class=\"mm\">k</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "Congruence modulo <code class=\"mm\">m</code> is preserved by addition of a constant, by multiplication, and by taking powers — but not by refining the modulus. A congruence modulo <code class=\"mm\">m</code> says nothing about modulus <code class=\"mm\">km</code>.",
+    "steps": [
+     "(A) is true: <code class=\"mm\">(a + c) − (b + c) = a − b</code>, which is a multiple of <code class=\"mm\">m</code>.",
+     "(B) is the definition of <code class=\"mm\">a ≡ b (mod m)</code>.",
+     "(C) is true because <code class=\"mm\">a² − b² = (a − b)(a + b)</code> is a multiple of <code class=\"mm\">m</code>.",
+     "(D) fails: <code class=\"mm\">3 ≡ 1 (mod 2)</code> since <code class=\"mm\">3 − 1 = 2</code>, yet <code class=\"mm\">3 ≢ 1 (mod 4)</code> because <code class=\"mm\">3 − 1 = 2</code> is not a multiple of 4."
+    ],
+    "misconception": "The direction is the trap. A congruence modulo <code class=\"mm\">km</code> implies one modulo <code class=\"mm\">m</code> (the stronger statement implies the weaker), never the reverse."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Congruence modulo <code class=\"mm\">m</code> is preserved by addition of a constant, by multiplication, and by taking powers — but not by refining the modulus. A congruence modulo <code class=\"mm\">m</code> says nothing about modulus <code class=\"mm\">km</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is true: <code class=\"mm\">(a + c) − (b + c) = a − b</code>, which is a multiple of <code class=\"mm\">m</code>.</li><li>(B) is the definition of <code class=\"mm\">a ≡ b (mod m)</code>.</li><li>(C) is true because <code class=\"mm\">a² − b² = (a − b)(a + b)</code> is a multiple of <code class=\"mm\">m</code>.</li><li>(D) fails: <code class=\"mm\">3 ≡ 1 (mod 2)</code> since <code class=\"mm\">3 − 1 = 2</code>, yet <code class=\"mm\">3 ≢ 1 (mod 4)</code> because <code class=\"mm\">3 − 1 = 2</code> is not a multiple of 4.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D)</span></p><p class=\"row\"><b>Common misconception.</b> The direction is the trap. A congruence modulo <code class=\"mm\">km</code> implies one modulo <code class=\"mm\">m</code> (the stronger statement implies the weaker), never the reverse.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q17",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "What are the last two digits of <code class=\"mm\">7^{2026}</code>? (Give the two-digit number, so <code class=\"mm\">07</code> would be entered as <code class=\"mm\">7</code>.)<br/>(Enter an integer.)",
+   "question_html": "<div class=\"qtext\">What are the last two digits of <code class=\"mm\">7^{2026}</code>? (Give the two-digit number, so <code class=\"mm\">07</code> would be entered as <code class=\"mm\">7</code>.)</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 49,
+   "answer_display": "49",
+   "marks": 2,
+   "solution": {
+    "concept": "The last two digits of <code class=\"mm\">N</code> are <code class=\"mm\">N mod 100</code>. Powers of a base coprime to 100 repeat with a period dividing <code class=\"mm\">φ(100) = 40</code>; here the period is much shorter.",
+    "steps": [
+     "Compute the first powers modulo 100: <code class=\"mm\">7¹ = 7</code>, <code class=\"mm\">7² = 49</code>, <code class=\"mm\">7³ = 343 ≡ 43</code>, <code class=\"mm\">7⁴ = 2401 ≡ 1</code>.",
+     "So the residues repeat with period 4, and <code class=\"mm\">7^{4t} ≡ 1 (mod 100)</code> for every <code class=\"mm\">t ≥ 0</code>.",
+     "Divide the exponent: <code class=\"mm\">2026 = 4 · 506 + 2</code>.",
+     "Hence <code class=\"mm\">7^{2026} ≡ (7⁴)^{506} · 7² ≡ 1 · 49 = 49 (mod 100)</code>, so the last two digits are <code class=\"mm\">49</code>."
+    ],
+    "misconception": "Reducing the exponent modulo 40 (giving <code class=\"mm\">2026 ≡ 26</code>) also works, but only because 40 is a multiple of the true period 4 — reducing modulo 100 or modulo 10 does not. A second slip is answering <code class=\"mm\">7</code> by using <code class=\"mm\">2026 ≡ 1 (mod 4)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The last two digits of <code class=\"mm\">N</code> are <code class=\"mm\">N mod 100</code>. Powers of a base coprime to 100 repeat with a period dividing <code class=\"mm\">φ(100) = 40</code>; here the period is much shorter.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Compute the first powers modulo 100: <code class=\"mm\">7¹ = 7</code>, <code class=\"mm\">7² = 49</code>, <code class=\"mm\">7³ = 343 ≡ 43</code>, <code class=\"mm\">7⁴ = 2401 ≡ 1</code>.</li><li>So the residues repeat with period 4, and <code class=\"mm\">7^{4t} ≡ 1 (mod 100)</code> for every <code class=\"mm\">t ≥ 0</code>.</li><li>Divide the exponent: <code class=\"mm\">2026 = 4 · 506 + 2</code>.</li><li>Hence <code class=\"mm\">7^{2026} ≡ (7⁴)^{506} · 7² ≡ 1 · 49 = 49 (mod 100)</code>, so the last two digits are <code class=\"mm\">49</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 49</span></p><p class=\"row\"><b>Common misconception.</b> Reducing the exponent modulo 40 (giving <code class=\"mm\">2026 ≡ 26</code>) also works, but only because 40 is a multiple of the true period 4 — reducing modulo 100 or modulo 10 does not. A second slip is answering <code class=\"mm\">7</code> by using <code class=\"mm\">2026 ≡ 1 (mod 4)</code>.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U14-Q18",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Let <code class=\"mm\">m ≥ 2</code> and let <code class=\"mm\">a, b, c</code> be integers. Which of the following are true? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <code class=\"mm\">m ≥ 2</code> and let <code class=\"mm\">a, b, c</code> be integers. Which of the following are true? (Select all that apply.)</p>",
+   "options": [
+    "If <code class=\"mm\">a ≡ b (mod m)</code> and <code class=\"mm\">b ≡ c (mod m)</code>, then <code class=\"mm\">a ≡ c (mod m)</code>.",
+    "If <code class=\"mm\">a ≡ b (mod m)</code>, then <code class=\"mm\">aⁿ ≡ bⁿ (mod m)</code> for every positive integer <code class=\"mm\">n</code>.",
+    "If <code class=\"mm\">a ≡ b (mod m)</code>, then <code class=\"mm\">a + b ≡ 2a (mod m)</code>.",
+    "If <code class=\"mm\">ac ≡ bc (mod m)</code> and <code class=\"mm\">c ≢ 0 (mod m)</code>, then <code class=\"mm\">a ≡ b (mod m)</code>."
+   ],
+   "options_html": [
+    "If <code class=\"mm\">a ≡ b (mod m)</code> and <code class=\"mm\">b ≡ c (mod m)</code>, then <code class=\"mm\">a ≡ c (mod m)</code>.",
+    "If <code class=\"mm\">a ≡ b (mod m)</code>, then <code class=\"mm\">aⁿ ≡ bⁿ (mod m)</code> for every positive integer <code class=\"mm\">n</code>.",
+    "If <code class=\"mm\">a ≡ b (mod m)</code>, then <code class=\"mm\">a + b ≡ 2a (mod m)</code>.",
+    "If <code class=\"mm\">ac ≡ bc (mod m)</code> and <code class=\"mm\">c ≢ 0 (mod m)</code>, then <code class=\"mm\">a ≡ b (mod m)</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "marks": 2,
+   "solution": {
+    "concept": "Congruence modulo <code class=\"mm\">m</code> is an equivalence relation, and it is a congruence for <code class=\"mm\">+</code> and <code class=\"mm\">·</code>. Cancellation, however, needs <code class=\"mm\">gcd(c, m) = 1</code>, not merely <code class=\"mm\">c ≢ 0</code>.",
+    "steps": [
+     "(A): congruence is transitive, since <code class=\"mm\">m | (a − b)</code> and <code class=\"mm\">m | (b − c)</code> give <code class=\"mm\">m | (a − c)</code>. True.",
+     "(B): multiply the congruence by itself <code class=\"mm\">n</code> times. True.",
+     "(C): from <code class=\"mm\">a ≡ b</code> we get <code class=\"mm\">a + b ≡ a + a = 2a (mod m)</code> by adding <code class=\"mm\">a</code> to both sides. True.",
+     "(D): take <code class=\"mm\">m = 6, c = 2, a = 1, b = 4</code>. Then <code class=\"mm\">ac = 2</code> and <code class=\"mm\">bc = 8</code>, and <code class=\"mm\">2 ≡ 8 (mod 6)</code>; also <code class=\"mm\">c = 2 ≢ 0 (mod 6)</code>. Yet <code class=\"mm\">1 ≢ 4 (mod 6)</code>. False."
+    ],
+    "misconception": "(D) is the classic trap: cancellation is allowed only when <code class=\"mm\">gcd(c, m) = 1</code>. If <code class=\"mm\">gcd(c, m) = g > 1</code> you may cancel only to the modulus <code class=\"mm\">m/g</code> — here <code class=\"mm\">1 ≡ 4 (mod 3)</code>, which is true, while the modulus 6 conclusion is not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Congruence modulo <code class=\"mm\">m</code> is an equivalence relation, and it is a congruence for <code class=\"mm\">+</code> and <code class=\"mm\">·</code>. Cancellation, however, needs <code class=\"mm\">gcd(c, m) = 1</code>, not merely <code class=\"mm\">c ≢ 0</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): congruence is transitive, since <code class=\"mm\">m | (a − b)</code> and <code class=\"mm\">m | (b − c)</code> give <code class=\"mm\">m | (a − c)</code>. True.</li><li>(B): multiply the congruence by itself <code class=\"mm\">n</code> times. True.</li><li>(C): from <code class=\"mm\">a ≡ b</code> we get <code class=\"mm\">a + b ≡ a + a = 2a (mod m)</code> by adding <code class=\"mm\">a</code> to both sides. True.</li><li>(D): take <code class=\"mm\">m = 6, c = 2, a = 1, b = 4</code>. Then <code class=\"mm\">ac = 2</code> and <code class=\"mm\">bc = 8</code>, and <code class=\"mm\">2 ≡ 8 (mod 6)</code>; also <code class=\"mm\">c = 2 ≢ 0 (mod 6)</code>. Yet <code class=\"mm\">1 ≢ 4 (mod 6)</code>. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C)</span></p><p class=\"row\"><b>Common misconception.</b> (D) is the classic trap: cancellation is allowed only when <code class=\"mm\">gcd(c, m) = 1</code>. If <code class=\"mm\">gcd(c, m) = g > 1</code> you may cancel only to the modulus <code class=\"mm\">m/g</code> — here <code class=\"mm\">1 ≡ 4 (mod 3)</code>, which is true, while the modulus 6 conclusion is not.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U14-Q19",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The number of distinct residues <code class=\"mm\">x</code> modulo <code class=\"mm\">8</code> satisfying <code class=\"mm\">x² ≡ 1 (mod 8)</code> is",
+   "question_html": "<p class=\"qtext\">The number of distinct residues <code class=\"mm\">x</code> modulo <code class=\"mm\">8</code> satisfying <code class=\"mm\">x² ≡ 1 (mod 8)</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">8</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">2</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">8</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "marks": 1,
+   "solution": {
+    "concept": "Over a composite modulus a polynomial can have more roots than its degree. The factorisation <code class=\"mm\">x² − 1 = (x − 1)(x + 1)</code> stops being decisive, because a product can be divisible by 8 without either factor being divisible by 8.",
+    "steps": [
+     "Compute the squares of all eight residues: <code class=\"mm\">0² = 0</code>, <code class=\"mm\">1² = 1</code>, <code class=\"mm\">2² = 4</code>, <code class=\"mm\">3² = 9 ≡ 1</code>, <code class=\"mm\">4² = 16 ≡ 0</code>, <code class=\"mm\">5² = 25 ≡ 1</code>, <code class=\"mm\">6² = 36 ≡ 4</code>, <code class=\"mm\">7² = 49 ≡ 1</code>.",
+     "The residues giving 1 are <code class=\"mm\">x = 1, 3, 5, 7</code>.",
+     "Reason: an odd <code class=\"mm\">x</code> has <code class=\"mm\">x = 2k + 1</code>, so <code class=\"mm\">x² − 1 = 4k(k + 1)</code>; one of <code class=\"mm\">k, k + 1</code> is even, so <code class=\"mm\">8 | x² − 1</code>. An even <code class=\"mm\">x</code> gives <code class=\"mm\">x² ≡ 0</code> or <code class=\"mm\">4 (mod 8)</code>.",
+     "So there are exactly 4 solutions."
+    ],
+    "misconception": "Answering 2 assumes “a quadratic has at most two roots”, which holds only modulo a prime. Modulo <code class=\"mm\">2^k</code> with <code class=\"mm\">k ≥ 3</code> there are four square roots of 1, and modulo a product of distinct primes there are <code class=\"mm\">2^{ω(m)}</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Over a composite modulus a polynomial can have more roots than its degree. The factorisation <code class=\"mm\">x² − 1 = (x − 1)(x + 1)</code> stops being decisive, because a product can be divisible by 8 without either factor being divisible by 8.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Compute the squares of all eight residues: <code class=\"mm\">0² = 0</code>, <code class=\"mm\">1² = 1</code>, <code class=\"mm\">2² = 4</code>, <code class=\"mm\">3² = 9 ≡ 1</code>, <code class=\"mm\">4² = 16 ≡ 0</code>, <code class=\"mm\">5² = 25 ≡ 1</code>, <code class=\"mm\">6² = 36 ≡ 4</code>, <code class=\"mm\">7² = 49 ≡ 1</code>.</li><li>The residues giving 1 are <code class=\"mm\">x = 1, 3, 5, 7</code>.</li><li>Reason: an odd <code class=\"mm\">x</code> has <code class=\"mm\">x = 2k + 1</code>, so <code class=\"mm\">x² − 1 = 4k(k + 1)</code>; one of <code class=\"mm\">k, k + 1</code> is even, so <code class=\"mm\">8 | x² − 1</code>. An even <code class=\"mm\">x</code> gives <code class=\"mm\">x² ≡ 0</code> or <code class=\"mm\">4 (mod 8)</code>.</li><li>So there are exactly 4 solutions.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C)</span></p><p class=\"row\"><b>Common misconception.</b> Answering 2 assumes “a quadratic has at most two roots”, which holds only modulo a prime. Modulo <code class=\"mm\">2^k</code> with <code class=\"mm\">k ≥ 3</code> there are four square roots of 1, and modulo a product of distinct primes there are <code class=\"mm\">2^{ω(m)}</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q20",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "modular-arithmetic-congruences",
+   "subtopic": "modular-arithmetic-congruences",
+   "subtopic_label": "Modular arithmetic & congruences",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The least non-negative residue of <code class=\"mm\">2^{100}</code> modulo <code class=\"mm\">13</code> is",
+   "question_html": "<p class=\"qtext\">The least non-negative residue of <code class=\"mm\">2^{100}</code> modulo <code class=\"mm\">13</code> is</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">9</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">4</code>",
+    "<code class=\"mm\">9</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "marks": 1,
+   "solution": {
+    "concept": "Fermat’s little theorem: for a prime <code class=\"mm\">p</code> and <code class=\"mm\">p ∤ a</code>, <code class=\"mm\">a^{p−1} ≡ 1 (mod p)</code>. So exponents may be reduced modulo <code class=\"mm\">p − 1 = 12</code>.",
+    "steps": [
+     "<code class=\"mm\">13</code> is prime and <code class=\"mm\">13 ∤ 2</code>, so <code class=\"mm\">2^{12} ≡ 1 (mod 13)</code>.",
+     "Write <code class=\"mm\">100 = 12 · 8 + 4</code>.",
+     "<code class=\"mm\">2^{100} = (2^{12})⁸ · 2⁴ ≡ 1⁸ · 16 ≡ 3 (mod 13)</code>, since <code class=\"mm\">16 = 13 + 3</code>.",
+     "So the residue is <code class=\"mm\">3</code>."
+    ],
+    "misconception": "Reducing the exponent modulo 13 (giving <code class=\"mm\">100 ≡ 9</code> and <code class=\"mm\">2⁹ = 512 ≡ 5</code>) is the standard error: for Fermat the exponent lives modulo <code class=\"mm\">p − 1</code>, not modulo <code class=\"mm\">p</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Fermat’s little theorem: for a prime <code class=\"mm\">p</code> and <code class=\"mm\">p ∤ a</code>, <code class=\"mm\">a^{p−1} ≡ 1 (mod p)</code>. So exponents may be reduced modulo <code class=\"mm\">p − 1 = 12</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">13</code> is prime and <code class=\"mm\">13 ∤ 2</code>, so <code class=\"mm\">2^{12} ≡ 1 (mod 13)</code>.</li><li>Write <code class=\"mm\">100 = 12 · 8 + 4</code>.</li><li><code class=\"mm\">2^{100} = (2^{12})⁸ · 2⁴ ≡ 1⁸ · 16 ≡ 3 (mod 13)</code>, since <code class=\"mm\">16 = 13 + 3</code>.</li><li>So the residue is <code class=\"mm\">3</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B)</span></p><p class=\"row\"><b>Common misconception.</b> Reducing the exponent modulo 13 (giving <code class=\"mm\">100 ≡ 9</code> and <code class=\"mm\">2⁹ = 512 ≡ 5</code>) is the standard error: for Fermat the exponent lives modulo <code class=\"mm\">p − 1</code>, not modulo <code class=\"mm\">p</code>.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q21",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "multiplicative-inverses-chinese-remainder",
+   "subtopic": "multiplicative-inverses-chinese-remainder",
+   "subtopic_label": "Inverses & Chinese remainder theorem",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The multiplicative inverse of <code class=\"mm\">3</code> modulo <code class=\"mm\">11</code> is",
+   "question_html": "<p class=\"qtext\">The multiplicative inverse of <code class=\"mm\">3</code> modulo <code class=\"mm\">11</code> is</p>",
+   "options": [
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">7</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">3</code>",
+    "<code class=\"mm\">7</code>",
+    "<code class=\"mm\">8</code>",
+    "<code class=\"mm\">4</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "<code class=\"mm\">x</code> is the inverse of <code class=\"mm\">a</code> modulo <code class=\"mm\">m</code> when <code class=\"mm\">ax ≡ 1 (mod m)</code>. Such an <code class=\"mm\">x</code> exists exactly when <code class=\"mm\">gcd(a, m) = 1</code>, and then it is unique modulo <code class=\"mm\">m</code>.",
+    "steps": [
+     "<code class=\"mm\">gcd(3, 11) = 1</code>, so the inverse exists.",
+     "Test multiples of 3 modulo 11: <code class=\"mm\">3·1 = 3</code>, <code class=\"mm\">3·2 = 6</code>, <code class=\"mm\">3·3 = 9</code>, <code class=\"mm\">3·4 = 12 ≡ 1</code>.",
+     "So <code class=\"mm\">3⁻¹ ≡ 4 (mod 11)</code>, and indeed <code class=\"mm\">3 · 4 = 12 = 11 + 1</code>."
+    ],
+    "misconception": "The additive inverse <code class=\"mm\">−3 ≡ 8</code> is frequently offered instead — that is the number you <i>add</i> to 3 to reach 0, not the number you multiply by to reach 1. Multiplication, not addition, defines a multiplicative inverse."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">x</code> is the inverse of <code class=\"mm\">a</code> modulo <code class=\"mm\">m</code> when <code class=\"mm\">ax ≡ 1 (mod m)</code>. Such an <code class=\"mm\">x</code> exists exactly when <code class=\"mm\">gcd(a, m) = 1</code>, and then it is unique modulo <code class=\"mm\">m</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">gcd(3, 11) = 1</code>, so the inverse exists.</li><li>Test multiples of 3 modulo 11: <code class=\"mm\">3·1 = 3</code>, <code class=\"mm\">3·2 = 6</code>, <code class=\"mm\">3·3 = 9</code>, <code class=\"mm\">3·4 = 12 ≡ 1</code>.</li><li>So <code class=\"mm\">3⁻¹ ≡ 4 (mod 11)</code>, and indeed <code class=\"mm\">3 · 4 = 12 = 11 + 1</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D)</span></p><p class=\"row\"><b>Common misconception.</b> The additive inverse <code class=\"mm\">−3 ≡ 8</code> is frequently offered instead — that is the number you <i>add</i> to 3 to reach 0, not the number you multiply by to reach 1. Multiplication, not addition, defines a multiplicative inverse.</p>",
+   "question_format": "MCQ"
+  },
+  {
+   "id": "DM-U14-Q22",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "multiplicative-inverses-chinese-remainder",
+   "subtopic": "multiplicative-inverses-chinese-remainder",
+   "subtopic_label": "Inverses & Chinese remainder theorem",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Which of the following integers <code class=\"mm\">x</code> satisfy <code class=\"mm\">x² ≡ 1 (mod 12)</code>? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following integers <code class=\"mm\">x</code> satisfy <code class=\"mm\">x² ≡ 1 (mod 12)</code>? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">7</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">6</code>",
+    "<code class=\"mm\">5</code>",
+    "<code class=\"mm\">7</code>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "An element is self-inverse modulo <code class=\"mm\">m</code> when <code class=\"mm\">x² ≡ 1 (mod m)</code>. Modulo <code class=\"mm\">12 = 3 · 4</code> the condition splits, by the Chinese remainder theorem, into <code class=\"mm\">x² ≡ 1 (mod 3)</code> and <code class=\"mm\">x² ≡ 1 (mod 4)</code>.",
+    "steps": [
+     "<code class=\"mm\">1² = 1 ≡ 1 (mod 12)</code>. ✓ (A)",
+     "<code class=\"mm\">6² = 36 = 3 · 12 ≡ 0 (mod 12)</code>. ✗ (B) — 6 is a zero divisor, not a unit.",
+     "<code class=\"mm\">5² = 25 = 2 · 12 + 1 ≡ 1 (mod 12)</code>. ✓ (C)",
+     "<code class=\"mm\">7² = 49 = 4 · 12 + 1 ≡ 1 (mod 12)</code>. ✓ (D)",
+     "The full set of self-inverse residues modulo 12 is <code class=\"mm\">{1, 5, 7, 11}</code> — four of them, matching <code class=\"mm\">2^{ω(12)} = 2²</code> for the two distinct primes 2 and 3."
+    ],
+    "misconception": "<code class=\"mm\">6</code> is picked because <code class=\"mm\">6 · 6</code> “returns to the same place” in a mental picture of the clock; in fact <code class=\"mm\">6² ≡ 0</code>. A number can only be self-inverse if it is a unit, that is, if it is coprime to the modulus."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An element is self-inverse modulo <code class=\"mm\">m</code> when <code class=\"mm\">x² ≡ 1 (mod m)</code>. Modulo <code class=\"mm\">12 = 3 · 4</code> the condition splits, by the Chinese remainder theorem, into <code class=\"mm\">x² ≡ 1 (mod 3)</code> and <code class=\"mm\">x² ≡ 1 (mod 4)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">1² = 1 ≡ 1 (mod 12)</code>. ✓ (A)</li><li><code class=\"mm\">6² = 36 = 3 · 12 ≡ 0 (mod 12)</code>. ✗ (B) — 6 is a zero divisor, not a unit.</li><li><code class=\"mm\">5² = 25 = 2 · 12 + 1 ≡ 1 (mod 12)</code>. ✓ (C)</li><li><code class=\"mm\">7² = 49 = 4 · 12 + 1 ≡ 1 (mod 12)</code>. ✓ (D)</li><li>The full set of self-inverse residues modulo 12 is <code class=\"mm\">{1, 5, 7, 11}</code> — four of them, matching <code class=\"mm\">2^{ω(12)} = 2²</code> for the two distinct primes 2 and 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D)</span></p><p class=\"row\"><b>Common misconception.</b> <code class=\"mm\">6</code> is picked because <code class=\"mm\">6 · 6</code> “returns to the same place” in a mental picture of the clock; in fact <code class=\"mm\">6² ≡ 0</code>. A number can only be self-inverse if it is a unit, that is, if it is coprime to the modulus.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U14-Q23",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "multiplicative-inverses-chinese-remainder",
+   "subtopic": "multiplicative-inverses-chinese-remainder",
+   "subtopic_label": "Inverses & Chinese remainder theorem",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Find the smallest positive integer <code class=\"mm\">x</code> satisfying <code class=\"mm\">x ≡ 2 (mod 3)</code>, <code class=\"mm\">x ≡ 3 (mod 5)</code> and <code class=\"mm\">x ≡ 2 (mod 7)</code>.<br/>(Enter an integer.)",
+   "question_html": "<div class=\"qtext\">Find the smallest positive integer <code class=\"mm\">x</code> satisfying <code class=\"mm\">x ≡ 2 (mod 3)</code>, <code class=\"mm\">x ≡ 3 (mod 5)</code> and <code class=\"mm\">x ≡ 2 (mod 7)</code>.</div>",
+   "options": [],
+   "options_html": [],
+   "answer": 23,
+   "answer_display": "23",
+   "marks": 2,
+   "solution": {
+    "concept": "The Chinese remainder theorem: if the moduli <code class=\"mm\">3, 5, 7</code> are pairwise coprime, the system has a unique solution modulo <code class=\"mm\">3 · 5 · 7 = 105</code>. It is found by combining the congruences two at a time.",
+    "steps": [
+     "From <code class=\"mm\">x ≡ 2 (mod 3)</code> write <code class=\"mm\">x = 2 + 3k</code>.",
+     "Impose <code class=\"mm\">x ≡ 3 (mod 5)</code>: <code class=\"mm\">2 + 3k ≡ 3</code>, so <code class=\"mm\">3k ≡ 1 (mod 5)</code>. Since <code class=\"mm\">3 · 2 = 6 ≡ 1</code>, <code class=\"mm\">k ≡ 2 (mod 5)</code>, giving <code class=\"mm\">x = 8 + 15t</code>.",
+     "Impose <code class=\"mm\">x ≡ 2 (mod 7)</code>: <code class=\"mm\">8 + 15t ≡ 2</code>, so <code class=\"mm\">1 + t ≡ 2 (mod 7)</code> because <code class=\"mm\">8 ≡ 1</code> and <code class=\"mm\">15 ≡ 1</code>. Hence <code class=\"mm\">t ≡ 1 (mod 7)</code> and <code class=\"mm\">x = 8 + 15 = 23</code>.",
+     "Check: <code class=\"mm\">23 = 7·3 + 2</code>, <code class=\"mm\">23 = 4·5 + 3</code>, <code class=\"mm\">23 = 3·7 + 2</code>. ✓ The general solution is <code class=\"mm\">x ≡ 23 (mod 105)</code>, so 23 is the smallest positive one."
+    ],
+    "misconception": "Solving only two of the three congruences gives <code class=\"mm\">8</code>, which fails the third (<code class=\"mm\">8 ≡ 1 ≢ 2 (mod 7)</code>). Every congruence must be imposed, and the final answer should always be checked against all three."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The Chinese remainder theorem: if the moduli <code class=\"mm\">3, 5, 7</code> are pairwise coprime, the system has a unique solution modulo <code class=\"mm\">3 · 5 · 7 = 105</code>. It is found by combining the congruences two at a time.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>From <code class=\"mm\">x ≡ 2 (mod 3)</code> write <code class=\"mm\">x = 2 + 3k</code>.</li><li>Impose <code class=\"mm\">x ≡ 3 (mod 5)</code>: <code class=\"mm\">2 + 3k ≡ 3</code>, so <code class=\"mm\">3k ≡ 1 (mod 5)</code>. Since <code class=\"mm\">3 · 2 = 6 ≡ 1</code>, <code class=\"mm\">k ≡ 2 (mod 5)</code>, giving <code class=\"mm\">x = 8 + 15t</code>.</li><li>Impose <code class=\"mm\">x ≡ 2 (mod 7)</code>: <code class=\"mm\">8 + 15t ≡ 2</code>, so <code class=\"mm\">1 + t ≡ 2 (mod 7)</code> because <code class=\"mm\">8 ≡ 1</code> and <code class=\"mm\">15 ≡ 1</code>. Hence <code class=\"mm\">t ≡ 1 (mod 7)</code> and <code class=\"mm\">x = 8 + 15 = 23</code>.</li><li>Check: <code class=\"mm\">23 = 7·3 + 2</code>, <code class=\"mm\">23 = 4·5 + 3</code>, <code class=\"mm\">23 = 3·7 + 2</code>. ✓ The general solution is <code class=\"mm\">x ≡ 23 (mod 105)</code>, so 23 is the smallest positive one.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 23</span></p><p class=\"row\"><b>Common misconception.</b> Solving only two of the three congruences gives <code class=\"mm\">8</code>, which fails the third (<code class=\"mm\">8 ≡ 1 ≢ 2 (mod 7)</code>). Every congruence must be imposed, and the final answer should always be checked against all three.</p>",
+   "question_format": "NAT"
+  },
+  {
+   "id": "DM-U14-Q24",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "multiplicative-inverses-chinese-remainder",
+   "subtopic": "multiplicative-inverses-chinese-remainder",
+   "subtopic_label": "Inverses & Chinese remainder theorem",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "Which of the following congruences have at least one integer solution? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following congruences have at least one integer solution? (Select all that apply.)</p>",
+   "options": [
+    "<code class=\"mm\">6x ≡ 5 (mod 9)</code>",
+    "<code class=\"mm\">4x ≡ 6 (mod 10)</code>",
+    "<code class=\"mm\">8x ≡ 3 (mod 12)</code>",
+    "<code class=\"mm\">9x ≡ 6 (mod 15)</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">6x ≡ 5 (mod 9)</code>",
+    "<code class=\"mm\">4x ≡ 6 (mod 10)</code>",
+    "<code class=\"mm\">8x ≡ 3 (mod 12)</code>",
+    "<code class=\"mm\">9x ≡ 6 (mod 15)</code>"
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "marks": 2,
+   "solution": {
+    "concept": "The linear congruence <code class=\"mm\">ax ≡ b (mod m)</code> is solvable if and only if <code class=\"mm\">gcd(a, m) | b</code>; when it is, there are exactly <code class=\"mm\">gcd(a, m)</code> solutions modulo <code class=\"mm\">m</code>.",
+    "steps": [
+     "(A): <code class=\"mm\">gcd(6, 9) = 3</code> and <code class=\"mm\">3 ∤ 5</code>, so there is no solution.",
+     "(B): <code class=\"mm\">gcd(4, 10) = 2</code> and <code class=\"mm\">2 | 6</code>, so solutions exist; dividing by 2 gives <code class=\"mm\">2x ≡ 3 (mod 5)</code>, that is <code class=\"mm\">x ≡ 4 (mod 5)</code>. Check <code class=\"mm\">x = 4</code>: <code class=\"mm\">16 ≡ 6 (mod 10)</code>. ✓",
+     "(C): <code class=\"mm\">gcd(8, 12) = 4</code> and <code class=\"mm\">4 ∤ 3</code>, so there is no solution — the left side is always a multiple of 4 while 3 is not.",
+     "(D): <code class=\"mm\">gcd(9, 15) = 3</code> and <code class=\"mm\">3 | 6</code>, so solutions exist; dividing by 3 gives <code class=\"mm\">3x ≡ 2 (mod 5)</code>, that is <code class=\"mm\">x ≡ 4 (mod 5)</code>. Check <code class=\"mm\">x = 4</code>: <code class=\"mm\">36 ≡ 6 (mod 15)</code>. ✓"
+    ],
+    "misconception": "The frequent error is to divide the equation by the gcd but forget to divide the modulus as well: (B) reduces to <code class=\"mm\">2x ≡ 3 (mod 5)</code>, not <code class=\"mm\">(mod 10)</code>. The other error is to treat every congruence as solvable because “multiplication always has an inverse” — it does only when <code class=\"mm\">gcd(a, m) = 1</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The linear congruence <code class=\"mm\">ax ≡ b (mod m)</code> is solvable if and only if <code class=\"mm\">gcd(a, m) | b</code>; when it is, there are exactly <code class=\"mm\">gcd(a, m)</code> solutions modulo <code class=\"mm\">m</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A): <code class=\"mm\">gcd(6, 9) = 3</code> and <code class=\"mm\">3 ∤ 5</code>, so there is no solution.</li><li>(B): <code class=\"mm\">gcd(4, 10) = 2</code> and <code class=\"mm\">2 | 6</code>, so solutions exist; dividing by 2 gives <code class=\"mm\">2x ≡ 3 (mod 5)</code>, that is <code class=\"mm\">x ≡ 4 (mod 5)</code>. Check <code class=\"mm\">x = 4</code>: <code class=\"mm\">16 ≡ 6 (mod 10)</code>. ✓</li><li>(C): <code class=\"mm\">gcd(8, 12) = 4</code> and <code class=\"mm\">4 ∤ 3</code>, so there is no solution — the left side is always a multiple of 4 while 3 is not.</li><li>(D): <code class=\"mm\">gcd(9, 15) = 3</code> and <code class=\"mm\">3 | 6</code>, so solutions exist; dividing by 3 gives <code class=\"mm\">3x ≡ 2 (mod 5)</code>, that is <code class=\"mm\">x ≡ 4 (mod 5)</code>. Check <code class=\"mm\">x = 4</code>: <code class=\"mm\">36 ≡ 6 (mod 15)</code>. ✓</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D)</span></p><p class=\"row\"><b>Common misconception.</b> The frequent error is to divide the equation by the gcd but forget to divide the modulus as well: (B) reduces to <code class=\"mm\">2x ≡ 3 (mod 5)</code>, not <code class=\"mm\">(mod 10)</code>. The other error is to treat every congruence as solvable because “multiplication always has an inverse” — it does only when <code class=\"mm\">gcd(a, m) = 1</code>.</p>",
+   "question_format": "MSQ"
+  },
+  {
+   "id": "DM-U14-Q25",
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 14,
+   "unit_number": 14,
+   "unit_slug": "number-theory",
+   "unit_name": "Number Theory",
+   "topic": "Number Theory",
+   "sub": "multiplicative-inverses-chinese-remainder",
+   "subtopic": "multiplicative-inverses-chinese-remainder",
+   "subtopic_label": "Inverses & Chinese remainder theorem",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "set": "Set 1 of 2",
+   "run": 22,
+   "run_date": "2026-11-03",
+   "question": "The multiplicative inverse of <code class=\"mm\">17</code> modulo <code class=\"mm\">100</code> is",
+   "question_html": "<p class=\"qtext\">The multiplicative inverse of <code class=\"mm\">17</code> modulo <code class=\"mm\">100</code> is</p>",
+   "options": [
+    "<code class=\"mm\">47</code>",
+    "<code class=\"mm\">51</code>",
+    "<code class=\"mm\">59</code>",
+    "<code class=\"mm\">53</code>"
+   ],
+   "options_html": [
+    "<code class=\"mm\">47</code>",
+    "<code class=\"mm\">51</code>",
+    "<code class=\"mm\">59</code>",
+    "<code class=\"mm\">53</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "marks": 1,
+   "solution": {
+    "concept": "The inverse of <code class=\"mm\">a</code> modulo <code class=\"mm\">m</code> is obtained from the extended Euclidean algorithm: the Bézout coefficients <code class=\"mm\">s, t</code> with <code class=\"mm\">sa + tm = 1</code> give <code class=\"mm\">a⁻¹ ≡ s (mod m)</code>.",
+    "steps": [
+     "<code class=\"mm\">gcd(17, 100) = 1</code>, so the inverse exists.",
+     "Euclid: <code class=\"mm\">100 = 5 · 17 + 15</code>; <code class=\"mm\">17 = 1 · 15 + 2</code>; <code class=\"mm\">15 = 7 · 2 + 1</code>.",
+     "Back-substitute: <code class=\"mm\">1 = 15 − 7 · 2 = 15 − 7(17 − 15) = 8 · 15 − 7 · 17 = 8(100 − 5 · 17) − 7 · 17 = 8 · 100 − 47 · 17</code>.",
+     "So <code class=\"mm\">−47 · 17 ≡ 1 (mod 100)</code>, i.e. <code class=\"mm\">17⁻¹ ≡ −47 ≡ 53 (mod 100)</code>.",
+     "Verify: <code class=\"mm\">17 · 53 = 901 = 9 · 100 + 1</code>. ✓"
+    ],
+    "misconception": "Stopping at <code class=\"mm\">−47</code> and reporting a negative residue is one slip; the other is to take <code class=\"mm\">47</code>, which is the inverse of <code class=\"mm\">−17 ≡ 83</code>, not of 17. The least positive representative is <code class=\"mm\">100 − 47 = 53</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The inverse of <code class=\"mm\">a</code> modulo <code class=\"mm\">m</code> is obtained from the extended Euclidean algorithm: the Bézout coefficients <code class=\"mm\">s, t</code> with <code class=\"mm\">sa + tm = 1</code> give <code class=\"mm\">a⁻¹ ≡ s (mod m)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">gcd(17, 100) = 1</code>, so the inverse exists.</li><li>Euclid: <code class=\"mm\">100 = 5 · 17 + 15</code>; <code class=\"mm\">17 = 1 · 15 + 2</code>; <code class=\"mm\">15 = 7 · 2 + 1</code>.</li><li>Back-substitute: <code class=\"mm\">1 = 15 − 7 · 2 = 15 − 7(17 − 15) = 8 · 15 − 7 · 17 = 8(100 − 5 · 17) − 7 · 17 = 8 · 100 − 47 · 17</code>.</li><li>So <code class=\"mm\">−47 · 17 ≡ 1 (mod 100)</code>, i.e. <code class=\"mm\">17⁻¹ ≡ −47 ≡ 53 (mod 100)</code>.</li><li>Verify: <code class=\"mm\">17 · 53 = 901 = 9 · 100 + 1</code>. ✓</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D)</span></p><p class=\"row\"><b>Common misconception.</b> Stopping at <code class=\"mm\">−47</code> and reporting a negative residue is one slip; the other is to take <code class=\"mm\">47</code>, which is the inverse of <code class=\"mm\">−17 ≡ 83</code>, not of 17. The least positive representative is <code class=\"mm\">100 − 47 = 53</code>.</p>",
+   "question_format": "MCQ"
   }
  ]
 }
