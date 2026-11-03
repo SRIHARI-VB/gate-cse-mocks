@@ -7,30 +7,107 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Discrete Mathematics · Unit 14 — Number Theory, Set 2 of 2**, 2026-11-03 →
-  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
+- **Databases · Unit 4 — Transactions & Concurrency Control, Set 1 of 2 (second pass)**, 2026-11-03 →
+  [`databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html`](databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: divisibility & division algorithm (6) · gcd, lcm & Euclidean algorithm (6) ·
-  modular arithmetic & congruences (6) · inverses & Chinese remainder theorem (7)
-- Rotation: MODE A. The draw returned **Discrete Mathematics**. Its most recent paper was `{2026-11-03, run 22,
-  unit 14, number-theory, Set 1 of 2}`, and unit 14 stood at **25** questions (below `UNIT_QUESTION_CAP = 50`) and
-  had been current for **0** days (below `DAYS_PER_UNIT_MAX = 7`), so **B3 held on both tests** and **B4 did not
-  fire**: the same unit was generated again, **Set 2 of 2**, which closes unit 14 at 50 questions.
-- Previous test: **Algorithms · Unit 2 — Divide and Conquer & Sorting, Set 3 (second pass)**, 2026-11-03 →
-  [`algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html`](algorithms/sorting-divide-conquer/gate_algo_mock_2_2026-11-03.html)
+- Subtopics: ACID properties (5) · schedules, serializability, conflict & view (5) ·
+  recoverability & cascadelessness (5) · 2PL, strict & rigorous locking (5) ·
+  timestamp ordering & deadlocks (5)
+- Rotation: MODE A. The draw returned **Databases**. Its most recent paper was `{2026-11-03, run 12,
+  unit 3, normalization, Set 1 of 2 (second pass)}`, and unit 3 stood at **75** questions (above
+  `UNIT_QUESTION_CAP = 50`), so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(2 + 1) mod 5 = 3` → **Unit 4, Transactions & Concurrency Control**, which held 50 questions from
+  2026-10-30 and 2026-10-31. This paper is **Set 1 of 2 of the second pass** and takes unit 4 to 75.
+- Previous test: **Discrete Mathematics · Unit 14 — Number Theory, Set 2 of 2**, 2026-11-03 →
+  [`discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html`](discrete-mathematics/number-theory/gate_dm_mock_14_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 196 (31 Discrete Mathematics, 16 Algorithms, 13 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
-| Current papers / archived sets | 70 current · 126 archived |
+| Papers published (current + archived) | 197 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 18 Compiler Design, 22 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 17 Theory of Computation, 15 Digital Logic, 12 Computer Architecture) |
+| Current papers / archived sets | 70 current · 127 archived |
 | Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 4900 (775 Discrete Mathematics, 400 Algorithms, 325 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
+| Questions in the subject banks | 4925 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 450 Compiler Design, 550 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 425 Theory of Computation, 375 Digital Logic, 300 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 126 (16 Discrete Mathematics, 9 Algorithms, 8 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+| Archived sets (earlier runs) | 127 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 13 Compiler Design, 16 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 13 Theory of Computation, 11 Digital Logic, 6 Computer Architecture) |
+
+### 2026-11-03 — Databases Unit 4, Set 1 of 2 (second pass)
+
+- New paper at `databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html`. The 2026-10-31 Set 2 paper
+  moved to `databases/transactions-concurrency/archive/gate_db_mock_4_2026-10-31_run2.html` with its content frozen
+  (same questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper. The
+  repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 9 — **Databases**. `runs[]` sorted by `(date, run)` gave the most recent paper as
+  `{2026-11-03, run 12, unit 3, normalization, Set 1 of 2 (second pass)}`. Unit 3 held **75** questions, above
+  `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(2 + 1) mod 5 = 3` → **Unit 4, Transactions & Concurrency Control**. Unit 4 held 50 questions from 2026-10-30
+  and 2026-10-31, so this paper is **Set 1 of 2 of the second pass** and the unit now stands at 75. No override, no
+  partial set, exactly 25 questions. The B5 second-pass condition was already open for this subject (every databases
+  unit sits at or above the cap: 75, 75, 75, 50, 50), and this run extends it to unit 4.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All five unit subtopics, five questions each: ACID properties · schedules, serializability, conflict &
+  view · recoverability & cascadelessness · 2PL, strict & rigorous locking · timestamp ordering & deadlocks.
+  Difficulty 10 easy / 10 medium / 5 hard. Sources: 14 `STANDARD_TEXTBOOK`, 11 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** ACID: a dirty read blamed on the wrong property (**isolation**), the guarantee the
+  write-ahead logging rule protects (**undo information survives**), which property undo and redo each serve
+  (**atomicity by undo, durability by redo**), an MSQ on shadow paging, weaker isolation levels and the steal case
+  (**A, C, D**), and the write records an undo pass must reverse (**3**). Schedules: the precedence graph of
+  `r1(X); r2(X); w2(X); r1(Y); w1(Y)` (**one edge, T1; T2**), the condition that is not part of view equivalence
+  (**matching operation counts**), when an edge is drawn (**a preceding conflicting operation**), an MSQ on
+  polynomial conflict testing, NP-complete view testing and blind writes (**A, B, D**), and the conflicting ordered
+  pairs of a seven-operation schedule (**7**). Recoverability: the one recoverable schedule out of four (**B**), the
+  schedule that is cascadeless but not strict (**a blind overwrite of an uncommitted value**), the class no-steal
+  produces (**strict**), an MSQ on the nested classes (**A, B, C**), and the size of a four-deep rollback chain
+  (**4**). Locking: the protocol that is serializable and deadlock-free (**conservative 2PL**), strict against
+  rigorous (**strict delays X-locks only**), the lock point, an MSQ on lock compatibility and the two-phase rule
+  (**A, C**), and how many of four lock sequences obey strict 2PL (**2**). Timestamps: a sufficient condition for a
+  rejected write (**TS(T) &lt; RTS(X)**), wound&ndash;wait with a younger requester (**it waits**), what
+  `RTS(X)` stores (**the largest reader timestamp**), an MSQ on restarts, cascading rollback and Thomas's rule
+  (**B, C, D**), and the rejected operations of a ten-step trace under Thomas's rule (**2**).
+- **Answers recomputed, not asserted.** Every key came from a script. Conflict pairs were counted by enumeration
+  (7); the rollback chain was closed over read-from edges (4 transactions); the timestamp trace was simulated with
+  `RTS`/`WTS` bookkeeping and Thomas's rule, giving 2 rejections and 2 ignored writes; the four lock sequences were
+  checked against a strict-2PL predicate (T2 and T3 pass); and the log was partitioned into redo and undo sets
+  (3 write records to undo). The five NAT keys are therefore 3, 7, 4, 2 and 2. The grading engine was then replayed
+  against the decoded payload: a perfect attempt scores **35 / 35** with 25 correct, a blank paper **0 / 35** with
+  25 unattempted, and an MSQ answered with a strict subset or a strict superset of the correct set scores 0 for that
+  question (**33 / 35**).
+- **No PYQ claim.** The databases bank holds one verified previous-year item (`DB-U1-Q17`, a variation of GATE CSE
+  2014 Set 3 Q30, official key D), and it is in Unit 1. No transactions previous-year question has been verified
+  against an official paper and answer key, so nothing on this paper is called an official GATE question and no
+  active item carries `GATE_PYQ_VARIATION`. The About tab says so plainly.
+- **Interface.** The paper is generated from the Unit 3 shell: with the title, sub-line, candidate block, meta strip,
+  question host, bank view, About view, payload and the bank-tab count masked, the remaining **27,869 bytes** are
+  byte-identical to `databases/normalization/gate_db_mock_3_2026-11-03.html`. No `<link>`, no `http` URL, no KaTeX —
+  the file opens offline. All seven `data-*` attributes are present on all 25 cards and on all 325 bank cards; the
+  palette has 25 buttons; 5 NAT inputs, 60 radio and 20 checkbox inputs render; the Answer Key tab ships `disabled`
+  with an empty list; every `.sol` block is empty and hidden until Submit. The `:root` block matches
+  `design-tokens.css` and `index.html` byte for byte.
+- **Question Bank tab.** 325 solved questions listed — the 350 in the bank less the 25 of the active set, which are
+  not repeated. The chips read 350 solved and 1 verified PYQ. Unit 4's accordion therefore shows its 50 earlier
+  questions under the five subtopics; the active items (DB-U4-Q51 … DB-U4-Q75) appear only in the test.
+- **Known pre-existing defect, unchanged.** Section 6.4 asks for no raw hex outside `:root`. The shell still carries
+  **89** raw hex colour values outside the token block (21 of them `#fff`), inherited byte for byte from every
+  previously shipped paper. Fixing them would break shell parity with the other 196 papers, so they are left as they
+  are and the deviation is recorded here rather than claimed as compliance.
+- **Questions banked.** `databases/question-bank/master_bank.json` now holds **350** questions (run 13 recorded), and
+  `data/questions-databases.js` was extended to match with 350 records; all eleven data files still parse and hold
+  **4925** records in total, matching the eleven master banks.
+- **Portal.** `index.html` data block: the Databases Unit 4 entry now points at the 2026-11-03 paper with `Set 1 of 2
+  (second pass)`, the 2026-10-31 paper is listed as `First pass · Set 2` and the 2026-10-30 paper as
+  `First pass · Set 1`. The card count is unchanged at 70; the chips were recomputed from the repository and now read
+  70 units in the series, 70 test cards, 4925 records, 70 of 71 units and 313 subtopics with questions.
+- **Verification (Section 6.8).** One copy per paper: `find . -name "*.html"` shows `index.html` at the root plus
+  exactly one current paper per unit folder (70), 197 papers in all and nothing loose at the root. Every `href` in the
+  data block resolves (70 cards, 127 archive links, 0 missing). The paper renders 25 question cards, a 25-button
+  palette and 325 banked questions, and no answer, option mark or hint before submit. The unit generated is the one
+  Section 1 selects from `master_bank.json` (cap test then one-unit advance), not from the calendar, and no unit
+  exceeds 50 questions without a recorded override.
 
 ### 2026-11-03 — Discrete Mathematics Unit 14, Set 2 of 2
 
