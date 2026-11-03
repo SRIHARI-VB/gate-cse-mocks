@@ -6,7 +6,7 @@
   "created": "2026-10-26",
   "last_updated": "2026-11-03",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 325,
+  "total_questions": 350,
   "units_with_questions": [
    1,
    2,
@@ -14,7 +14,7 @@
    4,
    5
   ],
-  "total_runs": 12,
+  "total_runs": 13,
   "unit_question_cap": 50,
   "set_size": 25,
   "sets_per_unit": 2
@@ -756,6 +756,69 @@
    "mode": "MODE_A",
    "selection": "random subject draw (databases); B3 failed on cap (unit 2 at 75); B4 advanced to unit 3; every databases unit is at or above the cap, so a second pass begins",
    "note": "Second pass, Set 1 of 2. Unit 3 held 50 questions from 2026-10-28 and 2026-10-29; this set takes it to 75."
+  },
+  {
+   "run": 13,
+   "date": "2026-11-03",
+   "subject": "databases",
+   "subject_name": "Databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "set": "Set 1 of 2 (second pass)",
+   "count": 25,
+   "file": "databases/transactions-concurrency/gate_db_mock_4_2026-11-03.html",
+   "archived_previous": "databases/transactions-concurrency/archive/gate_db_mock_4_2026-10-31_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "ACID properties",
+    "Schedules, serializability, conflict & view",
+    "Recoverability & cascadelessness",
+    "2PL, strict & rigorous locking",
+    "Timestamp ordering & deadlocks"
+   ],
+   "question_ids": [
+    "DB-U4-Q51",
+    "DB-U4-Q52",
+    "DB-U4-Q53",
+    "DB-U4-Q54",
+    "DB-U4-Q55",
+    "DB-U4-Q56",
+    "DB-U4-Q57",
+    "DB-U4-Q58",
+    "DB-U4-Q59",
+    "DB-U4-Q60",
+    "DB-U4-Q61",
+    "DB-U4-Q62",
+    "DB-U4-Q63",
+    "DB-U4-Q64",
+    "DB-U4-Q65",
+    "DB-U4-Q66",
+    "DB-U4-Q67",
+    "DB-U4-Q68",
+    "DB-U4-Q69",
+    "DB-U4-Q70",
+    "DB-U4-Q71",
+    "DB-U4-Q72",
+    "DB-U4-Q73",
+    "DB-U4-Q74",
+    "DB-U4-Q75"
+   ],
+   "mode": "MODE_A",
+   "selection": "random subject draw (databases); B3 failed on cap (unit 3 at 75); B4 advanced exactly one unit, (2 + 1) mod 5 = 3 -> unit 4",
+   "note": "Second pass, Set 1 of 2. Unit 4 held 50 questions from 2026-10-30 and 2026-10-31; this set takes it to 75."
   }
  ],
  "verified_pyqs": [
@@ -13912,6 +13975,973 @@
     "trap": "The right way to read <code class=\"mm\">A &rarr;&rarr; BC</code> is \"for a fixed <code class=\"mm\">A</code>, the <code class=\"mm\">B, C</code> values are independent of the <code class=\"mm\">D</code> values\". Two such statements with the same fixed <code class=\"mm\">A</code> can be intersected or subtracted, but the determinant stays <code class=\"mm\">A</code>."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two multivalued dependencies with the same left-hand side can be combined. The intersection rule gives <code class=\"mm\">X &rarr;&rarr; Y &cap; Z</code> and the difference rule gives <code class=\"mm\">X &rarr;&rarr; Y &minus; Z</code> and <code class=\"mm\">X &rarr;&rarr; Z &minus; Y</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the two given dependencies with the same determinant: <code class=\"mm\">Y = BC</code> and <code class=\"mm\">Z = BD</code>.</li><li>Intersection: <code class=\"mm\">Y &cap; Z = {B}</code>, so <code class=\"mm\">A &rarr;&rarr; B</code> holds.</li><li>For completeness the difference rule also gives <code class=\"mm\">A &rarr;&rarr; C</code> and <code class=\"mm\">A &rarr;&rarr; D</code>, and complementation then gives <code class=\"mm\">A &rarr;&rarr; D</code> again.</li><li>None of the other options follows: no rule turns <code class=\"mm\">B</code>, <code class=\"mm\">C</code> or <code class=\"mm\">D</code> into a determinant, because neither given dependency has any of them on the left.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">A &rarr;&rarr; B</code> must hold.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B), (C) and (D) all move an attribute from the right-hand side to the left. Multivalued inference rules never do that; they only combine right-hand sides that share a determinant.</li></ul><p class=\"row\"><b>Common misconception.</b> The right way to read <code class=\"mm\">A &rarr;&rarr; BC</code> is \"for a fixed <code class=\"mm\">A</code>, the <code class=\"mm\">B, C</code> values are independent of the <code class=\"mm\">D</code> values\". Two such statements with the same fixed <code class=\"mm\">A</code> can be intersected or subtracted, but the determinant stays <code class=\"mm\">A</code>.</p>"
+  },
+  {
+   "id": "DB-U4-Q51",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "acid-properties",
+   "subtopic": "acid-properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Transaction <code class=\"mm\">T1</code> updates account <code class=\"mm\">A</code> and has not yet committed. Transaction <code class=\"mm\">T2</code> reads the new value of <code class=\"mm\">A</code>, and <code class=\"mm\">T1</code> then aborts. Which ACID property does this situation violate?",
+   "options": [
+    "Atomicity, because <code class=\"mm\">T1</code>'s update is never undone.",
+    "Consistency, because the sum of the balances changed.",
+    "Durability, because <code class=\"mm\">T1</code>'s update did not survive.",
+    "Isolation, because an uncommitted value became visible to another transaction."
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Isolation requires that concurrently executing transactions do not see each other's uncommitted work. A read of a value written by a transaction that has not committed is a <b>dirty read</b>, and it is the isolation property that forbids it.",
+    "steps": [
+     "<code class=\"mm\">T1</code> has written <code class=\"mm\">A</code> but has not committed, so its value is provisional.",
+     "<code class=\"mm\">T2</code> reads that provisional value. Nothing in the schedule stops it, because the DBMS has not enforced isolation.",
+     "When <code class=\"mm\">T1</code> aborts, the value <code class=\"mm\">T2</code> read never existed, so <code class=\"mm\">T2</code>'s computation is built on a value the database never held.",
+     "The property that rules this out is isolation. Atomicity, durability and consistency are all untouched here: the abort itself is clean."
+    ],
+    "final": "Option (D) &mdash; isolation.",
+    "trap": "A dirty read is often blamed on atomicity because it ends with an abort. The abort is atomicity working correctly; the defect is that the value was visible before the abort, which is isolation."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Isolation requires that concurrently executing transactions do not see each other's uncommitted work. A read of a value written by a transaction that has not committed is a <b>dirty read</b>, and it is the isolation property that forbids it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">T1</code> has written <code class=\"mm\">A</code> but has not committed, so its value is provisional.</li><li><code class=\"mm\">T2</code> reads that provisional value. Nothing in the schedule stops it, because the DBMS has not enforced isolation.</li><li>When <code class=\"mm\">T1</code> aborts, the value <code class=\"mm\">T2</code> read never existed, so <code class=\"mm\">T2</code>'s computation is built on a value the database never held.</li><li>The property that rules this out is isolation. Atomicity, durability and consistency are all untouched here: the abort itself is clean.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D) &mdash; isolation.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Atomicity is about undoing <code class=\"mm\">T1</code> completely. The abort does exactly that, so atomicity is respected.</li><li>(B) The balances are restored when <code class=\"mm\">T1</code> is rolled back, so no invariant is permanently broken.</li><li>(C) Durability concerns committed work surviving a crash. <code class=\"mm\">T1</code> never committed, so there is nothing to preserve.</li></ul><p class=\"row\"><b>Common misconception.</b> A dirty read is often blamed on atomicity because it ends with an abort. The abort is atomicity working correctly; the defect is that the value was visible before the abort, which is isolation.</p><p class=\"row\"><b>Takeaway.</b> Dirty read, non-repeatable read and phantom read are all isolation failures; a torn or partially applied transaction is an atomicity failure.</p>"
+  },
+  {
+   "id": "DB-U4-Q52",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "acid-properties",
+   "subtopic": "acid-properties",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Under write-ahead logging, the log record describing an update must reach stable storage before the corresponding data page is written to disk. Which guarantee does this rule protect?",
+   "options": [
+    "It keeps the undo information on stable storage, so an uncommitted update already written to disk can be rolled back after a crash.",
+    "It guarantees that no two transactions can deadlock.",
+    "It makes every schedule conflict serializable.",
+    "It removes the need for checkpoints."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Write-ahead logging (WAL) is the ordering rule <i>log first, data page second</i>. With a steal policy an uncommitted page may already be on disk when the system crashes, and only a log record written earlier can say what the old value was.",
+    "steps": [
+     "Take the steal case: <code class=\"mm\">T1</code> modifies page <code class=\"mm\">P</code>, the buffer manager writes <code class=\"mm\">P</code> out, and then <code class=\"mm\">T1</code> aborts or the system crashes.",
+     "To undo, recovery must know the before-image of <code class=\"mm\">P</code>. That information exists only in the log.",
+     "If the data page had been allowed to reach disk before its log record, the before-image would be lost and the update could not be undone, breaking atomicity.",
+     "The same ordering also supports redo: a committed update whose page never reached disk is replayed from the log."
+    ],
+    "final": "Option (A) &mdash; it preserves the undo information that makes an uncommitted on-disk update reversible.",
+    "trap": "WAL is often remembered only as a redo rule. Its undo half is what makes steal policies safe, and it is the half that questions usually test."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Write-ahead logging (WAL) is the ordering rule <i>log first, data page second</i>. With a steal policy an uncommitted page may already be on disk when the system crashes, and only a log record written earlier can say what the old value was.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Take the steal case: <code class=\"mm\">T1</code> modifies page <code class=\"mm\">P</code>, the buffer manager writes <code class=\"mm\">P</code> out, and then <code class=\"mm\">T1</code> aborts or the system crashes.</li><li>To undo, recovery must know the before-image of <code class=\"mm\">P</code>. That information exists only in the log.</li><li>If the data page had been allowed to reach disk before its log record, the before-image would be lost and the update could not be undone, breaking atomicity.</li><li>The same ordering also supports redo: a committed update whose page never reached disk is replayed from the log.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; it preserves the undo information that makes an uncommitted on-disk update reversible.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Deadlock is a locking phenomenon. The log ordering says nothing about who waits for whom.</li><li>(C) Serializability comes from the concurrency-control protocol (2PL, timestamp ordering), not from the order in which log and data pages are written.</li><li>(D) Checkpoints exist to bound the amount of log that recovery must scan; WAL does not remove them.</li></ul><p class=\"row\"><b>Common misconception.</b> WAL is often remembered only as a redo rule. Its undo half is what makes steal policies safe, and it is the half that questions usually test.</p><p class=\"row\"><b>Faster method.</b> If the option mentions locks, deadlock or serializability, it is not a logging guarantee. WAL is about recoverability only.</p><p class=\"row\"><b>Takeaway.</b> WAL = undo information before the page, redo information before the commit is acknowledged.</p>"
+  },
+  {
+   "id": "DB-U4-Q53",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "acid-properties",
+   "subtopic": "acid-properties",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "In a recovery subsystem, which pair of ACID properties is served by the undo and the redo components respectively?",
+   "options": [
+    "Durability by undo, atomicity by redo.",
+    "Atomicity by undo, durability by redo.",
+    "Isolation by undo, consistency by redo.",
+    "Consistency by undo, isolation by redo."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Undo removes the effects of transactions that did not commit; redo re-applies the effects of transactions that did commit but whose pages never reached disk. The first is atomicity, the second is durability.",
+    "steps": [
+     "A transaction that started but did not commit must leave no trace. Its already-written pages are reverted with the before-images, which is <b>undo</b>, and that is <b>atomicity</b>.",
+     "A transaction that committed must survive. Its after-images are replayed, which is <b>redo</b>, and that is <b>durability</b>.",
+     "Neither operation concerns visibility between concurrent transactions (isolation) or invariant checking (consistency)."
+    ],
+    "final": "Option (B) &mdash; undo serves atomicity, redo serves durability.",
+    "trap": "The commonest slip is to swap them: undo feels like it protects committed work because it acts on disk. It acts on uncommitted work; redo is the one that protects commits."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Undo removes the effects of transactions that did not commit; redo re-applies the effects of transactions that did commit but whose pages never reached disk. The first is atomicity, the second is durability.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A transaction that started but did not commit must leave no trace. Its already-written pages are reverted with the before-images, which is <b>undo</b>, and that is <b>atomicity</b>.</li><li>A transaction that committed must survive. Its after-images are replayed, which is <b>redo</b>, and that is <b>durability</b>.</li><li>Neither operation concerns visibility between concurrent transactions (isolation) or invariant checking (consistency).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; undo serves atomicity, redo serves durability.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Reverses the two.</li><li>(C) and (D) attach recovery to isolation and consistency, which are enforced by concurrency control and by constraints, not by undo and redo.</li></ul><p class=\"row\"><b>Common misconception.</b> The commonest slip is to swap them: undo feels like it protects committed work because it acts on disk. It acts on uncommitted work; redo is the one that protects commits.</p><p class=\"row\"><b>Takeaway.</b> Undo = atomicity, redo = durability, both driven from the log.</p>"
+  },
+  {
+   "id": "DB-U4-Q54",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "acid-properties",
+   "subtopic": "acid-properties",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about the ACID properties are TRUE? (Select all that apply.)",
+   "options": [
+    "Shadow paging can provide atomicity and durability without writing a log.",
+    "A DBMS can guarantee consistency (the C of ACID) by enforcing its declared constraints alone, with no help from the application's logic.",
+    "Choosing an isolation level weaker than serializable relaxes only the I of ACID; atomicity and durability are still enforced.",
+    "A transaction that has written some of its pages to disk without committing must be undone at restart, and that undo is the atomicity property at work."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Each ACID letter has its own enforcement mechanism: atomicity and durability through logging or shadow paging, isolation through the concurrency-control protocol, and consistency through constraints plus correct application logic.",
+    "steps": [
+     "(A) is TRUE. Shadow paging writes a modified page to a free page and switches the page table only at commit, so a crash leaves either the old or the new state. No log is needed.",
+     "(B) is FALSE. Declared constraints catch only what can be written down as a constraint; a transfer that debits one account and never credits the other can still satisfy every declared constraint unless the transaction itself is written correctly.",
+     "(C) is TRUE. Isolation levels such as read committed trade visibility for throughput, but the log is still written, so committed work survives and aborted work is removed.",
+     "(D) is TRUE. That is precisely the steal case that undo exists for."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "trap": "Consistency is the one property the DBMS cannot supply on its own. It is the application that must preserve invariants across statements; the DBMS only rejects violations it was told about."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each ACID letter has its own enforcement mechanism: atomicity and durability through logging or shadow paging, isolation through the concurrency-control protocol, and consistency through constraints plus correct application logic.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is TRUE. Shadow paging writes a modified page to a free page and switches the page table only at commit, so a crash leaves either the old or the new state. No log is needed.</li><li>(B) is FALSE. Declared constraints catch only what can be written down as a constraint; a transfer that debits one account and never credits the other can still satisfy every declared constraint unless the transaction itself is written correctly.</li><li>(C) is TRUE. Isolation levels such as read committed trade visibility for throughput, but the log is still written, so committed work survives and aborted work is removed.</li><li>(D) is TRUE. That is precisely the steal case that undo exists for.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Consistency is the one property the DBMS cannot supply on its own. It is the application that must preserve invariants across statements; the DBMS only rejects violations it was told about.</p><p class=\"row\"><b>Takeaway.</b> A, C and D hold; B overstates what constraints can do.</p>"
+  },
+  {
+   "id": "DB-U4-Q55",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "acid-properties",
+   "subtopic": "acid-properties",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "A system uses steal / no-force buffer management with write-ahead logging. The log on stable storage reads, in order: <code class=\"mm\">&#10216;T1 start&#10217;, &#10216;T1 write X&#10217;, &#10216;T2 start&#10217;, &#10216;T2 write Y&#10217;, &#10216;T1 commit&#10217;, &#10216;T3 start&#10217;, &#10216;T3 write Z&#10217;, &#10216;T2 write W&#10217;, &#10216;T2 commit&#10217;, &#10216;T4 start&#10217;, &#10216;T4 write V&#10217;, &#10216;T3 write U&#10217;</code> and then the system crashes. How many write operations must be undone during recovery? (Enter an integer.)",
+   "options": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution": {
+    "concept": "Recovery partitions the log into a redo set (transactions with a commit record) and an undo set (transactions that started but never committed). Only the undo set is rolled back, and the count asked for is of write records, not of transactions.",
+    "steps": [
+     "Scan the log for commit records: <code class=\"mm\">T1</code> and <code class=\"mm\">T2</code> committed.",
+     "Everything else that has a start record without a commit record is in the undo set: <code class=\"mm\">T3</code> and <code class=\"mm\">T4</code>.",
+     "<code class=\"mm\">T3</code> wrote <code class=\"mm\">Z</code> and <code class=\"mm\">U</code>; <code class=\"mm\">T4</code> wrote <code class=\"mm\">V</code>.",
+     "That is 2 + 1 = 3 write records to undo. The writes of <code class=\"mm\">T1</code> (<code class=\"mm\">X</code>) and <code class=\"mm\">T2</code> (<code class=\"mm\">Y</code>, <code class=\"mm\">W</code>) are redone if their pages are missing, never undone."
+    ],
+    "final": "3",
+    "trap": "Two traps. First, counting transactions (2) instead of write records (3). Second, undoing <code class=\"mm\">T2</code>'s write of <code class=\"mm\">W</code> because it appears after <code class=\"mm\">T3</code> started: a commit record anywhere in the log protects every earlier write of that transaction."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Recovery partitions the log into a redo set (transactions with a commit record) and an undo set (transactions that started but never committed). Only the undo set is rolled back, and the count asked for is of write records, not of transactions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Scan the log for commit records: <code class=\"mm\">T1</code> and <code class=\"mm\">T2</code> committed.</li><li>Everything else that has a start record without a commit record is in the undo set: <code class=\"mm\">T3</code> and <code class=\"mm\">T4</code>.</li><li><code class=\"mm\">T3</code> wrote <code class=\"mm\">Z</code> and <code class=\"mm\">U</code>; <code class=\"mm\">T4</code> wrote <code class=\"mm\">V</code>.</li><li>That is 2 + 1 = 3 write records to undo. The writes of <code class=\"mm\">T1</code> (<code class=\"mm\">X</code>) and <code class=\"mm\">T2</code> (<code class=\"mm\">Y</code>, <code class=\"mm\">W</code>) are redone if their pages are missing, never undone.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3</span></p><p class=\"row\"><b>Common misconception.</b> Two traps. First, counting transactions (2) instead of write records (3). Second, undoing <code class=\"mm\">T2</code>'s write of <code class=\"mm\">W</code> because it appears after <code class=\"mm\">T3</code> started: a commit record anywhere in the log protects every earlier write of that transaction.</p><p class=\"row\"><b>Faster method.</b> Mark each transaction C or U first, then count write records of the U transactions only.</p><p class=\"row\"><b>Takeaway.</b> Undo set = started but no commit record; count write records, not transactions.</p>"
+  },
+  {
+   "id": "DB-U4-Q56",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "schedules-serializability-conflict-view",
+   "subtopic": "schedules-serializability-conflict-view",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Consider the schedule <code class=\"mm\">S = r1(X); r2(X); w2(X); r1(Y); w1(Y)</code>. Which one of the following is TRUE?",
+   "options": [
+    "<code class=\"mm\">S</code> is not conflict serializable, because <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> before <code class=\"mm\">T1</code> has finished.",
+    "<code class=\"mm\">S</code> is conflict serializable and conflict-equivalent to the serial schedule <code class=\"mm\">T1; T2</code>.",
+    "<code class=\"mm\">S</code> is conflict serializable and conflict-equivalent to the serial schedule <code class=\"mm\">T2; T1</code>.",
+    "The precedence graph of <code class=\"mm\">S</code> contains the cycle <code class=\"mm\">T1 &rarr; T2 &rarr; T1</code>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Overlapping in time is not a conflict. Build the precedence graph from conflicting pairs only, and the schedule is conflict serializable exactly when that graph is acyclic.",
+    "steps": [
+     "<code class=\"mm\">r1(X)</code> and <code class=\"mm\">r2(X)</code> both read <code class=\"mm\">X</code>: two reads never conflict, so no edge.",
+     "<code class=\"mm\">r1(X)</code> precedes <code class=\"mm\">w2(X)</code>: a read before a write on the same item from different transactions conflicts, giving the edge <code class=\"mm\">T1 &rarr; T2</code>.",
+     "<code class=\"mm\">w2(X)</code> and <code class=\"mm\">r1(Y)</code>, <code class=\"mm\">w1(Y)</code> touch different items, so no further edge. <code class=\"mm\">r1(Y)</code> and <code class=\"mm\">w1(Y)</code> belong to the same transaction, which is not a conflict.",
+     "The graph is the single edge <code class=\"mm\">T1 &rarr; T2</code>: acyclic, so <code class=\"mm\">S</code> is conflict serializable and equivalent to <code class=\"mm\">T1; T2</code>."
+    ],
+    "final": "Option (B) &mdash; conflict serializable, equivalent to <code class=\"mm\">T1; T2</code>.",
+    "trap": "Students often add an edge for every pair of operations from different transactions. Reads do not conflict with reads, and operations on different items never conflict."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Overlapping in time is not a conflict. Build the precedence graph from conflicting pairs only, and the schedule is conflict serializable exactly when that graph is acyclic.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">r1(X)</code> and <code class=\"mm\">r2(X)</code> both read <code class=\"mm\">X</code>: two reads never conflict, so no edge.</li><li><code class=\"mm\">r1(X)</code> precedes <code class=\"mm\">w2(X)</code>: a read before a write on the same item from different transactions conflicts, giving the edge <code class=\"mm\">T1 &rarr; T2</code>.</li><li><code class=\"mm\">w2(X)</code> and <code class=\"mm\">r1(Y)</code>, <code class=\"mm\">w1(Y)</code> touch different items, so no further edge. <code class=\"mm\">r1(Y)</code> and <code class=\"mm\">w1(Y)</code> belong to the same transaction, which is not a conflict.</li><li>The graph is the single edge <code class=\"mm\">T1 &rarr; T2</code>: acyclic, so <code class=\"mm\">S</code> is conflict serializable and equivalent to <code class=\"mm\">T1; T2</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; conflict serializable, equivalent to <code class=\"mm\">T1; T2</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Concurrency alone is not disqualifying; only a cycle is.</li><li>(C) The only edge runs <code class=\"mm\">T1 &rarr; T2</code>, so the equivalent serial order is <code class=\"mm\">T1</code> first.</li><li>(D) One edge cannot form a cycle.</li></ul><p class=\"row\"><b>Common misconception.</b> Students often add an edge for every pair of operations from different transactions. Reads do not conflict with reads, and operations on different items never conflict.</p><p class=\"row\"><b>Faster method.</b> Write the operations of each item in order, and add an edge only where a write is separated from another transaction's operation on that item.</p><p class=\"row\"><b>Takeaway.</b> Edge = two operations, different transactions, same item, at least one write, and the earlier one comes first.</p>"
+  },
+  {
+   "id": "DB-U4-Q57",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "schedules-serializability-conflict-view",
+   "subtopic": "schedules-serializability-conflict-view",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Two schedules are view equivalent when three conditions hold. Which one of the following is NOT one of those three conditions?",
+   "options": [
+    "Every read in one schedule reads the value produced by the same write as the corresponding read in the other schedule.",
+    "For every data item, the transaction that performs the last write in one schedule also performs the last write in the other.",
+    "The two schedules perform the same number of read and write operations on each data item.",
+    "A read that sees the initial value of an item in one schedule also sees the initial value in the other."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "View equivalence is defined by <i>what each read sees</i> and <i>who writes last</i>, never by how many operations there are. Its three conditions are: same initial reads, same read-from relation, same final write.",
+    "steps": [
+     "Condition 1: if a transaction reads the initial value of an item in the first schedule, it must read the initial value in the second. That is option (D).",
+     "Condition 2: if a transaction reads a value written by another transaction in the first schedule, it must read that same writer's value in the second. That is option (A).",
+     "Condition 3: the last write on each item must be performed by the same transaction in both schedules. That is option (B).",
+     "Counting operations is not part of the definition: two view-equivalent schedules may even differ in the number of writes, as long as no read observes the difference."
+    ],
+    "final": "Option (C) &mdash; matching operation counts is not a view-equivalence condition.",
+    "trap": "Because conflict equivalence is checked by counting conflicting pairs, it is tempting to think view equivalence also counts operations. It compares observations, not operation tallies."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> View equivalence is defined by <i>what each read sees</i> and <i>who writes last</i>, never by how many operations there are. Its three conditions are: same initial reads, same read-from relation, same final write.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Condition 1: if a transaction reads the initial value of an item in the first schedule, it must read the initial value in the second. That is option (D).</li><li>Condition 2: if a transaction reads a value written by another transaction in the first schedule, it must read that same writer's value in the second. That is option (A).</li><li>Condition 3: the last write on each item must be performed by the same transaction in both schedules. That is option (B).</li><li>Counting operations is not part of the definition: two view-equivalent schedules may even differ in the number of writes, as long as no read observes the difference.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; matching operation counts is not a view-equivalence condition.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A), (B) and (D) are exactly the three defining conditions.</li><li>(C) describes a syntactic similarity that view equivalence deliberately does not require.</li></ul><p class=\"row\"><b>Common misconception.</b> Because conflict equivalence is checked by counting conflicting pairs, it is tempting to think view equivalence also counts operations. It compares observations, not operation tallies.</p><p class=\"row\"><b>Takeaway.</b> View equivalence: same initial reads, same read-from, same final writes. Nothing else.</p>"
+  },
+  {
+   "id": "DB-U4-Q58",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "schedules-serializability-conflict-view",
+   "subtopic": "schedules-serializability-conflict-view",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "In the precedence (serialization) graph of a schedule <code class=\"mm\">S</code>, a directed edge <code class=\"mm\">Ti &rarr; Tj</code> is drawn exactly when",
+   "options": [
+    "<code class=\"mm\">Ti</code> starts before <code class=\"mm\">Tj</code> in <code class=\"mm\">S</code>.",
+    "<code class=\"mm\">Ti</code> and <code class=\"mm\">Tj</code> both access at least one common data item.",
+    "<code class=\"mm\">Ti</code> commits before <code class=\"mm\">Tj</code>.",
+    "some operation of <code class=\"mm\">Ti</code> precedes and conflicts with some operation of <code class=\"mm\">Tj</code> in <code class=\"mm\">S</code>."
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The precedence graph encodes only the orders that the schedule is forced to respect. Those orders come from conflicting pairs, not from arrival, overlap or commit times.",
+    "steps": [
+     "Two operations conflict when they belong to different transactions, touch the same data item, and at least one of them is a write.",
+     "Each such pair, in the order it occurs, forces one transaction to behave as if it had run before the other.",
+     "The edge <code class=\"mm\">Ti &rarr; Tj</code> records exactly that forced order.",
+     "Start times, shared items without a write, and commit times create no such obligation, so none of them produces an edge."
+    ],
+    "final": "Option (D).",
+    "trap": "Commit order is a recoverability notion. Mixing it into the precedence graph is the most common way to get the wrong set of edges."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The precedence graph encodes only the orders that the schedule is forced to respect. Those orders come from conflicting pairs, not from arrival, overlap or commit times.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Two operations conflict when they belong to different transactions, touch the same data item, and at least one of them is a write.</li><li>Each such pair, in the order it occurs, forces one transaction to behave as if it had run before the other.</li><li>The edge <code class=\"mm\">Ti &rarr; Tj</code> records exactly that forced order.</li><li>Start times, shared items without a write, and commit times create no such obligation, so none of them produces an edge.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Two transactions may start in one order and still be serializable in the other.</li><li>(B) Shared access to a read-only item creates no conflict at all.</li><li>(C) Commit order matters for recoverability, not for the precedence graph.</li></ul><p class=\"row\"><b>Common misconception.</b> Commit order is a recoverability notion. Mixing it into the precedence graph is the most common way to get the wrong set of edges.</p><p class=\"row\"><b>Takeaway.</b> Precedence graph edges come from conflicts; cycles mean not conflict serializable.</p>"
+  },
+  {
+   "id": "DB-U4-Q59",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "schedules-serializability-conflict-view",
+   "subtopic": "schedules-serializability-conflict-view",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about testing and comparing serializability are TRUE? (Select all that apply.)",
+   "options": [
+    "Testing a schedule for conflict serializability takes time polynomial in the number of operations.",
+    "Testing a schedule for view serializability is NP-complete.",
+    "A schedule whose precedence graph contains a cycle can never be view serializable.",
+    "Blind writes are what allow a schedule to be view serializable while failing conflict serializability."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "Conflict serializability is decidable by a cycle test on a graph built in polynomial time. View serializability is a strictly weaker but computationally harder property, and the gap between the two classes is created by blind writes.",
+    "steps": [
+     "(A) is TRUE. Build the graph from the operation list and run a cycle test; both steps are polynomial.",
+     "(B) is TRUE. Deciding view serializability is NP-complete; that is why practical systems enforce conflict serializability instead.",
+     "(C) is FALSE. The classic example <code class=\"mm\">r1(X); w2(X); w1(X)</code> has the cycle <code class=\"mm\">T1 &rarr; T2 &rarr; T1</code>, yet it is view equivalent to <code class=\"mm\">T2; T1</code> because <code class=\"mm\">T2</code>'s write is blind, that is, nobody reads it before <code class=\"mm\">T1</code> overwrites it.",
+     "(D) is TRUE. Without a blind write, any view-serializable schedule is also conflict serializable."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "trap": "The implication runs one way only: conflict serializable &rArr; view serializable. The converse fails, and (C) is the false statement that assumes it does not."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conflict serializability is decidable by a cycle test on a graph built in polynomial time. View serializability is a strictly weaker but computationally harder property, and the gap between the two classes is created by blind writes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is TRUE. Build the graph from the operation list and run a cycle test; both steps are polynomial.</li><li>(B) is TRUE. Deciding view serializability is NP-complete; that is why practical systems enforce conflict serializability instead.</li><li>(C) is FALSE. The classic example <code class=\"mm\">r1(X); w2(X); w1(X)</code> has the cycle <code class=\"mm\">T1 &rarr; T2 &rarr; T1</code>, yet it is view equivalent to <code class=\"mm\">T2; T1</code> because <code class=\"mm\">T2</code>'s write is blind, that is, nobody reads it before <code class=\"mm\">T1</code> overwrites it.</li><li>(D) is TRUE. Without a blind write, any view-serializable schedule is also conflict serializable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> The implication runs one way only: conflict serializable &rArr; view serializable. The converse fails, and (C) is the false statement that assumes it does not.</p><p class=\"row\"><b>Takeaway.</b> Cycle in the graph rules out conflict serializability, never view serializability.</p>"
+  },
+  {
+   "id": "DB-U4-Q60",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "schedules-serializability-conflict-view",
+   "subtopic": "schedules-serializability-conflict-view",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Consider <code class=\"mm\">S = r1(X); r2(X); w1(Y); w3(Y); r2(Y); w3(X); w1(X)</code>. Call an ordered pair of operations <code class=\"mm\">(op_i, op_j)</code> with <code class=\"mm\">i &lt; j</code> a <i>conflict</i> when the two operations belong to different transactions, touch the same data item, and at least one of them is a write. How many conflicting ordered pairs does <code class=\"mm\">S</code> contain? (Enter an integer.)",
+   "options": [],
+   "answer": [
+    7
+   ],
+   "answer_display": "7",
+   "solution": {
+    "concept": "A conflict is a pair of operations, not a pair of transactions. Enumerate the operations of one data item at a time and count the pairs that differ in transaction and include a write.",
+    "steps": [
+     "Operations on <code class=\"mm\">X</code>, in order: <code class=\"mm\">r1(X)</code> at position 1, <code class=\"mm\">r2(X)</code> at 2, <code class=\"mm\">w3(X)</code> at 6, <code class=\"mm\">w1(X)</code> at 7.",
+     "Pairs on <code class=\"mm\">X</code>: (1,2) is two reads, no conflict. (1,6) conflicts, (2,6) conflicts, (2,7) conflicts, (6,7) conflicts. (1,7) is <code class=\"mm\">T1</code> with itself, so no conflict. That is 4 pairs.",
+     "Operations on <code class=\"mm\">Y</code>, in order: <code class=\"mm\">w1(Y)</code> at 3, <code class=\"mm\">w3(Y)</code> at 4, <code class=\"mm\">r2(Y)</code> at 5. All three pairs contain a write and use different transactions, so all 3 conflict.",
+     "Total 4 + 3 = 7."
+    ],
+    "final": "7",
+    "trap": "Two traps. Counting pairs of transactions instead of pairs of operations gives 3. Forgetting that a read followed by a write on the same item from another transaction is a conflict drops the pair <code class=\"mm\">(r1(X), w3(X))</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A conflict is a pair of operations, not a pair of transactions. Enumerate the operations of one data item at a time and count the pairs that differ in transaction and include a write.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Operations on <code class=\"mm\">X</code>, in order: <code class=\"mm\">r1(X)</code> at position 1, <code class=\"mm\">r2(X)</code> at 2, <code class=\"mm\">w3(X)</code> at 6, <code class=\"mm\">w1(X)</code> at 7.</li><li>Pairs on <code class=\"mm\">X</code>: (1,2) is two reads, no conflict. (1,6) conflicts, (2,6) conflicts, (2,7) conflicts, (6,7) conflicts. (1,7) is <code class=\"mm\">T1</code> with itself, so no conflict. That is 4 pairs.</li><li>Operations on <code class=\"mm\">Y</code>, in order: <code class=\"mm\">w1(Y)</code> at 3, <code class=\"mm\">w3(Y)</code> at 4, <code class=\"mm\">r2(Y)</code> at 5. All three pairs contain a write and use different transactions, so all 3 conflict.</li><li>Total 4 + 3 = 7.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 7</span></p><p class=\"row\"><b>Common misconception.</b> Two traps. Counting pairs of transactions instead of pairs of operations gives 3. Forgetting that a read followed by a write on the same item from another transaction is a conflict drops the pair <code class=\"mm\">(r1(X), w3(X))</code>.</p><p class=\"row\"><b>Faster method.</b> For an item with k operations of which r are reads, the conflicting pairs are all pairs minus the same-transaction pairs minus the read-read pairs.</p><p class=\"row\"><b>Takeaway.</b> Conflicts are counted per ordered pair of operations on the same item.</p>"
+  },
+  {
+   "id": "DB-U4-Q61",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "recoverability-cascadeless",
+   "subtopic": "recoverability-cascadeless",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Which one of the following schedules is recoverable?",
+   "options": [
+    "<code class=\"mm\">r1(X); w1(X); r2(X); c2; c1</code>",
+    "<code class=\"mm\">r1(X); w1(X); r2(X); c1; c2</code>",
+    "<code class=\"mm\">r1(X); w1(X); r2(X); w2(X); c2; a1</code>",
+    "<code class=\"mm\">w1(X); r2(X); c2; w1(Y); c1</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Recoverability asks one question of every read-from edge: does the writer commit before the reader commits? If any reader commits first, the schedule is not recoverable.",
+    "steps": [
+     "Option (A): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> written by <code class=\"mm\">T1</code> and commits at <code class=\"mm\">c2</code>, before <code class=\"mm\">T1</code>'s <code class=\"mm\">c1</code>. Not recoverable.",
+     "Option (B): the same read-from edge, but <code class=\"mm\">c1</code> now precedes <code class=\"mm\">c2</code>. Every reader commits after its writer, so the schedule is recoverable.",
+     "Option (C): <code class=\"mm\">T2</code> reads <code class=\"mm\">T1</code>'s value and commits, then <code class=\"mm\">T1</code> aborts. Not recoverable.",
+     "Option (D): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> written by <code class=\"mm\">T1</code> and commits before <code class=\"mm\">T1</code>. Not recoverable."
+    ],
+    "final": "Option (B).",
+    "trap": "Recoverability is about commit order on read-from edges, not about whether the schedule is serializable. All four schedules here are conflict serializable; only one is recoverable."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Recoverability asks one question of every read-from edge: does the writer commit before the reader commits? If any reader commits first, the schedule is not recoverable.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Option (A): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> written by <code class=\"mm\">T1</code> and commits at <code class=\"mm\">c2</code>, before <code class=\"mm\">T1</code>'s <code class=\"mm\">c1</code>. Not recoverable.</li><li>Option (B): the same read-from edge, but <code class=\"mm\">c1</code> now precedes <code class=\"mm\">c2</code>. Every reader commits after its writer, so the schedule is recoverable.</li><li>Option (C): <code class=\"mm\">T2</code> reads <code class=\"mm\">T1</code>'s value and commits, then <code class=\"mm\">T1</code> aborts. Not recoverable.</li><li>Option (D): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> written by <code class=\"mm\">T1</code> and commits before <code class=\"mm\">T1</code>. Not recoverable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) The reader commits before the writer, so a later abort of the writer would have to undo a committed transaction.</li><li>(C) The reader commits before the writer's outcome is known, and the writer then aborts.</li><li>(D) Same defect as (A): the writer's commit comes last.</li></ul><p class=\"row\"><b>Common misconception.</b> Recoverability is about commit order on read-from edges, not about whether the schedule is serializable. All four schedules here are conflict serializable; only one is recoverable.</p><p class=\"row\"><b>Takeaway.</b> For each read-from edge, the writer must commit first.</p>"
+  },
+  {
+   "id": "DB-U4-Q62",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "recoverability-cascadeless",
+   "subtopic": "recoverability-cascadeless",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which one of the following schedules is cascadeless but NOT strict?",
+   "options": [
+    "<code class=\"mm\">r1(X); w1(X); r2(X); c1; c2</code>",
+    "<code class=\"mm\">r1(X); w1(X); c1; r2(X); w2(X); c2</code>",
+    "<code class=\"mm\">r1(X); w1(X); w2(X); c1; c2</code>",
+    "<code class=\"mm\">r1(X); w1(X); r2(X); c2; c1</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Cascadeless forbids <i>reading</i> an item before its last writer commits. Strict forbids both reading <b>and writing</b> an item before its last writer commits. The gap between them is exactly a write that overwrites an uncommitted value.",
+    "steps": [
+     "Option (A): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> before <code class=\"mm\">T1</code> commits, so it is not even cascadeless.",
+     "Option (B): <code class=\"mm\">T2</code> touches <code class=\"mm\">X</code> only after <code class=\"mm\">c1</code>, so both reads and writes are protected: it is strict.",
+     "Option (C): <code class=\"mm\">T2</code> writes <code class=\"mm\">X</code> while <code class=\"mm\">T1</code> is uncommitted, so it is not strict. But nothing ever reads an uncommitted value, so no abort can cascade: it is cascadeless.",
+     "Option (D): <code class=\"mm\">T2</code> reads uncommitted <code class=\"mm\">X</code> and commits first, so it is not recoverable at all."
+    ],
+    "final": "Option (C) &mdash; a blind overwrite of an uncommitted value.",
+    "trap": "The three classes are often treated as one. They are nested: strict &sub; cascadeless &sub; recoverable. A schedule can sit in the middle band only by writing, never reading, an uncommitted item."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cascadeless forbids <i>reading</i> an item before its last writer commits. Strict forbids both reading <b>and writing</b> an item before its last writer commits. The gap between them is exactly a write that overwrites an uncommitted value.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Option (A): <code class=\"mm\">T2</code> reads <code class=\"mm\">X</code> before <code class=\"mm\">T1</code> commits, so it is not even cascadeless.</li><li>Option (B): <code class=\"mm\">T2</code> touches <code class=\"mm\">X</code> only after <code class=\"mm\">c1</code>, so both reads and writes are protected: it is strict.</li><li>Option (C): <code class=\"mm\">T2</code> writes <code class=\"mm\">X</code> while <code class=\"mm\">T1</code> is uncommitted, so it is not strict. But nothing ever reads an uncommitted value, so no abort can cascade: it is cascadeless.</li><li>Option (D): <code class=\"mm\">T2</code> reads uncommitted <code class=\"mm\">X</code> and commits first, so it is not recoverable at all.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; a blind overwrite of an uncommitted value.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Violates cascadelessness.</li><li>(B) Is strict, the stronger class.</li><li>(D) Is not even recoverable.</li></ul><p class=\"row\"><b>Common misconception.</b> The three classes are often treated as one. They are nested: strict &sub; cascadeless &sub; recoverable. A schedule can sit in the middle band only by writing, never reading, an uncommitted item.</p><p class=\"row\"><b>Takeaway.</b> Reading uncommitted data is the cascadeless violation; writing over it is the strict violation.</p>"
+  },
+  {
+   "id": "DB-U4-Q63",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "recoverability-cascadeless",
+   "subtopic": "recoverability-cascadeless",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "A system uses the deferred-update (no-steal) technique, so no update reaches the database before its transaction commits. The schedules it produces are automatically",
+   "options": [
+    "conflict serializable but not necessarily recoverable.",
+    "cascadeless but not necessarily recoverable.",
+    "recoverable only if every transaction is short.",
+    "strict, and therefore cascadeless and recoverable."
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "With no-steal, an uncommitted value never reaches the database, so no other transaction can read it or overwrite it. That is precisely the strict condition.",
+    "steps": [
+     "Under no-steal, a data item in the database always holds a committed value.",
+     "A read therefore never observes an uncommitted write, which gives cascadelessness.",
+     "A write never overwrites an uncommitted value either, which is the additional strict condition.",
+     "Since strict &sub; cascadeless &sub; recoverable, all three properties hold at once."
+    ],
+    "final": "Option (D).",
+    "trap": "Deferred update is often confused with a concurrency-control protocol. It constrains buffer management only; serializability still has to come from locking or timestamp ordering."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> With no-steal, an uncommitted value never reaches the database, so no other transaction can read it or overwrite it. That is precisely the strict condition.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Under no-steal, a data item in the database always holds a committed value.</li><li>A read therefore never observes an uncommitted write, which gives cascadelessness.</li><li>A write never overwrites an uncommitted value either, which is the additional strict condition.</li><li>Since strict &sub; cascadeless &sub; recoverable, all three properties hold at once.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (D).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) and (B) both deny recoverability, which no-steal guarantees.</li><li>(C) makes recoverability depend on transaction length, which plays no part.</li></ul><p class=\"row\"><b>Common misconception.</b> Deferred update is often confused with a concurrency-control protocol. It constrains buffer management only; serializability still has to come from locking or timestamp ordering.</p><p class=\"row\"><b>Takeaway.</b> No-steal &rArr; strict &rArr; cascadeless &rArr; recoverable.</p>"
+  },
+  {
+   "id": "DB-U4-Q64",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "recoverability-cascadeless",
+   "subtopic": "recoverability-cascadeless",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about recoverable, cascadeless and strict schedules are TRUE? (Select all that apply.)",
+   "options": [
+    "Every strict schedule is cascadeless.",
+    "Every cascadeless schedule is recoverable.",
+    "A cascadeless schedule cannot suffer cascading rollback.",
+    "Every recoverable schedule is cascadeless."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "The three classes form a chain of strict inclusions: strict &sub; cascadeless &sub; recoverable. Each step up adds one restriction, so implications run downward only.",
+    "steps": [
+     "(A) is TRUE. Strict forbids reading and writing an uncommitted item; cascadeless forbids only reading it. The stronger condition implies the weaker one.",
+     "(B) is TRUE. If no transaction reads an uncommitted value, every reader reads from a committed writer, so every read-from edge already has the writer committing first.",
+     "(C) is TRUE. Cascading rollback is triggered by a read of a value that is later undone, and cascadelessness removes exactly those reads.",
+     "(D) is FALSE. Counterexample: <code class=\"mm\">r1(X); w1(X); r2(X); c1; c2</code>. <code class=\"mm\">T2</code> reads an uncommitted value, so the schedule is not cascadeless; but <code class=\"mm\">T1</code> commits before <code class=\"mm\">T2</code> does, so it is recoverable. Recoverability constrains commit order only; it never forbids the dirty read itself."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "The usual error is to reverse an inclusion, for example claiming every recoverable schedule is cascadeless. Recoverability only constrains commit order; it does not stop a read of an uncommitted value from happening in the first place."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three classes form a chain of strict inclusions: strict &sub; cascadeless &sub; recoverable. Each step up adds one restriction, so implications run downward only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is TRUE. Strict forbids reading and writing an uncommitted item; cascadeless forbids only reading it. The stronger condition implies the weaker one.</li><li>(B) is TRUE. If no transaction reads an uncommitted value, every reader reads from a committed writer, so every read-from edge already has the writer committing first.</li><li>(C) is TRUE. Cascading rollback is triggered by a read of a value that is later undone, and cascadelessness removes exactly those reads.</li><li>(D) is FALSE. Counterexample: <code class=\"mm\">r1(X); w1(X); r2(X); c1; c2</code>. <code class=\"mm\">T2</code> reads an uncommitted value, so the schedule is not cascadeless; but <code class=\"mm\">T1</code> commits before <code class=\"mm\">T2</code> does, so it is recoverable. Recoverability constrains commit order only; it never forbids the dirty read itself.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> The usual error is to reverse an inclusion, for example claiming every recoverable schedule is cascadeless. Recoverability only constrains commit order; it does not stop a read of an uncommitted value from happening in the first place.</p><p class=\"row\"><b>Takeaway.</b> strict &sub; cascadeless &sub; recoverable, and implications run one way only.</p>"
+  },
+  {
+   "id": "DB-U4-Q65",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "recoverability-cascadeless",
+   "subtopic": "recoverability-cascadeless",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Consider <code class=\"mm\">r1(X); w1(X); r2(X); w2(Y); r3(Y); w3(Z); r4(Z); w4(W); r5(W)</code>. No transaction has committed when <code class=\"mm\">T2</code> aborts. Under cascading rollback, how many transactions are rolled back in total, counting <code class=\"mm\">T2</code> itself? (Enter an integer.)",
+   "options": [],
+   "answer": [
+    4
+   ],
+   "answer_display": "4",
+   "solution": {
+    "concept": "Cascading rollback propagates along read-from edges, not along write edges and not backwards. A transaction is rolled back when it read a value produced by a transaction that is being rolled back.",
+    "steps": [
+     "<code class=\"mm\">T2</code> aborts: that is 1.",
+     "<code class=\"mm\">T3</code> read <code class=\"mm\">Y</code>, which <code class=\"mm\">T2</code> wrote, so <code class=\"mm\">T3</code> must also roll back: 2.",
+     "<code class=\"mm\">T4</code> read <code class=\"mm\">Z</code>, which <code class=\"mm\">T3</code> wrote, so <code class=\"mm\">T4</code> rolls back: 3.",
+     "<code class=\"mm\">T5</code> read <code class=\"mm\">W</code>, which <code class=\"mm\">T4</code> wrote, so <code class=\"mm\">T5</code> rolls back: 4.",
+     "<code class=\"mm\">T1</code> wrote <code class=\"mm\">X</code>, which <code class=\"mm\">T2</code> read. Propagation runs from a rolled-back writer to its readers, so <code class=\"mm\">T1</code> is not dragged in by its own reader's abort."
+    ],
+    "final": "4",
+    "trap": "Two traps. Following write edges instead of read-from edges, which suggests <code class=\"mm\">T1</code> should also go. And stopping after the first hop, which gives 2."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Cascading rollback propagates along read-from edges, not along write edges and not backwards. A transaction is rolled back when it read a value produced by a transaction that is being rolled back.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">T2</code> aborts: that is 1.</li><li><code class=\"mm\">T3</code> read <code class=\"mm\">Y</code>, which <code class=\"mm\">T2</code> wrote, so <code class=\"mm\">T3</code> must also roll back: 2.</li><li><code class=\"mm\">T4</code> read <code class=\"mm\">Z</code>, which <code class=\"mm\">T3</code> wrote, so <code class=\"mm\">T4</code> rolls back: 3.</li><li><code class=\"mm\">T5</code> read <code class=\"mm\">W</code>, which <code class=\"mm\">T4</code> wrote, so <code class=\"mm\">T5</code> rolls back: 4.</li><li><code class=\"mm\">T1</code> wrote <code class=\"mm\">X</code>, which <code class=\"mm\">T2</code> read. Propagation runs from a rolled-back writer to its readers, so <code class=\"mm\">T1</code> is not dragged in by its own reader's abort.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Two traps. Following write edges instead of read-from edges, which suggests <code class=\"mm\">T1</code> should also go. And stopping after the first hop, which gives 2.</p><p class=\"row\"><b>Faster method.</b> Draw arrows from writer to reader for every read, then close the set reachable from the aborted transaction.</p><p class=\"row\"><b>Takeaway.</b> Cascading rollback follows read-from edges forward from the aborting transaction.</p>"
+  },
+  {
+   "id": "DB-U4-Q66",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "two-phase-locking-2pl-strict-rigorous",
+   "subtopic": "two-phase-locking-2pl-strict-rigorous",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which one of the following locking protocols is both conflict serializable and free from deadlock?",
+   "options": [
+    "Basic two-phase locking",
+    "Strict two-phase locking",
+    "Conservative (static) two-phase locking",
+    "Rigorous two-phase locking"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Every two-phase locking variant is conflict serializable because the lock point orders the transactions. Deadlock freedom needs an extra rule: a transaction must not hold a lock while waiting for another, which is what acquiring all locks up front achieves.",
+    "steps": [
+     "Basic, strict and rigorous 2PL all allow a transaction to hold one lock while requesting another, so a cycle of waits is possible.",
+     "Conservative 2PL acquires every lock the transaction will need before it performs any operation.",
+     "If any lock is unavailable, it acquires none and waits holding nothing.",
+     "A transaction that holds nothing can never be part of a wait cycle, so no deadlock can form. Serializability comes from the ordinary two-phase discipline."
+    ],
+    "final": "Option (C) &mdash; conservative (static) two-phase locking.",
+    "trap": "Strict and rigorous are remembered as the safe variants, but the property they add is protection from cascading rollback, not deadlock freedom."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every two-phase locking variant is conflict serializable because the lock point orders the transactions. Deadlock freedom needs an extra rule: a transaction must not hold a lock while waiting for another, which is what acquiring all locks up front achieves.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Basic, strict and rigorous 2PL all allow a transaction to hold one lock while requesting another, so a cycle of waits is possible.</li><li>Conservative 2PL acquires every lock the transaction will need before it performs any operation.</li><li>If any lock is unavailable, it acquires none and waits holding nothing.</li><li>A transaction that holds nothing can never be part of a wait cycle, so no deadlock can form. Serializability comes from the ordinary two-phase discipline.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; conservative (static) two-phase locking.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Basic 2PL is conflict serializable but deadlock-prone.</li><li>(B) and (D) add commit-time lock holding, which helps recovery but does nothing for deadlock.</li></ul><p class=\"row\"><b>Common misconception.</b> Strict and rigorous are remembered as the safe variants, but the property they add is protection from cascading rollback, not deadlock freedom.</p><p class=\"row\"><b>Takeaway.</b> Deadlock-free locking must acquire everything before it holds anything.</p>"
+  },
+  {
+   "id": "DB-U4-Q67",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "two-phase-locking-2pl-strict-rigorous",
+   "subtopic": "two-phase-locking-2pl-strict-rigorous",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which one of the following correctly distinguishes rigorous two-phase locking from strict two-phase locking?",
+   "options": [
+    "Strict 2PL holds only exclusive locks until commit; rigorous 2PL holds all locks, shared and exclusive, until commit.",
+    "Rigorous 2PL holds only exclusive locks until commit; strict 2PL holds all locks until commit.",
+    "Strict 2PL forbids lock upgrades; rigorous 2PL permits them.",
+    "Rigorous 2PL has three phases; strict 2PL has only two."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Both variants delay the release of locks to the commit point, and both are conflict serializable and cascadeless. They differ in which locks are delayed: strict delays exclusive locks, rigorous delays every lock.",
+    "steps": [
+     "Strict 2PL: an exclusive lock is held until commit or abort; shared locks may be released earlier, at the end of the growing phase.",
+     "Rigorous 2PL: every lock, shared or exclusive, is held until commit or abort.",
+     "Rigorous is therefore the stronger of the two, and it is what most textbook treatments call the practical default.",
+     "Neither variant forbids upgrades, and both have exactly two phases."
+    ],
+    "final": "Option (A).",
+    "trap": "Because rigorous is stronger, it is easy to assume it is the one that holds only exclusive locks. It is the other way round: strict is the weaker, exclusive-lock-only version."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Both variants delay the release of locks to the commit point, and both are conflict serializable and cascadeless. They differ in which locks are delayed: strict delays exclusive locks, rigorous delays every lock.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Strict 2PL: an exclusive lock is held until commit or abort; shared locks may be released earlier, at the end of the growing phase.</li><li>Rigorous 2PL: every lock, shared or exclusive, is held until commit or abort.</li><li>Rigorous is therefore the stronger of the two, and it is what most textbook treatments call the practical default.</li><li>Neither variant forbids upgrades, and both have exactly two phases.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) Swaps the two definitions.</li><li>(C) Lock upgrades are permitted in both, provided they happen in the growing phase.</li><li>(D) Both are two-phase protocols; the phase count is what gives 2PL its name.</li></ul><p class=\"row\"><b>Common misconception.</b> Because rigorous is stronger, it is easy to assume it is the one that holds only exclusive locks. It is the other way round: strict is the weaker, exclusive-lock-only version.</p><p class=\"row\"><b>Takeaway.</b> Strict delays X-locks; rigorous delays both S- and X-locks.</p>"
+  },
+  {
+   "id": "DB-U4-Q68",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "two-phase-locking-2pl-strict-rigorous",
+   "subtopic": "two-phase-locking-2pl-strict-rigorous",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "The lock point of a transaction under two-phase locking is",
+   "options": [
+    "the moment at which it holds every lock it will ever need, so that only the shrinking phase remains.",
+    "the moment at which it acquires its first lock.",
+    "the moment at which it releases its last lock.",
+    "the moment at which it commits."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A 2PL transaction grows its lock set and then shrinks it. The lock point is the boundary: after it, no new lock may be acquired. Serializability comes from the fact that the lock points of any two transactions cannot interleave in a conflicting way.",
+    "steps": [
+     "In the growing phase the transaction may acquire locks and must release none.",
+     "At the lock point it holds all the locks it will ever need.",
+     "In the shrinking phase it may release locks and must acquire none.",
+     "The lock point is therefore the pivot of the whole protocol, not its first or last lock operation."
+    ],
+    "final": "Option (A).",
+    "trap": "The lock point is often placed at the first lock or at commit. It is neither: it is where the transaction stops growing."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A 2PL transaction grows its lock set and then shrinks it. The lock point is the boundary: after it, no new lock may be acquired. Serializability comes from the fact that the lock points of any two transactions cannot interleave in a conflicting way.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>In the growing phase the transaction may acquire locks and must release none.</li><li>At the lock point it holds all the locks it will ever need.</li><li>In the shrinking phase it may release locks and must acquire none.</li><li>The lock point is therefore the pivot of the whole protocol, not its first or last lock operation.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) The first lock opens the growing phase; the lock point comes later.</li><li>(C) The last release ends the shrinking phase.</li><li>(D) Commit happens after the shrinking phase, and under strict 2PL it coincides with the last release.</li></ul><p class=\"row\"><b>Common misconception.</b> The lock point is often placed at the first lock or at commit. It is neither: it is where the transaction stops growing.</p><p class=\"row\"><b>Takeaway.</b> Grow to the lock point, then shrink and nothing else.</p>"
+  },
+  {
+   "id": "DB-U4-Q69",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "two-phase-locking-2pl-strict-rigorous",
+   "subtopic": "two-phase-locking-2pl-strict-rigorous",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about locking are TRUE? (Select all that apply.)",
+   "options": [
+    "Two transactions may hold shared locks on the same data item at the same time.",
+    "An exclusive lock is compatible with a shared lock held by another transaction.",
+    "Under two-phase locking, a transaction that has entered its shrinking phase and then needs a new lock must abort and restart.",
+    "A transaction that has released a lock may re-acquire a lock on the same item later, provided no other transaction currently holds it."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "answer_display": "Options (A) and (C)",
+   "solution": {
+    "concept": "Lock compatibility is decided by the mode pair: S with S is compatible, and any pair involving X is not. The two-phase rule is a statement about the transaction's whole history, so a re-acquisition after a release always breaks it, whoever else holds the item.",
+    "steps": [
+     "(A) is TRUE. Shared locks are read-only, and many readers may hold S on the same item.",
+     "(B) is FALSE. An exclusive lock conflicts with every other lock on the item, shared or exclusive.",
+     "(C) is TRUE. Acquiring a lock after releasing one would create a second growing phase, so the protocol is violated; the standard remedy is to abort and restart the transaction.",
+     "(D) is FALSE. Availability of the item is irrelevant: the two-phase discipline is broken by the transaction's own history, not by contention."
+    ],
+    "final": "Options (A) and (C).",
+    "trap": "Option (D) is the standard trap. Whether another transaction holds the item has nothing to do with the two-phase rule; the rule counts the transaction's own acquisitions after its first release."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Lock compatibility is decided by the mode pair: S with S is compatible, and any pair involving X is not. The two-phase rule is a statement about the transaction's whole history, so a re-acquisition after a release always breaks it, whoever else holds the item.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is TRUE. Shared locks are read-only, and many readers may hold S on the same item.</li><li>(B) is FALSE. An exclusive lock conflicts with every other lock on the item, shared or exclusive.</li><li>(C) is TRUE. Acquiring a lock after releasing one would create a second growing phase, so the protocol is violated; the standard remedy is to abort and restart the transaction.</li><li>(D) is FALSE. Availability of the item is irrelevant: the two-phase discipline is broken by the transaction's own history, not by contention.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Option (D) is the standard trap. Whether another transaction holds the item has nothing to do with the two-phase rule; the rule counts the transaction's own acquisitions after its first release.</p><p class=\"row\"><b>Takeaway.</b> S-S compatible; X conflicts with everything; no lock after any release.</p>"
+  },
+  {
+   "id": "DB-U4-Q70",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "two-phase-locking-2pl-strict-rigorous",
+   "subtopic": "two-phase-locking-2pl-strict-rigorous",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Four transactions perform the sequences below, where <code class=\"mm\">LS</code> is a shared lock, <code class=\"mm\">LX</code> an exclusive lock, <code class=\"mm\">U</code> an unlock and <code class=\"mm\">C</code> the commit point.<br/><code class=\"mm\">T1: LX(X), LX(Y), U(X), C, U(Y)</code><br/><code class=\"mm\">T2: LX(X), LX(Y), C, U(X), U(Y)</code><br/><code class=\"mm\">T3: LS(X), LX(X), C, U(X)</code><br/><code class=\"mm\">T4: LX(X), U(X), LX(Y), U(Y), C</code><br/>How many of the four obey strict two-phase locking? (Enter an integer.)",
+   "options": [],
+   "answer": [
+    2
+   ],
+   "answer_display": "2",
+   "solution": {
+    "concept": "Strict 2PL requires two things at once: no lock is acquired after any lock has been released (the two-phase rule), and no exclusive lock is released before the commit point.",
+    "steps": [
+     "<code class=\"mm\">T1</code>: <code class=\"mm\">U(X)</code> comes before <code class=\"mm\">C</code>, so an exclusive lock is released early. Fails strict.",
+     "<code class=\"mm\">T2</code>: grows through both locks, commits, then releases. Obeys strict.",
+     "<code class=\"mm\">T3</code>: upgrades <code class=\"mm\">S</code> to <code class=\"mm\">X</code> while still growing, then commits before releasing. An upgrade is an acquisition, so it must occur in the growing phase, and it does. Obeys strict.",
+     "<code class=\"mm\">T4</code>: releases <code class=\"mm\">X</code> and then acquires <code class=\"mm\">Y</code>, which breaks the two-phase rule as well as releasing an exclusive lock early. Fails strict.",
+     "Two of the four obey: <code class=\"mm\">T2</code> and <code class=\"mm\">T3</code>."
+    ],
+    "final": "2",
+    "trap": "Two traps. Treating the <code class=\"mm\">LS</code> to <code class=\"mm\">LX</code> upgrade in <code class=\"mm\">T3</code> as a violation, when an upgrade inside the growing phase is legal. And counting <code class=\"mm\">T1</code> as strict because it never re-acquires a lock, when the early <code class=\"mm\">U(X)</code> already disqualifies it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Strict 2PL requires two things at once: no lock is acquired after any lock has been released (the two-phase rule), and no exclusive lock is released before the commit point.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">T1</code>: <code class=\"mm\">U(X)</code> comes before <code class=\"mm\">C</code>, so an exclusive lock is released early. Fails strict.</li><li><code class=\"mm\">T2</code>: grows through both locks, commits, then releases. Obeys strict.</li><li><code class=\"mm\">T3</code>: upgrades <code class=\"mm\">S</code> to <code class=\"mm\">X</code> while still growing, then commits before releasing. An upgrade is an acquisition, so it must occur in the growing phase, and it does. Obeys strict.</li><li><code class=\"mm\">T4</code>: releases <code class=\"mm\">X</code> and then acquires <code class=\"mm\">Y</code>, which breaks the two-phase rule as well as releasing an exclusive lock early. Fails strict.</li><li>Two of the four obey: <code class=\"mm\">T2</code> and <code class=\"mm\">T3</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Two traps. Treating the <code class=\"mm\">LS</code> to <code class=\"mm\">LX</code> upgrade in <code class=\"mm\">T3</code> as a violation, when an upgrade inside the growing phase is legal. And counting <code class=\"mm\">T1</code> as strict because it never re-acquires a lock, when the early <code class=\"mm\">U(X)</code> already disqualifies it.</p><p class=\"row\"><b>Takeaway.</b> Strict = two-phase plus hold every X-lock until commit.</p>"
+  },
+  {
+   "id": "DB-U4-Q71",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "timestamp-ordering-and-deadlocks",
+   "subtopic": "timestamp-ordering-and-deadlocks",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Under basic timestamp ordering, a write <code class=\"mm\">w(X)</code> by transaction <code class=\"mm\">T</code> is rejected. Which one of the following is a sufficient condition for that rejection?",
+   "options": [
+    "<code class=\"mm\">TS(T) &lt; RTS(X)</code>",
+    "<code class=\"mm\">TS(T) &gt; WTS(X)</code>",
+    "<code class=\"mm\">TS(T) &lt; TS</code> of every other transaction",
+    "<code class=\"mm\">RTS(X) &lt; WTS(X)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Basic timestamp ordering rejects a write when it is too late in either respect: too late for the readers of the item, <code class=\"mm\">TS(T) &lt; RTS(X)</code>, or too late for its writers, <code class=\"mm\">TS(T) &lt; WTS(X)</code>.",
+    "steps": [
+     "<code class=\"mm\">RTS(X)</code> is the largest timestamp among the transactions that have read <code class=\"mm\">X</code>.",
+     "If <code class=\"mm\">TS(T) &lt; RTS(X)</code>, a younger transaction has already read a value of <code class=\"mm\">X</code> that <code class=\"mm\">T</code>'s write would now invalidate.",
+     "The only way to keep the read valid is to reject the write and abort <code class=\"mm\">T</code>.",
+     "The condition is sufficient on its own; it does not need the <code class=\"mm\">WTS</code> test to hold as well."
+    ],
+    "final": "Option (A) &mdash; <code class=\"mm\">TS(T) &lt; RTS(X)</code>.",
+    "trap": "Basic TO has two rejection tests, one against <code class=\"mm\">RTS</code> and one against <code class=\"mm\">WTS</code>. A question that asks for <i>a</i> sufficient condition is satisfied by either; do not reject (A) because it omits the other."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Basic timestamp ordering rejects a write when it is too late in either respect: too late for the readers of the item, <code class=\"mm\">TS(T) &lt; RTS(X)</code>, or too late for its writers, <code class=\"mm\">TS(T) &lt; WTS(X)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">RTS(X)</code> is the largest timestamp among the transactions that have read <code class=\"mm\">X</code>.</li><li>If <code class=\"mm\">TS(T) &lt; RTS(X)</code>, a younger transaction has already read a value of <code class=\"mm\">X</code> that <code class=\"mm\">T</code>'s write would now invalidate.</li><li>The only way to keep the read valid is to reject the write and abort <code class=\"mm\">T</code>.</li><li>The condition is sufficient on its own; it does not need the <code class=\"mm\">WTS</code> test to hold as well.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; <code class=\"mm\">TS(T) &lt; RTS(X)</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(B) is the opposite of the write-timestamp test and is not a rejection condition at all.</li><li>(C) compares timestamps of transactions, but ordering is decided per data item, not globally.</li><li>(D) describes a state of the item, not a relationship between <code class=\"mm\">T</code> and the item.</li></ul><p class=\"row\"><b>Common misconception.</b> Basic TO has two rejection tests, one against <code class=\"mm\">RTS</code> and one against <code class=\"mm\">WTS</code>. A question that asks for <i>a</i> sufficient condition is satisfied by either; do not reject (A) because it omits the other.</p><p class=\"row\"><b>Faster method.</b> Younger writers must never rewrite what an older reader has already seen, and must never overwrite a younger write.</p><p class=\"row\"><b>Takeaway.</b> Write rejected if too late for readers (RTS) or too late for writers (WTS).</p>"
+  },
+  {
+   "id": "DB-U4-Q72",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "timestamp-ordering-and-deadlocks",
+   "subtopic": "timestamp-ordering-and-deadlocks",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Under the wound&ndash;wait deadlock-prevention scheme, transaction <code class=\"mm\">Ti</code> requests a lock held by <code class=\"mm\">Tj</code>, and <code class=\"mm\">TS(Ti) &gt; TS(Tj)</code>. Which one of the following happens?",
+   "options": [
+    "<code class=\"mm\">Ti</code> wounds <code class=\"mm\">Tj</code>, aborting it, because <code class=\"mm\">Ti</code> is the younger transaction.",
+    "<code class=\"mm\">Ti</code> is aborted and restarted with a larger timestamp.",
+    "<code class=\"mm\">Ti</code> waits, because it is the younger transaction.",
+    "Both transactions are aborted, breaking a possible cycle."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Wound&ndash;wait is older-favouring. The older transaction never waits: it <i>wounds</i> the younger holder. The younger transaction always waits. A larger timestamp means younger.",
+    "steps": [
+     "<code class=\"mm\">TS(Ti) &gt; TS(Tj)</code>, so <code class=\"mm\">Tj</code> is the older transaction and <code class=\"mm\">Ti</code> the younger.",
+     "Wound&ndash;wait rule: an older requester wounds the younger holder; a younger requester waits for the older holder.",
+     "<code class=\"mm\">Ti</code> is the younger requester, so it waits.",
+     "Because waits always run from younger to older, the wait-for graph cannot contain a cycle, so no deadlock forms."
+    ],
+    "final": "Option (C) &mdash; <code class=\"mm\">Ti</code> waits.",
+    "trap": "The two schemes are mirror images and are easily swapped. Wait&ndash;die: the older requester dies (aborts). Wound&ndash;wait: the older requester wounds the holder and proceeds."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Wound&ndash;wait is older-favouring. The older transaction never waits: it <i>wounds</i> the younger holder. The younger transaction always waits. A larger timestamp means younger.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">TS(Ti) &gt; TS(Tj)</code>, so <code class=\"mm\">Tj</code> is the older transaction and <code class=\"mm\">Ti</code> the younger.</li><li>Wound&ndash;wait rule: an older requester wounds the younger holder; a younger requester waits for the older holder.</li><li><code class=\"mm\">Ti</code> is the younger requester, so it waits.</li><li>Because waits always run from younger to older, the wait-for graph cannot contain a cycle, so no deadlock forms.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; <code class=\"mm\">Ti</code> waits.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Wounding is done by the older transaction, and here <code class=\"mm\">Ti</code> is the younger.</li><li>(B) Aborting the requester with a new timestamp is the wait&ndash;die behaviour for an older requester, not wound&ndash;wait.</li><li>(D) No cycle exists, so there is nothing to break.</li></ul><p class=\"row\"><b>Common misconception.</b> The two schemes are mirror images and are easily swapped. Wait&ndash;die: the older requester dies (aborts). Wound&ndash;wait: the older requester wounds the holder and proceeds.</p><p class=\"row\"><b>Faster method.</b> Older = smaller timestamp. Older never waits in wound&ndash;wait, so whoever is younger waits.</p><p class=\"row\"><b>Takeaway.</b> Wound&ndash;wait: older wounds, younger waits. Wait&ndash;die: older dies, younger waits.</p>"
+  },
+  {
+   "id": "DB-U4-Q73",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "timestamp-ordering-and-deadlocks",
+   "subtopic": "timestamp-ordering-and-deadlocks",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "In timestamp ordering, <code class=\"mm\">RTS(X)</code> records",
+   "options": [
+    "the timestamp of the transaction that most recently wrote <code class=\"mm\">X</code>.",
+    "the largest timestamp among all transactions that have read <code class=\"mm\">X</code>.",
+    "the number of times <code class=\"mm\">X</code> has been read.",
+    "the timestamp of the oldest transaction still holding a lock on <code class=\"mm\">X</code>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Every data item carries two timestamps: <code class=\"mm\">RTS(X)</code>, the largest timestamp of any transaction that has read it, and <code class=\"mm\">WTS(X)</code>, the timestamp of the transaction that wrote it last.",
+    "steps": [
+     "When <code class=\"mm\">T</code> reads <code class=\"mm\">X</code>, the scheduler sets <code class=\"mm\">RTS(X) = max(RTS(X), TS(T))</code>.",
+     "So <code class=\"mm\">RTS(X)</code> is always the largest timestamp of a reader, that is, the youngest reader so far.",
+     "It is compared against <code class=\"mm\">TS(T)</code> of a later write to decide whether that write would invalidate an existing read.",
+     "<code class=\"mm\">WTS(X)</code> is the other field, and it tracks the last writer."
+    ],
+    "final": "Option (B) &mdash; the largest timestamp among the readers of <code class=\"mm\">X</code>.",
+    "trap": "The two fields are frequently swapped. Remember that <b>R</b>TS belongs to <b>R</b>eaders and <b>W</b>TS to the <b>W</b>riter."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Every data item carries two timestamps: <code class=\"mm\">RTS(X)</code>, the largest timestamp of any transaction that has read it, and <code class=\"mm\">WTS(X)</code>, the timestamp of the transaction that wrote it last.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>When <code class=\"mm\">T</code> reads <code class=\"mm\">X</code>, the scheduler sets <code class=\"mm\">RTS(X) = max(RTS(X), TS(T))</code>.</li><li>So <code class=\"mm\">RTS(X)</code> is always the largest timestamp of a reader, that is, the youngest reader so far.</li><li>It is compared against <code class=\"mm\">TS(T)</code> of a later write to decide whether that write would invalidate an existing read.</li><li><code class=\"mm\">WTS(X)</code> is the other field, and it tracks the last writer.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; the largest timestamp among the readers of <code class=\"mm\">X</code>.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) describes <code class=\"mm\">WTS(X)</code>, not <code class=\"mm\">RTS(X)</code>.</li><li>(C) a count is never stored; only a maximum timestamp is.</li><li>(D) timestamp ordering uses no locks at all, so there is no lock holder to record.</li></ul><p class=\"row\"><b>Common misconception.</b> The two fields are frequently swapped. Remember that <b>R</b>TS belongs to <b>R</b>eaders and <b>W</b>TS to the <b>W</b>riter.</p><p class=\"row\"><b>Takeaway.</b> RTS = youngest reader; WTS = last writer.</p>"
+  },
+  {
+   "id": "DB-U4-Q74",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "timestamp-ordering-and-deadlocks",
+   "subtopic": "timestamp-ordering-and-deadlocks",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-03",
+   "question": "Which of the following statements about timestamp ordering are TRUE? (Select all that apply.)",
+   "options": [
+    "A transaction that is restarted after an abort is given a new, larger timestamp, so it is always treated as the youngest transaction.",
+    "Basic timestamp ordering can force cascading rollback, because a read is never blocked and may see a value written by a transaction that has not yet committed.",
+    "Thomas's write rule ignores a write that the basic rule would have rejected, and the transaction continues.",
+    "Under Thomas's write rule a write is still rejected when <code class=\"mm\">TS(T) &lt; RTS(X)</code>."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "Timestamps are fixed at the start of a transaction and survive a restart unchanged. Thomas's write rule relaxes only the write-timestamp test; the read-timestamp test still aborts the writer.",
+    "steps": [
+     "(A) is FALSE. A restarted transaction keeps its original timestamp. Giving it a new, larger one would let it jump the queue and would break the ordering the protocol depends on.",
+     "(B) is TRUE. Nothing blocks a read, so an uncommitted value can be read; if the writer then aborts, the reader must be rolled back too.",
+     "(C) is TRUE. That is exactly what Thomas's rule does: the obsolete write is skipped, not rejected.",
+     "(D) is TRUE. If a younger transaction has already read <code class=\"mm\">X</code>, writing <code class=\"mm\">X</code> with an older timestamp would invalidate that read, so the write is still rejected."
+    ],
+    "final": "Options (B), (C) and (D).",
+    "trap": "Thomas's rule is often described as making timestamp ordering less strict across the board. It relaxes one test only, and option (A) is the other common error: restarts reuse the original timestamp."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Timestamps are fixed at the start of a transaction and survive a restart unchanged. Thomas's write rule relaxes only the write-timestamp test; the read-timestamp test still aborts the writer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is FALSE. A restarted transaction keeps its original timestamp. Giving it a new, larger one would let it jump the queue and would break the ordering the protocol depends on.</li><li>(B) is TRUE. Nothing blocks a read, so an uncommitted value can be read; if the writer then aborts, the reader must be rolled back too.</li><li>(C) is TRUE. That is exactly what Thomas's rule does: the obsolete write is skipped, not rejected.</li><li>(D) is TRUE. If a younger transaction has already read <code class=\"mm\">X</code>, writing <code class=\"mm\">X</code> with an older timestamp would invalidate that read, so the write is still rejected.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Thomas's rule is often described as making timestamp ordering less strict across the board. It relaxes one test only, and option (A) is the other common error: restarts reuse the original timestamp.</p><p class=\"row\"><b>Takeaway.</b> Restart keeps the timestamp; Thomas relaxes WTS only, never RTS.</p>"
+  },
+  {
+   "id": "DB-U4-Q75",
+   "subject": "databases",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "transactions-concurrency",
+   "unit_name": "Transactions & Concurrency Control",
+   "topic": "Transactions & Concurrency Control",
+   "sub": "timestamp-ordering-and-deadlocks",
+   "subtopic": "timestamp-ordering-and-deadlocks",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-03",
+   "question": "Transactions <code class=\"mm\">T1</code>, <code class=\"mm\">T2</code> and <code class=\"mm\">T3</code> have timestamps 10, 20 and 30. The read and write timestamps of <code class=\"mm\">X</code>, <code class=\"mm\">Y</code> and <code class=\"mm\">Z</code> all start at 0. Thomas's write rule is used for writes and the basic rule for reads, and the operations run in the order shown:<br/>1. <code class=\"mm\">w2(X)</code> &nbsp; 2. <code class=\"mm\">w1(X)</code> &nbsp; 3. <code class=\"mm\">r3(X)</code> &nbsp; 4. <code class=\"mm\">w1(Y)</code> &nbsp; 5. <code class=\"mm\">w3(Y)</code> &nbsp; 6. <code class=\"mm\">r2(X)</code> &nbsp; 7. <code class=\"mm\">w3(Z)</code> &nbsp; 8. <code class=\"mm\">w1(Z)</code> &nbsp; 9. <code class=\"mm\">r2(Y)</code> &nbsp; 10. <code class=\"mm\">r1(Y)</code><br/>How many of the ten operations are rejected, that is, cause their transaction to be aborted? (Enter an integer.)",
+   "options": [],
+   "answer": [
+    2
+   ],
+   "answer_display": "2",
+   "solution": {
+    "concept": "Three rules decide each operation. A read is rejected when <code class=\"mm\">TS(T) &lt; WTS(X)</code>. A write is rejected when <code class=\"mm\">TS(T) &lt; RTS(X)</code>. A write with <code class=\"mm\">TS(T) &lt; WTS(X)</code> but not below <code class=\"mm\">RTS(X)</code> is <i>ignored</i> under Thomas's rule, which is not a rejection.",
+    "steps": [
+     "1. <code class=\"mm\">w2(X)</code>: <code class=\"mm\">TS = 20</code>, both timestamps 0, so it executes and <code class=\"mm\">WTS(X) = 20</code>.",
+     "2. <code class=\"mm\">w1(X)</code>: <code class=\"mm\">TS = 10 &lt; RTS(X) = 0</code> is false, but <code class=\"mm\">10 &lt; WTS(X) = 20</code>, so the write is ignored. Not a rejection.",
+     "3. <code class=\"mm\">r3(X)</code>: <code class=\"mm\">30 &ge; WTS(X) = 20</code>, executes and <code class=\"mm\">RTS(X) = 30</code>.",
+     "4. <code class=\"mm\">w1(Y)</code>: <code class=\"mm\">10 &ge; RTS(Y) = 0</code> and <code class=\"mm\">10 &ge; WTS(Y) = 0</code>, executes and <code class=\"mm\">WTS(Y) = 10</code>.",
+     "5. <code class=\"mm\">w3(Y)</code>: <code class=\"mm\">30 &ge; 0</code> and <code class=\"mm\">30 &ge; 10</code>, executes and <code class=\"mm\">WTS(Y) = 30</code>.",
+     "6. <code class=\"mm\">r2(X)</code>: <code class=\"mm\">TS = 20 &lt; WTS(X) = 20</code> is false, so it executes; <code class=\"mm\">RTS(X) = max(30, 20) = 30</code>.",
+     "7. <code class=\"mm\">w3(Z)</code>: both timestamps 0, executes and <code class=\"mm\">WTS(Z) = 30</code>.",
+     "8. <code class=\"mm\">w1(Z)</code>: <code class=\"mm\">10 &lt; RTS(Z) = 0</code> is false, <code class=\"mm\">10 &lt; WTS(Z) = 30</code> is true, so the write is ignored. Not a rejection.",
+     "9. <code class=\"mm\">r2(Y)</code>: <code class=\"mm\">20 &lt; WTS(Y) = 30</code>, so it is rejected and <code class=\"mm\">T2</code> aborts.",
+     "10. <code class=\"mm\">r1(Y)</code>: <code class=\"mm\">10 &lt; WTS(Y) = 30</code>, so it is rejected and <code class=\"mm\">T1</code> aborts.",
+     "Rejections: operations 9 and 10, that is 2. Operations 2 and 8 were ignored, not rejected."
+    ],
+    "final": "2",
+    "trap": "The whole difficulty is the difference between <i>ignore</i> and <i>reject</i>. Counting the two ignored writes gives 4; counting only the abort of the writer gives 1. Note also that operation 6 executes, because the test is strict inequality <code class=\"mm\">TS &lt; WTS</code>, not <code class=\"mm\">&le;</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Three rules decide each operation. A read is rejected when <code class=\"mm\">TS(T) &lt; WTS(X)</code>. A write is rejected when <code class=\"mm\">TS(T) &lt; RTS(X)</code>. A write with <code class=\"mm\">TS(T) &lt; WTS(X)</code> but not below <code class=\"mm\">RTS(X)</code> is <i>ignored</i> under Thomas's rule, which is not a rejection.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>1. <code class=\"mm\">w2(X)</code>: <code class=\"mm\">TS = 20</code>, both timestamps 0, so it executes and <code class=\"mm\">WTS(X) = 20</code>.</li><li>2. <code class=\"mm\">w1(X)</code>: <code class=\"mm\">TS = 10 &lt; RTS(X) = 0</code> is false, but <code class=\"mm\">10 &lt; WTS(X) = 20</code>, so the write is ignored. Not a rejection.</li><li>3. <code class=\"mm\">r3(X)</code>: <code class=\"mm\">30 &ge; WTS(X) = 20</code>, executes and <code class=\"mm\">RTS(X) = 30</code>.</li><li>4. <code class=\"mm\">w1(Y)</code>: <code class=\"mm\">10 &ge; RTS(Y) = 0</code> and <code class=\"mm\">10 &ge; WTS(Y) = 0</code>, executes and <code class=\"mm\">WTS(Y) = 10</code>.</li><li>5. <code class=\"mm\">w3(Y)</code>: <code class=\"mm\">30 &ge; 0</code> and <code class=\"mm\">30 &ge; 10</code>, executes and <code class=\"mm\">WTS(Y) = 30</code>.</li><li>6. <code class=\"mm\">r2(X)</code>: <code class=\"mm\">TS = 20 &lt; WTS(X) = 20</code> is false, so it executes; <code class=\"mm\">RTS(X) = max(30, 20) = 30</code>.</li><li>7. <code class=\"mm\">w3(Z)</code>: both timestamps 0, executes and <code class=\"mm\">WTS(Z) = 30</code>.</li><li>8. <code class=\"mm\">w1(Z)</code>: <code class=\"mm\">10 &lt; RTS(Z) = 0</code> is false, <code class=\"mm\">10 &lt; WTS(Z) = 30</code> is true, so the write is ignored. Not a rejection.</li><li>9. <code class=\"mm\">r2(Y)</code>: <code class=\"mm\">20 &lt; WTS(Y) = 30</code>, so it is rejected and <code class=\"mm\">T2</code> aborts.</li><li>10. <code class=\"mm\">r1(Y)</code>: <code class=\"mm\">10 &lt; WTS(Y) = 30</code>, so it is rejected and <code class=\"mm\">T1</code> aborts.</li><li>Rejections: operations 9 and 10, that is 2. Operations 2 and 8 were ignored, not rejected.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> The whole difficulty is the difference between <i>ignore</i> and <i>reject</i>. Counting the two ignored writes gives 4; counting only the abort of the writer gives 1. Note also that operation 6 executes, because the test is strict inequality <code class=\"mm\">TS &lt; WTS</code>, not <code class=\"mm\">&le;</code>.</p><p class=\"row\"><b>Faster method.</b> Tabulate <code class=\"mm\">RTS</code> and <code class=\"mm\">WTS</code> per item and tick each operation I (ignored), R (rejected) or E (executed).</p><p class=\"row\"><b>Takeaway.</b> Thomas ignores stale writes; only a read that is too late, or a write that a reader has already overtaken, aborts the transaction.</p>"
   }
  ]
 }
