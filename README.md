@@ -7,34 +7,76 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 1 of 2 (second pass)**, 2026-11-04 →
-  [`databases/indexing-storage/gate_db_mock_5_2026-11-04.html`](databases/indexing-storage/gate_db_mock_5_2026-11-04.html)
+- **Theory of Computation · Unit 4 — Turing Machines & Decidability, Set 2 of 2 (third pass)**, 2026-11-04 →
+  [`theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-04.html`](theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Primary, secondary & clustering indexes (6) · Dense vs sparse indexing (6) ·
-  B-trees & B+ trees: order & capacity (8) · Static & dynamic hashing (5)
-- Rotation: MODE A. Every unit of every subject stands at or above `UNIT_QUESTION_CAP = 50`, so the draw ran over
-  all eleven subjects and returned **Databases**. Its most recent paper was
-  `{2026-11-03, run 13, unit 4, transactions-concurrency, Set 1 of 2 (second pass)}`, and unit 4 stood at **75**
-  questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(index_of(transactions-concurrency) = 3 + 1) mod 5 = 4` → **Unit 5, Indexing, B-Trees & Storage**, which
-  already held 50. **B5 applies: the modulo has wrapped into a second pass for Databases too**, and this paper is
-  the unit's third set, labelled Set 1 of 2 (second pass), taking it to 75. No override, no partial set, exactly
-  25 questions.
-- Previous test: **Discrete Mathematics · Unit 16 — Logic & Proof Techniques, Set 4 (second pass)**, 2026-11-03 →
-  [`discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html`](discrete-mathematics/proof-techniques/gate_dm_mock_16_2026-11-03.html)
+- Subtopics: Standard TM models & variants (5) · Recursive vs recursively enumerable (5) ·
+  Halting problem & undecidability (5) · Rice’s theorem & reductions (5) · Chomsky hierarchy summary (5)
+- Rotation: MODE A. An unseeded `random.SystemRandom()` draw over the eleven subjects in syllabus order returned
+  **Theory of Computation**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 19, unit 3, pushdown-automata, Set 2 of 2 (third pass)}` and unit 3 stood at **125** questions,
+  so **B3 failed on the cap** (its first paper was 2026-10-27, so the 7-day backstop was not the reason).
+  **B4 advanced exactly one unit**: `(index_of(pushdown-automata) = 2 + 1) mod 4 = 3` → **Unit 4, Turing Machines &
+  Decidability**, which already held 100 questions. **B5 applies: the modulo has wrapped again**, and this paper is
+  the unit's fifth set, labelled Set 2 of 2 (third pass), taking it to 125. No override was passed and no partial set
+  was generated: exactly 25 questions.
+- Previous test: **Databases · Unit 5 — Indexing, B-Trees & Storage, Set 1 of 2 (second pass)**, 2026-11-04 →
+  [`databases/indexing-storage/gate_db_mock_5_2026-11-04.html`](databases/indexing-storage/gate_db_mock_5_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 211 (34 Discrete Mathematics, 16 Algorithms, 15 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 19 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 71 current · 140 archived |
+| Papers published (current + archived) | 212 (34 Discrete Mathematics, 16 Algorithms, 15 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 141 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5275 (850 Discrete Mathematics, 400 Algorithms, 375 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 475 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5300 (850 Discrete Mathematics, 400 Algorithms, 375 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 140 (18 Discrete Mathematics, 9 Algorithms, 10 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 15 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 141 (18 Discrete Mathematics, 9 Algorithms, 10 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-04 — Theory of Computation Unit 4, Set 2 of 2 (third pass)
+
+- New paper at `theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-04.html`. The 2026-11-01
+  paper it supersedes moved to `archive/gate_toc_mock_4_2026-11-01_run4.html` with its content frozen, so the unit
+  folder holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `random.SystemRandom()` draw over the eleven subjects in syllabus
+  order returned **Theory of Computation**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 19, unit 3, pushdown-automata, Set 2 of 2 (third pass)}` and unit 3 stood at **125** questions,
+  so **B3 failed on the cap**. **B4 advanced exactly one unit**: `(index_of(pushdown-automata) = 2 + 1) mod 4 = 3`
+  → **Unit 4, Turing Machines & Decidability**, which already held 100 questions from four earlier sets. **B5
+  applies: every unit of the subject stands at or above the cap, the modulo has wrapped, and this is the unit's
+  fifth set** — labelled Set 2 of 2 (third pass) and taking the unit to **125**. No override was passed and no
+  partial set was generated: exactly 25 questions.
+- **Coverage.** All five subtopics of the unit carry five new questions each — standard TM models & variants 5,
+  recursive vs recursively enumerable 5, halting problem & undecidability 5, Rice's theorem & reductions 5,
+  Chomsky hierarchy summary 5.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every numeric answer was recomputed by script before the paper was written: the four-symbol
+  machine of Q4 halts after exactly `4 + 1 + 1 = 6` steps (simulated step by step); the two-state machine of Q14
+  first repeats the configuration it held after step 2 at step 4, so it loops with period 2; the two-state machine
+  of Q11 never reads a written cell and never halts in 20 simulated steps; of the six sets listed in Q9 exactly four
+  are recursive (three syntactic or step-bounded, one 1000-step-bounded acceptance test) and two fall to Rice; of
+  the six properties listed in Q19 five are properties of `L(M)` and one, the parity of the state count, is not;
+  and three of the four Chomsky levels — regular, context-sensitive, recursively enumerable — are closed under
+  intersection. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25
+  correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset of the correct set
+  scores 0 for that question (35 → 33 in every one of the five cases).
+- **Provenance.** The Theory of Computation bank records no verified PYQ, so no question on this paper is claimed as
+  an official GATE question; no item carries the `GATE_PYQ_VARIATION` tag, and the About tab says so.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 4 card is replaced in place and
+  lists the four earlier sets as archives (`run1` to `run4`); the question archive now renders 5,300 banked records
+  across the eleven per-subject data files, 500 of them Theory of Computation.
+- **Verification checklist (Section 6.8).** Shell parity: the `:root` block, the whole stylesheet, the palette
+  aside and the entire grading script are byte-identical to the previous paper's. One copy: `find . -name "*.html"`
+  shows `index.html` plus exactly one file per paper (213 files), and nothing at the repository root. Links: every
+  `href` in `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a 25-button palette and
+  475 banked cards (the 25 active items are excluded from the bank tab). Tokens: the `:root` block is byte-identical
+  to `design-tokens.css` and to the previous paper's. Rotation: unit 4 is the one Section 1 selects from
+  `master_bank.json`, not from the calendar.
 
 ### 2026-11-04 — Databases Unit 5, Set 1 of 2 (second pass)
 
