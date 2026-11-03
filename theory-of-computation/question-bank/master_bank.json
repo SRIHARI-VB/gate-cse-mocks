@@ -4,19 +4,19 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as practice.",
   "unit_question_cap": 50,
   "set_size": 25,
   "sets_per_unit": 2,
-  "total_questions": 475,
+  "total_questions": 500,
   "units_with_questions": [
    1,
    2,
    3,
    4
   ],
-  "total_runs": 19
+  "total_runs": 20
  },
  "runs": [
   {
@@ -1164,6 +1164,41 @@
    "mode": "MODE A (random subject draw, bank-driven unit rotation)",
    "selection": "MODE A. An unseeded secrets.randbelow(11) over the eleven GATE CSE subjects in syllabus order returned index 6 -> theory-of-computation. theory-of-computation/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-03, run 18, unit 2, cfl-grammars, Set 2 of 2 (third pass)}. Unit 2 held 125 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap; its first paper was 2026-10-26, eight days earlier, so the 7-day backstop would also have fired. Step B4 advanced exactly one unit: (index_of(cfl-grammars) = 1 + 1) mod 4 = 2 -> Unit 3, Pushdown Automata, which already held 100 questions. The 50-question ceiling governs the first pass; unit 3 is on its third pass, and this paper is the second set of that pass, taking the unit to 125. No override was passed and no partial set was generated: exactly 25 questions.",
    "note": "Coverage of all four unit-3 subtopics: deterministic-pda 7, nondeterministic-pda 7, acceptance-empty-store-vs-final-state 5, equivalence-with-cfg 6. Composition 15 MCQ / 5 MSQ / 5 NAT, difficulty 10 easy / 10 medium / 5 hard, 35 marks, no negative marking, MSQ exact-set scoring. No verified previous-year pushdown-automaton question exists in this bank, so no item carries GATE_PYQ_VARIATION and nothing on the paper is claimed as official."
+  },
+  {
+   "run": 20,
+   "date": "2026-11-04",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "set": "Set 2 of 2 (third pass)",
+   "count": 25,
+   "file": "theory-of-computation/turing-machines-decidability/gate_toc_mock_4_2026-11-04.html",
+   "archived_previous": "theory-of-computation/turing-machines-decidability/archive/gate_toc_mock_4_2026-11-01_run4.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "standard-turing-machine-models": 5,
+    "recursive-vs-recursively-enumerable": 5,
+    "halting-problem-undecidability": 5,
+    "rices-theorem-reductions": 5,
+    "chomsky-hierarchy-summary": 5
+   },
+   "mode": "MODE A (random subject, bank-driven unit rotation)",
+   "note": "Unit 4 stood at 100 questions, so step B4 advanced the rotation by one unit from unit 3; this is the unit's fifth set."
   }
  ],
  "verified_pyqs": [],
@@ -19119,6 +19154,940 @@
    "answer_display": "Option (B)",
    "solution_html": "<p class=\"row\"><b>Concept.</b> Questions about a single context-free grammar are usually decidable, because the grammar can be turned into a pushdown machine and searched. Questions that compare two grammars are usually not, because they amount to comparing two pushdown machines.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Emptiness: remove useless symbols and <code class=\"mm\">ε</code>-productions; the grammar generates some string exactly when the start symbol survives as productive. Decidable — so (B) is true.</li><li>Membership: the CYK algorithm decides in <code class=\"mm\">O(n³)</code> whether a given string is generated, so (C) is false.</li><li>Equivalence of two context-free grammars is undecidable — it is the classic undecidable problem for this class — so (A) is false.</li><li>Inherent ambiguity exists: <code class=\"mm\">{aⁱbʲcᵏ : i = j or j = k}</code> has no unambiguous grammar, so (D) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — emptiness of a context-free grammar is decidable.</span></p><p class=\"row\"><b>Why the other options are wrong.</b></p><ul><li>(A) Equivalence of context-free grammars is undecidable.</li><li>(C) Membership is decidable, by CYK or by simulating the corresponding NPDA.</li><li>(D) Some context-free languages are inherently ambiguous.</li></ul><p class=\"row\"><b>Common misconception.</b> Believing that everything about context-free grammars is decidable because the class is “simple”. Emptiness and membership are decidable; equivalence, ambiguity and universality are not.</p><p class=\"row\"><b>Takeaway.</b> One grammar, decidable. Two grammars, or a property of all derivations, generally undecidable.</p>",
    "solution_plain": "Concept. Questions about a single context-free grammar are usually decidable, because the grammar can be turned into a pushdown machine and searched. Questions that compare two grammars are usually not, because they amount to comparing two pushdown machines.Step by step.Emptiness: remove useless symbols and ε-productions; the grammar generates some string exactly when the start symbol survives as productive. Decidable — so (B) is true.Membership: the CYK algorithm decides in O(n³) whether a given string is generated, so (C) is false.Equivalence of two context-free grammars is undecidable — it is the classic undecidable problem for this class — so (A) is false.Inherent ambiguity exists: {aⁱbʲcᵏ : i = j or j = k} has no unambiguous grammar, so (D) is false.Answer: Option (B) — emptiness of a context-free grammar is decidable.Why the other options are wrong.(A) Equivalence of context-free grammars is undecidable.(C) Membership is decidable, by CYK or by simulating the corresponding NPDA.(D) Some context-free languages are inherently ambiguous.Common misconception. Believing that everything about context-free grammars is decidable because the class is “simple”. Emptiness and membership are decidable; equivalence, ambiguity and universality are not.Takeaway. One grammar, decidable. Two grammars, or a property of all derivations, generally undecidable."
+  },
+  {
+   "id": "TOC-U4-Q101",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "standard-turing-machine-models",
+   "subtopic": "standard-turing-machine-models",
+   "subtopic_label": "Standard Turing machine models",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following restrictions on a Turing machine does not preserve its power to accept every recursively enumerable language?",
+   "question_html": "<p class=\"qtext\">Which one of the following restrictions on a Turing machine does <b>not</b> preserve its power to accept every recursively enumerable language?</p>",
+   "options": [
+    "Restricting the tape alphabet to three symbols, one of which is the blank.",
+    "Allowing the tape to be infinite in one direction only.",
+    "Confining the head to the first 100 cells of the tape.",
+    "Allowing a transition to leave the head where it is instead of moving it."
+   ],
+   "options_html": [
+    "Restricting the tape alphabet to three symbols, one of which is the blank.",
+    "Allowing the tape to be infinite in one direction only.",
+    "Confining the head to the first 100 cells of the tape.",
+    "Allowing a transition to leave the head where it is instead of moving it."
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A variant is equivalent to the standard machine only if it keeps an <i>unbounded</i> amount of storage. The tape is the only unbounded store a Turing machine has, so any restriction that bounds the part of the tape the head can reach turns the machine into a finite-state device.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A) Three tape symbols.</b> Encode each of the original symbols in a block of <span class=\"mm\">⌈log₂ k⌉</span> cells over a binary alphabet and mark block boundaries with the third symbol. The tape stays infinite, so nothing is lost.</li><li><b>(B) One-way infinite tape.</b> Fold the tape: keep the two halves on two tracks of the one-way tape, writing a marker on the track that represents the cells to the left of the origin. Again the storage stays unbounded.</li><li><b>(D) A stationary head.</b> Replace every stationary move by a move right followed by a move left, which returns the head to the same cell.</li><li><b>(C) A head confined to 100 cells.</b> The configuration is then (state, head position, contents of 100 cells), and there are only <span class=\"mm\">|Q| · 100 · 3¹⁰⁰</span> of them &mdash; a finite number. A machine with finitely many configurations is a finite automaton with output, so it accepts only regular languages.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) &mdash; a bounded tape region gives finite memory, hence at most regular languages.</span></p><p class=\"row\"><b>Common misconception.</b> Reading &ldquo;restriction&rdquo; as &ldquo;weakening&rdquo;. The robust variants all leave the tape unbounded; only a bound on the reachable tape changes the class of languages, and then it collapses all the way to the regular languages, not merely to some smaller r.e. class.</p><p class=\"row\"><b>Takeaway.</b> Ask of any variant: is the reachable storage still unbounded? If yes the model is equivalent; if no, the machine is finite-state.</p>",
+   "solution_plain": "Detailed solutionConcept. A variant is equivalent to the standard machine only if it keeps an unbounded amount of storage. The tape is the only unbounded store a Turing machine has, so any restriction that bounds the part of the tape the head can reach turns the machine into a finite-state device.Step by step.(A) Three tape symbols. Encode each of the original symbols in a block of ⌈log₂ k⌉ cells over a binary alphabet and mark block boundaries with the third symbol. The tape stays infinite, so nothing is lost.(B) One-way infinite tape. Fold the tape: keep the two halves on two tracks of the one-way tape, writing a marker on the track that represents the cells to the left of the origin. Again the storage stays unbounded.(D) A stationary head. Replace every stationary move by a move right followed by a move left, which returns the head to the same cell.(C) A head confined to 100 cells. The configuration is then (state, head position, contents of 100 cells), and there are only |Q| · 100 · 3¹⁰⁰ of them — a finite number. A machine with finitely many configurations is a finite automaton with output, so it accepts only regular languages.Answer: Option (C) — a bounded tape region gives finite memory, hence at most regular languages.Common misconception. Reading “restriction” as “weakening”. The robust variants all leave the tape unbounded; only a bound on the reachable tape changes the class of languages, and then it collapses all the way to the regular languages, not merely to some smaller r.e. class.Takeaway. Ask of any variant: is the reachable storage still unbounded? If yes the model is equivalent; if no, the machine is finite-state."
+  },
+  {
+   "id": "TOC-U4-Q102",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "standard-turing-machine-models",
+   "subtopic": "standard-turing-machine-models",
+   "subtopic_label": "Standard Turing machine models",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "A k-tape deterministic Turing machine M halts on every input and, on inputs of length n, uses at most s(n) ≥ n cells on each of its tapes. A single-tape Turing machine simulates M. Which one of the following is TRUE of that simulation?",
+   "question_html": "<p class=\"qtext\">A <span class=\"mm\">k</span>-tape deterministic Turing machine <span class=\"mm\">M</span> halts on every input and, on inputs of length <span class=\"mm\">n</span>, uses at most <span class=\"mm\">s(n) ≥ n</span> cells on each of its tapes. A single-tape Turing machine simulates <span class=\"mm\">M</span>. Which one of the following is <b>TRUE</b> of that simulation?</p>",
+   "options": [
+    "It uses O(s(n)) space and O(s(n)²) time.",
+    "It uses O(s(n)²) space and O(s(n)²) time.",
+    "It uses O(2^(s(n))) space and O(s(n)) time.",
+    "No single-tape machine can simulate it, because one tape cannot hold k independent tracks."
+   ],
+   "options_html": [
+    "It uses <span class=\"mm\">O(s(n))</span> space and <span class=\"mm\">O(s(n)²)</span> time.",
+    "It uses <span class=\"mm\">O(s(n)²)</span> space and <span class=\"mm\">O(s(n)²)</span> time.",
+    "It uses <span class=\"mm\">O(2^(s(n)))</span> space and <span class=\"mm\">O(s(n))</span> time.",
+    "No single-tape machine can simulate it, because one tape cannot hold <span class=\"mm\">k</span> independent tracks."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A single tape can hold all <span class=\"mm\">k</span> tapes side by side as tracks: cell <span class=\"mm\">i</span> of the single tape stores the <span class=\"mm\">i</span>-th symbol of every tape plus a marker saying which track the head is on. The simulation is slower, not more greedy in space.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The used region of the single tape is exactly the longest of the <span class=\"mm\">k</span> used regions, so the space is <span class=\"mm\">O(k · s(n)) = O(s(n))</span> for a fixed <span class=\"mm\">k</span>.</li><li>To simulate one step of <span class=\"mm\">M</span> the head must visit all <span class=\"mm\">k</span> head markers, which lie within the used region: one sweep of length <span class=\"mm\">O(s(n))</span>.</li><li><span class=\"mm\">M</span> runs for at most the number of its configurations, which is <span class=\"mm\">2^(O(s(n)))</span>, but the space bound alone already forces the weaker, purely structural statement that a step costs one sweep; the time is <span class=\"mm\">O(s(n))</span> per step and there are <span class=\"mm\">O(s(n))</span> steps before the used region can grow past <span class=\"mm\">s(n)</span>, giving <span class=\"mm\">O(s(n)²)</span>.</li><li>So space is preserved up to a constant and time is squared &mdash; (A).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; space stays <span class=\"mm\">O(s(n))</span>, time becomes <span class=\"mm\">O(s(n)²)</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Squaring the space as well as the time. Tracks share the cells; only the number of head visits multiplies, and visits cost time, not space.</p><p class=\"row\"><b>Takeaway.</b> Simulating many tapes on one squares the <i>time</i>; the <i>space</i> is the same up to a constant factor.</p>",
+   "solution_plain": "Detailed solutionConcept. A single tape can hold all k tapes side by side as tracks: cell i of the single tape stores the i-th symbol of every tape plus a marker saying which track the head is on. The simulation is slower, not more greedy in space.Step by step.The used region of the single tape is exactly the longest of the k used regions, so the space is O(k · s(n)) = O(s(n)) for a fixed k.To simulate one step of M the head must visit all k head markers, which lie within the used region: one sweep of length O(s(n)).M runs for at most the number of its configurations, which is 2^(O(s(n))), but the space bound alone already forces the weaker, purely structural statement that a step costs one sweep; the time is O(s(n)) per step and there are O(s(n)) steps before the used region can grow past s(n), giving O(s(n)²).So space is preserved up to a constant and time is squared — (A).Answer: Option (A) — space stays O(s(n)), time becomes O(s(n)²).Common misconception. Squaring the space as well as the time. Tracks share the cells; only the number of head visits multiplies, and visits cost time, not space.Takeaway. Simulating many tapes on one squares the time; the space is the same up to a constant factor."
+  },
+  {
+   "id": "TOC-U4-Q103",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "standard-turing-machine-models",
+   "subtopic": "standard-turing-machine-models",
+   "subtopic_label": "Standard Turing machine models",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which of the following statements about the standard single-tape deterministic Turing machine are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the standard single-tape deterministic Turing machine are <b>TRUE</b>? (Select all that apply.)</p>",
+   "options": [
+    "The blank symbol may be written, which effectively erases the cell.",
+    "Every Turing machine has exactly one accepting state.",
+    "The input alphabet is a subset of the tape alphabet and does not contain the blank.",
+    "The transition function may be partial: a state-symbol pair on which it is undefined halts the machine."
+   ],
+   "options_html": [
+    "The blank symbol may be written, which effectively erases the cell.",
+    "Every Turing machine has exactly one accepting state.",
+    "The input alphabet is a subset of the tape alphabet and does not contain the blank.",
+    "The transition function may be partial: a state-symbol pair on which it is undefined halts the machine."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The definition fixes three alphabets &mdash; input <span class=\"mm\">Σ</span>, tape <span class=\"mm\">Γ</span> and the blank <span class=\"mm\">␣</span> &mdash; a finite state set with one start state, a set of accepting states and a set of rejecting states, and a transition function that may be partial.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> True. Writing the blank is a legal move and is exactly how a Turing machine erases: the cell returns to its initial appearance.</li><li><b>(B)</b> False. The accepting states form a <i>set</i>; a machine may have several of them, or none if it is designed never to accept.</li><li><b>(C)</b> True. <span class=\"mm\">Σ ⊆ Γ</span>, and the blank is in <span class=\"mm\">Γ \\ Σ</span> so that the end of the input is recognisable.</li><li><b>(D)</b> True. <span class=\"mm\">δ</span> is a partial function; if <span class=\"mm\">δ(q, a)</span> is undefined the machine has no move and the run ends in the halting state <span class=\"mm\">q</span>, which accepts exactly when <span class=\"mm\">q</span> is accepting.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Believing a machine must have a single final state, as a DFA does. Turing machines have sets of accepting and rejecting states, and halting is a property of the configuration, not of a designated stop instruction.</p><p class=\"row\"><b>Takeaway.</b> Halting = no applicable move. Accepting = halting in an accepting state. The two are different tests.</p>",
+   "solution_plain": "Detailed solutionConcept. The definition fixes three alphabets — input Σ, tape Γ and the blank ␣ — a finite state set with one start state, a set of accepting states and a set of rejecting states, and a transition function that may be partial.Step by step.(A) True. Writing the blank is a legal move and is exactly how a Turing machine erases: the cell returns to its initial appearance.(B) False. The accepting states form a set; a machine may have several of them, or none if it is designed never to accept.(C) True. Σ ⊆ Γ, and the blank is in Γ \\ Σ so that the end of the input is recognisable.(D) True. δ is a partial function; if δ(q, a) is undefined the machine has no move and the run ends in the halting state q, which accepts exactly when q is accepting.Answer: Options (A), (C) and (D).Common misconception. Believing a machine must have a single final state, as a DFA does. Turing machines have sets of accepting and rejecting states, and halting is a property of the configuration, not of a designated stop instruction.Takeaway. Halting = no applicable move. Accepting = halting in an accepting state. The two are different tests."
+  },
+  {
+   "id": "TOC-U4-Q104",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "standard-turing-machine-models",
+   "subtopic": "standard-turing-machine-models",
+   "subtopic_label": "Standard Turing machine models",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "A Turing machine has states q₀, q₁, q₂, q₃ with q₃ the only accepting state, tape alphabet {␣, 1}, and the transitions below. A pair not listed has no move. The machine starts in q₀ with its head on the leftmost 1 of the input 1111. δ(q₀,1) = (q₁,1,R), δ(q₁,1) = (q₀,1,R), δ(q₀,␣) = (q₂,␣,L), δ(q₁,␣) = (q₂,␣,L), δ(q₂,1) = (q₃,1,R). How many steps does the machine take before it halts, counting one step as one application of δ? (Enter a single integer.)",
+   "question_html": "<p class=\"qtext\">A Turing machine has states <span class=\"mm\">q₀, q₁, q₂, q₃</span> with <span class=\"mm\">q₃</span> the only accepting state, tape alphabet <span class=\"mm\">{␣, 1}</span>, and the transitions below. A pair not listed has no move. The machine starts in <span class=\"mm\">q₀</span> with its head on the leftmost <span class=\"mm\">1</span> of the input <span class=\"mm\">1111</span>.<br/><span class=\"mm\">δ(q₀,1) = (q₁,1,R)</span>, <span class=\"mm\">δ(q₁,1) = (q₀,1,R)</span>, <span class=\"mm\">δ(q₀,␣) = (q₂,␣,L)</span>, <span class=\"mm\">δ(q₁,␣) = (q₂,␣,L)</span>, <span class=\"mm\">δ(q₂,1) = (q₃,1,R)</span>.<br/>How many steps does the machine take before it halts, counting one step as one application of <span class=\"mm\">δ</span>?<br/>(Enter a single integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    6
+   ],
+   "answer_display": "6",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A run is the sequence of configurations; each configuration is the state, the head position and the tape contents. Counting steps means counting applications of <span class=\"mm\">δ</span> from the initial configuration to the halting one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Steps 1&ndash;4: <span class=\"mm\">q₀</span> and <span class=\"mm\">q₁</span> alternate while the head moves right across the four <span class=\"mm\">1</span>s, rewriting each <span class=\"mm\">1</span> as <span class=\"mm\">1</span>.</li><li>After step 4 the head is on the blank in cell 5 and the state is <span class=\"mm\">q₀</span>.</li><li>Step 5: <span class=\"mm\">δ(q₀,␣) = (q₂,␣,L)</span> moves the head back to cell 4, which holds a <span class=\"mm\">1</span>.</li><li>Step 6: <span class=\"mm\">δ(q₂,1) = (q₃,1,R)</span> enters <span class=\"mm\">q₃</span>, an accepting halting state, so the run ends.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6 steps (range: exactly 6).</span></p><p class=\"row\"><b>Common misconception.</b> Reporting 5 by forgetting the final move into the halting state, or 4 by counting only the moves that read the input. Entering a halting state is itself produced by a transition, so it is a step.</p><p class=\"row\"><b>Takeaway.</b> Steps = moves. A run that reads <span class=\"mm\">n</span> input symbols and then takes one closing move costs <span class=\"mm\">n + 1</span> steps only when no symbol is re-read; trace the machine instead of guessing.</p>",
+   "solution_plain": "Detailed solutionConcept. A run is the sequence of configurations; each configuration is the state, the head position and the tape contents. Counting steps means counting applications of δ from the initial configuration to the halting one.Step by step.Steps 1–4: q₀ and q₁ alternate while the head moves right across the four 1s, rewriting each 1 as 1.After step 4 the head is on the blank in cell 5 and the state is q₀.Step 5: δ(q₀,␣) = (q₂,␣,L) moves the head back to cell 4, which holds a 1.Step 6: δ(q₂,1) = (q₃,1,R) enters q₃, an accepting halting state, so the run ends.Answer: 6 steps (range: exactly 6).Common misconception. Reporting 5 by forgetting the final move into the halting state, or 4 by counting only the moves that read the input. Entering a halting state is itself produced by a transition, so it is a step.Takeaway. Steps = moves. A run that reads n input symbols and then takes one closing move costs n + 1 steps only when no symbol is re-read; trace the machine instead of guessing."
+  },
+  {
+   "id": "TOC-U4-Q105",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "standard-turing-machine-models",
+   "subtopic": "standard-turing-machine-models",
+   "subtopic_label": "Standard Turing machine models",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "A deterministic Turing machine M halts on every input and, on inputs of length n, uses at most s(n) ≥ log n cells of tape. Which one of the following follows from the space bound alone?",
+   "question_html": "<p class=\"qtext\">A deterministic Turing machine <span class=\"mm\">M</span> halts on every input and, on inputs of length <span class=\"mm\">n</span>, uses at most <span class=\"mm\">s(n) ≥ log n</span> cells of tape. Which one of the following follows from the space bound alone?</p>",
+   "options": [
+    "M can be simulated by a machine that runs in time 2^(O(s(n))).",
+    "M runs in time O(s(n)²).",
+    "M runs in time O(s(n) log s(n)).",
+    "No bound on the running time of M follows from a bound on its space."
+   ],
+   "options_html": [
+    "<span class=\"mm\">M</span> can be simulated by a machine that runs in time <span class=\"mm\">2^(O(s(n)))</span>.",
+    "<span class=\"mm\">M</span> runs in time <span class=\"mm\">O(s(n)²)</span>.",
+    "<span class=\"mm\">M</span> runs in time <span class=\"mm\">O(s(n) log s(n))</span>.",
+    "No bound on the running time of <span class=\"mm\">M</span> follows from a bound on its space."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A configuration of <span class=\"mm\">M</span> on an input of length <span class=\"mm\">n</span> is determined by the state, the head position and the contents of the at most <span class=\"mm\">s(n)</span> used cells. If a halting computation repeated a configuration it would repeat forever, so the length of the run is bounded by the number of configurations.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count configurations: <span class=\"mm\">|Q| · s(n) · |Γ|^(s(n))</span>.</li><li>Take logarithms: <span class=\"mm\">log|Q| + log s(n) + s(n) log|Γ| = O(s(n))</span>, since <span class=\"mm\">s(n) ≥ log n</span> makes <span class=\"mm\">log s(n) = O(s(n))</span>.</li><li>Hence the number of configurations is <span class=\"mm\">2^(O(s(n)))</span>, and a halting run cannot be longer.</li><li>So (A) holds, and (B), (C) are far too strong: a machine may spend exponentially many steps inside a linear amount of space.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; time <span class=\"mm\">2^(O(s(n)))</span>.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that small space means fast. A counter machine with a handful of counters can run for an astronomical number of steps inside linear space; only an exponential time bound is available.</p><p class=\"row\"><b>Takeaway.</b> Space <span class=\"mm\">s(n)</span> gives time <span class=\"mm\">2^(O(s(n)))</span> by configuration counting &mdash; the same counting argument that proves the space hierarchy theorem.</p>",
+   "solution_plain": "Detailed solutionConcept. A configuration of M on an input of length n is determined by the state, the head position and the contents of the at most s(n) used cells. If a halting computation repeated a configuration it would repeat forever, so the length of the run is bounded by the number of configurations.Step by step.Count configurations: |Q| · s(n) · |Γ|^(s(n)).Take logarithms: log|Q| + log s(n) + s(n) log|Γ| = O(s(n)), since s(n) ≥ log n makes log s(n) = O(s(n)).Hence the number of configurations is 2^(O(s(n))), and a halting run cannot be longer.So (A) holds, and (B), (C) are far too strong: a machine may spend exponentially many steps inside a linear amount of space.Answer: Option (A) — time 2^(O(s(n))).Common misconception. Assuming that small space means fast. A counter machine with a handful of counters can run for an astronomical number of steps inside linear space; only an exponential time bound is available.Takeaway. Space s(n) gives time 2^(O(s(n))) by configuration counting — the same counting argument that proves the space hierarchy theorem."
+  },
+  {
+   "id": "TOC-U4-Q106",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "recursive-vs-recursively-enumerable",
+   "subtopic": "recursive-vs-recursively-enumerable",
+   "subtopic_label": "Recursive vs recursively enumerable",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following statements about recursively enumerable languages is TRUE?",
+   "question_html": "<p class=\"qtext\">Which one of the following statements about recursively enumerable languages is <b>TRUE</b>?</p>",
+   "options": [
+    "Every non-empty recursively enumerable language is the range of some total computable function.",
+    "Every non-empty recursively enumerable language is the range of some injective total computable function.",
+    "The range of a total computable function need not be recursively enumerable.",
+    "A language is recursively enumerable if and only if it is infinite."
+   ],
+   "options_html": [
+    "Every non-empty recursively enumerable language is the range of some total computable function.",
+    "Every non-empty recursively enumerable language is the range of some injective total computable function.",
+    "The range of a total computable function need not be recursively enumerable.",
+    "A language is recursively enumerable if and only if it is infinite."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An r.e. language is the set of strings a machine eventually accepts; running that machine in dovetail fashion turns acceptance into output, so r.e. languages are exactly the ranges of total computable functions (with the single exception of the empty language).</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Let <span class=\"mm\">L ≠ ∅</span> be accepted by <span class=\"mm\">M</span>. Fix any <span class=\"mm\">s₀ ∈ L</span>.</li><li>Enumerate pairs <span class=\"mm\">(i, k)</span> in order of <span class=\"mm\">i + k</span>: simulate <span class=\"mm\">M</span> on the <span class=\"mm\">i</span>-th string for <span class=\"mm\">k</span> steps.</li><li>Whenever the simulation accepts a string not yet printed, print it; when the pair yields nothing, print <span class=\"mm\">s₀</span>.</li><li>This is a total computable function whose range is exactly <span class=\"mm\">L</span> &mdash; every member is printed eventually, nothing else is ever printed.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Dropping the words &ldquo;non-empty&rdquo;. The empty set is r.e. but no total function has an empty range, so the empty language is the one exception; that is why the statement is phrased as it is. Option (B) fails for <span class=\"mm\">{ε}</span>, whose only total functions with that range are the constant ones, and a constant function is not injective.</p><p class=\"row\"><b>Takeaway.</b> r.e. = range of a total computable function = domain of a partial computable function. Both characterisations are used constantly in reductions.</p>",
+   "solution_plain": "Detailed solutionConcept. An r.e. language is the set of strings a machine eventually accepts; running that machine in dovetail fashion turns acceptance into output, so r.e. languages are exactly the ranges of total computable functions (with the single exception of the empty language).Step by step.Let L ≠ ∅ be accepted by M. Fix any s₀ ∈ L.Enumerate pairs (i, k) in order of i + k: simulate M on the i-th string for k steps.Whenever the simulation accepts a string not yet printed, print it; when the pair yields nothing, print s₀.This is a total computable function whose range is exactly L — every member is printed eventually, nothing else is ever printed.Answer: Option (A).Common misconception. Dropping the words “non-empty”. The empty set is r.e. but no total function has an empty range, so the empty language is the one exception; that is why the statement is phrased as it is. Option (B) fails for {ε}, whose only total functions with that range are the constant ones, and a constant function is not injective.Takeaway. r.e. = range of a total computable function = domain of a partial computable function. Both characterisations are used constantly in reductions."
+  },
+  {
+   "id": "TOC-U4-Q107",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "recursive-vs-recursively-enumerable",
+   "subtopic": "recursive-vs-recursively-enumerable",
+   "subtopic_label": "Recursive vs recursively enumerable",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Let A and B be languages over the same alphabet with A ≤m B and B ≤m A. Which one of the following is TRUE?",
+   "question_html": "<p class=\"qtext\">Let <span class=\"mm\">A</span> and <span class=\"mm\">B</span> be languages over the same alphabet with <span class=\"mm\">A ≤m B</span> and <span class=\"mm\">B ≤m A</span>. Which one of the following is <b>TRUE</b>?</p>",
+   "options": [
+    "A is recursive if and only if B is recursive.",
+    "A = B.",
+    "A is recursive whenever B is recursively enumerable.",
+    "A and B have the same complement."
+   ],
+   "options_html": [
+    "<span class=\"mm\">A</span> is recursive if and only if <span class=\"mm\">B</span> is recursive.",
+    "<span class=\"mm\">A = B</span>.",
+    "<span class=\"mm\">A</span> is recursive whenever <span class=\"mm\">B</span> is recursively enumerable.",
+    "<span class=\"mm\">A</span> and <span class=\"mm\">B</span> have the same complement."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A mapping reduction <span class=\"mm\">A ≤m B</span> transfers decidability backwards: a decider for <span class=\"mm\">B</span> plus the reduction decides <span class=\"mm\">A</span>. Mutual reducibility therefore transfers decidability in both directions.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <span class=\"mm\">B</span> is recursive and <span class=\"mm\">A ≤m B</span> via <span class=\"mm\">f</span>, then <span class=\"mm\">x ∈ A ⇔ f(x) ∈ B</span>, so running the decider for <span class=\"mm\">B</span> on <span class=\"mm\">f(x)</span> decides <span class=\"mm\">A</span>. Hence <span class=\"mm\">A</span> is recursive.</li><li>The same argument with the roles exchanged gives the converse.</li><li>(B) is false: <span class=\"mm\">Σ*</span> and <span class=\"mm\">{⟨M⟩ : M halts on ε}</span> reduce to each other but are different sets.</li><li>(C) is false: <span class=\"mm\">A</span> could be <span class=\"mm\">K̄</span> and <span class=\"mm\">B</span> could be <span class=\"mm\">K</span>, both r.e.-complete up to complement, with <span class=\"mm\">A</span> not r.e. at all.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading <span class=\"mm\">≤m</span> as an ordering of <i>sets</i> rather than of <i>difficulty</i>. It says nothing about containment or equality, only that one membership question can be turned into the other.</p><p class=\"row\"><b>Takeaway.</b> Mutual reduction makes two languages equally hard: same decidability status, same r.e. status, and if one is complete for a class so is the other.</p>",
+   "solution_plain": "Detailed solutionConcept. A mapping reduction A ≤m B transfers decidability backwards: a decider for B plus the reduction decides A. Mutual reducibility therefore transfers decidability in both directions.Step by step.If B is recursive and A ≤m B via f, then x ∈ A ⇔ f(x) ∈ B, so running the decider for B on f(x) decides A. Hence A is recursive.The same argument with the roles exchanged gives the converse.(B) is false: Σ* and {⟨M⟩ : M halts on ε} reduce to each other but are different sets.(C) is false: A could be K̄ and B could be K, both r.e.-complete up to complement, with A not r.e. at all.Answer: Option (A).Common misconception. Reading ≤m as an ordering of sets rather than of difficulty. It says nothing about containment or equality, only that one membership question can be turned into the other.Takeaway. Mutual reduction makes two languages equally hard: same decidability status, same r.e. status, and if one is complete for a class so is the other."
+  },
+  {
+   "id": "TOC-U4-Q108",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "recursive-vs-recursively-enumerable",
+   "subtopic": "recursive-vs-recursively-enumerable",
+   "subtopic_label": "Recursive vs recursively enumerable",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Let L₁ and L₂ be recursively enumerable languages over the same alphabet. Which of the following languages are necessarily recursively enumerable? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Let <span class=\"mm\">L₁</span> and <span class=\"mm\">L₂</span> be recursively enumerable languages over the same alphabet. Which of the following languages are necessarily recursively enumerable? (Select all that apply.)</p>",
+   "options": [
+    "L₁ ∪ L₂",
+    "L₁ ∩ L₂",
+    "the complement of L₁",
+    "L₁ − L₂"
+   ],
+   "options_html": [
+    "<span class=\"mm\">L₁ ∪ L₂</span>",
+    "<span class=\"mm\">L₁ ∩ L₂</span>",
+    "the complement of <span class=\"mm\">L₁</span>",
+    "<span class=\"mm\">L₁ − L₂</span>"
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two semi-deciders can be run in parallel (dovetail). Union asks for <i>one</i> acceptance, intersection asks for <i>both</i>; a complement asks for a rejection, which a semi-decider can never certify.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>Union.</b> Simulate <span class=\"mm\">M₁</span> and <span class=\"mm\">M₂</span> on <span class=\"mm\">w</span> step by step, alternating. If either accepts, accept. If <span class=\"mm\">w ∈ L₁ ∪ L₂</span> one of them accepts, so the procedure accepts; otherwise it runs forever. r.e.</li><li><b>Intersection.</b> Same alternation, but accept only when <i>both</i> have accepted. r.e.</li><li><b>Complement.</b> Not r.e. in general: <span class=\"mm\">K̄</span> is the complement of an r.e. set and is not r.e.</li><li><b>Difference.</b> <span class=\"mm\">L₁ − L₂ = L₁ ∩ L̄₂</span>, and <span class=\"mm\">L̄₂</span> need not be r.e., so nothing follows &mdash; take <span class=\"mm\">L₁ = Σ*</span> and <span class=\"mm\">L₂ = K</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B) &mdash; union and intersection.</span></p><p class=\"row\"><b>Common misconception.</b> Carrying the closure of the recursive languages over to the r.e. ones. Recursive languages are closed under all four operations; r.e. languages are closed under union and intersection only.</p><p class=\"row\"><b>Takeaway.</b> Positive information (a string is in) can be combined; negative information (a string is out) cannot be produced by a semi-decider.</p>",
+   "solution_plain": "Detailed solutionConcept. Two semi-deciders can be run in parallel (dovetail). Union asks for one acceptance, intersection asks for both; a complement asks for a rejection, which a semi-decider can never certify.Step by step.Union. Simulate M₁ and M₂ on w step by step, alternating. If either accepts, accept. If w ∈ L₁ ∪ L₂ one of them accepts, so the procedure accepts; otherwise it runs forever. r.e.Intersection. Same alternation, but accept only when both have accepted. r.e.Complement. Not r.e. in general: K̄ is the complement of an r.e. set and is not r.e.Difference. L₁ − L₂ = L₁ ∩ L̄₂, and L̄₂ need not be r.e., so nothing follows — take L₁ = Σ* and L₂ = K.Answer: Options (A) and (B) — union and intersection.Common misconception. Carrying the closure of the recursive languages over to the r.e. ones. Recursive languages are closed under all four operations; r.e. languages are closed under union and intersection only.Takeaway. Positive information (a string is in) can be combined; negative information (a string is out) cannot be produced by a semi-decider."
+  },
+  {
+   "id": "TOC-U4-Q109",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "recursive-vs-recursively-enumerable",
+   "subtopic": "recursive-vs-recursively-enumerable",
+   "subtopic_label": "Recursive vs recursively enumerable",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "How many of the following six sets are recursive? (i) {⟨M⟩ : M has at least three states} (ii) {⟨M⟩ : M halts on ε within 100 steps} (iii) {⟨M⟩ : L(M) = Σ*} (iv) {⟨M, w⟩ : M accepts w within 1000 steps} (v) {⟨M⟩ : M never moves its head to the left} (vi) {⟨M⟩ : L(M) is finite} (Enter a single integer.)",
+   "question_html": "<p class=\"qtext\">How many of the following six sets are recursive?<br/>(i) <span class=\"mm\">{⟨M⟩ : M has at least three states}</span><br/>(ii) <span class=\"mm\">{⟨M⟩ : M halts on ε within 100 steps}</span><br/>(iii) <span class=\"mm\">{⟨M⟩ : L(M) = Σ*}</span><br/>(iv) <span class=\"mm\">{⟨M, w⟩ : M accepts w within 1000 steps}</span><br/>(v) <span class=\"mm\">{⟨M⟩ : M never moves its head to the left}</span><br/>(vi) <span class=\"mm\">{⟨M⟩ : L(M) is finite}</span><br/>(Enter a single integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    4
+   ],
+   "answer_display": "4",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A question is decidable when the answer can be read off a finite object: the text of the machine, or a computation of bounded length. It becomes undecidable as soon as the answer depends on the whole language <span class=\"mm\">L(M)</span> or on an unbounded run.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(i)</b> Count the states in the description. Decidable.</li><li><b>(ii)</b> Simulate 100 steps and look. Decidable.</li><li><b>(iii)</b> A property of <span class=\"mm\">L(M)</span>, true of some machines and false of others: undecidable by Rice&rsquo;s theorem.</li><li><b>(iv)</b> Simulate 1000 steps on <span class=\"mm\">w</span>. Decidable.</li><li><b>(v)</b> Read the transition table and check the direction field of every move. Decidable.</li><li><b>(vi)</b> Undecidable by Rice&rsquo;s theorem &mdash; finiteness is a non-trivial property of <span class=\"mm\">L(M)</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 &mdash; (i), (ii), (iv) and (v) are recursive.</span></p><p class=\"row\"><b>Common misconception.</b> Treating (v) as undecidable because it sounds like &ldquo;M never halts&rdquo;. The word &ldquo;never&rdquo; is about the transition table, a finite object, not about a run.</p><p class=\"row\"><b>Takeaway.</b> Before invoking Rice, ask whether the property is about the description of <span class=\"mm\">M</span> (usually decidable) or about <span class=\"mm\">L(M)</span> (usually not).</p>",
+   "solution_plain": "Detailed solutionConcept. A question is decidable when the answer can be read off a finite object: the text of the machine, or a computation of bounded length. It becomes undecidable as soon as the answer depends on the whole language L(M) or on an unbounded run.Step by step.(i) Count the states in the description. Decidable.(ii) Simulate 100 steps and look. Decidable.(iii) A property of L(M), true of some machines and false of others: undecidable by Rice’s theorem.(iv) Simulate 1000 steps on w. Decidable.(v) Read the transition table and check the direction field of every move. Decidable.(vi) Undecidable by Rice’s theorem — finiteness is a non-trivial property of L(M).Answer: 4 — (i), (ii), (iv) and (v) are recursive.Common misconception. Treating (v) as undecidable because it sounds like “M never halts”. The word “never” is about the transition table, a finite object, not about a run.Takeaway. Before invoking Rice, ask whether the property is about the description of M (usually decidable) or about L(M) (usually not)."
+  },
+  {
+   "id": "TOC-U4-Q110",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "recursive-vs-recursively-enumerable",
+   "subtopic": "recursive-vs-recursively-enumerable",
+   "subtopic_label": "Recursive vs recursively enumerable",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following languages is recursive (decidable)?",
+   "question_html": "<p class=\"qtext\">Which one of the following languages is recursive (decidable)?</p>",
+   "options": [
+    "{⟨M⟩ : M accepts some string of length 100}",
+    "{⟨M⟩ : M accepts every string of length 100 within 1000 steps}",
+    "{⟨M⟩ : L(M) is finite}",
+    "{⟨M⟩ : L(M) contains every string of even length}"
+   ],
+   "options_html": [
+    "<span class=\"mm\">{⟨M⟩ : M accepts some string of length 100}</span>",
+    "<span class=\"mm\">{⟨M⟩ : M accepts every string of length 100 within 1000 steps}</span>",
+    "<span class=\"mm\">{⟨M⟩ : L(M) is finite}</span>",
+    "<span class=\"mm\">{⟨M⟩ : L(M) contains every string of even length}</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A <i>bounded</i> question about a machine is decidable: if both the set of strings and the number of steps are fixed in advance, the whole search is finite and a decider can simply run it. Removing the step bound makes the same question undecidable, because a simulation may never terminate.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(B)</b> There are exactly <span class=\"mm\">2¹⁰⁰</span> strings of length 100. Simulate <span class=\"mm\">M</span> on each for at most 1000 steps. The total work is finite and does not depend on the input, so the answer is computed by a machine that always halts. Decidable.</li><li><b>(A)</b> Without the step bound, a run on a length-100 string may loop forever, so the machine can never answer &ldquo;no&rdquo;. The set is r.e. but not recursive.</li><li><b>(C)</b> Finiteness of <span class=\"mm\">L(M)</span> is a non-trivial property of the language, undecidable by Rice&rsquo;s theorem.</li><li><b>(D)</b> Universality over an infinite set is again a non-trivial property of <span class=\"mm\">L(M)</span> and is undecidable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Choosing (A) on the grounds that length 100 is finite. Finiteness of the <i>input set</i> is not enough &mdash; the <i>runs</i> must be bounded too, otherwise the decider hangs on a non-accepting string.</p><p class=\"row\"><b>Takeaway.</b> Bounding the steps as well as the strings turns an undecidable question into a finite table lookup.</p>",
+   "solution_plain": "Detailed solutionConcept. A bounded question about a machine is decidable: if both the set of strings and the number of steps are fixed in advance, the whole search is finite and a decider can simply run it. Removing the step bound makes the same question undecidable, because a simulation may never terminate.Step by step.(B) There are exactly 2¹⁰⁰ strings of length 100. Simulate M on each for at most 1000 steps. The total work is finite and does not depend on the input, so the answer is computed by a machine that always halts. Decidable.(A) Without the step bound, a run on a length-100 string may loop forever, so the machine can never answer “no”. The set is r.e. but not recursive.(C) Finiteness of L(M) is a non-trivial property of the language, undecidable by Rice’s theorem.(D) Universality over an infinite set is again a non-trivial property of L(M) and is undecidable.Answer: Option (B).Common misconception. Choosing (A) on the grounds that length 100 is finite. Finiteness of the input set is not enough — the runs must be bounded too, otherwise the decider hangs on a non-accepting string.Takeaway. Bounding the steps as well as the strings turns an undecidable question into a finite table lookup."
+  },
+  {
+   "id": "TOC-U4-Q111",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "halting-problem-undecidability",
+   "subtopic": "halting-problem-undecidability",
+   "subtopic_label": "Halting problem & undecidability",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "A Turing machine M has states q₀, q₁, none of them accepting, tape alphabet {␣, 1}, and exactly two transitions: δ(q₀,␣) = (q₁,1,R) and δ(q₁,␣) = (q₀,1,R). Every other pair is undefined. M starts in q₀ on the all-blank tape, head on cell 0. Which one of the following is TRUE?",
+   "question_html": "<p class=\"qtext\">A Turing machine <span class=\"mm\">M</span> has states <span class=\"mm\">q₀, q₁</span>, none of them accepting, tape alphabet <span class=\"mm\">{␣, 1}</span>, and exactly two transitions: <span class=\"mm\">δ(q₀,␣) = (q₁,1,R)</span> and <span class=\"mm\">δ(q₁,␣) = (q₀,1,R)</span>. Every other pair is undefined. <span class=\"mm\">M</span> starts in <span class=\"mm\">q₀</span> on the all-blank tape, head on cell 0. Which one of the following is <b>TRUE</b>?</p>",
+   "options": [
+    "M halts after two steps.",
+    "M never halts: it writes a 1 into every cell it visits and keeps moving right.",
+    "M halts after one step, because δ(q₁,1) is undefined.",
+    "M halts as soon as it re-enters a cell it has already written."
+   ],
+   "options_html": [
+    "<span class=\"mm\">M</span> halts after two steps.",
+    "<span class=\"mm\">M</span> never halts: it writes a <span class=\"mm\">1</span> into every cell it visits and keeps moving right.",
+    "<span class=\"mm\">M</span> halts after one step, because <span class=\"mm\">δ(q₁,1)</span> is undefined.",
+    "<span class=\"mm\">M</span> halts as soon as it re-enters a cell it has already written."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A machine halts only when it reaches a pair on which <span class=\"mm\">δ</span> is undefined (or enters a halting state). Whether the undefined entries are ever reached depends on which cells the head actually visits.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Step 1: the head reads <span class=\"mm\">␣</span> in <span class=\"mm\">q₀</span>, writes <span class=\"mm\">1</span>, moves right to cell 1, state <span class=\"mm\">q₁</span>.</li><li>Step 2: cell 1 is still blank, so <span class=\"mm\">δ(q₁,␣)</span> applies: write <span class=\"mm\">1</span>, move right, state <span class=\"mm\">q₀</span>.</li><li>The pattern repeats forever: the head only ever moves right onto cells that have never been written, so it always reads <span class=\"mm\">␣</span> and never consults <span class=\"mm\">δ(q₁,1)</span> or <span class=\"mm\">δ(q₀,1)</span>.</li><li>No halting state is ever entered and no undefined pair is ever reached, so the run is infinite.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; <span class=\"mm\">M</span> runs forever, writing a 1 in each new cell.</span></p><p class=\"row\"><b>Common misconception.</b> Seeing the undefined entry <span class=\"mm\">δ(q₁,1)</span> and concluding that the machine halts quickly. An undefined entry matters only if the run reaches it; a right-moving head never returns to a written cell.</p><p class=\"row\"><b>Takeaway.</b> To decide whether a particular machine halts, trace the reachable configurations &mdash; not the whole table.</p>",
+   "solution_plain": "Detailed solutionConcept. A machine halts only when it reaches a pair on which δ is undefined (or enters a halting state). Whether the undefined entries are ever reached depends on which cells the head actually visits.Step by step.Step 1: the head reads ␣ in q₀, writes 1, moves right to cell 1, state q₁.Step 2: cell 1 is still blank, so δ(q₁,␣) applies: write 1, move right, state q₀.The pattern repeats forever: the head only ever moves right onto cells that have never been written, so it always reads ␣ and never consults δ(q₁,1) or δ(q₀,1).No halting state is ever entered and no undefined pair is ever reached, so the run is infinite.Answer: Option (B) — M runs forever, writing a 1 in each new cell.Common misconception. Seeing the undefined entry δ(q₁,1) and concluding that the machine halts quickly. An undefined entry matters only if the run reaches it; a right-moving head never returns to a written cell.Takeaway. To decide whether a particular machine halts, trace the reachable configurations — not the whole table."
+  },
+  {
+   "id": "TOC-U4-Q112",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "halting-problem-undecidability",
+   "subtopic": "halting-problem-undecidability",
+   "subtopic_label": "Halting problem & undecidability",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "The obvious attempt to decide HALT = {⟨M, w⟩ : M halts on w} is to simulate M on w and answer “halts” if the simulation ends. This does not decide HALT because:",
+   "question_html": "<p class=\"qtext\">The obvious attempt to decide <span class=\"mm\">HALT = {⟨M, w⟩ : M halts on w}</span> is to simulate <span class=\"mm\">M</span> on <span class=\"mm\">w</span> and answer &ldquo;halts&rdquo; if the simulation ends. This does not decide <span class=\"mm\">HALT</span> because:</p>",
+   "options": [
+    "a universal machine cannot simulate an arbitrary Turing machine.",
+    "when M does not halt on w the simulation never ends, and a decider must halt on every input.",
+    "the encoding ⟨M, w⟩ may be ambiguous.",
+    "the simulation reports the wrong answer when M halts in a non-accepting state."
+   ],
+   "options_html": [
+    "a universal machine cannot simulate an arbitrary Turing machine.",
+    "when <span class=\"mm\">M</span> does not halt on <span class=\"mm\">w</span> the simulation never ends, and a decider must halt on every input.",
+    "the encoding <span class=\"mm\">⟨M, w⟩</span> may be ambiguous.",
+    "the simulation reports the wrong answer when <span class=\"mm\">M</span> halts in a non-accepting state."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A <i>decider</i> must halt on every input and answer correctly. Simulation answers &ldquo;halts&rdquo; correctly and quickly when <span class=\"mm\">M</span> does halt, but on a non-halting pair it produces no answer at all &mdash; and &ldquo;no answer yet&rdquo; is not the answer &ldquo;does not halt&rdquo;.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>If <span class=\"mm\">M</span> halts on <span class=\"mm\">w</span>, the simulation terminates and the answer is right.</li><li>If <span class=\"mm\">M</span> does not halt, the simulation runs forever; the procedure has not answered &ldquo;no&rdquo;, it has simply not answered.</li><li>Waiting longer never distinguishes &ldquo;has not halted yet&rdquo; from &ldquo;will never halt&rdquo;, so no amount of patience repairs the procedure.</li><li>What the simulation does show is that <span class=\"mm\">HALT</span> is recursively enumerable; deciding it needs something stronger, and the diagonal argument shows that no such thing exists.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Believing that a long enough simulation settles the question. It only settles the halting case; a decider needs a proof of non-halting, which simulation cannot supply.</p><p class=\"row\"><b>Takeaway.</b> Semi-decidability is easy by simulation. Decidability requires halting on the negative instances as well.</p>",
+   "solution_plain": "Detailed solutionConcept. A decider must halt on every input and answer correctly. Simulation answers “halts” correctly and quickly when M does halt, but on a non-halting pair it produces no answer at all — and “no answer yet” is not the answer “does not halt”.Step by step.If M halts on w, the simulation terminates and the answer is right.If M does not halt, the simulation runs forever; the procedure has not answered “no”, it has simply not answered.Waiting longer never distinguishes “has not halted yet” from “will never halt”, so no amount of patience repairs the procedure.What the simulation does show is that HALT is recursively enumerable; deciding it needs something stronger, and the diagonal argument shows that no such thing exists.Answer: Option (B).Common misconception. Believing that a long enough simulation settles the question. It only settles the halting case; a decider needs a proof of non-halting, which simulation cannot supply.Takeaway. Semi-decidability is easy by simulation. Decidability requires halting on the negative instances as well."
+  },
+  {
+   "id": "TOC-U4-Q113",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "halting-problem-undecidability",
+   "subtopic": "halting-problem-undecidability",
+   "subtopic_label": "Halting problem & undecidability",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which of the following languages are undecidable? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following languages are <b>undecidable</b>? (Select all that apply.)</p>",
+   "options": [
+    "{⟨M⟩ : M halts on every input}",
+    "{⟨M⟩ : M halts on ε within 10⁶ steps}",
+    "{⟨M, w⟩ : M halts on w}",
+    "{⟨M⟩ : M halts on ε}"
+   ],
+   "options_html": [
+    "<span class=\"mm\">{⟨M⟩ : M halts on every input}</span>",
+    "<span class=\"mm\">{⟨M⟩ : M halts on ε within 10⁶ steps}</span>",
+    "<span class=\"mm\">{⟨M, w⟩ : M halts on w}</span>",
+    "<span class=\"mm\">{⟨M⟩ : M halts on ε}</span>"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A bounded question is decidable by brute force; an unbounded one about all runs is not. Both <span class=\"mm\">{⟨M, w⟩ : M halts on w}</span> and <span class=\"mm\">{⟨M⟩ : M halts on ε}</span> are the halting problem in disguise, and &ldquo;halts on every input&rdquo; is harder still.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(C)</b> This is <span class=\"mm\">HALT</span> itself, undecidable by the diagonal argument.</li><li><b>(D)</b> Reduction from <span class=\"mm\">HALT</span>: given <span class=\"mm\">⟨M, w⟩</span>, build <span class=\"mm\">M′</span> that erases its input and then simulates <span class=\"mm\">M</span> on <span class=\"mm\">w</span>. Then <span class=\"mm\">M′</span> halts on <span class=\"mm\">ε</span> exactly when <span class=\"mm\">M</span> halts on <span class=\"mm\">w</span>.</li><li><b>(A)</b> Undecidable too &mdash; it implies a decider for (D) after a further reduction, and by Rice&rsquo;s theorem the property &ldquo;<span class=\"mm\">L(M) = Σ*</span>&rdquo; is non-trivial.</li><li><b>(B)</b> Decidable: simulate exactly <span class=\"mm\">10⁶</span> steps. Both outcomes are then known, and the machine always halts.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D) &mdash; only (B) is decidable.</span></p><p class=\"row\"><b>Common misconception.</b> Marking (B) undecidable because it mentions halting. A fixed numeric bound converts &ldquo;does it halt&rdquo; into &ldquo;does it halt quickly&rdquo;, and only the second is a finite question.</p><p class=\"row\"><b>Takeaway.</b> Look for the word &ldquo;within&rdquo;. With a bound the problem is decidable; without one it is the halting problem.</p>",
+   "solution_plain": "Detailed solutionConcept. A bounded question is decidable by brute force; an unbounded one about all runs is not. Both {⟨M, w⟩ : M halts on w} and {⟨M⟩ : M halts on ε} are the halting problem in disguise, and “halts on every input” is harder still.Step by step.(C) This is HALT itself, undecidable by the diagonal argument.(D) Reduction from HALT: given ⟨M, w⟩, build M′ that erases its input and then simulates M on w. Then M′ halts on ε exactly when M halts on w.(A) Undecidable too — it implies a decider for (D) after a further reduction, and by Rice’s theorem the property “L(M) = Σ*” is non-trivial.(B) Decidable: simulate exactly 10⁶ steps. Both outcomes are then known, and the machine always halts.Answer: Options (A), (C) and (D) — only (B) is decidable.Common misconception. Marking (B) undecidable because it mentions halting. A fixed numeric bound converts “does it halt” into “does it halt quickly”, and only the second is a finite question.Takeaway. Look for the word “within”. With a bound the problem is decidable; without one it is the halting problem."
+  },
+  {
+   "id": "TOC-U4-Q114",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "halting-problem-undecidability",
+   "subtopic": "halting-problem-undecidability",
+   "subtopic_label": "Halting problem & undecidability",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "A Turing machine M has states q₀, q₁, no halting state, tape alphabet {␣, 0, 1}, and exactly four transitions: δ(q₀,␣) = (q₁,1,L), δ(q₁,␣) = (q₀,0,R), δ(q₀,1) = (q₁,1,L), δ(q₁,0) = (q₀,0,R). Cells are numbered …, −2, −1, 0, 1, 2, …; M starts in q₀ on cell 0 of the all-blank tape. A configuration is the state together with the head position and the entire tape contents. After how many steps does M first enter a configuration identical to one it has been in before? (One step is one application of δ; enter a single integer.)",
+   "question_html": "<p class=\"qtext\">A Turing machine <span class=\"mm\">M</span> has states <span class=\"mm\">q₀, q₁</span>, no halting state, tape alphabet <span class=\"mm\">{␣, 0, 1}</span>, and exactly four transitions: <span class=\"mm\">δ(q₀,␣) = (q₁,1,L)</span>, <span class=\"mm\">δ(q₁,␣) = (q₀,0,R)</span>, <span class=\"mm\">δ(q₀,1) = (q₁,1,L)</span>, <span class=\"mm\">δ(q₁,0) = (q₀,0,R)</span>. Cells are numbered <span class=\"mm\">…, −2, −1, 0, 1, 2, …</span>; <span class=\"mm\">M</span> starts in <span class=\"mm\">q₀</span> on cell 0 of the all-blank tape. A configuration is the state together with the head position and the entire tape contents. After how many steps does <span class=\"mm\">M</span> first enter a configuration identical to one it has been in before? (One step is one application of <span class=\"mm\">δ</span>; enter a single integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    4
+   ],
+   "answer_display": "4",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A deterministic machine that repeats a configuration repeats the whole future, so the first repetition is exactly the moment the run becomes infinite. Tracing configurations is therefore a decision procedure for this particular machine.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Step 1: in <span class=\"mm\">q₀</span> on the blank cell 0, write <span class=\"mm\">1</span> and move left to cell −1, state <span class=\"mm\">q₁</span>. Tape: <span class=\"mm\">1</span> at 0.</li><li>Step 2: cell −1 is blank, so write <span class=\"mm\">0</span>, move right to cell 0, state <span class=\"mm\">q₀</span>. Tape: <span class=\"mm\">0</span> at −1, <span class=\"mm\">1</span> at 0. Head at 0.</li><li>Step 3: <span class=\"mm\">δ(q₀,1) = (q₁,1,L)</span> rewrites the <span class=\"mm\">1</span> and moves to cell −1 in state <span class=\"mm\">q₁</span>. Tape unchanged.</li><li>Step 4: <span class=\"mm\">δ(q₁,0) = (q₀,0,R)</span> rewrites the <span class=\"mm\">0</span> and returns to cell 0 in state <span class=\"mm\">q₀</span> &mdash; the configuration of step 2 exactly.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 steps (range: exactly 4).</span></p><p class=\"row\"><b>Common misconception.</b> Counting the cycle length (2) instead of the step at which the repeat first appears. The configuration after step 2 reappears after step 4; the question asks when the repetition happens, not how long the period is.</p><p class=\"row\"><b>Takeaway.</b> For a fixed machine, &ldquo;does it halt&rdquo; can be answered by tracing until a configuration repeats. The undecidability of the halting problem is about deciding this uniformly, for all machines.</p>",
+   "solution_plain": "Detailed solutionConcept. A deterministic machine that repeats a configuration repeats the whole future, so the first repetition is exactly the moment the run becomes infinite. Tracing configurations is therefore a decision procedure for this particular machine.Step by step.Step 1: in q₀ on the blank cell 0, write 1 and move left to cell −1, state q₁. Tape: 1 at 0.Step 2: cell −1 is blank, so write 0, move right to cell 0, state q₀. Tape: 0 at −1, 1 at 0. Head at 0.Step 3: δ(q₀,1) = (q₁,1,L) rewrites the 1 and moves to cell −1 in state q₁. Tape unchanged.Step 4: δ(q₁,0) = (q₀,0,R) rewrites the 0 and returns to cell 0 in state q₀ — the configuration of step 2 exactly.Answer: 4 steps (range: exactly 4).Common misconception. Counting the cycle length (2) instead of the step at which the repeat first appears. The configuration after step 2 reappears after step 4; the question asks when the repetition happens, not how long the period is.Takeaway. For a fixed machine, “does it halt” can be answered by tracing until a configuration repeats. The undecidability of the halting problem is about deciding this uniformly, for all machines."
+  },
+  {
+   "id": "TOC-U4-Q115",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "halting-problem-undecidability",
+   "subtopic": "halting-problem-undecidability",
+   "subtopic_label": "Halting problem & undecidability",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Let HALT = {⟨M, w⟩ : M halts on w} and ACCEPT = {⟨M, w⟩ : M accepts w}, and let ≤m denote mapping reducibility. Which one of the following is TRUE?",
+   "question_html": "<p class=\"qtext\">Let <span class=\"mm\">HALT = {⟨M, w⟩ : M halts on w}</span> and <span class=\"mm\">ACCEPT = {⟨M, w⟩ : M accepts w}</span>, and let <span class=\"mm\">≤m</span> denote mapping reducibility. Which one of the following is <b>TRUE</b>?</p>",
+   "options": [
+    "HALT ≤m ACCEPT and ACCEPT ≤m HALT.",
+    "HALT ≤m ACCEPT, but ACCEPT ≰m HALT.",
+    "Neither of the two reduces to the other.",
+    "ACCEPT ≤m HALT, but HALT ≰m ACCEPT."
+   ],
+   "options_html": [
+    "<span class=\"mm\">HALT ≤m ACCEPT</span> and <span class=\"mm\">ACCEPT ≤m HALT</span>.",
+    "<span class=\"mm\">HALT ≤m ACCEPT</span>, but <span class=\"mm\">ACCEPT ≰m HALT</span>.",
+    "Neither of the two reduces to the other.",
+    "<span class=\"mm\">ACCEPT ≤m HALT</span>, but <span class=\"mm\">HALT ≰m ACCEPT</span>."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Both sets are recursively enumerable and both are r.e.-complete, and any two r.e.-complete sets reduce to each other. The reductions are also easy to write down directly, which is the safer way to answer.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b><span class=\"mm\">HALT ≤m ACCEPT</span>.</b> Map <span class=\"mm\">⟨M, w⟩</span> to <span class=\"mm\">⟨M′, w⟩</span> where <span class=\"mm\">M′</span> simulates <span class=\"mm\">M</span> on <span class=\"mm\">w</span> and accepts as soon as <span class=\"mm\">M</span> halts. Then <span class=\"mm\">M</span> halts on <span class=\"mm\">w</span> iff <span class=\"mm\">M′</span> accepts <span class=\"mm\">w</span>.</li><li><b><span class=\"mm\">ACCEPT ≤m HALT</span>.</b> Map <span class=\"mm\">⟨M, w⟩</span> to <span class=\"mm\">⟨M″, w⟩</span> where <span class=\"mm\">M″</span> simulates <span class=\"mm\">M</span> on <span class=\"mm\">w</span> and halts only when <span class=\"mm\">M</span> accepts. Then <span class=\"mm\">M</span> accepts <span class=\"mm\">w</span> iff <span class=\"mm\">M″</span> halts on <span class=\"mm\">w</span>.</li><li>Both maps are total computable functions on encodings, so both reductions hold and (A) is the answer.</li><li>Since both sets are undecidable and r.e.-complete, neither can be strictly easier than the other &mdash; (B), (C), (D) all claim a strict separation.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; the two are m-equivalent.</span></p><p class=\"row\"><b>Common misconception.</b> Thinking &ldquo;halts&rdquo; and &ldquo;accepts&rdquo; must differ in difficulty because halting is weaker than accepting. As <i>decision problems</i> they are equally hard: each encodes the other with a one-line machine construction.</p><p class=\"row\"><b>Takeaway.</b> All r.e.-complete sets are m-equivalent, so any two of <span class=\"mm\">HALT</span>, <span class=\"mm\">ACCEPT</span>, <span class=\"mm\">K</span> and the universal-language variants reduce to each other.</p>",
+   "solution_plain": "Detailed solutionConcept. Both sets are recursively enumerable and both are r.e.-complete, and any two r.e.-complete sets reduce to each other. The reductions are also easy to write down directly, which is the safer way to answer.Step by step.HALT ≤m ACCEPT. Map ⟨M, w⟩ to ⟨M′, w⟩ where M′ simulates M on w and accepts as soon as M halts. Then M halts on w iff M′ accepts w.ACCEPT ≤m HALT. Map ⟨M, w⟩ to ⟨M″, w⟩ where M″ simulates M on w and halts only when M accepts. Then M accepts w iff M″ halts on w.Both maps are total computable functions on encodings, so both reductions hold and (A) is the answer.Since both sets are undecidable and r.e.-complete, neither can be strictly easier than the other — (B), (C), (D) all claim a strict separation.Answer: Option (A) — the two are m-equivalent.Common misconception. Thinking “halts” and “accepts” must differ in difficulty because halting is weaker than accepting. As decision problems they are equally hard: each encodes the other with a one-line machine construction.Takeaway. All r.e.-complete sets are m-equivalent, so any two of HALT, ACCEPT, K and the universal-language variants reduce to each other."
+  },
+  {
+   "id": "TOC-U4-Q116",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "rices-theorem-reductions",
+   "subtopic": "rices-theorem-reductions",
+   "subtopic_label": "Rice's theorem & reductions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following sets is recursive (decidable)?",
+   "question_html": "<p class=\"qtext\">Which one of the following sets is recursive (decidable)?</p>",
+   "options": [
+    "{⟨M⟩ : some transition of M moves the head to the left}",
+    "{⟨M⟩ : L(M) ≠ ∅}",
+    "{⟨M⟩ : M accepts ε}",
+    "{⟨M⟩ : L(M) is regular}"
+   ],
+   "options_html": [
+    "<span class=\"mm\">{⟨M⟩ : some transition of M moves the head to the left}</span>",
+    "<span class=\"mm\">{⟨M⟩ : L(M) ≠ ∅}</span>",
+    "<span class=\"mm\">{⟨M⟩ : M accepts ε}</span>",
+    "<span class=\"mm\">{⟨M⟩ : L(M) is regular}</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Rice&rsquo;s theorem is about properties of the <i>language</i> <span class=\"mm\">L(M)</span>. A property of the <i>description</i> of <span class=\"mm\">M</span> &mdash; its states, its alphabet, the shape of its transition table &mdash; is a property of a finite string and is normally decidable by inspection.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> Scan the transition table for any move whose direction field is <span class=\"mm\">L</span>. Finite work, always halts. Decidable.</li><li><b>(B)</b> <span class=\"mm\">L(M) ≠ ∅</span> is non-trivial and depends only on the language; undecidable by Rice&rsquo;s theorem.</li><li><b>(C)</b> <span class=\"mm\">ε ∈ L(M)</span> is again a non-trivial property of the language; undecidable.</li><li><b>(D)</b> Regularity of <span class=\"mm\">L(M)</span> is non-trivial (some machines accept regular sets, some do not); undecidable.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming any question about a Turing machine is undecidable. Only questions about the set it accepts are covered by Rice&rsquo;s theorem; syntax is readable.</p><p class=\"row\"><b>Takeaway.</b> First ask: does the answer change if two machines accept the same language? If yes, expect undecidability; if no, expect a syntactic check.</p>",
+   "solution_plain": "Detailed solutionConcept. Rice’s theorem is about properties of the language L(M). A property of the description of M — its states, its alphabet, the shape of its transition table — is a property of a finite string and is normally decidable by inspection.Step by step.(A) Scan the transition table for any move whose direction field is L. Finite work, always halts. Decidable.(B) L(M) ≠ ∅ is non-trivial and depends only on the language; undecidable by Rice’s theorem.(C) ε ∈ L(M) is again a non-trivial property of the language; undecidable.(D) Regularity of L(M) is non-trivial (some machines accept regular sets, some do not); undecidable.Answer: Option (A).Common misconception. Assuming any question about a Turing machine is undecidable. Only questions about the set it accepts are covered by Rice’s theorem; syntax is readable.Takeaway. First ask: does the answer change if two machines accept the same language? If yes, expect undecidability; if no, expect a syntactic check."
+  },
+  {
+   "id": "TOC-U4-Q117",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "rices-theorem-reductions",
+   "subtopic": "rices-theorem-reductions",
+   "subtopic_label": "Rice's theorem & reductions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "The set {⟨M⟩ : 0101 ∈ L(M)} is:",
+   "question_html": "<p class=\"qtext\">The set <span class=\"mm\">{⟨M⟩ : 0101 ∈ L(M)}</span> is:</p>",
+   "options": [
+    "recursive",
+    "recursively enumerable but not recursive",
+    "not recursively enumerable",
+    "co-recursively enumerable but not recursively enumerable"
+   ],
+   "options_html": [
+    "recursive",
+    "recursively enumerable but not recursive",
+    "not recursively enumerable",
+    "co-recursively enumerable but not recursively enumerable"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A positive membership question about one fixed string can be semi-decided by running the machine on that string; it cannot be decided, because &ldquo;not accepted&rdquo; is not something a run ever certifies.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Simulate <span class=\"mm\">M</span> on <span class=\"mm\">0101</span>. If it accepts, answer yes. Every machine in the set is eventually recognised, so the set is r.e.</li><li>The property &ldquo;<span class=\"mm\">0101 ∈ L(M)</span>&rdquo; is a property of <span class=\"mm\">L(M)</span>: it depends only on which strings are accepted, not on how. It is non-trivial &mdash; the machine that accepts everything is in the set, the machine that accepts nothing is not.</li><li>By Rice&rsquo;s theorem the set is therefore undecidable, so it is not recursive.</li><li>Its complement would require certifying that <span class=\"mm\">M</span> never accepts <span class=\"mm\">0101</span>, which no simulation can do; the complement is not r.e.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; r.e. but not recursive.</span></p><p class=\"row\"><b>Common misconception.</b> Reading &ldquo;one fixed string&rdquo; as &ldquo;easy&rdquo; and answering recursive. The string is fixed; the machine is arbitrary, and that is what makes the question undecidable.</p><p class=\"row\"><b>Takeaway.</b> Any &ldquo;some fixed string is in <span class=\"mm\">L(M)</span>&rdquo; set is r.e. and undecidable; any &ldquo;<span class=\"mm\">L(M)</span> avoids this string&rdquo; set is its non-r.e. complement.</p>",
+   "solution_plain": "Detailed solutionConcept. A positive membership question about one fixed string can be semi-decided by running the machine on that string; it cannot be decided, because “not accepted” is not something a run ever certifies.Step by step.Simulate M on 0101. If it accepts, answer yes. Every machine in the set is eventually recognised, so the set is r.e.The property “0101 ∈ L(M)” is a property of L(M): it depends only on which strings are accepted, not on how. It is non-trivial — the machine that accepts everything is in the set, the machine that accepts nothing is not.By Rice’s theorem the set is therefore undecidable, so it is not recursive.Its complement would require certifying that M never accepts 0101, which no simulation can do; the complement is not r.e.Answer: Option (B) — r.e. but not recursive.Common misconception. Reading “one fixed string” as “easy” and answering recursive. The string is fixed; the machine is arbitrary, and that is what makes the question undecidable.Takeaway. Any “some fixed string is in L(M)” set is r.e. and undecidable; any “L(M) avoids this string” set is its non-r.e. complement."
+  },
+  {
+   "id": "TOC-U4-Q118",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "rices-theorem-reductions",
+   "subtopic": "rices-theorem-reductions",
+   "subtopic_label": "Rice's theorem & reductions",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Rice’s theorem applies to a property of the language L(M), and only when that property is non-trivial. For which of the following properties does the theorem directly show that {⟨M⟩ : L(M) has the property} is undecidable? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Rice&rsquo;s theorem applies to a property <b>of the language</b> <span class=\"mm\">L(M)</span>, and only when that property is non-trivial. For which of the following properties does the theorem directly show that <span class=\"mm\">{⟨M⟩ : L(M) has the property}</span> is undecidable? (Select all that apply.)</p>",
+   "options": [
+    "L(M) = ∅",
+    "L(M) is infinite",
+    "L(M) ⊆ {0, 1}*",
+    "L(M) = {⟨M⟩}"
+   ],
+   "options_html": [
+    "<span class=\"mm\">L(M) = ∅</span>",
+    "<span class=\"mm\">L(M)</span> is infinite",
+    "<span class=\"mm\">L(M) ⊆ {0, 1}*</span>",
+    "<span class=\"mm\">L(M) = {⟨M⟩}</span>"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two conditions must hold before Rice&rsquo;s theorem fires: the property must be about the set <span class=\"mm\">L(M)</span> alone, and it must hold for some r.e. languages and fail for others.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> Emptiness is a property of the set; <span class=\"mm\">∅</span> has it, <span class=\"mm\">Σ*</span> does not. Undecidable by Rice.</li><li><b>(B)</b> Infiniteness is a property of the set; <span class=\"mm\">Σ*</span> has it, <span class=\"mm\">{ε}</span> does not. Undecidable by Rice.</li><li><b>(C)</b> Being a subset of <span class=\"mm\">{0, 1}*</span> is a property of the set: <span class=\"mm\">{0, 1}*</span> has it, <span class=\"mm\">{2}</span> does not. Undecidable by Rice.</li><li><b>(D)</b> Whether <span class=\"mm\">L(M) = {⟨M⟩}</span> depends on the <i>encoding</i> of <span class=\"mm\">M</span>, not only on the set it accepts: two machines with the same language may have different encodings, one satisfying the condition and the other not. It is not a property of <span class=\"mm\">L(M)</span>, so Rice&rsquo;s theorem does not apply (the set is undecidable, but by a direct reduction).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that a property mentioning <span class=\"mm\">L(M)</span> is automatically a property <i>of</i> <span class=\"mm\">L(M)</span>. In (D) the language appears on both sides, but the right-hand side is a machine, so the property is not determined by the set.</p><p class=\"row\"><b>Takeaway.</b> Check invariance: if two machines accept the same language must they agree on the property? If not, Rice is silent.</p>",
+   "solution_plain": "Detailed solutionConcept. Two conditions must hold before Rice’s theorem fires: the property must be about the set L(M) alone, and it must hold for some r.e. languages and fail for others.Step by step.(A) Emptiness is a property of the set; ∅ has it, Σ* does not. Undecidable by Rice.(B) Infiniteness is a property of the set; Σ* has it, {ε} does not. Undecidable by Rice.(C) Being a subset of {0, 1}* is a property of the set: {0, 1}* has it, {2} does not. Undecidable by Rice.(D) Whether L(M) = {⟨M⟩} depends on the encoding of M, not only on the set it accepts: two machines with the same language may have different encodings, one satisfying the condition and the other not. It is not a property of L(M), so Rice’s theorem does not apply (the set is undecidable, but by a direct reduction).Answer: Options (A), (B) and (C).Common misconception. Assuming that a property mentioning L(M) is automatically a property of L(M). In (D) the language appears on both sides, but the right-hand side is a machine, so the property is not determined by the set.Takeaway. Check invariance: if two machines accept the same language must they agree on the property? If not, Rice is silent."
+  },
+  {
+   "id": "TOC-U4-Q119",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "rices-theorem-reductions",
+   "subtopic": "rices-theorem-reductions",
+   "subtopic_label": "Rice's theorem & reductions",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "How many of the following six properties yield an undecidable set {⟨M⟩ : L(M) has the property} by Rice’s theorem? (i) L(M) = ∅ (ii) L(M) is regular (iii) |L(M)| ≤ 3 (iv) ε ∈ L(M) (v) L(M) is closed under reversal (vi) M has an even number of states (Enter a single integer.)",
+   "question_html": "<p class=\"qtext\">How many of the following six properties yield an undecidable set <span class=\"mm\">{⟨M⟩ : L(M) has the property}</span> by Rice&rsquo;s theorem?<br/>(i) <span class=\"mm\">L(M) = ∅</span><br/>(ii) <span class=\"mm\">L(M)</span> is regular<br/>(iii) <span class=\"mm\">|L(M)| ≤ 3</span><br/>(iv) <span class=\"mm\">ε ∈ L(M)</span><br/>(v) <span class=\"mm\">L(M)</span> is closed under reversal<br/>(vi) <span class=\"mm\">M</span> has an even number of states<br/>(Enter a single integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    5
+   ],
+   "answer_display": "5",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Rice&rsquo;s theorem applies to every non-trivial property of the language, and to nothing else. Non-trivial means: true of at least one r.e. language and false of at least one other.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(i)</b> <span class=\"mm\">∅</span> has it, <span class=\"mm\">Σ*</span> does not. Undecidable.</li><li><b>(ii)</b> <span class=\"mm\">Σ*</span> is regular, <span class=\"mm\">{0ⁿ1ⁿ}</span> is not. Undecidable.</li><li><b>(iii)</b> <span class=\"mm\">{ε}</span> has at most three strings, <span class=\"mm\">Σ*</span> does not. Undecidable.</li><li><b>(iv)</b> <span class=\"mm\">{ε}</span> contains <span class=\"mm\">ε</span>, <span class=\"mm\">∅</span> does not. Undecidable.</li><li><b>(v)</b> <span class=\"mm\">Σ*</span> is closed under reversal, <span class=\"mm\">{0}</span> is not (its reversal <span class=\"mm\">{0}</span> &hellip; the language <span class=\"mm\">{01}</span> is the clean witness: <span class=\"mm\">10 ∉ {01}</span>). Undecidable.</li><li><b>(vi)</b> The number of states is a property of the description, not of the language: two machines with the same language can have different state counts. Decidable by counting, and outside Rice&rsquo;s scope.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 5 &mdash; (i) to (v) are undecidable by Rice; only (vi) escapes.</span></p><p class=\"row\"><b>Common misconception.</b> Counting (vi) because it mentions the machine <span class=\"mm\">M</span> as well. Rice needs the property to be <i>about the language</i>; a syntactic count is decidable.</p><p class=\"row\"><b>Takeaway.</b> For each property, exhibit one r.e. language that has it and one that does not. That exhibition is the non-triviality proof Rice requires.</p>",
+   "solution_plain": "Detailed solutionConcept. Rice’s theorem applies to every non-trivial property of the language, and to nothing else. Non-trivial means: true of at least one r.e. language and false of at least one other.Step by step.(i) ∅ has it, Σ* does not. Undecidable.(ii) Σ* is regular, {0ⁿ1ⁿ} is not. Undecidable.(iii) {ε} has at most three strings, Σ* does not. Undecidable.(iv) {ε} contains ε, ∅ does not. Undecidable.(v) Σ* is closed under reversal, {0} is not (its reversal {0} … the language {01} is the clean witness: 10 ∉ {01}). Undecidable.(vi) The number of states is a property of the description, not of the language: two machines with the same language can have different state counts. Decidable by counting, and outside Rice’s scope.Answer: 5 — (i) to (v) are undecidable by Rice; only (vi) escapes.Common misconception. Counting (vi) because it mentions the machine M as well. Rice needs the property to be about the language; a syntactic count is decidable.Takeaway. For each property, exhibit one r.e. language that has it and one that does not. That exhibition is the non-triviality proof Rice requires."
+  },
+  {
+   "id": "TOC-U4-Q120",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "rices-theorem-reductions",
+   "subtopic": "rices-theorem-reductions",
+   "subtopic_label": "Rice's theorem & reductions",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Let EMPTY = {⟨M⟩ : L(M) = ∅} and NE = {⟨M⟩ : L(M) ≠ ∅}. Which one of the following is TRUE?",
+   "question_html": "<p class=\"qtext\">Let <span class=\"mm\">EMPTY = {⟨M⟩ : L(M) = ∅}</span> and <span class=\"mm\">NE = {⟨M⟩ : L(M) ≠ ∅}</span>. Which one of the following is <b>TRUE</b>?</p>",
+   "options": [
+    "NE is r.e. but not recursive, and EMPTY is co-r.e. but not r.e.",
+    "EMPTY is r.e. but not recursive, and NE is co-r.e. but not r.e.",
+    "Both are recursive.",
+    "Neither is r.e."
+   ],
+   "options_html": [
+    "<span class=\"mm\">NE</span> is r.e. but not recursive, and <span class=\"mm\">EMPTY</span> is co-r.e. but not r.e.",
+    "<span class=\"mm\">EMPTY</span> is r.e. but not recursive, and <span class=\"mm\">NE</span> is co-r.e. but not r.e.",
+    "Both are recursive.",
+    "Neither is r.e."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> &ldquo;<span class=\"mm\">L(M)</span> is non-empty&rdquo; is a positive existential statement &mdash; some string is accepted &mdash; so it can be semi-decided by dovetailing over all strings. Its negation is a universal statement, which no finite run can certify.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>To semi-decide <span class=\"mm\">NE</span>, enumerate pairs <span class=\"mm\">(i, k)</span> and run <span class=\"mm\">M</span> on the <span class=\"mm\">i</span>-th string for <span class=\"mm\">k</span> steps; accept as soon as any run accepts. If <span class=\"mm\">L(M) ≠ ∅</span> this happens eventually, so <span class=\"mm\">NE</span> is r.e.</li><li><span class=\"mm\">NE</span> is not recursive: a decider for it would decide <span class=\"mm\">HALT</span>, since <span class=\"mm\">M</span> halts on <span class=\"mm\">w</span> iff the machine that simulates <span class=\"mm\">M</span> on <span class=\"mm\">w</span> and accepts has a non-empty language.</li><li><span class=\"mm\">EMPTY</span> is by definition the complement of <span class=\"mm\">NE</span>, so it is co-r.e.</li><li><span class=\"mm\">EMPTY</span> is not r.e.: if both it and <span class=\"mm\">NE</span> were r.e., <span class=\"mm\">NE</span> would be recursive, contradicting step 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Swapping the two. Emptiness <i>sounds</i> like the simple, checkable case, but checking it means proving that nothing is ever accepted &mdash; the hard direction.</p><p class=\"row\"><b>Takeaway.</b> &ldquo;Exists a witness&rdquo; is r.e.; &ldquo;for all inputs, nothing&rdquo; is co-r.e. Look at the quantifier, not at the wording.</p>",
+   "solution_plain": "Detailed solutionConcept. “L(M) is non-empty” is a positive existential statement — some string is accepted — so it can be semi-decided by dovetailing over all strings. Its negation is a universal statement, which no finite run can certify.Step by step.To semi-decide NE, enumerate pairs (i, k) and run M on the i-th string for k steps; accept as soon as any run accepts. If L(M) ≠ ∅ this happens eventually, so NE is r.e.NE is not recursive: a decider for it would decide HALT, since M halts on w iff the machine that simulates M on w and accepts has a non-empty language.EMPTY is by definition the complement of NE, so it is co-r.e.EMPTY is not r.e.: if both it and NE were r.e., NE would be recursive, contradicting step 2.Answer: Option (A).Common misconception. Swapping the two. Emptiness sounds like the simple, checkable case, but checking it means proving that nothing is ever accepted — the hard direction.Takeaway. “Exists a witness” is r.e.; “for all inputs, nothing” is co-r.e. Look at the quantifier, not at the wording."
+  },
+  {
+   "id": "TOC-U4-Q121",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "chomsky-hierarchy-summary",
+   "subtopic": "chomsky-hierarchy-summary",
+   "subtopic_label": "Chomsky hierarchy summary",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following inclusions is TRUE?",
+   "question_html": "<p class=\"qtext\">Which one of the following inclusions is <b>TRUE</b>?</p>",
+   "options": [
+    "Every context-sensitive language is recursive.",
+    "Every recursive language is context-sensitive.",
+    "Every recursively enumerable language is context-sensitive.",
+    "Every context-free language is regular."
+   ],
+   "options_html": [
+    "Every context-sensitive language is recursive.",
+    "Every recursive language is context-sensitive.",
+    "Every recursively enumerable language is context-sensitive.",
+    "Every context-free language is regular."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A context-sensitive language is accepted by a linear-bounded automaton, whose tape is confined to the input cells. That gives a finite number of configurations, hence a decision procedure; the inclusion is strict because some decidable languages are not context-sensitive.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>An LBA on an input of length <span class=\"mm\">n</span> has at most <span class=\"mm\">|Q| · n · |Γ|ⁿ</span> configurations. Simulate that many steps: acceptance is decided, so every context-sensitive language is recursive.</li><li>The inclusion is strict: the complement of <span class=\"mm\">{⟨M⟩ : M halts on ε}</span> is co-r.e. and not r.e., so it is certainly not context-sensitive, while the recursive languages contain sets that are not context-sensitive (for instance any decidable language that is not context-sensitive, which exist by a counting argument over grammars).</li><li>(B) and (C) reverse the inclusion &mdash; false, since the hierarchy is strictly increasing downwards in machine power.</li><li>(D) is false: <span class=\"mm\">{0ⁿ1ⁿ : n ≥ 0}</span> is context-free and not regular.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Placing the context-sensitive languages above the recursive ones. Type 1 sits strictly between Type 2 and Type 0, and every Type 1 language is decidable because the LBA has finitely many configurations.</p><p class=\"row\"><b>Takeaway.</b> REG ⊂ CFL ⊂ CSL ⊂ REC ⊂ RE, all inclusions strict.</p>",
+   "solution_plain": "Detailed solutionConcept. A context-sensitive language is accepted by a linear-bounded automaton, whose tape is confined to the input cells. That gives a finite number of configurations, hence a decision procedure; the inclusion is strict because some decidable languages are not context-sensitive.Step by step.An LBA on an input of length n has at most |Q| · n · |Γ|ⁿ configurations. Simulate that many steps: acceptance is decided, so every context-sensitive language is recursive.The inclusion is strict: the complement of {⟨M⟩ : M halts on ε} is co-r.e. and not r.e., so it is certainly not context-sensitive, while the recursive languages contain sets that are not context-sensitive (for instance any decidable language that is not context-sensitive, which exist by a counting argument over grammars).(B) and (C) reverse the inclusion — false, since the hierarchy is strictly increasing downwards in machine power.(D) is false: {0ⁿ1ⁿ : n ≥ 0} is context-free and not regular.Answer: Option (A).Common misconception. Placing the context-sensitive languages above the recursive ones. Type 1 sits strictly between Type 2 and Type 0, and every Type 1 language is decidable because the LBA has finitely many configurations.Takeaway. REG ⊂ CFL ⊂ CSL ⊂ REC ⊂ RE, all inclusions strict."
+  },
+  {
+   "id": "TOC-U4-Q122",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "chomsky-hierarchy-summary",
+   "subtopic": "chomsky-hierarchy-summary",
+   "subtopic_label": "Chomsky hierarchy summary",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following statements about the class of context-sensitive languages is TRUE?",
+   "question_html": "<p class=\"qtext\">Which one of the following statements about the class of context-sensitive languages is <b>TRUE</b>?</p>",
+   "options": [
+    "It is closed under complementation.",
+    "It is not closed under intersection.",
+    "It is closed under every homomorphism.",
+    "It is a proper subclass of the context-free languages."
+   ],
+   "options_html": [
+    "It is closed under complementation.",
+    "It is not closed under intersection.",
+    "It is closed under every homomorphism.",
+    "It is a proper subclass of the context-free languages."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Context-sensitive languages are the languages of linear-bounded automata, and that class is closed under union, intersection, complement and concatenation &mdash; closure under complement is the Immerman&ndash;Szelepcs&eacute;nyi theorem.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> True: the complement of an LBA language is again an LBA language. Equivalently, the complement of a non-contracting grammar can be generated by a non-contracting grammar.</li><li><b>(B)</b> False: intersect two LBAs by running them in lock-step on the same tape (two tracks). The intersection is context-sensitive.</li><li><b>(C)</b> False: closure holds for <span class=\"mm\">ε</span>-free homomorphisms only. A homomorphism may delete symbols, and deleting symbols can destroy the linear bound &mdash; for example <span class=\"mm\">h(0) = 0</span>, <span class=\"mm\">h(1) = ε</span>, <span class=\"mm\">h(2) = 1</span> maps a context-sensitive language to a non-context-sensitive one.</li><li><b>(D)</b> False: the inclusion runs the other way &mdash; CFL ⊂ CSL, and it is strict because <span class=\"mm\">{aⁿbⁿcⁿ}</span> is context-sensitive but not context-free.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) &mdash; closed under complementation.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the closure properties of the context-free languages carry upwards. CFLs are not closed under complement or intersection; CSLs are closed under both.</p><p class=\"row\"><b>Takeaway.</b> The higher a class sits, the more closure it has: CSL is closed under everything except arbitrary homomorphism and substitution.</p>",
+   "solution_plain": "Detailed solutionConcept. Context-sensitive languages are the languages of linear-bounded automata, and that class is closed under union, intersection, complement and concatenation — closure under complement is the Immerman–Szelepcsényi theorem.Step by step.(A) True: the complement of an LBA language is again an LBA language. Equivalently, the complement of a non-contracting grammar can be generated by a non-contracting grammar.(B) False: intersect two LBAs by running them in lock-step on the same tape (two tracks). The intersection is context-sensitive.(C) False: closure holds for ε-free homomorphisms only. A homomorphism may delete symbols, and deleting symbols can destroy the linear bound — for example h(0) = 0, h(1) = ε, h(2) = 1 maps a context-sensitive language to a non-context-sensitive one.(D) False: the inclusion runs the other way — CFL ⊂ CSL, and it is strict because {aⁿbⁿcⁿ} is context-sensitive but not context-free.Answer: Option (A) — closed under complementation.Common misconception. Assuming the closure properties of the context-free languages carry upwards. CFLs are not closed under complement or intersection; CSLs are closed under both.Takeaway. The higher a class sits, the more closure it has: CSL is closed under everything except arbitrary homomorphism and substitution."
+  },
+  {
+   "id": "TOC-U4-Q123",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "chomsky-hierarchy-summary",
+   "subtopic": "chomsky-hierarchy-summary",
+   "subtopic_label": "Chomsky hierarchy summary",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which of the following statements about the Chomsky hierarchy are TRUE? (Select all that apply.)",
+   "question_html": "<p class=\"qtext\">Which of the following statements about the Chomsky hierarchy are <b>TRUE</b>? (Select all that apply.)</p>",
+   "options": [
+    "Every regular language is context-sensitive.",
+    "The class of context-free languages is closed under intersection.",
+    "Every context-sensitive language is accepted by some linear-bounded automaton.",
+    "{aⁿbⁿcⁿ : n ≥ 1} is context-sensitive but not context-free."
+   ],
+   "options_html": [
+    "Every regular language is context-sensitive.",
+    "The class of context-free languages is closed under intersection.",
+    "Every context-sensitive language is accepted by some linear-bounded automaton.",
+    "<span class=\"mm\">{aⁿbⁿcⁿ : n ≥ 1}</span> is context-sensitive but not context-free."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The hierarchy is REG ⊂ CFL ⊂ CSL ⊂ RE, each level matched to a machine: finite automaton, pushdown automaton, linear-bounded automaton, Turing machine. Each inclusion is strict, and a language one level up need not satisfy the closure properties of the level below.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> True by the chain: a regular language is context-free, and every context-free language is context-sensitive (a CFG with <span class=\"mm\">ε</span>-free productions is non-contracting).</li><li><b>(B)</b> False: <span class=\"mm\">{aⁿbⁿcᵐ}</span> and <span class=\"mm\">{aᵐbⁿcⁿ}</span> are context-free, but their intersection <span class=\"mm\">{aⁿbⁿcⁿ}</span> is not.</li><li><b>(C)</b> True: that is the machine characterisation of Type 1.</li><li><b>(D)</b> True: an LBA can check the three counts against the input length, while the pumping lemma for context-free languages rules out <span class=\"mm\">{aⁿbⁿcⁿ}</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Believing closure under union extends to intersection. The context-free languages are closed under union and concatenation but not under intersection or complement.</p><p class=\"row\"><b>Takeaway.</b> Keep the machine for each level in mind: the machine tells you what the class can and cannot close over.</p>",
+   "solution_plain": "Detailed solutionConcept. The hierarchy is REG ⊂ CFL ⊂ CSL ⊂ RE, each level matched to a machine: finite automaton, pushdown automaton, linear-bounded automaton, Turing machine. Each inclusion is strict, and a language one level up need not satisfy the closure properties of the level below.Step by step.(A) True by the chain: a regular language is context-free, and every context-free language is context-sensitive (a CFG with ε-free productions is non-contracting).(B) False: {aⁿbⁿcᵐ} and {aᵐbⁿcⁿ} are context-free, but their intersection {aⁿbⁿcⁿ} is not.(C) True: that is the machine characterisation of Type 1.(D) True: an LBA can check the three counts against the input length, while the pumping lemma for context-free languages rules out {aⁿbⁿcⁿ}.Answer: Options (A), (C) and (D).Common misconception. Believing closure under union extends to intersection. The context-free languages are closed under union and concatenation but not under intersection or complement.Takeaway. Keep the machine for each level in mind: the machine tells you what the class can and cannot close over."
+  },
+  {
+   "id": "TOC-U4-Q124",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "chomsky-hierarchy-summary",
+   "subtopic": "chomsky-hierarchy-summary",
+   "subtopic_label": "Chomsky hierarchy summary",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "The Chomsky hierarchy has four levels: regular (Type 3), context-free (Type 2), context-sensitive (Type 1) and recursively enumerable (Type 0). For how many of these four classes is the class closed under intersection? (Enter a single integer.)",
+   "question_html": "<p class=\"qtext\">The Chomsky hierarchy has four levels: regular (Type 3), context-free (Type 2), context-sensitive (Type 1) and recursively enumerable (Type 0). For how many of these four classes is the class closed under <b>intersection</b>?<br/>(Enter a single integer.)</p>",
+   "options": [],
+   "options_html": [],
+   "answer": [
+    3
+   ],
+   "answer_display": "3",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Closure under intersection is a product construction: run the two machines for the class side by side on the same input and accept when both accept. It works whenever the product of two machines of the class is again a machine of the class.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>Regular.</b> The product of two DFAs is a DFA. Closed.</li><li><b>Context-free.</b> Two PDAs need two stacks, so the product is not a PDA. Not closed &mdash; <span class=\"mm\">{aⁿbⁿcᵐ} ∩ {aᵐbⁿcⁿ} = {aⁿbⁿcⁿ}</span>.</li><li><b>Context-sensitive.</b> Two LBAs run in lock-step on two tracks of one linearly bounded tape, giving an LBA. Closed.</li><li><b>Recursively enumerable.</b> Two machines simulated alternately on the same input accept when both accept. Closed.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 &mdash; regular, context-sensitive and recursively enumerable.</span></p><p class=\"row\"><b>Common misconception.</b> Answering 4 by analogy with union, which all four classes do have. The pushdown store is the single point of failure: it cannot be duplicated.</p><p class=\"row\"><b>Takeaway.</b> Intersection needs the product machine. One stack cannot be split, two tapes can.</p>",
+   "solution_plain": "Detailed solutionConcept. Closure under intersection is a product construction: run the two machines for the class side by side on the same input and accept when both accept. It works whenever the product of two machines of the class is again a machine of the class.Step by step.Regular. The product of two DFAs is a DFA. Closed.Context-free. Two PDAs need two stacks, so the product is not a PDA. Not closed — {aⁿbⁿcᵐ} ∩ {aᵐbⁿcⁿ} = {aⁿbⁿcⁿ}.Context-sensitive. Two LBAs run in lock-step on two tracks of one linearly bounded tape, giving an LBA. Closed.Recursively enumerable. Two machines simulated alternately on the same input accept when both accept. Closed.Answer: 3 — regular, context-sensitive and recursively enumerable.Common misconception. Answering 4 by analogy with union, which all four classes do have. The pushdown store is the single point of failure: it cannot be duplicated.Takeaway. Intersection needs the product machine. One stack cannot be split, two tapes can."
+  },
+  {
+   "id": "TOC-U4-Q125",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 4,
+   "unit_number": 4,
+   "unit_slug": "turing-machines-decidability",
+   "unit_name": "Turing Machines & Decidability",
+   "topic": "Turing Machines & Decidability",
+   "sub": "chomsky-hierarchy-summary",
+   "subtopic": "chomsky-hierarchy-summary",
+   "subtopic_label": "Chomsky hierarchy summary",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 2 of 2 (third pass)",
+   "question": "Which one of the following problems is decidable for context-sensitive grammars but undecidable for unrestricted (Type 0) grammars?",
+   "question_html": "<p class=\"qtext\">Which one of the following problems is decidable for context-sensitive grammars but <b>undecidable</b> for unrestricted (Type 0) grammars?</p>",
+   "options": [
+    "whether L(G) = L(G′) for two grammars of the class",
+    "whether L(G) = ∅",
+    "whether G is ambiguous",
+    "whether L(G) is regular"
+   ],
+   "options_html": [
+    "whether <span class=\"mm\">L(G) = L(G′)</span> for two grammars of the class",
+    "whether <span class=\"mm\">L(G) = ∅</span>",
+    "whether <span class=\"mm\">G</span> is ambiguous",
+    "whether <span class=\"mm\">L(G)</span> is regular"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A context-sensitive grammar has a non-contracting production set, so every sentential form of a derivation of a string of length <span class=\"mm\">n</span> has length at most <span class=\"mm\">n</span>. Emptiness then reduces to a search over finitely many bounded forms. For unrestricted grammars no such bound exists.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(B)</b> For a CSG, if <span class=\"mm\">L(G) ≠ ∅</span> there is a derivable string; every sentential form on the way to it is no longer than that string, and the set of forms of length at most <span class=\"mm\">k</span> over a finite alphabet is finite. Searching level by level over bounded forms decides emptiness. For a Type 0 grammar, emptiness is undecidable.</li><li><b>(A)</b> Equivalence of two context-sensitive grammars is undecidable, so it is not a candidate.</li><li><b>(C)</b> Ambiguity is undecidable already for context-free grammars, and remains undecidable for context-sensitive ones.</li><li><b>(D)</b> Whether <span class=\"mm\">L(G)</span> is regular is undecidable for context-sensitive grammars as well.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; emptiness.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that everything about context-sensitive grammars is decidable because the class is recursive. Membership and emptiness are decidable; equivalence, ambiguity and regularity are not.</p><p class=\"row\"><b>Takeaway.</b> The non-contracting condition is what makes emptiness decidable: it caps the length of every intermediate form.</p>",
+   "solution_plain": "Detailed solutionConcept. A context-sensitive grammar has a non-contracting production set, so every sentential form of a derivation of a string of length n has length at most n. Emptiness then reduces to a search over finitely many bounded forms. For unrestricted grammars no such bound exists.Step by step.(B) For a CSG, if L(G) ≠ ∅ there is a derivable string; every sentential form on the way to it is no longer than that string, and the set of forms of length at most k over a finite alphabet is finite. Searching level by level over bounded forms decides emptiness. For a Type 0 grammar, emptiness is undecidable.(A) Equivalence of two context-sensitive grammars is undecidable, so it is not a candidate.(C) Ambiguity is undecidable already for context-free grammars, and remains undecidable for context-sensitive ones.(D) Whether L(G) is regular is undecidable for context-sensitive grammars as well.Answer: Option (B) — emptiness.Common misconception. Assuming that everything about context-sensitive grammars is decidable because the class is recursive. Membership and emptiness are decidable; equivalence, ambiguity and regularity are not.Takeaway. The non-contracting condition is what makes emptiness decidable: it caps the length of every intermediate form."
   }
  ]
 }
