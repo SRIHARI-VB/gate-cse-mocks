@@ -7,32 +7,125 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 3 — Memory Hierarchy & Cache Memory, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html`](computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html)
+- **Compiler Design · Unit 4 — Syntax-Directed Translation & Intermediate Code, Set 2 of 2 (third pass)**, 2026-11-03 →
+  [`compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-03.html`](compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: direct, associative & set-associative mapping (6) · cache hit/miss & miss penalty (6) ·
-  replacement algorithms (6) · write policies: write-through & write-back (7)
-- Rotation: MODE A. The draw returned **Computer Architecture**. Its most recent paper was `{2026-11-03, run 13,
-  unit 2, datapath-control-unit, Set 1 of 2 (second pass)}`, and unit 2 stood at **75** questions, above
+- Subtopics: S-attributed vs L-attributed definitions (6) · three-address code, quadruples & triples (7) ·
+  syntax trees & DAGs (6) · type checking (6)
+- Rotation: MODE A. The draw returned **Compiler Design**. Its most recent paper was `{2026-11-02, run 18,
+  unit 3, bottom-up-parsing, Set 2 of 2 (second pass)}`, and unit 3 stood at **100** questions, above
   `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(1 + 1) mod 6 = 2` → **Unit 3, Memory Hierarchy & Cache Memory**, which already held 50 questions from
-  2026-10-29 and 2026-10-30. **B5** therefore applies: the second pass over Computer Architecture begins, and this
-  paper is **Set 1 of 2 of the second pass**, taking unit 3 to 75.
-- Previous test: **Digital Logic · Unit 4 — Sequential Circuits: Counters & State Machines, Set 1 of 2 (third pass)**,
-  2026-11-03 → [`digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-03.html`](digital-logic/sequential-fsm-counters/gate_dl_mock_4_2026-11-03.html)
+  `(2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**, which already held 75
+  questions from 2026-10-28, 2026-10-29 and 2026-11-01. **B5** therefore applies: the modulo has wrapped into a
+  third pass, and this paper is **Set 2 of 2 of the third pass**, taking unit 4 to 100.
+- Previous test: **Computer Architecture · Unit 3 — Memory Hierarchy & Cache Memory, Set 1 of 2 (second pass)**,
+  2026-11-03 → [`computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html`](computer-architecture/cache-memory/gate_co_mock_3_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 202 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 18 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 70 current · 132 archived |
+| Papers published (current + archived) | 203 (31 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 23 Operating Systems, 14 Engineering Mathematics, 19 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 16 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 70 current · 133 archived |
 | Test cards on the portal | 70 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 15 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5050 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 450 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5075 (775 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 575 Operating Systems, 350 Engineering Mathematics, 475 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 400 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 132 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 13 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 12 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 133 (16 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 17 Operating Systems, 9 Engineering Mathematics, 12 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 12 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Compiler Design Unit 4, Set 2 of 2 (third pass)
+
+- New paper at `compiler-design/sdt-intermediate-code/gate_cd_mock_4_2026-11-03.html`. The 2026-11-01 Set 1 paper moved
+  to `compiler-design/sdt-intermediate-code/archive/gate_cd_mock_4_2026-11-01_run3.html` with its content frozen (same
+  questions, options, answers, solutions and duration), so the unit folder holds exactly one current paper and the
+  repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Nine subjects already carried a paper dated 2026-11-03 (algorithms,
+  computer-architecture twice, computer-networks, databases twice, digital-logic three times, discrete-mathematics
+  twice, operating-systems, programming-data-structures, theory-of-computation), so the draw ran over the two subjects
+  with no paper of that date, in syllabus order (engineering-mathematics, compiler-design), with an unseeded
+  `secrets.randbelow(2)`. It returned index 1 — **Compiler Design**. `runs[]` sorted by `(date, run)` gave the most
+  recent paper as `{2026-11-02, run 18, unit 3, bottom-up-parsing, Set 2 of 2 (second pass)}`. Unit 3 held **100**
+  questions, above `UNIT_QUESTION_CAP = 50`, so **B3 failed on the cap**; its first paper was 2026-10-27, seven days
+  earlier, so the 7-day backstop would also have fired. **B4 advanced exactly one unit**:
+  `(index_of(bottom-up-parsing) = 2 + 1) mod 5 = 3` → **Unit 4, Syntax-Directed Translation & Intermediate Code**, which
+  already held 75 questions from 2026-10-28 (two sets), 2026-10-29 and 2026-11-01. **B5** applies: the modulo wraps, the
+  third pass continues, and this paper is **Set 2 of 2 of the third pass**, the unit's fourth set overall, taking unit 4
+  to 100. No override, no partial set, exactly 25 questions.
+- **Deviation recorded.** The same-day de-duplication noted under the earlier 2026-11-03 entries is still in force:
+  every unit of every subject is at or above `UNIT_QUESTION_CAP`, so the draw is taken over the subjects that have not
+  yet produced a paper dated 2026-11-03, and B4/B5 are then applied as written. The cap-exceeding set is recorded here,
+  which is what B5 asks for.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative marking ·
+  MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About tab says so.
+- **Coverage.** All four unit subtopics: S-attributed vs L-attributed definitions 6 · three-address code, quadruples &
+  triples 7 · syntax trees & DAGs 6 · type checking 6. Difficulty 10 easy / 10 medium / 5 hard. Sources:
+  15 `STANDARD_TEXTBOOK`, 10 `ORIGINAL_SYNTHESIS`.
+- **What the set asks.** Attributes: when a mid-rule action fires (**after B, before C**), the consequence of a cycle in
+  a dependency graph (**no evaluation order**), the L-condition on `A → B C` with `C.i = B.s + A.i` (**satisfied**), the
+  rules of a five-option production that break it (**B.i = C.s and C.i = A.s**), the attribute instances of a
+  three-child production (**8**), and why synthesized attributes suit bottom-up parsing. Three-address code: the copy
+  form in a quadruple (**`(=, y, -, x)`**), how many of four forms are three-address (**3**), the indexed translation of
+  `x = y[i]` (**scale the index by 4, then load**), the repertoire of the intermediate form (**A, B, C**), tracing
+  straight-line code (**1**) and a backward-jump loop (**30**), and the address of `a[3][4]` in a column-major 10×10
+  array of 2-byte elements (**2086**). DAGs: what a shared node means, node counts against the syntax tree (**at most as
+  many, fewer when a subexpression repeats**), the DAG of `a = b + c; d = b + c; e = a * d` (**d = a, one addition**),
+  interior nodes for `x = a - b; y = b - a; z = x - y` (**3**), the node count of `(a+b)*(a-b)+(a+b)*(a-b)` (**6**), and
+  an MSQ on what a DAG does and does not license (**A, C, E**). Type checking: what a coercion node is, overloading
+  against coercion, the type constructors (**A, B, D**), widening conversions (**A, C**), overload resolution for
+  `f(2, 3.0)` against four declarations (**1**), and name equivalence keeping two identical pointer types apart.
+- **Answers recomputed, not asserted.** Every numeric key came from a script or an explicit trace: the eight attribute
+  instances of `A → B C D` are `2 + 3 × 2`; `4 → 12 → 7 → 1` for the straight-line trace; the loop body runs with
+  `t2 = 1, 2, 3, 4` and adds `1 + 4 + 9 + 16 = 30`, the test failing at `t2 = 5`; column-major offset
+  `(4 × 10 + 3) × 2 = 86`, so `2000 + 86 = 2086`, against the row-major distractor `2068`; the DAG of
+  `(a+b)*(a-b)+(a+b)*(a-b)` was built node by node (two leaves, two inner nodes, one shared product, one outer sum) to
+  give 6, and `x = a - b; y = b - a; z = x - y` was built with ordered children to give 3 interior nodes; the three
+  overload declarations were tested one by one against `f(2, 3.0)` with widening only, leaving one applicable. The
+  grading engine was then replayed in a headless browser against the decoded payload: a perfect attempt scores
+  **35 / 35** with 25 correct, 0 incorrect and 0 unattempted.
+- **No PYQ claim.** `verified_pyqs` is empty for Compiler Design: no syntax-directed-translation, intermediate-code,
+  DAG or type-checking previous-year question has been verified against a year, a paper and an official answer key, so
+  nothing on this paper is called an official GATE question and no active item carries `GATE_PYQ_VARIATION`. The About
+  tab and the Question Bank tab both say so.
+- **Option balance.** The 15 MCQ answers are spread 4 A / 4 B / 4 C / 3 D. The five MSQ answer sets are (C), (D);
+  (A), (B), (C); (A), (C), (E); (A), (B), (D); and (A), (C) — five different letter patterns. Every letter named inside a
+  solution is the letter the candidate sees.
+- **Overlap control.** All 25 stems were checked against the 75 already banked for this unit: the definition of
+  S-attributed, the traversal that evaluates it, the dependency-graph edge count, the `A → B C D` evaluation order, the
+  quadruple field order, the triple and indirect-triple questions, the temporary-count questions, the row-major address
+  question, the DAG node-count questions on `a + a*(b-c) + (b-c)*d` and `a*(b+c) - (b+c)/d`, the `d = a + b; e = a + b;
+  f = d + e` block, and the soundness/completeness pair. None of those stems, numbers or answer sets is reused; where a
+  concept recurs it is asked from a different angle (a mid-rule action rather than the definition, a cycle rather than an
+  edge count, a column-major rather than a row-major address, a repeated product whose outer sum shares one child, name
+  equivalence rather than soundness).
+- **Verification (Section 6.8).** Shell parity: the paper was generated from the 2026-11-01 shell of the same unit, and
+  with title, sub-line, candidate block, bank-count button, meta strip, question host, bank view, About view and payload
+  masked, the remaining bytes are identical to
+  `compiler-design/sdt-intermediate-code/archive/gate_cd_mock_4_2026-11-01_run3.html`. One copy: the paper exists at
+  exactly one path, `index.html` is the only HTML file at the root, and the tree holds 203 papers (70 current, 133
+  archived). Links: all 70 test paths and all 133 archive paths in the portal's data block resolve. Tokens: the `:root`
+  block is byte-identical to `design-tokens.css` and to `index.html`. Counts: the paper renders 25 test cards, a
+  25-button palette, 450 banked question cards, 5 NAT inputs, 60 radios and 22 checkboxes, and all eight `data-*`
+  attributes are present on all 25 active cards and all 450 bank cards. No duplicate content: none of the 25 active ids
+  appears in the Question Bank tab. No CDN: no `<link>`, no `http` URL and no KaTeX — the file opens offline. Block tags
+  balance (no unclosed `div`, `details`, `aside` or `header`). README: this table and this entry.
+- **Interface run.** Headless Chromium at 1280 px: one question visible at a time, the palette showing 24 answered and
+  the current question, marking question 2 turning its palette button `amr`, and `Submit test` producing **35 / 35**,
+  25 correct, the Answer Key tab unlocked with 25 key cards, all 25 palette buttons `ok`, and every solution block
+  filled. Before submit the Answer Key tab is `disabled`, every `.sol` block in the question host is empty, and no
+  `correct`/`wrongpick` class exists in the test host. No JavaScript error was raised.
+- **Ids and bank.** 25 records appended as `CD-U4-Q76`–`CD-U4-Q100`; Compiler Design now holds **475** questions and 19
+  runs, and `data/questions-compiler-design.js` grew from 450 to 475 records. The paper's Question Bank tab carries the
+  **450** other solved questions of the subject (75 for Unit 4) and excludes the 25 active ones.
+- **Portal.** `index.html` data block: the Compiler Design Unit 4 entry now points at the 2026-11-03 paper with
+  `Set 2 of 2 (third pass)` and lists the 2026-11-01, 2026-10-29 and 2026-10-28 papers as archive links; the record
+  chips now read 5075 solved questions. `README.md` status table updated to 203 papers, 70 current · 133 archived,
+  5075 questions, 475 Compiler Design questions.
+- **Known pre-existing defect, unchanged.** Section 6.4 asks for no raw hex outside `:root`. The shell still carries raw
+  hex colour values outside the token block (185 occurrences here, against 136 in the previous paper of this unit, the
+  growth coming from bank solution payloads), inherited byte for byte from every previously shipped paper. Fixing them
+  would break shell parity with the other 202 papers, so they are left as they are and the deviation is recorded rather
+  than claimed as compliance.
 
 ### 2026-11-03 — Computer Architecture Unit 3, Set 1 of 2 (second pass)
 
