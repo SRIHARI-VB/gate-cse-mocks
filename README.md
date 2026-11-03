@@ -7,32 +7,69 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 6 — File Systems & Disk Scheduling, Set 2 of 2 (second pass)**, 2026-11-03 →
-  [`operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html`](operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html)
+- **Theory of Computation · Unit 3 — Pushdown Automata, Set 2 of 2 (third pass)**, 2026-11-03 →
+  [`theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html`](theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: File allocation: indexed & linked (11) · Free-space management (4) · Disk scheduling (5) ·
-  Access control & protection (5)
-- Rotation: MODE A. An unseeded draw over the eleven GATE CSE subjects returned **Operating Systems**. Its most
-  recent paper was `{2026-11-03, run 23, unit 5, virtual-memory, Set 1 of 2 (third pass)}`, and unit 5 stood at
-  **100** questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
-  `(index_of(virtual-memory) = 4 + 1) mod 6 = 5` → **Unit 6, File Systems & Disk Scheduling**, which already held
-  75 questions. Every unit of all eleven subjects now stands at or above the 50-question cap, so the series is on
-  its second pass everywhere; this paper takes Unit 6 to 100. No override, no partial set, exactly 25 questions.
-- Previous test: **Programming and Data Structures · Unit 6 — Heaps & Priority Queues, Set 1 of 2 (second pass)**, 2026-11-03 →
-  [`programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html`](programming-data-structures/heaps-priority-queues/gate_ds_mock_6_2026-11-03.html)
+- Subtopics: Deterministic PDA (7) · Nondeterministic PDA (7) · Acceptance: empty store vs final state (5) ·
+  Equivalence with CFG (6)
+- Rotation: MODE A. An unseeded draw over the eleven GATE CSE subjects returned **Theory of Computation**. Its most
+  recent paper was `{2026-11-03, run 18, unit 2, cfl-grammars, Set 2 of 2 (third pass)}`, and unit 2 stood at
+  **125** questions, so **B3 failed on the cap** and **B4 advanced exactly one unit**:
+  `(index_of(cfl-grammars) = 1 + 1) mod 4 = 2` → **Unit 3, Pushdown Automata**, which already held 100 questions.
+  This paper is the second set of Unit 3's third pass and takes the unit to 125. No override, no partial set,
+  exactly 25 questions.
+- Previous test: **Operating Systems · Unit 6 — File Systems & Disk Scheduling, Set 2 of 2 (second pass)**, 2026-11-03 →
+  [`operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html`](operating-systems/storage-file-systems/gate_os_mock_6_2026-11-03.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 208 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 18 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
-| Current papers / archived sets | 71 current · 137 archived |
+| Papers published (current + archived) | 209 (33 Discrete Mathematics, 16 Algorithms, 14 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 20 Programming and Data Structures, 19 Computer Networks, 19 Theory of Computation, 17 Digital Logic, 14 Computer Architecture) |
+| Current papers / archived sets | 71 current · 138 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5200 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 450 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
+| Questions in the subject banks | 5225 (825 Discrete Mathematics, 400 Algorithms, 350 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 500 Programming and Data Structures, 475 Computer Networks, 475 Theory of Computation, 425 Digital Logic, 350 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 137 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 14 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+| Archived sets (earlier runs) | 138 (17 Discrete Mathematics, 9 Algorithms, 9 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 13 Programming and Data Structures, 13 Computer Networks, 15 Theory of Computation, 13 Digital Logic, 8 Computer Architecture) |
+
+### 2026-11-03 — Theory of Computation Unit 3, Set 2 of 2 (third pass)
+
+- New paper at `theory-of-computation/pushdown-automata/gate_toc_mock_3_2026-11-03.html`. The 2026-10-31 paper it
+  supersedes moved to `archive/gate_toc_mock_3_2026-10-31_run4.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** An unseeded `secrets.randbelow(11)` draw over the eleven subjects in syllabus
+  order returned index 6, **Theory of Computation**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 18, unit 2, cfl-grammars, Set 2 of 2 (third pass)}` and unit 2 stood at **125** questions, so
+  **B3 failed on the cap** (unit 2's first paper was 2026-10-26, eight days earlier, so the 7-day backstop would
+  also have fired). **B4 advanced exactly one unit**: `(index_of(cfl-grammars) = 1 + 1) mod 4 = 2` →
+  **Unit 3, Pushdown Automata**, which already held its 100 questions. The 50-question ceiling governs the first
+  pass; Unit 3 is on its third pass and this paper is the second set of that pass, taking the unit to **125**. No
+  override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics of the unit carry questions — deterministic PDA 7, nondeterministic PDA 7,
+  acceptance: empty store vs final state 5, equivalence with CFG 6.
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every numeric answer was recomputed independently by script before the paper was written: a
+  machine that pushes one symbol per `a` and pops one per `b` reaches height 1 + 4 = 5 on `a⁴b⁴`; a run of three
+  pushes, three pops and one closing `ε`-move costs 7 moves on `a³b³`; the palindromes of length at most 4 number
+  1 + 2 + 2 + 4 + 4 = 13; of `{aⁿbⁿ}`, `{aⁿbⁿcⁿ}`, `{wwᴿ}`, `{i = j or j = k}` and the primes in unary exactly three
+  are context-free; and the triple construction over 3 states and 2 stack symbols yields 3 · 3 · 2 = 18 variables.
+  The five MSQ answer sets were checked option by option, each marked option proved and each unmarked option
+  refuted.
+- **Grading engine.** Replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank
+  paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0.
+- **Interface.** Same shell as every other paper — identical markup, CSS and JavaScript. The `<style>` and closing
+  `<script>` blocks hash to the same digests as the 2026-11-03 Unit 2 paper this one follows, and the `:root` block
+  matches `design-tokens.css`. The Question Bank tab shows the 450 banked items that are not on the active paper,
+  and the portal's `tests[]` entry, its archive links and `data/questions-theory-of-computation.js` were extended
+  from the same 25 records.
+- **Provenance.** No previous-year question on deterministic PDAs, nondeterministic PDAs, the acceptance modes or
+  the grammar equivalence has been verified against an official paper and answer key, so nothing on this paper is
+  claimed as an official GATE question and no item carries `GATE_PYQ_VARIATION`. Sources: 14 textbook-inspired, 11
+  original synthesis.
 
 ### 2026-11-03 — Operating Systems Unit 6, Set 2 of 2 (second pass)
 
