@@ -7,35 +7,64 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 4 — Dynamic Programming, Set 3 (second pass)**,
+- **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 2 of 2 (second pass)**,
+  2026-11-05 →
+  [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Data types & operators (8) · Control structures (7) · Functions & parameter passing (6) ·
+  Recursion & stack execution (4)
+- Rotation: MODE A. The unseeded `random.SystemRandom()` draw ran over all eleven subjects and returned
+  **Programming and Data Structures**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 21, unit 7, hashing, Set 1 of 2 (second pass)}`. That unit stands at **75** questions and every
+  unit of the subject is at or above the cap (75, 75, 75, 75, 75, 75, 75), so **B3 failed on the cap** and the 7-day
+  backstop was irrelevant. **B4 advanced exactly one unit**: `(index_of(hashing) = 6 + 1) mod 7 = 0` →
+  **Unit 1, C Programming Foundations**, which held 75 questions and opens the second set of its second pass.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Algorithms · Unit 4 — Dynamic Programming, Set 3 (second pass)**,
   2026-11-04 →
   [`algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html`](algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Matrix-chain multiplication (7) · Longest common subsequence (6) · 0-1 knapsack (6) ·
-  All-pairs shortest paths, Floyd–Warshall (6)
-- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the draw ran over all eleven and
-  returned **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 17, unit 3, greedy-algorithms, Set 3 (second pass)}`. Unit 3 stands at **75** questions and
-  every other unit of the subject is also at or above the cap (75, 75, 75, 50, 50, 50, 50), so **B3 failed on the
-  cap**. **B4 advanced exactly one unit**: `(index_of(greedy-algorithms) = 2 + 1) mod 7 = 3` → **Unit 4, Dynamic
-  Programming**, which held 50 questions and opens its **second pass**. No override was passed and no partial set
-  was generated: exactly 25 questions.
-- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 2 of 2 (third pass)**,
-  2026-11-04 →
-  [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 229 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 158 archived |
+| Papers published (current + archived) | 230 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 159 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5725 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5750 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 158 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 159 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-05 — Programming and Data Structures Unit 1, Set 2 of 2 (second pass)
+
+- New paper at `programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html`. The 2026-11-01 paper it supersedes moved to `archive/gate_ds_mock_1_2026-11-01_run1.html`
+  with its content frozen, so the unit folder holds exactly one current paper and the repository root still holds
+  only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw returned **Programming and Data Structures**. Its most recent paper was
+  `{2026-11-04, run 21, unit 7, hashing, Set 1 of 2 (second pass)}`; unit 7 carries 75 questions and every unit of the
+  subject is at or above `UNIT_QUESTION_CAP = 50` (75, 75, 75, 75, 75, 75, 75), so **B3 failed on the cap**.
+  **B4 advanced exactly one unit**: `(6 + 1) mod 7 = 0` → **Unit 1, C Programming Foundations**, whose 75 banked
+  questions make this the second set of its second pass and take the unit to 100. No override, no partial set.
+- **Coverage.** All four subtopics are represented: data types & operators (8), control structures (7), functions &
+  parameter passing (6), recursion & stack execution (4). The 25 items are `DS-U1-Q76`–`DS-U1-Q100`; every stem was
+  checked against the 75 Unit 1 items already banked and none restates one.
+- **New angles in this set**, chosen to avoid the ground the first three sets covered: array decay under `sizeof`
+  inside a callee; the integer promotions behind an `unsigned char` sum; shift-versus-addition precedence; the common
+  type of a conditional expression; the type of an unsuffixed hexadecimal constant and the signed-to-unsigned
+  comparison beside it; the dangling `else`; a `switch` whose `default` is written first; `break` and `continue` in
+  nested loops; a `do ... while` that runs once; a structure copied by value; a two-dimensional array parameter; a
+  returned address of a `static` local and the aliasing it creates; mutual recursion; a `static` counter measuring
+  live activations; a function pointer; `sizeof` of a two-dimensional array; a count of multiples under
+  `||`; a `static` accumulator across three calls; a three-way recursion tree; and the sign of `%` for a negative
+  dividend.
+- **Verification.** No C compiler is available in the generation sandbox, so every trace was re-derived step by step
+  and each numeric answer was independently recomputed by a script that models the same control flow; the paper's
+  payload, option counts, difficulty split and subtopic distribution were checked programmatically after the build.
+- **Shell parity.** The new paper differs from the previous one only in its payload and its metadata lines: the
+  `:root` block, the CSS and the JavaScript are byte-identical, and the diff of everything outside the payload shows
+  only the title, header sub-line, candidate id, meta strip and question-bank count.
 
 ### 2026-11-04 — Algorithms Unit 4, Set 3 (second pass)
 
