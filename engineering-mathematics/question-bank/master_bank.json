@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such. total_questions was stale at 25 after the second run (50 records were present); it is recomputed from len(questions) on every append as of 2026-10-26.",
-  "total_questions": 350,
+  "total_questions": 375,
   "units_with_questions": [
    1,
    2,
@@ -14,7 +14,7 @@
    4,
    5
   ],
-  "total_runs": 14
+  "total_runs": 15
  },
  "runs": [
   {
@@ -903,6 +903,73 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. An unseeded secrets.randbelow(11) draw over the eleven GATE CSE subjects in syllabus order returned index 1 - Engineering Mathematics. engineering-mathematics/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-01, run 13, unit 3, calculus-limits-derivatives, Set 1 of 2 (second pass)}. Unit 3 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap; its first paper was 2026-10-27, six days earlier, so the 7-day backstop played no part. Step B4 advanced exactly one unit: (index_of(calculus-limits-derivatives) = 2 + 1) mod 5 = 3 -> Unit 4, Calculus: Maxima, Minima & Integrals. Unit 4 already held 50 questions from its two first-pass sets, and every one of the five Engineering Mathematics units now sits at or above the cap (75, 75, 75, 50, 50), so step B5 applies and the second pass continues; this is the first set of that pass, the unit's third set overall. Exactly 25 questions, no override, no partial set.",
    "note": "Second pass, Set 1 of 2 for Unit 4 (the unit's third set overall). Every numeric key was recomputed with sympy before the paper was written. No verified GATE PYQ exists for this unit, so nothing on this paper is claimed as official."
+  },
+  {
+   "run": 15,
+   "date": "2026-11-04",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability &amp; Distributions",
+   "set": "Set 3 (second pass)",
+   "count": 25,
+   "file": "engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html",
+   "archived_previous": "engineering-mathematics/probability-distributions/archive/gate_em_mock_5_2026-10-30_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "random-variables-cdf-pdf": 5,
+    "uniform-distribution": 5,
+    "exponential-distribution": 5,
+    "normal-distribution": 5,
+    "correlation-and-covariance": 5
+   },
+   "sources": {
+    "STANDARD_TEXTBOOK": 16,
+    "ORIGINAL_SYNTHESIS": 9
+   },
+   "question_ids": [
+    "EM-U5-Q51",
+    "EM-U5-Q52",
+    "EM-U5-Q53",
+    "EM-U5-Q54",
+    "EM-U5-Q55",
+    "EM-U5-Q56",
+    "EM-U5-Q57",
+    "EM-U5-Q58",
+    "EM-U5-Q59",
+    "EM-U5-Q60",
+    "EM-U5-Q61",
+    "EM-U5-Q62",
+    "EM-U5-Q63",
+    "EM-U5-Q64",
+    "EM-U5-Q65",
+    "EM-U5-Q66",
+    "EM-U5-Q67",
+    "EM-U5-Q68",
+    "EM-U5-Q69",
+    "EM-U5-Q70",
+    "EM-U5-Q71",
+    "EM-U5-Q72",
+    "EM-U5-Q73",
+    "EM-U5-Q74",
+    "EM-U5-Q75"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A. The eleven-subject draw was restricted to the six subjects that carried no paper dated 2026-11-04 (algorithms, compiler-design, digital-logic, discrete-mathematics, engineering-mathematics, operating-systems); an unseeded secrets.randbelow(6) draw over those six in syllabus order returned index 4 - Engineering Mathematics. engineering-mathematics/question-bank/master_bank.json runs[] sorted by (date, run) gave the most recent paper as {2026-11-02, run 14, unit 4, calculus-optimization-integrals, Set 1 of 2 (second pass)}. Unit 4 held 75 questions, above UNIT_QUESTION_CAP = 50, so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(calculus-optimization-integrals) = 3 + 1) mod 5 = 4 -> Unit 5, Continuous Probability & Distributions, which already held 50 questions from 2026-10-30. Every unit of the subject is at or above the cap (75, 75, 75, 75, 50), so step B5 applies: the second pass continues and this paper is the unit's third set, taking it to 75. No override was used and no partial set was generated.",
+   "note": "Set 3 (second pass) for Engineering Mathematics Unit 5. The 2026-10-30 paper moved to archive/gate_em_mock_5_2026-10-30_run2.html with its content frozen, so the unit folder holds exactly one current paper and the repository root holds only index.html. All 25 items are new (EM-U5-Q51..Q75); no id and no normalised stem collides with the 50 items already banked for this unit. Coverage: random variables, CDF & PDF 5, uniform distribution 5, exponential distribution 5, normal distribution 5, correlation & covariance 5 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script (quadrature, distribution functions and Monte Carlo cross-checks): Q51 c = 1/10; Q52 P = 1/2; Q53 E[X|X>1/2] = 45/56; Q54 c = 3/32 with P(X>3) = 5/32; Q55 median 4^(1/3) = 1.59 against a mean of 1.50; Q56 E[X^2] = 1/3; Q57 p90 = 18; Q58 conditional mean 5/8; Q60 P(X+Y>1.5) = 0.125; Q61 0.3834; Q62 Var(3X+1) = 36; Q63 E[min] = 1.2; Q65 E[max] = 4.5; Q66 0.6827; Q67 0.0668; Q68 0.8185; Q69 mean 7, variance 36, rho = 1; Q70 72.80; Q71 rho = -1; Q72 Var(X)-Var(Y); Q73 19; Q74 rho 0.5, Var(X+Y) 37, Var(X-Y) 13; Q75 25. The five MSQ answer sets were checked option by option. verified_pyqs is empty for Engineering Mathematics, so no item carries the GATE_PYQ_VARIATION tag and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [],
@@ -14515,6 +14582,999 @@
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A scalar field is harmonic when its Laplacian <span class=\"mm\">∇²f = f<sub>xx</sub> + f<sub>yy</sub></span> vanishes identically. For polynomials this is a direct computation, and harmonicity has nothing to do with having a minimum.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For <span class=\"mm\">f = x² + y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = 2</span>, so <span class=\"mm\">∇²f = 4 ≠ 0</span>.</li><li>For <span class=\"mm\">f = x³ + y³</span>: <span class=\"mm\">f<sub>xx</sub> = 6x</span>, <span class=\"mm\">f<sub>yy</sub> = 6y</span>, so <span class=\"mm\">∇²f = 6(x + y) ≠ 0</span>.</li><li>For <span class=\"mm\">f = x² − y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2</span>, <span class=\"mm\">f<sub>yy</sub> = −2</span>, so <span class=\"mm\">∇²f = 0</span> — harmonic.</li><li>For <span class=\"mm\">f = x²y²</span>: <span class=\"mm\">f<sub>xx</sub> = 2y²</span>, <span class=\"mm\">f<sub>yy</sub> = 2x²</span>, so <span class=\"mm\">∇²f = 2(x² + y²) ≠ 0</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: f = x² − y² — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every quadratic is harmonic, or that a harmonic function must have a minimum. <span class=\"mm\">x² − y²</span> is harmonic and has a saddle point at the origin: a non-constant harmonic function can never have an interior maximum or minimum.</p>",
    "marks": 1
+  },
+  {
+   "id": "EM-U5-Q51",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "random-variables-cdf-pdf",
+   "subtopic": "random-variables-cdf-pdf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = cx</code> for <code class=\"mm\">0 ≤ x ≤ 2</code>, <code class=\"mm\">f(x) = c(6 − x)</code> for <code class=\"mm\">2 < x ≤ 6</code>, and <code class=\"mm\">f(x) = 0</code> otherwise. The value of <code class=\"mm\">c</code> is",
+   "text": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = cx</code> for <code class=\"mm\">0 ≤ x ≤ 2</code>, <code class=\"mm\">f(x) = c(6 − x)</code> for <code class=\"mm\">2 < x ≤ 6</code>, and <code class=\"mm\">f(x) = 0</code> otherwise. The value of <code class=\"mm\">c</code> is",
+   "options": [
+    "<code class=\"mm\">1/8</code>",
+    "<code class=\"mm\">1/10</code>",
+    "<code class=\"mm\">1/12</code>",
+    "<code class=\"mm\">1/6</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A density is normalised over its whole support, so every piece of a piecewise definition contributes to the total area of <code class=\"mm\">1</code>. The constant is fixed by the sum of the pieces, never by one piece alone.",
+    "steps": [
+     "First piece: <code class=\"mm\">∫<sub>0</sub><sup>2</sup> cx dx = c[x²/2]<sub>0</sub><sup>2</sup> = 2c</code>.",
+     "Second piece: <code class=\"mm\">∫<sub>2</sub><sup>6</sup> c(6 − x) dx = c[6x − x²/2]<sub>2</sub><sup>6</sup> = c[(36 − 18) − (12 − 2)] = 8c</code>.",
+     "Add and set to one: <code class=\"mm\">2c + 8c = 10c = 1</code>.",
+     "So <code class=\"mm\">c = 1/10</code>."
+    ],
+    "final": "Option (B) — <code class=\"mm\">c = 1/10</code>.",
+    "trap": "Normalising only the first piece gives <code class=\"mm\">c = 1/2</code>, and normalising only the second gives <code class=\"mm\">c = 1/8</code>. A density written in two parts still has one unit of total area, and the area under <code class=\"mm\">c(6 − x)</code> is four times the area under <code class=\"mm\">cx</code> here, not zero."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A density is normalised over its whole support, so every piece of a piecewise definition contributes to the total area of <code class=\"mm\">1</code>. The constant is fixed by the sum of the pieces, never by one piece alone.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>First piece: <code class=\"mm\">∫<sub>0</sub><sup>2</sup> cx dx = c[x²/2]<sub>0</sub><sup>2</sup> = 2c</code>.</li><li>Second piece: <code class=\"mm\">∫<sub>2</sub><sup>6</sup> c(6 − x) dx = c[6x − x²/2]<sub>2</sub><sup>6</sup> = c[(36 − 18) − (12 − 2)] = 8c</code>.</li><li>Add and set to one: <code class=\"mm\">2c + 8c = 10c = 1</code>.</li><li>So <code class=\"mm\">c = 1/10</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B) — <code class=\"mm\">c = 1/10</code>.</span></p><p class=\"row\"><b>Common trap.</b> Normalising only the first piece gives <code class=\"mm\">c = 1/2</code>, and normalising only the second gives <code class=\"mm\">c = 1/8</code>. A density written in two parts still has one unit of total area, and the area under <code class=\"mm\">c(6 − x)</code> is four times the area under <code class=\"mm\">cx</code> here, not zero.</p>"
+  },
+  {
+   "id": "EM-U5-Q52",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "random-variables-cdf-pdf",
+   "subtopic": "random-variables-cdf-pdf",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "A random variable <code class=\"mm\">X</code> has distribution function <code class=\"mm\">F(x) = 0</code> for <code class=\"mm\">x < 0</code>, <code class=\"mm\">F(x) = x²/16</code> for <code class=\"mm\">0 ≤ x < 4</code>, and <code class=\"mm\">F(x) = 1</code> for <code class=\"mm\">x ≥ 4</code>. Then <code class=\"mm\">P(1 < X ≤ 3)</code> equals",
+   "text": "A random variable <code class=\"mm\">X</code> has distribution function <code class=\"mm\">F(x) = 0</code> for <code class=\"mm\">x < 0</code>, <code class=\"mm\">F(x) = x²/16</code> for <code class=\"mm\">0 ≤ x < 4</code>, and <code class=\"mm\">F(x) = 1</code> for <code class=\"mm\">x ≥ 4</code>. Then <code class=\"mm\">P(1 < X ≤ 3)</code> equals",
+   "options": [
+    "<code class=\"mm\">3/8</code>",
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">5/8</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "For every random variable, continuous or not, <code class=\"mm\">P(a < X ≤ b) = F(b) − F(a)</code>. The distribution function already accumulates all the probability below its argument, so an interval is a difference of two values.",
+    "steps": [
+     "Read the two values off the given <code class=\"mm\">F</code>: <code class=\"mm\">F(3) = 3²/16 = 9/16</code> and <code class=\"mm\">F(1) = 1²/16 = 1/16</code>.",
+     "Subtract: <code class=\"mm\">P(1 < X ≤ 3) = 9/16 − 1/16 = 8/16</code>.",
+     "Simplify: <code class=\"mm\">1/2</code>.",
+     "Check with the density: <code class=\"mm\">f(x) = F′(x) = x/8</code> on <code class=\"mm\">(0, 4)</code>, so <code class=\"mm\">∫<sub>1</sub><sup>3</sup> x/8 dx = [x²/16]<sub>1</sub><sup>3</sup> = 1/2</code>, as required."
+    ],
+    "final": "Option (C) — <code class=\"mm\">1/2</code>.",
+    "trap": "Quoting <code class=\"mm\">F(3) = 9/16</code> alone forgets that <code class=\"mm\">F</code> already holds the probability below <code class=\"mm\">1</code>; and <code class=\"mm\">3/8</code> comes from halving the correct difference by mistake."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For every random variable, continuous or not, <code class=\"mm\">P(a < X ≤ b) = F(b) − F(a)</code>. The distribution function already accumulates all the probability below its argument, so an interval is a difference of two values.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Read the two values off the given <code class=\"mm\">F</code>: <code class=\"mm\">F(3) = 3²/16 = 9/16</code> and <code class=\"mm\">F(1) = 1²/16 = 1/16</code>.</li><li>Subtract: <code class=\"mm\">P(1 < X ≤ 3) = 9/16 − 1/16 = 8/16</code>.</li><li>Simplify: <code class=\"mm\">1/2</code>.</li><li>Check with the density: <code class=\"mm\">f(x) = F′(x) = x/8</code> on <code class=\"mm\">(0, 4)</code>, so <code class=\"mm\">∫<sub>1</sub><sup>3</sup> x/8 dx = [x²/16]<sub>1</sub><sup>3</sup> = 1/2</code>, as required.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — <code class=\"mm\">1/2</code>.</span></p><p class=\"row\"><b>Common trap.</b> Quoting <code class=\"mm\">F(3) = 9/16</code> alone forgets that <code class=\"mm\">F</code> already holds the probability below <code class=\"mm\">1</code>; and <code class=\"mm\">3/8</code> comes from halving the correct difference by mistake.</p>"
+  },
+  {
+   "id": "EM-U5-Q53",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "random-variables-cdf-pdf",
+   "subtopic": "random-variables-cdf-pdf",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = 3x²</code> for <code class=\"mm\">0 ≤ x ≤ 1</code> and <code class=\"mm\">f(x) = 0</code> otherwise. The conditional expectation <code class=\"mm\">E[X | X > 1/2]</code> is",
+   "text": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = 3x²</code> for <code class=\"mm\">0 ≤ x ≤ 1</code> and <code class=\"mm\">f(x) = 0</code> otherwise. The conditional expectation <code class=\"mm\">E[X | X > 1/2]</code> is",
+   "options": [
+    "<code class=\"mm\">3/4</code>",
+    "<code class=\"mm\">7/8</code>",
+    "<code class=\"mm\">15/16</code>",
+    "<code class=\"mm\">45/56</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "A conditional expectation renormalises the density onto the conditioning event: <code class=\"mm\">E[X | X > a] = ∫<sub>a</sub><sup>∞</sup> x f(x) dx ⁄ P(X > a)</code>. The denominator is what turns a partial integral into an average.",
+    "steps": [
+     "Cumulative function: <code class=\"mm\">F(x) = x³</code> on <code class=\"mm\">[0, 1]</code>, so <code class=\"mm\">P(X > 1/2) = 1 − 1/8 = 7/8</code>.",
+     "Numerator: <code class=\"mm\">∫<sub>1/2</sub><sup>1</sup> x · 3x² dx = 3[x⁴/4]<sub>1/2</sub><sup>1</sup> = (3/4)(1 − 1/16) = 45/64</code>.",
+     "Divide: <code class=\"mm\">(45/64) ÷ (7/8) = (45/64)(8/7) = 45/56</code>.",
+     "Numerically <code class=\"mm\">45/56 ≈ 0.804</code>, which lies inside <code class=\"mm\">[1/2, 1]</code> as it must."
+    ],
+    "final": "Option (D) — <code class=\"mm\">45/56 ≈ 0.804</code>.",
+    "trap": "Dropping the denominator leaves <code class=\"mm\">45/64 ≈ 0.703</code>, the unconditional contribution of the upper half; using <code class=\"mm\">P(X > 1/2) = 1/2</code> gives <code class=\"mm\">45/32</code>, which exceeds one and cannot be a mean on <code class=\"mm\">[1/2, 1]</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A conditional expectation renormalises the density onto the conditioning event: <code class=\"mm\">E[X | X > a] = ∫<sub>a</sub><sup>∞</sup> x f(x) dx ⁄ P(X > a)</code>. The denominator is what turns a partial integral into an average.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Cumulative function: <code class=\"mm\">F(x) = x³</code> on <code class=\"mm\">[0, 1]</code>, so <code class=\"mm\">P(X > 1/2) = 1 − 1/8 = 7/8</code>.</li><li>Numerator: <code class=\"mm\">∫<sub>1/2</sub><sup>1</sup> x · 3x² dx = 3[x⁴/4]<sub>1/2</sub><sup>1</sup> = (3/4)(1 − 1/16) = 45/64</code>.</li><li>Divide: <code class=\"mm\">(45/64) ÷ (7/8) = (45/64)(8/7) = 45/56</code>.</li><li>Numerically <code class=\"mm\">45/56 ≈ 0.804</code>, which lies inside <code class=\"mm\">[1/2, 1]</code> as it must.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (D) — <code class=\"mm\">45/56 ≈ 0.804</code>.</span></p><p class=\"row\"><b>Common trap.</b> Dropping the denominator leaves <code class=\"mm\">45/64 ≈ 0.703</code>, the unconditional contribution of the upper half; using <code class=\"mm\">P(X > 1/2) = 1/2</code> gives <code class=\"mm\">45/32</code>, which exceeds one and cannot be a mean on <code class=\"mm\">[1/2, 1]</code>.</p>"
+  },
+  {
+   "id": "EM-U5-Q54",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "random-variables-cdf-pdf",
+   "subtopic": "random-variables-cdf-pdf",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = cx(4 − x)</code> for <code class=\"mm\">0 ≤ x ≤ 4</code> and <code class=\"mm\">f(x) = 0</code> otherwise. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = cx(4 − x)</code> for <code class=\"mm\">0 ≤ x ≤ 4</code> and <code class=\"mm\">f(x) = 0</code> otherwise. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">c = 3/32</code>.",
+    "<code class=\"mm\">E[X] = 2</code>.",
+    "The density attains its maximum at <code class=\"mm\">x = 2</code>.",
+    "<code class=\"mm\">P(X > 3) = 1/4</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "A parabolic density on a symmetric interval: the constant comes from the normalisation integral, and symmetry about the midpoint then fixes the mean and the mode without further integration.",
+    "steps": [
+     "Normalise: <code class=\"mm\">∫<sub>0</sub><sup>4</sup> x(4 − x) dx = [2x² − x³/3]<sub>0</sub><sup>4</sup> = 32 − 64/3 = 32/3</code>, so <code class=\"mm\">c = 3/32</code>. Option (A) is true.",
+     "Symmetry: <code class=\"mm\">x(4 − x)</code> is unchanged when <code class=\"mm\">x</code> is replaced by <code class=\"mm\">4 − x</code>, so the density is symmetric about <code class=\"mm\">2</code>; hence <code class=\"mm\">E[X] = 2</code>. Option (B) is true.",
+     "Maximum: <code class=\"mm\">x(4 − x) = 4x − x²</code> rises to its peak at <code class=\"mm\">x = 2</code>, where it equals <code class=\"mm\">4</code>. Option (C) is true.",
+     "Tail: <code class=\"mm\">P(X > 3) = (3/32)[2x² − x³/3]<sub>3</sub><sup>4</sup> = (3/32)[(32 − 64/3) − (18 − 9)] = (3/32)(5/3) = 5/32 ≈ 0.156</code>, not <code class=\"mm\">1/4</code>. Option (D) is false."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Option (D) is the trap: <code class=\"mm\">[3, 4]</code> is a quarter of the support in length, but the density there is low (<code class=\"mm\">f(3) = 3/32</code> against a peak of <code class=\"mm\">3/8</code>), so the tail holds <code class=\"mm\">5/32</code>, not a quarter of the mass."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A parabolic density on a symmetric interval: the constant comes from the normalisation integral, and symmetry about the midpoint then fixes the mean and the mode without further integration.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Normalise: <code class=\"mm\">∫<sub>0</sub><sup>4</sup> x(4 − x) dx = [2x² − x³/3]<sub>0</sub><sup>4</sup> = 32 − 64/3 = 32/3</code>, so <code class=\"mm\">c = 3/32</code>. Option (A) is true.</li><li>Symmetry: <code class=\"mm\">x(4 − x)</code> is unchanged when <code class=\"mm\">x</code> is replaced by <code class=\"mm\">4 − x</code>, so the density is symmetric about <code class=\"mm\">2</code>; hence <code class=\"mm\">E[X] = 2</code>. Option (B) is true.</li><li>Maximum: <code class=\"mm\">x(4 − x) = 4x − x²</code> rises to its peak at <code class=\"mm\">x = 2</code>, where it equals <code class=\"mm\">4</code>. Option (C) is true.</li><li>Tail: <code class=\"mm\">P(X > 3) = (3/32)[2x² − x³/3]<sub>3</sub><sup>4</sup> = (3/32)[(32 − 64/3) − (18 − 9)] = (3/32)(5/3) = 5/32 ≈ 0.156</code>, not <code class=\"mm\">1/4</code>. Option (D) is false.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common trap.</b> Option (D) is the trap: <code class=\"mm\">[3, 4]</code> is a quarter of the support in length, but the density there is low (<code class=\"mm\">f(3) = 3/32</code> against a peak of <code class=\"mm\">3/8</code>), so the tail holds <code class=\"mm\">5/32</code>, not a quarter of the mass.</p>"
+  },
+  {
+   "id": "EM-U5-Q55",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "random-variables-cdf-pdf",
+   "subtopic": "random-variables-cdf-pdf",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = (3/8)x²</code> for <code class=\"mm\">0 ≤ x ≤ 2</code> and <code class=\"mm\">f(x) = 0</code> otherwise. The median of <code class=\"mm\">X</code> is ______. (Give the answer correct to two decimal places.)",
+   "text": "A continuous random variable <code class=\"mm\">X</code> has density <code class=\"mm\">f(x) = (3/8)x²</code> for <code class=\"mm\">0 ≤ x ≤ 2</code> and <code class=\"mm\">f(x) = 0</code> otherwise. The median of <code class=\"mm\">X</code> is ______. (Give the answer correct to two decimal places.)",
+   "options": [],
+   "answer": 1.59,
+   "answer_display": "1.59",
+   "solution": {
+    "concept": "The median is the point that splits the probability in half: solve <code class=\"mm\">F(m) = 1/2</code>. For a skewed density it is not the mean, so the mean must not be substituted for it.",
+    "steps": [
+     "Cumulative function: <code class=\"mm\">F(x) = ∫<sub>0</sub><sup>x</sup> (3/8)t² dt = x³/8</code> on <code class=\"mm\">[0, 2]</code>.",
+     "Set <code class=\"mm\">F(m) = 1/2</code>: <code class=\"mm\">m³/8 = 1/2</code>, so <code class=\"mm\">m³ = 4</code>.",
+     "Take the cube root: <code class=\"mm\">m = 4<sup>1/3</sup> = 1.5874…</code>.",
+     "Rounded to two decimals, <code class=\"mm\">m = 1.59</code>. The mean is <code class=\"mm\">E[X] = ∫ (3/8)x³ dx = 3/2 = 1.50</code>, which is smaller, as expected for a density that rises towards the right."
+    ],
+    "final": "<code class=\"mm\">1.59</code> (median), against a mean of <code class=\"mm\">1.50</code>.",
+    "trap": "Quoting the mean <code class=\"mm\">1.50</code> is the usual error; the other is truncating <code class=\"mm\">1.5874</code> to <code class=\"mm\">1.58</code> instead of rounding it up."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The median is the point that splits the probability in half: solve <code class=\"mm\">F(m) = 1/2</code>. For a skewed density it is not the mean, so the mean must not be substituted for it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Cumulative function: <code class=\"mm\">F(x) = ∫<sub>0</sub><sup>x</sup> (3/8)t² dt = x³/8</code> on <code class=\"mm\">[0, 2]</code>.</li><li>Set <code class=\"mm\">F(m) = 1/2</code>: <code class=\"mm\">m³/8 = 1/2</code>, so <code class=\"mm\">m³ = 4</code>.</li><li>Take the cube root: <code class=\"mm\">m = 4<sup>1/3</sup> = 1.5874…</code>.</li><li>Rounded to two decimals, <code class=\"mm\">m = 1.59</code>. The mean is <code class=\"mm\">E[X] = ∫ (3/8)x³ dx = 3/2 = 1.50</code>, which is smaller, as expected for a density that rises towards the right.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\"><code class=\"mm\">1.59</code> (median), against a mean of <code class=\"mm\">1.50</code>.</span></p><p class=\"row\"><b>Common trap.</b> Quoting the mean <code class=\"mm\">1.50</code> is the usual error; the other is truncating <code class=\"mm\">1.5874</code> to <code class=\"mm\">1.58</code> instead of rounding it up.</p>"
+  },
+  {
+   "id": "EM-U5-Q56",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "uniform-distribution",
+   "subtopic": "uniform-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[0, 1]</code>. Then <code class=\"mm\">E[X²]</code> equals",
+   "text": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[0, 1]</code>. Then <code class=\"mm\">E[X²]</code> equals",
+   "options": [
+    "<code class=\"mm\">1/4</code>",
+    "<code class=\"mm\">1/2</code>",
+    "<code class=\"mm\">1/3</code>",
+    "<code class=\"mm\">2/3</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A second moment is an integral of <code class=\"mm\">x²</code> against the density, not the square of a first moment. For the unit uniform, <code class=\"mm\">E[X²] = ∫<sub>0</sub><sup>1</sup> x² dx</code>.",
+    "steps": [
+     "Integrate: <code class=\"mm\">E[X²] = ∫<sub>0</sub><sup>1</sup> x² · 1 dx = [x³/3]<sub>0</sub><sup>1</sup> = 1/3</code>.",
+     "Cross-check with the variance identity: <code class=\"mm\">E[X²] = Var(X) + (E[X])² = 1/12 + 1/4 = 1/3</code>.",
+     "Consistency: <code class=\"mm\">E[X²] = 1/3 > 1/4 = (E[X])²</code>, as Jensen’s inequality requires."
+    ],
+    "final": "Option (C) — <code class=\"mm\">E[X²] = 1/3</code>.",
+    "trap": "<code class=\"mm\">1/4</code> is <code class=\"mm\">(E[X])²</code>, the square of the mean. The two agree only for a constant random variable; a spread-out variable always has the larger second moment."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A second moment is an integral of <code class=\"mm\">x²</code> against the density, not the square of a first moment. For the unit uniform, <code class=\"mm\">E[X²] = ∫<sub>0</sub><sup>1</sup> x² dx</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Integrate: <code class=\"mm\">E[X²] = ∫<sub>0</sub><sup>1</sup> x² · 1 dx = [x³/3]<sub>0</sub><sup>1</sup> = 1/3</code>.</li><li>Cross-check with the variance identity: <code class=\"mm\">E[X²] = Var(X) + (E[X])² = 1/12 + 1/4 = 1/3</code>.</li><li>Consistency: <code class=\"mm\">E[X²] = 1/3 > 1/4 = (E[X])²</code>, as Jensen’s inequality requires.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — <code class=\"mm\">E[X²] = 1/3</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">1/4</code> is <code class=\"mm\">(E[X])²</code>, the square of the mean. The two agree only for a constant random variable; a spread-out variable always has the larger second moment.</p>"
+  },
+  {
+   "id": "EM-U5-Q57",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "uniform-distribution",
+   "subtopic": "uniform-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "The 90th percentile of a random variable <code class=\"mm\">X</code> that is uniformly distributed on <code class=\"mm\">[0, 20]</code> is",
+   "text": "The 90th percentile of a random variable <code class=\"mm\">X</code> that is uniformly distributed on <code class=\"mm\">[0, 20]</code> is",
+   "options": [
+    "<code class=\"mm\">16</code>",
+    "<code class=\"mm\">18</code>",
+    "<code class=\"mm\">19</code>",
+    "<code class=\"mm\">20</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The <code class=\"mm\">p</code>-th percentile is the value where the cumulative probability reaches <code class=\"mm\">p/100</code>. For the uniform distribution the cumulative function is a straight line, so the percentile is a fraction of the interval.",
+    "steps": [
+     "Write the distribution function: <code class=\"mm\">F(x) = x/20</code> for <code class=\"mm\">0 ≤ x ≤ 20</code>.",
+     "Solve <code class=\"mm\">F(x) = 0.90</code>: <code class=\"mm\">x/20 = 0.9</code>.",
+     "So <code class=\"mm\">x = 18</code>: ninety per cent of the mass lies below <code class=\"mm\">18</code>."
+    ],
+    "final": "Option (B) — <code class=\"mm\">18</code>.",
+    "trap": "<code class=\"mm\">2</code> is the mirror-image error (measuring the fraction from the top of the interval); <code class=\"mm\">19</code> comes from treating the percentile as a top-five-per-cent cut, which is the 95th percentile."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The <code class=\"mm\">p</code>-th percentile is the value where the cumulative probability reaches <code class=\"mm\">p/100</code>. For the uniform distribution the cumulative function is a straight line, so the percentile is a fraction of the interval.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write the distribution function: <code class=\"mm\">F(x) = x/20</code> for <code class=\"mm\">0 ≤ x ≤ 20</code>.</li><li>Solve <code class=\"mm\">F(x) = 0.90</code>: <code class=\"mm\">x/20 = 0.9</code>.</li><li>So <code class=\"mm\">x = 18</code>: ninety per cent of the mass lies below <code class=\"mm\">18</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B) — <code class=\"mm\">18</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">2</code> is the mirror-image error (measuring the fraction from the top of the interval); <code class=\"mm\">19</code> comes from treating the percentile as a top-five-per-cent cut, which is the 95th percentile.</p>"
+  },
+  {
+   "id": "EM-U5-Q58",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "uniform-distribution",
+   "subtopic": "uniform-distribution",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[0, 1]</code>. Given that <code class=\"mm\">X > 1/4</code>, the conditional expectation <code class=\"mm\">E[X | X > 1/4]</code> equals",
+   "text": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[0, 1]</code>. Given that <code class=\"mm\">X > 1/4</code>, the conditional expectation <code class=\"mm\">E[X | X > 1/4]</code> equals",
+   "options": [
+    "<code class=\"mm\">2/3</code>",
+    "<code class=\"mm\">3/4</code>",
+    "<code class=\"mm\">5/8</code>",
+    "<code class=\"mm\">1/2</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Conditioning a uniform variable on an interval leaves it uniform on that interval, so the conditional mean is the midpoint of the surviving interval, not the original midpoint.",
+    "steps": [
+     "The conditional density is <code class=\"mm\">1/(1 − 1/4) = 4/3</code> on <code class=\"mm\">[1/4, 1]</code> and zero elsewhere.",
+     "Its mean is the midpoint <code class=\"mm\">(1/4 + 1)/2</code>.",
+     "That is <code class=\"mm\">5/8 = 0.625</code>.",
+     "Sanity check by integration: <code class=\"mm\">∫<sub>1/4</sub><sup>1</sup> x · (4/3) dx = (4/3)[x²/2]<sub>1/4</sub><sup>1</sup> = (4/3)(15/32) = 5/8</code>."
+    ],
+    "final": "Option (C) — <code class=\"mm\">5/8</code>.",
+    "trap": "<code class=\"mm\">1/2</code> ignores the conditioning altogether; <code class=\"mm\">3/4</code> is the midpoint of <code class=\"mm\">[1/2, 1]</code>, which answers the wrong event <code class=\"mm\">X > 1/2</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Conditioning a uniform variable on an interval leaves it uniform on that interval, so the conditional mean is the midpoint of the surviving interval, not the original midpoint.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The conditional density is <code class=\"mm\">1/(1 − 1/4) = 4/3</code> on <code class=\"mm\">[1/4, 1]</code> and zero elsewhere.</li><li>Its mean is the midpoint <code class=\"mm\">(1/4 + 1)/2</code>.</li><li>That is <code class=\"mm\">5/8 = 0.625</code>.</li><li>Sanity check by integration: <code class=\"mm\">∫<sub>1/4</sub><sup>1</sup> x · (4/3) dx = (4/3)[x²/2]<sub>1/4</sub><sup>1</sup> = (4/3)(15/32) = 5/8</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — <code class=\"mm\">5/8</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">1/2</code> ignores the conditioning altogether; <code class=\"mm\">3/4</code> is the midpoint of <code class=\"mm\">[1/2, 1]</code>, which answers the wrong event <code class=\"mm\">X > 1/2</code>.</p>"
+  },
+  {
+   "id": "EM-U5-Q59",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "uniform-distribution",
+   "subtopic": "uniform-distribution",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[a, b]</code> with <code class=\"mm\">a < b</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Let <code class=\"mm\">X</code> be uniformly distributed on <code class=\"mm\">[a, b]</code> with <code class=\"mm\">a < b</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "The variable <code class=\"mm\">(X − a)/(b − a)</code> is uniformly distributed on <code class=\"mm\">[0, 1]</code>.",
+    "The variable <code class=\"mm\">X²</code> is uniformly distributed on <code class=\"mm\">[a², b²]</code>.",
+    "The variable <code class=\"mm\">1 − X</code> is uniformly distributed on <code class=\"mm\">[1 − b, 1 − a]</code>.",
+    "<code class=\"mm\">P(X ≤ (a + b)/2) = 1/2</code>."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "A uniform variable survives changes of scale and of origin but not a nonlinear map. Two facts drive every option: an affine map of a uniform variable is uniform, and the density is flat so any half of the interval carries half the mass.",
+    "steps": [
+     "(A) True: subtracting <code class=\"mm\">a</code> shifts to <code class=\"mm\">[0, b − a]</code> and dividing by <code class=\"mm\">b − a</code> stretches that to <code class=\"mm\">[0, 1]</code>; an affine map preserves flatness.",
+     "(B) False: squaring is nonlinear. On <code class=\"mm\">[0, 1]</code>, <code class=\"mm\">P(X² ≤ t) = √t</code>, whose density <code class=\"mm\">1/(2√t)</code> rises without bound near <code class=\"mm\">0</code>.",
+     "(C) True: <code class=\"mm\">1 − X</code> is an affine map with slope <code class=\"mm\">−1</code>, so it stays uniform, and the endpoints <code class=\"mm\">a, b</code> map to <code class=\"mm\">1 − a, 1 − b</code>, that is the interval <code class=\"mm\">[1 − b, 1 − a]</code>.",
+     "(D) True: <code class=\"mm\">(a + b)/2</code> is the midpoint, and the flat density gives the left half exactly <code class=\"mm\">1/2</code>."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "trap": "Option (B) is the standard mistake: \"uniform in, uniform out\" holds only for affine maps. Squaring, taking roots or exponentiating a uniform variable always produces a non-uniform density."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A uniform variable survives changes of scale and of origin but not a nonlinear map. Two facts drive every option: an affine map of a uniform variable is uniform, and the density is flat so any half of the interval carries half the mass.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True: subtracting <code class=\"mm\">a</code> shifts to <code class=\"mm\">[0, b − a]</code> and dividing by <code class=\"mm\">b − a</code> stretches that to <code class=\"mm\">[0, 1]</code>; an affine map preserves flatness.</li><li>(B) False: squaring is nonlinear. On <code class=\"mm\">[0, 1]</code>, <code class=\"mm\">P(X² ≤ t) = √t</code>, whose density <code class=\"mm\">1/(2√t)</code> rises without bound near <code class=\"mm\">0</code>.</li><li>(C) True: <code class=\"mm\">1 − X</code> is an affine map with slope <code class=\"mm\">−1</code>, so it stays uniform, and the endpoints <code class=\"mm\">a, b</code> map to <code class=\"mm\">1 − a, 1 − b</code>, that is the interval <code class=\"mm\">[1 − b, 1 − a]</code>.</li><li>(D) True: <code class=\"mm\">(a + b)/2</code> is the midpoint, and the flat density gives the left half exactly <code class=\"mm\">1/2</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (B) is the standard mistake: \"uniform in, uniform out\" holds only for affine maps. Squaring, taking roots or exponentiating a uniform variable always produces a non-uniform density.</p>"
+  },
+  {
+   "id": "EM-U5-Q60",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "uniform-distribution",
+   "subtopic": "uniform-distribution",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> be independent random variables, each uniformly distributed on <code class=\"mm\">[0, 1]</code>. Then <code class=\"mm\">P(X + Y > 1.5)</code> is ______.",
+   "text": "Let <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> be independent random variables, each uniformly distributed on <code class=\"mm\">[0, 1]</code>. Then <code class=\"mm\">P(X + Y > 1.5)</code> is ______.",
+   "options": [],
+   "answer": 0.125,
+   "answer_display": "0.125",
+   "solution": {
+    "concept": "The joint density of two independent unit-uniform variables is the constant <code class=\"mm\">1</code> on the unit square, so a probability is an area. Draw the line <code class=\"mm\">x + y = 1.5</code> and take the area beyond it.",
+    "steps": [
+     "The pair <code class=\"mm\">(X, Y)</code> is uniform on the unit square of area <code class=\"mm\">1</code>, so probability equals area.",
+     "The event <code class=\"mm\">x + y > 1.5</code> is the triangle in the corner <code class=\"mm\">(1, 1)</code> cut off by the line <code class=\"mm\">x + y = 1.5</code>.",
+     "Where <code class=\"mm\">y = 1</code> the line gives <code class=\"mm\">x = 0.5</code>; where <code class=\"mm\">x = 1</code> it gives <code class=\"mm\">y = 0.5</code>. So the triangle has both legs <code class=\"mm\">0.5</code>.",
+     "Area <code class=\"mm\">= ½ × 0.5 × 0.5 = 0.125</code>."
+    ],
+    "final": "<code class=\"mm\">0.125</code> (one eighth).",
+    "trap": "<code class=\"mm\">0.25</code> forgets the factor <code class=\"mm\">½</code> in the area of a triangle; <code class=\"mm\">0.5</code> confuses this with <code class=\"mm\">P(X + Y > 1)</code>, whose complement is the unit triangle of area <code class=\"mm\">1/2</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The joint density of two independent unit-uniform variables is the constant <code class=\"mm\">1</code> on the unit square, so a probability is an area. Draw the line <code class=\"mm\">x + y = 1.5</code> and take the area beyond it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The pair <code class=\"mm\">(X, Y)</code> is uniform on the unit square of area <code class=\"mm\">1</code>, so probability equals area.</li><li>The event <code class=\"mm\">x + y > 1.5</code> is the triangle in the corner <code class=\"mm\">(1, 1)</code> cut off by the line <code class=\"mm\">x + y = 1.5</code>.</li><li>Where <code class=\"mm\">y = 1</code> the line gives <code class=\"mm\">x = 0.5</code>; where <code class=\"mm\">x = 1</code> it gives <code class=\"mm\">y = 0.5</code>. So the triangle has both legs <code class=\"mm\">0.5</code>.</li><li>Area <code class=\"mm\">= ½ × 0.5 × 0.5 = 0.125</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\"><code class=\"mm\">0.125</code> (one eighth).</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0.25</code> forgets the factor <code class=\"mm\">½</code> in the area of a triangle; <code class=\"mm\">0.5</code> confuses this with <code class=\"mm\">P(X + Y > 1)</code>, whose complement is the unit triangle of area <code class=\"mm\">1/2</code>.</p>"
+  },
+  {
+   "id": "EM-U5-Q61",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "exponential-distribution",
+   "subtopic": "exponential-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "The lifetime <code class=\"mm\">X</code> of a component, in hours, is exponentially distributed with mean <code class=\"mm\">10</code>. Then <code class=\"mm\">P(5 < X < 15)</code> is closest to",
+   "text": "The lifetime <code class=\"mm\">X</code> of a component, in hours, is exponentially distributed with mean <code class=\"mm\">10</code>. Then <code class=\"mm\">P(5 < X < 15)</code> is closest to",
+   "options": [
+    "0.607",
+    "0.383",
+    "0.223",
+    "0.135"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "For an exponential variable the survival function is <code class=\"mm\">P(X > t) = e<sup>−λt</sup></code> with <code class=\"mm\">λ = 1/μ</code>. An interval probability is the difference of two survival values, <code class=\"mm\">P(a < X < b) = e<sup>−λa</sup> − e<sup>−λb</sup></code>.",
+    "steps": [
+     "Rate: <code class=\"mm\">λ = 1/10 = 0.1</code> per hour.",
+     "Survival values: <code class=\"mm\">e<sup>−0.5</sup> = 0.6065</code> and <code class=\"mm\">e<sup>−1.5</sup> = 0.2231</code>.",
+     "Difference: <code class=\"mm\">0.6065 − 0.2231 = 0.3834</code>.",
+     "Rounded, <code class=\"mm\">0.383</code>."
+    ],
+    "final": "Option (B) — about <code class=\"mm\">0.383</code>.",
+    "trap": "<code class=\"mm\">0.607</code> is <code class=\"mm\">P(X > 5)</code> and counts the whole tail; <code class=\"mm\">0.223</code> is <code class=\"mm\">P(X > 15)</code>; <code class=\"mm\">0.135</code> uses the wrong rate <code class=\"mm\">1/5</code> and equals <code class=\"mm\">e<sup>−2</sup></code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> For an exponential variable the survival function is <code class=\"mm\">P(X > t) = e<sup>−λt</sup></code> with <code class=\"mm\">λ = 1/μ</code>. An interval probability is the difference of two survival values, <code class=\"mm\">P(a < X < b) = e<sup>−λa</sup> − e<sup>−λb</sup></code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Rate: <code class=\"mm\">λ = 1/10 = 0.1</code> per hour.</li><li>Survival values: <code class=\"mm\">e<sup>−0.5</sup> = 0.6065</code> and <code class=\"mm\">e<sup>−1.5</sup> = 0.2231</code>.</li><li>Difference: <code class=\"mm\">0.6065 − 0.2231 = 0.3834</code>.</li><li>Rounded, <code class=\"mm\">0.383</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B) — about <code class=\"mm\">0.383</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0.607</code> is <code class=\"mm\">P(X > 5)</code> and counts the whole tail; <code class=\"mm\">0.223</code> is <code class=\"mm\">P(X > 15)</code>; <code class=\"mm\">0.135</code> uses the wrong rate <code class=\"mm\">1/5</code> and equals <code class=\"mm\">e<sup>−2</sup></code>.</p>"
+  },
+  {
+   "id": "EM-U5-Q62",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "exponential-distribution",
+   "subtopic": "exponential-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be exponentially distributed with mean <code class=\"mm\">2</code>, and let <code class=\"mm\">Y = 3X + 1</code>. Then <code class=\"mm\">Var(Y)</code> equals",
+   "text": "Let <code class=\"mm\">X</code> be exponentially distributed with mean <code class=\"mm\">2</code>, and let <code class=\"mm\">Y = 3X + 1</code>. Then <code class=\"mm\">Var(Y)</code> equals",
+   "options": [
+    "<code class=\"mm\">12</code>",
+    "<code class=\"mm\">18</code>",
+    "<code class=\"mm\">36</code>",
+    "<code class=\"mm\">9</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A shift never changes a variance, while a scale multiplies it by the square of the slope: <code class=\"mm\">Var(aX + b) = a² Var(X)</code>. For the exponential, <code class=\"mm\">Var(X) = μ² = 1/λ²</code>.",
+    "steps": [
+     "Mean <code class=\"mm\">2</code> gives <code class=\"mm\">λ = 1/2</code> and <code class=\"mm\">Var(X) = 1/λ² = 4</code>.",
+     "Apply the scale rule: <code class=\"mm\">Var(3X + 1) = 9 Var(X) = 36</code>.",
+     "The <code class=\"mm\">+1</code> contributes nothing, since variance measures spread about the mean."
+    ],
+    "final": "Option (C) — <code class=\"mm\">36</code>.",
+    "trap": "<code class=\"mm\">18</code> squares nothing (<code class=\"mm\">9 × 2</code>, using the mean as if it were the variance); <code class=\"mm\">12</code> is <code class=\"mm\">3 × 4</code>, forgetting that a slope scales a variance quadratically."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A shift never changes a variance, while a scale multiplies it by the square of the slope: <code class=\"mm\">Var(aX + b) = a² Var(X)</code>. For the exponential, <code class=\"mm\">Var(X) = μ² = 1/λ²</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Mean <code class=\"mm\">2</code> gives <code class=\"mm\">λ = 1/2</code> and <code class=\"mm\">Var(X) = 1/λ² = 4</code>.</li><li>Apply the scale rule: <code class=\"mm\">Var(3X + 1) = 9 Var(X) = 36</code>.</li><li>The <code class=\"mm\">+1</code> contributes nothing, since variance measures spread about the mean.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — <code class=\"mm\">36</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">18</code> squares nothing (<code class=\"mm\">9 × 2</code>, using the mean as if it were the variance); <code class=\"mm\">12</code> is <code class=\"mm\">3 × 4</code>, forgetting that a slope scales a variance quadratically.</p>"
+  },
+  {
+   "id": "EM-U5-Q63",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "exponential-distribution",
+   "subtopic": "exponential-distribution",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Two components have independent exponential lifetimes with means <code class=\"mm\">2</code> hours and <code class=\"mm\">3</code> hours. They are connected in series, so the system fails as soon as either component fails. The expected lifetime of the system, in hours, is",
+   "text": "Two components have independent exponential lifetimes with means <code class=\"mm\">2</code> hours and <code class=\"mm\">3</code> hours. They are connected in series, so the system fails as soon as either component fails. The expected lifetime of the system, in hours, is",
+   "options": [
+    "1.0",
+    "1.2",
+    "2.5",
+    "5.0"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The minimum of independent exponential variables is exponential with the sum of the rates. Rates add in series, so the system is faster than either component, never slower.",
+    "steps": [
+     "Rates: <code class=\"mm\">λ<sub>1</sub> = 1/2</code> and <code class=\"mm\">λ<sub>2</sub> = 1/3</code>.",
+     "Series system: <code class=\"mm\">λ = λ<sub>1</sub> + λ<sub>2</sub> = 5/6</code> per hour.",
+     "Expected lifetime: <code class=\"mm\">1/λ = 6/5 = 1.2</code> hours.",
+     "Check: <code class=\"mm\">P( min > t) = e<sup>−t/2</sup> e<sup>−t/3</sup> = e<sup>−5t/6</sup></code>, an exponential with rate <code class=\"mm\">5/6</code>."
+    ],
+    "final": "Option (B) — <code class=\"mm\">1.2</code> hours.",
+    "trap": "<code class=\"mm\">2.5</code> averages the two means and <code class=\"mm\">5.0</code> adds them; both describe a series system as if it could outlive its parts, which contradicts the very definition of series."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The minimum of independent exponential variables is exponential with the sum of the rates. Rates add in series, so the system is faster than either component, never slower.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Rates: <code class=\"mm\">λ<sub>1</sub> = 1/2</code> and <code class=\"mm\">λ<sub>2</sub> = 1/3</code>.</li><li>Series system: <code class=\"mm\">λ = λ<sub>1</sub> + λ<sub>2</sub> = 5/6</code> per hour.</li><li>Expected lifetime: <code class=\"mm\">1/λ = 6/5 = 1.2</code> hours.</li><li>Check: <code class=\"mm\">P( min > t) = e<sup>−t/2</sup> e<sup>−t/3</sup> = e<sup>−5t/6</sup></code>, an exponential with rate <code class=\"mm\">5/6</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B) — <code class=\"mm\">1.2</code> hours.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">2.5</code> averages the two means and <code class=\"mm\">5.0</code> adds them; both describe a series system as if it could outlive its parts, which contradicts the very definition of series.</p>"
+  },
+  {
+   "id": "EM-U5-Q64",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "exponential-distribution",
+   "subtopic": "exponential-distribution",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be exponentially distributed with rate <code class=\"mm\">λ > 0</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Let <code class=\"mm\">X</code> be exponentially distributed with rate <code class=\"mm\">λ > 0</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "The sum of two independent exponential variables with the same rate <code class=\"mm\">λ</code> is exponential with rate <code class=\"mm\">λ</code>.",
+    "The exponential distribution is the only continuous distribution with the memoryless property.",
+    "The mean and the standard deviation of <code class=\"mm\">X</code> are equal.",
+    "The hazard rate of <code class=\"mm\">X</code> is constant in time."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B), (C) and (D)",
+   "solution": {
+    "concept": "The exponential is the continuous memoryless law, and that single property forces a constant hazard rate, a mean equal to the standard deviation, and a closed family only under minima, not under sums.",
+    "steps": [
+     "(A) False: the sum of <code class=\"mm\">n</code> independent exponentials of rate <code class=\"mm\">λ</code> is a gamma (Erlang) variable with shape <code class=\"mm\">n</code>, whose density is <code class=\"mm\">λ<sup>n</sup> t<sup>n−1</sup> e<sup>−λt</sup>/(n − 1)!</code>. It is not exponential for <code class=\"mm\">n ≥ 2</code>.",
+     "(B) True: solving <code class=\"mm\">P(X > s + t | X > s) = P(X > t)</code> for a continuous distribution forces the survival function <code class=\"mm\">e<sup>−λt</sup></code>.",
+     "(C) True: <code class=\"mm\">E[X] = 1/λ</code> and <code class=\"mm\">SD(X) = √(1/λ²) = 1/λ</code>.",
+     "(D) True: the hazard rate <code class=\"mm\">f(t)/P(X > t) = λ e<sup>−λt</sup>/e<sup>−λt</sup> = λ</code> does not depend on <code class=\"mm\">t</code>."
+    ],
+    "final": "Options (B), (C) and (D).",
+    "trap": "Option (A) is the trap: minima of exponentials stay exponential (rates add), sums do not (shapes add). Confusing the two operations is the most common error with this distribution."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The exponential is the continuous memoryless law, and that single property forces a constant hazard rate, a mean equal to the standard deviation, and a closed family only under minima, not under sums.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) False: the sum of <code class=\"mm\">n</code> independent exponentials of rate <code class=\"mm\">λ</code> is a gamma (Erlang) variable with shape <code class=\"mm\">n</code>, whose density is <code class=\"mm\">λ<sup>n</sup> t<sup>n−1</sup> e<sup>−λt</sup>/(n − 1)!</code>. It is not exponential for <code class=\"mm\">n ≥ 2</code>.</li><li>(B) True: solving <code class=\"mm\">P(X > s + t | X > s) = P(X > t)</code> for a continuous distribution forces the survival function <code class=\"mm\">e<sup>−λt</sup></code>.</li><li>(C) True: <code class=\"mm\">E[X] = 1/λ</code> and <code class=\"mm\">SD(X) = √(1/λ²) = 1/λ</code>.</li><li>(D) True: the hazard rate <code class=\"mm\">f(t)/P(X > t) = λ e<sup>−λt</sup>/e<sup>−λt</sup> = λ</code> does not depend on <code class=\"mm\">t</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (A) is the trap: minima of exponentials stay exponential (rates add), sums do not (shapes add). Confusing the two operations is the most common error with this distribution.</p>"
+  },
+  {
+   "id": "EM-U5-Q65",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "exponential-distribution",
+   "subtopic": "exponential-distribution",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Two components have independent exponential lifetimes with mean <code class=\"mm\">3</code> years each and are connected in parallel, so the system works while at least one of them survives. The expected time, in years, until both have failed is ______.",
+   "text": "Two components have independent exponential lifetimes with mean <code class=\"mm\">3</code> years each and are connected in parallel, so the system works while at least one of them survives. The expected time, in years, until both have failed is ______.",
+   "options": [],
+   "answer": 4.5,
+   "answer_display": "4.5",
+   "solution": {
+    "concept": "With identical exponential lifetimes the system survives until the later failure, so the quantity wanted is <code class=\"mm\">E[max(X, Y)]</code>. The tail formula <code class=\"mm\">E[T] = ∫<sub>0</sub><sup>∞</sup> P(T > t) dt</code> turns it into a two-term integral.",
+    "steps": [
+     "Rate of each component: <code class=\"mm\">λ = 1/3</code> per year.",
+     "Survival of the system: <code class=\"mm\">P(max > t) = 1 − (1 − e<sup>−λt</sup>)² = 2e<sup>−λt</sup> − e<sup>−2λt</sup></code>.",
+     "Integrate the tail: <code class=\"mm\">E[max] = 2/λ − 1/(2λ) = 3/(2λ)</code>.",
+     "Substitute <code class=\"mm\">λ = 1/3</code>: <code class=\"mm\">E[max] = 3 × 1.5 = 4.5</code> years."
+    ],
+    "final": "<code class=\"mm\">4.5</code> years.",
+    "trap": "<code class=\"mm\">3</code> is the expected life of one component; <code class=\"mm\">1.5</code> is <code class=\"mm\">E[min]</code>, the expected time to the first failure. The parallel system must outlive both components, so its expectation is the largest of the three figures."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> With identical exponential lifetimes the system survives until the later failure, so the quantity wanted is <code class=\"mm\">E[max(X, Y)]</code>. The tail formula <code class=\"mm\">E[T] = ∫<sub>0</sub><sup>∞</sup> P(T > t) dt</code> turns it into a two-term integral.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Rate of each component: <code class=\"mm\">λ = 1/3</code> per year.</li><li>Survival of the system: <code class=\"mm\">P(max > t) = 1 − (1 − e<sup>−λt</sup>)² = 2e<sup>−λt</sup> − e<sup>−2λt</sup></code>.</li><li>Integrate the tail: <code class=\"mm\">E[max] = 2/λ − 1/(2λ) = 3/(2λ)</code>.</li><li>Substitute <code class=\"mm\">λ = 1/3</code>: <code class=\"mm\">E[max] = 3 × 1.5 = 4.5</code> years.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\"><code class=\"mm\">4.5</code> years.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">3</code> is the expected life of one component; <code class=\"mm\">1.5</code> is <code class=\"mm\">E[min]</code>, the expected time to the first failure. The parallel system must outlive both components, so its expectation is the largest of the three figures.</p>"
+  },
+  {
+   "id": "EM-U5-Q66",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "normal-distribution",
+   "subtopic": "normal-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "If <code class=\"mm\">X</code> is normally distributed with mean <code class=\"mm\">μ</code> and standard deviation <code class=\"mm\">σ</code>, then <code class=\"mm\">P(μ − σ < X < μ + σ)</code> is closest to",
+   "text": "If <code class=\"mm\">X</code> is normally distributed with mean <code class=\"mm\">μ</code> and standard deviation <code class=\"mm\">σ</code>, then <code class=\"mm\">P(μ − σ < X < μ + σ)</code> is closest to",
+   "options": [
+    "0.34",
+    "0.50",
+    "0.68",
+    "0.95"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "The empirical rule for the normal distribution: about <code class=\"mm\">68%</code> of the mass lies within one standard deviation of the mean, about <code class=\"mm\">95%</code> within two, and about <code class=\"mm\">99.7%</code> within three.",
+    "steps": [
+     "Standardise: <code class=\"mm\">P(−1 < Z < 1) = Φ(1) − Φ(−1)</code>.",
+     "From the table, <code class=\"mm\">Φ(1) = 0.8413</code> and <code class=\"mm\">Φ(−1) = 0.1587</code>.",
+     "Difference: <code class=\"mm\">0.6826</code>, that is about <code class=\"mm\">68%</code>."
+    ],
+    "final": "Option (C) — about <code class=\"mm\">0.68</code>.",
+    "trap": "<code class=\"mm\">0.95</code> belongs to <code class=\"mm\">μ ± 2σ</code>; <code class=\"mm\">0.34</code> is only the upper half of the one-sigma band, <code class=\"mm\">P(μ < X < μ + σ)</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The empirical rule for the normal distribution: about <code class=\"mm\">68%</code> of the mass lies within one standard deviation of the mean, about <code class=\"mm\">95%</code> within two, and about <code class=\"mm\">99.7%</code> within three.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Standardise: <code class=\"mm\">P(−1 < Z < 1) = Φ(1) − Φ(−1)</code>.</li><li>From the table, <code class=\"mm\">Φ(1) = 0.8413</code> and <code class=\"mm\">Φ(−1) = 0.1587</code>.</li><li>Difference: <code class=\"mm\">0.6826</code>, that is about <code class=\"mm\">68%</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — about <code class=\"mm\">0.68</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0.95</code> belongs to <code class=\"mm\">μ ± 2σ</code>; <code class=\"mm\">0.34</code> is only the upper half of the one-sigma band, <code class=\"mm\">P(μ < X < μ + σ)</code>.</p>"
+  },
+  {
+   "id": "EM-U5-Q67",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "normal-distribution",
+   "subtopic": "normal-distribution",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "For a standard normal variable <code class=\"mm\">Z</code>, the probability <code class=\"mm\">P(Z < −1.5)</code> is closest to",
+   "text": "For a standard normal variable <code class=\"mm\">Z</code>, the probability <code class=\"mm\">P(Z < −1.5)</code> is closest to",
+   "options": [
+    "0.0228",
+    "0.0668",
+    "0.1587",
+    "0.9332"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The standard normal table is cumulative from the left, and the density is symmetric, so a left tail at <code class=\"mm\">−z</code> equals the right tail at <code class=\"mm\">+z</code>: <code class=\"mm\">P(Z < −z) = 1 − Φ(z)</code>.",
+    "steps": [
+     "By symmetry, <code class=\"mm\">P(Z < −1.5) = P(Z > 1.5)</code>.",
+     "From the table, <code class=\"mm\">Φ(1.5) = 0.9332</code>.",
+     "So the left tail is <code class=\"mm\">1 − 0.9332 = 0.0668</code>."
+    ],
+    "final": "Option (B) — about <code class=\"mm\">0.0668</code>.",
+    "trap": "<code class=\"mm\">0.9332</code> is <code class=\"mm\">P(Z < 1.5)</code>, the sign having been ignored; <code class=\"mm\">0.1587</code> is the tail at <code class=\"mm\">1</code> and <code class=\"mm\">0.0228</code> the two-sigma tail."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The standard normal table is cumulative from the left, and the density is symmetric, so a left tail at <code class=\"mm\">−z</code> equals the right tail at <code class=\"mm\">+z</code>: <code class=\"mm\">P(Z < −z) = 1 − Φ(z)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>By symmetry, <code class=\"mm\">P(Z < −1.5) = P(Z > 1.5)</code>.</li><li>From the table, <code class=\"mm\">Φ(1.5) = 0.9332</code>.</li><li>So the left tail is <code class=\"mm\">1 − 0.9332 = 0.0668</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (B) — about <code class=\"mm\">0.0668</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0.9332</code> is <code class=\"mm\">P(Z < 1.5)</code>, the sign having been ignored; <code class=\"mm\">0.1587</code> is the tail at <code class=\"mm\">1</code> and <code class=\"mm\">0.0228</code> the two-sigma tail.</p>"
+  },
+  {
+   "id": "EM-U5-Q68",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "normal-distribution",
+   "subtopic": "normal-distribution",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be normally distributed with mean <code class=\"mm\">10</code> and variance <code class=\"mm\">4</code>. Then <code class=\"mm\">P(8 < X < 14)</code> is closest to",
+   "text": "Let <code class=\"mm\">X</code> be normally distributed with mean <code class=\"mm\">10</code> and variance <code class=\"mm\">4</code>. Then <code class=\"mm\">P(8 < X < 14)</code> is closest to",
+   "options": [
+    "0.5328",
+    "0.6827",
+    "0.8185",
+    "0.9545"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Standardise each endpoint with the standard deviation, not the variance: <code class=\"mm\">z = (x − μ)/σ</code>. The probability of an interval is then a difference of two cumulative values.",
+    "steps": [
+     "Standard deviation: <code class=\"mm\">σ = √4 = 2</code>.",
+     "Endpoints: <code class=\"mm\">z<sub>1</sub> = (8 − 10)/2 = −1</code> and <code class=\"mm\">z<sub>2</sub> = (14 − 10)/2 = 2</code>.",
+     "Cumulative values: <code class=\"mm\">Φ(2) = 0.9772</code> and <code class=\"mm\">Φ(−1) = 0.1587</code>.",
+     "Difference: <code class=\"mm\">0.9772 − 0.1587 = 0.8185</code>."
+    ],
+    "final": "Option (C) — about <code class=\"mm\">0.8185</code>.",
+    "trap": "<code class=\"mm\">0.5328</code> comes from dividing by the variance <code class=\"mm\">4</code> instead of the standard deviation <code class=\"mm\">2</code>, giving <code class=\"mm\">z = −0.5</code> and <code class=\"mm\">1</code>; <code class=\"mm\">0.6827</code> is the one-sigma band of a standard normal, not of this interval."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Standardise each endpoint with the standard deviation, not the variance: <code class=\"mm\">z = (x − μ)/σ</code>. The probability of an interval is then a difference of two cumulative values.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Standard deviation: <code class=\"mm\">σ = √4 = 2</code>.</li><li>Endpoints: <code class=\"mm\">z<sub>1</sub> = (8 − 10)/2 = −1</code> and <code class=\"mm\">z<sub>2</sub> = (14 − 10)/2 = 2</code>.</li><li>Cumulative values: <code class=\"mm\">Φ(2) = 0.9772</code> and <code class=\"mm\">Φ(−1) = 0.1587</code>.</li><li>Difference: <code class=\"mm\">0.9772 − 0.1587 = 0.8185</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — about <code class=\"mm\">0.8185</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0.5328</code> comes from dividing by the variance <code class=\"mm\">4</code> instead of the standard deviation <code class=\"mm\">2</code>, giving <code class=\"mm\">z = −0.5</code> and <code class=\"mm\">1</code>; <code class=\"mm\">0.6827</code> is the one-sigma band of a standard normal, not of this interval.</p>"
+  },
+  {
+   "id": "EM-U5-Q69",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "normal-distribution",
+   "subtopic": "normal-distribution",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">X</code> be normally distributed with mean <code class=\"mm\">4</code> and variance <code class=\"mm\">9</code>, and let <code class=\"mm\">Y = 2X − 1</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Let <code class=\"mm\">X</code> be normally distributed with mean <code class=\"mm\">4</code> and variance <code class=\"mm\">9</code>, and let <code class=\"mm\">Y = 2X − 1</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">Y</code> is normally distributed with mean <code class=\"mm\">7</code> and variance <code class=\"mm\">36</code>.",
+    "<code class=\"mm\">Var(Y) = 18</code>.",
+    "<code class=\"mm\">P(Y > 7) = 1/2</code>.",
+    "The correlation coefficient between <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> equals <code class=\"mm\">1</code>."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "An affine map of a normal variable is normal: means transform linearly, variances by the square of the slope. A positive slope also puts the pair on a straight line of positive gradient, so the correlation saturates at <code class=\"mm\">+1</code>.",
+    "steps": [
+     "Mean: <code class=\"mm\">E[Y] = 2(4) − 1 = 7</code>.",
+     "Variance: <code class=\"mm\">Var(Y) = 2² × 9 = 36</code>, not <code class=\"mm\">18</code>. So (A) is true and (B) is false.",
+     "Since <code class=\"mm\">7</code> is the mean of <code class=\"mm\">Y</code> and <code class=\"mm\">Y</code> is continuous, <code class=\"mm\">P(Y > 7) = 1/2</code>. (C) is true.",
+     "Covariance: <code class=\"mm\">Cov(X, Y) = 2 Var(X) = 18</code>, so <code class=\"mm\">ρ = 18/(3 × 6) = 1</code>: an exact increasing linear relation. (D) is true."
+    ],
+    "final": "Options (A), (C) and (D).",
+    "trap": "Option (B) is the trap: a slope of <code class=\"mm\">2</code> doubles the standard deviation and therefore quadruples the variance. Reading \"twice as wide\" as \"twice the variance\" is the standard slip."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An affine map of a normal variable is normal: means transform linearly, variances by the square of the slope. A positive slope also puts the pair on a straight line of positive gradient, so the correlation saturates at <code class=\"mm\">+1</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Mean: <code class=\"mm\">E[Y] = 2(4) − 1 = 7</code>.</li><li>Variance: <code class=\"mm\">Var(Y) = 2² × 9 = 36</code>, not <code class=\"mm\">18</code>. So (A) is true and (B) is false.</li><li>Since <code class=\"mm\">7</code> is the mean of <code class=\"mm\">Y</code> and <code class=\"mm\">Y</code> is continuous, <code class=\"mm\">P(Y > 7) = 1/2</code>. (C) is true.</li><li>Covariance: <code class=\"mm\">Cov(X, Y) = 2 Var(X) = 18</code>, so <code class=\"mm\">ρ = 18/(3 × 6) = 1</code>: an exact increasing linear relation. (D) is true.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (C) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (B) is the trap: a slope of <code class=\"mm\">2</code> doubles the standard deviation and therefore quadruples the variance. Reading \"twice as wide\" as \"twice the variance\" is the standard slip.</p>"
+  },
+  {
+   "id": "EM-U5-Q70",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "normal-distribution",
+   "subtopic": "normal-distribution",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "The marks in a test are normally distributed with mean <code class=\"mm\">60</code> and standard deviation <code class=\"mm\">10</code>. The 90th percentile of the marks is ______. (Use <code class=\"mm\">z = 1.28</code> for the cumulative probability <code class=\"mm\">0.90</code>; give the answer correct to two decimal places.)",
+   "text": "The marks in a test are normally distributed with mean <code class=\"mm\">60</code> and standard deviation <code class=\"mm\">10</code>. The 90th percentile of the marks is ______. (Use <code class=\"mm\">z = 1.28</code> for the cumulative probability <code class=\"mm\">0.90</code>; give the answer correct to two decimal places.)",
+   "options": [],
+   "answer": 72.8,
+   "answer_display": "72.80",
+   "solution": {
+    "concept": "A percentile is read backwards through the standard normal table: find the <code class=\"mm\">z</code> whose cumulative probability is the required value, then undo the standardisation with <code class=\"mm\">x = μ + zσ</code>.",
+    "steps": [
+     "The required cumulative probability is <code class=\"mm\">0.90</code>, and the question supplies <code class=\"mm\">z = 1.28</code>.",
+     "Undo the standardisation: <code class=\"mm\">x = μ + zσ = 60 + 1.28 × 10</code>.",
+     "So <code class=\"mm\">x = 72.80</code>: ten per cent of the marks are expected to exceed it."
+    ],
+    "final": "<code class=\"mm\">72.80</code>.",
+    "trap": "<code class=\"mm\">76.80</code> multiplies the mean by <code class=\"mm\">z</code> instead of adding <code class=\"mm\">zσ</code> to it; <code class=\"mm\">76.45</code> uses <code class=\"mm\">z = 1.645</code>, which is the 95th percentile, and <code class=\"mm\">68.00</code> forgets the standard deviation altogether."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A percentile is read backwards through the standard normal table: find the <code class=\"mm\">z</code> whose cumulative probability is the required value, then undo the standardisation with <code class=\"mm\">x = μ + zσ</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The required cumulative probability is <code class=\"mm\">0.90</code>, and the question supplies <code class=\"mm\">z = 1.28</code>.</li><li>Undo the standardisation: <code class=\"mm\">x = μ + zσ = 60 + 1.28 × 10</code>.</li><li>So <code class=\"mm\">x = 72.80</code>: ten per cent of the marks are expected to exceed it.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\"><code class=\"mm\">72.80</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">76.80</code> multiplies the mean by <code class=\"mm\">z</code> instead of adding <code class=\"mm\">zσ</code> to it; <code class=\"mm\">76.45</code> uses <code class=\"mm\">z = 1.645</code>, which is the 95th percentile, and <code class=\"mm\">68.00</code> forgets the standard deviation altogether.</p>"
+  },
+  {
+   "id": "EM-U5-Q71",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "correlation-and-covariance",
+   "subtopic": "correlation-and-covariance",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "If <code class=\"mm\">Y = 3 − 2X</code>, then the correlation coefficient <code class=\"mm\">ρ(X, Y)</code> equals",
+   "text": "If <code class=\"mm\">Y = 3 − 2X</code>, then the correlation coefficient <code class=\"mm\">ρ(X, Y)</code> equals",
+   "options": [
+    "<code class=\"mm\">−0.5</code>",
+    "<code class=\"mm\">0.5</code>",
+    "<code class=\"mm\">1</code>",
+    "<code class=\"mm\">−1</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "The correlation coefficient measures only the direction and tightness of a linear relation. A negative slope gives <code class=\"mm\">ρ = −1</code> exactly, whatever the size of the slope, because the coefficient is scale-free.",
+    "steps": [
+     "Write <code class=\"mm\">Y = aX + b</code> with <code class=\"mm\">a = −2</code> and <code class=\"mm\">b = 3</code>.",
+     "Covariance: <code class=\"mm\">Cov(X, Y) = a Var(X) = −2 Var(X)</code>.",
+     "Standard deviations: <code class=\"mm\">σ<sub>Y</sub> = |a| σ<sub>X</sub> = 2σ<sub>X</sub></code>.",
+     "So <code class=\"mm\">ρ = −2σ<sub>X</sub>² / (2σ<sub>X</sub>²) = −1</code>."
+    ],
+    "final": "Option (D) — <code class=\"mm\">ρ = −1</code>.",
+    "trap": "<code class=\"mm\">−0.5</code> reads the slope as if it were the correlation; <code class=\"mm\">1</code> ignores the minus sign. Any <code class=\"mm\">Y = aX + b</code> with <code class=\"mm\">a < 0</code> gives exactly <code class=\"mm\">−1</code>, however steep or shallow."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The correlation coefficient measures only the direction and tightness of a linear relation. A negative slope gives <code class=\"mm\">ρ = −1</code> exactly, whatever the size of the slope, because the coefficient is scale-free.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write <code class=\"mm\">Y = aX + b</code> with <code class=\"mm\">a = −2</code> and <code class=\"mm\">b = 3</code>.</li><li>Covariance: <code class=\"mm\">Cov(X, Y) = a Var(X) = −2 Var(X)</code>.</li><li>Standard deviations: <code class=\"mm\">σ<sub>Y</sub> = |a| σ<sub>X</sub> = 2σ<sub>X</sub></code>.</li><li>So <code class=\"mm\">ρ = −2σ<sub>X</sub>² / (2σ<sub>X</sub>²) = −1</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (D) — <code class=\"mm\">ρ = −1</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">−0.5</code> reads the slope as if it were the correlation; <code class=\"mm\">1</code> ignores the minus sign. Any <code class=\"mm\">Y = aX + b</code> with <code class=\"mm\">a < 0</code> gives exactly <code class=\"mm\">−1</code>, however steep or shallow.</p>"
+  },
+  {
+   "id": "EM-U5-Q72",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "correlation-and-covariance",
+   "subtopic": "correlation-and-covariance",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "For random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> with finite variances, <code class=\"mm\">Cov(X + Y, X − Y)</code> equals",
+   "text": "For random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> with finite variances, <code class=\"mm\">Cov(X + Y, X − Y)</code> equals",
+   "options": [
+    "<code class=\"mm\">Var(X) + Var(Y)</code>",
+    "<code class=\"mm\">2 Cov(X, Y)</code>",
+    "<code class=\"mm\">0</code>",
+    "<code class=\"mm\">Var(X) − Var(Y)</code>"
+   ],
+   "answer": [
+    3
+   ],
+   "answer_display": "Option (D)",
+   "solution": {
+    "concept": "Covariance is bilinear: expand a product of sums into four covariances, then use <code class=\"mm\">Cov(X, X) = Var(X)</code> and the symmetry <code class=\"mm\">Cov(X, Y) = Cov(Y, X)</code>.",
+    "steps": [
+     "Expand: <code class=\"mm\">Cov(X + Y, X − Y) = Cov(X, X) − Cov(X, Y) + Cov(Y, X) − Cov(Y, Y)</code>.",
+     "Use symmetry: the two cross terms are equal and opposite, so they cancel.",
+     "Substitute: <code class=\"mm\">= Var(X) − Var(Y)</code>."
+    ],
+    "final": "Option (D) — <code class=\"mm\">Var(X) − Var(Y)</code>.",
+    "trap": "<code class=\"mm\">0</code> looks symmetric and is the usual answer, but it is right only when the two variances are equal. The cross terms cancel because of the opposite signs, not because the covariance is zero."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Covariance is bilinear: expand a product of sums into four covariances, then use <code class=\"mm\">Cov(X, X) = Var(X)</code> and the symmetry <code class=\"mm\">Cov(X, Y) = Cov(Y, X)</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Expand: <code class=\"mm\">Cov(X + Y, X − Y) = Cov(X, X) − Cov(X, Y) + Cov(Y, X) − Cov(Y, Y)</code>.</li><li>Use symmetry: the two cross terms are equal and opposite, so they cancel.</li><li>Substitute: <code class=\"mm\">= Var(X) − Var(Y)</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (D) — <code class=\"mm\">Var(X) − Var(Y)</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">0</code> looks symmetric and is the usual answer, but it is right only when the two variances are equal. The cross terms cancel because of the opposite signs, not because the covariance is zero.</p>"
+  },
+  {
+   "id": "EM-U5-Q73",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "correlation-and-covariance",
+   "subtopic": "correlation-and-covariance",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 4</code>, <code class=\"mm\">Var(Y) = 9</code> and <code class=\"mm\">ρ(X, Y) = 0.5</code>. Then <code class=\"mm\">Var(X + Y)</code> equals",
+   "text": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 4</code>, <code class=\"mm\">Var(Y) = 9</code> and <code class=\"mm\">ρ(X, Y) = 0.5</code>. Then <code class=\"mm\">Var(X + Y)</code> equals",
+   "options": [
+    "<code class=\"mm\">13</code>",
+    "<code class=\"mm\">16</code>",
+    "<code class=\"mm\">19</code>",
+    "<code class=\"mm\">25</code>"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A variance of a sum is not a sum of variances unless the variables are uncorrelated: <code class=\"mm\">Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)</code>, and the covariance is recovered from <code class=\"mm\">ρσ<sub>X</sub>σ<sub>Y</sub></code>.",
+    "steps": [
+     "Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 2</code> and <code class=\"mm\">σ<sub>Y</sub> = 3</code>.",
+     "Covariance: <code class=\"mm\">Cov(X, Y) = 0.5 × 2 × 3 = 3</code>.",
+     "Substitute: <code class=\"mm\">Var(X + Y) = 4 + 9 + 2(3) = 19</code>.",
+     "Check the bound: <code class=\"mm\">Var(X + Y) ≤ (σ<sub>X</sub> + σ<sub>Y</sub>)² = 25</code>, and <code class=\"mm\">19 ≤ 25</code>."
+    ],
+    "final": "Option (C) — <code class=\"mm\">19</code>.",
+    "trap": "<code class=\"mm\">13</code> drops the covariance term and is right only when <code class=\"mm\">ρ = 0</code>; <code class=\"mm\">25</code> uses <code class=\"mm\">2 × 6</code>, double-counting the covariance by taking <code class=\"mm\">Cov = ρσ<sub>X</sub>σ<sub>Y</sub></code> twice over."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A variance of a sum is not a sum of variances unless the variables are uncorrelated: <code class=\"mm\">Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)</code>, and the covariance is recovered from <code class=\"mm\">ρσ<sub>X</sub>σ<sub>Y</sub></code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 2</code> and <code class=\"mm\">σ<sub>Y</sub> = 3</code>.</li><li>Covariance: <code class=\"mm\">Cov(X, Y) = 0.5 × 2 × 3 = 3</code>.</li><li>Substitute: <code class=\"mm\">Var(X + Y) = 4 + 9 + 2(3) = 19</code>.</li><li>Check the bound: <code class=\"mm\">Var(X + Y) ≤ (σ<sub>X</sub> + σ<sub>Y</sub>)² = 25</code>, and <code class=\"mm\">19 ≤ 25</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Option (C) — <code class=\"mm\">19</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">13</code> drops the covariance term and is right only when <code class=\"mm\">ρ = 0</code>; <code class=\"mm\">25</code> uses <code class=\"mm\">2 × 6</code>, double-counting the covariance by taking <code class=\"mm\">Cov = ρσ<sub>X</sub>σ<sub>Y</sub></code> twice over.</p>"
+  },
+  {
+   "id": "EM-U5-Q74",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "correlation-and-covariance",
+   "subtopic": "correlation-and-covariance",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 9</code>, <code class=\"mm\">Var(Y) = 16</code> and <code class=\"mm\">Cov(X, Y) = 6</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "text": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 9</code>, <code class=\"mm\">Var(Y) = 16</code> and <code class=\"mm\">Cov(X, Y) = 6</code>. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">ρ(X, Y) = 0.5</code>.",
+    "<code class=\"mm\">Var(X + Y) = 37</code>.",
+    "<code class=\"mm\">X</code> and <code class=\"mm\">Y</code> are independent.",
+    "<code class=\"mm\">Var(X − Y) = 13</code>."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "From a covariance and two variances the whole picture follows: the correlation is <code class=\"mm\">Cov/(σ<sub>X</sub>σ<sub>Y</sub>)</code>, and the variance of a sum or difference carries the covariance term with the sign of the operation.",
+    "steps": [
+     "Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 3</code>, <code class=\"mm\">σ<sub>Y</sub> = 4</code>, so <code class=\"mm\">ρ = 6/12 = 0.5</code>. (A) is true.",
+     "<code class=\"mm\">Var(X + Y) = 9 + 16 + 2(6) = 37</code>. (B) is true.",
+     "Independence would force <code class=\"mm\">Cov(X, Y) = 0</code>; here the covariance is <code class=\"mm\">6</code>, so the two cannot be independent. (C) is false.",
+     "<code class=\"mm\">Var(X − Y) = 9 + 16 − 2(6) = 13</code>. (D) is true."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "trap": "Option (C) confuses \"positively correlated\" with \"independent\". Correlation measures only the linear part of a relation, and here the non-zero covariance is itself proof of dependence."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> From a covariance and two variances the whole picture follows: the correlation is <code class=\"mm\">Cov/(σ<sub>X</sub>σ<sub>Y</sub>)</code>, and the variance of a sum or difference carries the covariance term with the sign of the operation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 3</code>, <code class=\"mm\">σ<sub>Y</sub> = 4</code>, so <code class=\"mm\">ρ = 6/12 = 0.5</code>. (A) is true.</li><li><code class=\"mm\">Var(X + Y) = 9 + 16 + 2(6) = 37</code>. (B) is true.</li><li>Independence would force <code class=\"mm\">Cov(X, Y) = 0</code>; here the covariance is <code class=\"mm\">6</code>, so the two cannot be independent. (C) is false.</li><li><code class=\"mm\">Var(X − Y) = 9 + 16 − 2(6) = 13</code>. (D) is true.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\">Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common trap.</b> Option (C) confuses \"positively correlated\" with \"independent\". Correlation measures only the linear part of a relation, and here the non-zero covariance is itself proof of dependence.</p>"
+  },
+  {
+   "id": "EM-U5-Q75",
+   "subject": "engineering-mathematics",
+   "subject_name": "Engineering Mathematics",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "probability-distributions",
+   "unit_name": "Continuous Probability & Distributions",
+   "topic": "Continuous Probability & Distributions",
+   "sub": "correlation-and-covariance",
+   "subtopic": "correlation-and-covariance",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 25</code>, <code class=\"mm\">Var(Y) = 9</code> and <code class=\"mm\">ρ(X, Y) = −0.6</code>. The value of <code class=\"mm\">Var(X + 2Y)</code> is ______.",
+   "text": "Random variables <code class=\"mm\">X</code> and <code class=\"mm\">Y</code> have <code class=\"mm\">Var(X) = 25</code>, <code class=\"mm\">Var(Y) = 9</code> and <code class=\"mm\">ρ(X, Y) = −0.6</code>. The value of <code class=\"mm\">Var(X + 2Y)</code> is ______.",
+   "options": [],
+   "answer": 25.0,
+   "answer_display": "25",
+   "solution": {
+    "concept": "A variance of a linear combination is the quadratic form <code class=\"mm\">a²Var(X) + b²Var(Y) + 2ab·Cov(X, Y)</code>. The coefficient of the cross term takes both scale factors, <code class=\"mm\">a</code> and <code class=\"mm\">b</code>, not just one.",
+    "steps": [
+     "Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 5</code> and <code class=\"mm\">σ<sub>Y</sub> = 3</code>.",
+     "Covariance: <code class=\"mm\">Cov(X, Y) = −0.6 × 5 × 3 = −9</code>.",
+     "Apply the form with <code class=\"mm\">a = 1</code>, <code class=\"mm\">b = 2</code>: <code class=\"mm\">Var(X + 2Y) = 25 + 4(9) + 2(1)(2)(−9)</code>.",
+     "Evaluate: <code class=\"mm\">25 + 36 − 36 = 25</code>."
+    ],
+    "final": "<code class=\"mm\">25</code>.",
+    "trap": "<code class=\"mm\">61</code> drops the covariance; <code class=\"mm\">97</code> drops its sign; <code class=\"mm\">43</code> puts only one factor of <code class=\"mm\">2</code> on the cross term (<code class=\"mm\">25 + 36 − 18</code>). A negative correlation can cancel the added variance completely, as it does here."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A variance of a linear combination is the quadratic form <code class=\"mm\">a²Var(X) + b²Var(Y) + 2ab·Cov(X, Y)</code>. The coefficient of the cross term takes both scale factors, <code class=\"mm\">a</code> and <code class=\"mm\">b</code>, not just one.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Standard deviations: <code class=\"mm\">σ<sub>X</sub> = 5</code> and <code class=\"mm\">σ<sub>Y</sub> = 3</code>.</li><li>Covariance: <code class=\"mm\">Cov(X, Y) = −0.6 × 5 × 3 = −9</code>.</li><li>Apply the form with <code class=\"mm\">a = 1</code>, <code class=\"mm\">b = 2</code>: <code class=\"mm\">Var(X + 2Y) = 25 + 4(9) + 2(1)(2)(−9)</code>.</li><li>Evaluate: <code class=\"mm\">25 + 36 − 36 = 25</code>.</li></ol><p class=\"row\"><b>Final answer.</b> <span class=\"ansline\"><code class=\"mm\">25</code>.</span></p><p class=\"row\"><b>Common trap.</b> <code class=\"mm\">61</code> drops the covariance; <code class=\"mm\">97</code> drops its sign; <code class=\"mm\">43</code> puts only one factor of <code class=\"mm\">2</code> on the cross term (<code class=\"mm\">25 + 36 − 18</code>). A negative correlation can cancel the added variance completely, as it does here.</p>"
   }
  ]
 }
