@@ -7,38 +7,82 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 2 of 2 (third pass)**,
+- **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (third pass)**,
   2026-11-04 →
-  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html)
+  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Activation records & the call stack (6) · Basic blocks & flow graphs (6) ·
-  Local & loop optimizations (7) · Data-flow analysis & liveness (6)
-- Rotation: MODE A. Eight subjects already carried a paper dated 2026-11-04 (algorithms,
-  computer-architecture, computer-networks, databases, discrete-mathematics, engineering-mathematics,
-  programming-data-structures, theory-of-computation), so the draw ran over the three still without one —
-  compiler-design, digital-logic, operating-systems — and returned **Compiler Design**. Read from its own
-  `master_bank.json`, the most recent paper was `{2026-11-03, run 19, unit 4, sdt-intermediate-code,
-  Set 2 of 2 (third pass)}` and unit 4 stood at **100** questions, so **B3 failed on the cap** (its first
-  paper was 2026-10-28, so the 7-day backstop was exceeded too). **B4 advanced exactly one unit**:
-  `(index_of(sdt-intermediate-code) = 3 + 1) mod 5 = 4` → **Unit 5, Runtime Environments & Code
-  Optimization**, which already held 75 questions. **B5 applies: every unit of the subject is at or above
-  the cap** (100 on Units 1–4, 75 on Unit 5), so this paper is the unit's fourth set, taking it to 100. No
-  override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Discrete Mathematics · Unit 1 — Propositional Logic, Set 3 (second pass)**, 2026-11-04 →
-  [`discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html`](discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html)
+- Subtopics: Adders & subtractors (5) · Multiplexers & demultiplexers (5) · Decoders & encoders (5) ·
+  Code converters (5) · Hazards & glitches (5)
+- Rotation: MODE A. Ten papers already carried the date 2026-11-04 (algorithms, compiler-design,
+  computer-architecture, computer-networks, databases twice, discrete-mathematics, engineering-mathematics,
+  programming-data-structures, theory-of-computation), so the draw ran over the two subjects still without one —
+  digital-logic and operating-systems — and returned **Digital Logic**. Read from its own
+  `master_bank.json`, the most recent paper was `{2026-11-03, run 17, unit 1, number-systems, Set 1 of 2
+  (third pass)}` and unit 1 stood at **125** questions, so **B3 failed on the cap** (its first paper was
+  2026-10-26, so the 7-day backstop was exceeded too). **B4 advanced exactly one unit**:
+  `(index_of(number-systems) = 0 + 1) mod 4 = 1` → **Unit 2, Combinational Circuit Design**, which already
+  held 100 questions. **B5 applies: every unit of the subject is at or above the cap** (125, 100, 100, 100),
+  so the further pass continues and this paper is the unit's fifth set, taking it to 125. No override was
+  passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 2 of 2 (third
+  pass)**, 2026-11-04 →
+  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 220 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 149 archived |
+| Papers published (current + archived) | 221 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 150 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5500 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5525 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 149 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 150 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Digital Logic Unit 2, Set 1 of 2 (third pass)
+
+- New paper at `digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html`. The 2026-11-03 paper it
+  supersedes moved to `archive/gate_dl_mock_2_2026-11-03_run1.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Ten papers already carried the date 2026-11-04 (algorithms, compiler-design,
+  computer-architecture, computer-networks, databases twice, discrete-mathematics, engineering-mathematics,
+  programming-data-structures, theory-of-computation), so the draw ran over the two subjects still without one —
+  digital-logic and operating-systems — with an unseeded `random.SystemRandom()` draw (seed 90730753, draw index
+  0 of 2) and it gave **Digital Logic**. Read from its own bank, the most recent paper was `{2026-11-03, run 17,
+  unit 1, number-systems, Set 1 of 2 (third pass)}` and unit 1 stood at **125** questions, so **B3 failed on the
+  cap** (its first paper was 2026-10-26, so the 7-day backstop was exceeded as well). **B4 advanced exactly one
+  unit**: `(index_of(number-systems) = 0 + 1) mod 4 = 1` → **Unit 2, Combinational Circuit Design**, which
+  already held 100 questions. **B5 applies: every unit of the subject is at or above the cap** (125, 100, 100,
+  100), so the further pass continues and this paper is the unit's fifth set, taking it to **125**. No override
+  was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All five subtopics carry five new questions each — adders & subtractors, multiplexers &
+  demultiplexers, decoders & encoders, code converters, hazards & glitches. Every item is new against the 100
+  already banked for this unit; the angles deliberately not repeated are the ripple-carry and carry-lookahead
+  timing drills (Q02, S2-Q02, Q52, Q80), the half-adder, half-subtractor and BCD-adder evaluations (Q01, Q03,
+  S2-Q01, S2-Q05, Q76, Q78), the 2-to-1, 4-to-1 and 16-to-1 multiplexer tree counts (Q08, S2-Q08, Q57, Q83),
+  the select-line drills (Q06, S2-Q06, Q56), the decoder cascade counts (Q12, S2-Q12, Q62, Q65, Q87, Q88), the
+  priority-encoder index drills (Q15, S2-Q15), the binary-to-Gray and Gray-to-binary drills (Q17, Q18, Q67, Q91,
+  Q92), the excess-3 and 2421 items (Q16, Q19, S2-Q16, Q66, Q95), the consensus-term drills (Q22, Q75, Q97) and
+  the glitch-width arithmetic (Q98).
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the
+  About tab says so.
+- **Verification.** Every numeric answer was recomputed by script before the paper was written: Q1, four 4-bit
+  blocks each holding two ripple-carry adders, so 8; Q6, a three-variable Shannon tree has
+  `2^3 − 1 = 7` two-to-one multiplexers; Q11, an active-low 3-to-8 decoder at input 011 drives O3' to 0 and the
+  other seven outputs to 1, so 7 are HIGH; Q16, 10 = 1010, Gray = 1010 ⊕ 0101 = 1111, read as binary 15; Q22,
+  `B'C` covers the pair (1,5) and `BC'` covers (2,6), so no adjacent pair straddles two terms and the
+  realisation has 0 static-1 hazards. The five MSQ answer sets were checked option by option, each marked
+  option proved and each unmarked option refuted: Q4 (A, B, C, E — a carry-save adder is a row of full adders,
+  so no lookahead unit is involved), Q9 (A, B, C, E — a multiplexer is complete, not cheaper), Q14 (A, B, C, E
+  — an OR network cannot rank inputs), Q19 (A, B, C, E — Gray is not self-complementing), Q24 (A, B, C, E — a
+  two-level circuit cannot show a dynamic hazard). The three-address-free answer key and the solutions live only
+  in the payload, so nothing is visible before Submit.
+- **Bank.** 25 questions appended to `digital-logic/question-bank/master_bank.json` as `DL-U2-D-Q01` to
+  `DL-U2-D-Q25` (run 18), taking the Digital Logic bank to 450 questions and the series to 5525. The portal
+  archive (`data/questions-digital-logic.js`) and the unit's card in `index.html` were updated in the same pass.
 
 ### 2026-11-04 — Compiler Design Unit 5, Set 2 of 2 (third pass)
 
