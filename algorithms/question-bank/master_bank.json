@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 450,
+  "total_questions": 475,
   "units_with_questions": [
    1,
    2,
@@ -16,7 +16,7 @@
    6,
    7
   ],
-  "total_runs": 18
+  "total_runs": 19
  },
  "runs": [
   {
@@ -1069,6 +1069,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. The unseeded random.SystemRandom() draw ran over all eleven GATE CSE subjects and returned Algorithms. Read from this bank, the most recent paper was {2026-11-04, run 17, unit 3, greedy-algorithms, Set 3 (second pass)}. Unit 3 holds 75 questions, above UNIT_QUESTION_CAP = 50, and every other Algorithms unit is also at or above the cap (75, 75, 75, 50, 50, 50, 50), so step B3 failed on the cap and step B4 advanced exactly one unit: (index_of(greedy-algorithms) = 2 + 1) mod 7 = 3 -> Unit 4, Dynamic Programming, which held 50 questions from 2026-10-30. Step B5 applies: the modulo has wrapped, the second pass continues, and this paper is the unit's third set and the first set of its second pass, taking unit 4 to 75. No override was passed and no partial set was generated: exactly 25 questions.",
    "note": "Set 3 (second pass) for Algorithms Unit 4, Dynamic Programming. The superseded 2026-10-30 paper moved to archive/gate_algo_mock_4_2026-10-30_run2.html with its content frozen, so the unit folder holds exactly one current paper and the repository root holds only index.html. All 25 items are new (ALG-U4-Q51..Q75); no id and no stem collides with the 50 Unit 4 items already banked. Coverage: matrix-chain multiplication 7, longest common subsequence 6, 0-1 knapsack 6, all-pairs shortest paths 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: 54 and 88 (matrix-chain costs over the full table), 64 and 90 (the two three-matrix parenthesizations), 3 (LCS of STONE and LONGEST), 6 (insertions for DYNAMIC = 7 - LPS 1), 8 and 21 (knapsack optima), 35 ((n+1)(W+1) = 5 x 7), 14 (exact fill), 9 (d[1][4] of the 2026-11-04 Floyd-Warshall graph) and 9 (reach-in x reach-out = 3 x 3 pairs on the negative-cycle graph). verified_pyqs is empty for this subject, so no item is a GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 19,
+   "date": "2026-11-05",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "set": "Set 3 (second pass)",
+   "mode": "MODE A",
+   "count": 25,
+   "file": "algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html",
+   "archived_previous": "algorithms/graph-algorithms-traversals-mst/archive/gate_algo_mock_5_2026-10-31_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "bfs-dfs-edge-classification": 6,
+    "topological-sort": 6,
+    "prims-algorithm": 6,
+    "kruskals-disjoint-set-union": 7
+   },
+   "question_ids": [
+    "ALG-U5-S3-Q01",
+    "ALG-U5-S3-Q02",
+    "ALG-U5-S3-Q03",
+    "ALG-U5-S3-Q04",
+    "ALG-U5-S3-Q05",
+    "ALG-U5-S3-Q06",
+    "ALG-U5-S3-Q07",
+    "ALG-U5-S3-Q08",
+    "ALG-U5-S3-Q09",
+    "ALG-U5-S3-Q10",
+    "ALG-U5-S3-Q11",
+    "ALG-U5-S3-Q12",
+    "ALG-U5-S3-Q13",
+    "ALG-U5-S3-Q14",
+    "ALG-U5-S3-Q15",
+    "ALG-U5-S3-Q16",
+    "ALG-U5-S3-Q17",
+    "ALG-U5-S3-Q18",
+    "ALG-U5-S3-Q19",
+    "ALG-U5-S3-Q20",
+    "ALG-U5-S3-Q21",
+    "ALG-U5-S3-Q22",
+    "ALG-U5-S3-Q23",
+    "ALG-U5-S3-Q24",
+    "ALG-U5-S3-Q25"
+   ],
+   "selection": "MODE A: most recent paper was unit 4 (75 banked, at cap) -> (3+1) mod 7 = 4 -> unit 5",
+   "note": "Third set of the unit; opens its second pass. 50 -> 75 questions."
   }
  ],
  "verified_pyqs": [],
@@ -17865,6 +17927,912 @@
     "trap": "Confusing the non-negativity requirement of Dijkstra with a requirement of Floyd&ndash;Warshall, and so refusing to use it on graphs with negative edges."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Floyd&ndash;Warshall is a three-level DP over intermediate vertices: one loop per vertex over all <span class=\"mm\">V²</span> pairs, so the work is fixed by the vertex count and the correctness condition is the absence of negative cycles.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Option A: the loops run <span class=\"mm\">V</span>, <span class=\"mm\">V</span> and <span class=\"mm\">V</span> times with constant work inside, so <span class=\"mm\">Θ(V³)</span> whatever the edge density. TRUE.</li><li>Option B: each iteration only compares candidate sums, which stays valid while shortest paths are well defined. TRUE.</li><li>Option C: negative edges are accepted; only negative cycles break correctness. FALSE.</li><li>Option D: that initialisation encodes one-edge paths and the empty path. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the non-negativity requirement of Dijkstra with a requirement of Floyd&ndash;Warshall, and so refusing to use it on graphs with negative edges.</p><p class=\"row\"><b>Takeaway.</b> <span class=\"mm\">Θ(V³)</span>, any signs, no negative cycles.</p>"
+  },
+  {
+   "id": "ALG-U5-S3-Q01",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "An undirected graph on <span class=\"mm\">V</span> vertices and <span class=\"mm\">E</span> edges is stored as an adjacency matrix. A full depth-first search scans the graph, restarting at the lowest-numbered unvisited vertex whenever the current search ends. What is the running time of the scan?",
+   "options": [
+    "Θ(V + E)",
+    "Θ(V²)",
+    "Θ(V log V + E)",
+    "Θ(E log V)"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The cost of a traversal is decided by the representation, not by the shape of the graph. An adjacency matrix spends work on the entries that are absent as well as the ones that are present.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The matrix has <span class=\"mm\">V</span> rows of <span class=\"mm\">V</span> entries, so merely reading it costs Θ(V²).</li><li>For every vertex the search scans its entire row, testing all <span class=\"mm\">V</span> columns, whether or not the entry holds an edge.</li><li>Each row is scanned once, because a vertex is entered at most once during a full scan and the restart rule only decides where the next search begins.</li><li>The edge count never enters the expression, so the total is Θ(V²) for a sparse graph and for a dense one alike.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Θ(V²) — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Carrying Θ(V + E) over from the adjacency-list version. With a matrix the empty entries are still examined, so a graph with two edges costs the same as a complete graph on the same vertices.</p>",
+   "solution": {
+    "concept": "The cost of a traversal is decided by the representation, not by the shape of the graph. An adjacency matrix spends work on the entries that are absent as well as the ones that are present.",
+    "steps": [
+     "The matrix has <span class=\"mm\">V</span> rows of <span class=\"mm\">V</span> entries, so merely reading it costs Θ(V²).",
+     "For every vertex the search scans its entire row, testing all <span class=\"mm\">V</span> columns, whether or not the entry holds an edge.",
+     "Each row is scanned once, because a vertex is entered at most once during a full scan and the restart rule only decides where the next search begins.",
+     "The edge count never enters the expression, so the total is Θ(V²) for a sparse graph and for a dense one alike."
+    ],
+    "final": "Θ(V²) — option (B).",
+    "trap": "Carrying Θ(V + E) over from the adjacency-list version. With a matrix the empty entries are still examined, so a graph with two edges costs the same as a complete graph on the same vertices."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q02",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A depth-first search of a directed graph records a discovery time <span class=\"mm\">d[v]</span> and a finish time <span class=\"mm\">f[v]</span> for every vertex. For two vertices <span class=\"mm\">u</span> and <span class=\"mm\">v</span>, which condition holds exactly when <span class=\"mm\">v</span> is a proper descendant of <span class=\"mm\">u</span> in the DFS forest?",
+   "options": [
+    "<span class=\"mm\">d[u] &lt; d[v] &lt; f[v] &lt; f[u]</span>",
+    "<span class=\"mm\">d[v] &lt; d[u] &lt; f[u] &lt; f[v]</span>",
+    "<span class=\"mm\">d[u] &lt; d[v] &lt; f[u] &lt; f[v]</span>",
+    "<span class=\"mm\">d[v] &lt; d[u] &lt; f[v] &lt; f[u]</span>"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The parenthesis theorem: the intervals %s of a DFS form a well-nested family. Two intervals are either disjoint or one is contained in the other, and containment is exactly the ancestor relation.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A vertex is discovered before any of its descendants, so <span class=\"mm\">d[u] < d[v]</span>.</li><li>A vertex finishes only after every descendant has finished, so <span class=\"mm\">f[v] < f[u]</span>.</li><li>Combining the two gives the strict nesting <span class=\"mm\">d[u] < d[v] < f[v] < f[u]</span>.</li><li>Option (B) is the same nesting with the roles exchanged, so it says that <span class=\"mm\">u</span> is a descendant of <span class=\"mm\">v</span>. Options (C) and (D) interleave the endpoints, which the parenthesis theorem rules out for any two vertices.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: d[u] < d[v] < f[v] < f[u] — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading the nesting the wrong way round. The outer interval belongs to the ancestor, because the ancestor is still alive when the descendant finishes.</p>",
+   "solution": {
+    "concept": "The parenthesis theorem: the intervals %s of a DFS form a well-nested family. Two intervals are either disjoint or one is contained in the other, and containment is exactly the ancestor relation.",
+    "steps": [
+     "A vertex is discovered before any of its descendants, so <span class=\"mm\">d[u] < d[v]</span>.",
+     "A vertex finishes only after every descendant has finished, so <span class=\"mm\">f[v] < f[u]</span>.",
+     "Combining the two gives the strict nesting <span class=\"mm\">d[u] < d[v] < f[v] < f[u]</span>.",
+     "Option (B) is the same nesting with the roles exchanged, so it says that <span class=\"mm\">u</span> is a descendant of <span class=\"mm\">v</span>. Options (C) and (D) interleave the endpoints, which the parenthesis theorem rules out for any two vertices."
+    ],
+    "final": "d[u] < d[v] < f[v] < f[u] — option (A).",
+    "trap": "Reading the nesting the wrong way round. The outer interval belongs to the ancestor, because the ancestor is still alive when the descendant finishes."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q03",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A full depth-first scan of a directed graph restarts from an unvisited vertex whenever the current search ends. The number of trees in the resulting DFS forest is exactly",
+   "options": [
+    "the number of strongly connected components of the graph",
+    "the number of vertices whose in-degree is zero",
+    "the number of strongly connected components that receive no edge from another component of the condensation",
+    "the number of connected components of the underlying undirected graph"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A DFS tree grows from a root that no earlier search could reach. Contracting each strongly connected component turns the graph into a DAG, and only a component with no incoming edge in that DAG can supply such a root.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Inside one strongly connected component every vertex is reachable from every other, so a single search that enters the component covers all of it.</li><li>If a component has an incoming edge from another component, the search that covers the other component also reaches this one, so this component never needs a root of its own.</li><li>A component with no incoming edge is unreachable from outside, so the scan must start a fresh tree somewhere inside it.</li><li>No tree can span two such source components, because reaching the second from the first would give the second an incoming edge. Hence exactly one tree per source component.</li><li>Option (B) fails on a pair of vertices joined both ways: each has in-degree one, yet one tree covers both. Option (D) fails on the DAG with the edges <span class=\"mm\">A→C, B→C</span>: the underlying undirected graph is connected, but <span class=\"mm\">A</span> and <span class=\"mm\">B</span> are both sources, so the scan starts two trees.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: One tree per source component of the condensation — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 'the number of strongly connected components'. One search can pass through several components in a chain, so only the components that no edge enters each need their own tree.</p>",
+   "solution": {
+    "concept": "A DFS tree grows from a root that no earlier search could reach. Contracting each strongly connected component turns the graph into a DAG, and only a component with no incoming edge in that DAG can supply such a root.",
+    "steps": [
+     "Inside one strongly connected component every vertex is reachable from every other, so a single search that enters the component covers all of it.",
+     "If a component has an incoming edge from another component, the search that covers the other component also reaches this one, so this component never needs a root of its own.",
+     "A component with no incoming edge is unreachable from outside, so the scan must start a fresh tree somewhere inside it.",
+     "No tree can span two such source components, because reaching the second from the first would give the second an incoming edge. Hence exactly one tree per source component.",
+     "Option (B) fails on a pair of vertices joined both ways: each has in-degree one, yet one tree covers both. Option (D) fails on the DAG with the edges <span class=\"mm\">A→C, B→C</span>: the underlying undirected graph is connected, but <span class=\"mm\">A</span> and <span class=\"mm\">B</span> are both sources, so the scan starts two trees."
+    ],
+    "final": "One tree per source component of the condensation — option (C).",
+    "trap": "Answering 'the number of strongly connected components'. One search can pass through several components in a chain, so only the components that no edge enters each need their own tree."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q04",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A directed graph has the edges <span class=\"mm\">A→B, A→C, B→D, C→D, D→E, C→F, F→E, E→G, B→G</span>. A depth-first search starts at <span class=\"mm\">A</span> and examines the out-neighbours of every vertex in alphabetical order. Which one of the following is TRUE?",
+   "options": [
+    "C→D and F→E are both cross edges.",
+    "C→D is a forward edge and F→E is a cross edge.",
+    "B→G is a cross edge and C→D is a cross edge.",
+    "B→G is a back edge and C→D is a forward edge."
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An edge <span class=\"mm\">u→v</span> is a tree or forward edge when <span class=\"mm\">v</span> was discovered inside the current search from <span class=\"mm\">u</span>, a back edge when <span class=\"mm\">v</span> is still on the recursion stack, and a cross edge when <span class=\"mm\">v</span> finished in an earlier, separate subtree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The search enters <span class=\"mm\">A</span>, then <span class=\"mm\">B</span>, then <span class=\"mm\">D</span>, then <span class=\"mm\">E</span>, then <span class=\"mm\">G</span>, which has no out-edge. <span class=\"mm\">G</span> finishes first, then <span class=\"mm\">E</span>, <span class=\"mm\">D</span> and <span class=\"mm\">B</span>.</li><li>Back in <span class=\"mm\">B</span> the only remaining out-edge is <span class=\"mm\">B→G</span>, and <span class=\"mm\">G</span> is already finished but was discovered inside <span class=\"mm\">B</span>'s own subtree, so <span class=\"mm\">B→G</span> is a <b>forward</b> edge.</li><li>The search returns to <span class=\"mm\">A</span> and enters <span class=\"mm\">C</span>. Its first out-edge <span class=\"mm\">C→D</span> points at a finished vertex discovered long before <span class=\"mm\">C</span> started, so <span class=\"mm\">C→D</span> is a <b>cross</b> edge.</li><li><span class=\"mm\">C</span> is entered next. Its out-edge <span class=\"mm\">C→F</span> discovers <span class=\"mm\">F</span>, and <span class=\"mm\">F</span>'s own out-edge <span class=\"mm\">F→E</span> points at <span class=\"mm\">E</span>, which finished before <span class=\"mm\">F</span> was discovered, so <span class=\"mm\">F→E</span> is also a <b>cross</b> edge.</li><li>Every option naming <span class=\"mm\">B→G</span> as a cross or back edge is therefore wrong; the two cross edges are <span class=\"mm\">C→D</span> and <span class=\"mm\">F→E</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: C→D and F→E are both cross edges — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Calling <span class=\"mm\">B→G</span> a cross edge because <span class=\"mm\">G</span> is not a child of <span class=\"mm\">B</span>. The test is not who the parent is but whether <span class=\"mm\">G</span> was discovered during <span class=\"mm\">B</span>'s own search; it was, so the edge is a forward edge.</p>",
+   "solution": {
+    "concept": "An edge <span class=\"mm\">u→v</span> is a tree or forward edge when <span class=\"mm\">v</span> was discovered inside the current search from <span class=\"mm\">u</span>, a back edge when <span class=\"mm\">v</span> is still on the recursion stack, and a cross edge when <span class=\"mm\">v</span> finished in an earlier, separate subtree.",
+    "steps": [
+     "The search enters <span class=\"mm\">A</span>, then <span class=\"mm\">B</span>, then <span class=\"mm\">D</span>, then <span class=\"mm\">E</span>, then <span class=\"mm\">G</span>, which has no out-edge. <span class=\"mm\">G</span> finishes first, then <span class=\"mm\">E</span>, <span class=\"mm\">D</span> and <span class=\"mm\">B</span>.",
+     "Back in <span class=\"mm\">B</span> the only remaining out-edge is <span class=\"mm\">B→G</span>, and <span class=\"mm\">G</span> is already finished but was discovered inside <span class=\"mm\">B</span>'s own subtree, so <span class=\"mm\">B→G</span> is a <b>forward</b> edge.",
+     "The search returns to <span class=\"mm\">A</span> and enters <span class=\"mm\">C</span>. Its first out-edge <span class=\"mm\">C→D</span> points at a finished vertex discovered long before <span class=\"mm\">C</span> started, so <span class=\"mm\">C→D</span> is a <b>cross</b> edge.",
+     "<span class=\"mm\">C</span> is entered next. Its out-edge <span class=\"mm\">C→F</span> discovers <span class=\"mm\">F</span>, and <span class=\"mm\">F</span>'s own out-edge <span class=\"mm\">F→E</span> points at <span class=\"mm\">E</span>, which finished before <span class=\"mm\">F</span> was discovered, so <span class=\"mm\">F→E</span> is also a <b>cross</b> edge.",
+     "Every option naming <span class=\"mm\">B→G</span> as a cross or back edge is therefore wrong; the two cross edges are <span class=\"mm\">C→D</span> and <span class=\"mm\">F→E</span>."
+    ],
+    "final": "C→D and F→E are both cross edges — option (A).",
+    "trap": "Calling <span class=\"mm\">B→G</span> a cross edge because <span class=\"mm\">G</span> is not a child of <span class=\"mm\">B</span>. The test is not who the parent is but whether <span class=\"mm\">G</span> was discovered during <span class=\"mm\">B</span>'s own search; it was, so the edge is a forward edge."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q05",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Which of the following statements about breadth-first and depth-first search are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "A depth-first search of a directed graph can classify an edge as a back edge even when the graph contains no directed cycle.",
+    "In a breadth-first search of an undirected graph, every edge joins two vertices whose BFS levels differ by at most one.",
+    "If a depth-first search of a directed graph finds no back edge, the graph may still contain a directed cycle.",
+    "In a directed acyclic graph, listing the vertices in decreasing order of finish time gives a topological ordering."
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A back edge is an edge to a vertex still on the recursion stack, which is exactly a cycle closing. BFS levels are graph distances, so an edge cannot skip a level.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> A back edge closes a cycle by construction: the edge runs from a vertex to one of its own ancestors, and the tree path back is a second route. With no cycle no such edge can exist. FALSE.</li><li><b>(B)</b> Let <span class=\"mm\">(u,v)</span> be an edge with <span class=\"mm\">u</span> at level <span class=\"mm\">k</span> and <span class=\"mm\">v</span> at level <span class=\"mm\">j</span>. Then <span class=\"mm\">v</span> is reachable from the source in <span class=\"mm\">k+1</span> edges, so <span class=\"mm\">j ≤ k+1</span>; symmetrically <span class=\"mm\">k ≤ j+1</span>. Hence <span class=\"mm\">|j − k| ≤ 1</span>. TRUE.</li><li><b>(C)</b> For a directed graph, the absence of a back edge is equivalent to acyclicity: a cycle would be met as a back edge at the moment the first vertex of it is still on the stack. FALSE.</li><li><b>(D)</b> If <span class=\"mm\">(u,v)</span> is an edge of a DAG, <span class=\"mm\">v</span> finishes before <span class=\"mm\">u</span> is even discovered or after <span class=\"mm\">u</span> has finished, and in either case <span class=\"mm\">f[v] < f[u]</span>, so decreasing finish time puts <span class=\"mm\">u</span> before <span class=\"mm\">v</span>. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the two searches differ in what they can prove. Both settle acyclicity; only the evidence differs — DFS by a back edge, BFS by a vertex being re-reached after it has already been removed from the queue.</p>",
+   "solution": {
+    "concept": "A back edge is an edge to a vertex still on the recursion stack, which is exactly a cycle closing. BFS levels are graph distances, so an edge cannot skip a level.",
+    "steps": [
+     "<b>(A)</b> A back edge closes a cycle by construction: the edge runs from a vertex to one of its own ancestors, and the tree path back is a second route. With no cycle no such edge can exist. FALSE.",
+     "<b>(B)</b> Let <span class=\"mm\">(u,v)</span> be an edge with <span class=\"mm\">u</span> at level <span class=\"mm\">k</span> and <span class=\"mm\">v</span> at level <span class=\"mm\">j</span>. Then <span class=\"mm\">v</span> is reachable from the source in <span class=\"mm\">k+1</span> edges, so <span class=\"mm\">j ≤ k+1</span>; symmetrically <span class=\"mm\">k ≤ j+1</span>. Hence <span class=\"mm\">|j − k| ≤ 1</span>. TRUE.",
+     "<b>(C)</b> For a directed graph, the absence of a back edge is equivalent to acyclicity: a cycle would be met as a back edge at the moment the first vertex of it is still on the stack. FALSE.",
+     "<b>(D)</b> If <span class=\"mm\">(u,v)</span> is an edge of a DAG, <span class=\"mm\">v</span> finishes before <span class=\"mm\">u</span> is even discovered or after <span class=\"mm\">u</span> has finished, and in either case <span class=\"mm\">f[v] < f[u]</span>, so decreasing finish time puts <span class=\"mm\">u</span> before <span class=\"mm\">v</span>. TRUE."
+    ],
+    "final": "Options (B) and (D).",
+    "trap": "Assuming the two searches differ in what they can prove. Both settle acyclicity; only the evidence differs — DFS by a back edge, BFS by a vertex being re-reached after it has already been removed from the queue."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q06",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "bfs-dfs-edge-classification",
+   "subtopic": "bfs-dfs-edge-classification",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "An undirected graph has <span class=\"mm\">12</span> vertices and <span class=\"mm\">3</span> connected components. A full depth-first search is run over the graph. How many tree edges does the resulting DFS forest contain?",
+   "options": [],
+   "answer": 9,
+   "answer_display": "9",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A DFS tree on a component of <span class=\"mm\">k</span> vertices is a spanning tree of that component, so it holds <span class=\"mm\">k − 1</span> tree edges. Summing over the components gives <span class=\"mm\">V − C</span> for the whole forest.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The forest has one tree per connected component, that is <span class=\"mm\">3</span> trees.</li><li>Write <span class=\"mm\">k₁, k₂, k₃</span> for the sizes of the three components. Their tree edges number <span class=\"mm\">(k₁ − 1) + (k₂ − 1) + (k₃ − 1)</span>.</li><li>That sum is <span class=\"mm\">12 − 3</span>, since the sizes add to <span class=\"mm\">12</span>.</li><li>So the forest carries <span class=\"mm\">9</span> tree edges.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 9</span></p><p class=\"row\"><b>Common misconception.</b> Subtracting one only, as for a connected graph, and answering 11. Each restart begins a new tree, and every extra tree costs one tree edge.</p>",
+   "solution": {
+    "concept": "A DFS tree on a component of <span class=\"mm\">k</span> vertices is a spanning tree of that component, so it holds <span class=\"mm\">k − 1</span> tree edges. Summing over the components gives <span class=\"mm\">V − C</span> for the whole forest.",
+    "steps": [
+     "The forest has one tree per connected component, that is <span class=\"mm\">3</span> trees.",
+     "Write <span class=\"mm\">k₁, k₂, k₃</span> for the sizes of the three components. Their tree edges number <span class=\"mm\">(k₁ − 1) + (k₂ − 1) + (k₃ − 1)</span>.",
+     "That sum is <span class=\"mm\">12 − 3</span>, since the sizes add to <span class=\"mm\">12</span>.",
+     "So the forest carries <span class=\"mm\">9</span> tree edges."
+    ],
+    "final": "9",
+    "trap": "Subtracting one only, as for a connected graph, and answering 11. Each restart begins a new tree, and every extra tree costs one tree edge."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q07",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A directed acyclic graph has the edges <span class=\"mm\">A→C, A→D, B→D, C→E, D→E, E→F</span>. Which one of the following is a topological ordering of the graph?",
+   "options": [
+    "A, C, B, D, E, F",
+    "A, B, D, C, F, E",
+    "B, D, A, C, E, F",
+    "A, C, D, B, E, F"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An ordering is topological when every edge points forward in it. Checking one ordering means checking all six edges, not the first two that happen to look right.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> A, C, B, D, E, F: <span class=\"mm\">A &lt; C</span> and <span class=\"mm\">A &lt; D</span> hold, <span class=\"mm\">B &lt; D</span> holds (B at 3, D at 4), <span class=\"mm\">C &lt; E</span> and <span class=\"mm\">D &lt; E</span> hold, and <span class=\"mm\">E &lt; F</span> holds. Every edge points forward, so this ordering is valid.</li><li><b>(B)</b> A, B, D, C, F, E: <span class=\"mm\">F</span>, so <span class=\"mm\">E→F</span> is violated.</li><li><b>(C)</b> B, D, A, C, E, F: <span class=\"mm\">D</span>, so <span class=\"mm\">A→D</span> is violated.</li><li><b>(D)</b> A, C, D, B, E, F: <span class=\"mm\">B</span>, so <span class=\"mm\">B→D</span> is violated.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: A, C, B, D, E, F — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Stopping at the first edge that is satisfied. A single violated edge is enough to disqualify an ordering, and the violation is often in the last two positions.</p>",
+   "solution": {
+    "concept": "An ordering is topological when every edge points forward in it. Checking one ordering means checking all six edges, not the first two that happen to look right.",
+    "steps": [
+     "<b>(A)</b> A, C, B, D, E, F: <span class=\"mm\">A &lt; C</span> and <span class=\"mm\">A &lt; D</span> hold, <span class=\"mm\">B &lt; D</span> holds (B at 3, D at 4), <span class=\"mm\">C &lt; E</span> and <span class=\"mm\">D &lt; E</span> hold, and <span class=\"mm\">E &lt; F</span> holds. Every edge points forward, so this ordering is valid.",
+     "<b>(B)</b> A, B, D, C, F, E: <span class=\"mm\">F</span>, so <span class=\"mm\">E→F</span> is violated.",
+     "<b>(C)</b> B, D, A, C, E, F: <span class=\"mm\">D</span>, so <span class=\"mm\">A→D</span> is violated.",
+     "<b>(D)</b> A, C, D, B, E, F: <span class=\"mm\">B</span>, so <span class=\"mm\">B→D</span> is violated."
+    ],
+    "final": "A, C, B, D, E, F — option (A).",
+    "trap": "Stopping at the first edge that is satisfied. A single violated edge is enough to disqualify an ordering, and the violation is often in the last two positions."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q08",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A directed acyclic graph has <span class=\"mm\">6</span> vertices. What is the maximum number of edges it can have?",
+   "options": [
+    "30",
+    "15",
+    "10",
+    "6"
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A DAG can hold at most one edge between any pair of vertices, and it may hold one for every unordered pair. That bound is reached by the transitive tournament, which is a DAG.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Between two vertices <span class=\"mm\">u</span> and <span class=\"mm\">v</span> a DAG may contain <span class=\"mm\">u→v</span> or <span class=\"mm\">v→u</span> or neither, but never both, because both would form a 2-cycle.</li><li>There are <span class=\"mm\">C(6,2) = 15</span> unordered pairs of vertices.</li><li>Ordering the vertices <span class=\"mm\">1, 2, …, 6</span> and taking every edge <span class=\"mm\">i→j</span> with <span class=\"mm\">i < j</span> gives a DAG with exactly <span class=\"mm\">15</span> edges, so the bound is attained.</li><li>Hence the maximum is <span class=\"mm\">6·5/2 = 15</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 15 — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 30 by counting ordered pairs both ways. That count belongs to the complete directed graph, which contains a 2-cycle for every pair and is not a DAG.</p>",
+   "solution": {
+    "concept": "A DAG can hold at most one edge between any pair of vertices, and it may hold one for every unordered pair. That bound is reached by the transitive tournament, which is a DAG.",
+    "steps": [
+     "Between two vertices <span class=\"mm\">u</span> and <span class=\"mm\">v</span> a DAG may contain <span class=\"mm\">u→v</span> or <span class=\"mm\">v→u</span> or neither, but never both, because both would form a 2-cycle.",
+     "There are <span class=\"mm\">C(6,2) = 15</span> unordered pairs of vertices.",
+     "Ordering the vertices <span class=\"mm\">1, 2, …, 6</span> and taking every edge <span class=\"mm\">i→j</span> with <span class=\"mm\">i < j</span> gives a DAG with exactly <span class=\"mm\">15</span> edges, so the bound is attained.",
+     "Hence the maximum is <span class=\"mm\">6·5/2 = 15</span>."
+    ],
+    "final": "15 — option (B).",
+    "trap": "Answering 30 by counting ordered pairs both ways. That count belongs to the complete directed graph, which contains a 2-cycle for every pair and is not a DAG."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q09",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A directed acyclic graph has exactly two vertices of in-degree zero and exactly two vertices of out-degree zero. Which one of the following must be TRUE?",
+   "options": [
+    "It has at least two distinct topological orderings.",
+    "It has exactly two distinct topological orderings.",
+    "It has exactly one topological ordering.",
+    "It contains a directed cycle."
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Any vertex of in-degree zero may be placed first, and every such choice extends to a complete topological ordering, because the remainder is still a DAG.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Kahn's algorithm starts with every in-degree-zero vertex in the queue; here there are two, call them <span class=\"mm\">p</span> and <span class=\"mm\">q</span>.</li><li>Starting the output with <span class=\"mm\">p</span> and starting it with <span class=\"mm\">q</span> give two orderings that differ in their first element, so they are distinct.</li><li>Each of those prefixes can be completed, since removing an in-degree-zero vertex leaves a DAG and a DAG always has an in-degree-zero vertex.</li><li>So there are at least two orderings. There may be more: after the first choice, further ties can appear, so 'exactly two' is not forced.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: It has at least two distinct topological orderings — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Concluding 'exactly two' by assuming each choice of first vertex forces a unique continuation. Ties further down the graph multiply the count.</p>",
+   "solution": {
+    "concept": "Any vertex of in-degree zero may be placed first, and every such choice extends to a complete topological ordering, because the remainder is still a DAG.",
+    "steps": [
+     "Kahn's algorithm starts with every in-degree-zero vertex in the queue; here there are two, call them <span class=\"mm\">p</span> and <span class=\"mm\">q</span>.",
+     "Starting the output with <span class=\"mm\">p</span> and starting it with <span class=\"mm\">q</span> give two orderings that differ in their first element, so they are distinct.",
+     "Each of those prefixes can be completed, since removing an in-degree-zero vertex leaves a DAG and a DAG always has an in-degree-zero vertex.",
+     "So there are at least two orderings. There may be more: after the first choice, further ties can appear, so 'exactly two' is not forced."
+    ],
+    "final": "It has at least two distinct topological orderings — option (A).",
+    "trap": "Concluding 'exactly two' by assuming each choice of first vertex forces a unique continuation. Ties further down the graph multiply the count."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q10",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "How many distinct topological orderings does the directed acyclic graph on the vertices <span class=\"mm\">1–6</span> with the edges <span class=\"mm\">1→2, 2→4, 3→4, 4→5, 3→6, 5→6</span> have?",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The chain <span class=\"mm\">1, 2, 4, 5, 6</span> must appear in that relative order in every ordering, and the remaining vertex may be inserted anywhere that respects its own out-edges.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The edges <span class=\"mm\">1→2, 2→4, 4→5, 5→6</span> force <span class=\"mm\">1 &lt; 2 &lt; 4 &lt; 5 &lt; 6</span>.</li><li>The edge <span class=\"mm\">3→4</span> forces <span class=\"mm\">3 &lt; 4</span>, so <span class=\"mm\">3</span> must be placed before <span class=\"mm\">4</span>.</li><li>The edge <span class=\"mm\">3→6</span> is then automatic once <span class=\"mm\">3</span> precedes <span class=\"mm\">6</span>, so it adds no further restriction.</li><li>Inserting <span class=\"mm\">3</span> into the chain <span class=\"mm\">1, 2, 4, 5, 6</span> anywhere before <span class=\"mm\">4</span> gives the three orderings <span class=\"mm\">3, 1, 2, 4, 5, 6</span>, <span class=\"mm\">1, 3, 2, 4, 5, 6</span> and <span class=\"mm\">1, 2, 3, 4, 5, 6</span>, and these are all of them.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3 — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6 by treating the five chain vertices as freely permutable, or 4 by inserting 3 only among the first three positions without noticing that the chain itself is rigid.</p>",
+   "solution": {
+    "concept": "The chain <span class=\"mm\">1, 2, 4, 5, 6</span> must appear in that relative order in every ordering, and the remaining vertex may be inserted anywhere that respects its own out-edges.",
+    "steps": [
+     "The edges <span class=\"mm\">1→2, 2→4, 4→5, 5→6</span> force <span class=\"mm\">1 &lt; 2 &lt; 4 &lt; 5 &lt; 6</span>.",
+     "The edge <span class=\"mm\">3→4</span> forces <span class=\"mm\">3 &lt; 4</span>, so <span class=\"mm\">3</span> must be placed before <span class=\"mm\">4</span>.",
+     "The edge <span class=\"mm\">3→6</span> is then automatic once <span class=\"mm\">3</span> precedes <span class=\"mm\">6</span>, so it adds no further restriction.",
+     "Inserting <span class=\"mm\">3</span> into the chain <span class=\"mm\">1, 2, 4, 5, 6</span> anywhere before <span class=\"mm\">4</span> gives the three orderings <span class=\"mm\">3, 1, 2, 4, 5, 6</span>, <span class=\"mm\">1, 3, 2, 4, 5, 6</span> and <span class=\"mm\">1, 2, 3, 4, 5, 6</span>, and these are all of them."
+    ],
+    "final": "3 — option (D).",
+    "trap": "Answering 6 by treating the five chain vertices as freely permutable, or 4 by inserting 3 only among the first three positions without noticing that the chain itself is rigid."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q11",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which of the following statements about topological ordering are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "A directed acyclic graph on n vertices has at most n − 1 edges.",
+    "Kahn's algorithm removes fewer than n vertices exactly when the graph contains a directed cycle.",
+    "A DAG has a unique topological ordering if and only if every vertex has in-degree at most 1.",
+    "Reversing every edge of a DAG and reversing one of its topological orderings gives a topological ordering of the reversed graph."
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Kahn's algorithm is a cycle test as well as a sorter: it stalls precisely on the vertices of a cycle, whose in-degrees never fall to zero.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> The complete DAG on <span class=\"mm\">n</span> vertices, with an edge from every smaller index to every larger one, has <span class=\"mm\">n(n−1)/2</span> edges, which exceeds <span class=\"mm\">n − 1</span> for <span class=\"mm\">n ≥ 4</span>. FALSE.</li><li><b>(B)</b> Each step removes a vertex of in-degree zero. If the graph is acyclic, an in-degree-zero vertex always exists, so all <span class=\"mm\">n</span> vertices are removed. If a cycle exists, its vertices keep an in-edge from inside the cycle and none of them is ever removable. TRUE.</li><li><b>(C)</b> Take <span class=\"mm\">1→2</span> with the edges <span class=\"mm\">1→3</span>. Every in-degree is at most one, yet <span class=\"mm\">2</span> and <span class=\"mm\">3</span> can both come first, so the ordering is not unique. FALSE.</li><li><b>(D)</b> If <span class=\"mm\">u</span> appears before <span class=\"mm\">v</span> in an ordering of the DAG, the reversed ordering puts <span class=\"mm\">v</span> before <span class=\"mm\">u</span>, which is exactly what the reversed edge <span class=\"mm\">v→u</span> needs. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Reading 'in-degree at most 1' as a characterisation of uniqueness. Uniqueness needs a Hamiltonian path in the DAG, which is far stronger.</p>",
+   "solution": {
+    "concept": "Kahn's algorithm is a cycle test as well as a sorter: it stalls precisely on the vertices of a cycle, whose in-degrees never fall to zero.",
+    "steps": [
+     "<b>(A)</b> The complete DAG on <span class=\"mm\">n</span> vertices, with an edge from every smaller index to every larger one, has <span class=\"mm\">n(n−1)/2</span> edges, which exceeds <span class=\"mm\">n − 1</span> for <span class=\"mm\">n ≥ 4</span>. FALSE.",
+     "<b>(B)</b> Each step removes a vertex of in-degree zero. If the graph is acyclic, an in-degree-zero vertex always exists, so all <span class=\"mm\">n</span> vertices are removed. If a cycle exists, its vertices keep an in-edge from inside the cycle and none of them is ever removable. TRUE.",
+     "<b>(C)</b> Take <span class=\"mm\">1→2</span> with the edges <span class=\"mm\">1→3</span>. Every in-degree is at most one, yet <span class=\"mm\">2</span> and <span class=\"mm\">3</span> can both come first, so the ordering is not unique. FALSE.",
+     "<b>(D)</b> If <span class=\"mm\">u</span> appears before <span class=\"mm\">v</span> in an ordering of the DAG, the reversed ordering puts <span class=\"mm\">v</span> before <span class=\"mm\">u</span>, which is exactly what the reversed edge <span class=\"mm\">v→u</span> needs. TRUE."
+    ],
+    "final": "Options (B) and (D).",
+    "trap": "Reading 'in-degree at most 1' as a characterisation of uniqueness. Uniqueness needs a Hamiltonian path in the DAG, which is far stronger."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q12",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "topological-sort",
+   "subtopic": "topological-sort",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "How many distinct topological orderings does the directed acyclic graph on the vertices <span class=\"mm\">1–5</span> with the edges <span class=\"mm\">1→2, 1→3, 1→4, 2→5, 4→5</span> have?",
+   "options": [],
+   "answer": 8,
+   "answer_display": "8",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Count by the position of the constrained vertex. Here <span class=\"mm\">1</span> has in-degree zero and so must come first, while <span class=\"mm\">5</span> needs both <span class=\"mm\">2</span> and <span class=\"mm\">4</span> ahead of it and <span class=\"mm\">3</span> is unconstrained.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">1</span> is the only vertex of in-degree zero, so it occupies position 1 in every ordering.</li><li>The remaining four positions hold <span class=\"mm\">2, 3, 4, 5</span>, subject to <span class=\"mm\">2 &lt; 5</span> and <span class=\"mm\">4 &lt; 5</span>.</li><li>If <span class=\"mm\">5</span> is third, the first two slots hold <span class=\"mm\">2</span> and <span class=\"mm\">4</span> in either order: <span class=\"mm\">2</span> orderings.</li><li>If <span class=\"mm\">5</span> is fourth, the three slots before it hold <span class=\"mm\">2</span>, <span class=\"mm\">3</span> and <span class=\"mm\">4</span> with <span class=\"mm\">2</span> and <span class=\"mm\">4</span> before <span class=\"mm\">5</span>: <span class=\"mm\">3! = 6</span> arrangements.</li><li><span class=\"mm\">5</span> cannot be later than fourth, because <span class=\"mm\">2</span> and <span class=\"mm\">4</span> must precede it and only four slots exist after <span class=\"mm\">1</span>.</li><li>Total <span class=\"mm\">2 + 6 = 8</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8</span></p><p class=\"row\"><b>Common misconception.</b> Answering 6 by counting only the arrangements in which <span class=\"mm\">5</span> comes fourth, or 12 by forgetting that <span class=\"mm\">5</span> cannot precede <span class=\"mm\">2</span> or <span class=\"mm\">4</span>.</p>",
+   "solution": {
+    "concept": "Count by the position of the constrained vertex. Here <span class=\"mm\">1</span> has in-degree zero and so must come first, while <span class=\"mm\">5</span> needs both <span class=\"mm\">2</span> and <span class=\"mm\">4</span> ahead of it and <span class=\"mm\">3</span> is unconstrained.",
+    "steps": [
+     "<span class=\"mm\">1</span> is the only vertex of in-degree zero, so it occupies position 1 in every ordering.",
+     "The remaining four positions hold <span class=\"mm\">2, 3, 4, 5</span>, subject to <span class=\"mm\">2 &lt; 5</span> and <span class=\"mm\">4 &lt; 5</span>.",
+     "If <span class=\"mm\">5</span> is third, the first two slots hold <span class=\"mm\">2</span> and <span class=\"mm\">4</span> in either order: <span class=\"mm\">2</span> orderings.",
+     "If <span class=\"mm\">5</span> is fourth, the three slots before it hold <span class=\"mm\">2</span>, <span class=\"mm\">3</span> and <span class=\"mm\">4</span> with <span class=\"mm\">2</span> and <span class=\"mm\">4</span> before <span class=\"mm\">5</span>: <span class=\"mm\">3! = 6</span> arrangements.",
+     "<span class=\"mm\">5</span> cannot be later than fourth, because <span class=\"mm\">2</span> and <span class=\"mm\">4</span> must precede it and only four slots exist after <span class=\"mm\">1</span>.",
+     "Total <span class=\"mm\">2 + 6 = 8</span>."
+    ],
+    "final": "8",
+    "trap": "Answering 6 by counting only the arrangements in which <span class=\"mm\">5</span> comes fourth, or 12 by forgetting that <span class=\"mm\">5</span> cannot precede <span class=\"mm\">2</span> or <span class=\"mm\">4</span>."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q13",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A weighted undirected graph on the vertices <span class=\"mm\">A–F</span> has the edges <span class=\"mm\">AB 2, AC 3, BC 1, BD 4, CD 5, CE 6, DE 2, DF 3, EF 1, BE 7, AF 8</span>. What is the total weight of a minimum spanning tree?",
+   "options": [
+    "11",
+    "12",
+    "10",
+    "13"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Kruskal's algorithm takes edges in increasing weight and rejects one exactly when its endpoints are already connected. Six vertices need five accepted edges.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sorted order: <span class=\"mm\">BC 1, EF 1, AB 2, DE 2, AC 3, DF 3, BD 4, CD 5, CE 6, BE 7, AF 8</span>.</li><li>Accept <span class=\"mm\">BC 1</span> and <span class=\"mm\">EF 1</span>: the components are <span class=\"mm\">{A}</span>, <span class=\"mm\">{B,C}</span>, <span class=\"mm\">{D}</span> and <span class=\"mm\">{E,F}</span>.</li><li>Accept <span class=\"mm\">AB 2</span>, giving <span class=\"mm\">{A,B,C}</span>, and <span class=\"mm\">DE 2</span>, giving <span class=\"mm\">{D,E,F}</span>.</li><li>Reject <span class=\"mm\">AC 3</span>, which closes the cycle <span class=\"mm\">A–B–C</span>, and reject <span class=\"mm\">DF 3</span>, which closes <span class=\"mm\">D–E–F</span>.</li><li>Accept <span class=\"mm\">BD 4</span>, which joins the two components and completes the tree: <span class=\"mm\">1 + 1 + 2 + 2 + 4 = 10</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 10 — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Accepting <span class=\"mm\">DF 3</span> because it is cheaper than <span class=\"mm\">BD 4</span>. The weight of an edge does not matter once it closes a cycle; <span class=\"mm\">DF 3</span> must be rejected whatever its weight.</p>",
+   "solution": {
+    "concept": "Kruskal's algorithm takes edges in increasing weight and rejects one exactly when its endpoints are already connected. Six vertices need five accepted edges.",
+    "steps": [
+     "Sorted order: <span class=\"mm\">BC 1, EF 1, AB 2, DE 2, AC 3, DF 3, BD 4, CD 5, CE 6, BE 7, AF 8</span>.",
+     "Accept <span class=\"mm\">BC 1</span> and <span class=\"mm\">EF 1</span>: the components are <span class=\"mm\">{A}</span>, <span class=\"mm\">{B,C}</span>, <span class=\"mm\">{D}</span> and <span class=\"mm\">{E,F}</span>.",
+     "Accept <span class=\"mm\">AB 2</span>, giving <span class=\"mm\">{A,B,C}</span>, and <span class=\"mm\">DE 2</span>, giving <span class=\"mm\">{D,E,F}</span>.",
+     "Reject <span class=\"mm\">AC 3</span>, which closes the cycle <span class=\"mm\">A–B–C</span>, and reject <span class=\"mm\">DF 3</span>, which closes <span class=\"mm\">D–E–F</span>.",
+     "Accept <span class=\"mm\">BD 4</span>, which joins the two components and completes the tree: <span class=\"mm\">1 + 1 + 2 + 2 + 4 = 10</span>."
+    ],
+    "final": "10 — option (C).",
+    "trap": "Accepting <span class=\"mm\">DF 3</span> because it is cheaper than <span class=\"mm\">BD 4</span>. The weight of an edge does not matter once it closes a cycle; <span class=\"mm\">DF 3</span> must be rejected whatever its weight."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q14",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Prim's algorithm is run on a connected undirected graph in which some edge weights are negative. Which one of the following is TRUE?",
+   "options": [
+    "It may return a spanning tree that is not minimum, because a negative weight breaks the greedy choice.",
+    "It still returns a minimum spanning tree; negative weights do not affect correctness.",
+    "It can fail to terminate, because a negative edge keeps lowering the key of a vertex already in the tree.",
+    "It returns a minimum spanning tree only when all edge weights are distinct."
+   ],
+   "answer": 1,
+   "answer_display": "Option (B)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The cut property is an inequality argument about sums of weights, not about signs. Every spanning tree has the same number of edges, so comparing two trees compares sums of the same length.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Prim grows a tree by repeatedly taking the lightest edge across the cut between the tree and the rest, which is safe by the cut property whatever the weights are.</li><li>The cut property needs only that adding the lightest crossing edge cannot hurt; a negative weight makes that edge even more attractive, never less.</li><li>Termination depends on the number of vertices, not on the weights: each step adds exactly one vertex.</li><li>Distinctness of weights is needed only for uniqueness of the tree, not for its minimality.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: It still returns a minimum spanning tree — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Importing Dijkstra's restriction. Dijkstra's correctness proof needs non-negative weights because it finalises distances; Prim's finalises tree membership, and a negative edge is simply a good edge to take.</p>",
+   "solution": {
+    "concept": "The cut property is an inequality argument about sums of weights, not about signs. Every spanning tree has the same number of edges, so comparing two trees compares sums of the same length.",
+    "steps": [
+     "Prim grows a tree by repeatedly taking the lightest edge across the cut between the tree and the rest, which is safe by the cut property whatever the weights are.",
+     "The cut property needs only that adding the lightest crossing edge cannot hurt; a negative weight makes that edge even more attractive, never less.",
+     "Termination depends on the number of vertices, not on the weights: each step adds exactly one vertex.",
+     "Distinctness of weights is needed only for uniqueness of the tree, not for its minimality."
+    ],
+    "final": "It still returns a minimum spanning tree — option (B).",
+    "trap": "Importing Dijkstra's restriction. Dijkstra's correctness proof needs non-negative weights because it finalises distances; Prim's finalises tree membership, and a negative edge is simply a good edge to take."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q15",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A weighted undirected graph on the vertices <span class=\"mm\">1–6</span> has the edges <span class=\"mm\">1–2 (5), 1–3 (2), 2–3 (1), 2–4 (6), 3–4 (3), 3–5 (7), 4–5 (4), 4–6 (8), 5–6 (2), 2–5 (9)</span>. Prim's algorithm starts at vertex <span class=\"mm\">1</span> and, whenever several crossing edges are lightest, takes the one that leads to the smallest vertex. In what order are the vertices added to the tree?",
+   "options": [
+    "1, 3, 2, 4, 5, 6",
+    "1, 2, 3, 4, 5, 6",
+    "1, 3, 2, 5, 4, 6",
+    "1, 3, 4, 2, 5, 6"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Prim's algorithm adds, at each step, the lightest edge with exactly one endpoint already in the tree. The lightest edge overall is not automatically chosen, because both of its endpoints may still be outside.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>From <span class=\"mm\">1</span> the crossing edges are <span class=\"mm\">1–2 (5)</span> and <span class=\"mm\">1–3 (2)</span>, so <span class=\"mm\">3</span> is added on weight <span class=\"mm\">2</span>.</li><li>With <span class=\"mm\">{1,3}</span> in the tree the crossing edges are <span class=\"mm\">1–2 (5)</span>, <span class=\"mm\">2–3 (1)</span>, <span class=\"mm\">3–4 (3)</span> and <span class=\"mm\">3–5 (7)</span>; the lightest is <span class=\"mm\">2–3</span> on weight <span class=\"mm\">1</span>, so <span class=\"mm\">2</span> is added.</li><li>Now the crossing edges are <span class=\"mm\">2–4 (6)</span>, <span class=\"mm\">3–4 (3)</span>, <span class=\"mm\">3–5 (7)</span> and <span class=\"mm\">2–5 (9)</span>; the lightest is <span class=\"mm\">3–4</span> on weight <span class=\"mm\">3</span>, so <span class=\"mm\">4</span> is added.</li><li>The crossing edges are <span class=\"mm\">4–5 (4)</span>, <span class=\"mm\">3–5 (7)</span>, <span class=\"mm\">2–5 (9)</span> and <span class=\"mm\">4–6 (8)</span>; the lightest is <span class=\"mm\">4–5</span> on weight <span class=\"mm\">4</span>, so <span class=\"mm\">5</span> is added.</li><li>The crossing edges are <span class=\"mm\">5–6 (2)</span> and <span class=\"mm\">4–6 (8)</span>; the lightest is <span class=\"mm\">5–6</span> on weight <span class=\"mm\">2</span>, so <span class=\"mm\">6</span> is added last.</li><li>The addition order is <span class=\"mm\">1, 3, 2, 4, 5, 6</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1, 3, 2, 4, 5, 6 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Picking the globally lightest remaining edge at each step. The edge <span class=\"mm\">2–3</span> has weight <span class=\"mm\">1</span>, the smallest in the graph, yet it is not available until <span class=\"mm\">3</span> is in the tree — that mistake produces option (B).</p>",
+   "solution": {
+    "concept": "Prim's algorithm adds, at each step, the lightest edge with exactly one endpoint already in the tree. The lightest edge overall is not automatically chosen, because both of its endpoints may still be outside.",
+    "steps": [
+     "From <span class=\"mm\">1</span> the crossing edges are <span class=\"mm\">1–2 (5)</span> and <span class=\"mm\">1–3 (2)</span>, so <span class=\"mm\">3</span> is added on weight <span class=\"mm\">2</span>.",
+     "With <span class=\"mm\">{1,3}</span> in the tree the crossing edges are <span class=\"mm\">1–2 (5)</span>, <span class=\"mm\">2–3 (1)</span>, <span class=\"mm\">3–4 (3)</span> and <span class=\"mm\">3–5 (7)</span>; the lightest is <span class=\"mm\">2–3</span> on weight <span class=\"mm\">1</span>, so <span class=\"mm\">2</span> is added.",
+     "Now the crossing edges are <span class=\"mm\">2–4 (6)</span>, <span class=\"mm\">3–4 (3)</span>, <span class=\"mm\">3–5 (7)</span> and <span class=\"mm\">2–5 (9)</span>; the lightest is <span class=\"mm\">3–4</span> on weight <span class=\"mm\">3</span>, so <span class=\"mm\">4</span> is added.",
+     "The crossing edges are <span class=\"mm\">4–5 (4)</span>, <span class=\"mm\">3–5 (7)</span>, <span class=\"mm\">2–5 (9)</span> and <span class=\"mm\">4–6 (8)</span>; the lightest is <span class=\"mm\">4–5</span> on weight <span class=\"mm\">4</span>, so <span class=\"mm\">5</span> is added.",
+     "The crossing edges are <span class=\"mm\">5–6 (2)</span> and <span class=\"mm\">4–6 (8)</span>; the lightest is <span class=\"mm\">5–6</span> on weight <span class=\"mm\">2</span>, so <span class=\"mm\">6</span> is added last.",
+     "The addition order is <span class=\"mm\">1, 3, 2, 4, 5, 6</span>."
+    ],
+    "final": "1, 3, 2, 4, 5, 6 — option (A).",
+    "trap": "Picking the globally lightest remaining edge at each step. The edge <span class=\"mm\">2–3</span> has weight <span class=\"mm\">1</span>, the smallest in the graph, yet it is not available until <span class=\"mm\">3</span> is in the tree — that mistake produces option (B)."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q16",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A complete graph on four vertices has all six of its edges of weight <span class=\"mm\">1</span>. How many distinct minimum spanning trees does the graph have?",
+   "options": [
+    "4",
+    "8",
+    "12",
+    "16"
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> When every edge carries the same weight, every spanning tree has the same total, so the minimum spanning trees are exactly the spanning trees of the graph. Counting them is a matter of counting labelled trees.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A spanning tree of a four-vertex graph has exactly three edges, so every spanning tree has weight <span class=\"mm\">1 + 1 + 1 = 3</span>.</li><li>Hence every spanning tree is a minimum spanning tree and the answer is the number of labelled spanning trees of <span class=\"mm\">K₄</span>.</li><li>Cayley's formula gives <span class=\"mm\">n^(n−2) = 4² = 16</span> for the complete graph on <span class=\"mm\">n</span> labelled vertices.</li><li>The count can be checked directly: <span class=\"mm\">8</span> spanning trees contain a fixed edge <span class=\"mm\">AB</span> and <span class=\"mm\">8</span> do not, and <span class=\"mm\">8 + 8 = 16</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 16 — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Multiplying 6 choices for the first edge by 4 for the second and stopping at 24, or answering 4 by counting only the star-shaped trees. Neither counts each tree exactly once.</p>",
+   "solution": {
+    "concept": "When every edge carries the same weight, every spanning tree has the same total, so the minimum spanning trees are exactly the spanning trees of the graph. Counting them is a matter of counting labelled trees.",
+    "steps": [
+     "A spanning tree of a four-vertex graph has exactly three edges, so every spanning tree has weight <span class=\"mm\">1 + 1 + 1 = 3</span>.",
+     "Hence every spanning tree is a minimum spanning tree and the answer is the number of labelled spanning trees of <span class=\"mm\">K₄</span>.",
+     "Cayley's formula gives <span class=\"mm\">n^(n−2) = 4² = 16</span> for the complete graph on <span class=\"mm\">n</span> labelled vertices.",
+     "The count can be checked directly: <span class=\"mm\">8</span> spanning trees contain a fixed edge <span class=\"mm\">AB</span> and <span class=\"mm\">8</span> do not, and <span class=\"mm\">8 + 8 = 16</span>."
+    ],
+    "final": "16 — option (D).",
+    "trap": "Multiplying 6 choices for the first edge by 4 for the second and stopping at 24, or answering 4 by counting only the star-shaped trees. Neither counts each tree exactly once."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q17",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which of the following statements about minimum spanning trees are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "Prim's algorithm and Kruskal's algorithm return the same spanning tree whenever the edge weights are not all distinct.",
+    "If <span class=\"mm\">e</span> is a lightest edge incident to a vertex <span class=\"mm\">v</span>, then some minimum spanning tree contains <span class=\"mm\">e</span>.",
+    "If the graph has a unique lightest edge, every minimum spanning tree contains it.",
+    "Replacing every weight <span class=\"mm\">w</span> by <span class=\"mm\">2w + 7</span> does not change the set of minimum spanning trees."
+   ],
+   "answer": [
+    1,
+    2,
+    3
+   ],
+   "answer_display": "Options (B, (C) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The cut property guarantees that a lightest edge across a cut is safe, and any strictly increasing transformation of the weights preserves the ordering of spanning-tree totals.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> Take the triangle on <span class=\"mm\">A, B, C</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 5</span>. Prim from <span class=\"mm\">A</span> takes <span class=\"mm\">AB</span> and then <span class=\"mm\">AC</span>, while Kruskal takes the two weight-1 edges; the trees differ. FALSE.</li><li><b>(B)</b> Apply the cut property to the cut <span class=\"mm\">({v}, V − {v})</span>. The edge <span class=\"mm\">e</span> is a lightest edge across it, so it belongs to some minimum spanning tree. TRUE.</li><li><b>(C)</b> The globally lightest edge is a lightest edge across every cut that separates its endpoints, so it lies in some minimum spanning tree. Being strictly lighter than every other edge, it cannot be swapped out for an equal-weight alternative, so every minimum spanning tree contains it. TRUE.</li><li><b>(D)</b> A spanning tree with <span class=\"mm\">n</span> vertices has <span class=\"mm\">n − 1</span> edges, so its new total is <span class=\"mm\">2·total + 7(n − 1)</span>. Since <span class=\"mm\">w ↦ 2w + 7</span> is strictly increasing, the tree with the smallest old total has the smallest new total, and ties are preserved exactly. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B), (C) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Believing the two algorithms must agree. They agree only when the minimum spanning tree is unique, which distinct weights guarantee but equal weights do not.</p>",
+   "solution": {
+    "concept": "The cut property guarantees that a lightest edge across a cut is safe, and any strictly increasing transformation of the weights preserves the ordering of spanning-tree totals.",
+    "steps": [
+     "<b>(A)</b> Take the triangle on <span class=\"mm\">A, B, C</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 5</span>. Prim from <span class=\"mm\">A</span> takes <span class=\"mm\">AB</span> and then <span class=\"mm\">AC</span>, while Kruskal takes the two weight-1 edges; the trees differ. FALSE.",
+     "<b>(B)</b> Apply the cut property to the cut <span class=\"mm\">({v}, V − {v})</span>. The edge <span class=\"mm\">e</span> is a lightest edge across it, so it belongs to some minimum spanning tree. TRUE.",
+     "<b>(C)</b> The globally lightest edge is a lightest edge across every cut that separates its endpoints, so it lies in some minimum spanning tree. Being strictly lighter than every other edge, it cannot be swapped out for an equal-weight alternative, so every minimum spanning tree contains it. TRUE.",
+     "<b>(D)</b> A spanning tree with <span class=\"mm\">n</span> vertices has <span class=\"mm\">n − 1</span> edges, so its new total is <span class=\"mm\">2·total + 7(n − 1)</span>. Since <span class=\"mm\">w ↦ 2w + 7</span> is strictly increasing, the tree with the smallest old total has the smallest new total, and ties are preserved exactly. TRUE."
+    ],
+    "final": "Options (B), (C) and (D).",
+    "trap": "Believing the two algorithms must agree. They agree only when the minimum spanning tree is unique, which distinct weights guarantee but equal weights do not."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q18",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "prims-algorithm",
+   "subtopic": "prims-algorithm",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A weighted undirected graph on the vertices <span class=\"mm\">A–E</span> has the edges <span class=\"mm\">AB −2, AC 3, AE 4, BC 1, BD 5, BE −1, CD −3, DE 2</span>. What is the total weight of a minimum spanning tree?",
+   "options": [],
+   "answer": -5,
+   "answer_display": "-5",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Kruskal's algorithm works unchanged with negative weights. Five vertices need four accepted edges, and the sorted order simply begins with the most negative edge.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sorted order: <span class=\"mm\">CD −3, AB −2, BE −1, BC 1, DE 2, AC 3, AE 4, BD 5</span>.</li><li>Accept <span class=\"mm\">CD −3</span>, giving <span class=\"mm\">{C,D}</span>, and <span class=\"mm\">AB −2</span>, giving <span class=\"mm\">{A,B}</span>.</li><li>Accept <span class=\"mm\">BE −1</span>, which joins <span class=\"mm\">{A,B}</span> and <span class=\"mm\">{E}</span> into <span class=\"mm\">{A,B,E}</span>.</li><li>Accept <span class=\"mm\">BC 1</span>, which joins the two remaining components <span class=\"mm\">{A,B,E}</span> and <span class=\"mm\">{C,D}</span> and completes the tree with four edges.</li><li>Total <span class=\"mm\">(−3) + (−2) + (−1) + 1 = −5</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: −5</span></p><p class=\"row\"><b>Common misconception.</b> Answering −6 by also taking <span class=\"mm\">DE 2</span>, which would close the cycle <span class=\"mm\">C–D–E</span>, or dropping the negative signs and treating the answer as a magnitude.</p>",
+   "solution": {
+    "concept": "Kruskal's algorithm works unchanged with negative weights. Five vertices need four accepted edges, and the sorted order simply begins with the most negative edge.",
+    "steps": [
+     "Sorted order: <span class=\"mm\">CD −3, AB −2, BE −1, BC 1, DE 2, AC 3, AE 4, BD 5</span>.",
+     "Accept <span class=\"mm\">CD −3</span>, giving <span class=\"mm\">{C,D}</span>, and <span class=\"mm\">AB −2</span>, giving <span class=\"mm\">{A,B}</span>.",
+     "Accept <span class=\"mm\">BE −1</span>, which joins <span class=\"mm\">{A,B}</span> and <span class=\"mm\">{E}</span> into <span class=\"mm\">{A,B,E}</span>.",
+     "Accept <span class=\"mm\">BC 1</span>, which joins the two remaining components <span class=\"mm\">{A,B,E}</span> and <span class=\"mm\">{C,D}</span> and completes the tree with four edges.",
+     "Total <span class=\"mm\">(−3) + (−2) + (−1) + 1 = −5</span>."
+    ],
+    "final": "−5",
+    "trap": "Answering −6 by also taking <span class=\"mm\">DE 2</span>, which would close the cycle <span class=\"mm\">C–D–E</span>, or dropping the negative signs and treating the answer as a magnitude."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q19",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A weighted undirected graph on the vertices <span class=\"mm\">A–E</span> has the edges <span class=\"mm\">AB 3, AC 7, AE 6, BC 4, BD 1, CD 2, DE 5</span>. Kruskal's algorithm processes the edges in increasing order of weight. Which edge is the first one it rejects?",
+   "options": [
+    "BC, weight 4",
+    "DE, weight 5",
+    "AE, weight 6",
+    "AC, weight 7"
+   ],
+   "answer": 0,
+   "answer_display": "Option (A)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Kruskal rejects an edge exactly when its two endpoints already lie in the same component of the forest built so far. The check is connectivity, not the weight of the edge.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Sorted order: <span class=\"mm\">BD 1, CD 2, AB 3, BC 4, DE 5, AE 6, AC 7</span>.</li><li>Accept <span class=\"mm\">BD 1</span>: components <span class=\"mm\">{B,D}</span>, <span class=\"mm\">{A}</span>, <span class=\"mm\">{C}</span>, <span class=\"mm\">{E}</span>.</li><li>Accept <span class=\"mm\">CD 2</span>: <span class=\"mm\">{B,C,D}</span>.</li><li>Accept <span class=\"mm\">AB 3</span>: <span class=\"mm\">{A,B,C,D}</span>.</li><li>Now <span class=\"mm\">BC 4</span> has both endpoints <span class=\"mm\">B</span> and <span class=\"mm\">C</span> inside <span class=\"mm\">{A,B,C,D}</span>, so it closes the cycle <span class=\"mm\">B–D–C–B</span> and is rejected — the first rejection.</li><li>The remaining edges come later, so <span class=\"mm\">BC</span> is the first edge rejected.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: BC, weight 4 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Waiting for an obviously long edge such as <span class=\"mm\">AC 7</span>. A short edge is rejected as soon as it closes a cycle, and <span class=\"mm\">BC</span> closes one after only three acceptances.</p>",
+   "solution": {
+    "concept": "Kruskal rejects an edge exactly when its two endpoints already lie in the same component of the forest built so far. The check is connectivity, not the weight of the edge.",
+    "steps": [
+     "Sorted order: <span class=\"mm\">BD 1, CD 2, AB 3, BC 4, DE 5, AE 6, AC 7</span>.",
+     "Accept <span class=\"mm\">BD 1</span>: components <span class=\"mm\">{B,D}</span>, <span class=\"mm\">{A}</span>, <span class=\"mm\">{C}</span>, <span class=\"mm\">{E}</span>.",
+     "Accept <span class=\"mm\">CD 2</span>: <span class=\"mm\">{B,C,D}</span>.",
+     "Accept <span class=\"mm\">AB 3</span>: <span class=\"mm\">{A,B,C,D}</span>.",
+     "Now <span class=\"mm\">BC 4</span> has both endpoints <span class=\"mm\">B</span> and <span class=\"mm\">C</span> inside <span class=\"mm\">{A,B,C,D}</span>, so it closes the cycle <span class=\"mm\">B–D–C–B</span> and is rejected — the first rejection.",
+     "The remaining edges come later, so <span class=\"mm\">BC</span> is the first edge rejected."
+    ],
+    "final": "BC, weight 4 — option (A).",
+    "trap": "Waiting for an obviously long edge such as <span class=\"mm\">AC 7</span>. A short edge is rejected as soon as it closes a cycle, and <span class=\"mm\">BC</span> closes one after only three acceptances."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q20",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Six elements <span class=\"mm\">1–6</span> start as singleton sets. The operations <span class=\"mm\">union(1,2), union(3,4), union(5,6), union(1,3), union(5,1)</span> are performed, where <span class=\"mm\">union(a,b)</span> makes the root of the tree containing <span class=\"mm\">a</span> point to the root of the tree containing <span class=\"mm\">b</span>. Union by rank and path compression are <i>not</i> used. Which element is the root of the final tree?",
+   "options": [
+    "6",
+    "2",
+    "4",
+    "1"
+   ],
+   "answer": 2,
+   "answer_display": "Option (C)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Without union by rank the direction of the link is decided only by the argument order, so the surviving root is the one that is never the first argument of a union at the top level.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">union(1,2)</span> sets <span class=\"mm\">parent[1] = 2, root 2</span>.</li><li><span class=\"mm\">union(3,4)</span> sets <span class=\"mm\">parent[3] = 4, root 4</span>.</li><li><span class=\"mm\">union(5,6)</span> sets <span class=\"mm\">parent[5] = 6, root 6</span>.</li><li><span class=\"mm\">union(1,3)</span>: the root of <span class=\"mm\">1</span> is <span class=\"mm\">2</span> and the root of <span class=\"mm\">3</span> is <span class=\"mm\">4</span>, so <span class=\"mm\">parent[2] = 4</span>.</li><li><span class=\"mm\">union(5,1)</span>: the root of <span class=\"mm\">5</span> is <span class=\"mm\">6</span> and the root of <span class=\"mm\">1</span> is <span class=\"mm\">4</span>, so <span class=\"mm\">parent[6] = 4</span>.</li><li>The final parent array is <span class=\"mm\">parent[1] = 2, parent[2] = 4, parent[3] = 4, parent[5] = 6, parent[6] = 4</span>, so the root is <span class=\"mm\">4</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4 — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Treating <span class=\"mm\">union(a,b)</span> as 'attach <span class=\"mm\">b</span> under <span class=\"mm\">a</span>', which makes <span class=\"mm\">6</span> the root. The convention here links the first root under the second, so the second root survives.</p>",
+   "solution": {
+    "concept": "Without union by rank the direction of the link is decided only by the argument order, so the surviving root is the one that is never the first argument of a union at the top level.",
+    "steps": [
+     "<span class=\"mm\">union(1,2)</span> sets <span class=\"mm\">parent[1] = 2, root 2</span>.",
+     "<span class=\"mm\">union(3,4)</span> sets <span class=\"mm\">parent[3] = 4, root 4</span>.",
+     "<span class=\"mm\">union(5,6)</span> sets <span class=\"mm\">parent[5] = 6, root 6</span>.",
+     "<span class=\"mm\">union(1,3)</span>: the root of <span class=\"mm\">1</span> is <span class=\"mm\">2</span> and the root of <span class=\"mm\">3</span> is <span class=\"mm\">4</span>, so <span class=\"mm\">parent[2] = 4</span>.",
+     "<span class=\"mm\">union(5,1)</span>: the root of <span class=\"mm\">5</span> is <span class=\"mm\">6</span> and the root of <span class=\"mm\">1</span> is <span class=\"mm\">4</span>, so <span class=\"mm\">parent[6] = 4</span>.",
+     "The final parent array is <span class=\"mm\">parent[1] = 2, parent[2] = 4, parent[3] = 4, parent[5] = 6, parent[6] = 4</span>, so the root is <span class=\"mm\">4</span>."
+    ],
+    "final": "4 — option (C).",
+    "trap": "Treating <span class=\"mm\">union(a,b)</span> as 'attach <span class=\"mm\">b</span> under <span class=\"mm\">a</span>', which makes <span class=\"mm\">6</span> the root. The convention here links the first root under the second, so the second root survives."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q21",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A connected undirected graph has all edge weights distinct. <span class=\"mm\">T</span> is a minimum spanning tree and <span class=\"mm\">e</span> is an edge of the graph that is not in <span class=\"mm\">T</span>. Adding <span class=\"mm\">e</span> to <span class=\"mm\">T</span> creates exactly one cycle. Which one of the following is TRUE?",
+   "options": [
+    "e is the lightest edge of that cycle.",
+    "Every edge of that cycle other than e has weight greater than e.",
+    "Exactly one edge of that cycle has weight greater than e.",
+    "e is the heaviest edge of that cycle."
+   ],
+   "answer": 3,
+   "answer_display": "Option (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The cycle property: for any cycle and any edge of it that is strictly heavier than every other edge of the cycle, that edge belongs to no minimum spanning tree. Applied to the tree edge that would be exchanged, it forces <span class=\"mm\">e</span> to be the heaviest.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Removing any edge <span class=\"mm\">f</span> of the new cycle restores a spanning tree, namely <span class=\"mm\">T − {f} + {e}</span>.</li><li>If some <span class=\"mm\">f</span> on the cycle were heavier than <span class=\"mm\">e</span>, then <span class=\"mm\">T − {f} + {e}</span> would be lighter than <span class=\"mm\">T</span> and would be a spanning tree cheaper than <span class=\"mm\">T</span>, contradicting minimality.</li><li>So no edge of the cycle is heavier than <span class=\"mm\">e</span>, and since the weights are distinct, <span class=\"mm\">e</span> is strictly heavier than every other edge of the cycle.</li><li>Options (A) and (C) assert the opposite, and option (B) contradicts what was just shown.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">e</span> is the heaviest edge of that cycle — option (D).</span></p><p class=\"row\"><b>Common misconception.</b> Expecting the added edge to be light, because Kruskal adds light edges. Kruskal adds <span class=\"mm\">e</span> only after every edge that could have joined its endpoints has been rejected, which is exactly why it must be the heaviest edge on the resulting cycle.</p>",
+   "solution": {
+    "concept": "The cycle property: for any cycle and any edge of it that is strictly heavier than every other edge of the cycle, that edge belongs to no minimum spanning tree. Applied to the tree edge that would be exchanged, it forces <span class=\"mm\">e</span> to be the heaviest.",
+    "steps": [
+     "Removing any edge <span class=\"mm\">f</span> of the new cycle restores a spanning tree, namely <span class=\"mm\">T − {f} + {e}</span>.",
+     "If some <span class=\"mm\">f</span> on the cycle were heavier than <span class=\"mm\">e</span>, then <span class=\"mm\">T − {f} + {e}</span> would be lighter than <span class=\"mm\">T</span> and would be a spanning tree cheaper than <span class=\"mm\">T</span>, contradicting minimality.",
+     "So no edge of the cycle is heavier than <span class=\"mm\">e</span>, and since the weights are distinct, <span class=\"mm\">e</span> is strictly heavier than every other edge of the cycle.",
+     "Options (A) and (C) assert the opposite, and option (B) contradicts what was just shown."
+    ],
+    "final": "<span class=\"mm\">e</span> is the heaviest edge of that cycle — option (D).",
+    "trap": "Expecting the added edge to be light, because Kruskal adds light edges. Kruskal adds <span class=\"mm\">e</span> only after every edge that could have joined its endpoints has been rejected, which is exactly why it must be the heaviest edge on the resulting cycle."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q22",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Which of the following statements about the number of minimum spanning trees of a connected undirected graph are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "If all edge weights are distinct, the graph has exactly one minimum spanning tree.",
+    "If two edges of equal weight both lie on a cycle, the graph has more than one minimum spanning tree.",
+    "If exactly one edge has a weight different from all the others, the minimum spanning tree is unique.",
+    "If every edge has the same weight, every spanning tree of the graph is a minimum spanning tree."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Uniqueness comes from distinctness of weights, and multiplicity comes from ties that can be exchanged across a cut or a cycle. One tie is enough to break uniqueness only if it can actually be swapped.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> With distinct weights no two spanning trees can have the same total, so the minimum is attained once. TRUE.</li><li><b>(B)</b> Take the triangle on <span class=\"mm\">A, B, C</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 5</span>. Both weight-1 edges lie on the cycle, yet the tree <span class=\"mm\">{AB, BC}</span> is the unique minimum. FALSE.</li><li><b>(C)</b> Take <span class=\"mm\">K₄</span> with five edges of weight 1 and <span class=\"mm\">AB</span> of weight 2. Every spanning tree avoiding <span class=\"mm\">AB</span> has weight 3, and there are several of them, so the tree is not unique. FALSE.</li><li><b>(D)</b> All spanning trees have the same number of edges, so equal weights give every spanning tree the same total. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Reading a tie in the weights as a second minimum. The tie matters only when the tied edges compete for the same cut, so equal weights alone prove nothing.</p>",
+   "solution": {
+    "concept": "Uniqueness comes from distinctness of weights, and multiplicity comes from ties that can be exchanged across a cut or a cycle. One tie is enough to break uniqueness only if it can actually be swapped.",
+    "steps": [
+     "<b>(A)</b> With distinct weights no two spanning trees can have the same total, so the minimum is attained once. TRUE.",
+     "<b>(B)</b> Take the triangle on <span class=\"mm\">A, B, C</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 5</span>. Both weight-1 edges lie on the cycle, yet the tree <span class=\"mm\">{AB, BC}</span> is the unique minimum. FALSE.",
+     "<b>(C)</b> Take <span class=\"mm\">K₄</span> with five edges of weight 1 and <span class=\"mm\">AB</span> of weight 2. Every spanning tree avoiding <span class=\"mm\">AB</span> has weight 3, and there are several of them, so the tree is not unique. FALSE.",
+     "<b>(D)</b> All spanning trees have the same number of edges, so equal weights give every spanning tree the same total. TRUE."
+    ],
+    "final": "Options (A) and (D).",
+    "trap": "Reading a tie in the weights as a second minimum. The tie matters only when the tied edges compete for the same cut, so equal weights alone prove nothing."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q23",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A complete graph on four vertices has five of its edges of weight <span class=\"mm\">1</span> and one edge of weight <span class=\"mm\">2</span>. How many distinct minimum spanning trees does the graph have?",
+   "options": [],
+   "answer": 8,
+   "answer_display": "8",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A minimum spanning tree here uses three edges. Avoiding the single weight-2 edge gives total 3; using it gives total 4. So the minimum trees are exactly the spanning trees that avoid it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">K₄</span> has <span class=\"mm\">4^(4−2) = 16</span> labelled spanning trees.</li><li>A spanning tree that contains the weight-2 edge has two weight-1 edges, so its total is <span class=\"mm\">1 + 1 + 2 = 4</span>.</li><li>A spanning tree that avoids it has three weight-1 edges, so its total is <span class=\"mm\">1 + 1 + 1 = 3</span>. The minimum total is therefore <span class=\"mm\">3</span>.</li><li>The number of spanning trees containing a fixed edge of <span class=\"mm\">K₄</span> is <span class=\"mm\">2·4^(4−3) = 8</span>, so <span class=\"mm\">16 − 8 = 8</span> spanning trees avoid it.</li><li>Hence there are <span class=\"mm\">8</span> minimum spanning trees, each of weight <span class=\"mm\">3</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8</span></p><p class=\"row\"><b>Common misconception.</b> Answering 16 by ignoring the heavy edge, or 6 by counting the edges of the graph instead of the spanning trees that avoid it.</p>",
+   "solution": {
+    "concept": "A minimum spanning tree here uses three edges. Avoiding the single weight-2 edge gives total 3; using it gives total 4. So the minimum trees are exactly the spanning trees that avoid it.",
+    "steps": [
+     "<span class=\"mm\">K₄</span> has <span class=\"mm\">4^(4−2) = 16</span> labelled spanning trees.",
+     "A spanning tree that contains the weight-2 edge has two weight-1 edges, so its total is <span class=\"mm\">1 + 1 + 2 = 4</span>.",
+     "A spanning tree that avoids it has three weight-1 edges, so its total is <span class=\"mm\">1 + 1 + 1 = 3</span>. The minimum total is therefore <span class=\"mm\">3</span>.",
+     "The number of spanning trees containing a fixed edge of <span class=\"mm\">K₄</span> is <span class=\"mm\">2·4^(4−3) = 8</span>, so <span class=\"mm\">16 − 8 = 8</span> spanning trees avoid it.",
+     "Hence there are <span class=\"mm\">8</span> minimum spanning trees, each of weight <span class=\"mm\">3</span>."
+    ],
+    "final": "8",
+    "trap": "Answering 16 by ignoring the heavy edge, or 6 by counting the edges of the graph instead of the spanning trees that avoid it."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q24",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Eight elements <span class=\"mm\">1–8</span> start as singleton sets. The unions <span class=\"mm\">union(1,2), union(3,4), union(1,3), union(5,6), union(7,8), union(5,7)</span> are performed with union by size. How many trees does the resulting forest contain?",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A forest of <span class=\"mm\">n</span> singleton trees loses exactly one tree for every union that joins two different trees, and none for a union inside a single tree.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start with <span class=\"mm\">8</span> trees, one per element.</li><li><span class=\"mm\">union(1,2)</span> merges two singletons, leaving <span class=\"mm\">7</span> trees.</li><li><span class=\"mm\">union(3,4)</span> and <span class=\"mm\">union(1,3)</span> leave <span class=\"mm\">6</span> and then <span class=\"mm\">5</span> trees.</li><li><span class=\"mm\">union(5,6)</span> and <span class=\"mm\">union(7,8)</span> leave <span class=\"mm\">4</span> and then <span class=\"mm\">3</span> trees.</li><li><span class=\"mm\">union(5,7)</span> merges the tree <span class=\"mm\">{1,2,3,4}</span> with the tree <span class=\"mm\">{5,6,7,8}</span>, leaving <span class=\"mm\">2</span> trees: <span class=\"mm\">{1,2,3,4}</span> and <span class=\"mm\">{5,6,7,8}</span>.</li><li>Every union here joined two distinct trees, so the count is <span class=\"mm\">8 − 6 = 2</span>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2</span></p><p class=\"row\"><b>Common misconception.</b> Subtracting only the unions that changed a root, or assuming one union was wasted on a cycle. All six unions joined distinct trees.</p>",
+   "solution": {
+    "concept": "A forest of <span class=\"mm\">n</span> singleton trees loses exactly one tree for every union that joins two different trees, and none for a union inside a single tree.",
+    "steps": [
+     "Start with <span class=\"mm\">8</span> trees, one per element.",
+     "<span class=\"mm\">union(1,2)</span> merges two singletons, leaving <span class=\"mm\">7</span> trees.",
+     "<span class=\"mm\">union(3,4)</span> and <span class=\"mm\">union(1,3)</span> leave <span class=\"mm\">6</span> and then <span class=\"mm\">5</span> trees.",
+     "<span class=\"mm\">union(5,6)</span> and <span class=\"mm\">union(7,8)</span> leave <span class=\"mm\">4</span> and then <span class=\"mm\">3</span> trees.",
+     "<span class=\"mm\">union(5,7)</span> merges the tree <span class=\"mm\">{1,2,3,4}</span> with the tree <span class=\"mm\">{5,6,7,8}</span>, leaving <span class=\"mm\">2</span> trees: <span class=\"mm\">{1,2,3,4}</span> and <span class=\"mm\">{5,6,7,8}</span>.",
+     "Every union here joined two distinct trees, so the count is <span class=\"mm\">8 − 6 = 2</span>."
+    ],
+    "final": "2",
+    "trap": "Subtracting only the unions that changed a root, or assuming one union was wasted on a cycle. All six unions joined distinct trees."
+   }
+  },
+  {
+   "id": "ALG-U5-S3-Q25",
+   "unit": 5,
+   "unit_number": 5,
+   "unit_slug": "graph-algorithms-traversals-mst",
+   "unit_name": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "topic": "Graph Algorithms: Traversals &amp; Spanning Trees",
+   "sub": "kruskals-disjoint-set-union",
+   "subtopic": "kruskals-disjoint-set-union",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Which of the following statements about Kruskal's algorithm are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "On a disconnected graph, Kruskal's algorithm still returns a spanning tree.",
+    "Kruskal's algorithm can accept an edge that is heavier than an edge it rejected earlier.",
+    "Kruskal's algorithm requires the graph to be stored as an adjacency matrix.",
+    "When several edges have the same weight, the order in which Kruskal's algorithm processes them can change which minimum spanning tree it returns."
+   ],
+   "answer": [
+    1,
+    3
+   ],
+   "answer_display": "Options (B) and (D)",
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Kruskal's algorithm is a sweep over sorted edges with a connectivity test, so its output depends on the sort order only where weights tie, and it needs edge lists rather than a matrix.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(A)</b> On a disconnected graph the sweep ends with one tree per component, that is a spanning forest, not a spanning tree. FALSE.</li><li><b>(B)</b> Take the triangle on <span class=\"mm\">A, B, C, D</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 3</span>. The edge <span class=\"mm\">AC</span> is rejected for closing the cycle, and the heavier <span class=\"mm\">CD = 5</span> is accepted afterwards once it joins a new vertex. TRUE.</li><li><b>(C)</b> The algorithm needs the edges in sorted order and two set operations per edge; an adjacency matrix supplies neither advantage. FALSE.</li><li><b>(D)</b> Ties can be broken either way, and different tie orders can select different edge sets of the same total weight. TRUE.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (B) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming the accepted edges are non-decreasing in weight. They are, when ties are broken consistently — but a heavier edge can still be accepted after a lighter one was rejected for closing a cycle.</p>",
+   "solution": {
+    "concept": "Kruskal's algorithm is a sweep over sorted edges with a connectivity test, so its output depends on the sort order only where weights tie, and it needs edge lists rather than a matrix.",
+    "steps": [
+     "<b>(A)</b> On a disconnected graph the sweep ends with one tree per component, that is a spanning forest, not a spanning tree. FALSE.",
+     "<b>(B)</b> Take the triangle on <span class=\"mm\">A, B, C, D</span> with <span class=\"mm\">AB = 1</span>, <span class=\"mm\">BC = 1</span> and <span class=\"mm\">AC = 3</span>. The edge <span class=\"mm\">AC</span> is rejected for closing the cycle, and the heavier <span class=\"mm\">CD = 5</span> is accepted afterwards once it joins a new vertex. TRUE.",
+     "<b>(C)</b> The algorithm needs the edges in sorted order and two set operations per edge; an adjacency matrix supplies neither advantage. FALSE.",
+     "<b>(D)</b> Ties can be broken either way, and different tie orders can select different edge sets of the same total weight. TRUE."
+    ],
+    "final": "Options (B) and (D).",
+    "trap": "Assuming the accepted edges are non-decreasing in weight. They are, when ties are broken consistently — but a heavier edge can still be accepted after a lighter one was rejected for closing a cycle."
+   }
   }
  ]
 }
