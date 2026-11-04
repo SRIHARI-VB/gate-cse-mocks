@@ -7,36 +7,83 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 5 — Graph Algorithms: Traversals & Spanning Trees, Set 3 (second pass)**,
+- **Databases · Unit 2 — SQL & Advanced Querying, Set 2 of 2 (second pass)**,
+  2026-11-05 →
+  [`databases/sql-querying/gate_db_mock_2_2026-11-05.html`](databases/sql-querying/gate_db_mock_2_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: DDL, DML & DCL (5) · Nested & correlated subqueries (5) · Aggregates, GROUP BY & HAVING (5) ·
+  Joins & outer joins (5) · Views, triggers & constraints (5)
+- Rotation: MODE A. The draw ran over the subjects that did not already carry a 2026-11-05 paper and returned
+  **Databases**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 20, unit 1, er-relational-algebra, Set 1 of 2 (second pass)}`. That unit stands at **100**
+  questions, so **B3 failed on the cap** and the 7-day backstop was irrelevant. **B5 applies**: every unit of the
+  subject stands above 50, so the second pass is under way. **B4 advanced exactly one unit**:
+  `(index_of(unit 1) = 0 + 1) mod 5 = 1` → **Unit 2, SQL & Advanced Querying**, which held 75 questions from
+  2026-10-28 and 2026-11-02 and now closes the second pass at **100**.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Algorithms · Unit 5 — Graph Algorithms: Traversals & Spanning Trees, Set 3 (second pass)**,
   2026-11-05 →
   [`algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html`](algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: BFS/DFS & edge classification (6) · Topological sort (6) · Prim's algorithm (6) ·
-  Kruskal's algorithm & disjoint sets (7)
-- Rotation: MODE A. The draw ran over the subjects that did not already carry a 2026-11-05 paper and returned
-  **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 18, unit 4, dynamic-programming, Set 3 (second pass)}`. That unit stands at **75** questions, so
-  **B3 failed on the cap** and the 7-day backstop was irrelevant. **B5 applies**: units 1–4 have already taken a
-  third set and the second pass is under way. **B4 advanced exactly one unit**:
-  `(index_of(unit 4) = 3 + 1) mod 7 = 4` → **Unit 5, Graph Algorithms: Traversals & Spanning Trees**, which held
-  50 questions from its two first-pass sets and opens the first set of its second pass.
-  No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Computer Architecture · Unit 5 — Instruction Pipelining, Set 1 of 2 (second pass)**,
-  2026-11-05 →
-  [`computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html`](computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 232 (35 Discrete Mathematics, 19 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
-| Current papers / archived sets | 71 current · 161 archived |
+| Papers published (current + archived) | 233 (35 Discrete Mathematics, 19 Algorithms, 17 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
+| Current papers / archived sets | 71 current · 162 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5800 (875 Discrete Mathematics, 475 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
+| Questions in the subject banks | 5825 (875 Discrete Mathematics, 475 Algorithms, 425 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 161 (19 Discrete Mathematics, 12 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+| Archived sets (earlier runs) | 162 (19 Discrete Mathematics, 12 Algorithms, 12 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+
+### 2026-11-05 — Databases Unit 2, Set 2 of 2 (second pass)
+
+- New paper at `databases/sql-querying/gate_db_mock_2_2026-11-05.html`. The 2026-11-02 paper it supersedes moved to
+  `archive/gate_db_mock_2_2026-11-02_run2.html` with its content frozen, so the unit folder holds exactly one current
+  paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw ran over the subjects that did not already carry a 2026-11-05 paper and
+  returned **Databases**. Read from its own `master_bank.json`, the most recent paper was `{2026-11-04, run 20,
+  unit 1, er-relational-algebra, Set 1 of 2 (second pass)}`. Unit 1 stands at **100** questions, so **B3 failed on
+  the cap** and the 7-day backstop was irrelevant. **B5 applies**: every unit of the subject stands above 50, so the
+  second pass is in progress. **B4 advanced exactly one unit**: `(index_of(unit 1) = 0 + 1) mod 5 = 1` → **Unit 2,
+  SQL & Advanced Querying**, which held 75 questions from 2026-10-28 and 2026-11-02 and closes its second pass at
+  **100**. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All five subtopics are represented: DDL, DML & DCL (5), nested and correlated subqueries (5),
+  aggregates with GROUP BY and HAVING (5), joins and outer joins (5), views, triggers and constraints (5).
+  Composition 15 MCQ · 5 MSQ · 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 60 minutes, 35 marks. MCQ 1 mark,
+  MSQ and NAT 2 marks, no negative marking, MSQ scores only on the exact set — the practice scheme, stated as such
+  in the About tab.
+- **New angles in this set**, chosen after reading all 75 banked Unit 2 items so that none is restated: `REVOKE ...
+  CASCADE` against the default `RESTRICT`; the `COUNT(*)`/`COUNT(a)`/`AVG(a)` triple on a nullable column;
+  `TRUNCATE` as DDL against `DELETE` as DML; a NULL foreign key and the three referential actions; a DML trace in
+  which `NULL × 1.1` stays NULL; per-row evaluation of `EXISTS`; the `NOT IN` NULL trap; `> ALL` as `> MAX`; the
+  scope rule that forbids correlation in a `FROM` clause; a correlated department average combined with a grouped
+  `EXISTS`; `GROUP BY` coalescing NULLs into one group; `WHERE` before `HAVING`; the three different counts;
+  `AVG(a)` against `SUM(a)/COUNT(*)`; a `HAVING` test in which one department's average lands exactly on the
+  boundary; full-outer-join padding on both sides; a NULL join key that matches nothing; `NATURAL JOIN` on two
+  common columns; `ON` against `WHERE` on the outer table; a nine-row outer-join count; view updatability under
+  grouping, filtering, joins and `DISTINCT`; a writable `NEW` in a BEFORE row trigger; `WITH CHECK OPTION`;
+  materialisation; and a constraint trace in which CHECK, UNIQUE and PRIMARY KEY fail by three different rules.
+- **Bank.** 25 questions `DB-U2-Q76` … `DB-U2-Q100` appended to `databases/question-bank/master_bank.json`. The
+  subject bank moves 400 → 425 questions, runs 20 → 21, `last_updated` 2026-11-05.
+- **Portal.** `index.html` data block updated for the Unit 2 card — new date, path and set label, with the three
+  earlier sets kept as archive links — and `data/questions-databases.js` gained the 25 records. Counts are now
+  5825 questions banked, 71 current papers, 162 archived sets.
+- **Verification (Section 6.8).** *Shell parity:* the paper was generated from the Databases Unit 1 paper of
+  2026-11-04 by swapping only the title, header, meta strip, question host, Question Bank tab, About tab and
+  payload; the remaining bytes are identical, the whole `<script>` shell is byte-identical, and the `:root` block
+  matches `design-tokens.css` and `index.html`. *One copy:* 234 HTML files = `index.html` plus 233 papers, one
+  current paper per unit folder, nothing else at the root. *Links:* every path in the portal data block resolves to
+  a file that exists. *Counts:* 25 test cards, a 25-button palette, and 400 cards in the Question Bank tab (425
+  banked minus the 25 active), with no active question repeated there. *Tokens:* no raw hex outside `:root`.
+  *Answers:* the grading logic was re-run against the embedded payload and returns 35/35 when every question is
+  answered correctly; every numeric answer was recomputed by hand — the DML row count (6), the two-filter student
+  count (2), the qualifying-group count (2), the full-outer-join row count (9) and the constraint trace (6).
+  *README:* the status table matches the banks.
+- **Rotation record.** Databases second pass: unit 2 closed at 100 questions. Units 1 and 2 sit at 100, units 3, 4
+  and 5 at 75; every figure above 50 is a later-pass set and is labelled as such.
 
 ### 2026-11-05 — Algorithms Unit 5, Set 3 (second pass)
 

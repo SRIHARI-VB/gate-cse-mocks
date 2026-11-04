@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 400,
+  "total_questions": 425,
   "units_with_questions": [
    1,
    2,
@@ -14,7 +14,7 @@
    4,
    5
   ],
-  "total_runs": 15,
+  "total_runs": 16,
   "unit_question_cap": 50,
   "set_size": 25,
   "sets_per_unit": 2
@@ -892,6 +892,69 @@
    "mode": "MODE_A",
    "selection": "random subject draw (databases); B3 failed on the cap (unit 5 at 75 >= 50); B4 advanced exactly one unit, (4 + 1) mod 5 = 0 -> unit 1",
    "note": "Second pass begins for this unit (B5: every unit of the subject stands at 75). Unit 1 held 75 questions from three earlier sets; this set is second pass Set 1 of 2 and takes it to 100."
+  },
+  {
+   "run": 21,
+   "date": "2026-11-05",
+   "subject": "databases",
+   "subject_name": "Databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "set": "Set 2 of 2 (second pass)",
+   "count": 25,
+   "file": "databases/sql-querying/gate_db_mock_2_2026-11-05.html",
+   "archived_previous": "databases/sql-querying/archive/gate_db_mock_2_2026-11-02_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": [
+    "DDL, DML & DCL",
+    "Nested & correlated subqueries",
+    "Aggregates, GROUP BY & HAVING",
+    "Joins & outer joins",
+    "Views, triggers & constraints"
+   ],
+   "question_ids": [
+    "DB-U2-Q76",
+    "DB-U2-Q77",
+    "DB-U2-Q78",
+    "DB-U2-Q79",
+    "DB-U2-Q80",
+    "DB-U2-Q81",
+    "DB-U2-Q82",
+    "DB-U2-Q83",
+    "DB-U2-Q84",
+    "DB-U2-Q85",
+    "DB-U2-Q86",
+    "DB-U2-Q87",
+    "DB-U2-Q88",
+    "DB-U2-Q89",
+    "DB-U2-Q90",
+    "DB-U2-Q91",
+    "DB-U2-Q92",
+    "DB-U2-Q93",
+    "DB-U2-Q94",
+    "DB-U2-Q95",
+    "DB-U2-Q96",
+    "DB-U2-Q97",
+    "DB-U2-Q98",
+    "DB-U2-Q99",
+    "DB-U2-Q100"
+   ],
+   "mode": "MODE_A",
+   "selection": "random subject draw (databases); B3 failed on the cap (unit 1 at 100 >= 50); B4 advanced exactly one unit, (0 + 1) mod 5 = 1 -> unit 2",
+   "note": "Unit 2 held 75 questions from 2026-10-28 and 2026-11-02; this set is second pass Set 2 of 2 and takes it to 100."
   }
  ],
  "verified_pyqs": [
@@ -16903,6 +16966,961 @@
     "trap": "Reading <code class=\"mm\">t[A] = t[B]</code> as a join condition between two relations. Both sides use the same variable, so the comparison never leaves the row."
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In tuple calculus <code class=\"mm\">t[A]</code> and <code class=\"mm\">t[B]</code> are the two components of the <i>same</i> tuple variable t, so the formula compares the two columns within each row — a row-level test, applied independently to every tuple of R.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The variable t ranges over the tuples of R.</li><li>For each tuple the formula tests whether its A-value equals its B-value.</li><li>Tuples that pass are output unchanged; the output schema is that of R.</li><li>Hence the answer is the subset of R whose two columns agree in each row.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — rows of R whose A and B agree.</span></p><p class=\"row\"><b>Common misconception.</b> Reading <code class=\"mm\">t[A] = t[B]</code> as a join condition between two relations. Both sides use the same variable, so the comparison never leaves the row.</p>"
+  },
+  {
+   "id": "DB-U2-Q76",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "ddl-dml-dcl",
+   "subtopic": "ddl-dml-dcl",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A user executes the statement <code class=\"mm\">REVOKE SELECT ON student FROM analyst CASCADE;</code>. Which statement is TRUE?",
+   "options": [
+    "Only the privilege granted directly to <code class=\"mm\">analyst</code> is withdrawn; any copy that <code class=\"mm\">analyst</code> had passed on to other users survives.",
+    "The privilege is withdrawn from <code class=\"mm\">analyst</code> and also from every user to whom <code class=\"mm\">analyst</code> had passed it on, because of <code class=\"mm\">CASCADE</code>.",
+    "The statement fails, because <code class=\"mm\">CASCADE</code> is illegal on <code class=\"mm\">REVOKE</code> and may appear only on <code class=\"mm\">GRANT</code>.",
+    "The statement deletes every row of <code class=\"mm\">student</code> that <code class=\"mm\">analyst</code> could read."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Privileges are granted with <code class=\"mm\">GRANT</code> and taken back with <code class=\"mm\">REVOKE</code>. A grant made <code class=\"mm\">WITH GRANT OPTION</code> lets the grantee re-grant, and each re-grant is recorded as depending on the original one. <code class=\"mm\">CASCADE</code> follows those dependency links; the default <code class=\"mm\">RESTRICT</code> refuses to proceed while dependants exist.",
+    "steps": [
+     "With <code class=\"mm\">WITH GRANT OPTION</code>, analyst may pass the same privilege to further users; each such grant is a dependent of analyst’s grant.",
+     "<code class=\"mm\">REVOKE ... CASCADE</code> withdraws the privilege from analyst and then removes every grant that was derived from it.",
+     "<code class=\"mm\">REVOKE ... RESTRICT</code> is the behaviour that fails when dependants exist, so option (C) inverts the two keywords.",
+     "A privilege controls access to rows, not their existence; <code class=\"mm\">REVOKE</code> never removes data."
+    ],
+    "final": "Option (B) — CASCADE withdraws the privilege from analyst and from everyone who received it through analyst.",
+    "trap": "Reading <code class=\"mm\">CASCADE</code> as \"force the revoke even if dependants exist\". That is <code class=\"mm\">RESTRICT</code>’s opposite: CASCADE silently removes the dependants, RESTRICT refuses the statement."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Privileges are granted with <code class=\"mm\">GRANT</code> and taken back with <code class=\"mm\">REVOKE</code>. A grant made <code class=\"mm\">WITH GRANT OPTION</code> lets the grantee re-grant, and each re-grant is recorded as depending on the original one. <code class=\"mm\">CASCADE</code> follows those dependency links; the default <code class=\"mm\">RESTRICT</code> refuses to proceed while dependants exist.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>With <code class=\"mm\">WITH GRANT OPTION</code>, analyst may pass the same privilege to further users; each such grant is a dependent of analyst’s grant.</li><li><code class=\"mm\">REVOKE ... CASCADE</code> withdraws the privilege from analyst and then removes every grant that was derived from it.</li><li><code class=\"mm\">REVOKE ... RESTRICT</code> is the behaviour that fails when dependants exist, so option (C) inverts the two keywords.</li><li>A privilege controls access to rows, not their existence; <code class=\"mm\">REVOKE</code> never removes data.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — CASCADE withdraws the privilege from analyst and from everyone who received it through analyst.</span></p><p class=\"row\"><b>Common misconception.</b> Reading <code class=\"mm\">CASCADE</code> as \"force the revoke even if dependants exist\". That is <code class=\"mm\">RESTRICT</code>’s opposite: CASCADE silently removes the dependants, RESTRICT refuses the statement.</p>"
+  },
+  {
+   "id": "DB-U2-Q77",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "ddl-dml-dcl",
+   "subtopic": "ddl-dml-dcl",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">t(a INT)</code> holds the four rows <span class=\"mm\">1, 2, NULL, 3</span>. What does <code class=\"mm\">SELECT COUNT(*), COUNT(a), AVG(a) FROM t;</code> return?",
+   "options": [
+    "4, 3, 2",
+    "4, 4, 1.5",
+    "3, 3, 2",
+    "4, 3, 1.5"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "<code class=\"mm\">COUNT(*)</code> counts rows. <code class=\"mm\">COUNT(a)</code>, <code class=\"mm\">SUM(a)</code>, <code class=\"mm\">AVG(a)</code>, <code class=\"mm\">MIN(a)</code> and <code class=\"mm\">MAX(a)</code> first discard the NULL entries of <code class=\"mm\">a</code> and work on what remains.",
+    "steps": [
+     "<code class=\"mm\">COUNT(*)</code> = 4, because the table has four rows whatever they contain.",
+     "<code class=\"mm\">COUNT(a)</code> skips the NULL, so it returns 3.",
+     "<code class=\"mm\">AVG(a)</code> adds the three non-NULL values, 1 + 2 + 3 = 6, and divides by 3 — the number of values it actually saw, not the number of rows.",
+     "The triple is therefore (4, 3, 2)."
+    ],
+    "final": "4, 3, 2 — option (A).",
+    "trap": "Computing <span class=\"mm\">6 / 4 = 1.5</span> by dividing the sum by <code class=\"mm\">COUNT(*)</code>. That is the value of <code class=\"mm\">SUM(a)/COUNT(*)</code>, which is not <code class=\"mm\">AVG(a)</code> once NULLs are present."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">COUNT(*)</code> counts rows. <code class=\"mm\">COUNT(a)</code>, <code class=\"mm\">SUM(a)</code>, <code class=\"mm\">AVG(a)</code>, <code class=\"mm\">MIN(a)</code> and <code class=\"mm\">MAX(a)</code> first discard the NULL entries of <code class=\"mm\">a</code> and work on what remains.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">COUNT(*)</code> = 4, because the table has four rows whatever they contain.</li><li><code class=\"mm\">COUNT(a)</code> skips the NULL, so it returns 3.</li><li><code class=\"mm\">AVG(a)</code> adds the three non-NULL values, 1 + 2 + 3 = 6, and divides by 3 — the number of values it actually saw, not the number of rows.</li><li>The triple is therefore (4, 3, 2).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4, 3, 2 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Computing <span class=\"mm\">6 / 4 = 1.5</span> by dividing the sum by <code class=\"mm\">COUNT(*)</code>. That is the value of <code class=\"mm\">SUM(a)/COUNT(*)</code>, which is not <code class=\"mm\">AVG(a)</code> once NULLs are present.</p>"
+  },
+  {
+   "id": "DB-U2-Q78",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "ddl-dml-dcl",
+   "subtopic": "ddl-dml-dcl",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which statement about <code class=\"mm\">TRUNCATE TABLE t</code> compared with <code class=\"mm\">DELETE FROM t</code> is TRUE in standard SQL?",
+   "options": [
+    "<code class=\"mm\">TRUNCATE</code> removes the table definition along with the rows; <code class=\"mm\">DELETE</code> keeps the definition.",
+    "<code class=\"mm\">TRUNCATE</code> is a DDL statement that removes every row but keeps the table definition; <code class=\"mm\">DELETE</code> is DML and may carry a <code class=\"mm\">WHERE</code> clause.",
+    "<code class=\"mm\">TRUNCATE</code> accepts a <code class=\"mm\">WHERE</code> clause, so it can remove a chosen subset of rows.",
+    "<code class=\"mm\">DELETE</code> resets the table’s storage to empty; <code class=\"mm\">TRUNCATE</code> leaves the space allocated to the rows it removed."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "SQL statements are grouped by what they act on. Definition of the schema is DDL; manipulation of the rows is DML. <code class=\"mm\">TRUNCATE TABLE</code> deallocates the table’s data pages and keeps the table object, which makes it DDL. <code class=\"mm\">DELETE</code> visits rows, which makes it DML.",
+    "steps": [
+     "<code class=\"mm\">TRUNCATE TABLE t</code> keeps the table and its schema; only the data pages go. It is a definition-level operation, so it belongs to DDL.",
+     "<code class=\"mm\">DELETE FROM t</code> removes rows one at a time, is fully logged, fires row-level triggers and accepts a <code class=\"mm\">WHERE</code> clause.",
+     "Standard SQL gives <code class=\"mm\">TRUNCATE</code> no <code class=\"mm\">WHERE</code> clause, so option (C) is impossible.",
+     "The statement that removes the definition is <code class=\"mm\">DROP TABLE</code>, not <code class=\"mm\">TRUNCATE</code>."
+    ],
+    "final": "Option (B) — TRUNCATE is DDL that empties the table but keeps it; DELETE is DML and can filter.",
+    "trap": "Calling <code class=\"mm\">TRUNCATE</code> \"a fast DELETE\". Its speed comes from deallocating pages instead of visiting rows, and that is exactly why it cannot filter and why row triggers do not fire for it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> SQL statements are grouped by what they act on. Definition of the schema is DDL; manipulation of the rows is DML. <code class=\"mm\">TRUNCATE TABLE</code> deallocates the table’s data pages and keeps the table object, which makes it DDL. <code class=\"mm\">DELETE</code> visits rows, which makes it DML.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">TRUNCATE TABLE t</code> keeps the table and its schema; only the data pages go. It is a definition-level operation, so it belongs to DDL.</li><li><code class=\"mm\">DELETE FROM t</code> removes rows one at a time, is fully logged, fires row-level triggers and accepts a <code class=\"mm\">WHERE</code> clause.</li><li>Standard SQL gives <code class=\"mm\">TRUNCATE</code> no <code class=\"mm\">WHERE</code> clause, so option (C) is impossible.</li><li>The statement that removes the definition is <code class=\"mm\">DROP TABLE</code>, not <code class=\"mm\">TRUNCATE</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — TRUNCATE is DDL that empties the table but keeps it; DELETE is DML and can filter.</span></p><p class=\"row\"><b>Common misconception.</b> Calling <code class=\"mm\">TRUNCATE</code> \"a fast DELETE\". Its speed comes from deallocating pages instead of visiting rows, and that is exactly why it cannot filter and why row triggers do not fire for it.</p>"
+  },
+  {
+   "id": "DB-U2-Q79",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "ddl-dml-dcl",
+   "subtopic": "ddl-dml-dcl",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">S(roll INT PRIMARY KEY, name VARCHAR(30))</code> and table <code class=\"mm\">E(roll INT, cid CHAR(5), FOREIGN KEY (roll) REFERENCES S(roll))</code>. Which statements are TRUE? (Select all that apply.)",
+   "options": [
+    "A row of <code class=\"mm\">E</code> whose <code class=\"mm\">roll</code> is NULL is accepted, even though no row of <code class=\"mm\">S</code> has a NULL key.",
+    "<code class=\"mm\">ON DELETE CASCADE</code> on the foreign key removes the matching rows of <code class=\"mm\">E</code> when the referenced row of <code class=\"mm\">S</code> is deleted.",
+    "A foreign key may reference a <code class=\"mm\">UNIQUE</code> column of the parent table, not only its primary key.",
+    "Deleting a row of <code class=\"mm\">S</code> that still has matching rows in <code class=\"mm\">E</code> always fails, whatever referential action is declared."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Referential integrity says: a non-NULL foreign key must match some candidate key in the parent. A NULL foreign key means \"no relationship\" and is not checked. The referenced columns must form a candidate key, that is a <code class=\"mm\">PRIMARY KEY</code> or a <code class=\"mm\">UNIQUE</code> constraint. The referential action decides what happens to children when the parent goes.",
+    "steps": [
+     "(A) The check is skipped when the foreign key is NULL, so the row is accepted. True.",
+     "(B) That is the definition of <code class=\"mm\">ON DELETE CASCADE</code>. True.",
+     "(C) The standard requires the referenced columns to be a candidate key, and <code class=\"mm\">UNIQUE</code> supplies one. True.",
+     "(D) <code class=\"mm\">ON DELETE CASCADE</code>, <code class=\"mm\">ON DELETE SET NULL</code> and <code class=\"mm\">ON DELETE SET DEFAULT</code> all let the delete succeed; only the default <code class=\"mm\">NO ACTION</code>/<code class=\"mm\">RESTRICT</code> blocks it. False."
+    ],
+    "final": "Options (A), (B) and (C) are true.",
+    "trap": "Two assumptions fail here: that the parent must be a primary key, and that a NULL foreign key is a violation. Both are false in standard SQL."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Referential integrity says: a non-NULL foreign key must match some candidate key in the parent. A NULL foreign key means \"no relationship\" and is not checked. The referenced columns must form a candidate key, that is a <code class=\"mm\">PRIMARY KEY</code> or a <code class=\"mm\">UNIQUE</code> constraint. The referential action decides what happens to children when the parent goes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) The check is skipped when the foreign key is NULL, so the row is accepted. True.</li><li>(B) That is the definition of <code class=\"mm\">ON DELETE CASCADE</code>. True.</li><li>(C) The standard requires the referenced columns to be a candidate key, and <code class=\"mm\">UNIQUE</code> supplies one. True.</li><li>(D) <code class=\"mm\">ON DELETE CASCADE</code>, <code class=\"mm\">ON DELETE SET NULL</code> and <code class=\"mm\">ON DELETE SET DEFAULT</code> all let the delete succeed; only the default <code class=\"mm\">NO ACTION</code>/<code class=\"mm\">RESTRICT</code> blocks it. False.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C) are true.</span></p><p class=\"row\"><b>Common misconception.</b> Two assumptions fail here: that the parent must be a primary key, and that a NULL foreign key is a violation. Both are false in standard SQL.</p>"
+  },
+  {
+   "id": "DB-U2-Q80",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "ddl-dml-dcl",
+   "subtopic": "ddl-dml-dcl",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">emp(eid, dept, salary)</code> holds eight rows:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">emp:  (1,CSE,50000)  (2,CSE,60000)  (3,ECE,45000)  (4,ECE,NULL)\n      (5,MECH,70000) (6,CSE,NULL)  (7,MECH,55000) (8,ECE,48000)</span>Two statements are then executed, in this order:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">UPDATE emp SET salary = salary * 1.1 WHERE dept = 'CSE';\nDELETE FROM emp WHERE salary IS NULL;</span>How many rows does <code class=\"mm\">SELECT COUNT(*) FROM emp;</code> return afterwards?",
+   "options": [],
+   "answer": 6,
+   "answer_display": "6",
+   "solution": {
+    "concept": "Arithmetic involving NULL yields NULL, never a number. The only test that finds a NULL afterwards is <code class=\"mm\">IS NULL</code>; <code class=\"mm\">= NULL</code> would evaluate to UNKNOWN and match nothing.",
+    "steps": [
+     "Start with 8 rows.",
+     "The <code class=\"mm\">UPDATE</code> touches the three CSE rows: 50000 becomes 55000, 60000 becomes 66000, and <span class=\"mm\">NULL × 1.1</span> is still NULL, because any arithmetic with NULL is NULL.",
+     "The <code class=\"mm\">DELETE</code> removes the rows whose salary is NULL: row 4 (ECE) and row 6 (CSE). Row 6 goes even though it was just updated, because the update could not turn NULL into a number.",
+     "8 − 2 = 6 rows remain: rolls 1, 2, 3, 5, 7 and 8."
+    ],
+    "final": "6 rows remain.",
+    "trap": "Expecting the <code class=\"mm\">UPDATE</code> to give row 6 a value and then counting 7. Also, <code class=\"mm\">DELETE FROM emp WHERE salary = NULL</code> would delete nothing at all, because a comparison with NULL is UNKNOWN rather than TRUE."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Arithmetic involving NULL yields NULL, never a number. The only test that finds a NULL afterwards is <code class=\"mm\">IS NULL</code>; <code class=\"mm\">= NULL</code> would evaluate to UNKNOWN and match nothing.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Start with 8 rows.</li><li>The <code class=\"mm\">UPDATE</code> touches the three CSE rows: 50000 becomes 55000, 60000 becomes 66000, and <span class=\"mm\">NULL × 1.1</span> is still NULL, because any arithmetic with NULL is NULL.</li><li>The <code class=\"mm\">DELETE</code> removes the rows whose salary is NULL: row 4 (ECE) and row 6 (CSE). Row 6 goes even though it was just updated, because the update could not turn NULL into a number.</li><li>8 − 2 = 6 rows remain: rolls 1, 2, 3, 5, 7 and 8.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6 rows remain.</span></p><p class=\"row\"><b>Common misconception.</b> Expecting the <code class=\"mm\">UPDATE</code> to give row 6 a value and then counting 7. Also, <code class=\"mm\">DELETE FROM emp WHERE salary = NULL</code> would delete nothing at all, because a comparison with NULL is UNKNOWN rather than TRUE.</p>"
+  },
+  {
+   "id": "DB-U2-Q81",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "nested-and-correlated-subqueries",
+   "subtopic": "nested-and-correlated-subqueries",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "<code class=\"mm\">SELECT name FROM student s WHERE EXISTS (SELECT 1 FROM enroll e WHERE e.roll = s.roll);</code> Which description of how the subquery runs is correct?",
+   "options": [
+    "The subquery runs once; its result set is then compared with each row of <code class=\"mm\">student</code>.",
+    "The subquery is re-run for each candidate row of <code class=\"mm\">student</code>, and each run stops as soon as one qualifying row of <code class=\"mm\">enroll</code> is found.",
+    "The subquery must return exactly one column and at most one row, otherwise the statement is rejected.",
+    "The subquery cannot refer to <code class=\"mm\">s.roll</code>, because <code class=\"mm\">s</code> does not appear in its own <code class=\"mm\">FROM</code> clause."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "<code class=\"mm\">s.roll</code> inside the subquery is a correlated reference: it takes its value from the outer row being tested. A different outer row means a different subquery, so the subquery is evaluated per outer row. <code class=\"mm\">EXISTS</code> asks only whether the result is non-empty, so the engine may stop at the first match.",
+    "steps": [
+     "The reference <code class=\"mm\">s.roll</code> makes the subquery correlated.",
+     "For each outer row the inner search runs with that row’s value of <code class=\"mm\">roll</code>.",
+     "<code class=\"mm\">EXISTS</code> needs one row to answer TRUE, so a short-circuit after the first match is valid.",
+     "The \"one column, at most one row\" rule belongs to a scalar subquery, not to <code class=\"mm\">EXISTS</code>."
+    ],
+    "final": "Option (B) — re-evaluated per outer row, stopping at the first qualifying inner row.",
+    "trap": "Treating <code class=\"mm\">EXISTS</code> as a scalar subquery. A scalar subquery must return one row and one column; <code class=\"mm\">EXISTS</code> accepts any number of rows and any number of columns."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">s.roll</code> inside the subquery is a correlated reference: it takes its value from the outer row being tested. A different outer row means a different subquery, so the subquery is evaluated per outer row. <code class=\"mm\">EXISTS</code> asks only whether the result is non-empty, so the engine may stop at the first match.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The reference <code class=\"mm\">s.roll</code> makes the subquery correlated.</li><li>For each outer row the inner search runs with that row’s value of <code class=\"mm\">roll</code>.</li><li><code class=\"mm\">EXISTS</code> needs one row to answer TRUE, so a short-circuit after the first match is valid.</li><li>The \"one column, at most one row\" rule belongs to a scalar subquery, not to <code class=\"mm\">EXISTS</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — re-evaluated per outer row, stopping at the first qualifying inner row.</span></p><p class=\"row\"><b>Common misconception.</b> Treating <code class=\"mm\">EXISTS</code> as a scalar subquery. A scalar subquery must return one row and one column; <code class=\"mm\">EXISTS</code> accepts any number of rows and any number of columns.</p>"
+  },
+  {
+   "id": "DB-U2-Q82",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "nested-and-correlated-subqueries",
+   "subtopic": "nested-and-correlated-subqueries",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "<code class=\"mm\">enroll.roll</code> is nullable and the current data contains at least one row of <code class=\"mm\">enroll</code> whose <code class=\"mm\">roll</code> is NULL. There is also at least one student whose roll appears nowhere in <code class=\"mm\">enroll</code>. What does <code class=\"mm\">SELECT roll FROM student WHERE roll NOT IN (SELECT roll FROM enroll);</code> return?",
+   "options": [
+    "Every student roll that appears nowhere in <code class=\"mm\">enroll</code>.",
+    "No rows.",
+    "Only the student rolls that are NULL.",
+    "A run-time error, because <code class=\"mm\">NOT IN</code> cannot be used with a nullable column."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "<span class=\"mm\">x NOT IN (v₁, v₂, NULL)</span> is shorthand for <span class=\"mm\">x ≠ v₁ AND x ≠ v₂ AND x ≠ NULL</span>. The last conjunct is UNKNOWN, and UNKNOWN AND TRUE is UNKNOWN, so the predicate can never be TRUE.",
+    "steps": [
+     "<code class=\"mm\">NOT IN</code> expands into a chain of <code class=\"mm\"><></code> comparisons joined by <code class=\"mm\">AND</code>.",
+     "Comparing anything with NULL gives UNKNOWN, and UNKNOWN absorbs the TRUEs beside it.",
+     "A <code class=\"mm\">WHERE</code> clause keeps a row only when its predicate is TRUE, so no row survives.",
+     "The empty result stands as long as the subquery produces at least one NULL, whatever the other values are."
+    ],
+    "final": "No rows — option (B).",
+    "trap": "Expecting the obvious anti-join. <code class=\"mm\">NOT EXISTS</code> is the NULL-safe spelling; <code class=\"mm\">NOT IN</code> is not, and it also drops the outer rows whose own key is NULL."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <span class=\"mm\">x NOT IN (v₁, v₂, NULL)</span> is shorthand for <span class=\"mm\">x ≠ v₁ AND x ≠ v₂ AND x ≠ NULL</span>. The last conjunct is UNKNOWN, and UNKNOWN AND TRUE is UNKNOWN, so the predicate can never be TRUE.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">NOT IN</code> expands into a chain of <code class=\"mm\"><></code> comparisons joined by <code class=\"mm\">AND</code>.</li><li>Comparing anything with NULL gives UNKNOWN, and UNKNOWN absorbs the TRUEs beside it.</li><li>A <code class=\"mm\">WHERE</code> clause keeps a row only when its predicate is TRUE, so no row survives.</li><li>The empty result stands as long as the subquery produces at least one NULL, whatever the other values are.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: No rows — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Expecting the obvious anti-join. <code class=\"mm\">NOT EXISTS</code> is the NULL-safe spelling; <code class=\"mm\">NOT IN</code> is not, and it also drops the outer rows whose own key is NULL.</p>"
+  },
+  {
+   "id": "DB-U2-Q83",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "nested-and-correlated-subqueries",
+   "subtopic": "nested-and-correlated-subqueries",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "For a non-empty table <code class=\"mm\">t(v)</code> that contains no NULL in <code class=\"mm\">v</code>, <code class=\"mm\">x > ALL (SELECT v FROM t)</code> is equivalent to which of the following?",
+   "options": [
+    "<code class=\"mm\">x > (SELECT MAX(v) FROM t)</code>",
+    "<code class=\"mm\">x > (SELECT MIN(v) FROM t)</code>",
+    "<code class=\"mm\">x > ANY (SELECT v FROM t)</code>",
+    "<code class=\"mm\">x IN (SELECT v FROM t)</code>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "<span class=\"mm\">x > ALL (S)</span> means <span class=\"mm\">x > v</span> for every <span class=\"mm\">v</span> in <span class=\"mm\">S</span>. Being greater than every element is the same as being greater than the largest element.",
+    "steps": [
+     "<span class=\"mm\">x > ALL (S)</span> is the conjunction of <span class=\"mm\">x > v</span> over all rows of <span class=\"mm\">S</span>.",
+     "If <span class=\"mm\">x</span> exceeds the maximum, it exceeds every element, and the conjunction is TRUE.",
+     "If some element is at least <span class=\"mm\">x</span>, the conjunction fails. So the condition is <span class=\"mm\">x > MAX(v)</span>.",
+     "<span class=\"mm\">> ANY</span> is the disjunction, \"greater than at least one element\", which is <span class=\"mm\">x > MIN(v)</span>. <code class=\"mm\">IN</code> is equality, a different predicate."
+    ],
+    "final": "<span class=\"mm\">x > MAX(v)</span> — option (A).",
+    "trap": "Swapping MAX and MIN: <code class=\"mm\">> ANY</code> uses the MIN. The equivalence also needs the table non-empty and NULL-free, because <code class=\"mm\">> ALL</code> over an empty set is vacuously TRUE while <code class=\"mm\">> (SELECT MAX(v))</code> is UNKNOWN, and a NULL in <code class=\"mm\">t</code> makes <code class=\"mm\">> ALL</code> UNKNOWN while <code class=\"mm\">MAX</code> ignores it."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <span class=\"mm\">x > ALL (S)</span> means <span class=\"mm\">x > v</span> for every <span class=\"mm\">v</span> in <span class=\"mm\">S</span>. Being greater than every element is the same as being greater than the largest element.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><span class=\"mm\">x > ALL (S)</span> is the conjunction of <span class=\"mm\">x > v</span> over all rows of <span class=\"mm\">S</span>.</li><li>If <span class=\"mm\">x</span> exceeds the maximum, it exceeds every element, and the conjunction is TRUE.</li><li>If some element is at least <span class=\"mm\">x</span>, the conjunction fails. So the condition is <span class=\"mm\">x > MAX(v)</span>.</li><li><span class=\"mm\">> ANY</span> is the disjunction, \"greater than at least one element\", which is <span class=\"mm\">x > MIN(v)</span>. <code class=\"mm\">IN</code> is equality, a different predicate.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: <span class=\"mm\">x > MAX(v)</span> — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Swapping MAX and MIN: <code class=\"mm\">> ANY</code> uses the MIN. The equivalence also needs the table non-empty and NULL-free, because <code class=\"mm\">> ALL</code> over an empty set is vacuously TRUE while <code class=\"mm\">> (SELECT MAX(v))</code> is UNKNOWN, and a NULL in <code class=\"mm\">t</code> makes <code class=\"mm\">> ALL</code> UNKNOWN while <code class=\"mm\">MAX</code> ignores it.</p>"
+  },
+  {
+   "id": "DB-U2-Q84",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "nested-and-correlated-subqueries",
+   "subtopic": "nested-and-correlated-subqueries",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which statements about correlated subqueries are TRUE? (Select all that apply.)",
+   "options": [
+    "A correlated subquery in the <code class=\"mm\">WHERE</code> clause may be re-evaluated once for each candidate row of the outer query.",
+    "A correlated subquery may reference a column of the outer query even though that table is absent from its own <code class=\"mm\">FROM</code> list.",
+    "A subquery written in the <code class=\"mm\">FROM</code> clause of the outer query may reference columns of that outer query directly.",
+    "<code class=\"mm\">NOT EXISTS (SELECT 1 FROM e WHERE e.k = o.k)</code> returns the correct anti-join even when <code class=\"mm\">e.k</code> contains NULL, whereas <code class=\"mm\">NOT IN</code> does not."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "Correlation is about scope: a subquery in <code class=\"mm\">WHERE</code>, <code class=\"mm\">HAVING</code> or the <code class=\"mm\">SELECT</code> list can see the enclosing query’s columns. A subquery in <code class=\"mm\">FROM</code> is a table expression evaluated on its own, so it cannot.",
+    "steps": [
+     "(A) True — that is what \"correlated\" means.",
+     "(B) True — the outer table is in scope inside the subquery even though it is not in the subquery’s <code class=\"mm\">FROM</code> list.",
+     "(C) False — standard SQL rejects a <code class=\"mm\">FROM</code>-clause subquery that references the outer query. <code class=\"mm\">LATERAL</code> and <code class=\"mm\">CROSS APPLY</code> are the extensions that permit it.",
+     "(D) True — <code class=\"mm\">EXISTS</code> tests only whether a row is present, and a NULL key never satisfies <code class=\"mm\">e.k = o.k</code>, so no UNKNOWN leaks into the result."
+    ],
+    "final": "Options (A), (B) and (D) are true.",
+    "trap": "Assuming any subquery may be correlated. In <code class=\"mm\">FROM</code> it may not, which is why a lateral join is a separate feature rather than a way of writing an ordinary derived table."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Correlation is about scope: a subquery in <code class=\"mm\">WHERE</code>, <code class=\"mm\">HAVING</code> or the <code class=\"mm\">SELECT</code> list can see the enclosing query’s columns. A subquery in <code class=\"mm\">FROM</code> is a table expression evaluated on its own, so it cannot.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True — that is what \"correlated\" means.</li><li>(B) True — the outer table is in scope inside the subquery even though it is not in the subquery’s <code class=\"mm\">FROM</code> list.</li><li>(C) False — standard SQL rejects a <code class=\"mm\">FROM</code>-clause subquery that references the outer query. <code class=\"mm\">LATERAL</code> and <code class=\"mm\">CROSS APPLY</code> are the extensions that permit it.</li><li>(D) True — <code class=\"mm\">EXISTS</code> tests only whether a row is present, and a NULL key never satisfies <code class=\"mm\">e.k = o.k</code>, so no UNKNOWN leaks into the result.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D) are true.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming any subquery may be correlated. In <code class=\"mm\">FROM</code> it may not, which is why a lateral join is a separate feature rather than a way of writing an ordinary derived table.</p>"
+  },
+  {
+   "id": "DB-U2-Q85",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "nested-and-correlated-subqueries",
+   "subtopic": "nested-and-correlated-subqueries",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Two tables hold the following rows:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">student: (1,CSE,9.0) (2,CSE,8.0) (3,CSE,7.0)\n         (4,ECE,8.5) (5,ECE,7.5) (6,MECH,9.5)\nenroll:  (1,CS101,90) (1,CS102,85) (2,CS101,70)\n         (3,CS101,60) (3,CS102,65) (4,EC201,88)\n         (4,EC202,82) (5,EC201,75) (5,EC202,80)</span>How many rows does the following query return?<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">SELECT COUNT(*) FROM student s\nWHERE  s.cgpa > (SELECT AVG(cgpa) FROM student WHERE dept = s.dept)\n  AND  EXISTS (SELECT 1 FROM enroll e WHERE e.roll = s.roll\n               GROUP BY e.roll HAVING COUNT(*) >= 2);</span>",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "Two independent filters. The first is a correlated scalar subquery, so each student is compared with the average of that student’s own department. The second is an <code class=\"mm\">EXISTS</code> over a grouped subquery, which tests only whether that student has at least two enrollments.",
+    "steps": [
+     "Department averages: CSE <span class=\"mm\">= (9.0 + 8.0 + 7.0)/3 = 8.0</span>, ECE <span class=\"mm\">= (8.5 + 7.5)/2 = 8.0</span>, MECH <span class=\"mm\">= 9.5</span>.",
+     "The comparison is strict, so it keeps roll 1 (9.0) and roll 4 (8.5). Roll 2 equals its department average exactly and roll 6 equals the average of a one-row department, so both fail; rolls 3 and 5 are below their averages.",
+     "The <code class=\"mm\">EXISTS</code> subquery keeps the rolls with at least two enrollments: 1, 3, 4 and 5.",
+     "Intersecting {1, 4} with {1, 3, 4, 5} leaves rolls 1 and 4, so the count is 2."
+    ],
+    "final": "2 rows.",
+    "trap": "Reading <code class=\"mm\">></code> as <code class=\"mm\">>=</code>, which adds rolls 2 and 6 and gives 4. A department with a single student always has that student exactly equal to its average, so that student can never pass a strict comparison."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two independent filters. The first is a correlated scalar subquery, so each student is compared with the average of that student’s own department. The second is an <code class=\"mm\">EXISTS</code> over a grouped subquery, which tests only whether that student has at least two enrollments.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Department averages: CSE <span class=\"mm\">= (9.0 + 8.0 + 7.0)/3 = 8.0</span>, ECE <span class=\"mm\">= (8.5 + 7.5)/2 = 8.0</span>, MECH <span class=\"mm\">= 9.5</span>.</li><li>The comparison is strict, so it keeps roll 1 (9.0) and roll 4 (8.5). Roll 2 equals its department average exactly and roll 6 equals the average of a one-row department, so both fail; rolls 3 and 5 are below their averages.</li><li>The <code class=\"mm\">EXISTS</code> subquery keeps the rolls with at least two enrollments: 1, 3, 4 and 5.</li><li>Intersecting {1, 4} with {1, 3, 4, 5} leaves rolls 1 and 4, so the count is 2.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 rows.</span></p><p class=\"row\"><b>Common misconception.</b> Reading <code class=\"mm\">></code> as <code class=\"mm\">>=</code>, which adds rolls 2 and 6 and gives 4. A department with a single student always has that student exactly equal to its average, so that student can never pass a strict comparison.</p>"
+  },
+  {
+   "id": "DB-U2-Q86",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "aggregate-functions-group-by-having",
+   "subtopic": "aggregate-functions-group-by-having",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">t(dept)</code> holds the values <span class=\"mm\">'CSE', 'CSE', NULL, NULL, 'ECE'</span>. What does <code class=\"mm\">SELECT dept, COUNT(*) FROM t GROUP BY dept;</code> return?",
+   "options": [
+    "Two rows: <span class=\"mm\">('CSE',2)</span> and <span class=\"mm\">('ECE',1)</span>; the NULL rows are dropped.",
+    "Three rows: <span class=\"mm\">('CSE',2)</span>, <span class=\"mm\">('ECE',1)</span> and <span class=\"mm\">(NULL,2)</span>.",
+    "Four rows, because each NULL forms a group of its own.",
+    "One row, because <code class=\"mm\">GROUP BY</code> rejects a column that contains NULL."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "<code class=\"mm\">GROUP BY</code> treats NULLs as equal to one another, so all NULL values fall into a single group. This is the one place where SQL does treat NULLs as duplicates; <code class=\"mm\">=</code>, <code class=\"mm\">DISTINCT</code> and <code class=\"mm\">UNIQUE</code> still treat them as distinct.",
+    "steps": [
+     "<code class=\"mm\">GROUP BY dept</code> partitions the rows by the value of <code class=\"mm\">dept</code>.",
+     "Both NULL rows carry the same \"unknown\" marker, so they land in the same partition.",
+     "That gives three groups: CSE with 2 rows, ECE with 1 row and NULL with 2 rows.",
+     "The NULL group is returned like any other; only the aggregate functions drop NULLs from their inputs, not <code class=\"mm\">GROUP BY</code>."
+    ],
+    "final": "Three rows, the third being <span class=\"mm\">(NULL,2)</span> — option (B).",
+    "trap": "Carrying \"NULL is never equal to NULL\" over to <code class=\"mm\">GROUP BY</code>. That rule governs comparisons, not partitioning; grouping is defined so that NULLs coalesce into one group."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">GROUP BY</code> treats NULLs as equal to one another, so all NULL values fall into a single group. This is the one place where SQL does treat NULLs as duplicates; <code class=\"mm\">=</code>, <code class=\"mm\">DISTINCT</code> and <code class=\"mm\">UNIQUE</code> still treat them as distinct.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">GROUP BY dept</code> partitions the rows by the value of <code class=\"mm\">dept</code>.</li><li>Both NULL rows carry the same \"unknown\" marker, so they land in the same partition.</li><li>That gives three groups: CSE with 2 rows, ECE with 1 row and NULL with 2 rows.</li><li>The NULL group is returned like any other; only the aggregate functions drop NULLs from their inputs, not <code class=\"mm\">GROUP BY</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Three rows, the third being <span class=\"mm\">(NULL,2)</span> — option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Carrying \"NULL is never equal to NULL\" over to <code class=\"mm\">GROUP BY</code>. That rule governs comparisons, not partitioning; grouping is defined so that NULLs coalesce into one group.</p>"
+  },
+  {
+   "id": "DB-U2-Q87",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "aggregate-functions-group-by-having",
+   "subtopic": "aggregate-functions-group-by-having",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "<code class=\"mm\">SELECT dept, COUNT(*) FROM emp WHERE salary > 30000 GROUP BY dept HAVING COUNT(*) >= 2;</code> Which statement is TRUE?",
+   "options": [
+    "<code class=\"mm\">HAVING</code> runs before grouping, so it filters individual rows.",
+    "<code class=\"mm\">WHERE</code> filters rows before grouping and <code class=\"mm\">HAVING</code> filters whole groups after aggregation, so a group made only of rows rejected by <code class=\"mm\">WHERE</code> can never appear.",
+    "<code class=\"mm\">HAVING</code> may reference aggregate functions only, never a grouping column.",
+    "The statement is rejected because <code class=\"mm\">COUNT(*)</code> appears in both the <code class=\"mm\">SELECT</code> list and the <code class=\"mm\">HAVING</code> clause."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The clauses are evaluated in the order <code class=\"mm\">FROM</code>, <code class=\"mm\">WHERE</code>, <code class=\"mm\">GROUP BY</code>, <code class=\"mm\">HAVING</code>, <code class=\"mm\">SELECT</code>, <code class=\"mm\">ORDER BY</code>. <code class=\"mm\">WHERE</code> therefore sees rows and <code class=\"mm\">HAVING</code> sees groups.",
+    "steps": [
+     "<code class=\"mm\">WHERE salary > 30000</code> keeps only the rows that survive the row filter.",
+     "<code class=\"mm\">GROUP BY dept</code> partitions what survived.",
+     "<code class=\"mm\">HAVING COUNT(*) >= 2</code> then keeps the groups holding at least two such rows.",
+     "Rows removed by <code class=\"mm\">WHERE</code> are gone before any group is formed, so they cannot contribute to <code class=\"mm\">COUNT(*)</code> or to the group’s existence."
+    ],
+    "final": "Option (B).",
+    "trap": "Treating <code class=\"mm\">HAVING</code> as a second <code class=\"mm\">WHERE</code>. It can name grouping columns as well as aggregates, and it is the only one of the two that can test an aggregate."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The clauses are evaluated in the order <code class=\"mm\">FROM</code>, <code class=\"mm\">WHERE</code>, <code class=\"mm\">GROUP BY</code>, <code class=\"mm\">HAVING</code>, <code class=\"mm\">SELECT</code>, <code class=\"mm\">ORDER BY</code>. <code class=\"mm\">WHERE</code> therefore sees rows and <code class=\"mm\">HAVING</code> sees groups.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">WHERE salary > 30000</code> keeps only the rows that survive the row filter.</li><li><code class=\"mm\">GROUP BY dept</code> partitions what survived.</li><li><code class=\"mm\">HAVING COUNT(*) >= 2</code> then keeps the groups holding at least two such rows.</li><li>Rows removed by <code class=\"mm\">WHERE</code> are gone before any group is formed, so they cannot contribute to <code class=\"mm\">COUNT(*)</code> or to the group’s existence.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Treating <code class=\"mm\">HAVING</code> as a second <code class=\"mm\">WHERE</code>. It can name grouping columns as well as aggregates, and it is the only one of the two that can test an aggregate.</p>"
+  },
+  {
+   "id": "DB-U2-Q88",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "aggregate-functions-group-by-having",
+   "subtopic": "aggregate-functions-group-by-having",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "A table has 6 rows. Column <code class=\"mm\">a</code> is NULL in 2 rows, equal to 5 in 2 rows and equal to 7 in the other 2. What does <code class=\"mm\">SELECT COUNT(*), COUNT(a), COUNT(DISTINCT a) FROM t;</code> return?",
+   "options": [
+    "6, 4, 2",
+    "6, 6, 2",
+    "4, 4, 2",
+    "6, 4, 4"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Three different counts: <code class=\"mm\">COUNT(*)</code> counts rows, <code class=\"mm\">COUNT(a)</code> counts non-NULL values, <code class=\"mm\">COUNT(DISTINCT a)</code> counts distinct non-NULL values.",
+    "steps": [
+     "<code class=\"mm\">COUNT(*)</code> = 6, one per row.",
+     "<code class=\"mm\">COUNT(a)</code> drops the two NULLs and returns 4.",
+     "The non-NULL values are 5, 5, 7, 7, so the distinct set is {5, 7} and <code class=\"mm\">COUNT(DISTINCT a)</code> returns 2.",
+     "The triple is (6, 4, 2)."
+    ],
+    "final": "6, 4, 2 — option (A).",
+    "trap": "Reading <code class=\"mm\">COUNT(DISTINCT a)</code> as \"the number of rows whose value is distinct\", which would give 4, or as including NULL as a value, which would give 3."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Three different counts: <code class=\"mm\">COUNT(*)</code> counts rows, <code class=\"mm\">COUNT(a)</code> counts non-NULL values, <code class=\"mm\">COUNT(DISTINCT a)</code> counts distinct non-NULL values.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">COUNT(*)</code> = 6, one per row.</li><li><code class=\"mm\">COUNT(a)</code> drops the two NULLs and returns 4.</li><li>The non-NULL values are 5, 5, 7, 7, so the distinct set is {5, 7} and <code class=\"mm\">COUNT(DISTINCT a)</code> returns 2.</li><li>The triple is (6, 4, 2).</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6, 4, 2 — option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Reading <code class=\"mm\">COUNT(DISTINCT a)</code> as \"the number of rows whose value is distinct\", which would give 4, or as including NULL as a value, which would give 3.</p>"
+  },
+  {
+   "id": "DB-U2-Q89",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "aggregate-functions-group-by-having",
+   "subtopic": "aggregate-functions-group-by-having",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which statements about SQL aggregate functions are TRUE? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">SUM</code>, <code class=\"mm\">AVG</code>, <code class=\"mm\">MIN</code> and <code class=\"mm\">MAX</code> ignore NULL inputs, while <code class=\"mm\">COUNT(*)</code> counts rows whatever their NULLs.",
+    "<code class=\"mm\">AVG(a)</code> always equals <code class=\"mm\">SUM(a)/COUNT(*)</code>.",
+    "<code class=\"mm\">SELECT dept, name, MAX(salary) FROM emp GROUP BY dept;</code> is rejected in standard SQL because <code class=\"mm\">name</code> is neither grouped nor aggregated.",
+    "On an empty table, <code class=\"mm\">SELECT COUNT(*) FROM t;</code> returns 0 while <code class=\"mm\">SELECT SUM(a) FROM t;</code> returns NULL."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "answer_display": "Options (A), (C) and (D)",
+   "solution": {
+    "concept": "Aggregates ignore NULL in their input except <code class=\"mm\">COUNT(*)</code>. The grouping rule requires every item of the <code class=\"mm\">SELECT</code> list to be either grouped or inside an aggregate. Each aggregate has a defined value on an empty input.",
+    "steps": [
+     "(A) True — that is the standard behaviour of the four functions.",
+     "(B) False — <code class=\"mm\">AVG(a)</code> divides by <code class=\"mm\">COUNT(a)</code>, the number of non-NULL values. The two expressions agree only when <code class=\"mm\">a</code> has no NULLs.",
+     "(C) True — <code class=\"mm\">name</code> is neither in <code class=\"mm\">GROUP BY</code> nor inside an aggregate, so the value to print for the group is undefined.",
+     "(D) True — <code class=\"mm\">COUNT</code> returns 0 on an empty input, while <code class=\"mm\">SUM</code>, <code class=\"mm\">AVG</code>, <code class=\"mm\">MIN</code> and <code class=\"mm\">MAX</code> return NULL."
+    ],
+    "final": "Options (A), (C) and (D) are true.",
+    "trap": "Using <code class=\"mm\">SUM(a)/COUNT(*)</code> as a safe rewrite of <code class=\"mm\">AVG(a)</code>. With NULLs it divides by too large a denominator and understates the average."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Aggregates ignore NULL in their input except <code class=\"mm\">COUNT(*)</code>. The grouping rule requires every item of the <code class=\"mm\">SELECT</code> list to be either grouped or inside an aggregate. Each aggregate has a defined value on an empty input.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True — that is the standard behaviour of the four functions.</li><li>(B) False — <code class=\"mm\">AVG(a)</code> divides by <code class=\"mm\">COUNT(a)</code>, the number of non-NULL values. The two expressions agree only when <code class=\"mm\">a</code> has no NULLs.</li><li>(C) True — <code class=\"mm\">name</code> is neither in <code class=\"mm\">GROUP BY</code> nor inside an aggregate, so the value to print for the group is undefined.</li><li>(D) True — <code class=\"mm\">COUNT</code> returns 0 on an empty input, while <code class=\"mm\">SUM</code>, <code class=\"mm\">AVG</code>, <code class=\"mm\">MIN</code> and <code class=\"mm\">MAX</code> return NULL.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (C) and (D) are true.</span></p><p class=\"row\"><b>Common misconception.</b> Using <code class=\"mm\">SUM(a)/COUNT(*)</code> as a safe rewrite of <code class=\"mm\">AVG(a)</code>. With NULLs it divides by too large a denominator and understates the average.</p>"
+  },
+  {
+   "id": "DB-U2-Q90",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "aggregate-functions-group-by-having",
+   "subtopic": "aggregate-functions-group-by-having",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">emp(eid, dept, salary)</code> holds ten rows:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">emp: (1,CSE,60000) (2,CSE,45000) (3,CSE,40000)\n     (4,ECE,52000) (5,ECE,50000) (6,ECE,NULL)\n     (7,MECH,70000) (8,MECH,20000)\n     (9,CIVIL,40000) (10,CIVIL,40000)</span>How many rows does the following query return?<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">SELECT COUNT(*) FROM (SELECT dept FROM emp\n                      GROUP BY dept\n                      HAVING COUNT(*) >= 2 AND AVG(salary) > 45000) AS g;</span>",
+   "options": [],
+   "answer": 2,
+   "answer_display": "2",
+   "solution": {
+    "concept": "<code class=\"mm\">HAVING</code> tests a whole group. <code class=\"mm\">COUNT(*)</code> counts the rows of the group, including rows whose <code class=\"mm\">salary</code> is NULL, while <code class=\"mm\">AVG(salary)</code> divides by the number of non-NULL salaries only.",
+    "steps": [
+     "There are four groups, one per department.",
+     "CSE: <code class=\"mm\">COUNT(*)</code> = 3 and <code class=\"mm\">AVG</code> = <span class=\"mm\">145000/3 ≈ 48333</span>, which passes both conditions.",
+     "ECE: <code class=\"mm\">COUNT(*)</code> = 3 (the NULL-salary row is still a row) and <code class=\"mm\">AVG</code> = <span class=\"mm\">102000/2 = 51000</span>, which passes.",
+     "MECH: <code class=\"mm\">COUNT(*)</code> = 2 but <code class=\"mm\">AVG</code> = <span class=\"mm\">90000/2 = 45000</span> exactly, and the test is a strict <code class=\"mm\">></code>, so the group fails.",
+     "CIVIL: <code class=\"mm\">COUNT(*)</code> = 2 and <code class=\"mm\">AVG</code> = 40000, which fails. Two groups qualify."
+    ],
+    "final": "2 rows.",
+    "trap": "Reading <code class=\"mm\">> 45000</code> as <code class=\"mm\">>= 45000</code>, which adds MECH and gives 3. The second trap is dividing ECE’s 102000 by 3 instead of by 2: <code class=\"mm\">AVG</code> ignores the NULL salary, so the average is 51000."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">HAVING</code> tests a whole group. <code class=\"mm\">COUNT(*)</code> counts the rows of the group, including rows whose <code class=\"mm\">salary</code> is NULL, while <code class=\"mm\">AVG(salary)</code> divides by the number of non-NULL salaries only.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>There are four groups, one per department.</li><li>CSE: <code class=\"mm\">COUNT(*)</code> = 3 and <code class=\"mm\">AVG</code> = <span class=\"mm\">145000/3 ≈ 48333</span>, which passes both conditions.</li><li>ECE: <code class=\"mm\">COUNT(*)</code> = 3 (the NULL-salary row is still a row) and <code class=\"mm\">AVG</code> = <span class=\"mm\">102000/2 = 51000</span>, which passes.</li><li>MECH: <code class=\"mm\">COUNT(*)</code> = 2 but <code class=\"mm\">AVG</code> = <span class=\"mm\">90000/2 = 45000</span> exactly, and the test is a strict <code class=\"mm\">></code>, so the group fails.</li><li>CIVIL: <code class=\"mm\">COUNT(*)</code> = 2 and <code class=\"mm\">AVG</code> = 40000, which fails. Two groups qualify.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 2 rows.</span></p><p class=\"row\"><b>Common misconception.</b> Reading <code class=\"mm\">> 45000</code> as <code class=\"mm\">>= 45000</code>, which adds MECH and gives 3. The second trap is dividing ECE’s 102000 by 3 instead of by 2: <code class=\"mm\">AVG</code> ignores the NULL salary, so the average is 51000.</p>"
+  },
+  {
+   "id": "DB-U2-Q91",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "joins-outer-joins",
+   "subtopic": "joins-outer-joins",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which statement describes <code class=\"mm\">FULL OUTER JOIN</code> correctly?",
+   "options": [
+    "It returns only the row pairs that satisfy the join condition.",
+    "It returns the matched pairs, plus every unmatched left row padded with NULLs, plus every unmatched right row padded with NULLs.",
+    "It returns the matched pairs plus the unmatched rows of the left table only.",
+    "It is the same as <code class=\"mm\">CROSS JOIN</code> followed by <code class=\"mm\">DISTINCT</code>."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "An outer join preserves rows that find no partner by padding the missing side with NULLs. <code class=\"mm\">LEFT</code> preserves the left side, <code class=\"mm\">RIGHT</code> the right side, <code class=\"mm\">FULL</code> both.",
+    "steps": [
+     "<code class=\"mm\">INNER JOIN</code> keeps only the pairs that satisfy the condition.",
+     "<code class=\"mm\">LEFT OUTER JOIN</code> adds the unmatched left rows, padded on the right.",
+     "<code class=\"mm\">FULL OUTER JOIN</code> is the union of the matched pairs, the unmatched left rows and the unmatched right rows.",
+     "<code class=\"mm\">CROSS JOIN</code> has no condition and returns the Cartesian product, so it is unrelated."
+    ],
+    "final": "Option (B).",
+    "trap": "Assuming <code class=\"mm\">FULL OUTER JOIN</code> equals <code class=\"mm\">LEFT JOIN</code> whenever the left table is \"the important one\". The two differ exactly by the unmatched right rows."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An outer join preserves rows that find no partner by padding the missing side with NULLs. <code class=\"mm\">LEFT</code> preserves the left side, <code class=\"mm\">RIGHT</code> the right side, <code class=\"mm\">FULL</code> both.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><code class=\"mm\">INNER JOIN</code> keeps only the pairs that satisfy the condition.</li><li><code class=\"mm\">LEFT OUTER JOIN</code> adds the unmatched left rows, padded on the right.</li><li><code class=\"mm\">FULL OUTER JOIN</code> is the union of the matched pairs, the unmatched left rows and the unmatched right rows.</li><li><code class=\"mm\">CROSS JOIN</code> has no condition and returns the Cartesian product, so it is unrelated.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming <code class=\"mm\">FULL OUTER JOIN</code> equals <code class=\"mm\">LEFT JOIN</code> whenever the left table is \"the important one\". The two differ exactly by the unmatched right rows.</p>"
+  },
+  {
+   "id": "DB-U2-Q92",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "joins-outer-joins",
+   "subtopic": "joins-outer-joins",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Two tables hold these rows:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">R(a,b): (1,10) (2,20) (3,20) (4,NULL)\nS(b,c): (10,'x') (20,'y') (30,'z')</span>How many rows does <code class=\"mm\">SELECT COUNT(*) FROM R FULL OUTER JOIN S ON R.b = S.b;</code> return?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "A full outer join returns the matched pairs plus each unmatched left row plus each unmatched right row. The comparison in the join condition obeys three-valued logic, so a NULL key never matches anything.",
+    "steps": [
+     "Matched pairs: <span class=\"mm\">(1,10)</span> with <span class=\"mm\">(10,'x')</span>, and both <span class=\"mm\">(2,20)</span> and <span class=\"mm\">(3,20)</span> with <span class=\"mm\">(20,'y')</span>. That is 3 rows.",
+     "Unmatched left: the row with <span class=\"mm\">b = NULL</span>. <span class=\"mm\">NULL = 10</span> is UNKNOWN, not TRUE, so it matches nothing and is padded once.",
+     "Unmatched right: <span class=\"mm\">(30,'z')</span>.",
+     "Total 3 + 1 + 1 = 5."
+    ],
+    "final": "5 rows — option (C).",
+    "trap": "Forgetting that a NULL join key produces an unmatched left row, which gives 4, or assuming the NULL matches the NULL used for padding, which would give 6."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A full outer join returns the matched pairs plus each unmatched left row plus each unmatched right row. The comparison in the join condition obeys three-valued logic, so a NULL key never matches anything.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Matched pairs: <span class=\"mm\">(1,10)</span> with <span class=\"mm\">(10,'x')</span>, and both <span class=\"mm\">(2,20)</span> and <span class=\"mm\">(3,20)</span> with <span class=\"mm\">(20,'y')</span>. That is 3 rows.</li><li>Unmatched left: the row with <span class=\"mm\">b = NULL</span>. <span class=\"mm\">NULL = 10</span> is UNKNOWN, not TRUE, so it matches nothing and is padded once.</li><li>Unmatched right: <span class=\"mm\">(30,'z')</span>.</li><li>Total 3 + 1 + 1 = 5.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 5 rows — option (C).</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting that a NULL join key produces an unmatched left row, which gives 4, or assuming the NULL matches the NULL used for padding, which would give 6.</p>"
+  },
+  {
+   "id": "DB-U2-Q93",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "joins-outer-joins",
+   "subtopic": "joins-outer-joins",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Tables <code class=\"mm\">R(a, b, c)</code> and <code class=\"mm\">S(b, c, d)</code> hold only non-NULL values. Which statement is TRUE?",
+   "options": [
+    "<code class=\"mm\">R NATURAL JOIN S</code> joins on both <code class=\"mm\">b</code> and <code class=\"mm\">c</code>, and the result carries each of <code class=\"mm\">b</code> and <code class=\"mm\">c</code> once.",
+    "<code class=\"mm\">R NATURAL JOIN S</code> joins on <code class=\"mm\">b</code> only, the first common column.",
+    "<code class=\"mm\">R NATURAL JOIN S</code> and <code class=\"mm\">R JOIN S ON R.b = S.b</code> always return the same number of rows.",
+    "<code class=\"mm\">R NATURAL JOIN S</code> keeps two copies of each common column, one from each table."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "<code class=\"mm\">NATURAL JOIN</code> equates every pair of identically named columns and then coalesces them, so a common column appears once in the output. <code class=\"mm\">USING (b)</code> is the explicit way to name the columns you mean.",
+    "steps": [
+     "The common attributes are <code class=\"mm\">b</code> and <code class=\"mm\">c</code>.",
+     "<code class=\"mm\">NATURAL JOIN</code> builds the condition <code class=\"mm\">R.b = S.b AND R.c = S.c</code>.",
+     "The common columns appear once in the result; the remaining columns are concatenated.",
+     "The <code class=\"mm\">ON</code> version equates only <code class=\"mm\">b</code>, so it multiplies rows whenever <code class=\"mm\">c</code> differs — option (C) is false."
+    ],
+    "final": "Option (A).",
+    "trap": "Assuming <code class=\"mm\">NATURAL JOIN</code> uses one column, or that it is a shorthand for the <code class=\"mm\">ON</code> condition you had in mind. It silently uses every shared name."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">NATURAL JOIN</code> equates every pair of identically named columns and then coalesces them, so a common column appears once in the output. <code class=\"mm\">USING (b)</code> is the explicit way to name the columns you mean.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The common attributes are <code class=\"mm\">b</code> and <code class=\"mm\">c</code>.</li><li><code class=\"mm\">NATURAL JOIN</code> builds the condition <code class=\"mm\">R.b = S.b AND R.c = S.c</code>.</li><li>The common columns appear once in the result; the remaining columns are concatenated.</li><li>The <code class=\"mm\">ON</code> version equates only <code class=\"mm\">b</code>, so it multiplies rows whenever <code class=\"mm\">c</code> differs — option (C) is false.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming <code class=\"mm\">NATURAL JOIN</code> uses one column, or that it is a shorthand for the <code class=\"mm\">ON</code> condition you had in mind. It silently uses every shared name.</p>"
+  },
+  {
+   "id": "DB-U2-Q94",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "joins-outer-joins",
+   "subtopic": "joins-outer-joins",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which statements about outer joins are TRUE? (Select all that apply.)",
+   "options": [
+    "<code class=\"mm\">A LEFT JOIN B ON c</code> and <code class=\"mm\">B RIGHT JOIN A ON c</code> contain the same rows, though the columns come out in a different order.",
+    "A <code class=\"mm\">WHERE</code> predicate that rejects NULLs in a column taken from the outer side of a <code class=\"mm\">LEFT JOIN</code> turns the query into an inner join.",
+    "On the result of a <code class=\"mm\">LEFT JOIN</code>, <code class=\"mm\">COUNT(*)</code> and <code class=\"mm\">COUNT(B.col)</code> are equal whenever some row of <code class=\"mm\">A</code> has no match.",
+    "In <code class=\"mm\">A LEFT JOIN B ON A.k = B.k AND B.flag = 1</code>, a row of <code class=\"mm\">A</code> with no <code class=\"mm\">B</code> row satisfying <code class=\"mm\">flag = 1</code> still appears, padded with NULLs."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "An outer join preserves one side by padding; a NULL-rejecting predicate in <code class=\"mm\">WHERE</code> removes exactly the padded rows, undoing the preservation. Conditions meant to restrict which rows count as a match belong in <code class=\"mm\">ON</code>, not in <code class=\"mm\">WHERE</code>.",
+    "steps": [
+     "(A) True — the two are the same operation with the sides written the other way round.",
+     "(B) True — the padded rows carry NULL in <code class=\"mm\">B.col</code>, so a test such as <code class=\"mm\">B.col > 5</code> or <code class=\"mm\">B.col IS NOT NULL</code> rejects them and only matches remain.",
+     "(C) False — the padded rows contribute to <code class=\"mm\">COUNT(*)</code> but not to <code class=\"mm\">COUNT(B.col)</code>, because <code class=\"mm\">COUNT(col)</code> skips NULLs.",
+     "(D) True — a condition inside <code class=\"mm\">ON</code> decides which <code class=\"mm\">B</code> rows count as matches; it does not remove rows of <code class=\"mm\">A</code>."
+    ],
+    "final": "Options (A), (B) and (D) are true.",
+    "trap": "Moving a condition on the outer table from <code class=\"mm\">ON</code> to <code class=\"mm\">WHERE</code>, which quietly turns the outer join into an inner one, and treating <code class=\"mm\">COUNT(*)</code> and <code class=\"mm\">COUNT(col)</code> as interchangeable."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An outer join preserves one side by padding; a NULL-rejecting predicate in <code class=\"mm\">WHERE</code> removes exactly the padded rows, undoing the preservation. Conditions meant to restrict which rows count as a match belong in <code class=\"mm\">ON</code>, not in <code class=\"mm\">WHERE</code>.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True — the two are the same operation with the sides written the other way round.</li><li>(B) True — the padded rows carry NULL in <code class=\"mm\">B.col</code>, so a test such as <code class=\"mm\">B.col > 5</code> or <code class=\"mm\">B.col IS NOT NULL</code> rejects them and only matches remain.</li><li>(C) False — the padded rows contribute to <code class=\"mm\">COUNT(*)</code> but not to <code class=\"mm\">COUNT(B.col)</code>, because <code class=\"mm\">COUNT(col)</code> skips NULLs.</li><li>(D) True — a condition inside <code class=\"mm\">ON</code> decides which <code class=\"mm\">B</code> rows count as matches; it does not remove rows of <code class=\"mm\">A</code>.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D) are true.</span></p><p class=\"row\"><b>Common misconception.</b> Moving a condition on the outer table from <code class=\"mm\">ON</code> to <code class=\"mm\">WHERE</code>, which quietly turns the outer join into an inner one, and treating <code class=\"mm\">COUNT(*)</code> and <code class=\"mm\">COUNT(col)</code> as interchangeable.</p>"
+  },
+  {
+   "id": "DB-U2-Q95",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "joins-outer-joins",
+   "subtopic": "joins-outer-joins",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Two single-column tables hold these values:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">R(a): 1, 2, 2, 3, 4, 4\nS(a): 2, 2, 4, 5</span>How many rows does <code class=\"mm\">SELECT COUNT(*) FROM R FULL OUTER JOIN S USING (a);</code> return?",
+   "options": [],
+   "answer": 9,
+   "answer_display": "9",
+   "solution": {
+    "concept": "A join on a non-key column multiplies the rows of each side for every value they share, and a full outer join pads the values that only one side holds. <code class=\"mm\">USING (a)</code> prints <code class=\"mm\">a</code> once, but it does not change how many rows come out.",
+    "steps": [
+     "Count the rows of each side per value. <code class=\"mm\">R</code>: <span class=\"mm\">a=1</span> once, <span class=\"mm\">a=2</span> twice, <span class=\"mm\">a=3</span> once, <span class=\"mm\">a=4</span> twice. <code class=\"mm\">S</code>: <span class=\"mm\">a=2</span> twice, <span class=\"mm\">a=4</span> once, <span class=\"mm\">a=5</span> once.",
+     "Matched values multiply: <span class=\"mm\">a=2</span> gives <span class=\"mm\">2 × 2 = 4</span> rows and <span class=\"mm\">a=4</span> gives <span class=\"mm\">2 × 1 = 2</span> rows.",
+     "Unmatched rows of <code class=\"mm\">R</code>: <span class=\"mm\">a=1</span> and <span class=\"mm\">a=3</span>, one each, so 2 padded rows.",
+     "Unmatched rows of <code class=\"mm\">S</code>: <span class=\"mm\">a=5</span>, one padded row.",
+     "Total 4 + 2 + 2 + 1 = 9."
+    ],
+    "final": "9 rows.",
+    "trap": "Counting distinct values instead of rows, which gives 5, or forgetting the padding on both sides, which gives 6."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A join on a non-key column multiplies the rows of each side for every value they share, and a full outer join pads the values that only one side holds. <code class=\"mm\">USING (a)</code> prints <code class=\"mm\">a</code> once, but it does not change how many rows come out.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Count the rows of each side per value. <code class=\"mm\">R</code>: <span class=\"mm\">a=1</span> once, <span class=\"mm\">a=2</span> twice, <span class=\"mm\">a=3</span> once, <span class=\"mm\">a=4</span> twice. <code class=\"mm\">S</code>: <span class=\"mm\">a=2</span> twice, <span class=\"mm\">a=4</span> once, <span class=\"mm\">a=5</span> once.</li><li>Matched values multiply: <span class=\"mm\">a=2</span> gives <span class=\"mm\">2 × 2 = 4</span> rows and <span class=\"mm\">a=4</span> gives <span class=\"mm\">2 × 1 = 2</span> rows.</li><li>Unmatched rows of <code class=\"mm\">R</code>: <span class=\"mm\">a=1</span> and <span class=\"mm\">a=3</span>, one each, so 2 padded rows.</li><li>Unmatched rows of <code class=\"mm\">S</code>: <span class=\"mm\">a=5</span>, one padded row.</li><li>Total 4 + 2 + 2 + 1 = 9.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 9 rows.</span></p><p class=\"row\"><b>Common misconception.</b> Counting distinct values instead of rows, which gives 5, or forgetting the padding on both sides, which gives 6.</p>"
+  },
+  {
+   "id": "DB-U2-Q96",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "views-triggers-constraints",
+   "subtopic": "views-triggers-constraints",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "Which of these views is updatable in standard SQL?",
+   "options": [
+    "<code class=\"mm\">CREATE VIEW v AS SELECT dept, COUNT(*) AS n FROM emp GROUP BY dept;</code>",
+    "<code class=\"mm\">CREATE VIEW v AS SELECT * FROM emp WHERE dept = 'CSE';</code>",
+    "<code class=\"mm\">CREATE VIEW v AS SELECT e.eid, e.name, d.dname FROM emp e JOIN dept d ON e.did = d.did;</code>",
+    "<code class=\"mm\">CREATE VIEW v AS SELECT DISTINCT dept FROM emp;</code>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A view is updatable when each of its rows corresponds to exactly one row of one base table. A row filter keeps that correspondence; aggregation, <code class=\"mm\">DISTINCT</code>, joins and set operations break it.",
+    "steps": [
+     "(B) One base table, no grouping, no <code class=\"mm\">DISTINCT</code>: every view row is one row of <code class=\"mm\">emp</code>, so an update has a unique target.",
+     "(A) A view row is a whole group, which cannot be mapped back to a single row.",
+     "(C) A view row mixes rows of two tables, so an update has no unique target; an <code class=\"mm\">INSTEAD OF</code> trigger is needed.",
+     "(D) <code class=\"mm\">DISTINCT</code> lets one view row stand for several base rows."
+    ],
+    "final": "Option (B).",
+    "trap": "Believing a view with a <code class=\"mm\">WHERE</code> clause is read-only. A row filter is fine; it is aggregation, <code class=\"mm\">DISTINCT</code>, joins and set operations that break updatability."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A view is updatable when each of its rows corresponds to exactly one row of one base table. A row filter keeps that correspondence; aggregation, <code class=\"mm\">DISTINCT</code>, joins and set operations break it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(B) One base table, no grouping, no <code class=\"mm\">DISTINCT</code>: every view row is one row of <code class=\"mm\">emp</code>, so an update has a unique target.</li><li>(A) A view row is a whole group, which cannot be mapped back to a single row.</li><li>(C) A view row mixes rows of two tables, so an update has no unique target; an <code class=\"mm\">INSTEAD OF</code> trigger is needed.</li><li>(D) <code class=\"mm\">DISTINCT</code> lets one view row stand for several base rows.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Believing a view with a <code class=\"mm\">WHERE</code> clause is read-only. A row filter is fine; it is aggregation, <code class=\"mm\">DISTINCT</code>, joins and set operations that break updatability.</p>"
+  },
+  {
+   "id": "DB-U2-Q97",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "views-triggers-constraints",
+   "subtopic": "views-triggers-constraints",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "A row-level <code class=\"mm\">BEFORE INSERT</code> trigger on table <code class=\"mm\">t</code> executes <code class=\"mm\">SET NEW.created = CURRENT_TIMESTAMP;</code>. Which statement is TRUE?",
+   "options": [
+    "The assignment has no effect, because a <code class=\"mm\">BEFORE</code> trigger may read <code class=\"mm\">NEW</code> but not write it.",
+    "The stored row carries the timestamp written by the trigger, because the trigger runs before the row is inserted and <code class=\"mm\">NEW</code> is writable there.",
+    "The trigger runs once per statement, so only the last row of a multi-row insert is stamped.",
+    "The value is ignored whenever the insert also fires an <code class=\"mm\">AFTER INSERT</code> trigger."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "In a row-level trigger <code class=\"mm\">NEW</code> is a copy of the row being written. A <code class=\"mm\">BEFORE</code> trigger runs while that copy is still mutable, so whatever it leaves in <code class=\"mm\">NEW</code> is what gets stored. An <code class=\"mm\">AFTER</code> trigger runs once the row is in place, so <code class=\"mm\">NEW</code> is read-only there.",
+    "steps": [
+     "The trigger is declared <code class=\"mm\">FOR EACH ROW</code>, so it fires once per affected row.",
+     "It is <code class=\"mm\">BEFORE</code>, so the row has not been written yet and <code class=\"mm\">NEW</code> may be modified.",
+     "The modification is carried into the stored row, which is why the timestamp appears.",
+     "Trigger timing (<code class=\"mm\">BEFORE</code>/<code class=\"mm\">AFTER</code>) and trigger granularity (<code class=\"mm\">ROW</code>/<code class=\"mm\">STATEMENT</code>) are two separate choices."
+    ],
+    "final": "Option (B).",
+    "trap": "Confusing timing with granularity, and assuming <code class=\"mm\">NEW</code> is read-only in every trigger. It is read-only only after the row has been written."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> In a row-level trigger <code class=\"mm\">NEW</code> is a copy of the row being written. A <code class=\"mm\">BEFORE</code> trigger runs while that copy is still mutable, so whatever it leaves in <code class=\"mm\">NEW</code> is what gets stored. An <code class=\"mm\">AFTER</code> trigger runs once the row is in place, so <code class=\"mm\">NEW</code> is read-only there.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The trigger is declared <code class=\"mm\">FOR EACH ROW</code>, so it fires once per affected row.</li><li>It is <code class=\"mm\">BEFORE</code>, so the row has not been written yet and <code class=\"mm\">NEW</code> may be modified.</li><li>The modification is carried into the stored row, which is why the timestamp appears.</li><li>Trigger timing (<code class=\"mm\">BEFORE</code>/<code class=\"mm\">AFTER</code>) and trigger granularity (<code class=\"mm\">ROW</code>/<code class=\"mm\">STATEMENT</code>) are two separate choices.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B).</span></p><p class=\"row\"><b>Common misconception.</b> Confusing timing with granularity, and assuming <code class=\"mm\">NEW</code> is read-only in every trigger. It is read-only only after the row has been written.</p>"
+  },
+  {
+   "id": "DB-U2-Q98",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "views-triggers-constraints",
+   "subtopic": "views-triggers-constraints",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-05",
+   "question": "<code class=\"mm\">CREATE VIEW v AS SELECT * FROM emp WHERE salary > 50000 WITH CHECK OPTION;</code> Which statement is TRUE?",
+   "options": [
+    "An update through <code class=\"mm\">v</code> that would move a row out of the view’s <code class=\"mm\">WHERE</code> condition is rejected.",
+    "The view becomes read-only for every statement.",
+    "The view’s result is stored physically and refreshed on commit.",
+    "Direct updates to <code class=\"mm\">emp</code> that make a row invisible in <code class=\"mm\">v</code> are rejected too."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "<code class=\"mm\">WITH CHECK OPTION</code> turns the view’s predicate into a constraint on the writes performed through the view. It is checked only for <code class=\"mm\">INSERT</code> and <code class=\"mm\">UPDATE</code> issued against the view.",
+    "steps": [
+     "An <code class=\"mm\">INSERT</code> through <code class=\"mm\">v</code> whose row fails <code class=\"mm\">salary > 50000</code> is rejected.",
+     "An <code class=\"mm\">UPDATE</code> through <code class=\"mm\">v</code> that lowers <code class=\"mm\">salary</code> to 50000 or below is rejected as well, because the updated row would leave the view.",
+     "Statements issued directly against <code class=\"mm\">emp</code> are unaffected: the constraint belongs to the view, not to the table.",
+     "The view is still a stored query, not a stored result."
+    ],
+    "final": "Option (A).",
+    "trap": "Expecting <code class=\"mm\">WITH CHECK OPTION</code> to police the base table. It guards only the view’s own DML path, so a direct <code class=\"mm\">UPDATE</code> of <code class=\"mm\">emp</code> can still make a row vanish from <code class=\"mm\">v</code>."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> <code class=\"mm\">WITH CHECK OPTION</code> turns the view’s predicate into a constraint on the writes performed through the view. It is checked only for <code class=\"mm\">INSERT</code> and <code class=\"mm\">UPDATE</code> issued against the view.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>An <code class=\"mm\">INSERT</code> through <code class=\"mm\">v</code> whose row fails <code class=\"mm\">salary > 50000</code> is rejected.</li><li>An <code class=\"mm\">UPDATE</code> through <code class=\"mm\">v</code> that lowers <code class=\"mm\">salary</code> to 50000 or below is rejected as well, because the updated row would leave the view.</li><li>Statements issued directly against <code class=\"mm\">emp</code> are unaffected: the constraint belongs to the view, not to the table.</li><li>The view is still a stored query, not a stored result.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A).</span></p><p class=\"row\"><b>Common misconception.</b> Expecting <code class=\"mm\">WITH CHECK OPTION</code> to police the base table. It guards only the view’s own DML path, so a direct <code class=\"mm\">UPDATE</code> of <code class=\"mm\">emp</code> can still make a row vanish from <code class=\"mm\">v</code>.</p>"
+  },
+  {
+   "id": "DB-U2-Q99",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "views-triggers-constraints",
+   "subtopic": "views-triggers-constraints",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Which statements are TRUE? (Select all that apply.)",
+   "options": [
+    "Dropping a base table that a view references leaves the view’s definition in the catalogue, and the view fails when it is next queried until the table is re-created.",
+    "A view defined <code class=\"mm\">WITH CHECK OPTION</code> rejects an <code class=\"mm\">INSERT</code> through it whose new row fails the view’s <code class=\"mm\">WHERE</code> condition.",
+    "Every view is materialised automatically on first access and kept current by the DBMS.",
+    "An <code class=\"mm\">INSTEAD OF</code> trigger on a view can make a view over a join updatable."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "An ordinary view stores only its query text. It is expanded into the statement that uses it, so it occupies no space and needs no refreshing. Materialisation is a separate, explicit object, and an <code class=\"mm\">INSTEAD OF</code> trigger supplies the row mapping that a join view lacks.",
+    "steps": [
+     "(A) True in standard SQL and in the common products: the view survives, and querying it fails until the table returns. <code class=\"mm\">DROP VIEW ... CASCADE</code> is the statement that removes the dependants.",
+     "(B) True — that is exactly what the clause does.",
+     "(C) False — a plain view is a stored query, not a stored result. Materialised views exist, but they are declared as such and refreshed by an explicit mechanism.",
+     "(D) True — the trigger intercepts the DML on the view and decides which base rows to change."
+    ],
+    "final": "Options (A), (B) and (D) are true.",
+    "trap": "Assuming views consume storage and stay in sync automatically. The cost of a plain view is paid at query time, and the freshness problem belongs only to materialised views."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An ordinary view stores only its query text. It is expanded into the statement that uses it, so it occupies no space and needs no refreshing. Materialisation is a separate, explicit object, and an <code class=\"mm\">INSTEAD OF</code> trigger supplies the row mapping that a join view lacks.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) True in standard SQL and in the common products: the view survives, and querying it fails until the table returns. <code class=\"mm\">DROP VIEW ... CASCADE</code> is the statement that removes the dependants.</li><li>(B) True — that is exactly what the clause does.</li><li>(C) False — a plain view is a stored query, not a stored result. Materialised views exist, but they are declared as such and refreshed by an explicit mechanism.</li><li>(D) True — the trigger intercepts the DML on the view and decides which base rows to change.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (D) are true.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming views consume storage and stay in sync automatically. The cost of a plain view is paid at query time, and the freshness problem belongs only to materialised views.</p>"
+  },
+  {
+   "id": "DB-U2-Q100",
+   "subject": "databases",
+   "unit": 2,
+   "unit_number": 2,
+   "unit_slug": "sql-querying",
+   "unit_name": "SQL & Advanced Querying",
+   "topic": "SQL & Advanced Querying",
+   "sub": "views-triggers-constraints",
+   "subtopic": "views-triggers-constraints",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original synthesis",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-05",
+   "question": "Table <code class=\"mm\">t(a INT PRIMARY KEY, b INT UNIQUE, CHECK (a > 0))</code> currently holds the two rows <span class=\"mm\">(1,10)</span> and <span class=\"mm\">(2,20)</span>. The following statements are then executed in this order:<span style=\"display:block;font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:12.9px;line-height:1.55;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 11px;margin:9px 0;white-space:pre-wrap;overflow-x:auto\">INSERT INTO t VALUES (3, 30);\nINSERT INTO t VALUES (-4, 40);\nINSERT INTO t VALUES (5, 30);\nINSERT INTO t VALUES (6, NULL);\nINSERT INTO t VALUES (NULL, 50);\nINSERT INTO t VALUES (7, NULL);\nINSERT INTO t VALUES (2, 60);\nINSERT INTO t VALUES (8, NULL);</span>How many rows does <code class=\"mm\">SELECT COUNT(*) FROM t;</code> return afterwards?",
+   "options": [],
+   "answer": 6,
+   "answer_display": "6",
+   "solution": {
+    "concept": "Each constraint fails by its own rule. A <code class=\"mm\">CHECK</code> is violated only when its predicate is FALSE, so UNKNOWN passes. A <code class=\"mm\">UNIQUE</code> column tolerates any number of NULLs, because NULL is not equal to NULL. A <code class=\"mm\">PRIMARY KEY</code> forbids NULL and duplicates.",
+    "steps": [
+     "Two rows exist to begin with.",
+     "<span class=\"mm\">(3,30)</span>: <span class=\"mm\">3 > 0</span> holds and 30 is free, so it is accepted. 3 rows.",
+     "<span class=\"mm\">(-4,40)</span>: the <code class=\"mm\">CHECK</code> is FALSE, so it is rejected.",
+     "<span class=\"mm\">(5,30)</span>: <code class=\"mm\">b = 30</code> already exists in <span class=\"mm\">(3,30)</span>, so <code class=\"mm\">UNIQUE</code> rejects it.",
+     "<span class=\"mm\">(6,NULL)</span>: accepted, because many NULLs may coexist in a <code class=\"mm\">UNIQUE</code> column. 4 rows.",
+     "<span class=\"mm\">(NULL,50)</span>: the <code class=\"mm\">CHECK</code> is UNKNOWN and therefore passes, but the <code class=\"mm\">PRIMARY KEY</code> forbids NULL, so it is rejected.",
+     "<span class=\"mm\">(7,NULL)</span>: accepted. 5 rows. <span class=\"mm\">(2,60)</span>: key 2 already exists, so it is rejected. <span class=\"mm\">(8,NULL)</span>: accepted. 6 rows."
+    ],
+    "final": "6 rows.",
+    "trap": "Rejecting <span class=\"mm\">(6,NULL)</span> on the <code class=\"mm\">UNIQUE</code> constraint — only non-NULL duplicates violate it — or accepting <span class=\"mm\">(NULL,50)</span> because the <code class=\"mm\">CHECK</code> passes. The primary key is the constraint that fails there, and it is the UNKNOWN-passes-a-CHECK rule that lets the statement get that far."
+   },
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Each constraint fails by its own rule. A <code class=\"mm\">CHECK</code> is violated only when its predicate is FALSE, so UNKNOWN passes. A <code class=\"mm\">UNIQUE</code> column tolerates any number of NULLs, because NULL is not equal to NULL. A <code class=\"mm\">PRIMARY KEY</code> forbids NULL and duplicates.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Two rows exist to begin with.</li><li><span class=\"mm\">(3,30)</span>: <span class=\"mm\">3 > 0</span> holds and 30 is free, so it is accepted. 3 rows.</li><li><span class=\"mm\">(-4,40)</span>: the <code class=\"mm\">CHECK</code> is FALSE, so it is rejected.</li><li><span class=\"mm\">(5,30)</span>: <code class=\"mm\">b = 30</code> already exists in <span class=\"mm\">(3,30)</span>, so <code class=\"mm\">UNIQUE</code> rejects it.</li><li><span class=\"mm\">(6,NULL)</span>: accepted, because many NULLs may coexist in a <code class=\"mm\">UNIQUE</code> column. 4 rows.</li><li><span class=\"mm\">(NULL,50)</span>: the <code class=\"mm\">CHECK</code> is UNKNOWN and therefore passes, but the <code class=\"mm\">PRIMARY KEY</code> forbids NULL, so it is rejected.</li><li><span class=\"mm\">(7,NULL)</span>: accepted. 5 rows. <span class=\"mm\">(2,60)</span>: key 2 already exists, so it is rejected. <span class=\"mm\">(8,NULL)</span>: accepted. 6 rows.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6 rows.</span></p><p class=\"row\"><b>Common misconception.</b> Rejecting <span class=\"mm\">(6,NULL)</span> on the <code class=\"mm\">UNIQUE</code> constraint — only non-NULL duplicates violate it — or accepting <span class=\"mm\">(NULL,50)</span> because the <code class=\"mm\">CHECK</code> passes. The primary key is the constraint that fails there, and it is the UNKNOWN-passes-a-CHECK rule that lets the statement get that far.</p>"
   }
  ]
 }
