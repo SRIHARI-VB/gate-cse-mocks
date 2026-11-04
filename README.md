@@ -7,35 +7,71 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 1 of 2 (fourth pass)**,
+- **Computer Networks · Unit 3 — Network Layer: IP Addressing & Subnetting, Set 2 of 2 (second pass)**,
   2026-11-04 →
-  [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html)
+  [`computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html`](computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: DFA construction & minimisation (7) · NFA to DFA: subset construction (7) · Regular expressions (6) ·
-  Pumping lemma for regular languages (5)
-- Rotation: MODE A. The draw over the eleven subjects returned **Theory of Computation**. Read from its own
-  `master_bank.json`, the most recent paper was `{2026-11-04, run 20, unit 4, turing-machines-decidability, Set 2 of
-  2 (third pass)}` and unit 4 stood at **125** questions, so **B3 failed on the cap**. **B4 advanced exactly one
-  unit**: `(index_of(turing-machines-decidability) = 3 + 1) mod 4 = 0` → **Unit 1, Regular Languages & Finite
-  Automata**, which already held 125. **B5 applies: every Theory of Computation unit sits at 125**, so the modulo
-  wraps, the fourth pass begins, and this paper is the unit's sixth set, taking it to **150**. No override was
-  passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 1 of 2 (third pass)**,
-  2026-11-04 →
-  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html)
+- Subtopics: IPv4 header & fragmentation (7) · Classful vs classless & CIDR (6) · Subnet masking & supernetting (6) ·
+  IPv6 basics & differences (6)
+- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the day's draw ran over all eleven
+  and returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 20, unit 2, data-link-mac, Set 2 of 2 (second pass)}` and unit 2 stood at **100** questions,
+  so **B3 failed on the cap** (its first paper was 2026-10-27, so the 7-day backstop had also expired). **B4
+  advanced exactly one unit**: `(index_of(data-link-mac) = 1 + 1) mod 6 = 2` → **Unit 3, Network Layer: IP
+  Addressing & Subnetting**, which already held 75. This is the unit's fourth set and the second set of its second
+  pass, taking it to **100**. No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 1 of 2 (fourth
+  pass)**, 2026-11-04 →
+  [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 223 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 21 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 152 archived |
+| Papers published (current + archived) | 224 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 21 Computer Networks, 21 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 153 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5575 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 525 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5600 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 525 Computer Networks, 525 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 152 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 153 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 15 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Computer Networks Unit 3, Set 2 of 2 (second pass)
+
+- New paper at `computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_cn_mock_3_2026-11-01_run1.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Every one of the eleven subjects already carried a 2026-11-04 paper, so the
+  draw was taken over all eleven and returned **Computer Networks**; this is the thirteenth paper of the date. Read
+  from its own `master_bank.json`, the most recent paper was `{2026-11-04, run 20, unit 2, data-link-mac, Set 2 of
+  2 (second pass)}` and unit 2 stood at **100** questions, so **B3 failed on the cap** (its first paper was
+  2026-10-27, so the 7-day backstop would also have forced the move). **B4 advanced exactly one unit**:
+  `(index_of(data-link-mac) = 1 + 1) mod 6 = 2` → **Unit 3, Network Layer: IP Addressing & Subnetting**, which
+  already held 75 questions. This paper is the unit's fourth set and the second set of its second pass, taking the
+  unit to **100**, which is over the cap; the next Computer Networks run advances to `(2 + 1) mod 6 = 3` → Unit 4,
+  Network Layer: Routing & Protocols. No override was passed and no partial set was generated: exactly 25
+  questions.
+- **Coverage.** All four subtopics are represented: IPv4 header & fragmentation (7), classful vs classless & CIDR
+  (6), subnet masking & supernetting (6), IPv6 basics & differences (6). The 25 items are `CN-U3-Q76`–`CN-U3-Q100`;
+  every stem was checked against the 75 Unit 3 items already banked and none repeats one. The bank view inside the
+  paper lists the 500 questions banked before this set, so the active 25 appear only in the test itself.
+- **New angles in this set**, chosen to avoid the ground the first three sets already covered: which header field
+  names the payload protocol and how wide it is; path-MTU discovery and what the source does with the reported
+  MTU; the offset and Total Length of a <i>last</i> fragment; the multiple-of-8 rule stated as a rule rather than a
+  count; the 65,535-byte ceiling of Total Length; the byte at which the fragment after a given one begins; the
+  link-local block against the other special-use blocks; the prefix that yields five equal subnets; aggregation
+  across a hole in the range; the RFC 1918 boundary at 172.32; longest-prefix match with a default route; a /8
+  divided into /23s; the usable range of a /26; a VLSM allocation in the order largest-first; the smallest
+  aggregate of two /22s and the alignment trap in writing it; two hosts on one wire with different masks; a /27
+  mask on a /24; a /16 divided into /22s; the Flow Label width; an oversized packet at an IPv6 router; IPv6 route
+  aggregation into a /47; the extension-header chain; address scopes and types; and the bits left after fe80::/10.
+- **Verification.** Shell parity with the 2026-11-04 Data Link paper holds byte for byte outside the payload, the
+  25 cards and the bank/About blocks: the `:root` token block, the stylesheet and the whole script block are
+  identical, and the `:root` block still matches `design-tokens.css`. One copy per paper: the unit folder holds
+  `gate_cn_mock_3_2026-11-04.html` and the archive, and the root holds only `index.html`. The paper renders 25
+  test cards and a 25-button palette, its bank tab lists 500 questions with none of the active 25, and the portal's
+  Computer Networks counts match `master_bank.json` (525 questions, 21 papers).
 
 ### 2026-11-04 — Theory of Computation Unit 1, Set 1 of 2 (fourth pass)
 
