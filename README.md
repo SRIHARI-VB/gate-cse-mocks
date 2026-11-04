@@ -7,35 +7,80 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 3 — Network Layer: IP Addressing & Subnetting, Set 2 of 2 (second pass)**,
+- **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 2 of 2 (fourth pass)**,
   2026-11-04 →
-  [`computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html`](computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: IPv4 header & fragmentation (7) · Classful vs classless & CIDR (6) · Subnet masking & supernetting (6) ·
-  IPv6 basics & differences (6)
-- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the day's draw ran over all eleven
-  and returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 20, unit 2, data-link-mac, Set 2 of 2 (second pass)}` and unit 2 stood at **100** questions,
-  so **B3 failed on the cap** (its first paper was 2026-10-27, so the 7-day backstop had also expired). **B4
-  advanced exactly one unit**: `(index_of(data-link-mac) = 1 + 1) mod 6 = 2` → **Unit 3, Network Layer: IP
-  Addressing & Subnetting**, which already held 75. This is the unit's fourth set and the second set of its second
-  pass, taking it to **100**. No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 1 of 2 (fourth
-  pass)**, 2026-11-04 →
   [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: DFA construction & minimisation (9) · NFA to DFA: subset construction (4) · Regular expressions (6) ·
+  Pumping lemma for regular languages (6)
+- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the day's draw ran over all eleven
+  and returned **Theory of Computation**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 21, unit 1, regular-languages-fa, Set 1 of 2 (fourth pass)}`, so the unit's fourth pass holds
+  one of its two sets and **B3 kept the unit** rather than advancing. This paper is the unit's seventh set and the
+  second set of its fourth pass, taking the unit to **175** questions; the next Theory of Computation run advances
+  to `(0 + 1) mod 4 = 1` → Unit 2, Grammars & Context-Free Languages. No override was passed and no partial set was
+  generated: exactly 25 questions.
+- Previous test: **Computer Networks · Unit 3 — Network Layer: IP Addressing & Subnetting, Set 2 of 2 (second
+  pass)**, 2026-11-04 →
+  [`computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html`](computer-networks/ipv4-subnetting/gate_cn_mock_3_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 224 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 21 Computer Networks, 21 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 153 archived |
+| Papers published (current + archived) | 225 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 21 Computer Networks, 22 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 154 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5600 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 525 Computer Networks, 525 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5625 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 525 Computer Networks, 550 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 153 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 15 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 154 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 15 Computer Networks, 18 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Theory of Computation Unit 1, Set 2 of 2 (fourth pass)
+
+- New paper at `theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`. The 2026-11-04 Set 1
+  paper it supersedes moved to `archive/gate_toc_mock_1_2026-11-04_run1.html` with its content frozen, so the unit
+  folder holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Every one of the eleven subjects already carried a 2026-11-04 paper, so the
+  draw was taken over all eleven and returned **Theory of Computation**; this is the fourteenth paper of the date.
+  Read from its own `master_bank.json`, the most recent paper was `{2026-11-04, run 21, unit 1, regular-languages-fa,
+  Set 1 of 2 (fourth pass)}`. Unit 1 stood at 150 questions in total but only **25** in the current (fourth) pass, so
+  **B3 kept the unit**: the pass is one set short of its cap of two sets. **B4 was therefore not applied.** This
+  paper is the unit's seventh set, the second set of its fourth pass, and takes the unit to **175** questions; the
+  next Theory of Computation run advances to `(index_of(regular-languages-fa) = 0 + 1) mod 4 = 1` → Unit 2,
+  Grammars & Context-Free Languages. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics are represented: DFA construction & minimisation (9), NFA to DFA: subset
+  construction (4), Regular expressions (6), Pumping lemma for regular languages (6). The 25 items are
+  `TOC-U1-Q151`–`TOC-U1-Q175`; every stem was checked against the 150 Unit 1 items already banked (token-overlap
+  screen plus a manual read) and five drafted items were replaced because they restated Q20, Q72, Q116 and Q136.
+  The bank view inside the paper lists the 525 questions banked before this set, so the active 25 appear only in
+  the test itself.
+- **New angles in this set**, chosen to avoid the ground the first six sets already covered: the state count for
+  "at least one a and at least one b"; why the minimal DFA of a complement needs no extra state; reading a language
+  off a transition table that ignores one letter; deleting unreachable states before merging equivalent ones; the
+  product construction as an upper bound rather than a normal form; the ε-closure of a state; identifying the
+  language of a three-state NFA; an ε-NFA whose subset construction collapses to a single state; counting the
+  length-3 words an NFA accepts; `ab*`; "at least two b's" as against "two consecutive b's"; "every a immediately
+  followed by b"; the language of `(a*b)*`, which is ε plus the strings ending in b rather than the strings with no
+  adjacent a's; membership in `(a + bb)*` and in `(aa + b)*`; three distinct expressions for the even-parity
+  language; a valid pumping witness for `{ww}`; the Myhill–Nerode class count for "contains aba"; a regularity
+  census over seven languages; and the closure properties that survive reversal, prefix closure and concatenation.
+- **Answers verified independently.** Every numeric answer in this set was recomputed by code before the paper was
+  built: partition refinement for the four state-count questions (4, 3, 5, 3), language comparison by enumerating
+  all words up to length 7 for the six regular-expression items, and set simulation for the NFA word count. Two
+  drafted answers were corrected this way — "even length with exactly one b" is 5 states, not 6, because the two
+  overflow states merge; "even number of a's ending in b" is 3 states, not 4, because the two odd-parity states
+  merge.
+- **Marking scheme.** MCQ 1 mark, MSQ 2 marks, NAT 2 marks, 35 marks in total, no negative marking, and an MSQ
+  scores only when the exact set of correct options is selected. This is the practice scheme used by the whole
+  series and it is stated in the paper's About tab; it is not the official GATE scheme.
+- **Provenance.** The Theory of Computation bank records no verified PYQ, so no question on this paper is claimed as
+  official; every item carries `STANDARD_TEXTBOOK` (11) or `ORIGINAL_SYNTHESIS` (14).
+- **Repository state after this run.** 71 current papers and 154 archived sets; 5625 questions across the eleven
+  per-subject banks, 550 of them Theory of Computation. `index.html` was updated in place — the Unit 1 card now
+  reads "Set 2 of 2 (fourth pass)" and links the superseded Set 1 under "Earlier sets for this date" — and
+  `data/questions-theory-of-computation.js` carries the 550 banked items.
 
 ### 2026-11-04 — Computer Networks Unit 3, Set 2 of 2 (second pass)
 
@@ -11640,10 +11685,10 @@ Algorithms:
 
 | # | Unit | Slug | Questions in bank | Covered |
 | --- | --- | --- | --- | --- |
-| 1 | Regular Languages & Finite Automata | `regular-languages-fa` | 75 | yes |
-| 2 | Grammars & Context-Free Languages | `cfl-grammars` | 75 | yes |
-| 3 | Pushdown Automata | `pushdown-automata` | 75 | yes |
-| 4 | Turing Machines & Decidability | `turing-machines-decidability` | 75 | yes |
+| 1 | Regular Languages & Finite Automata | `regular-languages-fa` | 175 | yes |
+| 2 | Grammars & Context-Free Languages | `cfl-grammars` | 125 | yes |
+| 3 | Pushdown Automata | `pushdown-automata` | 125 | yes |
+| 4 | Turing Machines & Decidability | `turing-machines-decidability` | 125 | yes |
 
 ### Digital Logic
 
