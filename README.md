@@ -74,7 +74,11 @@ and no answer, option mark or hint visible until the test is submitted.
 - **Verification (Section 6.8).** *Shell parity:* the paper was generated from the Databases Unit 1 paper of
   2026-11-04 by swapping only the title, header, meta strip, question host, Question Bank tab, About tab and
   payload; the remaining bytes are identical, the whole `<script>` shell is byte-identical, and the `:root` block
-  matches `design-tokens.css` and `index.html`. *One copy:* 234 HTML files = `index.html` plus 233 papers, one
+  matches `design-tokens.css` and `index.html`. One content-level correction was made inside the question host:
+  the option block now sits after the closing `</p>` of `.qtext` instead of inside it. The old wrapper was
+  invalid HTML, so the browser closed the paragraph at the first `<div>` and the question palette ended up
+  below the question card instead of beside it; this paper is the first whose shell renders as the two-column
+  layout the spec asks for. The shell itself — CSS, script, palette, tabs — is untouched. *One copy:* 234 HTML files = `index.html` plus 233 papers, one
   current paper per unit folder, nothing else at the root. *Links:* every path in the portal data block resolves to
   a file that exists. *Counts:* 25 test cards, a 25-button palette, and 400 cards in the Question Bank tab (425
   banked minus the 25 active), with no active question repeated there. *Tokens:* no raw hex outside `:root`.
