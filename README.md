@@ -7,39 +7,80 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (third pass)**,
+- **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 1 of 2 (third pass)**,
   2026-11-04 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html)
+  [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Adders & subtractors (5) · Multiplexers & demultiplexers (5) · Decoders & encoders (5) ·
-  Code converters (5) · Hazards & glitches (5)
-- Rotation: MODE A. Ten papers already carried the date 2026-11-04 (algorithms, compiler-design,
-  computer-architecture, computer-networks, databases twice, discrete-mathematics, engineering-mathematics,
-  programming-data-structures, theory-of-computation), so the draw ran over the two subjects still without one —
-  digital-logic and operating-systems — and returned **Digital Logic**. Read from its own
-  `master_bank.json`, the most recent paper was `{2026-11-03, run 17, unit 1, number-systems, Set 1 of 2
-  (third pass)}` and unit 1 stood at **125** questions, so **B3 failed on the cap** (its first paper was
-  2026-10-26, so the 7-day backstop was exceeded too). **B4 advanced exactly one unit**:
-  `(index_of(number-systems) = 0 + 1) mod 4 = 1` → **Unit 2, Combinational Circuit Design**, which already
-  held 100 questions. **B5 applies: every unit of the subject is at or above the cap** (125, 100, 100, 100),
-  so the further pass continues and this paper is the unit's fifth set, taking it to 125. No override was
-  passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Compiler Design · Unit 5 — Runtime Environments & Code Optimization, Set 2 of 2 (third
-  pass)**, 2026-11-04 →
-  [`compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html`](compiler-design/runtime-code-optimization/gate_cd_mock_5_2026-11-04.html)
+- Subtopics: Process states & PCB (6) · Threads: user vs kernel (6) · Preemptive vs non-preemptive (6) ·
+  FCFS, SJF, SRTF, RR & priority (7)
+- Rotation: MODE A. Ten papers already carried the date 2026-11-04, and the day's draw over the two subjects
+  still without one (digital-logic, operating-systems) had returned Digital Logic, so **Operating Systems** was
+  the only subject left for 2026-11-04. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 24, unit 6, storage-file-systems, Set 2 of 2 (second pass)}` and unit 6 stood at **100**
+  questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
+  `(index_of(storage-file-systems) = 5 + 1) mod 6 = 0` → **Unit 1, Process Management & CPU Scheduling**, which
+  already held 100 questions. **B5 applies: every Operating Systems unit sits at 100**, so the modulo wraps, the
+  third pass continues, and this paper is the unit's fifth set, taking it to **125**. No override was passed and
+  no partial set was generated: exactly 25 questions.
+- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (third pass)**, 2026-11-04 →
+  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 221 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 150 archived |
+| Papers published (current + archived) | 222 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 151 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5525 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5550 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 150 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 151 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Operating Systems Unit 1, Set 1 of 2 (third pass)
+
+- New paper at `operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_os_mock_1_2026-11-01_run1.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Ten papers already carried the date 2026-11-04 (algorithms, compiler-design,
+  computer-architecture, computer-networks, databases twice, discrete-mathematics, engineering-mathematics,
+  programming-data-structures, theory-of-computation, digital-logic); the day's draw over the two subjects still
+  without one had already returned Digital Logic, so **Operating Systems** was the only subject left and is the
+  subject of this paper. Read from its own bank, the most recent paper was `{2026-11-03, run 24, unit 6,
+  storage-file-systems, Set 2 of 2 (second pass)}` and unit 6 stood at **100** questions, so **B3 failed on the
+  cap** (its first paper was 2026-10-29, six days earlier, so the 7-day backstop played no part). **B4 advanced
+  exactly one unit**: `(index_of(storage-file-systems) = 5 + 1) mod 6 = 0` → **Unit 1, Process Management & CPU
+  Scheduling**, which already held 100 questions. **B5 applies: every Operating Systems unit sits at 100**
+  (100, 100, 100, 100, 100, 100), so the modulo wraps, the third pass continues, and this paper is the unit's
+  fifth set, taking unit 1 to **125**. No override was passed and no partial set was generated: exactly 25
+  questions.
+- **Coverage.** All four subtopics are represented: process states & the PCB (6), threads user vs kernel (6),
+  preemptive vs non-preemptive (6), FCFS/SJF/SRTF/RR/priority (7). The 25 items are `OS-U1-Q101`–`OS-U1-Q125`;
+  every stem was checked against the 100 Unit 1 items already banked and none repeats one.
+- **New angles in this set**, chosen to avoid the ground the first four sets already covered: copy-on-write after
+  `fork()` and the memory it actually costs; a blocking `wait()` against a busy loop; a divide-by-zero trap
+  against an asynchronous interrupt; what `fork()` and `exec()` preserve; what stays resident for a
+  `Blocked/Suspend` process; concurrency without parallelism on one core; scheduler activations and upcalls;
+  reentrant against thread-safe; `pthread_join`; where a preemption point cannot fall; preemption inside the
+  kernel; the throughput cost of preemption; counting preemptions under SRTF; an I/O-bound mix; a process that
+  never blocks under a non-preemptive scheduler; absolute priority between multilevel queues; the two limits of
+  the round-robin quantum.
+- **Every numeric key recomputed by script.** Copy-on-write: a 200 MB process whose child writes 12 MB costs
+  12 MB. Threads: 6 user threads over 4 kernel threads with 2 blocked give at most 2 executing. Preemptions under
+  SRTF on (P1 0/8, P2 1/4, P3 2/2, P4 3/1) with ties going to the running process: **2**. FCFS average wait on
+  (0/6, 2/4, 4/2): **3.33 ms**. Round robin, q = 3, on (0/7, 1/3, 2/5): **5.67 ms**. Non-preemptive SJF average
+  turnaround on (0/7, 2/4, 4/1, 5/4): **8.00 ms**. Non-preemptive priority average wait on (0/7 p4, 2/4 p3,
+  4/1 p1, 5/4 p2): **3.00 ms**.
+- **Composition and marking.** 15 MCQ / 5 MSQ / 5 NAT; 10 easy / 10 medium / 5 hard; MCQ 1 mark, MSQ and NAT
+  2 marks, no negative marking, 35 marks in 60 minutes. This is a practice scheme, not the official GATE scheme,
+  and the About tab says so.
+- **Provenance.** No item is claimed as an official GATE question. The bank's single verified previous-year item,
+  `PYQ-GATE2021S1-Q25` (GATE CSE 2021, Set 1, Q25, official answer 12), belongs to Unit 1 and is used by
+  `OS-U1-Q21`, which is not on this paper; no active item carries the `GATE_PYQ_VARIATION` tag.
+- **Portal.** `index.html` gained one card for this paper (with the superseded 2026-11-01 set as an archive link
+  on it) and `data/questions-operating-systems.js` gained the 25 new items, so the Topic & Subtopic Question
+  Archive view now counts 625 solved Operating Systems questions.
 
 ### 2026-11-04 — Digital Logic Unit 2, Set 1 of 2 (third pass)
 
