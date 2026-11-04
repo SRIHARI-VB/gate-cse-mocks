@@ -7,37 +7,96 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Algorithms · Unit 3 — Greedy Algorithms, Set 3 (second pass)**,
+- **Discrete Mathematics · Unit 1 — Propositional Logic, Set 3 (second pass)**,
   2026-11-04 →
-  [`algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html`](algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html)
+  [`discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html`](discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Fractional knapsack (7) · Huffman coding (7) · Activity selection & interval scheduling (5) ·
-  Optimal merge patterns (6)
-- Rotation: MODE A. The eleven-subject draw was restricted to the five subjects with no paper dated 2026-11-04
-  (algorithms, compiler-design, digital-logic, discrete-mathematics, operating-systems) and returned
-  **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-03, run 16, unit 2, sorting-divide-conquer, Set 3 (second pass)}` and unit 2 stood at **75**
+- Subtopics: Propositions & connectives (5) · Truth tables (4) · Logical equivalences (4) ·
+  Implications & inference (5) · CNF / DNF (4) · Validity & satisfiability (3)
+- Rotation: MODE A. Seven subjects already carried a paper dated 2026-11-04 (algorithms,
+  computer-architecture, computer-networks, databases, engineering-mathematics,
+  programming-data-structures, theory-of-computation), so the draw ran over the four subjects still without one —
+  compiler-design, digital-logic, discrete-mathematics, operating-systems — and returned
+  **Discrete Mathematics**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 34, unit 16, proof-techniques, Set 4 (second pass)}` and unit 16 stood at **100**
   questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
-  `(index_of(sorting-divide-conquer) = 1 + 1) mod 7 = 2` → **Unit 3, Greedy Algorithms**, which already held
-  50 questions from its two 2026-10-29 sets. **B5 applies: every unit of the subject is at or above the cap**
-  (75, 75, 50, 50, 50, 50, 50), the modulo has wrapped, and this is the unit's third set, the second pass
-  continuing, taking it to 75. No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Engineering Mathematics · Unit 5 — Continuous Probability & Distributions, Set 3 (second
-  pass)**, 2026-11-04 →
-  [`engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html`](engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html)
+  `(index_of(proof-techniques) = 15 + 1) mod 16 = 0` → **Unit 1, Propositional Logic**, which already held
+  50 questions from its two 2026-10-25 sets. **B5 applies: every unit of the subject is at or above the cap**
+  (50 × 15 and 100 on Unit 16), the modulo has wrapped, and this is the unit's third set, the second pass
+  beginning for it, taking it to 75. No override was passed and no partial set was generated: exactly 25
+  questions.
+- Previous test: **Algorithms · Unit 3 — Greedy Algorithms, Set 3 (second pass)**, 2026-11-04 →
+  [`algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html`](algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 218 (34 Discrete Mathematics, 17 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 147 archived |
+| Papers published (current + archived) | 219 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 148 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5450 (850 Discrete Mathematics, 425 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5475 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 147 (18 Discrete Mathematics, 10 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 148 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Discrete Mathematics Unit 1, Set 3 (second pass)
+
+- New paper at `discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html`. The 2026-10-25 paper
+  it supersedes moved to `archive/gate_dm_mock_1_2026-10-25_run2.html` with its content frozen, so the unit
+  folder holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Seven subjects already carried a paper dated 2026-11-04
+  (algorithms, computer-architecture, computer-networks, databases, engineering-mathematics,
+  programming-data-structures, theory-of-computation), so the draw ran over the four subjects still without one —
+  compiler-design, digital-logic, discrete-mathematics, operating-systems — and returned **Discrete
+  Mathematics**. Read from its own bank, the most recent paper was
+  `{2026-11-03, run 34, unit 16, proof-techniques, Set 4 (second pass)}` and unit 16 stood at **100** questions,
+  so **B3 failed on the cap** (its first paper was 2026-10-25, ten days earlier, so the 7-day backstop was also
+  exceeded). **B4 advanced exactly one unit**: `(index_of(proof-techniques) = 15 + 1) mod 16 = 0` →
+  **Unit 1, Propositional Logic**, which already held 50 questions from its two 2026-10-25 sets. **B5 applies:
+  every unit of the subject is at or above the cap** (50 on Units 1–15, 100 on Unit 16), so the modulo has
+  wrapped and this paper is the unit's third set — the second pass beginning for Unit 1 — taking it to **75**.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All six subtopics carry new questions — propositions & connectives 5, truth tables 4,
+  logical equivalences 4, implications & inference 5, CNF/DNF 4, validity & satisfiability 3. Every item is new
+  against the 50 already banked for this unit; the angles deliberately not repeated are the "which sentence is
+  a proposition" items (DM-PL1-Q01, DM-PL2-Q01), the plain row-count drills (DM-PL1-Q02, DM-PL2-Q02), the
+  De Morgan and contrapositive identification items (DM-PL1-Q03, DM-PL1-Q04, DM-PL2-Q03), the "which is in
+  CNF/DNF" recognisers (DM-PL1-Q05, DM-PL2-Q05, DM-PL1-Q19) and the truth-assignment counting drills
+  (DM-PL1-Q21…Q25, DM-PL2-Q21…Q25).
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the
+  About tab says so.
+- **Verification.** Every count in this set was recomputed by script before the paper was written: Q3, of the
+  16 binary truth functions 8 are commutative (the two mixed rows carry one bit, giving 2³); Q4, 10 depend on
+  both arguments (16 − (4 + 4 − 2)); Q6, `p → (q → r)` is FALSE only at (1, 1, 0); Q7, `(p → q) ∧ (q → r)` is
+  FALSE on 4 rows (2 + 2, disjoint); Q8, `(p ⊕ q) → r` is TRUE on 6 rows (4 vacuous + 2); Q13, 3 of the 4
+  pairs are equivalent (contraposition, De Morgan, distributivity; the converse fails); Q17, the cycle
+  `p → q → r → p` is satisfied on 2 assignments (all TRUE and all FALSE); Q21, `(p ∨ ¬q ∨ r) ∧ (¬p ∨ q)` has
+  5 literal occurrences; Q24, 14 of the 16 functions are satisfiable but not valid (16 − 1 tautology − 1
+  contradiction). The five MSQ answer sets were checked option by option: Q5 ({¬,∧} and {↑} complete, {→,↔}
+  fails by 1-preservation and {∧,∨} by monotonicity), Q9, Q18, Q22, Q25. The grading engine was replayed
+  against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25
+  unattempted, and an MSQ answered with a strict subset or a strict superset of the correct set scores 0 for
+  that question (35 → 33 on a paper that is otherwise perfect).
+- **Provenance.** The two verified PYQs in the Discrete Mathematics bank are Unit 16 items and neither is
+  reused here, so no question on this paper is claimed as an official GATE question; no item carries the
+  `GATE_PYQ_VARIATION` tag, and the About tab says so. Sources: 17 textbook-inspired, 8 original synthesis.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 1 card is replaced in place and
+  now lists the 2026-10-25 second set as `Set 2 (2026-10-25)` above the first set. Five cards for Discrete
+  Mathematics Units 1–5 were missing the `subject` key in the data block, which left them unaddressable; the key
+  is now present on all 71 cards. The question archive renders 5,475 banked records across the eleven
+  per-subject data files, 875 of them Discrete Mathematics.
+- **Verification checklist (Section 6.8).** Shell parity: the stylesheet, the palette and legend markup, the
+  side footer, the key view and the whole grading script are byte-identical to the 2026-11-03 Discrete
+  Mathematics paper once the data regions are stripped (25,447 bytes on both sides). One copy:
+  `find . -name "*.html"` shows `index.html` plus exactly one file per paper, and nothing at the repository
+  root. Links: every `href` in `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a
+  25-button palette and 850 banked cards (the 25 active items are excluded from the bank tab). Tokens: the
+  `:root` block is byte-identical to `design-tokens.css` and to `index.html`; no colour outside `:root` that the
+  shell does not already use. Rotation: unit 1 is the one Section 1 selects from `master_bank.json`, not from
+  the calendar.
 
 ### 2026-11-04 — Algorithms Unit 3, Set 3 (second pass)
 
