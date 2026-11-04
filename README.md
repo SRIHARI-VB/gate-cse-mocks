@@ -7,36 +7,60 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 1 of 2 (third pass)**,
+- **Theory of Computation · Unit 1 — Regular Languages & Finite Automata, Set 1 of 2 (fourth pass)**,
+  2026-11-04 →
+  [`theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`](theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: DFA construction & minimisation (7) · NFA to DFA: subset construction (7) · Regular expressions (6) ·
+  Pumping lemma for regular languages (5)
+- Rotation: MODE A. The draw over the eleven subjects returned **Theory of Computation**. Read from its own
+  `master_bank.json`, the most recent paper was `{2026-11-04, run 20, unit 4, turing-machines-decidability, Set 2 of
+  2 (third pass)}` and unit 4 stood at **125** questions, so **B3 failed on the cap**. **B4 advanced exactly one
+  unit**: `(index_of(turing-machines-decidability) = 3 + 1) mod 4 = 0` → **Unit 1, Regular Languages & Finite
+  Automata**, which already held 125. **B5 applies: every Theory of Computation unit sits at 125**, so the modulo
+  wraps, the fourth pass begins, and this paper is the unit's sixth set, taking it to **150**. No override was
+  passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Operating Systems · Unit 1 — Process Management & CPU Scheduling, Set 1 of 2 (third pass)**,
   2026-11-04 →
   [`operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html`](operating-systems/process-scheduling/gate_os_mock_1_2026-11-04.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Process states & PCB (6) · Threads: user vs kernel (6) · Preemptive vs non-preemptive (6) ·
-  FCFS, SJF, SRTF, RR & priority (7)
-- Rotation: MODE A. Ten papers already carried the date 2026-11-04, and the day's draw over the two subjects
-  still without one (digital-logic, operating-systems) had returned Digital Logic, so **Operating Systems** was
-  the only subject left for 2026-11-04. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-03, run 24, unit 6, storage-file-systems, Set 2 of 2 (second pass)}` and unit 6 stood at **100**
-  questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
-  `(index_of(storage-file-systems) = 5 + 1) mod 6 = 0` → **Unit 1, Process Management & CPU Scheduling**, which
-  already held 100 questions. **B5 applies: every Operating Systems unit sits at 100**, so the modulo wraps, the
-  third pass continues, and this paper is the unit's fifth set, taking it to **125**. No override was passed and
-  no partial set was generated: exactly 25 questions.
-- Previous test: **Digital Logic · Unit 2 — Combinational Circuit Design, Set 1 of 2 (third pass)**, 2026-11-04 →
-  [`digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html`](digital-logic/combinational-circuits/gate_dl_mock_2_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 222 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 151 archived |
+| Papers published (current + archived) | 223 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 25 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 21 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 152 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5550 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5575 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 625 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 525 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 151 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 152 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 19 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 17 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Theory of Computation Unit 1, Set 1 of 2 (fourth pass)
+
+- New paper at `theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html`. The 2026-11-02 paper
+  it supersedes moved to `archive/gate_toc_mock_1_2026-11-02_run1.html` with its content frozen, so the unit
+  folder holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Every one of the eleven subjects already carried a 2026-11-04 paper, so the
+  draw was taken over all eleven and returned **Theory of Computation**; this is that subject's second paper of the
+  date and the twelfth paper of the day. Read from its own bank, the most recent paper was `{2026-11-04, run 20,
+  unit 4, turing-machines-decidability, Set 2 of 2 (third pass)}` and unit 4 stood at **125** questions, so **B3
+  failed on the cap** (its first paper was 2026-10-27, so the 7-day backstop would also have forced the move).
+  **B4 advanced exactly one unit**: `(index_of(turing-machines-decidability) = 3 + 1) mod 4 = 0` → **Unit 1,
+  Regular Languages & Finite Automata**, which already held 125 questions. **B5 applies: every Theory of
+  Computation unit sits at 125** (125, 125, 125, 125), so the modulo wraps, the fourth pass begins, and this paper
+  is the unit's sixth set, taking unit 1 to **150**. No override was passed and no partial set was generated:
+  exactly 25 questions.
+- **Coverage.** All four subtopics are represented: DFA construction & minimisation (7), NFA to DFA: subset
+  construction (7), regular expressions (6), pumping lemma for regular languages (5). The 25 items are
+  `TOC-U1-Q126`–`TOC-U1-Q150`; every stem was checked against the 125 Unit 1 items already banked and none repeats
+  one. The bank view inside the paper lists the 500 questions banked before this set, so the active 25 appear only
+  in the test itself.
+- **Verification.** Shell parity with the 2026-11-02 paper holds byte for byte outside the payload, the 25 cards and
+  the bank/About blocks: the `:root` token block, the stylesheet and the whole script block are identical. One
+  copy per paper: the unit folder holds `gate_toc_mock_1_2026-11-04.html` and the archive, and the root holds only
+  `index.html`.
 
 ### 2026-11-04 — Operating Systems Unit 1, Set 1 of 2 (third pass)
 
