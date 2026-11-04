@@ -7,36 +7,86 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Theory of Computation · Unit 2 — Grammars & Context-Free Languages, Set 1 of 2 (fourth pass)**,
+- **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 2 of 2 (third pass)**,
+  2026-11-04 →
+  [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Distance vector & count to infinity (7) · Link state, OSPF & Dijkstra (6) · BGP & path vector (6) ·
+  ARP, ICMP, DHCP & NAT (6)
+- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the draw ran over all eleven and
+  returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 21, unit 3, ipv4-subnetting, Set 2 of 2 (second pass)}`. Unit 3 stands at **100** questions and
+  every other unit of the subject is also at or above the cap (100, 100, 100, 75, 75, 75), so **B3 failed on the
+  cap**. **B4 advanced exactly one unit**: `(index_of(ipv4-subnetting) = 2 + 1) mod 6 = 3` → **Unit 4, Network
+  Layer: Routing & Protocols**, which held 75 questions and continues its **third pass**. No override was passed
+  and no partial set was generated: exactly 25 questions.
+- Previous test: **Theory of Computation · Unit 2 — Grammars & Context-Free Languages, Set 1 of 2 (fourth pass)**,
   2026-11-04 →
   [`theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-04.html`](theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-04.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: CFG derivation trees (7) · Ambiguity in grammars (6) · CNF & GNF normal forms (6) ·
-  Closure properties of CFLs (6)
-- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the draw was taken over all
-  eleven and returned **Theory of Computation**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 22, unit 1, regular-languages-fa, Set 2 of 2 (fourth pass)}`. Unit 1 stands at **175**
-  questions, but its fourth pass already holds both sets, so **B3 failed on the pass cap** (its first paper was
-  2026-10-26, so the 7-day backstop would also have forced the move). **B4 advanced exactly one unit**:
-  `(index_of(regular-languages-fa) = 0 + 1) mod 4 = 1` → **Unit 2, Grammars & Context-Free Languages**, which
-  begins its **fourth pass** at 125 questions banked. No override was passed and no partial set was generated:
-  exactly 25 questions.
-- Previous test: **Operating Systems · Unit 2 — Inter-Process Communication & Synchronization, Set 1 of 2
-  (third pass)**, 2026-11-04 →
-  [`operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-04.html`](operating-systems/synchronization-ipc/gate_os_mock_2_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 227 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 21 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 156 archived |
+| Papers published (current + archived) | 228 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 157 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5675 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 525 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5700 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 156 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 15 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 157 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Computer Networks Unit 4, Set 2 of 2 (third pass)
+
+- New paper at `computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_cn_mock_4_2026-11-01_run3.html` with its content frozen, so the unit folder holds
+  exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw was taken over all eleven subjects, each of which already carried a
+  2026-11-04 paper, and returned **Computer Networks**; this is the sixteenth paper of the date. Read from its own
+  `master_bank.json`, the most recent paper was `{2026-11-04, run 21, unit 3, ipv4-subnetting, Set 2 of 2 (second
+  pass)}`. Unit 3 carries 100 questions and **every unit of the subject is at or above `UNIT_QUESTION_CAP = 50`**
+  (100, 100, 100, 75, 75, 75), so **B3 failed on the cap** and the 7-day backstop was irrelevant. **B4 advanced
+  exactly one unit**: `(index_of(ipv4-subnetting) = 2 + 1) mod 6 = 3` → **Unit 4, Network Layer: Routing &
+  Protocols**, which held 75 questions from three earlier sets. **B5 applies**: the modulo has wrapped, the third
+  pass continues, and this paper is the unit's sixth set, the second set of its third pass, taking unit 4 to **100**
+  questions. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics are represented: distance vector and count to infinity (7), link state, OSPF and
+  Dijkstra (6), BGP and path vector (6), ARP, ICMP, DHCP and NAT (6). The 25 items are `CN-U4-Q76`–`CN-U4-Q100`;
+  every stem was checked against the 75 Unit 4 items already banked and none restates one.
+- **New angles in this set**, chosen to avoid the ground the first five sets already covered: poisoned reverse
+  against plain split horizon; the Bellman-Ford sum as a claim that dies with the neighbour's number; a router
+  forced to accept worse news from its own next hop; a three-router ring where split horizon cannot stop the stale
+  route; synchronous propagation measured in rounds; what a link-state router actually floods; why Dijkstra needs
+  non-negative weights; OSPF areas and Type 3 summaries against raw Type 1 flooding; the map-versus-rumour cost
+  trade-off; BGP as prefixes over TCP 179; the AS path as loop evidence and policy input; the iBGP rule and the
+  full-mesh consequence; the attribute ladder LOCAL_PREF → AS_PATH → origin → MED; an AS_SET counting as one element
+  of path length; ARP inside a broadcast domain; the DORA exchange and why the request is broadcast; ICMP payload
+  translation by a NAT; ICMP's own type/code model and its no-error-on-error rule; NAT port allocation; DHCP's T1
+  and T2.
+- **Every numeric key recomputed by script.** The two-round distance-vector table was simulated exchange by
+  exchange (A holds 5 after round 1 and 3 after round 2); Dijkstra was re-run on the nine-link database (A→F = 13,
+  against 14, 15 and 16 for the alternatives); the AS_SET path length follows RFC 4271 §9.1.2.2 (sequence 2 + set
+  1 = 3); the NAT port allocation was enumerated binding by binding (40000, 40001, 40002 live, so 40003); and the
+  DHCP renewal point is `0.5 × 7200 = 3600`, with `0.875 × 7200 = 6300` as the rebinding fallback.
+- **Composition and marking.** 15 MCQ / 5 MSQ / 5 NAT; 10 easy / 10 medium / 5 hard; MCQ 1 mark, MSQ and NAT 2
+  marks, no negative marking, 35 marks in 60 minutes. This is a practice scheme, not the official GATE scheme, and
+  the About tab says so.
+- **Provenance.** The Computer Networks bank records no verified PYQ, so no item is claimed as an official GATE
+  question; every item carries `STANDARD_TEXTBOOK` (13) or `ORIGINAL_SYNTHESIS` (12).
+- **Shell parity.** The new paper was generated from the Computer Networks Unit 3 paper of 2026-11-04: after the
+  question host, the Question Bank tab, the About tab and the payload are masked, the remaining bytes are identical,
+  and the `<style>` block and the exam `<script>` are byte-identical. The shell items still open in the list below
+  (literal hex outside `:root`, no explicit `:focus-visible` selector, palette fills on the `--green`/`--red`/
+  `--violet` tokens) are inherited unchanged rather than fixed in one file.
+- **Portal.** `index.html` gained the new card (with the 2026-11-01 set as an archive link) and
+  `data/questions-computer-networks.js` gained the 25 new items, so the Topic & Subtopic Question Archive view now
+  counts 550 solved Computer Networks questions; the paper's own Question Bank tab counts 525, because the 25 active
+  questions are not repeated there. The portal counters now read 228 papers, 5700 questions.
+- **Portal repair.** The archive view's `banked()` compared `q.unit` (a string in the externalised
+  `data/questions-<subject>.js` files) with `u.n` (a number) using `===`, so every unit of every subject matched zero
+  questions and View B collapsed to "no banked questions". The comparison is now `String(q.unit) === String(u.n)`;
+  no other line of the portal changed.
 
 ### 2026-11-04 — Theory of Computation Unit 2, Set 1 of 2 (fourth pass)
 
@@ -11634,6 +11684,15 @@ touches files this run did not create:
   rotation across all 11 GATE CSE subjects begins once this subject's 16 units complete a pass.
 - No override was used for any run.
 
+- **2026-11-04, Computer Networks → Unit 4 (Network Layer: Routing & Protocols), Set 2 of 2 (third pass).**
+  MODE A: the draw over the eleven subjects, all of which already carried a 2026-11-04 paper, returned
+  **Computer Networks**. Most recent run in `runs[]` was `{2026-11-04, run 21, unit 3, ipv4-subnetting, Set 2 of 2
+  (second pass)}`. Unit 3 held **100** questions, above `UNIT_QUESTION_CAP = 50`, and every other unit of the
+  subject was also at or above the cap (100, 100, 100, 75, 75, 75), so step B3 failed on the cap and step B4
+  advanced `(2 + 1) mod 6 = 3` → Unit 4. Unit 4 already held 75 from 2026-10-29 and 2026-11-01, so this is the
+  second set of its third pass: it goes from 75 to 100 questions. The 525 solved items shown in the Question Bank
+  tab are everything banked except this paper's own 25. No override, no partial set.
+
 ## Repository layout
 
 ```
@@ -11766,12 +11825,12 @@ Algorithms:
 
 | # | Unit | Slug | Questions in bank | Covered |
 | --- | --- | --- | --- | --- |
-| 1 | Layering, Physical & Framing | `network-fundamentals-framing` | 75 | yes |
-| 2 | Data Link Protocols & MAC | `data-link-mac` | 75 | yes |
-| 3 | Network Layer: IP Addressing & Subnetting | `ipv4-subnetting` | 75 | yes |
-| 4 | Network Layer: Routing & Protocols | `routing-protocols` | 50 | yes |
-| 5 | Transport Layer: TCP, UDP & Congestion | `transport-layer` | 50 | yes |
-| 6 | Application Layer & Network Security | `application-layer-security` | 50 | yes |
+| 1 | Layering, Physical & Framing | `network-fundamentals-framing` | 100 | yes |
+| 2 | Data Link Protocols & MAC | `data-link-mac` | 100 | yes |
+| 3 | Network Layer: IP Addressing & Subnetting | `ipv4-subnetting` | 100 | yes |
+| 4 | Network Layer: Routing & Protocols | `routing-protocols` | 100 | yes |
+| 5 | Transport Layer: TCP, UDP & Congestion | `transport-layer` | 75 | yes |
+| 6 | Application Layer & Network Security | `application-layer-security` | 75 | yes |
 
 ### Theory of Computation
 
@@ -11875,6 +11934,16 @@ review interface.
   card and re-running the link check, i.e. the same one-pass repair as the items below. It was not touched by the
   2026-10-27 Computer Networks Unit 1 run, which confined itself to `computer-networks/network-fundamentals-framing/`, nor by the later Computer Networks Unit 2 run of the same
   date, which confined itself to `computer-networks/data-link-mac/`.
+- **Computer Networks Unit 4 (2026-11-04).** This paper inherits the open shell items unchanged — literal hex
+  outside `:root`, no explicit `:focus-visible` selector, and palette fills on the `--green`/`--red`/`--violet`
+  tokens rather than their `-d` variants — because re-typing any of them in one paper would break shell parity. Its
+  `<style>` block, its exam `<script>` and its structural frame are byte-identical to the Computer Networks Unit 3
+  paper of 2026-11-04.
+- **Fixed 2026-11-04 — the portal's archive view matched nothing.** `banked()` in `index.html` compared
+  `q.unit === u.n`, but the externalised `data/questions-<subject>.js` files carry `unit` as a string while
+  `D.units[].n` is a number, so every unit counted zero solved questions and View B reduced to a single "no banked
+  questions" line. The comparison is now `String(q.unit) === String(u.n)`. Question counts on the cards are therefore
+  restored for all eleven subjects.
 - `6.4 No raw hex outside :root` is not yet met (the Engineering Mathematics Unit 1 Set 2 paper carries 84 literal hex
   occurrences, against the reference shell's 86 — no new value was added, because the new cards use `var(--muted)`):
   the shipped shell uses literal hex
