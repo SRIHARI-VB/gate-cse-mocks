@@ -7,35 +7,86 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 2 of 2 (third pass)**,
+- **Algorithms · Unit 4 — Dynamic Programming, Set 3 (second pass)**,
+  2026-11-04 →
+  [`algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html`](algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Matrix-chain multiplication (7) · Longest common subsequence (6) · 0-1 knapsack (6) ·
+  All-pairs shortest paths, Floyd–Warshall (6)
+- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the draw ran over all eleven and
+  returned **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 17, unit 3, greedy-algorithms, Set 3 (second pass)}`. Unit 3 stands at **75** questions and
+  every other unit of the subject is also at or above the cap (75, 75, 75, 50, 50, 50, 50), so **B3 failed on the
+  cap**. **B4 advanced exactly one unit**: `(index_of(greedy-algorithms) = 2 + 1) mod 7 = 3` → **Unit 4, Dynamic
+  Programming**, which held 50 questions and opens its **second pass**. No override was passed and no partial set
+  was generated: exactly 25 questions.
+- Previous test: **Computer Networks · Unit 4 — Network Layer: Routing & Protocols, Set 2 of 2 (third pass)**,
   2026-11-04 →
   [`computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html`](computer-networks/routing-protocols/gate_cn_mock_4_2026-11-04.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Distance vector & count to infinity (7) · Link state, OSPF & Dijkstra (6) · BGP & path vector (6) ·
-  ARP, ICMP, DHCP & NAT (6)
-- Rotation: MODE A. All eleven subjects already carried a 2026-11-04 paper, so the draw ran over all eleven and
-  returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 21, unit 3, ipv4-subnetting, Set 2 of 2 (second pass)}`. Unit 3 stands at **100** questions and
-  every other unit of the subject is also at or above the cap (100, 100, 100, 75, 75, 75), so **B3 failed on the
-  cap**. **B4 advanced exactly one unit**: `(index_of(ipv4-subnetting) = 2 + 1) mod 6 = 3` → **Unit 4, Network
-  Layer: Routing & Protocols**, which held 75 questions and continues its **third pass**. No override was passed
-  and no partial set was generated: exactly 25 questions.
-- Previous test: **Theory of Computation · Unit 2 — Grammars & Context-Free Languages, Set 1 of 2 (fourth pass)**,
-  2026-11-04 →
-  [`theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-04.html`](theory-of-computation/cfl-grammars/gate_toc_mock_2_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 228 (35 Discrete Mathematics, 17 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 157 archived |
+| Papers published (current + archived) | 229 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 158 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5700 (875 Discrete Mathematics, 425 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5725 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 157 (19 Discrete Mathematics, 10 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 158 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Algorithms Unit 4, Set 3 (second pass)
+
+- New paper at `algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html`. The 2026-10-30 paper it
+  supersedes moved to `archive/gate_algo_mock_4_2026-10-30_run2.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The unseeded `random.SystemRandom()` draw ran over all eleven subjects and
+  returned **Algorithms**; this is the nineteenth paper of the date. Read from its own `master_bank.json`, the most
+  recent paper was `{2026-11-04, run 17, unit 3, greedy-algorithms, Set 3 (second pass)}`. Unit 3 carries 75
+  questions and **every unit of the subject is at or above `UNIT_QUESTION_CAP = 50`** (75, 75, 75, 50, 50, 50, 50),
+  so **B3 failed on the cap** and the 7-day backstop was irrelevant. **B4 advanced exactly one unit**:
+  `(index_of(greedy-algorithms) = 2 + 1) mod 7 = 3` → **Unit 4, Dynamic Programming**, which held 50 questions from
+  two earlier sets. **B5 applies**: the modulo has wrapped, the second pass begins, and this paper is the unit's
+  third set and the first set of its second pass, taking unit 4 to **75** questions. No override was passed and no
+  partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics are represented: matrix-chain multiplication (7), longest common subsequence (6),
+  0-1 knapsack (6), all-pairs shortest paths by Floyd–Warshall (6). The 25 items are `ALG-U4-Q51`–`ALG-U4-Q75`;
+  every stem was checked against the 50 Unit 4 items already banked and none restates one.
+- **New angles in this set**, chosen to avoid the ground the first two sets covered: the two three-matrix costs as a
+  warm-up; which top-level split is optimal when the smallest outer product is the wrong one; the count of table
+  entries as <span class="mm">n(n+1)/2</span>; the degenerate case where every matrix is square, so all
+  parenthesizations tie at <span class="mm">(k−1)n³</span> and the <span class="mm">Θ(k³)</span> DP cannot be
+  skipped; LCS of `ABCBDAB` against `BDCAB`; insertions to a palindrome as <span class="mm">n − LPS</span> with
+  `DYNAMIC` (all letters distinct, so six insertions); substring against subsequence on `ABCDEF` and `ABXDEF`;
+  the number of *distinct* optimal LCS strings; the single-row knapsack scan order and why ascending is the
+  unbounded recurrence; exact fill with <span class="mm">−∞</span> base cases; pseudo-polynomial against NP-hard;
+  the <span class="mm">(min, +)</span> against <span class="mm">(OR, AND)</span> semirings; negative edges versus
+  negative cycles; and counting the pairs whose distance is <span class="mm">−∞</span> as reach-in × reach-out.
+- **Every numeric key recomputed by script.** Both matrix-chain optima were produced by a full table build
+  (54 for <span class="mm">⟨2,5,3,4⟩</span>, 88 for <span class="mm">⟨3,2,4,5,3⟩</span>, whose subproblem entries
+  24, 40, 60, 70, 70 are quoted in the solution); the split question was settled by costing all three roots
+  (126, 252, 100); the LCS values 4, 3 and 3 were computed by table; the distinct-LCS count was enumerated by DP
+  over strings (`BCAB`, `BDAB`); the substring answer 3 was checked against the subsequence answer 5; the knapsack
+  optima 8, 21 and the exact-fill 14 were verified by exhaustive subset enumeration; and the Floyd–Warshall
+  answers 9 and 9 were produced by running the algorithm (reach-in × reach-out = 3 × 3).
+- **Composition and marking.** 15 MCQ / 5 MSQ / 5 NAT; 10 easy / 10 medium / 5 hard; MCQ 1 mark, MSQ and NAT 2
+  marks, no negative marking, 35 marks in 60 minutes. This is a practice scheme, not the official GATE scheme, and
+  the About tab says so.
+- **Provenance.** The Algorithms bank records no verified PYQ, so no item is claimed as an official GATE question;
+  every item carries `STANDARD_TEXTBOOK` (13) or `ORIGINAL_SYNTHESIS` (12).
+- **Shell parity.** The new paper was generated from the Computer Networks Unit 4 paper of 2026-11-04: the
+  `<style>` block (13,228 bytes) and the exam `<script>` are byte-identical, the `:root` token block matches
+  `design-tokens.css`, and the test host, the Question Bank tab, the About tab and the payload are the only
+  regions that differ.
+- **Verification (Section 6.8).** 25 test cards, 25 palette buttons and 425 bank cards render (450 banked less the
+  25 of the active set, which are not repeated in the tab); the seven unit accordions carry 75/75/75/50/50/50/50;
+  every question carries `data-subject`, `data-unit`, `data-unit-number`, `data-subtopic`, `data-type`,
+  `data-difficulty` and `data-source`; every `href` in the portal resolves; the root holds only `index.html`; the
+  status table above matches `master_bank.json` (450 questions, 18 runs).
+- **Portal.** The data block was edited in place: the Unit 4 card now points at the new paper, `Set 3 (second
+  pass)`, and the two superseded sets are links on that card. The bank view reads 450 solved questions.
 
 ### 2026-11-04 — Computer Networks Unit 4, Set 2 of 2 (third pass)
 
