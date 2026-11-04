@@ -17799,7 +17799,7 @@
    "source": "ORIGINAL_SYNTHESIS",
    "date": "2026-11-04",
    "set": "Set 3 (second pass)",
-   "question": "A directed graph has vertices <span class=\"mm\">1, 2, 3, 4</span> and edges <span class=\"mm\">1→2 (2)</span>, <span class=\"mm\">2→3 (−5)</span>, <span class=\"mm\">3→2 (1)</span> and <span class=\"mm\">3→4 (1)</span>. The matrix is initialised with <span class=\"mm\">d[i][i] = 0</span> and <span class=\"mm\">∞</span> where no edge exists, and Floyd&ndash;Warshall is run to completion, reporting <span class=\"mm\">−∞</span> wherever the distance is unbounded below. How many ordered pairs <span class=\"mm\">(u, v)</span>, with <span class=\"mm\">u ≠ v</span> allowed to equal, have <span class=\"mm\">d[u][v] = −∞</span>?",
+   "question": "A directed graph has vertices <span class=\"mm\">1, 2, 3, 4</span> and edges <span class=\"mm\">1→2 (2)</span>, <span class=\"mm\">2→3 (−5)</span>, <span class=\"mm\">3→2 (1)</span> and <span class=\"mm\">3→4 (1)</span>. The matrix is initialised with <span class=\"mm\">d[i][i] = 0</span> and <span class=\"mm\">∞</span> where no edge exists, and Floyd&ndash;Warshall is run to completion, reporting <span class=\"mm\">−∞</span> wherever the distance is unbounded below. How many ordered pairs <span class=\"mm\">(u, v)</span>, including those with <span class=\"mm\">u = v</span>, have <span class=\"mm\">d[u][v] = −∞</span>?",
    "options": [
     "4",
     "6",
