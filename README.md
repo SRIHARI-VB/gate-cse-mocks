@@ -7,36 +7,83 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Architecture · Unit 5 — Instruction Pipelining, Set 1 of 2 (second pass)**,
+- **Algorithms · Unit 5 — Graph Algorithms: Traversals & Spanning Trees, Set 3 (second pass)**,
+  2026-11-05 →
+  [`algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html`](algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: BFS/DFS & edge classification (6) · Topological sort (6) · Prim's algorithm (6) ·
+  Kruskal's algorithm & disjoint sets (7)
+- Rotation: MODE A. The draw ran over the subjects that did not already carry a 2026-11-05 paper and returned
+  **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 18, unit 4, dynamic-programming, Set 3 (second pass)}`. That unit stands at **75** questions, so
+  **B3 failed on the cap** and the 7-day backstop was irrelevant. **B5 applies**: units 1–4 have already taken a
+  third set and the second pass is under way. **B4 advanced exactly one unit**:
+  `(index_of(unit 4) = 3 + 1) mod 7 = 4` → **Unit 5, Graph Algorithms: Traversals & Spanning Trees**, which held
+  50 questions from its two first-pass sets and opens the first set of its second pass.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Computer Architecture · Unit 5 — Instruction Pipelining, Set 1 of 2 (second pass)**,
   2026-11-05 →
   [`computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html`](computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Pipeline stages & throughput (8) · Structural hazards (5) · Data hazards & forwarding (6) ·
-  Control hazards & branch penalty (6)
-- Rotation: MODE A. The draw ran over the ten subjects that did not already carry a 2026-11-05 paper and returned
-  **Computer Architecture**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 15, unit 4, memory-management-unit, Set 1 of 2 (second pass)}`. That unit stands at **75**
-  questions and every unit of the subject is at or above the cap (50, 75, 75, 75, 50, 50), so **B3 failed on the
-  cap** and the 7-day backstop was irrelevant. **B5 applies**: the modulo has already wrapped once and the second
-  pass is in progress. **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 6 = 4` →
-  **Unit 5, Instruction Pipelining**, which held 50 questions and opens the first set of its second pass.
-  No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 2 of 2 (second pass)**,
-  2026-11-05 →
-  [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 231 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
-| Current papers / archived sets | 71 current · 160 archived |
+| Papers published (current + archived) | 232 (35 Discrete Mathematics, 19 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
+| Current papers / archived sets | 71 current · 161 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5775 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
+| Questions in the subject banks | 5800 (875 Discrete Mathematics, 475 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 160 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+| Archived sets (earlier runs) | 161 (19 Discrete Mathematics, 12 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+
+### 2026-11-05 — Algorithms Unit 5, Set 3 (second pass)
+
+- New paper at `algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html`. The 2026-10-31 paper it
+  supersedes moved to `archive/gate_algo_mock_5_2026-10-31_run2.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw ran over the subjects that did not already carry a 2026-11-05 paper and
+  returned **Algorithms**. Read from its own `master_bank.json`, the most recent paper was `{2026-11-04, run 18,
+  unit 4, dynamic-programming, Set 3 (second pass)}`. Unit 4 stands at **75** questions, so **B3 failed on the cap**
+  and the 7-day backstop was irrelevant. **B5 applies**: units 1–4 already carry a third set, so the second pass is
+  in progress. **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 7 = 4` → **Unit 5, Graph
+  Algorithms: Traversals & Spanning Trees**, which held 50 questions from two first-pass sets and opens the first set
+  of its second pass, taking the unit to **75**. No override was passed and no partial set was generated: exactly 25
+  questions.
+- **Coverage.** All four subtopics are represented: BFS/DFS & edge classification (6), topological sort (6), Prim's
+  algorithm (6), Kruskal's algorithm & disjoint sets (7). Composition 15 MCQ · 5 MSQ · 5 NAT; difficulty 10 easy /
+  10 medium / 5 hard; 60 minutes, 35 marks. MCQ 1 mark, MSQ and NAT 2 marks, no negative marking, MSQ scores only on
+  the exact set — the practice scheme, stated as such in the About tab.
+- **New angles in this set**, chosen after reading all 50 banked Unit 5 items so that none is restated: the cost of a
+  DFS on an adjacency matrix; the interval-nesting test for ancestry; the number of DFS trees as the number of source
+  components of the condensation; a full trace in which one edge is forward and two are cross; a BFS-level bound on
+  undirected edges; the forest's tree-edge count as `V − C`; a topological ordering with one violation hidden in the
+  last two positions; the `n(n−1)/2` edge bound on a DAG; two sources forcing at least two orderings; a count of
+  three orderings from an inserted vertex; Kahn's algorithm as a cycle test and the reversal argument; a count of eight
+  orderings; a Kruskal run with two cycle rejections before the joining edge; negative weights leaving Prim correct; a
+  Prim vertex-addition order in which the lightest edge is not the first available; sixteen spanning trees of `K₄`;
+  the cut property, the affine weight transform and the counterexample to agreement between the two algorithms; a
+  minimum spanning tree of negative total weight; the first edge Kruskal rejects; the link direction without union by
+  rank; the cycle property for an added edge; uniqueness as a question about ties; eight minimum spanning trees under
+  one heavy edge; the tree count after six unions; and a heavier edge accepted after a lighter one was rejected.
+- **Bank.** 25 questions `ALG-U5-S3-Q01` … `ALG-U5-S3-Q25` appended to
+  `algorithms/question-bank/master_bank.json`. The subject bank moves 450 → 475 questions, runs 18 → 19,
+  `last_updated` 2026-11-05.
+- **Portal.** `index.html` data block updated for the Unit 5 card — new date, path and set label, with the two
+  2026-10-31 sets kept as archive links — and `data/questions-algorithms.js` gained the 25 records. Counts are now
+  5800 questions banked, 71 current papers, 161 archived sets.
+- **Verification (Section 6.8).** *Shell parity:* the paper was generated from the Computer Architecture Unit 5 paper
+  of 2026-11-05; the `<style>` block and the whole `<script>` shell are byte-identical, and the `:root` block matches
+  `design-tokens.css` and `index.html`. *One copy:* 233 HTML files = `index.html` plus 232 papers, one current paper
+  per unit folder, nothing else at the root. *Links:* every path in the portal data block resolves to a file that
+  exists. *Counts:* 25 test cards, a 25-button palette, and 450 cards in the Question Bank tab (475 banked minus the
+  25 active), with no active question repeated there. *Tokens:* no raw hex outside `:root`. *Answers:* every numeric
+  answer was recomputed by brute force — the DFS edge classification, both MST weights, the Prim order, the first
+  rejected edge, the two spanning-tree counts and both topological-ordering counts. *README:* the status table
+  matches the banks.
+- **Rotation record.** Algorithms second pass: unit 5 opened. Units 1–4 sit at 75 questions, unit 5 at 75, units 6–7
+  at 50; every figure above 50 is a second-pass set and is labelled as such.
 
 ### 2026-11-05 — Computer Architecture Unit 5, Set 1 of 2 (second pass)
 
