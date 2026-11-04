@@ -7,37 +7,91 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Engineering Mathematics · Unit 5 — Continuous Probability & Distributions, Set 3 (second pass)**,
+- **Algorithms · Unit 3 — Greedy Algorithms, Set 3 (second pass)**,
   2026-11-04 →
-  [`engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html`](engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html)
+  [`algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html`](algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Random variables, CDF & PDF (5) · Uniform distribution (5) · Exponential distribution (5) ·
-  Normal distribution (5) · Correlation & covariance (5)
-- Rotation: MODE A. The eleven-subject draw was restricted to the six subjects with no paper dated 2026-11-04
-  (algorithms, compiler-design, digital-logic, discrete-mathematics, engineering-mathematics,
-  operating-systems) and returned **Engineering Mathematics**. Read from its own `master_bank.json`, the most
-  recent paper was `{2026-11-02, run 14, unit 4, calculus-optimization-integrals, Set 1 of 2 (second pass)}`
-  and unit 4 stood at **75** questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
-  `(index_of(calculus-optimization-integrals) = 3 + 1) mod 5 = 4` → **Unit 5, Continuous Probability &
-  Distributions**, which already held 50 questions. **B5 applies: every unit of the subject is at or above the
-  cap** (75, 75, 75, 75, 50), so this is the unit's third set, the second pass continuing, taking it to 75. No
-  override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Computer Networks · Unit 2 — Data Link Protocols & MAC, Set 2 of 2 (second pass)**,
-  2026-11-04 →
-  [`computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html`](computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html)
+- Subtopics: Fractional knapsack (7) · Huffman coding (7) · Activity selection & interval scheduling (5) ·
+  Optimal merge patterns (6)
+- Rotation: MODE A. The eleven-subject draw was restricted to the five subjects with no paper dated 2026-11-04
+  (algorithms, compiler-design, digital-logic, discrete-mathematics, operating-systems) and returned
+  **Algorithms**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-03, run 16, unit 2, sorting-divide-conquer, Set 3 (second pass)}` and unit 2 stood at **75**
+  questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
+  `(index_of(sorting-divide-conquer) = 1 + 1) mod 7 = 2` → **Unit 3, Greedy Algorithms**, which already held
+  50 questions from its two 2026-10-29 sets. **B5 applies: every unit of the subject is at or above the cap**
+  (75, 75, 50, 50, 50, 50, 50), the modulo has wrapped, and this is the unit's third set, the second pass
+  continuing, taking it to 75. No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Engineering Mathematics · Unit 5 — Continuous Probability & Distributions, Set 3 (second
+  pass)**, 2026-11-04 →
+  [`engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html`](engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 217 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 146 archived |
+| Papers published (current + archived) | 218 (34 Discrete Mathematics, 17 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 147 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5425 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5450 (850 Discrete Mathematics, 425 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 146 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 147 (18 Discrete Mathematics, 10 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Algorithms Unit 3, Set 3 (second pass)
+
+- New paper at `algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html`. The 2026-10-29 paper it
+  supersedes moved to `archive/gate_algo_mock_3_2026-10-29_run2.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Six subjects already carried a paper dated 2026-11-04
+  (computer-architecture, computer-networks, databases, engineering-mathematics, programming-data-structures,
+  theory-of-computation), so the draw ran over the five subjects still without one — algorithms,
+  compiler-design, digital-logic, discrete-mathematics, operating-systems — and returned **Algorithms**. Read from its own bank, the most recent
+  paper was `{2026-11-03, run 16, unit 2, sorting-divide-conquer, Set 3 (second pass)}` and unit 2 stood at
+  **75** questions, so **B3 failed on the cap** (its first paper was 2026-10-27, eight days earlier, so the
+  7-day backstop was also exceeded). **B4 advanced exactly one unit**:
+  `(index_of(sorting-divide-conquer) = 1 + 1) mod 7 = 2` → **Unit 3, Greedy Algorithms**, which already held 50
+  questions from its two 2026-10-29 sets. **B5 applies: every unit of the subject is at or above the cap**
+  (75, 75, 50, 50, 50, 50, 50), so the second pass continues and this paper is the unit's third set, taking it to
+  **75**. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics carry new questions — fractional knapsack 7, Huffman coding 7, activity
+  selection & interval scheduling 5, optimal merge patterns 6. Every item is new against the 50 already banked
+  for this unit; the angles deliberately not repeated are the plain divisibility and ratio-greedy-is-optimal
+  concept items (ALG-U3-Q01, Q26), the four-symbol and five-symbol weighted-path drills (Q09, Q11, Q33, Q34,
+  Q37), the "which greedy rule is correct" activity item (Q14, Q38),
+  the interval-graph clique equivalence (Q19, Q44) and the merge-count and two-smallest statement (Q20, Q24,
+  Q45).
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the
+  About tab says so.
+- **Verification.** Every numeric answer was recomputed by script before the paper was written: Q51
+  `36 + 4/5 × 25 = 56`; Q53 earliest-finish over the five intervals selects 3; Q54 `5 + 9 = 14`; Q56
+  `3 + 7 + 15 = 25` (depths 1, 2, 3, 3); Q60 `3 + 6 + 9 + 15 = 33`; Q61 `42 + 30 + 2/5 × 20 = 80`; Q64
+  `2 + 4 + 7 + 12 + 20 = 45`; Q66 Huffman on `2, 3, 5, 7, 11, 13` costs `5 + 10 + 17 + 24 + 41 = 97`; Q67 the
+  endpoint sweep peaks at 4 simultaneous intervals; Q71 Huffman on `3, 5, 8, 13, 21, 34` costs
+  `8 + 16 + 29 + 50 + 84 = 187`; Q73 `56 + 30 + 7/10 × 50 = 121`; Q74 `2 + 2 + 4 + 104 = 112`. The five MSQ
+  answer sets were checked option by option, each marked option proved and each unmarked option refuted (the
+  equal-frequency trap in Q62 uses frequencies `1, 1, 2, 2`, whose Huffman depths are `3, 3, 2, 1`). The
+  grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a
+  blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or a strict superset of the
+  correct set scores 0 for that question.
+- **Provenance.** The Algorithms bank records no verified PYQ, so no question on this paper is claimed as an
+  official GATE question; no item carries the `GATE_PYQ_VARIATION` tag, and the About tab says so. Sources:
+  16 textbook-inspired, 9 original synthesis.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 3 card is replaced in place and
+  now lists the 2026-10-29 second set as `First pass · Set 2 (2026-10-29)` above the first-pass set; the
+  question archive renders 5,450 banked records across the eleven per-subject data files, 425 of them
+  Algorithms.
+- **Verification checklist (Section 6.8).** Shell parity: the stylesheet, the palette and legend markup, the
+  side footer, the key view and the whole grading script are byte-identical to the 2026-11-03 Algorithms paper
+  once the data regions are stripped, and the `:root` block is byte-identical to `design-tokens.css`. One copy:
+  `find . -name "*.html"` shows `index.html` plus exactly one file per paper, and nothing at the repository
+  root. Links: every `href` in `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a
+  25-button palette and 400 banked cards (the 25 active items are excluded from the bank tab). Tokens: the
+  `:root` block is byte-identical to `design-tokens.css` and to every other paper's; no colour outside `:root`
+  that the shell does not already use. Rotation: unit 3 is the one Section 1 selects from `master_bank.json`,
+  not from the calendar.
 
 ### 2026-11-04 — Engineering Mathematics Unit 5, Set 3 (second pass)
 

@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-26",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 400,
+  "total_questions": 425,
   "units_with_questions": [
    1,
    2,
@@ -16,7 +16,7 @@
    6,
    7
   ],
-  "total_runs": 16
+  "total_runs": 17
  },
  "runs": [
   {
@@ -941,6 +941,68 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A, applied exactly as written. An unseeded random.SystemRandom() draw over the eleven syllabus subjects returned Algorithms. runs[] gave the most recent paper as {2026-11-03 earlier same day, run 15, unit 1, asymptotic-analysis, Set 3 (second pass)}; unit 1 held 75 questions, above UNIT_QUESTION_CAP = 50, and had been current for 8 days, above DAYS_PER_UNIT_MAX = 7, so step B3 failed on both tests and step B4 advanced exactly one unit: (0 + 1) mod 7 = 1 -> Unit 2, Divide and Conquer & Sorting. Unit 2 held 50 questions from 2026-10-27 and 2026-10-28, so this is Set 3, opening the second pass for this unit; the modulo now advances one unit per run, so unit 2 now stands at 75. No override, no partial set, exactly 25 questions.",
    "note": "Set 3 (second pass) for Algorithms Unit 2. The 2026-10-28 paper moved to archive/gate_algo_mock_2_2026-10-28_run2.html with its content frozen, so the unit folder holds exactly one current paper. All 25 items are new (ALG-U2-Q51..Q75) and none repeats a stem from the 50 items already banked for this unit. Coverage: merge sort & quick sort 7, counting & radix sort 6, selection & the k-th element 6, inversion counting 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the minimum comparisons of a merge of 5 and 8 keys is 5; Lomuto quicksort on 1..10 makes 45 comparisons, and on 1..n makes n(n-1)/2; merge sort on 12 keys performs 11 merges; T(6) = 15 for T(n) = T(n-1) + (n-1); the prefix-sum array of [1,0,3,1,3] over 0..3 is [1,3,3,5], so index 2 holds 3; quickselect with a minimum pivot makes 28 comparisons on 8 keys; [2,1,4,3] has exactly 2 inversions; the top-level merge of [3,4] and [1,2] counts 4; a 10-key decreasing array with its first two keys exchanged has 44 inversions; and a permutation and its inverse always agree on the inversion count, verified over all 120 permutations of 5 keys, as does the claim that a transposition changes the count by an odd amount, verified over all 120 permutations of 4 keys. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
+  },
+  {
+   "run": 17,
+   "date": "2026-11-04",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "set": "Set 3 (second pass)",
+   "count": 25,
+   "file": "algorithms/greedy-algorithms/gate_algo_mock_3_2026-11-04.html",
+   "archived_previous": "algorithms/greedy-algorithms/archive/gate_algo_mock_3_2026-10-29_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "fractional-knapsack": 7,
+    "huffman-coding": 7,
+    "activity-selection-interval-scheduling": 5,
+    "optimal-merge-patterns": 6
+   },
+   "question_ids": [
+    "ALG-U3-Q51",
+    "ALG-U3-Q52",
+    "ALG-U3-Q53",
+    "ALG-U3-Q54",
+    "ALG-U3-Q55",
+    "ALG-U3-Q56",
+    "ALG-U3-Q57",
+    "ALG-U3-Q58",
+    "ALG-U3-Q59",
+    "ALG-U3-Q60",
+    "ALG-U3-Q61",
+    "ALG-U3-Q62",
+    "ALG-U3-Q63",
+    "ALG-U3-Q64",
+    "ALG-U3-Q65",
+    "ALG-U3-Q66",
+    "ALG-U3-Q67",
+    "ALG-U3-Q68",
+    "ALG-U3-Q69",
+    "ALG-U3-Q70",
+    "ALG-U3-Q71",
+    "ALG-U3-Q72",
+    "ALG-U3-Q73",
+    "ALG-U3-Q74",
+    "ALG-U3-Q75"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A, applied exactly as written. Six subjects already had a paper dated 2026-11-04 (computer-architecture, computer-networks, databases, engineering-mathematics, programming-data-structures, theory-of-computation), so the unseeded random.SystemRandom() draw ran over the five subjects still without one (algorithms, compiler-design, digital-logic, discrete-mathematics, operating-systems) and returned Algorithms. runs[] gave the most recent paper as {2026-11-03, run 16, unit 2, sorting-divide-conquer, Set 3 (second pass)}; unit 2 held 75 questions, above UNIT_QUESTION_CAP = 50, and its first paper was 2026-10-27, eight days earlier, above DAYS_PER_UNIT_MAX = 7, so step B3 failed on both tests and step B4 advanced exactly one unit: (index_of(sorting-divide-conquer) = 1 + 1) mod 7 = 2 -> Unit 3, Greedy Algorithms. Unit 3 already held 50 questions from 2026-10-29, so step B5 applies: every unit of the subject is at or above the cap (75, 75, 50, 50, 50, 50, 50), the modulo has wrapped and the second pass continues. This is the unit's third set, taking it to 75. No override, no partial set, exactly 25 questions.",
+   "note": "Set 3 (second pass) for Algorithms Unit 3. The 2026-10-29 paper moved to archive/gate_algo_mock_3_2026-10-29_run2.html with its content frozen, so the unit folder holds exactly one current paper and the repository root still holds only index.html. All 25 items are new (ALG-U3-Q51..Q75) and none repeats a stem from the 50 items already banked for this unit. Coverage: fractional knapsack 7, Huffman coding 7, activity selection & interval scheduling 5, optimal merge patterns 6 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes. Every numeric answer was recomputed by script: the ratio-greedy fill of capacity 10 over (6,36),(5,25),(4,16) is 36 + 4/5*25 = 56; earliest-finish selects 3 of the five intervals; three files of 2,3,4 records cost 5 + 9 = 14 moves; Huffman on 1,2,4,8 costs 3 + 7 + 15 = 25; files 1..5 cost 3 + 6 + 9 + 15 = 33; capacity 15 over (7,42),(6,30),(5,20),(4,12) gives 42 + 30 + 2/5*20 = 80; files 1,1,2,3,5,8 cost 2 + 4 + 7 + 12 + 20 = 45; Huffman on 2,3,5,7,11,13 costs 5 + 10 + 17 + 24 + 41 = 97; the endpoint sweep of five intervals peaks at 4 rooms; Huffman on 3,5,8,13,21,34 costs 8 + 16 + 29 + 50 + 84 = 187; capacity 20 over (10,50),(8,56),(6,24),(5,30),(4,8) gives 56 + 30 + 7/10*50 = 121; files 1,1,1,1,100 cost 2 + 2 + 4 + 104 = 112. The five MSQ answer sets were checked option by option, and the equal-frequency trap in Q62 was confirmed on frequencies 1,1,2,2, whose Huffman depths are 3,3,2,1. verified_pyqs is empty for Algorithms, so no item is tagged GATE_PYQ_VARIATION and nothing on this paper is claimed as an official GATE question."
   }
  ],
  "verified_pyqs": [],
@@ -15725,6 +15787,1019 @@
    "subject_name": "Algorithms",
    "set": "Set 3 (second pass)",
    "answer_display": "44"
+  },
+  {
+   "id": "ALG-U3-Q51",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "A knapsack has capacity <span class=\"mm\">10</span>. The divisible items, given as (weight, value), are <span class=\"mm\">(6, 36)</span>, <span class=\"mm\">(5, 25)</span> and <span class=\"mm\">(4, 16)</span>. The greedy algorithm takes items in decreasing order of value per unit weight. What total value does it reach?",
+   "options": [
+    "<span class=\"mm\">56</span>",
+    "<span class=\"mm\">52</span>",
+    "<span class=\"mm\">61</span>",
+    "<span class=\"mm\">57</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "When the weight is divisible, capacity is the only scarce resource, so the greedy rule ranks items by value density <span class=\"mm\">v/w</span> and fills in that order.",
+    "steps": [
+     "Densities: <span class=\"mm\">36/6 = 6</span> for <span class=\"mm\">(6, 36)</span>, <span class=\"mm\">25/5 = 5</span> for <span class=\"mm\">(5, 25)</span>, <span class=\"mm\">16/4 = 4</span> for <span class=\"mm\">(4, 16)</span>.",
+     "The order is <span class=\"mm\">(6, 36)</span>, then <span class=\"mm\">(5, 25)</span>, then <span class=\"mm\">(4, 16)</span>.",
+     "Take <span class=\"mm\">(6, 36)</span> whole: value <span class=\"mm\">36</span>, capacity left <span class=\"mm\">10 − 6 = 4</span>.",
+     "The 5-unit item does not fit, so take <span class=\"mm\">4/5</span> of it: value <span class=\"mm\">4/5 × 25 = 20</span>, and the capacity is exactly full.",
+     "Total <span class=\"mm\">36 + 20 = 56</span>."
+    ],
+    "final": "<span class=\"mm\">56</span> — option (A).",
+    "trap": "Stopping at 36 because no whole item fits in the remaining 4 units, or taking the 4-unit item because it fits exactly (value 52). Divisibility is exactly what lets the last item be split, and a split always beats idle capacity."
+   }
+  },
+  {
+   "id": "ALG-U3-Q52",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "A Huffman code assigns one binary codeword to each symbol. Which one of the following is <b>TRUE</b> of the code it produces?",
+   "options": [
+    "No codeword is a prefix of another, so a concatenated bit stream decodes without separators or a length field.",
+    "Every codeword has the same length, which is what makes the code decodable.",
+    "Codewords are assigned in alphabetical order of the symbol names.",
+    "The code is uniquely decodable only if the decoder is told the message length in advance."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A prefix-free code is one in which no codeword is a prefix of another; that property is what makes a concatenated bit stream decodable from the left with no separators.",
+    "steps": [
+     "Huffman builds a binary tree whose leaves are the symbols, so each codeword is a root-to-leaf path.",
+     "No leaf can lie on the path to another leaf, so no codeword can be a prefix of another.",
+     "Decoding starts at the root, follows the bits, and emits a symbol every time a leaf is reached, then restarts at the root.",
+     "The lengths are deliberately unequal: a frequent symbol sits near the root, which is where the compression comes from."
+    ],
+    "final": "Option (A).",
+    "trap": "Confusing prefix-free with fixed-length. A fixed-length code is also uniquely decodable, but it throws away the whole advantage of Huffman, which is that frequent symbols get shorter codewords."
+   }
+  },
+  {
+   "id": "ALG-U3-Q53",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "activity-selection-interval-scheduling",
+   "subtopic": "activity-selection-interval-scheduling",
+   "subtopic_label": "Activity selection &amp; interval scheduling",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Five activities have the intervals <span class=\"mm\">[1, 4]</span>, <span class=\"mm\">[4, 7]</span>, <span class=\"mm\">[2, 5]</span>, <span class=\"mm\">[6, 9]</span> and <span class=\"mm\">[7, 10]</span>. Two activities are compatible when the first finishes at or before the second starts. What is the largest number of mutually compatible activities?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 3.0,
+   "answer_display": "3",
+   "solution": {
+    "concept": "Earliest-finish-first is optimal for unweighted activity selection: taking the activity that frees the resource soonest can never block more future activities than any other first choice.",
+    "steps": [
+     "Sort by finishing time: <span class=\"mm\">[1, 4]</span>, <span class=\"mm\">[2, 5]</span>, <span class=\"mm\">[4, 7]</span>, <span class=\"mm\">[6, 9]</span>, <span class=\"mm\">[7, 10]</span>.",
+     "Take <span class=\"mm\">[1, 4]</span>; the resource is free from time 4.",
+     "The first activity starting at or after 4 is <span class=\"mm\">[4, 7]</span>; take it, free from 7. <span class=\"mm\">[2, 5]</span> starts at 2, so it is skipped.",
+     "The first activity starting at or after 7 is <span class=\"mm\">[7, 10]</span>; take it, free from 10. <span class=\"mm\">[6, 9]</span> starts at 6, so it is skipped.",
+     "Three activities are selected: <span class=\"mm\">[1, 4]</span>, <span class=\"mm\">[4, 7]</span>, <span class=\"mm\">[7, 10]</span>."
+    ],
+    "final": "3.",
+    "trap": "Treating activities that touch at a single endpoint as overlapping, which loses <span class=\"mm\">[4, 7]</span> and <span class=\"mm\">[7, 10]</span> and returns 1. Half-open intervals <span class=\"mm\">[s, f)</span> are the convention precisely so that back-to-back activities are compatible."
+   }
+  },
+  {
+   "id": "ALG-U3-Q54",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Three sorted files hold <span class=\"mm\">2</span>, <span class=\"mm\">3</span> and <span class=\"mm\">4</span> records. They are combined into one file by the optimal merge pattern. What is the total number of record moves?",
+   "options": [
+    "<span class=\"mm\">14</span>",
+    "<span class=\"mm\">9</span>",
+    "<span class=\"mm\">12</span>",
+    "<span class=\"mm\">16</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The optimal merge pattern merges the two smallest files at every step; the total cost is the sum of the sizes of every file produced, which equals the weighted external path length of the merge tree.",
+    "steps": [
+     "The two smallest files hold 2 and 3 records: merge them into a file of <span class=\"mm\">5</span>, costing 5 moves. The files are now 5 and 4.",
+     "Merge those two into <span class=\"mm\">9</span>, costing 9 moves.",
+     "Total <span class=\"mm\">5 + 9 = 14</span>.",
+     "Check against the other order: 3 and 4 first costs 7, then 2 and 7 costs 9, giving 16 — worse."
+    ],
+    "final": "<span class=\"mm\">14</span> — option (A).",
+    "trap": "Merging 3 and 4 first because they are the two closest sizes. The rule is the two smallest, not the two most similar, and the small file must join the pool early while the pool is still small."
+   }
+  },
+  {
+   "id": "ALG-U3-Q55",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which one of the following problems is solved optimally by a greedy algorithm?",
+   "options": [
+    "0/1 knapsack",
+    "Fractional knapsack",
+    "Longest common subsequence",
+    "Matrix-chain multiplication"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A greedy algorithm is correct only when the problem has the greedy-choice property and optimal substructure. Divisibility gives fractional knapsack both; the other three have neither.",
+    "steps": [
+     "Fractional knapsack: taking the highest density first is safe by an exchange argument, so ratio-greedy is optimal.",
+     "0/1 knapsack: capacity 10 with items <span class=\"mm\">(6, 30)</span>, <span class=\"mm\">(5, 20)</span>, <span class=\"mm\">(5, 20)</span> — ratio-greedy takes the 6-unit item and returns 30, while the two 5-unit items give 40. Greedy fails.",
+     "Longest common subsequence: the best choice at one position depends on both suffixes, so it needs a table over all <span class=\"mm\">(i, j)</span> pairs.",
+     "Matrix-chain multiplication: the cheapest split depends on the whole sub-chain, again a table, not a local rule."
+    ],
+    "final": "Option (B).",
+    "trap": "Assuming any problem with an obvious ranking rule is greedy-solvable. The ranking rule also has to survive an exchange argument, and for 0/1 knapsack it does not."
+   }
+  },
+  {
+   "id": "ALG-U3-Q56",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Four symbols have frequencies <span class=\"mm\">1</span>, <span class=\"mm\">2</span>, <span class=\"mm\">4</span> and <span class=\"mm\">8</span>. What is the total cost of a Huffman tree on these frequencies, that is, <span class=\"mm\">Σ f<sub>i</sub> · depth<sub>i</sub></span>?",
+   "options": [
+    "<span class=\"mm\">25</span>",
+    "<span class=\"mm\">22</span>",
+    "<span class=\"mm\">24</span>",
+    "<span class=\"mm\">30</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The cost of a Huffman tree equals the sum of the merged weights, because every merge adds the weight of the new internal node, and it also equals <span class=\"mm\">Σ f<sub>i</sub> · depth<sub>i</sub></span>.",
+    "steps": [
+     "Merge <span class=\"mm\">1</span> and <span class=\"mm\">2</span> into <span class=\"mm\">3</span> — cost 3.",
+     "Merge <span class=\"mm\">3</span> and <span class=\"mm\">4</span> into <span class=\"mm\">7</span> — cost 7.",
+     "Merge <span class=\"mm\">7</span> and <span class=\"mm\">8</span> into <span class=\"mm\">15</span> — cost 15.",
+     "Total <span class=\"mm\">3 + 7 + 15 = 25</span>.",
+     "Cross-check by depths: <span class=\"mm\">8</span> sits at depth 1, <span class=\"mm\">4</span> at depth 2, and <span class=\"mm\">1</span>, <span class=\"mm\">2</span> at depth 3, so <span class=\"mm\">8 + 8 + 3 + 6 = 25</span>."
+    ],
+    "final": "<span class=\"mm\">25</span> — option (A).",
+    "trap": "Adding the leaf frequencies only, which gives 15 and is not a cost at all. Every merge contributes its merged weight, and there are <span class=\"mm\">n − 1</span> merges."
+   }
+  },
+  {
+   "id": "ALG-U3-Q57",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "activity-selection-interval-scheduling",
+   "subtopic": "activity-selection-interval-scheduling",
+   "subtopic_label": "Activity selection &amp; interval scheduling",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements about the unweighted activity-selection problem are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "Ordering the activities by earliest finishing time and taking each one compatible with the last selection always yields a maximum-size compatible set.",
+    "Ordering the activities by earliest starting time and taking each one compatible with the last selection always yields a maximum-size compatible set.",
+    "Ordering the activities by shortest duration and taking each one compatible with the last selection always yields a maximum-size compatible set.",
+    "When every activity has the same duration, the earliest-finish order and the earliest-start order are the same order."
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "Only the earliest-finish order carries an exchange proof. The proof replaces the first activity of an optimal solution by the earliest-finishing one and shows the rest stays compatible.",
+    "steps": [
+     "A: TRUE — the standard exchange argument applies directly, so the greedy set is maximum.",
+     "B: FALSE — activities <span class=\"mm\">[1, 10]</span>, <span class=\"mm\">[2, 3]</span>, <span class=\"mm\">[3, 4]</span>: earliest start takes <span class=\"mm\">[1, 10]</span> and stops with 1, while the other two give 2.",
+     "C: FALSE — the shortest activity can sit in the middle of the timeline and block two longer but compatible activities on either side.",
+     "D: TRUE — with a common duration <span class=\"mm\">d</span>, finishing time is <span class=\"mm\">start + d</span>, so the two sort keys order the activities identically."
+    ],
+    "final": "Options (A) and (D).",
+    "trap": "Treating any sensible-looking sort key as valid. Earliest start and shortest duration both look reasonable and both are wrong; only earliest finish has the exchange argument behind it."
+   }
+  },
+  {
+   "id": "ALG-U3-Q58",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "The merge tree of an optimal merge pattern on a set of file sizes has the same structure as which one of the following?",
+   "options": [
+    "A Huffman tree built on the file sizes",
+    "A balanced binary search tree on the file sizes",
+    "A minimum spanning tree of the files",
+    "A shortest-path tree from the largest file"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Optimal merge patterns and Huffman coding are the same greedy algorithm on the same object: repeated merging of the two smallest current weights builds a tree of minimum weighted external path length.",
+    "steps": [
+     "Both build a binary tree whose leaves are the inputs and whose internal nodes are merges of their two subtrees.",
+     "Both pick the two smallest weights currently in the pool, so both minimise <span class=\"mm\">Σ w<sub>i</sub> · depth<sub>i</sub></span>.",
+     "Only the reading differs: file sizes and record moves on one side, frequencies and bits on the other."
+    ],
+    "final": "Option (A).",
+    "trap": "Believing the optimal merge tree must be balanced. Balance is optimal only when all sizes are equal; for unequal sizes the greedy tree is usually lopsided and that is precisely what keeps the cost down."
+   }
+  },
+  {
+   "id": "ALG-U3-Q59",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "A knapsack has capacity <span class=\"mm\">7</span>. The divisible items, given as (weight, value), are <span class=\"mm\">(3, 9)</span>, <span class=\"mm\">(4, 8)</span> and <span class=\"mm\">(2, 4)</span>. Which item does ratio-greedy take first?",
+   "options": [
+    "<span class=\"mm\">(3, 9)</span>, the item with the largest value per unit weight",
+    "<span class=\"mm\">(4, 8)</span>, the heaviest item",
+    "<span class=\"mm\">(2, 4)</span>, the lightest item",
+    "<span class=\"mm\">(4, 8)</span> and <span class=\"mm\">(2, 4)</span> together, because their densities are equal"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Ratio-greedy orders by value density <span class=\"mm\">v/w</span>, so the first item taken is the one with the largest density, whatever its weight or total value.",
+    "steps": [
+     "Densities: <span class=\"mm\">9/3 = 3</span>, <span class=\"mm\">8/4 = 2</span>, <span class=\"mm\">4/2 = 2</span>.",
+     "The largest density is 3, so <span class=\"mm\">(3, 9)</span> is taken first.",
+     "The other two tie at density 2; taking either first gives the same value per unit weight, and with capacity <span class=\"mm\">7 − 3 = 4</span> left the 4-unit item then fills the knapsack exactly for a total of <span class=\"mm\">9 + 8 = 17</span>."
+    ],
+    "final": "Option (A).",
+    "trap": "Choosing the lightest item so that many items fit, or the heaviest because it carries more total value. Neither is the greedy criterion, and neither maximises value per unit of capacity."
+   }
+  },
+  {
+   "id": "ALG-U3-Q60",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Five sorted files hold <span class=\"mm\">1</span>, <span class=\"mm\">2</span>, <span class=\"mm\">3</span>, <span class=\"mm\">4</span> and <span class=\"mm\">5</span> records. Using the optimal merge pattern, what is the minimum total number of record moves needed to combine them into one file?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 33.0,
+   "answer_display": "33",
+   "solution": {
+    "concept": "Merge the two smallest files at each step; the cost is the sum of the sizes of the files created.",
+    "steps": [
+     "Merge <span class=\"mm\">1</span> and <span class=\"mm\">2</span> into <span class=\"mm\">3</span> — 3 moves. Pool: <span class=\"mm\">3, 3, 4, 5</span>.",
+     "Merge <span class=\"mm\">3</span> and <span class=\"mm\">3</span> into <span class=\"mm\">6</span> — 6 moves. Pool: <span class=\"mm\">4, 5, 6</span>.",
+     "Merge <span class=\"mm\">4</span> and <span class=\"mm\">5</span> into <span class=\"mm\">9</span> — 9 moves. Pool: <span class=\"mm\">6, 9</span>.",
+     "Merge <span class=\"mm\">6</span> and <span class=\"mm\">9</span> into <span class=\"mm\">15</span> — 15 moves.",
+     "Total <span class=\"mm\">3 + 6 + 9 + 15 = 33</span>."
+    ],
+    "final": "33.",
+    "trap": "Merging in the given left-to-right order: <span class=\"mm\">1+2 = 3</span>, <span class=\"mm\">3+3 = 6</span>, <span class=\"mm\">6+4 = 10</span>, <span class=\"mm\">10+5 = 15</span>, which costs <span class=\"mm\">3 + 6 + 10 + 15 = 34</span>. The greedy order saves exactly one move by never letting the accumulator outgrow the pool."
+   }
+  },
+  {
+   "id": "ALG-U3-Q61",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "A knapsack has capacity <span class=\"mm\">15</span>. The divisible items, given as (weight, value), are <span class=\"mm\">(7, 42)</span>, <span class=\"mm\">(6, 30)</span>, <span class=\"mm\">(5, 20)</span> and <span class=\"mm\">(4, 12)</span>. What is the maximum total value?",
+   "options": [
+    "<span class=\"mm\">80</span>",
+    "<span class=\"mm\">78</span>",
+    "<span class=\"mm\">82</span>",
+    "<span class=\"mm\">75</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Ratio-greedy sorts by <span class=\"mm\">v/w</span> and fills whole items until the next one no longer fits; that last item is taken fractionally so no capacity is wasted.",
+    "steps": [
+     "Densities: <span class=\"mm\">42/7 = 6</span>, <span class=\"mm\">30/6 = 5</span>, <span class=\"mm\">20/5 = 4</span>, <span class=\"mm\">12/4 = 3</span>.",
+     "Take <span class=\"mm\">(7, 42)</span>: value 42, capacity left <span class=\"mm\">15 − 7 = 8</span>.",
+     "Take <span class=\"mm\">(6, 30)</span>: value 72, capacity left <span class=\"mm\">8 − 6 = 2</span>.",
+     "The 5-unit item does not fit in 2 units, so take <span class=\"mm\">2/5</span> of it: value <span class=\"mm\">2/5 × 20 = 8</span>, and the capacity is full.",
+     "Total <span class=\"mm\">42 + 30 + 8 = 80</span>."
+    ],
+    "final": "<span class=\"mm\">80</span> — option (A).",
+    "trap": "Stopping at 72 because no whole item fits in the remaining 2 units, or forcing the 5-unit item in whole and overflowing the knapsack. The last item is always split, and 8 is exactly the value of the leftover capacity."
+   }
+  },
+  {
+   "id": "ALG-U3-Q62",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements about Huffman coding are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "For a fixed set of symbol frequencies, no prefix code has a smaller weighted path length than a Huffman code.",
+    "If all symbol frequencies are equal, the Huffman tree gives codeword lengths that differ from each other by at most one.",
+    "In a Huffman code, a symbol with a higher frequency never has a longer codeword than a symbol with a lower frequency.",
+    "Two symbols with equal frequency always receive codewords of the same length."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Huffman optimality is a statement about the weighted path length; it constrains the individual codeword lengths only through the sibling property of the two least frequent symbols.",
+    "steps": [
+     "A: TRUE — the exchange argument moves the two least frequent symbols to the deepest sibling positions without increasing the cost, and repeating it yields Huffman, so Huffman is optimal.",
+     "B: TRUE — with equal frequencies every merge combines equal weights, so the tree is as balanced as <span class=\"mm\">n</span> leaves allow and lengths are <span class=\"mm\">⌈log<sub>2</sub> n⌉</span> and <span class=\"mm\">⌊log<sub>2</sub> n⌋</span>.",
+     "C: TRUE — otherwise swapping the two codewords would lower <span class=\"mm\">Σ f<sub>i</sub> l<sub>i</sub></span>, contradicting optimality.",
+     "D: FALSE — frequencies <span class=\"mm\">1, 1, 2, 2</span> give depths <span class=\"mm\">3, 3</span> for the two 1s but <span class=\"mm\">2</span> and <span class=\"mm\">1</span> for the two 2s, so equal frequencies can end up with different lengths."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Reading optimality as 'the Huffman tree is unique'. Many prefix codes attain the minimum, and ties in the merge order produce different trees with the same cost, so optimality never pins down a single code."
+   }
+  },
+  {
+   "id": "ALG-U3-Q63",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "activity-selection-interval-scheduling",
+   "subtopic": "activity-selection-interval-scheduling",
+   "subtopic_label": "Activity selection &amp; interval scheduling",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Nine activities have the intervals <span class=\"mm\">(0, 3)</span>, <span class=\"mm\">(1, 2)</span>, <span class=\"mm\">(2, 4)</span>, <span class=\"mm\">(3, 5)</span>, <span class=\"mm\">(4, 6)</span>, <span class=\"mm\">(5, 7)</span>, <span class=\"mm\">(6, 8)</span>, <span class=\"mm\">(7, 9)</span> and <span class=\"mm\">(8, 10)</span>. Using the earliest-finish greedy rule, with activities that touch at an endpoint treated as compatible, how many activities are selected?",
+   "options": [
+    "<span class=\"mm\">4</span>",
+    "<span class=\"mm\">5</span>",
+    "<span class=\"mm\">6</span>",
+    "<span class=\"mm\">3</span>"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Earliest-finish-first is optimal for the unweighted problem, so the greedy count is also the maximum count.",
+    "steps": [
+     "Sort by finish: <span class=\"mm\">(1, 2)</span>, <span class=\"mm\">(0, 3)</span>, <span class=\"mm\">(2, 4)</span>, <span class=\"mm\">(3, 5)</span>, <span class=\"mm\">(4, 6)</span>, <span class=\"mm\">(5, 7)</span>, <span class=\"mm\">(6, 8)</span>, <span class=\"mm\">(7, 9)</span>, <span class=\"mm\">(8, 10)</span>.",
+     "Take <span class=\"mm\">(1, 2)</span>; free from 2.",
+     "Take <span class=\"mm\">(2, 4)</span>; free from 4. <span class=\"mm\">(0, 3)</span> and <span class=\"mm\">(3, 5)</span> are skipped because they start before the resource is free.",
+     "Take <span class=\"mm\">(4, 6)</span>, then <span class=\"mm\">(6, 8)</span>, then <span class=\"mm\">(8, 10)</span>.",
+     "Five activities: <span class=\"mm\">(1, 2)</span>, <span class=\"mm\">(2, 4)</span>, <span class=\"mm\">(4, 6)</span>, <span class=\"mm\">(6, 8)</span>, <span class=\"mm\">(8, 10)</span>."
+    ],
+    "final": "<span class=\"mm\">5</span> — option (B).",
+    "trap": "Starting with <span class=\"mm\">(0, 3)</span> because it begins earliest: then <span class=\"mm\">(3, 5)</span>, <span class=\"mm\">(5, 7)</span>, <span class=\"mm\">(7, 9)</span> gives only 4. Starting early is not the same as finishing early."
+   }
+  },
+  {
+   "id": "ALG-U3-Q64",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Six sorted files hold <span class=\"mm\">1</span>, <span class=\"mm\">1</span>, <span class=\"mm\">2</span>, <span class=\"mm\">3</span>, <span class=\"mm\">5</span> and <span class=\"mm\">8</span> records. Using the optimal merge pattern, what is the minimum total number of record moves?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 45.0,
+   "answer_display": "45",
+   "solution": {
+    "concept": "At each step merge the two smallest files in the current pool, where the pool includes the files produced by earlier merges.",
+    "steps": [
+     "Merge <span class=\"mm\">1</span> and <span class=\"mm\">1</span> into <span class=\"mm\">2</span> — 2 moves. Pool: <span class=\"mm\">2, 2, 3, 5, 8</span>.",
+     "Merge <span class=\"mm\">2</span> and <span class=\"mm\">2</span> into <span class=\"mm\">4</span> — 4 moves. Pool: <span class=\"mm\">3, 4, 5, 8</span>.",
+     "Merge <span class=\"mm\">3</span> and <span class=\"mm\">4</span> into <span class=\"mm\">7</span> — 7 moves. Pool: <span class=\"mm\">5, 7, 8</span>.",
+     "Merge <span class=\"mm\">5</span> and <span class=\"mm\">7</span> into <span class=\"mm\">12</span> — 12 moves. Pool: <span class=\"mm\">8, 12</span>.",
+     "Merge <span class=\"mm\">8</span> and <span class=\"mm\">12</span> into <span class=\"mm\">20</span> — 20 moves.",
+     "Total <span class=\"mm\">2 + 4 + 7 + 12 + 20 = 45</span>."
+    ],
+    "final": "45.",
+    "trap": "Sorting the original six sizes once and pairing them off, without putting the newly merged file back into the pool. Here the merged <span class=\"mm\">2</span> must be merged with the second <span class=\"mm\">2</span> before anything touches the <span class=\"mm\">3</span>."
+   }
+  },
+  {
+   "id": "ALG-U3-Q65",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "The greedy algorithm is optimal for fractional knapsack but can be far from optimal for 0/1 knapsack. Which one of the following best explains why the exchange argument fails for the 0/1 problem?",
+   "options": [
+    "Because the algorithm would have to compare exponentially many subsets, which is too slow.",
+    "Because an item cannot be split, so the swap that keeps total weight fixed while raising value may not be available, and a locally best ratio can block a better whole-item combination.",
+    "Because 0/1 knapsack allows negative item values, which breaks the density ordering.",
+    "Because the value density of an item is undefined when items are indivisible."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The exchange argument swaps a fraction of a low-density item for a fraction of a higher-density one at constant weight. Divisibility is what makes that swap feasible; without it there is no such move.",
+    "steps": [
+     "Fractional case: if a solution holds a low-density item while a higher-density item is not fully taken, move weight from the first to the second. Total weight is unchanged and value rises, so a solution not in density order cannot be optimal.",
+     "0/1 case: capacity 10 with items <span class=\"mm\">(6, 30)</span>, <span class=\"mm\">(5, 20)</span>, <span class=\"mm\">(5, 20)</span>. Ratio-greedy takes the 6-unit item and returns 30.",
+     "The better solution takes both 5-unit items for 40, but reaching it needs a swap of the whole 6-unit item, which over-fills the knapsack at intermediate steps.",
+     "So the local density choice is not safe, and the optimum has to be found by dynamic programming over capacity."
+    ],
+    "final": "Option (B).",
+    "trap": "Thinking 0/1 knapsack is fractional knapsack with rounding. The failure is structural: leftover capacity is wasted, and no feasible exchange move exists to repair a bad first choice."
+   }
+  },
+  {
+   "id": "ALG-U3-Q66",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Six symbols have frequencies <span class=\"mm\">2</span>, <span class=\"mm\">3</span>, <span class=\"mm\">5</span>, <span class=\"mm\">7</span>, <span class=\"mm\">11</span> and <span class=\"mm\">13</span>. What is the total cost of a Huffman tree on these frequencies?",
+   "options": [
+    "<span class=\"mm\">97</span>",
+    "<span class=\"mm\">95</span>",
+    "<span class=\"mm\">99</span>",
+    "<span class=\"mm\">101</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The cost is the sum of the merged weights, equivalently <span class=\"mm\">Σ f<sub>i</sub> · depth<sub>i</sub></span>.",
+    "steps": [
+     "Merge <span class=\"mm\">2</span> and <span class=\"mm\">3</span> into <span class=\"mm\">5</span> — cost 5. Pool: <span class=\"mm\">5, 5, 7, 11, 13</span>.",
+     "Merge <span class=\"mm\">5</span> and <span class=\"mm\">5</span> into <span class=\"mm\">10</span> — cost 10. Pool: <span class=\"mm\">7, 10, 11, 13</span>.",
+     "Merge <span class=\"mm\">7</span> and <span class=\"mm\">10</span> into <span class=\"mm\">17</span> — cost 17. Pool: <span class=\"mm\">11, 13, 17</span>.",
+     "Merge <span class=\"mm\">11</span> and <span class=\"mm\">13</span> into <span class=\"mm\">24</span> — cost 24. Pool: <span class=\"mm\">17, 24</span>.",
+     "Merge <span class=\"mm\">17</span> and <span class=\"mm\">24</span> into <span class=\"mm\">41</span> — cost 41.",
+     "Total <span class=\"mm\">5 + 10 + 17 + 24 + 41 = 97</span>."
+    ],
+    "final": "<span class=\"mm\">97</span> — option (A).",
+    "trap": "Ignoring that the merged <span class=\"mm\">5</span> ties with the original <span class=\"mm\">5</span>, and merging <span class=\"mm\">5</span> with <span class=\"mm\">7</span> instead. The pool is a multiset: a node created by a merge is an ordinary candidate and must be compared with the originals by weight only."
+   }
+  },
+  {
+   "id": "ALG-U3-Q67",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "activity-selection-interval-scheduling",
+   "subtopic": "activity-selection-interval-scheduling",
+   "subtopic_label": "Activity selection &amp; interval scheduling",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Five activities occupy the intervals <span class=\"mm\">[1, 5]</span>, <span class=\"mm\">[2, 6]</span>, <span class=\"mm\">[3, 7]</span>, <span class=\"mm\">[4, 8]</span> and <span class=\"mm\">[9, 10]</span>. Each activity needs a room for its whole interval. What is the minimum number of rooms required?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 4.0,
+   "answer_display": "4",
+   "solution": {
+    "concept": "For intervals, the minimum number of resources equals the maximum number of intervals that share a common point. The interval graph is perfect, so its chromatic number equals its largest clique.",
+    "steps": [
+     "Sweep the endpoints in time order, adding one when an interval starts and removing one when it ends.",
+     "At time 4 all four intervals <span class=\"mm\">[1, 5]</span>, <span class=\"mm\">[2, 6]</span>, <span class=\"mm\">[3, 7]</span> and <span class=\"mm\">[4, 8]</span> are active, so four rooms are busy at once.",
+     "At time 5 the first interval ends and the count falls to three.",
+     "<span class=\"mm\">[9, 10]</span> starts after everything else has finished, so it reuses any free room.",
+     "The maximum overlap is 4, so 4 rooms are necessary; assigning each activity to any free room attains it."
+    ],
+    "final": "4.",
+    "trap": "Answering 5 because five activities are listed, or 6 by counting a shared endpoint twice. Overlap is what forces a new room, and <span class=\"mm\">[9, 10]</span> overlaps nothing."
+   }
+  },
+  {
+   "id": "ALG-U3-Q68",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements about the fractional-knapsack greedy algorithm are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "If two items have the same value density, the order in which ratio-greedy takes them does not change the value it obtains.",
+    "The optimal value of the fractional problem is never smaller than the optimal value of the 0/1 problem on the same instance.",
+    "The greedy solution leaves at most one item partially taken.",
+    "Fractional knapsack is NP-hard, so no polynomial-time algorithm for it is known."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Fractional knapsack is a linear program over a divisible resource; every 0/1 solution is feasible for it, and ratio-greedy attains the extreme point of the feasible region.",
+    "steps": [
+     "A: TRUE — equal densities mean equal value per unit weight, so exchanging one for the other at constant weight leaves the total value unchanged.",
+     "B: TRUE — divisibility only enlarges the feasible set, so the maximum over the larger set is at least the maximum over the smaller one.",
+     "C: TRUE — the algorithm fills whole items in density order and can split only the item that straddles the capacity boundary, which is one item.",
+     "D: FALSE — sorting by density and filling takes <span class=\"mm\">O(n log n)</span>, so the fractional problem is in P; it is the 0/1 variant that is NP-hard."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Assuming the fractional optimum is always strictly larger than the 0/1 optimum. When the greedy solution happens to consist of whole items, the two values coincide, for example capacity 10 with <span class=\"mm\">(5, 30)</span> and <span class=\"mm\">(5, 20)</span>."
+   }
+  },
+  {
+   "id": "ALG-U3-Q69",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Four sorted files hold <span class=\"mm\">10</span>, <span class=\"mm\">20</span>, <span class=\"mm\">30</span> and <span class=\"mm\">40</span> records. Under the optimal merge pattern, which pair is merged first and what is the total number of record moves?",
+   "options": [
+    "<span class=\"mm\">10</span> and <span class=\"mm\">20</span> first; <span class=\"mm\">190</span> moves in total",
+    "<span class=\"mm\">10</span> and <span class=\"mm\">20</span> first; <span class=\"mm\">200</span> moves in total",
+    "<span class=\"mm\">20</span> and <span class=\"mm\">30</span> first; <span class=\"mm\">190</span> moves in total",
+    "<span class=\"mm\">10</span> and <span class=\"mm\">20</span> first; <span class=\"mm\">180</span> moves in total"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The first merge always joins the two smallest files, and the total cost is the sum of the sizes of the three files produced by the three merges.",
+    "steps": [
+     "Two smallest are 10 and 20: merge into <span class=\"mm\">30</span>, costing 30 moves. Pool: <span class=\"mm\">30, 30, 40</span>.",
+     "Two smallest are the two 30s: merge into <span class=\"mm\">60</span>, costing 60 moves. Pool: <span class=\"mm\">40, 60</span>.",
+     "Merge into <span class=\"mm\">100</span>, costing 100 moves.",
+     "Total <span class=\"mm\">30 + 60 + 100 = 190</span>.",
+     "Check the alternative that starts with 20 and 30: cost 50, pool <span class=\"mm\">10, 40, 50</span>, then <span class=\"mm\">10 + 40 = 50</span>, pool <span class=\"mm\">50, 50</span>, then 100 — total <span class=\"mm\">50 + 50 + 100 = 200</span>, which is worse."
+    ],
+    "final": "<span class=\"mm\">10</span> and <span class=\"mm\">20</span> first, <span class=\"mm\">190</span> moves — option (A).",
+    "trap": "Merging the two middle sizes because they look balanced. Balanced merging is not the rule; the rule is the two smallest in the current pool, and here that means the two 30s at the second step."
+   }
+  },
+  {
+   "id": "ALG-U3-Q70",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which one of the following is <b>TRUE</b> of an optimal prefix code for a given set of symbol frequencies?",
+   "options": [
+    "The two least frequent symbols can always be taken to be siblings at the deepest level of the tree.",
+    "Every optimal prefix code is the code produced by Huffman's algorithm.",
+    "The codeword lengths of an optimal prefix code must be strictly increasing as the frequencies decrease.",
+    "Huffman's algorithm is optimal even when the symbol frequencies are not known in advance."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The exchange lemma says that in some optimal tree the two least frequent symbols are siblings at maximum depth. Huffman turns that lemma into an algorithm by merging them and recursing.",
+    "steps": [
+     "A: TRUE — take an optimal tree, swap the two least frequent symbols into the two deepest sibling leaves and their occupants out. Each swap can only lower the cost, so the tree stays optimal.",
+     "B: FALSE — several prefix codes can attain the minimum cost; Huffman constructs one of them, and tie-breaking can produce different but equally cheap trees.",
+     "C: FALSE — equal frequencies can receive different lengths (frequencies <span class=\"mm\">1, 1, 2, 2</span> give depths <span class=\"mm\">3, 3, 2, 1</span>), so lengths are non-increasing in frequency, not strictly increasing.",
+     "D: FALSE — Huffman needs the frequencies; a code built from wrong probabilities is not optimal for the true distribution."
+    ],
+    "final": "Option (A).",
+    "trap": "Confusing 'a Huffman code is optimal' with 'every optimal code is a Huffman code'. The first is a theorem, the second is false."
+   }
+  },
+  {
+   "id": "ALG-U3-Q71",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "activity-selection-interval-scheduling",
+   "subtopic": "activity-selection-interval-scheduling",
+   "subtopic_label": "Activity selection &amp; interval scheduling",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements about interval scheduling are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "For weighted interval scheduling, earliest-finish greedy can return a total weight arbitrarily smaller than the optimum.",
+    "Weighted interval scheduling is solved in <span class=\"mm\">O(n log n)</span> by sorting on finishing time and using the recurrence <span class=\"mm\">OPT(j) = max(w<sub>j</sub> + OPT(p(j)), OPT(j − 1))</span>, where <span class=\"mm\">p(j)</span> is the last interval compatible with <span class=\"mm\">j</span>.",
+    "With all weights equal to 1, sorting by earliest starting time and taking each compatible activity maximises the number selected.",
+    "The minimum number of rooms needed for a set of intervals equals the maximum number of intervals that share a common point."
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "answer_display": "Options (A), (B) and (D)",
+   "solution": {
+    "concept": "Weights destroy the exchange argument that makes earliest-finish greedy work, so the weighted problem is solved by dynamic programming; the unweighted problem is the special case where every weight is 1.",
+    "steps": [
+     "A: TRUE — one long interval of weight <span class=\"mm\">W</span> can be beaten by any number of short light intervals, and <span class=\"mm\">W</span> can be made as large as we like while the greedy set stays small, so the ratio is unbounded.",
+     "B: TRUE — the recurrence is correct because either interval <span class=\"mm\">j</span> is in the solution, in which case only intervals finishing by its start are available, or it is not; sorting plus binary search for <span class=\"mm\">p(j)</span> gives <span class=\"mm\">O(n log n)</span>.",
+     "C: FALSE — <span class=\"mm\">[1, 10]</span>, <span class=\"mm\">[2, 3]</span>, <span class=\"mm\">[3, 4]</span>: earliest start takes <span class=\"mm\">[1, 10]</span> and returns 1, while the other two return 2.",
+     "D: TRUE — interval graphs are perfect, so the chromatic number equals the clique number, and both are found by sweeping the endpoints."
+    ],
+    "final": "Options (A), (B) and (D).",
+    "trap": "Assuming the unweighted greedy extends to weights by normalising weight per unit time. Weighted interval scheduling is a DP problem; greedy is only a heuristic there."
+   }
+  },
+  {
+   "id": "ALG-U3-Q72",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "NAT",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Six symbols have frequencies <span class=\"mm\">3</span>, <span class=\"mm\">5</span>, <span class=\"mm\">8</span>, <span class=\"mm\">13</span>, <span class=\"mm\">21</span> and <span class=\"mm\">34</span>. What is the total cost of a Huffman tree on these frequencies?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": 187.0,
+   "answer_display": "187",
+   "solution": {
+    "concept": "Sum the merged weights over the <span class=\"mm\">n − 1</span> merges; each merge takes the two smallest weights currently in the pool, including nodes created earlier.",
+    "steps": [
+     "Merge <span class=\"mm\">3</span> and <span class=\"mm\">5</span> into <span class=\"mm\">8</span> — cost 8. Pool: <span class=\"mm\">8, 8, 13, 21, 34</span>.",
+     "Merge <span class=\"mm\">8</span> and <span class=\"mm\">8</span> into <span class=\"mm\">16</span> — cost 16. Pool: <span class=\"mm\">13, 16, 21, 34</span>.",
+     "Merge <span class=\"mm\">13</span> and <span class=\"mm\">16</span> into <span class=\"mm\">29</span> — cost 29. Pool: <span class=\"mm\">21, 29, 34</span>.",
+     "Merge <span class=\"mm\">21</span> and <span class=\"mm\">29</span> into <span class=\"mm\">50</span> — cost 50. Pool: <span class=\"mm\">34, 50</span>.",
+     "Merge <span class=\"mm\">34</span> and <span class=\"mm\">50</span> into <span class=\"mm\">84</span> — cost 84.",
+     "Total <span class=\"mm\">8 + 16 + 29 + 50 + 84 = 187</span>."
+    ],
+    "final": "187.",
+    "trap": "Merging the next two original frequencies, <span class=\"mm\">13</span> and <span class=\"mm\">21</span>, at step 3: that gives <span class=\"mm\">8 + 16 + 34 + 50 + 84 = 192</span>, five more than the optimum, because the freshly merged <span class=\"mm\">16</span> is smaller than <span class=\"mm\">21</span> and must be taken first."
+   }
+  },
+  {
+   "id": "ALG-U3-Q73",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "fractional-knapsack",
+   "subtopic": "fractional-knapsack",
+   "subtopic_label": "Fractional knapsack",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "A knapsack has capacity <span class=\"mm\">20</span>. The divisible items, given as (weight, value), are <span class=\"mm\">(10, 50)</span>, <span class=\"mm\">(8, 56)</span>, <span class=\"mm\">(6, 24)</span>, <span class=\"mm\">(5, 30)</span> and <span class=\"mm\">(4, 8)</span>. What is the maximum total value?",
+   "options": [
+    "<span class=\"mm\">121</span>",
+    "<span class=\"mm\">112</span>",
+    "<span class=\"mm\">124</span>",
+    "<span class=\"mm\">118</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Fill in decreasing order of <span class=\"mm\">v/w</span>, splitting the single item that straddles the capacity boundary; no capacity is ever left idle.",
+    "steps": [
+     "Densities: <span class=\"mm\">56/8 = 7</span>, <span class=\"mm\">30/5 = 6</span>, <span class=\"mm\">50/10 = 5</span>, <span class=\"mm\">24/6 = 4</span>, <span class=\"mm\">8/4 = 2</span>.",
+     "Take <span class=\"mm\">(8, 56)</span>: value 56, capacity left <span class=\"mm\">20 − 8 = 12</span>.",
+     "Take <span class=\"mm\">(5, 30)</span>: value 86, capacity left <span class=\"mm\">12 − 5 = 7</span>.",
+     "The 10-unit item does not fit in 7 units, so take <span class=\"mm\">7/10</span> of it: value <span class=\"mm\">7/10 × 50 = 35</span>, capacity full.",
+     "Total <span class=\"mm\">56 + 30 + 35 = 121</span>."
+    ],
+    "final": "<span class=\"mm\">121</span> — option (A).",
+    "trap": "Stopping at 86, or taking the 6-unit item because it fits neatly in the remaining 7 units and then a quarter of the 4-unit one: <span class=\"mm\">56 + 30 + 24 + 2 = 112</span>. A perfect fit is worth less than the density the capacity could have bought."
+   }
+  },
+  {
+   "id": "ALG-U3-Q74",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "optimal-merge-patterns",
+   "subtopic": "optimal-merge-patterns",
+   "subtopic_label": "Optimal merge patterns",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Five sorted files hold <span class=\"mm\">1</span>, <span class=\"mm\">1</span>, <span class=\"mm\">1</span>, <span class=\"mm\">1</span> and <span class=\"mm\">100</span> records. Using the optimal merge pattern, what is the minimum total number of record moves?",
+   "options": [
+    "<span class=\"mm\">112</span>",
+    "<span class=\"mm\">108</span>",
+    "<span class=\"mm\">116</span>",
+    "<span class=\"mm\">104</span>"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The two smallest files merge first at every step, so the four tiny files are combined among themselves before the huge file is touched at all.",
+    "steps": [
+     "Merge <span class=\"mm\">1</span> and <span class=\"mm\">1</span> into <span class=\"mm\">2</span> — 2 moves. Pool: <span class=\"mm\">1, 1, 2, 100</span>.",
+     "Merge <span class=\"mm\">1</span> and <span class=\"mm\">1</span> into <span class=\"mm\">2</span> — 2 moves. Pool: <span class=\"mm\">2, 2, 100</span>.",
+     "Merge <span class=\"mm\">2</span> and <span class=\"mm\">2</span> into <span class=\"mm\">4</span> — 4 moves. Pool: <span class=\"mm\">4, 100</span>.",
+     "Merge <span class=\"mm\">4</span> and <span class=\"mm\">100</span> into <span class=\"mm\">104</span> — 104 moves.",
+     "Total <span class=\"mm\">2 + 2 + 4 + 104 = 112</span>."
+    ],
+    "final": "<span class=\"mm\">112</span> — option (A).",
+    "trap": "Folding the small files one at a time into a growing accumulator: <span class=\"mm\">1+1 = 2</span>, <span class=\"mm\">2+1 = 3</span>, <span class=\"mm\">3+1 = 4</span>, <span class=\"mm\">4+100 = 104</span>, costing <span class=\"mm\">2 + 3 + 4 + 104 = 113</span>. Pairing them off first keeps the accumulator at 4 instead of 3 and saves a move."
+   }
+  },
+  {
+   "id": "ALG-U3-Q75",
+   "subject": "algorithms",
+   "subject_name": "Algorithms",
+   "unit": 3,
+   "unit_number": 3,
+   "unit_slug": "greedy-algorithms",
+   "unit_name": "Greedy Algorithms",
+   "topic": "Greedy Algorithms",
+   "sub": "huffman-coding",
+   "subtopic": "huffman-coding",
+   "subtopic_label": "Huffman coding",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Standard textbook",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "set": "Set 3 (second pass)",
+   "question": "Which of the following statements about Huffman coding and its optimality are <b>TRUE</b>? (Select all that apply.)",
+   "options": [
+    "For a fixed frequency table, no prefix code that encodes one symbol at a time has a smaller weighted path length than a Huffman code.",
+    "Encoding blocks of two symbols at a time can beat single-symbol Huffman; with probabilities <span class=\"mm\">0.9</span> and <span class=\"mm\">0.1</span> the single-symbol code costs 1 bit per symbol while a Huffman code on pairs costs about <span class=\"mm\">0.64</span> bits per symbol.",
+    "A Huffman code is prefix-free, so a bit stream decodes uniquely without any separator or length field.",
+    "Huffman coding minimises the length of the longest codeword among all prefix codes for the given frequencies."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "Huffman is optimal within a narrow class — prefix codes that encode one symbol at a time. Blocking symbols, or dropping the prefix restriction (arithmetic coding), can do strictly better.",
+    "steps": [
+     "A: TRUE — that is exactly the optimality theorem for Huffman; it is a statement about the weighted path length over single-symbol prefix codes.",
+     "B: TRUE — pairs <span class=\"mm\">(0,0), (0,1), (1,0), (1,1)</span> have probabilities <span class=\"mm\">0.81, 0.09, 0.09, 0.01</span>; Huffman gives lengths <span class=\"mm\">1, 2, 3, 3</span>, so <span class=\"mm\">0.81 + 0.18 + 0.27 + 0.03 = 1.29</span> bits per pair, about <span class=\"mm\">0.645</span> per symbol, against 1 bit for the single-symbol code.",
+     "C: TRUE — no codeword is a prefix of another, so the decoder can emit a symbol the moment it reaches a leaf and restart at the root.",
+     "D: FALSE — Huffman minimises the expected length, and it can leave one symbol with a very long codeword; bounding the maximum length is a different problem (length-limited coding)."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Reading 'optimal' as optimal among all codes. Huffman is optimal only among single-symbol prefix codes; block Huffman, run-length schemes and arithmetic coding all escape that class."
+   }
   }
  ]
 }
