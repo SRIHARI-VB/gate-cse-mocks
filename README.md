@@ -7,36 +7,95 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 2 — Data Link Protocols & MAC, Set 2 of 2 (second pass)**, 2026-11-04 →
-  [`computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html`](computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html)
+- **Engineering Mathematics · Unit 5 — Continuous Probability & Distributions, Set 3 (second pass)**,
+  2026-11-04 →
+  [`engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html`](engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Stop-and-wait ARQ (5) · Go-back-N & selective repeat (5) · Pure & slotted ALOHA (5) · CSMA/CD,
-  CSMA/CA & backoff (5) · Ethernet, switches & bridges (5)
-- Rotation: MODE A. A draw over the eleven GATE CSE subjects in syllabus order, seeded from the date, returned
-  **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was `{2026-11-03, run 19,
-  unit 1, network-fundamentals-framing, Set 2 of 2 (second pass)}` and unit 1 stood at **100** questions, so
-  **B3 failed on the cap** (its first paper was 2026-10-26, so the 7-day backstop was not the deciding test).
-  **B4 advanced exactly one unit**: `(index_of(network-fundamentals-framing) = 0 + 1) mod 6 = 1` → **Unit 2,
-  Data Link Protocols & MAC**, which already held 75 questions. **B5 applies: every unit of the subject stands
-  at or above the cap** (100, 75, 75, 75, 75, 75), the modulo has wrapped, and this paper is the unit's fourth
-  set, the second set of the second pass, taking it to 100. No override was passed and no partial set was
-  generated: exactly 25 questions.
-- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2 (second
-  pass)**, 2026-11-04 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html)
+- Subtopics: Random variables, CDF & PDF (5) · Uniform distribution (5) · Exponential distribution (5) ·
+  Normal distribution (5) · Correlation & covariance (5)
+- Rotation: MODE A. The eleven-subject draw was restricted to the six subjects with no paper dated 2026-11-04
+  (algorithms, compiler-design, digital-logic, discrete-mathematics, engineering-mathematics,
+  operating-systems) and returned **Engineering Mathematics**. Read from its own `master_bank.json`, the most
+  recent paper was `{2026-11-02, run 14, unit 4, calculus-optimization-integrals, Set 1 of 2 (second pass)}`
+  and unit 4 stood at **75** questions, so **B3 failed on the cap**. **B4 advanced exactly one unit**:
+  `(index_of(calculus-optimization-integrals) = 3 + 1) mod 5 = 4` → **Unit 5, Continuous Probability &
+  Distributions**, which already held 50 questions. **B5 applies: every unit of the subject is at or above the
+  cap** (75, 75, 75, 75, 50), so this is the unit's third set, the second pass continuing, taking it to 75. No
+  override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Computer Networks · Unit 2 — Data Link Protocols & MAC, Set 2 of 2 (second pass)**,
+  2026-11-04 →
+  [`computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html`](computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 216 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 145 archived |
+| Papers published (current + archived) | 217 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 15 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 146 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5400 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5425 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 375 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 145 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 146 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 10 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Engineering Mathematics Unit 5, Set 3 (second pass)
+
+- New paper at `engineering-mathematics/probability-distributions/gate_em_mock_5_2026-11-04.html`. The
+  2026-10-30 paper it supersedes moved to `archive/gate_em_mock_5_2026-10-30_run2.html` with its content
+  frozen, so the unit folder holds exactly one current paper and the repository root still holds only
+  `index.html`.
+- **Rotation (Section 1, MODE A).** All eleven subjects carried a paper dated on or before 2026-11-03 and five
+  of them (computer-architecture, computer-networks, databases, programming-data-structures,
+  theory-of-computation) already had one dated 2026-11-04, so the draw ran over the six subjects still without
+  a 2026-11-04 paper — algorithms, compiler-design, digital-logic, discrete-mathematics,
+  engineering-mathematics, operating-systems — and returned index 4 of 6, **Engineering Mathematics**. Read
+  from its own bank, the most recent paper was `{2026-11-02, run 14, unit 4, calculus-optimization-integrals,
+  Set 1 of 2 (second pass)}` and unit 4 stood at **75** questions, so **B3 failed on the cap** (its first paper
+  was 2026-10-28, so the 7-day backstop was not the deciding test either). **B4 advanced exactly one unit**:
+  `(index_of(calculus-optimization-integrals) = 3 + 1) mod 5 = 4` → **Unit 5, Continuous Probability &
+  Distributions**, which already held 50 questions from its two 2026-10-30 sets. **B5 applies: every unit of
+  the subject is at or above the cap (75, 75, 75, 75, 50)**, so the second pass continues and this paper is the
+  unit's third set, taking it to **75**. No override was passed and no partial set was generated: exactly 25
+  questions.
+- **Coverage.** All five subtopics carry new questions — random variables, CDF & PDF 5, uniform distribution 5,
+  exponential distribution 5, normal distribution 5, correlation & covariance 5. Every item is new against the
+  50 already banked for this unit; the angles deliberately not repeated are the plain normalisation and
+  CDF-difference drills (Q01, Q02, Q03, Q26, Q27), the E[X] integrals over a polynomial density (Q05, Q30),
+  the uniform mean, variance and density-property items (Q06–Q09, Q31–Q34), the exponential memoryless and
+  mean-median drills (Q11–Q15, Q36–Q39), the standard normal table look-ups (Q16–Q20, Q41–Q45) and the
+  covariance-from-correlation arithmetic (Q21–Q25, Q46–Q50).
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the
+  About tab says so.
+- **Verification.** Every answer was recomputed by script before the paper was written, by quadrature, by the
+  distribution functions and, where a closed form was short, by Monte Carlo: Q51 `c = 1/10` from
+  `2c + 8c = 1`; Q52 `F(3) − F(1) = 8/16`; Q53 `(45/64) ÷ (7/8) = 45/56`; Q54 `c = 3/32`, `E[X] = 2`, mode 2
+  and `P(X > 3) = 5/32`; Q55 median `4^(1/3) = 1.59` against a mean of `1.50`; Q56 `E[X²] = 1/3`; Q57
+  `p90 = 18`; Q58 `5/8`; Q60 triangle area `0.125`; Q61 `e^−0.5 − e^−1.5 = 0.3834`; Q62 `Var(3X+1) = 36`;
+  Q63 rates add, `6/5 = 1.2`; Q65 `E[max] = 3/(2λ) = 4.5`; Q66 `0.6827`; Q67 `0.0668`; Q68
+  `Φ(2) − Φ(−1) = 0.8185`; Q69 mean 7, variance 36, `ρ = 1`; Q70 `60 + 1.28 × 10 = 72.80`; Q71 `ρ = −1`;
+  Q72 `Var(X) − Var(Y)`; Q73 `4 + 9 + 6 = 19`; Q74 `ρ = 0.5`, `Var(X+Y) = 37`, `Var(X−Y) = 13`; Q75
+  `25 + 36 − 36 = 25`. The five MSQ answer sets were checked option by option, each marked option proved and
+  each unmarked option refuted. The grading engine was replayed against the decoded payload: a perfect attempt
+  scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict
+  subset or a strict superset of the correct set scores 0 for that question.
+- **Provenance.** The Engineering Mathematics bank records no verified PYQ, so no question on this paper is
+  claimed as an official GATE question; no item carries the `GATE_PYQ_VARIATION` tag, and the About tab says
+  so. Sources: 16 textbook-inspired, 9 original synthesis.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 5 card is replaced in place
+  and now lists the 2026-10-30 second-pass set as `Second pass · Set 2 (2026-10-30)` above the first-pass set;
+  the question archive renders 5,425 banked records across the eleven per-subject data files, 375 of them
+  Engineering Mathematics.
+- **Verification checklist (Section 6.8).** Shell parity: the stylesheet, the palette and legend markup, the
+  side footer, the key view and the whole grading script are byte-identical to the 2026-11-04 Computer
+  Networks paper, and the `:root` block is byte-identical to `design-tokens.css`. One copy:
+  `find . -name "*.html"` shows `index.html` plus exactly one file per paper, and nothing at the repository
+  root. Links: every `href` in `index.html` and in the paper's archive list resolves. Counts: 25 test cards, a
+  25-button palette and 350 banked cards (the 25 active items are excluded from the bank tab). Tokens: the
+  `:root` block is byte-identical to `design-tokens.css` and to every other paper's; no colour outside `:root`
+  that the shell does not already use. Rotation: unit 5 is the one Section 1 selects from `master_bank.json`,
+  not from the calendar.
 
 ### 2026-11-04 — Computer Networks Unit 2, Set 2 of 2 (second pass)
 
