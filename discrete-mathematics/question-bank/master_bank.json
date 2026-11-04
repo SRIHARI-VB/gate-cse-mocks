@@ -4,9 +4,9 @@
   "owner": "SRIHARI V B",
   "exam": "GATE CSE 2027",
   "created": "2026-10-25",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "note": "Append-only. Never delete previous entries. Every question carries unit, unit_number, unit_slug, subtopic slug, type, difficulty and source classification. Historical PYQs carry verified provenance only; anything unverified is marked as such.",
-  "total_questions": 850,
+  "total_questions": 875,
   "units_with_questions": [
    1,
    2,
@@ -25,7 +25,7 @@
    15,
    16
   ],
-  "total_runs": 34
+  "total_runs": 35
  },
  "runs": [
   {
@@ -1534,6 +1534,70 @@
    "mode": "MODE_A_RANDOM_SUBJECT",
    "selection": "MODE A. Every unit of every subject now stands at or above UNIT_QUESTION_CAP = 50, so the first pass is complete everywhere and the draw ran over all eleven subjects. An unseeded random.SystemRandom() draw returned Discrete Mathematics. From its runs[], the most recent paper was {2026-11-03, run 25, unit 15, discrete-probability, Set 2 of 2}; unit 15 stood at 50 questions, at the cap, so B3 failed on the cap and B4 advanced exactly one unit: (index_of(discrete-probability) = 14 + 1) mod 16 = 15 -> Unit 16, Logic & Proof Techniques, which already held 75 questions from three earlier sets. B5 applies: the modulo wraps into a second pass, recorded in README.md, and this paper is Set 4 of Unit 16, taking the unit to 100. No override, no partial set: exactly 25 questions.",
    "note": "Set 4 of Unit 16, the first paper of the Discrete Mathematics second pass. All 25 items are new (DM-LPT4-M-01..M-15, DM-LPT4-S-16..S-20, DM-LPT4-N-21..N-25) and repeat none of the 75 items already banked for this unit. Coverage: direct proof, contradiction & contrapositive 6, counterexamples 6, biconditional (iff) proofs 6, necessity vs sufficiency 7 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes; no negative marking; MSQ scored only on the exact option set. Every answer was recomputed by script: of the four derived forms of \"n^2 even -> n even\" all 4 are true over n in [-200, 200]; the odd numbers in 1..30 that are not multiples of 3 number 15 - 5 = 10; of the six divisibility biconditionals exactly 4 hold, with n = 2 refuting 4 | n^2 <-> 4 | n and n = 4 refuting 8 | n^2 <-> 8 | n; x > 3 is sufficient for 2 of the four listed conditions (x^2 > 9 and x > 1); 3 of the four listed conditions are necessary for 12 | n (4 | n, 6 | n, n even, but not 8 | n); sqrt(x^2) = x fails exactly at x = -3 among the options; the pair (4, 2) satisfies 4 | 2^2 but not 4 | 2 while (3, 6), (5, 10) and (2, 6) satisfy both; n! + 1 is composite from n = 4 (25 = 5^2) although n^3 - n is always divisible by 6 and p^2 - 1 by 8 for odd primes; |x + 1| = |x| + 1 fails at x = -1 and x = -0.5 and holds at 0 and 3; and the truth tables confirm ~(p <-> q) = p XOR q, that (p^q) v (~p^~q), ~(p XOR q) and (p->q)^(~p->~q) all equal p <-> q while (p->q) v (~p->q) is a tautology. The grading engine was replayed against the decoded payload: a perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with a strict subset or superset of the correct set scores 0. The two verified PYQs the subject bank records (PYQ-GATE2023-Q26, GATE CSE 2023, official key B, C; PYQ-GATE2015, GATE CSE 2015, official key C) are Unit 16 items and are not reused here, so no question on this paper is claimed as an official GATE question and no item carries GATE_PYQ_VARIATION. Sources: STANDARD_TEXTBOOK 16, ORIGINAL_SYNTHESIS 9."
+  },
+  {
+   "date": "2026-11-04",
+   "run": 35,
+   "subject": "discrete-mathematics",
+   "subject_name": "Discrete Mathematics",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "propositional-logic",
+   "unit_name": "Propositional Logic",
+   "set": "Set 3 (second pass)",
+   "count": 25,
+   "file": "discrete-mathematics/propositional-logic/gate_dm_mock_1_2026-11-04.html",
+   "archived_previous": "discrete-mathematics/propositional-logic/archive/gate_dm_mock_1_2026-10-25_run2.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "propositions-and-connectives": 5,
+    "truth-tables": 4,
+    "logical-equivalences": 4,
+    "implications-and-inference": 5,
+    "cnf-dnf": 4,
+    "validity-and-satisfiability": 3
+   },
+   "question_ids": [
+    "DM-PL3-Q01",
+    "DM-PL3-Q02",
+    "DM-PL3-Q03",
+    "DM-PL3-Q04",
+    "DM-PL3-Q05",
+    "DM-PL3-Q06",
+    "DM-PL3-Q07",
+    "DM-PL3-Q08",
+    "DM-PL3-Q09",
+    "DM-PL3-Q10",
+    "DM-PL3-Q11",
+    "DM-PL3-Q12",
+    "DM-PL3-Q13",
+    "DM-PL3-Q14",
+    "DM-PL3-Q15",
+    "DM-PL3-Q16",
+    "DM-PL3-Q17",
+    "DM-PL3-Q18",
+    "DM-PL3-Q19",
+    "DM-PL3-Q20",
+    "DM-PL3-Q21",
+    "DM-PL3-Q22",
+    "DM-PL3-Q23",
+    "DM-PL3-Q24",
+    "DM-PL3-Q25"
+   ],
+   "mode": "MODE_A_RANDOM_SUBJECT",
+   "selection": "MODE A, applied exactly as written. Seven subjects already carried a paper dated 2026-11-04 (algorithms, computer-architecture, computer-networks, databases, engineering-mathematics, programming-data-structures, theory-of-computation), so the unseeded random.SystemRandom() draw ran over the four subjects still without one - compiler-design, digital-logic, discrete-mathematics, operating-systems - and returned Discrete Mathematics. Read from its own master_bank.json, the most recent paper was {2026-11-03, run 34, unit 16, proof-techniques, Set 4 (second pass)} and unit 16 stood at 100 questions, above UNIT_QUESTION_CAP = 50, so B3 failed on the cap and B4 advanced exactly one unit: (index_of(proof-techniques) = 15 + 1) mod 16 = 0 -> Unit 1, Propositional Logic. Unit 1 already held 50 questions from its two 2026-10-25 sets, so B5 applies: the modulo has wrapped into a second pass, and this paper is the unit's third set, taking it to 75. No override, no partial set: exactly 25 questions.",
+   "note": "Set 3 of Unit 1, the first paper of the second pass for this unit. All 25 items are new (DM-PL3-Q01..Q25) and repeat none of the 50 items already banked for this unit. Coverage: propositions and connectives 5, truth tables 4, logical equivalences 4, implications and inference 5, CNF/DNF 4, validity and satisfiability 3 - every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard. This set contains no GATE_PYQ_VARIATION item."
   }
  ],
  "verified_pyqs": [
@@ -40437,6 +40501,985 @@
    },
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A condition is necessary when every multiple of 12 satisfies it — that is, when its solution set contains the multiples of 12.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write <code class=\"mm\">n = 12k</code>. Then <code class=\"mm\">n = 4(3k)</code>, so <code class=\"mm\">4 | n</code> — (i) is necessary.</li><li><code class=\"mm\">n = 6(2k)</code>, so <code class=\"mm\">6 | n</code> — (ii) is necessary.</li><li><code class=\"mm\">n = 8 · (3k/2)</code> needs <code class=\"mm\">3k</code> even, which fails for <code class=\"mm\">k = 1</code> (<code class=\"mm\">n = 12</code> is not divisible by 8) — (iii) is not necessary.</li><li><code class=\"mm\">n = 12k</code> is even — (iv) is necessary.</li><li>Necessary conditions: (i), (ii) and (iv), so the count is 3.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every divisor of a multiple of 12 divides all multiples of 12, or that the conditions are interchangeable. 8 does not divide 12, so <code class=\"mm\">8 | n</code> is a genuinely extra demand.</p>",
    "question_format": "text"
+  },
+  {
+   "id": "DM-PL3-Q01",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "propositions-and-connectives",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "In propositional logic a connective is <b>truth-functional</b> when the truth value of the compound is fixed by the truth values of its parts alone. Which one of the following English connectives is <b>NOT</b> truth-functional?",
+   "options": [
+    "&#8220;and&#8221;",
+    "&#8220;or&#8221;",
+    "&#8220;because&#8221;",
+    "&#8220;if &#8230; then&#8221;"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "Truth-functionality: the truth value of the compound depends only on the truth values of the components, never on their meaning, their subject matter or any causal relation between them.",
+    "steps": [
+     "For <i>and</i>: <code class=\"mm\">P &#8743; Q</code> is TRUE exactly when both <code class=\"mm\">P</code> and <code class=\"mm\">Q</code> are TRUE. Nothing else is consulted, so it is truth-functional.",
+     "For <i>or</i>: <code class=\"mm\">P &#8744; Q</code> is TRUE exactly when at least one of <code class=\"mm\">P</code>, <code class=\"mm\">Q</code> is TRUE. Also truth-functional.",
+     "For <i>if &#8230; then</i>: propositional logic fixes it as material implication <code class=\"mm\">P &#8594; Q</code> &#8801; <code class=\"mm\">&#172;P &#8744; Q</code>, a pure function of the two truth values.",
+     "For <i>because</i>: take two pairs of statements that are both TRUE, for example &#8220;2 + 2 = 4 because 4 = 2 + 2&#8221; and &#8220;2 + 2 = 4 because the sky is blue&#8221;. The first is a reasonable explanation, the second is not, yet the truth values of the two halves are identical. No assignment of truth values can decide the compound, so <i>because</i> is not truth-functional."
+    ],
+    "final": "Option (C) &#8212; &#8220;because&#8221; is not truth-functional.",
+    "trap": "Rejecting &#8220;if &#8230; then&#8221; because everyday conditionals seem to need a connection between the parts. In propositional logic the connective is <i>defined</i> by its truth table, which is exactly what makes it truth-functional.",
+    "misconception": "Rejecting &#8220;if &#8230; then&#8221; because everyday conditionals seem to need a connection between the parts. In propositional logic the connective is <i>defined</i> by its truth table, which is exactly what makes it truth-functional."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "propositions-and-connectives",
+   "subtopic_label": "propositions-and-connectives",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q02",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "propositions-and-connectives",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Using the standard precedence <code class=\"mm\">&#172;</code> &gt; <code class=\"mm\">&#8743;</code> &gt; <code class=\"mm\">&#8744;</code> &gt; <code class=\"mm\">&#8594;</code> &gt; <code class=\"mm\">&#8596;</code> (and reading <code class=\"mm\">&#8594;</code> as right-associative), how is <code class=\"mm\">&#172;p &#8744; q &#8743; r &#8594; s</code> parsed?",
+   "options": [
+    "<code class=\"mm\">((&#172;p) &#8744; (q &#8743; r)) &#8594; s</code>",
+    "<code class=\"mm\">(&#172;p &#8744; q) &#8743; (r &#8594; s)</code>",
+    "<code class=\"mm\">&#172;(p &#8744; (q &#8743; (r &#8594; s)))</code>",
+    "<code class=\"mm\">(&#172;(p &#8744; q) &#8743; r) &#8594; s</code>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "The precedence ladder of the connectives and the role of brackets. Without brackets a formula is only well-defined because the convention fixes a unique parse.",
+    "steps": [
+     "<code class=\"mm\">&#172;</code> binds tightest, so <code class=\"mm\">&#172;p</code> is a unit and cannot be split.",
+     "Next comes <code class=\"mm\">&#8743;</code>, so <code class=\"mm\">q &#8743; r</code> groups before any <code class=\"mm\">&#8744;</code>.",
+     "Then <code class=\"mm\">&#8744;</code>: <code class=\"mm\">&#172;p &#8744; (q &#8743; r)</code>.",
+     "Finally <code class=\"mm\">&#8594;</code>, the loosest connective here, so the whole left part is its antecedent: <code class=\"mm\">((&#172;p) &#8744; (q &#8743; r)) &#8594; s</code>."
+    ],
+    "final": "Option (A).",
+    "trap": "Reading left to right and making <code class=\"mm\">&#8594;</code> bind tighter than <code class=\"mm\">&#8744;</code>, which gives <code class=\"mm\">(&#172;p &#8744; q) &#8743; (r &#8594; s)</code> &#8212; a different truth table. The ladder, not the reading order, decides.",
+    "misconception": "Reading left to right and making <code class=\"mm\">&#8594;</code> bind tighter than <code class=\"mm\">&#8744;</code>, which gives <code class=\"mm\">(&#172;p &#8744; q) &#8743; (r &#8594; s)</code> &#8212; a different truth table. The ladder, not the reading order, decides."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "propositions-and-connectives",
+   "subtopic_label": "propositions-and-connectives",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q03",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "propositions-and-connectives",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "A binary truth function takes two truth values and returns one. How many of the 16 binary truth functions are <b>commutative</b>, that is satisfy <code class=\"mm\">f(p, q) = f(q, p)</code> for every assignment?",
+   "options": [
+    "4",
+    "8",
+    "12",
+    "16"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "A binary truth function is nothing more than a 4-bit table on the inputs <code class=\"mm\">(0,0), (0,1), (1,0), (1,1)</code>, so there are <code class=\"mm\">2&#8308; = 16</code> of them. A symmetry condition removes free bits.",
+    "steps": [
+     "Write the table in the order <code class=\"mm\">f(0,0), f(0,1), f(1,0), f(1,1)</code>. Four independent bits give the 16 functions.",
+     "Commutativity forces <code class=\"mm\">f(0,1) = f(1,0)</code>, so those two entries carry one bit between them instead of two.",
+     "The remaining entries <code class=\"mm\">f(0,0)</code> and <code class=\"mm\">f(1,1)</code> are unconstrained.",
+     "Free bits: 3, hence <code class=\"mm\">2&#179; = 8</code> commutative functions.",
+     "Sanity check: they are <code class=\"mm\">0, 1, p, q, &#172;p, &#172;q, &#8743;, &#8744;</code> &#8212; exactly eight, and every non-commutative function such as <code class=\"mm\">&#8594;</code> or <code class=\"mm\">&#8853;</code> is excluded."
+    ],
+    "final": "8 commutative binary truth functions (option B).",
+    "trap": "Counting <code class=\"mm\">&#8594;</code> as commutative because the <i>name</i> sounds symmetric. <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q &#8594; p</code> differ at <code class=\"mm\">p = 1, q = 0</code>, so implication is one of the 8 that fail.",
+    "misconception": "Counting <code class=\"mm\">&#8594;</code> as commutative because the <i>name</i> sounds symmetric. <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q &#8594; p</code> differ at <code class=\"mm\">p = 1, q = 0</code>, so implication is one of the 8 that fail."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "propositions-and-connectives",
+   "subtopic_label": "propositions-and-connectives",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q04",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "propositions-and-connectives",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "A binary truth function <code class=\"mm\">f(p, q)</code> is said to <b>depend on both arguments</b> when changing <code class=\"mm\">p</code> alone can change the output for some fixed <code class=\"mm\">q</code>, and changing <code class=\"mm\">q</code> alone can change the output for some fixed <code class=\"mm\">p</code>. How many of the 16 binary truth functions depend on both arguments?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": "10",
+   "solution": {
+    "concept": "Counting by complement: it is far easier to count the functions that depend on at most one argument, then subtract from 16.",
+    "steps": [
+     "A function that does not depend on <code class=\"mm\">p</code> is determined entirely by <code class=\"mm\">q</code>, so it is one of the 4 functions <code class=\"mm\">g(q)</code> lifted to two arguments.",
+     "Symmetrically, 4 functions do not depend on <code class=\"mm\">q</code>.",
+     "The overlap is the 2 constant functions, which depend on neither argument.",
+     "Functions depending on at most one argument: <code class=\"mm\">4 + 4 &#8722; 2 = 6</code>.",
+     "Functions depending on both: <code class=\"mm\">16 &#8722; 6 = 10</code>."
+    ],
+    "final": "10.",
+    "trap": "Adding 4 + 4 = 8 and subtracting from 16 to get 8. That double-counts the two constants, which appear in both groups, so the correct count of degenerate functions is 6, not 8.",
+    "misconception": "Adding 4 + 4 = 8 and subtracting from 16 to get 8. That double-counts the two constants, which appear in both groups, so the correct count of degenerate functions is 6, not 8."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "propositions-and-connectives",
+   "subtopic_label": "propositions-and-connectives",
+   "question_format": "NAT",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q05",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "propositions-and-connectives",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which of the following statements about <b>functional completeness</b> are TRUE? (Select all that apply.)",
+   "options": [
+    "The set <code class=\"mm\">{&#172;, &#8743;}</code> is functionally complete.",
+    "The set <code class=\"mm\">{&#8594;, &#8596;}</code> is functionally complete.",
+    "The set <code class=\"mm\">{&#8593;}</code> is functionally complete, where <code class=\"mm\">p &#8593; q &#8801; &#172;(p &#8743; q)</code> is NAND.",
+    "The set <code class=\"mm\">{&#8743;, &#8744;}</code> is functionally complete."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "solution": {
+    "concept": "Functional completeness means every truth function can be written using only the connectives of the set. Two standard tools settle most cases: build <code class=\"mm\">&#172;</code> and one of <code class=\"mm\">&#8743;</code>/<code class=\"mm\">&#8744;</code> from the set, or exhibit an invariant that every generated function must preserve.",
+    "steps": [
+     "A: TRUE. From <code class=\"mm\">&#172;</code> and <code class=\"mm\">&#8743;</code> one gets <code class=\"mm\">p &#8744; q &#8801; &#172;(&#172;p &#8743; &#172;q)</code>, and <code class=\"mm\">{&#172;, &#8743;, &#8744;}</code> expresses any formula in DNF.",
+     "B: FALSE. Both <code class=\"mm\">&#8594;</code> and <code class=\"mm\">&#8596;</code> return TRUE when both arguments are TRUE, so every function they generate is 1-preserving: it returns TRUE whenever all its variables are TRUE. Negation is not 1-preserving (<code class=\"mm\">&#172;1 = 0</code>), so it can never be built.",
+     "C: TRUE. <code class=\"mm\">p &#8593; p &#8801; &#172;(p &#8743; p) &#8801; &#172;p</code>, and <code class=\"mm\">&#172;(p &#8593; q) &#8801; p &#8743; q</code>. With <code class=\"mm\">&#172;</code> and <code class=\"mm\">&#8743;</code> available, A applies.",
+     "D: FALSE. <code class=\"mm\">&#8743;</code> and <code class=\"mm\">&#8744;</code> are both monotone: increasing an input from FALSE to TRUE can never decrease the output. Composing monotone functions stays monotone, and <code class=\"mm\">&#172;</code> is not monotone, so negation is out of reach."
+    ],
+    "final": "Options (A) and (C) are TRUE; (B) and (D) are FALSE.",
+    "trap": "Assuming that any reasonably rich-looking pair of connectives is complete. Both <code class=\"mm\">{&#8594;, &#8596;}</code> and <code class=\"mm\">{&#8743;, &#8744;}</code> look expressive and both fail, each for a clean structural reason &#8212; 1-preservation in one case, monotonicity in the other.",
+    "misconception": "Assuming that any reasonably rich-looking pair of connectives is complete. Both <code class=\"mm\">{&#8594;, &#8596;}</code> and <code class=\"mm\">{&#8743;, &#8744;}</code> look expressive and both fail, each for a clean structural reason &#8212; 1-preservation in one case, monotonicity in the other."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "propositions-and-connectives",
+   "subtopic_label": "propositions-and-connectives",
+   "question_format": "MSQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q06",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "truth-tables",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "For how many of the eight truth assignments to <code class=\"mm\">(p, q, r)</code> is the proposition <code class=\"mm\">p &#8594; (q &#8594; r)</code> FALSE?",
+   "options": [
+    "0",
+    "2",
+    "3",
+    "1"
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "An implication <code class=\"mm\">A &#8594; B</code> is FALSE in exactly one situation: <code class=\"mm\">A</code> TRUE and <code class=\"mm\">B</code> FALSE. Applying that rule from the outside in turns the question into a short case analysis.",
+    "steps": [
+     "The outer implication fails only when <code class=\"mm\">p = 1</code> and <code class=\"mm\">q &#8594; r = 0</code>.",
+     "The inner implication <code class=\"mm\">q &#8594; r</code> is FALSE only when <code class=\"mm\">q = 1</code> and <code class=\"mm\">r = 0</code>.",
+     "Both conditions together force <code class=\"mm\">(p, q, r) = (1, 1, 0)</code>.",
+     "That is one of the eight rows, so the proposition is FALSE exactly once."
+    ],
+    "final": "Exactly 1 row, <code class=\"mm\">(1, 1, 0)</code> (option D).",
+    "trap": "Counting the rows where the inner implication is FALSE (two rows, <code class=\"mm\">q = 1, r = 0</code> with <code class=\"mm\">p</code> free) and forgetting that the outer <code class=\"mm\">p = 1</code> must hold too. The nested structure constrains <code class=\"mm\">p</code> as well.",
+    "misconception": "Counting the rows where the inner implication is FALSE (two rows, <code class=\"mm\">q = 1, r = 0</code> with <code class=\"mm\">p</code> free) and forgetting that the outer <code class=\"mm\">p = 1</code> must hold too. The nested structure constrains <code class=\"mm\">p</code> as well."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "truth-tables",
+   "subtopic_label": "truth-tables",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q07",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "truth-tables",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "For how many of the eight truth assignments to <code class=\"mm\">(p, q, r)</code> is the proposition <code class=\"mm\">(p &#8594; q) &#8743; (q &#8594; r)</code> FALSE?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "A conjunction is FALSE when at least one conjunct is FALSE, so the falsifying rows are the union of the falsifying rows of the two implications. Whether the union double-counts is the whole question.",
+    "steps": [
+     "<code class=\"mm\">p &#8594; q</code> is FALSE only on <code class=\"mm\">p = 1, q = 0</code>, which leaves <code class=\"mm\">r</code> free: 2 rows.",
+     "<code class=\"mm\">q &#8594; r</code> is FALSE only on <code class=\"mm\">q = 1, r = 0</code>, which leaves <code class=\"mm\">p</code> free: 2 rows.",
+     "The two conditions demand <code class=\"mm\">q = 0</code> and <code class=\"mm\">q = 1</code> at once, so they can never hold together and the sets are disjoint.",
+     "Total falsifying rows: <code class=\"mm\">2 + 2 = 4</code>. Equivalently the proposition is TRUE on the other 4 rows."
+    ],
+    "final": "4 rows (option C).",
+    "trap": "Adding the two counts and then subtracting a presumed overlap, or assuming the conjunction is TRUE only when both implications are TRUE (which is correct) but then reading the complement wrongly. There is no overlap here, so no subtraction is due.",
+    "misconception": "Adding the two counts and then subtracting a presumed overlap, or assuming the conjunction is TRUE only when both implications are TRUE (which is correct) but then reading the complement wrongly. There is no overlap here, so no subtraction is due."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "truth-tables",
+   "subtopic_label": "truth-tables",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q08",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "truth-tables",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "For how many of the eight truth assignments to <code class=\"mm\">(p, q, r)</code> is the proposition <code class=\"mm\">(p &#8853; q) &#8594; r</code> TRUE?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": "6",
+   "solution": {
+    "concept": "When the antecedent of an implication is FALSE the implication is vacuously TRUE, so only the rows where the antecedent holds need the consequent to be checked.",
+    "steps": [
+     "<code class=\"mm\">p &#8853; q</code> is FALSE on the two pairs <code class=\"mm\">(0,0)</code> and <code class=\"mm\">(1,1)</code>, and TRUE on <code class=\"mm\">(0,1)</code> and <code class=\"mm\">(1,0)</code>.",
+     "On the two FALSE pairs the implication is TRUE for both values of <code class=\"mm\">r</code>: <code class=\"mm\">2 &#215; 2 = 4</code> rows.",
+     "On the two TRUE pairs the implication needs <code class=\"mm\">r = 1</code>: <code class=\"mm\">2 &#215; 1 = 2</code> rows.",
+     "Total <code class=\"mm\">4 + 2 = 6</code> rows, so it is FALSE on the remaining 2, namely <code class=\"mm\">(0,1,0)</code> and <code class=\"mm\">(1,0,0)</code>."
+    ],
+    "final": "6.",
+    "trap": "Dropping the vacuous rows because &#8220;nothing was proved&#8221;. In a truth table a FALSE antecedent always yields a TRUE implication; those 4 rows are exactly where most of the count comes from.",
+    "misconception": "Dropping the vacuous rows because &#8220;nothing was proved&#8221;. In a truth table a FALSE antecedent always yields a TRUE implication; those 4 rows are exactly where most of the count comes from."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "truth-tables",
+   "subtopic_label": "truth-tables",
+   "question_format": "NAT",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q09",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "truth-tables",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which of the following statements about truth tables are TRUE? (Select all that apply.)",
+   "options": [
+    "A formula whose distinct variables are <code class=\"mm\">n</code> in number has a complete truth table with <code class=\"mm\">2&#8319;</code> rows.",
+    "Two formulas are logically equivalent exactly when their truth tables have identical final columns.",
+    "A formula is a contradiction exactly when every row of its truth table is FALSE.",
+    "If a formula has <code class=\"mm\">k</code> distinct variables, exactly half of its <code class=\"mm\">2&#7511;</code> rows make it TRUE."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "The truth table is the semantic definition of every propositional notion: equivalence, tautology, contradiction and satisfiability are all read off the final column.",
+    "steps": [
+     "A: TRUE. Each of the <code class=\"mm\">n</code> variables takes 2 values independently, giving <code class=\"mm\">2&#8319;</code> assignments.",
+     "B: TRUE. Two formulas are equivalent when they agree on every assignment, which is precisely identical final columns.",
+     "C: TRUE. A contradiction is a formula FALSE under every assignment, i.e. an all-FALSE column.",
+     "D: FALSE. Only balanced formulas such as <code class=\"mm\">p</code> or <code class=\"mm\">p &#8853; q</code> split the rows evenly; <code class=\"mm\">p &#8743; q</code> is TRUE on 1 of 4 rows and <code class=\"mm\">p &#8744; q</code> on 3 of 4."
+    ],
+    "final": "Options (A), (B) and (C) are TRUE; (D) is FALSE.",
+    "trap": "Believing a truth table must be &#8220;fair&#8221; to a formula, with as many TRUE rows as FALSE. Nothing forces that; the balance depends entirely on the formula.",
+    "misconception": "Believing a truth table must be &#8220;fair&#8221; to a formula, with as many TRUE rows as FALSE. Nothing forces that; the balance depends entirely on the formula."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "truth-tables",
+   "subtopic_label": "truth-tables",
+   "question_format": "MSQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q10",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "logical-equivalences",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which one of the following is logically equivalent to <code class=\"mm\">p &#8594; (q &#8594; r)</code>?",
+   "options": [
+    "<code class=\"mm\">(p &#8594; q) &#8594; r</code>",
+    "<code class=\"mm\">(p &#8743; q) &#8594; r</code>",
+    "<code class=\"mm\">p &#8594; (q &#8743; r)</code>",
+    "<code class=\"mm\">(p &#8744; q) &#8594; r</code>"
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "Nested implications are untangled with material implication <code class=\"mm\">A &#8594; B &#8801; &#172;A &#8744; B</code>, after which the formula is a plain disjunction and can be regrouped.",
+    "steps": [
+     "<code class=\"mm\">p &#8594; (q &#8594; r) &#8801; &#172;p &#8744; (&#172;q &#8744; r)</code> by applying material implication twice.",
+     "The disjunction is associative, so this is <code class=\"mm\">(&#172;p &#8744; &#172;q) &#8744; r</code>.",
+     "By De Morgan, <code class=\"mm\">&#172;p &#8744; &#172;q &#8801; &#172;(p &#8743; q)</code>.",
+     "So the formula is <code class=\"mm\">&#172;(p &#8743; q) &#8744; r &#8801; (p &#8743; q) &#8594; r</code>."
+    ],
+    "final": "Option (B).",
+    "trap": "Assuming implication is associative, so that <code class=\"mm\">p &#8594; (q &#8594; r)</code> equals <code class=\"mm\">(p &#8594; q) &#8594; r</code>. It is not: at <code class=\"mm\">p = 0, q = 1, r = 0</code> the first is TRUE and the second is FALSE.",
+    "misconception": "Assuming implication is associative, so that <code class=\"mm\">p &#8594; (q &#8594; r)</code> equals <code class=\"mm\">(p &#8594; q) &#8594; r</code>. It is not: at <code class=\"mm\">p = 0, q = 1, r = 0</code> the first is TRUE and the second is FALSE."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "logical-equivalences",
+   "subtopic_label": "logical-equivalences",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q11",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "logical-equivalences",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which one of the following is <b>NOT</b> logically equivalent to <code class=\"mm\">p &#8596; q</code>?",
+   "options": [
+    "<code class=\"mm\">(p &#8594; q) &#8743; (q &#8594; p)</code>",
+    "<code class=\"mm\">&#172;p &#8596; &#172;q</code>",
+    "<code class=\"mm\">&#172;(p &#8853; q)</code>",
+    "<code class=\"mm\">(p &#8744; q) &#8743; (&#172;p &#8744; &#172;q)</code>"
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "Biconditional <code class=\"mm\">p &#8596; q</code> says the two sides have equal truth values. Every correct reformulation must be TRUE exactly when <code class=\"mm\">p = q</code>, that is on <code class=\"mm\">(0,0)</code> and <code class=\"mm\">(1,1)</code> only.",
+    "steps": [
+     "A: TRUE. The two implications are the two halves of the biconditional.",
+     "B: TRUE. If <code class=\"mm\">p = q</code> then <code class=\"mm\">&#172;p = &#172;q</code>, and conversely; negating both sides preserves equality.",
+     "C: TRUE. <code class=\"mm\">&#8853;</code> is TRUE exactly when the sides differ, so its negation is TRUE exactly when they agree.",
+     "D: FALSE. At <code class=\"mm\">(1,0)</code> the first factor is TRUE but the second is FALSE, so the conjunction is FALSE; at <code class=\"mm\">(0,1)</code> the roles swap and it is again FALSE. But at <code class=\"mm\">(0,0)</code> and <code class=\"mm\">(1,1)</code> the second factor <code class=\"mm\">&#172;p &#8744; &#172;q</code> is FALSE, so the conjunction is FALSE there too. It is FALSE on all four rows &#8212; it is <code class=\"mm\">p &#8853; q</code>, not <code class=\"mm\">p &#8596; q</code>."
+    ],
+    "final": "Option (D) is the non-equivalent one.",
+    "trap": "Verifying a candidate only at <code class=\"mm\">(1,1)</code> and <code class=\"mm\">(0,0)</code>, where D fails, or trusting the shape of the formula. Check the two rows where the sides <i>differ</i> as well.",
+    "misconception": "Verifying a candidate only at <code class=\"mm\">(1,1)</code> and <code class=\"mm\">(0,0)</code>, where D fails, or trusting the shape of the formula. Check the two rows where the sides <i>differ</i> as well."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "logical-equivalences",
+   "subtopic_label": "logical-equivalences",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q12",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "logical-equivalences",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "The formula <code class=\"mm\">(p &#8594; q) &#8594; (q &#8594; r)</code> simplifies to which one of the following?",
+   "options": [
+    "<code class=\"mm\">q &#8594; r</code>",
+    "<code class=\"mm\">p &#8594; r</code>",
+    "<code class=\"mm\">(p &#8743; q) &#8594; r</code>",
+    "<code class=\"mm\">p &#8744; q &#8744; r</code>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Remove every implication with <code class=\"mm\">A &#8594; B &#8801; &#172;A &#8744; B</code> and then simplify the resulting disjunction with absorption <code class=\"mm\">X &#8744; (X &#8743; Y) &#8801; X</code>.",
+    "steps": [
+     "<code class=\"mm\">p &#8594; q &#8801; &#172;p &#8744; q</code>, so the antecedent of the outer implication is <code class=\"mm\">&#172;p &#8744; q</code>.",
+     "The outer implication becomes <code class=\"mm\">&#172;(&#172;p &#8744; q) &#8744; (&#172;q &#8744; r)</code>.",
+     "De Morgan on the negated part: <code class=\"mm\">&#172;(&#172;p &#8744; q) &#8801; p &#8743; &#172;q</code>.",
+     "So the formula is <code class=\"mm\">(p &#8743; &#172;q) &#8744; &#172;q &#8744; r</code>.",
+     "Absorption with <code class=\"mm\">X = &#172;q</code> collapses <code class=\"mm\">(p &#8743; &#172;q) &#8744; &#172;q</code> to <code class=\"mm\">&#172;q</code>, leaving <code class=\"mm\">&#172;q &#8744; r &#8801; q &#8594; r</code>.",
+     "Check at <code class=\"mm\">q = 1, r = 0</code>: whatever <code class=\"mm\">p</code> is, the original is FALSE there, and <code class=\"mm\">q &#8594; r</code> is FALSE there too."
+    ],
+    "final": "Option (A) &#8212; <code class=\"mm\">q &#8594; r</code>.",
+    "trap": "Expecting <code class=\"mm\">p</code> to survive in the answer, because it is the leftmost variable. It cancels: <code class=\"mm\">(p &#8743; &#172;q)</code> is absorbed by <code class=\"mm\">&#172;q</code>, so <code class=\"mm\">p</code> has no effect on the truth value at all.",
+    "misconception": "Expecting <code class=\"mm\">p</code> to survive in the answer, because it is the leftmost variable. It cancels: <code class=\"mm\">(p &#8743; &#172;q)</code> is absorbed by <code class=\"mm\">&#172;q</code>, so <code class=\"mm\">p</code> has no effect on the truth value at all."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "logical-equivalences",
+   "subtopic_label": "logical-equivalences",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q13",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "logical-equivalences",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Consider these four pairs of formulas.<br/>(i) <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">&#172;q &#8594; &#172;p</code><br/>(ii) <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q &#8594; p</code><br/>(iii) <code class=\"mm\">&#172;(p &#8743; q)</code> and <code class=\"mm\">&#172;p &#8744; &#172;q</code><br/>(iv) <code class=\"mm\">p &#8744; (q &#8743; r)</code> and <code class=\"mm\">(p &#8744; q) &#8743; (p &#8744; r)</code><br/>For how many of these four pairs are the two formulas logically equivalent?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": "3",
+   "solution": {
+    "concept": "Contraposition, De Morgan and distributivity are the three equivalences being probed; the converse is the standard impostor.",
+    "steps": [
+     "(i) Equivalent. <code class=\"mm\">&#172;q &#8594; &#172;p</code> is the contrapositive of <code class=\"mm\">p &#8594; q</code>, and contraposition is a valid equivalence.",
+     "(ii) Not equivalent. <code class=\"mm\">q &#8594; p</code> is the converse; at <code class=\"mm\">p = 0, q = 1</code> the original is TRUE and the converse is FALSE.",
+     "(iii) Equivalent. This is De Morgan's law.",
+     "(iv) Equivalent. This is the distributive law of <code class=\"mm\">&#8744;</code> over <code class=\"mm\">&#8743;</code>.",
+     "So three of the four pairs are equivalent."
+    ],
+    "final": "3.",
+    "trap": "Confusing an implication with its converse (or its inverse). Only the contrapositive is equivalent; the converse and the inverse are equivalent to each other, not to the original.",
+    "misconception": "Confusing an implication with its converse (or its inverse). Only the contrapositive is equivalent; the converse and the inverse are equivalent to each other, not to the original."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "logical-equivalences",
+   "subtopic_label": "logical-equivalences",
+   "question_format": "NAT",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q14",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "implications-and-inference",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which one of the following is a <b>valid</b> rule of inference?",
+   "options": [
+    "From <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q</code>, infer <code class=\"mm\">p</code>.",
+    "From <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">&#172;q</code>, infer <code class=\"mm\">&#172;p</code>.",
+    "From <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">&#172;p</code>, infer <code class=\"mm\">&#172;q</code>.",
+    "From <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q &#8594; r</code>, infer <code class=\"mm\">r</code>."
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "An inference rule is valid when the conclusion is TRUE in every row where all premises are TRUE. The two classical fallacies are affirming the consequent and denying the antecedent.",
+    "steps": [
+     "A: invalid &#8212; affirming the consequent. At <code class=\"mm\">p = 0, q = 1</code> both premises are TRUE and <code class=\"mm\">p</code> is FALSE.",
+     "B: valid &#8212; modus tollens. <code class=\"mm\">p &#8594; q</code> is FALSE only at <code class=\"mm\">p = 1, q = 0</code>, where <code class=\"mm\">&#172;q</code> is FALSE; so <code class=\"mm\">&#172;q</code> forces <code class=\"mm\">&#172;p</code>.",
+     "C: invalid &#8212; denying the antecedent. At <code class=\"mm\">p = 0, q = 0</code> both premises are TRUE and <code class=\"mm\">&#172;q</code> is FALSE.",
+     "D: invalid &#8212; the conclusion <code class=\"mm\">r</code> needs <code class=\"mm\">p</code> as well. At <code class=\"mm\">p = 0, q = 0, r = 0</code> both premises are TRUE and <code class=\"mm\">r</code> is FALSE."
+    ],
+    "final": "Option (B) &#8212; modus tollens.",
+    "trap": "Treating modus tollens and denying the antecedent as the same move. Negating the consequent and negating the antecedent look similar but only one of them is sound; the truth table separates them cleanly.",
+    "misconception": "Treating modus tollens and denying the antecedent as the same move. Negating the consequent and negating the antecedent look similar but only one of them is sound; the truth table separates them cleanly."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "implications-and-inference",
+   "subtopic_label": "implications-and-inference",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q15",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "implications-and-inference",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Consider the three premises (i) <code class=\"mm\">p &#8594; q</code>, (ii) <code class=\"mm\">r &#8594; s</code> and (iii) <code class=\"mm\">p &#8744; r</code>. Which one of the following conclusions is <b>entailed</b> by them?",
+   "options": [
+    "<code class=\"mm\">q &#8744; s</code>",
+    "<code class=\"mm\">s</code>",
+    "<code class=\"mm\">q &#8743; s</code>",
+    "<code class=\"mm\">r &#8594; q</code>"
+   ],
+   "answer": 0,
+   "solution": {
+    "concept": "Constructive dilemma: from <code class=\"mm\">p &#8594; q</code>, <code class=\"mm\">r &#8594; s</code> and <code class=\"mm\">p &#8744; r</code> one concludes <code class=\"mm\">q &#8744; s</code>. Formally, <code class=\"mm\">((p &#8594; q) &#8743; (r &#8594; s) &#8743; (p &#8744; r)) &#8594; (q &#8744; s)</code> is a tautology.",
+    "steps": [
+     "At least one of <code class=\"mm\">p</code>, <code class=\"mm\">r</code> holds by premise (iii).",
+     "If <code class=\"mm\">p</code> holds, premise (i) gives <code class=\"mm\">q</code>, hence <code class=\"mm\">q &#8744; s</code>.",
+     "If <code class=\"mm\">r</code> holds, premise (ii) gives <code class=\"mm\">s</code>, hence <code class=\"mm\">q &#8744; s</code>.",
+     "Either way <code class=\"mm\">q &#8744; s</code> holds, so it is entailed.",
+     "The other options are not entailed. B fails at <code class=\"mm\">p = 1, q = 1, r = 0, s = 0</code>: all three premises hold because <code class=\"mm\">p</code> alone fires the first branch, yet <code class=\"mm\">s</code> is FALSE. C fails at the same assignment, where <code class=\"mm\">q &#8743; s</code> is FALSE. D fails at <code class=\"mm\">p = 0, q = 0, r = 1, s = 1</code>, where all premises hold but <code class=\"mm\">r &#8594; q</code> is <code class=\"mm\">1 &#8594; 0</code>."
+    ],
+    "final": "Option (A) &#8212; <code class=\"mm\">q &#8744; s</code>.",
+    "trap": "Wanting the stronger <code class=\"mm\">q &#8743; s</code>. The premises only guarantee that <i>one</i> branch fires, so only a disjunction is earned; a conjunction would need both <code class=\"mm\">p</code> and <code class=\"mm\">r</code> to hold.",
+    "misconception": "Wanting the stronger <code class=\"mm\">q &#8743; s</code>. The premises only guarantee that <i>one</i> branch fires, so only a disjunction is earned; a conjunction would need both <code class=\"mm\">p</code> and <code class=\"mm\">r</code> to hold."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "implications-and-inference",
+   "subtopic_label": "implications-and-inference",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q16",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "implications-and-inference",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "An argument is <b>valid</b> and its conclusion is <b>FALSE</b>. Which one of the following must be TRUE?",
+   "options": [
+    "All the premises are TRUE.",
+    "At least one premise is FALSE.",
+    "The argument form is invalid.",
+    "Nothing can be concluded about the premises."
+   ],
+   "answer": 1,
+   "solution": {
+    "concept": "Validity is a conditional guarantee: if every premise is TRUE, the conclusion is TRUE. An argument is sound when it is valid <i>and</i> all its premises are TRUE.",
+    "steps": [
+     "Validity says: no row has all premises TRUE together with a FALSE conclusion.",
+     "The actual world is such a row only in the sense that the conclusion is FALSE there.",
+     "So the premises cannot all be TRUE in that row; at least one of them must be FALSE.",
+     "Hence the argument is valid but unsound, and option (B) is forced."
+    ],
+    "final": "Option (B) &#8212; at least one premise is false.",
+    "trap": "Thinking a FALSE conclusion makes the argument invalid. Validity is about the link between premises and conclusion, not about whether the conclusion happens to be true; a valid argument with a false conclusion simply has a false premise.",
+    "misconception": "Thinking a FALSE conclusion makes the argument invalid. Validity is about the link between premises and conclusion, not about whether the conclusion happens to be true; a valid argument with a false conclusion simply has a false premise."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "implications-and-inference",
+   "subtopic_label": "implications-and-inference",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q17",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "implications-and-inference",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Consider the three premises (i) <code class=\"mm\">p &#8594; q</code>, (ii) <code class=\"mm\">q &#8594; r</code> and (iii) <code class=\"mm\">r &#8594; p</code>. For how many of the eight truth assignments to <code class=\"mm\">(p, q, r)</code> are all three premises TRUE?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": "2",
+   "solution": {
+    "concept": "The three implications form a cycle <code class=\"mm\">p &#8594; q &#8594; r &#8594; p</code>, which forces the three variables to be equal. Counting the assignments that satisfy a cycle is then immediate.",
+    "steps": [
+     "Suppose <code class=\"mm\">p = 1</code>. Premise (i) forces <code class=\"mm\">q = 1</code> and premise (ii) forces <code class=\"mm\">r = 1</code>; premise (iii) is then satisfied. That is one assignment, <code class=\"mm\">(1,1,1)</code>.",
+     "Suppose <code class=\"mm\">p = 0</code>. Premise (iii) <code class=\"mm\">r &#8594; p</code> forces <code class=\"mm\">r = 0</code>, and premise (ii) <code class=\"mm\">q &#8594; r</code> forces <code class=\"mm\">q = 0</code>; premise (i) is then satisfied. That is <code class=\"mm\">(0,0,0)</code>.",
+     "Any assignment with the three variables not all equal breaks at least one implication in the cycle.",
+     "So exactly 2 of the 8 assignments work."
+    ],
+    "final": "2.",
+    "trap": "Assuming the cycle forces all three to be TRUE, and answering 1. All-FALSE also satisfies every implication, because each premise then has a FALSE antecedent.",
+    "misconception": "Assuming the cycle forces all three to be TRUE, and answering 1. All-FALSE also satisfies every implication, because each premise then has a FALSE antecedent."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "implications-and-inference",
+   "subtopic_label": "implications-and-inference",
+   "question_format": "NAT",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q18",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "implications-and-inference",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which of the following arguments are <b>valid</b>? (Select all that apply.)",
+   "options": [
+    "Premises <code class=\"mm\">p &#8594; q</code>, <code class=\"mm\">&#172;q</code>; conclusion <code class=\"mm\">&#172;p</code>.",
+    "Premises <code class=\"mm\">p &#8594; q</code>, <code class=\"mm\">q</code>; conclusion <code class=\"mm\">p</code>.",
+    "Premises <code class=\"mm\">p &#8744; q</code>, <code class=\"mm\">&#172;p</code>; conclusion <code class=\"mm\">q</code>.",
+    "Premises <code class=\"mm\">p &#8594; q</code>, <code class=\"mm\">q &#8594; r</code>; conclusion <code class=\"mm\">p &#8594; r</code>."
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "solution": {
+    "concept": "Four standard argument forms: modus tollens, affirming the consequent, disjunctive syllogism and hypothetical syllogism. Three are valid and one is a fallacy.",
+    "steps": [
+     "A: valid &#8212; modus tollens. <code class=\"mm\">&#172;q</code> rules out <code class=\"mm\">q = 1</code>, leaving only rows with <code class=\"mm\">p = 0</code>.",
+     "B: invalid &#8212; affirming the consequent. At <code class=\"mm\">p = 0, q = 1</code> both premises are TRUE and <code class=\"mm\">p</code> is FALSE.",
+     "C: valid &#8212; disjunctive syllogism. With <code class=\"mm\">p = 0</code>, premise <code class=\"mm\">p &#8744; q</code> leaves only <code class=\"mm\">q = 1</code>.",
+     "D: valid &#8212; hypothetical syllogism. <code class=\"mm\">p &#8594; q</code> and <code class=\"mm\">q &#8594; r</code> chain to <code class=\"mm\">p &#8594; r</code> by transitivity of implication."
+    ],
+    "final": "Options (A), (C) and (D) are valid; (B) is not.",
+    "trap": "Accepting (B) because the conclusion sounds like the &#8220;natural&#8221; consequence of <code class=\"mm\">p &#8594; q</code> together with <code class=\"mm\">q</code>. Going from the consequent back to the antecedent is never licensed.",
+    "misconception": "Accepting (B) because the conclusion sounds like the &#8220;natural&#8221; consequence of <code class=\"mm\">p &#8594; q</code> together with <code class=\"mm\">q</code>. Going from the consequent back to the antecedent is never licensed."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "implications-and-inference",
+   "subtopic_label": "implications-and-inference",
+   "question_format": "MSQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q19",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "cnf-dnf",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "The formula <code class=\"mm\">(p &#8594; q) &#8743; (q &#8594; r)</code> in conjunctive normal form over the variables <code class=\"mm\">p, q, r</code> is",
+   "options": [
+    "<code class=\"mm\">(p &#8744; q) &#8743; (q &#8744; r)</code>",
+    "<code class=\"mm\">(&#172;p &#8743; q) &#8744; (&#172;q &#8743; r)</code>",
+    "<code class=\"mm\">(&#172;p &#8744; q) &#8743; (&#172;q &#8744; r)</code>",
+    "<code class=\"mm\">(p &#8743; &#172;q) &#8744; (q &#8743; &#172;r)</code>"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "A formula is in CNF when it is a conjunction of clauses, each clause being a disjunction of literals. Replacing each implication with <code class=\"mm\">&#172;A &#8744; B</code> produces CNF directly because the conjunction is already outermost.",
+    "steps": [
+     "Rewrite the first implication: <code class=\"mm\">p &#8594; q &#8801; &#172;p &#8744; q</code>, a clause.",
+     "Rewrite the second: <code class=\"mm\">q &#8594; r &#8801; &#172;q &#8744; r</code>, a clause.",
+     "The two clauses are joined by <code class=\"mm\">&#8743;</code>, which is exactly the CNF shape.",
+     "So the CNF is <code class=\"mm\">(&#172;p &#8744; q) &#8743; (&#172;q &#8744; r)</code>.",
+     "Options A, B and D are not equivalent to the original: A is TRUE at <code class=\"mm\">p = q = r = 0</code> where the original is FALSE, and B and D are DNF-shaped disjunctions of conjunctions."
+    ],
+    "final": "Option (C).",
+    "trap": "Replacing <code class=\"mm\">p &#8594; q</code> by <code class=\"mm\">p &#8744; q</code> and dropping the negations. Material implication always negates the antecedent, and without that <code class=\"mm\">&#172;</code> the formula is a different function.",
+    "misconception": "Replacing <code class=\"mm\">p &#8594; q</code> by <code class=\"mm\">p &#8744; q</code> and dropping the negations. Material implication always negates the antecedent, and without that <code class=\"mm\">&#172;</code> the formula is a different function."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "cnf-dnf",
+   "subtopic_label": "cnf-dnf",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q20",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "cnf-dnf",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Which one of the following formulas is <b>NOT</b> logically equivalent to <code class=\"mm\">(p &#8744; q) &#8594; r</code>?",
+   "options": [
+    "<code class=\"mm\">(&#172;p &#8744; r) &#8743; (&#172;q &#8744; r)</code>",
+    "<code class=\"mm\">(p &#8594; r) &#8743; (q &#8594; r)</code>",
+    "<code class=\"mm\">(&#172;p &#8743; &#172;q) &#8744; r</code>",
+    "<code class=\"mm\">(p &#8594; r) &#8744; (q &#8594; r)</code>"
+   ],
+   "answer": 3,
+   "solution": {
+    "concept": "Three of the four options are the same function written in different normal forms: a CNF, a pair of implications, and a DNF. The odd one out replaces a conjunction of the two implications by their disjunction, which is strictly weaker.",
+    "steps": [
+     "Simplify the target: <code class=\"mm\">(p &#8744; q) &#8594; r &#8801; &#172;(p &#8744; q) &#8744; r &#8801; (&#172;p &#8743; &#172;q) &#8744; r</code>, which is option C's DNF.",
+     "Distributing <code class=\"mm\">&#8744;</code> over <code class=\"mm\">&#8743;</code> gives <code class=\"mm\">(&#172;p &#8744; r) &#8743; (&#172;q &#8744; r)</code>, option A's CNF.",
+     "Each clause is an implication: <code class=\"mm\">&#172;p &#8744; r &#8801; p &#8594; r</code> and <code class=\"mm\">&#172;q &#8744; r &#8801; q &#8594; r</code>, so option B is the same function too.",
+     "Option D turns the conjunction into a disjunction: <code class=\"mm\">(&#172;p &#8744; r) &#8744; (&#172;q &#8744; r) &#8801; &#172;p &#8744; &#172;q &#8744; r</code>, which is TRUE whenever <code class=\"mm\">p</code> is FALSE, whatever <code class=\"mm\">q</code> and <code class=\"mm\">r</code> are.",
+     "Witness: at <code class=\"mm\">p = 0, q = 1, r = 0</code> the target is <code class=\"mm\">1 &#8594; 0</code>, i.e. FALSE, while D is TRUE. So D is not equivalent."
+    ],
+    "final": "Option (D).",
+    "trap": "Assuming that a disjunction of two implications is interchangeable with their conjunction. The conjunction is the stronger statement and is the one that matches <code class=\"mm\">(p &#8744; q) &#8594; r</code>; the disjunction is satisfied by far more assignments.",
+    "misconception": "Assuming that a disjunction of two implications is interchangeable with their conjunction. The conjunction is the stronger statement and is the one that matches <code class=\"mm\">(p &#8744; q) &#8594; r</code>; the disjunction is satisfied by far more assignments."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "cnf-dnf",
+   "subtopic_label": "cnf-dnf",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q21",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "cnf-dnf",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "How many literals occur in the CNF formula <code class=\"mm\">(p &#8744; &#172;q &#8744; r) &#8743; (&#172;p &#8744; q)</code>?<br/>(Enter an integer.)",
+   "options": [],
+   "answer": "5",
+   "solution": {
+    "concept": "A literal is a single variable or its negation. Counting literals is a purely syntactic exercise, done clause by clause.",
+    "steps": [
+     "The first clause <code class=\"mm\">(p &#8744; &#172;q &#8744; r)</code> contains the literals <code class=\"mm\">p</code>, <code class=\"mm\">&#172;q</code> and <code class=\"mm\">r</code>: three literals.",
+     "The second clause <code class=\"mm\">(&#172;p &#8744; q)</code> contains <code class=\"mm\">&#172;p</code> and <code class=\"mm\">q</code>: two literals.",
+     "Total <code class=\"mm\">3 + 2 = 5</code> literals.",
+     "The variable <code class=\"mm\">p</code> appears twice, once per clause, and each occurrence counts separately."
+    ],
+    "final": "5.",
+    "trap": "Counting distinct variables instead of occurrences and answering 3. A literal is an <i>occurrence</i>, so <code class=\"mm\">p</code> and <code class=\"mm\">&#172;p</code> are two literals and the repeated variable still counts twice.",
+    "misconception": "Counting distinct variables instead of occurrences and answering 3. A literal is an <i>occurrence</i>, so <code class=\"mm\">p</code> and <code class=\"mm\">&#172;p</code> are two literals and the repeated variable still counts twice."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "cnf-dnf",
+   "subtopic_label": "cnf-dnf",
+   "question_format": "NAT",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q22",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "cnf-dnf",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which of the following statements about normal forms are TRUE? (Select all that apply.)",
+   "options": [
+    "Every propositional formula has a logically equivalent formula in CNF.",
+    "Every propositional formula has a logically equivalent formula in DNF.",
+    "A formula in DNF is a tautology exactly when each of its terms is a tautology.",
+    "A formula in CNF is a contradiction exactly when each of its clauses is a contradiction."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "solution": {
+    "concept": "Normal forms are about <i>shape</i>, not about trivial truth values. A DNF is a disjunction of conjunctions and a CNF a conjunction of disjunctions, so neither inherits its truth value from its parts in the naive way.",
+    "steps": [
+     "A: TRUE. Repeatedly apply De Morgan, distributivity and double negation, or read the clauses off the FALSE rows of the truth table.",
+     "B: TRUE. Same construction, reading the terms off the TRUE rows of the truth table.",
+     "C: FALSE. <code class=\"mm\">p &#8744; &#172;p</code> is in DNF and is a tautology, yet neither term <code class=\"mm\">p</code> nor <code class=\"mm\">&#172;p</code> is one.",
+     "D: FALSE. <code class=\"mm\">p &#8743; &#172;p</code> is in CNF and is a contradiction, yet neither clause <code class=\"mm\">p</code> nor <code class=\"mm\">&#172;p</code> is one.",
+     "The correct statements would run the other way: a DNF is a tautology when its terms <i>collectively</i> cover all assignments, and a CNF is a contradiction when its clauses collectively exclude all of them."
+    ],
+    "final": "Options (A) and (B) are TRUE; (C) and (D) are FALSE.",
+    "trap": "Assuming that a disjunction is a tautology only if a disjunct is, and that a conjunction is a contradiction only if a conjunct is. Both fail for exactly the same reason: the parts can be individually contingent yet jointly exhaustive or jointly impossible.",
+    "misconception": "Assuming that a disjunction is a tautology only if a disjunct is, and that a conjunction is a contradiction only if a conjunct is. Both fail for exactly the same reason: the parts can be individually contingent yet jointly exhaustive or jointly impossible."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "cnf-dnf",
+   "subtopic_label": "cnf-dnf",
+   "question_format": "MSQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q23",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "validity-and-satisfiability",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Let <code class=\"mm\">F</code> be a tautology and <code class=\"mm\">G</code> a contradiction. Which one of the following statements is TRUE?",
+   "options": [
+    "<code class=\"mm\">F &#8744; G</code> is a contradiction.",
+    "<code class=\"mm\">F &#8594; G</code> is a tautology.",
+    "<code class=\"mm\">F &#8743; G</code> is a contradiction.",
+    "<code class=\"mm\">G &#8594; F</code> is a contradiction."
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "A tautology is TRUE on every assignment and a contradiction is FALSE on every assignment, so any compound of the two collapses to a constant and can be read off by substituting the constants.",
+    "steps": [
+     "Substitute <code class=\"mm\">F = 1</code> and <code class=\"mm\">G = 0</code> in each candidate.",
+     "A: <code class=\"mm\">1 &#8744; 0 = 1</code>, a tautology, not a contradiction.",
+     "B: <code class=\"mm\">1 &#8594; 0 = 0</code>, a contradiction, not a tautology.",
+     "C: <code class=\"mm\">1 &#8743; 0 = 0</code>, a contradiction. TRUE.",
+     "D: <code class=\"mm\">0 &#8594; 1 = 1</code>, a tautology, not a contradiction."
+    ],
+    "final": "Option (C) &#8212; <code class=\"mm\">F &#8743; G</code> is a contradiction.",
+    "trap": "Reading <code class=\"mm\">F &#8594; G</code> as &#8220;TRUE implies FALSE&#8221; but then calling it a tautology because the symbol <code class=\"mm\">F</code> stands for something always true. Once <code class=\"mm\">F</code> is a tautology the implication collapses to <code class=\"mm\">G</code>, which is a contradiction.",
+    "misconception": "Reading <code class=\"mm\">F &#8594; G</code> as &#8220;TRUE implies FALSE&#8221; but then calling it a tautology because the symbol <code class=\"mm\">F</code> stands for something always true. Once <code class=\"mm\">F</code> is a tautology the implication collapses to <code class=\"mm\">G</code>, which is a contradiction."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "validity-and-satisfiability",
+   "subtopic_label": "validity-and-satisfiability",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q24",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "validity-and-satisfiability",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "date": "2026-11-04",
+   "question": "Among the 16 binary truth functions, how many are <b>satisfiable but not valid</b>?",
+   "options": [
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "answer": 2,
+   "solution": {
+    "concept": "For a truth function, satisfiable means at least one row gives TRUE, and valid means every row gives TRUE. Counting by complement is again the fast route.",
+    "steps": [
+     "The 16 functions correspond to the 16 possible 4-bit columns over the four assignments.",
+     "Exactly one column is all TRUE &#8212; that is the only valid (tautological) function.",
+     "Exactly one column is all FALSE &#8212; that is the only unsatisfiable (contradictory) function.",
+     "Every other column mixes TRUE and FALSE, so it is satisfiable (it has a TRUE row) and not valid (it has a FALSE row).",
+     "Count: <code class=\"mm\">16 &#8722; 1 &#8722; 1 = 14</code>."
+    ],
+    "final": "14 (option C).",
+    "trap": "Forgetting that the two constant functions sit at the extremes and so must be excluded twice. Excluding only the contradiction gives 15, which wrongly counts the tautology as &#8220;satisfiable but not valid&#8221;.",
+    "misconception": "Forgetting that the two constant functions sit at the extremes and so must be excluded twice. Excluding only the contradiction gives 15, which wrongly counts the tautology as &#8220;satisfiable but not valid&#8221;."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "validity-and-satisfiability",
+   "subtopic_label": "validity-and-satisfiability",
+   "question_format": "MCQ",
+   "set": "Set 3 (second pass)"
+  },
+  {
+   "id": "DM-PL3-Q25",
+   "unit": 1,
+   "unit_name": "Propositional Logic",
+   "topic": "Propositional Logic",
+   "sub": "validity-and-satisfiability",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "date": "2026-11-04",
+   "question": "Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "If <code class=\"mm\">F</code> is satisfiable then <code class=\"mm\">&#172;F</code> is not valid.",
+    "If <code class=\"mm\">F</code> is valid then <code class=\"mm\">&#172;F</code> is unsatisfiable.",
+    "If <code class=\"mm\">F &#8743; G</code> is satisfiable then both <code class=\"mm\">F</code> and <code class=\"mm\">G</code> are satisfiable.",
+    "If <code class=\"mm\">F &#8744; G</code> is valid then at least one of <code class=\"mm\">F</code>, <code class=\"mm\">G</code> is valid."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "solution": {
+    "concept": "Validity, satisfiability and negation are linked by a single duality: <code class=\"mm\">F</code> is valid exactly when <code class=\"mm\">&#172;F</code> is unsatisfiable. Everything here is a consequence of that, plus the fact that validity is not preserved downwards through <code class=\"mm\">&#8744;</code>.",
+    "steps": [
+     "A: TRUE. <code class=\"mm\">F</code> satisfiable means some assignment makes <code class=\"mm\">F</code> TRUE, and on that same assignment <code class=\"mm\">&#172;F</code> is FALSE, so <code class=\"mm\">&#172;F</code> is not a tautology.",
+     "B: TRUE. <code class=\"mm\">F</code> TRUE on every assignment means <code class=\"mm\">&#172;F</code> FALSE on every assignment, which is precisely unsatisfiability.",
+     "C: TRUE. A model of <code class=\"mm\">F &#8743; G</code> makes both conjuncts TRUE at once, so it is a model of each of them.",
+     "D: FALSE. Take <code class=\"mm\">F = p</code> and <code class=\"mm\">G = &#172;p</code>. Then <code class=\"mm\">F &#8744; G &#8801; p &#8744; &#172;p</code> is valid, while neither <code class=\"mm\">p</code> nor <code class=\"mm\">&#172;p</code> is valid."
+    ],
+    "final": "Options (A), (B) and (C) are TRUE; (D) is FALSE.",
+    "trap": "Assuming that a valid disjunction must come from a valid disjunct. <code class=\"mm\">p &#8744; &#172;p</code> is the standard counterexample: the two halves split the assignments between them, so the disjunction covers everything even though each half covers only part.",
+    "misconception": "Assuming that a valid disjunction must come from a valid disjunct. <code class=\"mm\">p &#8744; &#172;p</code> is the standard counterexample: the two halves split the assignments between them, so the disjunction covers everything even though each half covers only part."
+   },
+   "run_date": "2026-11-04",
+   "unit_slug": "propositional-logic",
+   "unit_number": 1,
+   "subtopic": "validity-and-satisfiability",
+   "subtopic_label": "validity-and-satisfiability",
+   "question_format": "MSQ",
+   "set": "Set 3 (second pass)"
   }
  ]
 }
