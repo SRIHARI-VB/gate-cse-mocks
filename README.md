@@ -7,36 +7,88 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2 (second pass)**, 2026-11-04 →
-  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html)
+- **Computer Networks · Unit 2 — Data Link Protocols & MAC, Set 2 of 2 (second pass)**, 2026-11-04 →
+  [`computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html`](computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html)
 - 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Hash functions (7) · Collision resolution: chaining (5) · Open addressing: linear, quadratic & double
-  hashing (7) · Load factor & rehashing (6)
-- Rotation: MODE A. An unseeded `random.SystemRandom()` draw over the eight subjects that had no paper dated
-  2026-11-04 returned **Programming and Data Structures**. Read from its own `master_bank.json`, the most recent
-  paper was `{2026-11-03, run 20, unit 6, heaps-priority-queues, Set 1 of 2 (second pass)}` and unit 6 stood at
-  **75** questions, so **B3 failed on the cap** (its first paper was 2026-10-30, so the 7-day backstop was not the
-  reason). **B4 advanced exactly one unit**: `(index_of(heaps-priority-queues) = 5 + 1) mod 7 = 6` → **Unit 7,
-  Hashing & Hash Tables**, which already held 50 questions from 2026-11-01. **B5 applies: every unit of the
-  subject stands at or above the cap**, the modulo has wrapped, and this paper is the unit's third set, labelled
-  Set 1 of 2 (second pass), taking it to 75. No override was passed and no partial set was generated: exactly
-  25 questions.
-- Previous test: **Computer Architecture · Unit 4 — Main Memory & Virtual Memory Interface, Set 1 of 2 (second
+- Subtopics: Stop-and-wait ARQ (5) · Go-back-N & selective repeat (5) · Pure & slotted ALOHA (5) · CSMA/CD,
+  CSMA/CA & backoff (5) · Ethernet, switches & bridges (5)
+- Rotation: MODE A. A draw over the eleven GATE CSE subjects in syllabus order, seeded from the date, returned
+  **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was `{2026-11-03, run 19,
+  unit 1, network-fundamentals-framing, Set 2 of 2 (second pass)}` and unit 1 stood at **100** questions, so
+  **B3 failed on the cap** (its first paper was 2026-10-26, so the 7-day backstop was not the deciding test).
+  **B4 advanced exactly one unit**: `(index_of(network-fundamentals-framing) = 0 + 1) mod 6 = 1` → **Unit 2,
+  Data Link Protocols & MAC**, which already held 75 questions. **B5 applies: every unit of the subject stands
+  at or above the cap** (100, 75, 75, 75, 75, 75), the modulo has wrapped, and this paper is the unit's fourth
+  set, the second set of the second pass, taking it to 100. No override was passed and no partial set was
+  generated: exactly 25 questions.
+- Previous test: **Programming and Data Structures · Unit 7 — Hashing & Hash Tables, Set 1 of 2 (second
   pass)**, 2026-11-04 →
-  [`computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html`](computer-architecture/memory-management-unit/gate_co_mock_4_2026-11-04.html)
+  [`programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html`](programming-data-structures/hashing/gate_ds_mock_7_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 215 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 21 Programming and Data Structures, 19 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 144 archived |
+| Papers published (current + archived) | 216 (34 Discrete Mathematics, 16 Algorithms, 16 Databases, 19 Compiler Design, 24 Operating Systems, 14 Engineering Mathematics, 21 Programming and Data Structures, 20 Computer Networks, 20 Theory of Computation, 17 Digital Logic, 15 Computer Architecture) |
+| Current papers / archived sets | 71 current · 145 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5375 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 525 Programming and Data Structures, 475 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5400 (850 Discrete Mathematics, 400 Algorithms, 400 Databases, 475 Compiler Design, 600 Operating Systems, 350 Engineering Mathematics, 525 Programming and Data Structures, 500 Computer Networks, 500 Theory of Computation, 425 Digital Logic, 375 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 144 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 14 Programming and Data Structures, 13 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 145 (18 Discrete Mathematics, 9 Algorithms, 11 Databases, 14 Compiler Design, 18 Operating Systems, 9 Engineering Mathematics, 14 Programming and Data Structures, 14 Computer Networks, 16 Theory of Computation, 13 Digital Logic, 9 Computer Architecture) |
+
+### 2026-11-04 — Computer Networks Unit 2, Set 2 of 2 (second pass)
+
+- New paper at `computer-networks/data-link-mac/gate_cn_mock_2_2026-11-04.html`. The 2026-10-31 paper it
+  supersedes moved to `archive/gate_cn_mock_2_2026-10-31_run3.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** A draw over the eleven GATE CSE subjects in syllabus order, seeded from the
+  date, returned index 10 of 11, **Computer Networks**; the subject had no paper dated 2026-11-04, so nothing
+  needed to be excluded and the draw ran over the full list. Read from its own bank, the most recent paper was
+  `{2026-11-03, run 19, unit 1, network-fundamentals-framing, Set 2 of 2 (second pass)}` and unit 1 stood at
+  **100** questions, so **B3 failed on the cap** (its first paper was 2026-10-26, nine days earlier, so the
+  7-day backstop was not the deciding test either). **B4 advanced exactly one unit**:
+  `(index_of(network-fundamentals-framing) = 0 + 1) mod 6 = 1` → **Unit 2, Data Link Protocols & MAC**, which
+  already held 75 questions from its three earlier sets. **B5 applies: every unit of the subject is at or above
+  the cap (100, 75, 75, 75, 75, 75), the modulo has wrapped, and this is the unit's fourth set** — labelled Set 2
+  of 2 (second pass) and taking the unit to **100**. No override was passed and no partial set was generated:
+  exactly 25 questions.
+- **Coverage.** All five subtopics carry new questions — stop-and-wait ARQ 5, Go-Back-N and selective repeat 5,
+  pure and slotted ALOHA 5, CSMA/CD, CSMA/CA and backoff 5, Ethernet, switches and bridges 5. Every item is new
+  against the 75 already banked for this unit; the angles deliberately not repeated are the plain stop-and-wait
+  utilisation figures (CN-DL2-Q01, Q51, CN-U2-Q27, Q28, Q53), the timer value (Q26), the Go-Back-N and
+  selective-repeat window maxima (Q06, Q10, Q31, Q56, Q57), the ALOHA vulnerable period and peak throughput
+  (Q11, Q13, Q36, Q37, Q61, Q62), the 51.2 µs slot-time arithmetic (Q20, Q43, Q68, Q70), the switch learning and
+  flooding questions (Q21, Q22, Q46, Q47, Q48, Q71) and the collision-domain counts (Q24, Q73).
+- **Composition.** 15 MCQ (1 mark) · 5 MSQ (2 marks) · 5 NAT (2 marks) · 35 marks · 60 minutes · no negative
+  marking · MSQ scores only on the exact option set. Practice scheme, not the official GATE scheme, and the About
+  tab says so.
+- **Verification.** Every answer was recomputed by script before the paper was written: Q76 is
+  `100 × (2 + 2·10) = 2200 ms`; Q77 is `(1 − 0.1)/(1 + 2·2) = 0.18`; Q78 is conceptual (piggybacking removes
+  `Ta` from the cycle); Q80 is `50 × (4 + 2·6) = 800 ms`; Q85 is `Tt = 1500/2×10⁶ = 0.75 ms`, `a = 15/0.75 = 20`,
+  `7/41 = 17.07%`; Q86 is `1·e⁻¹ = 0.368`; Q87 maximises `Np(1−p)^(N−1)` at `p = 1/N`; Q88 is
+  `R/(2e)` independent of frame length; Q90 is `0.3·0.6 + 0.4·0.7 = 0.46`; Q93 is `0.512 µs → 51.2 m` before
+  carrier extension and `4096 bits → 4.096 µs` after it; Q95 is `3/8 = 37.5%`; Q100 is
+  `8 + 14 + 1500 + 4 + 12 = 1538` bytes. The five MSQ answer sets were checked option by option, each marked
+  option proved and each unmarked option refuted. The grading engine was replayed against the decoded payload: a
+  perfect attempt scores 35/35 with 25 correct, a blank paper 0/35 with 25 unattempted, and an MSQ answered with
+  a strict subset or a strict superset of the correct set scores 0 for that question.
+- **Provenance.** The Computer Networks bank records no verified PYQ, so no question on this paper is claimed as
+  an official GATE question; no item carries the `GATE_PYQ_VARIATION` tag, and the About tab says so. Sources:
+  13 textbook-inspired, 12 original synthesis.
+- **Portal.** `index.html` keeps one card per current paper (71 cards). The Unit 2 card is replaced in place and
+  now lists the 2026-10-31 second-pass set as `Second pass · Set 1 (2026-10-31)` above the two first-pass sets;
+  the question archive renders 5,400 banked records across the eleven per-subject data files, 500 of them
+  Computer Networks.
+- **Verification checklist (Section 6.8).** Shell parity: the stylesheet and the whole grading script are
+  byte-identical to the 2026-11-03 Computer Networks paper, and the `:root` block is byte-identical to
+  `design-tokens.css`. One copy: `find . -name "*.html"` shows `index.html` plus exactly one file per paper, and
+  nothing at the repository root. Links: every `href` in `index.html` and in the paper's archive list resolves.
+  Counts: 25 test cards, a 25-button palette and 475 banked cards (the 25 active items are excluded from the bank
+  tab). Tokens: the `:root` block is byte-identical to `design-tokens.css` and to every other paper's; no new
+  colour is introduced outside `:root`. Rotation: unit 2 is the one Section 1 selects from `master_bank.json`,
+  not from the calendar.
 
 ### 2026-11-04 — Programming and Data Structures Unit 7, Set 1 of 2 (second pass)
 
