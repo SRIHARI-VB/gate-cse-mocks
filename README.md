@@ -7,35 +7,71 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 2 of 2 (second pass)**,
+- **Computer Architecture · Unit 5 — Instruction Pipelining, Set 1 of 2 (second pass)**,
+  2026-11-05 →
+  [`computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html`](computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Pipeline stages & throughput (8) · Structural hazards (5) · Data hazards & forwarding (6) ·
+  Control hazards & branch penalty (6)
+- Rotation: MODE A. The draw ran over the ten subjects that did not already carry a 2026-11-05 paper and returned
+  **Computer Architecture**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 15, unit 4, memory-management-unit, Set 1 of 2 (second pass)}`. That unit stands at **75**
+  questions and every unit of the subject is at or above the cap (50, 75, 75, 75, 50, 50), so **B3 failed on the
+  cap** and the 7-day backstop was irrelevant. **B5 applies**: the modulo has already wrapped once and the second
+  pass is in progress. **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 6 = 4` →
+  **Unit 5, Instruction Pipelining**, which held 50 questions and opens the first set of its second pass.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Programming and Data Structures · Unit 1 — C Programming Foundations, Set 2 of 2 (second pass)**,
   2026-11-05 →
   [`programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html`](programming-data-structures/c-programming-core/gate_ds_mock_1_2026-11-05.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: Data types & operators (8) · Control structures (7) · Functions & parameter passing (6) ·
-  Recursion & stack execution (4)
-- Rotation: MODE A. The unseeded `random.SystemRandom()` draw ran over all eleven subjects and returned
-  **Programming and Data Structures**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 21, unit 7, hashing, Set 1 of 2 (second pass)}`. That unit stands at **75** questions and every
-  unit of the subject is at or above the cap (75, 75, 75, 75, 75, 75, 75), so **B3 failed on the cap** and the 7-day
-  backstop was irrelevant. **B4 advanced exactly one unit**: `(index_of(hashing) = 6 + 1) mod 7 = 0` →
-  **Unit 1, C Programming Foundations**, which held 75 questions and opens the second set of its second pass.
-  No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Algorithms · Unit 4 — Dynamic Programming, Set 3 (second pass)**,
-  2026-11-04 →
-  [`algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html`](algorithms/dynamic-programming/gate_algo_mock_4_2026-11-04.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 230 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 15 Computer Architecture) |
-| Current papers / archived sets | 71 current · 159 archived |
+| Papers published (current + archived) | 231 (35 Discrete Mathematics, 18 Algorithms, 16 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
+| Current papers / archived sets | 71 current · 160 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5750 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 375 Computer Architecture) |
+| Questions in the subject banks | 5775 (875 Discrete Mathematics, 450 Algorithms, 400 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 159 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 9 Computer Architecture) |
+| Archived sets (earlier runs) | 160 (19 Discrete Mathematics, 11 Algorithms, 11 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+
+### 2026-11-05 — Computer Architecture Unit 5, Set 1 of 2 (second pass)
+
+- New paper at `computer-architecture/pipelining/gate_co_mock_5_2026-11-05.html`. The 2026-10-31 paper it
+  supersedes moved to `archive/gate_co_mock_5_2026-10-31_run2.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** The draw was seeded and run over the ten subjects that did not already carry a
+  2026-11-05 paper — Programming and Data Structures had published one at 01:07 IST — and returned **Computer
+  Architecture**. Read from its own `master_bank.json`, the most recent paper was `{2026-11-04, run 15, unit 4,
+  memory-management-unit, Set 1 of 2 (second pass)}`. Unit 4 stands at **75** questions and every unit of the subject
+  is at or above `UNIT_QUESTION_CAP = 50` (50, 75, 75, 75, 50, 50), so **B3 failed on the cap** and the 7-day
+  backstop was irrelevant. **B5 applies**: the modulo has wrapped once already and the second pass is under way.
+  **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 6 = 4` → **Unit 5, Instruction Pipelining**,
+  which held 50 questions from two first-pass sets and opens the first set of its second pass, taking the unit to
+  **75**. No override was passed and no partial set was generated: exactly 25 questions.
+- **Coverage.** All four subtopics are represented: pipeline stages & throughput (8), structural hazards (5),
+  data hazards & forwarding (6), control hazards & branch penalty (6). Composition 15 MCQ · 5 MSQ · 5 NAT;
+  difficulty 10 easy / 10 medium / 5 hard; 60 minutes, 35 marks. MCQ 1 mark, MSQ and NAT 2 marks, no negative
+  marking, MSQ scores only on the exact set — the practice scheme, stated as such in the About tab.
+- **Bank.** 25 questions `CO-U5-Q51` … `CO-U5-Q75` appended to
+  `computer-architecture/question-bank/master_bank.json`. The subject bank moves 375 → 400 questions, runs 15 → 16,
+  `last_updated` 2026-11-05. No question repeats an item already banked for the unit: the 50 existing
+  pipelining questions were read first and every new item tests a different mechanism or arithmetic path.
+- **Portal.** `index.html` gained one card for this paper, carrying the two 2026-10-31 sets as archive links, and
+  `data/questions-computer-architecture.js` gained the 25 records. Header counts are now 5775 questions banked and
+  5700 in the review archive; 71 current papers, 160 archived sets.
+- **Verification (Section 6.8).** *Shell parity:* the paper was generated from the Computer Architecture Unit 4
+  paper of 2026-11-04; the `<style>` block and the whole `<script>` shell are byte-identical, and the `:root` block
+  matches `design-tokens.css`. *One copy:* 232 HTML files = `index.html` plus 231 papers, one current paper per unit
+  folder, nothing else at the root. *Links:* every path in the portal data block resolves to a file that exists.
+  *Counts:* 25 test cards, a 25-button palette, and 375 cards in the Question Bank tab (400 banked minus the 25
+  active), with no active question repeated there. *Tokens:* no raw hex outside `:root`. *README:* the status table
+  matches the banks.
+- **Rotation record.** Computer Architecture second pass: unit 5 opened. Units 1–4 and 6 sit at 50–75 questions,
+  every figure above 50 being a second-pass set and labelled as such.
 
 ### 2026-11-05 — Programming and Data Structures Unit 1, Set 2 of 2 (second pass)
 
