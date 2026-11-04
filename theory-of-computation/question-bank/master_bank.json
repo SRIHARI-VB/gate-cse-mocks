@@ -9,14 +9,14 @@
   "unit_question_cap": 50,
   "set_size": 25,
   "sets_per_unit": 2,
-  "total_questions": 500,
+  "total_questions": 525,
   "units_with_questions": [
    1,
    2,
    3,
    4
   ],
-  "total_runs": 20
+  "total_runs": 21
  },
  "runs": [
   {
@@ -1199,6 +1199,40 @@
    },
    "mode": "MODE A (random subject, bank-driven unit rotation)",
    "note": "Unit 4 stood at 100 questions, so step B4 advanced the rotation by one unit from unit 3; this is the unit's fifth set."
+  },
+  {
+   "run": 21,
+   "date": "2026-11-04",
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "set": "Set 1 of 2 (fourth pass)",
+   "count": 25,
+   "file": "theory-of-computation/regular-languages-fa/gate_toc_mock_1_2026-11-04.html",
+   "archived_previous": "theory-of-computation/regular-languages-fa/archive/gate_toc_mock_1_2026-11-02_run1.html",
+   "duration_min": 60,
+   "marks": 35,
+   "composition": {
+    "MCQ": 15,
+    "MSQ": 5,
+    "NAT": 5
+   },
+   "difficulty": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 5
+   },
+   "subtopics": {
+    "dfa-construction-minimization": 7,
+    "nfa-to-dfa-subset-construction": 7,
+    "regular-expressions": 6,
+    "pumping-lemma-for-regular": 5
+   },
+   "mode": "MODE A (random subject, bank-driven unit rotation)",
+   "note": "Unit 4 stood at 125 questions, so step B4 advanced the rotation by one unit from unit 4; every unit sits at 125, so the modulo wrapped and the fourth pass began with this, the unit's sixth set."
   }
  ],
  "verified_pyqs": [],
@@ -20088,6 +20122,1177 @@
    "answer_display": "Option (B)",
    "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A context-sensitive grammar has a non-contracting production set, so every sentential form of a derivation of a string of length <span class=\"mm\">n</span> has length at most <span class=\"mm\">n</span>. Emptiness then reduces to a search over finitely many bounded forms. For unrestricted grammars no such bound exists.</p><p class=\"row\"><b>Step by step.</b></p><ol><li><b>(B)</b> For a CSG, if <span class=\"mm\">L(G) ≠ ∅</span> there is a derivable string; every sentential form on the way to it is no longer than that string, and the set of forms of length at most <span class=\"mm\">k</span> over a finite alphabet is finite. Searching level by level over bounded forms decides emptiness. For a Type 0 grammar, emptiness is undecidable.</li><li><b>(A)</b> Equivalence of two context-sensitive grammars is undecidable, so it is not a candidate.</li><li><b>(C)</b> Ambiguity is undecidable already for context-free grammars, and remains undecidable for context-sensitive ones.</li><li><b>(D)</b> Whether <span class=\"mm\">L(G)</span> is regular is undecidable for context-sensitive grammars as well.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) &mdash; emptiness.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that everything about context-sensitive grammars is decidable because the class is recursive. Membership and emptiness are decidable; equivalence, ambiguity and regularity are not.</p><p class=\"row\"><b>Takeaway.</b> The non-contracting condition is what makes emptiness decidable: it caps the length of every intermediate form.</p>",
    "solution_plain": "Detailed solutionConcept. A context-sensitive grammar has a non-contracting production set, so every sentential form of a derivation of a string of length n has length at most n. Emptiness then reduces to a search over finitely many bounded forms. For unrestricted grammars no such bound exists.Step by step.(B) For a CSG, if L(G) ≠ ∅ there is a derivable string; every sentential form on the way to it is no longer than that string, and the set of forms of length at most k over a finite alphabet is finite. Searching level by level over bounded forms decides emptiness. For a Type 0 grammar, emptiness is undecidable.(A) Equivalence of two context-sensitive grammars is undecidable, so it is not a candidate.(C) Ambiguity is undecidable already for context-free grammars, and remains undecidable for context-sensitive ones.(D) Whether L(G) is regular is undecidable for context-sensitive grammars as well.Answer: Option (B) — emptiness.Common misconception. Assuming that everything about context-sensitive grammars is decidable because the class is recursive. Membership and emptiness are decidable; equivalence, ambiguity and regularity are not.Takeaway. The non-contracting condition is what makes emptiness decidable: it caps the length of every intermediate form."
+  },
+  {
+   "id": "TOC-U1-Q126",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "A <b>partial</b> DFA is a DFA in which some transitions may be undefined; a run that needs an undefined transition rejects at once. Which of the following statements is TRUE?",
+   "options": [
+    "The minimal partial DFA of a regular language can never have fewer states than its minimal complete DFA.",
+    "For L = (ab)* over Σ = {a, b} the minimal partial DFA has 2 states while the minimal complete DFA has 3.",
+    "A language accepted by a partial DFA need not be regular, because the undefined transitions act as a stack.",
+    "A partial DFA cannot be simulated by an NFA, because an NFA must define a transition for every state and symbol."
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "A partial DFA is an NFA whose transition relation happens to be a partial function. An undefined transition is an immediate rejection, which is exactly what a dead state does — so completeness adds states, never power.",
+    "steps": [
+     "A partial DFA accepts with the same rule as an NFA: some run spelling the word ends in a final state. Hence every partial DFA accepts a regular language, which kills option (C).",
+     "Conversely a complete DFA is a partial DFA, so the partial model is at least as economical: the minimal partial DFA never has more states than the minimal complete DFA.",
+     "For L = (ab)*: take q₀ (start, final) with δ(q₀,a) = q₁ and q₁ with δ(q₁,b) = q₀, and leave δ(q₀,b) and δ(q₁,a) undefined. Two states suffice and they are distinguishable, so 2 is minimal.",
+     "Completing it adds one dead state that absorbs b from q₀ and a from q₁, giving 3 states — and 3 is minimal, because the two live states are distinguishable and the dead state is distinguishable from both.",
+     "So the minimal partial DFA can be strictly smaller, and for this language it is exactly one state smaller."
+    ],
+    "final": "Option (B) — 2 states in the partial model, 3 in the complete one.",
+    "trap": "Treating the complete DFA as the only canonical form. Completeness is a convenience for composition and for the table-filling algorithm, not a source of extra power; and the undefined transitions are not a stack, so no non-regular language can sneak in."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">A <b>partial</b> DFA is a DFA in which some transitions may be undefined; a run that needs an undefined transition rejects at once. Which of the following statements is TRUE?</p>",
+   "options_html": [
+    "The minimal partial DFA of a regular language can never have fewer states than its minimal complete DFA.",
+    "For L = (ab)* over Σ = {a, b} the minimal partial DFA has 2 states while the minimal complete DFA has 3.",
+    "A language accepted by a partial DFA need not be regular, because the undefined transitions act as a stack.",
+    "A partial DFA cannot be simulated by an NFA, because an NFA must define a transition for every state and symbol."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A partial DFA is an NFA whose transition relation happens to be a partial function. An undefined transition is an immediate rejection, which is exactly what a dead state does — so completeness adds states, never power.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A partial DFA accepts with the same rule as an NFA: some run spelling the word ends in a final state. Hence every partial DFA accepts a regular language, which kills option (C).</li><li>Conversely a complete DFA is a partial DFA, so the partial model is at least as economical: the minimal partial DFA never has more states than the minimal complete DFA.</li><li>For L = (ab)*: take q₀ (start, final) with δ(q₀,a) = q₁ and q₁ with δ(q₁,b) = q₀, and leave δ(q₀,b) and δ(q₁,a) undefined. Two states suffice and they are distinguishable, so 2 is minimal.</li><li>Completing it adds one dead state that absorbs b from q₀ and a from q₁, giving 3 states — and 3 is minimal, because the two live states are distinguishable and the dead state is distinguishable from both.</li><li>So the minimal partial DFA can be strictly smaller, and for this language it is exactly one state smaller.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 2 states in the partial model, 3 in the complete one.</span></p><p class=\"row\"><b>Common misconception.</b> Treating the complete DFA as the only canonical form. Completeness is a convenience for composition and for the table-filling algorithm, not a source of extra power; and the undefined transitions are not a stack, so no non-regular language can sneak in.</p>"
+  },
+  {
+   "id": "TOC-U1-Q127",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "M = (Q, Σ, δ, q₀, F) is a complete DFA accepting L, and a ∈ Σ. The right quotient is L/a = {w : wa ∈ L}. Which of the following statements is TRUE?",
+   "options": [
+    "L/a is accepted by (Q, Σ, δ, q₀, F′) with F′ = {q ∈ Q : δ(q, a) ∈ F}, so its minimal DFA has at most |Q| states.",
+    "L/a need not be regular, because one symbol has been cut from the end of every word of L.",
+    "L/a is accepted by the DFA obtained from M by reversing every transition and exchanging q₀ with F.",
+    "L/a always has a minimal DFA with exactly |Q| states, because the state set has not changed."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The right quotient moves the acceptance test one step forward: a state is accepting for L/a exactly when reading a from it lands in F. The automaton is untouched, only the final set is re-labelled.",
+    "steps": [
+     "w ∈ L/a ⇔ wa ∈ L ⇔ δ̂(q₀, w) ∈ {q : δ(q, a) ∈ F}. Reading w from q₀ therefore ends in an accepting state of the new machine exactly when wa is accepted by M.",
+     "Only F changes, so |Q| states still suffice; the construction is correct for every a ∈ Σ, and repeating it handles L/wa.",
+     "The new final set may leave states unreachable or mergeable, so the <i>minimal</i> form of L/a can be smaller than |Q| — never larger.",
+     "Option (C) describes reversal, which builds an automaton for L^R, not a quotient. Option (B) is false because a finite automaton exists for L/a. Option (D) ignores minimisation."
+    ],
+    "final": "Option (A) — re-label the final states with {q : δ(q, a) ∈ F}.",
+    "trap": "Confusing the quotient with reversal, or assuming the state count is preserved exactly. Quotient keeps the state set and may shrink it after minimisation; reversal keeps the state set but generally destroys determinism."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">M = (Q, Σ, δ, q₀, F) is a complete DFA accepting L, and a ∈ Σ. The right quotient is L/a = {w : wa ∈ L}. Which of the following statements is TRUE?</p>",
+   "options_html": [
+    "L/a is accepted by (Q, Σ, δ, q₀, F′) with F′ = {q ∈ Q : δ(q, a) ∈ F}, so its minimal DFA has at most |Q| states.",
+    "L/a need not be regular, because one symbol has been cut from the end of every word of L.",
+    "L/a is accepted by the DFA obtained from M by reversing every transition and exchanging q₀ with F.",
+    "L/a always has a minimal DFA with exactly |Q| states, because the state set has not changed."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The right quotient moves the acceptance test one step forward: a state is accepting for L/a exactly when reading a from it lands in F. The automaton is untouched, only the final set is re-labelled.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>w ∈ L/a ⇔ wa ∈ L ⇔ δ̂(q₀, w) ∈ {q : δ(q, a) ∈ F}. Reading w from q₀ therefore ends in an accepting state of the new machine exactly when wa is accepted by M.</li><li>Only F changes, so |Q| states still suffice; the construction is correct for every a ∈ Σ, and repeating it handles L/wa.</li><li>The new final set may leave states unreachable or mergeable, so the <i>minimal</i> form of L/a can be smaller than |Q| — never larger.</li><li>Option (C) describes reversal, which builds an automaton for L^R, not a quotient. Option (B) is false because a finite automaton exists for L/a. Option (D) ignores minimisation.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — re-label the final states with {q : δ(q, a) ∈ F}.</span></p><p class=\"row\"><b>Common misconception.</b> Confusing the quotient with reversal, or assuming the state count is preserved exactly. Quotient keeps the state set and may shrink it after minimisation; reversal keeps the state set but generally destroys determinism.</p>"
+  },
+  {
+   "id": "TOC-U1-Q128",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "N is an NFA with n states accepting L. The automaton N<sup>R</sup> is built from N by reversing every transition and exchanging the start state with the set of final states. Which of the following statements is TRUE?",
+   "options": [
+    "N<sup>R</sup> accepts L<sup>R</sup> and has n states, so L<sup>R</sup> is regular; yet the minimal DFA for L<sup>R</sup> may have exponentially more states than the minimal DFA for L.",
+    "Reversal preserves the size of the minimal DFA, because N<sup>R</sup> has exactly the same states as N.",
+    "L<sup>R</sup> need not be regular, because N<sup>R</sup> is nondeterministic.",
+    "N<sup>R</sup> accepts L<sup>R</sup> only when N is deterministic."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Reversal is a syntactic operation on automata: swap the arrows and the roles of start and final states. It produces an NFA of the same size for L^R, so regularity is preserved — but the reversal of a DFA is usually nondeterministic, and determinising it can cost exponentially many states.",
+    "steps": [
+     "A run of N<sup>R</sup> spelling w is exactly a run of N spelling w<sup>R</sup> traversed backwards, so N<sup>R</sup> accepts w precisely when w<sup>R</sup> ∈ L, i.e. w ∈ L<sup>R</sup>.",
+     "N<sup>R</sup> has the same n states and possibly several start states (the old final set), which is a legal NFA with several start states or one new start state joined by ε-transitions.",
+     "Therefore L<sup>R</sup> is regular. But the minimal DFA for L<sup>R</sup> is obtained by determinising N<sup>R</sup>, and the subset construction can blow up to 2ⁿ states; families such as {w : the n-th symbol from the end is 1} show the blow-up is real.",
+     "Option (B) confuses the NFA with its minimal DFA; option (C) forgets that NFAs accept exactly the regular languages; option (D) has the direction of the construction wrong — the reverse of a DFA is normally nondeterministic, which is why N<sup>R</sup> is defined as an NFA in the first place."
+    ],
+    "final": "Option (A) — same number of states for the reversed NFA, possible exponential growth for the minimal DFA.",
+    "trap": "Reading the n-state NFA as an n-state DFA. State counts of NFAs and of minimal DFAs measure different things, and reversal is the standard example where the gap is exponential."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">N is an NFA with n states accepting L. The automaton N<sup>R</sup> is built from N by reversing every transition and exchanging the start state with the set of final states. Which of the following statements is TRUE?</p>",
+   "options_html": [
+    "N<sup>R</sup> accepts L<sup>R</sup> and has n states, so L<sup>R</sup> is regular; yet the minimal DFA for L<sup>R</sup> may have exponentially more states than the minimal DFA for L.",
+    "Reversal preserves the size of the minimal DFA, because N<sup>R</sup> has exactly the same states as N.",
+    "L<sup>R</sup> need not be regular, because N<sup>R</sup> is nondeterministic.",
+    "N<sup>R</sup> accepts L<sup>R</sup> only when N is deterministic."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Reversal is a syntactic operation on automata: swap the arrows and the roles of start and final states. It produces an NFA of the same size for L^R, so regularity is preserved — but the reversal of a DFA is usually nondeterministic, and determinising it can cost exponentially many states.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>A run of N<sup>R</sup> spelling w is exactly a run of N spelling w<sup>R</sup> traversed backwards, so N<sup>R</sup> accepts w precisely when w<sup>R</sup> ∈ L, i.e. w ∈ L<sup>R</sup>.</li><li>N<sup>R</sup> has the same n states and possibly several start states (the old final set), which is a legal NFA with several start states or one new start state joined by ε-transitions.</li><li>Therefore L<sup>R</sup> is regular. But the minimal DFA for L<sup>R</sup> is obtained by determinising N<sup>R</sup>, and the subset construction can blow up to 2ⁿ states; families such as {w : the n-th symbol from the end is 1} show the blow-up is real.</li><li>Option (B) confuses the NFA with its minimal DFA; option (C) forgets that NFAs accept exactly the regular languages; option (D) has the direction of the construction wrong — the reverse of a DFA is normally nondeterministic, which is why N<sup>R</sup> is defined as an NFA in the first place.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — same number of states for the reversed NFA, possible exponential growth for the minimal DFA.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the n-state NFA as an n-state DFA. State counts of NFAs and of minimal DFAs measure different things, and reversal is the standard example where the gap is exponential.</p>"
+  },
+  {
+   "id": "TOC-U1-Q129",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Over Σ = {a, b}, how many states does the minimal complete DFA have that accepts exactly those strings which contain an odd number of a's and no two consecutive b's?",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "Two independent facts have to be remembered at every prefix — the parity of the number of a's, and whether the previous symbol was a b — and a third state is needed for the strings that have already failed, because the condition is violated for ever once bb appears.",
+    "steps": [
+     "Live states are the pairs (parity of #a, last symbol was b): (even, no), (odd, no), (even, yes), (odd, yes). All four are reachable: ε, a, b, ab.",
+     "On a the parity flips and the last symbol is no longer b; on b from a state whose last symbol was b the string now contains bb and can never be repaired, so both symbols lead to a dead state.",
+     "The dead state is reachable (bb) and is the fifth state; it is non-final and loops on a and b.",
+     "The four live states are pairwise distinguishable: the two parities differ on ε, and the two 'last was b' values differ on the input b (one dies, one stays alive). The dead state is distinguishable from every live state because some string, e.g. a, leads from a live state to a final state while the dead state stays dead.",
+     "Hence 4 + 1 = 5 states, and no smaller complete DFA exists."
+    ],
+    "final": "Option (B) — 5 states.",
+    "trap": "Forgetting the dead state, or merging (odd, yes) with (odd, no). The dead state is unavoidable here because the language is not Σ*, and the pair (odd, yes) versus (odd, no) is separated by the single symbol b."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Over Σ = {a, b}, how many states does the minimal complete DFA have that accepts exactly those strings which contain an odd number of a's and no two consecutive b's?</p>",
+   "options_html": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Two independent facts have to be remembered at every prefix — the parity of the number of a's, and whether the previous symbol was a b — and a third state is needed for the strings that have already failed, because the condition is violated for ever once bb appears.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Live states are the pairs (parity of #a, last symbol was b): (even, no), (odd, no), (even, yes), (odd, yes). All four are reachable: ε, a, b, ab.</li><li>On a the parity flips and the last symbol is no longer b; on b from a state whose last symbol was b the string now contains bb and can never be repaired, so both symbols lead to a dead state.</li><li>The dead state is reachable (bb) and is the fifth state; it is non-final and loops on a and b.</li><li>The four live states are pairwise distinguishable: the two parities differ on ε, and the two 'last was b' values differ on the input b (one dies, one stays alive). The dead state is distinguishable from every live state because some string, e.g. a, leads from a live state to a final state while the dead state stays dead.</li><li>Hence 4 + 1 = 5 states, and no smaller complete DFA exists.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — 5 states.</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting the dead state, or merging (odd, yes) with (odd, no). The dead state is unavoidable here because the language is not Σ*, and the pair (odd, yes) versus (odd, no) is separated by the single symbol b.</p>"
+  },
+  {
+   "id": "TOC-U1-Q130",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "An NFA has several start states. Which of the following statements is TRUE?",
+   "options": [
+    "It can be simulated by an NFA with a single start state by adding one new state with ε-transitions to each old start state, so the class of languages accepted is unchanged.",
+    "Several start states strictly enlarge the class of accepted languages beyond the regular languages.",
+    "The simulation needs 2ⁿ states when there are n start states.",
+    "Several start states are permitted only when the automaton has no ε-transitions."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A set of start states is just a nondeterministic choice made before reading any symbol, and an ε-transition from a fresh start state expresses exactly that choice.",
+    "steps": [
+     "Add a new state s with ε-transitions s → q for every old start state q, and make s the only start state. Every run of the old machine corresponds to one that begins s → q by an ε-move, and conversely.",
+     "One new state is enough, so the state count grows by exactly one, not by 2ⁿ.",
+     "The construction uses only ε-transitions, which NFAs already have, so no expressive power is added: the accepted class stays the regular languages.",
+     "Option (D) inverts the situation: ε-transitions are precisely what make the simulation possible."
+    ],
+    "final": "Option (A) — one fresh start state with ε-transitions to the old start states.",
+    "trap": "Believing that nondeterministic initial choice is a new capability. It is the same kind of choice an NFA already makes on every symbol, and ε-transitions encode it with a single extra state."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">An NFA has several start states. Which of the following statements is TRUE?</p>",
+   "options_html": [
+    "It can be simulated by an NFA with a single start state by adding one new state with ε-transitions to each old start state, so the class of languages accepted is unchanged.",
+    "Several start states strictly enlarge the class of accepted languages beyond the regular languages.",
+    "The simulation needs 2ⁿ states when there are n start states.",
+    "Several start states are permitted only when the automaton has no ε-transitions."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A set of start states is just a nondeterministic choice made before reading any symbol, and an ε-transition from a fresh start state expresses exactly that choice.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Add a new state s with ε-transitions s → q for every old start state q, and make s the only start state. Every run of the old machine corresponds to one that begins s → q by an ε-move, and conversely.</li><li>One new state is enough, so the state count grows by exactly one, not by 2ⁿ.</li><li>The construction uses only ε-transitions, which NFAs already have, so no expressive power is added: the accepted class stays the regular languages.</li><li>Option (D) inverts the situation: ε-transitions are precisely what make the simulation possible.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — one fresh start state with ε-transitions to the old start states.</span></p><p class=\"row\"><b>Common misconception.</b> Believing that nondeterministic initial choice is a new capability. It is the same kind of choice an NFA already makes on every symbol, and ε-transitions encode it with a single extra state.</p>"
+  },
+  {
+   "id": "TOC-U1-Q131",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "M₁ and M₂ are NFAs with m and n states over the same alphabet. Using the standard constructions (with a fresh start state wherever a construction needs one), which row gives the state counts of the NFAs for L(M₁) ∪ L(M₂), L(M₁)L(M₂) and L(M₁)*?",
+   "options": [
+    "m + n + 1, m + n, m + 1",
+    "m + n, m + n + 1, m + 1",
+    "m + n + 1, mn, m",
+    "m + n, m + n, m"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The three regular operations are simulated by gluing automata together with ε-transitions: union needs a new start state, concatenation needs only a link, and star needs one new start-and-final state.",
+    "steps": [
+     "Union: a new start state branches by ε-moves into the start states of M₁ and M₂, whose state sets are kept disjoint — m + n + 1 states.",
+     "Concatenation: ε-transitions run from every final state of M₁ into the start state of M₂, and the final states of M₁ stop being final — m + n states, no new state.",
+     "Star: one new state is both start and final, with ε-moves to the start of M and from every final state of M back to it — m + 1 states.",
+     "Products of state counts (option C) belong to the DFA construction for intersection, not to the NFA constructions for these three operations."
+    ],
+    "final": "Option (A) — m + n + 1, m + n and m + 1.",
+    "trap": "Adding a state to the concatenation construction, or multiplying the counts. Concatenation is the operation that costs nothing extra; intersection is the operation that multiplies, and it is done on deterministic machines."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">M₁ and M₂ are NFAs with m and n states over the same alphabet. Using the standard constructions (with a fresh start state wherever a construction needs one), which row gives the state counts of the NFAs for L(M₁) ∪ L(M₂), L(M₁)L(M₂) and L(M₁)*?</p>",
+   "options_html": [
+    "m + n + 1, m + n, m + 1",
+    "m + n, m + n + 1, m + 1",
+    "m + n + 1, mn, m",
+    "m + n, m + n, m"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The three regular operations are simulated by gluing automata together with ε-transitions: union needs a new start state, concatenation needs only a link, and star needs one new start-and-final state.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Union: a new start state branches by ε-moves into the start states of M₁ and M₂, whose state sets are kept disjoint — m + n + 1 states.</li><li>Concatenation: ε-transitions run from every final state of M₁ into the start state of M₂, and the final states of M₁ stop being final — m + n states, no new state.</li><li>Star: one new state is both start and final, with ε-moves to the start of M and from every final state of M back to it — m + 1 states.</li><li>Products of state counts (option C) belong to the DFA construction for intersection, not to the NFA constructions for these three operations.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — m + n + 1, m + n and m + 1.</span></p><p class=\"row\"><b>Common misconception.</b> Adding a state to the concatenation construction, or multiplying the counts. Concatenation is the operation that costs nothing extra; intersection is the operation that multiplies, and it is done on deterministic machines.</p>"
+  },
+  {
+   "id": "TOC-U1-Q132",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "N = (Q, Σ, δ, q₀, F) is a complete DFA, so δ(q, a) is a single state for every q ∈ Q and a ∈ Σ. The subset construction is applied to N. Which of the following statements is TRUE?",
+   "options": [
+    "The resulting DFA is isomorphic to N: its reachable states are exactly the singletons {q}, so it has |Q| states.",
+    "The resulting DFA has 2<sup>|Q|</sup> states, because the construction always builds the whole power set.",
+    "The construction is undefined for a deterministic automaton, which is why determinisation is applied only to NFAs.",
+    "The resulting DFA is always strictly smaller than N."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The subset construction tracks the set of states the NFA could be in. If the NFA is deterministic, that set is always a singleton, so the construction reproduces the machine it started from.",
+    "steps": [
+     "The start state of the constructed DFA is {q₀}, a singleton. If the current set is {q}, then on a the next set is δ({q}, a) = {δ(q, a)}, again a singleton.",
+     "So the reachable states are the singletons {q} for q ∈ Q — exactly |Q| of them, with the same transitions, start state and final states (a singleton is final when its member is in F).",
+     "The bound 2<sup>|Q|</sup> is an upper bound on the power set, not the number of states built: the construction only ever adds subsets that are reachable, which is why it terminates.",
+     "Option (D) is false because the construction reproduces N exactly; the empty set does not appear here, since N is complete."
+    ],
+    "final": "Option (A) — one singleton state per state of N, with the same transitions.",
+    "trap": "Quoting 2ⁿ as if the construction enumerated every subset. Only reachable subsets become states; on a deterministic input the reachable subsets are the singletons, so the blow-up is entirely absent."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">N = (Q, Σ, δ, q₀, F) is a complete DFA, so δ(q, a) is a single state for every q ∈ Q and a ∈ Σ. The subset construction is applied to N. Which of the following statements is TRUE?</p>",
+   "options_html": [
+    "The resulting DFA is isomorphic to N: its reachable states are exactly the singletons {q}, so it has |Q| states.",
+    "The resulting DFA has 2<sup>|Q|</sup> states, because the construction always builds the whole power set.",
+    "The construction is undefined for a deterministic automaton, which is why determinisation is applied only to NFAs.",
+    "The resulting DFA is always strictly smaller than N."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The subset construction tracks the set of states the NFA could be in. If the NFA is deterministic, that set is always a singleton, so the construction reproduces the machine it started from.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The start state of the constructed DFA is {q₀}, a singleton. If the current set is {q}, then on a the next set is δ({q}, a) = {δ(q, a)}, again a singleton.</li><li>So the reachable states are the singletons {q} for q ∈ Q — exactly |Q| of them, with the same transitions, start state and final states (a singleton is final when its member is in F).</li><li>The bound 2<sup>|Q|</sup> is an upper bound on the power set, not the number of states built: the construction only ever adds subsets that are reachable, which is why it terminates.</li><li>Option (D) is false because the construction reproduces N exactly; the empty set does not appear here, since N is complete.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — one singleton state per state of N, with the same transitions.</span></p><p class=\"row\"><b>Common misconception.</b> Quoting 2ⁿ as if the construction enumerated every subset. Only reachable subsets become states; on a deterministic input the reachable subsets are the singletons, so the blow-up is entirely absent.</p>"
+  },
+  {
+   "id": "TOC-U1-Q133",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following statements about ε-transitions is TRUE?",
+   "options": [
+    "Every ε-NFA with n states has an equivalent NFA without ε-transitions that has exactly the same n states, obtained by setting δ′(q, a) = ε-closure(δ(ε-closure(q), a)) and F′ = {q : ε-closure(q) ∩ F ≠ ∅}.",
+    "Removing ε-transitions always requires at least n additional states, one per ε-move.",
+    "An ε-NFA with n states is equivalent to a DFA with exactly 2ⁿ states.",
+    "ε-transitions add expressive power, so some language accepted by an ε-NFA is accepted by no NFA without ε-transitions."
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "ε-transitions are pure bookkeeping: a state is as good as every state reachable from it by ε-moves. Folding the ε-closure into the transition function and into the final set removes them without touching the state set.",
+    "steps": [
+     "Define δ′(q, a) = ε-closure(δ(ε-closure(q), a)): from q, first move freely by ε, then read a, then move freely by ε again. Each step of a run of the ε-NFA is simulated by one step of the new NFA.",
+     "Make q final in the new machine when ε-closure(q) meets F, so that a word whose last real symbol leaves the run at a state that could ε-reach a final state is still accepted — this also handles ε itself.",
+     "The state set is unchanged, so exactly n states suffice: option (B) is false.",
+     "Determinising can cost at most 2ⁿ states, so 'exactly 2ⁿ' in option (C) is wrong, and the class of languages is unchanged, so option (D) is wrong."
+    ],
+    "final": "Option (A) — the ε-closure is folded into δ′ and F′, with no extra states.",
+    "trap": "Thinking of ε-transitions as an extra computational device. They are an abbreviation for a relation that a plain NFA can spell out on the same state set; the only price is a denser transition table."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following statements about ε-transitions is TRUE?</p>",
+   "options_html": [
+    "Every ε-NFA with n states has an equivalent NFA without ε-transitions that has exactly the same n states, obtained by setting δ′(q, a) = ε-closure(δ(ε-closure(q), a)) and F′ = {q : ε-closure(q) ∩ F ≠ ∅}.",
+    "Removing ε-transitions always requires at least n additional states, one per ε-move.",
+    "An ε-NFA with n states is equivalent to a DFA with exactly 2ⁿ states.",
+    "ε-transitions add expressive power, so some language accepted by an ε-NFA is accepted by no NFA without ε-transitions."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> ε-transitions are pure bookkeeping: a state is as good as every state reachable from it by ε-moves. Folding the ε-closure into the transition function and into the final set removes them without touching the state set.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Define δ′(q, a) = ε-closure(δ(ε-closure(q), a)): from q, first move freely by ε, then read a, then move freely by ε again. Each step of a run of the ε-NFA is simulated by one step of the new NFA.</li><li>Make q final in the new machine when ε-closure(q) meets F, so that a word whose last real symbol leaves the run at a state that could ε-reach a final state is still accepted — this also handles ε itself.</li><li>The state set is unchanged, so exactly n states suffice: option (B) is false.</li><li>Determinising can cost at most 2ⁿ states, so 'exactly 2ⁿ' in option (C) is wrong, and the class of languages is unchanged, so option (D) is wrong.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — the ε-closure is folded into δ′ and F′, with no extra states.</span></p><p class=\"row\"><b>Common misconception.</b> Thinking of ε-transitions as an extra computational device. They are an abbreviation for a relation that a plain NFA can spell out on the same state set; the only price is a denser transition table.</p>"
+  },
+  {
+   "id": "TOC-U1-Q134",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "In the usual convention the star binds tightest, then concatenation, then union. Under that convention the expression `ab*+c` denotes:",
+   "options": [
+    "the language {a}{b}* ∪ {c}, i.e. an a followed by any number of b's, or the single string c",
+    "the language ({a}{b})* ∪ {c}, i.e. any number of copies of ab, or the single string c",
+    "the language {a}({b} ∪ {c})*, i.e. an a followed by any string of b's and c's",
+    "the language {a}{b}*{c}, i.e. an a, then any number of b's, then a c"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "Precedence fixes the parse before the language is computed: star applies to the immediately preceding symbol or bracketed expression, concatenation groups neighbours, and union is the loosest operator.",
+    "steps": [
+     "The star attaches to b only, giving b*. Concatenation then joins a and b* into ab*. Finally the union splits the whole expression into ab* and c.",
+     "So L(ab*+c) = {a}{b}* ∪ {c}, which contains a, ab, abb, … and c, but not ac.",
+     "Option (B) would need the parentheses (ab)*+c; option (C) would need a(b+c)*; option (D) would need ab*c."
+    ],
+    "final": "Option (A) — {a}{b}* ∪ {c}.",
+    "trap": "Reading the star as applying to the whole left part, or letting the union absorb the c into the star. Both mistakes come from parsing by eye instead of by precedence."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">In the usual convention the star binds tightest, then concatenation, then union. Under that convention the expression `ab*+c` denotes:</p>",
+   "options_html": [
+    "the language {a}{b}* ∪ {c}, i.e. an a followed by any number of b's, or the single string c",
+    "the language ({a}{b})* ∪ {c}, i.e. any number of copies of ab, or the single string c",
+    "the language {a}({b} ∪ {c})*, i.e. an a followed by any string of b's and c's",
+    "the language {a}{b}*{c}, i.e. an a, then any number of b's, then a c"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Precedence fixes the parse before the language is computed: star applies to the immediately preceding symbol or bracketed expression, concatenation groups neighbours, and union is the loosest operator.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The star attaches to b only, giving b*. Concatenation then joins a and b* into ab*. Finally the union splits the whole expression into ab* and c.</li><li>So L(ab*+c) = {a}{b}* ∪ {c}, which contains a, ab, abb, … and c, but not ac.</li><li>Option (B) would need the parentheses (ab)*+c; option (C) would need a(b+c)*; option (D) would need ab*c.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — {a}{b}* ∪ {c}.</span></p><p class=\"row\"><b>Common misconception.</b> Reading the star as applying to the whole left part, or letting the union absorb the c into the star. Both mistakes come from parsing by eye instead of by precedence.</p>"
+  },
+  {
+   "id": "TOC-U1-Q135",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following strings over Σ = {a, b} is NOT in L((ab + ba)*)?",
+   "options": [
+    "aabb",
+    "abba",
+    "abab",
+    "baba"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A starred union of fixed blocks generates exactly the concatenations of those blocks. Membership is decided by cutting the word into blocks of the allowed shapes.",
+    "steps": [
+     "Every word of L((ab + ba)*) has even length and splits into pieces that are each ab or ba — that is, into pieces of length 2 whose two letters differ.",
+     "abba = ab · ba ✔, abab = ab · ab ✔, baba = ba · ba ✔.",
+     "aabb would have to split into aa and bb, and neither block is generated by ab + ba, so it is not in the language. (bbaa fails for the same reason.)"
+    ],
+    "final": "Option (A) — aabb is not in L((ab + ba)*).",
+    "trap": "Assuming that any word of even length built from a's and b's qualifies, or that the order inside a block is free. The blocks are ab and ba only, in that order."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following strings over Σ = {a, b} is NOT in L((ab + ba)*)?</p>",
+   "options_html": [
+    "aabb",
+    "abba",
+    "abab",
+    "baba"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A starred union of fixed blocks generates exactly the concatenations of those blocks. Membership is decided by cutting the word into blocks of the allowed shapes.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every word of L((ab + ba)*) has even length and splits into pieces that are each ab or ba — that is, into pieces of length 2 whose two letters differ.</li><li>abba = ab · ba ✔, abab = ab · ab ✔, baba = ba · ba ✔.</li><li>aabb would have to split into aa and bb, and neither block is generated by ab + ba, so it is not in the language. (bbaa fails for the same reason.)</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — aabb is not in L((ab + ba)*).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that any word of even length built from a's and b's qualifies, or that the order inside a block is free. The blocks are ab and ba only, in that order.</p>"
+  },
+  {
+   "id": "TOC-U1-Q136",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Which regular expression denotes exactly the set of strings over Σ = {a, b} in which every b is immediately followed by an a?",
+   "options": [
+    "(a + ba)*",
+    "(ab + a)*",
+    "(a*b)*",
+    "(a + b)*a*"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A local constraint of the form 'every b is followed by an a' is turned into a regular expression by grouping each b with the a it needs, so that no b can appear at the end of a block.",
+    "steps": [
+     "Scan a word from the left, cutting off either a single a or a block ba. Every b is inside a block ba and therefore followed by an a, so the word lies in (a + ba)*.",
+     "Conversely every word of (a + ba)* is a concatenation of a's and ba's, so each b is followed by its partner a.",
+     "(ab + a)* contains ab, where the b is followed by nothing; (a*b)* contains b on its own; (a + b)*a* contains ab and b, again ending a b without an a. All three fail.",
+     "Note the language also forbids the word to end in b, which is automatic here since no block ends in b."
+    ],
+    "final": "Option (A) — (a + ba)*.",
+    "trap": "Writing (ba + a)*b? — adding a trailing b, which breaks the constraint — or accepting (ab + a)* because the words look similar. Test the single word ab in every candidate: only (ab + a)* accepts it, and it must not."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which regular expression denotes exactly the set of strings over Σ = {a, b} in which every b is immediately followed by an a?</p>",
+   "options_html": [
+    "(a + ba)*",
+    "(ab + a)*",
+    "(a*b)*",
+    "(a + b)*a*"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A local constraint of the form 'every b is followed by an a' is turned into a regular expression by grouping each b with the a it needs, so that no b can appear at the end of a block.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Scan a word from the left, cutting off either a single a or a block ba. Every b is inside a block ba and therefore followed by an a, so the word lies in (a + ba)*.</li><li>Conversely every word of (a + ba)* is a concatenation of a's and ba's, so each b is followed by its partner a.</li><li>(ab + a)* contains ab, where the b is followed by nothing; (a*b)* contains b on its own; (a + b)*a* contains ab and b, again ending a b without an a. All three fail.</li><li>Note the language also forbids the word to end in b, which is automatic here since no block ends in b.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — (a + ba)*.</span></p><p class=\"row\"><b>Common misconception.</b> Writing (ba + a)*b? — adding a trailing b, which breaks the constraint — or accepting (ab + a)* because the words look similar. Test the single word ab in every candidate: only (ab + a)* accepts it, and it must not.</p>"
+  },
+  {
+   "id": "TOC-U1-Q137",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which regular expression denotes exactly the set of strings over Σ = {a, b} whose length is even?",
+   "options": [
+    "(aa + ab + ba + bb)*",
+    "(a + b)(a + b)",
+    "(ab + ba)*",
+    "(aa + bb)*"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "A length condition is a condition on the number of symbols, so the expression must generate blocks of fixed length and star them: every block of length 2, in every shape, repeated any number of times.",
+    "steps": [
+     "Every string of even length splits uniquely into consecutive pairs, and each pair is one of aa, ab, ba, bb. So even-length strings are exactly the concatenations of those four blocks, i.e. L((aa + ab + ba + bb)*).",
+     "(a + b)(a + b) gives only the strings of length exactly 2 — no star, so it misses ε and every longer even string.",
+     "(ab + ba)* misses aaaa and bbbb, which are even-length; (aa + bb)* misses abab and abba."
+    ],
+    "final": "Option (A) — (aa + ab + ba + bb)*.",
+    "trap": "Using (ab + ba)*, which enforces an alternation the language does not have. The condition is on length only, so all four blocks of length 2 must be available."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which regular expression denotes exactly the set of strings over Σ = {a, b} whose length is even?</p>",
+   "options_html": [
+    "(aa + ab + ba + bb)*",
+    "(a + b)(a + b)",
+    "(ab + ba)*",
+    "(aa + bb)*"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A length condition is a condition on the number of symbols, so the expression must generate blocks of fixed length and star them: every block of length 2, in every shape, repeated any number of times.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Every string of even length splits uniquely into consecutive pairs, and each pair is one of aa, ab, ba, bb. So even-length strings are exactly the concatenations of those four blocks, i.e. L((aa + ab + ba + bb)*).</li><li>(a + b)(a + b) gives only the strings of length exactly 2 — no star, so it misses ε and every longer even string.</li><li>(ab + ba)* misses aaaa and bbbb, which are even-length; (aa + bb)* misses abab and abba.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — (aa + ab + ba + bb)*.</span></p><p class=\"row\"><b>Common misconception.</b> Using (ab + ba)*, which enforces an alternation the language does not have. The condition is on length only, so all four blocks of length 2 must be available.</p>"
+  },
+  {
+   "id": "TOC-U1-Q138",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "A language L ⊆ {a}* is regular if and only if the set {n : aⁿ ∈ L} is eventually periodic. Which of the following languages over Σ = {a} is regular?",
+   "options": [
+    "{a<sup>n²</sup> : n ≥ 0}",
+    "{a<sup>2ⁿ</sup> : n ≥ 0}",
+    "{aⁿ : n ≡ 1 (mod 3)}",
+    "{a<sup>n!</sup> : n ≥ 0}"
+   ],
+   "answer": [
+    2
+   ],
+   "answer_display": "Option (C)",
+   "solution": {
+    "concept": "Over a one-letter alphabet a language carries no information except the set of lengths it allows, and a finite automaton can only remember a bounded amount of that — so the length set must eventually repeat with a fixed period.",
+    "steps": [
+     "The lengths in {aⁿ : n ≡ 1 (mod 3)} are 1, 4, 7, 10, … — periodic from the start with period 3, so a 3-state DFA (count n mod 3, accept residue 1) recognises it.",
+     "The squares 0, 1, 4, 9, 16, … have gaps 1, 3, 5, 7, … that grow without bound, so the set is not eventually periodic.",
+     "The powers of 2 double their gaps, and the factorials grow faster still; neither set is eventually periodic.",
+     "Hence only the residue-class language is regular."
+    ],
+    "final": "Option (C) — {aⁿ : n ≡ 1 (mod 3)}.",
+    "trap": "Assuming every unary language is regular because the alphabet is trivial. The alphabet is trivial; the set of lengths is not, and only eventually periodic length sets can be recognised by a finite automaton."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">A language L ⊆ {a}* is regular if and only if the set {n : aⁿ ∈ L} is eventually periodic. Which of the following languages over Σ = {a} is regular?</p>",
+   "options_html": [
+    "{a<sup>n²</sup> : n ≥ 0}",
+    "{a<sup>2ⁿ</sup> : n ≥ 0}",
+    "{aⁿ : n ≡ 1 (mod 3)}",
+    "{a<sup>n!</sup> : n ≥ 0}"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Over a one-letter alphabet a language carries no information except the set of lengths it allows, and a finite automaton can only remember a bounded amount of that — so the length set must eventually repeat with a fixed period.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The lengths in {aⁿ : n ≡ 1 (mod 3)} are 1, 4, 7, 10, … — periodic from the start with period 3, so a 3-state DFA (count n mod 3, accept residue 1) recognises it.</li><li>The squares 0, 1, 4, 9, 16, … have gaps 1, 3, 5, 7, … that grow without bound, so the set is not eventually periodic.</li><li>The powers of 2 double their gaps, and the factorials grow faster still; neither set is eventually periodic.</li><li>Hence only the residue-class language is regular.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (C) — {aⁿ : n ≡ 1 (mod 3)}.</span></p><p class=\"row\"><b>Common misconception.</b> Assuming every unary language is regular because the alphabet is trivial. The alphabet is trivial; the set of lengths is not, and only eventually periodic length sets can be recognised by a finite automaton.</p>"
+  },
+  {
+   "id": "TOC-U1-Q139",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "For which of the following languages must the pumping-lemma proof use the choice i = 0 (pumping down), because pumping up leaves the word inside the language?",
+   "options": [
+    "L = {aⁿbⁿ : n ≥ 0}",
+    "L = {w ∈ {a, b}* : #a(w) ≥ #b(w)}",
+    "L = {aⁿbᵐ : n, m ≥ 0}",
+    "L = {w ∈ {a, b}* : #a(w) is even}"
+   ],
+   "answer": [
+    1
+   ],
+   "answer_display": "Option (B)",
+   "solution": {
+    "concept": "The lemma allows any i ≥ 0. Which direction refutes membership depends on how the language treats the pumped block: if adding copies keeps the word legal, only removing them can break it.",
+    "steps": [
+     "For L = {w : #a(w) ≥ #b(w)} take the witness aᵖbᵖ. Since |xy| ≤ p, the block y = aᵏ lies inside the first run of a's.",
+     "Pumping up (i ≥ 2) gives aᵖ⁺⁽ⁱ⁻¹⁾ᵏ bᵖ, which has more a's than b's and stays in L — useless as a counterexample.",
+     "Pumping down (i = 0) gives aᵖ⁻ᵏbᵖ, which has fewer a's than b's and therefore leaves L. This is the only choice that works for this witness.",
+     "For {aⁿbⁿ} pumping up already leaves L (aᵖ⁺ᵏbᵖ ∉ L), so i = 2 suffices. The last two languages are regular, so no pumping-lemma proof applies to them at all."
+    ],
+    "final": "Option (B) — {w : #a(w) ≥ #b(w)} needs i = 0.",
+    "trap": "Always pumping up by reflex. Many candidates never consider i = 0 and then claim the language survives the pumping lemma, when the counterexample was one step in the other direction."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">For which of the following languages must the pumping-lemma proof use the choice i = 0 (pumping down), because pumping up leaves the word inside the language?</p>",
+   "options_html": [
+    "L = {aⁿbⁿ : n ≥ 0}",
+    "L = {w ∈ {a, b}* : #a(w) ≥ #b(w)}",
+    "L = {aⁿbᵐ : n, m ≥ 0}",
+    "L = {w ∈ {a, b}* : #a(w) is even}"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The lemma allows any i ≥ 0. Which direction refutes membership depends on how the language treats the pumped block: if adding copies keeps the word legal, only removing them can break it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>For L = {w : #a(w) ≥ #b(w)} take the witness aᵖbᵖ. Since |xy| ≤ p, the block y = aᵏ lies inside the first run of a's.</li><li>Pumping up (i ≥ 2) gives aᵖ⁺⁽ⁱ⁻¹⁾ᵏ bᵖ, which has more a's than b's and stays in L — useless as a counterexample.</li><li>Pumping down (i = 0) gives aᵖ⁻ᵏbᵖ, which has fewer a's than b's and therefore leaves L. This is the only choice that works for this witness.</li><li>For {aⁿbⁿ} pumping up already leaves L (aᵖ⁺ᵏbᵖ ∉ L), so i = 2 suffices. The last two languages are regular, so no pumping-lemma proof applies to them at all.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (B) — {w : #a(w) ≥ #b(w)} needs i = 0.</span></p><p class=\"row\"><b>Common misconception.</b> Always pumping up by reflex. Many candidates never consider i = 0 and then claim the language survives the pumping lemma, when the counterexample was one step in the other direction.</p>"
+  },
+  {
+   "id": "TOC-U1-Q140",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MCQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "To show that L = {a<sup>q</sup> : q is prime} is not regular, a proof takes a prime q ≥ p and the word w = a<sup>q</sup>, writes w = xyz with |xy| ≤ p and |y| = k ≥ 1, and pumps. Which choice of i guarantees that xy<sup>i</sup>z ∉ L?",
+   "options": [
+    "i = q + 1",
+    "i = 2",
+    "i = 0",
+    "i = k"
+   ],
+   "answer": [
+    0
+   ],
+   "answer_display": "Option (A)",
+   "solution": {
+    "concept": "The pumped word is x yⁱ z, so its length is q + (i − 1)k. The proof succeeds when that length can be forced to be a product of two integers greater than 1.",
+    "steps": [
+     "Write |xyⁱz| = q + (i − 1)k. With i = q + 1 the length is q + qk = q(1 + k).",
+     "Since k ≥ 1, both factors q and 1 + k are at least 2, so the length is composite and the word is not in L. This works whatever k turns out to be.",
+     "With i = 2 the length is q + k, with i = 0 it is q − k, and with i = k it is q + (k − 1)k; each of these can easily be prime, so none of them refutes membership in general.",
+     "Note also that i = 0 must still leave a legal word length, which is not guaranteed here; i = q + 1 avoids that issue because it only lengthens the word."
+    ],
+    "final": "Option (A) — i = q + 1 gives the composite length q(1 + k).",
+    "trap": "Choosing a small fixed i such as 2 and hoping q + k is composite. The choice of i may depend on q and k, and it must make the length factorise for every possible k."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">To show that L = {a<sup>q</sup> : q is prime} is not regular, a proof takes a prime q ≥ p and the word w = a<sup>q</sup>, writes w = xyz with |xy| ≤ p and |y| = k ≥ 1, and pumps. Which choice of i guarantees that xy<sup>i</sup>z ∉ L?</p>",
+   "options_html": [
+    "i = q + 1",
+    "i = 2",
+    "i = 0",
+    "i = k"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The pumped word is x yⁱ z, so its length is q + (i − 1)k. The proof succeeds when that length can be forced to be a product of two integers greater than 1.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Write |xyⁱz| = q + (i − 1)k. With i = q + 1 the length is q + qk = q(1 + k).</li><li>Since k ≥ 1, both factors q and 1 + k are at least 2, so the length is composite and the word is not in L. This works whatever k turns out to be.</li><li>With i = 2 the length is q + k, with i = 0 it is q − k, and with i = k it is q + (k − 1)k; each of these can easily be prime, so none of them refutes membership in general.</li><li>Note also that i = 0 must still leave a legal word length, which is not guaranteed here; i = q + 1 avoids that issue because it only lengthens the word.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Option (A) — i = q + 1 gives the composite length q(1 + k).</span></p><p class=\"row\"><b>Common misconception.</b> Choosing a small fixed i such as 2 and hoping q + k is composite. The choice of i may depend on q and k, and it must make the length factorise for every possible k.</p>"
+  },
+  {
+   "id": "TOC-U1-Q141",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "L ⊆ {a, b}* is a finite language. Which of the following statements about its minimal complete DFA are TRUE? (Select all that apply.)",
+   "options": [
+    "It has a dead state — a non-final state whose two transitions both lead to itself — because L ≠ Σ*.",
+    "It has at most one state for each distinct prefix of a word of L, plus one dead state.",
+    "If L contains exactly n words, the minimal complete DFA has exactly n states.",
+    "Because L is finite, its minimal complete DFA is acyclic."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution": {
+    "concept": "A finite language is recognised by the trie of its words, with every missing branch sent to a dead state; minimisation can only merge states of that trie, never add to it.",
+    "steps": [
+     "Since L ≠ Σ*, some string must be rejected for ever once it is read; the state reached after such a string is non-final and stays put on both symbols, so a dead state exists — (A) is TRUE.",
+     "The trie has one node per distinct prefix of a word of L, and completing it adds the dead state, so the minimal complete DFA has at most |prefixes| + 1 states; merging can only reduce that — (B) is TRUE.",
+     "(C) fails on L = {a, b}: two words, but the minimal complete DFA needs the start state, one state for a, one for b and the dead state, i.e. 4 states.",
+     "(D) fails because the dead state loops on both symbols; the DFA is acyclic only if the dead state is removed, which is exactly what passing to a partial DFA does."
+    ],
+    "final": "Options (A) and (B).",
+    "trap": "Counting words instead of prefixes, and forgetting the dead state. The state count is governed by the number of distinct prefixes, and the dead state is the one state every finite language needs."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">L ⊆ {a, b}* is a finite language. Which of the following statements about its minimal complete DFA are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "It has a dead state — a non-final state whose two transitions both lead to itself — because L ≠ Σ*.",
+    "It has at most one state for each distinct prefix of a word of L, plus one dead state.",
+    "If L contains exactly n words, the minimal complete DFA has exactly n states.",
+    "Because L is finite, its minimal complete DFA is acyclic."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A finite language is recognised by the trie of its words, with every missing branch sent to a dead state; minimisation can only merge states of that trie, never add to it.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Since L ≠ Σ*, some string must be rejected for ever once it is read; the state reached after such a string is non-final and stays put on both symbols, so a dead state exists — (A) is TRUE.</li><li>The trie has one node per distinct prefix of a word of L, and completing it adds the dead state, so the minimal complete DFA has at most |prefixes| + 1 states; merging can only reduce that — (B) is TRUE.</li><li>(C) fails on L = {a, b}: two words, but the minimal complete DFA needs the start state, one state for a, one for b and the dead state, i.e. 4 states.</li><li>(D) fails because the dead state loops on both symbols; the DFA is acyclic only if the dead state is removed, which is exactly what passing to a partial DFA does.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Counting words instead of prefixes, and forgetting the dead state. The state count is governed by the number of distinct prefixes, and the dead state is the one state every finite language needs.</p>"
+  },
+  {
+   "id": "TOC-U1-Q142",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MSQ",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "Which of the following statements about nondeterministic finite automata are TRUE? (Select all that apply.)",
+   "options": [
+    "An NFA accepts w when at least one of its computations on w ends in a final state.",
+    "An NFA may have no transition from a state on some input symbol.",
+    "Determinising an NFA can never reduce the number of states.",
+    "Two NFAs with the same number of states over the same alphabet accept the same language."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution": {
+    "concept": "An NFA is a relation, not a function: it may have several moves or none on a symbol, and acceptance asks whether some run succeeds.",
+    "steps": [
+     "(A) is the definition: existence of an accepting computation, not agreement of all computations.",
+     "(B) is allowed — a missing transition simply means that branch dies, which is why an NFA can be written without a dead state.",
+     "(C) is false: an NFA may be larger than the minimal DFA for the same language, for instance an NFA with several redundant or unreachable states for Σ*, whose minimal DFA has one state.",
+     "(D) is false: the state count does not determine the language, since the transitions and final states differ."
+    ],
+    "final": "Options (A) and (B).",
+    "trap": "Assuming determinisation always grows the automaton. The 2ⁿ bound is a worst case; against a bloated NFA the minimal DFA can be far smaller."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Which of the following statements about nondeterministic finite automata are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "An NFA accepts w when at least one of its computations on w ends in a final state.",
+    "An NFA may have no transition from a state on some input symbol.",
+    "Determinising an NFA can never reduce the number of states.",
+    "Two NFAs with the same number of states over the same alphabet accept the same language."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> An NFA is a relation, not a function: it may have several moves or none on a symbol, and acceptance asks whether some run succeeds.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(A) is the definition: existence of an accepting computation, not agreement of all computations.</li><li>(B) is allowed — a missing transition simply means that branch dies, which is why an NFA can be written without a dead state.</li><li>(C) is false: an NFA may be larger than the minimal DFA for the same language, for instance an NFA with several redundant or unreachable states for Σ*, whose minimal DFA has one state.</li><li>(D) is false: the state count does not determine the language, since the transitions and final states differ.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Assuming determinisation always grows the automaton. The 2ⁿ bound is a worst case; against a bloated NFA the minimal DFA can be far smaller.</p>"
+  },
+  {
+   "id": "TOC-U1-Q143",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "MSQ",
+   "difficulty": "medium",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "For an ε-NFA, ε-closure(S) is the set of states reachable from some state of S along a path of ε-transitions, with S itself included. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "ε-closure(ε-closure(S)) = ε-closure(S).",
+    "ε-closure(S ∪ T) = ε-closure(S) ∪ ε-closure(T).",
+    "ε-closure(S) ∩ S = ∅ for every non-empty S.",
+    "Deleting every ε-transition and keeping all other transitions gives an equivalent automaton."
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "answer_display": "Options (A) and (B)",
+   "solution": {
+    "concept": "The ε-closure is a closure operator: it is idempotent, it distributes over union, and it always contains the set it is applied to. It is not a complement or a subtraction.",
+    "steps": [
+     "Idempotence: anything reachable by ε from a state that is itself ε-reachable from S is ε-reachable from S, and the reverse inclusion is immediate because S ⊆ ε-closure(S). (A) is TRUE.",
+     "Union: a path of ε-moves from S ∪ T starts in S or in T, so the reachable sets add up. (B) is TRUE.",
+     "(C) contradicts the definition, which includes S; for S = {q} the closure contains q. (C) is FALSE.",
+     "(D) is FALSE: deleting ε-transitions without recomputing the closures destroys the ε-moves that the automaton relies on, so acceptance can change. The correct removal also rewrites δ and F."
+    ],
+    "final": "Options (A) and (B).",
+    "trap": "Treating ε-closure as a set difference, or deleting ε-transitions while leaving δ and F untouched. Removal is only correct when the closure is folded into the transition function and the final set."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">For an ε-NFA, ε-closure(S) is the set of states reachable from some state of S along a path of ε-transitions, with S itself included. Which of the following statements are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "ε-closure(ε-closure(S)) = ε-closure(S).",
+    "ε-closure(S ∪ T) = ε-closure(S) ∪ ε-closure(T).",
+    "ε-closure(S) ∩ S = ∅ for every non-empty S.",
+    "Deleting every ε-transition and keeping all other transitions gives an equivalent automaton."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The ε-closure is a closure operator: it is idempotent, it distributes over union, and it always contains the set it is applied to. It is not a complement or a subtraction.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Idempotence: anything reachable by ε from a state that is itself ε-reachable from S is ε-reachable from S, and the reverse inclusion is immediate because S ⊆ ε-closure(S). (A) is TRUE.</li><li>Union: a path of ε-moves from S ∪ T starts in S or in T, so the reachable sets add up. (B) is TRUE.</li><li>(C) contradicts the definition, which includes S; for S = {q} the closure contains q. (C) is FALSE.</li><li>(D) is FALSE: deleting ε-transitions without recomputing the closures destroys the ε-moves that the automaton relies on, so acceptance can change. The correct removal also rewrites δ and F.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (B).</span></p><p class=\"row\"><b>Common misconception.</b> Treating ε-closure as a set difference, or deleting ε-transitions while leaving δ and F untouched. Removal is only correct when the closure is folded into the transition function and the final set.</p>"
+  },
+  {
+   "id": "TOC-U1-Q144",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "A regular expression is unambiguous when every string of its language has exactly one parse tree. Which of the following expressions over Σ = {a, b} are ambiguous? (Select all that apply.)",
+   "options": [
+    "(a*)*",
+    "a*b*",
+    "(a + b)*",
+    "(a + b)*a(a + b)*"
+   ],
+   "answer": [
+    0,
+    3
+   ],
+   "answer_display": "Options (A) and (D)",
+   "solution": {
+    "concept": "Ambiguity is a property of the expression, not of the language: two different parse trees for one word are enough. Redundant nesting of a star, or a star on both sides of a fixed symbol, is the usual source.",
+    "steps": [
+     "(a*)*: the word aa can be parsed as one iteration of the inner a* matched to aa, or as two iterations matched to a and a. Two parse trees, so ambiguous.",
+     "a*b*: the split between the a-block and the b-block is forced by the word itself, and each block is matched uniquely, so the parse is unique.",
+     "(a + b)*: each symbol is matched by exactly one alternative at one position, so the parse is unique.",
+     "(a + b)*a(a + b)*: in aaa the middle a can be any of the three positions, giving three parse trees. Ambiguous."
+    ],
+    "final": "Options (A) and (D).",
+    "trap": "Judging ambiguity by the language rather than by the expression, or assuming that a starred expression is always ambiguous. (a + b)* is unambiguous; the redundancy in (a*)* and in the two-sided star is what creates the second parse."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">A regular expression is unambiguous when every string of its language has exactly one parse tree. Which of the following expressions over Σ = {a, b} are ambiguous? (Select all that apply.)</p>",
+   "options_html": [
+    "(a*)*",
+    "a*b*",
+    "(a + b)*",
+    "(a + b)*a(a + b)*"
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Ambiguity is a property of the expression, not of the language: two different parse trees for one word are enough. Redundant nesting of a star, or a star on both sides of a fixed symbol, is the usual source.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(a*)*: the word aa can be parsed as one iteration of the inner a* matched to aa, or as two iterations matched to a and a. Two parse trees, so ambiguous.</li><li>a*b*: the split between the a-block and the b-block is forced by the word itself, and each block is matched uniquely, so the parse is unique.</li><li>(a + b)*: each symbol is matched by exactly one alternative at one position, so the parse is unique.</li><li>(a + b)*a(a + b)*: in aaa the middle a can be any of the three positions, giving three parse trees. Ambiguous.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A) and (D).</span></p><p class=\"row\"><b>Common misconception.</b> Judging ambiguity by the language rather than by the expression, or assuming that a starred expression is always ambiguous. (a + b)* is unambiguous; the redundancy in (a*)* and in the two-sided star is what creates the second parse.</p>"
+  },
+  {
+   "id": "TOC-U1-Q145",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "MSQ",
+   "difficulty": "hard",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "L = {w ∈ {a, b}* : w = w<sup>R</sup>} is the set of palindromes over {a, b}. A proof that L is not regular takes the pumping constant p and the word w = aᵖbaᵖ. Which of the following statements are TRUE? (Select all that apply.)",
+   "options": [
+    "w ∈ L, so it is a legal witness.",
+    "Every decomposition w = xyz with |xy| ≤ p and |y| ≥ 1 puts y entirely inside the first block of a's.",
+    "Pumping down with i = 0 gives aᵖ⁻ᵏbaᵖ, which is not a palindrome.",
+    "The same witness shows that {aⁿbaⁿ : n ≥ 0} is regular."
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "answer_display": "Options (A), (B) and (C)",
+   "solution": {
+    "concept": "The witness must belong to the language, and the constraint |xy| ≤ p is what forces the pumped block into a chosen region — here the leading run of a's, which breaks the mirror symmetry when it is shortened.",
+    "steps": [
+     "aᵖbaᵖ reads the same forwards and backwards, so w ∈ L; a witness must be in L, so (A) holds.",
+     "Since |xy| ≤ p and the first p symbols of w are a's, both x and y lie inside that first run: y = aᵏ with 1 ≤ k ≤ p. (B) holds.",
+     "Pumping down gives aᵖ⁻ᵏbaᵖ, whose two runs of a's have different lengths, so it is not a palindrome and has left L. (C) holds.",
+     "(D) is false twice over: {aⁿbaⁿ : n ≥ 0} is not regular, and the witness aᵖbaᵖ proves non-regularity, never regularity."
+    ],
+    "final": "Options (A), (B) and (C).",
+    "trap": "Forgetting to check that the witness is in the language, or assuming the pumped block may fall anywhere. The bound |xy| ≤ p is the whole reason the first block can be targeted, and pumping down is the direction that breaks the symmetry."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">L = {w ∈ {a, b}* : w = w<sup>R</sup>} is the set of palindromes over {a, b}. A proof that L is not regular takes the pumping constant p and the word w = aᵖbaᵖ. Which of the following statements are TRUE? (Select all that apply.)</p>",
+   "options_html": [
+    "w ∈ L, so it is a legal witness.",
+    "Every decomposition w = xyz with |xy| ≤ p and |y| ≥ 1 puts y entirely inside the first block of a's.",
+    "Pumping down with i = 0 gives aᵖ⁻ᵏbaᵖ, which is not a palindrome.",
+    "The same witness shows that {aⁿbaⁿ : n ≥ 0} is regular."
+   ],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> The witness must belong to the language, and the constraint |xy| ≤ p is what forces the pumped block into a chosen region — here the leading run of a's, which breaks the mirror symmetry when it is shortened.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>aᵖbaᵖ reads the same forwards and backwards, so w ∈ L; a witness must be in L, so (A) holds.</li><li>Since |xy| ≤ p and the first p symbols of w are a's, both x and y lie inside that first run: y = aᵏ with 1 ≤ k ≤ p. (B) holds.</li><li>Pumping down gives aᵖ⁻ᵏbaᵖ, whose two runs of a's have different lengths, so it is not a palindrome and has left L. (C) holds.</li><li>(D) is false twice over: {aⁿbaⁿ : n ≥ 0} is not regular, and the witness aᵖbaᵖ proves non-regularity, never regularity.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: Options (A), (B) and (C).</span></p><p class=\"row\"><b>Common misconception.</b> Forgetting to check that the witness is in the language, or assuming the pumped block may fall anywhere. The bound |xy| ≤ p is the whole reason the first block can be targeted, and pumping down is the direction that breaks the symmetry.</p>"
+  },
+  {
+   "id": "TOC-U1-Q146",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "Over Σ = {a, b}, how many states does the minimal complete DFA have that accepts exactly the finite language L = {ab, bba}?",
+   "options": [],
+   "answer": 6,
+   "answer_display": "6",
+   "solution": {
+    "concept": "Build the trie of the words, complete it with a dead state, then merge states that no future input can tell apart. Two final states whose every transition leads to the dead state are indistinguishable and must merge.",
+    "steps": [
+     "The distinct prefixes of ab and bba are ε, a, ab, b, bb, bba — six states — and every other string is rejected, which needs a seventh, dead state.",
+     "Transitions: δ(ε,a) = a, δ(ε,b) = b, δ(a,b) = ab, δ(a,a) = dead, δ(b,b) = bb, δ(b,a) = dead, δ(bb,a) = bba, δ(bb,b) = dead, δ(ab,a) = δ(ab,b) = dead, δ(bba,a) = δ(bba,b) = dead.",
+     "The states ab and bba are both final and both send a and b to the dead state, so no string distinguishes them: they merge.",
+     "No other merge is possible — the remaining states have different futures (ε needs ab or bba, a needs b then nothing more, b needs ba, bb needs a, dead accepts nothing) — so the minimal complete DFA has 6 states."
+    ],
+    "final": "6",
+    "trap": "Counting the trie nodes and stopping at 7, or at 6, without completing it. The correct count is prefixes + 1 for the dead state, minus the merges that minimisation finds; here exactly one pair merges."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">Over Σ = {a, b}, how many states does the minimal complete DFA have that accepts exactly the finite language L = {ab, bba}?</p>",
+   "options_html": [],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Build the trie of the words, complete it with a dead state, then merge states that no future input can tell apart. Two final states whose every transition leads to the dead state are indistinguishable and must merge.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>The distinct prefixes of ab and bba are ε, a, ab, b, bb, bba — six states — and every other string is rejected, which needs a seventh, dead state.</li><li>Transitions: δ(ε,a) = a, δ(ε,b) = b, δ(a,b) = ab, δ(a,a) = dead, δ(b,b) = bb, δ(b,a) = dead, δ(bb,a) = bba, δ(bb,b) = dead, δ(ab,a) = δ(ab,b) = dead, δ(bba,a) = δ(bba,b) = dead.</li><li>The states ab and bba are both final and both send a and b to the dead state, so no string distinguishes them: they merge.</li><li>No other merge is possible — the remaining states have different futures (ε needs ab or bba, a needs b then nothing more, b needs ba, bb needs a, dead accepts nothing) — so the minimal complete DFA has 6 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 6</span></p><p class=\"row\"><b>Common misconception.</b> Counting the trie nodes and stopping at 7, or at 6, without completing it. The correct count is prefixes + 1 for the dead state, minus the merges that minimisation finds; here exactly one pair merges.</p>"
+  },
+  {
+   "id": "TOC-U1-Q147",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "dfa-construction-minimization",
+   "subtopic": "dfa-construction-minimization",
+   "subtopic_label": "DFA construction & minimisation",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "A complete DFA over Σ = {0, 1} has states {A, B, C, D}, start state A, final states {C}, and transitions δ(A,0) = B, δ(A,1) = C, δ(B,0) = A, δ(B,1) = D, δ(C,0) = B, δ(C,1) = D, δ(D,0) = B, δ(D,1) = C. How many states does its minimal equivalent have?",
+   "options": [],
+   "answer": 3,
+   "answer_display": "3",
+   "solution": {
+    "concept": "Minimisation merges exactly the states that agree on acceptance for every future input. Identical rows together with identical finality is the quickest sufficient test, and table filling confirms nothing else merges.",
+    "steps": [
+     "Compare A and D: both are non-final, δ(A,0) = B = δ(D,0) and δ(A,1) = C = δ(D,1). Their rows are identical and their finality matches, so A ≡ D.",
+     "Compare B with the rest: B is non-final, while C is final, so B and C are separated by ε. B and A differ on 1 (δ(A,1) = C is final, δ(B,1) = D is not), and B and D differ the same way.",
+     "So B is alone in its class, C is alone in its class, and {A, D} is one class.",
+     "Three classes remain, all reachable from the class of A, so the minimal DFA has 3 states."
+    ],
+    "final": "3",
+    "trap": "Stopping after removing unreachable states, or merging states because they are both non-final. Non-final states merge only when every transition leads to the same classes."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">A complete DFA over Σ = {0, 1} has states {A, B, C, D}, start state A, final states {C}, and transitions δ(A,0) = B, δ(A,1) = C, δ(B,0) = A, δ(B,1) = D, δ(C,0) = B, δ(C,1) = D, δ(D,0) = B, δ(D,1) = C. How many states does its minimal equivalent have?</p>",
+   "options_html": [],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Minimisation merges exactly the states that agree on acceptance for every future input. Identical rows together with identical finality is the quickest sufficient test, and table filling confirms nothing else merges.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Compare A and D: both are non-final, δ(A,0) = B = δ(D,0) and δ(A,1) = C = δ(D,1). Their rows are identical and their finality matches, so A ≡ D.</li><li>Compare B with the rest: B is non-final, while C is final, so B and C are separated by ε. B and A differ on 1 (δ(A,1) = C is final, δ(B,1) = D is not), and B and D differ the same way.</li><li>So B is alone in its class, C is alone in its class, and {A, D} is one class.</li><li>Three classes remain, all reachable from the class of A, so the minimal DFA has 3 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 3</span></p><p class=\"row\"><b>Common misconception.</b> Stopping after removing unreachable states, or merging states because they are both non-final. Non-final states merge only when every transition leads to the same classes.</p>"
+  },
+  {
+   "id": "TOC-U1-Q148",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "nfa-to-dfa-subset-construction",
+   "subtopic": "nfa-to-dfa-subset-construction",
+   "subtopic_label": "NFA to DFA: subset construction",
+   "type": "NAT",
+   "difficulty": "medium",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "An NFA N over Σ = {0, 1} has states {p, q, r, s}, start state p, final state {s}, and transitions δ(p,0) = {p, q}, δ(p,1) = {p}, δ(q,1) = {r}, δ(r,0) = {s}, δ(s,0) = {s}, δ(s,1) = {s}; every transition not listed is empty. How many states does the minimal complete DFA equivalent to N have?",
+   "options": [],
+   "answer": 4,
+   "answer_display": "4",
+   "solution": {
+    "concept": "First identify the language the NFA accepts, then build the minimal DFA for that language. Here the NFA guesses where the substring 010 starts, so the language is 'contains 010' — and its minimal DFA has one state per prefix of 010 matched so far.",
+    "steps": [
+     "From p the automaton loops on 0 and 1, and on a 0 it may also move to q, guessing that a 010 is beginning. From q a 1 leads to r, from r a 0 leads to s, and s accepts everything afterwards.",
+     "So N accepts exactly the strings that contain 010 as a substring.",
+     "The minimal complete DFA tracks the longest suffix of the input that is a prefix of 010: the four states are ε (nothing matched), 0, 01, and 010 (accepting, absorbing).",
+     "All four are reachable (ε, 0, 01, 010) and pairwise distinguishable: only 010 is final, 01 needs one more symbol, 0 needs two, and ε needs three. Hence 4 states.",
+     "The subset construction on N produces six reachable subsets — {p}, {p,q}, {p,r}, {p,s}, {p,q,s} and {p,r,s} — and minimising that DFA merges them down to the same 4 states."
+    ],
+    "final": "4",
+    "trap": "Reporting the number of reachable subsets of the subset construction. The construction is correct but not minimal; the question asks for the minimal DFA, and for 'contains 010' that is 4 states."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">An NFA N over Σ = {0, 1} has states {p, q, r, s}, start state p, final state {s}, and transitions δ(p,0) = {p, q}, δ(p,1) = {p}, δ(q,1) = {r}, δ(r,0) = {s}, δ(s,0) = {s}, δ(s,1) = {s}; every transition not listed is empty. How many states does the minimal complete DFA equivalent to N have?</p>",
+   "options_html": [],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> First identify the language the NFA accepts, then build the minimal DFA for that language. Here the NFA guesses where the substring 010 starts, so the language is 'contains 010' — and its minimal DFA has one state per prefix of 010 matched so far.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>From p the automaton loops on 0 and 1, and on a 0 it may also move to q, guessing that a 010 is beginning. From q a 1 leads to r, from r a 0 leads to s, and s accepts everything afterwards.</li><li>So N accepts exactly the strings that contain 010 as a substring.</li><li>The minimal complete DFA tracks the longest suffix of the input that is a prefix of 010: the four states are ε (nothing matched), 0, 01, and 010 (accepting, absorbing).</li><li>All four are reachable (ε, 0, 01, 010) and pairwise distinguishable: only 010 is final, 01 needs one more symbol, 0 needs two, and ε needs three. Hence 4 states.</li><li>The subset construction on N produces six reachable subsets — {p}, {p,q}, {p,r}, {p,s}, {p,q,s} and {p,r,s} — and minimising that DFA merges them down to the same 4 states.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 4</span></p><p class=\"row\"><b>Common misconception.</b> Reporting the number of reachable subsets of the subset construction. The construction is correct but not minimal; the question asks for the minimal DFA, and for 'contains 010' that is 4 states.</p>"
+  },
+  {
+   "id": "TOC-U1-Q149",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "regular-expressions",
+   "subtopic": "regular-expressions",
+   "subtopic_label": "Regular expressions",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Textbook-inspired",
+   "source": "STANDARD_TEXTBOOK",
+   "question": "How many strings of length exactly 6 over Σ = {a, b} belong to L((aa + bb)*)?",
+   "options": [],
+   "answer": 8,
+   "answer_display": "8",
+   "solution": {
+    "concept": "A starred union of two blocks of length 2 generates exactly the concatenations of those blocks, so the length-6 words are the three-block concatenations, counted by choosing a block at each position.",
+    "steps": [
+     "Length 6 needs exactly three blocks, each of length 2.",
+     "Each block is either aa or bb, chosen independently: 2 × 2 × 2 = 8 words.",
+     "They are aaaaaa, aaaabb, aabbaa, aabbbb, bbaaaa, bbaabb, bbbbaa, bbbbbb.",
+     "No other word of length 6 lies in the language, because any word in (aa + bb)* has even length and each of its blocks is one of the two."
+    ],
+    "final": "8",
+    "trap": "Counting 2⁶ = 64 words of length 6, or allowing mixed blocks such as abab. The blocks are exactly aa and bb, so the count is 2³, not 2⁶."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">How many strings of length exactly 6 over Σ = {a, b} belong to L((aa + bb)*)?</p>",
+   "options_html": [],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> A starred union of two blocks of length 2 generates exactly the concatenations of those blocks, so the length-6 words are the three-block concatenations, counted by choosing a block at each position.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>Length 6 needs exactly three blocks, each of length 2.</li><li>Each block is either aa or bb, chosen independently: 2 × 2 × 2 = 8 words.</li><li>They are aaaaaa, aaaabb, aabbaa, aabbbb, bbaaaa, bbaabb, bbbbaa, bbbbbb.</li><li>No other word of length 6 lies in the language, because any word in (aa + bb)* has even length and each of its blocks is one of the two.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 8</span></p><p class=\"row\"><b>Common misconception.</b> Counting 2⁶ = 64 words of length 6, or allowing mixed blocks such as abab. The blocks are exactly aa and bb, so the count is 2³, not 2⁶.</p>"
+  },
+  {
+   "id": "TOC-U1-Q150",
+   "unit": 1,
+   "unit_number": 1,
+   "unit_slug": "regular-languages-fa",
+   "unit_name": "Regular Languages & Finite Automata",
+   "topic": "Regular Languages & Finite Automata",
+   "date": "2026-11-04",
+   "set": "Set 1 of 2 (fourth pass)",
+   "sub": "pumping-lemma-for-regular",
+   "subtopic": "pumping-lemma-for-regular",
+   "subtopic_label": "Pumping lemma for regular languages",
+   "type": "NAT",
+   "difficulty": "easy",
+   "reference_category": "Original GATE-style",
+   "source": "ORIGINAL_SYNTHESIS",
+   "question": "How many of the following five languages over Σ = {a} are regular? (i) {a<sup>n²</sup> : n ≥ 0} (ii) {a<sup>2ⁿ</sup> : n ≥ 0} (iii) {a<sup>3n</sup> : n ≥ 0} (iv) {a<sup>n²+n</sup> : n ≥ 0} (v) {a<sup>n!</sup> : n ≥ 0}",
+   "options": [],
+   "answer": 1,
+   "answer_display": "1",
+   "solution": {
+    "concept": "Over a one-letter alphabet, a language is regular exactly when its set of lengths is eventually periodic — a finite automaton can only count up to a bounded number and then must repeat.",
+    "steps": [
+     "(iii) has lengths 0, 3, 6, 9, …, periodic with period 3, and is recognised by a 3-state DFA counting the length mod 3. It is regular.",
+     "(i) has lengths 0, 1, 4, 9, 16, …; (iv) has lengths 0, 2, 6, 12, 20, …; (ii) has lengths 1, 2, 4, 8, …; (v) has lengths 1, 2, 6, 24, 120, …. In each case the gaps between consecutive lengths grow without bound, so the length set is not eventually periodic.",
+     "For (i), (ii), (iv) and (v) the pumping lemma over a unary alphabet also fails directly: pumping a word of length L gives L + (i − 1)k for every i ≥ 0, and no such arithmetic progression stays inside the length set for all i.",
+     "Hence exactly one of the five is regular."
+    ],
+    "final": "1",
+    "trap": "Assuming that a unary language is regular because the alphabet has one symbol. The alphabet carries no information, but the set of lengths does, and only eventually periodic length sets are recognised by finite automata."
+   },
+   "subject": "theory-of-computation",
+   "subject_name": "Theory of Computation",
+   "question_html": "<p class=\"qtext\">How many of the following five languages over Σ = {a} are regular? (i) {a<sup>n²</sup> : n ≥ 0} (ii) {a<sup>2ⁿ</sup> : n ≥ 0} (iii) {a<sup>3n</sup> : n ≥ 0} (iv) {a<sup>n²+n</sup> : n ≥ 0} (v) {a<sup>n!</sup> : n ≥ 0}</p>",
+   "options_html": [],
+   "solution_html": "<h4>Detailed solution</h4><p class=\"row\"><b>Concept.</b> Over a one-letter alphabet, a language is regular exactly when its set of lengths is eventually periodic — a finite automaton can only count up to a bounded number and then must repeat.</p><p class=\"row\"><b>Step by step.</b></p><ol><li>(iii) has lengths 0, 3, 6, 9, …, periodic with period 3, and is recognised by a 3-state DFA counting the length mod 3. It is regular.</li><li>(i) has lengths 0, 1, 4, 9, 16, …; (iv) has lengths 0, 2, 6, 12, 20, …; (ii) has lengths 1, 2, 4, 8, …; (v) has lengths 1, 2, 6, 24, 120, …. In each case the gaps between consecutive lengths grow without bound, so the length set is not eventually periodic.</li><li>For (i), (ii), (iv) and (v) the pumping lemma over a unary alphabet also fails directly: pumping a word of length L gives L + (i − 1)k for every i ≥ 0, and no such arithmetic progression stays inside the length set for all i.</li><li>Hence exactly one of the five is regular.</li></ol><p class=\"row\"><span class=\"ansline\">Answer: 1</span></p><p class=\"row\"><b>Common misconception.</b> Assuming that a unary language is regular because the alphabet has one symbol. The alphabet carries no information, but the set of lengths does, and only eventually periodic length sets are recognised by finite automata.</p>"
   }
  ]
 }
