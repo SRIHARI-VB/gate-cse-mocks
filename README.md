@@ -7,36 +7,68 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 2 of 2 (third pass)**,
+- **Digital Logic · Unit 3 — Sequential Circuits: Flip-Flops & Registers, Set 1 of 2 (third pass)**,
+  2026-11-05 →
+  [`digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-05.html`](digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: Latches vs flip-flops (6) · Setup & hold times (7) · Characteristic equations (6) · Shift registers (6)
+- Rotation: MODE A. Five subjects already carried a 2026-11-05 paper, so the draw ran over the six that did not
+  and returned **Digital Logic**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 18, unit 2, combinational-circuits, Set 1 of 2 (third pass)}`. That unit stands at **125**
+  questions and has been current since 2026-10-27, so **B3 failed on both the cap and the 7-day backstop**.
+  **B4 advanced exactly one unit**: `(index_of(unit 2) = 1 + 1) mod 4 = 2` → **Unit 3, Sequential Circuits:
+  Flip-Flops & Registers**, which held 100 questions. Every unit of the subject stands at 100 or more, so **B5
+  applies**: the third pass begins, and this paper is its first set, taking Unit 3 to **125**.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 2 of 2 (third pass)**,
   2026-11-05 →
   [`computer-networks/transport-layer/gate_cn_mock_5_2026-11-05.html`](computer-networks/transport-layer/gate_cn_mock_5_2026-11-05.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: UDP datagrams (6) · TCP header & connection management (7) · Flow control & sliding window (6) ·
-  Congestion control: slow start & AIMD (6)
-- Rotation: MODE A. Four subjects already carried a 2026-11-05 paper, so the draw ran over the seven that did not
-  and returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 22, unit 4, routing-protocols, Set 2 of 2 (third pass)}`. That unit stands at **100**
-  questions and has been current since 2026-10-27, so **B3 failed on both the cap and the 7-day backstop**.
-  **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 6 = 4` → **Unit 5, Transport Layer:
-  TCP, UDP & Congestion**, which held 75 questions. Every unit of the subject stands at 75 or more, so **B5
-  applies**: the third pass continues, and this paper is its second set, taking Unit 5 to **100**.
-  No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Databases · Unit 2 — SQL & Advanced Querying, Set 2 of 2 (second pass)**,
-  2026-11-05 →
-  [`databases/sql-querying/gate_db_mock_2_2026-11-05.html`](databases/sql-querying/gate_db_mock_2_2026-11-05.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 234 (35 Discrete Mathematics, 19 Algorithms, 17 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 23 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
-| Current papers / archived sets | 71 current · 163 archived |
+| Papers published (current + archived) | 235 (35 Discrete Mathematics, 19 Algorithms, 17 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 23 Computer Networks, 23 Theory of Computation, 19 Digital Logic, 16 Computer Architecture) |
+| Current papers / archived sets | 71 current · 164 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5850 (875 Discrete Mathematics, 475 Algorithms, 425 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 575 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
+| Questions in the subject banks | 5875 (875 Discrete Mathematics, 475 Algorithms, 425 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 575 Computer Networks, 575 Theory of Computation, 475 Digital Logic, 400 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 163 (19 Discrete Mathematics, 12 Algorithms, 12 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+| Archived sets (earlier runs) | 164 (19 Discrete Mathematics, 12 Algorithms, 12 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 19 Theory of Computation, 15 Digital Logic, 10 Computer Architecture) |
+
+### 2026-11-05 — Digital Logic Unit 3, Set 1 of 2 (third pass)
+
+- New paper at `digital-logic/sequential-flipflops/gate_dl_mock_3_2026-11-05.html`. The 2026-11-03 paper it
+  supersedes moved to `archive/gate_dl_mock_3_2026-11-03_run1.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Five subjects already carried a 2026-11-05 paper (algorithms,
+  computer-architecture, computer-networks, databases, programming-data-structures), so the draw ran over the six
+  that did not — compiler-design, digital-logic, discrete-mathematics, engineering-mathematics, operating-systems,
+  theory-of-computation — and returned **Digital Logic**. Read from its own `master_bank.json`, the most recent
+  paper was `{2026-11-04, run 18, unit 2, combinational-circuits, Set 1 of 2 (third pass)}`. Unit 2 stands at
+  **125** questions and its first paper is dated 2026-10-27, so **B3 failed on the cap** and the 7-day backstop
+  would have failed too. **B4 advanced exactly one unit**: `(index_of(combinational-circuits) = 1 + 1) mod 4 = 2`
+  → **Unit 3, Sequential Circuits: Flip-Flops & Registers**, which held 100 questions. Every Digital Logic unit
+  sits at 100 or above, so **B5 applies**: the modulo wraps, the third pass begins, and this paper is its first
+  set — the unit's fifth set overall — taking Unit 3 to **125**. No override was passed and no partial set was
+  generated: exactly 25 questions.
+- **Content.** All 25 ids are new (`DL-U3E-Q01`…`DL-U3E-Q25`); no id and no normalised stem collides with the 100
+  Unit 3 items already banked. Coverage: latches vs flip-flops 6, setup and hold times 7, characteristic equations
+  6, shift registers 6 — every unit subtopic represented. Composition 15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy /
+  10 medium / 5 hard; 35 marks in 60 minutes.
+- **Verification.** Every numeric key was recomputed by script: the aperture window `0.6 + 0.4 = 1.0` ns; the
+  half-frequency capture path `10 − 1.0 − 1.2 = 7.8` ns; the largest positive skew a hold check allows
+  `0.6 + 0.3 − 0.5 = 0.4` ns; the two JK input pairs that give 1 → 0 (`(0,1)` and `(1,1)`); the two latches inside
+  a master–slave pair; the right shift `1011 → 1101 → 0110`; the ring counter `100` after five clocks (`001`); and
+  the left shift `11 × 4 = 44`. The five MSQ answer sets were checked option by option, and the MCQ key is spread
+  over the four letters (4 A, 4 B, 3 C, 4 D). `verified_pyqs` holds two Unit 1 items for this subject, so no item on
+  this paper carries the `GATE_PYQ_VARIATION` tag and nothing here is claimed as an official GATE question.
+- **Interface.** Generated from the current shell (the 2026-11-03 Digital Logic paper): the `<style>` block, the
+  palette, the meta strip, the Mock Test Mode banner, the result summary and the whole grading script are
+  byte-identical to it. The bank tab was rebuilt from `master_bank.json` by the same generator, and regenerating
+  the 2026-11-03 bank tab from that file reproduces the shipped bytes exactly. Every question card carries
+  `data-subject="digital-logic"` along with unit, subtopic, type, difficulty and source.
 
 ### 2026-11-05 — Computer Networks Unit 5, Set 2 of 2 (third pass)
 
@@ -12093,10 +12125,10 @@ Algorithms:
 
 | # | Unit | Slug | Questions in bank | Covered |
 | --- | --- | --- | --- | --- |
-| 1 | Number Systems & Representation | `number-systems` | 50 | yes |
-| 2 | Combinational Circuit Design | `combinational-circuits` | 100 | yes |
-| 3 | Sequential Circuits: Flip-Flops & Registers | `sequential-flipflops` | 50 | yes |
-| 4 | Sequential Circuits: Counters & State Machines | `sequential-fsm-counters` | 50 | yes |
+| 1 | Number Systems & Representation | `number-systems` | 125 | yes |
+| 2 | Combinational Circuit Design | `combinational-circuits` | 125 | yes |
+| 3 | Sequential Circuits: Flip-Flops & Registers | `sequential-flipflops` | 125 | yes |
+| 4 | Sequential Circuits: Counters & State Machines | `sequential-fsm-counters` | 100 | yes |
 
 ### Computer Architecture
 
