@@ -7,36 +7,70 @@ and no answer, option mark or hint visible until the test is submitted.
 
 ## Latest test
 
-- **Databases · Unit 2 — SQL & Advanced Querying, Set 2 of 2 (second pass)**,
+- **Computer Networks · Unit 5 — Transport Layer: TCP, UDP & Congestion, Set 2 of 2 (third pass)**,
+  2026-11-05 →
+  [`computer-networks/transport-layer/gate_cn_mock_5_2026-11-05.html`](computer-networks/transport-layer/gate_cn_mock_5_2026-11-05.html)
+- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
+- Subtopics: UDP datagrams (6) · TCP header & connection management (7) · Flow control & sliding window (6) ·
+  Congestion control: slow start & AIMD (6)
+- Rotation: MODE A. Four subjects already carried a 2026-11-05 paper, so the draw ran over the seven that did not
+  and returned **Computer Networks**. Read from its own `master_bank.json`, the most recent paper was
+  `{2026-11-04, run 22, unit 4, routing-protocols, Set 2 of 2 (third pass)}`. That unit stands at **100**
+  questions and has been current since 2026-10-27, so **B3 failed on both the cap and the 7-day backstop**.
+  **B4 advanced exactly one unit**: `(index_of(unit 4) = 3 + 1) mod 6 = 4` → **Unit 5, Transport Layer:
+  TCP, UDP & Congestion**, which held 75 questions. Every unit of the subject stands at 75 or more, so **B5
+  applies**: the third pass continues, and this paper is its second set, taking Unit 5 to **100**.
+  No override was passed and no partial set was generated: exactly 25 questions.
+- Previous test: **Databases · Unit 2 — SQL & Advanced Querying, Set 2 of 2 (second pass)**,
   2026-11-05 →
   [`databases/sql-querying/gate_db_mock_2_2026-11-05.html`](databases/sql-querying/gate_db_mock_2_2026-11-05.html)
-- 25 questions: 15 MCQ · 5 MSQ · 5 NAT · difficulty 10 easy / 10 medium / 5 hard · 60 minutes · 35 marks
-- Subtopics: DDL, DML & DCL (5) · Nested & correlated subqueries (5) · Aggregates, GROUP BY & HAVING (5) ·
-  Joins & outer joins (5) · Views, triggers & constraints (5)
-- Rotation: MODE A. The draw ran over the subjects that did not already carry a 2026-11-05 paper and returned
-  **Databases**. Read from its own `master_bank.json`, the most recent paper was
-  `{2026-11-04, run 20, unit 1, er-relational-algebra, Set 1 of 2 (second pass)}`. That unit stands at **100**
-  questions, so **B3 failed on the cap** and the 7-day backstop was irrelevant. **B5 applies**: every unit of the
-  subject stands above 50, so the second pass is under way. **B4 advanced exactly one unit**:
-  `(index_of(unit 1) = 0 + 1) mod 5 = 1` → **Unit 2, SQL & Advanced Querying**, which held 75 questions from
-  2026-10-28 and 2026-11-02 and now closes the second pass at **100**.
-  No override was passed and no partial set was generated: exactly 25 questions.
-- Previous test: **Algorithms · Unit 5 — Graph Algorithms: Traversals & Spanning Trees, Set 3 (second pass)**,
-  2026-11-05 →
-  [`algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html`](algorithms/graph-algorithms-traversals-mst/gate_algo_mock_5_2026-11-05.html)
 
 ## Status
 
 
 | Item | Value |
 | --- | --- |
-| Papers published (current + archived) | 233 (35 Discrete Mathematics, 19 Algorithms, 17 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 22 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
-| Current papers / archived sets | 71 current · 162 archived |
+| Papers published (current + archived) | 234 (35 Discrete Mathematics, 19 Algorithms, 17 Databases, 20 Compiler Design, 26 Operating Systems, 15 Engineering Mathematics, 22 Programming and Data Structures, 23 Computer Networks, 23 Theory of Computation, 18 Digital Logic, 16 Computer Architecture) |
+| Current papers / archived sets | 71 current · 163 archived |
 | Test cards on the portal | 71 (one card per current paper; every superseded set is a link on its unit’s card) |
 | Units covered | 16 of 16 in Discrete Mathematics; 7 of 7 in Algorithms; 5 of 5 in Databases; 5 of 5 in Compiler Design; 6 of 6 in Operating Systems; 5 of 5 in Engineering Mathematics; 7 of 7 in Programming and Data Structures; 6 of 6 in Computer Networks; 4 of 4 in Theory of Computation; 4 of 4 in Digital Logic; 6 of 6 in Computer Architecture |
-| Questions in the subject banks | 5825 (875 Discrete Mathematics, 475 Algorithms, 425 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 550 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
+| Questions in the subject banks | 5850 (875 Discrete Mathematics, 475 Algorithms, 425 Databases, 500 Compiler Design, 650 Operating Systems, 375 Engineering Mathematics, 550 Programming and Data Structures, 575 Computer Networks, 575 Theory of Computation, 450 Digital Logic, 400 Computer Architecture) |
 | Verified official PYQs | 6 (2 Discrete Mathematics, 1 Databases, 1 Operating Systems, 2 Digital Logic) |
-| Archived sets (earlier runs) | 162 (19 Discrete Mathematics, 12 Algorithms, 12 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 16 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+| Archived sets (earlier runs) | 163 (19 Discrete Mathematics, 12 Algorithms, 12 Databases, 15 Compiler Design, 20 Operating Systems, 10 Engineering Mathematics, 15 Programming and Data Structures, 17 Computer Networks, 19 Theory of Computation, 14 Digital Logic, 10 Computer Architecture) |
+
+### 2026-11-05 — Computer Networks Unit 5, Set 2 of 2 (third pass)
+
+- New paper at `computer-networks/transport-layer/gate_cn_mock_5_2026-11-05.html`. The 2026-11-01 paper it
+  supersedes moved to `archive/gate_cn_mock_5_2026-11-01_run3.html` with its content frozen, so the unit folder
+  holds exactly one current paper and the repository root still holds only `index.html`.
+- **Rotation (Section 1, MODE A).** Four subjects already carried a 2026-11-05 paper (algorithms,
+  computer-architecture, databases, programming-data-structures), so the draw ran over the seven that did not —
+  compiler-design, computer-networks, digital-logic, discrete-mathematics, engineering-mathematics,
+  operating-systems, theory-of-computation — and returned **Computer Networks**. Read from its own
+  `master_bank.json`, the most recent paper was `{2026-11-04, run 22, unit 4, routing-protocols, Set 2 of 2
+  (third pass)}`. Unit 4 stands at **100** questions, above `UNIT_QUESTION_CAP = 50`, and its first paper was
+  2026-10-27, nine days earlier, so **B3 failed on the cap** and the 7-day backstop would have failed too.
+  **B4 advanced exactly one unit**: `(index_of(routing-protocols) = 3 + 1) mod 6 = 4` → **Unit 5, Transport
+  Layer: TCP, UDP & Congestion**, which already held 75 questions. Every Computer Networks unit sits at 75 or
+  above, so **B5 applies**: the modulo wraps, the third pass continues, and this paper is its second set — the
+  unit's fourth set overall — taking Unit 5 to **100**. No override was passed and no partial set was
+  generated: exactly 25 questions.
+- **Content.** All 25 ids are new (`CN-U5-Q76`…`CN-U5-Q100`); no id and no normalised stem collides with the 75
+  Unit 5 items already banked. Coverage: UDP datagram simplicity 6, TCP header, handshake and connection close 7,
+  flow control and the sliding window 6, congestion control 6 — every unit subtopic represented. Composition
+  15 MCQ / 5 MSQ / 5 NAT; difficulty 10 easy / 10 medium / 5 hard; 35 marks in 60 minutes.
+- **Verification.** Every numeric key was recomputed by script: the last-fragment offset 2960/8 = 370 for a
+  3508-byte datagram; the UDP one's-complement sum `0x1745` complements to `0xE8BA` and `0x1745 + 0xE8BA =
+  0xFFFF`; the second data segment of the handshake example starts at `5001 + 1000 = 6001`; the payload after a
+  20-byte IP header, a 20-byte TCP header and 12 bytes of timestamps is `1500 − 20 − 20 − 12 = 1448` bytes;
+  `min(6000, 4500)/1000 = 4` full segments; the AIMD sawtooth 16…32 averages 24 MSS; `10 × 1460 / 0.1 × 8 =
+  1.168` Mbps, reported as 1.17. The five MSQ answer sets were checked option by option, and the MCQ key is
+  spread over the four letters (4 A, 5 B, 3 C, 3 D). `verified_pyqs` is empty for Computer Networks, so no item
+  carries the `GATE_PYQ_VARIATION` tag and nothing on this paper is claimed as an official GATE question.
+- **Interface.** Generated from the current shell (the 2026-11-05 Databases paper): the `<style>` block, the
+  palette, the meta strip, the Mock Test Mode banner, the result summary and the whole grading script are
+  byte-identical to it. Every question card carries `data-subject="computer-networks"` along with unit, subtopic,
+  type, difficulty and source.
 
 ### 2026-11-05 — Databases Unit 2, Set 2 of 2 (second pass)
 
